@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--k-black);
+  --color-foreground: var(--k-text);
+  
+  --color-k-black: var(--k-black);
+  --color-k-black-warm: var(--k-black-warm);
+  --color-k-surface: var(--k-surface);
+  --color-k-surface-hover: var(--k-surface-hover);
+  --color-k-surface-elevated: var(--k-surface-elevated);
+  --color-k-border: var(--k-border);
+  --color-k-border-light: var(--k-border-light);
+  
+  --color-k-gold: var(--k-gold);
+  --color-k-gold-light: var(--k-gold-light);
+  --color-k-gold-muted: var(--k-gold-muted);
+  --color-k-gold-dim: var(--k-gold-dim);
+  --color-k-gold-glow: var(--k-gold-glow);
+  
+  --color-k-text: var(--k-text);
+  --color-k-text-secondary: var(--k-text-secondary);
+  --color-k-text-tertiary: var(--k-text-tertiary);
+  --color-k-text-inverse: var(--k-text-inverse);
+
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-dm-sans);
+}
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --k-black: #0A0A0A;
+    --k-black-warm: #0F0D0B;
+    --k-surface: #161412;
+    --k-surface-hover: #1E1A17;
+    --k-surface-elevated: #1A1714;
+    --k-border: #2A2520;
+    --k-border-light: #3A3530;
+
+    /* Accent */
+    --k-gold: #C9A96E;
+    --k-gold-light: #D4B87A;
+    --k-gold-muted: #8A7A5A;
+    --k-gold-dim: rgba(201, 169, 110, 0.12);
+    --k-gold-glow: rgba(201, 169, 110, 0.06);
+
+    /* Text */
+    --k-text: #F5F0E8;
+    --k-text-secondary: #B0A898;
+    --k-text-tertiary: #6B6258;
+    --k-text-inverse: #0A0A0A;
+
+    /* Overlays */
+    --k-overlay-light: rgba(0, 0, 0, 0.3);
+    --k-overlay-medium: rgba(0, 0, 0, 0.55);
+    --k-overlay-heavy: rgba(0, 0, 0, 0.75);
+    --k-overlay-image: rgba(10, 10, 10, 0.4);
+    --k-frost: rgba(15, 13, 11, 0.65);
+    --k-frost-strong: rgba(12, 10, 8, 0.80);
+    --k-frost-border: rgba(201, 169, 110, 0.08);
+    --k-frost-border-light: rgba(255, 255, 255, 0.06);
+
+    /* Motion */
+    --k-ease-cinematic: cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  body {
+    background-color: var(--k-black);
+    color: var(--k-text);
+    font-family: var(--font-sans), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Procedural Cinematic Grain */
+.k-circadian-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: var(--k-grain-intensity, 0.03);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  transition: opacity 8s ease-out;
+}
+
+/* Ambient Radial Glow Gradient mapping emotional temperatures */
+.k-circadian-ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 0%, 
+    rgba(var(--k-ambient-r, 6), var(--k-ambient-g, 5), var(--k-ambient-b, 4), var(--k-ambient-opacity, 0.8)) 0%, 
+    transparent 85%
+  );
+  transition: background 8s ease-out;
+}
+
+/* Body brightness contrast drift */
+body {
+  filter: brightness(var(--k-text-contrast, 1.0));
+  transition: filter 8s ease-out;
+}
+
