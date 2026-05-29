@@ -20,7 +20,7 @@ Track the evolution of the Korantis platform into a persistent, cloud-synced psy
 - [x] Ensure Map Explorer triggers the same interaction telemetry (clicks) as the list feed.
 - [ ] Compute Spatial Context ($S_p$) bounding queries.
 
-## [ ] Phase 4C: Admin Engine
-- [ ] Create `/admin` protected route.
-- [ ] Build vector-seeding UI (Human-Guided Priors) for ingesting new atmospheric venues.
-- [ ] Ensure instantaneous availability of new venues in the live feed.
+## [x] Phase 4C: Admin Engine
+- [x] Build `/admin` protected route.
+- [x] Implement UI for human-guided atmospheric seeding (prior vector injection) via Supabase `venue_priors`.
+- [x] Wire the Admin Engine priors into the Hybrid Rank equation so they heavily bias the venue's overall vector.
