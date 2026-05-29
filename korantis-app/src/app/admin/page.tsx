@@ -97,13 +97,13 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen flex flex-col md:flex-row text-k-text bg-[#0A0A0A]">
       {/* Sidebar List */}
-      <div className="w-full md:w-1/3 border-r border-white/5 h-screen overflow-y-auto p-6 bg-k-surface/30">
+      <div className="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-white/5 h-auto md:h-screen md:overflow-y-auto p-6 bg-k-surface/30 flex-shrink-0">
         <div className="flex items-center gap-3 mb-8">
           <Database size={20} className="text-k-gold" />
           <h1 className="text-xl font-display uppercase tracking-widest">Atmosphere Seeder</h1>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 max-h-[40vh] md:max-h-none overflow-y-auto md:overflow-y-visible pr-1 md:pr-0">
           {rankedVenues.map(venue => (
             <button
               key={venue.id}
@@ -124,17 +124,17 @@ export default function AdminDashboard() {
       </div>
 
       {/* Editor Panel */}
-      <div className="w-full md:w-2/3 h-screen overflow-y-auto p-6 md:p-12">
+      <div className="w-full md:w-2/3 h-auto md:h-screen md:overflow-y-auto p-6 md:p-12">
         {selectedVenue ? (
           <div className="max-w-2xl mx-auto">
             {/* Header */}
-            <div className="flex items-center gap-6 mb-12">
-              <div className="relative w-24 h-24 rounded-2xl overflow-hidden border border-white/10 flex-shrink-0">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 mb-12">
+              <div className="relative w-24 h-24 rounded-2xl overflow-hidden border border-white/10 flex-shrink-0 shadow-lg">
                 <Image src={selectedVenue.heroImage} alt={selectedVenue.name} fill className="object-cover" />
               </div>
-              <div>
-                <h2 className="text-4xl font-display text-white mb-2">{selectedVenue.name}</h2>
-                <p className="text-sm text-k-text-secondary font-sans leading-relaxed">
+              <div className="flex flex-col gap-2">
+                <h2 className="text-3xl md:text-4xl font-display text-white">{selectedVenue.name}</h2>
+                <p className="text-xs md:text-sm text-k-text-secondary font-sans leading-relaxed max-w-lg">
                   {selectedVenue.narrative}
                 </p>
               </div>
