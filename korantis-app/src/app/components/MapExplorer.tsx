@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useCallback } from 'react';
-import Map, { Marker, NavigationControl } from 'react-map-gl';
+import Map, { Marker, NavigationControl } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { MapPin } from 'lucide-react';

@@ -12,6 +12,8 @@ export interface Venue {
   narrative: string;
   tags: string[];
   tasteVector?: number[]; // Added for Phase 3E Database Vector Integration
+  lat: number;
+  lng: number;
 }
 
 export const MOCK_VENUES: Venue[] = [
@@ -27,7 +29,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.95,
     tagline: 'Hidden beneath the surface, where nights feel like cinema.',
     narrative: 'A subterranean warmth shaped by amber light, slow jazz, and conversations that naturally drift past midnight. It feels like stepping out of time.',
-    tags: ['Hidden', 'Atmospheric', 'Late Night']
+    tags: ['Hidden', 'Atmospheric', 'Late Night'],
+    lat: -34.5907,
+    lng: -58.3789
   },
   {
     id: 'crisol',
@@ -41,7 +45,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.80,
     tagline: 'Nordic clarity meets Japanese restraint in a quiet morning ritual.',
     narrative: 'Pale ash wood, a single ceramic pour-over, and sunlight that makes you forget the city outside. Every detail has been considered, every excess removed.',
-    tags: ['Quiet', 'Minimal', 'Morning']
+    tags: ['Quiet', 'Minimal', 'Morning'],
+    lat: -34.5996,
+    lng: -58.4379
   },
   {
     id: 'invernadero',
@@ -55,7 +61,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.88,
     tagline: 'Dining inside a living greenhouse, where nature sets the table.',
     narrative: 'Glass ceilings filter the afternoon sun through a canopy of ferns and tropical palms. The air feels different here — humid, green, alive. Each plate arrives like a botanical specimen.',
-    tags: ['Greenhouse', 'Daylight', 'Afternoon']
+    tags: ['Greenhouse', 'Daylight', 'Afternoon'],
+    lat: -34.5847,
+    lng: -58.4002
   },
   {
     id: 'ninina',
@@ -69,7 +77,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.85,
     tagline: 'Golden warmth and the hum of slow evenings.',
     narrative: 'The late afternoon sun paints everything in amber. Pastries glisten behind curved glass. Conversations become softer as the light deepens.',
-    tags: ['Golden Hour', 'Slow Hum', 'Evening']
+    tags: ['Golden Hour', 'Slow Hum', 'Evening'],
+    lat: -34.5886,
+    lng: -58.4312
   },
   {
     id: 'melbourne',
@@ -83,7 +93,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.78,
     tagline: 'Industrial warmth and lively mornings.',
     narrative: 'Exposed brick meets specialty roasters. The barista moves with quiet precision. Steam rises against morning light streaming through warehouse windows.',
-    tags: ['Lively', 'Industrial', 'Specialty']
+    tags: ['Lively', 'Industrial', 'Specialty'],
+    lat: -34.5878,
+    lng: -58.4288
   },
   {
     id: 'verne',
@@ -97,7 +109,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.90,
     tagline: 'A subterranean cocktail vault where time bends like copper.',
     narrative: 'Descend through a narrow staircase into a world of brass, leather, and amber Edison glow. Every cocktail is a small invention. The walls whisper of expeditions never taken.',
-    tags: ['Speakeasy', 'Craft Cocktails', 'Late Night']
+    tags: ['Speakeasy', 'Craft Cocktails', 'Late Night'],
+    lat: -34.6212,
+    lng: -58.3731
   },
   {
     id: 'bookshop',
@@ -111,7 +125,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.82,
     tagline: 'Where stories live between the shelves and the steam.',
     narrative: 'Books line every wall. The espresso machine hums behind stacks of poetry. Afternoon light falls across open pages. Hours dissolve.',
-    tags: ['Literary', 'Quiet', 'Slow Hours']
+    tags: ['Literary', 'Quiet', 'Slow Hours'],
+    lat: -34.5872,
+    lng: -58.4277
   },
   {
     id: 'oporto',
@@ -125,7 +141,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.84,
     tagline: 'Wine, sunset, and the slow art of lingering.',
     narrative: 'The terrace catches the last golden light. Malbec glows in the glass. Conversations stretch across cheese boards and shared silences. Nobody is in a hurry.',
-    tags: ['Wine Bar', 'Sunset', 'Slow Art']
+    tags: ['Wine Bar', 'Sunset', 'Slow Art'],
+    lat: -34.5619,
+    lng: -58.4526
   },
   {
     id: 'cuervo',
@@ -139,7 +157,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.76,
     tagline: 'Rustic stone walls and the slow ritual of espresso.',
     narrative: 'Thick stone walls hold the morning cool. The espresso arrives in ceramic, dark and deliberate. San Telmo wakes slowly through the window.',
-    tags: ['Rustic', 'Espresso', 'Morning']
+    tags: ['Rustic', 'Espresso', 'Morning'],
+    lat: -34.6200,
+    lng: -58.3710
   },
   {
     id: 'labiela',
@@ -153,7 +173,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.87,
     tagline: 'A century of conversations beneath the ancient rubber tree.',
     narrative: 'Marble tables, porteño elegance, and the dappled shade of a tree that has watched generations pass. The waiter knows your order before you speak.',
-    tags: ['Historic', 'Outdoor', 'Classic']
+    tags: ['Historic', 'Outdoor', 'Classic'],
+    lat: -34.5876,
+    lng: -58.3905
   },
   {
     id: 'rooftop',
@@ -167,7 +189,9 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.86,
     tagline: 'City lights below, slow cocktails above.',
     narrative: 'The skyline glitters beyond the railing. Wind carries fragments of music from below. Up here, conversations become confessions and the night feels infinite.',
-    tags: ['Rooftop', 'Sunset View', 'Cocktails']
+    tags: ['Rooftop', 'Sunset View', 'Cocktails'],
+    lat: -34.5779,
+    lng: -58.4363
   },
   {
     id: 'boliche',
@@ -181,6 +205,8 @@ export const MOCK_VENUES: Venue[] = [
     quality: 0.92,
     tagline: 'Where tango lives in the walls and the red neon never sleeps.',
     narrative: 'The bandoneon exhales. Worn wooden floors remember a thousand milongas. Red neon stains the walls. This is not a show — this is where tango still breathes.',
-    tags: ['Tango', 'Raw', 'Authentic']
+    tags: ['Tango', 'Raw', 'Authentic'],
+    lat: -34.6310,
+    lng: -58.3610
   }
 ];

@@ -5,7 +5,7 @@ import { Venue } from '../data/venues';
 import { createClient } from '@/utils/supabase/client';
 
 // Types
-export type TimePhase = 'morning' | 'afternoon' | 'evening' | 'late_night' | 'dawn' | 'golden-hour';
+export type TimePhase = 'morning' | 'afternoon' | 'golden-hour' | 'night' | 'late-night' | 'dawn';
 
 export interface ScoreBreakdown {
   circadian: number;
@@ -163,7 +163,7 @@ function parseVector(data: any): number[] {
 const CircadianContext = createContext<CircadianState>({
   isAuthenticated: false,
   userId: null,
-  currentPhase: 'evening',
+  currentPhase: 'night',
   currentHour: 18.0,
   scrubTime: null,
   setScrubTime: () => {},

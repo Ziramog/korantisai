@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/utils/supabase/server';
+import { MOCK_VENUES } from '../../data/venues';
 
 export async function GET() {
   try {
@@ -26,6 +27,11 @@ export async function GET() {
         parsedVector = v.taste_vector;
       }
 
+      // Look up corresponding coordinates from static mock venues
+      const mockVenue = MOCK_VENUES.find(mv => mv.id === v.id);
+      const lat = mockVenue ? mockVenue.lat : -34.6;
+      const lng = mockVenue ? mockVenue.lng : -58.4;
+
       return {
         id: v.id,
         name: v.name,
@@ -39,7 +45,9 @@ export async function GET() {
         tagline: v.tagline,
         narrative: v.narrative,
         tags: v.tags,
-        tasteVector: parsedVector
+        tasteVector: parsedVector,
+        lat,
+        lng
       };
     });
 
