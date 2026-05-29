@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Korantis — Find Places by Feeling</title>
+  <meta name="description" content="Discover places for how you want to feel.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/venue.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/circadian.css">
+</head>
+<body class="k-app-shell">
+
+  <!-- Circadian Global Layers -->
+  <div class="k-circadian-ambient"></div>
+  <div class="k-circadian-grain"></div>
+
+  <!-- ═══════════════════════════════════════════
+       TRANSITION CHOREOGRAPHY LAYER
+       ═══════════════════════════════════════════ -->
+  <div class="k-transition-overlay" id="transition-overlay"></div>
+
+
+  <!-- ═══════════════════════════════════════════
+       GLOBAL FLOATING NAVIGATION
+       ═══════════════════════════════════════════ -->
+  <nav class="k-floating-nav" id="global-nav">
+    <button class="k-nav-item is-active" data-target="view-search" aria-label="Search">
+      <svg viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7"/>
+        <line x1="20" y1="20" x2="16" y2="16"/>
+      </svg>
+    </button>
+    <button class="k-nav-item" data-target="view-saved" aria-label="Saved">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+      </svg>
+    </button>
+    <button class="k-nav-item" data-target="view-profile" aria-label="Profile">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+    </button>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       VIEW: SEARCH FEED (Entry Point)
+       ═══════════════════════════════════════════ -->
+  <div id="view-search" class="k-view k-view--active">
+    
+    <header class="k-search-header" id="search-header">
+      <div class="k-search-bar">
+        <input type="text" class="k-search-input" placeholder="quiet café to work tonight…" aria-label="Search atmosphere">
+        <svg class="k-search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="20" y1="20" x2="16" y2="16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      
+      <div class="k-ai-chip">
+        <svg class="k-ai-sparkle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor"/>
+        </svg>
+        <p class="k-ai-text">
+          Showing <strong>calm, work-friendly</strong> spaces with <strong>warm lighting</strong> open now in Palermo.
+        </p>
+      </div>
+    </header>
+
+    <main class="k-feed-container">
+      
+      <!-- Emotional Filters Row -->
+      <div class="k-filter-row k-reveal">
+        <span class="k-filter-pill is-active">Quiet</span>
+        <span class="k-filter-pill">Warm</span>
+        <span class="k-filter-pill">Natural Light</span>
+        <span class="k-filter-pill">Hidden Gem</span>
+        <span class="k-filter-pill">Creative</span>
+        <span class="k-filter-pill">Slow Mornings</span>
+        <span class="k-filter-pill">Late Night</span>
+      </div>
+
+      <div class="k-feed">
+
+        <!-- ─── 1. Florería Atlántico ─── late-night ─── -->
+        <div class="k-feed-item k-feed-item--breathe k-reveal" data-atmosphere="late-night" data-quality="0.95">
+          <article class="k-card k-card--immersive" data-navigate-to="venue" data-hero-src="assets/venue_floreria.png"
+                   data-venue-name="Florería Atlántico" data-venue-location="Retiro"
+                   data-venue-tagline="Hidden beneath the surface, where nights feel like cinema."
+                   data-venue-narrative="A subterranean warmth shaped by amber light, slow jazz, and conversations that naturally drift past midnight. It feels like stepping out of time.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_floreria.png" alt="Florería Atlántico bar" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <button class="k-card__bookmark" aria-label="Save venue">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+            </button>
+            <div class="k-card__content">
+              <div class="k-card__accent-line"></div>
+              <h3 class="k-card__name">Florería Atlántico</h3>
+              <p class="k-card__location">Retiro</p>
+              <p class="k-card__tagline">Hidden beneath the surface, where nights feel like cinema.</p>
+              <div class="k-card__tags">
+                <span class="k-tag k-tag--ghost">Hidden</span>
+                <span class="k-tag k-tag--ghost">Atmospheric</span>
+                <span class="k-tag k-tag--ghost">Late Night</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 2. Crisol Café ─── morning ─── -->
+        <div class="k-feed-item k-feed-item--tight k-reveal k-reveal-delay-1" data-atmosphere="morning" data-quality="0.80">
+          <article class="k-card k-card--compact" data-navigate-to="venue" data-hero-src="assets/venue_crisol.png"
+                   data-venue-name="Crisol Café" data-venue-location="Villa Crespo"
+                   data-venue-tagline="Nordic clarity meets Japanese restraint in a quiet morning ritual."
+                   data-venue-narrative="Pale ash wood, a single ceramic pour-over, and sunlight that makes you forget the city outside. Every detail has been considered, every excess removed.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_crisol.png" alt="Crisol Café interior" loading="lazy">
+            </div>
+            <div class="k-card__content">
+              <h3 class="k-card__name">Crisol Café</h3>
+              <p class="k-card__location">Villa Crespo</p>
+              <p class="k-card__tagline">Nordic clarity meets Japanese restraint in a quiet morning ritual.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 3. Invernadero ─── afternoon ─── -->
+        <div class="k-feed-item k-feed-item--breathe k-reveal k-reveal-delay-2" data-atmosphere="afternoon" data-quality="0.88">
+          <article class="k-card k-card--layered" data-navigate-to="venue" data-hero-src="assets/venue_invernadero.png"
+                   data-venue-name="Invernadero" data-venue-location="Palermo Botánico"
+                   data-venue-tagline="Dining inside a living greenhouse, where nature sets the table."
+                   data-venue-narrative="Glass ceilings filter the afternoon sun through a canopy of ferns and tropical palms. The air feels different here — humid, green, alive. Each plate arrives like a botanical specimen.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_invernadero.png" alt="Invernadero greenhouse restaurant" loading="lazy">
+              <div class="k-card__vignette"></div>
+            </div>
+            <div class="k-card__panel">
+              <div class="k-card__panel-header">
+                <div>
+                  <h3 class="k-card__name">Invernadero</h3>
+                  <p class="k-card__location">Palermo Botánico</p>
+                </div>
+              </div>
+              <p class="k-card__tagline">Dining inside a living greenhouse, where nature sets the table.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 4. Ninina ─── golden-hour ─── -->
+        <div class="k-feed-item k-feed-item--isolated k-reveal" data-atmosphere="golden-hour" data-quality="0.85">
+          <article class="k-card k-card--cinematic" data-navigate-to="venue" data-hero-src="assets/venue_ninina.png"
+                   data-venue-name="Ninina" data-venue-location="Palermo Soho"
+                   data-venue-tagline="Golden warmth and the hum of slow evenings."
+                   data-venue-narrative="The late afternoon sun paints everything in amber. Pastries glisten behind curved glass. Conversations become softer as the light deepens.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_ninina.png" alt="Ninina café" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <div class="k-card__content">
+              <h3 class="k-card__name">Ninina</h3>
+              <p class="k-card__location">Palermo Soho</p>
+              <p class="k-card__tagline">Golden warmth and the hum of slow evenings.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 5. Melbourne Café ─── morning ─── -->
+        <div class="k-feed-item k-feed-item--tight k-reveal k-reveal-delay-1" data-atmosphere="morning" data-quality="0.78">
+          <article class="k-card k-card--compact" data-navigate-to="venue" data-hero-src="assets/venue_melbourne.png"
+                   data-venue-name="Melbourne Café" data-venue-location="Palermo Soho"
+                   data-venue-tagline="Industrial warmth and lively mornings."
+                   data-venue-narrative="Exposed brick meets specialty roasters. The barista moves with quiet precision. Steam rises against morning light streaming through warehouse windows.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_melbourne.png" alt="Melbourne Café interior" loading="lazy">
+            </div>
+            <div class="k-card__content">
+              <h3 class="k-card__name">Melbourne Café</h3>
+              <p class="k-card__location">Palermo Soho</p>
+              <p class="k-card__tagline">Industrial warmth and lively mornings.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 6. Verne Club ─── late-night ─── -->
+        <div class="k-feed-item k-feed-item--breathe k-reveal" data-atmosphere="late-night" data-quality="0.90">
+          <article class="k-card k-card--immersive" data-navigate-to="venue" data-hero-src="assets/venue_verne.png"
+                   data-venue-name="Verne Club" data-venue-location="San Telmo"
+                   data-venue-tagline="A subterranean cocktail vault where time bends like copper."
+                   data-venue-narrative="Descend through a narrow staircase into a world of brass, leather, and amber Edison glow. Every cocktail is a small invention. The walls whisper of expeditions never taken.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_verne.png" alt="Verne Club cocktail bar" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <button class="k-card__bookmark" aria-label="Save venue">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+            </button>
+            <div class="k-card__content">
+              <div class="k-card__accent-line"></div>
+              <h3 class="k-card__name">Verne Club</h3>
+              <p class="k-card__location">San Telmo</p>
+              <p class="k-card__tagline">A subterranean cocktail vault where time bends like copper.</p>
+              <div class="k-card__tags">
+                <span class="k-tag k-tag--ghost">Speakeasy</span>
+                <span class="k-tag k-tag--ghost">Craft Cocktails</span>
+                <span class="k-tag k-tag--ghost">Late Night</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 7. Libros del Pasaje ─── afternoon ─── -->
+        <div class="k-feed-item k-feed-item--breathe k-reveal k-reveal-delay-2" data-atmosphere="afternoon" data-quality="0.82">
+          <article class="k-card k-card--layered" data-navigate-to="venue" data-hero-src="assets/venue_bookshop.png"
+                   data-venue-name="Libros del Pasaje" data-venue-location="Palermo Viejo"
+                   data-venue-tagline="Where stories live between the shelves and the steam."
+                   data-venue-narrative="Books line every wall. The espresso machine hums behind stacks of poetry. Afternoon light falls across open pages. Hours dissolve.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_bookshop.png" alt="Bookshop café reading nook" loading="lazy">
+              <div class="k-card__vignette"></div>
+            </div>
+            <div class="k-card__panel">
+              <div class="k-card__panel-header">
+                <div>
+                  <h3 class="k-card__name">Libros del Pasaje</h3>
+                  <p class="k-card__location">Palermo Viejo</p>
+                </div>
+              </div>
+              <p class="k-card__tagline">Where stories live between the shelves and the steam.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 8. Oporto Almacén ─── golden-hour ─── -->
+        <div class="k-feed-item k-feed-item--isolated k-reveal" data-atmosphere="golden-hour" data-quality="0.84">
+          <article class="k-card k-card--cinematic" data-navigate-to="venue" data-hero-src="assets/venue_oporto.png"
+                   data-venue-name="Oporto Almacén" data-venue-location="Palermo Hollywood"
+                   data-venue-tagline="Wine, sunset, and the slow art of lingering."
+                   data-venue-narrative="The terrace catches the last golden light. Malbec glows in the glass. Conversations stretch across cheese boards and shared silences. Nobody is in a hurry.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_oporto.png" alt="Oporto Almacén wine terrace" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <div class="k-card__content">
+              <h3 class="k-card__name">Oporto Almacén</h3>
+              <p class="k-card__location">Palermo Hollywood</p>
+              <p class="k-card__tagline">Wine, sunset, and the slow art of lingering.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 9. Café Cuervo ─── morning ─── -->
+        <div class="k-feed-item k-feed-item--tight k-reveal k-reveal-delay-1" data-atmosphere="morning" data-quality="0.76">
+          <article class="k-card k-card--compact" data-navigate-to="venue" data-hero-src="assets/venue_cuervo.png"
+                   data-venue-name="Café Cuervo" data-venue-location="San Telmo"
+                   data-venue-tagline="Rustic stone walls and the slow ritual of espresso."
+                   data-venue-narrative="Thick stone walls hold the morning cool. The espresso arrives in ceramic, dark and deliberate. San Telmo wakes slowly through the window.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_cuervo.png" alt="Café Cuervo interior" loading="lazy">
+            </div>
+            <div class="k-card__content">
+              <h3 class="k-card__name">Café Cuervo</h3>
+              <p class="k-card__location">San Telmo</p>
+              <p class="k-card__tagline">Rustic stone walls and the slow ritual of espresso.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 10. La Biela ─── afternoon ─── -->
+        <div class="k-feed-item k-feed-item--breathe k-reveal" data-atmosphere="afternoon" data-quality="0.87">
+          <article class="k-card k-card--immersive" data-navigate-to="venue" data-hero-src="assets/venue_labiela.png"
+                   data-venue-name="La Biela" data-venue-location="Recoleta"
+                   data-venue-tagline="A century of conversations beneath the ancient rubber tree."
+                   data-venue-narrative="Marble tables, porteño elegance, and the dappled shade of a tree that has watched generations pass. The waiter knows your order before you speak.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_labiela.png" alt="La Biela grand café terrace" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <div class="k-card__content">
+              <div class="k-card__accent-line"></div>
+              <h3 class="k-card__name">La Biela</h3>
+              <p class="k-card__location">Recoleta</p>
+              <p class="k-card__tagline">A century of conversations beneath the ancient rubber tree.</p>
+              <div class="k-card__tags">
+                <span class="k-tag k-tag--ghost">Historic</span>
+                <span class="k-tag k-tag--ghost">Outdoor</span>
+                <span class="k-tag k-tag--ghost">Classic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 11. Uptown Bar ─── night ─── -->
+        <div class="k-feed-item k-feed-item--isolated k-reveal k-reveal-delay-1" data-atmosphere="night" data-quality="0.86">
+          <article class="k-card k-card--cinematic" data-navigate-to="venue" data-hero-src="assets/venue_rooftop.png"
+                   data-venue-name="Uptown Bar" data-venue-location="Palermo Soho"
+                   data-venue-tagline="City lights below, slow cocktails above."
+                   data-venue-narrative="The skyline glitters beyond the railing. Wind carries fragments of music from below. Up here, conversations become confessions and the night feels infinite.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_rooftop.png" alt="Uptown rooftop bar at night" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <div class="k-card__content">
+              <h3 class="k-card__name">Uptown Bar</h3>
+              <p class="k-card__location">Palermo Soho</p>
+              <p class="k-card__tagline">City lights below, slow cocktails above.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─── 12. El Boliche de Roberto ─── night ─── -->
+        <div class="k-feed-item k-feed-item--breathe k-reveal" data-atmosphere="night" data-quality="0.92">
+          <article class="k-card k-card--immersive" data-navigate-to="venue" data-hero-src="assets/venue_boliche.png"
+                   data-venue-name="El Boliche de Roberto" data-venue-location="La Boca"
+                   data-venue-tagline="Where tango lives in the walls and the red neon never sleeps."
+                   data-venue-narrative="The bandoneon exhales. Worn wooden floors remember a thousand milongas. Red neon stains the walls. This is not a show — this is where tango still breathes.">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_boliche.png" alt="El Boliche de Roberto tango bar" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <button class="k-card__bookmark" aria-label="Save venue">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+              </svg>
+            </button>
+            <div class="k-card__content">
+              <div class="k-card__accent-line"></div>
+              <h3 class="k-card__name">El Boliche de Roberto</h3>
+              <p class="k-card__location">La Boca</p>
+              <p class="k-card__tagline">Where tango lives in the walls and the red neon never sleeps.</p>
+              <div class="k-card__tags">
+                <span class="k-tag k-tag--ghost">Tango</span>
+                <span class="k-tag k-tag--ghost">Raw</span>
+                <span class="k-tag k-tag--ghost">Authentic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      
+      <!-- Padding for the global nav -->
+      <div style="height: 120px;"></div>
+    </main>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       VIEW: VENUE DETAIL
+       ═══════════════════════════════════════════ -->
+  <div id="view-venue" class="k-view">
+    
+    <button id="venue-back-btn" class="k-venue-back" aria-label="Go back">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <header class="k-venue-hero">
+      <div class="k-venue-hero__visual">
+        <img class="k-venue-hero__image" id="hero-parallax" src="assets/venue_floreria.png" alt="Venue interior">
+      </div>
+      <div class="k-venue-hero__gradient"></div>
+      <div class="k-venue-hero__content">
+        <h1 class="k-venue-hero__name">Florería Atlántico</h1>
+        <p class="k-venue-hero__location">Retiro</p>
+        <p class="k-venue-hero__insight">Hidden beneath the surface, where nights feel like cinema.</p>
+      </div>
+    </header>
+
+    <main class="k-venue-container">
+
+      <section class="k-venue-section k-venue-section--huge">
+        <div class="k-narrative">
+          <p class="k-narrative__text" id="venue-narrative">
+            A subterranean warmth shaped by amber light, slow jazz, and conversations that naturally drift past midnight. It feels like stepping out of time.
+          </p>
+        </div>
+      </section>
+
+      <section class="k-venue-section">
+        <div class="k-atmosphere-tags" id="venue-atm-tags">
+          <span class="k-atmosphere-tag">Intimate Acoustics</span>
+          <span class="k-atmosphere-tag">Deep Shadows</span>
+          <span class="k-atmosphere-tag">Slow Pacing</span>
+          <span class="k-atmosphere-tag">Soft Social Density</span>
+          <span class="k-atmosphere-tag">Warm Cinematic Light</span>
+        </div>
+      </section>
+
+      <section class="k-time-shifts" id="time-shifts-container">
+        <!-- Morning -->
+        <div class="k-time-block" data-theme="morning">
+          <div class="k-time-block__label">Morning</div>
+          <h2 class="k-time-block__desc">Restrained, quiet, and cool. A slow space to think before the city wakes.</h2>
+        </div>
+        <!-- Afternoon -->
+        <div class="k-time-block" data-theme="afternoon">
+          <div class="k-time-block__label">Afternoon</div>
+          <h2 class="k-time-block__desc">Soft social energy with natural warmth. Conversations begin to layer.</h2>
+        </div>
+        <!-- Night -->
+        <div class="k-time-block" data-theme="night">
+          <div class="k-time-block__label">Night</div>
+          <h2 class="k-time-block__desc">Deep amber shadows and cinematic intimacy. Time completely stops.</h2>
+        </div>
+      </section>
+
+      <section class="k-venue-section">
+        <div class="k-gallery-container">
+          <div class="k-gallery">
+            <div class="k-gallery__item"><img class="k-gallery__image" src="assets/venue_cuervo.png" loading="lazy"></div>
+            <div class="k-gallery__item"><img class="k-gallery__image" src="assets/venue_rooftop.png" loading="lazy"></div>
+            <div class="k-gallery__item"><img class="k-gallery__image" src="assets/venue_oporto.png" loading="lazy"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="k-quiet-utility">
+        <div class="k-utility-grid">
+          <div class="k-utility-item">
+            <span class="k-utility-item__label">Pacing</span>
+            <span class="k-utility-item__value">Usually alive deep into the night</span>
+          </div>
+          <div class="k-utility-item">
+            <span class="k-utility-item__label">Material Investment</span>
+            <span class="k-utility-item__value">A premium evening</span>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Padding for the global nav -->
+      <div style="height: 120px;"></div>
+
+    </main>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       VIEW: SAVED COLLECTIONS
+       ═══════════════════════════════════════════ -->
+  <div id="view-saved" class="k-view">
+    
+    <header class="k-saved-header">
+      <h1 class="k-saved-title">Your Atlas</h1>
+      <p class="k-saved-subtitle">Places you've chosen to remember.</p>
+    </header>
+
+    <main class="k-saved-container">
+
+      <!-- Collections Grid -->
+      <section class="k-saved-section">
+        <h2 class="k-saved-section__label">Collections</h2>
+        <div class="k-collections-grid">
+          
+          <div class="k-collection-card">
+            <div class="k-collection-card__image-wrap">
+              <img class="k-collection-card__image" src="assets/venue_floreria.png" alt="Late Night collection" loading="lazy">
+              <div class="k-collection-card__gradient"></div>
+            </div>
+            <div class="k-collection-card__content">
+              <h3 class="k-collection-card__name">After Midnight</h3>
+              <p class="k-collection-card__count">4 places</p>
+            </div>
+          </div>
+
+          <div class="k-collection-card">
+            <div class="k-collection-card__image-wrap">
+              <img class="k-collection-card__image" src="assets/venue_crisol.png" alt="Morning Ritual collection" loading="lazy">
+              <div class="k-collection-card__gradient"></div>
+            </div>
+            <div class="k-collection-card__content">
+              <h3 class="k-collection-card__name">Morning Ritual</h3>
+              <p class="k-collection-card__count">3 places</p>
+            </div>
+          </div>
+
+          <div class="k-collection-card">
+            <div class="k-collection-card__image-wrap">
+              <img class="k-collection-card__image" src="assets/venue_invernadero.png" alt="Botanical collection" loading="lazy">
+              <div class="k-collection-card__gradient"></div>
+            </div>
+            <div class="k-collection-card__content">
+              <h3 class="k-collection-card__name">Sunday Calm</h3>
+              <p class="k-collection-card__count">5 places</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Saved Places List -->
+      <section class="k-saved-section">
+        <h2 class="k-saved-section__label">All Saved</h2>
+        <div class="k-saved-list">
+          
+          <div class="k-saved-item">
+            <img class="k-saved-item__image" src="assets/venue_floreria.png" alt="Florería Atlántico" loading="lazy">
+            <div class="k-saved-item__info">
+              <h3 class="k-saved-item__name">Florería Atlántico</h3>
+              <p class="k-saved-item__location">Retiro · Late Night</p>
+            </div>
+            <span class="k-saved-item__note">Hidden gem</span>
+          </div>
+
+          <div class="k-saved-item">
+            <img class="k-saved-item__image" src="assets/venue_verne.png" alt="Verne Club" loading="lazy">
+            <div class="k-saved-item__info">
+              <h3 class="k-saved-item__name">Verne Club</h3>
+              <p class="k-saved-item__location">San Telmo · Late Night</p>
+            </div>
+            <span class="k-saved-item__note">Copper warmth</span>
+          </div>
+
+          <div class="k-saved-item">
+            <img class="k-saved-item__image" src="assets/venue_crisol.png" alt="Crisol Café" loading="lazy">
+            <div class="k-saved-item__info">
+              <h3 class="k-saved-item__name">Crisol Café</h3>
+              <p class="k-saved-item__location">Villa Crespo · Morning</p>
+            </div>
+            <span class="k-saved-item__note">Focus ritual</span>
+          </div>
+
+          <div class="k-saved-item">
+            <img class="k-saved-item__image" src="assets/venue_ninina.png" alt="Ninina" loading="lazy">
+            <div class="k-saved-item__info">
+              <h3 class="k-saved-item__name">Ninina</h3>
+              <p class="k-saved-item__location">Palermo Soho · Golden Hour</p>
+            </div>
+            <span class="k-saved-item__note">Sunset warmth</span>
+          </div>
+
+          <div class="k-saved-item">
+            <img class="k-saved-item__image" src="assets/venue_boliche.png" alt="El Boliche de Roberto" loading="lazy">
+            <div class="k-saved-item__info">
+              <h3 class="k-saved-item__name">El Boliche de Roberto</h3>
+              <p class="k-saved-item__location">La Boca · Night</p>
+            </div>
+            <span class="k-saved-item__note">Raw tango</span>
+          </div>
+
+        </div>
+      </section>
+      
+      <!-- Padding for the global nav -->
+      <div style="height: 120px;"></div>
+
+    </main>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       VIEW: PROFILE & TASTE
+       ═══════════════════════════════════════════ -->
+  <div id="view-profile" class="k-view">
+    
+    <header class="k-profile-header">
+      <div class="k-profile-avatar">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      </div>
+      <h1 class="k-profile-name">Your Taste Profile</h1>
+      <p class="k-profile-subtitle">Korantis learns how you experience spaces.</p>
+    </header>
+
+    <main class="k-profile-container">
+      
+      <!-- Taste Radar -->
+      <section class="k-profile-section">
+        <h2 class="k-profile-section__label">Your Atmospheric Coordinates</h2>
+        <div class="k-taste-radar" id="taste-radar-canvas">
+          <canvas id="taste-radar" width="300" height="300"></canvas>
+        </div>
+        <p class="k-taste-description" id="taste-description">
+          You're drawn to <strong>intimate, amber-lit atmospheres</strong> with <strong>slow pacing</strong> and <strong>authentic character</strong>. You prefer depth over decoration.
+        </p>
+      </section>
+
+      <!-- Matched Archetypes -->
+      <section class="k-profile-section">
+        <h2 class="k-profile-section__label">Your Atmospheres</h2>
+        <div class="k-archetype-grid">
+          
+          <div class="k-archetype-card">
+            <img class="k-archetype-card__image" src="assets/venue_floreria.png" alt="Archetype" loading="lazy">
+            <div class="k-archetype-card__overlay">
+              <span class="k-archetype-card__label">The Hidden Sanctuary</span>
+              <span class="k-archetype-card__match">92% match</span>
+            </div>
+          </div>
+
+          <div class="k-archetype-card">
+            <img class="k-archetype-card__image" src="assets/venue_crisol.png" alt="Archetype" loading="lazy">
+            <div class="k-archetype-card__overlay">
+              <span class="k-archetype-card__label">The Minimal Ritual</span>
+              <span class="k-archetype-card__match">87% match</span>
+            </div>
+          </div>
+
+          <div class="k-archetype-card">
+            <img class="k-archetype-card__image" src="assets/venue_boliche.png" alt="Archetype" loading="lazy">
+            <div class="k-archetype-card__overlay">
+              <span class="k-archetype-card__label">The Raw Stage</span>
+              <span class="k-archetype-card__match">78% match</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Preferences -->
+      <section class="k-profile-section">
+        <h2 class="k-profile-section__label">Preferences</h2>
+        <div class="k-preferences-list">
+          <div class="k-pref-item">
+            <span class="k-pref-item__label">Home District</span>
+            <span class="k-pref-item__value">Palermo</span>
+          </div>
+          <div class="k-pref-item">
+            <span class="k-pref-item__label">Peak Discovery</span>
+            <span class="k-pref-item__value">Evening · Night</span>
+          </div>
+          <div class="k-pref-item">
+            <span class="k-pref-item__label">Saved Places</span>
+            <span class="k-pref-item__value">5 venues</span>
+          </div>
+          <div class="k-pref-item">
+            <span class="k-pref-item__label">Taste Maturity</span>
+            <span class="k-pref-item__value">Emerging</span>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Padding for the global nav -->
+      <div style="height: 120px;"></div>
+
+    </main>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/taste.js"></script>
+  <script src="js/ranking.js"></script>
+  <script src="js/circadian.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/venue.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

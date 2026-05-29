@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Korantis — Card System Exploration</title>
+  <meta name="description" content="Phase 1A: Card system exploration for Korantis — places for how you want to feel.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════ -->
+
+  <header class="explore-header">
+    <div class="explore-header__logo">KORANTIS</div>
+    <h1 class="explore-header__title">Card System Exploration</h1>
+    <p class="explore-header__subtitle">Phase 1A · The atomic unit of discovery</p>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════
+       PRIORITY CARDS
+       ═══════════════════════════════════════════ -->
+
+  <div class="explore-group-label">
+    <span class="explore-group-label__text">Priority Explorations</span>
+  </div>
+
+  <div class="explore-divider"></div>
+
+
+  <!-- ── CARD A — Cinematic Full-Bleed ──────── -->
+
+  <section class="explore-section" id="card-a">
+    <div class="explore-section__priority">Priority</div>
+    <div class="explore-section__label">Variant A</div>
+    <h2 class="explore-section__name">Cinematic Full-Bleed</h2>
+    <p class="explore-section__desc">
+      Full-width image, gradient overlay, text layered at bottom.
+      Magazine cover composition. Maximum emotional atmosphere.
+    </p>
+
+    <article class="k-card k-card--cinematic k-reveal">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_ninina.png" alt="Ninina café, warm evening atmosphere" loading="lazy">
+        <div class="k-card__gradient"></div>
+      </div>
+      <button class="k-card__bookmark" aria-label="Save venue">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+      </button>
+      <div class="k-card__content">
+        <h3 class="k-card__name">Ninina</h3>
+        <p class="k-card__location">Palermo Soho</p>
+        <p class="k-card__tagline">Golden warmth and the hum of slow evenings</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--frost">Warm</span>
+          <span class="k-tag k-tag--frost">Cinematic</span>
+          <span class="k-tag k-tag--frost">Evening</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Second example — different venue, same card system -->
+    <article class="k-card k-card--cinematic k-reveal" style="margin-top: var(--k-space-card-gap, 28px);">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_lattente.png" alt="La Tente wine bar, candlelit evening" loading="lazy">
+        <div class="k-card__gradient"></div>
+      </div>
+      <button class="k-card__bookmark" aria-label="Save venue">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+      </button>
+      <div class="k-card__content">
+        <h3 class="k-card__name">La Tente</h3>
+        <p class="k-card__location">San Telmo</p>
+        <p class="k-card__tagline">Candlelight and stone walls. Wines that feel like conversation.</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--frost">Intimate</span>
+          <span class="k-tag k-tag--frost">Wine</span>
+          <span class="k-tag k-tag--frost">Date Night</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <div class="explore-divider"></div>
+
+
+  <!-- ── CARD D — Vertical Immersive ────────── -->
+
+  <section class="explore-section" id="card-d">
+    <div class="explore-section__priority">Priority</div>
+    <div class="explore-section__label">Variant D</div>
+    <h2 class="explore-section__name">Vertical Immersive</h2>
+    <p class="explore-section__desc">
+      Tall portrait composition, heavy bottom gradient, gold accent line.
+      Cinematic and save-worthy. Instagram-story atmosphere.
+    </p>
+
+    <article class="k-card k-card--immersive k-reveal">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_floreria.png" alt="Florería Atlántico bar, hidden atmospheric interior" loading="lazy">
+        <div class="k-card__gradient"></div>
+      </div>
+      <button class="k-card__bookmark" aria-label="Save venue">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+      </button>
+      <div class="k-card__content">
+        <div class="k-card__accent-line"></div>
+        <h3 class="k-card__name">Florería Atlántico</h3>
+        <p class="k-card__location">Retiro</p>
+        <p class="k-card__tagline">Hidden beneath the surface, where nights feel like cinema</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--ghost">Hidden</span>
+          <span class="k-tag k-tag--ghost">Atmospheric</span>
+          <span class="k-tag k-tag--ghost">Late Night</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Second example -->
+    <article class="k-card k-card--immersive k-reveal" style="margin-top: var(--k-space-card-gap, 28px);">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_rooftop.png" alt="Rooftop terrace at dusk" loading="lazy">
+        <div class="k-card__gradient"></div>
+      </div>
+      <button class="k-card__bookmark" aria-label="Save venue">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+      </button>
+      <div class="k-card__content">
+        <div class="k-card__accent-line"></div>
+        <h3 class="k-card__name">Cielo Terraza</h3>
+        <p class="k-card__location">Palermo Hollywood</p>
+        <p class="k-card__tagline">Where the city meets the sky at golden hour</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--ghost">Rooftop</span>
+          <span class="k-tag k-tag--ghost">Sunset</span>
+          <span class="k-tag k-tag--ghost">Drinks</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <div class="explore-divider"></div>
+
+
+  <!-- ── CARD E — Layered Editorial ─────────── -->
+
+  <section class="explore-section" id="card-e">
+    <div class="explore-section__priority">Priority</div>
+    <div class="explore-section__label">Variant E</div>
+    <h2 class="explore-section__name">Layered Editorial</h2>
+    <p class="explore-section__desc">
+      Image with frosted glass panel floating at bottom.
+      Architectural, premium, layered. The panel creates depth.
+    </p>
+
+    <article class="k-card k-card--layered k-reveal">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_oporto.png" alt="Oporto Almacén, quiet minimalist interior" loading="lazy">
+        <div class="k-card__vignette"></div>
+      </div>
+      <div class="k-card__panel">
+        <div class="k-card__panel-header">
+          <div>
+            <h3 class="k-card__name">Oporto Almacén</h3>
+            <p class="k-card__location">Belgrano</p>
+          </div>
+          <button class="k-card__panel-bookmark" aria-label="Save venue">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+            </svg>
+          </button>
+        </div>
+        <p class="k-card__tagline">Quiet corners where time moves at your pace</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--gold">Quiet</span>
+          <span class="k-tag k-tag--gold">Minimal</span>
+          <span class="k-tag k-tag--gold">Work Friendly</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Second example -->
+    <article class="k-card k-card--layered k-reveal" style="margin-top: var(--k-space-card-gap, 28px);">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_bookshop.png" alt="Bookshop café with warm reading nook" loading="lazy">
+        <div class="k-card__vignette"></div>
+      </div>
+      <div class="k-card__panel">
+        <div class="k-card__panel-header">
+          <div>
+            <h3 class="k-card__name">Libros del Pasaje</h3>
+            <p class="k-card__location">Palermo Viejo</p>
+          </div>
+          <button class="k-card__panel-bookmark" aria-label="Save venue">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+            </svg>
+          </button>
+        </div>
+        <p class="k-card__tagline">Where stories live between the shelves and the steam</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--gold">Literary</span>
+          <span class="k-tag k-tag--gold">Quiet</span>
+          <span class="k-tag k-tag--gold">Coffee</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECONDARY EXPLORATIONS
+       ═══════════════════════════════════════════ -->
+
+  <div class="explore-group-label" style="margin-top: var(--k-space-2xl);">
+    <span class="explore-group-label__text">Secondary Explorations</span>
+  </div>
+
+  <div class="explore-divider"></div>
+
+
+  <!-- ── CARD B — Editorial Split ───────────── -->
+
+  <section class="explore-section" id="card-b">
+    <div class="explore-section__label">Variant B</div>
+    <h2 class="explore-section__name">Editorial Split</h2>
+    <p class="explore-section__desc">
+      Image top, content below on dark surface.
+      Clean and versatile. Useful for dense layouts.
+    </p>
+
+    <article class="k-card k-card--split k-reveal">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_cuervo.png" alt="Cuervo Café interior" loading="lazy">
+      </div>
+      <button class="k-card__bookmark is-visible" aria-label="Save venue">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+        </svg>
+      </button>
+      <div class="k-card__content">
+        <h3 class="k-card__name">Cuervo Café</h3>
+        <p class="k-card__location">Palermo</p>
+        <p class="k-card__tagline">Natural light and calm. Perfect for focus.</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--outlined">Quiet</span>
+          <span class="k-tag k-tag--outlined">Minimal</span>
+          <span class="k-tag k-tag--outlined">Work Friendly</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <div class="explore-divider"></div>
+
+
+  <!-- ── CARD C — Compact Atmospheric ───────── -->
+
+  <section class="explore-section" id="card-c">
+    <div class="explore-section__label">Variant C</div>
+    <h2 class="explore-section__name">Compact Atmospheric</h2>
+    <p class="explore-section__desc">
+      Smaller, landscape, denser information. Useful for browse mode later.
+    </p>
+
+    <article class="k-card k-card--compact k-reveal">
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_melbourne.png" alt="Melbourne Café interior" loading="lazy">
+      </div>
+      <div class="k-card__content">
+        <h3 class="k-card__name">Melbourne Café</h3>
+        <p class="k-card__location">Palermo</p>
+        <p class="k-card__tagline">Vibrant energy, great food and excellent coffee.</p>
+        <div class="k-card__tags">
+          <span class="k-tag k-tag--ghost">Lively</span>
+          <span class="k-tag k-tag--ghost">Trendy</span>
+          <span class="k-tag k-tag--ghost">Great Brunch</span>
+        </div>
+        <div class="k-card__meta" style="margin-top: var(--k-space-md);">
+          <span>Open until 18:00</span>
+          <span class="k-card__meta-dot"></span>
+          <span>10 min away</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <div class="explore-divider"></div>
+
+
+  <!-- ── CARD F — Minimal Signal ────────────── -->
+
+  <section class="explore-section" id="card-f">
+    <div class="explore-section__label">Variant F</div>
+    <h2 class="explore-section__name">Minimal Signal</h2>
+    <p class="explore-section__desc">
+      Horizontal, typographic-led. Restrained and dense.
+      Kinfolk-magazine aesthetic. Future list/browse mode.
+    </p>
+
+    <article class="k-card k-card--minimal k-reveal">
+      <div class="k-card__text-block">
+        <h3 class="k-card__name">Tres Monos</h3>
+        <p class="k-card__location">Chacarita</p>
+        <p class="k-card__tagline">Cozy and warm spot with amazing coffee and vibes.</p>
+        <div class="k-card__signals">
+          <span class="k-card__signal-dot k-card__signal-dot--active"></span>
+          <span class="k-card__signal-dot k-card__signal-dot--active"></span>
+          <span class="k-card__signal-dot k-card__signal-dot--active"></span>
+          <span class="k-card__signal-dot"></span>
+          <span class="k-card__signal-dot"></span>
+        </div>
+      </div>
+      <div class="k-card__image-wrap">
+        <img class="k-card__image" src="assets/venue_tresmonos.png" alt="Tres Monos café" loading="lazy">
+      </div>
+    </article>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+
+  <footer style="text-align: center; padding: var(--k-space-4xl) var(--k-content-padding) var(--k-space-3xl);">
+    <div class="explore-divider" style="margin-bottom: var(--k-space-3xl);"></div>
+    <p class="k-overline" style="color: var(--k-gold-muted); margin-bottom: var(--k-space-sm);">KORANTIS</p>
+    <p class="k-caption">Places for how you want to feel</p>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

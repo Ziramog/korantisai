@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Korantis — Search Experience</title>
+  <meta name="description" content="Discover places for how you want to feel.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body class="search-experience">
+
+  <!-- ═══════════════════════════════════════════
+       HYBRID STICKY HEADER
+       ═══════════════════════════════════════════ -->
+
+  <header class="k-search-header" id="search-header">
+    <div class="k-search-bar">
+      <input type="text" class="k-search-input" placeholder="quiet café to work tonight..." aria-label="Search atmosphere">
+      <svg class="k-search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="11" r="7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="20" y1="20" x2="16" y2="16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    
+    <div class="k-ai-chip">
+      <svg class="k-ai-sparkle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z" fill="currentColor"/>
+      </svg>
+      <p class="k-ai-text">
+        Showing <strong>calm, work-friendly</strong> spaces with <strong>warm lighting</strong> open now in Palermo.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════
+       DISCOVERY FEED
+       ═══════════════════════════════════════════ -->
+
+  <main class="k-feed-container">
+    
+    <!-- Emotional Filters Row -->
+    <div class="k-filter-row k-reveal">
+      <span class="k-filter-pill is-active">Quiet</span>
+      <span class="k-filter-pill">Warm</span>
+      <span class="k-filter-pill">Natural Light</span>
+      <span class="k-filter-pill">Hidden Gem</span>
+      <span class="k-filter-pill">Creative</span>
+      <span class="k-filter-pill">Slow Mornings</span>
+      <span class="k-filter-pill">Late Night</span>
+    </div>
+
+    <!-- The Feed: Curated Rhythm -->
+    <div class="k-feed">
+      
+      <!-- 1. Signature Opening (Card D) -->
+      <div class="k-feed-item k-feed-item--breathe k-reveal">
+        <article class="k-card k-card--immersive">
+          <div class="k-card__image-wrap">
+            <img class="k-card__image" src="assets/venue_floreria.png" alt="Florería Atlántico bar" loading="lazy">
+            <div class="k-card__gradient"></div>
+          </div>
+          <button class="k-card__bookmark" aria-label="Save venue">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+            </svg>
+          </button>
+          <div class="k-card__content">
+            <div class="k-card__accent-line"></div>
+            <h3 class="k-card__name">Florería Atlántico</h3>
+            <p class="k-card__location">Retiro</p>
+            <p class="k-card__tagline">Hidden beneath the surface, where nights feel like cinema.</p>
+            <div class="k-card__tags">
+              <span class="k-tag k-tag--ghost">Hidden</span>
+              <span class="k-tag k-tag--ghost">Atmospheric</span>
+              <span class="k-tag k-tag--ghost">Late Night</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 2. Fast Pace Break (Card C) -->
+      <div class="k-feed-item k-feed-item--tight k-reveal k-reveal-delay-1">
+        <article class="k-card k-card--compact">
+          <div class="k-card__image-wrap">
+            <img class="k-card__image" src="assets/venue_melbourne.png" alt="Melbourne Café interior" loading="lazy">
+          </div>
+          <div class="k-card__content">
+            <h3 class="k-card__name">Melbourne Café</h3>
+            <p class="k-card__location">Palermo Soho</p>
+            <p class="k-card__tagline">Industrial warmth and lively mornings.</p>
+            <div class="k-card__meta">
+              <span>Open</span>
+              <div class="k-card__meta-dot"></div>
+              <span>0.4 km</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 3. Dense Editorial Layover (Card E) -->
+      <div class="k-feed-item k-feed-item--breathe k-reveal k-reveal-delay-2">
+        <article class="k-card k-card--layered">
+          <div class="k-card__image-wrap">
+            <img class="k-card__image" src="assets/venue_bookshop.png" alt="Bookshop café reading nook" loading="lazy">
+            <div class="k-card__vignette"></div>
+          </div>
+          <div class="k-card__panel">
+            <div class="k-card__panel-header">
+              <div>
+                <h3 class="k-card__name">Libros del Pasaje</h3>
+                <p class="k-card__location">Palermo Viejo</p>
+              </div>
+              <button class="k-card__panel-bookmark" aria-label="Save venue">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="k-card__tagline">Where stories live between the shelves and the steam.</p>
+            <div class="k-card__tags">
+              <span class="k-tag k-tag--gold">Literary</span>
+              <span class="k-tag k-tag--gold">Quiet</span>
+              <span class="k-tag k-tag--gold">Coffee</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4. Grand Cinematic Finish (Card A) -->
+      <div class="k-feed-item k-feed-item--isolated k-reveal">
+        <article class="k-card k-card--cinematic">
+          <div class="k-card__image-wrap">
+            <img class="k-card__image" src="assets/venue_ninina.png" alt="Ninina café" loading="lazy">
+            <div class="k-card__gradient"></div>
+          </div>
+          <button class="k-card__bookmark" aria-label="Save venue">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z"/>
+            </svg>
+          </button>
+          <div class="k-card__content">
+            <h3 class="k-card__name">Ninina</h3>
+            <p class="k-card__location">Palermo Soho</p>
+            <p class="k-card__tagline">Golden warmth and the hum of slow evenings.</p>
+            <div class="k-card__tags">
+              <span class="k-tag k-tag--frost">Warm</span>
+              <span class="k-tag k-tag--frost">Cinematic</span>
+              <span class="k-tag k-tag--frost">Evening</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING MAP TOGGLE
+       ═══════════════════════════════════════════ -->
+
+  <button class="k-map-toggle k-reveal k-reveal-delay-4" aria-label="Toggle map view">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+      <line x1="9" y1="3" x2="9" y2="18"/>
+      <line x1="15" y1="6" x2="15" y2="21"/>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

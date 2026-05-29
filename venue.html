@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Korantis — Florería Atlántico</title>
+  <meta name="description" content="A subterranean warmth shaped by amber light and slow jazz.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/venue.css">
+</head>
+<body class="venue-experience">
+
+  <!-- ═══════════════════════════════════════════
+       HERO NAVIGATION
+       ═══════════════════════════════════════════ -->
+  <a href="search.html" class="k-venue-back" aria-label="Go back">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </a>
+
+
+  <!-- ═══════════════════════════════════════════
+       IMMERSIVE CINEMATIC HERO
+       ═══════════════════════════════════════════ -->
+  <header class="k-venue-hero">
+    <div class="k-venue-hero__visual">
+      <img class="k-venue-hero__image" id="hero-parallax" src="assets/venue_floreria.png" alt="Florería Atlántico interior">
+    </div>
+    <div class="k-venue-hero__gradient"></div>
+    <div class="k-venue-hero__content k-reveal">
+      <h1 class="k-venue-hero__name">Florería Atlántico</h1>
+      <p class="k-venue-hero__location">Retiro</p>
+      <p class="k-venue-hero__insight">Hidden beneath the surface, where nights feel like cinema.</p>
+    </div>
+  </header>
+
+
+  <main class="k-venue-container">
+
+    <!-- ═══════════════════════════════════════════
+         EMOTIONAL NARRATIVE BLOCK
+         ═══════════════════════════════════════════ -->
+    <section class="k-venue-section k-venue-section--huge k-reveal">
+      <div class="k-narrative">
+        <p class="k-narrative__text">
+          A subterranean warmth shaped by amber light, slow jazz, and conversations that naturally drift past midnight. It feels like stepping out of time.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         ATMOSPHERE ATTRIBUTES
+         ═══════════════════════════════════════════ -->
+    <section class="k-venue-section k-reveal">
+      <div class="k-atmosphere-tags">
+        <span class="k-atmosphere-tag">Intimate Acoustics</span>
+        <span class="k-atmosphere-tag">Deep Shadows</span>
+        <span class="k-atmosphere-tag">Slow Pacing</span>
+        <span class="k-atmosphere-tag">Soft Social Density</span>
+        <span class="k-atmosphere-tag">Warm Cinematic Light</span>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         TIME-BASED ATMOSPHERE SHIFTS
+         ═══════════════════════════════════════════ -->
+    <section class="k-time-shifts" id="time-shifts-container">
+      
+      <!-- Morning -->
+      <div class="k-time-block" data-theme="morning">
+        <div class="k-time-block__label">Morning</div>
+        <h2 class="k-time-block__desc">Restrained, quiet, and cool. A slow space to think before the city wakes.</h2>
+      </div>
+
+      <!-- Afternoon -->
+      <div class="k-time-block" data-theme="afternoon">
+        <div class="k-time-block__label">Afternoon</div>
+        <h2 class="k-time-block__desc">Soft social energy with natural warmth. Conversations begin to layer.</h2>
+      </div>
+
+      <!-- Night -->
+      <div class="k-time-block" data-theme="night">
+        <div class="k-time-block__label">Night</div>
+        <h2 class="k-time-block__desc">Deep amber shadows and cinematic intimacy. Time completely stops.</h2>
+      </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         OVERSIZED TACTILE GALLERY
+         ═══════════════════════════════════════════ -->
+    <section class="k-venue-section k-reveal">
+      <div class="k-gallery-container">
+        <div class="k-gallery">
+          <div class="k-gallery__item">
+            <img class="k-gallery__image" src="assets/venue_cuervo.png" alt="Bar detail" loading="lazy">
+          </div>
+          <div class="k-gallery__item">
+            <img class="k-gallery__image" src="assets/venue_rooftop.png" alt="Venue atmosphere" loading="lazy">
+          </div>
+          <div class="k-gallery__item">
+            <img class="k-gallery__image" src="assets/venue_oporto.png" alt="Venue corner" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         QUIET INFORMATION LAYER (UTILITY)
+         ═══════════════════════════════════════════ -->
+    <section class="k-quiet-utility k-reveal">
+      <div class="k-utility-grid">
+        <div class="k-utility-item">
+          <span class="k-utility-item__label">Pacing</span>
+          <span class="k-utility-item__value">Usually alive deep into the night</span>
+        </div>
+        <div class="k-utility-item">
+          <span class="k-utility-item__label">Material Investment</span>
+          <span class="k-utility-item__value">A premium evening</span>
+        </div>
+        <div class="k-utility-item">
+          <span class="k-utility-item__label">Access</span>
+          <span class="k-utility-item__value">Arroyo 872, Retiro</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SIMILAR ATMOSPHERES
+         ═══════════════════════════════════════════ -->
+    <section class="k-similar">
+      <div class="k-similar__header k-reveal">
+        <h3 class="k-similar__title">More places with this feeling</h3>
+      </div>
+      
+      <div class="k-similar-scroll">
+        <!-- Reusing Card E (Layered) -->
+        <div class="k-feed-item k-reveal k-reveal-delay-1">
+          <article class="k-card k-card--layered">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_lattente.png" alt="La Tente" loading="lazy">
+              <div class="k-card__vignette"></div>
+            </div>
+            <div class="k-card__panel">
+              <div class="k-card__panel-header">
+                <div>
+                  <h3 class="k-card__name">La Tente</h3>
+                  <p class="k-card__location">San Telmo</p>
+                </div>
+              </div>
+              <p class="k-card__tagline">Wines that feel like conversation.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Reusing Card D (Immersive) -->
+        <div class="k-feed-item k-reveal k-reveal-delay-2">
+          <article class="k-card k-card--immersive">
+            <div class="k-card__image-wrap">
+              <img class="k-card__image" src="assets/venue_tresmonos.png" alt="Tres Monos" loading="lazy">
+              <div class="k-card__gradient"></div>
+            </div>
+            <div class="k-card__content">
+              <div class="k-card__accent-line"></div>
+              <h3 class="k-card__name">Tres Monos</h3>
+              <p class="k-card__location">Palermo</p>
+              <p class="k-card__tagline">Neon warmth and intimate chaos.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/venue.js"></script>
+</body>
+</html>

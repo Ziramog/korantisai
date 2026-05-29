@@ -1,0 +1,102 @@
+/* ═══════════════════════════════════════════════════════════
+   KORANTIS — CIRCADIAN EMOTIONAL ENGINE
+   Phase 2B · Atmospheric Drift
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Defaults. These will be interpolated by js/circadian.js */
+  --k-ambient-r: 6;
+  --k-ambient-g: 5;
+  --k-ambient-b: 4;
+  --k-ambient-opacity: 0.8;
+  
+  --k-text-contrast: 1;
+  --k-grain-intensity: 0.03;
+  
+  /* Used to compute time affinity internally */
+  --k-feed-bias-strength: 1;
+}
+
+/* ── Global Cinematic Grain ─────────────────── */
+.k-circadian-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: var(--k-grain-intensity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  transition: opacity 10s ease-out; /* Slow drift */
+}
+
+/* ── Ambient Glow (Emotional Temperature) ───── */
+.k-circadian-ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 0%, 
+    rgba(var(--k-ambient-r), var(--k-ambient-g), var(--k-ambient-b), var(--k-ambient-opacity)) 0%, 
+    transparent 100%
+  );
+  transition: background 10s ease-out;
+}
+
+/* ── Typography Contrast Adjustments ────────── */
+/* Applying global contrast multiplier safely */
+body {
+  filter: brightness(var(--k-text-contrast));
+  transition: filter 10s ease-out;
+}
+
+/* ── Debug Mode Scrubber ────────────────────── */
+.k-circadian-debug {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 10000;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: monospace;
+  font-size: 10px;
+  color: #fff;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.k-circadian-debug:hover,
+.k-circadian-debug.is-active {
+  opacity: 1;
+}
+
+.k-circadian-debug input[type="range"] {
+  width: 150px;
+  accent-color: var(--k-gold);
+}
+
+.k-circadian-debug-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.k-circadian-debug-freeze {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 9px;
+}
+.k-circadian-debug-freeze.is-frozen {
+  background: var(--k-gold);
+  color: black;
+}

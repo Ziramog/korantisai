@@ -1,0 +1,327 @@
+/* ═══════════════════════════════════════════════════════════
+   KORANTIS — SEARCH EXPERIENCE
+   Phase 1B · Editorial Discovery
+   
+   - Hybrid sticky header
+   - Intelligent AI explanation
+   - Emotional filters
+   - Floating map toggle
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Layout & Body ──────────────────────────── */
+body.search-experience {
+  background-color: var(--k-black);
+  /* Extra bottom padding for floating map toggle */
+  padding-bottom: 120px;
+}
+
+.k-feed-container {
+  max-width: var(--k-mobile-max);
+  margin: 0 auto;
+  position: relative;
+  /* Top padding ensures content starts below the expanded header */
+  padding-top: 180px;
+}
+
+
+/* ══════════════════════════════════════════════
+   HYBRID STICKY HEADER
+   
+   Compresses on scroll down. Expands on scroll up.
+   Cinematic blurring.
+   ══════════════════════════════════════════════ */
+
+.k-search-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: var(--k-space-xl) var(--k-content-padding) var(--k-space-md);
+  
+  /* Initial state: subtle gradient to blend with background */
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(10, 10, 10, 0.8) 60%,
+    transparent 100%
+  );
+  
+  transition: transform 400ms var(--k-ease-cinematic),
+              background 400ms var(--k-ease-cinematic),
+              backdrop-filter 400ms var(--k-ease-cinematic),
+              padding 400ms var(--k-ease-cinematic);
+              
+  transform: translateY(0);
+}
+
+/* Scroll Down State (Compressed) */
+.k-search-header.is-compressed {
+  padding-top: var(--k-space-lg);
+  padding-bottom: var(--k-space-sm);
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(24px) saturate(1.2);
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Scroll Up State (Minimized but visible) */
+.k-search-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+
+/* ── Search Input Box ───────────────────────── */
+
+.k-search-bar {
+  position: relative;
+  width: 100%;
+  max-width: var(--k-mobile-max);
+  margin: 0 auto;
+}
+
+.k-search-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--k-radius-full);
+  padding: 16px 20px 16px 48px;
+  
+  font-family: var(--k-font-body);
+  font-size: var(--k-text-body);
+  color: var(--k-text);
+  
+  transition: all 400ms var(--k-ease-cinematic);
+}
+
+.k-search-input::placeholder {
+  color: rgba(176, 168, 152, 0.45);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.k-search-input:focus {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(201, 169, 110, 0.3);
+  box-shadow: 0 0 24px rgba(201, 169, 110, 0.08),
+              inset 0 0 12px rgba(201, 169, 110, 0.04);
+}
+
+/* Search Icon */
+.k-search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: rgba(176, 168, 152, 0.5);
+  pointer-events: none;
+  transition: color 400ms var(--k-ease);
+}
+
+.k-search-input:focus + .k-search-icon {
+  color: var(--k-gold-light);
+}
+
+
+/* ── AI Explanation Chip ────────────────────── */
+
+.k-ai-chip {
+  max-width: var(--k-mobile-max);
+  margin: var(--k-space-md) auto 0;
+  
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms var(--k-ease-cinematic),
+              transform 300ms var(--k-ease-cinematic),
+              height 300ms var(--k-ease-cinematic),
+              margin 300ms var(--k-ease-cinematic);
+  
+  overflow: hidden;
+}
+
+.k-search-header.is-compressed .k-ai-chip {
+  opacity: 0;
+  height: 0;
+  margin-top: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+}
+
+.k-ai-sparkle {
+  color: var(--k-gold);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.k-ai-text {
+  font-family: var(--k-font-display);
+  font-size: var(--k-text-body);
+  font-style: italic;
+  color: rgba(245, 240, 232, 0.65);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.k-ai-text strong {
+  font-weight: 500;
+  color: rgba(245, 240, 232, 0.9);
+  font-style: normal;
+}
+
+
+/* ══════════════════════════════════════════════
+   EMOTIONAL FILTERS ROW
+   
+   Horizontal scroll. Delicate, editorial.
+   Not SaaS tags.
+   ══════════════════════════════════════════════ */
+
+.k-filter-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 0 var(--k-content-padding);
+  margin-bottom: var(--k-space-3xl);
+  
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.k-filter-row::-webkit-scrollbar {
+  display: none;
+}
+
+.k-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  
+  padding: 10px 18px;
+  border-radius: var(--k-radius-full);
+  
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  
+  font-family: var(--k-font-body);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(176, 168, 152, 0.7);
+  
+  transition: all 400ms var(--k-ease-cinematic);
+  cursor: pointer;
+}
+
+.k-filter-pill:hover,
+.k-filter-pill:active {
+  background: rgba(201, 169, 110, 0.06);
+  border-color: rgba(201, 169, 110, 0.15);
+  color: var(--k-gold-light);
+  transform: translateY(-1px);
+}
+
+.k-filter-pill.is-active {
+  background: rgba(201, 169, 110, 0.12);
+  border-color: rgba(201, 169, 110, 0.25);
+  color: var(--k-gold);
+}
+
+
+/* ══════════════════════════════════════════════
+   FEED CHOREOGRAPHY (RHYTHMIC SPACING)
+   
+   Tasteful spacing to avoid algorithmic fatigue.
+   ══════════════════════════════════════════════ */
+
+/* The feed wrapper itself */
+.k-feed {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+   We assign structural classes to individual cards in the feed
+   to create editorial pauses.
+*/
+
+.k-feed-item {
+  width: 100%;
+  margin-bottom: var(--k-space-2xl); /* Default rhythm */
+}
+
+.k-feed-item--breathe {
+  margin-bottom: var(--k-space-4xl); /* Deep pause */
+}
+
+.k-feed-item--tight {
+  margin-bottom: var(--k-space-xl); /* Quick succession */
+}
+
+.k-feed-item--isolated {
+  margin-top: var(--k-space-3xl);
+  margin-bottom: var(--k-space-4xl);
+}
+
+
+/* ══════════════════════════════════════════════
+   FLOATING MAP TOGGLE
+   
+   Subtle glassmorphism, secondary action.
+   ══════════════════════════════════════════════ */
+
+.k-map-toggle {
+  position: fixed;
+  bottom: var(--k-space-xl);
+  right: var(--k-space-xl);
+  z-index: 90;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--k-radius-full);
+  
+  background: rgba(15, 13, 11, 0.6);
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  
+  color: rgba(245, 240, 232, 0.8);
+  transition: all 400ms var(--k-ease-cinematic);
+}
+
+.k-map-toggle:hover {
+  background: rgba(201, 169, 110, 0.15);
+  border-color: rgba(201, 169, 110, 0.2);
+  color: var(--k-gold);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
+              0 0 20px rgba(201, 169, 110, 0.1);
+}
+
+@media (hover: none) {
+  .k-map-toggle:active {
+    transform: scale(0.95);
+    background: rgba(201, 169, 110, 0.1);
+  }
+}
+
+.k-map-toggle svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
