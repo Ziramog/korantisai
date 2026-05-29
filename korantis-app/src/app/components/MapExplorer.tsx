@@ -68,6 +68,7 @@ export default function MapExplorer({ onSelectVenue }: MapExplorerProps) {
         mapStyle={mapStyle}
         mapboxAccessToken={MAPBOX_TOKEN}
         attributionControl={false}
+        cooperativeGestures={true}
       >
         <NavigationControl position="top-right" />
         
