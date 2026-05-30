@@ -206,6 +206,8 @@ export const MOCK_VENUES: Venue[] = [
     tagline: 'Where tango lives in the walls and the red neon never sleeps.',
     narrative: 'The bandoneon exhales. Worn wooden floors remember a thousand milongas. Red neon stains the walls. This is not a show — this is where tango still breathes.',
     tags: ['Tango', 'Raw', 'Authentic'],
+    lat: -34.6111,
+    lng: -58.4231
   },
   {
     id: 'lattente',
