@@ -1,0 +1,120 @@
+/* ═══════════════════════════════════════════════════════════
+   KORANTIS — DESIGN TOKENS
+   Phase 1A · Visual System Foundation
+   
+   Derived from branding:
+   - Deep black backgrounds with warm undertones
+   - Champagne gold accent (#C9A96E)
+   - Warm cream text (not cold white)
+   - Editorial serif + modern sans-serif
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ── Backgrounds ──────────────────────────── */
+  --k-black:              #0A0A0A;
+  --k-black-warm:         #0F0D0B;
+  --k-surface:            #161412;
+  --k-surface-hover:      #1E1A17;
+  --k-surface-elevated:   #1A1714;
+  --k-border:             #2A2520;
+  --k-border-light:       #3A3530;
+
+  /* ── Accent ───────────────────────────────── */
+  --k-gold:               #C9A96E;
+  --k-gold-light:         #D4B87A;
+  --k-gold-muted:         #8A7A5A;
+  --k-gold-dim:           rgba(201, 169, 110, 0.12);
+  --k-gold-glow:          rgba(201, 169, 110, 0.06);
+
+  /* ── Text ─────────────────────────────────── */
+  --k-text:               #F5F0E8;
+  --k-text-secondary:     #B0A898;
+  --k-text-tertiary:      #6B6258;
+  --k-text-inverse:       #0A0A0A;
+
+  /* ── Overlays ─────────────────────────────── */
+  --k-overlay-light:      rgba(0, 0, 0, 0.3);
+  --k-overlay-medium:     rgba(0, 0, 0, 0.55);
+  --k-overlay-heavy:      rgba(0, 0, 0, 0.75);
+  --k-overlay-image:      rgba(10, 10, 10, 0.4);
+  --k-frost:              rgba(15, 13, 11, 0.65);
+  --k-frost-strong:       rgba(12, 10, 8, 0.80);
+  --k-frost-border:       rgba(201, 169, 110, 0.08);
+  --k-frost-border-light: rgba(255, 255, 255, 0.06);
+
+  /* ── Typography Families ──────────────────── */
+  --k-font-display:       'Cormorant Garamond', 'Georgia', serif;
+  --k-font-body:          'DM Sans', 'Helvetica Neue', sans-serif;
+
+  /* ── Type Scale ───────────────────────────── */
+  --k-text-display:       clamp(2.25rem, 7vw, 3.5rem);
+  --k-text-headline:      clamp(1.625rem, 4.5vw, 2.25rem);
+  --k-text-title:         clamp(1.25rem, 3vw, 1.625rem);
+  --k-text-title-sm:      clamp(1.0625rem, 2.5vw, 1.25rem);
+  --k-text-body:          1rem;
+  --k-text-body-sm:       0.875rem;
+  --k-text-caption:       0.8125rem;
+  --k-text-overline:      0.6875rem;
+  --k-text-micro:         0.625rem;
+
+  /* ── Line Heights ─────────────────────────── */
+  --k-leading-tight:      1.1;
+  --k-leading-snug:       1.25;
+  --k-leading-normal:     1.5;
+  --k-leading-relaxed:    1.65;
+
+  /* ── Letter Spacing ───────────────────────── */
+  --k-tracking-tight:     -0.02em;
+  --k-tracking-normal:    0;
+  --k-tracking-wide:      0.04em;
+  --k-tracking-wider:     0.1em;
+  --k-tracking-widest:    0.2em;
+
+  /* ── Spacing (8px base grid) ──────────────── */
+  --k-space-2xs:          2px;
+  --k-space-xs:           4px;
+  --k-space-sm:           8px;
+  --k-space-md:           16px;
+  --k-space-lg:           24px;
+  --k-space-xl:           32px;
+  --k-space-2xl:          48px;
+  --k-space-3xl:          64px;
+  --k-space-4xl:          96px;
+  --k-space-5xl:          128px;
+
+  /* ── Border Radius ────────────────────────── */
+  --k-radius-xs:          4px;
+  --k-radius-sm:          6px;
+  --k-radius-md:          12px;
+  --k-radius-lg:          16px;
+  --k-radius-xl:          20px;
+  --k-radius-full:        999px;
+
+  /* ── Shadows ──────────────────────────────── */
+  --k-shadow-sm:          0 2px 8px rgba(0, 0, 0, 0.25);
+  --k-shadow-md:          0 4px 16px rgba(0, 0, 0, 0.35);
+  --k-shadow-lg:          0 8px 32px rgba(0, 0, 0, 0.45);
+  --k-shadow-xl:          0 16px 48px rgba(0, 0, 0, 0.55);
+  --k-shadow-card:        0 4px 24px rgba(0, 0, 0, 0.3);
+  --k-shadow-card-hover:  0 12px 40px rgba(0, 0, 0, 0.5);
+  --k-shadow-glow:        0 0 24px rgba(201, 169, 110, 0.06);
+
+  /* ── Motion ───────────────────────────────── */
+  --k-ease:               cubic-bezier(0.4, 0, 0.2, 1);
+  --k-ease-out:           cubic-bezier(0, 0, 0.2, 1);
+  --k-ease-in:            cubic-bezier(0.4, 0, 1, 1);
+  --k-ease-spring:        cubic-bezier(0.34, 1.56, 0.64, 1);
+  --k-ease-cinematic:     cubic-bezier(0.22, 0.61, 0.36, 1);
+  --k-duration-instant:   100ms;
+  --k-duration-fast:      200ms;
+  --k-duration-normal:    400ms;
+  --k-duration-slow:      700ms;
+  --k-duration-reveal:    1000ms;
+  --k-duration-cinematic: 1400ms;
+
+  /* ── Layout ───────────────────────────────── */
+  --k-mobile-max:         428px;
+  --k-content-padding:    20px;
+  --k-card-gap:           28px;
+}

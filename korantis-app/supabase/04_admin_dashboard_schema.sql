@@ -2,7 +2,7 @@
 
 -- 1.1 venues (core)
 CREATE TABLE IF NOT EXISTS public.venues (
-  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  id text PRIMARY KEY,
   place_id text UNIQUE,
   name text NOT NULL,
   city text,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS public.venues (
 -- 1.2 venue_reviews (Layer 0)
 CREATE TABLE IF NOT EXISTS public.venue_reviews (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  venue_id uuid REFERENCES public.venues(id) ON DELETE CASCADE,
+  venue_id text REFERENCES public.venues(id) ON DELETE CASCADE,
   author_name text,
   rating int,
   text text,
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS public.venue_reviews (
 -- 1.3 venue_atmosphere (Layer 3)
 CREATE TABLE IF NOT EXISTS public.venue_atmosphere (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  venue_id uuid REFERENCES public.venues(id) ON DELETE CASCADE,
+  venue_id text REFERENCES public.venues(id) ON DELETE CASCADE,
   prose text, -- GPT-4o-mini output
   word_count int,
   model text,
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS public.venue_atmosphere (
 -- 1.4 venue_embeddings
 CREATE TABLE IF NOT EXISTS public.venue_embeddings (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  venue_id uuid REFERENCES public.venues(id) ON DELETE CASCADE,
+  venue_id text REFERENCES public.venues(id) ON DELETE CASCADE,
   layer text, -- L2 | L3
   embedding vector(1536),
   source_text text, -- curatorial or atmosphere prose
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS public.venue_embeddings (
 -- 1.5 venue_resonance
 CREATE TABLE IF NOT EXISTS public.venue_resonance (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  venue_id uuid REFERENCES public.venues(id) ON DELETE CASCADE,
+  venue_id text REFERENCES public.venues(id) ON DELETE CASCADE,
   cosine_similarity double precision,
   classification text, -- almost_identical | strong | partial | divergent
   editorial_themes text[],
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS public.venue_resonance (
 -- 1.6 venue_quality
 CREATE TABLE IF NOT EXISTS public.venue_quality (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  venue_id uuid REFERENCES public.venues(id) ON DELETE CASCADE,
+  venue_id text REFERENCES public.venues(id) ON DELETE CASCADE,
   review_count int DEFAULT 0,
   has_atmosphere boolean DEFAULT false,
   has_embedding boolean DEFAULT false,
