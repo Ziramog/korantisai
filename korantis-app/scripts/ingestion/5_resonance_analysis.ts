@@ -74,7 +74,8 @@ async function main() {
     // Fetch L3 vector
     const { data: l3Records } = await supabase.from('venue_embeddings').select('embedding').eq('venue_id', venue.id).eq('layer', 'L3').limit(1);
     if (!l3Records || l3Records.length === 0) continue;
-    const l3Vector = l3Records[0].embedding;
+    let l3VectorRaw = l3Records[0].embedding;
+    let l3Vector = typeof l3VectorRaw === 'string' ? JSON.parse(l3VectorRaw) : l3VectorRaw;
 
     // Fetch L2 vector, if not found, we use category_seed as a proxy baseline
     let l2Vector;
@@ -82,7 +83,8 @@ async function main() {
     let l2Text = `This is a high-quality ${venue.category_seed} venue located in ${venue.city}.`;
     
     if (l2Records && l2Records.length > 0) {
-      l2Vector = l2Records[0].embedding;
+      let l2VectorRaw = l2Records[0].embedding;
+      l2Vector = typeof l2VectorRaw === 'string' ? JSON.parse(l2VectorRaw) : l2VectorRaw;
     } else {
       console.log(`  No L2 found. Generating baseline L2 vector from category seed...`);
       l2Vector = await getEmbedding(l2Text);
