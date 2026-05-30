@@ -187,7 +187,11 @@ const CircadianContext = createContext<CircadianState>({
   rankedVenues: [],
   savedVenueIds: [],
   toggleSaveVenue: () => {},
-  dimensionLabels: DIMENSION_LABELS
+  dimensionLabels: DIMENSION_LABELS,
+  language: 'en',
+  setLanguage: () => {},
+  city: 'BUE',
+  setCity: () => {}
 });
 
 export const useCircadian = () => useContext(CircadianContext);
@@ -212,6 +216,8 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedPills, setSelectedPills] = useState<string[]>([]);
   const [savedVenueIds, setSavedVenueIds] = useState<string[]>([]);
+  const [language, setLanguage] = useState<'en' | 'es'>('en');
+  const [city, setCity] = useState<'BUE' | 'NYC'>('BUE');
 
   // Auth & Profile Hydration
   useEffect(() => {
@@ -567,7 +573,13 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   const rankedVenues = useMemo<ScoredVenue[]>(() => {
     const activeWeights = activeIntentVector ? SCORING_WEIGHTS.activeSearch : SCORING_WEIGHTS.passive;
 
-    const scored = dbVenues.map((venue, originalIndex) => {
+    const cityFilteredVenues = dbVenues.filter(v => {
+      if (city === 'BUE') return v.lat < 0; // Southern hemisphere
+      if (city === 'NYC') return v.lat > 0; // Northern hemisphere
+      return true;
+    });
+
+    const scored = cityFilteredVenues.map((venue, originalIndex) => {
       const peakHour = ATMOSPHERE_PEAKS[venue.atmosphere];
       const dist = peakHour !== undefined ? circularTimeDistance(currentHour, peakHour) : 6.0;
       const cScore = 1.0 - (dist / 12.0);
@@ -628,7 +640,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         return scoreB - scoreA;
       })
       .map(({ originalIndex, ...rest }) => rest as ScoredVenue);
-  }, [currentHour, currentDrift, activeIntentVector, dbVenues, savedVenueIds, identityCentroid]);
+  }, [currentHour, currentDrift, activeIntentVector, dbVenues, savedVenueIds, identityCentroid, city]);
 
   return (
     <CircadianContext.Provider
@@ -655,7 +667,11 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         rankedVenues,
         savedVenueIds,
         toggleSaveVenue,
-        dimensionLabels: DIMENSION_LABELS
+        dimensionLabels: DIMENSION_LABELS,
+        language,
+        setLanguage,
+        city,
+        setCity
       }}
     >
       {children}

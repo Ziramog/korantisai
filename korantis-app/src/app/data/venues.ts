@@ -336,5 +336,37 @@ export const MOCK_VENUES: Venue[] = [
     tags: ['Surreal', 'Umami', 'Visual'],
     lat: -34.5865,
     lng: -58.4280
+  },
+  {
+    id: 'attaboy',
+    name: 'Attaboy',
+    category: 'Speakeasy',
+    location: 'Lower East Side',
+    cardSize: 'immersive',
+    spacing: 'tight',
+    heroImage: '/venue_verne.png', // Fallback
+    atmosphere: 'late-night',
+    quality: 0.96,
+    tagline: 'No menus. Just you, the bartender, and the night.',
+    narrative: 'Hidden behind a tailor shop door, the space is narrow, dark, and intensely personal. The drinks are tailored to your exact mood.',
+    tags: ['Speakeasy', 'Bespoke', 'NYC'],
+    lat: 40.7188,
+    lng: -73.9913
+  },
+  {
+    id: 'devocion',
+    name: 'Devoción',
+    category: 'Coffee Roastery',
+    location: 'Williamsburg',
+    cardSize: 'layered',
+    spacing: 'breathe',
+    heroImage: '/venue_invernadero.png', // Fallback
+    atmosphere: 'morning',
+    quality: 0.88,
+    tagline: 'Colombian beans roasted in the heart of Brooklyn.',
+    narrative: 'A massive skylight illuminates a living green wall. The scent of freshly roasted coffee hangs in the air, creating a vibrant morning sanctuary.',
+    tags: ['Roastery', 'Sunlight', 'NYC'],
+    lat: 40.7161,
+    lng: -73.9647
   }
 ];

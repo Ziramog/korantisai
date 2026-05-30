@@ -14,6 +14,7 @@ import VenueDetail from './components/VenueDetail';
 import AtmosphereDebug from './components/AtmosphereDebug';
 import AuthPanel from './components/AuthPanel';
 import MapExplorer from './components/MapExplorer';
+import HeaderControls from './components/HeaderControls';
 
 export default function Home() {
   const { 
@@ -376,6 +377,9 @@ export default function Home() {
 
             {/* REALTIME ATMOSPHERIC DEBUG HUD PANEL */}
             <AtmosphereDebug />
+
+            {/* HEADER TOGGLES */}
+            <HeaderControls />
           </motion.div>
         )}
       </AnimatePresence>
