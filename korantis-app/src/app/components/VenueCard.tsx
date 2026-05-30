@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Bookmark, MapPin } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
+import { t } from '../utils/i18n';
 
 interface VenueCardProps {
   venue: ScoredVenue;
@@ -130,7 +131,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               <div className="flex flex-wrap gap-1.5 mt-1">
                 {venue.tags.map((tag) => (
                   <span key={tag} className="px-2.5 py-0.5 rounded-full border border-k-gold/10 text-[9px] font-sans tracking-wide text-k-gold-muted bg-k-gold/5">
-                    {tag}
+                    {t(tag, language)}
                   </span>
                 ))}
               </div>
@@ -178,7 +179,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               <div className="flex flex-wrap gap-1.5 mt-1.5">
                 {venue.tags.map((tag) => (
                   <span key={tag} className="px-2.5 py-0.5 rounded-full border border-white/5 text-[9px] font-sans tracking-wide text-k-text-secondary bg-white/[0.03]">
-                    {tag}
+                    {t(tag, language)}
                   </span>
                 ))}
               </div>
@@ -264,7 +265,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
                 <MapPin size={10} className="text-k-gold-muted" />
                 <span>{venue.location}</span>
                 <span className="w-1 h-1 rounded-full bg-k-border-light"></span>
-                <span className="capitalize">{venue.atmosphere.replace('-', ' ')} vibe</span>
+                <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {language === 'es' ? 'vibras' : 'vibe'}</span>
               </div>
             </div>
           </div>

@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bookmark, MapPin, Heart, Compass, FileText, BarChart3, User, Sparkles } from 'lucide-react';
+import { Bookmark, Heart, User, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
 import { ScoredVenue, useCircadian } from './contexts/CircadianContext';
@@ -42,9 +42,9 @@ export default function Home() {
     const enclosureVal = currentDrift[3];
     const paceVal = currentDrift[4];
 
-    let socialStr = socialVal < -0.2 ? 'intimate corners' : socialVal > 0.2 ? 'buzzing social hubs' : 'balanced social hubs';
-    let lightStr = enclosureVal < -0.2 ? 'airy, natural light' : enclosureVal > 0.2 ? 'dark, amber-lit shadows' : 'even lighting';
-    let paceStr = paceVal < -0.2 ? 'efficient rituals' : paceVal > 0.2 ? 'slow lingering pauses' : 'leisurely pacing';
+    const socialStr = socialVal < -0.2 ? 'intimate corners' : socialVal > 0.2 ? 'buzzing social hubs' : 'balanced social hubs';
+    const lightStr = enclosureVal < -0.2 ? 'airy, natural light' : enclosureVal > 0.2 ? 'dark, amber-lit shadows' : 'even lighting';
+    const paceStr = paceVal < -0.2 ? 'efficient rituals' : paceVal > 0.2 ? 'slow lingering pauses' : 'leisurely pacing';
 
     return `You are currently drawn to ${socialStr} with ${lightStr} and ${paceStr}. Your profile adapts to your implicit scroll speed, cards expanded, and saved atmospheres.`;
   }, [currentDrift]);
@@ -62,12 +62,7 @@ export default function Home() {
     return { afterMidnight, morningRitual, sundayCalm };
   }, [savedVenues]);
 
-  // Trigger telemetry click tracking when expanding a venue
-  const handleSelectVenue = (venue: ScoredVenue) => {
-    const { recordClick } = useCircadian();
-    // We can call context click tracking directly
-    setSelectedVenue(venue);
-  };
+
 
   // Re-link telemetry inside component event handler
   const { recordClick } = useCircadian();
@@ -255,12 +250,12 @@ export default function Home() {
                                 {venue.name}
                               </h3>
                               <p className="text-[11px] text-k-text-secondary font-sans truncate">
-                                {venue.location} &middot; <span className="capitalize">{venue.atmosphere.replace('-', ' ')}</span>
+                                {venue.location} &middot; <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {language === 'es' ? 'atmósfera' : 'atmosphere'}</span>
                               </p>
                             </div>
                             <div className="flex items-center gap-3.5 flex-shrink-0">
                               <span className="hidden md:inline px-3 py-1 rounded border border-k-gold-muted/10 text-[9px] font-sans tracking-wide text-k-gold-muted bg-k-gold/5 uppercase">
-                                {venue.category}
+                                {language === 'es' && venue.category_es ? venue.category_es : venue.category}
                               </span>
                               <button
                                 onClick={(e) => {
@@ -336,8 +331,8 @@ export default function Home() {
                                 <Image src="/venue_floreria.png" alt="Sanctuary" fill className="object-cover" />
                               </div>
                               <div className="flex-grow">
-                                <h4 className="text-xs font-sans font-medium">The Hidden Sanctuary</h4>
-                                <p className="text-[10px] text-k-text-tertiary font-sans">92% latent match</p>
+                                <h4 className="text-xs font-sans font-medium">{language === 'es' ? 'El Santuario Oculto' : 'The Hidden Sanctuary'}</h4>
+                                <p className="text-[10px] text-k-text-tertiary font-sans">{language === 'es' ? '92% compatibilidad' : '92% latent match'}</p>
                               </div>
                             </div>
                             <div className="flex items-center gap-3.5 p-3 rounded-xl border border-k-border bg-k-surface/20">
@@ -345,8 +340,8 @@ export default function Home() {
                                 <Image src="/venue_crisol.png" alt="Ritual" fill className="object-cover" />
                               </div>
                               <div className="flex-grow">
-                                <h4 className="text-xs font-sans font-medium">The Minimalist Ritual</h4>
-                                <p className="text-[10px] text-k-text-tertiary font-sans">87% latent match</p>
+                                <h4 className="text-xs font-sans font-medium">{language === 'es' ? 'El Ritual Minimalista' : 'The Minimalist Ritual'}</h4>
+                                <p className="text-[10px] text-k-text-tertiary font-sans">{language === 'es' ? '87% compatibilidad' : '87% latent match'}</p>
                               </div>
                             </div>
                           </div>

@@ -37,7 +37,42 @@ export const DICT = {
     pillCreative: 'Creative',
     pillSlowMornings: 'Slow Mornings',
     pillLateNight: 'Late Night',
-    intentExplanation: 'Synthesizing vector intent... Showing calm, atmospheric spaces aligned with your perceptual feeling profile.'
+    intentExplanation: 'Synthesizing vector intent... Showing calm, atmospheric spaces aligned with your perceptual feeling profile.',
+    // Tags
+    'soft work': 'soft work',
+    'intimate': 'intimate',
+    'botanical': 'botanical',
+    'wine': 'wine',
+    'morning ritual': 'morning ritual',
+    'evening slowdown': 'evening slowdown',
+    'jazz': 'jazz',
+    'books': 'books',
+    'speakeasy': 'speakeasy',
+    'vinyl': 'vinyl',
+    'tango': 'tango',
+    'historic': 'historic',
+    'pastries': 'pastries',
+    'cocktails': 'cocktails',
+    'rooftop': 'rooftop',
+    'industrial': 'industrial',
+    'minimal': 'minimal',
+    'brunch': 'brunch',
+    'specialty coffee': 'specialty coffee',
+    'roastery': 'roastery',
+    'slow pace': 'slow pace',
+    
+    // Venue Detail
+    atmosphericCharacter: 'Atmospheric Character',
+    softAcousticDensity: 'Soft Acoustic Density',
+    sustainedPacing: 'Sustained Pacing',
+    circadianShifts: 'Circadian Atmospheric Shifts',
+    activePhase: 'Active',
+    vignettes: 'Atmospheric Vignettes',
+    temporalPace: 'Temporal Pace',
+    temporalPaceDesc: 'Usually alive late into the night. Best visited after dusk.',
+    investment: 'Investment',
+    investmentDesc: 'Premium curated experience. Highly deliberate quality.',
+    atmosphereSuffix: 'atmosphere'
   },
   es: {
     explore: 'Explorar',
@@ -77,10 +112,46 @@ export const DICT = {
     pillCreative: 'Creativo',
     pillSlowMornings: 'Mañanas Lentas',
     pillLateNight: 'Noche Larga',
-    intentExplanation: 'Sintetizando intención vectorial... Mostrando espacios alineados a tu perfil perceptivo.'
+    intentExplanation: 'Sintetizando intención vectorial... Mostrando espacios alineados a tu perfil perceptivo.',
+    // Tags
+    'soft work': 'trabajo suave',
+    'intimate': 'íntimo',
+    'botanical': 'botánico',
+    'wine': 'vino',
+    'morning ritual': 'ritual de mañana',
+    'evening slowdown': 'descanso vespertino',
+    'jazz': 'jazz',
+    'books': 'libros',
+    'speakeasy': 'oculto',
+    'vinyl': 'vinilo',
+    'tango': 'tango',
+    'historic': 'histórico',
+    'pastries': 'pastelería',
+    'cocktails': 'cocteles',
+    'rooftop': 'terraza',
+    'industrial': 'industrial',
+    'minimal': 'minimalista',
+    'brunch': 'brunch',
+    'specialty coffee': 'café de especialidad',
+    'roastery': 'tostaduría',
+    'slow pace': 'ritmo lento',
+    
+    // Venue Detail
+    atmosphericCharacter: 'Carácter Atmosférico',
+    softAcousticDensity: 'Densidad Acústica Suave',
+    sustainedPacing: 'Ritmo Sostenido',
+    circadianShifts: 'Cambios Atmosféricos Circadianos',
+    activePhase: 'Activo',
+    vignettes: 'Viñetas Atmosféricas',
+    temporalPace: 'Ritmo Temporal',
+    temporalPaceDesc: 'Suele estar vivo hasta altas horas. Mejor visitarlo al anochecer.',
+    investment: 'Inversión',
+    investmentDesc: 'Experiencia premium curada. Calidad altamente deliberada.',
+    atmosphereSuffix: 'atmósfera'
   }
 };
 
-export function t(key: keyof typeof DICT.en, lang: 'en' | 'es'): string {
+export function t(key: string, lang: 'en' | 'es'): string {
+  // @ts-ignore
   return DICT[lang]?.[key] || DICT.en[key] || key;
 }

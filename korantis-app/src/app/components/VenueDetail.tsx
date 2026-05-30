@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, DollarSign, MapPin, Heart } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
+import { t } from '../utils/i18n';
 
 interface VenueDetailProps {
   venue: ScoredVenue;
@@ -28,24 +29,24 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
   const timeBlocks = [
     {
       phase: 'morning',
-      label: 'Morning',
+      label: language === 'es' ? 'Mañana' : 'Morning',
       desc: venue.atmosphere === 'morning' 
-        ? 'Restrained, quiet, and cool. A slow space to think and focus before the city wakes.'
-        : 'A calm, quiet shelter to begin the day. Ideal for reflection and steady ritual.'
+        ? (language === 'es' ? 'Contenido, silencioso y fresco. Un espacio lento para pensar y enfocarse antes de que la ciudad despierte.' : 'Restrained, quiet, and cool. A slow space to think and focus before the city wakes.')
+        : (language === 'es' ? 'Un refugio tranquilo para comenzar el día. Ideal para la reflexión y el ritual pausado.' : 'A calm, quiet shelter to begin the day. Ideal for reflection and steady ritual.')
     },
     {
       phase: 'afternoon',
-      label: 'Afternoon',
+      label: language === 'es' ? 'Tarde' : 'Afternoon',
       desc: venue.atmosphere === 'afternoon'
-        ? 'Soft botanical density with natural warmth. Conversations begin to layer.'
-        : 'Breezy daylight and slow pause. The atmosphere settles into comfortable alignment.'
+        ? (language === 'es' ? 'Suave densidad botánica con calidez natural. Las conversaciones empiezan a acumularse.' : 'Soft botanical density with natural warmth. Conversations begin to layer.')
+        : (language === 'es' ? 'Luz de día y pausa lenta. La atmósfera se asienta en un equilibrio cómodo.' : 'Breezy daylight and slow pause. The atmosphere settles into comfortable alignment.')
     },
     {
       phase: 'night',
-      label: 'Night',
+      label: language === 'es' ? 'Noche' : 'Night',
       desc: (venue.atmosphere === 'night' || venue.atmosphere === 'late-night')
-        ? 'Deep amber shadows and cinematic intimacy. Conversations become confessions.'
-        : 'Subtle candlelight and warm enclosure. Time slows as the city lights take over.'
+        ? (language === 'es' ? 'Sombras ámbar e intimidad cinematográfica. Las conversaciones se vuelven confesiones.' : 'Deep amber shadows and cinematic intimacy. Conversations become confessions.')
+        : (language === 'es' ? 'Sutil luz de velas y envoltura cálida. El tiempo se ralentiza mientras las luces de la ciudad toman el control.' : 'Subtle candlelight and warm enclosure. Time slows as the city lights take over.')
     }
   ];
 
@@ -102,7 +103,7 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
               <span>{venue.location}</span>
             </div>
             <span className="hidden sm:inline w-1 h-1 rounded-full bg-k-border-light"></span>
-            <span className="capitalize">{venue.atmosphere.replace('-', ' ')} atmosphere</span>
+            <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {t('atmosphereSuffix', language)}</span>
           </div>
         </div>
       </header>
@@ -124,19 +125,19 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
         {/* Ambient Characteristic Tags */}
         <section className="mb-12">
           <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-            Atmospheric Character
+            {t('atmosphericCharacter', language)}
           </h3>
           <div className="flex flex-wrap gap-2">
             {venue.tags.map((tag) => (
               <span key={tag} className="px-3.5 py-1.5 rounded-lg border border-k-gold/10 text-[11px] font-sans tracking-wide text-k-gold bg-k-gold-dim/40 shadow-sm">
-                {tag}
+                {t(tag, language)}
               </span>
             ))}
             <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
-              Soft Acoustic Density
+              {t('softAcousticDensity', language)}
             </span>
             <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
-              Sustained Pacing
+              {t('sustainedPacing', language)}
             </span>
           </div>
         </section>
@@ -144,7 +145,7 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
         {/* Chrono-Atmospheric Shifts (Circadian Drift) */}
         <section className="mb-14 border-t border-k-border/30 pt-10">
           <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-5">
-            Circadian Atmospheric Shifts
+            {t('circadianShifts', language)}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {timeBlocks.map((block) => (
@@ -162,7 +163,7 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
                   </span>
                   {(venue.atmosphere === block.phase || (venue.atmosphere === 'late-night' && block.phase === 'night')) && (
                     <span className="text-[8px] font-sans px-2 py-0.5 rounded-full border border-k-gold/20 text-k-gold font-medium bg-k-gold-dim">
-                      Active
+                      {t('activePhase', language)}
                     </span>
                   )}
                 </div>
@@ -177,7 +178,7 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
         {/* Cinematic Visual Gallery */}
         <section className="mb-14">
           <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-            Atmospheric Vignettes
+            {t('vignettes', language)}
           </h3>
           <div className="grid grid-cols-3 gap-3">
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
@@ -214,10 +215,10 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
               <Clock className="text-k-gold flex-shrink-0 mt-0.5" size={14} />
               <div>
                 <span className="text-[9px] text-k-text-tertiary font-sans tracking-wider uppercase block mb-1 font-medium">
-                  Temporal Pace
+                  {t('temporalPace', language)}
                 </span>
                 <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  Usually alive late into the night. Best visited after dusk.
+                  {t('temporalPaceDesc', language)}
                 </span>
               </div>
             </div>
@@ -225,10 +226,10 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
               <DollarSign className="text-k-gold flex-shrink-0 mt-0.5" size={14} />
               <div>
                 <span className="text-[9px] text-k-text-tertiary font-sans tracking-wider uppercase block mb-1 font-medium">
-                  Investment
+                  {t('investment', language)}
                 </span>
                 <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  Premium curated experience. Highly deliberate quality.
+                  {t('investmentDesc', language)}
                 </span>
               </div>
             </div>
