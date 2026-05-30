@@ -40,9 +40,9 @@ export default function AdminDashboardPage() {
   return (
     <div className="flex w-full h-full">
       {/* Main Grid Area */}
-      <div className={`flex-1 flex flex-col h-full transition-all duration-300 ${selectedId ? 'w-2/3' : 'w-full'}`}>
+      <div className={`flex-1 flex-col h-full transition-all duration-300 ${selectedId ? 'hidden md:flex md:w-2/3' : 'flex w-full'}`}>
         {/* Filters Bar (Stub) */}
-        <div className="p-4 border-b border-[#2A2A2A] bg-[#0A0A0A] flex gap-4">
+        <div className="p-4 border-b border-[#2A2A2A] bg-[#0A0A0A] flex flex-wrap md:flex-nowrap gap-4">
           <input 
             type="text" 
             placeholder="Filter by name..." 
@@ -61,8 +61,8 @@ export default function AdminDashboardPage() {
         </div>
 
         {/* Table */}
-        <div className="flex-1 overflow-auto bg-[#050505]">
-          <table className="w-full text-left font-mono text-[11px]">
+        <div className="flex-1 overflow-x-auto bg-[#050505]">
+          <table className="w-full text-left font-mono text-[11px] whitespace-nowrap md:whitespace-normal min-w-[600px] md:min-w-0">
             <thead className="bg-[#0A0A0A] text-[#888] sticky top-0 border-b border-[#2A2A2A] z-10 uppercase tracking-widest text-[9px]">
               <tr>
                 <th className="py-3 px-4 font-normal">Venue</th>
@@ -131,7 +131,7 @@ export default function AdminDashboardPage() {
 
       {/* Inspector Panel */}
       {selectedId && (
-        <div className="w-1/3 h-full border-l border-[#2A2A2A] bg-[#0A0A0A] flex-shrink-0 animate-in slide-in-from-right-8 duration-200">
+        <div className="w-full md:w-1/3 h-full border-l border-[#2A2A2A] bg-[#0A0A0A] flex-shrink-0 animate-in slide-in-from-right-8 duration-200 overflow-y-auto">
           <VenueInspectorPanel venueId={selectedId} onClose={() => setSelectedId(null)} />
         </div>
       )}
