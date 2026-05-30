@@ -98,7 +98,24 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="w-full pb-32 pt-0"
           >
-
+            {/* BRANDING TOP NAV */}
+            <nav className="w-full absolute top-0 left-0 z-50 flex items-center justify-between px-6 md:px-12 py-6">
+              <div className="font-display text-2xl tracking-widest text-white/90">KORANTIS</div>
+              <div className="hidden md:flex items-center gap-8 text-[11px] font-sans tracking-widest uppercase text-white/60">
+                <button className="hover:text-white transition-colors cursor-pointer text-white/90">Explore</button>
+                <button className="hover:text-white transition-colors cursor-pointer">Collections</button>
+                <button className="hover:text-white transition-colors cursor-pointer">For Venues</button>
+                <button className="hover:text-white transition-colors cursor-pointer">About</button>
+              </div>
+              <div className="flex items-center gap-4">
+                <button className="hidden md:block px-5 py-2 rounded-full bg-k-gold-dim text-k-gold border border-k-gold/30 text-[10px] uppercase tracking-widest hover:bg-k-gold hover:text-k-black transition-colors font-medium">
+                  Get the app
+                </button>
+                <button className="text-white/80 hover:text-white md:hidden">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+              </div>
+            </nav>
             {/* EXPLORE / SEARCH FEED TAB */}
             {activeTab === 'search' && (
               <div className="w-full max-w-4xl mx-auto px-6 md:px-12 flex flex-col items-center">

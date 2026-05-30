@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-@import "./styles/tokens.css";
-@import "./styles/base.css";
-@import "./styles/components.css";
 @theme {
   --color-background: var(--k-black);
   --color-foreground: var(--k-text);
