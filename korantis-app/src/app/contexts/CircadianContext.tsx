@@ -43,6 +43,10 @@ interface CircadianState {
   savedVenueIds: string[];
   toggleSaveVenue: (id: string) => void;
   dimensionLabels: { [key: number]: string };
+  language: 'en' | 'es';
+  setLanguage: (lang: 'en' | 'es') => void;
+  city: 'BUE' | 'NYC';
+  setCity: (city: 'BUE' | 'NYC') => void;
 }
 
 const DIMENSION_LABELS: { [key: number]: string } = {
