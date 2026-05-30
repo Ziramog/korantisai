@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body className="k-app-shell bg-k-black text-k-text font-sans antialiased overflow-x-hidden w-screen m-0 p-0 transition-colors duration-1000">
+      <body className="k-app-shell bg-k-black text-k-text font-sans antialiased overflow-x-hidden w-screen m-0 p-0">
         <CircadianProvider>
           {/* Circadian Global Layers (Procedurally animated by context variables) */}
           <div className="k-circadian-ambient"></div>

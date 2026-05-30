@@ -53,9 +53,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
         } else {
           if (entryTime > 0) {
             const dwellTime = performance.now() - entryTime;
-            if (dwellTime < 800) {
-              recordPassThrough(venue.atmosphere);
-            } else if (dwellTime >= 2000) {
+            if (dwellTime >= 2000) {
               recordDwell(venue.atmosphere, dwellTime);
             }
             entryTime = 0;

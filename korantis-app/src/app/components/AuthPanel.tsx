@@ -13,28 +13,56 @@ export default function AuthPanel() {
   const [errorMessage, setErrorMessage] = useState('');
   const supabase = createClient();
 
-  const handleMagicLink = async (e: React.FormEvent) => {
+  const [mode, setMode] = useState<'magic' | 'password'>('magic');
+  const [password, setPassword] = useState('');
+
+  const handleAuth = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setStatus('loading');
     setErrorMessage('');
 
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
-      },
-    });
+    if (mode === 'magic') {
+      const { error } = await supabase.auth.signInWithOtp({
+        email,
+        options: { emailRedirectTo: `${window.location.origin}/auth/callback` },
+      });
 
-    if (error) {
-      setStatus('error');
-      if (error.status === 429 || error.message.toLowerCase().includes('rate limit')) {
-        setErrorMessage(t('magicLinkError', language));
+      if (error) {
+        setStatus('error');
+        setErrorMessage(error.status === 429 ? t('magicLinkError', language) : error.message);
       } else {
-        setErrorMessage(error.message);
+        setStatus('success');
       }
     } else {
-      setStatus('success');
+      // Password Login
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) {
+        // If user doesn't exist, try to sign up
+        if (error.message.includes('Invalid login credentials')) {
+          const { error: signUpError } = await supabase.auth.signUp({
+            email,
+            password,
+          });
+          if (signUpError) {
+            setStatus('error');
+            setErrorMessage(signUpError.message);
+          } else {
+            // Auto login after sign up if email confirmation is disabled, otherwise wait
+            setStatus('success');
+          }
+        } else {
+          setStatus('error');
+          setErrorMessage(error.message);
+        }
+      } else {
+        setStatus('idle');
+        // Will trigger onAuthStateChange
+      }
     }
   };
 
@@ -48,11 +76,11 @@ export default function AuthPanel() {
         </div>
         <h2 className="text-2xl font-display text-k-text tracking-wide mb-2">{t('loginHeader', language)}</h2>
         <p className="text-xs font-sans text-k-text-secondary leading-relaxed">
-          {t('loginDesc', language)}
+          {mode === 'magic' ? t('loginDesc', language) : 'Enter your email and password to continue.'}
         </p>
       </div>
 
-      {status === 'success' ? (
+      {status === 'success' && mode === 'magic' ? (
         <div className="flex flex-col items-center justify-center py-6 text-center animate-fade-in">
           <div className="w-12 h-12 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 mb-4 shadow-lg">
             <CheckCircle2 size={24} />
@@ -60,8 +88,16 @@ export default function AuthPanel() {
           <h3 className="text-sm font-sans text-k-text mb-2">Magic link sent</h3>
           <p className="text-xs font-sans text-k-text-tertiary">{t('checkEmail', language)}</p>
         </div>
+      ) : status === 'success' && mode === 'password' ? (
+         <div className="flex flex-col items-center justify-center py-6 text-center animate-fade-in">
+          <div className="w-12 h-12 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 mb-4 shadow-lg">
+            <CheckCircle2 size={24} />
+          </div>
+          <h3 className="text-sm font-sans text-k-text mb-2">Account created</h3>
+          <p className="text-xs font-sans text-k-text-tertiary">Please check your email to verify your account, or wait to be redirected.</p>
+        </div>
       ) : (
-        <form onSubmit={handleMagicLink} className="flex flex-col gap-4 relative z-10">
+        <form onSubmit={handleAuth} className="flex flex-col gap-4 relative z-10">
           <div className="relative">
             <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-k-text-tertiary">
               <Mail size={16} />
@@ -75,6 +111,19 @@ export default function AuthPanel() {
               required
             />
           </div>
+
+          {mode === 'password' && (
+            <div className="relative">
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full bg-k-surface/50 border border-k-border-light text-k-text text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:border-k-gold/50 focus:bg-k-surface transition-all placeholder:text-k-text-tertiary font-sans"
+                required
+              />
+            </div>
+          )}
           
           {status === 'error' && (
             <p className="text-[10px] text-red-400 font-sans px-2">{errorMessage}</p>
@@ -83,13 +132,25 @@ export default function AuthPanel() {
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="w-full bg-k-gold text-k-black font-sans text-xs uppercase tracking-widest py-4 rounded-xl hover:bg-k-gold-light transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+            className="w-full bg-k-gold text-k-black font-sans text-xs uppercase tracking-widest py-4 rounded-xl hover:bg-k-gold-light transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed font-medium mt-2"
           >
             {status === 'loading' ? (
               <Loader2 size={16} className="animate-spin" />
             ) : (
               t('continue', language)
             )}
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setMode(mode === 'magic' ? 'password' : 'magic');
+              setStatus('idle');
+              setErrorMessage('');
+            }}
+            className="text-[10px] text-k-text-tertiary hover:text-k-text-secondary font-sans uppercase tracking-widest mt-4 transition-colors"
+          >
+            {mode === 'magic' ? 'Use password instead' : 'Use magic link instead'}
           </button>
         </form>
       )}
