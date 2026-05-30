@@ -3,6 +3,9 @@
 import { useEffect, useState } from 'react';
 import { Search, Bookmark, User } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
+import { useCircadian } from '../contexts/CircadianContext';
+
+import { t } from '../utils/i18n';
 
 interface GlobalNavProps {
   activeTab: 'search' | 'saved' | 'profile';
@@ -11,34 +14,37 @@ interface GlobalNavProps {
 }
 
 export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
+  const { language } = useCircadian();
   const [isVisible, setIsVisible] = useState(true);
-  const { scrollY } = useScroll();
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious() || 0;
-    
-    // If we're near the top, always show
-    if (latest < 50) {
-      setIsVisible(true);
-      return;
-    }
-
-    // Scrolling down (hide) vs Scrolling up (show)
-    if (latest > previous && latest > 50) {
-      setIsVisible(false);
-    } else if (latest < previous) {
-      setIsVisible(true);
-    }
-  });
-
-  // Always show when scrolling stops for 800ms
   useEffect(() => {
+    let lastScrollY = window.scrollY;
     let scrollTimeout: NodeJS.Timeout;
+    
     const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Prevent rubber-banding issues on iOS (negative scroll or scrolling past bottom)
+      if (currentScrollY <= 0) {
+        setIsVisible(true);
+        lastScrollY = currentScrollY;
+        return;
+      }
+
+      // Hide when scrolling down, show when scrolling up
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      lastScrollY = currentScrollY;
+
+      // Always show when scrolling stops
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         setIsVisible(true);
-      }, 800);
+      }, 400); // 400ms is fast enough to feel responsive
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -48,7 +54,6 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
     };
   }, []);
 
-  // Hide nav when in detailed venue view, matching the immersive layout
   if (selectedVenue) return null;
 
   return (
@@ -72,7 +77,7 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
               }`}
             >
               <Search size={18} strokeWidth={activeTab === 'search' ? 2.5 : 1.8} />
-              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">Explore</span>
+              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('explore', language)}</span>
               {activeTab === 'search' && (
                 <motion.div 
                   layoutId="active-indicator"
@@ -91,7 +96,7 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
               }`}
             >
               <Bookmark size={18} strokeWidth={activeTab === 'saved' ? 2.5 : 1.8} />
-              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">Atlas</span>
+              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('atlas', language)}</span>
               {activeTab === 'saved' && (
                 <motion.div 
                   layoutId="active-indicator"
@@ -110,7 +115,7 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
               }`}
             >
               <User size={18} strokeWidth={activeTab === 'profile' ? 2.5 : 1.8} />
-              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">Taste</span>
+              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('taste', language)}</span>
               {activeTab === 'profile' && (
                 <motion.div 
                   layoutId="active-indicator"

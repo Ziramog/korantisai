@@ -16,13 +16,16 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
     recordDwell, 
     recordPassThrough, 
     savedVenueIds, 
-    toggleSaveVenue 
+    toggleSaveVenue,
+    language 
   } = useCircadian();
 
   const ref = useRef<HTMLDivElement>(null);
   const [debugMode, setDebugMode] = useState(false);
 
   const isSaved = savedVenueIds.includes(venue.id);
+  const cat = language === 'es' && venue.category_es ? venue.category_es : venue.category;
+  const tagline = language === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline;
 
   // Check URL query parameters for taste debugging HUD
   useEffect(() => {
@@ -104,7 +107,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               <div className="flex justify-between items-start">
                 <div>
                   <span className="text-[10px] text-k-gold tracking-widest uppercase font-sans font-medium">
-                    {venue.category}
+                    {cat}
                   </span>
                   <h3 className="text-k-text font-display text-2xl font-normal mt-0.5 leading-tight">
                     {venue.name}
@@ -122,7 +125,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
                 </button>
               </div>
               <p className="text-xs text-k-text-secondary font-sans font-light leading-relaxed">
-                {venue.tagline}
+                {tagline}
               </p>
               <div className="flex flex-wrap gap-1.5 mt-1">
                 {venue.tags.map((tag) => (
@@ -164,13 +167,13 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
             <div className="relative z-10 flex flex-col gap-2.5">
               <div className="w-8 h-[2px] bg-k-gold mb-1"></div>
               <span className="text-[10px] text-k-gold tracking-widest uppercase font-sans font-medium">
-                {venue.category}
+                {cat}
               </span>
               <h3 className="text-k-text font-display text-3xl md:text-4xl font-normal leading-tight">
                 {venue.name}
               </h3>
               <p className="text-xs text-k-text-secondary font-sans font-light leading-relaxed max-w-sm">
-                {venue.tagline}
+                {tagline}
               </p>
               <div className="flex flex-wrap gap-1.5 mt-1.5">
                 {venue.tags.map((tag) => (
@@ -209,13 +212,13 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
 
             <div className="relative z-10 flex flex-col gap-1.5">
               <span className="text-[9px] text-k-gold tracking-widest uppercase font-sans font-medium">
-                {venue.category}
+                {cat}
               </span>
               <h3 className="text-k-text font-display text-3xl font-normal leading-tight">
                 {venue.name}
               </h3>
               <p className="text-xs text-k-text-secondary font-sans font-light leading-relaxed max-w-md">
-                {venue.tagline}
+                {tagline}
               </p>
             </div>
           </div>
@@ -247,13 +250,13 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
 
               <div className="flex flex-col gap-1.5">
                 <span className="text-[9px] text-k-gold tracking-widest uppercase font-sans font-medium">
-                  {venue.category}
+                  {cat}
                 </span>
                 <h3 className="text-k-text font-display text-2xl font-normal leading-tight">
                   {venue.name}
                 </h3>
                 <p className="text-xs text-k-text-secondary font-sans font-light leading-relaxed">
-                  {venue.tagline}
+                  {tagline}
                 </p>
               </div>
 

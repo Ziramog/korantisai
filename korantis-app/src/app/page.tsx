@@ -15,6 +15,7 @@ import AtmosphereDebug from './components/AtmosphereDebug';
 import AuthPanel from './components/AuthPanel';
 import MapExplorer from './components/MapExplorer';
 import HeaderControls from './components/HeaderControls';
+import { t } from './utils/i18n';
 
 export default function Home() {
   const { 
@@ -23,7 +24,8 @@ export default function Home() {
     savedVenueIds, 
     toggleSaveVenue, 
     currentDrift,
-    currentPhase
+    currentPhase,
+    language
   } = useCircadian();
 
   const [activeTab, setActiveTab] = useState<'search' | 'saved' | 'profile'>('search');
@@ -112,7 +114,7 @@ export default function Home() {
                       viewMode === 'feed' ? 'bg-k-gold text-k-black font-medium' : 'text-k-text-secondary hover:text-k-text'
                     }`}
                   >
-                    Resonance Feed
+                    {t('resonanceFeed', language)}
                   </button>
                   <button
                     onClick={() => setViewMode('map')}
@@ -120,7 +122,7 @@ export default function Home() {
                       viewMode === 'map' ? 'bg-k-gold text-k-black font-medium' : 'text-k-text-secondary hover:text-k-text'
                     }`}
                   >
-                    Spatial Atlas
+                    {t('spatialAtlas', language)}
                   </button>
                 </div>
 
@@ -159,10 +161,10 @@ export default function Home() {
               <div className="max-w-4xl mx-auto px-6 md:px-12 pt-12 md:pt-24 animate-fade-in">
                 <header className="mb-14">
                   <h1 className="text-k-text font-display text-4xl md:text-5xl mb-2.5 tracking-wide">
-                    Your Atlas
+                    {t('yourAtlas', language)}
                   </h1>
                   <p className="text-sm text-k-text-secondary font-sans font-light">
-                    Places you&apos;ve chosen to remember across your circadian journey.
+                    {t('atlasDesc', language)}
                   </p>
                 </header>
 
@@ -170,7 +172,7 @@ export default function Home() {
                   {/* Collections Cards Grid */}
                   <section>
                     <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-6">
-                      Dynamic Collections
+                      {t('dynamicCollections', language)}
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                       {/* Collection 1: After Midnight */}
@@ -183,8 +185,8 @@ export default function Home() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
                         <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">After Midnight</h3>
-                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.afterMidnight} atmospheres</p>
+                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('afterMidnight', language)}</h3>
+                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.afterMidnight} {t('atmospheres', language)}</p>
                         </div>
                       </div>
 
@@ -198,8 +200,8 @@ export default function Home() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
                         <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">Morning Ritual</h3>
-                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.morningRitual} atmospheres</p>
+                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('morningRitual', language)}</h3>
+                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.morningRitual} {t('atmospheres', language)}</p>
                         </div>
                       </div>
 
@@ -213,8 +215,8 @@ export default function Home() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
                         <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">Sunday Calm</h3>
-                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.sundayCalm} atmospheres</p>
+                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('sundayCalm', language)}</h3>
+                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.sundayCalm} {t('atmospheres', language)}</p>
                         </div>
                       </div>
                     </div>
@@ -223,18 +225,18 @@ export default function Home() {
                   {/* All Saved List */}
                   <section>
                     <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-6">
-                      All Saved Places
+                      {t('allSavedPlaces', language)}
                     </h2>
                     
                     {savedVenues.length === 0 ? (
                       <div className="py-16 text-center border border-dashed border-k-border rounded-2xl bg-k-surface/10">
                         <Bookmark className="mx-auto text-k-text-tertiary mb-4 opacity-40" size={32} />
-                        <p className="text-sm text-k-text-secondary font-sans font-light">Your Atlas is currently empty.</p>
+                        <p className="text-sm text-k-text-secondary font-sans font-light">{t('atlasEmpty', language)}</p>
                         <button 
                           onClick={() => setActiveTab('search')}
                           className="mt-4 px-5 py-2 rounded-full border border-k-gold-muted/40 text-xs font-sans text-k-gold bg-k-gold-dim hover:bg-k-gold-dim/60 transition-colors cursor-pointer"
                         >
-                          Discover Atmospheres
+                          {t('discoverAtmospheres', language)}
                         </button>
                       </div>
                     ) : (
@@ -295,10 +297,10 @@ export default function Home() {
                       </div>
                       <div className="mt-4 md:mt-0">
                         <h1 className="text-k-text font-display text-4xl md:text-5xl mb-2.5 tracking-wide">
-                          Your Taste Coordinates
+                          {t('tasteCoordinates', language)}
                         </h1>
                         <p className="text-sm text-k-text-secondary font-sans font-light">
-                          Korantis learns and shapes your latent profile through implicit discovery.
+                          {t('tasteDesc', language)}
                         </p>
                       </div>
                     </header>
@@ -316,7 +318,7 @@ export default function Home() {
                             <Sparkles size={16} className="animate-pulse" />
                           </div>
                           <h3 className="text-xs font-sans uppercase tracking-widest text-k-gold mb-3.5 font-medium">
-                            Atmospheric Insights
+                            {t('atmosphericInsights', language)}
                           </h3>
                           <p className="text-xs text-k-text-secondary font-sans font-light leading-loose text-justify">
                             {tasteDescriptor}
@@ -326,7 +328,7 @@ export default function Home() {
                         {/* Matched Archetypes */}
                         <section>
                           <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-                            Strongest Circadian Affinities
+                            {t('strongestAffinities', language)}
                           </h3>
                           <div className="flex flex-col gap-3">
                             <div className="flex items-center gap-3.5 p-3 rounded-xl border border-k-border bg-k-surface/20">
@@ -353,12 +355,12 @@ export default function Home() {
                         {/* Meta Preferences */}
                         <section className="grid grid-cols-2 gap-4">
                           <div className="p-4 bg-k-surface-elevated/20 border border-k-border rounded-xl">
-                            <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">Peak Discoveries</span>
+                            <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">{t('metaPreferences', language)}</span>
                             <span className="text-xs text-k-gold font-sans capitalize">{currentPhase.replace('-', ' ')}</span>
                           </div>
                           <div className="p-4 bg-k-surface-elevated/20 border border-k-border rounded-xl">
-                            <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">Atlas Index</span>
-                            <span className="text-xs text-k-gold font-sans">{savedVenueIds.length} Bookmarks</span>
+                            <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">{t('atlasIndex', language)}</span>
+                            <span className="text-xs text-k-gold font-sans">{savedVenueIds.length} {t('bookmarks', language)}</span>
                           </div>
                         </section>
                       </div>

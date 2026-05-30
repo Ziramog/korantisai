@@ -3,8 +3,11 @@
 import { useState } from 'react';
 import { createClient } from '@/utils/supabase/client';
 import { Sparkles, Mail, Loader2, CheckCircle2 } from 'lucide-react';
+import { useCircadian } from '../contexts/CircadianContext';
+import { t } from '../utils/i18n';
 
 export default function AuthPanel() {
+  const { language } = useCircadian();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -25,7 +28,11 @@ export default function AuthPanel() {
 
     if (error) {
       setStatus('error');
-      setErrorMessage(error.message);
+      if (error.status === 429 || error.message.toLowerCase().includes('rate limit')) {
+        setErrorMessage(t('magicLinkError', language));
+      } else {
+        setErrorMessage(error.message);
+      }
     } else {
       setStatus('success');
     }
@@ -39,9 +46,9 @@ export default function AuthPanel() {
         <div className="w-12 h-12 rounded-full bg-k-gold-dim border border-k-gold/20 flex items-center justify-center text-k-gold mx-auto mb-4 shadow-lg">
           <Sparkles size={20} />
         </div>
-        <h2 className="text-2xl font-display text-k-text tracking-wide mb-2">Sync Your Atmosphere</h2>
+        <h2 className="text-2xl font-display text-k-text tracking-wide mb-2">{t('loginHeader', language)}</h2>
         <p className="text-xs font-sans text-k-text-secondary leading-relaxed">
-          Create a persistent psychogeographic identity. Your taste centroid and atlas bookmarks will sync across devices.
+          {t('loginDesc', language)}
         </p>
       </div>
 
@@ -51,7 +58,7 @@ export default function AuthPanel() {
             <CheckCircle2 size={24} />
           </div>
           <h3 className="text-sm font-sans text-k-text mb-2">Magic link sent</h3>
-          <p className="text-xs font-sans text-k-text-tertiary">Check {email} for your secure login link.</p>
+          <p className="text-xs font-sans text-k-text-tertiary">{t('checkEmail', language)}</p>
         </div>
       ) : (
         <form onSubmit={handleMagicLink} className="flex flex-col gap-4 relative z-10">
@@ -61,7 +68,7 @@ export default function AuthPanel() {
             </div>
             <input
               type="email"
-              placeholder="Your email address"
+              placeholder={t('emailPlaceholder', language)}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full bg-k-surface/50 border border-k-border-light text-k-text text-sm rounded-xl pl-12 pr-4 py-3.5 focus:outline-none focus:border-k-gold/50 focus:bg-k-surface transition-all placeholder:text-k-text-tertiary font-sans"
@@ -81,7 +88,7 @@ export default function AuthPanel() {
             {status === 'loading' ? (
               <Loader2 size={16} className="animate-spin" />
             ) : (
-              'Send Magic Link'
+              t('continue', language)
             )}
           </button>
         </form>

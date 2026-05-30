@@ -12,9 +12,12 @@ interface VenueDetailProps {
 }
 
 export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
-  const { savedVenueIds, toggleSaveVenue } = useCircadian();
+  const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
 
   const isSaved = savedVenueIds.includes(venue.id);
+  const cat = language === 'es' && venue.category_es ? venue.category_es : venue.category;
+  const tagline = language === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline;
+  const narrative = language === 'es' && venue.narrative_es ? venue.narrative_es : venue.narrative;
 
   // Scroll back to the top of the detail view on mount
   useEffect(() => {
@@ -88,7 +91,7 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
         {/* Hero Meta Info - Responsive bottom positioning */}
         <div className="absolute bottom-6 left-5 right-5 md:left-12 z-20 flex flex-col gap-2 max-w-2xl">
           <span className="text-[10px] text-k-gold tracking-widest uppercase font-sans font-medium">
-            {venue.category}
+            {cat}
           </span>
           <h1 className="text-k-text font-display text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide drop-shadow-md leading-tight">
             {venue.name}
@@ -110,10 +113,10 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
         <section className="mb-10 border-b border-k-border/30 pb-10">
           <div className="flex flex-col gap-3">
             <p className="text-lg md:text-2xl text-k-gold-light font-display italic font-light leading-relaxed max-w-3xl">
-              &ldquo;{venue.tagline}&rdquo;
+              &ldquo;{tagline}&rdquo;
             </p>
             <p className="text-xs md:text-sm text-k-text-secondary font-sans font-light leading-relaxed mt-3 text-justify">
-              {venue.narrative}
+              {narrative}
             </p>
           </div>
         </section>
