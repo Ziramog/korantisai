@@ -279,7 +279,6 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
       className={`w-full flex justify-center ${spacingStyles}`}
     >
       <motion.div
-        layoutId={`card-wrap-${venue.id}`}
         onClick={() => onSelect(venue)}
         className={`relative overflow-hidden cursor-pointer group shadow-2xl transition-all duration-[600ms] ${
           venue.cardSize !== 'compact' 

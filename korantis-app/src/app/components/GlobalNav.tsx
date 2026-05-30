@@ -15,55 +15,15 @@ interface GlobalNavProps {
 
 export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
   const { language } = useCircadian();
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-    let scrollTimeout: NodeJS.Timeout;
-    
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      // Prevent rubber-banding issues on iOS (negative scroll or scrolling past bottom)
-      if (currentScrollY <= 0) {
-        setIsVisible(true);
-        lastScrollY = currentScrollY;
-        return;
-      }
-
-      // Hide when scrolling down, show when scrolling up
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setIsVisible(false);
-      } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true);
-      }
-
-      lastScrollY = currentScrollY;
-
-      // Always show when scrolling stops
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        setIsVisible(true);
-      }, 400); // 400ms is fast enough to feel responsive
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(scrollTimeout);
-    };
-  }, []);
-
   if (selectedVenue) return null;
 
   return (
     <AnimatePresence>
-      {isVisible && (
-        <div className="fixed bottom-6 sm:bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none px-4">
-          <motion.nav 
-            initial={{ y: 80, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 80, opacity: 0 }}
+      <div className="fixed bottom-6 sm:bottom-8 left-0 right-0 z-50 flex justify-center pointer-events-none px-4">
+        <motion.nav 
+          initial={{ y: 80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 80, opacity: 0 }}
             transition={{ type: 'spring', damping: 25, stiffness: 220 }}
             className="flex items-center gap-8 sm:gap-12 px-6 sm:px-8 py-3 rounded-full bg-[#0F0D0B]/90 backdrop-blur-xl border border-white/10 shadow-[0_16px_40px_rgba(0,0,0,0.7)] pointer-events-auto w-full max-w-[280px] sm:max-w-none sm:w-auto justify-around sm:justify-center"
           >
@@ -125,7 +85,6 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
             </button>
           </motion.nav>
         </div>
-      )}
     </AnimatePresence>
   );
 }

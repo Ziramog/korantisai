@@ -124,29 +124,21 @@ export default function Home() {
                 {viewMode === 'map' ? (
                   <MapExplorer onSelectVenue={handleVenueClick} />
                 ) : (
-                  <motion.div 
-                    layout
+                  <div 
                     className="w-full flex flex-col items-center mt-12"
                   >
                     {rankedVenues.map((venue) => (
-                      <motion.div
+                      <div
                         key={venue.id}
-                        layout
-                        transition={{
-                          type: 'spring',
-                          stiffness: 180,
-                          damping: 26,
-                          mass: 1.1
-                        }}
                         className="w-full flex justify-center"
                       >
                         <VenueCard 
                           venue={venue} 
                           onSelect={handleVenueClick} 
                         />
-                      </motion.div>
+                      </div>
                     ))}
-                  </motion.div>
+                  </div>
                 )}
               </div>
             )}
