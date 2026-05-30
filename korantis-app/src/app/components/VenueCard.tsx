@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Bookmark, MapPin } from 'lucide-react';
+import { Bookmark } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
 
@@ -25,7 +25,6 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
   const [debugMode, setDebugMode] = useState(false);
 
   const isSaved = savedVenueIds.includes(venue.id);
-  const cat = language === 'es' && venue.category_es ? venue.category_es : venue.category;
   const tagline = language === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline;
   const placeCue = venue.location || venue.atmosphere.replace('-', ' ');
 
@@ -85,7 +84,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
         e.stopPropagation();
         toggleSaveVenue(venue.id);
       }}
-      className={className}
+      className={`${className} ${isSaved ? 'is-saved is-visible' : ''}`}
       aria-label={isSaved ? 'Unsave venue' : 'Save venue'}
       aria-pressed={isSaved}
     >
@@ -96,7 +95,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
   const renderTags = () => (
     <div className="k-card__tags">
       {venue.tags.map((tag) => (
-        <span key={tag} className="k-card__tag">
+        <span key={tag} className="k-tag k-tag--ghost">
           {t(tag, language)}
         </span>
       ))}
@@ -123,20 +122,15 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
             <div className="k-card__panel">
               <div className="k-card__panel-header">
                 <div>
-                  <span className="k-card__category">
-                    {cat}
-                  </span>
                   <h3 className="k-card__name">
                     {venue.name}
                   </h3>
                   <p className="k-card__location">{placeCue}</p>
                 </div>
-                {renderBookmark('k-card__panel-bookmark')}
               </div>
               <p className="k-card__tagline">
                 {tagline}
               </p>
-              {renderTags()}
             </div>
           </>
         );
@@ -152,7 +146,6 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
                 priority={venue.id === 'floreria'}
                 className="k-card__image"
               />
-              <div className="k-card__vignette"></div>
               <div className="k-card__gradient"></div>
             </div>
 
@@ -160,9 +153,6 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
 
             <div className="k-card__content">
               <div className="k-card__accent-line"></div>
-              <span className="k-card__category">
-                {cat}
-              </span>
               <h3 className="k-card__name">
                 {venue.name}
               </h3>
@@ -188,12 +178,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               <div className="k-card__gradient"></div>
             </div>
 
-            {renderBookmark()}
-
             <div className="k-card__content">
-              <span className="k-card__category">
-                {cat}
-              </span>
               <h3 className="k-card__name">
                 {venue.name}
               </h3>
@@ -201,7 +186,6 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               <p className="k-card__tagline">
                 {tagline}
               </p>
-              {renderTags()}
             </div>
           </>
         );
@@ -219,26 +203,13 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               />
             </div>
             <div className="k-card__content">
-              {renderBookmark()}
-
-              <div>
-                <span className="k-card__category">
-                  {cat}
-                </span>
-                <h3 className="k-card__name">
-                  {venue.name}
-                </h3>
-                <p className="k-card__tagline">
-                  {tagline}
-                </p>
-              </div>
-
-              <div className="k-card__meta">
-                <MapPin size={10} className="text-k-gold-muted" />
-                <span>{venue.location}</span>
-                <span className="k-card__meta-dot"></span>
-                <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {language === 'es' ? 'vibras' : 'vibe'}</span>
-              </div>
+              <h3 className="k-card__name">
+                {venue.name}
+              </h3>
+              <p className="k-card__location">{placeCue}</p>
+              <p className="k-card__tagline">
+                {tagline}
+              </p>
             </div>
           </>
         );
