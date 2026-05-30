@@ -1,201 +1,140 @@
 "use client";
 
-import { useState, useEffect } from 'react';
-import { useCircadian } from '../contexts/CircadianContext';
-import { Sliders, Save, CheckCircle, Database } from 'lucide-react';
-import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+import { VenueRow } from '../api/admin/venues/route';
+import VenueInspectorPanel from './components/VenueInspectorPanel';
 
-export default function AdminDashboard() {
-  const { rankedVenues, dimensionLabels } = useCircadian();
-  const [selectedVenue, setSelectedVenue] = useState<any>(null);
-  
-  // Local state for the vector being edited
-  const [editVector, setEditVector] = useState<number[]>(Array(8).fill(0));
-  
-  // Save state
-  const [isSaving, setIsSaving] = useState(false);
-  const [saveStatus, setSaveStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  // Simple hardcoded auth for demo purposes
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [passcode, setPasscode] = useState('');
-
-  const handleAuth = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (passcode === 'k_admin_123') {
-      setIsAuthenticated(true);
-    }
-  };
+export default function AdminDashboardPage() {
+  const [venues, setVenues] = useState<VenueRow[]>([]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (selectedVenue) {
-      // In CircadianContext, tasteVector is present on the venue if loaded, 
-      // but rankedVenues doesn't expose it directly in the type unless we cast it.
-      // Wait, let's just default to [0,0,0,0,0,0,0,0] if missing, but we really want the current prior.
-      // Since it's a prototype, we'll try to read it.
-      const current = selectedVenue.tasteVector || Array(8).fill(0);
-      setEditVector([...current]);
-      setSaveStatus('idle');
-    }
-  }, [selectedVenue]);
-
-  const handleSliderChange = (index: number, value: number) => {
-    const newVector = [...editVector];
-    newVector[index] = value;
-    setEditVector(newVector);
-    setSaveStatus('idle');
-  };
-
-  const handleSave = async () => {
-    if (!selectedVenue) return;
-    setIsSaving(true);
-    
-    try {
-      const res = await fetch('/api/admin/venues', {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          venueId: selectedVenue.id,
-          tasteVector: editVector
-        })
+    fetch('/api/admin/venues')
+      .then(res => res.json())
+      .then(data => {
+        setVenues(data.venues);
+        setLoading(false);
       });
+  }, []);
 
-      if (!res.ok) throw new Error('Failed to update');
-      
-      setSaveStatus('success');
-      // Update local context seamlessly
-      selectedVenue.tasteVector = [...editVector];
-    } catch (err) {
-      console.error(err);
-      setSaveStatus('error');
-    } finally {
-      setIsSaving(false);
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'published': return 'text-green-400 bg-green-400/10 border-green-400/20';
+      case 'ready_for_review': return 'text-k-gold bg-k-gold/10 border-k-gold/20';
+      case 'processing': return 'text-blue-400 bg-blue-400/10 border-blue-400/20';
+      default: return 'text-gray-400 bg-gray-400/10 border-gray-400/20';
     }
   };
 
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen flex items-center justify-center p-6">
-        <form onSubmit={handleAuth} className="w-full max-w-sm bg-k-surface-elevated/20 p-8 rounded-2xl border border-white/5 text-center">
-          <Database size={32} className="text-k-gold mx-auto mb-4" />
-          <h1 className="text-2xl font-display text-white mb-6">Atmosphere Seeder v1</h1>
-          <input 
-            type="password" 
-            placeholder="Admin Passcode"
-            value={passcode}
-            onChange={e => setPasscode(e.target.value)}
-            className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-k-gold mb-4 text-center font-mono tracking-widest"
-          />
-          <button type="submit" className="w-full bg-k-gold text-black font-bold uppercase tracking-wider text-xs py-3 rounded-lg hover:bg-k-gold-light transition">
-            Authenticate
-          </button>
-        </form>
-      </div>
-    );
-  }
+  const getResonanceColor = (label: string) => {
+    switch (label) {
+      case 'almost_identical': return 'text-green-400';
+      case 'strong': return 'text-green-500';
+      case 'partial': return 'text-yellow-500';
+      case 'divergent': return 'text-red-400';
+      default: return 'text-gray-400';
+    }
+  };
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row text-k-text bg-[#0A0A0A]">
-      {/* Sidebar List */}
-      <div className="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-white/5 h-auto md:h-screen md:overflow-y-auto p-6 bg-k-surface/30 flex-shrink-0">
-        <div className="flex items-center gap-3 mb-8">
-          <Database size={20} className="text-k-gold" />
-          <h1 className="text-xl font-display uppercase tracking-widest">Atmosphere Seeder</h1>
+    <div className="flex w-full h-full">
+      {/* Main Grid Area */}
+      <div className={`flex-1 flex flex-col h-full transition-all duration-300 ${selectedId ? 'w-2/3' : 'w-full'}`}>
+        {/* Filters Bar (Stub) */}
+        <div className="p-4 border-b border-[#2A2A2A] bg-[#0A0A0A] flex gap-4">
+          <input 
+            type="text" 
+            placeholder="Filter by name..." 
+            className="bg-[#111] border border-[#2A2A2A] rounded-sm px-3 py-1.5 text-xs text-[#E0E0E0] outline-none focus:border-[#555] font-mono"
+          />
+          <select className="bg-[#111] border border-[#2A2A2A] rounded-sm px-3 py-1.5 text-xs text-[#E0E0E0] outline-none focus:border-[#555] font-mono">
+            <option value="">Status: All</option>
+            <option value="ready_for_review">Ready for Review</option>
+            <option value="published">Published</option>
+          </select>
+          <select className="bg-[#111] border border-[#2A2A2A] rounded-sm px-3 py-1.5 text-xs text-[#E0E0E0] outline-none focus:border-[#555] font-mono">
+            <option value="">Divergence: All</option>
+            <option value="divergent">Divergent</option>
+            <option value="strong">Strong</option>
+          </select>
         </div>
 
-        <div className="flex flex-col gap-2 max-h-[40vh] md:max-h-none overflow-y-auto md:overflow-y-visible pr-1 md:pr-0">
-          {rankedVenues.map(venue => (
-            <button
-              key={venue.id}
-              onClick={() => setSelectedVenue(venue)}
-              className={`text-left p-4 rounded-xl border transition-all ${
-                selectedVenue?.id === venue.id 
-                  ? 'border-k-gold bg-k-gold/5' 
-                  : 'border-white/5 hover:border-white/20 hover:bg-white/5'
-              }`}
-            >
-              <h3 className="font-display text-lg text-white">{venue.name}</h3>
-              <p className="text-[10px] uppercase tracking-wider text-k-text-tertiary font-sans mt-1">
-                {venue.category} &middot; {venue.atmosphere.replace('-', ' ')}
-              </p>
-            </button>
-          ))}
+        {/* Table */}
+        <div className="flex-1 overflow-auto bg-[#050505]">
+          <table className="w-full text-left font-mono text-[11px]">
+            <thead className="bg-[#0A0A0A] text-[#888] sticky top-0 border-b border-[#2A2A2A] z-10 uppercase tracking-widest text-[9px]">
+              <tr>
+                <th className="py-3 px-4 font-normal">Venue</th>
+                <th className="py-3 px-4 font-normal">City</th>
+                <th className="py-3 px-4 font-normal">Status</th>
+                <th className="py-3 px-4 font-normal">Resonance</th>
+                <th className="py-3 px-4 font-normal">Quality</th>
+                <th className="py-3 px-4 font-normal text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#1A1A1A]">
+              {loading ? (
+                <tr>
+                  <td colSpan={6} className="text-center py-10 text-[#555]">
+                    Initializing semantic grid...
+                  </td>
+                </tr>
+              ) : (
+                venues.map((venue) => (
+                  <tr 
+                    key={venue.id} 
+                    className={`hover:bg-[#111] transition-colors cursor-pointer ${selectedId === venue.id ? 'bg-[#151515]' : ''}`}
+                    onClick={() => setSelectedId(venue.id)}
+                  >
+                    <td className="py-3 px-4 text-[#E0E0E0]">
+                      {venue.name}
+                      <div className="text-[9px] text-[#555] mt-1 line-clamp-1">{venue.tags.join(' • ')}</div>
+                    </td>
+                    <td className="py-3 px-4 text-[#888]">{venue.city}</td>
+                    <td className="py-3 px-4">
+                      <span className={`px-2 py-0.5 rounded-sm border ${getStatusColor(venue.status)} text-[9px] uppercase tracking-wider`}>
+                        {venue.status.replace(/_/g, ' ')}
+                      </span>
+                    </td>
+                    <td className="py-3 px-4">
+                      <div className="flex items-center gap-2">
+                        <span className={`font-bold ${getResonanceColor(venue.resonance.label)}`}>
+                          {venue.resonance.score.toFixed(2)}
+                        </span>
+                        <span className="text-[#555] uppercase text-[9px]">{venue.resonance.label}</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4">
+                      <div className="flex items-center gap-2">
+                        <div className="w-16 h-1 bg-[#222] rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-[#888]" 
+                            style={{ width: `${venue.completeness_score * 100}%` }}
+                          />
+                        </div>
+                        <span className="text-[#888]">{venue.completeness_score.toFixed(1)}</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-right">
+                      <button className="text-[#888] hover:text-[#FFF] uppercase tracking-widest text-[9px]">
+                        Inspect
+                      </button>
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
         </div>
       </div>
 
-      {/* Editor Panel */}
-      <div className="w-full md:w-2/3 h-auto md:h-screen md:overflow-y-auto p-6 md:p-12">
-        {selectedVenue ? (
-          <div className="max-w-2xl mx-auto">
-            {/* Header */}
-            <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 mb-12">
-              <div className="relative w-24 h-24 rounded-2xl overflow-hidden border border-white/10 flex-shrink-0 shadow-lg">
-                <Image src={selectedVenue.heroImage} alt={selectedVenue.name} fill className="object-cover" />
-              </div>
-              <div className="flex flex-col gap-2">
-                <h2 className="text-3xl md:text-4xl font-display text-white">{selectedVenue.name}</h2>
-                <p className="text-xs md:text-sm text-k-text-secondary font-sans leading-relaxed max-w-lg">
-                  {selectedVenue.narrative}
-                </p>
-              </div>
-            </div>
-
-            {/* Editor Sliders */}
-            <div className="bg-k-surface-elevated/20 border border-white/5 rounded-3xl p-8">
-              <div className="flex items-center justify-between mb-8 pb-4 border-b border-white/5">
-                <div className="flex items-center gap-3">
-                  <Sliders className="text-k-gold" size={20} />
-                  <h3 className="text-lg font-sans font-light uppercase tracking-widest text-white">8D Prior Vector</h3>
-                </div>
-                <button
-                  onClick={handleSave}
-                  disabled={isSaving}
-                  className="flex items-center gap-2 bg-k-gold text-black px-6 py-2 rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-k-gold-light transition disabled:opacity-50"
-                >
-                  {isSaving ? 'Saving...' : saveStatus === 'success' ? <><CheckCircle size={14}/> Saved</> : <><Save size={14}/> Inject Vector</>}
-                </button>
-              </div>
-
-              <div className="flex flex-col gap-8">
-                {Array.from({ length: 8 }).map((_, i) => {
-                  const label = dimensionLabels[i].split(' vs. ');
-                  const val = editVector[i];
-                  
-                  return (
-                    <div key={i} className="flex flex-col gap-3">
-                      <div className="flex justify-between text-[11px] font-sans tracking-widest uppercase">
-                        <span className={val < 0 ? 'text-k-gold font-bold' : 'text-k-text-tertiary'}>{label[0]}</span>
-                        <span className="text-white/40">{val.toFixed(2)}</span>
-                        <span className={val > 0 ? 'text-k-gold font-bold' : 'text-k-text-tertiary'}>{label[1]}</span>
-                      </div>
-                      
-                      <div className="relative w-full h-1 bg-white/10 rounded-full flex items-center">
-                        {/* Center marker */}
-                        <div className="absolute left-1/2 w-0.5 h-3 bg-white/30 -translate-x-1/2 rounded"></div>
-                        
-                        <input 
-                          type="range" 
-                          min="-1" 
-                          max="1" 
-                          step="0.05" 
-                          value={val}
-                          onChange={(e) => handleSliderChange(i, parseFloat(e.target.value))}
-                          className="w-full appearance-none bg-transparent [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:bg-k-gold [&::-webkit-slider-thumb]:rounded-full cursor-pointer relative z-10"
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-            
-          </div>
-        ) : (
-          <div className="h-full flex items-center justify-center text-k-text-tertiary uppercase tracking-widest font-sans text-xs">
-            Select a venue to edit its semantic prior
-          </div>
-        )}
-      </div>
+      {/* Inspector Panel */}
+      {selectedId && (
+        <div className="w-1/3 h-full border-l border-[#2A2A2A] bg-[#0A0A0A] flex-shrink-0 animate-in slide-in-from-right-8 duration-200">
+          <VenueInspectorPanel venueId={selectedId} onClose={() => setSelectedId(null)} />
+        </div>
+      )}
     </div>
   );
 }

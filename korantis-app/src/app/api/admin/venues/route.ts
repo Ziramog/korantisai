@@ -1,38 +1,66 @@
 import { NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
+export type VenueRow = {
+  id: string;
+  name: string;
+  city: string;
+  status: "pending" | "processing" | "ready_for_review" | "published";
+  review_count: number;
+  resonance: {
+    score: number;
+    label: "almost_identical" | "strong" | "partial" | "divergent";
+  };
+  completeness_score: number;
+  tags: string[];
+  last_updated: string;
+};
 
-// Initialize an admin client that bypasses RLS
-const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
-
-export async function PUT(request: Request) {
-  try {
-    const body = await request.json();
-    const { venueId, tasteVector } = body;
-
-    if (!venueId || !Array.isArray(tasteVector) || tasteVector.length !== 8) {
-      return NextResponse.json({ error: 'Invalid payload. Required: venueId and tasteVector (8D array).' }, { status: 400 });
-    }
-
-    // Update the taste_vector in the venues table
-    // Convert array to string format expected by pgvector: '[v1,v2,...]'
-    const vectorString = `[${tasteVector.join(',')}]`;
-
-    const { data, error } = await supabaseAdmin
-      .from('venues')
-      .update({ taste_vector: vectorString })
-      .eq('id', venueId)
-      .select();
-
-    if (error) {
-      console.error('Supabase update error:', error);
-      return NextResponse.json({ error: error.message }, { status: 500 });
-    }
-
-    return NextResponse.json({ success: true, venue: data[0] });
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+// Dummy data for initial UI dev
+const MOCK_ADMIN_VENUES: VenueRow[] = [
+  {
+    id: "flori-123",
+    name: "Florería Atlántico",
+    city: "Buenos Aires",
+    status: "ready_for_review",
+    review_count: 450,
+    resonance: { score: 0.85, label: "strong" },
+    completeness_score: 1.0,
+    tags: ["speakeasy", "cocktails", "intimate"],
+    last_updated: new Date().toISOString()
+  },
+  {
+    id: "crisol-456",
+    name: "Crisol",
+    city: "Buenos Aires",
+    status: "ready_for_review",
+    review_count: 210,
+    resonance: { score: 0.52, label: "partial" },
+    completeness_score: 0.9,
+    tags: ["morning ritual", "soft work", "minimal"],
+    last_updated: new Date().toISOString()
+  },
+  {
+    id: "cuervo-789",
+    name: "Cuervo Café",
+    city: "Buenos Aires",
+    status: "pending",
+    review_count: 15,
+    resonance: { score: 0.21, label: "divergent" },
+    completeness_score: 0.4,
+    tags: ["specialty coffee", "industrial"],
+    last_updated: new Date().toISOString()
   }
+];
+
+export async function GET() {
+  // TODO: Implement Supabase Query Phase 5.2B
+  /*
+  select v.id, v.name, v.city, v.status, q.completeness_score, r.cosine_similarity, r.classification
+  from venues v
+  left join venue_quality q on q.venue_id = v.id
+  left join venue_resonance r on r.venue_id = v.id
+  order by q.completeness_score desc;
+  */
+
+  return NextResponse.json({ venues: MOCK_ADMIN_VENUES });
 }
