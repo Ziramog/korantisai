@@ -13,42 +13,7 @@ interface GlobalNavProps {
 export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
   const [isVisible, setIsVisible] = useState(true);
 
-  // Velocity-aware scrolling hide/show behavior
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    let lastScrollY = window.scrollY;
-    let lastTime = performance.now();
-    let hideTimeout: NodeJS.Timeout;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const currentTime = performance.now();
-
-      const deltaY = Math.abs(currentScrollY - lastScrollY);
-      const deltaTime = Math.max(1, currentTime - lastTime);
-      const velocity = deltaY / deltaTime; // pixels per ms
-
-      // Hide on rapid scroll velocity
-      if (velocity > 1.2) {
-        setIsVisible(false);
-      }
-
-      clearTimeout(hideTimeout);
-      hideTimeout = setTimeout(() => {
-        setIsVisible(true);
-      }, 400);
-
-      lastScrollY = currentScrollY;
-      lastTime = currentTime;
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(hideTimeout);
-    };
-  }, []);
+  // Removed velocity-aware scrolling hide/show behavior as it caused issues on mobile browsers.
 
   // Hide nav when in detailed venue view, matching the immersive layout
   if (selectedVenue) return null;

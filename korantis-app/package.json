@@ -11,10 +11,13 @@
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.106.2",
+    "@xenova/transformers": "^2.17.2",
+    "cosine-similarity": "^1.0.1",
     "framer-motion": "^12.40.0",
     "lucide-react": "^1.17.0",
     "mapbox-gl": "^3.24.0",
     "next": "16.2.6",
+    "openai": "^6.39.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-map-gl": "^8.1.1"

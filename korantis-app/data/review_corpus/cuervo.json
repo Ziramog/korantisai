@@ -1,0 +1,67 @@
+{
+  "venueId": "cuervo",
+  "venueName": "Café Cuervo",
+  "reviews": [
+    {
+      "author_name": "Alison Pouw",
+      "author_url": "https://www.google.com/maps/contrib/114257205163158770460/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUfUM7zsEhDu5eJjIruAq2Efdje7PM45uRnG48TGrLWOAK_e-Kd=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "top cafes. great coffee. immaculate vibes. a i toast with gags and the focaccia sando are both incredible. you can’t miss here. incredible.",
+      "time": 1771602983,
+      "translated": false
+    },
+    {
+      "author_name": "Bruno Martins",
+      "author_url": "https://www.google.com/maps/contrib/106721935421077954447/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXH4ZD6XlXDOqpjCrVoayo9r6YqvQSj-6S89H02m4xzvzuo_rc=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "One of the best coffees I've tasted. The bread with queso crema was also on point, simple but delicious.",
+      "time": 1767835437,
+      "translated": false
+    },
+    {
+      "author_name": "Jorgia wilson",
+      "author_url": "https://www.google.com/maps/contrib/106494311794242562094/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWL4qhI9-zHk9AzNmrB6rsgN2-AaR2BcTJAV3KCvnfaujbNbB8=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "2 months ago",
+      "text": "I love this cafe, it’s super trendy, cute and good vibes. Most importantly though, it has beautiful coffee. As a barista of many years, this is definitely in my top 3 coffees in Buenos Aires. Must try!",
+      "time": 1772733644,
+      "translated": false
+    },
+    {
+      "author_name": "李晉銓",
+      "author_url": "https://www.google.com/maps/contrib/115184084327492412514/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWCWGId3HEjHaAup6iPon-Em5Ortc6m3hJ1soCQWPqLp3SoutvZ=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "a year ago",
+      "text": "I found this charming café during my stay in Argentina, and it quickly became one of my favorites. Their croissants are perfectly flaky, the coffee is rich and smooth, and the avocado on toast is simply delicious. What made it even better was that the staff spoke English, which was incredibly helpful since English speakers are not so common here. The staff were friendly and made me feel at ease. It’s the perfect spot to relax and enjoy a great breakfast or coffee. Highly recommend!",
+      "time": 1726584714,
+      "translated": false
+    },
+    {
+      "author_name": "Natalia Marsman",
+      "author_url": "https://www.google.com/maps/contrib/104795553661949732702/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXZmt3BksGog4Fy5nLdC0-7fXopXxU6NJ3o8TexGW3cOl6d_gLH=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 3,
+      "relative_time_description": "3 months ago",
+      "text": "The café is amazing. It’s in a really cute location, the food is incredible, and the coffee is actually very good.\n\nThe only thing I don’t like is the patio. It’s pretty small and feels a bit congested, and people are allowed to smoke there. So you’re eating your sandwich and someone sitting right next to you is smoking straight into your space.\nI understand that in Argentina smoking is allowed outside — that it’s legal and culturally normal — and I try to respect that. But when the patio is that small, it doesn’t really feel “outside.” It feels more like participating in an involuntary sensory experience where your croissant comes with notes of Marlboro and a subtle finish of secondhand despair. And usually the smoker holds the cigarette dramatically far away from themselves — as if protecting their own lungs — while generously donating the entire cloud to everyone else at the table.",
+      "time": 1770921234,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

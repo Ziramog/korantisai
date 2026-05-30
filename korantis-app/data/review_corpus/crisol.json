@@ -1,0 +1,67 @@
+{
+  "venueId": "crisol",
+  "venueName": "Crisol Café",
+  "reviews": [
+    {
+      "author_name": "Daniela Moore",
+      "author_url": "https://www.google.com/maps/contrib/100039369461521619740/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKvPs2GeiqGOOIX44Bt8Wdw3CQ5CYPD8WFk3YLLQTIAnNuAhA=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "We love this cafe! The best pan con chocolate we’ve ever had! Been here twice already and hope to return before we leave BA!\nLari, our server, was very attentive and super sweet.\nAmbiance was very pleasant and overall friendly staff friendly.",
+      "time": 1768588786,
+      "translated": false
+    },
+    {
+      "author_name": "Charlie",
+      "author_url": "https://www.google.com/maps/contrib/116475255802260107932/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ_LhniEzt_SrziAcxLkd7pc4VIn9THkr-m8HSd4OI0QEznLA=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "The nicest brunch spot! The staff were soooo friendly and the atmosphere was really nice. Yami was the friendliest waitress, as it was our first day in Argentina she made such a great first impression for us, would definitely recommend, great coffee and super welcoming staff :)",
+      "time": 1772210260,
+      "translated": false
+    },
+    {
+      "author_name": "Guy",
+      "author_url": "https://www.google.com/maps/contrib/116349603979715131720/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKcd29Y8ARpAhUe3vFspOyN40vVzp8zuvrPwE93t3k-aXhbqg=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 2,
+      "relative_time_description": "6 months ago",
+      "text": "Noisy. Very stylish. No experimented cook in the kitchen. Very long to get food. No more at this place. Chicken was RAW … never there again.",
+      "time": 1763921052,
+      "translated": false
+    },
+    {
+      "author_name": "Chris",
+      "author_url": "https://www.google.com/maps/contrib/113958862499607219725/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXgOuMz1aCChSJ8Evu2Nqa6IqloNhwd_fGOlRbwiqTs4EzFYF89=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "Ordered the brunch crisolero para 2 and it was amazing. We both left stuffed. Matias, our waiter, was great and super attentive. If you’re in Palermo area, and want a BIG shared brunch, this is the spot.",
+      "time": 1766262834,
+      "translated": false
+    },
+    {
+      "author_name": "Merve Odabasi",
+      "author_url": "https://www.google.com/maps/contrib/110761848521834347774/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXff5r6i2NnyWmqg-41OcZWUsP0XoWjgV1hUPauPHoeePDnFj6U=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 4,
+      "relative_time_description": "5 months ago",
+      "text": "The service was great, but the chocotorta was mediocre. The lemonade was very sour, so added sugar and water to dilute it.",
+      "time": 1765679331,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

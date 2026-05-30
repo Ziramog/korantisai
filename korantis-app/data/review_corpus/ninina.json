@@ -1,0 +1,67 @@
+{
+  "venueId": "ninina",
+  "venueName": "Ninina",
+  "reviews": [
+    {
+      "author_name": "Andreas",
+      "author_url": "https://www.google.com/maps/contrib/116353159531844000615/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXBeqOzSG18UeEU-UOMt9_2HQUF5PcxeSl8ImvN9QkJ7PuUDNse=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 1,
+      "relative_time_description": "4 months ago",
+      "text": "We were served cold tea and food. The pancakes were chilled and not fresh at all. The eggs were warmed in microwave and without taste. The price is same as Europe but quality is way beyond.\nUsed to be good but has dropped significantly since last time we visited.\nAvoid this place and save your money for something good.",
+      "time": 1769698328,
+      "translated": false
+    },
+    {
+      "author_name": "Maciej Florczyk",
+      "author_url": "https://www.google.com/maps/contrib/108501314101743081346/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUe---ZnRqPh_Ov1zYiGKGsBIHVEGKDJ-zbMVzYT5ODBibMMvg=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "Good, quality food, nice and clean, nice place. Just the waiting times are a bit long… 🤷 Apart from that all good.",
+      "time": 1761231515,
+      "translated": false
+    },
+    {
+      "author_name": "Kimberly Quesenberry",
+      "author_url": "https://www.google.com/maps/contrib/117497920090412736225/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWWby7kyqmIi4eTy8YYTA-onAAH7yPcrW_T5rHaFaiLtS1TSAte=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 5,
+      "relative_time_description": "11 months ago",
+      "text": "It was my 1st time eating here and I was very happy with my meal. I ordered the egg croissant with avocado, kale and aioli and It was delicious. The iced caramel latte was also super nice. We speak very little Spanish but our waitress was super nice and patient with us as we ordered. The surroundings were very clean and our order arrived timely. We will definitely visit again as we are here for 7 weeks. Thank you Ninina staff for a wonderful breakfast.",
+      "time": 1749497265,
+      "translated": false
+    },
+    {
+      "author_name": "Carolina Ochoa",
+      "author_url": "https://www.google.com/maps/contrib/117274466773754000432/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUwwgRIG-sXMrhJ0D7H2CVh5iDqWlJye0OEjR9QnTytpSJIJZdB=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "9 months ago",
+      "text": "Had a wonderful brunch at Ninina! Our server, Dayana, was an absolute sweetheart and provided excellent service. We ordered the eggs benedict and an omelette, along with a caramel latte, and everything was delicious. Highly recommend this spot for a great meal and a lovely atmosphere!",
+      "time": 1754757841,
+      "translated": false
+    },
+    {
+      "author_name": "Hallidie Haid",
+      "author_url": "https://www.google.com/maps/contrib/108563930991039227669/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWApoOwlLLudaef39jlKh_K6ZOWV35IhNT7c6AKqcBhx83iVR7T=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "Wonderful coffee, spectacular desserts.  Bought coffee beans to take home too. Went three times during our stay.",
+      "time": 1764615889,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

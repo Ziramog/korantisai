@@ -14,6 +14,11 @@ export async function GET() {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
+    if (!data || data.length === 0) {
+      console.log('No venues in Supabase yet, falling back to MOCK_VENUES');
+      return NextResponse.json({ venues: MOCK_VENUES });
+    }
+
     // Map snake_case to camelCase and parse the taste_vector string into an array of numbers
     const mappedVenues = data.map((v: any) => {
       let parsedVector = [0, 0, 0, 0, 0, 0, 0, 0];
@@ -37,14 +42,14 @@ export async function GET() {
         name: v.name,
         category: v.category,
         location: v.location,
-        cardSize: v.card_size,
-        spacing: v.spacing,
-        heroImage: v.hero_image,
-        atmosphere: v.atmosphere,
-        quality: v.quality,
-        tagline: v.tagline,
-        narrative: v.narrative,
-        tags: v.tags,
+        cardSize: v.card_size || 'layered',
+        spacing: v.spacing || 'breathe',
+        heroImage: v.hero_image || '/venue_invernadero.png',
+        atmosphere: v.atmosphere || 'night',
+        quality: v.quality || 0.8,
+        tagline: v.tagline || '',
+        narrative: v.narrative || '',
+        tags: v.tags || [],
         tasteVector: parsedVector,
         lat,
         lng

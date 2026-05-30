@@ -1,0 +1,67 @@
+{
+  "venueId": "floreria",
+  "venueName": "Florería Atlántico",
+  "reviews": [
+    {
+      "author_name": "Hector Roldan Vargas",
+      "author_url": "https://www.google.com/maps/contrib/115721674035416916608/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV8pVqXxyMDHuJPfu4mxKGVRdzzJMJ8Ag977HWw4u8epgFSUi3jtA=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 4,
+      "relative_time_description": "6 months ago",
+      "text": "Florería Atlántico truly lives up to its reputation as one of the World’s 50 Best Bars. Hidden beneath a flower shop, it offers an atmosphere that feels both secret and alive.\n\nReservations are essential — it fills up fast, and with good reason. The food menu is small, but every dish is well thought out and beautifully executed. Still, the real magic here is in the cocktails. Each drink tells a story, crafted with precision and creativity that’s rare even at this level.\n\nIt’s not just a bar — it’s an experience. A must-visit for anyone who loves mixology done with soul.",
+      "time": 1762405156,
+      "translated": false
+    },
+    {
+      "author_name": "Matt Smith",
+      "author_url": "https://www.google.com/maps/contrib/116296064902118379341/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXEsKtmy4UNYW29b6fQZoM1v2Kfhfeu28LqARp0jjVeV665XS8z=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 4,
+      "relative_time_description": "6 months ago",
+      "text": "Fun place to visit with its secret entrance through the fridge door. Of the drinks we ordered, one was amazing and two were a bit disappointing.  Music too loud - at around 7pm - to have a proper conversation. Service was excellent. Not convinced it's value for money - I'm glad I went but have no desire to return.",
+      "time": 1762088280,
+      "translated": false
+    },
+    {
+      "author_name": "EM",
+      "author_url": "https://www.google.com/maps/contrib/114467410282655207184/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLg7IePZ1LCXQWyS7CYvtiWwO5g-R1ld2O-qCA-9Jnhrd6gZw=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 3,
+      "relative_time_description": "4 months ago",
+      "text": "I came here because of the hype and the bar was highly recommended by a friend. The 3 stars is for the atmosphere. Very pleasant. My drink was a disappointment. I ordered a Moscow Mule and it was pretty much a mocktail full of ice and sugar. For a top 50 bar, I was expecting a great experience.",
+      "time": 1767490540,
+      "translated": false
+    },
+    {
+      "author_name": "John “Kevin” Alexander",
+      "author_url": "https://www.google.com/maps/contrib/117046599666640097295/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIt9-igOffldD73h7KcFQwgL7KKNXh8Tf7urw0WCDeWIDvvew=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "A small flower shop crammed with blooms of every kind is your gateway to Florería Atlántico. Down the narrow stairs lies a softly lit space that hums with conversation, clinking glasses, and the quiet energy of discovery.\n\nThe layout is long and slightly curved, with the bar and stools running along one side and tables lining the other. At the far end, a large mirror creates the illusion of endless depth. The low lighting and gentle ’70s soul music complete the speakeasy atmosphere — intimate, nostalgic, and perfectly in tune with the bar’s effortless style.\n\nI ordered the Pehuén, a smooth, layered blend of Hennessy VS Cognac, Hendrick’s Gin, Pehuén orgeat, and Falernum of Merken. Its tropical, nutty, and fresh profile struck a perfect balance between warmth and brightness.  I also tried the king crab empanadas — delicate, buttery, and filled with sweet, briny crab!\n\nIt’s the kind of bar that doesn’t just serve cocktails; it tells stories through them. Each drink reflects Argentina’s immigrant heritage — Italian, Spanish, English, and beyond — blending cultures just as the city does. Every sip feels intentional, crafted for both memory and curiosity.\n\nThe bartenders move with quiet confidence, happy to share the origin of a spirit or the reason behind a garnish. The crowd is lively — and even when loud, it’s always with a celebratory energy. It’s easy to understand why Florería Atlántico remains among the World’s 50 Best Bars.\n\nMaking reservations is highly recommended.  But you maybe able to catch a spot at the bar, especially if you’re just looking to have a drink or two.",
+      "time": 1759961003,
+      "translated": false
+    },
+    {
+      "author_name": "Chris Thiery-Lai",
+      "author_url": "https://www.google.com/maps/contrib/104691360251793492384/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJBuaQMxyPautHA7Cx18YdXro-C33xlQTwGOJBDOhSGO1ZOM3w=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Their provoleta and empanadas are to die for! I also had a few of the espresso martinis where the espresso comes with an Arabic twist, absolutely worth stopping by.",
+      "time": 1769637641,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

@@ -1,0 +1,67 @@
+{
+  "venueId": "padre",
+  "venueName": "Padre Coffee Roasters",
+  "reviews": [
+    {
+      "author_name": "Anon Anon",
+      "author_url": "https://www.google.com/maps/contrib/115518905493451292113/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJX4S5zDGwDJWFcQjkqXvTIjg9BTmeZ39WBjCXwSUpqVndVFw=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "One of the best coffee places in Buenos Aires. Honestly, we could have been in Melbourne. Eve was wonderful, and her good English compensated for our poor Spanish. The coffee as well as the pastries and Açai bowl were top notch. Croissants were as good as you’d find in Paris. A faultless experience.",
+      "time": 1767450941,
+      "translated": false
+    },
+    {
+      "author_name": "Sarah Silcox",
+      "author_url": "https://www.google.com/maps/contrib/109585493193171029741/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIDt39LeLDvDOsW3ymyPfueZ1mYVv8jkamkSOL-pfaNTQ5aTNhHQ=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "relative_time_description": "2 months ago",
+      "text": "Our server was amazing. We struggle with Spanish and she was fantastic at helping us navigate the menu. We’re in BA for a week and I have no doubt we’ll be back!",
+      "time": 1772731084,
+      "translated": false
+    },
+    {
+      "author_name": "Neomah",
+      "author_url": "https://www.google.com/maps/contrib/109393721916089794666/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKr-emxD9ZamxvDF7JbAcWGr1N_CnbWdrGu7M5vEkLEdPQZmA=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Lovely ambience and lots of space for co-Work even though that’s technically not allowed. Portions are large so lots to take home and service is amazing! Highly highly recommend for the great service and good food.",
+      "time": 1768483235,
+      "translated": false
+    },
+    {
+      "author_name": "Shelby Hayes",
+      "author_url": "https://www.google.com/maps/contrib/100709817526326637316/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKY99DYoOkCisMB0SbHfRhsCoXQddpqB0lSx0MbR45kXRuaKw=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "6 months ago",
+      "text": "Great experience at Padre. The place is very cute, food portions were big, and delicious. They also have a ton of options for specialty coffees. Our server Shania was awesome, we’ll be back!",
+      "time": 1763754153,
+      "translated": false
+    },
+    {
+      "author_name": "Nicole Arreaga",
+      "author_url": "https://www.google.com/maps/contrib/113440698682366543642/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKJ1_SVcPH27yka1S_iJpWqZ7q68EwF3Oxj90Fe7BM3Lln7mA=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "You must absolutely go! The service here was wonderful, Michelle was absolutely fantastic! The coffee was the best I ever had. You must try the pancakes and they are very dog friendly! You absolutely cannot miss going to this absolute treasure of a cafe!",
+      "time": 1768594610,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

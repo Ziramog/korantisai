@@ -1,0 +1,67 @@
+{
+  "venueId": "melbourne",
+  "venueName": "Melbourne Café",
+  "reviews": [
+    {
+      "author_name": "Clément FOURNEY",
+      "author_url": "https://www.google.com/maps/contrib/103755128888562081735/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXPaVsZYus5iC-vOafs8QUtqNfQAU0cvpD4XhIXywnwSmdfKg2S=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "3 years ago",
+      "text": "Maybe the only to find a nice Almond Latte in Las Condes …\n\nThen calling the Flat white an Australiano is an overkill 😂\n\nNever mind had a good time there … so should you 😉",
+      "time": 1676592169,
+      "translated": false
+    },
+    {
+      "author_name": "laura basadonna",
+      "author_url": "https://www.google.com/maps/contrib/114422831542501823058/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJOED6iajnXhmMwpBhkqDq5qrvA-vPVRUC9cPMIwsiMqqwjFw=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 3,
+      "relative_time_description": "4 years ago",
+      "text": "Coffe is good. Too bad the service varies too much based on who’s serving you. Hint: Don’t hire people who are bad at dealing with clients. And get a better covid protocol.",
+      "time": 1646224421,
+      "translated": false
+    },
+    {
+      "author_name": "autumn ko",
+      "author_url": "https://www.google.com/maps/contrib/117233128665511953691/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK2JWOUwuKRtlcclH0HezWNy0pGAJMO-BXgOR2td-XFCEzH=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "3 years ago",
+      "text": "Best Chai Latte in the area",
+      "time": 1656680532,
+      "translated": false
+    },
+    {
+      "author_name": "Andrea Ortega Esquivel",
+      "author_url": "https://www.google.com/maps/contrib/106395795174702571987/reviews",
+      "language": "en-US",
+      "original_language": "es",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXIOuymgypVXyXwI-lv0ME6Cx9aYHAlub1ThOrAd097YeFT7sM5hg=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "Very good coffee ☕️✨️ I bought one to take away and also a bag of coffee to brew at home. It reminded me a lot of the cafes in Melbourne, where I lived for four years. Very good quality and excellent flavor. Highly recommended.",
+      "time": 1771952426,
+      "translated": true
+    },
+    {
+      "author_name": "Javiera Retamal",
+      "author_url": "https://www.google.com/maps/contrib/104086860131324033672/reviews",
+      "language": "en-US",
+      "original_language": "es",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIB6lS35UTBqt67XCDHTN3NWB4kp-j8NLuYhzHK-Xch4i6v=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "One of the few authentic coffee shops I've found in Santiago. The coffee, atmosphere, and playlist are all 10/10 with up-to-date tracks. Very good service.\n\nIt's really appreciated that the coffee tastes like coffee and that the machine is well-calibrated.\n\nThe place looks clean and pleasant.",
+      "time": 1760032083,
+      "translated": true
+    }
+  ],
+  "source": "Google Places"
+}

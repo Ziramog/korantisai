@@ -1,0 +1,67 @@
+{
+  "venueId": "mishiguene",
+  "venueName": "Mishiguene",
+  "reviews": [
+    {
+      "author_name": "Jonathan Cole",
+      "author_url": "https://www.google.com/maps/contrib/101358336014483290737/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUIBqRZpfRdiQ2618SDl4sZAWD5rezEucQLZ_ewsc_cfG2CUy7yPQ=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Fantastic dining experience - one of our best during a month in Argentina. Fantastic selection of dishes and very well advised by our waiter on what to have, proportions and also wine. Dishes were a great variety of Jewish dishes, with both a Ashkenazi and Sephardi flare.\n\nInteriors are gorgeous and food was presented in a very beautiful way.\n\nHighly recommend to anyone visiting Buenos Aires and looking for a memorable dining experience. And be sure to have the pastrami!",
+      "time": 1769609756,
+      "translated": false
+    },
+    {
+      "author_name": "Sid Sharma",
+      "author_url": "https://www.google.com/maps/contrib/106823347952096297136/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKh8W3WscjBtbNhrqQ9eCZwcyLh0Jjm0HG9EoxFLXVnZ4KuIQ=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "Highly recommend if visiting Buenos Aires.  This is objectively great immigrant Jewish cuisine - we have been to similar restos in places like Budapest and this stands strong.  We were well hosted by Mariano who made great recommendations.  Our favourite was the prawn muhammara, Jewish bagel, and cauliflower.",
+      "time": 1771977981,
+      "translated": false
+    },
+    {
+      "author_name": "David J Lee",
+      "author_url": "https://www.google.com/maps/contrib/102859013064829231279/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL1QWhkPdvMhKeEkjKC4FY4PQTUSryxkm69OaV0ky1Z8XKoZQEj=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "Great place to try Jewish cuisine.\nThe food and service were exceptional.\nThe maître d'(Rocco) was so helpful.\nMy favorite were trout lox and hummus with leek.  Superb!\nI highly recommend!",
+      "time": 1770117933,
+      "translated": false
+    },
+    {
+      "author_name": "Philip Gleser",
+      "author_url": "https://www.google.com/maps/contrib/103804868518938849976/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLnE_PwKuRR6PBlc1cPHwDMyXbwjNxIGtjsYSvXr7Ub76iKOQ=s128-c0x00000000-cc-rp-mo",
+      "rating": 2,
+      "relative_time_description": "4 months ago",
+      "text": "Rarely have I looked forward to a restaurant visit as much as this time—and never has the disappointment been greater. To get one thing out of the way first, the food tasted excellent, but the service was disastrous. It couldn't have been a communication problem, as half of us speak fluent Spanish. It started with us being served white wine instead of red. What's more, the wine was at room temperature, so it was much too warm. Instead of replacing the bottle without question, the waiter started blaming us for the wrong wine. When we then wanted to order an additional white wine and asked him about its taste, he told us that he couldn't say anything about that, but that we should tell him how much we were willing to pay. He would then choose a wine according to his taste. I have never experienced anything like this, even in a lower level restaurant. This question was completely inappropriate and embarrassing. There were also major problems with the order. The waiter was unable to take the order systematically and kept getting everything mixed up. By this point, the mood at the table had completely changed and was almost beyond repair. When making the reservation, we had indicated that one person had a gluten intolerance and asked for this to be taken into account. This was also not taken into consideration. Fortunately, the manager took over our table from that moment on and was able to partially salvage the situation. Unfortunately, the order was apparently passed on to the kitchen incorrectly, so that only half of the main courses were served and the other main courses only arrived at the table when most of us had already finished eating. It is a real shame that this evening ended so disastrously due to incompetence in the service area.",
+      "time": 1769442524,
+      "translated": false
+    },
+    {
+      "author_name": "Gregory De La Cruz",
+      "author_url": "https://www.google.com/maps/contrib/104612962058156936695/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWDQ3tUHtnZqPkaVZdEBZzIQIbly3CdHCXJiM5h9Ujdo98LZeQ=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "If you want a fine dinning experience this is the spot. Service was great here. The servers do an outstanding job at recommending things for you. It is family style so if you go with a 4 people you should be able to try a lot. Go hungry!",
+      "time": 1766428494,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

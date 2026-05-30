@@ -1,0 +1,67 @@
+{
+  "venueId": "birkin",
+  "venueName": "Birkin",
+  "reviews": [
+    {
+      "author_name": "Tan Pratontep",
+      "author_url": "https://www.google.com/maps/contrib/110139725487778324114/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWqJDZoZZ8g91etaEOi4p4QR6TqEBDmeMgWjHt-VEpQyN6b7Y0=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Wonderful food and baked treats. I stopped by Birkin twice while visiting Buenos Aires. Even though the place was busy, the staff was always welcoming and found me a table within a few minutes.\n\nI really liked that the food isn’t overly seasoned, just enough to enhance the flavors while letting the fresh ingredients shine. The baked goods are excellent. I tried the pistachio, olive and honey loaf, chocolate ricotta loaf, lemon poppy seed loaf, and the alfajores, and everything was delicious. You can tell they use high-quality ingredients.\n\nHighly recommend!",
+      "time": 1767372078,
+      "translated": false
+    },
+    {
+      "author_name": "N N",
+      "author_url": "https://www.google.com/maps/contrib/100991173930710402857/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLUXHwU4itCjrEJHXSyKMiSO5I8psOFGHs1XqZ9bTUOw-JePQ=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "2 months ago",
+      "text": "Absolutely loved the meals, the interior design, and the service. I had a bowl where I could select ingredients, a matcha latte, and a chipa. Everything was excellent, beautifully cooked and quickly served. I also ordered a pear pie, which was just fantastic. Highly recommend the venue. Btw, sitting outside you can watch dog walkers passing by.",
+      "time": 1772550073,
+      "translated": false
+    },
+    {
+      "author_name": "Michael G",
+      "author_url": "https://www.google.com/maps/contrib/111419976285991563667/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU5j5eIZcQc2Nx-pQ-ciMLqd1OfH9i468-IK6kCi9t4I2Wd609iQQ=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "Great Food. Buzzy Vibe\nWonderful lunch on the outdoor seating. Terrific salad, fresh, tasty and we'll made.\nHibiscus iced tea was best I've ever had.\nServer was not friendly or helpful but other staff were great.\nMust try.",
+      "time": 1765650134,
+      "translated": false
+    },
+    {
+      "author_name": "Veronica Duffy",
+      "author_url": "https://www.google.com/maps/contrib/106157634814459746468/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU231GPWtTBsLx62a7qP19nVIM6YoMWWazfeDlIwwef146s9l0IcQ=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 2,
+      "relative_time_description": "9 months ago",
+      "text": "The server , Brenda , apparently was stressed out and was rude . Ok the place was full , but chillax! My regular coffee was warm and bleh , the chipá sandwich good but tiny . The half size avocado toast was good . The water never made it to the table . Only cash , transference or debit cards accepted. Sorry tourists !!!",
+      "time": 1756046905,
+      "translated": false
+    },
+    {
+      "author_name": "Jenny Davila",
+      "author_url": "https://www.google.com/maps/contrib/110771791395139714147/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUIwgxstSsqRk4rsCe5Z657yGyN9uMHshAZVfO36Y2WH3DqLsOgzA=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "Looooooovvvveee their coffee, as it's well balanced from extraction to adding the froth milk at the right temperature and texture (their barista does a great job). Usually order a cappuccino, but my family has tried their mocha and lattes and also praises their beverages. Service can be a little slow, so now we order to go. Definitely the best coffee in the area.",
+      "time": 1767092922,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

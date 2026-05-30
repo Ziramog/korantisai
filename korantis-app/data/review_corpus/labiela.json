@@ -1,0 +1,67 @@
+{
+  "venueId": "labiela",
+  "venueName": "La Biela",
+  "reviews": [
+    {
+      "author_name": "Olivia Tam",
+      "author_url": "https://www.google.com/maps/contrib/114801940150654999735/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUmGjQmdVdFwX5yyFaCokqZ9wiYxRhZvtBUggv0zZ9sgPUs1E6c=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "In business over 150 years ago, it comes across that it can go for another 150 years. It is a great stop after visiting the Recoleta area : the cemetery and the Floralis Generica garden. We enjoy the atmosphere as much as the pastry and the cappuccino. With ample seating and  waiters in classical uniform, times seems to stand still in this cafe, it is a place to relax, to read a book or simply to chill. We do not speak much of Spanish so the waiter even makes an special effort to show us the pastries and let us choose. It turns out to be very delicious. The cafe even offers sugar in different sizes.  We think it is a stop to add to your Recoleta trip.",
+      "time": 1761438910,
+      "translated": false
+    },
+    {
+      "author_name": "Rod Fell",
+      "author_url": "https://www.google.com/maps/contrib/103272242469744832543/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtvA43E-AwOwzhXwbemOjXfIirzhnAeADKH0jDvD-AWfXBxxw=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 1,
+      "relative_time_description": "4 months ago",
+      "text": "very pleasant and cosmopolitan. surprised the hamburger came without bun but that's apparently how they do it here. waiter asked if we wanted bread. came out with 4 small bread rolls which then appeared on the bill",
+      "time": 1769192946,
+      "translated": false
+    },
+    {
+      "author_name": "shobin julius",
+      "author_url": "https://www.google.com/maps/contrib/113723022190086607131/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX2gGi87KABwAvrVXLghnQ_ZhU8SJeYn62u72mhXzzmHO10lD4=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Authentic food, service and atmosphere! Enjoyed a good lunch; recommended the middle pages of the menu book; Chef’s special, special dishes and summer specials…. Indoor and outdoor options",
+      "time": 1767298941,
+      "translated": false
+    },
+    {
+      "author_name": "Adam",
+      "author_url": "https://www.google.com/maps/contrib/103884853229910960332/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWwiDwCo-D94w7P2GGNErxBOynF8NbrvEWuu67kU2sOi_Rlp5c-=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 3,
+      "relative_time_description": "3 months ago",
+      "text": "It is a typical tourist spot. It is beautiful location and great for enjoying a coffee and people watching. They accept credit cards and you can leave a tip with a credit card so that makes it convenient. Nothing crazy outstanding to go back to but good place to stop if you want to sit down outside in the area.",
+      "time": 1770660129,
+      "translated": false
+    },
+    {
+      "author_name": "Sara Kovacheska",
+      "author_url": "https://www.google.com/maps/contrib/104170514968331455523/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV2OLRf0-fb7rS-wj6CBDFc6w-F7KK-pSBWzFW3CSmc5r06bHHb=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "How nice and authentic place to have traditional breakfast at when in Buenos Aires! We absolutely enjoyed the service, vibe and the amazing medialunas con cafe! We hope to go back one day!",
+      "time": 1760477535,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

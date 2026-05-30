@@ -1,0 +1,67 @@
+{
+  "venueId": "rooftop",
+  "venueName": "Uptown Bar",
+  "reviews": [
+    {
+      "author_name": "Andri A Google",
+      "author_url": "https://www.google.com/maps/contrib/114158577364844550863/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVnKBwOS29_3dMrEwAWLJGTrZbo_NCnLHZJ0bqTyWjJ9l6xJN36=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 4,
+      "relative_time_description": "3 months ago",
+      "text": "After considerable research into Buenos Aires’ cocktail scene, Uptown was firmly on our list. Its reputation, concept and visual identity set high expectations before arrival.\n\nThe space itself delivers. The design is immersive and theatrical, the station-board menu presentation is clever, and the overall atmosphere is lively without tipping into chaos. It is a bar that clearly understands experiential branding. Service was warm, friendly and attentive throughout the evening, and the cocktails we ultimately ordered were well executed and enjoyable.\n\nThe only disappointment was operational rather than conceptual. Of the relatively limited selection of signature cocktails displayed, two were unavailable on the night, including Dills the Deal and Botanical Garden. Both represented the lighter, more herbaceous direction we were specifically seeking. Their absence significantly narrowed the stylistic range available. Many of the remaining options leaned toward syrup-forward profiles and sweeter constructions.\n\nGiven the curated nature of the signature list, consistency in ingredient readiness is important, particularly when expectations are elevated by strong reputation and deliberate destination dining.\n\nUptown remains a striking and enjoyable bar with real creative strength. With tighter execution on availability and broader balance across flavour profiles, it would more fully align with the level of anticipation it rightfully generates.",
+      "time": 1771499661,
+      "translated": false
+    },
+    {
+      "author_name": "Diego Salinas",
+      "author_url": "https://www.google.com/maps/contrib/108161613297337757538/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXxdGOSzTmr1XaRl2lfL05f9-2Pxya3_zNfo1uotb3ovmi6wD0xUA=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "A very cool bar! I loved the theme and the attention to detail that they applied to the decor and the entrance. I felt that the drinks were well made but unfortunately a bit weak. Regardless, they were very inventive and original. I think this is definitely worth seeing when visiting BA!",
+      "time": 1769555759,
+      "translated": false
+    },
+    {
+      "author_name": "Mariano Saldaña",
+      "author_url": "https://www.google.com/maps/contrib/108117425078922392311/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLLWE3s0RkWyIuvBr8-c18-c1InRX5xoGYCJkIXBlXHyXE15g=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Up Town is such a fun and unique spot in Buenos Aires. The entrance alone is worth it, you walk through a train station–style setup that immediately puts you in a cool, speakeasy mood. Tons of great photo opportunities throughout the place. The cocktails are really well made and reasonably priced for the experience. Great atmosphere, great drinks, and definitely a place I’d come back to. 🍸🚇",
+      "time": 1767744779,
+      "translated": false
+    },
+    {
+      "author_name": "MQ",
+      "author_url": "https://www.google.com/maps/contrib/100148698747401739331/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUQZ5CMy4pyaPJ_YmEMyqTbSRM2YjrdS7_sxW05DdLFprM0XnRX=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 4,
+      "relative_time_description": "2 months ago",
+      "text": "Incredibly cool atmosphere and presentation. Saw this place on TikTok and had to come try it out for myself. Truly a one of a kind experience in South America. I’ve been to New York City and this is definitely accurate and was super hilarious!!\nI would love to see more mocktail options!! (there was only 2) I also highly recommend reservations, though my small group before was lucky with a walk-in around 9 PM on a weekday night. We had standing room only though.",
+      "time": 1772402391,
+      "translated": false
+    },
+    {
+      "author_name": "Carlos Dominguez Bado",
+      "author_url": "https://www.google.com/maps/contrib/104985596944079613707/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXNpH9pMgk8ITH1PHKRmzp5xV6XWX9hNfFbpDf7vUOPNiNfu_SR=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 3,
+      "relative_time_description": "5 months ago",
+      "text": "Great place for a different kind of evening in Buenos Aires, specially in the Palermo district. Super cool place (good for Insta pics😉) and the food was honestly very good. Yes it is a big pricy but worth it considering our overall good experience.",
+      "time": 1766971966,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

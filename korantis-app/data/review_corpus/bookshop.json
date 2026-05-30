@@ -1,0 +1,67 @@
+{
+  "venueId": "bookshop",
+  "venueName": "Libros del Pasaje",
+  "reviews": [
+    {
+      "author_name": "Andre Sardao",
+      "author_url": "https://www.google.com/maps/contrib/109740425577288793664/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUqTSwMoad3YglrrR1UfLx_7NsZ8ERUL9suWBz-XL_cxs0jhzmX=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 2,
+      "relative_time_description": "3 months ago",
+      "text": "Since 2019, I’ve been buying books there whenever I visit Buenos Aires. It is generally a good bookstore, but unfortunately my last visit was deeply unpleasant.\nI was looking for books by the great Juan Gelman and had with me a Brazilian anthology of his poems, which I brought from Brazil. I showed this book to the clerk to indicate which poems and editions I was interested in. After that, the clerk went to check the stock elsewhere in the store, and I immediately put my own book back into my backpack.\nTo my surprise, another employee came straight toward me and asked me to show what I had just put in my backpack, treating me as if I were a thief. Anyone paying minimal attention would have seen that I took the book from my backpack and then put the same book back into it.\nI found this behavior humiliating and unacceptable. Although I was quite upset, I still went to the counter and paid for the Spanish editions I had selected. In hindsight, I regret having made that purchase.",
+      "time": 1771896636,
+      "translated": false
+    },
+    {
+      "author_name": "Tara Leanne",
+      "author_url": "https://www.google.com/maps/contrib/112483415510546555480/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXtkFjGBLgKSyzjU9Y5kLApSmSxUcVbhtHQkcjnrLJX16wPrHSR=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "relative_time_description": "10 months ago",
+      "text": "This is the cutest cafe and bookstore! They have a great variety of books and the food was really good. A great atmosphere and beautiful location.",
+      "time": 1754087488,
+      "translated": false
+    },
+    {
+      "author_name": "Nicole D.",
+      "author_url": "https://www.google.com/maps/contrib/112355223116262988524/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVKIabO9eBoxnyDCtv7jLlMJX5hRO2Z8O71I9hxTQvErMDJ6rk=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 5,
+      "relative_time_description": "a year ago",
+      "text": "Not only it is a beautiful book store, but it has a large variety of books (almost none in other languages than spanish) but it also has a mini cafe and an area where you can work.",
+      "time": 1734233147,
+      "translated": false
+    },
+    {
+      "author_name": "Maria Eretnova",
+      "author_url": "https://www.google.com/maps/contrib/105965574378829562249/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUljpa3YI99ha5_hSNbLGI03InOrfMguWdM2tlLCFjHjzJD-v32=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 5,
+      "relative_time_description": "2 years ago",
+      "text": "Absolutely beautiful location with so many books and spacious cafe. Art section of the bookshop is hidden on the mezzanine level!",
+      "time": 1708813177,
+      "translated": false
+    },
+    {
+      "author_name": "Jenn Smith-Chong",
+      "author_url": "https://www.google.com/maps/contrib/102681529692905055550/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWgV_elSFTauvawrrnVAriYJum7SZAKZLzr3hBD_EbI6WxxD3aCZA=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "a year ago",
+      "text": "Bookstore and coffee shop.\nComfy couches and seating. A nice strong cortado, and a collection of Asterix books that take me back to my childhood.",
+      "time": 1742221808,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

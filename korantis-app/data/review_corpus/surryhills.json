@@ -1,0 +1,67 @@
+{
+  "venueId": "surryhills",
+  "venueName": "Surry Hills Coffee",
+  "reviews": [
+    {
+      "author_name": "ALVARO LEITAO",
+      "author_url": "https://www.google.com/maps/contrib/106400909615407268215/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLJTzNT9Zp721aie0YB6P4mDTR3-8DmWqvo7kx-X4I1-RDdOA=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "An outstanding service, food and top coffee in Argentina. No wonder it’s among the South America’s 100 Best Coffee Shops in 2025. A special thanks to my methodical baristas Franco and Ariana, and the lovely attendants Agustina and Mari. The premium coffee and the rich menu were just a perfect match to make us forget the hours flying by. Cannot wait to come back!\n\nP.S.: don’t miss the croissant with poached eggs and pulled pork! Unique experience!",
+      "time": 1761857415,
+      "translated": false
+    },
+    {
+      "author_name": "Dan Tuckwell",
+      "author_url": "https://www.google.com/maps/contrib/110042703581430973669/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKRUxaTj5_fskGjDd4TaWMKky4usifZ-A_dyDCtxxD9ifejXQ=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Aussie-style café in a great Palermo neighbourhood. Excellent food, great coffee and super friendly service. Everything was fresh, tasty and beautifully done.\n\nPerfect spot for breakfast or brunch, we’ll definitely be back! ☕️👌",
+      "time": 1768661871,
+      "translated": false
+    },
+    {
+      "author_name": "Massiel Avendano",
+      "author_url": "https://www.google.com/maps/contrib/108780751230235877400/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-tAx3jnC-TGPpAKbzbUYVMaG7naIh3bg22IxDG_WeATufWjsa=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "relative_time_description": "7 months ago",
+      "text": "The best coffee and granola bowls in Buenos Aires. We are from the states and it’s been very difficult finding oat milk around here. Not only did Surrey Hills have it but the coffee is great and very well made, down to the vanilla syrup. The food we’ve had is also good though portions are small for the price you pay. The pastries are just ok nothing special but they make up for it in other ways. Atmosphere is cute and cozy with outdoor seating available and staff are friendly.",
+      "time": 1761167230,
+      "translated": false
+    },
+    {
+      "author_name": "Jacob Anderson",
+      "author_url": "https://www.google.com/maps/contrib/103384406980836279025/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJN08LB6RtOUB-PMPw3DrOqkEud6f9YNWPf1PJogAX-fk2Ryg=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "relative_time_description": "9 months ago",
+      "text": "This place is fantastic. We went twice during our seven day stay in BA because it’s simply that good. The coffee is skillfully and carefully made, the teas are delicate and delicious, the food is quality and wonderful, the wait staff is friendly and hospitable, and the cafe’s atmosphere is a laid back-neutral tone-artful feel. I used to live in Sydney, AUS where Surry Hills, one of the city’s art districts, is. I got to experience the great cafes there and I can say that this cafe is of the same caliber as the Australian cafes. Thank you for the experience and keep on being awesome, Surry Hills!",
+      "time": 1756222379,
+      "translated": false
+    },
+    {
+      "author_name": "Sneha N",
+      "author_url": "https://www.google.com/maps/contrib/116986219506614868946/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKpf0VMiSi8u1gUe9swNQyxLFrIotMkOZrb8lz2CQUObMXxaw=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "4 months ago",
+      "text": "Really good food. My favorite yogurt and granola and I tried a few in BA. Coffee is ok but the flat white wasn’t as strong as it should be and also needed to be hotter which we asked so not sure why it was lukewarm.",
+      "time": 1767300582,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

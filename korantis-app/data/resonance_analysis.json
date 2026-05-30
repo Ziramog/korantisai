@@ -1,0 +1,480 @@
+{
+  "floreria": {
+    "editorialThemes": [
+      "subterranean warmth",
+      "amber light",
+      "slow jazz",
+      "timelessness"
+    ],
+    "crowdThemes": [
+      "secret portal",
+      "soft amber light",
+      "intimate cocoon",
+      "laughter and whispered stories",
+      "shadows and glassware",
+      "'70s soul music",
+      "fresh blooms",
+      "unhurried pace",
+      "quiet energy"
+    ],
+    "overlapThemes": [
+      "amber light",
+      "intimacy",
+      "timelessness"
+    ],
+    "interpretationNotes": "The editorial interpretation emphasizes a cinematic and timeless experience, while public perception highlights the sensory richness and social dynamics of the venue. This divergence suggests that Florería Atlántico embodies a dual identity: a serene escape and a vibrant social hub, appealing to both introspective visitors and those seeking connection."
+  },
+  "crisol": {
+    "editorialThemes": [
+      "Nordic clarity",
+      "Japanese restraint",
+      "quiet morning ritual",
+      "minimalism",
+      "thoughtful design"
+    ],
+    "crowdThemes": [
+      "warm embrace",
+      "inviting atmosphere",
+      "intimate alcoves",
+      "comforting symphony",
+      "creative energy",
+      "shared experience"
+    ],
+    "overlapThemes": [
+      "wooden tables",
+      "soft lighting",
+      "tranquility",
+      "inviting ambiance"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a minimalist and serene design ethos, while public perception highlights a warm, communal experience. This divergence suggests that Crisol Café's identity balances a refined aesthetic with a welcoming social environment, appealing to both individual reflection and communal connection."
+  },
+  "invernadero": {
+    "editorialThemes": [
+      "Nature-centric dining",
+      "Botanical aesthetics",
+      "Alive and vibrant atmosphere",
+      "Sensory experience of food"
+    ],
+    "crowdThemes": [
+      "Intimacy and warmth",
+      "Ambient lighting",
+      "Social energy",
+      "Contrast of architecture and atmosphere",
+      "Time for reflection"
+    ],
+    "overlapThemes": [
+      "Unique dining experience",
+      "Atmospheric immersion",
+      "Connection to nature",
+      "Sense of comfort"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the botanical and sensory aspects of dining, while the public perception highlights intimacy and social dynamics. This divergence suggests that Invernadero's true identity lies in its ability to blend a vibrant natural environment with a warm, communal atmosphere, appealing to both individual reflection and social interaction."
+  },
+  "ninina": {
+    "editorialThemes": [
+      "Golden warmth",
+      "Slow evenings",
+      "Amber light",
+      "Glistening pastries",
+      "Soft conversations"
+    ],
+    "crowdThemes": [
+      "Gentle embrace of soft light",
+      "Warm glow on rustic tables",
+      "Low murmur of conversation",
+      "Laughter and clinking porcelain",
+      "Leisurely pace",
+      "Intimacy and solitude",
+      "Nostalgia and present moments"
+    ],
+    "overlapThemes": [
+      "Golden light",
+      "Warmth",
+      "Soft conversations",
+      "Leisurely pace"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a serene, almost idyllic atmosphere focused on the visual and sensory experience, while the public perception highlights the social dynamics and emotional connections fostered within the space. This divergence suggests that Ninina is not only a visually appealing venue but also a vibrant social hub, making it a multifaceted sanctuary for both individual reflection and communal interaction."
+  },
+  "melbourne": {
+    "editorialThemes": [
+      "Industrial warmth",
+      "Lively mornings",
+      "Exposed brick",
+      "Specialty coffee",
+      "Quiet precision",
+      "Morning light"
+    ],
+    "crowdThemes": [
+      "Gentle hum of conversation",
+      "Soft light",
+      "Warm inviting glow",
+      "Rustic wooden tables",
+      "Comforting aroma of coffee",
+      "Curated playlist",
+      "Intimate backdrop",
+      "Solitude and connection",
+      "Cocoon of camaraderie",
+      "Leisurely pace",
+      "Sense of belonging",
+      "Quiet energy"
+    ],
+    "overlapThemes": [
+      "Warmth",
+      "Light",
+      "Coffee aroma",
+      "Intimacy",
+      "Camaraderie"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the café's industrial aesthetic and morning energy, while the public perception highlights the social and intimate atmosphere. This divergence suggests that Melbourne Café balances its identity between a vibrant coffee culture and a cozy community space, appealing to both individual patrons and social gatherings."
+  },
+  "verne": {
+    "editorialThemes": [
+      "subterranean atmosphere",
+      "time distortion",
+      "brass and leather aesthetics",
+      "inventive cocktails",
+      "whispers of adventure"
+    ],
+    "crowdThemes": [
+      "dim lighting",
+      "intimacy and sanctuary",
+      "botanical aromas",
+      "social energy",
+      "crafted cocktails",
+      "balance of solitude and community"
+    ],
+    "overlapThemes": [
+      "cocktails as crafted secrets",
+      "intimate atmosphere",
+      "warm amber lighting"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a more mystical and adventurous identity for Verne Club, focusing on the imaginative aspects of the venue, while the public perception highlights its role as a cozy social hub. This divergence suggests that the venue successfully marries its creative cocktail culture with a welcoming environment, appealing to both the adventurous and the socially inclined."
+  },
+  "bookshop": {
+    "editorialThemes": [
+      "stories",
+      "books",
+      "espresso",
+      "afternoon light",
+      "time"
+    ],
+    "crowdThemes": [
+      "tranquility",
+      "introspection",
+      "cozy nooks",
+      "shared passion",
+      "connection"
+    ],
+    "overlapThemes": [
+      "light",
+      "books",
+      "intimacy",
+      "quiet reflection"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the sensory experience of the venue, focusing on the physical elements like books and coffee, while the public perception highlights the emotional and social aspects of the space. This divergence suggests that Libros del Pasaje is not only a haven for literature but also a community hub fostering connections among its patrons."
+  },
+  "oporto": {
+    "editorialThemes": [
+      "Wine",
+      "Sunset",
+      "Lingering",
+      "Golden light",
+      "Shared silences",
+      "Relaxation"
+    ],
+    "crowdThemes": [
+      "Intimacy",
+      "Ambient light",
+      "Rustic warmth",
+      "Gentle conversation",
+      "Languorous rhythm",
+      "Connection",
+      "Camaraderie",
+      "Shared experience"
+    ],
+    "overlapThemes": [
+      "Lingering",
+      "Conversations",
+      "Warmth",
+      "Shared experience"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the serene and slow-paced enjoyment of wine and conversation, while the public perception highlights the intimate and vibrant social atmosphere. This divergence suggests that Oporto Almacén is a multifaceted venue, balancing tranquil moments with lively interactions, embodying both relaxation and connection."
+  },
+  "cuervo": {
+    "editorialThemes": [
+      "Rustic ambiance",
+      "Slow ritual of coffee preparation",
+      "Morning tranquility",
+      "Connection to the local environment"
+    ],
+    "crowdThemes": [
+      "Warm embrace of light",
+      "Intimacy and reflection",
+      "Gentle energy",
+      "Community and connection"
+    ],
+    "overlapThemes": [
+      "Comforting atmosphere",
+      "Slow pace of life",
+      "Connection among patrons"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the venue's physical characteristics and the ritual of coffee, while public perception highlights the emotional and communal experience. This divergence suggests that Café Cuervo is not just a place for coffee, but a sanctuary for connection and reflection, embodying both a tangible and intangible identity."
+  },
+  "labiela": {
+    "editorialThemes": [
+      "century of conversations",
+      "porteño elegance",
+      "ancient rubber tree",
+      "intimate service"
+    ],
+    "crowdThemes": [
+      "nostalgia",
+      "gentle embrace",
+      "vibrant energy",
+      "hushed conversations",
+      "freshly brewed coffee",
+      "quiet reflection"
+    ],
+    "overlapThemes": [
+      "dappled shade",
+      "ancient trees",
+      "conversations",
+      "intimacy"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the historical and elegant service aspect of La Biela, while the public perception highlights the emotional and sensory experiences of patrons. This divergence suggests that La Biela's true identity is a blend of its rich heritage and the personal connections it fosters, making it a timeless gathering place."
+  },
+  "rooftop": {
+    "editorialThemes": [
+      "City lights",
+      "Intimate conversations",
+      "Infinite night",
+      "Fragments of music",
+      "Cocktail experience"
+    ],
+    "crowdThemes": [
+      "Vibrant reverie",
+      "Pulse of conversation",
+      "Intimate whispers",
+      "Warm amber light",
+      "Nostalgia",
+      "Electric yet serene atmosphere",
+      "Rhythmic clinking of glasses",
+      "Expansive yet snug spaces"
+    ],
+    "overlapThemes": [
+      "Intimate conversations",
+      "Atmosphere of connection",
+      "Lively ambiance"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a more romanticized and introspective experience of the bar, while public perception highlights its vibrant social energy and nostalgic charm. This divergence suggests that Uptown Bar embodies a dual identity, appealing to both those seeking intimate moments and those craving lively social interactions."
+  },
+  "boliche": {
+    "editorialThemes": [
+      "Tango as a living entity",
+      "Nostalgia and memory",
+      "Intimacy of the space",
+      "Timelessness of the experience"
+    ],
+    "crowdThemes": [
+      "Intimacy and warmth",
+      "Shared experiences",
+      "Nostalgia and storytelling",
+      "Fluidity of time"
+    ],
+    "overlapThemes": [
+      "Nostalgia",
+      "Intimacy",
+      "Timelessness",
+      "Connection to tango"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes tango as a living tradition within the venue, while public perception highlights the emotional connections and shared experiences among patrons. This divergence suggests that El Boliche de Roberto is not just a venue for tango, but a communal space where personal stories and collective memories intertwine, enriching its identity as a cultural hub."
+  },
+  "lattente": {
+    "editorialThemes": [
+      "high energy",
+      "focus on coffee",
+      "bustling atmosphere",
+      "sidewalk culture"
+    ],
+    "crowdThemes": [
+      "intimacy",
+      "soft lighting",
+      "quiet conversations",
+      "comfort and nostalgia",
+      "sense of belonging"
+    ],
+    "overlapThemes": [
+      "coffee culture",
+      "inviting atmosphere"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the vibrant, energetic nature of Lattente, while the public perception highlights a more intimate and reflective experience. This divergence suggests that Lattente serves as both a lively hub for coffee enthusiasts and a serene retreat for those seeking solace, reflecting its multifaceted identity."
+  },
+  "surryhills": {
+    "editorialThemes": [
+      "Airy",
+      "Light-filled",
+      "Unhurried",
+      "Sunny",
+      "Minimalist",
+      "Soft work environment"
+    ],
+    "crowdThemes": [
+      "Quiet sanctuary",
+      "Golden light",
+      "Intimate ambiance",
+      "Low murmur of conversation",
+      "Rustic decor",
+      "Warmth and artistry",
+      "Haven for reflection"
+    ],
+    "overlapThemes": [
+      "Light-filled",
+      "Large windows",
+      "Warmth",
+      "Inviting atmosphere",
+      "Sense of solitude"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a bright, airy space ideal for productivity, while the public perception highlights a more intimate, reflective atmosphere. This divergence suggests that Surry Hills Coffee serves dual purposes: a workspace and a sanctuary, appealing to both productivity seekers and those in search of a cozy retreat."
+  },
+  "birkin": {
+    "editorialThemes": [
+      "Lively atmosphere",
+      "Vibrant energy",
+      "Parisian influence",
+      "Busy sidewalk culture"
+    ],
+    "crowdThemes": [
+      "Warm, inviting glow",
+      "Rustic intimacy",
+      "Comforting aromas",
+      "Social yet unhurried atmosphere",
+      "Pockets of solitude"
+    ],
+    "overlapThemes": [
+      "Vibrant atmosphere",
+      "Hum of conversation",
+      "Encouragement to linger"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the energetic and bustling nature of Birkin, while the public perception highlights a more intimate and comforting experience. This divergence suggests that Birkin successfully balances a lively social scene with cozy spaces for personal reflection, embodying a multifaceted identity that caters to diverse patron experiences."
+  },
+  "padre": {
+    "editorialThemes": [
+      "Deep roasted aromas",
+      "Brutalist setting",
+      "Concrete and steel",
+      "Engine room for caffeine",
+      "Focused and serious atmosphere"
+    ],
+    "crowdThemes": [
+      "Gentle vibrancy",
+      "Soft clatter of cups",
+      "Intimate conversations",
+      "Warm sunlight",
+      "Cocoon of warmth",
+      "Sense of belonging",
+      "Balance between solitude and connection"
+    ],
+    "overlapThemes": [
+      "Scent of roasted beans",
+      "Atmosphere of coffee preparation"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a stark, industrial vibe focused on the coffee-making process, while public perception highlights a warm, inviting space for social interaction. This divergence suggests that Padre Coffee Roasters embodies both a serious dedication to coffee craftsmanship and a welcoming environment for community engagement."
+  },
+  "tresmonos": {
+    "editorialThemes": [
+      "Punk rock energy",
+      "World-class mixology",
+      "Neon lights",
+      "Loud music",
+      "Cramped and chaotic atmosphere",
+      "Unforgettable experience"
+    ],
+    "crowdThemes": [
+      "Intimacy",
+      "Vibrant social energy",
+      "Dim lighting",
+      "Eclectic decor",
+      "Whispered conversations",
+      "Rhythmic disco beat",
+      "Creative cocktails",
+      "Neighborhood familiarity",
+      "Comfortably grungy ambiance",
+      "Connection and camaraderie",
+      "Languid pace"
+    ],
+    "overlapThemes": [
+      "Cocktails",
+      "Social energy",
+      "Atmosphere",
+      "Creativity"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a high-energy, chaotic vibe, while public perception highlights intimacy and connection. This divergence suggests that Tres Monos embodies a dual identity, balancing vibrant nightlife with a welcoming, community-oriented atmosphere."
+  },
+  "donjulio": {
+    "editorialThemes": [
+      "Argentine meat culture",
+      "Intoxicating aromas",
+      "Religious experience",
+      "Fire and cooking as a ritual"
+    ],
+    "crowdThemes": [
+      "Warm embrace of ambiance",
+      "Social interaction and community",
+      "Intimacy and shared experiences",
+      "Celebration and memory-making"
+    ],
+    "overlapThemes": [
+      "Scent of woodsmoke",
+      "Intoxicating atmosphere",
+      "Sense of community",
+      "Candlelight ambiance"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the primal and ritualistic aspects of dining at Parrilla Don Julio, focusing on the meat and fire, while the public perception highlights the social and intimate experience of dining. This divergence suggests that the venue's true identity is a blend of culinary excellence and a vibrant communal atmosphere, appealing to both the carnivore's passion and the social diner."
+  },
+  "mishiguene": {
+    "editorialThemes": [
+      "Immigrant memory",
+      "High dining",
+      "Joyous celebration",
+      "Seriousness of food"
+    ],
+    "crowdThemes": [
+      "Warmth",
+      "Nostalgia",
+      "Intimacy",
+      "Vibrant atmosphere",
+      "Shared experience",
+      "Emotional texture"
+    ],
+    "overlapThemes": [
+      "Celebration of heritage",
+      "Social energy",
+      "Culinary experience"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes the serious culinary artistry rooted in immigrant experiences, while the public perception highlights the warmth and nostalgia of shared dining. This divergence suggests that Mishiguene's true identity lies in balancing the profound cultural significance of its cuisine with the inviting, communal atmosphere it creates for its guests."
+  },
+  "ninogordo": {
+    "editorialThemes": [
+      "surreal pop-culture overload",
+      "intensely flavored food",
+      "playfully irreverent",
+      "vibrant and chaotic atmosphere"
+    ],
+    "crowdThemes": [
+      "intimate corners",
+      "whispered conversations",
+      "warm atmospheric lighting",
+      "communal pulse",
+      "nostalgic scents",
+      "cozy embrace",
+      "emotional texture"
+    ],
+    "overlapThemes": [
+      "vibrant energy",
+      "eclectic decor",
+      "intense flavors",
+      "communal experience"
+    ],
+    "interpretationNotes": "The editorial perspective emphasizes a chaotic and surreal aesthetic, while the public perception highlights intimacy and warmth. This divergence suggests that Niño Gordo balances a playful, vibrant identity with a deeper emotional connection, appealing to both the senses and the soul."
+  }
+}

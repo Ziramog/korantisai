@@ -1,0 +1,67 @@
+{
+  "venueId": "verne",
+  "venueName": "Verne Club",
+  "reviews": [
+    {
+      "author_name": "Clifton Meek",
+      "author_url": "https://www.google.com/maps/contrib/107183842671711447672/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUoD8YZdFa2xwdeXS4xm2NKPRlN1PclbJdbz-KU2FPV6eQPYspP=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "Exquisite spirit-forward cocktails prepared with care in a plush bar. Bartenders were friendly and clear experts at their craft. The Jasmin Blanco cocktail was especially good, a mix of gin with jasmine tea and honey, but the classic martinis were also a hit with our group. Great breadth of selection for differing palettes.",
+      "time": 1772037981,
+      "translated": false
+    },
+    {
+      "author_name": "Jenny T.",
+      "author_url": "https://www.google.com/maps/contrib/100241994351271165950/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXOwQgHL338og30LBGmufc769PkgCGfwLroEuRzWs5pb8CmdsNmWg=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 4,
+      "relative_time_description": "5 months ago",
+      "text": "I went to Verne Club and had a really good time. It’s a stylish spot with a cool atmosphere, perfect for a night out in Palermo. The cocktails were genuinely good — well-made, balanced, and with interesting flavors. The service was friendly and the staff seemed to really know what they were doing behind the bar. It can get a bit busy, but the vibe is still comfortable and enjoyable. Overall, Verne Club is a great place if you’re looking for quality drinks and a nice night out. I’d definitely go back.",
+      "time": 1764615497,
+      "translated": false
+    },
+    {
+      "author_name": "Valerija Malashevich",
+      "author_url": "https://www.google.com/maps/contrib/113405961704255929763/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkVP4Cn3K8jXATzxJ1GHpzTqYIFNKgjPsUASnX8csm4ThImZMA4w=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 4,
+      "relative_time_description": "8 months ago",
+      "text": "Great vibes, very dimly lit and ambient! The drinks were okay — I ordered a tiramisu martini off the menu, which wasn’t my favorite (and didn’t really get tipsy) but maybe their menu items are a bit more promising! There’s a lot of chairs so it’s a bit crowded in there and therefore it gets loud when there’s a lot of people, but I give bonus points for a sectioned off smoking area/courtyard area",
+      "time": 1759329575,
+      "translated": false
+    },
+    {
+      "author_name": "Angelica Le",
+      "author_url": "https://www.google.com/maps/contrib/106253729330825296811/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIOWBMa7jVofIayjpnICgpnxr9edArDUjsP5bGPjhHs-B9ToL8l=s128-c0x00000000-cc-rp-mo-ba6",
+      "rating": 3,
+      "relative_time_description": "8 months ago",
+      "text": "Rating: 3.2/5 [dine in]\n\nSaw great reviews for this spot, so we decided to swing by. Service was great, and they spoke English as well, which was helpful. Unfortunately, the drinks didn’t quite live up to the hype compared to other cocktail bars we tried that day.\n\nWhite Jasmine ($11,500 ARS): Heraclito London Dry Gin, Cardamom, Lemon Honey, Jasmine Tea (ABV 18.8%). Better than the 1869. You can pick up the flavors, but the lemon honey aftertaste was a bit too strong.\n\n1869 ($12,500 ARS): Havana 7 Rum, Zuelo Torrontés Vinegar, Dates, Pomegranate (ABV 19.6%). Sweet, but the alcohol flavor overpowered everything else. Also, the foam topping was too heavy.",
+      "time": 1757194347,
+      "translated": false
+    },
+    {
+      "author_name": "Ben G",
+      "author_url": "https://www.google.com/maps/contrib/106705600905990962518/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJu1nWaTagI2lQ_N289HNN0FswL8VyVe5foAtNB0y5oZzm4SQ=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 2,
+      "relative_time_description": "2 months ago",
+      "text": "decent drinks but shockingly bad service for a bar that aspires to be Top50. 10 waiters in a place with 4 customers, all occupied with anything else but to serve the guests. Left after 20min with an empty glass.",
+      "time": 1772926738,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

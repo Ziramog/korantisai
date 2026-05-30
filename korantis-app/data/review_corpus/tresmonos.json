@@ -1,0 +1,67 @@
+{
+  "venueId": "tresmonos",
+  "venueName": "Tres Monos",
+  "reviews": [
+    {
+      "author_name": "kristin Warzek",
+      "author_url": "https://www.google.com/maps/contrib/111678666649293781197/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVBHMm6rKYmIZmejtVHQ7yG8n1omDPPMmPwniclWMHLd1yH48c=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "One of the funnest bars in Palermo! Great drinks and fabulous atmosphere. Service is fantastic and the are very attentive. Drinks are fun and playful. Friday night was busy, but we went during the week as well and it wasn’t too bad. Great bar in centre of Palermo.",
+      "time": 1766968556,
+      "translated": false
+    },
+    {
+      "author_name": "Jill B",
+      "author_url": "https://www.google.com/maps/contrib/115901551131770107799/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ1721SoQUKcgkhKB2Tdr7mCX1z701vDUrEj2v2JZm0-rJ91Q=s128-c0x00000000-cc-rp-mo-ba5",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "Funky bar well worth the visit.\n\nTasty cocktails with great presentation.  They are happy for you to order any classic cocktails off the menu too.\n\nInside and outside seating.  We sat inside which is dark and dingy styling in the best possible way.  Great music playing.\n\nWe ordered a few plates to share which was delivered quickly and tasty.\n\nOnly downside, no locks on the unisex toilet doors and the toilet is too far away from the door to hold it closed lol",
+      "time": 1766132134,
+      "translated": false
+    },
+    {
+      "author_name": "Rovik Robert",
+      "author_url": "https://www.google.com/maps/contrib/103521079678024458298/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVvdIKY2FJUlc9BTk9ZWNw8YCCznXGxmE-ncjOBIdgcjAxzqgCy=s128-c0x00000000-cc-rp-mo-ba7",
+      "rating": 5,
+      "relative_time_description": "6 months ago",
+      "text": "Fantastic bar totally worth its ranking as a world’s best bar. Their signature menu is where all the gems are, especially with interesting drinks like the julep and the large fernet-including drink. Ambiance is slightly grungy and the music is disco which I love. Staff are very friendly and bilingual which helps a lot. Would come back!",
+      "time": 1764487917,
+      "translated": false
+    },
+    {
+      "author_name": "Nataliia Tomakhiv",
+      "author_url": "https://www.google.com/maps/contrib/113038214517900288652/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVOW7PSfUx-Y-DVq0A9YEYQaalY86TKqD9e_Ij_f1HdDMNpwhcixg=s128-c0x00000000-cc-rp-mo-ba4",
+      "rating": 4,
+      "relative_time_description": "8 months ago",
+      "text": "While visiting Buenos Aires for the first time, I couldn’t miss the chance to check out one of the bars listed among the “World’s 50 Best.” Naturally, I came in with pretty high expectations — but honestly, I left a bit disappointed. The place itself felt rather ordinary, looking like a regular bar without much that made it stand out.\n\nI tried a couple of cocktails, and while the taste was good, it wasn’t particularly impressive or memorable. The atmosphere was somewhat hipsterish, and the bar wasn’t too crowded — maybe because I arrived quite late, after midnight.\n\nOverall, if you’re into cocktails, it’s worth a stop, but don’t set your expectations too high. Depending on your personal taste, it might feel special, or it might just feel like another average bar.",
+      "time": 1758892291,
+      "translated": false
+    },
+    {
+      "author_name": "Florencia Romano ruiz",
+      "author_url": "https://www.google.com/maps/contrib/110687237456293513315/reviews",
+      "language": "en",
+      "original_language": "en",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKNOZa6WqypD4EEai0v-uomgELJL4u_XuBtu08dYhY_mfNGoA=s128-c0x00000000-cc-rp-mo-ba2",
+      "rating": 5,
+      "relative_time_description": "5 months ago",
+      "text": "Simplicity, effortlessly good!!\nWe sat down outside and it feels like a normal neighbourhood bar. The drinks are amazing! Very creative and well served. The service is really good, the vibe inside is completely different with louder music and interesting decorations. Definitely worth a visit while in Buenos Aires",
+      "time": 1765635251,
+      "translated": false
+    }
+  ],
+  "source": "Google Places"
+}

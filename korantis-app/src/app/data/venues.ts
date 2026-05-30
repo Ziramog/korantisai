@@ -206,7 +206,133 @@ export const MOCK_VENUES: Venue[] = [
     tagline: 'Where tango lives in the walls and the red neon never sleeps.',
     narrative: 'The bandoneon exhales. Worn wooden floors remember a thousand milongas. Red neon stains the walls. This is not a show — this is where tango still breathes.',
     tags: ['Tango', 'Raw', 'Authentic'],
-    lat: -34.6310,
-    lng: -58.3610
+  },
+  {
+    id: 'lattente',
+    name: 'Lattente',
+    category: 'Specialty Coffee',
+    location: 'Palermo Soho',
+    cardSize: 'compact',
+    spacing: 'tight',
+    heroImage: '/venue_lattente.png',
+    atmosphere: 'morning',
+    quality: 0.85,
+    tagline: 'The birthplace of Buenos Aires specialty coffee.',
+    narrative: 'A narrow, bustling space where the focus is entirely on the cup. The energy is high, the extraction is perfect, and people spill out onto the sidewalk.',
+    tags: ['Specialty', 'Fast Paced', 'Morning'],
+    lat: -34.5888,
+    lng: -58.4285
+  },
+  {
+    id: 'surryhills',
+    name: 'Surry Hills Coffee',
+    category: 'Australian Café',
+    location: 'Palermo Soho',
+    cardSize: 'layered',
+    spacing: 'breathe',
+    heroImage: '/venue_crisol.png', // Fallback
+    atmosphere: 'afternoon',
+    quality: 0.82,
+    tagline: 'Airy, light-filled, and unhurried.',
+    narrative: 'A sunny corner that feels imported from Sydney. Wide windows, blonde wood, and flat whites that taste like they should. Excellent for soft work.',
+    tags: ['Sunny', 'Soft Work', 'Daylight'],
+    lat: -34.5855,
+    lng: -58.4310
+  },
+  {
+    id: 'birkin',
+    name: 'Birkin',
+    category: 'Brunch & Coffee',
+    location: 'Palermo Botánico',
+    cardSize: 'immersive',
+    spacing: 'isolated',
+    heroImage: '/venue_ninina.png', // Fallback
+    atmosphere: 'golden-hour',
+    quality: 0.80,
+    tagline: 'Lively sidewalk brunch and midday chatter.',
+    narrative: 'Always busy, always vibrant. The terrazzo floor and brass details give it a Parisian touch, but the energy is purely porteño.',
+    tags: ['Lively', 'Brunch', 'Midday'],
+    lat: -34.5821,
+    lng: -58.4172
+  },
+  {
+    id: 'padre',
+    name: 'Padre Coffee Roasters',
+    category: 'Roastery & Café',
+    location: 'Palermo Hollywood',
+    cardSize: 'compact',
+    spacing: 'tight',
+    heroImage: '/venue_melbourne.png', // Fallback
+    atmosphere: 'morning',
+    quality: 0.81,
+    tagline: 'Deep roasted aromas in a brutalist setting.',
+    narrative: 'Concrete, steel, and the heavy scent of roasting beans. It feels like an engine room for caffeine. Focused, serious, and excellent.',
+    tags: ['Brutalist', 'Focused', 'Morning'],
+    lat: -34.5790,
+    lng: -58.4350
+  },
+  {
+    id: 'tresmonos',
+    name: 'Tres Monos',
+    category: 'Cocktail Bar',
+    location: 'Palermo Soho',
+    cardSize: 'cinematic',
+    spacing: 'tight',
+    heroImage: '/venue_tresmonos.png', // We have this artifact
+    atmosphere: 'late-night',
+    quality: 0.93,
+    tagline: 'Punk rock energy meets world-class mixology.',
+    narrative: 'Neon lights, loud music, and cocktails that rank among the best in the world. It’s cramped, chaotic, and completely unforgettable.',
+    tags: ['Punk', 'Cocktails', 'Loud'],
+    lat: -34.5880,
+    lng: -58.4300
+  },
+  {
+    id: 'donjulio',
+    name: 'Parrilla Don Julio',
+    category: 'Classic Parrilla',
+    location: 'Palermo Soho',
+    cardSize: 'immersive',
+    spacing: 'breathe',
+    heroImage: '/venue_labiela.png', // Fallback
+    atmosphere: 'night',
+    quality: 0.98,
+    tagline: 'The temple of Argentine meat and fire.',
+    narrative: 'Brick walls lined with wine bottles signed by diners. The smell of woodsmoke and roasting fat is intoxicating. A religious experience for carnivores.',
+    tags: ['Meat', 'Classic', 'Formal'],
+    lat: -34.5875,
+    lng: -58.4245
+  },
+  {
+    id: 'mishiguene',
+    name: 'Mishiguene',
+    category: 'Jewish Cuisine',
+    location: 'Palermo Botánico',
+    cardSize: 'layered',
+    spacing: 'breathe',
+    heroImage: '/venue_invernadero.png', // Fallback
+    atmosphere: 'night',
+    quality: 0.95,
+    tagline: 'Immigrant memory transformed into high dining.',
+    narrative: 'A loud, joyous celebration of Jewish diaspora cuisine. The music might start playing, people might start clapping, but the food is deadly serious.',
+    tags: ['Joyous', 'Heritage', 'Celebratory'],
+    lat: -34.5800,
+    lng: -58.4150
+  },
+  {
+    id: 'ninogordo',
+    name: 'Niño Gordo',
+    category: 'Asian Fusion',
+    location: 'Palermo Soho',
+    cardSize: 'cinematic',
+    spacing: 'isolated',
+    heroImage: '/venue_floreria.png', // Fallback
+    atmosphere: 'late-night',
+    quality: 0.89,
+    tagline: 'A fever dream of red lanterns and umami.',
+    narrative: 'Hundreds of red paper lanterns hang from the ceiling. The aesthetic is surreal pop-culture overload, matching food that is intensely flavored and playfully irreverent.',
+    tags: ['Surreal', 'Umami', 'Visual'],
+    lat: -34.5865,
+    lng: -58.4280
   }
 ];
