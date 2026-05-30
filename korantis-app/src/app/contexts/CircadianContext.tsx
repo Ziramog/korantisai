@@ -47,6 +47,8 @@ interface CircadianState {
   setLanguage: (lang: 'en' | 'es') => void;
   city: 'BUE' | 'NYC';
   setCity: (city: 'BUE' | 'NYC') => void;
+  setIsAuthenticated: (val: boolean) => void;
+  setUserId: (id: string | null) => void;
 }
 
 const DIMENSION_LABELS: { [key: number]: string } = {
@@ -191,7 +193,9 @@ const CircadianContext = createContext<CircadianState>({
   language: 'en',
   setLanguage: () => {},
   city: 'BUE',
-  setCity: () => {}
+  setCity: () => {},
+  setIsAuthenticated: () => {},
+  setUserId: () => {}
 });
 
 export const useCircadian = () => useContext(CircadianContext);
@@ -671,7 +675,9 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         language,
         setLanguage,
         city,
-        setCity
+        setCity,
+        setIsAuthenticated,
+        setUserId
       }}
     >
       {children}

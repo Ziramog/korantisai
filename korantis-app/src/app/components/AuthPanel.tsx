@@ -7,7 +7,7 @@ import { useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
 
 export default function AuthPanel() {
-  const { language } = useCircadian();
+  const { language, setIsAuthenticated, setUserId } = useCircadian();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -141,17 +141,30 @@ export default function AuthPanel() {
             )}
           </button>
 
-          <button
-            type="button"
-            onClick={() => {
-              setMode(mode === 'magic' ? 'password' : 'magic');
-              setStatus('idle');
-              setErrorMessage('');
-            }}
-            className="text-[10px] text-k-text-tertiary hover:text-k-text-secondary font-sans uppercase tracking-widest mt-4 transition-colors"
-          >
-            {mode === 'magic' ? 'Use password instead' : 'Use magic link instead'}
-          </button>
+          <div className="flex flex-col gap-2 mt-4">
+            <button
+              type="button"
+              onClick={() => {
+                setMode(mode === 'magic' ? 'password' : 'magic');
+                setStatus('idle');
+                setErrorMessage('');
+              }}
+              className="text-[10px] text-k-text-tertiary hover:text-k-text-secondary font-sans uppercase tracking-widest transition-colors"
+            >
+              {mode === 'magic' ? 'Use password instead' : 'Use magic link instead'}
+            </button>
+            
+            <button
+              type="button"
+              onClick={() => {
+                setUserId('dev-mock-user-123');
+                setIsAuthenticated(true);
+              }}
+              className="text-[10px] text-red-400/50 hover:text-red-400 font-sans uppercase tracking-widest transition-colors mt-2 border border-red-400/20 py-2 rounded-lg"
+            >
+              Bypass Auth (Dev Mode)
+            </button>
+          </div>
         </form>
       )}
     </div>

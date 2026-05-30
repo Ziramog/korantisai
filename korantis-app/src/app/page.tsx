@@ -24,7 +24,10 @@ export default function Home() {
     toggleSaveVenue, 
     currentDrift,
     currentPhase,
-    language
+    language,
+    setLanguage,
+    city,
+    setCity
   } = useCircadian();
 
   const [activeTab, setActiveTab] = useState<'search' | 'saved' | 'profile'>('search');
@@ -365,6 +368,48 @@ export default function Home() {
                           <div className="p-4 bg-k-surface-elevated/20 border border-k-border rounded-xl">
                             <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">{t('atlasIndex', language)}</span>
                             <span className="text-xs text-k-gold font-sans">{savedVenueIds.length} {t('bookmarks', language)}</span>
+                          </div>
+                        </section>
+
+                        {/* Global Preferences (Language & City) */}
+                        <section className="p-5 mt-2 bg-k-surface-elevated/10 border border-k-border/50 rounded-2xl flex flex-col gap-4">
+                          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary">
+                            Global Preferences
+                          </h3>
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs font-sans text-k-text-secondary">Language / Idioma</span>
+                            <div className="flex gap-2">
+                              <button
+                                onClick={() => setLanguage('en')}
+                                className={`px-3 py-1 text-[10px] uppercase tracking-widest font-sans rounded border transition-colors ${language === 'en' ? 'border-k-gold text-k-gold bg-k-gold/10' : 'border-k-border text-k-text-tertiary hover:text-k-text-secondary'}`}
+                              >
+                                EN
+                              </button>
+                              <button
+                                onClick={() => setLanguage('es')}
+                                className={`px-3 py-1 text-[10px] uppercase tracking-widest font-sans rounded border transition-colors ${language === 'es' ? 'border-k-gold text-k-gold bg-k-gold/10' : 'border-k-border text-k-text-tertiary hover:text-k-text-secondary'}`}
+                              >
+                                ES
+                              </button>
+                            </div>
+                          </div>
+                          
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs font-sans text-k-text-secondary">City / Ciudad</span>
+                            <div className="flex gap-2">
+                              <button
+                                onClick={() => setCity('NYC')}
+                                className={`px-3 py-1 text-[10px] uppercase tracking-widest font-sans rounded border transition-colors ${city === 'NYC' ? 'border-k-gold text-k-gold bg-k-gold/10' : 'border-k-border text-k-text-tertiary hover:text-k-text-secondary'}`}
+                              >
+                                NYC
+                              </button>
+                              <button
+                                onClick={() => setCity('BUE')}
+                                className={`px-3 py-1 text-[10px] uppercase tracking-widest font-sans rounded border transition-colors ${city === 'BUE' ? 'border-k-gold text-k-gold bg-k-gold/10' : 'border-k-border text-k-text-tertiary hover:text-k-text-secondary'}`}
+                              >
+                                BUE
+                              </button>
+                            </div>
                           </div>
                         </section>
                       </div>

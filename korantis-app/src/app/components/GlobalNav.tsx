@@ -40,7 +40,6 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
               <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('explore', language)}</span>
               {activeTab === 'search' && (
                 <motion.div 
-                  layoutId="active-indicator"
                   className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-k-gold"
                 />
               )}
@@ -59,7 +58,6 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
               <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('atlas', language)}</span>
               {activeTab === 'saved' && (
                 <motion.div 
-                  layoutId="active-indicator"
                   className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-k-gold"
                 />
               )}
@@ -78,7 +76,6 @@ export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: Gl
               <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('taste', language)}</span>
               {activeTab === 'profile' && (
                 <motion.div 
-                  layoutId="active-indicator"
                   className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-k-gold"
                 />
               )}
