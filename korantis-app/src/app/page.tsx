@@ -17,6 +17,19 @@ import MapExplorer from './components/MapExplorer';
 import HeaderControls from './components/HeaderControls';
 import { t } from './utils/i18n';
 
+type EditorialFeedSlot = Pick<ScoredVenue, 'cardSize' | 'spacing'>;
+
+const EDITORIAL_FEED_PATTERN: EditorialFeedSlot[] = [
+  { cardSize: 'layered', spacing: 'breathe' },
+  { cardSize: 'compact', spacing: 'tight' },
+  { cardSize: 'immersive', spacing: 'breathe' },
+  { cardSize: 'cinematic', spacing: 'isolated' },
+  { cardSize: 'layered', spacing: 'breathe' },
+  { cardSize: 'compact', spacing: 'tight' },
+  { cardSize: 'immersive', spacing: 'isolated' },
+  { cardSize: 'cinematic', spacing: 'breathe' },
+];
+
 export default function Home() {
   const { 
     isAuthenticated,
@@ -31,6 +44,20 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<'search' | 'saved' | 'profile'>('search');
   const [viewMode, setViewMode] = useState<'feed' | 'map'>('feed');
   const [selectedVenue, setSelectedVenue] = useState<ScoredVenue | null>(null);
+
+  const editorialVenues = useMemo(() => {
+    return rankedVenues.map((venue, index) => {
+      const slot = EDITORIAL_FEED_PATTERN[index % EDITORIAL_FEED_PATTERN.length];
+      return {
+        source: venue,
+        presentation: {
+          ...venue,
+          cardSize: slot.cardSize,
+          spacing: slot.spacing,
+        },
+      };
+    });
+  }, [rankedVenues]);
 
   // Generate dynamic atmospheric text descriptors based on transient vectors
   const tasteDescriptor = useMemo(() => {
@@ -128,9 +155,9 @@ export default function Home() {
                     layout
                     className="w-full flex flex-col items-center mt-12"
                   >
-                    {rankedVenues.map((venue) => (
+                    {editorialVenues.map(({ source, presentation }) => (
                       <motion.div
-                        key={venue.id}
+                        key={source.id}
                         layout
                         transition={{
                           type: 'spring',
@@ -141,8 +168,8 @@ export default function Home() {
                         className="w-full flex justify-center"
                       >
                         <VenueCard 
-                          venue={venue} 
-                          onSelect={handleVenueClick} 
+                          venue={presentation}
+                          onSelect={() => handleVenueClick(source)}
                         />
                       </motion.div>
                     ))}
