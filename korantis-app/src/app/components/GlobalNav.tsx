@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Search, Bookmark, User } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 
 interface GlobalNavProps {
   activeTab: 'search' | 'saved' | 'profile';
@@ -12,28 +12,33 @@ interface GlobalNavProps {
 
 export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
   const [isVisible, setIsVisible] = useState(true);
+  const { scrollY } = useScroll();
 
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() || 0;
+    
+    // If we're near the top, always show
+    if (latest < 50) {
+      setIsVisible(true);
+      return;
+    }
+
+    // Scrolling down (hide) vs Scrolling up (show)
+    if (latest > previous && latest > 50) {
+      setIsVisible(false);
+    } else if (latest < previous) {
+      setIsVisible(true);
+    }
+  });
+
+  // Always show when scrolling stops for 800ms
   useEffect(() => {
-    let lastScrollY = window.scrollY;
     let scrollTimeout: NodeJS.Timeout;
-
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      // Hide if scrolling down past 50px
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-      
-      lastScrollY = currentScrollY;
-
-      // Always show when scroll stops
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         setIsVisible(true);
-      }, 800); // 800ms after scroll stops
+      }, 800);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
