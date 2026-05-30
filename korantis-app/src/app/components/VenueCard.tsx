@@ -53,7 +53,9 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
         } else {
           if (entryTime > 0) {
             const dwellTime = performance.now() - entryTime;
-            if (dwellTime >= 2000) {
+            if (dwellTime < 800) {
+              recordPassThrough(venue.atmosphere);
+            } else if (dwellTime >= 2000) {
               recordDwell(venue.atmosphere, dwellTime);
             }
             entryTime = 0;
@@ -277,6 +279,7 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
       className={`w-full flex justify-center ${spacingStyles}`}
     >
       <motion.div
+        layoutId={`card-wrap-${venue.id}`}
         onClick={() => onSelect(venue)}
         className={`relative overflow-hidden cursor-pointer group shadow-2xl transition-all duration-[600ms] ${
           venue.cardSize !== 'compact' 
