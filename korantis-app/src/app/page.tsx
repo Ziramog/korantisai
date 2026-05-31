@@ -15,6 +15,7 @@ import AtmosphereDebug from './components/AtmosphereDebug';
 import AuthPanel from './components/AuthPanel';
 import MapExplorer from './components/MapExplorer';
 import HeaderControls from './components/HeaderControls';
+import SpatialAtlas from './components/map/SpatialAtlas';
 import { t } from './utils/i18n';
 
 type EditorialFeedSlot = Pick<ScoredVenue, 'cardSize' | 'spacing'>;
@@ -42,8 +43,9 @@ export default function Home() {
     setLanguage
   } = useCircadian();
 
-  const [activeTab, setActiveTab] = useState<'search' | 'saved' | 'profile'>('search');
+  const [activeTab, setActiveTab] = useState<'explore' | 'atlas' | 'taste'>('explore');
   const [selectedVenue, setSelectedVenue] = useState<ScoredVenue | null>(null);
+  const [atlasPreSelectedVenueId, setAtlasPreSelectedVenueId] = useState<string | null>(null);
 
   const editorialVenues = useMemo(() => {
     return rankedVenues.map((venue, index) => {
@@ -76,18 +78,6 @@ export default function Home() {
     return `You are currently drawn to ${socialStr} with ${lightStr} and ${paceStr}. Your profile adapts to your implicit scroll speed, cards expanded, and saved atmospheres.`;
   }, [currentDrift]);
 
-  // Derived Saved Venues
-  const savedVenues = useMemo(() => {
-    return rankedVenues.filter((v) => savedVenueIds.includes(v.id));
-  }, [rankedVenues, savedVenueIds]);
-
-  // Dynamic count for Saved Collections
-  const collectionCounts = useMemo(() => {
-    const afterMidnight = savedVenues.filter(v => v.atmosphere === 'late-night' || v.atmosphere === 'night').length;
-    const morningRitual = savedVenues.filter(v => v.atmosphere === 'morning').length;
-    const sundayCalm = savedVenues.filter(v => v.atmosphere === 'afternoon' || v.atmosphere === 'golden-hour').length;
-    return { afterMidnight, morningRitual, sundayCalm };
-  }, [savedVenues]);
 
 
 
@@ -101,7 +91,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen text-k-text overflow-x-hidden scroll-smooth relative">
       {/* FIXED ELEMENTS OUTSIDE TRANSFORM CONTAINERS */}
-      {activeTab === 'search' && !selectedVenue && (
+      {activeTab === 'explore' && !selectedVenue && (
         <SearchBar />
       )}
       
@@ -127,6 +117,11 @@ export default function Home() {
             <VenueDetail 
               venue={selectedVenue} 
               onBack={() => setSelectedVenue(null)} 
+              onOpenInAtlas={() => {
+                setAtlasPreSelectedVenueId(selectedVenue.id);
+                setSelectedVenue(null);
+                setActiveTab('atlas');
+              }}
             />
           </motion.div>
         ) : (
@@ -139,7 +134,7 @@ export default function Home() {
             className="w-full pb-32 pt-6"
           >
             {/* EXPLORE / SEARCH FEED TAB */}
-            {activeTab === 'search' && (
+            {activeTab === 'explore' && (
               <div className="w-full max-w-4xl mx-auto px-6 md:px-12 flex flex-col items-center">
                 
                 <motion.div 
@@ -161,6 +156,7 @@ export default function Home() {
                       <VenueCard 
                         venue={presentation}
                         onSelect={() => handleVenueClick(source)}
+                        onSpatialTap={() => setActiveTab('atlas')}
                       />
                     </motion.div>
                   ))}
@@ -169,133 +165,16 @@ export default function Home() {
             )}
 
             {/* SAVED ATLAS COLLECTIONS TAB */}
-            {activeTab === 'saved' && (
-              <div className="max-w-4xl mx-auto px-6 md:px-12 pt-12 md:pt-24 animate-fade-in">
-                <header className="mb-14">
-                  <h1 className="text-k-text font-display text-4xl md:text-5xl mb-2.5 tracking-wide">
-                    {t('yourAtlas', language)}
-                  </h1>
-                  <p className="text-sm text-k-text-secondary font-sans font-light">
-                    {t('atlasDesc', language)}
-                  </p>
-                </header>
-
-                <main className="w-full flex flex-col gap-12">
-                  {/* Collections Cards Grid */}
-                  <section>
-                    <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-6">
-                      {t('dynamicCollections', language)}
-                    </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                      {/* Collection 1: After Midnight */}
-                      <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-k-border-light group cursor-pointer">
-                        <Image 
-                          src="/venue_floreria.png" 
-                          alt="After Midnight" 
-                          fill 
-                          className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
-                        <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('afterMidnight', language)}</h3>
-                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.afterMidnight} {t('atmospheres', language)}</p>
-                        </div>
-                      </div>
-
-                      {/* Collection 2: Morning Ritual */}
-                      <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-k-border-light group cursor-pointer">
-                        <Image 
-                          src="/venue_crisol.png" 
-                          alt="Morning Ritual" 
-                          fill 
-                          className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
-                        <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('morningRitual', language)}</h3>
-                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.morningRitual} {t('atmospheres', language)}</p>
-                        </div>
-                      </div>
-
-                      {/* Collection 3: Sunday Calm */}
-                      <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-k-border-light group cursor-pointer">
-                        <Image 
-                          src="/venue_invernadero.png" 
-                          alt="Sunday Calm" 
-                          fill 
-                          className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
-                        <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                          <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('sundayCalm', language)}</h3>
-                          <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.sundayCalm} {t('atmospheres', language)}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-
-                  {/* All Saved List */}
-                  <section>
-                    <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-6">
-                      {t('allSavedPlaces', language)}
-                    </h2>
-                    
-                    {savedVenues.length === 0 ? (
-                      <div className="py-16 text-center border border-dashed border-k-border rounded-2xl bg-k-surface/10">
-                        <Bookmark className="mx-auto text-k-text-tertiary mb-4 opacity-40" size={32} />
-                        <p className="text-sm text-k-text-secondary font-sans font-light">{t('atlasEmpty', language)}</p>
-                        <button 
-                          onClick={() => setActiveTab('search')}
-                          className="mt-4 px-5 py-2 rounded-full border border-k-gold-muted/40 text-xs font-sans text-k-gold bg-k-gold-dim hover:bg-k-gold-dim/60 transition-colors cursor-pointer"
-                        >
-                          {t('discoverAtmospheres', language)}
-                        </button>
-                      </div>
-                    ) : (
-                      <div className="flex flex-col gap-4">
-                        {savedVenues.map((venue) => (
-                          <div 
-                            key={venue.id}
-                            onClick={() => handleVenueClick(venue)}
-                            className="p-4 bg-k-surface-elevated/20 border border-k-border rounded-xl flex items-center gap-4 hover:border-k-gold-muted/30 hover:bg-k-surface-elevated/40 transition-all duration-300 cursor-pointer shadow-md group"
-                          >
-                            <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 border border-white/5">
-                              <Image src={venue.heroImage} alt={venue.name} fill className="object-cover" />
-                            </div>
-                            <div className="flex-grow min-w-0">
-                              <h3 className="font-display text-lg font-normal text-k-text leading-snug group-hover:text-k-gold-light transition-colors">
-                                {venue.name}
-                              </h3>
-                              <p className="text-[11px] text-k-text-secondary font-sans truncate">
-                                {venue.location} &middot; <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {language === 'es' ? 'atmósfera' : 'atmosphere'}</span>
-                              </p>
-                            </div>
-                            <div className="flex items-center gap-3.5 flex-shrink-0">
-                              <span className="hidden md:inline px-3 py-1 rounded border border-k-gold-muted/10 text-[9px] font-sans tracking-wide text-k-gold-muted bg-k-gold/5 uppercase">
-                                {language === 'es' && venue.category_es ? venue.category_es : venue.category}
-                              </span>
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  toggleSaveVenue(venue.id);
-                                }}
-                                className="p-2 text-k-gold hover:text-k-text-secondary transition-colors cursor-pointer"
-                                aria-label="Remove bookmark"
-                              >
-                                <Heart size={15} fill="currentColor" />
-                              </button>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </section>
-                </main>
-              </div>
+            {activeTab === 'atlas' && (
+              <SpatialAtlas 
+                onVenueClick={handleVenueClick} 
+                onExploreClick={() => setActiveTab('explore')} 
+                initialSelectedVenueId={atlasPreSelectedVenueId}
+              />
             )}
 
             {/* TASTE PROFILE TAB */}
-            {activeTab === 'profile' && (
+            {activeTab === 'taste' && (
               <div className="max-w-4xl mx-auto px-6 md:px-12 pt-12 md:pt-24 animate-fade-in">
                 {!isAuthenticated ? (
                   <div className="flex flex-col items-center justify-center min-h-[50vh]">

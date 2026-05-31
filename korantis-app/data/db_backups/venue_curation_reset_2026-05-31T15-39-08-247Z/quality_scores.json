@@ -1,0 +1,1584 @@
+[
+  {
+    "venue_id": "ChIJs0l71fFZwokRX6Er4VmHrU8",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.232087,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "twilight ambiance",
+      "dim lighting",
+      "warm glow",
+      "luxurious rhythm",
+      "artistry of cocktails",
+      "intimate atmosphere",
+      "laughter and whispers",
+      "serene anticipation",
+      "shared excitement",
+      "sanctuary feel",
+      "creativity and camaraderie"
+    ],
+    "overlap_themes": [
+      "high-quality experience",
+      "inviting atmosphere",
+      "luxurious feel",
+      "intimate setting"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the venue's quality and location, while the observed public perception elaborates on the sensory and emotional experience within the venue. The overlap highlights the shared understanding of the venue as a high-quality, inviting space that fosters intimacy and connection among guests.",
+    "created_at": "2026-05-30T01:24:07.188124+00:00",
+    "updated_at": "2026-05-30T01:29:03.377349+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 144,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:07.188124+00:00"
+  },
+  {
+    "venue_id": "ChIJkejWaoRZwokRz6IQLC9geVA",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.176974,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "cozy atmosphere",
+      "vibrant decor",
+      "intimacy and connection",
+      "electric energy",
+      "shared experiences",
+      "creative spirit",
+      "community essence"
+    ],
+    "overlap_themes": [
+      "cozy atmosphere",
+      "intimacy and connection",
+      "electric energy",
+      "community essence"
+    ],
+    "interpretation_notes": "The editorial expectation sets a straightforward, professional tone focusing on quality and location, while the observed public perception delves into the emotional and sensory experiences of the venue, highlighting its ambiance and social interactions. The overlap themes suggest that while the editorial perspective emphasizes quality, the crowd's experience is rich with emotional and sensory details, creating a more immersive understanding of the venue.",
+    "created_at": "2026-05-30T01:25:07.161099+00:00",
+    "updated_at": "2026-05-30T01:29:09.908076+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 144,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:25:07.161099+00:00"
+  },
+  {
+    "venue_id": "ChIJ9SAGg4m1vJURTgnbaa593To",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.36301,
+    "editorial_themes": [
+      "High-quality cafe",
+      "Specialty coffee",
+      "Location in Buenos Aires"
+    ],
+    "crowd_themes": [
+      "Charming ambiance",
+      "Warmth and light",
+      "Social energy",
+      "Comforting scents",
+      "Intimate conversations",
+      "Serene sanctuary"
+    ],
+    "overlap_themes": [
+      "Warmth",
+      "Inviting atmosphere",
+      "Social interaction",
+      "Comforting scents"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and location of the cafe, while the observed public perception delves into the sensory and emotional experiences of patrons. The overlap highlights the warmth and inviting nature of the venue, suggesting that the high-quality aspect is not just in the product but also in the overall experience it offers.",
+    "created_at": "2026-05-30T01:23:30.53781+00:00",
+    "updated_at": "2026-05-30T01:29:41.746987+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 140,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:30.53781+00:00"
+  },
+  {
+    "venue_id": "ChIJs88PkWVZwokR2jF02LIXkw0",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.350034,
+    "editorial_themes": [
+      "high-quality cafe",
+      "urban venue",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "cozy warmth",
+      "intimate connection",
+      "social energy",
+      "comforting embrace",
+      "tranquility and joy"
+    ],
+    "overlap_themes": [
+      "high-quality cafe",
+      "cozy warmth",
+      "intimate connection"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and urban setting of 787 Coffee, while the observed public perception elaborates on the emotional and sensory experiences within the cafe. The overlap highlights the cafe's quality and warmth, while the crowd themes delve into the social and atmospheric nuances that create a unique experience for visitors.",
+    "created_at": "2026-05-30T01:23:57.835244+00:00",
+    "updated_at": "2026-05-30T01:30:06.445518+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 143,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:57.835244+00:00"
+  },
+  {
+    "venue_id": "ChIJv1FHeU5ZwokRZUZ3QKsgjdg",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.366912,
+    "editorial_themes": [
+      "high-quality cafe",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "sanctuary of warmth",
+      "intimate space",
+      "tender conversations",
+      "new friendships",
+      "aroma of rich coffee",
+      "hum of laughter",
+      "soothing cadence of the barista",
+      "emotional tapestry",
+      "cherished moments",
+      "cozy embrace"
+    ],
+    "overlap_themes": [
+      "warmth",
+      "intimacy",
+      "connection",
+      "coffee"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward, factual description of the venue as a high-quality cafe in New York, focusing on its location and quality. In contrast, the observed public perception offers a rich, emotional narrative that emphasizes the atmosphere of warmth, connection, and community within the cafe. The overlap themes highlight the shared focus on warmth and connection, while the crowd themes delve deeper into the sensory and emotional experiences that patrons associate with the venue.",
+    "created_at": "2026-05-30T01:24:53.893387+00:00",
+    "updated_at": "2026-05-30T01:30:48.843542+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 145,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:53.893387+00:00"
+  },
+  {
+    "venue_id": "ChIJz_CYqwXLvJURdYrjf58EhfI",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.273311,
+    "editorial_themes": [
+      "High-quality café",
+      "Specialty coffee",
+      "Located in Buenos Aires"
+    ],
+    "crowd_themes": [
+      "Warm embrace",
+      "Soft golden light",
+      "Rustic charm",
+      "Social energy",
+      "Nostalgic atmosphere"
+    ],
+    "overlap_themes": [
+      "Inviting ambiance",
+      "Comforting environment",
+      "Coffee culture",
+      "Sense of community"
+    ],
+    "interpretation_notes": "The editorial description focuses on the quality and location of the café, while the observed public perception delves into the sensory and emotional experiences of patrons. The overlap highlights the café's inviting nature and its role as a community hub, while the divergences show the editorial's more straightforward approach compared to the poetic and evocative imagery of the crowd's perception.",
+    "created_at": "2026-05-30T01:22:58.026875+00:00",
+    "updated_at": "2026-05-30T01:28:50.100101+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 141,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:22:58.026875+00:00"
+  },
+  {
+    "venue_id": "ChIJlXfzUMu1vJURPR5ZJW1uCyo",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.534958,
+    "editorial_themes": [
+      "high-quality cafe",
+      "Buenos Aires location"
+    ],
+    "crowd_themes": [
+      "cozy energy",
+      "inviting atmosphere",
+      "soft laughter",
+      "uplifting symphony",
+      "fragrant air",
+      "rustic and modern decor",
+      "intimate yet expansive",
+      "serene yet vibrant"
+    ],
+    "overlap_themes": [
+      "high-quality cafe",
+      "inviting atmosphere"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and location of the cafe, while the observed public perception elaborates on the sensory and emotional experiences within the venue. The crowd themes highlight the ambiance and social dynamics, showcasing a rich, inviting environment that resonates with the essence of Buenos Aires.",
+    "created_at": "2026-05-30T01:23:04.403715+00:00",
+    "updated_at": "2026-05-30T01:28:53.605252+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 130,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:04.403715+00:00"
+  },
+  {
+    "venue_id": "ChIJ9Tfdk8dZwokRiz6jQxTHOnY",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.351815,
+    "editorial_themes": [
+      "high-quality cafe",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "warmth",
+      "tranquility",
+      "conviviality",
+      "solitary and social spaces",
+      "rich textures of coffee",
+      "comforting atmosphere",
+      "sense of belonging"
+    ],
+    "overlap_themes": [
+      "warmth",
+      "high-quality experience",
+      "inviting ambiance"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and location of the cafe, while the observed public perception elaborates on the emotional and sensory experience of being in the venue. The overlap highlights the warmth and high-quality experience, while the crowd themes delve deeper into the nuanced atmosphere that patrons feel, showcasing the cafe as a multifaceted space for both solitude and social interaction.",
+    "created_at": "2026-05-30T01:23:44.268464+00:00",
+    "updated_at": "2026-05-30T01:29:00.090546+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 140,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:44.268464+00:00"
+  },
+  {
+    "venue_id": "ChIJBRY0FTJZwokRO9yVHnHsu9k",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.502033,
+    "editorial_themes": [
+      "high-quality cafe",
+      "urban location",
+      "intimate atmosphere"
+    ],
+    "crowd_themes": [
+      "sanctuary from urban clamor",
+      "comforting aroma of coffee",
+      "cozy ambiance",
+      "social energy",
+      "solitude and companionship",
+      "shared moments"
+    ],
+    "overlap_themes": [
+      "intimacy",
+      "urban setting",
+      "comfort",
+      "social interaction"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward description of the cafe's quality and location, while the observed public perception delves into the emotional and sensory experiences of patrons, highlighting the cafe as a refuge in the city. The overlap themes indicate a shared understanding of the cafe's intimate and comforting nature, while the crowd themes expand on the personal and social experiences that define the venue.",
+    "created_at": "2026-05-30T01:24:44.193582+00:00",
+    "updated_at": "2026-05-30T01:29:06.989341+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 133,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:44.193582+00:00"
+  },
+  {
+    "venue_id": "ChIJlTkBDdrLvJURW7t_NrgxmRo",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.321737,
+    "editorial_themes": [
+      "high-quality cafe",
+      "cozy atmosphere",
+      "urban refuge",
+      "inviting ambiance"
+    ],
+    "crowd_themes": [
+      "timeless refuge",
+      "soft amber light",
+      "mingling scents",
+      "solace amidst urban clamor",
+      "friendly exchanges",
+      "communal energy",
+      "tranquility and cacophony",
+      "human connection"
+    ],
+    "overlap_themes": [
+      "cozy atmosphere",
+      "urban refuge",
+      "inviting ambiance",
+      "human connection"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and location of the cafe, while the observed public perception delves into the sensory and emotional experiences within the venue. Both layers highlight the cafe as a refuge in the urban landscape, but the public perception adds depth by illustrating the dynamic interactions and atmosphere created by patrons.",
+    "created_at": "2026-05-30T01:22:54.544092+00:00",
+    "updated_at": "2026-05-30T01:29:12.54067+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 148,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:22:54.544092+00:00"
+  },
+  {
+    "venue_id": "ChIJHXg8BINZwokRpUSDvY8f-3I",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.320476,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "Sophisticated ambiance",
+      "New York City nightlife"
+    ],
+    "crowd_themes": [
+      "Intimate social interactions",
+      "Live music atmosphere",
+      "Comfortable solitude"
+    ],
+    "overlap_themes": [
+      "Elegant decor",
+      "Inviting atmosphere",
+      "Sense of community"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the restaurant's quality and location, while the observed public perception paints a vivid picture of the venue's atmosphere, highlighting the emotional and sensory experiences of guests. The overlap themes suggest that both layers recognize the venue's elegance and inviting nature, while the crowd themes delve deeper into the social dynamics and personal experiences within the space.",
+    "created_at": "2026-05-30T01:23:01.322161+00:00",
+    "updated_at": "2026-05-30T01:29:16.443694+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 139,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:01.322161+00:00"
+  },
+  {
+    "venue_id": "ChIJTUHwQJK1vJURdEmmL52Y2p0",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.529495,
+    "editorial_themes": [
+      "High-quality cafe",
+      "Specialty coffee",
+      "Urban atmosphere",
+      "Welcoming environment"
+    ],
+    "crowd_themes": [
+      "Cozy ambiance",
+      "Social interaction",
+      "Intimacy and solitude",
+      "Vibrant energy"
+    ],
+    "overlap_themes": [
+      "Warmth and comfort",
+      "Expertly crafted coffee",
+      "Inviting space",
+      "Urban charm"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and specialty of the cafe, while the observed public perception paints a vivid picture of the atmosphere, focusing on the sensory experiences and social dynamics within the space. Both layers highlight the cafe's inviting nature, but the crowd's perspective adds depth by illustrating the emotional and sensory elements that contribute to the overall experience.",
+    "created_at": "2026-05-30T01:23:07.292284+00:00",
+    "updated_at": "2026-05-30T01:29:19.981444+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 134,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:07.292284+00:00"
+  },
+  {
+    "venue_id": "ChIJi3BXstfLvJURdNbYxa0qaYs",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.492838,
+    "editorial_themes": [
+      "High-quality cafe",
+      "Specialty coffee",
+      "Location in Buenos Aires"
+    ],
+    "crowd_themes": [
+      "Intimate haven",
+      "Warmth and comfort",
+      "Community atmosphere",
+      "Escape from city life",
+      "Cultural connection"
+    ],
+    "overlap_themes": [
+      "High-quality experience",
+      "Warm ambiance",
+      "Community feel"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward description of the venue's quality and location, while the observed public perception delves deeper into the emotional and sensory experiences associated with the cafe. The crowd themes emphasize the intimate and communal aspects of the venue, which align with the editorial themes of quality and location but expand on the atmosphere and emotional resonance.",
+    "created_at": "2026-05-30T01:23:10.508478+00:00",
+    "updated_at": "2026-05-30T01:29:22.666722+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 146,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:10.508478+00:00"
+  },
+  {
+    "venue_id": "ChIJE_yL4Ss1o5URmOIYvCF6GUU",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.208882,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "fine dining",
+      "elegant atmosphere",
+      "social dining experience"
+    ],
+    "crowd_themes": [
+      "twilight ambiance",
+      "warmth and comfort",
+      "laughter and conversation",
+      "scenic views",
+      "shared experiences"
+    ],
+    "overlap_themes": [
+      "inviting atmosphere",
+      "social interaction",
+      "comfort and warmth",
+      "enjoyment of companionship"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the high-quality nature of the venue, suggesting a refined dining experience. In contrast, the observed public perception captures a more emotional and sensory experience, highlighting the ambiance and social interactions that define the Kraken bar. While both layers acknowledge the venue's inviting atmosphere and social aspect, the editorial description is more focused on the quality of the restaurant, whereas the public perception delves into the emotional and sensory experiences of patrons.",
+    "created_at": "2026-05-30T01:23:13.922083+00:00",
+    "updated_at": "2026-05-30T01:29:26.264991+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 138,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:13.922083+00:00"
+  },
+  {
+    "venue_id": "ChIJm0LQolPLvJURWGs-P6DPvxM",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.405864,
+    "editorial_themes": [
+      "High-quality cafe",
+      "Specialty coffee",
+      "Urban charm"
+    ],
+    "crowd_themes": [
+      "Tranquil charm",
+      "Community energy",
+      "Natural ambiance",
+      "Intimacy and expansiveness"
+    ],
+    "overlap_themes": [
+      "Charming atmosphere",
+      "Inviting space",
+      "Blend of solitude and community"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and specialty of the café, while the public perception focuses on the sensory experience and emotional resonance of the venue. The overlap highlights the café's inviting nature, suggesting that while it is recognized for its quality, it is also celebrated for its ability to foster a sense of community and personal reflection.",
+    "created_at": "2026-05-30T01:23:16.886022+00:00",
+    "updated_at": "2026-05-30T01:29:30.710238+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 136,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:16.886022+00:00"
+  },
+  {
+    "venue_id": "ChIJfWVsl1ZYwokR9qnmtWV2pEg",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.19049,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "Elegant atmosphere",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "Cozy charm",
+      "Intimate ambiance",
+      "Festive decorations",
+      "Social interaction",
+      "Emotional connection"
+    ],
+    "overlap_themes": [
+      "Warmth and light",
+      "Inviting atmosphere",
+      "Social and solitary experiences"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the high-quality and location aspects of Sir Henry's, while the observed public perception delves into the emotional and sensory experiences of the venue. The overlap highlights the warmth and inviting nature of the space, suggesting that while the editorial view is more formal, the crowd's perception is rich with emotional resonance and sensory detail.",
+    "created_at": "2026-05-30T01:24:41.156784+00:00",
+    "updated_at": "2026-05-30T01:30:37.31058+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 145,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:41.156784+00:00"
+  },
+  {
+    "venue_id": "ChIJ5X4bZADLvJURvbdTaFA9psw",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.234693,
+    "editorial_themes": [
+      "High-quality cafe",
+      "Buenos Aires location"
+    ],
+    "crowd_themes": [
+      "Morning light",
+      "Soft ambience",
+      "Solitude and companionship",
+      "Gentle hum of the bustling street",
+      "Effortless joy",
+      "Intimate exchanges",
+      "Nostalgia and anticipation",
+      "Sacred space for connection"
+    ],
+    "overlap_themes": [
+      "Atmospheric quality",
+      "Connection and companionship",
+      "Inviting ambiance"
+    ],
+    "interpretation_notes": "The editorial expectation sets a straightforward, factual tone about the venue's quality and location, while the observed public perception delves into a rich, sensory experience that highlights the emotional and social aspects of the cafe. The overlap themes suggest that while the editorial perspective is more about the venue's status, the crowd's perception emphasizes the lived experience and atmosphere.",
+    "created_at": "2026-05-30T01:23:23.50878+00:00",
+    "updated_at": "2026-05-30T01:29:35.936976+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 145,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:23.50878+00:00"
+  },
+  {
+    "venue_id": "ChIJwR4noh5ZwokREcz36jnEQbo",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.380217,
+    "editorial_themes": [
+      "high-quality cafe",
+      "intimate atmosphere",
+      "cozy environment",
+      "creative space"
+    ],
+    "crowd_themes": [
+      "soft amber light",
+      "comforting aroma of coffee",
+      "quiet focus",
+      "gentle clatter of keys",
+      "hushed conversation",
+      "serene library atmosphere",
+      "echoes of laughter",
+      "tranquil embrace"
+    ],
+    "overlap_themes": [
+      "intimacy",
+      "comfort",
+      "creativity",
+      "coziness"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the high-quality aspect of the cafe, suggesting a refined experience, while the observed public perception focuses on the sensory and emotional experience of patrons within the space. Both layers highlight themes of intimacy and comfort, but the editorial layer is more about the venue's reputation, whereas the crowd's perception captures the lived experience of the atmosphere.",
+    "created_at": "2026-05-30T01:23:27.187978+00:00",
+    "updated_at": "2026-05-30T01:29:38.926685+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 144,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:27.187978+00:00"
+  },
+  {
+    "venue_id": "ChIJ5xXRypi1vJURbyPHDWVCJL8",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.455772,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "elegant interior",
+      "cozy atmosphere",
+      "crafted cocktails"
+    ],
+    "crowd_themes": [
+      "enchanting hideaway",
+      "soft golden light",
+      "spirited conversation",
+      "live jazz",
+      "lush greenery",
+      "solitary reflection",
+      "vibrant gatherings",
+      "cherished secret",
+      "oasis",
+      "art of unwinding"
+    ],
+    "overlap_themes": [
+      "cozy atmosphere",
+      "crafted cocktails"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and elegance of the venue, while the observed public perception enriches this with vivid imagery and emotional resonance, highlighting the ambiance and social experience. The overlap in themes suggests that while the venue is recognized for its quality, it is also celebrated for its inviting and intimate atmosphere.",
+    "created_at": "2026-05-30T01:23:34.267428+00:00",
+    "updated_at": "2026-05-30T01:29:44.952776+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 144,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:34.267428+00:00"
+  },
+  {
+    "venue_id": "ChIJRUJ72ffLvJURJBByWf574-U",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.546316,
+    "editorial_themes": [
+      "high-quality",
+      "cafe",
+      "Buenos Aires"
+    ],
+    "crowd_themes": [
+      "tranquil oasis",
+      "urban sprawl",
+      "warm glow",
+      "convivial chatter",
+      "laughter of friends",
+      "solitude",
+      "friendly smiles",
+      "quiet reflection",
+      "savoring ambience",
+      "invigorating aroma",
+      "artistry in latte designs",
+      "communal haven",
+      "connected lives",
+      "serenity amid vivacity"
+    ],
+    "overlap_themes": [
+      "cafe",
+      "Buenos Aires"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward description focusing on the quality and location of Tona Café, while the observed public perception delves into the emotional and sensory experiences of patrons, highlighting the café's atmosphere as a serene escape within the city. The overlap lies in the identification of Tona Café as a café in Buenos Aires, while the crowd themes expand on the ambiance and social interactions that define the venue's character.",
+    "created_at": "2026-05-30T01:23:37.717747+00:00",
+    "updated_at": "2026-05-30T01:29:49.897321+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 146,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:37.717747+00:00"
+  },
+  {
+    "venue_id": "ChIJjcOdCGC1vJUR77bwV_1cAfc",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.203734,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "Buenos Aires"
+    ],
+    "crowd_themes": [
+      "curious energy",
+      "eccentric design",
+      "bustling camaraderie",
+      "whimsical décor",
+      "vibrant colors",
+      "eclectic textures",
+      "playful embrace",
+      "warm ambiance",
+      "animated conversations",
+      "eclectic tunes",
+      "lively social scene",
+      "hidden nooks",
+      "whispered secrets",
+      "solitary musings",
+      "twinkling city lights",
+      "sense of wonder",
+      "exhilarating moments"
+    ],
+    "overlap_themes": [
+      "vibrant atmosphere",
+      "social interactions",
+      "unique design"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the quality and location of the venue, while the observed public perception elaborates on the lively and eclectic atmosphere, highlighting the social dynamics and visual aesthetics. The overlap indicates that while the venue is recognized for its vibrant and unique design, the editorial perspective lacks the depth of the experiential and emotional resonance captured in the crowd's description.",
+    "created_at": "2026-05-30T01:23:40.773913+00:00",
+    "updated_at": "2026-05-30T01:29:53.037752+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 131,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:40.773913+00:00"
+  },
+  {
+    "venue_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.175376,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "Urban sophistication",
+      "Scenic views",
+      "Social atmosphere"
+    ],
+    "crowd_themes": [
+      "Vibrant energy",
+      "Laughter and music",
+      "Intimate conversations",
+      "Collective experience"
+    ],
+    "overlap_themes": [
+      "Atmospheric vibrancy",
+      "Social interaction",
+      "Scenic beauty",
+      "Blend of solitude and togetherness"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the venue's quality and location, while the public perception captures the nuanced emotional experience of patrons. Both layers highlight the venue's appeal as a social hub with stunning views, but the public perception delves deeper into the emotional and sensory experiences of the guests.",
+    "created_at": "2026-05-30T01:23:47.586524+00:00",
+    "updated_at": "2026-05-30T01:29:56.760611+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 142,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:47.586524+00:00"
+  },
+  {
+    "venue_id": "ChIJHY6qgqTKvJURqNM0efgLPFk",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.465114,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "Elegant atmosphere",
+      "Luxurious setting",
+      "City views"
+    ],
+    "crowd_themes": [
+      "Panoramic vistas",
+      "Intimate ambiance",
+      "Social interactions",
+      "Relaxation and contemplation",
+      "Dynamic energy shifts"
+    ],
+    "overlap_themes": [
+      "Elegance",
+      "Atmospheric beauty",
+      "Connection with the city",
+      "Luxurious experience"
+    ],
+    "interpretation_notes": "The editorial description emphasizes the high-quality and luxurious nature of the venue, while the observed public perception highlights the experiential aspects, such as the ambiance, social dynamics, and the interplay between tranquility and energy. Both layers appreciate the elegance and beauty of the venue, but the crowd's perspective adds depth by focusing on the emotional and social experiences that unfold within that setting.",
+    "created_at": "2026-05-30T01:23:50.700018+00:00",
+    "updated_at": "2026-05-30T01:29:59.799013+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 153,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:50.700018+00:00"
+  },
+  {
+    "venue_id": "ChIJeZ0y0Ou1vJUR6cErTGzhTCc",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.324693,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "immersive experience",
+      "nostalgic atmosphere",
+      "social connection",
+      "intimate ambiance"
+    ],
+    "crowd_themes": [
+      "vibrant energy",
+      "rustic decor",
+      "warm lighting",
+      "lively ambiance",
+      "emotional depth"
+    ],
+    "overlap_themes": [
+      "immersive experience",
+      "nostalgic atmosphere",
+      "social connection",
+      "intimate ambiance"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the venue's quality and dining experience, while the observed public perception highlights the emotional and sensory aspects of the atmosphere. Both layers recognize the venue's ability to foster social connections and create an intimate setting, but the public perception delves deeper into the emotional resonance and immersive qualities of the space.",
+    "created_at": "2026-05-30T01:24:00.861003+00:00",
+    "updated_at": "2026-05-30T01:30:09.621725+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 154,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:00.861003+00:00"
+  },
+  {
+    "venue_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.280865,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "Buenos Aires"
+    ],
+    "crowd_themes": [
+      "dimly lit ambiance",
+      "warm inviting glow",
+      "rich furnishings",
+      "vibrant energy",
+      "laughter and clinking glasses",
+      "spirited conversation",
+      "intimate solitude",
+      "life and vibrancy",
+      "sanctuary",
+      "emotional texture",
+      "crafted cocktails",
+      "nightlife",
+      "flavor and connection"
+    ],
+    "overlap_themes": [
+      "high-quality experience",
+      "inviting atmosphere",
+      "intimate setting"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the venue's quality and location, while the observed public perception paints a vivid picture of the atmosphere, focusing on sensory experiences and emotional connections. The overlap suggests that both perspectives recognize Verne Club as a premium venue that offers an inviting and intimate environment, but the crowd's description delves deeper into the emotional and sensory aspects of the experience.",
+    "created_at": "2026-05-30T01:24:04.15025+00:00",
+    "updated_at": "2026-05-30T01:30:13.158769+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 140,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:04.15025+00:00"
+  },
+  {
+    "venue_id": "ChIJIUMqmtc0o5URXU-T5nEkCc8",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.343482,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "elegant décor",
+      "social energy",
+      "intimate setting",
+      "memorable gatherings"
+    ],
+    "crowd_themes": [
+      "symphony of light and shadow",
+      "golden glow",
+      "gentle hum of music",
+      "warmth of camaraderie",
+      "layers of flavor",
+      "celebration and quiet introspection"
+    ],
+    "overlap_themes": [
+      "elegant décor",
+      "intimate setting",
+      "social energy",
+      "memorable gatherings"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the high-quality nature of the venue, while the observed public perception highlights the atmospheric experience and emotional resonance of the space. Both layers recognize the elegance and social dynamics of the venue, but the crowd's description adds depth with sensory details and emotional undertones.",
+    "created_at": "2026-05-30T01:24:26.253633+00:00",
+    "updated_at": "2026-05-30T01:30:16.257896+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 145,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:26.253633+00:00"
+  },
+  {
+    "venue_id": "ChIJ_dckWptZwokR_LkU9WxPNZ4",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.471388,
+    "editorial_themes": [
+      "high-quality cafe",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "warmth and simplicity",
+      "hidden nook",
+      "aromatic coffee",
+      "laughter and conversation",
+      "minimalist ambiance",
+      "solitude and social interaction",
+      "artistry in coffee preparation",
+      "comfort and stillness",
+      "vibrant city life"
+    ],
+    "overlap_themes": [
+      "high-quality cafe",
+      "warmth",
+      "coffee",
+      "social interaction",
+      "comfort"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward, factual description of the venue as a high-quality cafe in New York. In contrast, the observed public perception paints a rich, immersive picture of the atmosphere, emphasizing emotional and sensory experiences. The overlap lies in the recognition of the venue as a high-quality cafe that fosters warmth and social interaction, while the crowd themes delve deeper into the nuances of the experience, highlighting the ambiance, artistry, and community aspects that define the venue.",
+    "created_at": "2026-05-30T01:24:29.335079+00:00",
+    "updated_at": "2026-05-30T01:30:19.659019+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 147,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:29.335079+00:00"
+  },
+  {
+    "venue_id": "ChIJHUrWuDI1o5URe--goYC3xwg",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.485393,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "urban dining experience",
+      "scenic views"
+    ],
+    "crowd_themes": [
+      "tranquil ambiance",
+      "social interaction",
+      "nostalgic atmosphere"
+    ],
+    "overlap_themes": [
+      "relaxation",
+      "connection with surroundings",
+      "enjoyment of time"
+    ],
+    "interpretation_notes": "The editorial expectation focuses on the venue's quality and location, while the observed public perception emphasizes the sensory experience and emotional resonance of the space. The overlap highlights a shared appreciation for the venue as a place of relaxation and connection.",
+    "created_at": "2026-05-30T01:24:32.452742+00:00",
+    "updated_at": "2026-05-30T01:30:22.573623+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 141,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:32.452742+00:00"
+  },
+  {
+    "venue_id": "ChIJ41W9caFZwokRVJOfTKNepZI",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.452291,
+    "editorial_themes": [
+      "high-quality cafe",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "warm, dappled light",
+      "intimate haven",
+      "vibrant greens of indoor plants",
+      "rich hues of Puerto Rican flags",
+      "spirited ambiance",
+      "tranquil atmosphere",
+      "gentle hum of conversations",
+      "soft rustle of coffee beans",
+      "fluid barista movements",
+      "warm smiles",
+      "inviting energy",
+      "solitary reflection",
+      "clusters of lively patrons",
+      "aroma of freshly roasted beans",
+      "comfort and camaraderie",
+      "sanctuary from city pulse",
+      "serene pocket",
+      "gentle pause"
+    ],
+    "overlap_themes": [
+      "high-quality cafe",
+      "inviting energy",
+      "tranquil atmosphere",
+      "comfort and camaraderie"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward description of the venue's quality and location, while the observed public perception offers a rich, sensory experience that emphasizes the cafe's ambiance, community feel, and escape from city life. The overlap themes highlight the shared understanding of the cafe's quality and inviting nature, but the crowd themes delve deeper into the emotional and sensory experiences that patrons associate with the venue.",
+    "created_at": "2026-05-30T01:24:35.248609+00:00",
+    "updated_at": "2026-05-30T01:30:29.535659+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 132,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:35.248609+00:00"
+  },
+  {
+    "venue_id": "ChIJRWo8v4RZwokRbggnxWmoWpA",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.307097,
+    "editorial_themes": [
+      "high-quality cafe",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "warmth and comfort",
+      "community and connection",
+      "intimacy and reflection",
+      "engagement and conversation",
+      "sensory experience"
+    ],
+    "overlap_themes": [
+      "warmth",
+      "community",
+      "sensory experience"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward description of the venue as a high-quality cafe in New York, focusing on its status and location. In contrast, the observed public perception delves into the emotional and sensory experience of being in the cafe, highlighting the atmosphere, community interactions, and the sensory details that create a welcoming environment. The overlap themes indicate that while the editorial description is more factual, the crowd perception emphasizes the experiential aspects that contribute to the cafe's appeal.",
+    "created_at": "2026-05-30T01:24:38.354119+00:00",
+    "updated_at": "2026-05-30T01:30:33.137769+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 141,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:38.354119+00:00"
+  },
+  {
+    "venue_id": "ChIJR6rSfzdbwokRqxjfFh0tj4I",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.491927,
+    "editorial_themes": [
+      "high-quality cafe",
+      "located in New York"
+    ],
+    "crowd_themes": [
+      "warm embrace",
+      "soft golden light",
+      "freshly baked cookies",
+      "homely comfort",
+      "solitude and sociability",
+      "camaraderie and shared stories",
+      "thoughtfully crafted cup",
+      "rich history and passion",
+      "intimate and vibrant atmosphere",
+      "sanctuary of warmth and connection"
+    ],
+    "overlap_themes": [
+      "high-quality cafe",
+      "warm atmosphere",
+      "inviting environment"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward, factual description of the venue as a high-quality cafe in New York, while the observed public perception elaborates on the sensory and emotional experiences within the cafe. The crowd themes emphasize the inviting and comforting atmosphere, highlighting elements that contribute to a sense of community and personal connection. The overlap themes indicate that while the editorial description is more utilitarian, the public perception enriches the narrative with emotional depth and sensory details.",
+    "created_at": "2026-05-30T01:24:50.145889+00:00",
+    "updated_at": "2026-05-30T01:30:45.24652+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 149,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:50.145889+00:00"
+  },
+  {
+    "venue_id": "ChIJFe-bxtFZwokRC2C8_1R3r2g",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.173758,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "Urban rooftop setting",
+      "Elegant ambiance"
+    ],
+    "crowd_themes": [
+      "Serene energy",
+      "Laughter and joy",
+      "Connection and shared experiences",
+      "Rustic elegance",
+      "Intimacy and solace"
+    ],
+    "overlap_themes": [
+      "Elegant ambiance",
+      "Connection and shared experiences"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the venue's quality and urban location, while the observed public perception paints a vivid picture of the atmosphere filled with joy, connection, and a serene energy. The overlap in themes suggests that while the venue is recognized for its elegance, the crowd experiences a deeper emotional connection and intimacy that enhances the overall atmosphere.",
+    "created_at": "2026-05-30T01:24:57.260168+00:00",
+    "updated_at": "2026-05-30T01:30:51.588767+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 140,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:57.260168+00:00"
+  },
+  {
+    "venue_id": "ChIJIRiJaRRawokR2KyQ984qa-o",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.123009,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "New York venue",
+      "Restaurant ambiance"
+    ],
+    "crowd_themes": [
+      "Warm and inviting atmosphere",
+      "Vibrant energy",
+      "Intimate and cozy setting",
+      "Historical significance",
+      "Community and connection"
+    ],
+    "overlap_themes": [
+      "Warm ambiance",
+      "Vibrant energy",
+      "Intimate setting",
+      "Historical aesthetic"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward description of The Dead Rabbit as a high-quality restaurant in New York, focusing on its status and location. In contrast, the observed public perception delves into the sensory and emotional experience of the venue, highlighting its warm atmosphere, vibrant energy, and historical significance. The overlap themes indicate that while the editorial perspective is more factual, the crowd's perception emphasizes the experiential and communal aspects of the venue.",
+    "created_at": "2026-05-30T01:25:00.326801+00:00",
+    "updated_at": "2026-05-30T01:31:20.996809+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 138,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:25:00.326801+00:00"
+  },
+  {
+    "venue_id": "ChIJm9ZmFPtYwokR4GjMlk_y7Fg",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.15942,
+    "editorial_themes": [
+      "High-quality dining experience",
+      "Location in New York"
+    ],
+    "crowd_themes": [
+      "Warm and inviting atmosphere",
+      "Timeless charm",
+      "Intimacy and comfort",
+      "Joyous solitude",
+      "Nostalgia and modernity",
+      "Electric energy",
+      "Camaraderie and laughter"
+    ],
+    "overlap_themes": [
+      "Warm and inviting atmosphere",
+      "Intimacy and comfort"
+    ],
+    "interpretation_notes": "The editorial description emphasizes the venue's quality and location, while the public perception delves into the emotional and sensory experiences of patrons, highlighting the ambiance and social interactions. The overlap indicates that both perspectives recognize the venue's inviting nature, but the crowd's description adds depth with emotional and atmospheric nuances.",
+    "created_at": "2026-05-30T01:25:03.79053+00:00",
+    "updated_at": "2026-05-30T01:31:24.424191+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 141,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:25:03.79053+00:00"
+  },
+  {
+    "venue_id": "ChIJeVjv6rRZwokRItsQl_bPZ7Q",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.38751,
+    "editorial_themes": [
+      "High-quality restaurant",
+      "Urban venue",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "Vibrant dreamscape",
+      "Street art",
+      "Warm lighting",
+      "Camaraderie",
+      "Celebration",
+      "Joy and whimsy",
+      "Shared exhilaration",
+      "Intimacy"
+    ],
+    "overlap_themes": [
+      "Urban vibrancy",
+      "High energy",
+      "Social atmosphere"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward, professional image of The Woo Woo as a high-quality restaurant, focusing on its location and quality. In contrast, the observed public perception paints a rich, immersive experience filled with vibrant imagery and emotional resonance, emphasizing the lively social interactions and artistic ambiance. The overlap highlights the urban vibrancy and energetic social atmosphere, while the divergences reveal a gap between the formal editorial tone and the more expressive, experiential crowd perception.",
+    "created_at": "2026-05-30T01:25:10.543417+00:00",
+    "updated_at": "2026-05-30T01:31:27.756542+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 136,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:25:10.543417+00:00"
+  },
+  {
+    "venue_id": "ChIJx4mRX0RZwokR2MzGQveMqzs",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.214127,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "New York location"
+    ],
+    "crowd_themes": [
+      "vibrant sanctuary",
+      "mixology",
+      "buoyant energy",
+      "botanical elixirs",
+      "intimate pockets for laughter",
+      "whispered secrets",
+      "alchemists of mood",
+      "delightful concoctions",
+      "soft music",
+      "jubilant celebration",
+      "serene familiarity",
+      "forging memories",
+      "savoring solitude",
+      "joyful clamor",
+      "shared heartbeat",
+      "exquisite cocktail hour"
+    ],
+    "overlap_themes": [
+      "high-quality experience",
+      "intimate atmosphere",
+      "celebration and enjoyment"
+    ],
+    "interpretation_notes": "The editorial description focuses on the venue's classification and location, emphasizing its quality. In contrast, the crowd perception paints a vivid, sensory-rich picture of the experience within the venue, highlighting the atmosphere, interactions, and emotional resonance. The overlap themes suggest that while the editorial view is more factual, the crowd's perspective captures the essence of the venue's ambiance and social dynamics.",
+    "created_at": "2026-05-30T01:25:13.604776+00:00",
+    "updated_at": "2026-05-30T01:31:33.194103+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 132,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:25:13.604776+00:00"
+  },
+  {
+    "venue_id": "ChIJpx_u6NZZwokR0gixoJrE5Ww",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.181979,
+    "editorial_themes": [
+      "high-quality restaurant",
+      "New York atmosphere"
+    ],
+    "crowd_themes": [
+      "dimly lit corners",
+      "warm glow",
+      "playful shadows",
+      "eclectic decor",
+      "laughter and conversation",
+      "tranquil moments",
+      "pockets of solitude",
+      "live music",
+      "collective euphoria",
+      "clinking of glasses",
+      "shared experiences",
+      "serene comfort",
+      "emotional tapestry",
+      "togetherness and joy"
+    ],
+    "overlap_themes": [
+      "warm glow",
+      "laughter and conversation",
+      "shared experiences",
+      "togetherness"
+    ],
+    "interpretation_notes": "The editorial expectation presents a straightforward, factual description of the venue as a high-quality restaurant in New York, focusing on its status and location. In contrast, the observed public perception paints a vivid, emotional picture of the atmosphere, emphasizing the sensory experiences and social interactions that define the venue. The overlap themes highlight the warmth and social nature of the space, while the divergences lie in the depth of emotional engagement and sensory detail present in the crowd's perception.",
+    "created_at": "2026-05-30T01:25:16.882554+00:00",
+    "updated_at": "2026-05-30T01:31:38.010888+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 138,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:25:16.882554+00:00"
+  },
+  {
+    "venue_id": "ChIJjYOU2TUyrAMRbQ66NLlqSLs",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.2937,
+    "editorial_themes": [
+      "High-quality cafe",
+      "Specialty coffee",
+      "Located in Buenos Aires"
+    ],
+    "crowd_themes": [
+      "Warm and inviting atmosphere",
+      "Sense of community",
+      "Comfort and intimacy",
+      "Quiet yet lively ambiance"
+    ],
+    "overlap_themes": [
+      "Inviting atmosphere",
+      "Comfort and warmth",
+      "Connection through coffee"
+    ],
+    "interpretation_notes": "The editorial expectation sets a straightforward, factual tone about the cafe's quality and location, while the observed public perception paints a vivid, emotional picture of the venue's atmosphere. The overlap highlights the inviting and warm nature of the cafe, which aligns with the editorial expectation of a high-quality experience. However, the crowd's perception adds layers of emotional depth and sensory detail that go beyond mere quality, emphasizing the cafe as a space for connection and personal experience.",
+    "created_at": "2026-05-30T01:23:20.379943+00:00",
+    "updated_at": "2026-05-30T01:28:56.811602+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 137,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:20.379943+00:00"
+  },
+  {
+    "venue_id": "ChIJoU38bMTLvJURWzkCCbMzoek",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.346916,
+    "editorial_themes": [
+      "high-quality dining experience",
+      "elegant atmosphere",
+      "serene sanctuary",
+      "crafted cocktails"
+    ],
+    "crowd_themes": [
+      "intimate social interactions",
+      "soft laughter and murmurs",
+      "comforting ambiance",
+      "escape from the outside world"
+    ],
+    "overlap_themes": [
+      "elegance",
+      "serenity",
+      "social energy",
+      "crafted experiences"
+    ],
+    "interpretation_notes": "The editorial expectation emphasizes the high-quality aspect of the venue, suggesting a focus on fine dining and upscale service. In contrast, the observed public perception highlights the emotional and sensory experiences of patrons, showcasing the venue as a place for intimate connections and relaxation. Both layers appreciate the elegance and crafted nature of the venue, but the public perception adds depth by illustrating the social dynamics and the comforting atmosphere that patrons experience.",
+    "created_at": "2026-05-30T01:23:54.085336+00:00",
+    "updated_at": "2026-05-30T01:30:03.269576+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 139,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:23:54.085336+00:00"
+  },
+  {
+    "venue_id": "ChIJK0YMWmdZwokRwRsOreYzArU",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": 0.437665,
+    "editorial_themes": [
+      "high-quality cafe",
+      "location in New York"
+    ],
+    "crowd_themes": [
+      "inviting warmth",
+      "cozy confines",
+      "sunlight filtering",
+      "rustic wooden tables",
+      "soft conversations",
+      "rich aroma of coffee",
+      "sense of community",
+      "intimate connection",
+      "soul of Puerto Rico",
+      "stories and laughter",
+      "understated elegance",
+      "lingering comfort"
+    ],
+    "overlap_themes": [
+      "inviting warmth",
+      "cozy confines",
+      "sense of community",
+      "rich aroma of coffee",
+      "understated elegance"
+    ],
+    "interpretation_notes": "The editorial expectation focuses on the quality and location of the cafe, while the observed public perception delves deeper into the sensory and emotional experiences of patrons. The overlap themes highlight the cafe's inviting atmosphere and community feel, which align with the high-quality expectation, while the crowd themes provide a richer, more detailed narrative that enhances the overall perception of 787 Coffee.",
+    "created_at": "2026-05-30T01:24:47.016737+00:00",
+    "updated_at": "2026-05-30T01:30:41.502037+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 133,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-30T01:24:47.016737+00:00"
+  },
+  {
+    "venue_id": "ChIJMTW6XOy1vJURhwA8tpXWV0M",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:16:40.228444+00:00",
+    "updated_at": "2026-05-31T00:17:30.872275+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 133,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:29.87+00:00"
+  },
+  {
+    "venue_id": "ChIJ6wGS5qbLvJUReBneuvpYy6s",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:16:47.635722+00:00",
+    "updated_at": "2026-05-31T00:17:31.667703+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 138,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:30.749+00:00"
+  },
+  {
+    "venue_id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:16:50.706797+00:00",
+    "updated_at": "2026-05-31T00:17:32.455667+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 131,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:31.52+00:00"
+  },
+  {
+    "venue_id": "ChIJPw7iEre1vJUR45b1pkFOPlI",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:16:54.544775+00:00",
+    "updated_at": "2026-05-31T00:17:33.224529+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 148,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:32.304+00:00"
+  },
+  {
+    "venue_id": "ChIJRazshIa1vJURczNt-pu4coU",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:16:57.508864+00:00",
+    "updated_at": "2026-05-31T00:17:33.998978+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 131,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:33.069+00:00"
+  },
+  {
+    "venue_id": "ChIJ0y3PVmXLvJURLQ9QJvnOQSU",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:16:44.302013+00:00",
+    "updated_at": "2026-05-31T00:17:34.760118+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 152,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:33.839+00:00"
+  },
+  {
+    "venue_id": "ChIJi0KSF-DLvJURYWbYvNEknrg",
+    "review_count": 3,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:17:00.437501+00:00",
+    "updated_at": "2026-05-31T00:17:35.528025+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 135,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:34.599+00:00"
+  },
+  {
+    "venue_id": "ChIJBQV-6OK1vJURGbmHPh3oOgY",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:17:03.212128+00:00",
+    "updated_at": "2026-05-31T00:17:36.302294+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 139,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:35.379+00:00"
+  },
+  {
+    "venue_id": "ChIJrzrdUwC1vJURhoUnsxnGpxw",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:17:06.800005+00:00",
+    "updated_at": "2026-05-31T00:17:37.085128+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 147,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:36.147+00:00"
+  },
+  {
+    "venue_id": "ChIJ9bt5PRbLvJURnIEFxAxQoKU",
+    "review_count": 5,
+    "has_images": false,
+    "has_prose": true,
+    "has_embeddings": true,
+    "resonance_score": null,
+    "editorial_themes": null,
+    "crowd_themes": null,
+    "overlap_themes": null,
+    "interpretation_notes": "resonance_status: insufficient_l2",
+    "created_at": "2026-05-31T00:17:10.792684+00:00",
+    "updated_at": "2026-05-31T00:17:37.856872+00:00",
+    "review_language_mix": null,
+    "atmosphere_word_count": 141,
+    "embedding_generated": true,
+    "last_processed_at": "2026-05-31T00:17:36.937+00:00"
+  }
+]

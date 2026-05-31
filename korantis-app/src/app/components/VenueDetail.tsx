@@ -6,13 +6,15 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, DollarSign, MapPin, Heart } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
+import VenueDetailMapBlock from './map/VenueDetailMapBlock';
 
 interface VenueDetailProps {
   venue: ScoredVenue;
   onBack: () => void;
+  onOpenInAtlas: () => void;
 }
 
-export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
+export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetailProps) {
   const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
 
   const isSaved = savedVenueIds.includes(venue.id);
@@ -207,6 +209,9 @@ export default function VenueDetail({ venue, onBack }: VenueDetailProps) {
             </div>
           </div>
         </section>
+
+        {/* Spatial Placement Map Block */}
+        <VenueDetailMapBlock venue={venue} onOpenInAtlas={onOpenInAtlas} />
 
         {/* Quiet Structural Utilities - Responsive stacking layout */}
         <section className="mb-8 p-5 bg-k-surface/20 border border-k-border/30 rounded-2xl">

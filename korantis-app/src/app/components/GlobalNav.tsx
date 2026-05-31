@@ -2,25 +2,25 @@
 
 import { memo, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion, useScroll, useMotionValueEvent } from 'framer-motion';
-import { Search, Bookmark, User } from 'lucide-react';
+import { Search, Map, User } from 'lucide-react';
 import type { ScoredVenue } from '../contexts/CircadianContext';
 
+export type MainTab = 'explore' | 'atlas' | 'taste';
+
 interface GlobalNavProps {
-  activeTab: 'search' | 'saved' | 'profile';
-  setActiveTab: (tab: 'search' | 'saved' | 'profile') => void;
+  activeTab: MainTab;
+  setActiveTab: (tab: MainTab) => void;
   selectedVenue: ScoredVenue | null;
 }
 
-type NavTab = GlobalNavProps['activeTab'];
-
 const NAV_ITEMS: Array<{
-  id: NavTab;
+  id: MainTab;
   label: string;
   icon: React.ElementType;
 }> = [
-  { id: 'search', label: 'Explore', icon: Search },
-  { id: 'saved', label: 'Atlas', icon: Bookmark },
-  { id: 'profile', label: 'Taste Profile', icon: User },
+  { id: 'explore', label: 'Explore', icon: Search },
+  { id: 'atlas', label: 'Atlas', icon: Map },
+  { id: 'taste', label: 'Taste', icon: User },
 ];
 
 const NAV_SPRING = { type: 'spring', damping: 28, stiffness: 260, mass: 0.8 } as const;
@@ -47,7 +47,7 @@ function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
       {!selectedVenue && (
         <div
           key="global-nav-shell"
-          className="pointer-events-none fixed bottom-6 left-0 right-0 z-50 flex justify-center px-4"
+          className="pointer-events-none fixed bottom-8 pb-[env(safe-area-inset-bottom)] left-0 right-0 z-50 flex justify-center px-4"
         >
           <motion.div
             initial={{ y: 80, opacity: 0 }}

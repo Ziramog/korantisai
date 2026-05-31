@@ -2,10 +2,26 @@ import * as path from 'path';
 import * as dotenv from 'dotenv';
 dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
 import { createClient } from '@supabase/supabase-js';
+import { PHASE_A_PLACE_IDS } from './phase_a_ids';
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = createClient(SUPABASE_URL!, SUPABASE_KEY!);
+
+function hasFlag(name: string) {
+  return process.argv.includes(`--${name}`);
+}
+
+function getArgValue(name: string) {
+  const prefix = `--${name}=`;
+  return process.argv.find((arg) => arg.startsWith(prefix))?.slice(prefix.length);
+}
+
+function selectedIds() {
+  if (hasFlag('phase-a')) return [...PHASE_A_PLACE_IDS];
+  const ids = getArgValue('ids');
+  return ids ? ids.split(',').map((id) => id.trim()).filter(Boolean) : [];
+}
 
 async function main() {
   console.log("Starting Step 4: Generate Embeddings...");
@@ -18,11 +34,19 @@ async function main() {
     quantized: true,
   });
 
-  const { data: venues } = await supabase
+  const ids = selectedIds();
+  let query = supabase
     .from('staging_venues')
     .select('id, name, atmosphere_prose')
-    .eq('status', 'processing')
     .not('atmosphere_prose', 'is', null);
+
+  if (ids.length > 0) {
+    query = query.in('id', ids);
+  } else {
+    query = query.eq('status', 'processing');
+  }
+
+  const { data: venues } = await query;
 
   if (!venues || venues.length === 0) return;
 
@@ -47,8 +71,9 @@ async function main() {
       }, { onConflict: 'venue_id' });
 
       console.log(`✅ Embedded L3 for ${venue.name}`);
-    } catch (e: any) {
-      console.error(`❌ Error embedding ${venue.name}: ${e.message}`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.error(`Error embedding ${venue.name}: ${message}`);
     }
   }
 }

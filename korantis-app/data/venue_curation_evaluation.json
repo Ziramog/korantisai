@@ -1,0 +1,3075 @@
+{
+  "generatedAt": "2026-05-31T15:42:19.037Z",
+  "mode": "dry-run",
+  "schemaReady": false,
+  "totals": {
+    "venues": 50,
+    "active": 13,
+    "pending_review": 33,
+    "rejected": 4
+  },
+  "results": [
+    {
+      "id": "ChIJs88PkWVZwokR2jF02LIXkw0",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 69,
+      "eligibility": {
+        "score": 69,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 67,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambiance",
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "work",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "date",
+          "work",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 69
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "date",
+        "work",
+        "compact"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJ9Tfdk8dZwokRiz6jQxTHOnY",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 56,
+      "eligibility": {
+        "score": 56,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 30,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 38,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "cozy",
+          "work"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 56
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJRWo8v4RZwokRbggnxWmoWpA",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 66,
+      "eligibility": {
+        "score": 66,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 55,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "quiet",
+          "cozy",
+          "work",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "work",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 66
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "work",
+        "compact"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJBRY0FTJZwokRO9yVHnHsu9k",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 56,
+      "eligibility": {
+        "score": 56,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 30,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 38,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "vibe",
+          "cozy",
+          "work"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 56
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJK0YMWmdZwokRwRsOreYzArU",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 65,
+      "eligibility": {
+        "score": 65,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 42,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "cozy",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "lively",
+          "date",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 65
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "coffee",
+        "morning",
+        "lively",
+        "date",
+        "compact"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a refined date night with coffee, morning, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJv1FHeU5ZwokRZUZ3QKsgjdg",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 62,
+      "eligibility": {
+        "score": 62,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 47,
+        "hospitality_confidence": 65,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "cozy",
+          "work",
+          "friends",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 62
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJR6rSfzdbwokRqxjfFh0tj4I",
+      "name": "787 Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 69,
+      "eligibility": {
+        "score": 69,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 67,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "work",
+          "friends",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 69
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJ41W9caFZwokRVJOfTKNepZI",
+      "name": "787 Coffee Co.",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 66,
+      "eligibility": {
+        "score": 66,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 59,
+        "hospitality_confidence": 65,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "garden",
+          "interior",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 66
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "787 Coffee Co. reads as a refined date night with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJHY6qgqTKvJURqNM0efgLPFk",
+      "name": "Alvear Roof Bar",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 88,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 88,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "elegant",
+          "music",
+          "terrace",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "terrace",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "terrace",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Alvear Roof Bar reads as a refined date night with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJ5xXRypi1vJURbyPHDWVCJL8",
+      "name": "Backroom Bar",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 87,
+      "eligibility": {
+        "score": 87,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 100,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "quiet",
+          "cozy",
+          "romantic",
+          "elegant",
+          "hidden",
+          "friends",
+          "dinner",
+          "music",
+          "interior",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 87
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Backroom Bar reads as a refined date night with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJ5X4bZADLvJURvbdTaFA9psw",
+      "name": "Bari Coffee & Drinks",
+      "category": "cafe",
+      "curation_status": "rejected",
+      "score": 50,
+      "eligibility": {
+        "score": 50,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 13,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 13,
+        "category_fit_score": 85,
+        "rejection_reason": "Insufficient hospitality or atmosphere evidence"
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "seating"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "lively",
+          "terrace",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 50
+      },
+      "primary_atmosphere": "Quick Specialty Coffee",
+      "tags": [
+        "coffee",
+        "morning",
+        "lively",
+        "terrace",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Bari Coffee & Drinks reads as a quick specialty coffee with coffee, morning, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJjcOdCGC1vJUR77bwV_1cAfc",
+      "name": "Bestial Fly Bar",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 92,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "dinner",
+          "music",
+          "view",
+          "decor",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "lively",
+          "date",
+          "compact",
+          "destination"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "lively",
+        "date",
+        "compact",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Bestial Fly Bar reads as a refined date night with dinner, lively, date signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJlTkBDdrLvJURW7t_NrgxmRo",
+      "name": "Birdy Birds Specialty Coffee Roasters",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 65,
+      "eligibility": {
+        "score": 65,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 50,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "cozy",
+          "work",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 65
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Birdy Birds Specialty Coffee Roasters reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJm0LQolPLvJURWGs-P6DPvxM",
+      "name": "Café Boheme - Café de Especialidad",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 56,
+      "eligibility": {
+        "score": 56,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 17,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 25,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "terrace",
+          "date",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 56
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "coffee",
+        "morning",
+        "terrace",
+        "date",
+        "compact"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Café Boheme - Café de Especialidad reads as a refined date night with coffee, morning, terrace signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJ9SAGg4m1vJURTgnbaa593To",
+      "name": "Ciao Cacao Specialty coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 66,
+      "eligibility": {
+        "score": 66,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 55,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambience",
+          "cozy",
+          "work",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "terrace",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 66
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "terrace",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Ciao Cacao Specialty coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJ9bt5PRbLvJURnIEFxAxQoKU",
+      "name": "CICHAUS",
+      "category": "cocktail_bar",
+      "curation_status": "pending_review",
+      "score": 59,
+      "eligibility": {
+        "score": 59,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 38,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 38,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "work",
+          "decor"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "drinks",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 59
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "drinks",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "CICHAUS reads as a quiet work cafe with drinks, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJrzrdUwC1vJURhoUnsxnGpxw",
+      "name": "Ciro Palermo",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 65,
+      "eligibility": {
+        "score": 65,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 38,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 38,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "friends",
+          "wine",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "morning",
+          "quiet",
+          "lively",
+          "date"
+        ],
+        "negative_constraints": [],
+        "confidence": 65
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "morning",
+        "quiet",
+        "lively",
+        "date"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Ciro Palermo reads as a refined date night with dinner, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJs0l71fFZwokRX6Er4VmHrU8",
+      "name": "Cocktail Omakase",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 68,
+      "eligibility": {
+        "score": 68,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 63,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "work",
+          "dinner",
+          "seating"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "terrace",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 68
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "terrace",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Cocktail Omakase reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJ_dckWptZwokR_LkU9WxPNZ4",
+      "name": "Coffee Project New York | East Village",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 74,
+      "eligibility": {
+        "score": 74,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 75,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "work",
+          "decor",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "terrace",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 74
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "terrace",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Coffee Project New York | East Village reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJIUMqmtc0o5URXU-T5nEkCc8",
+      "name": "Crystal Bar - Alvear Icon Hotel - Puerto Madero",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 87,
+      "eligibility": {
+        "score": 87,
+        "seating_confidence": 80,
+        "atmosphere_confidence": 88,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 88,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambiance",
+          "atmosphere",
+          "elegant",
+          "dinner",
+          "music",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "seating likely supported",
+        "stay_duration_signal": "short-to-long stay plausible",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 87
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Crystal Bar - Alvear Icon Hotel - Puerto Madero reads as a refined date night with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+      "name": "Don Julio Parrilla",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 69,
+      "eligibility": {
+        "score": 69,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 50,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "wine",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "terrace",
+          "date"
+        ],
+        "negative_constraints": [],
+        "confidence": 69
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "terrace",
+        "date"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Don Julio Parrilla reads as a refined date night with dinner, terrace, date signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "name": "El Preferido de Palermo",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 88,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 88,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambiance",
+          "atmosphere",
+          "romantic",
+          "dinner",
+          "wine",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "lively",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "lively",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "El Preferido de Palermo reads as a refined date night with dinner, lively, date signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJ0y3PVmXLvJURLQ9QJvnOQSU",
+      "name": "Import Coffee Co.",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 68,
+      "eligibility": {
+        "score": 68,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 63,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "quiet",
+          "work",
+          "friends",
+          "music",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 68
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Import Coffee Co. reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJjYOU2TUyrAMRbQ66NLlqSLs",
+      "name": "John & Joe | Café de Especialidad",
+      "category": "cafe",
+      "curation_status": "rejected",
+      "score": 44,
+      "eligibility": {
+        "score": 44,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 0,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 0,
+        "category_fit_score": 85,
+        "rejection_reason": "Insufficient hospitality or atmosphere evidence"
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 44
+      },
+      "primary_atmosphere": "Quick Specialty Coffee",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "John & Joe | Café de Especialidad reads as a quick specialty coffee with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJPw7iEre1vJUR45b1pkFOPlI",
+      "name": "Kaldi",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 65,
+      "eligibility": {
+        "score": 65,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 50,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "vibe",
+          "cozy",
+          "work",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 65
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Kaldi reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJ6wGS5qbLvJUReBneuvpYy6s",
+      "name": "Koofi | Café de especialidad",
+      "category": "cafe",
+      "curation_status": "rejected",
+      "score": 44,
+      "eligibility": {
+        "score": 44,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 0,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 0,
+        "category_fit_score": 85,
+        "rejection_reason": "Insufficient hospitality or atmosphere evidence"
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 44
+      },
+      "primary_atmosphere": "Quick Specialty Coffee",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "compact"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Koofi | Café de especialidad reads as a quick specialty coffee with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJE_yL4Ss1o5URmOIYvCF6GUU",
+      "name": "Kraken bar",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 68,
+      "eligibility": {
+        "score": 68,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 63,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "music",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "lively",
+          "destination"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 68
+      },
+      "primary_atmosphere": "Dinner Spot",
+      "tags": [
+        "dinner",
+        "lively",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Kraken bar reads as a dinner spot with dinner, lively, destination signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJoU38bMTLvJURWzkCCbMzoek",
+      "name": "LE CLUB BACAN",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 88,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 88,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "quiet",
+          "hidden",
+          "date",
+          "music",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "date",
+          "work",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "date",
+        "work",
+        "destination"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "LE CLUB BACAN reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJHXg8BINZwokRpUSDvY8f-3I",
+      "name": "Madame George",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 92,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambiance",
+          "atmosphere",
+          "vibe",
+          "work",
+          "friends",
+          "music",
+          "interior",
+          "decor",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "date",
+          "work",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "date",
+        "work",
+        "compact"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Madame George reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJm9ZmFPtYwokR4GjMlk_y7Fg",
+      "name": "Monkey Bar",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 74,
+      "eligibility": {
+        "score": 74,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 67,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambience",
+          "ambiance",
+          "atmosphere",
+          "work",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "terrace",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 74
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "terrace",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Monkey Bar reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJkejWaoRZwokRz6IQLC9geVA",
+      "name": "Monkey Thief",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 100,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "quiet",
+          "cozy",
+          "hidden",
+          "friends",
+          "brunch",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "compact",
+          "destination"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Dinner Spot",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "compact",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Monkey Thief reads as a dinner spot with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJi0KSF-DLvJURYWbYvNEknrg",
+      "name": "Origen Coffee House",
+      "category": "cafe",
+      "curation_status": "rejected",
+      "score": 47,
+      "eligibility": {
+        "score": 47,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 5,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 13,
+        "category_fit_score": 85,
+        "rejection_reason": "Insufficient hospitality or atmosphere evidence"
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 47
+      },
+      "primary_atmosphere": "Quick Specialty Coffee",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Origen Coffee House reads as a quick specialty coffee with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJHUrWuDI1o5URe--goYC3xwg",
+      "name": "Piso 15 Sky Bar by Vuelta Abajo Social Club",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 100,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambiance",
+          "atmosphere",
+          "vibe",
+          "dinner",
+          "wine",
+          "terrace",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "lively",
+          "terrace",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "lively",
+        "terrace",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Piso 15 Sky Bar by Vuelta Abajo Social Club reads as a refined date night with dinner, lively, terrace signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJlXfzUMu1vJURPR5ZJW1uCyo",
+      "name": "Rita Specialty Coffee Soler",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 68,
+      "eligibility": {
+        "score": 68,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 63,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "brunch",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "date"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 68
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "coffee",
+        "morning",
+        "date"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Rita Specialty Coffee Soler reads as a refined date night with coffee, morning, date signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJBQV-6OK1vJURGbmHPh3oOgY",
+      "name": "RITA® Specialty Coffee Armenia",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 64,
+      "eligibility": {
+        "score": 64,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 50,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "work",
+          "brunch",
+          "terrace"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "terrace",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 64
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "terrace",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "RITA® Specialty Coffee Armenia reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJfWVsl1ZYwokR9qnmtWV2pEg",
+      "name": "Sir Henry’s",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 73,
+      "eligibility": {
+        "score": 73,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 75,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "music",
+          "decor",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "morning",
+          "lively",
+          "date"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 73
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "morning",
+        "lively",
+        "date"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Sir Henry’s reads as a refined date night with dinner, morning, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJwR4noh5ZwokREcz36jnEQbo",
+      "name": "Sote Coffee Roasters",
+      "category": "cafe",
+      "curation_status": "active",
+      "score": 88,
+      "eligibility": {
+        "score": 88,
+        "seating_confidence": 80,
+        "atmosphere_confidence": 92,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "quiet",
+          "cozy",
+          "work",
+          "friends",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "seating likely supported",
+        "stay_duration_signal": "short-to-long stay plausible",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "work",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 88
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "work",
+        "compact"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Sote Coffee Roasters reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJpx_u6NZZwokR0gixoJrE5Ww",
+      "name": "Tara Rose| NYC",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 79,
+      "eligibility": {
+        "score": 79,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 92,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambience",
+          "vibe",
+          "lively",
+          "work",
+          "friends",
+          "dinner",
+          "music",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 79
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Tara Rose| NYC reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJz_CYqwXLvJURdYrjf58EhfI",
+      "name": "TERRASOHO - Specialty Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 60,
+      "eligibility": {
+        "score": 60,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 25,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 25,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "terrace",
+          "work"
+        ],
+        "negative_constraints": [],
+        "confidence": 60
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "terrace",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "TERRASOHO - Specialty Coffee reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJIRiJaRRawokR2KyQ984qa-o",
+      "name": "The Dead Rabbit",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 64,
+      "eligibility": {
+        "score": 64,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 50,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "vibe",
+          "lively",
+          "friends",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "morning",
+          "lively",
+          "date"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 64
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "morning",
+        "lively",
+        "date"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "The Dead Rabbit reads as a refined date night with dinner, morning, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJeZ0y0Ou1vJUR6cErTGzhTCc",
+      "name": "The Hole Bar - Alcatraz Speakeasy Hidden Bar",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 69,
+      "eligibility": {
+        "score": 69,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 67,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "work",
+          "music",
+          "view",
+          "decor"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "terrace",
+          "work",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 69
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "terrace",
+        "work",
+        "compact"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "The Hole Bar - Alcatraz Speakeasy Hidden Bar reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJx4mRX0RZwokR2MzGQveMqzs",
+      "name": "The Ivory Peacock",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 73,
+      "eligibility": {
+        "score": 73,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 75,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "work",
+          "date",
+          "music",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 73
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "The Ivory Peacock reads as a quiet work cafe with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJeVjv6rRZwokRItsQl_bPZ7Q",
+      "name": "The Woo Woo",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 68,
+      "eligibility": {
+        "score": 68,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 63,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "lively",
+          "music",
+          "decor"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "terrace"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 68
+      },
+      "primary_atmosphere": "Lively Terrace",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "terrace"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "The Woo Woo reads as a lively terrace with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJi3BXstfLvJURdNbYxa0qaYs",
+      "name": "Toki Moment - Specialty Coffee",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 55,
+      "eligibility": {
+        "score": 55,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 25,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 25,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "vibe",
+          "cozy"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "date"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 55
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "date"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Toki Moment - Specialty Coffee reads as a refined date night with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJRUJ72ffLvJURJBByWf574-U",
+      "name": "Tona Café",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 55,
+      "eligibility": {
+        "score": 55,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 25,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 25,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "lively",
+          "compact"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 55
+      },
+      "primary_atmosphere": "Quick Specialty Coffee",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "lively",
+        "compact"
+      ],
+      "best_for": [
+        "coffee",
+        "quick coffee"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Tona Café reads as a quick specialty coffee with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "name": "Trade Sky Bar",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 80,
+        "atmosphere_confidence": 75,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 75,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "dinner",
+          "music",
+          "terrace",
+          "view",
+          "seating",
+          "sit"
+        ],
+        "seating_signal": "seating likely supported",
+        "stay_duration_signal": "short-to-long stay plausible",
+        "atmosphere_tags": [
+          "dinner",
+          "quiet",
+          "lively",
+          "terrace",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "quiet",
+        "lively",
+        "terrace",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Trade Sky Bar reads as a refined date night with dinner, quiet, lively signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "name": "Verne Club",
+      "category": "restaurant",
+      "curation_status": "pending_review",
+      "score": 74,
+      "eligibility": {
+        "score": 74,
+        "seating_confidence": 60,
+        "atmosphere_confidence": 63,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 63,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "atmosphere",
+          "vibe",
+          "date",
+          "view",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "lively",
+          "date",
+          "destination"
+        ],
+        "negative_constraints": [],
+        "confidence": 74
+      },
+      "primary_atmosphere": "Refined Date Night",
+      "tags": [
+        "dinner",
+        "lively",
+        "date",
+        "destination"
+      ],
+      "best_for": [
+        "dinner"
+      ],
+      "not_ideal_for": [],
+      "grounded_description": "Verne Club reads as a refined date night with dinner, lively, date signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape."
+    },
+    {
+      "id": "ChIJFe-bxtFZwokRC2C8_1R3r2g",
+      "name": "Vintage Green Rooftop",
+      "category": "restaurant",
+      "curation_status": "active",
+      "score": 83,
+      "eligibility": {
+        "score": 83,
+        "seating_confidence": 40,
+        "atmosphere_confidence": 100,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 100,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "ambiance",
+          "atmosphere",
+          "vibe",
+          "cozy",
+          "elegant",
+          "work",
+          "brunch",
+          "dinner",
+          "wine",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "dinner",
+          "morning",
+          "quiet",
+          "lively",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 83
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "dinner",
+        "morning",
+        "quiet",
+        "lively",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Vintage Green Rooftop reads as a quiet work cafe with dinner, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJTUHwQJK1vJURdEmmL52Y2p0",
+      "name": "Vive Café Cafe de especialidad , cafés de campeonatos",
+      "category": "cafe",
+      "curation_status": "pending_review",
+      "score": 60,
+      "eligibility": {
+        "score": 60,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 42,
+        "hospitality_confidence": 75,
+        "photo_quality_score": 100,
+        "review_signal_score": 50,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "cozy",
+          "work",
+          "brunch",
+          "sit"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "coffee",
+          "morning",
+          "quiet",
+          "date",
+          "work"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 60
+      },
+      "primary_atmosphere": "Quiet Work Cafe",
+      "tags": [
+        "coffee",
+        "morning",
+        "quiet",
+        "date",
+        "work"
+      ],
+      "best_for": [
+        "work",
+        "short meeting"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Vive Café Cafe de especialidad , cafés de campeonatos reads as a quiet work cafe with coffee, morning, quiet signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    },
+    {
+      "id": "ChIJMTW6XOy1vJURhwA8tpXWV0M",
+      "name": "Wine Window Argentina (Palermo Soho)",
+      "category": "wine_bar",
+      "curation_status": "pending_review",
+      "score": 59,
+      "eligibility": {
+        "score": 59,
+        "seating_confidence": 35,
+        "atmosphere_confidence": 38,
+        "hospitality_confidence": 85,
+        "photo_quality_score": 100,
+        "review_signal_score": 38,
+        "category_fit_score": 85,
+        "rejection_reason": null
+      },
+      "evidence": {
+        "google_category": "",
+        "price_level": null,
+        "rating": null,
+        "review_count": 5,
+        "photo_observations": [
+          "10 Google photo references available"
+        ],
+        "review_signals": [
+          "vibe",
+          "elegant",
+          "wine"
+        ],
+        "seating_signal": "limited seating evidence",
+        "stay_duration_signal": "quick or short stay only",
+        "atmosphere_tags": [
+          "wine",
+          "lively",
+          "date",
+          "compact",
+          "destination"
+        ],
+        "negative_constraints": [
+          "long stay"
+        ],
+        "confidence": 59
+      },
+      "primary_atmosphere": "Low-lit Drinks",
+      "tags": [
+        "wine",
+        "lively",
+        "date",
+        "compact",
+        "destination"
+      ],
+      "best_for": [
+        "drinks"
+      ],
+      "not_ideal_for": [
+        "long stay"
+      ],
+      "grounded_description": "Wine Window Argentina (Palermo Soho) reads as a low-lit drinks with wine, lively, date signals. Use it when the evidence supports the visit type, not as a generic atmospheric escape. Not ideal for long stay."
+    }
+  ]
+}

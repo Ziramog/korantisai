@@ -1,0 +1,2982 @@
+{
+  "generatedAt": "2026-05-31T18:17:48.233Z",
+  "signals": [
+    {
+      "candidate_id": "c95df8678b089f1a",
+      "venue_name": "El Preferido",
+      "signals": {
+        "heritage_signal": 65,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 100,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 65
+      }
+    },
+    {
+      "candidate_id": "f6720109158248c0",
+      "venue_name": "Cuervo Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 100,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "21dfd222e5f0e8d3",
+      "venue_name": "Gran Dabbang",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 65
+      }
+    },
+    {
+      "candidate_id": "7f14b55338d8548d",
+      "venue_name": "LAB Tostadores de Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "70145d1449130248",
+      "venue_name": "Chui",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "f369b8bbab4e9ec5",
+      "venue_name": "La Fuerza",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 55,
+        "community_signal": 81,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "e3831e721f05d7ac",
+      "venue_name": "Ser y Tiempo",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "0840de562f715e4c",
+      "venue_name": "Cafe Crespin",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 100,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "c4943f7e42217fc6",
+      "venue_name": "Mishiguene",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 56,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f81460bd9ed74ace",
+      "venue_name": "Cochinchina",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "237b4a6487451996",
+      "venue_name": "Don Julio Parrilla",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "cee8356abb00fd58",
+      "venue_name": "Lattente",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "63b3b684eb8bb88d",
+      "venue_name": "Tres Monos",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d42d1a76ecf6518e",
+      "venue_name": "Verne Club",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "3bfc83abd7e9d3ab",
+      "venue_name": "Pain et Vin",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "52b2f7b096dd8999",
+      "venue_name": "Sacro",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a13d2c0dce152091",
+      "venue_name": "Vico Wine Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "babcdf5ac92972fc",
+      "venue_name": "Aldos",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "81bfa94e67696301",
+      "venue_name": "Anchoita Cava",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "d8c238d6d35a7147",
+      "venue_name": "Doppelganger Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f4d88d05df0e7023",
+      "venue_name": "Naranjo Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 80
+      }
+    },
+    {
+      "candidate_id": "59fe3241918154cb",
+      "venue_name": "Uptown",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "590e25153237d813",
+      "venue_name": "Vive Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7cf91bb87f073374",
+      "venue_name": "Bar El Federal",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "657e8e9d25da03b4",
+      "venue_name": "Elena",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4e407bb1dc240424",
+      "venue_name": "Floreria Atlantico",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b113e32b95983de3",
+      "venue_name": "Presidente Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 55,
+        "community_signal": 81,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "1e2c182f70584a67",
+      "venue_name": "La Noire",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 100,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "e8f1e2cb4f60cef8",
+      "venue_name": "Los Galgos",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bfa47723f6a1c6da",
+      "venue_name": "La Carniceria",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "ac1c9b1deca46b6d",
+      "venue_name": "Aramburu",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "ca7f537241874147",
+      "venue_name": "Mengano",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 65
+      }
+    },
+    {
+      "candidate_id": "3cd171b22d21403f",
+      "venue_name": "Nino Gordo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d3f19d4d393102ab",
+      "venue_name": "Proper",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bae6687c67a7f35b",
+      "venue_name": "878 Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "63bc091412e483d5",
+      "venue_name": "Anafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 80
+      }
+    },
+    {
+      "candidate_id": "10dfc58b0daef397",
+      "venue_name": "Cafe Registrado",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "867c25e43776ac23",
+      "venue_name": "Julia",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "94613bbc07902150",
+      "venue_name": "La Alacena",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "88dcc07a2aa3f2a5",
+      "venue_name": "La Cabrera",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "e56ae89169d01760",
+      "venue_name": "La Malbequeria",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4b25e12a22eb5d99",
+      "venue_name": "La Mar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "710b763f932de83e",
+      "venue_name": "Roux",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a9953333ae4ecdc5",
+      "venue_name": "Trova Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "3685b3837a988034",
+      "venue_name": "Anchoita",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "109a9a47bb038eb4",
+      "venue_name": "Cafe San Juan",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "15099ff5f4365522",
+      "venue_name": "El Cuartito",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "2f4d0b78af9dd457",
+      "venue_name": "Fervor",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "36710136b452a369",
+      "venue_name": "La Biela",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "ef66d599db0d3a05",
+      "venue_name": "Oli Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "9085da77f15cc8d2",
+      "venue_name": "Overo Bar de Copas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "5bd1c65d45c6d160",
+      "venue_name": "Reliquia",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 80
+      }
+    },
+    {
+      "candidate_id": "14b057060c2e15f3",
+      "venue_name": "Apu Nena",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 80
+      }
+    },
+    {
+      "candidate_id": "b214fc1984662f1f",
+      "venue_name": "Cafe Rivas",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "cc2928a5b855a96c",
+      "venue_name": "Casa Cavia",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6aaa462b342c9f70",
+      "venue_name": "Corte Comedor",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f9e7ce3c83d13a41",
+      "venue_name": "Fogon Asado",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 81,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "710e5dc162f9bd6b",
+      "venue_name": "Full City Coffee House",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "26d2fbe37f0dcdcb",
+      "venue_name": "The Hole Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 56,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "57fbb7027a4a5462",
+      "venue_name": "Narda Comedor",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d91ec380feada0e8",
+      "venue_name": "Vini Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "e18b4366ce888e35",
+      "venue_name": "Cafe Tortoni",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "9cc2e30ebeb7fad4",
+      "venue_name": "Confiteria La Ideal",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "163054cff524fd6d",
+      "venue_name": "Confiteria Las Violetas",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6124e2c824bd8b04",
+      "venue_name": "Guerrin",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "ff6b5103adf84fa5",
+      "venue_name": "Napoles",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "688e9aef29b15279",
+      "venue_name": "La Cava de Vittorio",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 56,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "07b1ddc4d92ebb4c",
+      "venue_name": "Dada Bistro",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "550f646712bb74ba",
+      "venue_name": "Casa Dingo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 65
+      }
+    },
+    {
+      "candidate_id": "bf3926a3b0d6ae9a",
+      "venue_name": "Gran Bar Danzon",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "50a0481f6eb23fea",
+      "venue_name": "Milion",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "539ae8448c32ac3d",
+      "venue_name": "Birkin Coffee",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bdc6284d8865232b",
+      "venue_name": "Casa Cruz",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "9450286b7a837a92",
+      "venue_name": "Cocu Boulangerie",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "eb694495a5f60e48",
+      "venue_name": "Nicky Harrison",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 65
+      }
+    },
+    {
+      "candidate_id": "1c3aba7e8604df8e",
+      "venue_name": "Ninina",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7d3ba859a4bc93ff",
+      "venue_name": "Rey de Copas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "ad8a37938cadb85e",
+      "venue_name": "La Brigada",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "535e36765aefe311",
+      "venue_name": "Pulperia Quilapan",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "03b3c786cd64e5ae",
+      "venue_name": "Gramo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "38776f79b7bd0e1f",
+      "venue_name": "La Ventana",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "39e6b0e0398546d1",
+      "venue_name": "Lateral",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "32afd47e9ce290cc",
+      "venue_name": "Meme Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "84a234c92d6ae776",
+      "venue_name": "RITA Specialty Coffee",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b860eb0cb603436a",
+      "venue_name": "Surry Hills Coffee",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b724f552b2443008",
+      "venue_name": "Bar Britanico",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "0d182424a9b357a8",
+      "venue_name": "Chila",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "45233e763e36b65b",
+      "venue_name": "Blanca Deco and Cafe",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f9d17b270804324a",
+      "venue_name": "L Harmonie",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bbcceb8cf3aa4fae",
+      "venue_name": "Condarco",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "184edaa3c4391577",
+      "venue_name": "San Juanino",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "81967df30f4afa01",
+      "venue_name": "Vina de San Telmo",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "0ce79031cfdfed80",
+      "venue_name": "Cabaña Las Lilas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "e180e3e7816a3bb0",
+      "venue_name": "Plaza Bar",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "cf4b6889226bbe70",
+      "venue_name": "Trade Sky Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bff239dd9ff3a3ee",
+      "venue_name": "Acido",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "77f3f0f1f63e2056",
+      "venue_name": "Altar Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "edce6aadb84df104",
+      "venue_name": "Aurelia",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "3b32c02b652eb143",
+      "venue_name": "Bierlife",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "939a06af330c981a",
+      "venue_name": "La Garage",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "dfd1dd142aedcc61",
+      "venue_name": "La Mezzetta",
+      "signals": {
+        "heritage_signal": 65,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "1dd5bf4706fb6950",
+      "venue_name": "Madre Rojas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "dee461d82c34b6d6",
+      "venue_name": "Mixtape Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "4ded9d476a1999b7",
+      "venue_name": "Picaron",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "4ef1458fc399c35a",
+      "venue_name": "Sarkis",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "6b0924cbea2810b2",
+      "venue_name": "La Panera Rosa",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6ab2508d5e018222",
+      "venue_name": "Amarante",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a86d17c74f95d0ce",
+      "venue_name": "Canillita Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "3953efbe8296a7b0",
+      "venue_name": "Jaramillo Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7e8f363b0927f3ce",
+      "venue_name": "Jolie Bistro",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6ab4c921d6bc260b",
+      "venue_name": "OSS Kafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "91ed7aecaa6cd9d9",
+      "venue_name": "Puerta Uno",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 81,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "0105a07c4be46f98",
+      "venue_name": "London City",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "8f6f724d996b428d",
+      "venue_name": "La Kitchen",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "262b0298a9327669",
+      "venue_name": "Florida Garden",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b573f2b2cd177db6",
+      "venue_name": "Frank’s",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 10,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 65
+      }
+    },
+    {
+      "candidate_id": "eedc1bb54a22a548",
+      "venue_name": "Victoria Brown",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4026eaf626b9b040",
+      "venue_name": "Avant Garten",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "5fdd34fdc7f3c049",
+      "venue_name": "Diviiino",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "33802fe1e8c52bbb",
+      "venue_name": "Danzon Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4e863f00c2f5b7b0",
+      "venue_name": "La Pecora Nera",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "1a5d0de1712e396e",
+      "venue_name": "Soria Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6247988d83f02ca3",
+      "venue_name": "The Library Lounge",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d96b5787a1af33b2",
+      "venue_name": "Aldo Vinoteca Recoleta",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "84806e9ed0e7651d",
+      "venue_name": "Casa Munay",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "510ad8d5d4a8c2cf",
+      "venue_name": "Clorindo Cafe",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7a7aaa8f811ca7bf",
+      "venue_name": "Hache Palermo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "db119d6b5d9cb88d",
+      "venue_name": "Josephina Cafe",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "789d8a75424360af",
+      "venue_name": "La Calle Bar Palermo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "748a9df8982ce648",
+      "venue_name": "La Dorita Palermo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "ff596c46de19c8b3",
+      "venue_name": "La Rambla Recoleta",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "df72e3c51cec86ce",
+      "venue_name": "Mamba Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6db90b5f7338e050",
+      "venue_name": "Nilson",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "9d62d065312164ed",
+      "venue_name": "Oh No Lulu",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "5127149909ef30b4",
+      "venue_name": "Sottovoce Recoleta",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4065fb2bc524d23f",
+      "venue_name": "Tea Connection Recoleta",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "9c883f6a6b728a90",
+      "venue_name": "Desnivel",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "1029a2751747506a",
+      "venue_name": "Hierbabuena",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "e08ace893f5fe424",
+      "venue_name": "La Crespo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "19949da15e2bdd9d",
+      "venue_name": "La Esperanza de los Ascurra",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "119051ad76f707f4",
+      "venue_name": "Malvon",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "1702a7df2074e918",
+      "venue_name": "Negro Cueva",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 0,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "eb4de96c6accbcfd",
+      "venue_name": "Siamo nel Forno",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "305eada21f8ddde9",
+      "venue_name": "Atis Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d359fed1c80bd452",
+      "venue_name": "Bar Roma Colegiales",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "3f51e195e8969b28",
+      "venue_name": "Cucina Paradiso Colegiales",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "2afb0faa52fd95e0",
+      "venue_name": "El Banco Rojo",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "6940edd5a21aef4d",
+      "venue_name": "El Galpon de Tacuara Chacarita",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "4adba3e2138c5eb3",
+      "venue_name": "Finde",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "0f2350f3f3451af5",
+      "venue_name": "Gibraltar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "769144bce7e8d999",
+      "venue_name": "Growlers Villa Crespo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "010d3a1cd8f0ad70",
+      "venue_name": "Hache Almacen",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "dcdd55d35e266af6",
+      "venue_name": "La Ferneteria",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "86e3b55c1722366a",
+      "venue_name": "La Fuerza Vermu Chacarita",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "230ec8da0876bc3c",
+      "venue_name": "La Uva",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "d4cd2a18cb10805b",
+      "venue_name": "Maleza Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "7cd5ed99ecd74082",
+      "venue_name": "Mansion Boero Wine",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b4e03c4c79bc5f27",
+      "venue_name": "Marti Barra",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "92351465c5d0553b",
+      "venue_name": "Mercado de Pulgas Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "e33c63a483c28ca8",
+      "venue_name": "Morro Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "a88a9b44d8cd6bb9",
+      "venue_name": "Narda Lepes Mercado",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "7c35ac1b2f8fb03e",
+      "venue_name": "Nola Chacarita",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "3e1a4a279d4ea27d",
+      "venue_name": "Ruda Cocina",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "e4d004df18590bfc",
+      "venue_name": "Salvaje Bakery",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "079cda50e530e533",
+      "venue_name": "Sifon Soderia",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 15
+      }
+    },
+    {
+      "candidate_id": "2e0012ff2e2ad095",
+      "venue_name": "La Pescadorita",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "62ce0f0668318543",
+      "venue_name": "Las Cholas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bc2a0bd03043207e",
+      "venue_name": "Olsen Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "c0c04ed79e791e8e",
+      "venue_name": "Sucre",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "3573c4cc3ec50ba9",
+      "venue_name": "Voulez Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "1026d7b1218803d1",
+      "venue_name": "Belgrano Social Club",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "59c434b3cab89006",
+      "venue_name": "Boticario Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "10d0071514c522a1",
+      "venue_name": "Caseros Belgrano",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "2c64dfd7be5e4f1e",
+      "venue_name": "Club de la Birra Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "8a212be49826fef3",
+      "venue_name": "Decata Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "42b87412251b9dbc",
+      "venue_name": "Kansas Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "e6e0920d815dab47",
+      "venue_name": "La Calle Bar Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f7796de520b3f80e",
+      "venue_name": "La Guitarrita Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d25a9620dfa6515f",
+      "venue_name": "Las Canitas Cocktail Club",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4c79b71541c4e86c",
+      "venue_name": "Las Canitas Wine Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "1a9a523cace5734f",
+      "venue_name": "Le Ble Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "81ba5a6a53827a3e",
+      "venue_name": "Mordisco Belgrano",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a1b7cd5460d538f0",
+      "venue_name": "Moshu Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a71792fae0fc2cf0",
+      "venue_name": "Mott Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b3330b9e18f5f272",
+      "venue_name": "Novecento Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f9dc25a4621e42ae",
+      "venue_name": "Orno Belgrano",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "8d699abbcbdab332",
+      "venue_name": "SushiClub Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "9c478f0ceac79ccb",
+      "venue_name": "Tea Connection Las Canitas",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "2ce5eb24f47cabaf",
+      "venue_name": "Filo",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "f69d90cc4d502052",
+      "venue_name": "La Cabaña Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 65,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "856171ccc3c853e2",
+      "venue_name": "Osaka Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a4eec2802f18700a",
+      "venue_name": "Pony Line",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a7bd632d6dc116aa",
+      "venue_name": "Tancat",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "cb393705f53161d4",
+      "venue_name": "36 Billares",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "2725020c0edecda0",
+      "venue_name": "Ajo Negro",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "870dd4d3bc79cb52",
+      "venue_name": "Arroyo Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "5f4e7171e98563f9",
+      "venue_name": "Basa Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bd4a8afe23d14040",
+      "venue_name": "Bodega Amparo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "63575c8b7cc50d28",
+      "venue_name": "Crystal Bar",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "733b1ce17d15545c",
+      "venue_name": "El Gato Negro",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "badab0a7e5cbb601",
+      "venue_name": "Farinelli Arroyo",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "999acfcf46846033",
+      "venue_name": "Freddo Puerto Madero Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "8b1c8f32a73d4ff8",
+      "venue_name": "Gran Cafe Tortoni Bar",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a2346dd4dc44faaa",
+      "venue_name": "Happening Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "9e457651ff8e626d",
+      "venue_name": "La Academia",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b5111d6ca97ebfcf",
+      "venue_name": "La Bistecca Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "42fe676e88789db6",
+      "venue_name": "La Giralda",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7719979b07b13c32",
+      "venue_name": "La Panera Rosa Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7a3ad1c15b4f5505",
+      "venue_name": "La Parolaccia Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "324a2070e0feebe1",
+      "venue_name": "La Puerto Rico",
+      "signals": {
+        "heritage_signal": 80,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "7777a8e60625e3c7",
+      "venue_name": "Le Pain Quotidien Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "39eec8b103c836fb",
+      "venue_name": "Madero Harbour Bar",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "fd740f2829758b76",
+      "venue_name": "Madero Tango Restaurant",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 75,
+        "tourist_signal": 90,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "12c9313d08c5e0de",
+      "venue_name": "Marcelo",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "d6576711601e3123",
+      "venue_name": "Museo Fernandez Blanco Cafe",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "a24a333b602b2a58",
+      "venue_name": "Ol Dias Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4189cdbab2e94814",
+      "venue_name": "Riviere Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "760621247c1dc07f",
+      "venue_name": "Rooftop Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4d7b1051e85348e3",
+      "venue_name": "Sorrento Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "b58e8b995c4076aa",
+      "venue_name": "Sottovoce Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "c034fce343ce512b",
+      "venue_name": "The Library Lounge Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 55,
+        "community_signal": 28,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "5531cf49eff8ee78",
+      "venue_name": "Tostado Puerto Madero",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bb7d7e71f41f11cc",
+      "venue_name": "Wine Bar Puerto Cristal",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 28,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "bb534456f7f4d858",
+      "venue_name": "Dogg",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 53,
+        "specialty_signal": 0,
+        "design_signal": 70,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "003783c60c8859f1",
+      "venue_name": "Dulce Charlotte",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 53,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "06baf05d8a85939f",
+      "venue_name": "RVR Cafe",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 53,
+        "specialty_signal": 80,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "5c60c0d188d040cb",
+      "venue_name": "Oui Oui",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 0,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "c383b194446df3c4",
+      "venue_name": "Pani",
+      "signals": {
+        "heritage_signal": 15,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 0,
+        "specialty_signal": 0,
+        "design_signal": 0,
+        "novelty_signal": 0
+      }
+    },
+    {
+      "candidate_id": "4f5e7f56ac2aaf6e",
+      "venue_name": "On Tap",
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 0,
+        "community_signal": 0,
+        "specialty_signal": 78,
+        "design_signal": 70,
+        "novelty_signal": 15
+      }
+    }
+  ]
+}

@@ -15,6 +15,7 @@ type PublicVenueRow = {
   tagline: string | null;
   narrative: string | null;
   tags: string[] | null;
+  curation_status?: 'active' | 'pending_review' | 'rejected' | 'quarantined' | 'needs_reprocess' | null;
   taste_vector?: string | number[] | null;
 };
 
@@ -97,6 +98,10 @@ export async function GET() {
     }
 
     const mappedVenues = (data as PublicVenueRow[])
+      .filter((venue) => {
+        if (!venue.curation_status) return true;
+        return venue.curation_status === 'active';
+      })
       .map((venue) => {
         const coordinates = parseCoordinates(venue.coordinates);
 

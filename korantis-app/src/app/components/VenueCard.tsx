@@ -3,15 +3,17 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Compass } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
 
 interface VenueCardProps {
   venue: ScoredVenue;
   onSelect: (venue: ScoredVenue) => void;
+  onSpatialTap?: (venue: ScoredVenue) => void;
 }
 
-export default function VenueCard({ venue, onSelect }: VenueCardProps) {
+export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardProps) {
   const {
     recordDwell,
     recordPassThrough,
@@ -124,7 +126,14 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               <div className="k-card__panel-header">
                 <div>
                   <h3 className="k-card__name">{venue.name}</h3>
-                  <p className="k-card__location">{placeCue}</p>
+                  <p 
+                    className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
+                    onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
+                    aria-label={`Open ${venue.name} in Spatial Atlas`}
+                  >
+                    <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
+                    {placeCue}
+                  </p>
                 </div>
               </div>
               <p className="k-card__tagline">{tagline}</p>
@@ -150,7 +159,14 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
             <div className="k-card__content">
               <div className="k-card__accent-line"></div>
               <h3 className="k-card__name">{venue.name}</h3>
-              <p className="k-card__location">{placeCue}</p>
+              <p 
+                className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
+                onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
+                aria-label={`Open ${venue.name} in Spatial Atlas`}
+              >
+                <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
+                {placeCue}
+              </p>
               <p className="k-card__tagline">{tagline}</p>
               {renderTags('ghost')}
             </div>
@@ -172,7 +188,14 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
             {renderBookmark()}
             <div className="k-card__content">
               <h3 className="k-card__name">{venue.name}</h3>
-              <p className="k-card__location">{placeCue}</p>
+              <p 
+                className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
+                onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
+                aria-label={`Open ${venue.name} in Spatial Atlas`}
+              >
+                <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
+                {placeCue}
+              </p>
               <p className="k-card__tagline">{tagline}</p>
               {renderTags('frost')}
             </div>
@@ -193,7 +216,14 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
             </div>
             <div className="k-card__content">
               <h3 className="k-card__name">{venue.name}</h3>
-              <p className="k-card__location">{placeCue}</p>
+              <p 
+                className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
+                onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
+                aria-label={`Open ${venue.name} in Spatial Atlas`}
+              >
+                <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
+                {placeCue}
+              </p>
               <p className="k-card__tagline">{tagline}</p>
               {renderTags('ghost')}
             </div>

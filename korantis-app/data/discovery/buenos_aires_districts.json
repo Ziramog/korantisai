@@ -1,0 +1,93 @@
+[
+  {
+    "city": "Buenos Aires",
+    "district": "Palermo Soho",
+    "priority": 95,
+    "venue_target": 50,
+    "district_identity_tags": ["creative", "design", "specialty_coffee", "trendy", "nightlife"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Palermo Hollywood",
+    "priority": 92,
+    "venue_target": 45,
+    "district_identity_tags": ["restaurants", "cocktails", "media", "wine", "late_night"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Palermo Chico",
+    "priority": 80,
+    "venue_target": 20,
+    "district_identity_tags": ["residential", "design", "garden", "polished", "restaurants"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Recoleta",
+    "priority": 88,
+    "venue_target": 35,
+    "district_identity_tags": ["classic", "elegant", "cafes", "hotels", "cocktails"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "San Telmo",
+    "priority": 86,
+    "venue_target": 35,
+    "district_identity_tags": ["historic", "bohemian", "markets", "bars", "traditional"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Puerto Madero",
+    "priority": 70,
+    "venue_target": 20,
+    "district_identity_tags": ["waterfront", "polished", "restaurants", "business", "views"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Belgrano",
+    "priority": 78,
+    "venue_target": 25,
+    "district_identity_tags": ["residential", "specialty_coffee", "brunch", "neighborhood", "quiet"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Colegiales",
+    "priority": 84,
+    "venue_target": 30,
+    "district_identity_tags": ["low_key", "creative", "coffee", "restaurants", "local"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Chacarita",
+    "priority": 82,
+    "venue_target": 30,
+    "district_identity_tags": ["emerging", "cocktails", "restaurants", "independent", "nightlife"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Villa Crespo",
+    "priority": 83,
+    "venue_target": 30,
+    "district_identity_tags": ["independent", "restaurants", "wine", "coffee", "creative"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Las Canitas",
+    "priority": 74,
+    "venue_target": 20,
+    "district_identity_tags": ["polished", "restaurants", "nightlife", "terraces", "social"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Retiro",
+    "priority": 72,
+    "venue_target": 20,
+    "district_identity_tags": ["classic", "hotels", "cocktails", "business", "heritage"]
+  },
+  {
+    "city": "Buenos Aires",
+    "district": "Microcentro",
+    "priority": 68,
+    "venue_target": 20,
+    "district_identity_tags": ["historic", "after_office", "bars", "cafes", "business"]
+  }
+]

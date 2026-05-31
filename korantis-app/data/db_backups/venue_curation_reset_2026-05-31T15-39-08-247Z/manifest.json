@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-05-31T15:39:08.248Z",
+  "tables": {
+    "venues": {
+      "count": 50,
+      "file": "venues.json"
+    },
+    "staging_venues": {
+      "count": 50,
+      "file": "staging_venues.json"
+    },
+    "venue_images": {
+      "count": 500,
+      "file": "venue_images.json"
+    },
+    "venue_reviews": {
+      "count": 297,
+      "file": "venue_reviews.json"
+    },
+    "venue_embeddings": {
+      "count": 50,
+      "file": "venue_embeddings.json"
+    },
+    "quality_scores": {
+      "count": 50,
+      "file": "quality_scores.json"
+    },
+    "pipeline_jobs": {
+      "count": 0,
+      "file": "pipeline_jobs.json"
+    }
+  }
+}
