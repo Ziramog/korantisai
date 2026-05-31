@@ -38,11 +38,11 @@ export default function Home() {
     toggleSaveVenue, 
     currentDrift,
     currentPhase,
-    language
+    language,
+    setLanguage
   } = useCircadian();
 
   const [activeTab, setActiveTab] = useState<'search' | 'saved' | 'profile'>('search');
-  const [viewMode, setViewMode] = useState<'feed' | 'map'>('feed');
   const [selectedVenue, setSelectedVenue] = useState<ScoredVenue | null>(null);
 
   const editorialVenues = useMemo(() => {
@@ -100,6 +100,21 @@ export default function Home() {
 
   return (
     <div className="w-full min-h-screen text-k-text overflow-x-hidden scroll-smooth relative">
+      {/* FIXED ELEMENTS OUTSIDE TRANSFORM CONTAINERS */}
+      {activeTab === 'search' && !selectedVenue && (
+        <SearchBar />
+      )}
+      
+      <GlobalNav 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+        selectedVenue={selectedVenue}
+      />
+      
+      {!selectedVenue && <HeaderControls />}
+      
+      <AtmosphereDebug />
+
       <AnimatePresence mode="wait">
         {selectedVenue ? (
           <motion.div
@@ -126,55 +141,30 @@ export default function Home() {
             {/* EXPLORE / SEARCH FEED TAB */}
             {activeTab === 'search' && (
               <div className="w-full max-w-4xl mx-auto px-6 md:px-12 flex flex-col items-center">
-                <SearchBar />
                 
-                {/* View Toggle */}
-                <div className="flex bg-k-surface-elevated/40 p-1 rounded-xl border border-k-border mt-8">
-                  <button
-                    onClick={() => setViewMode('feed')}
-                    className={`px-6 py-2 rounded-lg text-[10px] font-sans uppercase tracking-widest transition-colors ${
-                      viewMode === 'feed' ? 'bg-k-gold text-k-black font-medium' : 'text-k-text-secondary hover:text-k-text'
-                    }`}
-                  >
-                    {t('resonanceFeed', language)}
-                  </button>
-                  <button
-                    onClick={() => setViewMode('map')}
-                    className={`px-6 py-2 rounded-lg text-[10px] font-sans uppercase tracking-widest transition-colors ${
-                      viewMode === 'map' ? 'bg-k-gold text-k-black font-medium' : 'text-k-text-secondary hover:text-k-text'
-                    }`}
-                  >
-                    {t('spatialAtlas', language)}
-                  </button>
-                </div>
-
-                {viewMode === 'map' ? (
-                  <MapExplorer onSelectVenue={handleVenueClick} />
-                ) : (
-                  <motion.div 
-                    layout
-                    className="w-full flex flex-col items-center mt-12"
-                  >
-                    {editorialVenues.map(({ source, presentation }) => (
-                      <motion.div
-                        key={source.id}
-                        layout
-                        transition={{
-                          type: 'spring',
-                          stiffness: 180,
-                          damping: 26,
-                          mass: 1.1
-                        }}
-                        className="w-full flex justify-center"
-                      >
-                        <VenueCard 
-                          venue={presentation}
-                          onSelect={() => handleVenueClick(source)}
-                        />
-                      </motion.div>
-                    ))}
-                  </motion.div>
-                )}
+                <motion.div 
+                  layout
+                  className="w-full flex flex-col items-center pt-[calc(28vh-7px)]"
+                >
+                  {editorialVenues.map(({ source, presentation }) => (
+                    <motion.div
+                      key={source.id}
+                      layout
+                      transition={{
+                        type: 'spring',
+                        stiffness: 180,
+                        damping: 26,
+                        mass: 1.1
+                      }}
+                      className="w-full flex justify-center"
+                    >
+                      <VenueCard 
+                        venue={presentation}
+                        onSelect={() => handleVenueClick(source)}
+                      />
+                    </motion.div>
+                  ))}
+                </motion.div>
               </div>
             )}
 
@@ -385,6 +375,35 @@ export default function Home() {
                             <span className="text-xs text-k-gold font-sans">{savedVenueIds.length} {t('bookmarks', language)}</span>
                           </div>
                         </section>
+                        
+                        {/* Language Preferences */}
+                        <section className="mt-4">
+                          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
+                            {language === 'es' ? 'Idioma' : 'Language'}
+                          </h3>
+                          <div className="flex p-1 rounded-xl bg-k-surface-elevated/20 border border-k-border w-max">
+                            <button
+                              onClick={() => setLanguage('es')}
+                              className={`px-6 py-2 rounded-lg text-xs font-sans tracking-wide transition-all duration-300 ${
+                                language === 'es' 
+                                  ? 'bg-k-gold-dim text-k-gold shadow-sm' 
+                                  : 'text-k-text-secondary hover:text-white'
+                              }`}
+                            >
+                              Español
+                            </button>
+                            <button
+                              onClick={() => setLanguage('en')}
+                              className={`px-6 py-2 rounded-lg text-xs font-sans tracking-wide transition-all duration-300 ${
+                                language === 'en' 
+                                  ? 'bg-k-gold-dim text-k-gold shadow-sm' 
+                                  : 'text-k-text-secondary hover:text-white'
+                              }`}
+                            >
+                              English
+                            </button>
+                          </div>
+                        </section>
                       </div>
                     </main>
                   </>
@@ -392,18 +411,6 @@ export default function Home() {
               </div>
             )}
 
-            {/* GLOBAL FLOATING NAVIGATION */}
-            <GlobalNav 
-              activeTab={activeTab} 
-              setActiveTab={setActiveTab} 
-              selectedVenue={selectedVenue}
-            />
-
-            {/* REALTIME ATMOSPHERIC DEBUG HUD PANEL */}
-            <AtmosphereDebug />
-
-            {/* HEADER TOGGLES */}
-            <HeaderControls />
           </motion.div>
         )}
       </AnimatePresence>

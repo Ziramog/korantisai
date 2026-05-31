@@ -1,87 +1,92 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { memo, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Search, Bookmark, User } from 'lucide-react';
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
-import { useCircadian } from '../contexts/CircadianContext';
-
-import { t } from '../utils/i18n';
+import type { ScoredVenue } from '../contexts/CircadianContext';
 
 interface GlobalNavProps {
   activeTab: 'search' | 'saved' | 'profile';
   setActiveTab: (tab: 'search' | 'saved' | 'profile') => void;
-  selectedVenue: any; // Hide nav when venue is expanded
+  selectedVenue: ScoredVenue | null;
 }
 
-export default function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
-  const { language } = useCircadian();
-  if (selectedVenue) return null;
+type NavTab = GlobalNavProps['activeTab'];
+
+const NAV_ITEMS: Array<{
+  id: NavTab;
+  label: string;
+  icon: React.ElementType;
+}> = [
+  { id: 'search', label: 'Explore', icon: Search },
+  { id: 'saved', label: 'Atlas', icon: Bookmark },
+  { id: 'profile', label: 'Taste Profile', icon: User },
+];
+
+const NAV_SPRING = { type: 'spring', damping: 28, stiffness: 260, mass: 0.8 } as const;
+
+function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
+  const prefersReducedMotion = useReducedMotion();
+  const { scrollY } = useScroll();
+  const [isVisible, setIsVisible] = useState(true);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const velocity = scrollY.getVelocity();
+    
+    if (latest < 60) {
+      setIsVisible(true);
+    } else if (velocity > 30) {
+      setIsVisible(false);
+    } else if (velocity < -30) {
+      setIsVisible(true);
+    }
+  });
 
   return (
-    <AnimatePresence>
-      <div className="fixed bottom-6 sm:bottom-8 left-0 right-0 z-50 flex justify-center px-4">
-        <motion.nav 
-          initial={{ y: 80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 80, opacity: 0 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 220 }}
-            className="flex items-center gap-8 sm:gap-12 px-6 sm:px-8 py-3 rounded-full bg-[#0F0D0B]/90 backdrop-blur-xl border border-white/10 shadow-[0_16px_40px_rgba(0,0,0,0.7)] w-full max-w-[280px] sm:max-w-none sm:w-auto justify-around sm:justify-center"
+    <AnimatePresence initial={false}>
+      {!selectedVenue && (
+        <div
+          key="global-nav-shell"
+          className="pointer-events-none fixed bottom-6 left-0 right-0 z-50 flex justify-center px-4"
+        >
+          <motion.div
+            initial={{ y: 80, opacity: 0 }}
+            animate={{ y: isVisible ? 0 : 80, opacity: isVisible ? 1 : 0 }}
+            exit={{ y: 80, opacity: 0 }}
+            transition={prefersReducedMotion ? { duration: 0 } : NAV_SPRING}
+            className="pointer-events-auto"
           >
-            {/* Search / Explore Tab */}
-            <button 
-              onClick={() => setActiveTab('search')}
-              className={`flex flex-col items-center gap-1.5 transition-all duration-300 relative cursor-pointer ${
-                activeTab === 'search' 
-                  ? 'text-k-gold opacity-100 scale-105' 
-                  : 'text-k-text-secondary opacity-50 hover:opacity-80'
-              }`}
+            <nav
+              className="flex items-center gap-6 rounded-full border border-white/5 bg-[#050505]/65 px-6 py-2 shadow-[0_10px_30px_rgba(0,0,0,0.8)]"
+              style={{ backdropFilter: 'blur(48px)', WebkitBackdropFilter: 'blur(48px)' }}
             >
-              <Search size={18} strokeWidth={activeTab === 'search' ? 2.5 : 1.8} />
-              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('explore', language)}</span>
-              {activeTab === 'search' && (
-                <motion.div 
-                  className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-k-gold"
-                />
-              )}
-            </button>
-            
-            {/* Saved Atlas Tab */}
-            <button 
-              onClick={() => setActiveTab('saved')}
-              className={`flex flex-col items-center gap-1.5 transition-all duration-300 relative cursor-pointer ${
-                activeTab === 'saved' 
-                  ? 'text-k-gold opacity-100 scale-105' 
-                  : 'text-k-text-secondary opacity-50 hover:opacity-80'
-              }`}
-            >
-              <Bookmark size={18} strokeWidth={activeTab === 'saved' ? 2.5 : 1.8} />
-              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('atlas', language)}</span>
-              {activeTab === 'saved' && (
-                <motion.div 
-                  className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-k-gold"
-                />
-              )}
-            </button>
-            
-            {/* Profile & Taste Tab */}
-            <button 
-              onClick={() => setActiveTab('profile')}
-              className={`flex flex-col items-center gap-1.5 transition-all duration-300 relative cursor-pointer ${
-                activeTab === 'profile' 
-                  ? 'text-k-gold opacity-100 scale-105' 
-                  : 'text-k-text-secondary opacity-50 hover:opacity-80'
-              }`}
-            >
-              <User size={18} strokeWidth={activeTab === 'profile' ? 2.5 : 1.8} />
-              <span className="text-[9px] font-sans tracking-widest uppercase font-semibold">{t('taste', language)}</span>
-              {activeTab === 'profile' && (
-                <motion.div 
-                  className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-k-gold"
-                />
-              )}
-            </button>
-          </motion.nav>
+              {NAV_ITEMS.map((item) => {
+                const isActive = activeTab === item.id;
+                const Icon = item.icon;
+
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setActiveTab(item.id)}
+                    aria-label={item.label}
+                    aria-pressed={isActive}
+                    className="group relative flex items-center justify-center p-1"
+                  >
+                    <Icon 
+                      size={18}
+                      strokeWidth={1.5}
+                      className={`transition-colors ${isActive ? 'text-[#C9A96E]' : 'text-[#4A4A4A] group-hover:text-[#6A6A6A]'}`}
+                    />
+                  </button>
+                );
+              })}
+            </nav>
+          </motion.div>
         </div>
+      )}
     </AnimatePresence>
   );
 }
+
+export default memo(GlobalNav);

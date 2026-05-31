@@ -1,59 +1,41 @@
 "use client";
 
+import { useState } from 'react';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useCircadian } from '../contexts/CircadianContext';
 
 export default function HeaderControls() {
-  const { language, setLanguage, city, setCity } = useCircadian();
+  const { city, setCity } = useCircadian();
+  const { scrollY } = useScroll();
+  const [isVisible, setIsVisible] = useState(true);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest < 60) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  });
 
   return (
-    <div className="fixed top-6 right-6 z-50 flex items-center gap-3">
-      {/* City Switch */}
-      <div className="flex p-1 rounded-full bg-[#0F0D0B]/80 backdrop-blur-md border border-white/10 shadow-lg">
+    <motion.div 
+      initial={true}
+      animate={{ y: isVisible ? 0 : -100, opacity: isVisible ? 1 : 0 }}
+      transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+      className="fixed top-6 left-0 right-0 z-50 flex items-center justify-between px-6 pointer-events-none"
+    >
+      <div className="pointer-events-auto">
+        <h1 className="font-display text-xl tracking-[0.2em] text-k-text uppercase">Korantis</h1>
+      </div>
+      
+      <div className="pointer-events-auto">
         <button
-          onClick={() => setCity('BUE')}
-          className={`px-3 py-1 rounded-full text-[10px] font-sans font-semibold tracking-widest uppercase transition-all duration-300 ${
-            city === 'BUE' 
-              ? 'bg-k-gold text-k-black shadow-[0_0_10px_rgba(212,175,55,0.3)]' 
-              : 'text-k-text-secondary hover:text-white'
-          }`}
+          onClick={() => setCity(city === 'BUE' ? 'NYC' : 'BUE')}
+          className="text-[10px] font-sans font-light tracking-wider text-k-text-secondary hover:text-k-text transition-colors flex items-center gap-1.5 uppercase"
         >
-          BUE
-        </button>
-        <button
-          onClick={() => setCity('NYC')}
-          className={`px-3 py-1 rounded-full text-[10px] font-sans font-semibold tracking-widest uppercase transition-all duration-300 ${
-            city === 'NYC' 
-              ? 'bg-k-gold text-k-black shadow-[0_0_10px_rgba(212,175,55,0.3)]' 
-              : 'text-k-text-secondary hover:text-white'
-          }`}
-        >
-          NYC
+          {city === 'BUE' ? 'Buenos Aires' : 'New York'} <span className="text-[8px] opacity-60">▼</span>
         </button>
       </div>
-
-      {/* Language Switch */}
-      <div className="flex p-1 rounded-full bg-[#0F0D0B]/80 backdrop-blur-md border border-white/10 shadow-lg">
-        <button
-          onClick={() => setLanguage('es')}
-          className={`px-3 py-1 rounded-full text-[10px] font-sans font-semibold tracking-widest uppercase transition-all duration-300 ${
-            language === 'es' 
-              ? 'bg-k-surface-elevated text-k-gold border border-k-gold/30' 
-              : 'text-k-text-secondary hover:text-white border border-transparent'
-          }`}
-        >
-          ES
-        </button>
-        <button
-          onClick={() => setLanguage('en')}
-          className={`px-3 py-1 rounded-full text-[10px] font-sans font-semibold tracking-widest uppercase transition-all duration-300 ${
-            language === 'en' 
-              ? 'bg-k-surface-elevated text-k-gold border border-k-gold/30' 
-              : 'text-k-text-secondary hover:text-white border border-transparent'
-          }`}
-        >
-          EN
-        </button>
-      </div>
-    </div>
+    </motion.div>
   );
 }

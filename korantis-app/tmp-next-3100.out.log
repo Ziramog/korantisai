@@ -1,0 +1,14 @@
+
+> korantis-app@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3100
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://127.0.0.1:3100
+- Network:       http://127.0.0.1:3100
+- Environments: .env.local
+✓ Ready in 1494ms
+
+ GET /api/venues 200 in 1105ms (next.js: 305ms, application-code: 799ms)
+ GET / 200 in 741ms (next.js: 190ms, application-code: 551ms)
+ GET /api/venues 200 in 308ms (next.js: 5ms, application-code: 303ms)
+[?25h

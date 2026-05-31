@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { Bookmark } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
 
@@ -12,12 +13,12 @@ interface VenueCardProps {
 }
 
 export default function VenueCard({ venue, onSelect }: VenueCardProps) {
-  const {
-    recordDwell,
-    recordPassThrough,
-    savedVenueIds,
+  const { 
+    recordDwell, 
+    recordPassThrough, 
+    savedVenueIds, 
     toggleSaveVenue,
-    language
+    language 
   } = useCircadian();
 
   const ref = useRef<HTMLDivElement>(null);
@@ -87,16 +88,14 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
       aria-label={isSaved ? 'Unsave venue' : 'Save venue'}
       aria-pressed={isSaved}
     >
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z" />
-      </svg>
+      <Bookmark size={17} fill={isSaved ? 'currentColor' : 'none'} />
     </button>
   );
 
-  const renderTags = (variant: 'frost' | 'ghost' | 'gold' | 'outlined') => (
+  const renderTags = () => (
     <div className="k-card__tags">
       {venue.tags.map((tag) => (
-        <span key={tag} className={`k-tag k-tag--${variant}`}>
+        <span key={tag} className="k-tag k-tag--ghost">
           {t(tag, language)}
         </span>
       ))}
@@ -119,16 +118,19 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               />
               <div className="k-card__vignette"></div>
             </div>
-            {renderBookmark()}
+
             <div className="k-card__panel">
               <div className="k-card__panel-header">
                 <div>
-                  <h3 className="k-card__name">{venue.name}</h3>
+                  <h3 className="k-card__name">
+                    {venue.name}
+                  </h3>
                   <p className="k-card__location">{placeCue}</p>
                 </div>
               </div>
-              <p className="k-card__tagline">{tagline}</p>
-              {renderTags('gold')}
+              <p className="k-card__tagline">
+                {tagline}
+              </p>
             </div>
           </>
         );
@@ -146,13 +148,19 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               />
               <div className="k-card__gradient"></div>
             </div>
+
             {renderBookmark()}
+
             <div className="k-card__content">
               <div className="k-card__accent-line"></div>
-              <h3 className="k-card__name">{venue.name}</h3>
+              <h3 className="k-card__name">
+                {venue.name}
+              </h3>
               <p className="k-card__location">{placeCue}</p>
-              <p className="k-card__tagline">{tagline}</p>
-              {renderTags('ghost')}
+              <p className="k-card__tagline">
+                {tagline}
+              </p>
+              {renderTags()}
             </div>
           </>
         );
@@ -169,12 +177,15 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               />
               <div className="k-card__gradient"></div>
             </div>
-            {renderBookmark()}
+
             <div className="k-card__content">
-              <h3 className="k-card__name">{venue.name}</h3>
+              <h3 className="k-card__name">
+                {venue.name}
+              </h3>
               <p className="k-card__location">{placeCue}</p>
-              <p className="k-card__tagline">{tagline}</p>
-              {renderTags('frost')}
+              <p className="k-card__tagline">
+                {tagline}
+              </p>
             </div>
           </>
         );
@@ -192,10 +203,13 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
               />
             </div>
             <div className="k-card__content">
-              <h3 className="k-card__name">{venue.name}</h3>
+              <h3 className="k-card__name">
+                {venue.name}
+              </h3>
               <p className="k-card__location">{placeCue}</p>
-              <p className="k-card__tagline">{tagline}</p>
-              {renderTags('ghost')}
+              <p className="k-card__tagline">
+                {tagline}
+              </p>
             </div>
           </>
         );
@@ -203,11 +217,11 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
   };
 
   return (
-    <div
+    <div 
       ref={ref}
-      className={`w-full max-w-[var(--k-mobile-max)] ${spacingStyles}`}
+      className={`w-full flex justify-center ${spacingStyles}`}
     >
-      <motion.article
+      <motion.div
         layoutId={`card-wrap-${venue.id}`}
         onClick={() => onSelect(venue)}
         className={`k-card k-card--${venue.cardSize} ${isSaved ? 'is-saved' : ''}`}
@@ -217,14 +231,14 @@ export default function VenueCard({ venue, onSelect }: VenueCardProps) {
         {/* Dynamic Vector Score Debug HUD badge */}
         {debugMode && (
           <div className="absolute bottom-4 right-4 z-30 bg-black/85 border border-white/10 rounded px-2 py-1 font-mono text-[8px] text-white/70 pointer-events-none tracking-tight">
-            <span className="text-k-gold font-bold">S:{venue.scoreFinal}</span> |
-            <span> C:{venue.breakdown.circadian.toFixed(2)}</span> |
-            <span> T:{venue.breakdown.taste.toFixed(2)}</span> |
-            <span> I:{venue.breakdown.intent.toFixed(2)}</span> |
+            <span className="text-k-gold font-bold">S:{venue.scoreFinal}</span> | 
+            <span> C:{venue.breakdown.circadian.toFixed(2)}</span> | 
+            <span> T:{venue.breakdown.taste.toFixed(2)}</span> | 
+            <span> I:{venue.breakdown.intent.toFixed(2)}</span> | 
             <span> X:{venue.breakdown.context.toFixed(2)}</span>
           </div>
         )}
-      </motion.article>
+      </motion.div>
     </div>
   );
 }

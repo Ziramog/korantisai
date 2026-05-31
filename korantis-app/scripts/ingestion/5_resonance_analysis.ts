@@ -22,16 +22,9 @@ function cosineSimilarity(A: number[], B: number[]): number {
   return dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
 }
 
-async function getEmbedding(text: string) {
-  const { pipeline } = await import('@xenova/transformers');
-  const extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', { quantized: true });
-  const output = await extractor(text, { pooling: 'mean', normalize: true });
-  return Array.from(output.data) as number[];
-}
-
 async function analyzeResonance(l2Text: string, l3Text: string, venueName: string) {
   const prompt = `Analyze these two atmospheric descriptions of the venue "${venueName}".
-Layer 2 (Category/Editorial Expectation): "${l2Text}"
+Layer 2 (Editorial Interpretation): "${l2Text}"
 Layer 3 (Observed Public Perception): "${l3Text}"
 Extract the underlying atmospheric themes from both. Identify overlaps and divergences.`;
 
@@ -62,35 +55,57 @@ Extract the underlying atmospheric themes from both. Identify overlaps and diver
 }
 
 async function main() {
-  console.log("Starting Step 5: Resonance Analysis...");
+  console.log('Starting Step 5: Resonance Analysis...');
 
-  const { data: venues } = await supabase.from('staging_venues').select('*').eq('status', 'processing').not('atmosphere_prose', 'is', null);
+  const { data: venues } = await supabase
+    .from('staging_venues')
+    .select('*')
+    .eq('status', 'processing')
+    .not('atmosphere_prose', 'is', null);
 
   if (!venues || venues.length === 0) return;
 
   for (const venue of venues) {
     console.log(`Analyzing resonance for ${venue.name}...`);
-    
-    // Fetch L3 vector
-    const { data: l3Records } = await supabase.from('venue_embeddings').select('embedding').eq('venue_id', venue.id).eq('layer', 'L3').limit(1);
-    if (!l3Records || l3Records.length === 0) continue;
-    let l3VectorRaw = l3Records[0].embedding;
-    let l3Vector = typeof l3VectorRaw === 'string' ? JSON.parse(l3VectorRaw) : l3VectorRaw;
 
-    // Fetch L2 vector, if not found, we use category_seed as a proxy baseline
-    let l2Vector;
-    const { data: l2Records } = await supabase.from('venue_embeddings').select('embedding').eq('venue_id', venue.id).eq('layer', 'L2').limit(1);
-    let l2Text = `This is a high-quality ${venue.category_seed} venue located in ${venue.city}.`;
-    
-    if (l2Records && l2Records.length > 0) {
-      let l2VectorRaw = l2Records[0].embedding;
-      l2Vector = typeof l2VectorRaw === 'string' ? JSON.parse(l2VectorRaw) : l2VectorRaw;
-    } else {
-      console.log(`  No L2 found. Generating baseline L2 vector from category seed...`);
-      l2Vector = await getEmbedding(l2Text);
+    const { data: l3Records } = await supabase
+      .from('venue_embeddings')
+      .select('embedding')
+      .eq('venue_id', venue.id)
+      .eq('layer', 'L3')
+      .limit(1);
+
+    if (!l3Records || l3Records.length === 0) {
+      console.log('  Skipping: missing L3 embedding.');
+      continue;
     }
 
+    const { data: l2Records } = await supabase
+      .from('venue_embeddings')
+      .select('embedding')
+      .eq('venue_id', venue.id)
+      .eq('layer', 'L2')
+      .limit(1);
+
+    if (!l2Records || l2Records.length === 0) {
+      await supabase.from('quality_scores').upsert({
+        venue_id: venue.id,
+        resonance_score: null,
+        interpretation_notes: 'resonance_status: insufficient_l2',
+        last_processed_at: new Date().toISOString()
+      }, { onConflict: 'venue_id' });
+
+      console.log('  Skipped: resonance_status=insufficient_l2');
+      continue;
+    }
+
+    const l3VectorRaw = l3Records[0].embedding;
+    const l2VectorRaw = l2Records[0].embedding;
+    const l3Vector = typeof l3VectorRaw === 'string' ? JSON.parse(l3VectorRaw) : l3VectorRaw;
+    const l2Vector = typeof l2VectorRaw === 'string' ? JSON.parse(l2VectorRaw) : l2VectorRaw;
+
     const similarity = cosineSimilarity(l2Vector, l3Vector);
+    const l2Text = `Existing Layer 2 editorial embedding for ${venue.name}.`;
     const comparison = await analyzeResonance(l2Text, venue.atmosphere_prose, venue.name);
 
     await supabase.from('quality_scores').upsert({
@@ -99,10 +114,12 @@ async function main() {
       editorial_themes: comparison.editorialThemes,
       crowd_themes: comparison.crowdThemes,
       overlap_themes: comparison.overlapThemes,
-      interpretation_notes: comparison.interpretationNotes
+      interpretation_notes: comparison.interpretationNotes,
+      last_processed_at: new Date().toISOString()
     }, { onConflict: 'venue_id' });
 
-    console.log(`✅ Resonance calculated (Score: ${similarity.toFixed(3)})`);
+    console.log(`Resonance calculated (Score: ${similarity.toFixed(3)})`);
   }
 }
+
 main().catch(console.error);

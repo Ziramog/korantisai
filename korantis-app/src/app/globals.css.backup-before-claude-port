@@ -125,8 +125,8 @@
 
 /* Body brightness contrast drift */
 body {
-  /* Removed filter: brightness to prevent position: fixed bug */
-  transition: background-color 8s ease-out;
+  filter: brightness(var(--k-text-contrast, 1.0));
+  transition: filter 8s ease-out;
 }
 
   .k-card {
@@ -514,18 +514,20 @@ body {
     width: calc(100% - 48px);
     max-width: 310px;
     padding: 24px 20px;
-    background: rgba(26, 21, 16, 0.94);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: rgba(20, 16, 12, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 12px;
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(40px) saturate(1.1);
+    -webkit-backdrop-filter: blur(40px) saturate(1.1);
     transition:
       background 800ms var(--k-ease-cinematic),
       transform 800ms var(--k-ease-cinematic);
   }
 
   .k-card--layered:hover .k-card__panel {
-    background: rgba(20, 16, 12, 0.98);
+    background: rgba(20, 16, 12, 0.68);
     transform: translateY(-2px);
   }
 

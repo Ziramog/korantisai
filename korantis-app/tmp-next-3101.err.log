@@ -1,0 +1,12 @@
+⚠ `eslint` configuration in next.config.ts is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.ts options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          43752
+- Dir:          F:\KORANTIS\korantis-app
+- Log:          .next\dev\logs\next-development.log
+
+Run taskkill /PID 43752 /F to stop it.

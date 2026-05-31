@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState, useMemo, useCallback } from 'react';
-import { Venue } from '../data/venues';
+import type { Venue } from '../data/venues';
 import { createClient } from '@/utils/supabase/client';
 
 // Types

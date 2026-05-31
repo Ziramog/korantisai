@@ -8,7 +8,7 @@ const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = createClient(SUPABASE_URL!, SUPABASE_KEY!);
 
 async function main() {
-  console.log("Starting Step 6: Quality Check...");
+  console.log('Starting Step 6: Quality Check...');
 
   const { data: venues } = await supabase.from('staging_venues').select('*').eq('status', 'processing');
 
@@ -16,22 +16,39 @@ async function main() {
 
   for (const venue of venues) {
     console.log(`Checking quality for ${venue.name}...`);
-    
+
     const { data: scores } = await supabase.from('quality_scores').select('*').eq('venue_id', venue.id).single();
-    
+
     if (!scores) {
-      console.log(`  ❌ Missing quality scores.`);
+      console.log('  Missing quality scores.');
       continue;
     }
 
-    const isComplete = scores.has_prose && scores.has_embeddings && scores.resonance_score !== null;
+    const { count: reviewCount, error: reviewError } = await supabase
+      .from('venue_reviews')
+      .select('*', { count: 'exact', head: true })
+      .eq('venue_id', venue.id)
+      .neq('text', '');
+
+    if (reviewError) {
+      console.log(`  Could not verify reviews: ${reviewError.message}`);
+      continue;
+    }
+
+    const isComplete = Boolean(
+      reviewCount &&
+      reviewCount > 0 &&
+      scores.has_prose &&
+      scores.has_embeddings
+    );
 
     if (isComplete) {
       await supabase.from('staging_venues').update({ status: 'ready_for_review' }).eq('id', venue.id);
-      console.log(`✅ Passed. Status updated to 'ready_for_review'.`);
+      console.log("Passed. Status updated to 'ready_for_review'.");
     } else {
-      console.log(`  ⚠️ Incomplete data. Remains in 'processing'.`);
+      console.log('  Incomplete data. Remains in processing.');
     }
   }
 }
+
 main().catch(console.error);

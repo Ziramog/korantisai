@@ -1,6 +1,67 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/utils/supabase/server';
-import { MOCK_VENUES } from '../../data/venues';
+
+type PublicVenueRow = {
+  id: string;
+  name: string;
+  category: string | null;
+  location: string | null;
+  coordinates: { lat?: number; lng?: number } | string | null;
+  card_size: 'immersive' | 'cinematic' | 'layered' | 'compact' | null;
+  spacing: 'tight' | 'breathe' | 'isolated' | null;
+  hero_image?: string | null;
+  atmosphere: 'morning' | 'afternoon' | 'golden-hour' | 'night' | 'late-night' | 'dawn' | null;
+  quality: number | null;
+  tagline: string | null;
+  narrative: string | null;
+  tags: string[] | null;
+  taste_vector?: string | number[] | null;
+};
+
+type VenueImageRow = {
+  id: string;
+  venue_id: string;
+  photo_reference: string;
+  width: number | null;
+  height: number | null;
+  is_cover: boolean | null;
+};
+
+function imageUrl(id: string) {
+  return `/api/venue-images/${id}`;
+}
+
+function parseTasteVector(data: string | number[] | null | undefined) {
+  if (typeof data === 'string') {
+    try {
+      return JSON.parse(data) as number[];
+    } catch {
+      return [0, 0, 0, 0, 0, 0, 0, 0];
+    }
+  }
+
+  if (Array.isArray(data)) return data;
+  return [0, 0, 0, 0, 0, 0, 0, 0];
+}
+
+function parseCoordinates(data: PublicVenueRow['coordinates']) {
+  let parsed: { lat?: number; lng?: number } | null = null;
+
+  try {
+    parsed = typeof data === 'string' ? JSON.parse(data) : data;
+  } catch {
+    return null;
+  }
+
+  const lat = parsed?.lat;
+  const lng = parsed?.lng;
+
+  if (typeof lat !== 'number' || typeof lng !== 'number') {
+    return null;
+  }
+
+  return { lat, lng };
+}
 
 export async function GET() {
   try {
@@ -15,50 +76,70 @@ export async function GET() {
     }
 
     if (!data || data.length === 0) {
-      console.log('No venues in Supabase yet, falling back to MOCK_VENUES');
-      return NextResponse.json({ venues: MOCK_VENUES });
+      return NextResponse.json({ venues: [] });
     }
 
-    // Map snake_case to camelCase and parse the taste_vector string into an array of numbers
-    const mappedVenues = data.map((v: any) => {
-      let parsedVector = [0, 0, 0, 0, 0, 0, 0, 0];
-      if (typeof v.taste_vector === 'string') {
-        try {
-          parsedVector = JSON.parse(v.taste_vector);
-        } catch (e) {
-          console.warn(`Failed to parse vector for ${v.name}`);
+    const venueIds = data.map((venue) => venue.id);
+    const { data: imageRows, error: imageError } = await supabase
+      .from('venue_images')
+      .select('id, venue_id, photo_reference, width, height, is_cover')
+      .in('venue_id', venueIds);
+
+    if (imageError) {
+      console.error('Supabase venue_images error:', imageError);
+    }
+
+    const imagesByVenue = new Map<string, VenueImageRow[]>();
+    for (const image of (imageRows || []) as VenueImageRow[]) {
+      const images = imagesByVenue.get(image.venue_id) || [];
+      images.push(image);
+      imagesByVenue.set(image.venue_id, images);
+    }
+
+    const mappedVenues = (data as PublicVenueRow[])
+      .map((venue) => {
+        const coordinates = parseCoordinates(venue.coordinates);
+
+        if (!coordinates) {
+          console.warn(`Skipping venue without canonical coordinates: ${venue.name}`);
+          return null;
         }
-      } else if (Array.isArray(v.taste_vector)) {
-        parsedVector = v.taste_vector;
-      }
 
-      // Look up corresponding coordinates from static mock venues
-      const mockVenue = MOCK_VENUES.find(mv => mv.id === v.id);
-      const lat = mockVenue ? mockVenue.lat : -34.6;
-      const lng = mockVenue ? mockVenue.lng : -58.4;
+        const galleryImages = (imagesByVenue.get(venue.id) || [])
+          .sort((a, b) => Number(Boolean(b.is_cover)) - Number(Boolean(a.is_cover)))
+          .map((image) => ({
+            id: image.id,
+            src: imageUrl(image.id),
+            width: image.width,
+            height: image.height,
+            isCover: Boolean(image.is_cover),
+          }));
+        const canonicalHeroImage = galleryImages[0]?.src;
 
-      return {
-        id: v.id,
-        name: v.name,
-        category: v.category,
-        location: v.location,
-        cardSize: v.card_size || 'layered',
-        spacing: v.spacing || 'breathe',
-        heroImage: v.hero_image || '/venue_invernadero.png',
-        atmosphere: v.atmosphere || 'night',
-        quality: v.quality || 0.8,
-        tagline: v.tagline || '',
-        narrative: v.narrative || '',
-        tags: v.tags || [],
-        tasteVector: parsedVector,
-        lat,
-        lng
-      };
-    });
+        return {
+          id: venue.id,
+          name: venue.name,
+          category: venue.category || '',
+          location: venue.location || '',
+          cardSize: venue.card_size || 'layered',
+          spacing: venue.spacing || 'breathe',
+          heroImage: venue.hero_image || canonicalHeroImage || '/venue_invernadero.png',
+          galleryImages,
+          atmosphere: venue.atmosphere || 'night',
+          quality: venue.quality || 0.8,
+          tagline: venue.tagline || '',
+          narrative: venue.narrative || '',
+          tags: venue.tags || [],
+          tasteVector: parseTasteVector(venue.taste_vector),
+          lat: coordinates.lat,
+          lng: coordinates.lng,
+        };
+      })
+      .filter((venue): venue is NonNullable<typeof venue> => venue !== null);
 
     return NextResponse.json({ venues: mappedVenues });
-  } catch (err: any) {
-    console.error('Server error:', err);
+  } catch (error) {
+    console.error('Server error:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
