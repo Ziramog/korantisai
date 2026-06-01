@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-06-01T11:21:22.195Z",
+  "failures": [
+    {
+      "candidate_id": "939a06af330c981a",
+      "venue_name": "La Garage",
+      "google_place_id": "ChIJXa-DyUm1vJURp-oe-kjnF5U",
+      "photo_count": 10,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only"
+      ],
+      "max_hero_score": 85,
+      "max_atmosphere_score": 80,
+      "product_menu_share": 70,
+      "storefront_only_share": 0,
+      "interior_share": 20,
+      "seating_share": 10,
+      "failure_type": [
+        "product/menu/storefront dominance",
+        "too strict hero threshold",
+        "needs alternative photo source"
+      ],
+      "recommendation": "needs alternative photo source"
+    },
+    {
+      "candidate_id": "6ab2508d5e018222",
+      "venue_name": "Amarante",
+      "google_place_id": "ChIJEypxBdvLvJUReFk8DJzEyNY",
+      "photo_count": 10,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ],
+      "max_hero_score": 55,
+      "max_atmosphere_score": 75,
+      "product_menu_share": 40,
+      "storefront_only_share": 40,
+      "interior_share": 10,
+      "seating_share": 0,
+      "failure_type": [
+        "product/menu/storefront dominance",
+        "poor Google photo set",
+        "needs alternative photo source"
+      ],
+      "recommendation": "needs alternative photo source"
+    },
+    {
+      "candidate_id": "1a9a523cace5734f",
+      "venue_name": "Le Ble Las Canitas",
+      "google_place_id": "ChIJoc7qQgC1vJUR2nbx00cnMQo",
+      "photo_count": 3,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ],
+      "max_hero_score": 55,
+      "max_atmosphere_score": 60,
+      "product_menu_share": 67,
+      "storefront_only_share": 33,
+      "interior_share": 0,
+      "seating_share": 0,
+      "failure_type": [
+        "product/menu/storefront dominance",
+        "poor Google photo set",
+        "needs alternative photo source"
+      ],
+      "recommendation": "needs alternative photo source"
+    },
+    {
+      "candidate_id": "0d182424a9b357a8",
+      "venue_name": "Chila",
+      "google_place_id": "ChIJrzO8HCo1o5URDHNY4yuuY4Y",
+      "photo_count": 10,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ],
+      "max_hero_score": 85,
+      "max_atmosphere_score": 70,
+      "product_menu_share": 90,
+      "storefront_only_share": 10,
+      "interior_share": 10,
+      "seating_share": 0,
+      "failure_type": [
+        "product/menu/storefront dominance",
+        "needs alternative photo source"
+      ],
+      "recommendation": "needs alternative photo source"
+    },
+    {
+      "candidate_id": "3f51e195e8969b28",
+      "venue_name": "Cucina Paradiso Colegiales",
+      "google_place_id": "ChIJKYcCF961vJURCaCkt2bKCLU",
+      "photo_count": 10,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ],
+      "max_hero_score": 90,
+      "max_atmosphere_score": 75,
+      "product_menu_share": 80,
+      "storefront_only_share": 20,
+      "interior_share": 10,
+      "seating_share": 20,
+      "failure_type": [
+        "product/menu/storefront dominance",
+        "too strict hero threshold",
+        "needs alternative photo source"
+      ],
+      "recommendation": "needs alternative photo source"
+    }
+  ]
+}

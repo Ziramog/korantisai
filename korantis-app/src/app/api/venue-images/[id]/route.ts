@@ -7,6 +7,8 @@ type RouteContext = {
 
 type VenueImage = {
   photo_reference: string;
+  url?: string | null;
+  secure_url?: string | null;
 };
 
 async function resolvePhotoUri(photoReference: string) {
@@ -36,7 +38,7 @@ export async function GET(_request: Request, context: RouteContext) {
 
   const { data, error } = await supabase
     .from('venue_images')
-    .select('photo_reference')
+    .select('*')
     .eq('id', params.id)
     .single();
 
@@ -44,7 +46,14 @@ export async function GET(_request: Request, context: RouteContext) {
     return NextResponse.redirect(new URL('/venue_invernadero.png', _request.url));
   }
 
-  const photoUri = await resolvePhotoUri((data as VenueImage).photo_reference);
+  const venueImage = data as VenueImage;
+  const ownedImageUrl = venueImage.secure_url || venueImage.url;
+
+  if (ownedImageUrl) {
+    return NextResponse.redirect(ownedImageUrl);
+  }
+
+  const photoUri = await resolvePhotoUri(venueImage.photo_reference);
   if (!photoUri) {
     return NextResponse.redirect(new URL('/venue_invernadero.png', _request.url));
   }

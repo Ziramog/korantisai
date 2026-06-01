@@ -26,10 +26,27 @@ type VenueImageRow = {
   width: number | null;
   height: number | null;
   is_cover: boolean | null;
+  role?: 'hero' | 'card' | 'gallery' | null;
+  sort_order?: number | null;
+  url?: string | null;
+  secure_url?: string | null;
+  public_id?: string | null;
 };
 
 function imageUrl(id: string) {
   return `/api/venue-images/${id}`;
+}
+
+function resolveImageSrc(image: VenueImageRow) {
+  return image.secure_url || image.url || imageUrl(image.id);
+}
+
+function imageRank(image: VenueImageRow) {
+  if (image.role === 'hero') return 0;
+  if (image.is_cover) return 1;
+  if (image.role === 'card') return 2;
+  if (image.role === 'gallery') return 3;
+  return 4;
 }
 
 function parseTasteVector(data: string | number[] | null | undefined) {
@@ -81,17 +98,24 @@ export async function GET() {
     }
 
     const venueIds = data.map((venue) => venue.id);
-    const { data: imageRows, error: imageError } = await supabase
+    const preferredImages = await supabase
       .from('venue_images')
-      .select('id, venue_id, photo_reference, width, height, is_cover')
+      .select('id, venue_id, photo_reference, width, height, is_cover, role, sort_order, url, secure_url, public_id')
       .in('venue_id', venueIds);
 
-    if (imageError) {
-      console.error('Supabase venue_images error:', imageError);
+    const legacyImages = preferredImages.error
+      ? await supabase
+        .from('venue_images')
+        .select('id, venue_id, photo_reference, width, height, is_cover')
+        .in('venue_id', venueIds)
+      : preferredImages;
+
+    if (legacyImages.error) {
+      console.error('Supabase venue_images error:', legacyImages.error);
     }
 
     const imagesByVenue = new Map<string, VenueImageRow[]>();
-    for (const image of (imageRows || []) as VenueImageRow[]) {
+    for (const image of (legacyImages.data || []) as VenueImageRow[]) {
       const images = imagesByVenue.get(image.venue_id) || [];
       images.push(image);
       imagesByVenue.set(image.venue_id, images);
@@ -111,10 +135,10 @@ export async function GET() {
         }
 
         const galleryImages = (imagesByVenue.get(venue.id) || [])
-          .sort((a, b) => Number(Boolean(b.is_cover)) - Number(Boolean(a.is_cover)))
+          .sort((a, b) => imageRank(a) - imageRank(b) || (a.sort_order || 0) - (b.sort_order || 0))
           .map((image) => ({
             id: image.id,
-            src: imageUrl(image.id),
+            src: resolveImageSrc(image),
             width: image.width,
             height: image.height,
             isCover: Boolean(image.is_cover),

@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-06-01T11:44:35.718Z",
+  "mode": "dry-run",
+  "inserted": 0,
+  "updated": 0,
+  "skipped": 0,
+  "missing_schema_columns": [
+    "url",
+    "secure_url",
+    "public_id",
+    "role",
+    "sort_order",
+    "source",
+    "google_photo_reference",
+    "bytes",
+    "format",
+    "quality_score",
+    "hero_suitability_score",
+    "updated_at"
+  ],
+  "actions": []
+}

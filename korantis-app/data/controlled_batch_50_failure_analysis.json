@@ -1,0 +1,1296 @@
+{
+  "generatedAt": "2026-06-01T11:13:18.257Z",
+  "unmatched": [
+    {
+      "candidate_id": "f9d17b270804324a",
+      "venue_name": "L Harmonie",
+      "category": "cafe",
+      "district": "Recoleta",
+      "confidence": 52,
+      "warnings": [
+        "name mismatch"
+      ],
+      "top_match": "Lharmonie"
+    },
+    {
+      "candidate_id": "d4cd2a18cb10805b",
+      "venue_name": "Maleza Cafe",
+      "category": "cafe",
+      "district": "Colegiales",
+      "confidence": 74,
+      "warnings": [
+        "city not explicit",
+        "district absent from formattedAddress"
+      ],
+      "top_match": "Maleza"
+    },
+    {
+      "candidate_id": "a1b7cd5460d538f0",
+      "venue_name": "Moshu Las Canitas",
+      "category": "cafe",
+      "district": "Las Canitas",
+      "confidence": 68,
+      "warnings": [
+        "district absent from formattedAddress",
+        "name mismatch"
+      ],
+      "top_match": "Moshu Café"
+    },
+    {
+      "candidate_id": "14b057060c2e15f3",
+      "venue_name": "Apu Nena",
+      "category": "restaurant",
+      "district": "Chacarita",
+      "confidence": 52,
+      "warnings": [
+        "name mismatch"
+      ],
+      "top_match": "ApuNena"
+    },
+    {
+      "candidate_id": "a88a9b44d8cd6bb9",
+      "venue_name": "Narda Lepes Mercado",
+      "category": "restaurant",
+      "district": "Colegiales",
+      "confidence": 61,
+      "warnings": [
+        "name mismatch",
+        "district absent from formattedAddress"
+      ],
+      "top_match": "Restaurante Narda Comedor"
+    },
+    {
+      "candidate_id": "81967df30f4afa01",
+      "venue_name": "Vina de San Telmo",
+      "category": "wine_bar",
+      "district": "San Telmo",
+      "confidence": 50,
+      "warnings": [
+        "category ambiguity",
+        "district absent from formattedAddress",
+        "name mismatch"
+      ],
+      "top_match": "Vinoteca San Telmo City"
+    },
+    {
+      "candidate_id": "d96b5787a1af33b2",
+      "venue_name": "Aldo Vinoteca Recoleta",
+      "category": "wine_bar",
+      "district": "Recoleta",
+      "confidence": 48,
+      "warnings": [
+        "name mismatch",
+        "district absent from formattedAddress"
+      ],
+      "top_match": "Alpataco"
+    },
+    {
+      "candidate_id": "4adba3e2138c5eb3",
+      "venue_name": "Finde",
+      "category": "wine_bar",
+      "district": "Colegiales",
+      "confidence": 48,
+      "warnings": [
+        "name mismatch",
+        "district absent from formattedAddress"
+      ],
+      "top_match": "HELKA Wine Bar"
+    }
+  ],
+  "photoHeroFailures": [
+    {
+      "candidate_id": "939a06af330c981a",
+      "venue_name": "La Garage",
+      "photos_evaluated": 10,
+      "photo_quality_score": 85,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only"
+      ]
+    },
+    {
+      "candidate_id": "6ab2508d5e018222",
+      "venue_name": "Amarante",
+      "photos_evaluated": 10,
+      "photo_quality_score": 55,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ]
+    },
+    {
+      "candidate_id": "1a9a523cace5734f",
+      "venue_name": "Le Ble Las Canitas",
+      "photos_evaluated": 3,
+      "photo_quality_score": 55,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ]
+    },
+    {
+      "candidate_id": "0d182424a9b357a8",
+      "venue_name": "Chila",
+      "photos_evaluated": 10,
+      "photo_quality_score": 85,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ]
+    },
+    {
+      "candidate_id": "3f51e195e8969b28",
+      "venue_name": "Cucina Paradiso Colegiales",
+      "photos_evaluated": 10,
+      "photo_quality_score": 90,
+      "warnings": [
+        "no acceptable hero photo from vision results",
+        "weak seating visibility",
+        "weak interior visibility",
+        "some photos are product/menu-only",
+        "some photos are storefront-only"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "candidate_id": "f9d17b270804324a",
+      "venue_name": "L Harmonie",
+      "category": "cafe",
+      "district": "Recoleta",
+      "status": "rejected",
+      "rejection_reasons": [
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "constraint: google match status: unmatched",
+        "constraint: name mismatch",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 58,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "939a06af330c981a",
+      "venue_name": "La Garage",
+      "category": "cafe",
+      "district": "San Telmo",
+      "status": "rejected",
+      "rejection_reasons": [
+        "no acceptable hero photo"
+      ],
+      "warnings": [
+        "product-only photo share is high",
+        "counter-only risk",
+        "seating signal is unclear",
+        "constraint: no acceptable hero photo from vision results",
+        "constraint: weak seating visibility",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "photo quality",
+        "missing evidence"
+      ],
+      "discovery_score": 57,
+      "cultural_relevance_score": 59,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "6b0924cbea2810b2",
+      "venue_name": "La Panera Rosa",
+      "category": "cafe",
+      "district": "Belgrano",
+      "status": "rejected",
+      "rejection_reasons": [
+        "generic chain/mainstream signal too high"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "experience quality score is weak",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 57,
+      "cultural_relevance_score": 64,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ]
+    },
+    {
+      "candidate_id": "6ab2508d5e018222",
+      "venue_name": "Amarante",
+      "category": "cafe",
+      "district": "Belgrano",
+      "status": "rejected",
+      "rejection_reasons": [
+        "no acceptable hero photo"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: no acceptable hero photo from vision results",
+        "constraint: weak seating visibility",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "photo quality",
+        "missing evidence"
+      ],
+      "discovery_score": 56,
+      "cultural_relevance_score": 49,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "d4cd2a18cb10805b",
+      "venue_name": "Maleza Cafe",
+      "category": "cafe",
+      "district": "Colegiales",
+      "status": "rejected",
+      "rejection_reasons": [
+        "weak discovery, cultural, and photo evidence",
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: city not explicit",
+        "constraint: district absent from formattedAddress",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "1a9a523cace5734f",
+      "venue_name": "Le Ble Las Canitas",
+      "category": "cafe",
+      "district": "Las Canitas",
+      "status": "rejected",
+      "rejection_reasons": [
+        "no acceptable hero photo"
+      ],
+      "warnings": [
+        "counter-only risk",
+        "seating signal is unclear",
+        "experience quality score is weak",
+        "constraint: no acceptable hero photo from vision results",
+        "constraint: weak seating visibility",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "photo quality",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 46,
+      "cultural_relevance_score": 40,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "a1b7cd5460d538f0",
+      "venue_name": "Moshu Las Canitas",
+      "category": "cafe",
+      "district": "Las Canitas",
+      "status": "rejected",
+      "rejection_reasons": [
+        "weak discovery, cultural, and photo evidence",
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: district absent from formattedAddress",
+        "constraint: name mismatch",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 46,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "14b057060c2e15f3",
+      "venue_name": "Apu Nena",
+      "category": "restaurant",
+      "district": "Chacarita",
+      "status": "rejected",
+      "rejection_reasons": [
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: name mismatch",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 70,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Michelin",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "0d182424a9b357a8",
+      "venue_name": "Chila",
+      "category": "restaurant",
+      "district": "Puerto Madero",
+      "status": "rejected",
+      "rejection_reasons": [
+        "no acceptable hero photo"
+      ],
+      "warnings": [
+        "product-only photo share is high",
+        "seating signal is unclear",
+        "constraint: no acceptable hero photo from vision results",
+        "constraint: weak seating visibility",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "photo quality",
+        "missing evidence"
+      ],
+      "discovery_score": 58,
+      "cultural_relevance_score": 62,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "3f51e195e8969b28",
+      "venue_name": "Cucina Paradiso Colegiales",
+      "category": "restaurant",
+      "district": "Colegiales",
+      "status": "rejected",
+      "rejection_reasons": [
+        "no acceptable hero photo",
+        "generic chain/mainstream signal too high"
+      ],
+      "warnings": [
+        "product-only photo share is high",
+        "seating signal is unclear",
+        "experience quality score is weak",
+        "constraint: no acceptable hero photo from vision results",
+        "constraint: weak seating visibility",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "photo quality",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 54,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "a88a9b44d8cd6bb9",
+      "venue_name": "Narda Lepes Mercado",
+      "category": "restaurant",
+      "district": "Colegiales",
+      "status": "rejected",
+      "rejection_reasons": [
+        "weak discovery, cultural, and photo evidence",
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: name mismatch",
+        "constraint: district absent from formattedAddress",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "81967df30f4afa01",
+      "venue_name": "Vina de San Telmo",
+      "category": "wine_bar",
+      "district": "San Telmo",
+      "status": "rejected",
+      "rejection_reasons": [
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: category ambiguity",
+        "constraint: district absent from formattedAddress",
+        "constraint: name mismatch",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 58,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Tripadvisor",
+        "Visit BUE",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "d96b5787a1af33b2",
+      "venue_name": "Aldo Vinoteca Recoleta",
+      "category": "wine_bar",
+      "district": "Recoleta",
+      "status": "rejected",
+      "rejection_reasons": [
+        "weak discovery, cultural, and photo evidence",
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: name mismatch",
+        "constraint: district absent from formattedAddress",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 48,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "4adba3e2138c5eb3",
+      "venue_name": "Finde",
+      "category": "wine_bar",
+      "district": "Colegiales",
+      "status": "rejected",
+      "rejection_reasons": [
+        "weak discovery, cultural, and photo evidence",
+        "unresolved bad Google match"
+      ],
+      "warnings": [
+        "photo intelligence not evaluated",
+        "experience quality score is weak",
+        "constraint: google match status: unmatched",
+        "constraint: name mismatch",
+        "constraint: district absent from formattedAddress",
+        "constraint: photo vision missing"
+      ],
+      "blockers": [
+        "missing vision evidence",
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak seating evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "matching",
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 0,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    }
+  ],
+  "pending_review": [
+    {
+      "candidate_id": "77f3f0f1f63e2056",
+      "venue_name": "Altar Cafe",
+      "category": "cafe",
+      "district": "Colegiales",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 71 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "product-only photo share is high",
+        "seating signal is unclear",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 57,
+      "cultural_relevance_score": 54,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "0105a07c4be46f98",
+      "venue_name": "London City",
+      "category": "cafe",
+      "district": "Microcentro",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 71 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 56,
+      "cultural_relevance_score": 83,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ]
+    },
+    {
+      "candidate_id": "8f6f724d996b428d",
+      "venue_name": "La Kitchen",
+      "category": "cafe",
+      "district": "Retiro",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 66 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: weak seating visibility",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 56,
+      "cultural_relevance_score": 54,
+      "sources": [
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "262b0298a9327669",
+      "venue_name": "Florida Garden",
+      "category": "cafe",
+      "district": "Microcentro",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 71 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 55,
+      "cultural_relevance_score": 80,
+      "sources": [
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "1029a2751747506a",
+      "venue_name": "Hierbabuena",
+      "category": "cafe",
+      "district": "San Telmo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 67 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 65,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "119051ad76f707f4",
+      "venue_name": "Malvon",
+      "category": "cafe",
+      "district": "Villa Crespo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 65 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 65,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "e33c63a483c28ca8",
+      "venue_name": "Morro Cafe",
+      "category": "cafe",
+      "district": "Villa Crespo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 65 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 50,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "109a9a47bb038eb4",
+      "venue_name": "Cafe San Juan",
+      "category": "restaurant",
+      "district": "San Telmo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 70 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 71,
+      "cultural_relevance_score": 65,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ]
+    },
+    {
+      "candidate_id": "57fbb7027a4a5462",
+      "venue_name": "Narda Comedor",
+      "category": "restaurant",
+      "district": "Belgrano",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 69 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 69,
+      "cultural_relevance_score": 61,
+      "sources": [
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "ff6b5103adf84fa5",
+      "venue_name": "Napoles",
+      "category": "restaurant",
+      "district": "San Telmo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 69 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 68,
+      "cultural_relevance_score": 72,
+      "sources": [
+        "Culture Trip",
+        "Rough Guides",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "07b1ddc4d92ebb4c",
+      "venue_name": "Dada Bistro",
+      "category": "restaurant",
+      "district": "Retiro",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 70 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 67,
+      "cultural_relevance_score": 63,
+      "sources": [
+        "Culture Trip",
+        "Reddit",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "62ce0f0668318543",
+      "venue_name": "Las Cholas",
+      "category": "restaurant",
+      "district": "Las Canitas",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 65 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "product-only photo share is high",
+        "seating signal is unclear",
+        "experience quality score is weak",
+        "constraint: weak seating visibility",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 46,
+      "cultural_relevance_score": 63,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "bc2a0bd03043207e",
+      "venue_name": "Olsen Las Canitas",
+      "category": "restaurant",
+      "district": "Las Canitas",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 66 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: weak interior visibility",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 46,
+      "cultural_relevance_score": 65,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "2ce5eb24f47cabaf",
+      "venue_name": "Filo",
+      "category": "restaurant",
+      "district": "Retiro",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 65 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 45,
+      "cultural_relevance_score": 60,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "cb393705f53161d4",
+      "venue_name": "36 Billares",
+      "category": "restaurant",
+      "district": "Microcentro",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 68 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 45,
+      "cultural_relevance_score": 79,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "688e9aef29b15279",
+      "venue_name": "La Cava de Vittorio",
+      "category": "wine_bar",
+      "district": "Las Canitas",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 71 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 68,
+      "cultural_relevance_score": 48,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "010d3a1cd8f0ad70",
+      "venue_name": "Hache Almacen",
+      "category": "wine_bar",
+      "district": "Villa Crespo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 66 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 47,
+      "cultural_relevance_score": 56,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "3b32c02b652eb143",
+      "venue_name": "Bierlife",
+      "category": "cocktail_bar",
+      "district": "San Telmo",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 71 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only",
+        "constraint: some photos are storefront-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 57,
+      "cultural_relevance_score": 67,
+      "sources": [
+        "Reddit",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ]
+    },
+    {
+      "candidate_id": "91ed7aecaa6cd9d9",
+      "venue_name": "Puerta Uno",
+      "category": "cocktail_bar",
+      "district": "Belgrano",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 71 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence"
+      ],
+      "discovery_score": 56,
+      "cultural_relevance_score": 60,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ]
+    },
+    {
+      "candidate_id": "33802fe1e8c52bbb",
+      "venue_name": "Danzon Bar",
+      "category": "cocktail_bar",
+      "district": "Recoleta",
+      "status": "pending_review",
+      "rejection_reasons": [
+        "eligibility score 69 requires calibration or missing validation gates"
+      ],
+      "warnings": [
+        "seating signal is unclear",
+        "constraint: some photos are product/menu-only"
+      ],
+      "blockers": [
+        "missing review text evidence",
+        "weak work/practical evidence",
+        "weak quiet evidence"
+      ],
+      "causes": [
+        "missing evidence",
+        "low discovery/cultural relevance"
+      ],
+      "discovery_score": 48,
+      "cultural_relevance_score": 64,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ]
+    }
+  ],
+  "breakdown": {
+    "failureCategory": {
+      "cafe": 14,
+      "restaurant": 12,
+      "wine_bar": 5,
+      "cocktail_bar": 3
+    },
+    "failureDistrict": {
+      "Recoleta": 3,
+      "Colegiales": 5,
+      "San Telmo": 6,
+      "Belgrano": 4,
+      "Microcentro": 3,
+      "Retiro": 3,
+      "Villa Crespo": 3,
+      "Las Canitas": 5,
+      "Chacarita": 1,
+      "Puerto Madero": 1
+    },
+    "cause": {
+      "matching": 8,
+      "missing evidence": 34,
+      "low discovery/cultural relevance": 19,
+      "photo quality": 5
+    }
+  }
+}
