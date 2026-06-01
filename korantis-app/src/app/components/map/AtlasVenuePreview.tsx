@@ -32,31 +32,28 @@ export default function AtlasVenuePreview({ venue, onOpenDetail }: AtlasVenuePre
 
   return (
     <div 
-      className="absolute bottom-28 left-6 right-6 md:left-auto md:right-8 md:bottom-8 md:w-80 bg-[#0A0806]/95 backdrop-blur-xl border border-white/10 rounded-2xl p-4 shadow-2xl cursor-pointer group hover:border-k-gold/30 transition-colors z-20"
+      className="absolute bottom-28 left-4 right-4 md:left-auto md:right-8 md:bottom-8 md:w-[320px] bg-white/[0.08] backdrop-blur-[24px] border border-white/15 rounded-3xl p-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)] cursor-pointer group hover:bg-white/[0.12] transition-all z-20"
       onClick={onOpenDetail}
     >
-      <div className="flex gap-4 h-20 items-center">
-        <div className="relative w-20 h-full rounded-xl overflow-hidden flex-shrink-0 border border-white/5">
+      <div className="flex gap-3 h-14 items-center">
+        <div className="relative w-14 h-full rounded-2xl overflow-hidden flex-shrink-0 shadow-inner">
           <Image src={venue.heroImage} alt={venue.name} fill className="object-cover" />
         </div>
-        <div className="flex flex-col justify-center min-w-0 flex-1">
-          <h3 className="font-display text-lg text-k-text leading-tight truncate group-hover:text-k-gold-light transition-colors">
+        <div className="flex flex-col justify-center min-w-0 flex-1 pl-1">
+          <h3 className="font-display text-base text-white leading-tight truncate drop-shadow-md">
             {venue.name}
           </h3>
-          <p className="text-[11px] text-k-text-secondary font-sans truncate mb-1">
-            {tagline}
-          </p>
-          <p className="text-[10px] text-k-gold-muted font-sans flex items-center gap-1">
-            <Compass size={10} /> {placeCue}
+          <p className="text-[11px] text-white/70 font-sans truncate mt-0.5 flex items-center gap-1 drop-shadow-sm">
+            <Compass size={10} className="text-white/50" /> {placeCue}
           </p>
         </div>
         
         {/* Navigation Action */}
         <button 
           onClick={handleNavClick}
-          className="w-10 h-10 rounded-full border border-k-gold/20 flex items-center justify-center text-k-gold hover:bg-k-gold/10 transition-colors flex-shrink-0"
+          className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all flex-shrink-0 backdrop-blur-md shadow-sm"
         >
-          {showNavMenu ? <X size={16} /> : <Navigation size={16} className="ml-[-2px] mb-[-2px]" />}
+          {showNavMenu ? <X size={14} /> : <Navigation size={14} className="ml-[-1px] mb-[-1px]" />}
         </button>
       </div>
 
@@ -70,20 +67,20 @@ export default function AtlasVenuePreview({ venue, onOpenDetail }: AtlasVenuePre
             className="overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="pt-4 mt-4 border-t border-white/5 flex gap-2">
+            <div className="pt-3 mt-3 border-t border-white/10 flex gap-2">
               <a 
                 href={getUberLink()} 
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 text-white text-[11px] font-sans tracking-wide transition-colors border border-white/5"
+                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-[11px] font-sans font-medium tracking-wide transition-all border border-white/10 shadow-sm"
               >
-                <Car size={14} /> Get a Ride
+                <Car size={14} /> Uber
               </a>
               <a 
                 href={getMapsLink()} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg bg-k-gold/10 hover:bg-k-gold/20 text-k-gold text-[11px] font-sans tracking-wide transition-colors border border-k-gold/20"
+                className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-[11px] font-sans font-medium tracking-wide transition-all border border-white/10 shadow-sm"
               >
-                <MapIcon2 size={14} /> Directions
+                <MapIcon2 size={14} /> Maps
               </a>
             </div>
           </motion.div>

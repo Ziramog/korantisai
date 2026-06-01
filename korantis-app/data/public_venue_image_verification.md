@@ -1,28 +1,32 @@
 # Public Venue Image Verification
 
-Generated: 2026-06-01T11:43:11.118Z
+Generated: 2026-06-01T12:40:38.905Z
 API URL: https://korantis-app.vercel.app/api/venues
 
 ## Totals
 
 - /api/venues count: 50
 - Cloudinary hero count: 0
-- Venues using /venue_invernadero.png fallback: 25
-- Venues still using legacy Google proxy: 25
-- Venues with non-empty galleryImages: 25
-- Venues missing galleryImages: 25
+- Venues using /venue_invernadero.png fallback: 3
+- Venues still using legacy Google proxy: 47
+- Venues with non-empty galleryImages: 47
+- Venues missing galleryImages: 3
 
 ## Remaining Fallback Venues
+
+- Invernadero
+- Melbourne Café
+- Crisol Café
+
+## Remaining Legacy Google Proxy Venues
 
 - Crisol
 - Cuervo Café
 - El Boliche de Roberto
 - Florería Atlántico
-- Invernadero
 - Florería Atlántico
 - La Biela
 - Lattente
-- Melbourne Café
 - Ninina
 - Oporto Almacén
 - Padre Coffee Roasters
@@ -31,18 +35,14 @@ API URL: https://korantis-app.vercel.app/api/venues
 - Café Cuervo
 - Birkin
 - Mishiguene
+- Origen Coffee House
 - Parrilla Don Julio
 - Tres Monos
 - Verne Club
 - Attaboy
-- Crisol Café
 - Devoción
 - Libros del Pasaje
 - Niño Gordo
-
-## Remaining Legacy Google Proxy Venues
-
-- Origen Coffee House
 - John & Joe | Café de Especialidad
 - TERRASOHO - Specialty Coffee
 - Vive Café Cafe de especialidad , cafés de campeonatos

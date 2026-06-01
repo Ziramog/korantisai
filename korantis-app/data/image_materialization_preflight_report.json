@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-06-01T12:24:29.853Z",
+  "env": {
+    "required_present": true,
+    "missing": [],
+    "cloudinary_present": true,
+    "cloudinary_missing": [],
+    "write_requires_service_role": true
+  },
+  "schema": {
+    "venue_images_exists": true,
+    "required_columns": [
+      {
+        "column": "public_id",
+        "exists": true
+      },
+      {
+        "column": "source",
+        "exists": true
+      },
+      {
+        "column": "google_photo_reference",
+        "exists": true
+      },
+      {
+        "column": "width",
+        "exists": true
+      },
+      {
+        "column": "height",
+        "exists": true
+      },
+      {
+        "column": "quality_score",
+        "exists": true
+      },
+      {
+        "column": "hero_suitability_score",
+        "exists": true
+      },
+      {
+        "column": "role",
+        "exists": true
+      },
+      {
+        "column": "sort_order",
+        "exists": true
+      },
+      {
+        "column": "url",
+        "exists": true
+      }
+    ],
+    "missing_columns": []
+  },
+  "write_ready": true,
+  "instruction": null
+}

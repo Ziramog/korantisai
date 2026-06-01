@@ -1,6 +1,5 @@
 import * as path from 'path';
-import * as dotenv from 'dotenv';
-dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
+import './script_env';
 import { readFileSync, writeFileSync } from 'fs';
 import {
   buildVenueImagePublicId,
@@ -65,10 +64,23 @@ function getArgValue(name: string) {
 }
 
 function limitPhotos(photos: SelectedPhoto[]) {
-  const hero = photos.filter((photo) => photo.role === 'hero').slice(0, 1);
-  const card = photos.filter((photo) => photo.role === 'card').slice(0, 1);
-  const gallery = photos.filter((photo) => photo.role === 'gallery').slice(0, 6);
-  return [...hero, ...card, ...gallery].slice(0, 8);
+  const usedRefs = new Set<string>();
+  const selected: SelectedPhoto[] = [];
+
+  for (const role of ['hero', 'card', 'gallery'] as const) {
+    const maxForRole = role === 'gallery' ? 6 : 1;
+    const rolePhotos = photos.filter((photo) => photo.role === role);
+
+    for (const photo of rolePhotos) {
+      if (selected.filter((item) => item.role === role).length >= maxForRole) break;
+      if (usedRefs.has(photo.google_photo_reference)) continue;
+
+      selected.push(photo);
+      usedRefs.add(photo.google_photo_reference);
+    }
+  }
+
+  return selected.slice(0, 8);
 }
 
 async function resolveGooglePhotoUri(photoReference: string, apiKey: string) {
@@ -207,7 +219,9 @@ async function main() {
     images: results,
   };
 
-  writeFileSync(path.join(DATA_DIR, 'materialized_venue_images_cloudinary.json'), JSON.stringify(output, null, 2));
+  const outputJson = JSON.stringify(output, null, 2);
+  writeFileSync(path.join(DATA_DIR, 'cloudinary_materialization_output.json'), outputJson);
+  writeFileSync(path.join(DATA_DIR, 'materialized_venue_images_cloudinary.json'), outputJson);
 
   const report = [
     '# Google Places Photo Materialization',
@@ -227,6 +241,7 @@ async function main() {
     '',
   ].join('\n');
 
+  writeFileSync(path.join(DATA_DIR, 'cloudinary_materialization_report.md'), report);
   writeFileSync(path.join(DATA_DIR, 'materialized_venue_images_cloudinary_report.md'), report);
   console.log(report);
 }

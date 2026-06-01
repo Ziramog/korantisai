@@ -22,7 +22,7 @@ type PublicVenueRow = {
 type VenueImageRow = {
   id: string;
   venue_id: string;
-  photo_reference: string;
+  photo_reference: string | null;
   width: number | null;
   height: number | null;
   is_cover: boolean | null;
@@ -41,12 +41,33 @@ function resolveImageSrc(image: VenueImageRow) {
   return image.secure_url || image.url || imageUrl(image.id);
 }
 
+function hasDirectImageUrl(image: VenueImageRow) {
+  return Boolean(image.secure_url || image.url);
+}
+
 function imageRank(image: VenueImageRow) {
-  if (image.role === 'hero') return 0;
-  if (image.is_cover) return 1;
-  if (image.role === 'card') return 2;
-  if (image.role === 'gallery') return 3;
-  return 4;
+  const directBias = hasDirectImageUrl(image) ? 0 : 10;
+  if (image.role === 'hero') return directBias + 0;
+  if (image.role === 'card') return directBias + 1;
+  if (image.is_cover) return directBias + 2;
+  if (image.role === 'gallery') return directBias + 3;
+  return directBias + 4;
+}
+
+function toRuntimeImage(image: VenueImageRow) {
+  return {
+    id: image.id,
+    src: resolveImageSrc(image),
+    width: image.width,
+    height: image.height,
+    isCover: Boolean(image.is_cover || image.role === 'hero'),
+    role: image.role || (image.is_cover ? 'hero' : 'gallery'),
+    source: image.secure_url?.includes('res.cloudinary.com') || image.url?.includes('res.cloudinary.com')
+      ? 'cloudinary'
+      : hasDirectImageUrl(image)
+        ? 'direct'
+        : 'legacy_proxy',
+  };
 }
 
 function parseTasteVector(data: string | number[] | null | undefined) {
@@ -134,16 +155,23 @@ export async function GET() {
           return null;
         }
 
-        const galleryImages = (imagesByVenue.get(venue.id) || [])
-          .sort((a, b) => imageRank(a) - imageRank(b) || (a.sort_order || 0) - (b.sort_order || 0))
-          .map((image) => ({
-            id: image.id,
-            src: resolveImageSrc(image),
-            width: image.width,
-            height: image.height,
-            isCover: Boolean(image.is_cover),
-          }));
-        const canonicalHeroImage = galleryImages[0]?.src;
+        const venueImages = (imagesByVenue.get(venue.id) || [])
+          .sort((a, b) => imageRank(a) - imageRank(b) || (a.sort_order || 0) - (b.sort_order || 0));
+        const heroImageRow = venueImages.find((image) => image.role === 'hero' && hasDirectImageUrl(image))
+          || venueImages.find((image) => image.is_cover && hasDirectImageUrl(image))
+          || venueImages.find((image) => hasDirectImageUrl(image))
+          || venueImages.find((image) => image.role === 'hero')
+          || venueImages.find((image) => image.is_cover)
+          || venueImages[0];
+        const cardImageRow = venueImages.find((image) => image.role === 'card' && hasDirectImageUrl(image))
+          || heroImageRow;
+        const gallerySourceRows = venueImages.filter((image) => image.role === 'gallery' && hasDirectImageUrl(image));
+        const galleryRows = gallerySourceRows.length > 0
+          ? gallerySourceRows
+          : venueImages.filter((image) => image !== undefined);
+        const galleryImages = galleryRows.map(toRuntimeImage);
+        const canonicalHeroImage = heroImageRow ? resolveImageSrc(heroImageRow) : null;
+        const canonicalCardImage = cardImageRow ? resolveImageSrc(cardImageRow) : canonicalHeroImage;
 
         return {
           id: venue.id,
@@ -152,8 +180,11 @@ export async function GET() {
           location: venue.location || '',
           cardSize: venue.card_size || 'layered',
           spacing: venue.spacing || 'breathe',
-          heroImage: venue.hero_image || canonicalHeroImage || '/venue_invernadero.png',
+          heroImage: canonicalHeroImage || venue.hero_image || '/venue_invernadero.png',
+          cardImage: canonicalCardImage || canonicalHeroImage || venue.hero_image || '/venue_invernadero.png',
+          imageUrl: canonicalCardImage || canonicalHeroImage || venue.hero_image || '/venue_invernadero.png',
           galleryImages,
+          images: galleryImages,
           atmosphere: venue.atmosphere || 'night',
           quality: venue.quality || 0.8,
           tagline: venue.tagline || '',

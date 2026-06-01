@@ -1,58 +1,86 @@
 {
-  "generated_at": "2026-06-01T11:43:11.118Z",
+  "generated_at": "2026-06-01T12:40:38.905Z",
   "totals": {
     "api_url": "https://korantis-app.vercel.app/api/venues",
     "venue_count": 50,
     "cloudinary_hero_count": 0,
-    "fallback_venue_count": 25,
-    "legacy_google_proxy_venue_count": 25,
-    "gallery_complete_count": 25,
-    "gallery_missing_count": 25
+    "fallback_venue_count": 3,
+    "legacy_google_proxy_venue_count": 47,
+    "gallery_complete_count": 47,
+    "gallery_missing_count": 3
   },
   "venues": [
     {
       "id": "4403e7f1-09f5-4323-af0f-aae6df2b899d",
       "name": "Crisol",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/6baf5b11-5af8-4975-8c84-6e0ffb33f96a",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "073deb0a-682e-4730-8d3f-0d75c9d3abbd",
       "name": "Cuervo Café",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/89f88f96-61b2-4c84-9ebb-e6a982c11dde",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "542765fa-9f15-436b-8846-81870f97d7e3",
       "name": "El Boliche de Roberto",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/5af03edd-27e8-4191-90ce-8180e0313bd7",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "6dfb725e-0b18-414d-af4c-0c6f3afa5622",
       "name": "Florería Atlántico",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/d584af51-f18d-4280-ab0f-b60a3d3130c3",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "9035f5cb-ccda-49cc-ad8c-b90bcfe8d167",
@@ -68,35 +96,56 @@
     {
       "id": "97833fe8-7fe1-45dc-8d9b-931573ab0398",
       "name": "Florería Atlántico",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/6250ac74-890e-4f4b-b874-13b2c77a28dd",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "4155059e-8861-4c84-bd2e-ad13e2895ab4",
       "name": "La Biela",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/e3be84b9-3813-415f-9995-610b0c49bbb4",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "007e1609-d51f-4e44-828e-1140e3f92497",
       "name": "Lattente",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/965ee88d-5a61-42a1-81a0-dd1b07234611",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "8775369b-fefd-4691-b298-de4b937e16a9",
@@ -112,90 +161,146 @@
     {
       "id": "d3ee3084-cc06-4267-b92f-118612186125",
       "name": "Ninina",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/6a507f17-eb36-4811-bf12-6d0bea0157c9",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "1b1bb183-5d09-4cb6-8c41-ce92485d805a",
       "name": "Oporto Almacén",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/363521eb-696a-4cad-9d45-bc9a7534c0d1",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "971fec7c-770b-49f3-bd06-1fc95bce465b",
       "name": "Padre Coffee Roasters",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/8a4e7c5d-205c-46ad-959a-c6ed32b8cff0",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "3d2d1d0d-bd7a-43c4-a493-ed61ed28a3cd",
       "name": "Surry Hills Coffee",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/852b35c6-8a31-4c35-a275-c538b402b74a",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "7a2ba9ee-5116-448a-93f4-33582e65b882",
       "name": "Uptown Bar",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/29fbfcda-b59e-44f0-a44d-970659aa4a23",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "1640a898-ed27-45c0-9a6f-9e0582a792b7",
       "name": "Café Cuervo",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/7e5ff4cd-78e8-487b-8d8c-a68de9c80f8a",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "cf73483e-0168-4421-a07d-0a33fe85f659",
       "name": "Birkin",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/c6725708-be47-418a-a249-f16b2f7159bd",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "a40f0cfa-c21b-49bb-ae49-c1169bc3e655",
       "name": "Mishiguene",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/27de84c8-26b2-436e-bce2-db0f520b3fb3",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "ChIJi0KSF-DLvJURYWbYvNEknrg",
@@ -242,46 +347,74 @@
     {
       "id": "b10ad680-2020-4343-9790-11b0ce871cd4",
       "name": "Parrilla Don Julio",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/91367942-b867-4fba-933c-c4f6f3c71c19",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "3f4fd293-8bc7-4446-995b-a5756a9102d1",
       "name": "Tres Monos",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/db04bba5-3231-4ccf-90f5-0813a2394f94",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "7f6c7bc7-f4d6-4dfb-bbc8-cfb5776bbb33",
       "name": "Verne Club",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/77d870bd-c86b-463c-b1c6-940b990e9567",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "a05e9db1-92e8-4bdb-9cc9-74aa02f94394",
       "name": "Attaboy",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/d287abcd-a40a-4c3b-bdfa-4afb118fa22e",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "f770000d-7187-444e-8ee7-524645aa6824",
@@ -297,35 +430,56 @@
     {
       "id": "d9ba2a08-b565-482e-bfdb-02b54f1af9d2",
       "name": "Devoción",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/9eef8f0f-b9f8-4e67-a663-85c2062a6c76",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "b54f76f3-e271-4645-ab7f-4126412b054c",
       "name": "Libros del Pasaje",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/1016626c-44f1-417e-bbfa-906918106f95",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "ebbba81e-6590-47ce-80b7-c5ac478e829f",
       "name": "Niño Gordo",
-      "hero_image": "/venue_invernadero.png",
-      "hero_source": "fallback",
-      "gallery_count": 0,
-      "gallery_sources": [],
-      "has_gallery": false,
-      "uses_fallback": true,
-      "uses_legacy_google_proxy": false
+      "hero_image": "/api/venue-images/7ebd2c14-6cef-4178-81b7-b9c8fc0697c1",
+      "hero_source": "legacy_google_proxy",
+      "gallery_count": 6,
+      "gallery_sources": [
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy",
+        "legacy_google_proxy"
+      ],
+      "has_gallery": true,
+      "uses_fallback": false,
+      "uses_legacy_google_proxy": true
     },
     {
       "id": "ChIJjYOU2TUyrAMRbQ66NLlqSLs",

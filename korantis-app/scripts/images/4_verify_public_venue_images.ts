@@ -1,6 +1,5 @@
 import * as path from 'path';
-import * as dotenv from 'dotenv';
-dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
+import './script_env';
 import { writeFileSync } from 'fs';
 
 type RuntimeVenue = {

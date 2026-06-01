@@ -1,19 +1,293 @@
 # Venue Images Upsert
 
-Generated: 2026-06-01T11:44:35.718Z
-Mode: dry-run
+Generated: 2026-06-01T12:39:58.263Z
+Mode: write
 
-Schema is missing required Cloudinary columns. Apply `supabase/07_cloudinary_image_materialization.sql` before write mode.
+- Uploaded images available: 281
+- Inserted: 132
+- Updated legacy rows: 149
+- Skipped: 0
 
-- url
-- secure_url
-- public_id
-- role
-- sort_order
-- source
-- google_photo_reference
-- bytes
-- format
-- quality_score
-- hero_suitability_score
-- updated_at
+## Actions
+
+- Attaboy hero: inserted
+- Attaboy card: inserted
+- Attaboy gallery: inserted
+- Attaboy gallery: inserted
+- Attaboy gallery: inserted
+- Attaboy gallery: inserted
+- Backroom Bar hero: updated_legacy_row
+- Backroom Bar card: updated_legacy_row
+- Backroom Bar gallery: updated_legacy_row
+- Backroom Bar gallery: updated_legacy_row
+- Backroom Bar gallery: updated_legacy_row
+- Backroom Bar gallery: updated_legacy_row
+- Bari Coffee & Drinks hero: updated_legacy_row
+- Bari Coffee & Drinks gallery: updated_legacy_row
+- Bari Coffee & Drinks gallery: updated_legacy_row
+- Bari Coffee & Drinks gallery: updated_legacy_row
+- Bari Coffee & Drinks gallery: updated_legacy_row
+- Bestial Fly Bar hero: updated_legacy_row
+- Bestial Fly Bar card: updated_legacy_row
+- Bestial Fly Bar gallery: updated_legacy_row
+- Bestial Fly Bar gallery: updated_legacy_row
+- Bestial Fly Bar gallery: updated_legacy_row
+- Bestial Fly Bar gallery: updated_legacy_row
+- Birdy Birds Specialty Coffee Roasters hero: updated_legacy_row
+- Birdy Birds Specialty Coffee Roasters card: updated_legacy_row
+- Birdy Birds Specialty Coffee Roasters gallery: updated_legacy_row
+- Birdy Birds Specialty Coffee Roasters gallery: updated_legacy_row
+- Birdy Birds Specialty Coffee Roasters gallery: updated_legacy_row
+- Birdy Birds Specialty Coffee Roasters gallery: updated_legacy_row
+- Birkin hero: inserted
+- Birkin card: inserted
+- Birkin gallery: inserted
+- Birkin gallery: inserted
+- Birkin gallery: inserted
+- Birkin gallery: inserted
+- Café Boheme - Café de Especialidad hero: updated_legacy_row
+- Café Boheme - Café de Especialidad card: updated_legacy_row
+- Café Boheme - Café de Especialidad gallery: updated_legacy_row
+- Café Boheme - Café de Especialidad gallery: updated_legacy_row
+- Café Boheme - Café de Especialidad gallery: updated_legacy_row
+- Café Boheme - Café de Especialidad gallery: updated_legacy_row
+- Café Cuervo hero: inserted
+- Café Cuervo card: inserted
+- Café Cuervo gallery: inserted
+- Café Cuervo gallery: inserted
+- Café Cuervo gallery: inserted
+- Café Cuervo gallery: inserted
+- Ciao Cacao Specialty coffee hero: updated_legacy_row
+- Ciao Cacao Specialty coffee card: updated_legacy_row
+- Ciao Cacao Specialty coffee gallery: updated_legacy_row
+- Ciao Cacao Specialty coffee gallery: updated_legacy_row
+- Ciao Cacao Specialty coffee gallery: updated_legacy_row
+- Ciao Cacao Specialty coffee gallery: updated_legacy_row
+- CICHAUS hero: updated_legacy_row
+- CICHAUS card: updated_legacy_row
+- CICHAUS gallery: updated_legacy_row
+- CICHAUS gallery: updated_legacy_row
+- CICHAUS gallery: updated_legacy_row
+- CICHAUS gallery: updated_legacy_row
+- Ciro Palermo hero: updated_legacy_row
+- Ciro Palermo card: updated_legacy_row
+- Ciro Palermo gallery: updated_legacy_row
+- Ciro Palermo gallery: updated_legacy_row
+- Ciro Palermo gallery: updated_legacy_row
+- Ciro Palermo gallery: updated_legacy_row
+- Crisol hero: inserted
+- Crisol card: inserted
+- Crisol gallery: inserted
+- Crisol gallery: inserted
+- Crisol gallery: inserted
+- Crisol gallery: inserted
+- Cuervo Café hero: inserted
+- Cuervo Café card: inserted
+- Cuervo Café gallery: inserted
+- Cuervo Café gallery: inserted
+- Cuervo Café gallery: inserted
+- Cuervo Café gallery: inserted
+- Devoción hero: inserted
+- Devoción card: inserted
+- Devoción gallery: inserted
+- Devoción gallery: inserted
+- Devoción gallery: inserted
+- Devoción gallery: inserted
+- Don Julio Parrilla hero: updated_legacy_row
+- Don Julio Parrilla card: updated_legacy_row
+- Don Julio Parrilla gallery: updated_legacy_row
+- Don Julio Parrilla gallery: updated_legacy_row
+- Don Julio Parrilla gallery: updated_legacy_row
+- Don Julio Parrilla gallery: updated_legacy_row
+- El Boliche de Roberto hero: inserted
+- El Boliche de Roberto card: inserted
+- El Boliche de Roberto gallery: inserted
+- El Boliche de Roberto gallery: inserted
+- El Boliche de Roberto gallery: inserted
+- El Boliche de Roberto gallery: inserted
+- El Preferido de Palermo hero: updated_legacy_row
+- El Preferido de Palermo card: updated_legacy_row
+- El Preferido de Palermo gallery: updated_legacy_row
+- El Preferido de Palermo gallery: updated_legacy_row
+- El Preferido de Palermo gallery: updated_legacy_row
+- El Preferido de Palermo gallery: updated_legacy_row
+- Florería Atlántico hero: inserted
+- Florería Atlántico card: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico hero: inserted
+- Florería Atlántico card: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico gallery: inserted
+- Florería Atlántico gallery: inserted
+- Import Coffee Co. hero: updated_legacy_row
+- Import Coffee Co. card: updated_legacy_row
+- Import Coffee Co. gallery: updated_legacy_row
+- Import Coffee Co. gallery: updated_legacy_row
+- Import Coffee Co. gallery: updated_legacy_row
+- Import Coffee Co. gallery: updated_legacy_row
+- John & Joe | Café de Especialidad hero: updated_legacy_row
+- John & Joe | Café de Especialidad card: updated_legacy_row
+- John & Joe | Café de Especialidad gallery: updated_legacy_row
+- John & Joe | Café de Especialidad gallery: updated_legacy_row
+- John & Joe | Café de Especialidad gallery: updated_legacy_row
+- John & Joe | Café de Especialidad gallery: updated_legacy_row
+- Kaldi hero: updated_legacy_row
+- Kaldi card: updated_legacy_row
+- Kaldi gallery: updated_legacy_row
+- Kaldi gallery: updated_legacy_row
+- Kaldi gallery: updated_legacy_row
+- Kaldi gallery: updated_legacy_row
+- Koofi | Café de especialidad hero: updated_legacy_row
+- Koofi | Café de especialidad card: updated_legacy_row
+- Koofi | Café de especialidad gallery: updated_legacy_row
+- Koofi | Café de especialidad gallery: updated_legacy_row
+- Koofi | Café de especialidad gallery: updated_legacy_row
+- Koofi | Café de especialidad gallery: updated_legacy_row
+- Kraken bar hero: updated_legacy_row
+- Kraken bar card: updated_legacy_row
+- Kraken bar gallery: updated_legacy_row
+- Kraken bar gallery: updated_legacy_row
+- Kraken bar gallery: updated_legacy_row
+- Kraken bar gallery: updated_legacy_row
+- La Biela hero: inserted
+- La Biela card: inserted
+- La Biela gallery: inserted
+- La Biela gallery: inserted
+- La Biela gallery: inserted
+- La Biela gallery: inserted
+- Lattente hero: inserted
+- Lattente card: inserted
+- Lattente gallery: inserted
+- Lattente gallery: inserted
+- Lattente gallery: inserted
+- Lattente gallery: inserted
+- Libros del Pasaje hero: inserted
+- Libros del Pasaje card: inserted
+- Libros del Pasaje gallery: inserted
+- Libros del Pasaje gallery: inserted
+- Libros del Pasaje gallery: inserted
+- Libros del Pasaje gallery: inserted
+- Mishiguene hero: inserted
+- Mishiguene card: inserted
+- Mishiguene gallery: inserted
+- Mishiguene gallery: inserted
+- Mishiguene gallery: inserted
+- Mishiguene gallery: inserted
+- Ninina hero: inserted
+- Ninina card: inserted
+- Ninina gallery: inserted
+- Ninina gallery: inserted
+- Ninina gallery: inserted
+- Ninina gallery: inserted
+- Niño Gordo hero: inserted
+- Niño Gordo card: inserted
+- Niño Gordo gallery: inserted
+- Niño Gordo gallery: inserted
+- Niño Gordo gallery: inserted
+- Niño Gordo gallery: inserted
+- Oporto Almacén hero: inserted
+- Oporto Almacén card: inserted
+- Oporto Almacén gallery: inserted
+- Oporto Almacén gallery: inserted
+- Oporto Almacén gallery: inserted
+- Oporto Almacén gallery: inserted
+- Origen Coffee House hero: updated_legacy_row
+- Origen Coffee House card: updated_legacy_row
+- Origen Coffee House gallery: updated_legacy_row
+- Origen Coffee House gallery: updated_legacy_row
+- Origen Coffee House gallery: updated_legacy_row
+- Origen Coffee House gallery: updated_legacy_row
+- Padre Coffee Roasters hero: inserted
+- Padre Coffee Roasters card: inserted
+- Padre Coffee Roasters gallery: inserted
+- Padre Coffee Roasters gallery: inserted
+- Padre Coffee Roasters gallery: inserted
+- Padre Coffee Roasters gallery: inserted
+- Parrilla Don Julio hero: inserted
+- Parrilla Don Julio card: inserted
+- Parrilla Don Julio gallery: inserted
+- Parrilla Don Julio gallery: inserted
+- Parrilla Don Julio gallery: inserted
+- Parrilla Don Julio gallery: inserted
+- Rita Specialty Coffee Soler hero: updated_legacy_row
+- Rita Specialty Coffee Soler card: updated_legacy_row
+- Rita Specialty Coffee Soler gallery: updated_legacy_row
+- Rita Specialty Coffee Soler gallery: updated_legacy_row
+- Rita Specialty Coffee Soler gallery: updated_legacy_row
+- Rita Specialty Coffee Soler gallery: updated_legacy_row
+- RITA® Specialty Coffee Armenia hero: updated_legacy_row
+- RITA® Specialty Coffee Armenia card: updated_legacy_row
+- RITA® Specialty Coffee Armenia gallery: updated_legacy_row
+- RITA® Specialty Coffee Armenia gallery: updated_legacy_row
+- RITA® Specialty Coffee Armenia gallery: updated_legacy_row
+- RITA® Specialty Coffee Armenia gallery: updated_legacy_row
+- Surry Hills Coffee hero: inserted
+- Surry Hills Coffee card: inserted
+- Surry Hills Coffee gallery: inserted
+- Surry Hills Coffee gallery: inserted
+- Surry Hills Coffee gallery: inserted
+- Surry Hills Coffee gallery: inserted
+- TERRASOHO - Specialty Coffee hero: updated_legacy_row
+- TERRASOHO - Specialty Coffee card: updated_legacy_row
+- TERRASOHO - Specialty Coffee gallery: updated_legacy_row
+- TERRASOHO - Specialty Coffee gallery: updated_legacy_row
+- TERRASOHO - Specialty Coffee gallery: updated_legacy_row
+- TERRASOHO - Specialty Coffee gallery: updated_legacy_row
+- Toki Moment - Specialty Coffee hero: updated_legacy_row
+- Toki Moment - Specialty Coffee card: updated_legacy_row
+- Toki Moment - Specialty Coffee gallery: updated_legacy_row
+- Toki Moment - Specialty Coffee gallery: updated_legacy_row
+- Toki Moment - Specialty Coffee gallery: updated_legacy_row
+- Toki Moment - Specialty Coffee gallery: updated_legacy_row
+- Tona Café hero: updated_legacy_row
+- Tona Café card: updated_legacy_row
+- Tona Café gallery: updated_legacy_row
+- Tona Café gallery: updated_legacy_row
+- Tona Café gallery: updated_legacy_row
+- Tona Café gallery: updated_legacy_row
+- Trade Sky Bar hero: updated_legacy_row
+- Trade Sky Bar card: updated_legacy_row
+- Trade Sky Bar gallery: updated_legacy_row
+- Trade Sky Bar gallery: updated_legacy_row
+- Trade Sky Bar gallery: updated_legacy_row
+- Trade Sky Bar gallery: updated_legacy_row
+- Tres Monos hero: inserted
+- Tres Monos card: inserted
+- Tres Monos gallery: inserted
+- Tres Monos gallery: inserted
+- Tres Monos gallery: inserted
+- Tres Monos gallery: inserted
+- Uptown Bar hero: inserted
+- Uptown Bar card: inserted
+- Uptown Bar gallery: inserted
+- Uptown Bar gallery: inserted
+- Uptown Bar gallery: inserted
+- Uptown Bar gallery: inserted
+- Verne Club hero: updated_legacy_row
+- Verne Club card: updated_legacy_row
+- Verne Club gallery: updated_legacy_row
+- Verne Club gallery: updated_legacy_row
+- Verne Club gallery: updated_legacy_row
+- Verne Club gallery: updated_legacy_row
+- Verne Club hero: inserted
+- Verne Club card: inserted
+- Verne Club gallery: inserted
+- Verne Club gallery: inserted
+- Verne Club gallery: inserted
+- Verne Club gallery: inserted
+- Vive Café Cafe de especialidad , cafés de campeonatos hero: updated_legacy_row
+- Vive Café Cafe de especialidad , cafés de campeonatos card: updated_legacy_row
+- Vive Café Cafe de especialidad , cafés de campeonatos gallery: updated_legacy_row
+- Vive Café Cafe de especialidad , cafés de campeonatos gallery: updated_legacy_row
+- Vive Café Cafe de especialidad , cafés de campeonatos gallery: updated_legacy_row
+- Vive Café Cafe de especialidad , cafés de campeonatos gallery: updated_legacy_row
+- Wine Window Argentina (Palermo Soho) hero: updated_legacy_row
+- Wine Window Argentina (Palermo Soho) card: updated_legacy_row
+- Wine Window Argentina (Palermo Soho) gallery: updated_legacy_row
+- Wine Window Argentina (Palermo Soho) gallery: updated_legacy_row
+- Wine Window Argentina (Palermo Soho) gallery: updated_legacy_row
+- Wine Window Argentina (Palermo Soho) gallery: updated_legacy_row

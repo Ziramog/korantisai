@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-06-01T13:29:39.030Z",
+  "repaired_venues": 1,
+  "unresolved_venues": 2,
+  "images_uploaded": 8,
+  "venue_images_inserted": 8,
+  "venues": [
+    {
+      "venue_id": "9035f5cb-ccda-49cc-ad8c-b90bcfe8d167",
+      "venue_name": "Invernadero",
+      "current_public_status": "active/public",
+      "current_image_state": "fallback/no image rows",
+      "google_place_id": "ChIJ-Q7eUWHLvJURXUfKtJsFC5Y",
+      "google_match_safe": true,
+      "google_photo_refs_exist": true,
+      "previous_collector_failure": "generic collector query lacked the stronger category alias needed for exact safe match",
+      "recommended_action": "repaired with safe Google match and Cloudinary image materialization",
+      "match_notes": [
+        "best candidate: INVERNADERO",
+        "address: Agüero 2502, C1425EID, 1425 Cdad. Autónoma de Buenos Aires, Argentina",
+        "primaryType: restaurant",
+        "distance: 0.19 km"
+      ],
+      "uploaded_images": 8,
+      "inserted_venue_images": 8,
+      "errors": []
+    },
+    {
+      "venue_id": "8775369b-fefd-4691-b298-de4b937e16a9",
+      "venue_name": "Melbourne Café",
+      "current_public_status": "active/public",
+      "current_image_state": "fallback/no image rows",
+      "google_place_id": "ChIJmezOB4a1vJURDMhzx6lY6xc",
+      "google_match_safe": false,
+      "google_photo_refs_exist": true,
+      "previous_collector_failure": "no safe name/address/category match found by generic collector",
+      "recommended_action": "manual image upload, unpublish candidate, replace venue, or leave temporary fallback_allowed",
+      "match_notes": [
+        "best candidate: Lattente",
+        "address: Thames 1891, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+        "primaryType: coffee_shop",
+        "distance: 0.19 km",
+        "name mismatch: Lattente"
+      ],
+      "uploaded_images": 0,
+      "inserted_venue_images": 0,
+      "errors": []
+    },
+    {
+      "venue_id": "f770000d-7187-444e-8ee7-524645aa6824",
+      "venue_name": "Crisol Café",
+      "current_public_status": "active/public",
+      "current_image_state": "fallback/no image rows",
+      "google_place_id": "ChIJP2gAAgDLvJURVxUf5d51c0A",
+      "google_match_safe": false,
+      "google_photo_refs_exist": true,
+      "previous_collector_failure": "no safe name/address/category match found by generic collector",
+      "recommended_action": "manual image upload, unpublish candidate, replace venue, or leave temporary fallback_allowed",
+      "match_notes": [
+        "best candidate: Crisol Palermo",
+        "address: Güemes 3702, C1425BKR C1425BKR, Cdad. Autónoma de Buenos Aires, Argentina",
+        "primaryType: cafe",
+        "distance: 2.47 km",
+        "distance 2.47 km exceeds safe threshold"
+      ],
+      "uploaded_images": 0,
+      "inserted_venue_images": 0,
+      "errors": []
+    }
+  ]
+}

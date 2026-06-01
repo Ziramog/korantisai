@@ -1,6 +1,5 @@
 import * as path from 'path';
-import * as dotenv from 'dotenv';
-dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
+import './script_env';
 import { writeFileSync } from 'fs';
 import { createClient } from '@supabase/supabase-js';
 
@@ -90,6 +89,7 @@ async function main() {
       image_count: venueImages.length,
       has_venue_images: venueImages.length > 0,
       has_cloudinary_image: hasCloudinary,
+      uses_legacy_venue_images_proxy: venueImages.length > 0 && !hasCloudinary,
       has_hero_image: hasHero,
       has_card_image: hasCard,
       has_gallery_images: hasGallery,
@@ -108,6 +108,7 @@ async function main() {
     venues_with_card_image: activeRows.filter((row) => row.has_card_image).length,
     venues_with_gallery_images: activeRows.filter((row) => row.has_gallery_images).length,
     venues_using_invernadero_fallback: activeRows.filter((row) => row.uses_invernadero_fallback).length,
+    venues_using_legacy_venue_images_proxy: activeRows.filter((row) => row.uses_legacy_venue_images_proxy).length,
     images_missing_cloudinary_public_id: activeRows.reduce((sum, row) => sum + row.missing_cloudinary_public_id_count, 0),
   };
 
@@ -129,12 +130,19 @@ async function main() {
     `- Active venues with card image: ${totals.venues_with_card_image}`,
     `- Active venues with gallery images: ${totals.venues_with_gallery_images}`,
     `- Active venues using /venue_invernadero.png fallback: ${totals.venues_using_invernadero_fallback}`,
+    `- Active venues using legacy /api/venue-images proxy: ${totals.venues_using_legacy_venue_images_proxy}`,
     `- Active image rows missing Cloudinary public_id: ${totals.images_missing_cloudinary_public_id}`,
     '',
     '## Fallback Venues',
     '',
     ...activeRows
       .filter((row) => row.uses_invernadero_fallback)
+      .map((row) => `- ${row.name} (${row.id})`),
+    '',
+    '## Legacy Proxy Venues',
+    '',
+    ...activeRows
+      .filter((row) => row.uses_legacy_venue_images_proxy)
       .map((row) => `- ${row.name} (${row.id})`),
     '',
   ].join('\n');

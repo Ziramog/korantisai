@@ -1,6 +1,5 @@
 import * as path from 'path';
-import * as dotenv from 'dotenv';
-dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
+import './script_env';
 import { readFileSync, writeFileSync } from 'fs';
 import { createClient } from '@supabase/supabase-js';
 
@@ -93,7 +92,14 @@ function groupExisting(images: ExistingImage[]) {
 function isDuplicate(existing: ExistingImage[], image: MaterializedImage) {
   return existing.some((row) => (
     row.public_id === image.public_id ||
-    row.google_photo_reference === image.google_photo_reference ||
+    row.google_photo_reference === image.google_photo_reference
+  ));
+}
+
+function findLegacyRowForUpdate(existing: ExistingImage[], image: MaterializedImage) {
+  return existing.find((row) => (
+    !row.public_id &&
+    !row.role &&
     row.photo_reference === image.google_photo_reference
   ));
 }
@@ -108,7 +114,7 @@ function hasOwnedHero(existing: ExistingImage[]) {
 async function main() {
   const write = hasFlag('write');
   const replaceHero = hasFlag('replace-hero');
-  const inputPath = getArgValue('input') || path.join(DATA_DIR, 'materialized_venue_images_cloudinary.json');
+  const inputPath = getArgValue('input') || path.join(DATA_DIR, 'cloudinary_materialization_output.json');
   const payload = JSON.parse(readFileSync(inputPath, 'utf8')) as InputPayload;
   const uploadedImages = payload.images.filter((image) => image.status === 'uploaded' && image.secure_url && image.public_id);
   const supabase = createSupabase();
@@ -131,7 +137,9 @@ async function main() {
       })),
     };
 
-    writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_report.json'), JSON.stringify(output, null, 2));
+    const outputJson = JSON.stringify(output, null, 2);
+    writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_output.json'), outputJson);
+    writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_report.json'), outputJson);
     writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_report.md'), [
       '# Venue Images Upsert',
       '',
@@ -157,10 +165,12 @@ async function main() {
 
   const existingByVenue = groupExisting((existingRows || []) as ExistingImage[]);
   let inserted = 0;
+  let updated = 0;
   let skipped = 0;
 
   for (const image of uploadedImages) {
     const existing = existingByVenue.get(image.venue_id) || [];
+    const legacyRow = findLegacyRowForUpdate(existing, image);
 
     if (image.role === 'hero' && hasOwnedHero(existing) && !replaceHero) {
       skipped++;
@@ -174,7 +184,7 @@ async function main() {
       continue;
     }
 
-    const row = {
+    const cloudinaryFields = {
       venue_id: image.venue_id,
       photo_reference: image.google_photo_reference,
       google_photo_reference: image.google_photo_reference,
@@ -195,10 +205,26 @@ async function main() {
       updated_at: new Date().toISOString(),
     };
 
+    if (legacyRow) {
+      if (write) {
+        const { error } = await supabase
+          .from('venue_images')
+          .update(cloudinaryFields)
+          .eq('id', legacyRow.id);
+
+        if (error) throw new Error(`Unable to update ${image.venue_name} ${image.role}: ${error.message}`);
+        Object.assign(legacyRow, cloudinaryFields);
+      }
+
+      updated++;
+      actions.push({ venue_name: image.venue_name, role: image.role, action: write ? 'updated_legacy_row' : 'would_update_legacy_row' });
+      continue;
+    }
+
     if (write) {
-      const { data, error } = await supabase.from('venue_images').insert(row).select('id').single();
+      const { data, error } = await supabase.from('venue_images').insert(cloudinaryFields).select('id').single();
       if (error) throw new Error(`Unable to insert ${image.venue_name} ${image.role}: ${error.message}`);
-      existing.push({ id: String(data.id), venue_id: image.venue_id, ...row });
+      existing.push({ id: String(data.id), venue_id: image.venue_id, ...cloudinaryFields });
       existingByVenue.set(image.venue_id, existing);
     }
 
@@ -212,13 +238,15 @@ async function main() {
     replace_hero: replaceHero,
     uploaded_images_available: uploadedImages.length,
     inserted,
-    updated: 0,
+    updated,
     skipped,
     missing_schema_columns: missingColumns,
     actions,
   };
 
-  writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_report.json'), JSON.stringify(output, null, 2));
+  const outputJson = JSON.stringify(output, null, 2);
+  writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_output.json'), outputJson);
+  writeFileSync(path.join(DATA_DIR, 'venue_images_upsert_report.json'), outputJson);
 
   const report = [
     '# Venue Images Upsert',
@@ -228,6 +256,7 @@ async function main() {
     '',
     `- Uploaded images available: ${output.uploaded_images_available}`,
     `- ${write ? 'Inserted' : 'Would insert'}: ${output.inserted}`,
+    `- ${write ? 'Updated legacy rows' : 'Would update legacy rows'}: ${output.updated}`,
     `- Skipped: ${output.skipped}`,
     '',
     '## Actions',
