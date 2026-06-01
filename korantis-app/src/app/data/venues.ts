@@ -1,11 +1,19 @@
 export interface Venue {
   id: string;
   name: string;
+  createdAt?: string | null;
+  updatedAt?: string | null;
+  publishedAt?: string | null;
+  curationStatus?: string | null;
   category: string;
   location: string;
   cardSize: 'immersive' | 'cinematic' | 'layered' | 'compact';
   spacing: 'tight' | 'breathe' | 'isolated';
   heroImage: string;
+  cardImage?: string;
+  imageUrl?: string;
+  galleryImages?: Array<{ src?: string | null; source?: string; role?: string | null }>;
+  images?: Array<{ src?: string | null; source?: string; role?: string | null }>;
   atmosphere: 'morning' | 'afternoon' | 'golden-hour' | 'night' | 'late-night' | 'dawn';
   quality: number;
   tagline: string;

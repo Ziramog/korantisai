@@ -4,6 +4,8 @@ import { createClient } from '@/utils/supabase/server';
 type PublicVenueRow = {
   id: string;
   name: string;
+  created_at?: string | null;
+  updated_at?: string | null;
   category: string | null;
   location: string | null;
   coordinates: { lat?: number; lng?: number } | string | null;
@@ -176,6 +178,8 @@ export async function GET() {
         return {
           id: venue.id,
           name: venue.name,
+          createdAt: venue.created_at || null,
+          updatedAt: venue.updated_at || null,
           category: venue.category || '',
           location: venue.location || '',
           cardSize: venue.card_size || 'layered',

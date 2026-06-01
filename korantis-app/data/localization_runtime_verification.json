@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-01T22:38:08.122Z",
+  "url": "http://localhost:3000",
+  "language_before_click": "en",
+  "local_storage_before": null,
+  "context_language_before": "en",
+  "local_storage_after_es": "es",
+  "context_language_after_es": "es",
+  "local_storage_after_refresh": "es",
+  "context_language_after_refresh": "es",
+  "local_storage_after_en": "en",
+  "context_language_after_en": "en",
+  "ui_rerenders_after_es": true,
+  "refresh_persists_es": true,
+  "en_restored_without_reload": true,
+  "components_checked": [
+    {
+      "component": "AuthPanel / language toggle",
+      "en_visible": true,
+      "es_visible": true,
+      "notes": "Unauthenticated taste surface can now switch language."
+    },
+    {
+      "component": "SearchBar",
+      "en_visible": true,
+      "es_visible": true,
+      "notes": "Search placeholder and pills are dictionary-driven."
+    },
+    {
+      "component": "Taste page labels",
+      "en_visible": true,
+      "es_visible": true,
+      "notes": "Verified after refresh in Spanish and after EN restore."
+    },
+    {
+      "component": "Venue detail labels",
+      "en_visible": true,
+      "es_visible": true,
+      "notes": "Static labels are dictionary-backed; detail interaction is covered by lint and dictionary checks."
+    }
+  ],
+  "failing_components": [],
+  "root_cause": "The locale store worked, but the only visible language selector was inside the authenticated Taste surface. Unauthenticated users could not switch language from the auth panel; several venue-detail labels also used overly abstract dictionary copy.",
+  "errors": []
+}

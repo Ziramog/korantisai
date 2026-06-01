@@ -1,0 +1,261 @@
+{
+  "generated_at": "2026-06-01T23:26:25.645Z",
+  "mode": "write",
+  "inserted": 42,
+  "would_insert": 0,
+  "skipped": 0,
+  "actions": [
+    {
+      "venue_name": "Don Julio Parrilla",
+      "venue_id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/don-julio-parrilla/gallery-enrichment-0"
+    },
+    {
+      "venue_name": "Don Julio Parrilla",
+      "venue_id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/don-julio-parrilla/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "El Cuartito",
+      "venue_id": "ChIJKcgRZLjKvJURv0XnanBXRCg",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/el-cuartito/gallery-enrichment-2"
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "venue_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/gran-bar-danzon/gallery-enrichment-3"
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "venue_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/gran-bar-danzon/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Guerrin",
+      "venue_id": "ChIJm86rLcTKvJURjRPk21bRoro",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/guerrin/gallery-enrichment-5"
+    },
+    {
+      "venue_name": "Plaza Bar",
+      "venue_id": "ChIJhQIMStM0o5URWvHT37YudbM",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/plaza-bar/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Reliquia",
+      "venue_id": "ChIJaZuHKES1vJURFUHa25lVQRI",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/reliquia/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Trade Sky Bar",
+      "venue_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/trade-sky-bar/gallery-enrichment-8"
+    },
+    {
+      "venue_name": "Trade Sky Bar",
+      "venue_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/trade-sky-bar/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Trade Sky Bar",
+      "venue_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/trade-sky-bar/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Trade Sky Bar",
+      "venue_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/trade-sky-bar/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Verne Club",
+      "venue_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/verne-club/gallery-enrichment-12"
+    },
+    {
+      "venue_name": "Verne Club",
+      "venue_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/verne-club/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Verne Club",
+      "venue_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/verne-club/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Verne Club",
+      "venue_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/verne-club/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Cuervo Café",
+      "venue_id": "073deb0a-682e-4730-8d3f-0d75c9d3abbd",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/cuervo-cafe/gallery-enrichment-16"
+    },
+    {
+      "venue_name": "Cuervo Café",
+      "venue_id": "073deb0a-682e-4730-8d3f-0d75c9d3abbd",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/cuervo-cafe/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Cuervo Café",
+      "venue_id": "073deb0a-682e-4730-8d3f-0d75c9d3abbd",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/cuervo-cafe/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Florería Atlántico",
+      "venue_id": "97833fe8-7fe1-45dc-8d9b-931573ab0398",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/floreria-atlantico/gallery-enrichment-19"
+    },
+    {
+      "venue_name": "Florería Atlántico",
+      "venue_id": "97833fe8-7fe1-45dc-8d9b-931573ab0398",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/floreria-atlantico/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Florería Atlántico",
+      "venue_id": "97833fe8-7fe1-45dc-8d9b-931573ab0398",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/floreria-atlantico/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Florería Atlántico",
+      "venue_id": "97833fe8-7fe1-45dc-8d9b-931573ab0398",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/floreria-atlantico/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "La Biela",
+      "venue_id": "4155059e-8861-4c84-bd2e-ad13e2895ab4",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/la-biela/gallery-enrichment-23"
+    },
+    {
+      "venue_name": "La Biela",
+      "venue_id": "4155059e-8861-4c84-bd2e-ad13e2895ab4",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/la-biela/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "La Biela",
+      "venue_id": "4155059e-8861-4c84-bd2e-ad13e2895ab4",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/la-biela/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "La Biela",
+      "venue_id": "4155059e-8861-4c84-bd2e-ad13e2895ab4",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/la-biela/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Lattente",
+      "venue_id": "007e1609-d51f-4e44-828e-1140e3f92497",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/lattente/gallery-enrichment-27"
+    },
+    {
+      "venue_name": "Lattente",
+      "venue_id": "007e1609-d51f-4e44-828e-1140e3f92497",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/lattente/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Lattente",
+      "venue_id": "007e1609-d51f-4e44-828e-1140e3f92497",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/lattente/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Lattente",
+      "venue_id": "007e1609-d51f-4e44-828e-1140e3f92497",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/lattente/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Mishiguene",
+      "venue_id": "a40f0cfa-c21b-49bb-ae49-c1169bc3e655",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/mishiguene/gallery-enrichment-31"
+    },
+    {
+      "venue_name": "Mishiguene",
+      "venue_id": "a40f0cfa-c21b-49bb-ae49-c1169bc3e655",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/mishiguene/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Mishiguene",
+      "venue_id": "a40f0cfa-c21b-49bb-ae49-c1169bc3e655",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/mishiguene/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Mishiguene",
+      "venue_id": "a40f0cfa-c21b-49bb-ae49-c1169bc3e655",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/mishiguene/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Niño Gordo",
+      "venue_id": "ebbba81e-6590-47ce-80b7-c5ac478e829f",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/nino-gordo/gallery-enrichment-35"
+    },
+    {
+      "venue_name": "Niño Gordo",
+      "venue_id": "ebbba81e-6590-47ce-80b7-c5ac478e829f",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/nino-gordo/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Niño Gordo",
+      "venue_id": "ebbba81e-6590-47ce-80b7-c5ac478e829f",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/nino-gordo/gallery-enrichment-6"
+    },
+    {
+      "venue_name": "Niño Gordo",
+      "venue_id": "ebbba81e-6590-47ce-80b7-c5ac478e829f",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/nino-gordo/gallery-enrichment-7"
+    },
+    {
+      "venue_name": "Tres Monos",
+      "venue_id": "3f4fd293-8bc7-4446-995b-a5756a9102d1",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/tres-monos/gallery-enrichment-39"
+    },
+    {
+      "venue_name": "Tres Monos",
+      "venue_id": "3f4fd293-8bc7-4446-995b-a5756a9102d1",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/tres-monos/gallery-enrichment-1"
+    },
+    {
+      "venue_name": "Tres Monos",
+      "venue_id": "3f4fd293-8bc7-4446-995b-a5756a9102d1",
+      "action": "inserted",
+      "public_id": "korantis/venues/buenos-aires/tres-monos/gallery-enrichment-6"
+    }
+  ]
+}

@@ -190,11 +190,14 @@ export function translateVenueField(
   context: 'category' | 'tag' | 'intent' | 'atmosphere' | 'description' = 'description',
 ) {
   if (!value) return '';
+  if (context === 'atmosphere') {
+    const atmosphereKey = value.trim().toLowerCase().replaceAll(' ', '-');
+    return t(atmosphereKey, locale);
+  }
   if (locale === 'en') return value;
   if (context === 'category') return translateFromMap(value, locale, categoryTranslations);
   if (context === 'tag') return translateTag(value, locale);
   if (context === 'intent') return translateIntent(value, locale);
-  if (context === 'atmosphere') return translateTag(value.replaceAll('-', ' '), locale);
   return value;
 }
 

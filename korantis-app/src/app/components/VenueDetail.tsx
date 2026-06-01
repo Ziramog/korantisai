@@ -103,7 +103,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
               <span>{venue.location}</span>
             </div>
             <span className="hidden sm:inline w-1 h-1 rounded-full bg-k-border-light"></span>
-            <span className="capitalize">{displayVenue.displayAtmosphere} {t('atmosphereSuffix', language)}</span>
+            <span className="capitalize">{displayVenue.displayAtmosphere}</span>
           </div>
         </div>
       </header>

@@ -27,6 +27,7 @@ export type CircadianVenue = {
 export type CircadianRankingDebug = {
   baseScore: number;
   circadianBias: number;
+  launchFreshnessBias?: number;
   finalDisplayScore: number;
   daypart: CircadianDaypart;
   categoryKind: VenueCategoryKind;

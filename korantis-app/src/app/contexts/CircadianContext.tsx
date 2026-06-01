@@ -13,6 +13,7 @@ import {
   hasExplicitCategoryIntent,
   type CircadianRankingDebug,
 } from '@/lib/ranking/circadianRanking';
+import { getLaunchFreshnessBias } from '@/lib/ranking/freshnessRanking';
 
 // Types
 export type TimePhase = 'morning' | 'afternoon' | 'golden-hour' | 'night' | 'late-night' | 'dawn';
@@ -648,7 +649,8 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         (mScore * 0.1)   // Memory weight
       );
       const circadianBias = explicitCategoryIntent ? 0 : getCircadianCategoryBias(daypart, venue);
-      const finalDisplayScore = Math.max(0, Math.min(1.2, baseScore + circadianBias));
+      const launchFreshnessBias = explicitCategoryIntent ? 0 : getLaunchFreshnessBias(venue);
+      const finalDisplayScore = Math.max(0, Math.min(1.2, baseScore + circadianBias + launchFreshnessBias));
 
       return {
         ...venue,
@@ -663,6 +665,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
           ? {
             baseScore,
             circadianBias,
+            launchFreshnessBias,
             finalDisplayScore,
             daypart,
             categoryKind: getVenueCategoryKind(venue),

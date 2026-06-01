@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-06-01T22:19:21.483Z",
+  "url": "https://korantis-app.vercel.app",
+  "total_cards_in_dom": 64,
+  "initial_visible_card_names": [
+    "Don Julio Parrilla"
+  ],
+  "discovered_visible_f8_names": [
+    "Guerrin",
+    "878 Bar",
+    "Milion",
+    "Reliquia",
+    "Vini Bar",
+    "Julia",
+    "Anchoita",
+    "El Cuartito",
+    "Cabaña Las Lilas",
+    "Gran Bar Danzon",
+    "Roux",
+    "Apu Nena",
+    "Corte Comedor",
+    "Plaza Bar",
+    "Mixtape Bar",
+    "Blanca Deco and Cafe"
+  ],
+  "approved_cards": [
+    {
+      "name": "Blanca Deco and Cafe",
+      "found": true,
+      "rank": 64,
+      "top": 43653.546875,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335565%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fblanca-deco-and-cafe%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335565%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fblanca-deco-and-cafe%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Julia",
+      "found": true,
+      "rank": 22,
+      "top": 14899.515625,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335587%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fjulia%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335587%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fjulia%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Roux",
+      "found": true,
+      "rank": 27,
+      "top": 18095.125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335608%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Froux%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335608%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Froux%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Anchoita",
+      "found": true,
+      "rank": 23,
+      "top": 15449.328125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335622%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fanchoita%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335622%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fanchoita%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "El Cuartito",
+      "found": true,
+      "rank": 24,
+      "top": 16361.328125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335639%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fel-cuartito%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335639%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fel-cuartito%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Reliquia",
+      "found": true,
+      "rank": 20,
+      "top": 13619.53125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335655%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Freliquia%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335655%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Freliquia%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Apu Nena",
+      "found": true,
+      "rank": 28,
+      "top": 19007.125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335677%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fapu-nena%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335677%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fapu-nena%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Corte Comedor",
+      "found": true,
+      "rank": 29,
+      "top": 19564.453125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335695%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fcorte-comedor%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335695%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fcorte-comedor%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Guerrin",
+      "found": true,
+      "rank": 17,
+      "top": 11483.0625,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335714%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fguerrin%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335714%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fguerrin%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Cabaña Las Lilas",
+      "found": true,
+      "rank": 25,
+      "top": 16870.65625,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335734%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fcabana-las-lilas%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335734%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fcabana-las-lilas%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Vini Bar",
+      "found": true,
+      "rank": 21,
+      "top": 14176.859375,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335753%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fvini-bar%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335753%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fvini-bar%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Gran Bar Danzon",
+      "found": true,
+      "rank": 26,
+      "top": 17593.3125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335773%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fgran-bar-danzon%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335773%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fgran-bar-danzon%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "878 Bar",
+      "found": true,
+      "rank": 18,
+      "top": 12205.71875,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335792%2Fkorantis%2Fcandidates%2Fbuenos-aires%2F878-bar%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335792%2Fkorantis%2Fcandidates%2Fbuenos-aires%2F878-bar%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Milion",
+      "found": true,
+      "rank": 19,
+      "top": 12707.53125,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335811%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fmilion%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335811%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fmilion%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Plaza Bar",
+      "found": true,
+      "rank": 30,
+      "top": 20287.109375,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335827%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fplaza-bar%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335827%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fplaza-bar%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    },
+    {
+      "name": "Mixtape Bar",
+      "found": true,
+      "rank": 31,
+      "top": 20836.921875,
+      "heroSrc": "/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335845%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fmixtape-bar%2Fhero-0.jpg&w=3840&q=75",
+      "heroCurrentSrc": "https://korantis-app.vercel.app/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdmdjhvyqs%2Fimage%2Fupload%2Fv1780335845%2Fkorantis%2Fcandidates%2Fbuenos-aires%2Fmixtape-bar%2Fhero-0.jpg&w=1920&q=75",
+      "cloudinary": true,
+      "fallback": false,
+      "legacyProxy": false
+    }
+  ],
+  "image_failures": [],
+  "bad_image_responses": [],
+  "screenshot_path": "F:\\KORANTIS\\korantis-app\\data\\f8_production_ui_check.png",
+  "conclusion": "All F.8 venues are in the DOM with Cloudinary images. First F.8 card rank is 17; if the top of the feed looks unchanged, ranking/order is placing new venues below initial visible cards."
+}

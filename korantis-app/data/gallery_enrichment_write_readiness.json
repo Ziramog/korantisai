@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-01T23:24:08.201Z",
+  "write_ready": true,
+  "selected_count": 42,
+  "would_insert_count": 42,
+  "skipped_count": 0,
+  "duplicate_counts": {
+    "selected_venue_ref": 0,
+    "selected_venue_role_sort": 0,
+    "materialized_public_id": 0,
+    "would_insert_public_id": 0,
+    "would_insert_venue_role_sort": 0
+  },
+  "venues_receiving_assets": [
+    "Cuervo Café",
+    "Don Julio Parrilla",
+    "El Cuartito",
+    "Florería Atlántico",
+    "Gran Bar Danzon",
+    "Guerrin",
+    "La Biela",
+    "Lattente",
+    "Mishiguene",
+    "Niño Gordo",
+    "Plaza Bar",
+    "Reliquia",
+    "Trade Sky Bar",
+    "Tres Monos",
+    "Verne Club"
+  ],
+  "quality_threshold_exceptions": [
+    {
+      "venue_name": "El Cuartito",
+      "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-v-lKKGoRMcD_a5yyiIT6do7rJ7hIrwDl15sQlW7MSZ4PdQ_BFgFAGgqAhF_kovZ5mN9STz5uVXx0F9rvAv5dcEq4WdbRi4IR1wJboJkGfWCcIiFX0Mi9s7F0cDVuMPOZsN7wJXDXOsB_DOHJD7a-57iDXUyfvkyuyTquXRJpJ3MSCgKRy2UHBUNYCCjR6IzhZqusuJufPL2Y3TJJuDWJMv9h7Yb0aQtzufnXIkRldCn2FBx7ukbGD9ww-qioFKdBL5Yr-s7sCYYD-_whhTvTL8avufIGD91vQ2XuDpXrw5UDc9ZoSev0n-ffxbqVMMVr0N9QwhoLRoxZJAci2SpWXAB5dwvmhCdhX___yO3-hmwjW_4D-4-PFsGXsJaUbzmHuDlBEaob8v_4MUZTKfvuKKaRb2d9P2YiaRImgP-7B3MXIJHHFrH1oOtEVB-w",
+      "score": 75
+    },
+    {
+      "venue_name": "Guerrin",
+      "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-tOYBxhPFqdhk3oKVfzS7n8odCmgV_mP5fODtXDRJuW-7gsDshkXzSkesZC4xsNdMbYEPns4FEUCfYrW8WmFiG-tE6txGQ9vHFMKwJ7HC_vztzAkmfBvUwrJJPgbEDR1pgbtN51Sgc2tjJ1r5aSRf9cc2dQ3OPNhseL7KinlOVfMRJkJEUCXqXnHH9JDSL16b4OYXFSJeDNP9WvatlYBtxMTBs-l2bqrmUZSra8VUwcryySd2QDSU2mfuvl8csJaw58sJ2eZTgTCoTv4vxlyapvQ4nDznPOQR2yzOvBaANUenYBMEOj3eBVmPeKHCgdjoWFJdsXfqEf-1scH1ZdMb-lfeNMD2HCVvBLZjiUz7bufKPXE9YylJRAOAdzLB3RFJaAd6FkKTtI7TfkBMcEpGDkAfgB6N-r-PRAeGrfcnev7K1vBhNi9vg84UfqT8m4",
+      "score": 48
+    },
+    {
+      "venue_name": "Plaza Bar",
+      "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-szA_LvqlbYCGKWCtpyKgWDH-_ByxBozD_DdLE-V-1NXM4yStjV-1QoM1YCh-J_wSM9_-MxZlWZn4KfASMljP6B8ckVftfp6zLaQ00K4tfRVBQ811GLILopptc9b-XRx9SmOWcbgNvkE6GSXG7PM1DgmclYpG3VoI-7VN_dqKPp_dEWLGykNjWyKUZJZcOKiyscc730J_RmMT6iybvW3wa36nC678zUx-sebncmTg_Q0msY-ruIb5GUc0OKpQCxmRcfuSKK75YZ3udZc3l-zMS8bPFb2OZMsq09UCnWgaar2c9qCKEJTOE5ks6c5JANcq9bFXmWs4r7MVliX6RfrizpWQogKD19GJYCICNElQVwZ39rCHagrlLEpkbR3Tu6wCoagHsAZLixGfiTqziqXyaSt0OFPEYTUzf0vyXRkKor9jhgyHPil4xzlNUI4OEo",
+      "score": 44
+    },
+    {
+      "venue_name": "Reliquia",
+      "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-sii12UNZt8Lf_4rtEjEeAg1YbvYfAHUclTN4kKb8pLPlwclxAEmVpAchFKq5mxsphyW4OOazHgCFD1dWAUihgW9qiuwuJS-0HQH9DjVhw1rMI7ou99LQ7C_a_52uIbDHDpS0FjdDuSWY9qJbLPLMX9bqp1DTXClZpxZH12ZR00p3SYHIrgLy4qMCz_nsFW4_aSejTpY-bMySWHci4gqMQosJtfNYRvWndN2wgJGIYaUwRTlFvFWV9qvoWmoBLdDQtIV-dsGl_p3Mxp_DQ92qaMbBRk6OdMvANw_3mZsg2ZwnaC0hhYPtkUhr-2sd6VoRT8_UmGMM6iQQFTanvCl6TjRuZUFLP0xPGokA_vbaIJmBkobAgDRNLXMoI9oSbVVj1UKfMWwwezBh2QJu5FKRRtx1D37qiH4Hbx_T0KH6VRdBZOKUzuwfnCaOTNuaq1",
+      "score": 43
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "El Cuartito: low score allowed because it is unique spatial evidence",
+    "Guerrin: low score allowed because it is unique spatial evidence",
+    "Plaza Bar: low score allowed because it is unique spatial evidence",
+    "Reliquia: low score allowed because it is unique spatial evidence"
+  ],
+  "source_modes": {
+    "materialization": "dry-run",
+    "upsert": "dry-run"
+  }
+}

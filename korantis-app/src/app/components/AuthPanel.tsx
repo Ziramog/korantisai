@@ -7,7 +7,7 @@ import { useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
 
 export default function AuthPanel() {
-  const { language, setIsAuthenticated, setUserId } = useCircadian();
+  const { language, setLanguage, setIsAuthenticated, setUserId } = useCircadian();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -167,6 +167,36 @@ export default function AuthPanel() {
           </div>
         </form>
       )}
+
+      <div className="mt-6 pt-5 border-t border-k-border/40 relative z-10">
+        <h3 className="text-[9px] font-sans uppercase tracking-widest text-k-text-tertiary mb-3">
+          {t('language', language)}
+        </h3>
+        <div className="flex p-1 rounded-xl bg-k-surface-elevated/20 border border-k-border w-max">
+          <button
+            type="button"
+            onClick={() => setLanguage('es')}
+            className={`px-4 py-1.5 rounded-lg text-[10px] font-sans tracking-wide transition-all duration-300 ${
+              language === 'es'
+                ? 'bg-k-gold-dim text-k-gold shadow-sm'
+                : 'text-k-text-secondary hover:text-white'
+            }`}
+          >
+            {t('spanish', language)}
+          </button>
+          <button
+            type="button"
+            onClick={() => setLanguage('en')}
+            className={`px-4 py-1.5 rounded-lg text-[10px] font-sans tracking-wide transition-all duration-300 ${
+              language === 'en'
+                ? 'bg-k-gold-dim text-k-gold shadow-sm'
+                : 'text-k-text-secondary hover:text-white'
+            }`}
+          >
+            {t('english', language)}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
