@@ -1,0 +1,3321 @@
+{
+  "generatedAt": "2026-06-01T03:29:33.889Z",
+  "quotas": {
+    "cafe": 15,
+    "restaurant": 20,
+    "wine_bar": 7,
+    "cocktail_bar": 8
+  },
+  "count": 50,
+  "categorySummary": {
+    "cafe": 15,
+    "restaurant": 20,
+    "wine_bar": 7,
+    "cocktail_bar": 8
+  },
+  "districtSummary": {
+    "Recoleta": 8,
+    "Colegiales": 5,
+    "San Telmo": 6,
+    "Belgrano": 5,
+    "Microcentro": 4,
+    "Retiro": 5,
+    "Villa Crespo": 7,
+    "Las Canitas": 5,
+    "Chacarita": 3,
+    "Puerto Madero": 2
+  },
+  "previouslyProcessed": 0,
+  "candidates": [
+    {
+      "candidate_id": "45233e763e36b65b",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Blanca Deco and Cafe",
+      "canonical_name": "blanca deco and",
+      "aliases": [
+        "Blanca Deco and Cafe"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Blanca Deco and Cafe",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/yxudmj",
+          "context": "Recoleta-adjacent espresso recommendation.",
+          "rank_position": 37
+        },
+        {
+          "venue_name": "Blanca Deco and Cafe",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta cafe candidate with design signal",
+          "rank_position": 31
+        },
+        {
+          "venue_name": "Blanca Deco and Cafe",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Recoleta cafe candidate with design signal",
+          "rank_position": 15
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 58,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 58, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "f9d17b270804324a",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "L Harmonie",
+      "canonical_name": "l harmonie",
+      "aliases": [
+        "L Harmonie"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "L Harmonie",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Coffee community mention near Recoleta.",
+          "rank_position": 10
+        },
+        {
+          "venue_name": "L Harmonie",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta coffee candidate from community recommendations",
+          "rank_position": 32
+        },
+        {
+          "venue_name": "L Harmonie",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Recoleta coffee candidate from community recommendations",
+          "rank_position": 16
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 58,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 58, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "77f3f0f1f63e2056",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Altar Cafe",
+      "canonical_name": "altar",
+      "aliases": [
+        "Altar Cafe"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Altar Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Colegiales coffee community mention.",
+          "rank_position": 14
+        },
+        {
+          "venue_name": "Altar Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Colegiales specialty coffee candidate",
+          "rank_position": 19
+        },
+        {
+          "venue_name": "Altar Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Colegiales specialty coffee candidate",
+          "rank_position": 12
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "939a06af330c981a",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "La Garage",
+      "canonical_name": "garage",
+      "aliases": [
+        "La Garage"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "La Garage",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Pastry/cafe community mention requiring review.",
+          "rank_position": 23
+        },
+        {
+          "venue_name": "La Garage",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "San Telmo pastry and cafe candidate requiring atmosphere review",
+          "rank_position": 42
+        },
+        {
+          "venue_name": "La Garage",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "San Telmo pastry and cafe candidate requiring atmosphere review",
+          "rank_position": 22
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "6b0924cbea2810b2",
+      "city": "Buenos Aires",
+      "district": "Belgrano",
+      "venue_name": "La Panera Rosa",
+      "canonical_name": "panera rosa",
+      "aliases": [
+        "La Panera Rosa",
+        "La Panera Rosa Belgrano"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "La Panera Rosa",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/18317/best-coffee-shops-and-cafes-in-buenos-aires",
+          "context": "Cafe/brunch candidate requiring chain review.",
+          "rank_position": 35
+        },
+        {
+          "venue_name": "La Panera Rosa Belgrano",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "brunch chain candidate requiring rejection review",
+          "rank_position": 38
+        },
+        {
+          "venue_name": "La Panera Rosa Belgrano",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "brunch chain candidate requiring rejection review",
+          "rank_position": 14
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 86,
+      "editorial_score": 49,
+      "community_score": 33,
+      "frequency_score": 60,
+      "district_relevance_score": 78,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 86, sources 3"
+    },
+    {
+      "candidate_id": "6ab2508d5e018222",
+      "city": "Buenos Aires",
+      "district": "Belgrano",
+      "venue_name": "Amarante",
+      "canonical_name": "amarante",
+      "aliases": [
+        "Amarante",
+        "Amarante Cafe"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Amarante",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Coffee community mention.",
+          "rank_position": 8
+        },
+        {
+          "venue_name": "Amarante Cafe",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Belgrano cafe candidate",
+          "rank_position": 37
+        },
+        {
+          "venue_name": "Amarante Cafe",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Belgrano cafe candidate",
+          "rank_position": 20
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 78,
+      "category_confidence_score": 100,
+      "discovery_score": 56,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 56, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "0105a07c4be46f98",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "London City",
+      "canonical_name": "london city",
+      "aliases": [
+        "London City"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "London City",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/18317/best-coffee-shops-and-cafes-in-buenos-aires",
+          "context": "Historic cafe candidate requiring editorial review.",
+          "rank_position": 34
+        },
+        {
+          "venue_name": "London City",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "classic cafe candidate with tourist signal",
+          "rank_position": 29
+        },
+        {
+          "venue_name": "London City",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "classic cafe candidate with tourist signal",
+          "rank_position": 11
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 91,
+      "editorial_score": 49,
+      "community_score": 33,
+      "frequency_score": 60,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 56,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 56, consensus 91, sources 3"
+    },
+    {
+      "candidate_id": "8f6f724d996b428d",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "La Kitchen",
+      "canonical_name": "kitchen",
+      "aliases": [
+        "La Kitchen"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "La Kitchen",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cafe",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Retiro cafe candidate requiring review.",
+          "rank_position": 40
+        },
+        {
+          "venue_name": "La Kitchen",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Retiro cafe candidate for central coverage",
+          "rank_position": 24
+        },
+        {
+          "venue_name": "La Kitchen",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Retiro cafe candidate for central coverage",
+          "rank_position": 6
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 90,
+      "editorial_score": 48,
+      "community_score": 32,
+      "frequency_score": 60,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 56,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 56, consensus 90, sources 3"
+    },
+    {
+      "candidate_id": "262b0298a9327669",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "Florida Garden",
+      "canonical_name": "florida garden",
+      "aliases": [
+        "Florida Garden"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Florida Garden",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Classic downtown cafe candidate.",
+          "rank_position": 41
+        },
+        {
+          "venue_name": "Florida Garden",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "classic downtown cafe candidate",
+          "rank_position": 25
+        },
+        {
+          "venue_name": "Florida Garden",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "classic downtown cafe candidate",
+          "rank_position": 7
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 90,
+      "editorial_score": 48,
+      "community_score": 32,
+      "frequency_score": 60,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 55,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 55, consensus 90, sources 3"
+    },
+    {
+      "candidate_id": "1029a2751747506a",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Hierbabuena",
+      "canonical_name": "hierbabuena",
+      "aliases": [
+        "Hierbabuena"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Hierbabuena",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "San Telmo cafe and restaurant candidate with local guide signal",
+          "rank_position": 43
+        },
+        {
+          "venue_name": "Hierbabuena",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "San Telmo cafe and restaurant candidate with local guide signal",
+          "rank_position": 18
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 62,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 62, sources 2"
+    },
+    {
+      "candidate_id": "119051ad76f707f4",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "Malvon",
+      "canonical_name": "malvon",
+      "aliases": [
+        "Malvon"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Malvon",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "brunch cafe with neighborhood recognition",
+          "rank_position": 22
+        },
+        {
+          "venue_name": "Malvon",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "brunch cafe with neighborhood recognition",
+          "rank_position": 12
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 62,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 62, sources 2"
+    },
+    {
+      "candidate_id": "d4cd2a18cb10805b",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Maleza Cafe",
+      "canonical_name": "maleza",
+      "aliases": [
+        "Maleza Cafe"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Maleza Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "neighborhood cafe candidate for underrepresented Colegiales coverage",
+          "rank_position": 20
+        },
+        {
+          "venue_name": "Maleza Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "neighborhood cafe candidate for underrepresented Colegiales coverage",
+          "rank_position": 13
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "e33c63a483c28ca8",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "Morro Cafe",
+      "canonical_name": "morro",
+      "aliases": [
+        "Morro Cafe"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Morro Cafe",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Villa Crespo cafe candidate requiring validation",
+          "rank_position": 226
+        },
+        {
+          "venue_name": "Morro Cafe",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Villa Crespo cafe candidate requiring validation",
+          "rank_position": 72
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "1a9a523cace5734f",
+      "city": "Buenos Aires",
+      "district": "Las Canitas",
+      "venue_name": "Le Ble Las Canitas",
+      "canonical_name": "le ble canitas",
+      "aliases": [
+        "Le Ble Las Canitas"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Le Ble Las Canitas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Las Canitas cafe candidate for missing district coverage",
+          "rank_position": 39
+        },
+        {
+          "venue_name": "Le Ble Las Canitas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Las Canitas cafe candidate for missing district coverage",
+          "rank_position": 15
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 74,
+      "category_confidence_score": 100,
+      "discovery_score": 46,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 46, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "a1b7cd5460d538f0",
+      "city": "Buenos Aires",
+      "district": "Las Canitas",
+      "venue_name": "Moshu Las Canitas",
+      "canonical_name": "moshu canitas",
+      "aliases": [
+        "Moshu Las Canitas"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Moshu Las Canitas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Las Canitas brunch and cafe candidate",
+          "rank_position": 40
+        },
+        {
+          "venue_name": "Moshu Las Canitas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Las Canitas brunch and cafe candidate",
+          "rank_position": 21
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 74,
+      "category_confidence_score": 100,
+      "discovery_score": 46,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 46, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "867c25e43776ac23",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "Julia",
+      "canonical_name": "julia",
+      "aliases": [
+        "Julia"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Julia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Small-format restaurant with tasting-menu identity.",
+          "rank_position": 16
+        },
+        {
+          "venue_name": "Julia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "small-format restaurant with tasting-menu identity",
+          "rank_position": 86
+        },
+        {
+          "venue_name": "Julia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "small-format restaurant with tasting-menu identity",
+          "rank_position": 17
+        },
+        {
+          "venue_name": "Julia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "small-format restaurant with tasting-menu identity",
+          "rank_position": 18
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 76,
+      "community_score": 35,
+      "frequency_score": 80,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "710b763f932de83e",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Roux",
+      "canonical_name": "roux",
+      "aliases": [
+        "Roux"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Roux",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/20597/best-restaurants-in-buenos-aires",
+          "context": "Recoleta restaurant candidate.",
+          "rank_position": 15
+        },
+        {
+          "venue_name": "Roux",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta restaurant candidate with guide visibility",
+          "rank_position": 69
+        },
+        {
+          "venue_name": "Roux",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Recoleta restaurant candidate with guide visibility",
+          "rank_position": 33
+        },
+        {
+          "venue_name": "Roux",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "Recoleta restaurant candidate with guide visibility",
+          "rank_position": 11
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Michelin",
+        "Tripadvisor",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 74,
+      "community_score": 34,
+      "frequency_score": 80,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "3685b3837a988034",
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "venue_name": "Anchoita",
+      "canonical_name": "anchoita",
+      "aliases": [
+        "Anchoita"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Anchoita",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Restaurant candidate linked to wine/provisions ecosystem.",
+          "rank_position": 36
+        },
+        {
+          "venue_name": "Anchoita",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Chacarita restaurant connected to wine and provisions ecosystem",
+          "rank_position": 82
+        },
+        {
+          "venue_name": "Anchoita",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "Chacarita restaurant connected to wine and provisions ecosystem",
+          "rank_position": 15
+        },
+        {
+          "venue_name": "Anchoita",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "Chacarita restaurant connected to wine and provisions ecosystem",
+          "rank_position": 16
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Local Restaurant Guide",
+        "Michelin",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 74,
+      "community_score": 34,
+      "frequency_score": 80,
+      "district_relevance_score": 82,
+      "category_confidence_score": 100,
+      "discovery_score": 71,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 71, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "109a9a47bb038eb4",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Cafe San Juan",
+      "canonical_name": "san juan",
+      "aliases": [
+        "Cafe San Juan"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Cafe San Juan",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/20597/best-restaurants-in-buenos-aires",
+          "context": "San Telmo restaurant candidate.",
+          "rank_position": 17
+        },
+        {
+          "venue_name": "Cafe San Juan",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "San Telmo restaurant candidate",
+          "rank_position": 91
+        },
+        {
+          "venue_name": "Cafe San Juan",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "San Telmo restaurant candidate",
+          "rank_position": 46
+        },
+        {
+          "venue_name": "Cafe San Juan",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "San Telmo restaurant candidate",
+          "rank_position": 30
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 72,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 71,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 71, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "15099ff5f4365522",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "El Cuartito",
+      "canonical_name": "cuartito",
+      "aliases": [
+        "El Cuartito"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "El Cuartito",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Classic pizzeria candidate requiring category review.",
+          "rank_position": 25
+        },
+        {
+          "venue_name": "El Cuartito",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "classic pizzeria with strong heritage and tourist signal",
+          "rank_position": 71
+        },
+        {
+          "venue_name": "El Cuartito",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "classic pizzeria with strong heritage and tourist signal",
+          "rank_position": 35
+        },
+        {
+          "venue_name": "El Cuartito",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "classic pizzeria with strong heritage and tourist signal",
+          "rank_position": 25
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 71,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 71, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "5bd1c65d45c6d160",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "Reliquia",
+      "canonical_name": "reliquia",
+      "aliases": [
+        "Reliquia"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Reliquia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Modern restaurant candidate.",
+          "rank_position": 28
+        },
+        {
+          "venue_name": "Reliquia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "modern restaurant candidate",
+          "rank_position": 87
+        },
+        {
+          "venue_name": "Reliquia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "modern restaurant candidate",
+          "rank_position": 43
+        },
+        {
+          "venue_name": "Reliquia",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "modern restaurant candidate",
+          "rank_position": 18
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Michelin",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 73,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 71,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 71, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "14b057060c2e15f3",
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "venue_name": "Apu Nena",
+      "canonical_name": "apu nena",
+      "aliases": [
+        "Apu Nena"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Apu Nena",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Chacarita restaurant candidate.",
+          "rank_position": 33
+        },
+        {
+          "venue_name": "Apu Nena",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Chacarita restaurant candidate with independent signal",
+          "rank_position": 80
+        },
+        {
+          "venue_name": "Apu Nena",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Chacarita restaurant candidate with independent signal",
+          "rank_position": 40
+        },
+        {
+          "venue_name": "Apu Nena",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "Chacarita restaurant candidate with independent signal",
+          "rank_position": 14
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Michelin",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 73,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 82,
+      "category_confidence_score": 100,
+      "discovery_score": 70,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 70, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "6aaa462b342c9f70",
+      "city": "Buenos Aires",
+      "district": "Belgrano",
+      "venue_name": "Corte Comedor",
+      "canonical_name": "corte comedor",
+      "aliases": [
+        "Corte Comedor"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Corte Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Belgrano restaurant candidate.",
+          "rank_position": 31
+        },
+        {
+          "venue_name": "Corte Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Belgrano restaurant candidate with guide visibility",
+          "rank_position": 74
+        },
+        {
+          "venue_name": "Corte Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Belgrano restaurant candidate with guide visibility",
+          "rank_position": 37
+        },
+        {
+          "venue_name": "Corte Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "Belgrano restaurant candidate with guide visibility",
+          "rank_position": 12
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Michelin",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 73,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 78,
+      "category_confidence_score": 100,
+      "discovery_score": 70,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 70, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "57fbb7027a4a5462",
+      "city": "Buenos Aires",
+      "district": "Belgrano",
+      "venue_name": "Narda Comedor",
+      "canonical_name": "narda comedor",
+      "aliases": [
+        "Narda Comedor"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Narda Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Belgrano restaurant candidate.",
+          "rank_position": 32
+        },
+        {
+          "venue_name": "Narda Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Belgrano restaurant candidate",
+          "rank_position": 75
+        },
+        {
+          "venue_name": "Narda Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Belgrano restaurant candidate",
+          "rank_position": 38
+        },
+        {
+          "venue_name": "Narda Comedor",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Belgrano restaurant candidate",
+          "rank_position": 27
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 78,
+      "category_confidence_score": 100,
+      "discovery_score": 69,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 69, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "6124e2c824bd8b04",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "Guerrin",
+      "canonical_name": "guerrin",
+      "aliases": [
+        "Guerrin"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Guerrin",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Classic pizzeria candidate requiring atmosphere review.",
+          "rank_position": 26
+        },
+        {
+          "venue_name": "Guerrin",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "classic pizzeria with heritage and tourist signal",
+          "rank_position": 98
+        },
+        {
+          "venue_name": "Guerrin",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "classic pizzeria with heritage and tourist signal",
+          "rank_position": 51
+        },
+        {
+          "venue_name": "Guerrin",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "classic pizzeria with heritage and tourist signal",
+          "rank_position": 36
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 68,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 68, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "ff6b5103adf84fa5",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Napoles",
+      "canonical_name": "napoles",
+      "aliases": [
+        "Napoles"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Napoles",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Rough Guides",
+          "source_type": "editorial",
+          "source_url": "https://www.roughguides.com/argentina/best-bars-buenos-aires/",
+          "context": "Visually distinctive bar candidate.",
+          "rank_position": 11
+        },
+        {
+          "venue_name": "Napoles",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "visually distinctive San Telmo venue candidate",
+          "rank_position": 96
+        },
+        {
+          "venue_name": "Napoles",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "visually distinctive San Telmo venue candidate",
+          "rank_position": 49
+        },
+        {
+          "venue_name": "Napoles",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "visually distinctive San Telmo venue candidate",
+          "rank_position": 34
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Rough Guides",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 86,
+      "category_confidence_score": 75,
+      "discovery_score": 68,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 68, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "07b1ddc4d92ebb4c",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "Dada Bistro",
+      "canonical_name": "dada",
+      "aliases": [
+        "Dada Bistro"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Dada Bistro",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Restaurant community mention.",
+          "rank_position": 29
+        },
+        {
+          "venue_name": "Dada Bistro",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Retiro bistro candidate with local signal",
+          "rank_position": 66
+        },
+        {
+          "venue_name": "Dada Bistro",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Retiro bistro candidate with local signal",
+          "rank_position": 32
+        },
+        {
+          "venue_name": "Dada Bistro",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Retiro bistro candidate with local signal",
+          "rank_position": 23
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 2,
+      "community_mentions": 2,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Reddit",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 51,
+      "community_score": 63,
+      "frequency_score": 80,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 67,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 67, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "0d182424a9b357a8",
+      "city": "Buenos Aires",
+      "district": "Puerto Madero",
+      "venue_name": "Chila",
+      "canonical_name": "chila",
+      "aliases": [
+        "Chila"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Chila",
+          "city": "Buenos Aires",
+          "district": "Puerto Madero",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Puerto Madero fine dining candidate with waterfront district relevance",
+          "rank_position": 58
+        },
+        {
+          "venue_name": "Chila",
+          "city": "Buenos Aires",
+          "district": "Puerto Madero",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "Puerto Madero fine dining candidate with waterfront district relevance",
+          "rank_position": 8
+        },
+        {
+          "venue_name": "Chila",
+          "city": "Buenos Aires",
+          "district": "Puerto Madero",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "Puerto Madero fine dining candidate with waterfront district relevance",
+          "rank_position": 11
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Tripadvisor"
+      ],
+      "consensus_score": 97,
+      "editorial_score": 54,
+      "community_score": 35,
+      "frequency_score": 60,
+      "district_relevance_score": 70,
+      "category_confidence_score": 100,
+      "discovery_score": 58,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 58, consensus 97, sources 3"
+    },
+    {
+      "candidate_id": "0ce79031cfdfed80",
+      "city": "Buenos Aires",
+      "district": "Puerto Madero",
+      "venue_name": "Cabaña Las Lilas",
+      "canonical_name": "cabana lilas",
+      "aliases": [
+        "Cabaña Las Lilas"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Cabaña Las Lilas",
+          "city": "Buenos Aires",
+          "district": "Puerto Madero",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Puerto Madero waterfront grill with high tourist signal",
+          "rank_position": 59
+        },
+        {
+          "venue_name": "Cabaña Las Lilas",
+          "city": "Buenos Aires",
+          "district": "Puerto Madero",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Puerto Madero waterfront grill with high tourist signal",
+          "rank_position": 29
+        },
+        {
+          "venue_name": "Cabaña Las Lilas",
+          "city": "Buenos Aires",
+          "district": "Puerto Madero",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Puerto Madero waterfront grill with high tourist signal",
+          "rank_position": 18
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 93,
+      "editorial_score": 51,
+      "community_score": 33,
+      "frequency_score": 60,
+      "district_relevance_score": 70,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 93, sources 3"
+    },
+    {
+      "candidate_id": "3f51e195e8969b28",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Cucina Paradiso Colegiales",
+      "canonical_name": "cucina paradiso",
+      "aliases": [
+        "Cucina Paradiso Colegiales"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Cucina Paradiso Colegiales",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Colegiales restaurant candidate requiring chain review",
+          "rank_position": 79
+        },
+        {
+          "venue_name": "Cucina Paradiso Colegiales",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Colegiales restaurant candidate requiring chain review",
+          "rank_position": 28
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "a88a9b44d8cd6bb9",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Narda Lepes Mercado",
+      "canonical_name": "narda lepes mercado",
+      "aliases": [
+        "Narda Lepes Mercado"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Narda Lepes Mercado",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Colegiales food-market candidate requiring venue validation",
+          "rank_position": 176
+        },
+        {
+          "venue_name": "Narda Lepes Mercado",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Colegiales food-market candidate requiring venue validation",
+          "rank_position": 48
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "62ce0f0668318543",
+      "city": "Buenos Aires",
+      "district": "Las Canitas",
+      "venue_name": "Las Cholas",
+      "canonical_name": "cholas",
+      "aliases": [
+        "Las Cholas"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Las Cholas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Las Canitas parrilla candidate",
+          "rank_position": 103
+        },
+        {
+          "venue_name": "Las Cholas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Las Canitas parrilla candidate",
+          "rank_position": 52
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 62,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 74,
+      "category_confidence_score": 100,
+      "discovery_score": 46,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 46, consensus 62, sources 2"
+    },
+    {
+      "candidate_id": "bc2a0bd03043207e",
+      "city": "Buenos Aires",
+      "district": "Las Canitas",
+      "venue_name": "Olsen Las Canitas",
+      "canonical_name": "olsen canitas",
+      "aliases": [
+        "Olsen Las Canitas"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Olsen Las Canitas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Las Canitas restaurant candidate requiring current-status review",
+          "rank_position": 167
+        },
+        {
+          "venue_name": "Olsen Las Canitas",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Las Canitas restaurant candidate requiring current-status review",
+          "rank_position": 79
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 62,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 74,
+      "category_confidence_score": 100,
+      "discovery_score": 46,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 46, consensus 62, sources 2"
+    },
+    {
+      "candidate_id": "2ce5eb24f47cabaf",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "Filo",
+      "canonical_name": "filo",
+      "aliases": [
+        "Filo"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Filo",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Retiro restaurant candidate",
+          "rank_position": 209
+        },
+        {
+          "venue_name": "Filo",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Retiro restaurant candidate",
+          "rank_position": 87
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 62,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 45,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 45, consensus 62, sources 2"
+    },
+    {
+      "candidate_id": "cb393705f53161d4",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "36 Billares",
+      "canonical_name": "36 billares",
+      "aliases": [
+        "36 Billares"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "36 Billares",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "historic cafe-bar candidate with heritage signal",
+          "rank_position": 199
+        },
+        {
+          "venue_name": "36 Billares",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "historic cafe-bar candidate with heritage signal",
+          "rank_position": 69
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 45,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 45, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "d91ec380feada0e8",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "Vini Bar",
+      "canonical_name": "vini",
+      "aliases": [
+        "Vini Bar"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Vini Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "wine_bar",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/786403/best-wine-bars-and-tasting-rooms-in-buenos-aires",
+          "context": "Villa Crespo wine bar candidate.",
+          "rank_position": 9
+        },
+        {
+          "venue_name": "Vini Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "wine_bar",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Wine community mention.",
+          "rank_position": 30
+        },
+        {
+          "venue_name": "Vini Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Villa Crespo wine bar candidate",
+          "rank_position": 110
+        },
+        {
+          "venue_name": "Vini Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "wine_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Villa Crespo wine bar candidate",
+          "rank_position": 57
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 2,
+      "community_mentions": 2,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Reddit",
+        "Tripadvisor",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 50,
+      "community_score": 63,
+      "frequency_score": 80,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 69,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 69, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "688e9aef29b15279",
+      "city": "Buenos Aires",
+      "district": "Las Canitas",
+      "venue_name": "La Cava de Vittorio",
+      "canonical_name": "cava vittorio",
+      "aliases": [
+        "La Cava de Vittorio",
+        "La Cava de Vittorio Belgrano"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "La Cava de Vittorio",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Las Canitas wine candidate for district coverage",
+          "rank_position": 124
+        },
+        {
+          "venue_name": "La Cava de Vittorio Belgrano",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Belgrano wine candidate",
+          "rank_position": 189
+        },
+        {
+          "venue_name": "La Cava de Vittorio Belgrano",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "wine_bar",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Belgrano wine candidate",
+          "rank_position": 57
+        },
+        {
+          "venue_name": "La Cava de Vittorio",
+          "city": "Buenos Aires",
+          "district": "Las Canitas",
+          "category": "wine_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Las Canitas wine candidate for district coverage",
+          "rank_position": 45
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 2,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 96,
+      "editorial_score": 51,
+      "community_score": 63,
+      "frequency_score": 80,
+      "district_relevance_score": 74,
+      "category_confidence_score": 100,
+      "discovery_score": 68,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 68, consensus 96, sources 3"
+    },
+    {
+      "candidate_id": "bf3926a3b0d6ae9a",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Gran Bar Danzon",
+      "canonical_name": "gran danzon",
+      "aliases": [
+        "Gran Bar Danzon"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Gran Bar Danzon",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta wine and cocktail candidate",
+          "rank_position": 115
+        },
+        {
+          "venue_name": "Gran Bar Danzon",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "wine_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Recoleta wine and cocktail candidate",
+          "rank_position": 61
+        },
+        {
+          "venue_name": "Gran Bar Danzon",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "wine_bar",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "Recoleta wine and cocktail candidate",
+          "rank_position": 24
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "50 Best Discovery",
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 95,
+      "editorial_score": 52,
+      "community_score": 34,
+      "frequency_score": 60,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 60,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 60, consensus 95, sources 3"
+    },
+    {
+      "candidate_id": "81967df30f4afa01",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Vina de San Telmo",
+      "canonical_name": "vina",
+      "aliases": [
+        "Vina de San Telmo"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Vina de San Telmo",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Visit BUE",
+          "source_type": "editorial",
+          "source_url": "https://visitbue.com/guias/GUIA_GASTRONOMICA_BUE_eng.pdf",
+          "context": "San Telmo wine candidate.",
+          "rank_position": 18
+        },
+        {
+          "venue_name": "Vina de San Telmo",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "San Telmo wine candidate",
+          "rank_position": 114
+        },
+        {
+          "venue_name": "Vina de San Telmo",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "San Telmo wine candidate",
+          "rank_position": 41
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Tripadvisor",
+        "Visit BUE",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 90,
+      "editorial_score": 48,
+      "community_score": 32,
+      "frequency_score": 60,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 58,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 58, consensus 90, sources 3"
+    },
+    {
+      "candidate_id": "d96b5787a1af33b2",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Aldo Vinoteca Recoleta",
+      "canonical_name": "aldo vinoteca",
+      "aliases": [
+        "Aldo Vinoteca Recoleta"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Aldo Vinoteca Recoleta",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta wine retail and tasting candidate",
+          "rank_position": 121
+        },
+        {
+          "venue_name": "Aldo Vinoteca Recoleta",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "wine_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Recoleta wine retail and tasting candidate",
+          "rank_position": 42
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 48,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 48, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "4adba3e2138c5eb3",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Finde",
+      "canonical_name": "finde",
+      "aliases": [
+        "Finde"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Finde",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Colegiales wine candidate",
+          "rank_position": 120
+        },
+        {
+          "venue_name": "Finde",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "wine_bar",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Colegiales wine candidate",
+          "rank_position": 33
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "010d3a1cd8f0ad70",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "Hache Almacen",
+      "canonical_name": "hache almacen",
+      "aliases": [
+        "Hache Almacen"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Hache Almacen",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Villa Crespo wine and small plates candidate",
+          "rank_position": 117
+        },
+        {
+          "venue_name": "Hache Almacen",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "wine_bar",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Villa Crespo wine and small plates candidate",
+          "rank_position": 30
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 61,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 47,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 47, consensus 61, sources 2"
+    },
+    {
+      "candidate_id": "bae6687c67a7f35b",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "venue_name": "878 Bar",
+      "canonical_name": "878",
+      "aliases": [
+        "878 Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "878 Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cocktail_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires/best-bars-buenos-aires-cocktail-guide-visit-bue-best-drinks",
+          "context": "Long-running cocktail bar candidate.",
+          "rank_position": 27
+        },
+        {
+          "venue_name": "878 Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "long-running cocktail bar candidate",
+          "rank_position": 134
+        },
+        {
+          "venue_name": "878 Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "long-running cocktail bar candidate",
+          "rank_position": 68
+        },
+        {
+          "venue_name": "878 Bar",
+          "city": "Buenos Aires",
+          "district": "Villa Crespo",
+          "category": "cocktail_bar",
+          "source": "World's Best Bars",
+          "source_type": "editorial",
+          "source_url": "https://www.worlds50bestbars.com/",
+          "context": "long-running cocktail bar candidate",
+          "rank_position": 9
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Time Out",
+        "Tripadvisor",
+        "World's Best Bars"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 75,
+      "community_score": 35,
+      "frequency_score": 80,
+      "district_relevance_score": 83,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "50a0481f6eb23fea",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Milion",
+      "canonical_name": "milion",
+      "aliases": [
+        "Milion"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Milion",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta mansion bar candidate with design signal",
+          "rank_position": 194
+        },
+        {
+          "venue_name": "Milion",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Recoleta mansion bar candidate with design signal",
+          "rank_position": 84
+        },
+        {
+          "venue_name": "Milion",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Recoleta mansion bar candidate with design signal",
+          "rank_position": 66
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 93,
+      "editorial_score": 51,
+      "community_score": 33,
+      "frequency_score": 60,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 60,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred pending editorial-review candidate; supports underrepresented district coverage; not previously processed; ranked by discovery 60, consensus 93, sources 3"
+    },
+    {
+      "candidate_id": "e180e3e7816a3bb0",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "Plaza Bar",
+      "canonical_name": "plaza",
+      "aliases": [
+        "Plaza Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Plaza Bar",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Retiro hotel bar candidate with heritage signal",
+          "rank_position": 204
+        },
+        {
+          "venue_name": "Plaza Bar",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Retiro hotel bar candidate with heritage signal",
+          "rank_position": 85
+        },
+        {
+          "venue_name": "Plaza Bar",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Retiro hotel bar candidate with heritage signal",
+          "rank_position": 74
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 93,
+      "editorial_score": 51,
+      "community_score": 33,
+      "frequency_score": 60,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 93, sources 3"
+    },
+    {
+      "candidate_id": "cf4b6889226bbe70",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "Trade Sky Bar",
+      "canonical_name": "trade sky",
+      "aliases": [
+        "Trade Sky Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Trade Sky Bar",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "sky bar candidate with view and tourist signal",
+          "rank_position": 139
+        },
+        {
+          "venue_name": "Trade Sky Bar",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "sky bar candidate with view and tourist signal",
+          "rank_position": 72
+        },
+        {
+          "venue_name": "Trade Sky Bar",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "sky bar candidate with view and tourist signal",
+          "rank_position": 46
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 93,
+      "editorial_score": 51,
+      "community_score": 33,
+      "frequency_score": 60,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 93, sources 3"
+    },
+    {
+      "candidate_id": "3b32c02b652eb143",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Bierlife",
+      "canonical_name": "bierlife",
+      "aliases": [
+        "Bierlife"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Bierlife",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/ArgentinaTravel/comments/1iaa6sy/top_mustvisit_spots_in_buenos_aires_bars/",
+          "context": "Craft beer community mention requiring review.",
+          "rank_position": 35
+        },
+        {
+          "venue_name": "Bierlife",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "craft beer and social bar candidate requiring category review",
+          "rank_position": 144
+        },
+        {
+          "venue_name": "Bierlife",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "craft beer and social bar candidate requiring category review",
+          "rank_position": 48
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "dee461d82c34b6d6",
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "venue_name": "Mixtape Bar",
+      "canonical_name": "mixtape",
+      "aliases": [
+        "Mixtape Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Mixtape Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "cocktail_bar",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Bar community mention.",
+          "rank_position": 31
+        },
+        {
+          "venue_name": "Mixtape Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Chacarita bar candidate with local community signal",
+          "rank_position": 143
+        },
+        {
+          "venue_name": "Mixtape Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "cocktail_bar",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Chacarita bar candidate with local community signal",
+          "rank_position": 36
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 82,
+      "category_confidence_score": 100,
+      "discovery_score": 57,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 57, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "91ed7aecaa6cd9d9",
+      "city": "Buenos Aires",
+      "district": "Belgrano",
+      "venue_name": "Puerta Uno",
+      "canonical_name": "puerta uno",
+      "aliases": [
+        "Puerta Uno"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Puerta Uno",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cocktail_bar",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/ArgentinaTravel/comments/1iaa6sy/top_mustvisit_spots_in_buenos_aires_bars/",
+          "context": "Belgrano cocktail/community candidate.",
+          "rank_position": 46
+        },
+        {
+          "venue_name": "Puerta Uno",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Belgrano cocktail candidate",
+          "rank_position": 142
+        },
+        {
+          "venue_name": "Puerta Uno",
+          "city": "Buenos Aires",
+          "district": "Belgrano",
+          "category": "cocktail_bar",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Belgrano cocktail candidate",
+          "rank_position": 35
+        }
+      ],
+      "status": "discovered",
+      "source_count": 3,
+      "editorial_mentions": 1,
+      "community_mentions": 2,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 92,
+      "editorial_score": 28,
+      "community_score": 63,
+      "frequency_score": 60,
+      "district_relevance_score": 78,
+      "category_confidence_score": 100,
+      "discovery_score": 56,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 56, consensus 92, sources 3"
+    },
+    {
+      "candidate_id": "33802fe1e8c52bbb",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Danzon Bar",
+      "canonical_name": "danzon",
+      "aliases": [
+        "Danzon Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Danzon Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta cocktail and wine candidate",
+          "rank_position": 151
+        },
+        {
+          "venue_name": "Danzon Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Recoleta cocktail and wine candidate",
+          "rank_position": 76
+        }
+      ],
+      "status": "discovered",
+      "source_count": 2,
+      "editorial_mentions": 1,
+      "community_mentions": 1,
+      "district_mentions": 2,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor"
+      ],
+      "consensus_score": 62,
+      "editorial_score": 28,
+      "community_score": 33,
+      "frequency_score": 40,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 48,
+      "discovery_notes": "Discovered candidate with insufficient independent signal for review priority.",
+      "previously_processed": false,
+      "reason_selected": "needed to satisfy controlled quota; supports underrepresented district coverage; not previously processed; ranked by discovery 48, consensus 62, sources 2"
+    }
+  ]
+}

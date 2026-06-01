@@ -1,0 +1,26 @@
+[
+  {
+    "venue_name": "Cuervo Cafe",
+    "candidate_id": "f6720109158248c0",
+    "google_place_id": "ChIJF19rgHjKvJURjAVINc8ud9k",
+    "source": "Example controlled source",
+    "source_type": "reddit",
+    "url": "https://example.com/sample-only",
+    "text": "SAMPLE ONLY: Quiet specialty coffee spot with wifi, laptop tables, and a few outlets.",
+    "language": "en",
+    "collected_at": "2026-06-01T00:00:00.000Z",
+    "notes": "SAMPLE ONLY - not real evidence"
+  },
+  {
+    "venue_name": "Lattente",
+    "candidate_id": "cee8356abb00fd58",
+    "google_place_id": "ChIJmezOB4a1vJURDMhzx6lY6xc",
+    "source": "Example controlled source",
+    "source_type": "blog",
+    "url": "https://example.com/sample-only",
+    "text": "SAMPLE ONLY: Buen cafe para leer, tranquilo por la manana, con seating limitado.",
+    "language": "es",
+    "collected_at": "2026-06-01T00:00:00.000Z",
+    "notes": "SAMPLE ONLY - not real evidence"
+  }
+]

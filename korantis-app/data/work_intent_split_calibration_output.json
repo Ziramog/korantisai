@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-06-01T02:23:28.951Z",
+  "fixtureRecordCount": 20,
+  "targetCafeCount": 5,
+  "outputs": [
+    {
+      "candidate_id": "f6720109158248c0",
+      "venue_name": "Cuervo Cafe",
+      "current_work_score": 57,
+      "work_possible_score": 54,
+      "work_recommended_score": 28,
+      "work_risk_score": 76,
+      "derived_work_score": 38,
+      "work_label": "short_laptop_possible",
+      "supporting_positive_signals": {
+        "laptop_signal": 80,
+        "wifi_signal": 72,
+        "outlet_signal": 74,
+        "seating_signal": 70,
+        "coffee_quality_signal": 79
+      },
+      "supporting_risk_signals": {
+        "crowded_signal": 76,
+        "loud_signal": 72
+      },
+      "constraints": [
+        "crowded",
+        "loud"
+      ],
+      "interpretation": "Short laptop possible: work can happen briefly, but risk or quick-stop pressure limits recommendation."
+    },
+    {
+      "candidate_id": "7f14b55338d8548d",
+      "venue_name": "LAB Tostadores de Cafe",
+      "current_work_score": 58,
+      "work_possible_score": 67,
+      "work_recommended_score": 60,
+      "work_risk_score": 17,
+      "derived_work_score": 66,
+      "work_label": "work_friendly_with_caveats",
+      "supporting_positive_signals": {
+        "work_signal": 74,
+        "laptop_signal": 76,
+        "wifi_signal": 72,
+        "outlet_signal": 74,
+        "study_signal": 70,
+        "long_stay_signal": 66,
+        "seating_signal": 68,
+        "coffee_quality_signal": 79
+      },
+      "supporting_risk_signals": {
+        "quick_stop_signal": 62
+      },
+      "constraints": [],
+      "interpretation": "Work friendly with caveats: usable for work, but not enough infrastructure evidence for a strong recommendation."
+    },
+    {
+      "candidate_id": "cee8356abb00fd58",
+      "venue_name": "Lattente",
+      "current_work_score": 60,
+      "work_possible_score": 46,
+      "work_recommended_score": 56,
+      "work_risk_score": 3,
+      "derived_work_score": 57,
+      "work_label": "work_friendly_with_caveats",
+      "supporting_positive_signals": {
+        "work_signal": 75,
+        "laptop_signal": 76,
+        "study_signal": 70,
+        "quiet_signal": 76,
+        "seating_signal": 74,
+        "coffee_quality_signal": 78
+      },
+      "supporting_risk_signals": {},
+      "constraints": [],
+      "interpretation": "Work friendly with caveats: usable for work, but not enough infrastructure evidence for a strong recommendation."
+    },
+    {
+      "candidate_id": "0840de562f715e4c",
+      "venue_name": "Cafe Crespin",
+      "current_work_score": 45,
+      "work_possible_score": 33,
+      "work_recommended_score": 0,
+      "work_risk_score": 76,
+      "derived_work_score": 17,
+      "work_label": "work_not_recommended",
+      "supporting_positive_signals": {
+        "work_signal": 51,
+        "laptop_signal": 76,
+        "long_stay_signal": 66,
+        "seating_signal": 70,
+        "coffee_quality_signal": 78
+      },
+      "supporting_risk_signals": {
+        "crowded_signal": 72,
+        "loud_signal": 72
+      },
+      "constraints": [
+        "crowded",
+        "loud"
+      ],
+      "interpretation": "Work risk dominates; treat as quick stop or non-work venue."
+    },
+    {
+      "candidate_id": "590e25153237d813",
+      "venue_name": "Vive Cafe",
+      "current_work_score": 45,
+      "work_possible_score": 25,
+      "work_recommended_score": 0,
+      "work_risk_score": 72,
+      "derived_work_score": 14,
+      "work_label": "work_not_recommended",
+      "supporting_positive_signals": {
+        "outlet_signal": 74,
+        "study_signal": 74,
+        "quiet_signal": 68,
+        "long_stay_signal": 48,
+        "seating_signal": 50,
+        "coffee_quality_signal": 80
+      },
+      "supporting_risk_signals": {
+        "quick_stop_signal": 65
+      },
+      "constraints": [
+        "takeaway_first"
+      ],
+      "interpretation": "Work risk dominates; treat as quick stop or non-work venue."
+    }
+  ],
+  "formulaDiagnostics": [
+    "Coffee-only evidence remains isolated from work_possible.",
+    "Negative constraints properly cap work_recommended.",
+    "work_possible is useful as a separate signal from work_recommended.",
+    "Lattente guardrail fixed: recommended no longer exceeds possible by more than 10.",
+    "Work labels are useful: calibration produced multiple distinct outcomes.",
+    "Recommended score may be too strict for real-world work cafes; review after real evidence import."
+  ]
+}

@@ -37,5 +37,66 @@
       "Thames 1891"
     ],
     "notes": "Palermo Soho branch is preferred for the current pilot candidate."
+  },
+  "La Noire": {
+    "aliases": [
+      "La Noire",
+      "La noire",
+      "La Noire Cafe",
+      "La Noire Cafe Chacarita",
+      "La Noire Cafe Colegiales"
+    ],
+    "preferred_addresses": [
+      "Roseti 344"
+    ],
+    "notes": "Controlled batch repair alias set. District absence is not a hard blocker when CABA, name, and category match."
+  },
+  "Cafe Registrado": {
+    "aliases": [
+      "Cafe Registrado",
+      "Cafe registrado",
+      "Café Registrado"
+    ],
+    "preferred_addresses": [
+      "Costa Rica 5901"
+    ],
+    "notes": "Controlled batch repair prefers the Palermo/Costa Rica branch."
+  },
+  "Oli Cafe": {
+    "aliases": [
+      "Oli",
+      "Oli Cafe",
+      "Oli Café"
+    ],
+    "preferred_addresses": [
+      "Costa Rica 6020"
+    ],
+    "notes": "Controlled batch repair alias set for the CABA Oli venue."
+  },
+  "Confiteria Las Violetas": {
+    "aliases": [
+      "Confiteria Las Violetas",
+      "Confitería Las Violetas",
+      "Las Violetas"
+    ],
+    "preferred_addresses": [
+      "Av. Rivadavia 3899",
+      "Rivadavia 3899"
+    ],
+    "notes": "Controlled batch repair prefers the historic Rivadavia venue."
+  },
+  "Aldos": {
+    "aliases": [
+      "Aldos",
+      "Aldo's",
+      "Aldo's Restoran Vinoteca",
+      "Aldos Restoran Vinoteca",
+      "Aldos Vinoteca",
+      "Aldo's Vinoteca"
+    ],
+    "preferred_addresses": [
+      "Moreno 372"
+    ],
+    "notes": "Controlled batch repair alias set for the Buenos Aires wine bar/vinoteca."
   }
 }

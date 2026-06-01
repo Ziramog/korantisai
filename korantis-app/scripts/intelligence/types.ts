@@ -66,6 +66,9 @@ export type ExperienceSignals = {
 
 export type IntentScores = {
   work_score: number;
+  work_possible_score?: number;
+  work_recommended_score?: number;
+  work_risk_score?: number;
   reading_score: number;
   date_score: number;
   conversation_score: number;

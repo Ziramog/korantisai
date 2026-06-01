@@ -1,0 +1,2532 @@
+{
+  "generatedAt": "2026-06-01T02:31:40.227Z",
+  "quotas": {
+    "cafe": 10,
+    "restaurant": 10,
+    "wine_bar": 5,
+    "cocktail_bar": 5
+  },
+  "count": 30,
+  "candidates": [
+    {
+      "candidate_id": "1e2c182f70584a67",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "La Noire",
+      "canonical_name": "noire",
+      "aliases": [
+        "La Noire",
+        "La Noire Chacarita"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "La Noire",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Coffee community mention.",
+          "rank_position": 16
+        },
+        {
+          "venue_name": "La Noire",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Palermo coffee candidate with neighborhood signal",
+          "rank_position": 10
+        },
+        {
+          "venue_name": "La Noire Chacarita",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Chacarita coffee candidate requiring branch review",
+          "rank_position": 221
+        },
+        {
+          "venue_name": "La Noire",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Palermo coffee candidate with neighborhood signal",
+          "rank_position": 8
+        },
+        {
+          "venue_name": "La Noire Chacarita",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Chacarita coffee candidate requiring branch review",
+          "rank_position": 70
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 3,
+      "district_mentions": 3,
+      "sources": [
+        "Reddit",
+        "Secret Buenos Aires",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 50,
+      "community_score": 93,
+      "frequency_score": 100,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 80,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 80, consensus 100, sources 3"
+    },
+    {
+      "candidate_id": "10dfc58b0daef397",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Cafe Registrado",
+      "canonical_name": "registrado",
+      "aliases": [
+        "Cafe Registrado"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Cafe Registrado",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/18317/best-coffee-shops-and-cafes-in-buenos-aires",
+          "context": "Specialty coffee candidate.",
+          "rank_position": 27
+        },
+        {
+          "venue_name": "Cafe Registrado",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "specialty coffee candidate with broader city visibility",
+          "rank_position": 13
+        },
+        {
+          "venue_name": "Cafe Registrado",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "specialty coffee candidate with broader city visibility",
+          "rank_position": 7
+        },
+        {
+          "venue_name": "Cafe Registrado",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "specialty coffee candidate with broader city visibility",
+          "rank_position": 3
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 72,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "36710136b452a369",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "La Biela",
+      "canonical_name": "biela",
+      "aliases": [
+        "La Biela"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "La Biela",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Classic Recoleta cafe candidate.",
+          "rank_position": 21
+        },
+        {
+          "venue_name": "La Biela",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "classic Recoleta cafe with heritage and tourist signal",
+          "rank_position": 30
+        },
+        {
+          "venue_name": "La Biela",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "classic Recoleta cafe with heritage and tourist signal",
+          "rank_position": 16
+        },
+        {
+          "venue_name": "La Biela",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "classic Recoleta cafe with heritage and tourist signal",
+          "rank_position": 12
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 71,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 71, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "ef66d599db0d3a05",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Oli Cafe",
+      "canonical_name": "oli",
+      "aliases": [
+        "Oli Cafe"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Oli Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Neighborhood cafe and brunch candidate.",
+          "rank_position": 6
+        },
+        {
+          "venue_name": "Oli Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Colegiales cafe and brunch candidate",
+          "rank_position": 18
+        },
+        {
+          "venue_name": "Oli Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Colegiales cafe and brunch candidate",
+          "rank_position": 11
+        },
+        {
+          "venue_name": "Oli Cafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Colegiales cafe and brunch candidate",
+          "rank_position": 4
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Secret Buenos Aires",
+        "Time Out",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 74,
+      "community_score": 34,
+      "frequency_score": 80,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 71,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 71, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "b214fc1984662f1f",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Cafe Rivas",
+      "canonical_name": "rivas",
+      "aliases": [
+        "Cafe Rivas"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Cafe Rivas",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "San Telmo cafe candidate.",
+          "rank_position": 22
+        },
+        {
+          "venue_name": "Cafe Rivas",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "San Telmo cafe candidate with historic neighborhood relevance",
+          "rank_position": 41
+        },
+        {
+          "venue_name": "Cafe Rivas",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "San Telmo cafe candidate with historic neighborhood relevance",
+          "rank_position": 17
+        },
+        {
+          "venue_name": "Cafe Rivas",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "San Telmo cafe candidate with historic neighborhood relevance",
+          "rank_position": 16
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 70,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 70, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "710e5dc162f9bd6b",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Full City Coffee House",
+      "canonical_name": "full city house",
+      "aliases": [
+        "Full City Coffee House"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Full City Coffee House",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/18317/best-coffee-shops-and-cafes-in-buenos-aires",
+          "context": "Specialty coffee candidate.",
+          "rank_position": 24
+        },
+        {
+          "venue_name": "Full City Coffee House",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/pourover/comments/1n3p5my",
+          "context": "Coffee community favorite.",
+          "rank_position": 4
+        },
+        {
+          "venue_name": "Full City Coffee House",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "coffee house candidate with community and guide mentions",
+          "rank_position": 5
+        },
+        {
+          "venue_name": "Full City Coffee House",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "coffee house candidate with community and guide mentions",
+          "rank_position": 5
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 2,
+      "community_mentions": 2,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Reddit",
+        "Tripadvisor",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 50,
+      "community_score": 63,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 70,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 70, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "e18b4366ce888e35",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "Cafe Tortoni",
+      "canonical_name": "tortoni",
+      "aliases": [
+        "Cafe Tortoni"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Cafe Tortoni",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Historic cafe candidate requiring atmosphere review.",
+          "rank_position": 20
+        },
+        {
+          "venue_name": "Cafe Tortoni",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "heritage cafe with high tourist and landmark signal",
+          "rank_position": 26
+        },
+        {
+          "venue_name": "Cafe Tortoni",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "heritage cafe with high tourist and landmark signal",
+          "rank_position": 13
+        },
+        {
+          "venue_name": "Cafe Tortoni",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "heritage cafe with high tourist and landmark signal",
+          "rank_position": 8
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 68,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 68, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "9cc2e30ebeb7fad4",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "Confiteria La Ideal",
+      "canonical_name": "confiteria ideal",
+      "aliases": [
+        "Confiteria La Ideal"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Confiteria La Ideal",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Historic cafe and salon candidate.",
+          "rank_position": 19
+        },
+        {
+          "venue_name": "Confiteria La Ideal",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "restored historic cafe and salon candidate",
+          "rank_position": 27
+        },
+        {
+          "venue_name": "Confiteria La Ideal",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "restored historic cafe and salon candidate",
+          "rank_position": 14
+        },
+        {
+          "venue_name": "Confiteria La Ideal",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "restored historic cafe and salon candidate",
+          "rank_position": 9
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 68,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 68, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "163054cff524fd6d",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "Confiteria Las Violetas",
+      "canonical_name": "confiteria violetas",
+      "aliases": [
+        "Confiteria Las Violetas"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Confiteria Las Violetas",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/18317/best-coffee-shops-and-cafes-in-buenos-aires",
+          "context": "Historic cafe candidate requiring editorial review.",
+          "rank_position": 33
+        },
+        {
+          "venue_name": "Confiteria Las Violetas",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "heritage cafe candidate with landmark signal",
+          "rank_position": 28
+        },
+        {
+          "venue_name": "Confiteria Las Violetas",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "heritage cafe candidate with landmark signal",
+          "rank_position": 15
+        },
+        {
+          "venue_name": "Confiteria Las Violetas",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "cafe",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "heritage cafe candidate with landmark signal",
+          "rank_position": 10
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 72,
+      "community_score": 33,
+      "frequency_score": 80,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 68,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 68, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "550f646712bb74ba",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Casa Dingo",
+      "canonical_name": "casa dingo",
+      "aliases": [
+        "Casa Dingo"
+      ],
+      "category": "cafe",
+      "merged_sources": [
+        {
+          "venue_name": "Casa Dingo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/es/buenos-aires/guia-time-out-buenos-aires-restaurantes-bares-cafeterias-2025",
+          "context": "Featured cafe in the Time Out Buenos Aires food guide context.",
+          "rank_position": 1
+        },
+        {
+          "venue_name": "Casa Dingo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Palermo cafe candidate with creative district relevance",
+          "rank_position": 16
+        },
+        {
+          "venue_name": "Casa Dingo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cafe",
+          "source": "Secret Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://secretbuenosaires.com/",
+          "context": "Palermo cafe candidate with creative district relevance",
+          "rank_position": 10
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 3,
+      "editorial_mentions": 2,
+      "community_mentions": 1,
+      "district_mentions": 3,
+      "sources": [
+        "Secret Buenos Aires",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 94,
+      "editorial_score": 52,
+      "community_score": 34,
+      "frequency_score": 60,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 61,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 61, consensus 94, sources 3"
+    },
+    {
+      "candidate_id": "52b2f7b096dd8999",
+      "city": "Buenos Aires",
+      "district": "Palermo Hollywood",
+      "venue_name": "Sacro",
+      "canonical_name": "sacro",
+      "aliases": [
+        "Sacro"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Sacro",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Design-forward restaurant candidate.",
+          "rank_position": 14
+        },
+        {
+          "venue_name": "Sacro",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Design-forward restaurant candidate also found in local food guides.",
+          "rank_position": 35
+        },
+        {
+          "venue_name": "Sacro",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "design-forward restaurant candidate",
+          "rank_position": 54
+        },
+        {
+          "venue_name": "Sacro",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "design-forward restaurant candidate",
+          "rank_position": 25
+        },
+        {
+          "venue_name": "Sacro",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "design-forward restaurant candidate",
+          "rank_position": 9
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "50 Best Discovery",
+        "Culture Trip",
+        "Local Restaurant Guide",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 95,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 92,
+      "category_confidence_score": 100,
+      "discovery_score": 84,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 84, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "7cf91bb87f073374",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Bar El Federal",
+      "canonical_name": "federal",
+      "aliases": [
+        "Bar El Federal"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Bar El Federal",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/20597/best-restaurants-in-buenos-aires",
+          "context": "Historic bar and restaurant candidate.",
+          "rank_position": 18
+        },
+        {
+          "venue_name": "Bar El Federal",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Historic bar notable candidate.",
+          "rank_position": 23
+        },
+        {
+          "venue_name": "Bar El Federal",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "historic San Telmo bar and restaurant candidate",
+          "rank_position": 92
+        },
+        {
+          "venue_name": "Bar El Federal",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "historic San Telmo bar and restaurant candidate",
+          "rank_position": 47
+        },
+        {
+          "venue_name": "Bar El Federal",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "historic San Telmo bar and restaurant candidate",
+          "rank_position": 31
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Tripadvisor",
+        "Visit Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 93,
+      "community_score": 33,
+      "frequency_score": 100,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 82,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 82, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "657e8e9d25da03b4",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "Elena",
+      "canonical_name": "elena",
+      "aliases": [
+        "Elena"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Elena",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Hotel restaurant with polished dining atmosphere.",
+          "rank_position": 18
+        },
+        {
+          "venue_name": "Elena",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "hotel restaurant with polished dining atmosphere",
+          "rank_position": 65
+        },
+        {
+          "venue_name": "Elena",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "hotel restaurant with polished dining atmosphere",
+          "rank_position": 31
+        },
+        {
+          "venue_name": "Elena",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "hotel restaurant with polished dining atmosphere",
+          "rank_position": 9
+        },
+        {
+          "venue_name": "Elena",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "hotel restaurant with polished dining atmosphere",
+          "rank_position": 12
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "50 Best Discovery",
+        "Culture Trip",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 98,
+      "community_score": 35,
+      "frequency_score": 100,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 82,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 82, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "e8f1e2cb4f60cef8",
+      "city": "Buenos Aires",
+      "district": "Microcentro",
+      "venue_name": "Los Galgos",
+      "canonical_name": "galgos",
+      "aliases": [
+        "Los Galgos"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Los Galgos",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/BuenosAires/comments/1lca2od",
+          "context": "Food community mention.",
+          "rank_position": 20
+        },
+        {
+          "venue_name": "Los Galgos",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Local Guide",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "Historic bar and restaurant candidate.",
+          "rank_position": 24
+        },
+        {
+          "venue_name": "Los Galgos",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "historic bar and restaurant candidate",
+          "rank_position": 97
+        },
+        {
+          "venue_name": "Los Galgos",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "historic bar and restaurant candidate",
+          "rank_position": 50
+        },
+        {
+          "venue_name": "Los Galgos",
+          "city": "Buenos Aires",
+          "district": "Microcentro",
+          "category": "restaurant",
+          "source": "Visit Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://turismo.buenosaires.gob.ar/",
+          "context": "historic bar and restaurant candidate",
+          "rank_position": 35
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 3,
+      "community_mentions": 2,
+      "district_mentions": 5,
+      "sources": [
+        "Culture Trip",
+        "Local Guide",
+        "Reddit",
+        "Tripadvisor",
+        "Visit Buenos Aires"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 72,
+      "community_score": 63,
+      "frequency_score": 100,
+      "district_relevance_score": 68,
+      "category_confidence_score": 100,
+      "discovery_score": 78,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 78, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "bfa47723f6a1c6da",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "La Carniceria",
+      "canonical_name": "carniceria",
+      "aliases": [
+        "La Carniceria"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "La Carniceria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Compact restaurant with strong grill identity.",
+          "rank_position": 13
+        },
+        {
+          "venue_name": "La Carniceria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "compact grill restaurant with distinctive identity",
+          "rank_position": 49
+        },
+        {
+          "venue_name": "La Carniceria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "compact grill restaurant with distinctive identity",
+          "rank_position": 4
+        },
+        {
+          "venue_name": "La Carniceria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "compact grill restaurant with distinctive identity",
+          "rank_position": 6
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 76,
+      "community_score": 35,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 74,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 74, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "ac1c9b1deca46b6d",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Aramburu",
+      "canonical_name": "aramburu",
+      "aliases": [
+        "Aramburu"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Aramburu",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Fine dining candidate with strong editorial visibility.",
+          "rank_position": 17
+        },
+        {
+          "venue_name": "Aramburu",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "fine dining candidate with strong editorial visibility",
+          "rank_position": 68
+        },
+        {
+          "venue_name": "Aramburu",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "fine dining candidate with strong editorial visibility",
+          "rank_position": 10
+        },
+        {
+          "venue_name": "Aramburu",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "fine dining candidate with strong editorial visibility",
+          "rank_position": 13
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 76,
+      "community_score": 35,
+      "frequency_score": 80,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 73,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 73, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "ca7f537241874147",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Mengano",
+      "canonical_name": "mengano",
+      "aliases": [
+        "Mengano"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Mengano",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Local Restaurant Guide",
+          "source_type": "editorial",
+          "source_url": "https://www.eater.com/maps/best-buenos-aires-restaurants-argentina",
+          "context": "Restaurant candidate with local cuisine identity.",
+          "rank_position": 29
+        },
+        {
+          "venue_name": "Mengano",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "modern Argentine restaurant candidate",
+          "rank_position": 53
+        },
+        {
+          "venue_name": "Mengano",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "modern Argentine restaurant candidate",
+          "rank_position": 6
+        },
+        {
+          "venue_name": "Mengano",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "modern Argentine restaurant candidate",
+          "rank_position": 8
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Local Restaurant Guide",
+        "Michelin",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 74,
+      "community_score": 34,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 73,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 73, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "3cd171b22d21403f",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Nino Gordo",
+      "canonical_name": "nino gordo",
+      "aliases": [
+        "Nino Gordo"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Nino Gordo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "High-energy Palermo restaurant candidate.",
+          "rank_position": 11
+        },
+        {
+          "venue_name": "Nino Gordo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "high-energy restaurant with strong Palermo identity",
+          "rank_position": 47
+        },
+        {
+          "venue_name": "Nino Gordo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "high-energy restaurant with strong Palermo identity",
+          "rank_position": 21
+        },
+        {
+          "venue_name": "Nino Gordo",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "high-energy restaurant with strong Palermo identity",
+          "rank_position": 4
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Culture Trip",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 75,
+      "community_score": 34,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 73,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 73, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "d3f19d4d393102ab",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Proper",
+      "canonical_name": "proper",
+      "aliases": [
+        "Proper"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Proper",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Atmospheric restaurant candidate with repeated guide presence.",
+          "rank_position": 12
+        },
+        {
+          "venue_name": "Proper",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "atmospheric restaurant with editorial visibility",
+          "rank_position": 48
+        },
+        {
+          "venue_name": "Proper",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "atmospheric restaurant with editorial visibility",
+          "rank_position": 22
+        },
+        {
+          "venue_name": "Proper",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "atmospheric restaurant with editorial visibility",
+          "rank_position": 5
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Culture Trip",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 75,
+      "community_score": 34,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 73,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 73, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "63bc091412e483d5",
+      "city": "Buenos Aires",
+      "district": "Colegiales",
+      "venue_name": "Anafe",
+      "canonical_name": "anafe",
+      "aliases": [
+        "Anafe"
+      ],
+      "category": "restaurant",
+      "merged_sources": [
+        {
+          "venue_name": "Anafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Creative neighborhood restaurant candidate.",
+          "rank_position": 15
+        },
+        {
+          "venue_name": "Anafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "creative neighborhood restaurant candidate",
+          "rank_position": 78
+        },
+        {
+          "venue_name": "Anafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "creative neighborhood restaurant candidate",
+          "rank_position": 13
+        },
+        {
+          "venue_name": "Anafe",
+          "city": "Buenos Aires",
+          "district": "Colegiales",
+          "category": "restaurant",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "creative neighborhood restaurant candidate",
+          "rank_position": 15
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 76,
+      "community_score": 35,
+      "frequency_score": 80,
+      "district_relevance_score": 84,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "babcdf5ac92972fc",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Aldos",
+      "canonical_name": "aldos",
+      "aliases": [
+        "Aldos"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Restaurant and wine bar candidate.",
+          "rank_position": 29
+        },
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/786403/best-wine-bars-and-tasting-rooms-in-buenos-aires",
+          "context": "Wine bar and restaurant with repeated guide visibility.",
+          "rank_position": 2
+        },
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Bars for Kings",
+          "source_type": "editorial",
+          "source_url": "https://barsforkings.com/blog/best-cocktail-bars-buenos-aires-2026/",
+          "context": "Wine-and-cocktail guide candidate in San Telmo.",
+          "rank_position": 2
+        },
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "restaurant and wine bar with strong guide visibility",
+          "rank_position": 106
+        },
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "restaurant and wine bar with strong guide visibility",
+          "rank_position": 55
+        },
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "restaurant and wine bar with strong guide visibility",
+          "rank_position": 19
+        },
+        {
+          "venue_name": "Aldos",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "wine_bar",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "restaurant and wine bar with strong guide visibility",
+          "rank_position": 21
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 7,
+      "editorial_mentions": 6,
+      "community_mentions": 1,
+      "district_mentions": 7,
+      "sources": [
+        "50 Best Discovery",
+        "Bars for Kings",
+        "Culture Trip",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 96,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 83,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 83, consensus 100, sources 7"
+    },
+    {
+      "candidate_id": "81bfa94e67696301",
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "venue_name": "Anchoita Cava",
+      "canonical_name": "anchoita cava",
+      "aliases": [
+        "Anchoita Cava"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Anchoita Cava",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Wine and provisions candidate with editorial pull.",
+          "rank_position": 32
+        },
+        {
+          "venue_name": "Anchoita Cava",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/786403/best-wine-bars-and-tasting-rooms-in-buenos-aires",
+          "context": "Wine retail and tasting candidate with strong editorial fit.",
+          "rank_position": 7
+        },
+        {
+          "venue_name": "Anchoita Cava",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "wine and provisions candidate with strong editorial pull",
+          "rank_position": 108
+        },
+        {
+          "venue_name": "Anchoita Cava",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "wine and provisions candidate with strong editorial pull",
+          "rank_position": 21
+        },
+        {
+          "venue_name": "Anchoita Cava",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "wine and provisions candidate with strong editorial pull",
+          "rank_position": 23
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 97,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 82,
+      "category_confidence_score": 100,
+      "discovery_score": 83,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 83, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "f4d88d05df0e7023",
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "venue_name": "Naranjo Bar",
+      "canonical_name": "naranjo",
+      "aliases": [
+        "Naranjo Bar"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Naranjo Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires",
+          "context": "Natural wine bar and restaurant candidate.",
+          "rank_position": 31
+        },
+        {
+          "venue_name": "Naranjo Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/786403/best-wine-bars-and-tasting-rooms-in-buenos-aires",
+          "context": "Natural wine and small plates candidate.",
+          "rank_position": 6
+        },
+        {
+          "venue_name": "Naranjo Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "natural wine and small plates candidate",
+          "rank_position": 107
+        },
+        {
+          "venue_name": "Naranjo Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "Michelin",
+          "source_type": "editorial",
+          "source_url": "https://guide.michelin.com/ar/en/buenos-aires-region/buenos-aires/restaurants",
+          "context": "natural wine and small plates candidate",
+          "rank_position": 20
+        },
+        {
+          "venue_name": "Naranjo Bar",
+          "city": "Buenos Aires",
+          "district": "Chacarita",
+          "category": "wine_bar",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "natural wine and small plates candidate",
+          "rank_position": 22
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "50 Best Discovery",
+        "Michelin",
+        "Time Out",
+        "Tripadvisor",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 97,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 82,
+      "category_confidence_score": 100,
+      "discovery_score": 83,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 83, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "e56ae89169d01760",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "La Malbequeria",
+      "canonical_name": "malbequeria",
+      "aliases": [
+        "La Malbequeria"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "La Malbequeria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/786403/best-wine-bars-and-tasting-rooms-in-buenos-aires",
+          "context": "Malbec-focused wine candidate.",
+          "rank_position": 5
+        },
+        {
+          "venue_name": "La Malbequeria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "View Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://viewbuenosaires.com/wine-bars-buenos-aires/",
+          "context": "Wine bar candidate.",
+          "rank_position": 16
+        },
+        {
+          "venue_name": "La Malbequeria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Malbec-focused wine candidate",
+          "rank_position": 113
+        },
+        {
+          "venue_name": "La Malbequeria",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Malbec-focused wine candidate",
+          "rank_position": 60
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "View Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 32,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "a9953333ae4ecdc5",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Trova Bar",
+      "canonical_name": "trova",
+      "aliases": [
+        "Trova Bar"
+      ],
+      "category": "wine_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Trova Bar",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "Wanderlog",
+          "source_type": "editorial",
+          "source_url": "https://wanderlog.com/list/geoCategory/786403/best-wine-bars-and-tasting-rooms-in-buenos-aires",
+          "context": "Palermo wine candidate.",
+          "rank_position": 10
+        },
+        {
+          "venue_name": "Trova Bar",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "View Buenos Aires",
+          "source_type": "editorial",
+          "source_url": "https://viewbuenosaires.com/wine-bars-buenos-aires/",
+          "context": "Palermo wine bar candidate.",
+          "rank_position": 14
+        },
+        {
+          "venue_name": "Trova Bar",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Palermo wine candidate",
+          "rank_position": 111
+        },
+        {
+          "venue_name": "Trova Bar",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "wine_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Palermo wine candidate",
+          "rank_position": 58
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 4,
+      "editorial_mentions": 3,
+      "community_mentions": 1,
+      "district_mentions": 4,
+      "sources": [
+        "Culture Trip",
+        "Tripadvisor",
+        "View Buenos Aires",
+        "Wanderlog"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 71,
+      "community_score": 32,
+      "frequency_score": 80,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 72,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 72, consensus 100, sources 4"
+    },
+    {
+      "candidate_id": "d42d1a76ecf6518e",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "venue_name": "Verne Club",
+      "canonical_name": "verne club",
+      "aliases": [
+        "Verne Club"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Verne Club",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cocktail_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires/best-bars-buenos-aires-cocktail-guide-visit-bue-best-drinks",
+          "context": "Palermo cocktail candidate.",
+          "rank_position": 25
+        },
+        {
+          "venue_name": "Verne Club",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cocktail_bar",
+          "source": "Marriott Bonvoy Traveler",
+          "source_type": "editorial",
+          "source_url": "https://traveler.marriott.com/buenos-aires/best-buenos-aires-bars/",
+          "context": "Palermo cocktail guide candidate.",
+          "rank_position": 9
+        },
+        {
+          "venue_name": "Verne Club",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Palermo cocktail candidate",
+          "rank_position": 132
+        },
+        {
+          "venue_name": "Verne Club",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "Palermo cocktail candidate",
+          "rank_position": 66
+        },
+        {
+          "venue_name": "Verne Club",
+          "city": "Buenos Aires",
+          "district": "Palermo Soho",
+          "category": "cocktail_bar",
+          "source": "World's Best Bars",
+          "source_type": "editorial",
+          "source_url": "https://www.worlds50bestbars.com/",
+          "context": "Palermo cocktail candidate",
+          "rank_position": 7
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "Culture Trip",
+        "Marriott Bonvoy Traveler",
+        "Time Out",
+        "Tripadvisor",
+        "World's Best Bars"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 96,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 95,
+      "category_confidence_score": 100,
+      "discovery_score": 85,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 85, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "d8c238d6d35a7147",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "venue_name": "Doppelganger Bar",
+      "canonical_name": "doppelganger",
+      "aliases": [
+        "Doppelganger Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Doppelganger Bar",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires/best-bars-buenos-aires-cocktail-guide-visit-bue-best-drinks",
+          "context": "San Telmo cocktail candidate.",
+          "rank_position": 23
+        },
+        {
+          "venue_name": "Doppelganger Bar",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Sherpa Food Tours",
+          "source_type": "editorial",
+          "source_url": "https://www.sherpafoodtours.com/buenos-aires-best-cocktail-bars-a-neighbourhood-guide/",
+          "context": "San Telmo cocktail guide candidate.",
+          "rank_position": 6
+        },
+        {
+          "venue_name": "Doppelganger Bar",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "San Telmo cocktail candidate",
+          "rank_position": 130
+        },
+        {
+          "venue_name": "Doppelganger Bar",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "San Telmo cocktail candidate",
+          "rank_position": 64
+        },
+        {
+          "venue_name": "Doppelganger Bar",
+          "city": "Buenos Aires",
+          "district": "San Telmo",
+          "category": "cocktail_bar",
+          "source": "World's Best Bars",
+          "source_type": "editorial",
+          "source_url": "https://www.worlds50bestbars.com/",
+          "context": "San Telmo cocktail candidate",
+          "rank_position": 5
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 4,
+      "community_mentions": 1,
+      "district_mentions": 5,
+      "sources": [
+        "Culture Trip",
+        "Sherpa Food Tours",
+        "Time Out",
+        "Tripadvisor",
+        "World's Best Bars"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 96,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 86,
+      "category_confidence_score": 100,
+      "discovery_score": 83,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 83, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "59fe3241918154cb",
+      "city": "Buenos Aires",
+      "district": "Palermo Hollywood",
+      "venue_name": "Uptown",
+      "canonical_name": "uptown",
+      "aliases": [
+        "Uptown",
+        "Uptown BA"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Uptown",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "cocktail_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires/best-bars-buenos-aires-cocktail-guide-visit-bue-best-drinks",
+          "context": "High-concept cocktail bar candidate.",
+          "rank_position": 26
+        },
+        {
+          "venue_name": "Uptown BA",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "cocktail_bar",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/ArgentinaTravel/comments/1iaa6sy/top_mustvisit_spots_in_buenos_aires_bars/",
+          "context": "Alias mention for Uptown.",
+          "rank_position": 45
+        },
+        {
+          "venue_name": "Uptown",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "high-concept cocktail bar candidate",
+          "rank_position": 133
+        },
+        {
+          "venue_name": "Uptown",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "high-concept cocktail bar candidate",
+          "rank_position": 67
+        },
+        {
+          "venue_name": "Uptown",
+          "city": "Buenos Aires",
+          "district": "Palermo Hollywood",
+          "category": "cocktail_bar",
+          "source": "World's Best Bars",
+          "source_type": "editorial",
+          "source_url": "https://www.worlds50bestbars.com/",
+          "context": "high-concept cocktail bar candidate",
+          "rank_position": 8
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 3,
+      "community_mentions": 2,
+      "district_mentions": 5,
+      "sources": [
+        "Culture Trip",
+        "Reddit",
+        "Time Out",
+        "Tripadvisor",
+        "World's Best Bars"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 75,
+      "community_score": 64,
+      "frequency_score": 100,
+      "district_relevance_score": 92,
+      "category_confidence_score": 100,
+      "discovery_score": 83,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; selected by score after diversity pass; ranked by discovery 83, consensus 100, sources 5"
+    },
+    {
+      "candidate_id": "4e407bb1dc240424",
+      "city": "Buenos Aires",
+      "district": "Retiro",
+      "venue_name": "Floreria Atlantico",
+      "canonical_name": "floreria atlantico",
+      "aliases": [
+        "Floreria Atlantico"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires/best-bars-buenos-aires-cocktail-guide-visit-bue-best-drinks",
+          "context": "Signature Buenos Aires cocktail bar candidate.",
+          "rank_position": 20
+        },
+        {
+          "venue_name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Bars for Kings",
+          "source_type": "editorial",
+          "source_url": "https://barsforkings.com/blog/best-bars-palermo-buenos-aires/",
+          "context": "Cocktail capital reference candidate.",
+          "rank_position": 4
+        },
+        {
+          "venue_name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "signature Buenos Aires cocktail bar candidate",
+          "rank_position": 127
+        },
+        {
+          "venue_name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "Culture Trip",
+          "source_type": "editorial",
+          "source_url": "https://theculturetrip.com/south-america/argentina/articles/the-best-restaurants-in-buenos-aires",
+          "context": "signature Buenos Aires cocktail bar candidate",
+          "rank_position": 63
+        },
+        {
+          "venue_name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "World's Best Bars",
+          "source_type": "editorial",
+          "source_url": "https://www.worlds50bestbars.com/",
+          "context": "signature Buenos Aires cocktail bar candidate",
+          "rank_position": 2
+        },
+        {
+          "venue_name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "district": "Retiro",
+          "category": "cocktail_bar",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "signature Buenos Aires cocktail bar candidate",
+          "rank_position": 26
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 6,
+      "editorial_mentions": 5,
+      "community_mentions": 1,
+      "district_mentions": 6,
+      "sources": [
+        "50 Best Discovery",
+        "Bars for Kings",
+        "Culture Trip",
+        "Time Out",
+        "Tripadvisor",
+        "World's Best Bars"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 97,
+      "community_score": 34,
+      "frequency_score": 100,
+      "district_relevance_score": 72,
+      "category_confidence_score": 100,
+      "discovery_score": 82,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 82, consensus 100, sources 6"
+    },
+    {
+      "candidate_id": "b113e32b95983de3",
+      "city": "Buenos Aires",
+      "district": "Recoleta",
+      "venue_name": "Presidente Bar",
+      "canonical_name": "presidente",
+      "aliases": [
+        "Presidente Bar"
+      ],
+      "category": "cocktail_bar",
+      "merged_sources": [
+        {
+          "venue_name": "Presidente Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Time Out",
+          "source_type": "editorial",
+          "source_url": "https://www.timeout.com/buenos-aires/best-bars-buenos-aires-cocktail-guide-visit-bue-best-drinks",
+          "context": "Recoleta cocktail candidate with polished atmosphere.",
+          "rank_position": 21
+        },
+        {
+          "venue_name": "Presidente Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Reddit",
+          "source_type": "community",
+          "source_url": "https://www.reddit.com/r/ArgentinaTravel/comments/1iaa6sy/top_mustvisit_spots_in_buenos_aires_bars/",
+          "context": "Travel community cocktail mention.",
+          "rank_position": 34
+        },
+        {
+          "venue_name": "Presidente Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "Tripadvisor",
+          "source_type": "community",
+          "source_url": "https://www.tripadvisor.com/Restaurants-g312741-Buenos_Aires_Capital_Federal_District.html",
+          "context": "Recoleta cocktail candidate with polished atmosphere",
+          "rank_position": 128
+        },
+        {
+          "venue_name": "Presidente Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "World's Best Bars",
+          "source_type": "editorial",
+          "source_url": "https://www.worlds50bestbars.com/",
+          "context": "Recoleta cocktail candidate with polished atmosphere",
+          "rank_position": 3
+        },
+        {
+          "venue_name": "Presidente Bar",
+          "city": "Buenos Aires",
+          "district": "Recoleta",
+          "category": "cocktail_bar",
+          "source": "50 Best Discovery",
+          "source_type": "editorial",
+          "source_url": "https://www.theworlds50best.com/discovery/",
+          "context": "Recoleta cocktail candidate with polished atmosphere",
+          "rank_position": 27
+        }
+      ],
+      "status": "pending_editorial_review",
+      "source_count": 5,
+      "editorial_mentions": 3,
+      "community_mentions": 2,
+      "district_mentions": 5,
+      "sources": [
+        "50 Best Discovery",
+        "Reddit",
+        "Time Out",
+        "Tripadvisor",
+        "World's Best Bars"
+      ],
+      "consensus_score": 100,
+      "editorial_score": 75,
+      "community_score": 65,
+      "frequency_score": 100,
+      "district_relevance_score": 88,
+      "category_confidence_score": 100,
+      "discovery_score": 82,
+      "discovery_notes": "High enough for human editorial review. Not approved for enrichment automatically.",
+      "previously_processed": false,
+      "reason_selected": "preferred high-confidence editorial-review candidate; supports district diversity; ranked by discovery 82, consensus 100, sources 5"
+    }
+  ]
+}

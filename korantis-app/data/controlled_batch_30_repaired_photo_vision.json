@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-06-01T03:04:57.150Z",
+  "dryRun": true,
+  "reason": "LLM calls disabled by Phase F.1 strict boundary",
+  "venues": [
+    {
+      "candidate_id": "1e2c182f70584a67",
+      "google_place_id": "ChIJcycyUAC1vJURwcII6D2zGJs",
+      "venue_name": "La Noire",
+      "vision_status": "dry_run",
+      "model": null,
+      "photos_available": 10,
+      "photos_evaluated": 0,
+      "photo_results": [],
+      "aggregation": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "warnings": [
+          "LLM calls disabled by Phase F.1 strict boundary"
+        ]
+      },
+      "errors": [
+        "LLM calls disabled by Phase F.1 strict boundary"
+      ]
+    },
+    {
+      "candidate_id": "10dfc58b0daef397",
+      "google_place_id": "ChIJicAeDJO1vJUR-IjBjxB3Gvk",
+      "venue_name": "Cafe Registrado",
+      "vision_status": "dry_run",
+      "model": null,
+      "photos_available": 10,
+      "photos_evaluated": 0,
+      "photo_results": [],
+      "aggregation": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "warnings": [
+          "LLM calls disabled by Phase F.1 strict boundary"
+        ]
+      },
+      "errors": [
+        "LLM calls disabled by Phase F.1 strict boundary"
+      ]
+    },
+    {
+      "candidate_id": "ef66d599db0d3a05",
+      "google_place_id": "ChIJaekYsGi1vJURxzUH-9hBwZI",
+      "venue_name": "Oli Cafe",
+      "vision_status": "dry_run",
+      "model": null,
+      "photos_available": 10,
+      "photos_evaluated": 0,
+      "photo_results": [],
+      "aggregation": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "warnings": [
+          "LLM calls disabled by Phase F.1 strict boundary"
+        ]
+      },
+      "errors": [
+        "LLM calls disabled by Phase F.1 strict boundary"
+      ]
+    },
+    {
+      "candidate_id": "163054cff524fd6d",
+      "google_place_id": "ChIJVT6h917KvJURJLFMHeDu0cI",
+      "venue_name": "Confiteria Las Violetas",
+      "vision_status": "dry_run",
+      "model": null,
+      "photos_available": 10,
+      "photos_evaluated": 0,
+      "photo_results": [],
+      "aggregation": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "warnings": [
+          "LLM calls disabled by Phase F.1 strict boundary"
+        ]
+      },
+      "errors": [
+        "LLM calls disabled by Phase F.1 strict boundary"
+      ]
+    },
+    {
+      "candidate_id": "babcdf5ac92972fc",
+      "google_place_id": "ChIJw9GELSs1o5URBzzGqbWfANo",
+      "venue_name": "Aldos",
+      "vision_status": "dry_run",
+      "model": null,
+      "photos_available": 10,
+      "photos_evaluated": 0,
+      "photo_results": [],
+      "aggregation": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "warnings": [
+          "LLM calls disabled by Phase F.1 strict boundary"
+        ]
+      },
+      "errors": [
+        "LLM calls disabled by Phase F.1 strict boundary"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "generatedAt": "2026-06-01T01:48:47.095Z",
+  "count": 16,
+  "plans": [
+    {
+      "candidate_id": "c95df8678b089f1a",
+      "venue_name": "El Preferido",
+      "category": "restaurant",
+      "district": "Palermo Soho",
+      "priority": "medium",
+      "queries": [
+        "El Preferido reservation",
+        "El Preferido reserva Buenos Aires",
+        "El Preferido expensive",
+        "El Preferido date night",
+        "El Preferido noise",
+        "El Preferido local favorite",
+        "El Preferido tasting menu",
+        "El Preferido dinner Buenos Aires"
+      ],
+      "evidence_targets": [
+        "reservation",
+        "price",
+        "date",
+        "noise",
+        "local",
+        "dinner"
+      ]
+    },
+    {
+      "candidate_id": "f6720109158248c0",
+      "venue_name": "Cuervo Cafe",
+      "category": "cafe",
+      "district": "Palermo Soho",
+      "priority": "high",
+      "queries": [
+        "Cuervo Cafe wifi Buenos Aires",
+        "Cuervo Cafe laptop Buenos Aires",
+        "Cuervo Cafe trabajar notebook",
+        "Cuervo Cafe enchufes",
+        "Cuervo Cafe tranquilo",
+        "Cuervo Cafe coworking cafe",
+        "Cuervo Cafe estudiar",
+        "Cuervo Cafe seating Buenos Aires",
+        "Cuervo Cafe crowded weekends",
+        "Cuervo Cafe para llevar"
+      ],
+      "evidence_targets": [
+        "work",
+        "laptop",
+        "wifi",
+        "outlets",
+        "quiet",
+        "long_stay",
+        "seating",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "21dfd222e5f0e8d3",
+      "venue_name": "Gran Dabbang",
+      "category": "restaurant",
+      "district": "Palermo Soho",
+      "priority": "medium",
+      "queries": [
+        "Gran Dabbang reservation",
+        "Gran Dabbang reserva Buenos Aires",
+        "Gran Dabbang expensive",
+        "Gran Dabbang date night",
+        "Gran Dabbang noise",
+        "Gran Dabbang local favorite",
+        "Gran Dabbang tasting menu",
+        "Gran Dabbang dinner Buenos Aires"
+      ],
+      "evidence_targets": [
+        "reservation",
+        "price",
+        "date",
+        "noise",
+        "local",
+        "dinner"
+      ]
+    },
+    {
+      "candidate_id": "7f14b55338d8548d",
+      "venue_name": "LAB Tostadores de Cafe",
+      "category": "cafe",
+      "district": "Palermo Soho",
+      "priority": "high",
+      "queries": [
+        "LAB Tostadores de Cafe wifi Buenos Aires",
+        "LAB Tostadores de Cafe laptop Buenos Aires",
+        "LAB Tostadores de Cafe trabajar notebook",
+        "LAB Tostadores de Cafe enchufes",
+        "LAB Tostadores de Cafe tranquilo",
+        "LAB Tostadores de Cafe coworking cafe",
+        "LAB Tostadores de Cafe estudiar",
+        "LAB Tostadores de Cafe seating Buenos Aires",
+        "LAB Tostadores de Cafe crowded weekends",
+        "LAB Tostadores de Cafe para llevar"
+      ],
+      "evidence_targets": [
+        "work",
+        "laptop",
+        "wifi",
+        "outlets",
+        "quiet",
+        "long_stay",
+        "seating",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "70145d1449130248",
+      "venue_name": "Chui",
+      "category": "restaurant",
+      "district": "Villa Crespo",
+      "priority": "medium",
+      "queries": [
+        "Chui reservation",
+        "Chui reserva Buenos Aires",
+        "Chui expensive",
+        "Chui date night",
+        "Chui noise",
+        "Chui local favorite",
+        "Chui tasting menu",
+        "Chui dinner Buenos Aires"
+      ],
+      "evidence_targets": [
+        "reservation",
+        "price",
+        "date",
+        "noise",
+        "local",
+        "dinner"
+      ]
+    },
+    {
+      "candidate_id": "f369b8bbab4e9ec5",
+      "venue_name": "La Fuerza",
+      "category": "cocktail_bar",
+      "district": "Chacarita",
+      "priority": "medium",
+      "queries": [
+        "La Fuerza intimate",
+        "La Fuerza loud",
+        "La Fuerza date",
+        "La Fuerza reservation",
+        "La Fuerza cocktails",
+        "La Fuerza coctelería",
+        "La Fuerza bartender",
+        "La Fuerza crowded weekends"
+      ],
+      "evidence_targets": [
+        "intimate",
+        "date",
+        "cocktails",
+        "reservation",
+        "noise",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "e3831e721f05d7ac",
+      "venue_name": "Ser y Tiempo",
+      "category": "wine_bar",
+      "district": "San Telmo",
+      "priority": "medium",
+      "queries": [
+        "Ser y Tiempo intimate",
+        "Ser y Tiempo loud",
+        "Ser y Tiempo date",
+        "Ser y Tiempo reservation",
+        "Ser y Tiempo wine list",
+        "Ser y Tiempo carta de vinos",
+        "Ser y Tiempo sommelier",
+        "Ser y Tiempo bar de vinos Buenos Aires"
+      ],
+      "evidence_targets": [
+        "intimate",
+        "date",
+        "reservation",
+        "wine_list",
+        "noise"
+      ]
+    },
+    {
+      "candidate_id": "0840de562f715e4c",
+      "venue_name": "Cafe Crespin",
+      "category": "cafe",
+      "district": "Villa Crespo",
+      "priority": "high",
+      "queries": [
+        "Cafe Crespin wifi Buenos Aires",
+        "Cafe Crespin laptop Buenos Aires",
+        "Cafe Crespin trabajar notebook",
+        "Cafe Crespin enchufes",
+        "Cafe Crespin tranquilo",
+        "Cafe Crespin coworking cafe",
+        "Cafe Crespin estudiar",
+        "Cafe Crespin seating Buenos Aires",
+        "Cafe Crespin crowded weekends",
+        "Cafe Crespin para llevar"
+      ],
+      "evidence_targets": [
+        "work",
+        "laptop",
+        "wifi",
+        "outlets",
+        "quiet",
+        "long_stay",
+        "seating",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "c4943f7e42217fc6",
+      "venue_name": "Mishiguene",
+      "category": "restaurant",
+      "district": "Palermo Soho",
+      "priority": "medium",
+      "queries": [
+        "Mishiguene reservation",
+        "Mishiguene reserva Buenos Aires",
+        "Mishiguene expensive",
+        "Mishiguene date night",
+        "Mishiguene noise",
+        "Mishiguene local favorite",
+        "Mishiguene tasting menu",
+        "Mishiguene dinner Buenos Aires"
+      ],
+      "evidence_targets": [
+        "reservation",
+        "price",
+        "date",
+        "noise",
+        "local",
+        "dinner"
+      ]
+    },
+    {
+      "candidate_id": "237b4a6487451996",
+      "venue_name": "Don Julio Parrilla",
+      "category": "restaurant",
+      "district": "Palermo Soho",
+      "priority": "medium",
+      "queries": [
+        "Don Julio Parrilla reservation",
+        "Don Julio Parrilla reserva Buenos Aires",
+        "Don Julio Parrilla expensive",
+        "Don Julio Parrilla date night",
+        "Don Julio Parrilla noise",
+        "Don Julio Parrilla local favorite",
+        "Don Julio Parrilla tasting menu",
+        "Don Julio Parrilla dinner Buenos Aires"
+      ],
+      "evidence_targets": [
+        "reservation",
+        "price",
+        "date",
+        "noise",
+        "local",
+        "dinner"
+      ]
+    },
+    {
+      "candidate_id": "63b3b684eb8bb88d",
+      "venue_name": "Tres Monos",
+      "category": "cocktail_bar",
+      "district": "Palermo Soho",
+      "priority": "medium",
+      "queries": [
+        "Tres Monos intimate",
+        "Tres Monos loud",
+        "Tres Monos date",
+        "Tres Monos reservation",
+        "Tres Monos cocktails",
+        "Tres Monos coctelería",
+        "Tres Monos bartender",
+        "Tres Monos crowded weekends"
+      ],
+      "evidence_targets": [
+        "intimate",
+        "date",
+        "cocktails",
+        "reservation",
+        "noise",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "f81460bd9ed74ace",
+      "venue_name": "Cochinchina",
+      "category": "cocktail_bar",
+      "district": "Palermo Hollywood",
+      "priority": "medium",
+      "queries": [
+        "Cochinchina intimate",
+        "Cochinchina loud",
+        "Cochinchina date",
+        "Cochinchina reservation",
+        "Cochinchina cocktails",
+        "Cochinchina coctelería",
+        "Cochinchina bartender",
+        "Cochinchina crowded weekends"
+      ],
+      "evidence_targets": [
+        "intimate",
+        "date",
+        "cocktails",
+        "reservation",
+        "noise",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "cee8356abb00fd58",
+      "venue_name": "Lattente",
+      "category": "cafe",
+      "district": "Palermo Soho",
+      "priority": "high",
+      "queries": [
+        "Lattente wifi Buenos Aires",
+        "Lattente laptop Buenos Aires",
+        "Lattente trabajar notebook",
+        "Lattente enchufes",
+        "Lattente tranquilo",
+        "Lattente coworking cafe",
+        "Lattente estudiar",
+        "Lattente seating Buenos Aires",
+        "Lattente crowded weekends",
+        "Lattente para llevar"
+      ],
+      "evidence_targets": [
+        "work",
+        "laptop",
+        "wifi",
+        "outlets",
+        "quiet",
+        "long_stay",
+        "seating",
+        "crowding"
+      ]
+    },
+    {
+      "candidate_id": "3bfc83abd7e9d3ab",
+      "venue_name": "Pain et Vin",
+      "category": "wine_bar",
+      "district": "Palermo Soho",
+      "priority": "medium",
+      "queries": [
+        "Pain et Vin intimate",
+        "Pain et Vin loud",
+        "Pain et Vin date",
+        "Pain et Vin reservation",
+        "Pain et Vin wine list",
+        "Pain et Vin carta de vinos",
+        "Pain et Vin sommelier",
+        "Pain et Vin bar de vinos Buenos Aires"
+      ],
+      "evidence_targets": [
+        "intimate",
+        "date",
+        "reservation",
+        "wine_list",
+        "noise"
+      ]
+    },
+    {
+      "candidate_id": "a13d2c0dce152091",
+      "venue_name": "Vico Wine Bar",
+      "category": "wine_bar",
+      "district": "Palermo Hollywood",
+      "priority": "medium",
+      "queries": [
+        "Vico Wine Bar intimate",
+        "Vico Wine Bar loud",
+        "Vico Wine Bar date",
+        "Vico Wine Bar reservation",
+        "Vico Wine Bar wine list",
+        "Vico Wine Bar carta de vinos",
+        "Vico Wine Bar sommelier",
+        "Vico Wine Bar bar de vinos Buenos Aires"
+      ],
+      "evidence_targets": [
+        "intimate",
+        "date",
+        "reservation",
+        "wine_list",
+        "noise"
+      ]
+    },
+    {
+      "candidate_id": "590e25153237d813",
+      "venue_name": "Vive Cafe",
+      "category": "cafe",
+      "district": "Palermo Soho",
+      "priority": "high",
+      "queries": [
+        "Vive Cafe wifi Buenos Aires",
+        "Vive Cafe laptop Buenos Aires",
+        "Vive Cafe trabajar notebook",
+        "Vive Cafe enchufes",
+        "Vive Cafe tranquilo",
+        "Vive Cafe coworking cafe",
+        "Vive Cafe estudiar",
+        "Vive Cafe seating Buenos Aires",
+        "Vive Cafe crowded weekends",
+        "Vive Cafe para llevar"
+      ],
+      "evidence_targets": [
+        "work",
+        "laptop",
+        "wifi",
+        "outlets",
+        "quiet",
+        "long_stay",
+        "seating",
+        "crowding"
+      ]
+    }
+  ]
+}
