@@ -1,0 +1,2895 @@
+{
+  "generatedAt": "2026-05-31T22:07:12.179Z",
+  "count": 16,
+  "outputs": [
+    {
+      "candidate_id": "c95df8678b089f1a",
+      "google_place_id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 97,
+        "consensus_score": 100,
+        "cultural_relevance_score": 83,
+        "review_count_log_score": 85,
+        "rating_quality_score": 76,
+        "source_authority_score": 94,
+        "experience_quality_score": 74,
+        "photo_quality_score": 0,
+        "eligibility_score": 66
+      },
+      "signals": {
+        "heritage_signal": 70,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 81,
+        "community_signal": 100,
+        "specialty_signal": 65,
+        "design_signal": 72,
+        "novelty_signal": 65,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 58,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 72,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 16,
+        "reading_score": 14,
+        "date_score": 53,
+        "conversation_score": 53,
+        "brunch_score": 46,
+        "dinner_score": 84,
+        "wine_score": 48,
+        "cocktail_score": 54,
+        "solo_score": 27,
+        "friends_score": 57,
+        "creative_session_score": 64,
+        "classic_city_score": 54,
+        "hidden_gem_score": 68,
+        "premium_destination_score": 75,
+        "long_stay_score": 24,
+        "quick_stop_score": 30
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 66 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Modern porteno restaurant with heritage identity.",
+            "context": "Modern porteno restaurant with heritage identity.",
+            "rank_position": 8
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Restaurant list candidate.",
+            "context": "Restaurant list candidate.",
+            "rank_position": 12
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Food community mention.",
+            "context": "Food community mention.",
+            "rank_position": 21
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Alias mention for El Preferido de Palermo.",
+            "context": "Alias mention for El Preferido de Palermo.",
+            "rank_position": 40
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 45
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 20
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 2
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 2
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 9488,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "El Preferido",
+      "diagnostics": {
+        "google_data_missing": false,
+        "rating_missing": false,
+        "userRatingCount_missing": false,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "f6720109158248c0",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 96,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 91,
+        "experience_quality_score": 69,
+        "photo_quality_score": 0,
+        "eligibility_score": 52
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 93,
+        "community_signal": 100,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 40,
+        "classic_city_score": 11,
+        "hidden_gem_score": 67,
+        "premium_destination_score": 36,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 52 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 93
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Specialty coffee candidate with repeated local visibility.",
+            "context": "Specialty coffee candidate with repeated local visibility.",
+            "rank_position": 5
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Coffee shop candidate.",
+            "context": "Coffee shop candidate.",
+            "rank_position": 25
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Community recommendation for sit-down coffee.",
+            "context": "Community recommendation for sit-down coffee.",
+            "rank_position": 2
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Alias mention for Cuervo Cafe from coffee discussion.",
+            "context": "Alias mention for Cuervo Cafe from coffee discussion.",
+            "rank_position": 38
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Branch-style alias mention for Cuervo Cafe.",
+            "context": "Branch-style alias mention for Cuervo Cafe.",
+            "rank_position": 39
+          },
+          {
+            "source": "Specialty Coffee Blog",
+            "source_type": "specialist",
+            "source_weight": 85,
+            "signal": "Alias-style specialty coffee mention for Cuervo Cafe.",
+            "context": "Alias-style specialty coffee mention for Cuervo Cafe.",
+            "rank_position": 37
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Cuervo Cafe",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "21dfd222e5f0e8d3",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 91,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 94,
+        "experience_quality_score": 62,
+        "photo_quality_score": 0,
+        "eligibility_score": 52
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 65,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 65,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 16,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 46,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 27,
+        "friends_score": 57,
+        "creative_session_score": 51,
+        "classic_city_score": 12,
+        "hidden_gem_score": 60,
+        "premium_destination_score": 59,
+        "long_stay_score": 24,
+        "quick_stop_score": 30
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 52 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Creative restaurant frequently recommended for Buenos Aires dining.",
+            "context": "Creative restaurant frequently recommended for Buenos Aires dining.",
+            "rank_position": 9
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Creative restaurant candidate.",
+            "context": "Creative restaurant candidate.",
+            "rank_position": 21
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Restaurant community mention.",
+            "context": "Restaurant community mention.",
+            "rank_position": 28
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "creative restaurant with strong local and editorial signal",
+            "context": "creative restaurant with strong local and editorial signal",
+            "rank_position": 46
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "creative restaurant with strong local and editorial signal",
+            "context": "creative restaurant with strong local and editorial signal",
+            "rank_position": 3
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "creative restaurant with strong local and editorial signal",
+            "context": "creative restaurant with strong local and editorial signal",
+            "rank_position": 3
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Gran Dabbang",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "7f14b55338d8548d",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 90,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 89,
+        "experience_quality_score": 65,
+        "photo_quality_score": 0,
+        "eligibility_score": 50
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 36,
+        "classic_city_score": 9,
+        "hidden_gem_score": 61,
+        "premium_destination_score": 35,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 50 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 80
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Specialty coffee reference for Palermo discovery.",
+            "context": "Specialty coffee reference for Palermo discovery.",
+            "rank_position": 2
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Coffee shop list candidate.",
+            "context": "Coffee shop list candidate.",
+            "rank_position": 23
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Community recommendation for specialty coffee in Palermo.",
+            "context": "Community recommendation for specialty coffee in Palermo.",
+            "rank_position": 1
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "specialty coffee roaster repeatedly recommended for Palermo",
+            "context": "specialty coffee roaster repeatedly recommended for Palermo",
+            "rank_position": 2
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "specialty coffee roaster repeatedly recommended for Palermo",
+            "context": "specialty coffee roaster repeatedly recommended for Palermo",
+            "rank_position": 2
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "specialty coffee roaster repeatedly recommended for Palermo",
+            "context": "specialty coffee roaster repeatedly recommended for Palermo",
+            "rank_position": 2
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "LAB Tostadores de Cafe",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "70145d1449130248",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 89,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 94,
+        "experience_quality_score": 62,
+        "photo_quality_score": 0,
+        "eligibility_score": 52
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 14,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 35,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 16,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 46,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 27,
+        "friends_score": 57,
+        "creative_session_score": 33,
+        "classic_city_score": 12,
+        "hidden_gem_score": 60,
+        "premium_destination_score": 59,
+        "long_stay_score": 24,
+        "quick_stop_score": 30
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 52 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Plant-forward restaurant with strong setting and local following.",
+            "context": "Plant-forward restaurant with strong setting and local following.",
+            "rank_position": 10
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Plant-forward restaurant candidate.",
+            "context": "Plant-forward restaurant candidate.",
+            "rank_position": 22
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Restaurant community mention.",
+            "context": "Restaurant community mention.",
+            "rank_position": 27
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 85
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 42
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 16
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 17
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Chui",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "f369b8bbab4e9ec5",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "category": "cocktail_bar",
+      "scores": {
+        "discovery_score": 89,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 93,
+        "experience_quality_score": 62,
+        "photo_quality_score": 0,
+        "eligibility_score": 52
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 76,
+        "local_signal": 24,
+        "community_signal": 74,
+        "specialty_signal": 82,
+        "design_signal": 35,
+        "novelty_signal": 14,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 85,
+        "intimate_signal": 68,
+        "social_signal": 86,
+        "romantic_signal": 60,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 64,
+        "long_stay_signal": 32,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 90,
+        "late_night_signal": 76,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 62
+      },
+      "intent_scores": {
+        "work_score": 14,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 34,
+        "dinner_score": 60,
+        "wine_score": 47,
+        "cocktail_score": 82,
+        "solo_score": 16,
+        "friends_score": 65,
+        "creative_session_score": 32,
+        "classic_city_score": 14,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 54,
+        "long_stay_score": 21,
+        "quick_stop_score": 31
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 52 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 78
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Vermouth bar and social drinking candidate.",
+            "context": "Vermouth bar and social drinking candidate.",
+            "rank_position": 24
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Branch-style alias mention for La Fuerza.",
+            "context": "Branch-style alias mention for La Fuerza.",
+            "rank_position": 44
+          },
+          {
+            "source": "Marriott Bonvoy Traveler",
+            "source_type": "generic",
+            "source_weight": 56,
+            "signal": "Vermouth bar candidate.",
+            "context": "Vermouth bar candidate.",
+            "rank_position": 10
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 131
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 65
+          },
+          {
+            "source": "World's Best Bars",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 6
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 29
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "La Fuerza",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "e3831e721f05d7ac",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "category": "wine_bar",
+      "scores": {
+        "discovery_score": 88,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 83,
+        "experience_quality_score": 67,
+        "photo_quality_score": 0,
+        "eligibility_score": 53
+      },
+      "signals": {
+        "heritage_signal": 12,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 45,
+        "lively_signal": 45,
+        "intimate_signal": 78,
+        "social_signal": 70,
+        "romantic_signal": 72,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 54,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 70,
+        "night_signal": 76,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 58
+      },
+      "intent_scores": {
+        "work_score": 22,
+        "reading_score": 21,
+        "date_score": 54,
+        "conversation_score": 56,
+        "brunch_score": 31,
+        "dinner_score": 47,
+        "wine_score": 78,
+        "cocktail_score": 48,
+        "solo_score": 32,
+        "friends_score": 54,
+        "creative_session_score": 31,
+        "classic_city_score": 13,
+        "hidden_gem_score": 61,
+        "premium_destination_score": 37,
+        "long_stay_score": 30,
+        "quick_stop_score": 29
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 53 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 80
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "San Telmo wine candidate.",
+            "context": "San Telmo wine candidate.",
+            "rank_position": 8
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Wine community mention.",
+            "context": "Wine community mention.",
+            "rank_position": 24
+          },
+          {
+            "source": "Local Wine Guide",
+            "source_type": "local_editorial",
+            "source_weight": 50,
+            "signal": "San Telmo wine candidate from city gastronomic guide context.",
+            "context": "San Telmo wine candidate from city gastronomic guide context.",
+            "rank_position": 17
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "San Telmo wine candidate with local signal",
+            "context": "San Telmo wine candidate with local signal",
+            "rank_position": 109
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "San Telmo wine candidate with local signal",
+            "context": "San Telmo wine candidate with local signal",
+            "rank_position": 56
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "San Telmo wine candidate with local signal",
+            "context": "San Telmo wine candidate with local signal",
+            "rank_position": 40
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Ser y Tiempo",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "0840de562f715e4c",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 87,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 89,
+        "experience_quality_score": 54,
+        "photo_quality_score": 0,
+        "eligibility_score": 47
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 81,
+        "community_signal": 100,
+        "specialty_signal": 0,
+        "design_signal": 35,
+        "novelty_signal": 14,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 25,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 43,
+        "classic_city_score": 10,
+        "hidden_gem_score": 65,
+        "premium_destination_score": 35,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 47 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Neighborhood cafe community mention.",
+            "context": "Neighborhood cafe community mention.",
+            "rank_position": 36
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Villa Crespo neighborhood cafe candidate",
+            "context": "Villa Crespo neighborhood cafe candidate",
+            "rank_position": 21
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "alias-style neighborhood cafe mention",
+            "context": "alias-style neighborhood cafe mention",
+            "rank_position": 225
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "Villa Crespo neighborhood cafe candidate",
+            "context": "Villa Crespo neighborhood cafe candidate",
+            "rank_position": 11
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "alias-style neighborhood cafe mention",
+            "context": "alias-style neighborhood cafe mention",
+            "rank_position": 71
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "Villa Crespo neighborhood cafe candidate",
+            "context": "Villa Crespo neighborhood cafe candidate",
+            "rank_position": 5
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Cafe Crespin",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "c4943f7e42217fc6",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 87,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 94,
+        "experience_quality_score": 58,
+        "photo_quality_score": 0,
+        "eligibility_score": 51
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 24,
+        "community_signal": 52,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 35,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 16,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 46,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 27,
+        "friends_score": 57,
+        "creative_session_score": 27,
+        "classic_city_score": 7,
+        "hidden_gem_score": 47,
+        "premium_destination_score": 59,
+        "long_stay_score": 24,
+        "quick_stop_score": 30
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 51 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Restaurant candidate with distinctive culinary identity.",
+            "context": "Restaurant candidate with distinctive culinary identity.",
+            "rank_position": 14
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "distinctive restaurant with high guide visibility",
+            "context": "distinctive restaurant with high guide visibility",
+            "rank_position": 50
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Chacarita cafe candidate requiring validation",
+            "context": "Chacarita cafe candidate requiring validation",
+            "rank_position": 220
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "Chacarita cafe candidate requiring validation",
+            "context": "Chacarita cafe candidate requiring validation",
+            "rank_position": 69
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "distinctive restaurant with high guide visibility",
+            "context": "distinctive restaurant with high guide visibility",
+            "rank_position": 5
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "distinctive restaurant with high guide visibility",
+            "context": "distinctive restaurant with high guide visibility",
+            "rank_position": 7
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Mishiguene",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "237b4a6487451996",
+      "google_place_id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 75,
+        "review_count_log_score": 91,
+        "rating_quality_score": 76,
+        "source_authority_score": 95,
+        "experience_quality_score": 54,
+        "photo_quality_score": 0,
+        "eligibility_score": 59
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 35,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 16,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 46,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 27,
+        "friends_score": 57,
+        "creative_session_score": 23,
+        "classic_city_score": 24,
+        "hidden_gem_score": 41,
+        "premium_destination_score": 68,
+        "long_stay_score": 24,
+        "quick_stop_score": 30
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 59 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "High-recognition Buenos Aires restaurant candidate.",
+            "context": "High-recognition Buenos Aires restaurant candidate.",
+            "rank_position": 7
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Restaurant list candidate.",
+            "context": "Restaurant list candidate.",
+            "rank_position": 11
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 44
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 19
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 1
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 18960,
+          "price_level": "PRICE_LEVEL_EXPENSIVE",
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Don Julio Parrilla",
+      "diagnostics": {
+        "google_data_missing": false,
+        "rating_missing": false,
+        "userRatingCount_missing": false,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "63b3b684eb8bb88d",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cocktail_bar",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 95,
+        "experience_quality_score": 54,
+        "photo_quality_score": 0,
+        "eligibility_score": 50
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 82,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 85,
+        "intimate_signal": 68,
+        "social_signal": 86,
+        "romantic_signal": 60,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 64,
+        "long_stay_signal": 32,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 90,
+        "late_night_signal": 76,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 62
+      },
+      "intent_scores": {
+        "work_score": 14,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 34,
+        "dinner_score": 61,
+        "wine_score": 47,
+        "cocktail_score": 82,
+        "solo_score": 27,
+        "friends_score": 65,
+        "creative_session_score": 22,
+        "classic_city_score": 6,
+        "hidden_gem_score": 41,
+        "premium_destination_score": 55,
+        "long_stay_score": 21,
+        "quick_stop_score": 31
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 50 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Cocktail guide candidate for Palermo.",
+            "context": "Cocktail guide candidate for Palermo.",
+            "rank_position": 19
+          },
+          {
+            "source": "Bars for Kings",
+            "source_type": "generic",
+            "source_weight": 60,
+            "signal": "Cocktail bar guide candidate.",
+            "context": "Cocktail bar guide candidate.",
+            "rank_position": 1
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 126
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 62
+          },
+          {
+            "source": "World's Best Bars",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 1
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 25
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Tres Monos",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "f81460bd9ed74ace",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Hollywood",
+      "category": "cocktail_bar",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 95,
+        "experience_quality_score": 54,
+        "photo_quality_score": 0,
+        "eligibility_score": 50
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 57,
+        "community_signal": 26,
+        "specialty_signal": 82,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 85,
+        "intimate_signal": 68,
+        "social_signal": 86,
+        "romantic_signal": 60,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 64,
+        "long_stay_signal": 32,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 90,
+        "late_night_signal": 76,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 62
+      },
+      "intent_scores": {
+        "work_score": 14,
+        "reading_score": 14,
+        "date_score": 47,
+        "conversation_score": 53,
+        "brunch_score": 34,
+        "dinner_score": 61,
+        "wine_score": 47,
+        "cocktail_score": 82,
+        "solo_score": 27,
+        "friends_score": 65,
+        "creative_session_score": 22,
+        "classic_city_score": 11,
+        "hidden_gem_score": 48,
+        "premium_destination_score": 55,
+        "long_stay_score": 21,
+        "quick_stop_score": 31
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 50 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Cocktail bar with high guide visibility.",
+            "context": "Cocktail bar with high guide visibility.",
+            "rank_position": 22
+          },
+          {
+            "source": "Sherpa Food Tours",
+            "source_type": "generic",
+            "source_weight": 60,
+            "signal": "Neighborhood cocktail guide candidate.",
+            "context": "Neighborhood cocktail guide candidate.",
+            "rank_position": 5
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "cocktail bar with high guide visibility",
+            "context": "cocktail bar with high guide visibility",
+            "rank_position": 129
+          },
+          {
+            "source": "World's Best Bars",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "cocktail bar with high guide visibility",
+            "context": "cocktail bar with high guide visibility",
+            "rank_position": 4
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "cocktail bar with high guide visibility",
+            "context": "cocktail bar with high guide visibility",
+            "rank_position": 28
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Cochinchina",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "cee8356abb00fd58",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 94,
+        "experience_quality_score": 58,
+        "photo_quality_score": 0,
+        "eligibility_score": 48
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 29,
+        "classic_city_score": 3,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 37,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 48 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Specialty coffee cafe frequently referenced in Palermo lists.",
+            "context": "Specialty coffee cafe frequently referenced in Palermo lists.",
+            "rank_position": 3
+          },
+          {
+            "source": "Specialty Coffee Blog",
+            "source_type": "specialist",
+            "source_weight": 85,
+            "signal": "Alias-style specialty coffee mention for Lattente.",
+            "context": "Alias-style specialty coffee mention for Lattente.",
+            "rank_position": 38
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "specialty coffee cafe with strong Palermo recognition",
+            "context": "specialty coffee cafe with strong Palermo recognition",
+            "rank_position": 3
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "specialty coffee cafe with strong Palermo recognition",
+            "context": "specialty coffee cafe with strong Palermo recognition",
+            "rank_position": 3
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "specialty coffee cafe with strong Palermo recognition",
+            "context": "specialty coffee cafe with strong Palermo recognition",
+            "rank_position": 2
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Lattente",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "3bfc83abd7e9d3ab",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "wine_bar",
+      "scores": {
+        "discovery_score": 84,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 89,
+        "experience_quality_score": 59,
+        "photo_quality_score": 0,
+        "eligibility_score": 50
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 6,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 25,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 45,
+        "lively_signal": 45,
+        "intimate_signal": 78,
+        "social_signal": 70,
+        "romantic_signal": 72,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 54,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 70,
+        "night_signal": 76,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 58
+      },
+      "intent_scores": {
+        "work_score": 22,
+        "reading_score": 21,
+        "date_score": 54,
+        "conversation_score": 56,
+        "brunch_score": 31,
+        "dinner_score": 52,
+        "wine_score": 78,
+        "cocktail_score": 49,
+        "solo_score": 32,
+        "friends_score": 54,
+        "creative_session_score": 24,
+        "classic_city_score": 5,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 45,
+        "long_stay_score": 30,
+        "quick_stop_score": 29
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 50 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Wine-focused Palermo candidate.",
+            "context": "Wine-focused Palermo candidate.",
+            "rank_position": 30
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Wine bar and tasting candidate.",
+            "context": "Wine bar and tasting candidate.",
+            "rank_position": 4
+          },
+          {
+            "source": "View Buenos Aires",
+            "source_type": "generic",
+            "source_weight": 58,
+            "signal": "Wine bar candidate.",
+            "context": "Wine bar candidate.",
+            "rank_position": 15
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "wine-focused Palermo candidate",
+            "context": "wine-focused Palermo candidate",
+            "rank_position": 104
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "wine-focused Palermo candidate",
+            "context": "wine-focused Palermo candidate",
+            "rank_position": 53
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "wine-focused Palermo candidate",
+            "context": "wine-focused Palermo candidate",
+            "rank_position": 19
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Pain et Vin",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "a13d2c0dce152091",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Hollywood",
+      "category": "wine_bar",
+      "scores": {
+        "discovery_score": 84,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 89,
+        "experience_quality_score": 59,
+        "photo_quality_score": 0,
+        "eligibility_score": 50
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 6,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 25,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 45,
+        "lively_signal": 45,
+        "intimate_signal": 78,
+        "social_signal": 70,
+        "romantic_signal": 72,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 54,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 70,
+        "night_signal": 76,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 58
+      },
+      "intent_scores": {
+        "work_score": 22,
+        "reading_score": 21,
+        "date_score": 54,
+        "conversation_score": 56,
+        "brunch_score": 31,
+        "dinner_score": 52,
+        "wine_score": 78,
+        "cocktail_score": 49,
+        "solo_score": 32,
+        "friends_score": 54,
+        "creative_session_score": 24,
+        "classic_city_score": 5,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 45,
+        "long_stay_score": 30,
+        "quick_stop_score": 29
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 50 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Wine bar candidate with strong Palermo visibility.",
+            "context": "Wine bar candidate with strong Palermo visibility.",
+            "rank_position": 28
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Palermo wine bar candidate.",
+            "context": "Palermo wine bar candidate.",
+            "rank_position": 3
+          },
+          {
+            "source": "Bars for Kings",
+            "source_type": "generic",
+            "source_weight": 60,
+            "signal": "Palermo wine bar candidate.",
+            "context": "Palermo wine bar candidate.",
+            "rank_position": 3
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Palermo wine bar candidate with repeat guide visibility",
+            "context": "Palermo wine bar candidate with repeat guide visibility",
+            "rank_position": 105
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "Palermo wine bar candidate with repeat guide visibility",
+            "context": "Palermo wine bar candidate with repeat guide visibility",
+            "rank_position": 54
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "Palermo wine bar candidate with repeat guide visibility",
+            "context": "Palermo wine bar candidate with repeat guide visibility",
+            "rank_position": 20
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Vico Wine Bar",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    },
+    {
+      "candidate_id": "590e25153237d813",
+      "google_place_id": null,
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 83,
+        "consensus_score": 100,
+        "cultural_relevance_score": 0,
+        "review_count_log_score": 0,
+        "rating_quality_score": 0,
+        "source_authority_score": 91,
+        "experience_quality_score": 65,
+        "photo_quality_score": 0,
+        "eligibility_score": 49
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 36,
+        "classic_city_score": 9,
+        "hidden_gem_score": 61,
+        "premium_destination_score": 36,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated in E.2 dry-run"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 49 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: google data missing"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 80
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Colombian coffee cafe with sit-down appeal in Palermo.",
+            "context": "Colombian coffee cafe with sit-down appeal in Palermo.",
+            "rank_position": 4
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Coffee community mention.",
+            "context": "Coffee community mention.",
+            "rank_position": 3
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Colombian specialty coffee candidate with stay potential",
+            "context": "Colombian specialty coffee candidate with stay potential",
+            "rank_position": 4
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "Colombian specialty coffee candidate with stay potential",
+            "context": "Colombian specialty coffee candidate with stay potential",
+            "rank_position": 4
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "Colombian specialty coffee candidate with stay potential",
+            "context": "Colombian specialty coffee candidate with stay potential",
+            "rank_position": 3
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": null,
+          "review_count": 0,
+          "primary_type": null,
+          "types": [],
+          "business_status": null
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "google data missing"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Vive Cafe",
+      "diagnostics": {
+        "google_data_missing": true,
+        "rating_missing": true,
+        "userRatingCount_missing": true,
+        "photos_missing": true,
+        "source_mentions_missing": false,
+        "insufficient_final_eligibility_evidence": true
+      }
+    }
+  ]
+}

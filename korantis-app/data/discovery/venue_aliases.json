@@ -1,0 +1,41 @@
+{
+  "Cuervo Cafe": {
+    "aliases": [
+      "Cuervo Café",
+      "Cuervo Cafe",
+      "Cafe Cuervo Palermo",
+      "Cuervo Cafe Palermo",
+      "Cuervo Coffee"
+    ],
+    "preferred_addresses": [
+      "El Salvador 4580",
+      "Costa Rica 5801"
+    ],
+    "notes": "Accent-insensitive alias set for Cuervo Cafe branches in Buenos Aires."
+  },
+  "LAB Tostadores de Cafe": {
+    "aliases": [
+      "LAB Tostadores",
+      "LAB Tostadores de Cafe",
+      "LAB Tostadores de Café",
+      "LAB Café",
+      "LAB Cafe",
+      "LAB Coffee",
+      "LAB. Training Center & Coffee Shop"
+    ],
+    "preferred_addresses": [
+      "Humboldt 1542"
+    ],
+    "notes": "Google Places may surface LAB as LAB. Training Center & Coffee Shop."
+  },
+  "Lattente": {
+    "aliases": [
+      "Lattente",
+      "Lattente Coffee"
+    ],
+    "preferred_addresses": [
+      "Thames 1891"
+    ],
+    "notes": "Palermo Soho branch is preferred for the current pilot candidate."
+  }
+}

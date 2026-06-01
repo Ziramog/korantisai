@@ -1,0 +1,3698 @@
+{
+  "generatedAt": "2026-06-01T01:24:11.019Z",
+  "count": 16,
+  "outputs": [
+    {
+      "candidate_id": "c95df8678b089f1a",
+      "google_place_id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 97,
+        "consensus_score": 100,
+        "cultural_relevance_score": 83,
+        "review_count_log_score": 85,
+        "rating_quality_score": 76,
+        "source_authority_score": 94,
+        "experience_quality_score": 56,
+        "photo_quality_score": 0,
+        "eligibility_score": 62
+      },
+      "signals": {
+        "heritage_signal": 70,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 81,
+        "community_signal": 100,
+        "specialty_signal": 65,
+        "design_signal": 72,
+        "novelty_signal": 65,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 58,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 72,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 16,
+        "reading_score": 14,
+        "date_score": 53,
+        "conversation_score": 53,
+        "brunch_score": 46,
+        "dinner_score": 84,
+        "wine_score": 48,
+        "cocktail_score": 54,
+        "solo_score": 27,
+        "friends_score": 57,
+        "creative_session_score": 64,
+        "classic_city_score": 54,
+        "hidden_gem_score": 65,
+        "premium_destination_score": 75,
+        "long_stay_score": 24,
+        "quick_stop_score": 30
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 62 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Modern porteno restaurant with heritage identity.",
+            "context": "Modern porteno restaurant with heritage identity.",
+            "rank_position": 8
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Restaurant list candidate.",
+            "context": "Restaurant list candidate.",
+            "rank_position": 12
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Food community mention.",
+            "context": "Food community mention.",
+            "rank_position": 21
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Alias mention for El Preferido de Palermo.",
+            "context": "Alias mention for El Preferido de Palermo.",
+            "rank_position": 40
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 45
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 20
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 2
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "heritage-informed Palermo restaurant with repeat recommendations",
+            "context": "heritage-informed Palermo restaurant with repeat recommendations",
+            "rank_position": 2
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 9490,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "El Preferido",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "missing",
+        "photos_evaluated": 0
+      }
+    },
+    {
+      "candidate_id": "f6720109158248c0",
+      "google_place_id": "ChIJF19rgHjKvJURjAVINc8ud9k",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 96,
+        "consensus_score": 100,
+        "cultural_relevance_score": 65,
+        "review_count_log_score": 76,
+        "rating_quality_score": 84,
+        "source_authority_score": 91,
+        "experience_quality_score": 69,
+        "photo_quality_score": 90,
+        "eligibility_score": 80
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 93,
+        "community_signal": 100,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 57,
+        "reading_score": 62,
+        "date_score": 46,
+        "conversation_score": 54,
+        "brunch_score": 75,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 62,
+        "friends_score": 51,
+        "creative_session_score": 42,
+        "classic_city_score": 27,
+        "hidden_gem_score": 67,
+        "premium_destination_score": 46,
+        "long_stay_score": 53,
+        "quick_stop_score": 45
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-ujAMZjY6SO7LnHeKEDnYkL7Gd1ESY5lllium3udX1r0w3XgaYSVwdNGVRd5fpLtmdUMiAJVggogLbQMuAP5b8GkPZEOWIhXtajGMdyX0lBM8dHJRXR69OwN8Qti3MqiOEMGAQOMGciprFFRvS3CQNM94uZ4WFqo9J_vDQC-HEtAtskmpjvnVCwbJw4o7a6PlWGYgdwR6iSNgRoKbsuE6MQCi9Y7T1aWDFueSnFSWHRLMX7y0MLYvE63vSPUHkgs1WPFFNwo2xnKIu0YnZUEe9706sjmSKbV5ug8nkfvtRJanlt2IsrksoEfVTBM-9qdLcsArrnV07XINh5QOeaB8DTYuYRqTHmeOkDzhFONpe5_1xaphBFBxlGQaPvESATQVa_r9x3Pdtf0Ena2InWkWQYZEQlcGN0MHeO8WRviz9Jw_LARuOWY_LdqWBVmw",
+        "best_card_photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-ujAMZjY6SO7LnHeKEDnYkL7Gd1ESY5lllium3udX1r0w3XgaYSVwdNGVRd5fpLtmdUMiAJVggogLbQMuAP5b8GkPZEOWIhXtajGMdyX0lBM8dHJRXR69OwN8Qti3MqiOEMGAQOMGciprFFRvS3CQNM94uZ4WFqo9J_vDQC-HEtAtskmpjvnVCwbJw4o7a6PlWGYgdwR6iSNgRoKbsuE6MQCi9Y7T1aWDFueSnFSWHRLMX7y0MLYvE63vSPUHkgs1WPFFNwo2xnKIu0YnZUEe9706sjmSKbV5ug8nkfvtRJanlt2IsrksoEfVTBM-9qdLcsArrnV07XINh5QOeaB8DTYuYRqTHmeOkDzhFONpe5_1xaphBFBxlGQaPvESATQVa_r9x3Pdtf0Ena2InWkWQYZEQlcGN0MHeO8WRviz9Jw_LARuOWY_LdqWBVmw",
+        "photo_quality_score": 90,
+        "interior_confidence": 30,
+        "seating_confidence": 20,
+        "natural_light_score": 85,
+        "long_stay_visual_signal": 50,
+        "design_visual_signal": 85,
+        "product_only_risk": 70,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 40,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "product-only photo share is high",
+          "seating signal is unclear",
+          "constraint: weak seating visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 93
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Specialty coffee candidate with repeated local visibility.",
+            "context": "Specialty coffee candidate with repeated local visibility.",
+            "rank_position": 5
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Coffee shop candidate.",
+            "context": "Coffee shop candidate.",
+            "rank_position": 25
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Community recommendation for sit-down coffee.",
+            "context": "Community recommendation for sit-down coffee.",
+            "rank_position": 2
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Alias mention for Cuervo Cafe from coffee discussion.",
+            "context": "Alias mention for Cuervo Cafe from coffee discussion.",
+            "rank_position": 38
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Branch-style alias mention for Cuervo Cafe.",
+            "context": "Branch-style alias mention for Cuervo Cafe.",
+            "rank_position": 39
+          },
+          {
+            "source": "Specialty Coffee Blog",
+            "source_type": "specialist",
+            "source_weight": 85,
+            "signal": "Alias-style specialty coffee mention for Cuervo Cafe.",
+            "context": "Alias-style specialty coffee mention for Cuervo Cafe.",
+            "rank_position": 37
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "specialty coffee with repeat local and editorial visibility",
+            "context": "specialty coffee with repeat local and editorial visibility",
+            "rank_position": 1
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-sG74PzTNVzoWb2AADWNf56vA7bo1EbSAmO7v1TPggGGew40vaY9jydQTb4CQeapkon-pfhXEg26hD9saL5xymqnQlxu4p8Aiu__6jcN98rBbwQKD6JSW4xUOMX1pLLcC-NEa0GHahKzpBwYrS3w1RsQtWWdP3Fzbe9GzHPOOhB1AIsVeneyGCWH32CbsPYZdmwmOAaHbriUEYyha6A2LSV-MyOZoAUaK-JiicrGWtRHl4NXZ8U6yqYLGYUe1HSfpVZ70jL-jCl-SOYnjLf2-vjbFj_TtDqm_g8nKwnw9msKA",
+            "signals": [
+              "interior"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-s_BjjLzXLD0Devn0XOh40Blg1bi9wfhKI538PpXvUDlF4UkHwpy38uGMlIN21jHILCCOjafeZ5Nq1lKy_70qG93BfHy6o3B6hMa4R5ywNf0wSNsF78cIbdmXPL6nNhK9jPD2ZKSHlQDC8aJSyUQ6hWAr8oWpcOPlFFS6KFlI3VzMLe-KEPJTBvXQqpY2pcZynk-_v-ZznCa60hDqxeabvDjC0PKJhbI2V5Pur2u6Ru-uY5WYNdWvPSJZOIsM81SxH4kYPded7DC0oAxgDVXqpML5YZX72TNn1Mk5we9U1jUw",
+            "signals": [],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-uHspAOy5U6_vLMlLh85Uuw2gNcEHJpN1JqPodCOiNMzLs4MDktGC8dPGX7MmPsiyO2spKhZljWbWTWo77YV1x9y-_tcR4gD91mXEuMcEcPuWrfTVfI74Snsyd1Ud3yvpcQQwvGgJP2HdU2NqIq0ETIN1EMSGRWvxXpV_MACJI-gR6TtrS3lny7-RVQ8WOkNu9X_AxoharAXgDKVz5GN3pQNRak0QTaEgYUUTHmqeGfekFJ-q25CH3PVLpaRB6yrqNUyfaobMPDiPlvuBVa-OFWBwtSQKK8-x9j6vdhfElvNkDbFYDV4t-BD0M3qIoOqgCP2d4rfa1cQqurGZ7hYWHkyOu0eoCBE4CRCnce-EW01jzqSlPfvmukKMfQLxqyMctxHlmuXcXnyCzZNVWKR6tQjAhVDqmXwMt6afDXxT9jxCgOE6r3MrsPVN98WVTl",
+            "signals": [],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-tjxkbF9paM1fe_y_vjnx8CWwGTQI8XA-jHdf6O84gQlrkw-EIEUzVWHqugQmb5rptiRv4CzqTF0U5YKMAwwj1FPedpsQxO_2cS_26JpRdKzs6AosW_Cm2Y-bcomG__KTjntDaOC5LlCFr4D4Clo3ZDE3oWeP-Wr3ja2fBGHFpfpk1_Vi_ZCTXzB3T7tJdswK9L_xVIzvEAIl7MhsI3TH31ZnxcLxiJw4SnqFUPNiE9RKwjquv15CnGVw78BAoJ_c_Xf5eyQ5alXMhh87HjODeiLfOJO41663xUcrgrxy-sMXQ3Z8BxfXDyFbscFC24nUObO7lWUga5rGGi1OFehYaGYg8F0hQxdgOadZkUc3e5mmFYbQkvo66VyaljlnUCIiaRiEREVUNvbEYebhObV5JaG94cJtFrXfq0piF0t9oB8hArOD5pvJcwDVbJRBfR",
+            "signals": [],
+            "score": 60
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-ujAMZjY6SO7LnHeKEDnYkL7Gd1ESY5lllium3udX1r0w3XgaYSVwdNGVRd5fpLtmdUMiAJVggogLbQMuAP5b8GkPZEOWIhXtajGMdyX0lBM8dHJRXR69OwN8Qti3MqiOEMGAQOMGciprFFRvS3CQNM94uZ4WFqo9J_vDQC-HEtAtskmpjvnVCwbJw4o7a6PlWGYgdwR6iSNgRoKbsuE6MQCi9Y7T1aWDFueSnFSWHRLMX7y0MLYvE63vSPUHkgs1WPFFNwo2xnKIu0YnZUEe9706sjmSKbV5ug8nkfvtRJanlt2IsrksoEfVTBM-9qdLcsArrnV07XINh5QOeaB8DTYuYRqTHmeOkDzhFONpe5_1xaphBFBxlGQaPvESATQVa_r9x3Pdtf0Ena2InWkWQYZEQlcGN0MHeO8WRviz9Jw_LARuOWY_LdqWBVmw",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-uVyrVRkq7RtS32qfBH6n9IC_HWLqUKEZYeWq4VT9NXyTGf0qfOrBE8fSnclORk55A9lOFU7WTyq9OIyfxIVRwHFGE6FjAjlON_Xad3qWVw77fHvbARFCQr-RVHufjQzLDCDjW9Eg0HdaYgBVe4AiX242f-_I0_mP30L2wAUwLvmUVE0WJ9pyuklY3sV2WnHtK2TpT2cAcSrd5R8fq4miqEq6RC9YIXwLG1a6e1Ztxl3v5XEoBnWsMX_GNcE21Wnk9x6EY0Ikd1al1amUeZw7COSxMarAklDP4XQmZp3m4ItYvbAHcI7lhpKGLra2CGF-QZuoDNiumqWVETjvAQ0fWBMlt63e_D6-XhYnX4knQAXoGBNzz1P2NX_Ta5oll3VOVinRRGhRI5maNm02gbVJZ5w5G-n3X0mBXghTj4lCzaxY23vZcD6mA5GWhW1PxM",
+            "signals": [],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-sdLE2EdKeA_xsWkm49qvJmNe9-6DtAuI40bK6bjsvfoG8Gm9XyyU0V1I7SqQPNp0SQzHIRPG9W3cJWG5IodLZaIyl0sBEV2tNNF9UM_cCL46JaNf4XG2c5OFHLX0E0qcuhw_aIMRYwx0Tm-32E1Rr3nI3VuM_108QHk4H72t4x-JeFXxSepOxQa0JZxBkg4XId3NCDD2dgGZ-FoddOZvElVhWdOieNcqd1xqNa7wGQ26rnZpi7WU1gz8QBi-yTPflXKbvtBKt7o3KWQtOZ2qpIp2vVrc41oO5s7eyyvIIZt76QrUanijTlauhHCkUXA3oCIfPoy0fk7jvbjsCdYhxF1PuFqS6vQI5tjd0wc6A6w5RhGqZo0otI7YljjdT6QXvMxTF_kSEtkuFRog9J8OceVINQZeLiVfa81sNRXThg5FFHg5aa9wGfDYCbnA",
+            "signals": [
+              "interior"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-tcENRrwmfaDzejXz6PLoi33GbVdUE86TM8zWtKxP4i400yW6R_qSxnGeC_LhY3ainbD7bNOp8GiLbdYWg6HyZfWo8COdNZkWL3-DdjLriHa6fOk9rtz-LszDQA8C6pxaqEkuycwkHZHblasiQzdo492zqF9WEPEbo5iHUJKUfqJrcP1YfwoWEVOkUCI-24yVt07cWFENT9oPEb5-G4vaOW0Ejvh1nJEgcaKH5XW0MeqqXrqlN_5nvRF2hB4dBueJo1YAEcMqFvpl36yGoWavOfSLD2Avt50JYPHwS5c-EfbQor0tnFBhEJLkOWkHnHAYh55SZUx6_YkZB0fH2wBa2pwAEDwil9JtefEJQ5abfoqvvGMOI2m4tVxezTer_nxGsiprC4gF2-oDjdawg3XeUj6pXw_LWrEIfrsR71G-HjhxYTzW7tk1F9MWgdnef6",
+            "signals": [
+              "seating"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-s3RFVS9qbQauFwoV_9toP-D9USXNFCa4Xg0M1fKFdQ58uoRq5UBldOdAPpKnObLLb_tjw5LHgz2JydEwbKt1l0mxHrxmjXktg6vmWOAY05KLtyRiiMBH-bc9BP8asWXpwqY0rlLKek9Ag5JHGOcpar1r_picGnkZ1wor1hz47kY8Gol6XwVAGUIbAp2eAdUC5LcK_-1EgasF-2bMU6Y__evknXcO_Pzpik8ksCDH1fYBEvI6j87Og7zFRXU1GvKHa3Iz42JxSI3lD2dG3A2Ezj__-Zp79sDIxz2PoZa_hCpuyx60nKyILIV2p36jI_DEnqhXQthSsPXtW1tzjtUh9Ez-juMP7PMGA5yxPVuwSWBSGOI16DS2Oa5YL96EkkPS5o8FGOVxbnKZbjXvUxGWOd-Z_gdFBONl51k8LtO_ibAcU5OL3E1ppix3eWh4k8",
+            "signals": [
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJF19rgHjKvJURjAVINc8ud9k/photos/Ab43m-vjVVbz_ojOpxjP14NPBdVD_f55cKcznfXrtaSiMLGEFHE-LIa9aw3dQ5qn7eVLp2NARVUM8djQjWcjb_LGVrAdA9zqu5v8G51vGRSQ1YY3KkxmRD87T1azycoq4Nh0r7_D_DclOYmtARl6-rw6g6Ycu8mg5QLLzR7l0NRD2CaAv3TWCmnRwlHTM9yM4e8WcjrqjMRIVSwrFpALgL2cSr-GuPxGwx-55zEweMmmXuQE3qYBCt9_c3_Gb9hURcaJi7GDFcw_1YKKOfJbXENWVABWYuj86zpA7ddDF21EKd_y_g6O8HB-OpwgfC3HhY_UFQDVHC8kaqS9ngfiDcVTE29CNnxFGnyqZFke5N0vgtPGd6wN4etmSdea4Vyv8572IGCczEp6S8vVHiUDGaaUwIaoU9twIRMoBJ6zAtUHuvm0n1wHgKV0XFeyZSPvE1Jj",
+            "signals": [],
+            "score": 50
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.6,
+          "review_count": 3676,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "cafe",
+          "types": [
+            "cafe",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Cuervo Cafe",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "21dfd222e5f0e8d3",
+      "google_place_id": "ChIJM3RR83jKvJURRbA_5OGjCwQ",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 91,
+        "consensus_score": 100,
+        "cultural_relevance_score": 66,
+        "review_count_log_score": 72,
+        "rating_quality_score": 80,
+        "source_authority_score": 94,
+        "experience_quality_score": 60,
+        "photo_quality_score": 65,
+        "eligibility_score": 73
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 65,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 65,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 24,
+        "reading_score": 17,
+        "date_score": 59,
+        "conversation_score": 54,
+        "brunch_score": 51,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 29,
+        "friends_score": 59,
+        "creative_session_score": 52,
+        "classic_city_score": 28,
+        "hidden_gem_score": 60,
+        "premium_destination_score": 68,
+        "long_stay_score": 35,
+        "quick_stop_score": 75
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-v4Gvcy9DNSsxU_pzvzB4vuS1RNGM0F7ve84MflGhnOWkmVCtgwH4F_OCk1vN9pUrBGb2Vqar12_Jg-yNlN0fPP8CtD2xGS1yA8yq3l0yUP76RrGPUCqxYgCyOCDeA1V__0pOlR0qk6a8XbEhW6w_ZxOsohK9TEY1f2VufFcXj-mktFIiDGrLgn2hJTA0xLTQeVjBzPwZOMOWO5ZcnRjVukJ0tiXeLhTNJrbsdNTeIMiwGZds7d-oDIVmW0P1lGoXq53kRdUkT_8JXyucFvnW77fo6pqoEntqzDXPY1ELAhO4KQMK3uVPZjIRnKZnLgD4pqDBhqU8dQrLXEwimbEhQO_5qWUAlTOwrZmZGZXJf9TNr9J1TWQ4OvMeTJiEHNLK4T9xsxUacRj83pi8iwM9dymeSy2YTgOSo8ZsVziIFyrBsD",
+        "best_card_photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-v4Gvcy9DNSsxU_pzvzB4vuS1RNGM0F7ve84MflGhnOWkmVCtgwH4F_OCk1vN9pUrBGb2Vqar12_Jg-yNlN0fPP8CtD2xGS1yA8yq3l0yUP76RrGPUCqxYgCyOCDeA1V__0pOlR0qk6a8XbEhW6w_ZxOsohK9TEY1f2VufFcXj-mktFIiDGrLgn2hJTA0xLTQeVjBzPwZOMOWO5ZcnRjVukJ0tiXeLhTNJrbsdNTeIMiwGZds7d-oDIVmW0P1lGoXq53kRdUkT_8JXyucFvnW77fo6pqoEntqzDXPY1ELAhO4KQMK3uVPZjIRnKZnLgD4pqDBhqU8dQrLXEwimbEhQO_5qWUAlTOwrZmZGZXJf9TNr9J1TWQ4OvMeTJiEHNLK4T9xsxUacRj83pi8iwM9dymeSy2YTgOSo8ZsVziIFyrBsD",
+        "photo_quality_score": 65,
+        "interior_confidence": 10,
+        "seating_confidence": 10,
+        "natural_light_score": 30,
+        "long_stay_visual_signal": 35,
+        "design_visual_signal": 70,
+        "product_only_risk": 90,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 50,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak seating visibility",
+          "weak interior visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 73 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "product-only photo share is high",
+          "seating signal is unclear",
+          "constraint: weak seating visibility",
+          "constraint: weak interior visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Creative restaurant frequently recommended for Buenos Aires dining.",
+            "context": "Creative restaurant frequently recommended for Buenos Aires dining.",
+            "rank_position": 9
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Creative restaurant candidate.",
+            "context": "Creative restaurant candidate.",
+            "rank_position": 21
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Restaurant community mention.",
+            "context": "Restaurant community mention.",
+            "rank_position": 28
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "creative restaurant with strong local and editorial signal",
+            "context": "creative restaurant with strong local and editorial signal",
+            "rank_position": 46
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "creative restaurant with strong local and editorial signal",
+            "context": "creative restaurant with strong local and editorial signal",
+            "rank_position": 3
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "creative restaurant with strong local and editorial signal",
+            "context": "creative restaurant with strong local and editorial signal",
+            "rank_position": 3
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-v4Gvcy9DNSsxU_pzvzB4vuS1RNGM0F7ve84MflGhnOWkmVCtgwH4F_OCk1vN9pUrBGb2Vqar12_Jg-yNlN0fPP8CtD2xGS1yA8yq3l0yUP76RrGPUCqxYgCyOCDeA1V__0pOlR0qk6a8XbEhW6w_ZxOsohK9TEY1f2VufFcXj-mktFIiDGrLgn2hJTA0xLTQeVjBzPwZOMOWO5ZcnRjVukJ0tiXeLhTNJrbsdNTeIMiwGZds7d-oDIVmW0P1lGoXq53kRdUkT_8JXyucFvnW77fo6pqoEntqzDXPY1ELAhO4KQMK3uVPZjIRnKZnLgD4pqDBhqU8dQrLXEwimbEhQO_5qWUAlTOwrZmZGZXJf9TNr9J1TWQ4OvMeTJiEHNLK4T9xsxUacRj83pi8iwM9dymeSy2YTgOSo8ZsVziIFyrBsD",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-uDK_-wuJplb3BBq4qK6AWRu_l_iY-qqRxhVSsWRnTGgLGyey9MvVygf1kLd4MLZlLK2tj5gpWNGYq5tNa77q12gDpoLUxz1en9vSfgEdLLlaF41enENHxcIuEuG42WOGd5A5om5ftQCXK141hdReU1MBQtm6A_JV1Hp5o9hjo6K_xCfwrhggugFPPtlP4ZQJhdE9WjDIWdlNA3dKpXa5csY39NJiVfOPfD1b0ZBFrEwnFjEHICHUVUvuaA7SIaj2ECk4vQMjs5YfpaLi9yFESfSsqqiZcKvSCvqTpDQlEfzA",
+            "signals": [],
+            "score": 0
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-vAxjop9gJtycsWSi0a6Vf76QuAoj1U6zbzCLD0LrtbzqQFM__CTZRfw8BPs_7_v-jidpGlMPV0o77wWZ2WYQx8eqX7NGGvNt50TfnowEatxbNJMH63hBGTKootOKTu9J0tgwbyIpSBuluqW8HfvRbUshUfusV-GRoKgc8g9TS0y8oq4ixz55Vc6oG2flmvKJ25kIOArpTL1tZr_c8aVzZUdPHkwapeRzjqR8QRAEfYy3KmlWSB_shnubB3ILvwjDUDURdra1Dxh_R4spKqTdeysA7oLltsxIJU_XHGz2T4Sa5b08pLxYQ6Nv7EggeH36z8QTwbpZnlnpTcpb8qyCXnSdhyLog4XUuaOf5Js0iYn0S1sK9YnVt-DXmvGhkJ5KFRrhmHygHgjmAZuiivOsDh4zC6J2m2h7bltMjR5J5B1ty5JUHrQJ0l4gS9lQ",
+            "signals": [],
+            "score": 25
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-uqIhEd4le-KEHmZv9wJWcgTIyUyXdOneqJqDjUj4mcGnY9azJwj5688lGon1aDo7isDmQN4LSb3ei5P_aFMN0mebmHciszEOFdt24Is2aZioewht9LNle6m8EafOp-CcUuqhBNQUEQ7VE4X5qxhzFR8VOHCW1oDEqI3KWQxikdFmfsyCUBlA6E__Ognk94NY3RKzBocw2wm_n5nQGxYYqo2urNkLwhg9EjSy5J8qS-7PxSQoMRcgwVzZi2cp6mNFmbdml3lMa9We6A9hh7AY9JYFWtdGhe1iZy-sAmrH0octyU3V0_rrYNTwL5ekeHhKKlwACrCEtNDjEbC_xWL20-o47-K0tpn3hrN0JzIkF2tSq6xN2eILJrZY-eNBTrNVyj829Aw2OONLolCJdhiXm92uzSAq0o_HBfH2zk5Yg_U2Fpzj3QKyrJ5K2GFA",
+            "signals": [],
+            "score": 20
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-uwG4w463ShNx2nVUIqrBb7a9ZnE5WUdXBmGZ_74cmFmH7opkJ8ZXn6R_plbgA68SoXri_6P2fNvnIa167vVb3Av7lZZ6lfX1m-h6m6OBnODOI-h6QHk_In-yJBESWdsGVdWYwURlyrQnhG605xlezeGv0drS3avX3IGbuejaJZy524KKT7sSWL1o8jAkVN9UZFzV60Q706auRJNyzltZpGX02-RE7ULo42LUNAUJO4WItrGfVE9Taz6myRKFMLu3YKCvxz-83m0_1eaeXT8MCKerDT9-FHpiYpboN6sSvAEujvOC_N0__6XjDAty-yo1O2ji6lk2WTd9luzRHCVRbKPEZLIKcbT7soB-1sDme8iiSvmQrY6HqTPpFLpszvdOwYHZHUZoPiPp4QGAN52lqV5zNV58NcbyEpA_h5Shd24Awh0lCLg6H10OaGYg",
+            "signals": [],
+            "score": 10
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-sVOHS860oExt-mvlDlZ9QscxAPzu-RFu_kfhQ6ADJThyXFLPqSJ5FqLT6VFJvnH0BvUMQpbzI00g5Zdr8VrDIvGz0fXAEgrq2zZN_HgCtVMjrqNQr-fiBgLOALNGYMqiJM_QJbqm_F8y9hKPezSY7cI9l0_vJ8Ftj9sOQFEpFTyF3Cgc_YDiRtbm1-s16QVFzxWkvmLZNejoBNGZb3ggvFurtEhVV2jSf_N7zsTDOTS3mcJzU27-HljJ4GIX3KTrJwLdW6FqTtZJ0sutL07Lw0xDRd6s3RRdmY5A81IDxk9NUVGe8dF1qbKH3oeguxINusZf-4C1CeoVHwWJT-ToDHw2VAUJbUXnPv3I5wEnJ_IvaDbLblRdf3zQc02rTEsIrGhWnsAZeQa3jTXSjnu7Rfq-XBGhCBwpvsxJ9y0-QSUA98zgVhtfNJjwuszVEn",
+            "signals": [],
+            "score": 30
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-vP7_HNty6qxg6qhaAyOwUHeXXV6_GMTdgVnW6-kgI9wTWBpa_EtmRLwh-O5a_R4gk0LGsvGTrLO8xmODv2MMVw60v3bKYDo75JX-gXAw0lTjrxjJMx6rsAHfk30zJYP8u5AbN-stJupAG5juPJV98KoMxfQl-dehF8qNyqCMoSwDc2GuCKtR7s3Tfatng7cHjO0wgyD2ebYC5ExkCahmd_K5ql2Axyh62_AV2Finf2RKK3PB5Ma4iNXDsMcvoONR-2jDg1vOLsHKq8HDR0ieXaJVcLJeXOxPbOKyhDf-Y59--utIgguMCGAgZjd8Jre2sHtG-Gu88jKwZ_kXwy_VF2Db5nKqODaFGx16Sioy54D2FbvER-OOWLnD69vV2cPIooBve6fUpOlJTjMOL236p-UTSqkYkU4X1CRhqb0Zeekxxaka1WW6HLlt6XGw",
+            "signals": [],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-sezndXm_66gKrPzjNjDywu7WJ43xcWg4Jn9h8I8U9765ZvAycbK_TYns5XW8qs6AGJ4qiTb4yhwj_ncPhn7_lOEPcsZw6yGohok1-4vaLvoEfK1RZNXhKi86_n35YI0J7TRFhxdcNwU9883V8Zp-eZeJrM2O5o9hht4BvRTMO8TBKCgradUDTEXiJzfctweJEvFB6t0NryckX4U2kAyPn9_y-O5YmbIrX3SyM55vyX6RNmDsspQHwtYFaqwg1eN7_aICpSDJz9T14IZ0NRPsQCljq9ZE9YpIskGUiYYbOUI8nrudPkORk9OjmD-zXyyegOGIeM1Pk-brFdDRoDiY-LPZeMEE-kXoeaejvY882gsMB8Fcr6pg3ptjo9_BftYHAAv87PVlpMIlywkDdwRl6_3krIsmO2mKKscU9FccDhkKal5ukgu5Bamgm3u1wq",
+            "signals": [],
+            "score": 20
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-tyJTC99r0UewSZPriY8IFWNvfXTC7a77fP2hL8wtpR8a6fMYr3amow-UVQ2rZBICTNA5Sjux_GGMCzjMDL1XFlBT7mHJsK8uX41OHp4afD-EJdIwEl0avG4HQpg2tELfSYxZZtwmbL93O3myllDn12jE0bfnGPYxnWm-GSp5812zXCTlGZy2Z2Rw0jX9bTgX7EKzWOl8wTIdaLoKJgT0BzswB_ZoZ2b8tBuOA1083HMfB75osec14fUiB-jeZmzPbX4BT_-j3p2jLkEN855heTuDvAMbf-68Zza9fCUOh3cQkQplgfu27zpEyojWigkcaaNrsBipgs4rblgUyge2wWE799auEv8La2E4zNYkK2mhpQv2shvr_6z2cDr9P4663Iubv6VfDPl-lKldfa0jG-p6rxqLEYWSIxYzoBZ6C-BFNtt8Pcv4qFKJk7dS7c",
+            "signals": [],
+            "score": 15
+          },
+          {
+            "photo_reference": "places/ChIJM3RR83jKvJURRbA_5OGjCwQ/photos/Ab43m-uBPPlLm47Jw-GIKIkp026Q-iDIGVAR7q-UGTT3k2i5bUfoaP2t3iYHdlBZyVlnUqLbD5q-6Uf_4M2jscuaUTVmqqm9pGn9W0rMFxmr6ZkHnnGeET5y871vqZ-K_Mz8rLepGUqY3jzwtg55UkY2tl2AGIuNdQjpeMQq8hbwxfBo-6k6czWsmnLoxq0jGsPX3RpgZLsLuyuHjW_TCH40nf7dXyr8XvQrzhyUXjhx91sFbx1aSJiW-NqUPNQHdpIAMgN5qDnaKtuGd-6U_rD8oxuUwwjPKoBy6YYA9sLeaUoUSH5Oa6QvVBuF4SpksdEK5bB57AZiqLEhVa5Q1bz71UwV7Vn5Cf39P5Q1MGmowZPGRtkncpR_oUrivNZ3c9lFp8RjV9Fy_EIrGZ21Nq-cCxTdjNcG8PfT9-5bqTeHUZ36Sllt7raVjsXjP95KcS7L",
+            "signals": [],
+            "score": 0
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.5,
+          "review_count": 2486,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak seating visibility",
+          "weak interior visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Gran Dabbang",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "7f14b55338d8548d",
+      "google_place_id": "ChIJkV4fU4y1vJUR7DkMZtkj5ow",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 90,
+        "consensus_score": 100,
+        "cultural_relevance_score": 61,
+        "review_count_log_score": 69,
+        "rating_quality_score": 76,
+        "source_authority_score": 89,
+        "experience_quality_score": 66,
+        "photo_quality_score": 80,
+        "eligibility_score": 75
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 58,
+        "reading_score": 69,
+        "date_score": 46,
+        "conversation_score": 54,
+        "brunch_score": 75,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 62,
+        "friends_score": 51,
+        "creative_session_score": 38,
+        "classic_city_score": 24,
+        "hidden_gem_score": 61,
+        "premium_destination_score": 44,
+        "long_stay_score": 54,
+        "quick_stop_score": 47
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-uMxXvtfLxdzwRxqZdTdryHm7s-I7iD2ZKskedAKuVGECPSmjutgWmzjx5csH_rqw11VVuJAVUxDOA7Ubv2YZBTcGvJ2JZrSaMxl-xR-jQbftoVcC8W9L00mgZ6WvZQuW455-df-rzaVr1xcWonqCEw3s6HGhlb8KExfQTGnumjlp843ho4MBDUibCv0KTc2Bni5a29gHk_uysnPTDzg_YceF2ISgAlO12LPVb-jCdy8oJ0NZpapxOarc_Mv31W0ifipkERlE7TvmRgXRhJZqKPykyVHrJz-LFBf-7dZ7UGM_oX1PLwjtXkNpYJyX6lyP-wPC8Qqa0lUoaWdX4ZlatweFlnuhh32Mv1JOAkIQto--ZWEKXDYMLMH0wJIV0PvrcqqRKPLKCv8ydHdwjYuPSwpP-KQWncEUnZvWLhNcxZkg5S3oIREEJgPEs-HzGy",
+        "best_card_photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-uMxXvtfLxdzwRxqZdTdryHm7s-I7iD2ZKskedAKuVGECPSmjutgWmzjx5csH_rqw11VVuJAVUxDOA7Ubv2YZBTcGvJ2JZrSaMxl-xR-jQbftoVcC8W9L00mgZ6WvZQuW455-df-rzaVr1xcWonqCEw3s6HGhlb8KExfQTGnumjlp843ho4MBDUibCv0KTc2Bni5a29gHk_uysnPTDzg_YceF2ISgAlO12LPVb-jCdy8oJ0NZpapxOarc_Mv31W0ifipkERlE7TvmRgXRhJZqKPykyVHrJz-LFBf-7dZ7UGM_oX1PLwjtXkNpYJyX6lyP-wPC8Qqa0lUoaWdX4ZlatweFlnuhh32Mv1JOAkIQto--ZWEKXDYMLMH0wJIV0PvrcqqRKPLKCv8ydHdwjYuPSwpP-KQWncEUnZvWLhNcxZkg5S3oIREEJgPEs-HzGy",
+        "photo_quality_score": 80,
+        "interior_confidence": 80,
+        "seating_confidence": 20,
+        "natural_light_score": 80,
+        "long_stay_visual_signal": 55,
+        "design_visual_signal": 85,
+        "product_only_risk": 20,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 50,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: weak seating visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 80
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Specialty coffee reference for Palermo discovery.",
+            "context": "Specialty coffee reference for Palermo discovery.",
+            "rank_position": 2
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Coffee shop list candidate.",
+            "context": "Coffee shop list candidate.",
+            "rank_position": 23
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Community recommendation for specialty coffee in Palermo.",
+            "context": "Community recommendation for specialty coffee in Palermo.",
+            "rank_position": 1
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "specialty coffee roaster repeatedly recommended for Palermo",
+            "context": "specialty coffee roaster repeatedly recommended for Palermo",
+            "rank_position": 2
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "specialty coffee roaster repeatedly recommended for Palermo",
+            "context": "specialty coffee roaster repeatedly recommended for Palermo",
+            "rank_position": 2
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "specialty coffee roaster repeatedly recommended for Palermo",
+            "context": "specialty coffee roaster repeatedly recommended for Palermo",
+            "rank_position": 2
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-unBmZ9jspGGtwEqNnzibXBirIM_iVJlSqlzsWWcv_OYOBXqRMOaNVxbHpeggkeKXwvcOnfkAngQRoe4Aj_1kjIu-mid4TSwMCyybu6a42ds5DWcxpzkakTEsknrszusJYoWpSRYlLTk795fjrGBmTg7bgv254Xw6KFavaxPbDihANOxPvBg7PCVAXAUA7V-04rpC4TrU8d-prbLrD_T0ze7Uh6BOm5ZKmSAJRydrMyUiUOriuB24m3oQDISKH-omQ4_8PyJeuawPxvogUI-zXUW0COrcM0RAbWinPxAI8TAgRzVH2L0YkEflZCcYArR8rKOpTBfWwUe1_EV6wkLN1-mGgvPq1iYTo2cAMiT1gl49SJ8byF4qYwp3mBFLdUTQmiKkjebJkyvHL1iCLk62feLGK00hLszii8nmk6p1n7Ag",
+            "signals": [
+              "interior"
+            ],
+            "score": 65
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-sgSB6xZ3KGnM5f1vFhYJurdG5-LSOHPwyTPbZgq6y82GQ0eOn2FrT9y_2ng72Mi0G2zU9x3O3J9_clM_HviTP3CNRslJ6lgEwAtDy-c0wRxC6fQhTxG9TMZaqhOji4bzLiQrO8sqms4FztNOiOfIu0bTbUM77Ik1zA2P22SNs3H55UVZDxpcia_NOcQrvDutD_n_T2j3jzJbn5jKnC-9I-ve5WziWz9nrBzf5bXVhcz-6nBtBgj2ClXWT1NCtH2Z_EClYBQLRciPr4ooUtj-ekYRfRPKN2nlWiueYH_GM0w1oTXnkLFK3DVFedivt9InJ4tN4xNRA9caqemQseT4avMGMXu2P-yGr59R8f65Uca0-W3Tn2BzKY6039aMaw2dRwHVq4EdkJ5mo3xAz9RfnhvhPnc34nozyCaI3C7sF1fEc",
+            "signals": [
+              "interior"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-shCrc-PAeAfpnkCwMPMB9CEHMC3PLhzwK4EbE7NoPWiUZ3qohAjYGrtQKolL86gqV_iRH1ujxTl9mJcBFeCEr20rqQH0J2pyAVCNwfqi2Ei3Ld_O7KMGxh25JsDRsWBzvBE1ORQEedZBRERCHlKz-PbVmw2nQ2LNNnMYzmgFcxXCiFhKYJU5lQZZnqpdDemlH4V3UKUo3Eu8dfYHQ-3eWsEVG6CBWKF1aUjQC9JocLBkUjZeyfZlx577hiA4Kb5TQwfuQVJZdjisyjXLOUwDBkRG7ikOXLmjLCNkA-_bs1dQ",
+            "signals": [],
+            "score": 0
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-tQy2LHO7cls-DEBQxebH8nN8d9R6FjRjKk3FZGWQziK9WW-lTgHr1JQJYosRqnxLvtaa3Imi1E4SDq-XYIK8tnD6oisimgrLhNxeos02cXY7BVwkMmWCzhUcCDiQq86uYUdDV2bsV-PJL4Hunj_dV3XimgUqOaNcglFYQdIrUbsafJLp3oN0K0WhcFfJBwRrUkJvao-HPBdn87Win-xMGEvR3WucoNUD0Baz47mw9miay4RCGAPVX1wS8rSjJj5pfXNWG1jMglgMTJQ7JYEwIB-7k4ztqzNQNl8agP8GtlGoY4y_J-PNi9mbD9C25tKR6vP26eAedo4I9yoRZ6RaD20Oek33E1feiXmR11UUa2-368x-afY9Zu7wXV3wSLN-XdLIR3lQBDg2HAFqV52KCHxkEjo8kAXXDoJ0J4pmDy8H0jtNL5pvhkcBen_sQR",
+            "signals": [
+              "interior"
+            ],
+            "score": 65
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-vK8yU_VjxJH4BOONOQmdSgU0vOTxNHDbnNQQ2rqjNxaLl-lAJCHzNuTbFFNadW3qy_xl9AMAXrpRM9xRtoKCVdvn4KeFMh-kDVjbv4uAqfJNM7f20WKJ2D6I8dDKSf7jtQW65Vexvd_WvchSTMa2CL6mxsx7lAK_jRB26p9O3ZIrlstIGfR8Bbk4BOpiHBQnRInc3BZTITc1g7WzJKnEl1PAI2ptC5aXBYlBkePSU5C0NxGFXcwZyRJYs39noGKHbaWQsW77kK7FxYCzHWp0KCB_WuQMyhTsjKOXeTpkOU3m1w7BWlXcKZSEqFFdkn890OXTKU2fcAkMWBZQbNCzEfhOKstbbW3ySpTnt5kvxP1u7npGJpIRyUGiPGFKk-5o8-4D_7tcPYkju7famUPvKd8AKoeI_3nxf1flLDcRc6pA35dk7vN9ajoDdfJQ",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-s6YmJC9-NY_6OUOLgS1uXb0WRGiBCYiRd7RQtCnq6i4p0f4upOI2cp-NKRCLtqLz503Sd4wMPyDfO338YRPDoQRC_ZQ7qJ_pBpdUY8UNBumpOeUyVplO888T412hXs3KyKxxcaFWIFHPn-XAYHmUVJcwWNsVjkZsdYzNMJ4EW9Roj_eNQ-8QfkH3QWOZ9WGJhzNF78GRMP_kNic8zLZc3K_EPihVEPYBVXrPV5iK69sy6U8cpgVaySgaJEIYYY1zAe9gQOdZC_SE3UGfUwevFeu5eklCJwlTlTu3Lio0zAuzpyLN3p8_cAKdXN2SnKdF8SvntvzGk_SWpVSrWSffOVQ1SjJ65baVM1NoTzUcEV0bxnzsI0uOzkKLFNd70gWsAav7XeQAxvL5mRVq0nVOn-VET1mAY8utjz2A52YBdwcbRrB6s4XaUDU-LFgpXS",
+            "signals": [
+              "interior"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-uMxXvtfLxdzwRxqZdTdryHm7s-I7iD2ZKskedAKuVGECPSmjutgWmzjx5csH_rqw11VVuJAVUxDOA7Ubv2YZBTcGvJ2JZrSaMxl-xR-jQbftoVcC8W9L00mgZ6WvZQuW455-df-rzaVr1xcWonqCEw3s6HGhlb8KExfQTGnumjlp843ho4MBDUibCv0KTc2Bni5a29gHk_uysnPTDzg_YceF2ISgAlO12LPVb-jCdy8oJ0NZpapxOarc_Mv31W0ifipkERlE7TvmRgXRhJZqKPykyVHrJz-LFBf-7dZ7UGM_oX1PLwjtXkNpYJyX6lyP-wPC8Qqa0lUoaWdX4ZlatweFlnuhh32Mv1JOAkIQto--ZWEKXDYMLMH0wJIV0PvrcqqRKPLKCv8ydHdwjYuPSwpP-KQWncEUnZvWLhNcxZkg5S3oIREEJgPEs-HzGy",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-sDMmN5GLu4Qs9k0KvpUhkZddif5CeUfvpPnDhtZjL2tnhTOMPBTkZSu8CfiQnP3i7a-6tXNy6-dFs2N1n6BXnf0lngx2_QOlBx--nC8D6VZt2NdTTlI8nw473NpiEOc9zimaCF-L5jLcwB60HMQXLPmFP6Ga2c_aByWO9DPhqzZON8Wit0E_nSQWwP-mRsuF1rfysexwsRomLyEpVeE1bzQ3_dSjunKug7pQHYi8AMlQLPeihjrAaWYi-6aLMY-9wi99pnzZSydD2veYzbS1bPusr0GyjslXizijoPEuWTe0ChSSmwC43ORlAnxgXHfStAfuVEpS31vfs7lb9zoJau-RJxqLxuDhqi8Vv-FqUNH3ngZBCA1XP43ha8OmUEspZXLZ--WLXkyPtj3JJ266Yk7FYeRWpEoHIVuqhLsTSGyyUGodAMKfd04LYoEHYK",
+            "signals": [
+              "interior"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-t_uZvjWSkEsWPbPZp1Rxfes34WxXqPSJqc9tSy7-yQWSMrxSkt2aRz1CNyNMZJZF5yrT9E5iV-ks_UnfnsM6h-KhNa3i20t8WlkYphGeiCqfLcgjmmqOfoC3SmixWCsuQccSRkQtHANVSxHfunHKQAWeMThUNyW6JjohaWD5w6ETBKWwfgPidf0-I72KUJnJHerfC8CsddQGy7DYap1fzZWrA43jeezdqIG7tM5A3yvmRO3eQUzBHIzgY4BdETB4JXdX8Hw24DQRwJTYYhuKynuFLHELgEPc5-aRTypY8M_9v3vWk_hku3Dg8koiBtWNx6UbsNtxM2jCW3R_9v4ct5Qdy0HsYOel5Qxd1lTTBr626MXC-nue2cyphqEx4L9PNcncDOYyMJRVThB7ivZD_ZLhUUYsQpgI7u_Sa6K1ASyQ",
+            "signals": [],
+            "score": 65
+          },
+          {
+            "photo_reference": "places/ChIJkV4fU4y1vJUR7DkMZtkj5ow/photos/Ab43m-szCymUOk7ZnJobSdw0sNHI_lA5QUvU6w_iQSqpKUaeEEJaaSYbnO9MZj5akODNtL6lgG2JJgyA44NWmCarcNRhi053Uz2lslEdYjwVZuBCGR6Fs2HGrY9l6qlNajG17TaEjtuiQXvpMXz_4U2LZgGahIS2m-7TATPBmnw8DbX-Yif27znhJ7qbXNQKI6L0dM_XWcakg6tYmQsIHjlltOVp2BREQk2c2ejrUApLfyq0AQetAobhFn4ePs7vemI3FWyvyxYorKvV0fN3RySxUlf4Z6uEtfDmy4bnI8e1GPojG1YlvXXLlqLwUH733x4xFlKAy1z3u-sEwy9-ATN0hmd1OxRsoUfa3JwpKD_ULAJT8tnpWG_-i7vRRRqqxyMSJG-9L1ABOxq_L68gVVRbBv5sWKX5H9jvyh-gwsmIoooquR04pOURWA0RMEmEbyAM",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 85
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 1800,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "coffee_shop",
+          "types": [
+            "coffee_shop",
+            "cafeteria",
+            "cafe",
+            "breakfast_restaurant",
+            "restaurant",
+            "point_of_interest",
+            "food_store",
+            "food",
+            "store",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "LAB Tostadores de Cafe",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "70145d1449130248",
+      "google_place_id": "ChIJpQgfDBG1vJUREd5_d9adn5U",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 89,
+        "consensus_score": 100,
+        "cultural_relevance_score": 70,
+        "review_count_log_score": 80,
+        "rating_quality_score": 80,
+        "source_authority_score": 94,
+        "experience_quality_score": 65,
+        "photo_quality_score": 85,
+        "eligibility_score": 78
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 14,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 35,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 36,
+        "reading_score": 29,
+        "date_score": 63,
+        "conversation_score": 60,
+        "brunch_score": 59,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 35,
+        "friends_score": 65,
+        "creative_session_score": 37,
+        "classic_city_score": 29,
+        "hidden_gem_score": 61,
+        "premium_destination_score": 68,
+        "long_stay_score": 50,
+        "quick_stop_score": 29
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-tFfXeZz-y6ZfruzSleV5rHemHTTevjluLEhw9MfT1nTb44SGxirdZ1onxyXrvK7TLbE3xOwHxign7WxCuijG97Jc6lr9ueU86-H_EjJ-s32CH7cF3PVafQL0QvqVZF3osxsNvHp_kGSFZ85dTDgpijDyQMemoRviNrOAMspYSvobKUI2QUrIJ66WlkVI2GI-NMP4_JHVnHILpXb3lLUHKsBxhkFfICYVQycxL9VlhRkCaTYOOh1bV6w3VG1SY3uT2kEQqSwiwOErqWSmj5dyojUw8MZZvllXHNxeggfdFyfQ",
+        "best_card_photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-tFfXeZz-y6ZfruzSleV5rHemHTTevjluLEhw9MfT1nTb44SGxirdZ1onxyXrvK7TLbE3xOwHxign7WxCuijG97Jc6lr9ueU86-H_EjJ-s32CH7cF3PVafQL0QvqVZF3osxsNvHp_kGSFZ85dTDgpijDyQMemoRviNrOAMspYSvobKUI2QUrIJ66WlkVI2GI-NMP4_JHVnHILpXb3lLUHKsBxhkFfICYVQycxL9VlhRkCaTYOOh1bV6w3VG1SY3uT2kEQqSwiwOErqWSmj5dyojUw8MZZvllXHNxeggfdFyfQ",
+        "photo_quality_score": 85,
+        "interior_confidence": 50,
+        "seating_confidence": 50,
+        "natural_light_score": 85,
+        "long_stay_visual_signal": 65,
+        "design_visual_signal": 90,
+        "product_only_risk": 40,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 20,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Plant-forward restaurant with strong setting and local following.",
+            "context": "Plant-forward restaurant with strong setting and local following.",
+            "rank_position": 10
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Plant-forward restaurant candidate.",
+            "context": "Plant-forward restaurant candidate.",
+            "rank_position": 22
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Restaurant community mention.",
+            "context": "Restaurant community mention.",
+            "rank_position": 27
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 85
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 42
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 16
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "plant-forward restaurant with strong setting and local following",
+            "context": "plant-forward restaurant with strong setting and local following",
+            "rank_position": 17
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-tFfXeZz-y6ZfruzSleV5rHemHTTevjluLEhw9MfT1nTb44SGxirdZ1onxyXrvK7TLbE3xOwHxign7WxCuijG97Jc6lr9ueU86-H_EjJ-s32CH7cF3PVafQL0QvqVZF3osxsNvHp_kGSFZ85dTDgpijDyQMemoRviNrOAMspYSvobKUI2QUrIJ66WlkVI2GI-NMP4_JHVnHILpXb3lLUHKsBxhkFfICYVQycxL9VlhRkCaTYOOh1bV6w3VG1SY3uT2kEQqSwiwOErqWSmj5dyojUw8MZZvllXHNxeggfdFyfQ",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-vGWvceHVJtXFJV_QRBGexfpUH_qv1WxBZC1Z8aXj72tlctc0bs0iaPQLqJzZ7JAZ3hndFy7Y83qAiTMepDnKIuIJ6KcW3hYXLC16_kX7tgL5N2GL_E67egSy_j0d7A5lsUPCslCGs5Qiiy9J6DKmICQimzpwHVK7jZLRXDRghI7FlQtu9m8iQW-G-IBHNkQ_veQntbYmmVmnm5r8Av9U1zDZlXFQrcXgfK9C9ZuiM-NX-SlHfpTyuDzM2uU3irVl62lHQWwDKO1GIhYCUz9BTQYiYv7p60oVFvrw7ESPckvg",
+            "signals": [],
+            "score": 30
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-u6qq1qM926ZkS4iPwuBGLvOA-HDb-0N8oztnH3H7_wmht1cb0jFHUEayCvv2Q4O_oylohn7P34iKNSYnY22KJ2RPrRfQ3fGXRjYQgjeZUNPdNx2w2pYq0Vs9oQgO5VeCvcxJfow9f0cZgE3v7RfB608MXhIcITKS2dmxT36H33GJMcgmV2FlB2fLqPQE0iaRNgr8AQ1qF5hJXaEFJWUs8GjmoxCqty0shV0fqHeHDEm3IaDHUb2Q20NlPDHfqTrR_1wTROTwwxmZ5Lm-6AVbpG7TgoEeCqsxzB39V-gDStCHhcxODfySZqgOZvdi6ylufZ_X6FZmfzo2BJTPW6yfrJVKoOuBbE2aNx5M7Kv3M3xFr1nKfJtl1vU6l3pMsbSlOREp-qf2ybFLqmrNuSiIVt47HL9DHlzNkNOgvYQR0Wkqsm2KOBTVwbN7T2wwt0",
+            "signals": [],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-vNJ1XnKDPPzFNGBbnQ51Sxvj14zrO0Wyz-4KEPngF1J395Rs5qAFhlnGHTfVGl5XwCdiROwOkB7m1HQPQEOXolQ-HgqzbOXvF7qYx4Xx7TLXJie1__duxURPApMZ5ujTD5v3YBC4esQh19IbSRMftJ2hQnU8h-DNZ483KtbU737hIGkXzWfDUCOnc3mbVcSoUga2xtyDgMJF-gen8HovSBkjYj4zxNUgoT3a6_6_kY29bKTBFy0IlP7wKaiNgncJPxaXPAslD2Ud1fsipdUrkqp13alafEAbeI7tGRt84i7Q",
+            "signals": [],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-uq0L7IMO6R3ia8l3dFeD76zwiAvqg6ESzTtCwRp0Heyyuc5-UnCA2U9L3eiQ_mGBc7UKdKEffFPcWSw65aB5nN2X63X7v288GuD4u2LNj7f7yHPMTapvmOQRdlJ6du51HHqUtxH6v71QYL9eAlLcaucHDQudvgay4ZX3V4csIgHdAaGGJ2pYG_OUEROkvYY5oRCb-J2wfYYPLsEsaspDzoKaSqMetqvTr1A9w6RFw7dMvsUvbKfv-9a3pwNkRzAiVJqDqzP0Pg040tMZqw5IESXExyr4FdIUXULCryuVMndD_DAgFaEHZuLx8aDs0NIuYbK0vpxkTehtQ4-atJkjIbedsjD0olUrao0KRFIRQWyUpKg69pV95_FQqpW9iJ8hM5EwEenXC0uYmS4eIk_Ztu3cHf7jaylajy5gslZ1AkBTMA5B8JH6pkbCSSQQ",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-szT33t2uyTc79V5f8HkPL_Hu317xtt-uRsXNYLkXR3b_5Hcw6VBL71yPu6QliONVk_vNDl_8yawhB50mYdJK2NKiebbhiDkusZMQ9fKkpTALNFPzg02XdRs43dYIAN7xLzQrfYdz7w3ylJsEBziz6FsnX2iji-XtVUN2G7oHF7KcSLerzxeeJ1ISGcIUj0LUILD7NmmF7bG95-vVc0i-e8lzSu4ipYWlJFwdNFWIuteany8PxYjDofw1h3t0UZy0R_xejaZIidLPyeNrXyB4dDiSjFBYc_NgS8wnMGWZGkut-WfmYHvaHX9XrA5L5ZbHbUCG_nuU9taRi0UgrmVXRPV9nyrgKNxOUwBbIqtnJHqAh-8wXGj3VMHQJxt6_yj6sby1Rt-K1EsbQ11036EnK0UufWYN4Js2F5rOLMPYa-4hNWTZa8qDsmQhHB6Rqp",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 85
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-sy0tQAxiNIEoq0kgxrCPqrDMGSsuUw6y0ssZnrD1PfqjKvThtH78LX7G99szULbxZjulhmTE3cCSAfHYwzfFoDMg9UfQ-At3lqoSe-nqIHlc8Ch3kbyG3NBCAXnuzOcRUuOlW8AIHkTEHN6QyoAufJ2RSoyrRINNEKhZxT4DtZG_ZUi89KldQ15jOqrBZsfQpbkApsSkFnHN1hT9WttTLZ3OVKYdt1Mw1yn-8FJJzOr4rMLnuVv6JakT_jeCB1fSODk0Y_ZujD0TcY9C6s9NDs8IWXL7GaH3RZKl-azn_7Tier1K0q7I4CufIkLLy1XMyh1PUYPP34DNr8m6yijYyzMI9VcI4F_9lY0Xmz3isEH6uBH_DPcv3jdC--zw9r6l39p34qQnf7xPACTo3GXd7ZUXZAVphCcEUY8MOn4gkusISYJ-8y9g3Ea9kB7Dm8",
+            "signals": [],
+            "score": 0
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-viVVG99R6ancOAS2GJFpsg-1NhQyVt0hZgJXD1vbqM61WMnVCOZBwLwaG0nE_utd5i5IFcEoSJwAFco8JjpgANTuAWHcG0TTP1NFcSx2mSbyrLNRT60lYwkOXptkET9pR64-oMRyOZKqXxJQBKCiiCe2_89OPuxIRRhjRsd4fl087JhXMUXheoZLO8CaChyKKbkp79xo9KyUzSVx_B0DXbcBb0fR0L9e9fT4LfdntBRii5UzQe1pdZiVp8IzWJA0GrP5Tjv1W-_uiDIEVj9bmzuSr_rVH1XFB8vlaZp4SO90QFULPFhIF7uulYhzmnzOJLf-q5lDW8vboG3p8guw2q_ldobrObAXR3fY884t7lRHyk9scCwvU8i7VmNA7yiR7edICCrpT8q9SJcmUJ0-ziy2GkXJCxLIUhXFNB2RqYL6TpVQ6NfAXBp9eP17Lk",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-uajHxyy3VHn7ktvS9ZUQLZu-XGstSiRsfJz6chBzHcMqlL4sMLhjIJHrOXf8NV0hsJ0ljoT48UPpLcJWiGOwStGiwfZLXvfZ-JrdwPxuTDYeeOLuPmo3W2JXUAtGYuQX_gaZD2qIGgnP9eaOafLU2Z8u9_IHHjvmd8e9SLXdW2hWPP9piTN9q5Mdi6JMtWLBvPFKS07LB9I_JZkVr65-77xGOpz8YxqEPutgEeCBYQF5HEuJ_PXDsYZeLh3AMTrVcbQN0uz9M49pfBExf6qFTyPqKH9oq-Oa9mXJraYqIb8nd_oCtvinuT5seIpiAfdsehxbRIFflc2mYzHboMOZc7cnIhHYkr9NX7GENXRwwoiJ4cwPR8b6LDMsFJ8nm3c8cKboz1aV9ZyOXTKgu1KuLN8KKqfoOhylOObsMxReB3tp5Ji9NEuNN1HF4TwA",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 85
+          },
+          {
+            "photo_reference": "places/ChIJpQgfDBG1vJUREd5_d9adn5U/photos/Ab43m-tp0ZzLxctIRbNsDP0o8gHeRunSiNHRSdlWaPCGWArVKyjAxbLh3WXss8USQayUE8EFJBG9z68NpSKETGBuF09o3izkJGfk5KsfAOqbJqMKYVY8sPJhtyUhEQPHixThQvimbJs_BtCVJoSY-ggROJRyDQUrYpSamQ74aTyE65KYYIe76_6mV2bxHjSl_1nuPD2Sg5YarY4MS373lq74AJEwd87qdrJ-LlBH_6YvPOSSpu1uBbIi26iG60WAfSMJwN_ldKvtC2dvsYYeA75co8cn_b-JP98zxTngVo5_xigpdlEsHR_58mHn4Iz_rH8kkMLXr2lrEm7GCoeMHO785udJVZEAsmZgLmmRyt3EMfMBOk1q-oc5cs_4-lhIENRHj9Eeit1K4n30WH92MPpmCGnrefaqUVQBpMSN7xHlUVbwCQ",
+            "signals": [],
+            "score": 40
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.5,
+          "review_count": 5945,
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "bar",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Chui",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "f369b8bbab4e9ec5",
+      "google_place_id": "ChIJK9_f9u21vJURCGQ9TsCjhyw",
+      "city": "Buenos Aires",
+      "district": "Chacarita",
+      "category": "cocktail_bar",
+      "scores": {
+        "discovery_score": 89,
+        "consensus_score": 100,
+        "cultural_relevance_score": 68,
+        "review_count_log_score": 79,
+        "rating_quality_score": 72,
+        "source_authority_score": 93,
+        "experience_quality_score": 62,
+        "photo_quality_score": 70,
+        "eligibility_score": 74
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 76,
+        "local_signal": 24,
+        "community_signal": 74,
+        "specialty_signal": 82,
+        "design_signal": 35,
+        "novelty_signal": 14,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 85,
+        "intimate_signal": 68,
+        "social_signal": 86,
+        "romantic_signal": 60,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 64,
+        "long_stay_signal": 32,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 90,
+        "late_night_signal": 76,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 62
+      },
+      "intent_scores": {
+        "work_score": 26,
+        "reading_score": 21,
+        "date_score": 61,
+        "conversation_score": 56,
+        "brunch_score": 44,
+        "dinner_score": 60,
+        "wine_score": 47,
+        "cocktail_score": 82,
+        "solo_score": 19,
+        "friends_score": 68,
+        "creative_session_score": 35,
+        "classic_city_score": 31,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 62,
+        "long_stay_score": 37,
+        "quick_stop_score": 35
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-sLL_Mn0ESpo1sxBDl148EqMUcYP6sXt20WtWoclXxcluqEUAbPyWeyQoYy9ZtKKkPseWvi2hMe5ViR7dJ8kplXYcKCa6OgR6I5VpLzPxWqMTFHlfqR7ZJ_UNxAarbYG8ilSosLuSYqAb_PsiBwT53r-0L3TFvDJnIIEllKxvHeYk9MUgTR3My6P7zrFe_wYHg64bKz2vx7G9I0ZRNIeRD38KckyJJJFcHZztipgVErk7qvM-OWulKNrLhG0i19cWxYv9ZUAkC-bsgX1lkVRjatO6BX9rMWdCW8WlkE0yX6f2B0BMsxowZqGu3MJmSrRNRm888a6jakItpfE76n4oCrDI_qCVr8ccybaqtHUFhCamm62e5oXpbqwveKnV95ygN7nyBJArpm_8BVIQDqmhTrV_vZSRdvrSM1jVk5Br_9hd5PuSLPZqbasPNYyQ",
+        "best_card_photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-tLGDnle8jgBTOlb9iIL5NkFXWyUjoWWXCrQS_e8-3-uIPwWCWQQOLTdwKeBpcxglGYHX4QHI5QouDvE0nKx3rqq3OKi1jMTkH3aHCovtkK7EJ_-wHF_Jb8ooR8pcBBbz2wNcoVMG7e13gAy0we9Olb6PrY7pqyZ9PJ7OHnEHppAdUWvuAyod4iS4qhOa5P66PJlB1bzwKe6forxWfA9genjqzYD0_jmFmtWN55ibBAkoGkVy9AzXbALFixR9V44i2lQejKIFnUXuB8PIMzbK2EKA-38u826aiJWuTqIND6M2GL17nCRXevUeDOgolwrcafpuMM6iNsfeFWmt59gTmdGySKcAmBWOMx9o1y9-XHGKWV2K2x-fLz1HrpeOiLpA2PBBjsbnEmz2asQo9thyfbm4YLe88ByLLpUeeaHRRQtdKmfSUfYHcuYuLuBIvp",
+        "photo_quality_score": 70,
+        "interior_confidence": 30,
+        "seating_confidence": 20,
+        "natural_light_score": 70,
+        "long_stay_visual_signal": 50,
+        "design_visual_signal": 75,
+        "product_only_risk": 60,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 40,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: weak seating visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 78
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Vermouth bar and social drinking candidate.",
+            "context": "Vermouth bar and social drinking candidate.",
+            "rank_position": 24
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Branch-style alias mention for La Fuerza.",
+            "context": "Branch-style alias mention for La Fuerza.",
+            "rank_position": 44
+          },
+          {
+            "source": "Marriott Bonvoy Traveler",
+            "source_type": "generic",
+            "source_weight": 56,
+            "signal": "Vermouth bar candidate.",
+            "context": "Vermouth bar candidate.",
+            "rank_position": 10
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 131
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 65
+          },
+          {
+            "source": "World's Best Bars",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 6
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "vermouth bar and social drinking candidate",
+            "context": "vermouth bar and social drinking candidate",
+            "rank_position": 29
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-sQHSr7HXSIlAtezbDPcVqwAPUckUkjpmqfE_zs66tgKV89v3pzog6mInLF6uZ02Y_TCZpXWk39otNhbGZ-zMpoOeA0EApDrbR8TrzLwzUTVA_PlxGiZWp5OP3UX7RlspbzBy81TVrkKhjfQtjRPloUQ4azdMr_hX4FxP0G54-NdMEj8Vh5_y9NQB8VuN29CwzBVE80DBj-7bjY4UgUKedYjalsweLSER8omT1pGwxLzxINFYkdjUAXQnkij_KgaNcTS0VENzqS2wlWtCkmTJkYa4Hbs1-vGx-wOgmzndnEoIVYv0BVYnBd-BkOr4aUP4DjZukbhsujZeWtdMxg1Pkc8MQfbAF3PCdWrGWImdXouWfhfq4_7JnmMCe5pZV-EVqv6IPH168DP6mIK-e8sn4Vk3NYeTTwO6WcCeoXb3eE0X8",
+            "signals": [
+              "seating",
+              "people_staying"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-vuEugs81YzkJDF9WGLrU4lVffeQBiGlupvxLaM3j0fZ3WHRQuncBWPIdhj9ut9lo9Tnta43h42YSFnfTOfVQ4O7-PhZvj_ujBdE57KNsbXqk2-6UbDT7mJOTRmqxZyOUgpBtK55Sx3XJ2YezJbX2q5JEkFQJGLqXamEoY5mwsvQJuc256rQ3LX9e7lHTXxPYXuA3qeWJ7_AoJtWnJocOlhTZv31NZEoUv1f1NNhi0EE3ubuHh0nb_DF1IRlRGj-tMuVSs5IQzlcahbOXas4mj4kBOmarhRcfCuqe1y18Z4-Fg5hPcCGsV3Epy2WHHqGWj-TkegYDIkEtaQDwc_MMQAa9ExNStwmm-rpBQ7DPWVUDOY2UsPE-bcNzz3tDJ-2B-aYYXjARLHqd4qt8W8cGE5UjMQqQyJtUZWcAasUNhCUXD-",
+            "signals": [],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-tidUstBx9SSBtJrv9A2Db7azQ_CDOQ78CvQRcDotKJINdwvmHKzFvjEBdn7WCxeSk910E2Jj8vS8cz8J4A4O-6gSozV9zbDXsGgDoi-DLOv56Pg3wvCecscAOduvScf6VoxXEnebEkLzxvBuTQhkqEDbiNSkCRw63ue6cj1HnOmpW1hbWfwcaicFxj0I6sPkRjhZoU_UNhD-Q2qqYJd825Ql3aoVN_6wYiNyIbm0j1FY6cFoCtLOWDVdmt5boZsMB9Zq92OurqwYx9aCI6nhlSZDmeIy3hpYJrLcih0Uxy2JlEkku9kLi8GM_feksyuwWsubFVqK0ui_5SXn6OoL8OeN4MAlRjxrptM9KdmBwu-mBnV2e1Um4SsYD7ad_1DYigZ6lTa9I_Tw2qZc9u2HtfRbUqSdhWOUIzpUiPD3tbdeZP",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-uR3BN3fgY0zwuuhijsO9Tuw8p0GWkXd541oczTWiVvmxg3XhNfABWH_8lUMh-vC-HLC_swf12Mgc--PVhJGB_Fy6P_81-XGfVqG732JDojfwIvCDsOqM7YGiC5RTHHFT0Y3Z7we2p-uoD6j_coguzdw8_LiECOaKqSez68lfA9nYhbrf4hOW4129-Iy-Ss_fPCueQok-yrBiai7jVwDPE4zR46PmEfEwIHgKcQXpcxRGws-mWKFVMA_-XqDze1NbtAcsXZ6RBm1PRMNiJamA9JnQIzSMiDMr5va4ZVHVOSiDMlYvk_i2ERLx2bI9sLZLUIkPkwbHUuZzJlpE0_CRhIix0rBtcvOcsPkCIJHJlPsCdb5VE7-85ZIM3hTTYAKYi8sds1bvdhm7aT4h_ECmVymE2WVAZVrM8XkG-5S_qAw8ThbvUB-OAwvwvqZTaz",
+            "signals": [],
+            "score": 10
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-tLGDnle8jgBTOlb9iIL5NkFXWyUjoWWXCrQS_e8-3-uIPwWCWQQOLTdwKeBpcxglGYHX4QHI5QouDvE0nKx3rqq3OKi1jMTkH3aHCovtkK7EJ_-wHF_Jb8ooR8pcBBbz2wNcoVMG7e13gAy0we9Olb6PrY7pqyZ9PJ7OHnEHppAdUWvuAyod4iS4qhOa5P66PJlB1bzwKe6forxWfA9genjqzYD0_jmFmtWN55ibBAkoGkVy9AzXbALFixR9V44i2lQejKIFnUXuB8PIMzbK2EKA-38u826aiJWuTqIND6M2GL17nCRXevUeDOgolwrcafpuMM6iNsfeFWmt59gTmdGySKcAmBWOMx9o1y9-XHGKWV2K2x-fLz1HrpeOiLpA2PBBjsbnEmz2asQo9thyfbm4YLe88ByLLpUeeaHRRQtdKmfSUfYHcuYuLuBIvp",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-u2X-PP2nwtnjvsn4hHV178CJEbSvEhULiO7SKgCVseAQGeB5-GAXvhtFQqYM37fkC0ONhwcX8MQfXlUhvSzdux8c7BfV6Snp_Exwu8D-bL2XW4Fb0lFUj7xeHzhr1ZNReAN6GguCTvlThI1vTQOSDMQO6QYyQWp9ket9kpZnvHovZ59RM1njMJgeg-lsjU7UOmxiErj9_bYkd2C6U9ngUBhiKBZbb4JTpYMJ4vtY2W5bI1mITsZ0L8I_5igbymd_iK0wZo2ycOy4ODecjTwkDkjinghaPxJFqQYz2nZI2oVQQH05ce0CuOCnutqtk6BTI0nHm2ipx7uJxiCamf-BGy6gOkE_H3gi_SPJCyDBvxKGHVwLDZ3oW_fhocxjYb1XoYb5gPgd-y9hGBIslvvG_TzJmZrMU3ufDW6DTHzWMxYnpcw8fORq7qRx5Tr0cO",
+            "signals": [],
+            "score": 0
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-umt7GkMFvtK5kSpaSv5LWPZbhN34u23lXS9Gv5hGscqawz7FP31gemX0IyWhWSaa4WMSjMBj_QMpQSrv6WZklBYKWzB2EeI3qMdnuP308iVuX6-B15p2nhlNeqeU-J_fgU4_7YWzSaJFRj5Tlo4PI85exU_yIlzb236HYrRYknOU4wnQ41SIqvpHhNiXGvjQRaS1BM0A_6-B4V--FHLA_Rt-IxUufrMlpHeRF2UbhdUbGATuu_oNmfYZBFfKKYPOjkPGyTfsVJ93ktJMq3oa49kIc1SNDcB02sK7u8YxZ8wxKiMHwXrO8LGjy4_NqE6yjbadf2vztWhiwYQRiDcyVWHb6kRN8FgNiRP9vfvj_sZih2HLQ8FrDd9TkvX3NzMHP066tdMinlHvNrfBMWEpUbtSrk6KtMwRdgL2DK7BC590gGLTsHkiERLfoC1g",
+            "signals": [],
+            "score": 25
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-sLL_Mn0ESpo1sxBDl148EqMUcYP6sXt20WtWoclXxcluqEUAbPyWeyQoYy9ZtKKkPseWvi2hMe5ViR7dJ8kplXYcKCa6OgR6I5VpLzPxWqMTFHlfqR7ZJ_UNxAarbYG8ilSosLuSYqAb_PsiBwT53r-0L3TFvDJnIIEllKxvHeYk9MUgTR3My6P7zrFe_wYHg64bKz2vx7G9I0ZRNIeRD38KckyJJJFcHZztipgVErk7qvM-OWulKNrLhG0i19cWxYv9ZUAkC-bsgX1lkVRjatO6BX9rMWdCW8WlkE0yX6f2B0BMsxowZqGu3MJmSrRNRm888a6jakItpfE76n4oCrDI_qCVr8ccybaqtHUFhCamm62e5oXpbqwveKnV95ygN7nyBJArpm_8BVIQDqmhTrV_vZSRdvrSM1jVk5Br_9hd5PuSLPZqbasPNYyQ",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-ss1gYDqDwZ0_nE17p244nfqfDRx130SR7CCDHiAvKrz5lOzph1lNt796q0F9CYdXIMtAt8j8d330pZLSMiJUxaltFh8Rhkk6aiZLd1v_yu7gnCi-m2SfAAlla3fWcrPMfH_wM3eH6qeEgPMC5_kDUdhogZrj1Tsc7PhSdRND5P846xfSfvYRTrcHXjNo5VCKbd5cwjtzDsnZAM3dubey0Kr7bifJ7N1RB7Hlt-CPnzvCeY0VMX5fqx3RYdFSh1e82RrNwOM1_iQDcJHolYo9lCzPDx2zYki52spz05TST3aYTzWolmG5J1Ba0SDtqSt_XSVOLh3b5uBmejHZjDWi60RYfqc5kMdowV0BE_Hx6_bapi7gdgxxTE81Hn8nszNyvJeepYgIoUFpZapcBPeajodutMsLt2sRB_4zINYgIKOQ",
+            "signals": [],
+            "score": 0
+          },
+          {
+            "photo_reference": "places/ChIJK9_f9u21vJURCGQ9TsCjhyw/photos/Ab43m-vPsXqKIHbgKTfS-7gtHlgJpfDwNxOh6AUrTLeZ7HXwsOjYzpeIOAZ5tM73mRf6HSKVEH6FUZNHQ5tEcY7He4LxOJcECOvfzdMql6RI0Jxc8EoEqRgu5VG0MrX2lxG0zqDmiRG-ClsbUpfLYpqlZ0fumeWOitwokXAtrrQ_f3xc-ZT3PZRslIG-m-tQl0IxXtwZuMWnZVnaqo2x3S4D8w3yMeRTPueS1motctwdSKmiHxVbfQY-PckoDDo-eSxRj4kzbOT0d5WcXc_S0fIdvKaSpFkWrtaCE2p5Kz9ugKIFY6r_h8ciN_F8KxuxWGXoPdAF_U0p9SkhJ01sYiPdFVfHnV1zcdfDwFmRsEm2VBjLlVZ84T4cobFrGuWSLep1Xk-a6JA8pGOyosWaKjRShJ9MJnVSnN9ANYvkxwhGrVpmwWhI",
+            "signals": [],
+            "score": 10
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.3,
+          "review_count": 5293,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "bar",
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "La Fuerza",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "e3831e721f05d7ac",
+      "google_place_id": "ChIJtdeaLu21vJURbj8CRrdAIys",
+      "city": "Buenos Aires",
+      "district": "San Telmo",
+      "category": "wine_bar",
+      "scores": {
+        "discovery_score": 88,
+        "consensus_score": 100,
+        "cultural_relevance_score": 61,
+        "review_count_log_score": 67,
+        "rating_quality_score": 76,
+        "source_authority_score": 83,
+        "experience_quality_score": 50,
+        "photo_quality_score": 0,
+        "eligibility_score": 56
+      },
+      "signals": {
+        "heritage_signal": 12,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 45,
+        "lively_signal": 45,
+        "intimate_signal": 78,
+        "social_signal": 70,
+        "romantic_signal": 72,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 54,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 70,
+        "night_signal": 76,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 58
+      },
+      "intent_scores": {
+        "work_score": 22,
+        "reading_score": 21,
+        "date_score": 54,
+        "conversation_score": 56,
+        "brunch_score": 31,
+        "dinner_score": 47,
+        "wine_score": 78,
+        "cocktail_score": 48,
+        "solo_score": 32,
+        "friends_score": 54,
+        "creative_session_score": 31,
+        "classic_city_score": 27,
+        "hidden_gem_score": 58,
+        "premium_destination_score": 46,
+        "long_stay_score": 30,
+        "quick_stop_score": 29
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 56 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 80
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "San Telmo wine candidate.",
+            "context": "San Telmo wine candidate.",
+            "rank_position": 8
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Wine community mention.",
+            "context": "Wine community mention.",
+            "rank_position": 24
+          },
+          {
+            "source": "Local Wine Guide",
+            "source_type": "local_editorial",
+            "source_weight": 50,
+            "signal": "San Telmo wine candidate from city gastronomic guide context.",
+            "context": "San Telmo wine candidate from city gastronomic guide context.",
+            "rank_position": 17
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "San Telmo wine candidate with local signal",
+            "context": "San Telmo wine candidate with local signal",
+            "rank_position": 109
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "San Telmo wine candidate with local signal",
+            "context": "San Telmo wine candidate with local signal",
+            "rank_position": 56
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "San Telmo wine candidate with local signal",
+            "context": "San Telmo wine candidate with local signal",
+            "rank_position": 40
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 1365,
+          "price_level": "PRICE_LEVEL_EXPENSIVE",
+          "primary_type": "wine_bar",
+          "types": [
+            "wine_bar",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Ser y Tiempo",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "missing",
+        "photos_evaluated": 0
+      }
+    },
+    {
+      "candidate_id": "0840de562f715e4c",
+      "google_place_id": "ChIJ_2CsxHTKvJURLaDW-OTUCaI",
+      "city": "Buenos Aires",
+      "district": "Villa Crespo",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 87,
+        "consensus_score": 100,
+        "cultural_relevance_score": 66,
+        "review_count_log_score": 80,
+        "rating_quality_score": 76,
+        "source_authority_score": 89,
+        "experience_quality_score": 40,
+        "photo_quality_score": 0,
+        "eligibility_score": 52
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 81,
+        "community_signal": 100,
+        "specialty_signal": 0,
+        "design_signal": 35,
+        "novelty_signal": 14,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 25,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 43,
+        "classic_city_score": 26,
+        "hidden_gem_score": 62,
+        "premium_destination_score": 44,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 52 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "experience quality score is weak",
+          "constraint: photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Neighborhood cafe community mention.",
+            "context": "Neighborhood cafe community mention.",
+            "rank_position": 36
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Villa Crespo neighborhood cafe candidate",
+            "context": "Villa Crespo neighborhood cafe candidate",
+            "rank_position": 21
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "alias-style neighborhood cafe mention",
+            "context": "alias-style neighborhood cafe mention",
+            "rank_position": 225
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "Villa Crespo neighborhood cafe candidate",
+            "context": "Villa Crespo neighborhood cafe candidate",
+            "rank_position": 11
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "alias-style neighborhood cafe mention",
+            "context": "alias-style neighborhood cafe mention",
+            "rank_position": 71
+          },
+          {
+            "source": "Visit Buenos Aires",
+            "source_type": "tourism",
+            "source_weight": 75,
+            "signal": "Villa Crespo neighborhood cafe candidate",
+            "context": "Villa Crespo neighborhood cafe candidate",
+            "rank_position": 5
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 5974,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "coffee_shop",
+            "deli",
+            "pastry_shop",
+            "cafe",
+            "dessert_shop",
+            "brunch_restaurant",
+            "confectionery",
+            "bakery",
+            "point_of_interest",
+            "service",
+            "food_store",
+            "food",
+            "store",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Cafe Crespin",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "missing",
+        "photos_evaluated": 0
+      }
+    },
+    {
+      "candidate_id": "c4943f7e42217fc6",
+      "google_place_id": "ChIJs6vp73m1vJURsaF0c45J64Q",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 87,
+        "consensus_score": 100,
+        "cultural_relevance_score": 67,
+        "review_count_log_score": 75,
+        "rating_quality_score": 76,
+        "source_authority_score": 94,
+        "experience_quality_score": 62,
+        "photo_quality_score": 85,
+        "eligibility_score": 77
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 24,
+        "community_signal": 52,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 35,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 33,
+        "reading_score": 26,
+        "date_score": 62,
+        "conversation_score": 59,
+        "brunch_score": 57,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 34,
+        "friends_score": 63,
+        "creative_session_score": 30,
+        "classic_city_score": 24,
+        "hidden_gem_score": 48,
+        "premium_destination_score": 68,
+        "long_stay_score": 47,
+        "quick_stop_score": 33
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-tGQcunv5l0NZ-2pKCi5kPdv7v8ZaC6iv9APWws8HltFLAtW19G_NNxcFdNGQEG9UbYq8YTa9PPGIRDvar5YWYtLr22bwotnuFXZ9b2t5VXtuhbJ7vAzqyrxxaVXW39CtVzLrXAfb5y3q2DhXh9f2WkmVpmNU92tG0FawFryd1lzib4_0EA7cZmNnyqkZvkJso7NJD0Mvl5XKvwv9tl4OiYilEzR2bzpRaFs6JKLEan8rrDVeIdjXlWamKa5JR9NzryFaE_pggIQ-OX4TIcP_gvJV68I2fE-aWDFl2-AvCOiXSbA542yW6PseA6O7RtVJTokCZUo_tzltMGZTRoe3RErA7smMjmBV716k65D2AE8bUTEdYKeEzIeCG7H9LnfdexI-XOsHoQTkWVIiZVNX92W4QxF7rR6mqqDxr6LZfcHPvmWS4Kwy7_S_zK7T0k",
+        "best_card_photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-tGQcunv5l0NZ-2pKCi5kPdv7v8ZaC6iv9APWws8HltFLAtW19G_NNxcFdNGQEG9UbYq8YTa9PPGIRDvar5YWYtLr22bwotnuFXZ9b2t5VXtuhbJ7vAzqyrxxaVXW39CtVzLrXAfb5y3q2DhXh9f2WkmVpmNU92tG0FawFryd1lzib4_0EA7cZmNnyqkZvkJso7NJD0Mvl5XKvwv9tl4OiYilEzR2bzpRaFs6JKLEan8rrDVeIdjXlWamKa5JR9NzryFaE_pggIQ-OX4TIcP_gvJV68I2fE-aWDFl2-AvCOiXSbA542yW6PseA6O7RtVJTokCZUo_tzltMGZTRoe3RErA7smMjmBV716k65D2AE8bUTEdYKeEzIeCG7H9LnfdexI-XOsHoQTkWVIiZVNX92W4QxF7rR6mqqDxr6LZfcHPvmWS4Kwy7_S_zK7T0k",
+        "photo_quality_score": 85,
+        "interior_confidence": 40,
+        "seating_confidence": 40,
+        "natural_light_score": 75,
+        "long_stay_visual_signal": 60,
+        "design_visual_signal": 85,
+        "product_only_risk": 60,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 40,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Restaurant candidate with distinctive culinary identity.",
+            "context": "Restaurant candidate with distinctive culinary identity.",
+            "rank_position": 14
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "distinctive restaurant with high guide visibility",
+            "context": "distinctive restaurant with high guide visibility",
+            "rank_position": 50
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Chacarita cafe candidate requiring validation",
+            "context": "Chacarita cafe candidate requiring validation",
+            "rank_position": 220
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "Chacarita cafe candidate requiring validation",
+            "context": "Chacarita cafe candidate requiring validation",
+            "rank_position": 69
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "distinctive restaurant with high guide visibility",
+            "context": "distinctive restaurant with high guide visibility",
+            "rank_position": 5
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "distinctive restaurant with high guide visibility",
+            "context": "distinctive restaurant with high guide visibility",
+            "rank_position": 7
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-s9-GG-FbACzcbp7GSvKGjYNhS_105cYNsjA0Z5H2wWzTiNB8d2DfDZmbV1A0hDOJmjHhqqfvh7W8wEqlWmN729XlAIJpPMUrvXHK_yU48xLu-D_6XEtAhAgyeizXRpdf0bywjccYI2vCWEO30Hn_xqvqBbRIsscIf1g_f-p9SI9vmG9-gaeZ3Lj2BkBJmti_tXydJ-K_SsyiYH3afpHzPAw_mBCYjk1GGuRekp6plxyPwm5p0KjWTUoD5Ax_M449WxG5z0_6gVuLCTxdkDSxZp2mDuxGqEjkm0M_V5vIaRMXUSxtW6JdcA-O9gcBP06ap6bMXENJCgzVAt3qdCNLUmHIQYC0LfxEEZuKiMeM_pc00wGFq-daVbyP0i4s_eTrERlc3iIZ7WLZofIHXDmT_GhNuyA4pBee-oNbZNxAiEzs8-",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 85
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-tv8Kf1b4vrnRIHqcP3KS1PE82-S3uOc8S9esz9pgwebPIo1Dcn75NvXe8jeiU6-llGluUbiBiudFR10zAClCbcx8hXd7xE3FQ0nujEGACv9ylrp6vcwUUIwuF7spFSsd5n4llCz5wblnX_1-U0J4s5_RTOtTMwcPUKU2LepiHaaTdlkKiUspqKAW_9jariPmW_mN1YI8gBe1pAtb8CocmDvdjkDzXXfMYYegLZ_lsIs4da9dOESqerLAH_X7HbY_vVAKljGvAB1PgS2474ft-KlrJda2dcgApAtmnjd0UtLRelUC6R-djHjwny04KFq1G-qmOUgNtm3tXI2PpPAnKuH_maklWM9y7yQm1tjywGeErjngfHnZAmTLSUaLuD6rWy7ZUmNVqP_l6fb_gTjREJJ93s7vK9erhpD6r47fui8A",
+            "signals": [],
+            "score": 15
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-vVnlg5I_SypYw8Gw7fZwweU5C7ZSAh2DfJxnwCRdCmDc8qlfYe71GMRYaZQdLmsyKW0oecpLYEaGCZ3msw4IIOLMQYK5j5Ecl1cIIEPjBx0LquxBGbC7sOGQJdfauCWRVbHqVm6izlOp43mD-cQBoPLWkhNFPlRBgfjvWjLuvXuxh8dXzL6HGliTaL0kwffHH_U_7ziPVO4a3PXiloUtNFT7Aw9wYh9M5HvL3Hn3ufKXEHMm1ItUq0f4PWCj6t63RG_ejDHXU2sL-gqU0ujDdtg3Rod6KsgBgyxCF8eOJqoDAeJpg6XQp2JpPqfACtl6P6jHv2DBOK6jgmBPhqyeI7uAIMCQNs6SEwxx7TNylEF98ksdoYx8oDndWxVeRj8XLn0tHZsh8QICrnXSOuCJ1slYabbeh-E7xck7jDehyiDro3sfjd1qORA1zD2ERr",
+            "signals": [],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-s9SxmL-MYNhf3JsNKLct8fZGKYvg0fLLNJZbQe2LD13a_ITEGEXLEYyBKD9qUZuCyCjfVV3tFdx4ARoSvivtbjACFAM2ZUj-JIP_EqJc1p_546VjyZTVyOkGSkXNiCwO5-amYF7IMYR08TWbVuVYzKXc2336JVj9TO2363d6AgaxQAF15dVl_gM72krSQNabch9jq1twIvqctT4SItllT-AugaSR1WXfeT1qoqEqgLsr-iz-ApNyFV4miYc74YXVkQit1nnGY3SiT-l6XRHV1bWBm08ed3PmmK-ac_4ZgAc37aq2OmqeqmAwUIjUbkI-BtAG-0HJMpO1es5tOE-hVgt6ZWaJHcAnHKRkZwWSAesF2SbwoVygxB_W3CJoBNCLSUnthWCJOwhUQQvBB1jV1Wp5e-t8uK0mO3AiJG95hVspJM",
+            "signals": [],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-sXVUvKIS5aMx5N2eAIvLARqxki8gl_7w-jxjAHzWYIQl8riCYaGSDz-UtGhMN44MFjChwwF5uYaAKuLtA6nm7cwm2X2VLkoj4qMY0NOxzHaPbRiaOHBOM-SldD99K1Ahsu0ozTmB3qqpNV3yqC27d3cEP5TNgAKp7wdNUNgYmfz5Sk7KkYvkOp4gE3x_lVH9xsnS1Lv6PBhKMZ_htJA2lGZ7SB5k7eBjBkdlXim01Sk5qiRtIikaqDCaRHF1Bf-zhjiXdYHVPA-EBDGbkU9K5mpgrrY2JfKsrvB3_aX7LXPOex32Mumw6_SEsLLPiP5FlgFoG-P5EzB1z7l8ufB74KbHB-WxPicDUuDTNxE5s2KX7RJ02qHMZf6WuyeR7xg7wWlrxJUzdoaGbRTlkCJCkFp-WaVLKZLFc9YwkU8slo_IJDJ8hHPUkvewJKoc6n",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-tGQcunv5l0NZ-2pKCi5kPdv7v8ZaC6iv9APWws8HltFLAtW19G_NNxcFdNGQEG9UbYq8YTa9PPGIRDvar5YWYtLr22bwotnuFXZ9b2t5VXtuhbJ7vAzqyrxxaVXW39CtVzLrXAfb5y3q2DhXh9f2WkmVpmNU92tG0FawFryd1lzib4_0EA7cZmNnyqkZvkJso7NJD0Mvl5XKvwv9tl4OiYilEzR2bzpRaFs6JKLEan8rrDVeIdjXlWamKa5JR9NzryFaE_pggIQ-OX4TIcP_gvJV68I2fE-aWDFl2-AvCOiXSbA542yW6PseA6O7RtVJTokCZUo_tzltMGZTRoe3RErA7smMjmBV716k65D2AE8bUTEdYKeEzIeCG7H9LnfdexI-XOsHoQTkWVIiZVNX92W4QxF7rR6mqqDxr6LZfcHPvmWS4Kwy7_S_zK7T0k",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-vfMJerglptRH1xXod2nVFqxSx_aRtgHjcF4s-9B9QyUGrLUC7XpGaHM_Jq-428ufuRcXKKnD85vkObuawuTz5XT0OwOBgulPKtPztBd0wgJ640zWuA4P4r9kZkzLpZa3jkYX4MZcWIm0iyRTLD8Yyc665qWp50v2LG4TsFKp4or58w4RD5zDL8-wR2iBDyXpf5Y4QBWu0T1l3Y9HYUQQHByZAe_XJdSOSWP5hhacCo0hiEC-DQtnSTCPl5l7U4lXF_8LhFcP7lZNWRhV6tJsEI0vPYl-d0IYQbiD4EkzScw1Hfy9wT2XLeXWMk6acEOXoMwBjjavVDn13Frx8tGXSbazRqjSuLcVDjGF9B_GDr5RDtDV3vGFPHM0qTm9Fufya7zUj0Xge7CHCAv7WuPAk313b5rXAEj1rvGIMJ7uCN4Q",
+            "signals": [],
+            "score": 10
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-vFOnVJXiDnJP1Q6ncjeCCC3Y6oTdfaOgCCQIfnsq80CjSfVw6It89LGFtU-a07cesfeLq9QTpT_ms_jTacg6YrRViSTqI2BVyjpBJKcFwBM-zHx6_cjzavmOeYlzpMpdHKy4GErskl0GkV561XwxsbctN6nlvdkBVsqju0u_WntBODECtLSfzh8Wgupnl2u0HPxWhLDID9zsf60aNB6bR0m8EXc6lhHRneczQ0clJgo24e4TMTcOu8w4_KThuD4CL1QavWnDZSUZKEVNKYjdYChVU_bP-ajEvYjAiwWcA1O0-yzpQ187e_ZGO_lvw6e740enRn3jV3nZzSA848378RdyZbMrLFuJ2s5oanUW8qJo8gzKR2h_pmVBIObojXiK1ScdGBCLlw5wNMxAh4slB3llFGpaRWD0189TYsnp9Uy3CdWGayG_OPSGz-_qZ_",
+            "signals": [],
+            "score": 25
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-vImI4uo2z7IEJCaQfUzL7jb68auYSafXl1RScIOHzWGi_jJM8XIFcpCt1Uo6FDizqtjjMsawPcZBay0Zq-ixjOUlxzlqAGgiNtGUsJm2lV4Za44tjkCJIslavOXhiSUtTPt2zhsNCf2o-wW1V5FAaOo2UBVUmzU2WdrlBzwGdyy8nzF6wvx89GD8CvJ9I9KTQvFlxFk2wlLYF8u5v2nJfjUbYchJUs86qpvGTpFsf6vDllz3G6QL6biqMbrDIDe4ODhs6WienZQdyWQK1U1EhEjgB6alvGqdg5t4u0YGfqdHb8IGOuwnhvL4Mzd9Eu0mkORcciurwJu29urVOltpX1YFvy5Yr51jfP8kMtHt9TNo8Yw-BeohR_PU3wKR-MVO2nqJ4k0v2w7E-LSGuGNO5nlA3KqpESaNIQSgRdGxsPkcUNjtqZ9bUBxMd_mjUq",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJs6vp73m1vJURsaF0c45J64Q/photos/Ab43m-uDqVenZ13Lgd3KAnYxL7cAgtXqUtVrg-34QZPgSMEKjAI7jdhq-aWiMAwbQaIrdJVUicZ_wbAmr81LwZ-mu0_UIxtPgTc9LH6iv9JK4e42Our9772S_ox9jAa4RXp9RsRCpTaGe3hdwW3X3aka0bidzL8FXtVO_UQtfWUqWjpD3olhPYiF8TPrEIWGFkNDopNKUfgr7Q-rrN1lIpnCOBmS1-kD62N28AZ_vvjVymkXPHeg0JyO5AxJlJ5TGl6lXcF9ZfBy-sos2SDAA_xnZNT10a3E72VT-kUlAxEHUktHdj6cWMV53jyxOnNKSJQGJ5Ozi743w8Y8tOto_-H2jE4nPAoH2Kwh_9Y1yKlGfOLjsgUp8jOUf0wF05q4m1cpzJYzJAHsFWK3rXOZ6J6A0HWUanipQIjwZ8RhNdVgjv7ijP9LMD5PjMzzhNetNwnK",
+            "signals": [],
+            "score": 20
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 3260,
+          "price_level": "PRICE_LEVEL_VERY_EXPENSIVE",
+          "primary_type": "fine_dining_restaurant",
+          "types": [
+            "fine_dining_restaurant",
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Mishiguene",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "237b4a6487451996",
+      "google_place_id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "restaurant",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 75,
+        "review_count_log_score": 91,
+        "rating_quality_score": 76,
+        "source_authority_score": 95,
+        "experience_quality_score": 58,
+        "photo_quality_score": 65,
+        "eligibility_score": 73
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 65,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 62,
+        "intimate_signal": 55,
+        "social_signal": 72,
+        "romantic_signal": 62,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 42,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 72,
+        "late_night_signal": 35,
+        "creative_signal": 35,
+        "formal_signal": 50,
+        "casual_signal": 52
+      },
+      "intent_scores": {
+        "work_score": 30,
+        "reading_score": 21,
+        "date_score": 62,
+        "conversation_score": 57,
+        "brunch_score": 57,
+        "dinner_score": 81,
+        "wine_score": 43,
+        "cocktail_score": 49,
+        "solo_score": 32,
+        "friends_score": 62,
+        "creative_session_score": 26,
+        "classic_city_score": 24,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 68,
+        "long_stay_score": 42,
+        "quick_stop_score": 32
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-vWXolRQ0NtTrzMK94BSv8o6RdqNJeQRBZzSxhzxHdxTGNrvOEpY9ZoND0G5DkqjGj5Sjp_Q1TcJf4sUw-kXu40UYk-D97pUS2rygJNnekgFlmaT2KBMV0az7Nd5bIeEi4EfcO1gYvhjRs_VucPIsAkaTitmQpParh2GIYFUvXmlTaT9exG6HS7jp6UrrvgzrnxDj4dztbtYH_eZqhECHHzpUC5X2uFYoZtpLygxo9WH7KtiYo6AiAKL1nPNhHel4JeBgNcc3H04Tv2HDOTqyhpVtXSYKVPzfJepebfh4AoI8a0xZCdF3ou-lZBEyjBPSnT_0wGW_4DzF9DMdVNKNq_pnDeqyE7TUQNHX1LQP_nx8dhm2sIOnWDGMFd2hPFPST5oWdR9rIA4i_oca2SkdBWDkMiXrtEyh8tReVwKZ30DubKx1oarp7fzXNUBlMD",
+        "best_card_photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-vWXolRQ0NtTrzMK94BSv8o6RdqNJeQRBZzSxhzxHdxTGNrvOEpY9ZoND0G5DkqjGj5Sjp_Q1TcJf4sUw-kXu40UYk-D97pUS2rygJNnekgFlmaT2KBMV0az7Nd5bIeEi4EfcO1gYvhjRs_VucPIsAkaTitmQpParh2GIYFUvXmlTaT9exG6HS7jp6UrrvgzrnxDj4dztbtYH_eZqhECHHzpUC5X2uFYoZtpLygxo9WH7KtiYo6AiAKL1nPNhHel4JeBgNcc3H04Tv2HDOTqyhpVtXSYKVPzfJepebfh4AoI8a0xZCdF3ou-lZBEyjBPSnT_0wGW_4DzF9DMdVNKNq_pnDeqyE7TUQNHX1LQP_nx8dhm2sIOnWDGMFd2hPFPST5oWdR9rIA4i_oca2SkdBWDkMiXrtEyh8tReVwKZ30DubKx1oarp7fzXNUBlMD",
+        "photo_quality_score": 65,
+        "interior_confidence": 20,
+        "seating_confidence": 30,
+        "natural_light_score": 75,
+        "long_stay_visual_signal": 50,
+        "design_visual_signal": 85,
+        "product_only_risk": 50,
+        "storefront_only_risk": 10,
+        "counter_only_risk": 30,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak interior visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 73 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: weak interior visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "High-recognition Buenos Aires restaurant candidate.",
+            "context": "High-recognition Buenos Aires restaurant candidate.",
+            "rank_position": 7
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Restaurant list candidate.",
+            "context": "Restaurant list candidate.",
+            "rank_position": 11
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 44
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 19
+          },
+          {
+            "source": "Michelin",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 1
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "high-recognition grill with repeated editorial visibility",
+            "context": "high-recognition grill with repeated editorial visibility",
+            "rank_position": 1
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-u80IQDngJDO_K2ojWtKfROFUcwyJbihGUTLi2-ohJHz6QmE6OLhRjUufBdgq9q-CadrOlTzB4sThK7caBolyJRqwL74CXmHcxcgrMjoz-DtOO9Bq17Hm6RH_7qRMEnkkhfquPZa7VPRmVreLqwF53ToOazaQflA9FMGapZta6OJUtg6GoCM4gyD_d8XM198TzmqslXc3HZ-rfau0zq_zMJPsAUv4KTzdIUTMtwvUa-zYuudgzexPVtEj4opczME03KreLYknzdR-klhAN_1mvzZOjMvtw--vF8Tpxp0-8iXXhOqCPMOAhdGHlWnCYNRwqkWVKFuFAZ2xWU4xDGQlO3TZcvPtHoiUI1sXCKjhQ6Kmlx-r7pd_Fu21EpVxbZDsnHCXR3tfHICMiSy3DqGOn_STDH34FGH01B6GiopudU5A",
+            "signals": [
+              "seating"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-uhPUnra6AOA6OeO4gmJ2iCSsgpoNUY-YTF4fcGgSGHjrVSz04reQf_QLRl1NRYg8wdAhpRJVSY3WnRj2kxOVvnnlPwYT8FUSGV3CJaq_680Cc_VhlPrlWSj03qjd-h_54iZKpU47cy7S-Jbw67M_LUsD-8YKX4H6LWSVBsLhDpEtWgML-Y5voLieYBApckjwwGsGP9a1zVeBrVbKjrxnrZYKYcMVhgbNjohFF3S_xWLEcSTqLjiA9B4LEkOMuf-_E2wj3eToYaAjjxKayEzHmMFEpthA5NCvJgaoj-szTwQIw-dlG8BF-BT5UdZKFxAAJR6D5jwyLLNrYtvq7FwkUHRd6iy1kIkXX4oL_AoN35b-84O_WzCjfrwDR9MTDcuC2Ko1wTORxIpQZFcdm1WEh7T4RlfveuEA2HNgGLf6A",
+            "signals": [
+              "seating"
+            ],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-tLOuCkjxleEtrhOWgn9Y_hmrZ3yj0gait_Gj-HlulkOd9iSZi2Y6uhH5_RoS89NCgGkqERDq7FR-mIt0bYqLeDdCsWNxweN_Fw6sao6Cp49_3IPxQt1oMd9buNg9xloLpAbTDjD4kzPs3Et-eLWvKJDAjG-__EqIf6EDEeub2RGBdNDOWijVHa5CyjhJOw_5s1_ACQ8f6Yoow_sVUWjS5mqmOFAKh-ZlnbKz6NmNWLlJmUpN_2pzo4wnfElvBxXBSBOrmhWVVbMYtTEJ60gtVWVNonwJEfh4xsxpvzwMAzx7-BsZpAv6EySaPHoXkc9PhQI-jVdKFnuDpYsDbzN3rHrLd9iEExK-UcfE3tvClLQdlYMQXYuxsUsAW5gCoa0wzdgvFEZjRKg15qllkZdX2BT2r-e_EGIASjYzvp8EflmK6WwdPS8BOmKaT-UA",
+            "signals": [],
+            "score": 30
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-taFeaDQJsXm5WH2H1BBNqpk5hpNtWIKkWQfgctiBKHuWL9ozRncdcQGE1FnFZ3AHq9z4reTP74RFRPwkN7aQsZthdib-42aCwljLFQsGgnI-7-84CRbwSoDDQpLVIEg5EZEjD6BDFo8KM6-ddvD8jG1jZncXUTnjRV0B4BmVESzMYR7uPvP8tEWtqaI0QRDWZ2WseS-6zGmtJJPVp9mc-7a6fKoPcNqSKmu3XgPxQxDI4dtYO17JX0Q3pMHE-KsyAW4RWIf5TEONFFeLSuPZRJMiEUTepdt90vi6nO-Yysg7PJ5OL_a3O8c2AF2PSDxca3-9qbpI-hBPTJLv7Tgg0upf_2tZoeelV__l-z_UZwymfeNhlf9bm9CibicYcADw0J1PDdIWJ8b9T77lmDo7pPTGs2NzzyWSeb93k_NN_lxPbPYH_WZ5w8lmlv4Bkf",
+            "signals": [],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-vWXolRQ0NtTrzMK94BSv8o6RdqNJeQRBZzSxhzxHdxTGNrvOEpY9ZoND0G5DkqjGj5Sjp_Q1TcJf4sUw-kXu40UYk-D97pUS2rygJNnekgFlmaT2KBMV0az7Nd5bIeEi4EfcO1gYvhjRs_VucPIsAkaTitmQpParh2GIYFUvXmlTaT9exG6HS7jp6UrrvgzrnxDj4dztbtYH_eZqhECHHzpUC5X2uFYoZtpLygxo9WH7KtiYo6AiAKL1nPNhHel4JeBgNcc3H04Tv2HDOTqyhpVtXSYKVPzfJepebfh4AoI8a0xZCdF3ou-lZBEyjBPSnT_0wGW_4DzF9DMdVNKNq_pnDeqyE7TUQNHX1LQP_nx8dhm2sIOnWDGMFd2hPFPST5oWdR9rIA4i_oca2SkdBWDkMiXrtEyh8tReVwKZ30DubKx1oarp7fzXNUBlMD",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-sF3fl5n2rjBM9Y74jIk_AIUg58FFzzrfekdCb0LClks6jAWpc1C7kjI2JalHYDxUZDnaCph5exaW9UtuT7bQa1IK6A2KwQtOkmblKv3lDrTssXGewkjlJLA6UGcpPWNsMxAcs-17HjW_YGnafXK4vkUnXnAqbcodnlMV-ZfLy4X44skVhHQzuNaDCqJvPWhLsrDXSi2YO8UDxGa6IfV1yWT1KC7kStBYvCwO_715hPHhA5Lp561Mc3sxyZFx_jCwr54xpgFB41RM6_KQlSVSqiRtaOJVWIN-sEjyFh0BOVkbPImwHxmF7zsDuGN9m7mXBw9HsoZULRIOD5C_t261Hc1ITcsRPzH6KKpk0Q6spMK_ekXyTBiP0xHzLsSeWIlkCHIQOigmhU5H0mCl1mQvVhlFMM912Udq5AtpCBaMFnacehe_sFtHjhmhvV6A",
+            "signals": [],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-vcSRAZTxkbAA45mBcTaHLGycbgAhsbqD3SFe1WzCqJL4wLEUGPeHdaVpVsQDvUOI3JpW29fikbm09arjuQJyV-B2cp6_IqA7oAHduUOq7_mO4wwu35NTUC57huddF19Uj9ycpyfwHwaOMOXN35xqqXmllTmOgJ3FoPLEgcQ7AXyHiChpNKSIyfmsFgCPG4YrtZNREk3HEflJ_84TJ7MNF4oFOUrQDgZqLXcsLZvgxz5Hiw0Vhu_7ffEQN5BgSRnz_o_OU0Z6YsK9sSkK5sPVSLi3wKO_cHUGfolN6YmQg5DgXCsc51YHoAJb5Cz0RfZ83d7P_-0Dz7z9JMfz2Ng0oRGViPTWzM3sv74-6KMHjL_EcSzs3WQnBxkwVr-dX-LehRUJ2sBLrkjthjZLdK23FEr60CLnXrdYtWnYLGv0CURYUe4evstDJ6-GUFuomq",
+            "signals": [],
+            "score": 30
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-tLQZkMZWkabcIPkJ1GEAzx--YwWpw8sBLic-ry1xZ_pHeDEEvFsmrdFm-aVqDSdRUG1Jgubh8R0RL6gsMv91mR3SBvf6z1rx5gXGHCGHvtxI4Yf0ZExd34g0xKaJlWlh7skJjAEoaQmEWC7u73_f4dlfQAPXsfPJqIpc7_PK0V4UW-VzjfNVY2atC27_cLLfOjc5iGRY0fJyHo_n1E0we6R-lvawd6VVEI3xfxyPTaXyucQ8oSYjvkFM4sJR9URIhYYDA5jibzlCCxw2c8IU5bxdTywHD3PZvhOXUHGliypIk3lA7G8Kf3YxqUM7QPAHfDTvyBifJekxjG1rkjZO5dTurGCRYYcEgP1HCCHVwfZZtzC-lVV6WS-kNnVeDRKpQvHXXOoCHogZgkK_3EDi1KLMCr8CSowWcetxafPH6wJ9-kPfuMmBOc72_Wr1tZ",
+            "signals": [
+              "interior"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-s6vSQ7yR2F-06zZpAiT1jTu4tafT9houkF6FVKd29id1oC4UjfISLMOF1IkeuQuevtzuhhXqadhc0kg4yNbOEim7Soz7NjWFVUg0q7HfHWJR0nOXMZHky2e1GxCFJ7LzikLOtFYfZjHjiIM5mXhV38sCeSzxUuV8m-GKNlR0mIoXCOQz-d6QORy9BaM8tEU5r_vTZyG6fpuvWabzxpr5G4rfsE_vEXAAePyI2Cl0NUuYVkBrrQMpW7RPe1GDWJchpxTxdxDFMV2Pf9FkVTjYJO817ECxqz-yR1_9A1XOrE2Th_fpNyer_zlnxFXNPBiNWoBi_jMLRJIA80kPts6OzMpBVx2e7MJt3K-mKgIYiowFq798B7OZCC4h3GhmxkqgmaLwvhrzNXT3oBSj3U4VPrcP1xRBHBVxXm1DLsArPQRjc2nGFpApyik4ylKnWz",
+            "signals": [],
+            "score": 25
+          },
+          {
+            "photo_reference": "places/ChIJoYl36oa1vJURWWhqD9z3UV8/photos/Ab43m-vli9AXpf5ArzUbEIsfFK0ZAXI0Q-ebT1rqNuKCVg_MxW6GX9OMYSz1Nl696tE1Fy2OWIU14skpt1HAj9mdIpt2_BDmW943HN2jl_2m6wWWs-yX8dDE0XnpSShQj2eYRe0xZ0lkqSW3foMmmW3RBznxuvuzxCT3TZT0p9CDx-E3v2tR8O-DbcK4fkmIo3fyhBdgJdxau-rZKfQdJfb55xffETTec63D0BAFwbuUFNyTBkgPa0bDonU6XMVnMReEjq00bmH8ZY3Idjn71nmCXOB-N6T2STcbfDElw5YRX8ZV5rdxBdxTRoHB8iXrDd7drHcYKO332P-l2vl7mbD6vU8yB_87mR3nzzKBCSC1qJist9LZvEZhxrBLJ_2Gl3SSUm8HRJpGH8-8qNZ9FSUu2DufJ5WbJiLci7-n-weE4xH9NPmgKYCavZbs7aEgU14V",
+            "signals": [],
+            "score": 25
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 18963,
+          "price_level": "PRICE_LEVEL_EXPENSIVE",
+          "primary_type": "restaurant",
+          "types": [
+            "restaurant",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak interior visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Don Julio Parrilla",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "63b3b684eb8bb88d",
+      "google_place_id": "ChIJo7CuuHu1vJUR9DoRRpMQDNs",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cocktail_bar",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 68,
+        "review_count_log_score": 76,
+        "rating_quality_score": 76,
+        "source_authority_score": 95,
+        "experience_quality_score": 59,
+        "photo_quality_score": 80,
+        "eligibility_score": 75
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 82,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 85,
+        "intimate_signal": 68,
+        "social_signal": 86,
+        "romantic_signal": 60,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 64,
+        "long_stay_signal": 32,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 90,
+        "late_night_signal": 76,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 62
+      },
+      "intent_scores": {
+        "work_score": 28,
+        "reading_score": 24,
+        "date_score": 63,
+        "conversation_score": 56,
+        "brunch_score": 38,
+        "dinner_score": 61,
+        "wine_score": 47,
+        "cocktail_score": 82,
+        "solo_score": 31,
+        "friends_score": 68,
+        "creative_session_score": 25,
+        "classic_city_score": 23,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 64,
+        "long_stay_score": 41,
+        "quick_stop_score": 35
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-teTl4Pyxen262xpPNWnDTGR9H7sOmxE_7v04-umNzgIn-98yCchkYpyg_IJBbOoit7VjtyU_0LUsXvc4cmfmFFaoais52YHU_aJdT5cq5RtDWvZwicyaltAEQEdPzIyGTcQafJjNl0UXmotVxw3quUJ7PxsrL_glpahM-4ONwb59OoMyFNdB7eXTkLMCiO4qeLLPUnXDRQC9fAXdK2zBUPJ4n_0ND48QjVRWAXxhnmhIjnwEdu_KyYBKTw2vY8igm6Kc1Uo5OAu_ws8ZCH_mGayXPIRtMbFu73f5rSawoA_mPjdEE8BUhD7ZMLaOmGga2VeinA1h7CSj5_EFluXVblu6lzwFaoNoldy5nCKLAmcjKz9YR39v0dgRv9hBWG_tX_52NJWo_ZjmGy1Uk8nOlNrTgh48e5wDaTJ29vH14UV_EqJtzERxGHYZST6G5P",
+        "best_card_photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-teTl4Pyxen262xpPNWnDTGR9H7sOmxE_7v04-umNzgIn-98yCchkYpyg_IJBbOoit7VjtyU_0LUsXvc4cmfmFFaoais52YHU_aJdT5cq5RtDWvZwicyaltAEQEdPzIyGTcQafJjNl0UXmotVxw3quUJ7PxsrL_glpahM-4ONwb59OoMyFNdB7eXTkLMCiO4qeLLPUnXDRQC9fAXdK2zBUPJ4n_0ND48QjVRWAXxhnmhIjnwEdu_KyYBKTw2vY8igm6Kc1Uo5OAu_ws8ZCH_mGayXPIRtMbFu73f5rSawoA_mPjdEE8BUhD7ZMLaOmGga2VeinA1h7CSj5_EFluXVblu6lzwFaoNoldy5nCKLAmcjKz9YR39v0dgRv9hBWG_tX_52NJWo_ZjmGy1Uk8nOlNrTgh48e5wDaTJ29vH14UV_EqJtzERxGHYZST6G5P",
+        "photo_quality_score": 80,
+        "interior_confidence": 50,
+        "seating_confidence": 20,
+        "natural_light_score": 30,
+        "long_stay_visual_signal": 63,
+        "design_visual_signal": 85,
+        "product_only_risk": 40,
+        "storefront_only_risk": 20,
+        "counter_only_risk": 40,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: weak seating visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Cocktail guide candidate for Palermo.",
+            "context": "Cocktail guide candidate for Palermo.",
+            "rank_position": 19
+          },
+          {
+            "source": "Bars for Kings",
+            "source_type": "generic",
+            "source_weight": 60,
+            "signal": "Cocktail bar guide candidate.",
+            "context": "Cocktail bar guide candidate.",
+            "rank_position": 1
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 126
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 62
+          },
+          {
+            "source": "World's Best Bars",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 1
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "cocktail bar with strong international recognition",
+            "context": "cocktail bar with strong international recognition",
+            "rank_position": 25
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-tMPjr5D91e2RJWcFx5CllVh1JoMjw-gTDn3lSstCuV-u95e0xAKAkKkFc_DPbeC2xxtq5BkBPLBwgylUQtXy3vUwTFmrd1yqDQU-Uk3oJwjTV9xsmPPo89LhaRkPOnm6o13FwZsEI8muBIX8Kb46y1g5mRl6sdDlU7IkEF7AdB7trxeK5V8msazbsJkZO4ji33fXPt3gonKN6qlg6MpzglrV7EQFo33R59C78Todtu-OUU8i_ZneXsFEiJD2B68F5lN4MKlGlcG1tEXM0hwdjAqSoepI1vKxVgo7k0Ycc8ArzYaamPkPtUpgkCIXJc3Q5i9d5axTC5qP1hAF9295mcL-uj8kC_p8YwyOhVY0i_b5lLQ3BItFv6is3gGi9SMcqPkJjxZMDhJKkdb4EVE8kAwh9Hoai19Zw0WMacEsOuf2pt",
+            "signals": [],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-sPuAiqWXVOjULniwXtNl6s7riGKhCtpjZEHVjEmJnXEhkyYf3bTKyvCmo329qKxevVOrWVbnStQFJ3UQf3DWYeS_MHCAitF61Mte7SaUj7-YG1733HLbuQu5xNvLeMYhGZe6rpLBT7Da-Ij1SvjuijvWxGtvyYhJHnnQiZxazDp0VIABXWuZHh2fGN54EEnxJ-7nbb5AWEbex1Z2gcM4iO-N2pF5jZgucvGQ2DHJ7kri3nrjgam0FVboB2r8nmaO_XC-dTko9zgAusCJhKrAdcdL7yeh_L2ObRAUN6ZXhoZSejha_W_eIw0PyTZY3KzkR8e0J3mO3Zgr8vZTQHNkJ9c9FJK9dP6bcOEsB1z7cLaZ--Ed09KGdvN7ZTWtp6VApdwQxrko7BZ8apmGPljcjml3_QhxwDD19fsj4BjJA6CaH45I5D8FdK3bECZfyM",
+            "signals": [
+              "interior"
+            ],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-vOMAX8Hcm9vPtSfXVvHlksgiuKVY-mMgmPYNkmzcbZG-0vWkHGo9eIWaF7Z-dNci3gn6bGzaoKRIHpl8GDKWS_J_pOxM4pRQnJalC4QfOnD2-15rlxIeHCPClFhGHd8H2L-oqe0aQgqIBXBeqMOrKddoN8IpbISwI-y_fVImVtnx5-0C4_Ifa638BHjdjmeC3bJQtfGn-xctZI5dfu97YiiXxyZ0TvEGOL9yVDrHLjuDUSn52CVQDmUya1pLg1m1OOg5n_rYU1oWT8KENpFXav08fjRG5OiFq8XowUWTMbn60Z6HSlKOiS_QMn85pDscbiM2bFAQ6Sdk7KWoFFBdzEtYOWUoMn3iZVyDYXX9YgMzzv0kIgd2lM0vAFLqfak6PmZDOi1iRU3JMqprS270lm_OhSISc13PGulp_hsVEiUgM",
+            "signals": [],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-vNOhF81XjB3yn8n-FQQMNdPNXG4NMGQIAuQFnCe0L56__RpF92JkIT7Zm8FM-yb5NyLGvqXDQ1n4Q9KajN1R1uUv-FsZuXoPDBgWU52sG_MHGGTD1g9P89hX9378l0_voB45TlbEBB7Uxgl0imOxde5Gj1m6TEaxQOEFYwr-aY-Ur-6gUJr3C-qsImlPZBA9dvsmmqQhFjg1xv9zP1jHJohhuPhbZZQmnJ96W3aZMZdcy-vdL3Wdl3dbR9-GfHq6d0W32INdOwSo07FyC2iVPDxroYnXcXvPuBQASzmaICqPf3DHiD6_QUerNpDBfqLqwkAxNhi9rjmUnDbmWky7d9--h8N8seFEBJrchI25tV_q98T-tWqEXtHXuUmNLz9bdu8LqzxUE1fJzA8AOiPTPACMc8kHDbo9qohz6agXDB0ogfw9o424rGnVqHRA",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 85
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-uV2FCyclJtd1qIBn8v_WzbiK8KwjCJO46FWqAFoaE-Iz3-TQFvc5z1jUcYdchUizIeguyDZylGRLGAYaMxxjp8Q60RCr-VBcVmG_O7SK8gF8yAygCKbEIjx4HuqXcpfO6fLyTkaVkCIhz4mYSLp8X8EHvfJG-1PeTLCtWuf30PXCD7z_ndwIcG4xqVILNGgRuthUhDvzK81xIV4In33zt4XgvzE8liP1FslthGrYLjzYxuQc_4NjYWJGXj9GrzH-uVbrAl8i8SowqO_PKj3vV_x4owdzxNw7xKndm7fgIDUCv6FWnPIxMt-J6lAgbCd350Hb-36jRt1j69wRTSHcnXV35OlWR3aSMuqmJ2C1LrEvn_T14HBm7rxWbbdj5FLHAiVXlykM8bTntlDjR3Uv5ugEcJWfPFpo8DdV6_rFwGquCezO3vyp5b16b64Hq1",
+            "signals": [
+              "people_staying"
+            ],
+            "score": 60
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-teTl4Pyxen262xpPNWnDTGR9H7sOmxE_7v04-umNzgIn-98yCchkYpyg_IJBbOoit7VjtyU_0LUsXvc4cmfmFFaoais52YHU_aJdT5cq5RtDWvZwicyaltAEQEdPzIyGTcQafJjNl0UXmotVxw3quUJ7PxsrL_glpahM-4ONwb59OoMyFNdB7eXTkLMCiO4qeLLPUnXDRQC9fAXdK2zBUPJ4n_0ND48QjVRWAXxhnmhIjnwEdu_KyYBKTw2vY8igm6Kc1Uo5OAu_ws8ZCH_mGayXPIRtMbFu73f5rSawoA_mPjdEE8BUhD7ZMLaOmGga2VeinA1h7CSj5_EFluXVblu6lzwFaoNoldy5nCKLAmcjKz9YR39v0dgRv9hBWG_tX_52NJWo_ZjmGy1Uk8nOlNrTgh48e5wDaTJ29vH14UV_EqJtzERxGHYZST6G5P",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-tqs3FCFk4ARTTSIXjQFOB8fwHL4F4XcF1JvdoqDpS6ppl1b_XOQVIZ5t5cHxCWC7TJPTLJVMeke1oSBqrke-k7q3VyaRIFa7SwhMDL8T4K7CByF1HMjzRFGWH8MZ1iKNUFb7SpSmEN9y0RVT-_X_jrTgn8362sTm0ngxxHXpsACCTdngAyQ0oXhzkpMtQfYXCKNxLotrxlmqVb6R3sG1Otax2i68xrYtgEE1LRo1F_yua7NC2tU4IkhtyH45bBwmf5h4KmLmVK0wUjqFHuyHHyPoBlsAZ0Fm-FI4XGYsSUFrcxgX-8ibelH9TETRq3Rq7QEeUiqTwgjWJh1W3VuYiMETlkUrmGwYEQrV1A7W2Jb2Tft5zgmNNZ3rz-HUUIDdJJ5iUyKuB6MgzeW_IT-YvrBW-ZQx0J2vu1-hhu4CD9RocI4J4CZo168dgZFfhj",
+            "signals": [],
+            "score": 25
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-t-H0j0eid8cwfSmItNM01T1C-eLtyUzp2OFuDIRyyUCTM_JLLz1bfT5mRI3fBqpeU-YtNiHO2qRAAbz59LVUwf2LRJQtTqXbN8ypoQ5XAWUUQt1lOCYEv1EjEM3FtH8wbPJqk6W6xIUHICAbPW_-mEjUQJ609hvUwuqZjHzttGWH-Cjx7PEX8Z4ADwbk20PKD3_SLtcvKinzNizFbeGwnDCoo1bKc-nETc9X9ZMzzgkKuFrAdQJQ-vm5bn3GeirUCAhTVkNT75q0y2gTBoyXZ3AXjURj79mEYjFSZEaisqmlfYncxTwbBRGNxDb23A84SnoL_mZz8-lO684Ad4u2iIziqApciI3AhEVJrBNNhPxk40ZN0iYDAlB_R880hPLDya5ZWhnxu0HOvVFQE0L2wPhsxMpUMJ4jBMjUgw0Yu5nkuJqNNXgz0v1fU0LA",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-sCG9EV3aAWcNjQ4t9iGHEJ7BkUqfXpdvXrBoJhqqjjoHgM0n9oDVuBsJVB99xk-aCM2HZNY0EMmXcLf9W5YV4KBoRuQr3gqWKb7zUXPBvVjO8uSkSPEkbsXv6TW6n9KJZNVq7gqFWbJDQUBcfGDJceqtQdQ3xHNMv7FYMsn4-VkVeBnn0Hur-di5E7EnEjnOdq0OaBK6YXnSWjeiZZXzwgLyftaCK26qCzfGpKbUu3WB9WlI5crX82keaNmKvFCxq0y4zeTW-BnxJAC7FqW-QDmvo7hd2IOWghWJN3O0gp753P_cXQ66hbPV_XtRO-OqCn_nW63X8o18tWSvFFbx2My5EJLtwA7xMTCbBYxgmowxHdWeU2dc48y23Sf5CC8K9uCLf-7VRy5Ds3Hc---mWAwh7v6MVCsgdGPlo63iXa9DhUSqtE8YdXeMDxZw",
+            "signals": [],
+            "score": 30
+          },
+          {
+            "photo_reference": "places/ChIJo7CuuHu1vJUR9DoRRpMQDNs/photos/Ab43m-vVQH4d0NP9H2g-OIkZEAhh3-_KX7et_MP7AbyeZXNhf6smQBz7-pxeB9qUouONqbINjDdP0-y3DZvMwI0uI3FdZA_EmNfRMuh0a6DFulsw_6FXSpRmOBNXT8DmH-bBGrWlUcxUmWZlyHSiiKyl3GQbUFKXGy5HMWvlqLF0rRumgCfF05rTNr_83y517cKz0XamuwGFMG62SkrHXcNt0GDU70NqCdvVIB61q-2TNU3QVxT0mNBjcdRWCHzXo4nGnqZBmp1BwfrS_GsJxO5yH7TZNdVddXsUBwcuzRqQLEveFJ8DR3JZyLJJ62TPL8cBfdGc7aVsaGRCdvxOputCyqUJWRwoeeQ-Wmh2kP6NGv_tb73BzzVL_XS9z7065p3nBDwO4TUgN9uGJcAfH9gkm6krE5xWjwS6HmJKo79cIlVcEw",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 70
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 3673,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "bar",
+          "types": [
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Tres Monos",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "f81460bd9ed74ace",
+      "google_place_id": "ChIJs2XPmoG1vJURwboMb5sigY0",
+      "city": "Buenos Aires",
+      "district": "Palermo Hollywood",
+      "category": "cocktail_bar",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 68,
+        "review_count_log_score": 78,
+        "rating_quality_score": 72,
+        "source_authority_score": 95,
+        "experience_quality_score": 59,
+        "photo_quality_score": 75,
+        "eligibility_score": 74
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 12,
+        "tourist_signal": 18,
+        "local_signal": 57,
+        "community_signal": 26,
+        "specialty_signal": 82,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 50,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 25,
+        "lively_signal": 85,
+        "intimate_signal": 68,
+        "social_signal": 86,
+        "romantic_signal": 60,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 64,
+        "long_stay_signal": 32,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 35,
+        "golden_hour_signal": 30,
+        "night_signal": 90,
+        "late_night_signal": 76,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 62
+      },
+      "intent_scores": {
+        "work_score": 28,
+        "reading_score": 23,
+        "date_score": 63,
+        "conversation_score": 56,
+        "brunch_score": 44,
+        "dinner_score": 61,
+        "wine_score": 47,
+        "cocktail_score": 82,
+        "solo_score": 31,
+        "friends_score": 68,
+        "creative_session_score": 25,
+        "classic_city_score": 27,
+        "hidden_gem_score": 49,
+        "premium_destination_score": 63,
+        "long_stay_score": 41,
+        "quick_stop_score": 31
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-st9Udg6KAQucMv6a4pQfPR7dYMX6bcAAhZ4NhfS-KtY5tC3mTj05yKTyhTVOTFwYmyUIT_H0iNFC6M9X5zhx0WQCNYZsJpCw-F1PQ04M0sAkjcepX1k5Z_9Kid_pygMzCPZdxPXdynbrbcTOaRoLxOAJ5EcYwALUPHOTzYMtrQ7L5LPUBZxlU0B6wkBHm5ffymnnlj5iJh3IqaUnKRJ3EYn-vw_1iQjuycZqprqS_3U-BqoG5E2MGaJ6qR8hHB18xN1BT9tLVOCDamfM_AQ7oUUADWlZsxLiQC5j24Vc6WRnBQGbKDHyNOqK_XzQSsw51mq6cvvE6bhL4cBFtjSzOKTy9OkJ6tBMF-w3Re9bFA3qfNjwrlJRV4KsMYd1z10X25Ajtvz3tQ1kSdbGvxPmEaJOYllATRC7mvmWLPSDlPjDgAn32ncAFt8-zY6Igt",
+        "best_card_photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-s9c9C9IlmpCdRFwFBKKMvCnwAnvPsfclP5GGFCDYclSVe50ls0y-2XrXK5ZaKxkJoCLtoB6pP4vELa5YBq8NC_wHewO0d7Xtf94hJ5otFKMAAiOkAIsHpzknCnHONoSX2hqaCqdXnjitKqBJiPUgYdEG0PIiUSCna8JA2rUeiGHdXWhBv0frIDPNQNwONEpoIFU6t_z43AEx7gFsILU1iY40udkZGhi3SgiGLxNjTAvrljy-zCGF5_aAc-7riJEYuUlveDzLmskUKe3IkJuyec8mEkbVtk5J9uu8CuiYxCIvKT56ss1ETBHT7pugk6Xlu51kIJyc1xBD9BkM38Uhbn9ihVuFsBvuZylJcmd3J1_WsSTf_Wo8ortja-p5Hm02uDPlFTOCcf9vJbxH_IHZb-8yMNUlhyEqE0YEbfgCBQH8ixSm6kdEkha1IFniRY",
+        "photo_quality_score": 75,
+        "interior_confidence": 40,
+        "seating_confidence": 20,
+        "natural_light_score": 70,
+        "long_stay_visual_signal": 65,
+        "design_visual_signal": 85,
+        "product_only_risk": 30,
+        "storefront_only_risk": 20,
+        "counter_only_risk": 20,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: weak seating visibility",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Cocktail bar with high guide visibility.",
+            "context": "Cocktail bar with high guide visibility.",
+            "rank_position": 22
+          },
+          {
+            "source": "Sherpa Food Tours",
+            "source_type": "generic",
+            "source_weight": 60,
+            "signal": "Neighborhood cocktail guide candidate.",
+            "context": "Neighborhood cocktail guide candidate.",
+            "rank_position": 5
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "cocktail bar with high guide visibility",
+            "context": "cocktail bar with high guide visibility",
+            "rank_position": 129
+          },
+          {
+            "source": "World's Best Bars",
+            "source_type": "premium_editorial",
+            "source_weight": 95,
+            "signal": "cocktail bar with high guide visibility",
+            "context": "cocktail bar with high guide visibility",
+            "rank_position": 4
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "cocktail bar with high guide visibility",
+            "context": "cocktail bar with high guide visibility",
+            "rank_position": 28
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-uCPEspidY7_-kpLFGY-VmQFp06hFeNIWG7XSPi6Lp4Te-d4-ITtTvD34yw_I4kXdNGFVKGZeR3sR_wfKd1d6uQvZT3_5E6_nKDVpS0dfJOANS2aKoIrw5jVlkNMq9hS2iZ7fPpsnDvjgsEoBLJ4SnQiBAiD6JxLyZ6VVWOSYCCN8Eiu40A8BQIEmTc7g-34rSGuenzJ1OGpNgub2rgD9Y3ipn3QIG5CxR4Ps52K50UMfPe34DNuAIfsAJ4jLtKNn4aQ0X5Hn--IbkmhHDOZs7bEYquXfPrdCYzKkFj8VA_F-ktNYApPf1-zeEr1wNxlokDqbpiJ_0TMHUxFYNJWK2tNh8unLjWHfBhJuaJIe5m0OhHpgTboa1ERTQD4XtQwOccnhyWprL3dFAdDDo-XwVMc9o5mTufhP1vhiKA8vCocnPxvn4pEsIBOe_eLmjv",
+            "signals": [],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-sJBmtR4rPiWwDP6PK8Jt0Jim5BJeOrXmOrXFT9EKxYh-beAPfZU8DmMnzHXPk_6eyCizJf4sFz1RbgeafArth7InbShZSnYoWeKpyDqR7mg_AMUGEOm-cwIeQo2Jeg-fwH7SjCwlEbczeYpGaNrGKbFzKgwAxyn58ZJ7Qj4EQAUjW97cc7fW3qBbqku-_VqDQ46AFBvPHehT_QOPGd7zZ1mMgvyXnWd0ITQQQhsSged9Kyo5hi4qXBXtKF8P9Sh2UdnrPPef1Y6jqeQ9xO7GVU-V7Q_6z08N_mxJPzA13gIMKbP9z09a9tt4k2-U76H07KY2KrrF-O_jnbbSRj7t2d1m7e6TddIu3M2tzzYeqA1B3cVNuxwCmLKV5-V3qBYhplZFSPbJB2W17m3M-ejtDXofQPwDV2RJJFe3giTSq-jgle",
+            "signals": [],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-tqt6WHk0vsCCiTFpIgWbbSQfI7S8k1klpttYJUbMSw90gbGDu3tfCOYhcpcChSWLFJhUWjs23MLXpXUEpBbqUQajM-U_nqFUs3fvDvix-PbB6imQkpolRyhshB3M8D6QSQCK1k_zdv1wVoHfi4Y_HIXgEb0G0TTP7yFVXTo39p6aAElnNsee9rRhcBPpFPFUmsbTQymCLQPYXAwAXBRanY-tkgrn41qnVfZZC46B98mdbON7Vzi5v18YnMZnzPBCDNj80wcNLo2ja3w0DMyrsjn8s89Xav3HPSnV1lQbv8GlFFcoYO86klotIiPGW6HdtOIyGY9-Oiu5VYcH5Q4fbhG_8hcaNrg-Ar1fDOG6GnzgcJ5m0FPC4coO7-ajCYPS5ozVPKsTdW_gywlnH5x0VNeVlsHz-yAIXe6fRW6bE",
+            "signals": [
+              "people_staying"
+            ],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-st9Udg6KAQucMv6a4pQfPR7dYMX6bcAAhZ4NhfS-KtY5tC3mTj05yKTyhTVOTFwYmyUIT_H0iNFC6M9X5zhx0WQCNYZsJpCw-F1PQ04M0sAkjcepX1k5Z_9Kid_pygMzCPZdxPXdynbrbcTOaRoLxOAJ5EcYwALUPHOTzYMtrQ7L5LPUBZxlU0B6wkBHm5ffymnnlj5iJh3IqaUnKRJ3EYn-vw_1iQjuycZqprqS_3U-BqoG5E2MGaJ6qR8hHB18xN1BT9tLVOCDamfM_AQ7oUUADWlZsxLiQC5j24Vc6WRnBQGbKDHyNOqK_XzQSsw51mq6cvvE6bhL4cBFtjSzOKTy9OkJ6tBMF-w3Re9bFA3qfNjwrlJRV4KsMYd1z10X25Ajtvz3tQ1kSdbGvxPmEaJOYllATRC7mvmWLPSDlPjDgAn32ncAFt8-zY6Igt",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-v3uDY08EVA96BaesyQl3xZEvkTBL1lm2OTZcTAadTneBH8g8eLhFK2uq6qqt1gZYkuFnOiPH31Uxe743s0tAf5xCtYf4WmWpmYZXV587_KfJC9urj_g9btxbJgrpCHSdAXneZdWXQVtgDXcr7eFDO4wKer8YhyUkGalIQjRyFBwS9BnY1a2jEJO3PPR3UwXL1wCkooUl8fErj_TGdMYgDMqRxKLIhlm-AbOFHpp1MRXxEVTEx0LptVtJOjKo8I3VrT-qxRMszqEWrPvfBjj9VauwYHBKTecGruX0JwadBtYYzifh_DEWKIdGpy3me_A80rVAiNyATLJSqp1jMlqv4rg33mUKi0Y6P6EG927-3DmeZGPvPfU8y5Mb8nCknODkFy6NOKuZcx6xdt7AYnPLcaEQ6ZkCQhUJSXtnhV4XS_Hu0Nz7qyOs6raa6IZg",
+            "signals": [],
+            "score": 25
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-srVTA9xyCv9rNDpjE31QJCEqbeVrgIhASQynSoyvqMbTqKr3tKRyambCCedU2uMIrL5u9X7OZMdpQ033UibFTaAVO7g9DVlhoK8WtkHlgWdRuWJWqYBzuFUkZ0hs8EIaJkCYGj-zAQyW_BaPsHzQo4xPKAWWWfqKFwNYIJsjnRXOzkvmdTMzoDMHvEN4Kp_dPSfIpXoHHOI5amSPzcJ46zegHp3-wEIqXYHBKYVxaN-PN1sAJGOBPxzo4Ctry9Mc2RGhStTKp9F_AtOr1489MiVuLaUpomw5F2uhiHHW1Vw8MfbCZLDgOI4AYP8swOCxlaSWtcvDvq5SIK2IhrVInV3OC29aOHQkHmWq46-EuZTjoNK559pjuIkmDv9_z_6xDhDbQsO0F3rK3SVdg-iOTe561rLI862Ts_nuYnJy21vCrnTxKyBjhbpz8P9Qte",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-uQiF6pwtAkTm5BU0TndFK-zj737798iCTe-A5KqrVXuT3Rw-YBwnjvdI59cA6K9mFy0bYzYhjg48iCPj1gTh0Aazo9AzD74JtRgp2WCE15DbLLKtIoa68Cnqd9NdMCKRgnCdwvvN-HX6cxEhlY7TZLPdE34CGWahInUJ-vk1xXm-bI0JepoTq7IA7CJf-913R3nh5vdbTwLo__NIhKEU5HV7fYfUhd4BvM6YUdEW8lqbjxC09iCbcZsfxNbsSvHumLJeSHfmSkHdgN0f3K5FaeVKs33wu6kQoEllEZd1P7pntoA1AqgaHltI49MCZlxgrGKyZZgJM3nEwKIuqL9lw9AwPCYzU4QtzsJ4NqcVCiX44hCaBpMEKWlK9Tc0AQMzgKjZoO8jOZaI93XjxxXRy5mqtAdNJplhLWyZv6zHc0BtWLbp2qxdnI2U6mgJ7p",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 90
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-u_VJ_aLfhwCVAUuNw7d8LhMqpBoK7uMsD1VPpVReS5Y2kvFx57ZP_nmDWfNn2bTPQR2UnqNPLwf-C8M4y1bvLEa52EjszGYdGxrzFbjRsMrOs1OzcW_D0-hn5Z4itZh1Ga5yTtK-ABC4692QYgEhQSn1TkO2B-bEzV826Rj7oFEzCUm6lRrejui1HFK7eEQKzyY450GlrzNKlF0RU9xZzuIX6sI2qDM-2aXPyJ8iIOMBPmThffKgqQAdMSOBEO5SOP0LBp6SbKkNi6KKz0lwweFGMmloqq4Q4pAj7hagKuwGhJxibe4c83fJ0a_X6xvYPOXYWtXb1cn7m2CJlb52pmls1mKGCxUyzc_s0650IlD2HYpYCxvb66eFhpDAPCuN5fWXrfeQPIWtLVdJS-jpv57D6hy0lpjnrfRcYGwtmBfFSTX2zUYsHtzvJl7cUm",
+            "signals": [],
+            "score": 30
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-s9c9C9IlmpCdRFwFBKKMvCnwAnvPsfclP5GGFCDYclSVe50ls0y-2XrXK5ZaKxkJoCLtoB6pP4vELa5YBq8NC_wHewO0d7Xtf94hJ5otFKMAAiOkAIsHpzknCnHONoSX2hqaCqdXnjitKqBJiPUgYdEG0PIiUSCna8JA2rUeiGHdXWhBv0frIDPNQNwONEpoIFU6t_z43AEx7gFsILU1iY40udkZGhi3SgiGLxNjTAvrljy-zCGF5_aAc-7riJEYuUlveDzLmskUKe3IkJuyec8mEkbVtk5J9uu8CuiYxCIvKT56ss1ETBHT7pugk6Xlu51kIJyc1xBD9BkM38Uhbn9ihVuFsBvuZylJcmd3J1_WsSTf_Wo8ortja-p5Hm02uDPlFTOCcf9vJbxH_IHZb-8yMNUlhyEqE0YEbfgCBQH8ixSm6kdEkha1IFniRY",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJs2XPmoG1vJURwboMb5sigY0/photos/Ab43m-toSYfrSx-_0xZkoiRDq8R2KQLTRa2wVrrQVW8mJjM-hkALoauQBlmy5Lg_SI24kGTNAezzggZX7PCtkAasWUZc0HDaDFPmry-xNz-yjFJg1-TwYUHgRS7OmhnLZVz7MS7iwPQ1nMUFdyzn5Z75PyVlJBxso0Fd34vtQjmBQZ-ondRQc9AmBIfswy5n-jl9S4nt4lECyfajikmH72T8dfdtmUIuc-3nTeoNut5oPtNiN9QN_2f9pmaXT2vk4Ur_PHYz5Vc0QipyyZqWziFGdYh9Kq5R3F-TeYQIaB2rFTUiNTFaAQ0AunwVxaKy3DqFWuTvk-O9Ijd4S3ZY1OSKFXay1eK7XI7Q9xQd8FyAT-w9n1jkTxjdfgp0RYjslnqHOEMsfGSspnoP9w61xSULCajZ-rfia9jkIm6AOhOlkZUJFYpHodtd_04auI9fGg",
+            "signals": [],
+            "score": 60
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.3,
+          "review_count": 4707,
+          "price_level": "PRICE_LEVEL_EXPENSIVE",
+          "primary_type": "bar",
+          "types": [
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "weak seating visibility",
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Cochinchina",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "cee8356abb00fd58",
+      "google_place_id": "ChIJmezOB4a1vJURDMhzx6lY6xc",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 85,
+        "consensus_score": 100,
+        "cultural_relevance_score": 63,
+        "review_count_log_score": 70,
+        "rating_quality_score": 76,
+        "source_authority_score": 94,
+        "experience_quality_score": 61,
+        "photo_quality_score": 85,
+        "eligibility_score": 75
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 60,
+        "reading_score": 68,
+        "date_score": 46,
+        "conversation_score": 56,
+        "brunch_score": 75,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 64,
+        "friends_score": 52,
+        "creative_session_score": 32,
+        "classic_city_score": 18,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 46,
+        "long_stay_score": 56,
+        "quick_stop_score": 41
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-u-njVShagpLROOQGtyJFbwZOhsQSpHwmOR0qMGFGGv96vNjfshdoNEhhzf6qHC-kF7GwSe0GDtJ4X50mAElS6SLUiJBrwyspL_eQ4P9R2dokBP1GyeTk427outiUQsJN9uL7i0QH6_0vYK4r5E_jv5iRtHIksNV-CSVev-T-jMcFhBihdZ00cu7ceRoaJd5UOv92agX6ZYYDXpMnBN4PswZ76tdJoWfSuugKAFtgdyQuktvHN92eZHhDhkMBaGPOFVj5pkJULMXsgL6LUMmh_MCtpRKz_yktCap5zSvrvJ_FrEXKddSqeDNoFECnzngOKsbBoifxAb1QPn21vKpiHopiaEHlNIX9mwBssw8FEqlL0CfxVnycf66yjY44M7p8Flhm-WScIBKkIqFb22RlsSPUyvIbAW4pHMMEMC56HsJpKGLltM2qiygmDCCcM2",
+        "best_card_photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-vgtoIFPCpyiWeH-59i9ixo83w73Y9TPR11l9G5entiABvC4a75etXln0v-vD_UkyXT4IcF0-X_TKZtdaTws7I6FyyHB14Iq4B7IwnqsBuPvixE8eulB32oCFwju8NrSy81DdvoahCUh4sm_FPLNqA6NsYW1rJ1SSwwZNrJV5mQsD1invTcjQ32lgBxdd5J93Zmwz_MhfDuItZJJKUbhKHOySLYlzutwoqUxCQFu5WtDBnzAagSmUERmTjEj_zEQVghVQ4zxVmFRJep_W3VBFdoLzBZm2NiO0nJbdu8ZK__WVh8xJz7DX-3l_mhEJtKDybpCujgZukImO8v3MV8XM2rfwYSyq-h8WAty_zFeYlJUSAdU-wMoFbccjXBTwkUHYcTb6McmWUODUPiDfiodrDFiMZBOMDQaqga_Wg7dYxrqXzX",
+        "photo_quality_score": 85,
+        "interior_confidence": 60,
+        "seating_confidence": 30,
+        "natural_light_score": 80,
+        "long_stay_visual_signal": 55,
+        "design_visual_signal": 85,
+        "product_only_risk": 30,
+        "storefront_only_risk": 20,
+        "counter_only_risk": 20,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "seating signal is unclear",
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Specialty coffee cafe frequently referenced in Palermo lists.",
+            "context": "Specialty coffee cafe frequently referenced in Palermo lists.",
+            "rank_position": 3
+          },
+          {
+            "source": "Specialty Coffee Blog",
+            "source_type": "specialist",
+            "source_weight": 85,
+            "signal": "Alias-style specialty coffee mention for Lattente.",
+            "context": "Alias-style specialty coffee mention for Lattente.",
+            "rank_position": 38
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "specialty coffee cafe with strong Palermo recognition",
+            "context": "specialty coffee cafe with strong Palermo recognition",
+            "rank_position": 3
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "specialty coffee cafe with strong Palermo recognition",
+            "context": "specialty coffee cafe with strong Palermo recognition",
+            "rank_position": 3
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "specialty coffee cafe with strong Palermo recognition",
+            "context": "specialty coffee cafe with strong Palermo recognition",
+            "rank_position": 2
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-sPtKY1pSChz865pVKoiDERGCw48GcktnIkAbn_UY8hTt1klYm1oNX74OfnVQFwV7-o837bINgJ1MVSLW4x3YVgocIu28RPM0f8RqAJI--uNsfOmv8_wPUfeqRxxGHqJvj21bZxDjreXrFQ3FSHFVo3RSOiAvW04w0CesG0iEvQ1x_pAqxAuWFQ4162O_35xprQKfj48u0AovgWwFPN00GHsNBFIaW0iu2rJXqdt39NiTfvf3Bp8300X6I9HegfoxcE1_07URauTOjqRsRQy1qpUpJeVrliXxtuLUUVEb_1W8AZM-KmEn_s6awEoGsURaodLW0tvDKCNltfA5euRiQsmJE8DjmauiDC1Jo7Vu92pHYogsBIT0FGQm1MhkDxwdI4um_xdEorgS_wuaWC9ZX4_d49gl8JdKAD4NdR8yO5DA",
+            "signals": [
+              "interior"
+            ],
+            "score": 65
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-t5Fc3kUgKlEN20hprejPQ_VvFd1JENhx0xHOgCPl8qUCClw-eRjsR-PoZkRRB_LfwskAuJUSOfzgD1RJyRTlOAbjyzANzXPkVzsMVvze-4EiQ7bnI7NJLk3GInkaIabK8PgnAm-A6XgZq9rfisFR92l3f7UsvNojmhjoAyNe82RSUZv4n37uElGymuTFeT6iH-hMvH49OlHjgBfIpCDCDgLyqe9EiW_Tl5GZHDhVVjFC1r5ZvOl4STWQpm_cVKyz2lJv9Ax4zRN19NDQrhyN8G-jBJ3IOaDoyIEaq9pjr2EtS_czD48zUIuV-ZVOON5phRz67JOzAUJCtGePRP1KFw8sIXLorq7bny1EyCtL1Q6jb3zuFzsFPxcAksmUFXFy8EnIVDv5CdyjKeh-W1ZA1RlolR3QHHkRbe3Qu8bohM07WnkHwBItDkAjC-81cm",
+            "signals": [],
+            "score": 65
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-vq2l2WWeahFWzy-Mbu1Rvixoe1I2uBUJJ6kq3krvR4H3XlsMeiBSaio2aSLJuw0Z9ZFW-_X0LEgaaUen7X2_2d6RfNMcggiqaGhlaT25zeqdwFcinYIzy6W-bLO6DW1UUPULv4Y5XCxvrdTs8Qshumrb00OCQAs8dXXSHKGSMbdc_E_kShNTAxa-zBG31cgk5RSb4mFfuKOCAPJTLKZq8PrJEARhdd_JgNfBU-JPT4ae51VD0pfiVOsl_FsBmjmHmEDIQmMPS3dTP4ZqO2by3rC0RGJST8kDeSTqg-3gUn2abVeoyfAq49opHSpOLOniQxBJWwlq3Yb7wGYazrpWyc3a3zTQJ8_Xyr-fyQ1yzKUc2Wj_Zf6B0ev_bBCZUy2ve0zz35K-0FGIKvfMrmf69UvgDVI7HzEHIVs-3ZmxnG6A",
+            "signals": [],
+            "score": 60
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-u-njVShagpLROOQGtyJFbwZOhsQSpHwmOR0qMGFGGv96vNjfshdoNEhhzf6qHC-kF7GwSe0GDtJ4X50mAElS6SLUiJBrwyspL_eQ4P9R2dokBP1GyeTk427outiUQsJN9uL7i0QH6_0vYK4r5E_jv5iRtHIksNV-CSVev-T-jMcFhBihdZ00cu7ceRoaJd5UOv92agX6ZYYDXpMnBN4PswZ76tdJoWfSuugKAFtgdyQuktvHN92eZHhDhkMBaGPOFVj5pkJULMXsgL6LUMmh_MCtpRKz_yktCap5zSvrvJ_FrEXKddSqeDNoFECnzngOKsbBoifxAb1QPn21vKpiHopiaEHlNIX9mwBssw8FEqlL0CfxVnycf66yjY44M7p8Flhm-WScIBKkIqFb22RlsSPUyvIbAW4pHMMEMC56HsJpKGLltM2qiygmDCCcM2",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-safCKtnzG3Yg2eeEBXzJsJCz4JvuPcUl4rTOJpwh50H-D3OLlOoHX72qHpWUCu0jiGUKx5TprDM3rew27BbnDF64fkwGXIanSnsyHVGCADkOhP3g33r2sNS8sAoOqmmJYkSsNhQ1qbgvTLFPL93e46zFPcBzRILfL6wIBfzLCVEKc_p9cKrXzu0jclfknCqcSuQFFjlHa3QZ65EwYPUK_MswkZamIKx2oMzTBnCrB9wFX9JfCl3KDqxKVNKoACHxc3ZVSZBsGy_oL7mSu4U86b8HlKOntWmzNvae3IkU04bxyGfAyXoa-xFI2XpVO0Enha5fxd3jd8kCOLOR80vHFI7mzmvq9-ZLZa34ej9o_DK-Vi_NAP0wOlQu3ifJsqRYFPl02S6Ip-UIViO00GdOGOHzSJ1Vd0TbhJaic2i2f7o5er42MakdSlZ3E3Q_rY",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 85
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-sAhvYcZSGdJzDKd8yFH2rEoxKxeKahyly62M7F0xXgSYrj-gNeGctZ5CtmBthp28zHfEBFqSHbGT4xj2H319BcNgCTqvP2ag_PSvlSdg8AKltfHlmqvsTru1aV9xywKZWmnxAyNS0aojRixLKuGh1ya7rXu8q1Fh7UW6Y7_tYdkPcfcsbI4ttmC4Q-sLBhx7Zqrsu0eIckMelakQ_K3vpUO4EClCHTK2KdePYGeX4LMNJb5g3WPbGphUdiHiP8vwY2BcHKHiUIdYATSCxX5CE3Cj7BguQAKJUYWLjuFRaB7g4HBPTeTCWCJkgCCOR7AjtwKRmGaq4A7R9UzyVx3T9DZEi_9UMXqGrQ6oUiNQB4bZkQgbpgf7YZ2ILL71-6mISmU3xhw8auMbepWFr87mLnP3pf5At-ZUFyc3ubvmOKCg",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-tCv9ejt75ZGPnWYhY3jmSpaiB-MD9npc-KsWcbwuUTwcedRMAnDrM9AQsqVrdK8walxi0TgldHf0s7NZnx05UzW98EKFymDE5MTqSuMaGSTjN0lgQuupURy7mWfI3MErseCOE0dhvFDcKthWdcSsZA9ILeITmiKXocv7QHN_3YAWX_w8Ey9PrKUo1tpsTkcVQiB3SF-LSQrslGxg3dyvnPPFYPK4CZu_iOFPAemfhvdiE5MCaHrOg8bapOQxqfsHucyZhXGJDhRTaJTO5IVEcGtT6mNxgMmOlqJwUK5_3C9JFM_CEiFrSLiPZNKkg-69sF_tLwpC9Fgeqs2EApHmQ8rgARJPWscd0m0bEkaCxKrC4SypFZ6X2BcwirjBEd6YSBOgTsDy6QwXyPpeDI0sStnJse68qFfR8K4QmTwkeQxtCA",
+            "signals": [],
+            "score": 60
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-v_nSktDwgzy6WCEXNskSOM5uqt3ANpULNvdczpQQSa_BAaqr9aLmq08pBbgkZh7GrYfMx9ybpwRVBtfoILlJRWVJK0EwcFj85x48UYl_YIoqlEnAEMaikFRf_S58OOQTeCuBzGsZjKczFrCGqx8DwFPfZCVNaD8C7EO4DoexiUWvPwumKdhkCjXC_cKdoNFvidGLgfG53G3pruKW6ET--i7pe0QJemPYj41o_jcEOlvOI2A1talH_5nYa61yH5dd52xGB7LFqYphm4qx6cK_x4TsLNEfi1sPekxPtwwtzz1DXS8MihjsOq8677H-a9XYRopzd4toDb2I3L9eKP3EqxAhQRdIhsKkRDpIP11GSRXCqB5tMy-2MITNOHvLwAuoPEVsnSNvM0jfzgv8UriVgLIuxf0gTkQJGkzGvdZPTwvw",
+            "signals": [],
+            "score": 50
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-umGjVSZs0zj5DctUFmWqMbzjJ_o4EfTENjHugJ3EpL_u4T0m6BjCE3SkPlwQmElcehTZhWt3Czr9VJqLAfhCFNThsJPCZrMEuSIYdgcD-kIe2NAX6s51T0DHOAm1DY3Y4TdZXxEqsNqNuh7U7prhKwJm3KRdorqrIvlI5mt1pQ6f0W3gxPbMtQ_fZAi08gQXlkruzG0b8JshRutdOP8cYIgUuchoZ_9U4yEtoDzTUw8Nn87AdG3vlLVPcXtgZutBcwxJcOwdDz5F5mfNQojS6eKTTUu5J7CFA6QQOniNcGijb5dL_HosiEap4PpXnQ2KlKbM6gUT5kSQx7OBKHnZ1SktB-Ma7OPCs1n0CS8fMG_W8eAOqwLneERirUUiIInVACXLWjc6hx_2Y5aoAuiikVqG0IpFXw6Xc3z7l3yAHK1Q",
+            "signals": [
+              "interior"
+            ],
+            "score": 60
+          },
+          {
+            "photo_reference": "places/ChIJmezOB4a1vJURDMhzx6lY6xc/photos/Ab43m-vgtoIFPCpyiWeH-59i9ixo83w73Y9TPR11l9G5entiABvC4a75etXln0v-vD_UkyXT4IcF0-X_TKZtdaTws7I6FyyHB14Iq4B7IwnqsBuPvixE8eulB32oCFwju8NrSy81DdvoahCUh4sm_FPLNqA6NsYW1rJ1SSwwZNrJV5mQsD1invTcjQ32lgBxdd5J93Zmwz_MhfDuItZJJKUbhKHOySLYlzutwoqUxCQFu5WtDBnzAagSmUERmTjEj_zEQVghVQ4zxVmFRJep_W3VBFdoLzBZm2NiO0nJbdu8ZK__WVh8xJz7DX-3l_mhEJtKDybpCujgZukImO8v3MV8XM2rfwYSyq-h8WAty_zFeYlJUSAdU-wMoFbccjXBTwkUHYcTb6McmWUODUPiDfiodrDFiMZBOMDQaqga_Wg7dYxrqXzX",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 85
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 1931,
+          "price_level": "PRICE_LEVEL_MODERATE",
+          "primary_type": "coffee_shop",
+          "types": [
+            "coffee_shop",
+            "cafeteria",
+            "cafe",
+            "point_of_interest",
+            "food_store",
+            "food",
+            "store",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Lattente",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "3bfc83abd7e9d3ab",
+      "google_place_id": "ChIJPRGnF4m1vJUR6Mf7kptSKk8",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "wine_bar",
+      "scores": {
+        "discovery_score": 84,
+        "consensus_score": 100,
+        "cultural_relevance_score": 58,
+        "review_count_log_score": 59,
+        "rating_quality_score": 84,
+        "source_authority_score": 89,
+        "experience_quality_score": 63,
+        "photo_quality_score": 85,
+        "eligibility_score": 75
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 6,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 25,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 45,
+        "lively_signal": 45,
+        "intimate_signal": 78,
+        "social_signal": 70,
+        "romantic_signal": 72,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 54,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 70,
+        "night_signal": 76,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 58
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 41,
+        "date_score": 69,
+        "conversation_score": 65,
+        "brunch_score": 43,
+        "dinner_score": 52,
+        "wine_score": 78,
+        "cocktail_score": 49,
+        "solo_score": 42,
+        "friends_score": 63,
+        "creative_session_score": 29,
+        "classic_city_score": 19,
+        "hidden_gem_score": 42,
+        "premium_destination_score": 55,
+        "long_stay_score": 61,
+        "quick_stop_score": 27
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": true,
+        "hero_photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-uFM7bWKgrIJiW62Z0IJSz-7-hKSlpKFj3L2WwguzI1bejivpE5SR2TqNnQcLivfsIPuE3UGHGiOKtWMwPrAAP194wycw03DTb0UGGjlxcsQHY8REUK-YqhSJM0N1L7_lItvEzCox-C5ys6SEXdJ8bTDlNEireFOyfXez8ORPu8IrfBIQSRoTXOYfS3v4x_VRhCOMvzBMbdvXGi8VCREUDta1IoWvdDoPG440RKjgXdUILbBtFuT6yuI0rnVXKZgReKfz9_vHIkQq0YOqihZD5OCGvBi8mr7Z2tUUqvRObk2g",
+        "best_card_photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-vrt6LZ5ffEY8LSqiwSeqtgRpl9y_YE3DjbHS2846BUgLfq0-Fptalw0rV8zrxfUpaVLqDtL51C4kIWh-DyGFDjF3u8KMrwa3QIWS4NThFC3D1-r0vf5b46srzyLfcvoPQEYJ6Z9ff4nBNAU3BUfTk6IrDmIRuwdWUQJRDwDf310lzQvemvJygtHzl9KckFT9aSKFDPzoc5qQ8a9NJtm7OaJnna3DjGck2osPeQgrnbjTOsreDVeyjTC3E74G7Vhi-InRuTUvSiOqDNdvMmOYxy4anFSTgDOdKZUy2AfCD7_j8AsIectjSejzz_l_xE_nekE9vzwp4hU59QQUMFQrMnEUHzEuNBlhKh_cxCihj6ZSDRewFnohdGHmyLZ-Jddn3ndkeHmhwo9PFAzBJu73ivPjAdpg-xe-oxY6kceh_wYyJBHGIL9NMY-YVLXv13",
+        "photo_quality_score": 85,
+        "interior_confidence": 70,
+        "seating_confidence": 60,
+        "natural_light_score": 80,
+        "long_stay_visual_signal": 75,
+        "design_visual_signal": 80,
+        "product_only_risk": 20,
+        "storefront_only_risk": 10,
+        "counter_only_risk": 20,
+        "evaluation_status": "evaluated",
+        "warnings": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "eligibility": {
+        "status": "active",
+        "reasons": [
+          "active gates satisfied"
+        ],
+        "warnings": [
+          "constraint: some photos are product/menu-only"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Wine-focused Palermo candidate.",
+            "context": "Wine-focused Palermo candidate.",
+            "rank_position": 30
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Wine bar and tasting candidate.",
+            "context": "Wine bar and tasting candidate.",
+            "rank_position": 4
+          },
+          {
+            "source": "View Buenos Aires",
+            "source_type": "generic",
+            "source_weight": 58,
+            "signal": "Wine bar candidate.",
+            "context": "Wine bar candidate.",
+            "rank_position": 15
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "wine-focused Palermo candidate",
+            "context": "wine-focused Palermo candidate",
+            "rank_position": 104
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "wine-focused Palermo candidate",
+            "context": "wine-focused Palermo candidate",
+            "rank_position": 53
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "wine-focused Palermo candidate",
+            "context": "wine-focused Palermo candidate",
+            "rank_position": 19
+          }
+        ],
+        "photo_evidence": [
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-uFM7bWKgrIJiW62Z0IJSz-7-hKSlpKFj3L2WwguzI1bejivpE5SR2TqNnQcLivfsIPuE3UGHGiOKtWMwPrAAP194wycw03DTb0UGGjlxcsQHY8REUK-YqhSJM0N1L7_lItvEzCox-C5ys6SEXdJ8bTDlNEireFOyfXez8ORPu8IrfBIQSRoTXOYfS3v4x_VRhCOMvzBMbdvXGi8VCREUDta1IoWvdDoPG440RKjgXdUILbBtFuT6yuI0rnVXKZgReKfz9_vHIkQq0YOqihZD5OCGvBi8mr7Z2tUUqvRObk2g",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-tZEJwyx0DG91RcLeIjrsdsk2oENqKH1xLiIcwHGeK3i3C4gQkWuGl-E2KTmy7kqUa0eW7n0qFMQCwICAFNgzUSA-Sh6FJL-ek-_toUFSOFTO7jK5Ekuf8M8d8wsYfuanUL4KeM_7gESi1vu8gcwxgkJ8EVDiqK2n9c5WOBbHUqrnDJW-NqKXisI8mREkScBLvh7Obd4Kb-60q88phQWvDqExArS8bdMhizyTQH2u0DaURIGb87VkNf3jeKdJ9GETVieIMl9VHeTA96LdFQxk-6Dg6mVuCwI30XJTFyTKDlaQ",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-uaDFM-483x-1L672Bbfkz8324tu2LZf6xLb2-u_xZRFscOgRHVy6m9yb4HKwsVMpv25h75mf2ZZ_gZCViCC5umh3pU6TDvt32lPzSJB_Mkc7kdiIurn9xpms76iwxQAbxz9fGijKPtaEMh2-3GkD_V18lXAr86gtoPYD8sYj4UcrAbmhTUCAoclLG35l5ix3z7EaoyOemW68Q2nl2vVf5AKiOkabANSbNUrt5dUOkgw6eCWyOcbhKErlxJ5RsyOAqvtlLo5HqLddRbe64IgcuFiHnwQ9SsDkUqsWJlS-bCug",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 85
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-vQa8vZINY-pDNle4Ax6JdvyLze9q4zg3xHzAo3MrORP7rPyPoVYF9d0sqNYmNHc-ix1CiUKva53Rf06OUEjnrXsnij4scAyNqy5bLcEGjyn6z0ahhyK393HALPF_O4LmdQ9tVSCZeE4mM-BmxpC_c6ZkHbQJ3rHP39VDGez1HGVl5qgkHVJcYFwohd-3N-ye7f5n7-_UkY_UEoCW_MHDVf_lqWm7NoKW3Q4vWGsRXOZJVCEsny3PUYVYAyfEhXqoqHXmzKOFNUwXqiNPkw32XVlnrI53bUB3syenM8qzYzE7msDhmAiBES3m1Emglzee_8Iz_0vpEYPZ_n4VBu9j7g6k9oT6-mwVJkZx1bsV8z8JJDRoexymacN7jsSfBI4DsWCcuYukOX8WJVocrn4nv1n0XKsHcHdGzcI5aDCwxJd765RsrFMGqsyXxA5fuE",
+            "signals": [
+              "interior",
+              "seating"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-tUv7w10COP4VjRPsL1K5gOCUnM_eOQoH_g94rDN5K8-0UQ8a-RST5SGQJ59-LAiUeYbeK8-M-8VvGNdMvdTTTSjcmphxgFiRcTNZOna6c4e2Aj4DzcXcDzIlkGSw1Ouh5-IhrcaT7yAkv2LvLK0MO2AYDJf_DsctkYwRuFj5UfQe-vilNB0yzgWqlkI9AnFMzRhipYGF4KZ55Gb9ttELYS-5Xnl3-3O4WJDFNHgj1bzGvHk_x8n1ReEGMhjsVTee9V0jAQR0Sgx28kEwsQVvcKodP5D7p3NpR898hwQUx2mXZobO7hoMj0h5ejmlMWRtdkyNaQGh7Uqh40qJ8gz8M4wAxkS-IBzxHBNDmFlX6p9qk8j9SucbCF9xeNQd9Nu_qr7EnbIq5y7zZjVei5zQUpPnI3KXkacU_61V2gCBJIlttoWPn2V3UY94-y2w6L",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 80
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-vrt6LZ5ffEY8LSqiwSeqtgRpl9y_YE3DjbHS2846BUgLfq0-Fptalw0rV8zrxfUpaVLqDtL51C4kIWh-DyGFDjF3u8KMrwa3QIWS4NThFC3D1-r0vf5b46srzyLfcvoPQEYJ6Z9ff4nBNAU3BUfTk6IrDmIRuwdWUQJRDwDf310lzQvemvJygtHzl9KckFT9aSKFDPzoc5qQ8a9NJtm7OaJnna3DjGck2osPeQgrnbjTOsreDVeyjTC3E74G7Vhi-InRuTUvSiOqDNdvMmOYxy4anFSTgDOdKZUy2AfCD7_j8AsIectjSejzz_l_xE_nekE9vzwp4hU59QQUMFQrMnEUHzEuNBlhKh_cxCihj6ZSDRewFnohdGHmyLZ-Jddn3ndkeHmhwo9PFAzBJu73ivPjAdpg-xe-oxY6kceh_wYyJBHGIL9NMY-YVLXv13",
+            "signals": [
+              "interior",
+              "seating",
+              "people_staying"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-urh8yWfFvebazl1Yy0j2js_bD6eAd5ljGhseIv-a8JeDiVBOvLqiM6RQnXaOMHRZhP-Jff35Ll7M8KZjl0S8QlZO8bNPdWTjfbYpFyh7WWRZCM0GJ1f7B6cg6f9CWT-A3Rtg6YmK1iFtClTpl8UyH6IsSQzyVENGna9nZ6N7-DeiGbB5A33E-oop6k2Qz_PN1guRgKfo1wePmzZ9SDXjT9xMHv1ODc6UFVdv0VoQkXZneMQVYelJLEqdiLwtds7n7Lwo7j3bl8DWGzR7Txe3QRyMbEN8i_-OYAh0m_GhKXGg",
+            "signals": [
+              "interior",
+              "people_staying"
+            ],
+            "score": 75
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-tdz3FnrWQsLTV-EhnLlt8jOGfHoG_o4DlYkVnQM7bwsf3z_b4Vu7KHfylIPAcyXLiI2hcivUnE9lRLhXQnUIZJQH3nhCl5GONebMYXe-MW5whIE3cvmU2ZPFevfXRF0saimQTSQ7lBaROD4dVrEuqBK72miI0e135iD5qay_bO6LKjZky1nyuwE9I5RIVWAMUhKGAPiiDOkiXQAPoDSigg1ksXQy79SHDshw5BbWpkIJZiLa4gWOKb5_xSZ-BBEzpKUMluBzyXDXYL_DlqkMu5dIVBvops3yWwxV8v46UPWqoqUolqpO3MVzUO5_deX62l4o6Xu7GMsNCwddJ7OnjVc3C-8dpnnQMZN_KYUQyyqEuCtdaoEmBnSxsMKFUe1zwYRiIIm3PcraiQ0uif3NGSg8rwB8fSdZrDZE107d63syWa",
+            "signals": [],
+            "score": 40
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-vOQ6w-9WrLxeOYv5nIo5Ou5YNsAQfODwzgHbE_Dp7SQF6mvUDJ69VglgBUJXrPvQMlzrNCX29FW5-Z5K0UCBJUQFaignmz3CjiO00qMSqDwyjAiovjbEHss4e5114TFFVCI6vYYprjAsg41-tJ7ThQiOj7Tp2w4cEO8hFYzic3wuSV8NJIlmNMByG2n-RIHDwh9jDezAapzO_YH-6Q5bK0EULtUCjoZDpnrd46qY_d1UwoK2et-7F9PQdLH53PEFJee0s6Wn3cBcP_PonF6H34mZaR5jT4PKjkvt0eMywCHFnR8Pq9mXJ5BAWEn5UXDet1AxLZVmwzWGkYofLclqsHaeYTGU22ODb3GMHRn4SsAfPJPmxFICySf8WtSLS9DgIauyxk1PwuocwcaMAj0KWUHCldGOD6nelwus1hSNGI-go35nHr6jwgEF_tLELh",
+            "signals": [
+              "seating"
+            ],
+            "score": 70
+          },
+          {
+            "photo_reference": "places/ChIJPRGnF4m1vJUR6Mf7kptSKk8/photos/Ab43m-sxbMzs0XBwsARBVJGirGgYq4kS34c4Zs0qFZuLTWjMn2_g1oLXpLWs8hmzZl5S7AQfbBH_By5IBhG1PscfF_koNsrIf-j9nlJ9sqcMKE3xXYrG11EyqlmAOLzbebtihV5IGuPO6zKU56QfpN9C6TSk1bA7ZiFOuaLuCYnr2POZq8J-hnLpwpSRV-en3HymDQ_L6-1HyKdIQDRbDawY5Cf5Ksr2omGhPEKd1lZX6adj5jcValM0dydZY132G24DQE5VMi4MOeq_334lFw0JAaeT-TVyamRT9whDzjYLY_y17itmvUHnUjqADQyJHT2TLKls09R6z1NfTcdfywqrBZOgvMhY252GvFD_7NhTbM8J3xqsfkIN3Hl2TWEvQN9bFHU-u-MgOTEuuMI5usE7JBZjobXhhBbR0t3gRIAKPcGEFjHBlf0r9loLJWa5-pcL",
+            "signals": [],
+            "score": 25
+          }
+        ],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.6,
+          "review_count": 583,
+          "primary_type": "wine_bar",
+          "types": [
+            "wine_bar",
+            "bar",
+            "point_of_interest",
+            "food",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "some photos are product/menu-only"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Pain et Vin",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "evaluated",
+        "photos_evaluated": 10
+      }
+    },
+    {
+      "candidate_id": "a13d2c0dce152091",
+      "google_place_id": "ChIJL0vA_4m1vJURRR2la3OON5w",
+      "city": "Buenos Aires",
+      "district": "Palermo Hollywood",
+      "category": "wine_bar",
+      "scores": {
+        "discovery_score": 84,
+        "consensus_score": 100,
+        "cultural_relevance_score": 63,
+        "review_count_log_score": 72,
+        "rating_quality_score": 76,
+        "source_authority_score": 89,
+        "experience_quality_score": 44,
+        "photo_quality_score": 0,
+        "eligibility_score": 54
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 6,
+        "tourist_signal": 18,
+        "local_signal": 12,
+        "community_signal": 26,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 35,
+        "mainstream_signal": 20,
+        "luxury_signal": 25,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 45,
+        "lively_signal": 45,
+        "intimate_signal": 78,
+        "social_signal": 70,
+        "romantic_signal": 72,
+        "work_friendly_signal": 12,
+        "reading_signal": 10,
+        "conversation_signal": 76,
+        "long_stay_signal": 54,
+        "quick_stop_signal": 18,
+        "morning_signal": 12,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 70,
+        "night_signal": 76,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 58
+      },
+      "intent_scores": {
+        "work_score": 22,
+        "reading_score": 21,
+        "date_score": 54,
+        "conversation_score": 56,
+        "brunch_score": 31,
+        "dinner_score": 52,
+        "wine_score": 78,
+        "cocktail_score": 49,
+        "solo_score": 32,
+        "friends_score": 54,
+        "creative_session_score": 24,
+        "classic_city_score": 20,
+        "hidden_gem_score": 39,
+        "premium_destination_score": 54,
+        "long_stay_score": 30,
+        "quick_stop_score": 29
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 54 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "experience quality score is weak",
+          "constraint: photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Wine bar candidate with strong Palermo visibility.",
+            "context": "Wine bar candidate with strong Palermo visibility.",
+            "rank_position": 28
+          },
+          {
+            "source": "Wanderlog",
+            "source_type": "travel",
+            "source_weight": 62,
+            "signal": "Palermo wine bar candidate.",
+            "context": "Palermo wine bar candidate.",
+            "rank_position": 3
+          },
+          {
+            "source": "Bars for Kings",
+            "source_type": "generic",
+            "source_weight": 60,
+            "signal": "Palermo wine bar candidate.",
+            "context": "Palermo wine bar candidate.",
+            "rank_position": 3
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Palermo wine bar candidate with repeat guide visibility",
+            "context": "Palermo wine bar candidate with repeat guide visibility",
+            "rank_position": 105
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "Palermo wine bar candidate with repeat guide visibility",
+            "context": "Palermo wine bar candidate with repeat guide visibility",
+            "rank_position": 54
+          },
+          {
+            "source": "50 Best Discovery",
+            "source_type": "premium_editorial",
+            "source_weight": 90,
+            "signal": "Palermo wine bar candidate with repeat guide visibility",
+            "context": "Palermo wine bar candidate with repeat guide visibility",
+            "rank_position": 20
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.4,
+          "review_count": 2329,
+          "price_level": "PRICE_LEVEL_EXPENSIVE",
+          "primary_type": "wine_bar",
+          "types": [
+            "wine_bar",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Vico Wine Bar",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "missing",
+        "photos_evaluated": 0
+      }
+    },
+    {
+      "candidate_id": "590e25153237d813",
+      "google_place_id": "ChIJQ5TJmvC3vJURac6wyO540wg",
+      "city": "Buenos Aires",
+      "district": "Palermo Soho",
+      "category": "cafe",
+      "scores": {
+        "discovery_score": 83,
+        "consensus_score": 100,
+        "cultural_relevance_score": 58,
+        "review_count_log_score": 60,
+        "rating_quality_score": 80,
+        "source_authority_score": 91,
+        "experience_quality_score": 49,
+        "photo_quality_score": 0,
+        "eligibility_score": 52
+      },
+      "signals": {
+        "heritage_signal": 0,
+        "landmark_signal": 0,
+        "tourist_signal": 18,
+        "local_signal": 69,
+        "community_signal": 74,
+        "specialty_signal": 85,
+        "design_signal": 35,
+        "novelty_signal": 0,
+        "independent_signal": 72,
+        "mainstream_signal": 20,
+        "luxury_signal": 0,
+        "hidden_signal": 20,
+        "chain_signal": 0
+      },
+      "experience_signals": {
+        "quiet_signal": 58,
+        "lively_signal": 45,
+        "intimate_signal": 35,
+        "social_signal": 52,
+        "romantic_signal": 28,
+        "work_friendly_signal": 76,
+        "reading_signal": 74,
+        "conversation_signal": 58,
+        "long_stay_signal": 68,
+        "quick_stop_signal": 46,
+        "morning_signal": 84,
+        "afternoon_signal": 68,
+        "golden_hour_signal": 30,
+        "night_signal": 15,
+        "late_night_signal": 5,
+        "creative_signal": 35,
+        "formal_signal": 20,
+        "casual_signal": 78
+      },
+      "intent_scores": {
+        "work_score": 45,
+        "reading_score": 54,
+        "date_score": 31,
+        "conversation_score": 51,
+        "brunch_score": 63,
+        "dinner_score": 35,
+        "wine_score": 42,
+        "cocktail_score": 34,
+        "solo_score": 59,
+        "friends_score": 48,
+        "creative_session_score": 36,
+        "classic_city_score": 23,
+        "hidden_gem_score": 58,
+        "premium_destination_score": 45,
+        "long_stay_score": 37,
+        "quick_stop_score": 40
+      },
+      "photo_intelligence": {
+        "acceptable_hero_photo": false,
+        "hero_photo_reference": null,
+        "best_card_photo_reference": null,
+        "photo_quality_score": 0,
+        "interior_confidence": 0,
+        "seating_confidence": 0,
+        "natural_light_score": 0,
+        "long_stay_visual_signal": 0,
+        "design_visual_signal": 0,
+        "product_only_risk": 0,
+        "storefront_only_risk": 0,
+        "counter_only_risk": 0,
+        "evaluation_status": "not_evaluated",
+        "warnings": [
+          "photo intelligence not evaluated"
+        ]
+      },
+      "eligibility": {
+        "status": "pending_review",
+        "reasons": [
+          "eligibility score 52 requires calibration or missing validation gates"
+        ],
+        "warnings": [
+          "photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated",
+          "constraint: photo intelligence not evaluated"
+        ]
+      },
+      "derived_archetypes": [
+        {
+          "name": "specialty_work_or_category_venue",
+          "confidence": 80
+        }
+      ],
+      "evidence": {
+        "source_evidence": [
+          {
+            "source": "Time Out",
+            "source_type": "local_editorial",
+            "source_weight": 85,
+            "signal": "Colombian coffee cafe with sit-down appeal in Palermo.",
+            "context": "Colombian coffee cafe with sit-down appeal in Palermo.",
+            "rank_position": 4
+          },
+          {
+            "source": "Reddit",
+            "source_type": "community",
+            "source_weight": 70,
+            "signal": "Coffee community mention.",
+            "context": "Coffee community mention.",
+            "rank_position": 3
+          },
+          {
+            "source": "Tripadvisor",
+            "source_type": "travel",
+            "source_weight": 65,
+            "signal": "Colombian specialty coffee candidate with stay potential",
+            "context": "Colombian specialty coffee candidate with stay potential",
+            "rank_position": 4
+          },
+          {
+            "source": "Culture Trip",
+            "source_type": "local_editorial",
+            "source_weight": 78,
+            "signal": "Colombian specialty coffee candidate with stay potential",
+            "context": "Colombian specialty coffee candidate with stay potential",
+            "rank_position": 4
+          },
+          {
+            "source": "Secret Buenos Aires",
+            "source_type": "local_editorial",
+            "source_weight": 76,
+            "signal": "Colombian specialty coffee candidate with stay potential",
+            "context": "Colombian specialty coffee candidate with stay potential",
+            "rank_position": 3
+          }
+        ],
+        "photo_evidence": [],
+        "review_evidence": [],
+        "google_evidence": {
+          "rating": 4.5,
+          "review_count": 686,
+          "primary_type": "coffee_shop",
+          "types": [
+            "coffee_shop",
+            "cafe",
+            "point_of_interest",
+            "food_store",
+            "food",
+            "store",
+            "establishment"
+          ],
+          "business_status": "OPERATIONAL"
+        },
+        "constraints": [
+          "photo intelligence not evaluated",
+          "photo intelligence not evaluated"
+        ]
+      },
+      "version": "venue_intelligence_v1",
+      "venue_name": "Vive Cafe",
+      "diagnostics": {
+        "google_match_status": "matched",
+        "vision_status": "missing",
+        "photos_evaluated": 0
+      }
+    }
+  ]
+}
