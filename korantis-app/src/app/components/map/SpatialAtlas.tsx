@@ -1,15 +1,15 @@
 "use client";
 
-import { useState, useMemo, useRef, useEffect } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import Image from 'next/image';
-import { Bookmark, Heart, Map as MapIcon } from 'lucide-react';
+import { Bookmark, Heart } from 'lucide-react';
 import Map, { Marker } from 'react-map-gl/mapbox';
 import type { MapRef } from 'react-map-gl/mapbox';
 import useSupercluster from 'use-supercluster';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import type { ScoredVenue } from '../../contexts/CircadianContext';
 import { useCircadian } from '../../contexts/CircadianContext';
-import { t } from '../../utils/i18n';
+import { t, translateVenueField } from '../../utils/i18n';
 import { MAPBOX_STYLE } from './mapStyle';
 import KorantisMarker from './KorantisMarker';
 import AtlasVenuePreview from './AtlasVenuePreview';
@@ -24,28 +24,16 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
   const { language, savedVenueIds, toggleSaveVenue, rankedVenues } = useCircadian();
   const [atlasMode, setAtlasMode] = useState<'spatial' | 'saved'>('spatial');
   const [selectedVenueId, setSelectedVenueId] = useState<string | null>(initialSelectedVenueId || null);
+  const initialSelectedVenue = initialSelectedVenueId
+    ? rankedVenues.find((venue) => venue.id === initialSelectedVenueId)
+    : null;
 
   const [viewState, setViewState] = useState({
-    longitude: -58.4314,
-    latitude: -34.5885,
-    zoom: 13,
+    longitude: initialSelectedVenue?.lng || -58.4314,
+    latitude: initialSelectedVenue?.lat || -34.5885,
+    zoom: initialSelectedVenue ? 15.5 : 13,
     pitch: 45
   });
-
-  useEffect(() => {
-    if (initialSelectedVenueId) {
-      setSelectedVenueId(initialSelectedVenueId);
-      const venue = rankedVenues.find(v => v.id === initialSelectedVenueId);
-      if (venue && venue.lat && venue.lng) {
-        setViewState(prev => ({
-          ...prev,
-          longitude: venue.lng,
-          latitude: venue.lat,
-          zoom: 15.5
-        }));
-      }
-    }
-  }, [initialSelectedVenueId, rankedVenues]);
 
   const mapRef = useRef<MapRef>(null);
   const [bounds, setBounds] = useState<[number, number, number, number]>([-180, -85, 180, 85]);
@@ -87,9 +75,9 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
   // Compute collection counts
   const collectionCounts = useMemo(() => {
     return {
-      afterMidnight: rankedVenues.filter(v => v.atmosphere === 'intimate').length,
-      morningRitual: rankedVenues.filter(v => v.atmosphere === 'bright').length,
-      sundayCalm: rankedVenues.filter(v => v.atmosphere === 'calm').length,
+      afterMidnight: rankedVenues.filter(v => v.atmosphere === 'late-night' || v.atmosphere === 'night').length,
+      morningRitual: rankedVenues.filter(v => v.atmosphere === 'morning').length,
+      sundayCalm: rankedVenues.filter(v => v.atmosphere === 'afternoon' || v.atmosphere === 'dawn').length,
     };
   }, [rankedVenues]);
 
@@ -97,12 +85,12 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
     <div className="max-w-4xl mx-auto px-6 md:px-12 pt-12 md:pt-24 animate-fade-in">
       <header className="mb-10 flex flex-col items-center md:items-start text-center md:text-left">
         <h1 className="text-k-text font-display text-4xl md:text-5xl mb-3 tracking-wide">
-          {t('atlas', language) || "Spatial Atlas"}
+          {t('atlas', language)}
         </h1>
         <p className="text-sm text-k-text-secondary font-sans font-light max-w-lg">
           {atlasMode === 'spatial' 
-            ? "Places arranged by resonance, memory, and proximity." 
-            : t('atlasDesc', language) || "Your saved atmospheres and dynamic collections."}
+            ? t('atlasSpatialDesc', language)
+            : t('atlasDesc', language)}
         </p>
       </header>
 
@@ -116,7 +104,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
               : 'border-white/5 text-k-text-secondary hover:text-k-text hover:border-white/10'
           }`}
         >
-          Spatial Atlas
+          {t('spatialAtlas', language)}
         </button>
         <button 
           onClick={() => setAtlasMode('saved')}
@@ -126,7 +114,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
               : 'border-white/5 text-k-text-secondary hover:text-k-text hover:border-white/10'
           }`}
         >
-          Your Atlas
+          {t('yourAtlas', language)}
         </button>
       </div>
 
@@ -158,7 +146,8 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
               >
                 {clusters.map(cluster => {
                   const [longitude, latitude] = cluster.geometry.coordinates;
-                  const { cluster: isCluster, point_count: pointCount } = cluster.properties;
+                  const { cluster: isCluster } = cluster.properties;
+                  const pointCount = 'point_count' in cluster.properties ? cluster.properties.point_count : 0;
 
                   if (isCluster) {
                     return (
@@ -204,10 +193,10 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
             </div>
             
             <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mt-6 mb-2">
-              Nearby Atmospheres
+              {t('nearbyAtmospheres', language)}
             </h2>
             <div className="py-8 text-center border border-dashed border-white/5 rounded-2xl bg-white/[0.02]">
-               <p className="text-xs text-k-text-secondary font-sans font-light">Atmospheric markers will appear here based on map position.</p>
+               <p className="text-xs text-k-text-secondary font-sans font-light">{t('nearbyAtmospheresPlaceholder', language)}</p>
             </div>
           </section>
         ) : (
@@ -215,21 +204,21 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
           <>
             <section>
               <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-6">
-                {t('dynamicCollections', language) || "Dynamic Collections"}
+                {t('dynamicCollections', language)}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {/* Collection 1: After Midnight */}
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-k-border-light group cursor-pointer">
                   <Image 
                     src="/venue_floreria.png" 
-                    alt="After Midnight" 
+                    alt={t('afterMidnightImageAlt', language)}
                     fill 
                     className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
                   <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                    <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('afterMidnight', language) || "After Midnight"}</h3>
-                    <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.afterMidnight} {t('atmospheres', language) || "atmospheres"}</p>
+                    <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('afterMidnight', language)}</h3>
+                    <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.afterMidnight} {t('atmospheres', language)}</p>
                   </div>
                 </div>
 
@@ -237,14 +226,14 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-k-border-light group cursor-pointer">
                   <Image 
                     src="/venue_crisol.png" 
-                    alt="Morning Ritual" 
+                    alt={t('morningRitualImageAlt', language)}
                     fill 
                     className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
                   <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                    <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('morningRitual', language) || "Morning Ritual"}</h3>
-                    <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.morningRitual} {t('atmospheres', language) || "atmospheres"}</p>
+                    <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('morningRitual', language)}</h3>
+                    <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.morningRitual} {t('atmospheres', language)}</p>
                   </div>
                 </div>
 
@@ -252,14 +241,14 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-k-border-light group cursor-pointer">
                   <Image 
                     src="/venue_invernadero.png" 
-                    alt="Sunday Calm" 
+                    alt={t('sundayCalmImageAlt', language)}
                     fill 
                     className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/20 to-transparent"></div>
                   <div className="absolute bottom-5 left-5 right-5 flex flex-col gap-1">
-                    <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('sundayCalm', language) || "Sunday Calm"}</h3>
-                    <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.sundayCalm} {t('atmospheres', language) || "atmospheres"}</p>
+                    <h3 className="font-display text-xl font-normal text-k-text leading-tight">{t('sundayCalm', language)}</h3>
+                    <p className="text-[10px] font-sans text-k-gold-light uppercase tracking-wider">{collectionCounts.sundayCalm} {t('atmospheres', language)}</p>
                   </div>
                 </div>
               </div>
@@ -267,18 +256,18 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
 
             <section>
               <h2 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-6">
-                {t('allSavedPlaces', language) || "Saved Atmospheres"}
+                {t('allSavedPlaces', language)}
               </h2>
               
               {savedVenues.length === 0 ? (
                 <div className="py-16 text-center border border-dashed border-white/5 rounded-2xl bg-white/[0.02]">
                   <Bookmark className="mx-auto text-k-text-tertiary mb-4 opacity-40" size={32} />
-                  <p className="text-sm text-k-text-secondary font-sans font-light">{t('atlasEmpty', language) || "Your atlas is empty."}</p>
+                  <p className="text-sm text-k-text-secondary font-sans font-light">{t('atlasEmpty', language)}</p>
                   <button 
                     onClick={onExploreClick}
                     className="mt-4 px-5 py-2 rounded-full border border-k-gold-muted/40 text-xs font-sans text-k-gold bg-k-gold-dim hover:bg-k-gold-dim/60 transition-colors cursor-pointer"
                   >
-                    {t('discoverAtmospheres', language) || "Discover Atmospheres"}
+                    {t('discoverAtmospheres', language)}
                   </button>
                 </div>
               ) : (
@@ -297,12 +286,12 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                           {venue.name}
                         </h3>
                         <p className="text-[11px] text-k-text-secondary font-sans truncate">
-                          {venue.location} &middot; <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {language === 'es' ? 'atmósfera' : 'atmosphere'}</span>
+                          {venue.location} &middot; <span className="capitalize">{t(venue.atmosphere, language) || venue.atmosphere.replace('-', ' ')} {t('atmosphereSuffix', language)}</span>
                         </p>
                       </div>
                       <div className="flex items-center gap-3.5 flex-shrink-0">
                         <span className="hidden md:inline px-3 py-1 rounded border border-k-gold-muted/10 text-[9px] font-sans tracking-wide text-k-gold-muted bg-k-gold/5 uppercase">
-                          {language === 'es' && venue.category_es ? venue.category_es : venue.category}
+                          {language === 'es' && venue.category_es ? venue.category_es : translateVenueField(venue.category, language, 'category')}
                         </span>
                         <button
                           onClick={(e) => {
@@ -310,7 +299,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                             toggleSaveVenue(venue.id);
                           }}
                           className="p-2 text-k-gold hover:text-k-text-secondary transition-colors cursor-pointer"
-                          aria-label="Remove bookmark"
+                          aria-label={t('removeBookmark', language)}
                         >
                           <Heart size={15} fill="currentColor" />
                         </button>

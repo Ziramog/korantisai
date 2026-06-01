@@ -1,0 +1,1310 @@
+{
+  "generated_at": "2026-06-01T17:29:19.181Z",
+  "summary": {
+    "total": 100,
+    "write_safe": 100,
+    "needs_review": 0
+  },
+  "mappings": [
+    {
+      "venue": "36 Billares",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "classic_cafe",
+      "display_category_en": "Classic Cafe",
+      "display_category_es": "Café notable",
+      "confidence": 78,
+      "reasons": [
+        "historic/classic cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "878 Bar",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Aldo Vinoteca Recoleta",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Altar Cafe",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Amarante",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "brunch",
+      "display_category_en": "Brunch",
+      "display_category_es": "Brunch",
+      "confidence": 78,
+      "reasons": [
+        "brunch signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Anchoita",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Apu Nena",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Bierlife",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Blanca Deco and Cafe",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Cabaña Las Lilas",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Cafe San Juan",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Chila",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "premium_restaurant",
+      "display_category_en": "Premium Restaurant",
+      "display_category_es": "Restaurante premium",
+      "confidence": 78,
+      "reasons": [
+        "premium restaurant signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Corte Comedor",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Cucina Paradiso Colegiales",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Dada Bistro",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Danzon Bar",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "El Cuartito",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Filo",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Finde",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Florida Garden",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "bakery_cafe",
+      "display_category_en": "Bakery Cafe",
+      "display_category_es": "Café y panadería",
+      "confidence": 78,
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Gran Bar Danzon",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Guerrin",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Hache Almacen",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Hierbabuena",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "brunch",
+      "display_category_en": "Brunch",
+      "display_category_es": "Brunch",
+      "confidence": 78,
+      "reasons": [
+        "brunch signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Julia",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "L Harmonie",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "La Cava de Vittorio",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "La Garage",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "bakery_cafe",
+      "display_category_en": "Bakery Cafe",
+      "display_category_es": "Café y panadería",
+      "confidence": 78,
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "La Kitchen",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "La Panera Rosa",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Las Cholas",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "parrilla",
+      "display_category_en": "Parrilla",
+      "display_category_es": "Parrilla",
+      "confidence": 78,
+      "reasons": [
+        "parrilla/asado signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Le Ble Las Canitas",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "London City",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "classic_cafe",
+      "display_category_en": "Classic Cafe",
+      "display_category_es": "Café notable",
+      "confidence": 78,
+      "reasons": [
+        "historic/classic cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Maleza Cafe",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "cafe",
+      "display_category_en": "Cafe",
+      "display_category_es": "Café",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Malvon",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Milion",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Mixtape Bar",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Morro Cafe",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Moshu Las Canitas",
+      "scope": "candidate",
+      "current_category": "cafe",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Napoles",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 78,
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Narda Comedor",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Narda Lepes Mercado",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Olsen Las Canitas",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Plaza Bar",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Puerta Uno",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Reliquia",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Roux",
+      "scope": "candidate",
+      "current_category": "restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "scope": "candidate",
+      "current_category": "cocktail_bar",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Vina de San Telmo",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Vini Bar",
+      "scope": "candidate",
+      "current_category": "wine_bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Attaboy",
+      "scope": "public",
+      "current_category": "Speakeasy",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 78,
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Backroom Bar",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Bari Coffee & Drinks",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Bestial Fly Bar",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Birdy Birds Specialty Coffee Roasters",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Birkin",
+      "scope": "public",
+      "current_category": "Brunch & Coffee",
+      "normalized_category": "brunch",
+      "display_category_en": "Brunch",
+      "display_category_es": "Brunch",
+      "confidence": 78,
+      "reasons": [
+        "brunch signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Café Boheme - Café de Especialidad",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Café Cuervo",
+      "scope": "public",
+      "current_category": "Rustic Café",
+      "normalized_category": "cafe",
+      "display_category_en": "Cafe",
+      "display_category_es": "Café",
+      "confidence": 78,
+      "reasons": [
+        "cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Ciao Cacao Specialty coffee",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "CICHAUS",
+      "scope": "public",
+      "current_category": "Cocktail Bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 78,
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Ciro Palermo",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Crisol",
+      "scope": "public",
+      "current_category": "cafe",
+      "normalized_category": "cafe",
+      "display_category_en": "Cafe",
+      "display_category_es": "Café",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Crisol Café",
+      "scope": "public",
+      "current_category": "Coffee & Bakery",
+      "normalized_category": "bakery_cafe",
+      "display_category_en": "Bakery Cafe",
+      "display_category_es": "Café y panadería",
+      "confidence": 78,
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Cuervo Café",
+      "scope": "public",
+      "current_category": "cafe",
+      "normalized_category": "cafe",
+      "display_category_en": "Cafe",
+      "display_category_es": "Café",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Devoción",
+      "scope": "public",
+      "current_category": "Coffee Roastery",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Don Julio Parrilla",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "parrilla",
+      "display_category_en": "Parrilla",
+      "display_category_es": "Parrilla",
+      "confidence": 78,
+      "reasons": [
+        "parrilla/asado signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "El Boliche de Roberto",
+      "scope": "public",
+      "current_category": "Historic Tango Bar",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "El Preferido de Palermo",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Florería Atlántico",
+      "scope": "public",
+      "current_category": "bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 78,
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Florería Atlántico",
+      "scope": "public",
+      "current_category": "Speakeasy Bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 78,
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Import Coffee Co.",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Invernadero",
+      "scope": "public",
+      "current_category": "Gin & Tapas",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "John & Joe | Café de Especialidad",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Kaldi",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Koofi | Café de especialidad",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Kraken bar",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "La Biela",
+      "scope": "public",
+      "current_category": "Historic Grand Café",
+      "normalized_category": "classic_cafe",
+      "display_category_en": "Classic Cafe",
+      "display_category_es": "Café notable",
+      "confidence": 78,
+      "reasons": [
+        "historic/classic cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Lattente",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Libros del Pasaje",
+      "scope": "public",
+      "current_category": "Bookshop & Café",
+      "normalized_category": "cafe",
+      "display_category_en": "Cafe",
+      "display_category_es": "Café",
+      "confidence": 78,
+      "reasons": [
+        "cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Melbourne Café",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Mishiguene",
+      "scope": "public",
+      "current_category": "Jewish Cuisine",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 78,
+      "reasons": [
+        "restaurant signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Ninina",
+      "scope": "public",
+      "current_category": "Bakery & Café",
+      "normalized_category": "bakery_cafe",
+      "display_category_en": "Bakery Cafe",
+      "display_category_es": "Café y panadería",
+      "confidence": 78,
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Niño Gordo",
+      "scope": "public",
+      "current_category": "Asian Fusion",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 78,
+      "reasons": [
+        "restaurant signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Oporto Almacén",
+      "scope": "public",
+      "current_category": "Wine Bar & Dining",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 78,
+      "reasons": [
+        "wine signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Origen Coffee House",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Padre Coffee Roasters",
+      "scope": "public",
+      "current_category": "Roastery & Café",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Parrilla Don Julio",
+      "scope": "public",
+      "current_category": "Classic Parrilla",
+      "normalized_category": "parrilla",
+      "display_category_en": "Parrilla",
+      "display_category_es": "Parrilla",
+      "confidence": 78,
+      "reasons": [
+        "parrilla/asado signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Rita Specialty Coffee Soler",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "RITA® Specialty Coffee Armenia",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Surry Hills Coffee",
+      "scope": "public",
+      "current_category": "Australian Café",
+      "normalized_category": "cafe",
+      "display_category_en": "Cafe",
+      "display_category_es": "Café",
+      "confidence": 78,
+      "reasons": [
+        "cafe signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "TERRASOHO - Specialty Coffee",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Toki Moment - Specialty Coffee",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Tona Café",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Tres Monos",
+      "scope": "public",
+      "current_category": "Cocktail Bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 78,
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Uptown Bar",
+      "scope": "public",
+      "current_category": "Rooftop Lounge",
+      "normalized_category": "bar",
+      "display_category_en": "Bar",
+      "display_category_es": "Bar",
+      "confidence": 78,
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Verne Club",
+      "scope": "public",
+      "current_category": "Cocktail Vault",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "confidence": 82,
+      "reasons": [
+        "category inferred from display label"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Verne Club",
+      "scope": "public",
+      "current_category": "Restaurant",
+      "normalized_category": "restaurant",
+      "display_category_en": "Restaurant",
+      "display_category_es": "Restaurante",
+      "confidence": 82,
+      "reasons": [
+        "already normalized category"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Vive Café Cafe de especialidad , cafés de campeonatos",
+      "scope": "public",
+      "current_category": "Specialty Coffee",
+      "normalized_category": "specialty_cafe",
+      "display_category_en": "Specialty Coffee",
+      "display_category_es": "Café de especialidad",
+      "confidence": 78,
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "write_safe": true
+    },
+    {
+      "venue": "Wine Window Argentina (Palermo Soho)",
+      "scope": "public",
+      "current_category": "Wine Bar",
+      "normalized_category": "wine_bar",
+      "display_category_en": "Wine Bar",
+      "display_category_es": "Wine bar",
+      "confidence": 78,
+      "reasons": [
+        "wine signal from category/source/google/intent"
+      ],
+      "write_safe": true
+    }
+  ]
+}

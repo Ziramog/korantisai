@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, DollarSign, MapPin, Heart } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
-import { t } from '../utils/i18n';
+import { localizeVenueForDisplay, t } from '../utils/i18n';
 import VenueDetailMapBlock from './map/VenueDetailMapBlock';
 
 interface VenueDetailProps {
@@ -18,9 +18,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
 
   const isSaved = savedVenueIds.includes(venue.id);
-  const cat = language === 'es' && venue.category_es ? venue.category_es : venue.category;
-  const tagline = language === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline;
-  const narrative = language === 'es' && venue.narrative_es ? venue.narrative_es : venue.narrative;
+  const displayVenue = localizeVenueForDisplay(venue, language);
 
   // Scroll back to the top of the detail view on mount
   useEffect(() => {
@@ -31,24 +29,24 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   const timeBlocks = [
     {
       phase: 'morning',
-      label: language === 'es' ? 'Mañana' : 'Morning',
+      label: t('morning', language),
       desc: venue.atmosphere === 'morning' 
-        ? (language === 'es' ? 'Contenido, silencioso y fresco. Un espacio lento para pensar y enfocarse antes de que la ciudad despierte.' : 'Restrained, quiet, and cool. A slow space to think and focus before the city wakes.')
-        : (language === 'es' ? 'Un refugio tranquilo para comenzar el día. Ideal para la reflexión y el ritual pausado.' : 'A calm, quiet shelter to begin the day. Ideal for reflection and steady ritual.')
+        ? t('morningActiveDesc', language)
+        : t('morningDefaultDesc', language)
     },
     {
       phase: 'afternoon',
-      label: language === 'es' ? 'Tarde' : 'Afternoon',
+      label: t('afternoon', language),
       desc: venue.atmosphere === 'afternoon'
-        ? (language === 'es' ? 'Suave densidad botánica con calidez natural. Las conversaciones empiezan a acumularse.' : 'Soft botanical density with natural warmth. Conversations begin to layer.')
-        : (language === 'es' ? 'Luz de día y pausa lenta. La atmósfera se asienta en un equilibrio cómodo.' : 'Breezy daylight and slow pause. The atmosphere settles into comfortable alignment.')
+        ? t('afternoonActiveDesc', language)
+        : t('afternoonDefaultDesc', language)
     },
     {
       phase: 'night',
-      label: language === 'es' ? 'Noche' : 'Night',
+      label: t('night', language),
       desc: (venue.atmosphere === 'night' || venue.atmosphere === 'late-night')
-        ? (language === 'es' ? 'Sombras ámbar e intimidad cinematográfica. Las conversaciones se vuelven confesiones.' : 'Deep amber shadows and cinematic intimacy. Conversations become confessions.')
-        : (language === 'es' ? 'Sutil luz de velas y envoltura cálida. El tiempo se ralentiza mientras las luces de la ciudad toman el control.' : 'Subtle candlelight and warm enclosure. Time slows as the city lights take over.')
+        ? t('nightActiveDesc', language)
+        : t('nightDefaultDesc', language)
     }
   ];
 
@@ -61,7 +59,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
           <button 
             onClick={onBack}
             className="w-10 h-10 rounded-full bg-[#0F0D0B]/60 backdrop-blur-xl border border-white/5 flex items-center justify-center text-k-text-secondary hover:text-k-text hover:bg-[#0F0D0B]/90 transition-all cursor-pointer shadow-lg"
-            aria-label="Go back"
+            aria-label={t('back', language)}
           >
             <ArrowLeft size={16} />
           </button>
@@ -69,7 +67,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
           <button 
             onClick={() => toggleSaveVenue(venue.id)}
             className="w-10 h-10 rounded-full bg-[#0F0D0B]/60 backdrop-blur-xl border border-white/5 flex items-center justify-center text-k-text-secondary hover:text-k-gold hover:bg-[#0F0D0B]/90 transition-all cursor-pointer shadow-lg"
-            aria-label="Save venue"
+            aria-label={isSaved ? t('unsave', language) : t('save', language)}
           >
             <Heart size={16} fill={isSaved ? "#C9A96E" : "none"} className={isSaved ? "text-k-gold" : ""} />
           </button>
@@ -94,7 +92,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         {/* Hero Meta Info - Responsive bottom positioning */}
         <div className="absolute bottom-6 left-5 right-5 md:left-12 z-20 flex flex-col gap-2 max-w-2xl">
           <span className="text-[10px] text-k-gold tracking-widest uppercase font-sans font-medium">
-            {cat}
+            {displayVenue.displayCategory}
           </span>
           <h1 className="text-k-text font-display text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide drop-shadow-md leading-tight">
             {venue.name}
@@ -105,7 +103,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
               <span>{venue.location}</span>
             </div>
             <span className="hidden sm:inline w-1 h-1 rounded-full bg-k-border-light"></span>
-            <span className="capitalize">{venue.atmosphere.replace('-', ' ')} {t('atmosphereSuffix', language)}</span>
+            <span className="capitalize">{displayVenue.displayAtmosphere} {t('atmosphereSuffix', language)}</span>
           </div>
         </div>
       </header>
@@ -116,10 +114,10 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         <section className="mb-10 border-b border-k-border/30 pb-10">
           <div className="flex flex-col gap-3">
             <p className="text-lg md:text-2xl text-k-gold-light font-display italic font-light leading-relaxed max-w-3xl">
-              &ldquo;{tagline}&rdquo;
+              &ldquo;{displayVenue.displayTagline}&rdquo;
             </p>
             <p className="text-xs md:text-sm text-k-text-secondary font-sans font-light leading-relaxed mt-3 text-justify">
-              {narrative}
+              {displayVenue.displayDescription}
             </p>
           </div>
         </section>
@@ -130,9 +128,9 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             {t('atmosphericCharacter', language)}
           </h3>
           <div className="flex flex-wrap gap-2">
-            {venue.tags.map((tag) => (
+            {venue.tags.map((tag, index) => (
               <span key={tag} className="px-3.5 py-1.5 rounded-lg border border-k-gold/10 text-[11px] font-sans tracking-wide text-k-gold bg-k-gold-dim/40 shadow-sm">
-                {t(tag, language)}
+                {displayVenue.displayTags[index] || tag}
               </span>
             ))}
             <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
@@ -186,7 +184,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
               <Image 
                 src="/venue_cuervo.png" 
-                alt="Detail vignette" 
+                alt={t('detailVignetteAlt', language)}
                 fill 
                 className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 
               />
@@ -194,7 +192,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
               <Image 
                 src="/venue_rooftop.png" 
-                alt="Detail vignette" 
+                alt={t('detailVignetteAlt', language)}
                 fill 
                 className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 
               />
@@ -202,7 +200,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
               <Image 
                 src="/venue_oporto.png" 
-                alt="Detail vignette" 
+                alt={t('detailVignetteAlt', language)}
                 fill 
                 className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 
               />

@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-06-01T17:29:25.042Z",
+  "recommendation": "B) materialize more candidate images",
+  "source_reports": [
+    "category_normalization_publish_mapping.json",
+    "publish_candidate_asset_readiness.json",
+    "publish_candidate_photo_refs.json",
+    "publish_candidate_cloudinary_materialization.json",
+    "google_contact_enrichment.json",
+    "official_contact_links.json"
+  ]
+}

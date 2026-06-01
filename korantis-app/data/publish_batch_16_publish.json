@@ -1,0 +1,446 @@
+{
+  "generated_at": "2026-06-01T19:19:18.965Z",
+  "mode": "write",
+  "write_blocked": false,
+  "public_venues_before": 50,
+  "public_venues_after": 66,
+  "candidates_requested": 16,
+  "rows_to_insert": [
+    {
+      "id": "ChIJHUjYLsO1vJUR3Miis48-MSE",
+      "name": "Blanca Deco and Cafe",
+      "city": "Buenos Aires",
+      "category": "specialty_cafe",
+      "location": "Recoleta, CABA",
+      "coordinates": {
+        "lat": -34.5646565,
+        "lng": -58.439148100000004
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "morning",
+      "quality": 0.72,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "specialty_cafe"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJMZMCq4y1vJURRfysuSq4vCA",
+      "name": "Julia",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Villa Crespo, CABA",
+      "coordinates": {
+        "lat": -34.5933342,
+        "lng": -58.4378147
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.74,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJKYYltZnKvJUR1B3un_qNkho",
+      "name": "Roux",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Recoleta, CABA",
+      "coordinates": {
+        "lat": -34.590693,
+        "lng": -58.39741829999999
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.73,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJ-dd4uo21vJURyRbXtTjQNlU",
+      "name": "Anchoita",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Chacarita, CABA",
+      "coordinates": {
+        "lat": -34.5894647,
+        "lng": -58.4454092
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.73,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJKcgRZLjKvJURv0XnanBXRCg",
+      "name": "El Cuartito",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Recoleta, CABA",
+      "coordinates": {
+        "lat": -34.597813699999996,
+        "lng": -58.3854964
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.73,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJaZuHKES1vJURFUHa25lVQRI",
+      "name": "Reliquia",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Villa Crespo, CABA",
+      "coordinates": {
+        "lat": -34.5833193,
+        "lng": -58.439101699999995
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.74,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJ9VPPDEW1vJUR5pnE3ycOTSU",
+      "name": "Apu Nena",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Chacarita, CABA",
+      "coordinates": {
+        "lat": -34.588320700000004,
+        "lng": -58.445140599999995
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.72,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJRz6gfke1vJURQy4TWxMJuSY",
+      "name": "Corte Comedor",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Belgrano, CABA",
+      "coordinates": {
+        "lat": -34.5540671,
+        "lng": -58.44824229999999
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.72,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJm86rLcTKvJURjRPk21bRoro",
+      "name": "Guerrin",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Microcentro, CABA",
+      "coordinates": {
+        "lat": -34.6041209,
+        "lng": -58.385982
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.75,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJ7yoB8i01o5URXijw57yzW0U",
+      "name": "Cabaña Las Lilas",
+      "city": "Buenos Aires",
+      "category": "restaurant",
+      "location": "Puerto Madero, CABA",
+      "coordinates": {
+        "lat": -34.6038114,
+        "lng": -58.36689690000001
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.73,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "restaurant"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJGfegidK1vJURGaueRjMuAc0",
+      "name": "Vini Bar",
+      "city": "Buenos Aires",
+      "category": "wine_bar",
+      "location": "Villa Crespo, CABA",
+      "coordinates": {
+        "lat": -34.5805298,
+        "lng": -58.4133106
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.74,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "wine_bar"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "name": "Gran Bar Danzon",
+      "city": "Buenos Aires",
+      "category": "wine_bar",
+      "location": "Recoleta, CABA",
+      "coordinates": {
+        "lat": -34.5948985,
+        "lng": -58.3842924
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.73,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "wine_bar"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJy4qUv4q1vJUR8rayMlrFSIg",
+      "name": "878 Bar",
+      "city": "Buenos Aires",
+      "category": "cocktail_bar",
+      "location": "Villa Crespo, CABA",
+      "coordinates": {
+        "lat": -34.592841299999996,
+        "lng": -58.4390916
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.75,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "cocktail_bar"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJT1fyLrnKvJURP1-qNQDw3Kg",
+      "name": "Milion",
+      "city": "Buenos Aires",
+      "category": "cocktail_bar",
+      "location": "Recoleta, CABA",
+      "coordinates": {
+        "lat": -34.59652880000001,
+        "lng": -58.388621699999995
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.75,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "cocktail_bar"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJhQIMStM0o5URWvHT37YudbM",
+      "name": "Plaza Bar",
+      "city": "Buenos Aires",
+      "category": "cocktail_bar",
+      "location": "Retiro, CABA",
+      "coordinates": {
+        "lat": -34.6205706,
+        "lng": -58.3713086
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.72,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "cocktail_bar"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    },
+    {
+      "id": "ChIJVfJW2oe1vJUR2NfFT9Dj6Ws",
+      "name": "Mixtape Bar",
+      "city": "Buenos Aires",
+      "category": "cocktail_bar",
+      "location": "Chacarita, CABA",
+      "coordinates": {
+        "lat": -34.5542303,
+        "lng": -58.455112299999996
+      },
+      "card_size": "layered",
+      "spacing": "breathe",
+      "atmosphere": "night",
+      "quality": 0.72,
+      "tagline": "",
+      "narrative": "",
+      "tags": [
+        "cocktail_bar"
+      ],
+      "l2_vector": null,
+      "l3_vector": null
+    }
+  ],
+  "inserted": [
+    {
+      "id": "ChIJHUjYLsO1vJUR3Miis48-MSE",
+      "name": "Blanca Deco and Cafe",
+      "category": "specialty_cafe"
+    },
+    {
+      "id": "ChIJMZMCq4y1vJURRfysuSq4vCA",
+      "name": "Julia",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJKYYltZnKvJUR1B3un_qNkho",
+      "name": "Roux",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJ-dd4uo21vJURyRbXtTjQNlU",
+      "name": "Anchoita",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJKcgRZLjKvJURv0XnanBXRCg",
+      "name": "El Cuartito",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJaZuHKES1vJURFUHa25lVQRI",
+      "name": "Reliquia",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJ9VPPDEW1vJUR5pnE3ycOTSU",
+      "name": "Apu Nena",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJRz6gfke1vJURQy4TWxMJuSY",
+      "name": "Corte Comedor",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJm86rLcTKvJURjRPk21bRoro",
+      "name": "Guerrin",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJ7yoB8i01o5URXijw57yzW0U",
+      "name": "Cabaña Las Lilas",
+      "category": "restaurant"
+    },
+    {
+      "id": "ChIJGfegidK1vJURGaueRjMuAc0",
+      "name": "Vini Bar",
+      "category": "wine_bar"
+    },
+    {
+      "id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "name": "Gran Bar Danzon",
+      "category": "wine_bar"
+    },
+    {
+      "id": "ChIJy4qUv4q1vJUR8rayMlrFSIg",
+      "name": "878 Bar",
+      "category": "cocktail_bar"
+    },
+    {
+      "id": "ChIJT1fyLrnKvJURP1-qNQDw3Kg",
+      "name": "Milion",
+      "category": "cocktail_bar"
+    },
+    {
+      "id": "ChIJhQIMStM0o5URWvHT37YudbM",
+      "name": "Plaza Bar",
+      "category": "cocktail_bar"
+    },
+    {
+      "id": "ChIJVfJW2oe1vJUR2NfFT9Dj6Ws",
+      "name": "Mixtape Bar",
+      "category": "cocktail_bar"
+    }
+  ],
+  "skipped": [],
+  "errors": []
+}

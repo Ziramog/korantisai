@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Compass } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
-import { t } from '../utils/i18n';
+import { localizeVenueForDisplay, t } from '../utils/i18n';
 
 interface VenueCardProps {
   venue: ScoredVenue;
@@ -23,21 +23,15 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
   } = useCircadian();
 
   const ref = useRef<HTMLDivElement>(null);
-  const [debugMode, setDebugMode] = useState(false);
+  const [debugMode] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    const params = new URLSearchParams(window.location.search);
+    return params.get('debug') === 'taste' || params.get('debug') === 'circadian';
+  });
 
   const isSaved = savedVenueIds.includes(venue.id);
-  const tagline = language === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline;
-  const placeCue = venue.location || venue.atmosphere.replace('-', ' ');
-
-  // Check URL query parameters for taste debugging HUD
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('debug') === 'taste' || params.get('debug') === 'circadian') {
-        setDebugMode(true);
-      }
-    }
-  }, []);
+  const displayVenue = localizeVenueForDisplay(venue, language);
+  const placeCue = venue.location || displayVenue.displayAtmosphere;
 
   // Telemetry: Graded Dwell & Scroll Pass-through
   useEffect(() => {
@@ -86,7 +80,7 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
         toggleSaveVenue(venue.id);
       }}
       className={`${className} ${isSaved ? 'is-saved is-visible' : ''}`}
-      aria-label={isSaved ? 'Unsave venue' : 'Save venue'}
+      aria-label={isSaved ? t('unsave', language) : t('save', language)}
       aria-pressed={isSaved}
     >
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -97,9 +91,9 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
 
   const renderTags = (variant: 'frost' | 'ghost' | 'gold' | 'outlined') => (
     <div className="k-card__tags">
-      {venue.tags.map((tag) => (
+      {venue.tags.map((tag, index) => (
         <span key={tag} className={`k-tag k-tag--${variant}`}>
-          {t(tag, language)}
+          {displayVenue.displayTags[index] || tag}
         </span>
       ))}
     </div>
@@ -129,14 +123,14 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
                   <p 
                     className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
                     onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                    aria-label={`Open ${venue.name} in Spatial Atlas`}
+                    aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
                   >
                     <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
                     {placeCue}
                   </p>
                 </div>
               </div>
-              <p className="k-card__tagline">{tagline}</p>
+              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
               {renderTags('gold')}
             </div>
           </>
@@ -162,12 +156,12 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
               <p 
                 className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
                 onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                aria-label={`Open ${venue.name} in Spatial Atlas`}
+                aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
               >
                 <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
                 {placeCue}
               </p>
-              <p className="k-card__tagline">{tagline}</p>
+              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
               {renderTags('ghost')}
             </div>
           </>
@@ -191,12 +185,12 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
               <p 
                 className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
                 onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                aria-label={`Open ${venue.name} in Spatial Atlas`}
+                aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
               >
                 <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
                 {placeCue}
               </p>
-              <p className="k-card__tagline">{tagline}</p>
+              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
               {renderTags('frost')}
             </div>
           </>
@@ -219,12 +213,12 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
               <p 
                 className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
                 onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                aria-label={`Open ${venue.name} in Spatial Atlas`}
+                aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
               >
                 <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
                 {placeCue}
               </p>
-              <p className="k-card__tagline">{tagline}</p>
+              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
               {renderTags('ghost')}
             </div>
           </>

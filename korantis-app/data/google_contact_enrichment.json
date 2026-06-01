@@ -1,0 +1,1397 @@
+{
+  "generated_at": "2026-06-01T17:26:45.980Z",
+  "summary": {
+    "total_records": 67,
+    "public_records": 50,
+    "candidate_records": 17
+  },
+  "records": [
+    {
+      "venue": "Crisol",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Cuervo Café",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "El Boliche de Roberto",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Florería Atlántico",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Invernadero",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Florería Atlántico",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "La Biela",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Lattente",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Melbourne Café",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Ninina",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Oporto Almacén",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Padre Coffee Roasters",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Surry Hills Coffee",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Uptown Bar",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Café Cuervo",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Birkin",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Mishiguene",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Origen Coffee House",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Parrilla Don Julio",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Tres Monos",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Verne Club",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Attaboy",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Crisol Café",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Devoción",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Libros del Pasaje",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Niño Gordo",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "John & Joe | Café de Especialidad",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "TERRASOHO - Specialty Coffee",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Vive Café Cafe de especialidad , cafés de campeonatos",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Café Boheme - Café de Especialidad",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "RITA® Specialty Coffee Armenia",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Toki Moment - Specialty Coffee",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Import Coffee Co.",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Koofi | Café de especialidad",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Tona Café",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Don Julio Parrilla",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "scope": "public",
+      "google_place_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "match_status": "matched",
+      "address": "Av. Corrientes 222 piso 19, C1043 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.3,
+      "user_rating_count": 7519,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.tradeskybar.com/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=15860443163526338522&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone"
+      ]
+    },
+    {
+      "venue": "Wine Window Argentina (Palermo Soho)",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Backroom Bar",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Kraken bar",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Verne Club",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Bari Coffee & Drinks",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Birdy Birds Specialty Coffee Roasters",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Ciao Cacao Specialty coffee",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Ciro Palermo",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Bestial Fly Bar",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "CICHAUS",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "El Preferido de Palermo",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Kaldi",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Rita Specialty Coffee Soler",
+      "scope": "public",
+      "google_place_id": null,
+      "match_status": "missing",
+      "opening_hours_available": false,
+      "links": [],
+      "missing_fields": [
+        "phone",
+        "website",
+        "google_maps",
+        "opening_hours",
+        "address",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Blanca Deco and Cafe",
+      "scope": "candidate",
+      "candidate_id": "45233e763e36b65b",
+      "google_place_id": "ChIJHUjYLsO1vJUR3Miis48-MSE",
+      "match_status": "matched",
+      "address": "Soldado de la Independencia 1177, C1426 Cdad. Autónoma de Buenos Aires, Argentina",
+      "rating": 4.2,
+      "user_rating_count": 1189,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.blancadecocafe.com/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=2391761664025479388&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Julia",
+      "scope": "candidate",
+      "candidate_id": "867c25e43776ac23",
+      "google_place_id": "ChIJMZMCq4y1vJURRfysuSq4vCA",
+      "match_status": "matched",
+      "address": "Loyola 807, C1414 C1414AUQ, Cdad. Autónoma de Buenos Aires, Argentina",
+      "rating": 4.6,
+      "user_rating_count": 752,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://www.instagram.com/julia.restaurante/?hl=es-la",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 7519-0514",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=2358962798478556229&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Roux",
+      "scope": "candidate",
+      "candidate_id": "710b763f932de83e",
+      "google_place_id": "ChIJKYYltZnKvJUR1B3un_qNkho",
+      "match_status": "matched",
+      "address": "Peña 2300, C1126ABF Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "rating": 4.6,
+      "user_rating_count": 3211,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.rouxresto.com/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 4805-6794",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=1914748899150405076&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "Anchoita",
+      "scope": "candidate",
+      "candidate_id": "3685b3837a988034",
+      "google_place_id": "ChIJ-dd4uo21vJURyRbXtTjQNlU",
+      "match_status": "matched",
+      "address": "Juan Ramírez de Velasco 1520, C1427 C1414ARF, Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.6,
+      "user_rating_count": 2185,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://anchoita.com.ar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 4854-9334",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=6140324083953768137&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "El Cuartito",
+      "scope": "candidate",
+      "candidate_id": "15099ff5f4365522",
+      "google_place_id": "ChIJKcgRZLjKvJURv0XnanBXRCg",
+      "match_status": "matched",
+      "address": "Talcahuano 937, C1001 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_MODERATE",
+      "rating": 4.5,
+      "user_rating_count": 39754,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://www.instagram.com/cuartito_paginaoficial/?hl=es",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 4816-4331",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=2901540200274937279&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "Reliquia",
+      "scope": "candidate",
+      "candidate_id": "5bd1c65d45c6d160",
+      "google_place_id": "ChIJaZuHKES1vJURFUHa25lVQRI",
+      "match_status": "matched",
+      "address": "Ángel Justiniano Carranza 1601, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "rating": 4.6,
+      "user_rating_count": 620,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://www.instagram.com/reliquia.restaurante/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 3000-4151",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=1315426685475766549&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Apu Nena",
+      "scope": "candidate",
+      "candidate_id": "14b057060c2e15f3",
+      "google_place_id": "ChIJ9VPPDEW1vJUR5pnE3ycOTSU",
+      "match_status": "matched",
+      "address": "Aguirre 1600, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_MODERATE",
+      "rating": 4.4,
+      "user_rating_count": 1588,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://www.apunena.com/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 3842-4230",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=2687820117030771174&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "Corte Comedor",
+      "scope": "candidate",
+      "candidate_id": "6aaa462b342c9f70",
+      "google_place_id": "ChIJRz6gfke1vJURQy4TWxMJuSY",
+      "match_status": "matched",
+      "address": "Av. Olazábal 1391, C1428DGE Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.3,
+      "user_rating_count": 2937,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://www.instagram.com/cortecomedor/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=2790271422869745219&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone"
+      ]
+    },
+    {
+      "venue": "Guerrin",
+      "scope": "candidate",
+      "candidate_id": "6124e2c824bd8b04",
+      "google_place_id": "ChIJm86rLcTKvJURjRPk21bRoro",
+      "match_status": "matched",
+      "address": "Av. Corrientes 1368, C1043 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_MODERATE",
+      "rating": 4.7,
+      "user_rating_count": 206744,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://guerrin.com.ar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=13448541608268272525&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone"
+      ]
+    },
+    {
+      "venue": "Cabaña Las Lilas",
+      "scope": "candidate",
+      "candidate_id": "0ce79031cfdfed80",
+      "google_place_id": "ChIJ7yoB8i01o5URXijw57yzW0U",
+      "match_status": "matched",
+      "address": "Av. Alicia Moreau de Justo 516, C1107 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_VERY_EXPENSIVE",
+      "rating": 4.3,
+      "user_rating_count": 9793,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.restaurantlaslilas.com.ar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 4313-1336",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=4997785835424196702&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "Vini Bar",
+      "scope": "candidate",
+      "candidate_id": "d91ec380feada0e8",
+      "google_place_id": "ChIJGfegidK1vJURGaueRjMuAc0",
+      "match_status": "matched",
+      "address": "República Árabe Siria 3037, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
+      "rating": 4.4,
+      "user_rating_count": 361,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://instagram.com/vini__bar?utm_medium=copy_link",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=14772139050514950937&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone",
+        "price_level"
+      ]
+    },
+    {
+      "venue": "Gran Bar Danzon",
+      "scope": "candidate",
+      "candidate_id": "bf3926a3b0d6ae9a",
+      "google_place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "match_status": "matched",
+      "address": "Libertad 1161, C1012AAW Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.4,
+      "user_rating_count": 4417,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://granbardanzon.com.ar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 4811-1108",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=9185738313397534766&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "878 Bar",
+      "scope": "candidate",
+      "candidate_id": "bae6687c67a7f35b",
+      "google_place_id": "ChIJy4qUv4q1vJUR8rayMlrFSIg",
+      "match_status": "matched",
+      "address": "Thames 878, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.4,
+      "user_rating_count": 4346,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.878bar.com.ar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 11 4773-1098",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=9820315978669668082&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "Milion",
+      "scope": "candidate",
+      "candidate_id": "50a0481f6eb23fea",
+      "google_place_id": "ChIJT1fyLrnKvJURP1-qNQDw3Kg",
+      "match_status": "matched",
+      "address": "Paraná 1048, C1018ADB Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.1,
+      "user_rating_count": 8585,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.milion.com.ar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "phone",
+          "label": "Phone",
+          "phone_number": "+54 9 11 3765-9616",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=12167864176939261759&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": []
+    },
+    {
+      "venue": "Plaza Bar",
+      "scope": "candidate",
+      "candidate_id": "e180e3e7816a3bb0",
+      "google_place_id": "ChIJhQIMStM0o5URWvHT37YudbM",
+      "match_status": "matched",
+      "address": "Defensa 1098, C1103 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_MODERATE",
+      "rating": 4,
+      "user_rating_count": 1138,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=12931293268038381914&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone",
+        "website"
+      ]
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "scope": "candidate",
+      "candidate_id": "cf4b6889226bbe70",
+      "google_place_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "match_status": "matched",
+      "address": "Av. Corrientes 222 piso 19, C1043 Cdad. Autónoma de Buenos Aires, Argentina",
+      "price_level": "PRICE_LEVEL_EXPENSIVE",
+      "rating": 4.3,
+      "user_rating_count": 7519,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "http://www.tradeskybar.com/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=15860443163526338522&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone"
+      ]
+    },
+    {
+      "venue": "Mixtape Bar",
+      "scope": "candidate",
+      "candidate_id": "dee461d82c34b6d6",
+      "google_place_id": "ChIJVfJW2oe1vJUR2NfFT9Dj6Ws",
+      "match_status": "matched",
+      "address": "Franklin D. Roosevelt 1806 1er Piso, C1428 Cdad. Autónoma de Buenos Aires, Argentina",
+      "rating": 4.7,
+      "user_rating_count": 275,
+      "opening_hours_available": true,
+      "links": [
+        {
+          "type": "website",
+          "label": "Website",
+          "url": "https://www.instagram.com/mixtape.bar/",
+          "source": "google_places",
+          "confidence": 90
+        },
+        {
+          "type": "google_maps",
+          "label": "Google Maps",
+          "url": "https://maps.google.com/?cid=7775996715462940632&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+          "source": "google_places",
+          "confidence": 95
+        }
+      ],
+      "missing_fields": [
+        "phone",
+        "price_level"
+      ]
+    }
+  ]
+}

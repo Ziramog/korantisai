@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bookmark, Heart, User, Sparkles } from 'lucide-react';
+import { User, Sparkles } from 'lucide-react';
 import Image from 'next/image';
 
 import { ScoredVenue, useCircadian } from './contexts/CircadianContext';
@@ -10,10 +10,10 @@ import SearchBar from './components/SearchBar';
 import VenueCard from './components/VenueCard';
 import GlobalNav from './components/GlobalNav';
 import TasteRadar from './components/TasteRadar';
+import TheOracle from './components/taste/TheOracle';
 import VenueDetail from './components/VenueDetail';
 import AtmosphereDebug from './components/AtmosphereDebug';
 import AuthPanel from './components/AuthPanel';
-import MapExplorer from './components/MapExplorer';
 import HeaderControls from './components/HeaderControls';
 import SpatialAtlas from './components/map/SpatialAtlas';
 import { t } from './utils/i18n';
@@ -36,7 +36,6 @@ export default function Home() {
     isAuthenticated,
     rankedVenues, 
     savedVenueIds, 
-    toggleSaveVenue, 
     currentDrift,
     currentPhase,
     language,
@@ -71,12 +70,16 @@ export default function Home() {
     const enclosureVal = currentDrift[3];
     const paceVal = currentDrift[4];
 
-    const socialStr = socialVal < -0.2 ? 'intimate corners' : socialVal > 0.2 ? 'buzzing social hubs' : 'balanced social hubs';
-    const lightStr = enclosureVal < -0.2 ? 'airy, natural light' : enclosureVal > 0.2 ? 'dark, amber-lit shadows' : 'even lighting';
-    const paceStr = paceVal < -0.2 ? 'efficient rituals' : paceVal > 0.2 ? 'slow lingering pauses' : 'leisurely pacing';
+    const socialStr = socialVal < -0.2 ? t('socialIntimate', language) : socialVal > 0.2 ? t('socialBuzzing', language) : t('socialBalanced', language);
+    const lightStr = enclosureVal < -0.2 ? t('lightAiry', language) : enclosureVal > 0.2 ? t('lightAmber', language) : t('lightEven', language);
+    const paceStr = paceVal < -0.2 ? t('paceEfficient', language) : paceVal > 0.2 ? t('paceSlow', language) : t('paceLeisurely', language);
 
-    return `You are currently drawn to ${socialStr} with ${lightStr} and ${paceStr}. Your profile adapts to your implicit scroll speed, cards expanded, and saved atmospheres.`;
-  }, [currentDrift]);
+    return t('tasteDynamic', language, {
+      social: socialStr,
+      light: lightStr,
+      pace: paceStr,
+    });
+  }, [currentDrift, language]);
 
 
 
@@ -196,6 +199,12 @@ export default function Home() {
                       </div>
                     </header>
 
+                    <div className="mb-20">
+                      <TheOracle />
+                    </div>
+
+                    <div className="w-full h-px bg-k-border mb-16" />
+
                     <main className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                       {/* Radar Diagram */}
                       <div className="flex flex-col items-center">
@@ -224,20 +233,20 @@ export default function Home() {
                           <div className="flex flex-col gap-3">
                             <div className="flex items-center gap-3.5 p-3 rounded-xl border border-k-border bg-k-surface/20">
                               <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/5">
-                                <Image src="/venue_floreria.png" alt="Sanctuary" fill className="object-cover" />
+                                <Image src="/venue_floreria.png" alt={t('sanctuaryImageAlt', language)} fill className="object-cover" />
                               </div>
                               <div className="flex-grow">
-                                <h4 className="text-xs font-sans font-medium">{language === 'es' ? 'El Santuario Oculto' : 'The Hidden Sanctuary'}</h4>
-                                <p className="text-[10px] text-k-text-tertiary font-sans">{language === 'es' ? '92% compatibilidad' : '92% latent match'}</p>
+                                <h4 className="text-xs font-sans font-medium">{t('hiddenSanctuary', language)}</h4>
+                                <p className="text-[10px] text-k-text-tertiary font-sans">{t('latentMatch', language, { score: 92 })}</p>
                               </div>
                             </div>
                             <div className="flex items-center gap-3.5 p-3 rounded-xl border border-k-border bg-k-surface/20">
                               <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/5">
-                                <Image src="/venue_crisol.png" alt="Ritual" fill className="object-cover" />
+                                <Image src="/venue_crisol.png" alt={t('ritualImageAlt', language)} fill className="object-cover" />
                               </div>
                               <div className="flex-grow">
-                                <h4 className="text-xs font-sans font-medium">{language === 'es' ? 'El Ritual Minimalista' : 'The Minimalist Ritual'}</h4>
-                                <p className="text-[10px] text-k-text-tertiary font-sans">{language === 'es' ? '87% compatibilidad' : '87% latent match'}</p>
+                                <h4 className="text-xs font-sans font-medium">{t('minimalistRitual', language)}</h4>
+                                <p className="text-[10px] text-k-text-tertiary font-sans">{t('latentMatch', language, { score: 87 })}</p>
                               </div>
                             </div>
                           </div>
@@ -258,7 +267,7 @@ export default function Home() {
                         {/* Language Preferences */}
                         <section className="mt-4">
                           <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-                            {language === 'es' ? 'Idioma' : 'Language'}
+                            {t('language', language)}
                           </h3>
                           <div className="flex p-1 rounded-xl bg-k-surface-elevated/20 border border-k-border w-max">
                             <button
@@ -269,7 +278,7 @@ export default function Home() {
                                   : 'text-k-text-secondary hover:text-white'
                               }`}
                             >
-                              Español
+                              {t('spanish', language)}
                             </button>
                             <button
                               onClick={() => setLanguage('en')}
@@ -279,7 +288,7 @@ export default function Home() {
                                   : 'text-k-text-secondary hover:text-white'
                               }`}
                             >
-                              English
+                              {t('english', language)}
                             </button>
                           </div>
                         </section>

@@ -1,0 +1,1324 @@
+{
+  "generated_at": "2026-06-01T17:29:10.152Z",
+  "public_venue_source": "http://localhost:3000/api/venues",
+  "summary": {
+    "public_venues": 50,
+    "controlled_batch_outputs": 50,
+    "findings": 85,
+    "proposals": 62
+  },
+  "duplicate_categories": [
+    {
+      "category": "restaurant",
+      "count": 28
+    },
+    {
+      "category": "cafe",
+      "count": 17
+    },
+    {
+      "category": "specialty coffee",
+      "count": 17
+    },
+    {
+      "category": "cocktail_bar",
+      "count": 8
+    },
+    {
+      "category": "wine_bar",
+      "count": 7
+    },
+    {
+      "category": "cocktail bar",
+      "count": 2
+    }
+  ],
+  "findings": [
+    {
+      "venue": "Crisol",
+      "source": "public_venues",
+      "current_category": "cafe",
+      "proposed_normalized_category": "cafe",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Cuervo Café",
+      "source": "public_venues",
+      "current_category": "cafe",
+      "proposed_normalized_category": "cafe",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "El Boliche de Roberto",
+      "source": "public_venues",
+      "current_category": "Historic Tango Bar",
+      "proposed_normalized_category": "bar",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Florería Atlántico",
+      "source": "public_venues",
+      "current_category": "bar",
+      "proposed_normalized_category": "bar",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Invernadero",
+      "source": "public_venues",
+      "current_category": "Gin & Tapas",
+      "proposed_normalized_category": "bar",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Florería Atlántico",
+      "source": "public_venues",
+      "current_category": "Speakeasy Bar",
+      "proposed_normalized_category": "cocktail_bar",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "La Biela",
+      "source": "public_venues",
+      "current_category": "Historic Grand Café",
+      "proposed_normalized_category": "classic_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "historic/classic cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Lattente",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Melbourne Café",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Ninina",
+      "source": "public_venues",
+      "current_category": "Bakery & Café",
+      "proposed_normalized_category": "bakery_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Oporto Almacén",
+      "source": "public_venues",
+      "current_category": "Wine Bar & Dining",
+      "proposed_normalized_category": "wine_bar",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "wine signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Padre Coffee Roasters",
+      "source": "public_venues",
+      "current_category": "Roastery & Café",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Surry Hills Coffee",
+      "source": "public_venues",
+      "current_category": "Australian Café",
+      "proposed_normalized_category": "cafe",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Uptown Bar",
+      "source": "public_venues",
+      "current_category": "Rooftop Lounge",
+      "proposed_normalized_category": "bar",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Café Cuervo",
+      "source": "public_venues",
+      "current_category": "Rustic Café",
+      "proposed_normalized_category": "cafe",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Birkin",
+      "source": "public_venues",
+      "current_category": "Brunch & Coffee",
+      "proposed_normalized_category": "brunch",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "brunch signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Mishiguene",
+      "source": "public_venues",
+      "current_category": "Jewish Cuisine",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Origen Coffee House",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Parrilla Don Julio",
+      "source": "public_venues",
+      "current_category": "Classic Parrilla",
+      "proposed_normalized_category": "parrilla",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "parrilla/asado signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Tres Monos",
+      "source": "public_venues",
+      "current_category": "Cocktail Bar",
+      "proposed_normalized_category": "cocktail_bar",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Verne Club",
+      "source": "public_venues",
+      "current_category": "Cocktail Vault",
+      "proposed_normalized_category": "cocktail_bar",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Attaboy",
+      "source": "public_venues",
+      "current_category": "Speakeasy",
+      "proposed_normalized_category": "cocktail_bar",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Crisol Café",
+      "source": "public_venues",
+      "current_category": "Coffee & Bakery",
+      "proposed_normalized_category": "bakery_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Devoción",
+      "source": "public_venues",
+      "current_category": "Coffee Roastery",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Libros del Pasaje",
+      "source": "public_venues",
+      "current_category": "Bookshop & Café",
+      "proposed_normalized_category": "cafe",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Niño Gordo",
+      "source": "public_venues",
+      "current_category": "Asian Fusion",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "John & Joe | Café de Especialidad",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "TERRASOHO - Specialty Coffee",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Vive Café Cafe de especialidad , cafés de campeonatos",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Café Boheme - Café de Especialidad",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "RITA® Specialty Coffee Armenia",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Toki Moment - Specialty Coffee",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Import Coffee Co.",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Koofi | Café de especialidad",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Tona Café",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Don Julio Parrilla",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "parrilla",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "parrilla/asado signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "bar",
+      "severity": "medium",
+      "issue_codes": [
+        "name_contains_bar_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Wine Window Argentina (Palermo Soho)",
+      "source": "public_venues",
+      "current_category": "Wine Bar",
+      "proposed_normalized_category": "wine_bar",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "wine signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Backroom Bar",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "bar",
+      "severity": "medium",
+      "issue_codes": [
+        "name_contains_bar_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Kraken bar",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "bar",
+      "severity": "medium",
+      "issue_codes": [
+        "name_contains_bar_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Verne Club",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Bari Coffee & Drinks",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Birdy Birds Specialty Coffee Roasters",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Ciao Cacao Specialty coffee",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Ciro Palermo",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Bestial Fly Bar",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "bar",
+      "severity": "medium",
+      "issue_codes": [
+        "name_contains_bar_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "CICHAUS",
+      "source": "public_venues",
+      "current_category": "Cocktail Bar",
+      "proposed_normalized_category": "cocktail_bar",
+      "severity": "low",
+      "issue_codes": [],
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "El Preferido de Palermo",
+      "source": "public_venues",
+      "current_category": "Restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Kaldi",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Rita Specialty Coffee Soler",
+      "source": "public_venues",
+      "current_category": "Specialty Coffee",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "low",
+      "issue_codes": [
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Blanca Deco and Cafe",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "L Harmonie",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Altar Cafe",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "La Garage",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "bakery_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "La Panera Rosa",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Amarante",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "brunch",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "brunch signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "London City",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "classic_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "historic/classic cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "La Kitchen",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Florida Garden",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "bakery_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bakery cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Hierbabuena",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "brunch",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "brunch signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Malvon",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Maleza Cafe",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "cafe",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Morro Cafe",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Le Ble Las Canitas",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Moshu Las Canitas",
+      "source": "controlled_batch",
+      "current_category": "cafe",
+      "proposed_normalized_category": "specialty_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "specialty coffee signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Julia",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Roux",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Anchoita",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Cafe San Juan",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "El Cuartito",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Reliquia",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Apu Nena",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Corte Comedor",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Narda Comedor",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Guerrin",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Napoles",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "cocktail_bar",
+      "severity": "medium",
+      "issue_codes": [
+        "google_bar_type_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "cocktail/speakeasy signal from category/source/google/intent"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Dada Bistro",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "bar",
+      "severity": "medium",
+      "issue_codes": [
+        "google_bar_type_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "bar/lounge signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Chila",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "premium_restaurant",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "premium restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Cabaña Las Lilas",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Cucina Paradiso Colegiales",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Narda Lepes Mercado",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Las Cholas",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "parrilla",
+      "severity": "medium",
+      "issue_codes": [
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "parrilla/asado signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Olsen Las Canitas",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "Filo",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "restaurant",
+      "severity": "low",
+      "issue_codes": [
+        "generic_category"
+      ],
+      "reasons": [
+        "restaurant signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    },
+    {
+      "venue": "36 Billares",
+      "source": "controlled_batch",
+      "current_category": "restaurant",
+      "proposed_normalized_category": "classic_cafe",
+      "severity": "medium",
+      "issue_codes": [
+        "google_bar_type_but_category_restaurant",
+        "generic_category",
+        "display_normalized_divergence"
+      ],
+      "reasons": [
+        "historic/classic cafe signal"
+      ],
+      "warnings": [],
+      "confidence": 78
+    }
+  ]
+}

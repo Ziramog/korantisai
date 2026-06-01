@@ -8,7 +8,15 @@ export interface KorantisMarkerProps {
   onClick?: (e: React.MouseEvent) => void;
 }
 
+function markerDelay(type: KorantisMarkerProps['type'], isSaved?: boolean) {
+  if (isSaved) return 0.4;
+  if (type === 'nearby') return 0.8;
+  return 1.2;
+}
+
 export default function KorantisMarker({ isActive, isSaved, type = 'ranked', clusterCount, onClick }: KorantisMarkerProps) {
+  const delay = markerDelay(type, isSaved);
+
   if (type === 'cluster') {
     return (
       <div 
@@ -56,7 +64,7 @@ export default function KorantisMarker({ isActive, isSaved, type = 'ranked', clu
         {/* Ripple Effect */}
         <motion.div
           animate={{ scale: [1, 2.2], opacity: [0.6, 0] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: "easeOut", delay: Math.random() * 2 }}
+          transition={{ duration: 2.5, repeat: Infinity, ease: "easeOut", delay }}
           className="absolute inset-0 rounded-full border border-k-gold/30 pointer-events-none"
         />
         <div className="w-3 h-3 rounded-full bg-[#0A0806] border border-k-gold z-10 shadow-[0_0_5px_rgba(201,169,110,0.4)] group-hover:scale-125 transition-transform" />
@@ -70,7 +78,7 @@ export default function KorantisMarker({ isActive, isSaved, type = 'ranked', clu
         {/* Ripple Effect */}
         <motion.div
           animate={{ scale: [1, 2], opacity: [0.4, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeOut", delay: Math.random() * 2 }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeOut", delay }}
           className="absolute inset-0 rounded-full border border-white/20 pointer-events-none"
         />
         <div className="w-1.5 h-1.5 rounded-full bg-[#E5E1D8]/60 relative z-10 group-hover:bg-k-gold transition-colors" />
@@ -84,7 +92,7 @@ export default function KorantisMarker({ isActive, isSaved, type = 'ranked', clu
       {/* Ripple Effect (Onda Expansiva) */}
       <motion.div
         animate={{ scale: [1, 2.5], opacity: [0.7, 0] }}
-        transition={{ duration: 2.5, repeat: Infinity, ease: "easeOut", delay: Math.random() * 2 }}
+        transition={{ duration: 2.5, repeat: Infinity, ease: "easeOut", delay }}
         className="absolute inset-0 rounded-full border-[1.5px] border-k-gold/40 pointer-events-none"
       />
       {/* Core Marker */}

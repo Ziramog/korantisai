@@ -1,11 +1,12 @@
 "use client";
 
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useState } from 'react';
 import Map, { Marker, NavigationControl } from 'react-map-gl/mapbox';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { t } from '../utils/i18n';
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
@@ -14,7 +15,7 @@ interface MapExplorerProps {
 }
 
 export default function MapExplorer({ onSelectVenue }: MapExplorerProps) {
-  const { rankedVenues } = useCircadian();
+  const { rankedVenues, language } = useCircadian();
   
   // Calculate a bounding box or central point based on top venues
   const initialViewState = useMemo(() => {
@@ -52,9 +53,9 @@ export default function MapExplorer({ onSelectVenue }: MapExplorerProps) {
     return (
       <div className="w-full h-[60vh] flex flex-col items-center justify-center bg-k-surface-elevated/20 border border-k-border rounded-3xl p-8 text-center mt-6">
         <MapPin size={32} className="text-k-gold-dim mb-4" />
-        <h3 className="text-lg font-display text-k-text mb-2">Map Engine Offline</h3>
+        <h3 className="text-lg font-display text-k-text mb-2">{t('mapEngineOffline', language)}</h3>
         <p className="text-sm font-sans text-k-text-secondary max-w-sm">
-          A valid Mapbox token is required to render the atmospheric spatial canvas. Please add NEXT_PUBLIC_MAPBOX_TOKEN to your environment variables.
+          {t('mapEngineOfflineDesc', language)}
         </p>
       </div>
     );
@@ -94,7 +95,7 @@ export default function MapExplorer({ onSelectVenue }: MapExplorerProps) {
                 {/* Name Label (appears on hover) */}
                 <div className="absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap bg-k-black/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-k-gold/30 pointer-events-none z-50">
                   <p className="text-xs font-display text-k-gold-light">{venue.name}</p>
-                  <p className="text-[9px] font-sans text-k-text-tertiary uppercase">{venue.atmosphere.replace('-', ' ')}</p>
+                  <p className="text-[9px] font-sans text-k-text-tertiary uppercase">{t(venue.atmosphere, language) || venue.atmosphere.replace('-', ' ')}</p>
                 </div>
                 
                 {/* Breathing Core */}

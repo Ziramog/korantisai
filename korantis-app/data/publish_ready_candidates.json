@@ -1,0 +1,583 @@
+{
+  "generated_at": "2026-06-01T17:29:15.303Z",
+  "summary": {
+    "total_publish_ready": 1,
+    "total_not_ready": 49,
+    "suggested_first_batch_count": 0,
+    "recommendation": "B) Fix category normalization first"
+  },
+  "ready": [
+    {
+      "venue": "Trade Sky Bar",
+      "candidate_id": "cf4b6889226bbe70",
+      "google_place_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "district": "Retiro",
+      "current_category": "cocktail_bar",
+      "normalized_category": "cocktail_bar",
+      "display_category_en": "Cocktail Bar",
+      "display_category_es": "Coctelería",
+      "category_confidence": 78,
+      "eligibility_score": 73,
+      "photo_quality_score": 95,
+      "cloudinary_image": true,
+      "already_public": true,
+      "reasons": [
+        "active",
+        "matched",
+        "Cloudinary image",
+        "acceptable hero",
+        "trusted category"
+      ]
+    }
+  ],
+  "not_ready": [
+    {
+      "venue": "Blanca Deco and Cafe",
+      "district": "Recoleta",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "L Harmonie",
+      "district": "Recoleta",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: no acceptable hero photo"
+      ]
+    },
+    {
+      "venue": "Altar Cafe",
+      "district": "Colegiales",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "La Garage",
+      "district": "San Telmo",
+      "current_category": "cafe",
+      "proposed_category": "bakery_cafe",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: no acceptable hero photo"
+      ]
+    },
+    {
+      "venue": "La Panera Rosa",
+      "district": "Belgrano",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "hard rejection: generic chain/mainstream signal too high"
+      ]
+    },
+    {
+      "venue": "Amarante",
+      "district": "Belgrano",
+      "current_category": "cafe",
+      "proposed_category": "brunch",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: no acceptable hero photo"
+      ]
+    },
+    {
+      "venue": "London City",
+      "district": "Microcentro",
+      "current_category": "cafe",
+      "proposed_category": "classic_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "La Kitchen",
+      "district": "Retiro",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Florida Garden",
+      "district": "Microcentro",
+      "current_category": "cafe",
+      "proposed_category": "bakery_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Hierbabuena",
+      "district": "San Telmo",
+      "current_category": "cafe",
+      "proposed_category": "brunch",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Malvon",
+      "district": "Villa Crespo",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Maleza Cafe",
+      "district": "Colegiales",
+      "current_category": "cafe",
+      "proposed_category": "cafe",
+      "reasons": [
+        "eligibility is rejected",
+        "match status is unmatched",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: weak discovery, cultural, and photo evidence; unresolved bad Google match"
+      ]
+    },
+    {
+      "venue": "Morro Cafe",
+      "district": "Villa Crespo",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Le Ble Las Canitas",
+      "district": "Las Canitas",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: no acceptable hero photo"
+      ]
+    },
+    {
+      "venue": "Moshu Las Canitas",
+      "district": "Las Canitas",
+      "current_category": "cafe",
+      "proposed_category": "specialty_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Julia",
+      "district": "Villa Crespo",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Roux",
+      "district": "Recoleta",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Anchoita",
+      "district": "Chacarita",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Cafe San Juan",
+      "district": "San Telmo",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "El Cuartito",
+      "district": "Recoleta",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Reliquia",
+      "district": "Villa Crespo",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Apu Nena",
+      "district": "Chacarita",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Corte Comedor",
+      "district": "Belgrano",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Narda Comedor",
+      "district": "Belgrano",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Guerrin",
+      "district": "Microcentro",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Napoles",
+      "district": "San Telmo",
+      "current_category": "restaurant",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Dada Bistro",
+      "district": "Retiro",
+      "current_category": "restaurant",
+      "proposed_category": "bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Chila",
+      "district": "Puerto Madero",
+      "current_category": "restaurant",
+      "proposed_category": "premium_restaurant",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: no acceptable hero photo"
+      ]
+    },
+    {
+      "venue": "Cabaña Las Lilas",
+      "district": "Puerto Madero",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Cucina Paradiso Colegiales",
+      "district": "Colegiales",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "eligibility is rejected",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: no acceptable hero photo; generic chain/mainstream signal too high"
+      ]
+    },
+    {
+      "venue": "Narda Lepes Mercado",
+      "district": "Colegiales",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Las Cholas",
+      "district": "Las Canitas",
+      "current_category": "restaurant",
+      "proposed_category": "parrilla",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Olsen Las Canitas",
+      "district": "Las Canitas",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Filo",
+      "district": "Retiro",
+      "current_category": "restaurant",
+      "proposed_category": "restaurant",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "36 Billares",
+      "district": "Microcentro",
+      "current_category": "restaurant",
+      "proposed_category": "classic_cafe",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Vini Bar",
+      "district": "Villa Crespo",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "La Cava de Vittorio",
+      "district": "Las Canitas",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Gran Bar Danzon",
+      "district": "Recoleta",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Vina de San Telmo",
+      "district": "San Telmo",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "eligibility is rejected",
+        "match status is ambiguous_match",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: eligibility score too low"
+      ]
+    },
+    {
+      "venue": "Aldo Vinoteca Recoleta",
+      "district": "Recoleta",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "eligibility is rejected",
+        "match status is unmatched",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: weak discovery, cultural, and photo evidence; unresolved bad Google match"
+      ]
+    },
+    {
+      "venue": "Finde",
+      "district": "Colegiales",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "eligibility is rejected",
+        "match status is unmatched",
+        "Cloudinary image not found",
+        "missing hero/card image",
+        "no acceptable hero photo",
+        "hard rejection: weak discovery, cultural, and photo evidence; unresolved bad Google match"
+      ]
+    },
+    {
+      "venue": "Hache Almacen",
+      "district": "Villa Crespo",
+      "current_category": "wine_bar",
+      "proposed_category": "wine_bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "878 Bar",
+      "district": "Villa Crespo",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Milion",
+      "district": "Recoleta",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Plaza Bar",
+      "district": "Retiro",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Bierlife",
+      "district": "San Telmo",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Mixtape Bar",
+      "district": "Chacarita",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Puerta Uno",
+      "district": "Belgrano",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    },
+    {
+      "venue": "Danzon Bar",
+      "district": "Recoleta",
+      "current_category": "cocktail_bar",
+      "proposed_category": "cocktail_bar",
+      "reasons": [
+        "eligibility is pending_review",
+        "Cloudinary image not found",
+        "missing hero/card image"
+      ]
+    }
+  ]
+}

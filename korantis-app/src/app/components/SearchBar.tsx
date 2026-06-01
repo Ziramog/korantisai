@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useCircadian } from '../contexts/CircadianContext';
-import { Search, Circle, Sparkles } from 'lucide-react';
+import { Search, Sparkles } from 'lucide-react';
 import { t } from '../utils/i18n';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
@@ -27,10 +27,10 @@ export default function SearchBar() {
   });
 
   const PILLS = [
-    t('pillQuiet', language),
-    t('pillWarm', language),
-    t('pillNaturalLight', language),
-    t('pillHiddenGem', language)
+    { value: 'quiet', label: t('pillQuiet', language) },
+    { value: 'warm', label: t('pillWarm', language) },
+    { value: 'natural light', label: t('pillNaturalLight', language) },
+    { value: 'hidden gem', label: t('pillHiddenGem', language) },
   ];
 
   return (
@@ -75,7 +75,7 @@ export default function SearchBar() {
                 type="text" 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="quiet café to work tonight..."
+                placeholder={t('searchPlaceholder', language)}
                 className="w-full rounded-[2rem] py-4 pl-12 pr-6 text-[#8A7A5A] placeholder:text-[#5B4E3E] focus:outline-none font-sans text-[15px] shadow-2xl pointer-events-auto transition-colors"
                 style={{ 
                   background: 'rgba(15, 13, 11, 0.75)',
@@ -91,7 +91,10 @@ export default function SearchBar() {
             <div className="mt-5 mb-6 px-2 flex items-start gap-2">
               <Sparkles size={14} className="text-[#C9A96E] mt-1 shrink-0 opacity-80" />
               <p className="text-[13px] leading-relaxed text-[#B0A898] font-display italic">
-                Showing <span className="font-sans font-medium text-[#F5F0E8] not-italic">calm, work-friendly</span> spaces with <span className="font-sans font-medium text-[#F5F0E8] not-italic">warm lighting</span> open now in Palermo.
+                {t('searchExplanation', language, {
+                  intent: t('searchIntent', language),
+                  lighting: t('searchLighting', language),
+                })}
               </p>
             </div>
 
@@ -124,21 +127,21 @@ export default function SearchBar() {
               `}</style>
               {PILLS.map((pill) => {
                 // Determine if this pill's keyword is in the search query
-                const isSelected = searchQuery.toLowerCase().includes(pill.toLowerCase());
+                const isSelected = searchQuery.toLowerCase().includes(pill.value);
                 
                 return (
                   <button 
-                    key={pill}
+                    key={pill.value}
                     onClick={() => {
                       if (isSelected) {
-                        setSearchQuery(searchQuery.replace(new RegExp(pill, 'ig'), '').trim());
+                        setSearchQuery(searchQuery.replace(new RegExp(pill.value, 'ig'), '').trim());
                       } else {
-                        setSearchQuery((searchQuery + ' ' + pill).trim());
+                        setSearchQuery((searchQuery + ' ' + pill.value).trim());
                       }
                     }}
                     className={`shrink-0 px-[18px] py-[10px] rounded-full font-sans text-[11px] font-medium tracking-[0.06em] uppercase transition-all duration-400 cursor-pointer select-none ${isSelected ? 'k-pill-active' : 'k-pill-inactive'}`}
                   >
-                    {pill}
+                    {pill.label}
                   </button>
                 );
               })}
@@ -163,7 +166,7 @@ export default function SearchBar() {
           >
             <Search size={14} className="text-[#5B4E3E] ml-1" />
             <span className="text-[13px] font-sans text-[#8A7A5A] truncate">
-              {searchQuery || "quiet café to work tonight..."}
+              {searchQuery || t('searchPlaceholder', language)}
             </span>
           </motion.div>
         )}

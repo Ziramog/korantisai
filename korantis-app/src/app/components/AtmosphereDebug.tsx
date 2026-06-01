@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useCircadian } from '../contexts/CircadianContext';
 import { Sliders, Clock, RotateCcw, Activity } from 'lucide-react';
+import { t } from '../utils/i18n';
 
 export default function AtmosphereDebug() {
   const {
@@ -15,20 +16,17 @@ export default function AtmosphereDebug() {
     currentDrift,
     resetTaste,
     dimensionLabels,
-    currentPhase
+    currentPhase,
+    language
   } = useCircadian();
 
-  const [active, setActive] = useState(false);
-
-  // Bind key trigger or check URL params
-  useEffect(() => {
+  const [active] = useState(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
-      if (params.get('debug') === 'taste' || params.get('debug') === 'circadian') {
-        setActive(true);
-      }
+      return params.get('debug') === 'taste' || params.get('debug') === 'circadian';
     }
-  }, []);
+    return false;
+  });
 
   if (!active) return null;
 
@@ -44,15 +42,15 @@ export default function AtmosphereDebug() {
       <div className="flex justify-between items-center border-b border-white/10 pb-3">
         <div className="flex items-center gap-2">
           <Activity className="text-k-gold animate-pulse" size={14} />
-          <span className="font-bold uppercase tracking-wider text-k-gold">Atmosphere Engine HUD</span>
+          <span className="font-bold uppercase tracking-wider text-k-gold">{t('atmosphereEngineHud', language)}</span>
         </div>
         <button 
           onClick={resetTaste}
           className="p-1 px-2 rounded bg-white/5 border border-white/5 hover:bg-white/10 text-white cursor-pointer hover:border-white/10 transition-colors flex items-center gap-1"
-          title="Reset latent taste profile"
+          title={t('resetLatentTasteProfile', language)}
         >
           <RotateCcw size={10} />
-          <span>RESET</span>
+          <span>{t('resetShort', language)}</span>
         </button>
       </div>
 
@@ -61,7 +59,7 @@ export default function AtmosphereDebug() {
         <div className="flex justify-between items-center">
           <span className="text-k-text-secondary flex items-center gap-1.5">
             <Clock size={11} className="text-k-gold-muted" />
-            <span>Time Scrubber</span>
+            <span>{t('timeScrubber', language)}</span>
           </span>
           <span className="text-k-gold font-bold">{formattedTime()} ({currentPhase.replace('-', ' ')})</span>
         </div>
@@ -90,7 +88,7 @@ export default function AtmosphereDebug() {
                 : 'bg-white/10 text-white'
             } cursor-pointer transition-colors`}
           >
-            {isFrozen ? 'FROZEN' : 'FREEZE'}
+            {isFrozen ? t('frozen', language) : t('freeze', language)}
           </button>
         </div>
       </div>
@@ -99,7 +97,7 @@ export default function AtmosphereDebug() {
       <div className="flex flex-col gap-3">
         <span className="text-k-text-secondary flex items-center gap-1.5 border-b border-white/5 pb-1">
           <Sliders size={11} className="text-k-gold-muted" />
-          <span>8D Latent Taste Coordinates</span>
+          <span>{t('latentTasteCoordinates', language)}</span>
         </span>
         <div className="flex flex-col gap-3 max-h-56 overflow-y-auto pr-1">
           {Array.from({ length: 8 }).map((_, i) => {
@@ -127,7 +125,7 @@ export default function AtmosphereDebug() {
                   <div 
                     style={{ left: `${pctBase}%` }}
                     className="absolute top-[-2px] h-[14px] w-[2px] bg-white rounded-full z-20 shadow-md transform -translate-x-1/2"
-                    title={`Baseline profile: ${baseVal.toFixed(2)}`}
+                    title={t('baselineProfile', language, { value: baseVal.toFixed(2) })}
                   ></div>
 
                   {/* Transient Indicator Glow Bar */}
@@ -143,7 +141,7 @@ export default function AtmosphereDebug() {
                   <div 
                     style={{ left: `${pctTrans}%` }}
                     className="absolute top-[-3px] h-[16px] w-[4px] rounded bg-k-gold z-30 shadow-[0_0_10px_#C9A96E] transform -translate-x-1/2"
-                    title={`Transient profile: ${transVal.toFixed(2)}`}
+                    title={t('transientProfile', language, { value: transVal.toFixed(2) })}
                   ></div>
                 </div>
               </div>

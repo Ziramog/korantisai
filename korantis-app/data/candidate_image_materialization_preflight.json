@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-06-01T17:38:53.191Z",
+  "cloudinary_env_ok": true,
+  "cloudinary_missing": [],
+  "supabase_service_role_ok": true,
+  "supabase_missing": [],
+  "refs_exists": true,
+  "venue_images_exists": true,
+  "candidate_image_assets_needed": true,
+  "candidate_image_assets_exists": true,
+  "write_ready": true,
+  "rows": [
+    {
+      "candidate_id": "45233e763e36b65b",
+      "venue_name": "Blanca Deco and Cafe",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "867c25e43776ac23",
+      "venue_name": "Julia",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "710b763f932de83e",
+      "venue_name": "Roux",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "3685b3837a988034",
+      "venue_name": "Anchoita",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "15099ff5f4365522",
+      "venue_name": "El Cuartito",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "5bd1c65d45c6d160",
+      "venue_name": "Reliquia",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "14b057060c2e15f3",
+      "venue_name": "Apu Nena",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "6aaa462b342c9f70",
+      "venue_name": "Corte Comedor",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "6124e2c824bd8b04",
+      "venue_name": "Guerrin",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "0ce79031cfdfed80",
+      "venue_name": "Cabaña Las Lilas",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "d91ec380feada0e8",
+      "venue_name": "Vini Bar",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "bf3926a3b0d6ae9a",
+      "venue_name": "Gran Bar Danzon",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "bae6687c67a7f35b",
+      "venue_name": "878 Bar",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "50a0481f6eb23fea",
+      "venue_name": "Milion",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "e180e3e7816a3bb0",
+      "venue_name": "Plaza Bar",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    },
+    {
+      "candidate_id": "dee461d82c34b6d6",
+      "venue_name": "Mixtape Bar",
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "selected_photos": 8,
+      "public_venue_id": null,
+      "target": "candidate_image_assets",
+      "safe": true,
+      "blockers": []
+    }
+  ]
+}

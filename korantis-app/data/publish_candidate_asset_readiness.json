@@ -1,0 +1,956 @@
+{
+  "generated_at": "2026-06-01T17:29:22.809Z",
+  "summary": {
+    "total_candidates": 50,
+    "non_public_candidates": 49,
+    "active_matched_missing_cloudinary": 16
+  },
+  "candidates": [
+    {
+      "venue": "Blanca Deco and Cafe",
+      "candidate_id": "45233e763e36b65b",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "L Harmonie",
+      "candidate_id": "f9d17b270804324a",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Altar Cafe",
+      "candidate_id": "77f3f0f1f63e2056",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "La Garage",
+      "candidate_id": "939a06af330c981a",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "bakery_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "La Panera Rosa",
+      "candidate_id": "6b0924cbea2810b2",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Amarante",
+      "candidate_id": "6ab2508d5e018222",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "brunch",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 55,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "London City",
+      "candidate_id": "0105a07c4be46f98",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "classic_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "La Kitchen",
+      "candidate_id": "8f6f724d996b428d",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Florida Garden",
+      "candidate_id": "262b0298a9327669",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "bakery_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Hierbabuena",
+      "candidate_id": "1029a2751747506a",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "brunch",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Malvon",
+      "candidate_id": "119051ad76f707f4",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Maleza Cafe",
+      "candidate_id": "d4cd2a18cb10805b",
+      "already_public": false,
+      "match_status": "unmatched",
+      "eligibility_status": "rejected",
+      "normalized_category": "cafe",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 0,
+      "reason_not_publish_ready": [
+        "match status: unmatched",
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Morro Cafe",
+      "candidate_id": "e33c63a483c28ca8",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Le Ble Las Canitas",
+      "candidate_id": "1a9a523cace5734f",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 55,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Moshu Las Canitas",
+      "candidate_id": "a1b7cd5460d538f0",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "specialty_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Julia",
+      "candidate_id": "867c25e43776ac23",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Roux",
+      "candidate_id": "710b763f932de83e",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Anchoita",
+      "candidate_id": "3685b3837a988034",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Cafe San Juan",
+      "candidate_id": "109a9a47bb038eb4",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "El Cuartito",
+      "candidate_id": "15099ff5f4365522",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Reliquia",
+      "candidate_id": "5bd1c65d45c6d160",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Apu Nena",
+      "candidate_id": "14b057060c2e15f3",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Corte Comedor",
+      "candidate_id": "6aaa462b342c9f70",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Narda Comedor",
+      "candidate_id": "57fbb7027a4a5462",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Guerrin",
+      "candidate_id": "6124e2c824bd8b04",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Napoles",
+      "candidate_id": "ff6b5103adf84fa5",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Dada Bistro",
+      "candidate_id": "07b1ddc4d92ebb4c",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "bar",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Chila",
+      "candidate_id": "0d182424a9b357a8",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "premium_restaurant",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Cabaña Las Lilas",
+      "candidate_id": "0ce79031cfdfed80",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Cucina Paradiso Colegiales",
+      "candidate_id": "3f51e195e8969b28",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "rejected",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Narda Lepes Mercado",
+      "candidate_id": "a88a9b44d8cd6bb9",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Las Cholas",
+      "candidate_id": "62ce0f0668318543",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "parrilla",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Olsen Las Canitas",
+      "candidate_id": "bc2a0bd03043207e",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Filo",
+      "candidate_id": "2ce5eb24f47cabaf",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "restaurant",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "36 Billares",
+      "candidate_id": "cb393705f53161d4",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "classic_cafe",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Vini Bar",
+      "candidate_id": "d91ec380feada0e8",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "La Cava de Vittorio",
+      "candidate_id": "688e9aef29b15279",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 85,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Gran Bar Danzon",
+      "candidate_id": "bf3926a3b0d6ae9a",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Vina de San Telmo",
+      "candidate_id": "81967df30f4afa01",
+      "already_public": false,
+      "match_status": "ambiguous_match",
+      "eligibility_status": "rejected",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 0,
+      "reason_not_publish_ready": [
+        "match status: ambiguous_match",
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Aldo Vinoteca Recoleta",
+      "candidate_id": "d96b5787a1af33b2",
+      "already_public": false,
+      "match_status": "unmatched",
+      "eligibility_status": "rejected",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 0,
+      "reason_not_publish_ready": [
+        "match status: unmatched",
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Finde",
+      "candidate_id": "4adba3e2138c5eb3",
+      "already_public": false,
+      "match_status": "unmatched",
+      "eligibility_status": "rejected",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": false,
+      "photo_quality": 0,
+      "reason_not_publish_ready": [
+        "match status: unmatched",
+        "eligibility: rejected",
+        "missing Cloudinary hero",
+        "missing Cloudinary card",
+        "vision hero not acceptable"
+      ]
+    },
+    {
+      "venue": "Hache Almacen",
+      "candidate_id": "010d3a1cd8f0ad70",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "wine_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 75,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "878 Bar",
+      "candidate_id": "bae6687c67a7f35b",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Milion",
+      "candidate_id": "50a0481f6eb23fea",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Plaza Bar",
+      "candidate_id": "e180e3e7816a3bb0",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 75,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "candidate_id": "cf4b6889226bbe70",
+      "already_public": true,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "bar",
+      "normalized_category_confidence": 78,
+      "has_cloudinary_hero": true,
+      "has_cloudinary_card": true,
+      "gallery_count": 4,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 95,
+      "reason_not_publish_ready": [
+        "already public"
+      ]
+    },
+    {
+      "venue": "Bierlife",
+      "candidate_id": "3b32c02b652eb143",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Mixtape Bar",
+      "candidate_id": "dee461d82c34b6d6",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "active",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Puerta Uno",
+      "candidate_id": "91ed7aecaa6cd9d9",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 80,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    },
+    {
+      "venue": "Danzon Bar",
+      "candidate_id": "33802fe1e8c52bbb",
+      "already_public": false,
+      "match_status": "matched",
+      "eligibility_status": "pending_review",
+      "normalized_category": "cocktail_bar",
+      "normalized_category_confidence": 82,
+      "has_cloudinary_hero": false,
+      "has_cloudinary_card": false,
+      "gallery_count": 0,
+      "acceptable_hero_from_vision": true,
+      "photo_quality": 90,
+      "reason_not_publish_ready": [
+        "eligibility: pending_review",
+        "missing Cloudinary hero",
+        "missing Cloudinary card"
+      ]
+    }
+  ]
+}

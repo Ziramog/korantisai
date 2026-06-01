@@ -1,8 +1,18 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState, useMemo, useCallback } from 'react';
+import React, { createContext, useContext, useEffect, useState, useMemo, useCallback, useSyncExternalStore } from 'react';
+import type { Session } from '@supabase/supabase-js';
 import type { Venue } from '../data/venues';
 import { createClient } from '@/utils/supabase/client';
+import { getLocale, setLocale as persistLocale, subscribeLocale, type Locale } from '@/lib/i18n';
+import {
+  applyCircadianMixGuardrail,
+  getCircadianCategoryBias,
+  getCircadianDaypart,
+  getVenueCategoryKind,
+  hasExplicitCategoryIntent,
+  type CircadianRankingDebug,
+} from '@/lib/ranking/circadianRanking';
 
 // Types
 export type TimePhase = 'morning' | 'afternoon' | 'golden-hour' | 'night' | 'late-night' | 'dawn';
@@ -17,6 +27,7 @@ export interface ScoreBreakdown {
 export type ScoredVenue = Venue & {
   scoreFinal: string;
   breakdown: ScoreBreakdown;
+  rankingDebug?: CircadianRankingDebug;
 };
 
 interface CircadianState {
@@ -42,9 +53,12 @@ interface CircadianState {
   rankedVenues: ScoredVenue[];
   savedVenueIds: string[];
   toggleSaveVenue: (id: string) => void;
+  dismissedVenueIds: string[];
+  dismissVenue: (id: string) => void;
+  resetDismissedVenues: () => void;
   dimensionLabels: { [key: number]: string };
-  language: 'en' | 'es';
-  setLanguage: (lang: 'en' | 'es') => void;
+  language: Locale;
+  setLanguage: (lang: Locale) => void;
   city: 'BUE' | 'NYC';
   setCity: (city: 'BUE' | 'NYC') => void;
   setIsAuthenticated: (val: boolean) => void;
@@ -153,11 +167,11 @@ function driftVector(source: number[], target: number[], learningRate: number, p
   });
 }
 
-function parseVector(data: any): number[] {
+function parseVector(data: unknown): number[] {
   if (typeof data === 'string') {
     // pgvector returns strings like "[0.1,-0.2,...]"
     try {
-      return JSON.parse(data);
+      return JSON.parse(data) as number[];
     } catch {
       return [0, 0, 0, 0, 0, 0, 0, 0];
     }
@@ -189,6 +203,9 @@ const CircadianContext = createContext<CircadianState>({
   rankedVenues: [],
   savedVenueIds: [],
   toggleSaveVenue: () => {},
+  dismissedVenueIds: [],
+  dismissVenue: () => {},
+  resetDismissedVenues: () => {},
   dimensionLabels: DIMENSION_LABELS,
   language: 'en',
   setLanguage: () => {},
@@ -215,31 +232,55 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   const [identityCentroid, setIdentityCentroid] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0]);
   const [currentDrift, setCurrentDrift] = useState<number[]>([0, 0, 0, 0, 0, 0, 0, 0]);
   const [identityPlasticity, setIdentityPlasticity] = useState<number>(0.1);
-  const [lastUpdateTime, setLastUpdateTime] = useState<number>(Date.now());
+  const [lastUpdateTime, setLastUpdateTime] = useState<number>(() => Date.now());
 
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [selectedPills, setSelectedPills] = useState<string[]>([]);
   const [savedVenueIds, setSavedVenueIds] = useState<string[]>([]);
-  const [language, setLanguage] = useState<'en' | 'es'>('en');
+  const [dismissedVenueIds, setDismissedVenueIds] = useState<string[]>([]);
+  const language = useSyncExternalStore<Locale>(subscribeLocale, getLocale, () => 'en');
+
+  const dismissVenue = useCallback((id: string) => {
+    setDismissedVenueIds((prev) => (
+      prev.includes(id) ? prev : [...prev, id]
+    ));
+  }, []);
+
+  const resetDismissedVenues = useCallback(() => {
+    setDismissedVenueIds([]);
+  }, []);
+  const setLanguage = useCallback((lang: Locale) => {
+    persistLocale(lang);
+  }, []);
   const [city, setCity] = useState<'BUE' | 'NYC'>('BUE');
 
-  // Auth & Profile Hydration
-  useEffect(() => {
-    const fetchSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      handleSession(session);
-    };
-    
-    fetchSession();
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      handleSession(session);
-    });
-
-    return () => subscription.unsubscribe();
+  const fetchProfile = useCallback(async (uid: string) => {
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('*')
+      .eq('id', uid)
+      .single();
+      
+    if (data && !error) {
+      setIdentityCentroid(parseVector(data.identity_centroid));
+      setCurrentDrift(parseVector(data.current_drift));
+      setIdentityPlasticity(data.identity_plasticity || 0.1);
+    }
   }, [supabase]);
 
-  const handleSession = async (session: any) => {
+  const fetchSavedVenues = useCallback(async (uid: string) => {
+    const { data, error } = await supabase
+      .from('venue_interactions')
+      .select('venue_id')
+      .eq('user_id', uid)
+      .eq('status', 'saved');
+      
+    if (data && !error) {
+      setSavedVenueIds((data as Array<{ venue_id: string }>).map((row) => row.venue_id));
+    }
+  }, [supabase]);
+
+  const handleSession = useCallback(async (session: Session | null) => {
     if (session?.user) {
       setIsAuthenticated(true);
       setUserId(session.user.id);
@@ -253,33 +294,23 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
       setCurrentDrift([0, 0, 0, 0, 0, 0, 0, 0]);
       setSavedVenueIds([]);
     }
-  };
+  }, [fetchProfile, fetchSavedVenues]);
 
-  const fetchProfile = async (uid: string) => {
-    const { data, error } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', uid)
-      .single();
-      
-    if (data && !error) {
-      setIdentityCentroid(parseVector(data.identity_centroid));
-      setCurrentDrift(parseVector(data.current_drift));
-      setIdentityPlasticity(data.identity_plasticity || 0.1);
-    }
-  };
+  // Auth & Profile Hydration
+  useEffect(() => {
+    const fetchSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      await handleSession(session);
+    };
 
-  const fetchSavedVenues = async (uid: string) => {
-    const { data, error } = await supabase
-      .from('venue_interactions')
-      .select('venue_id')
-      .eq('user_id', uid)
-      .eq('status', 'saved');
-      
-    if (data && !error) {
-      setSavedVenueIds(data.map((row: any) => row.venue_id));
-    }
-  };
+    fetchSession();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      handleSession(session);
+    });
+
+    return () => subscription.unsubscribe();
+  }, [handleSession, supabase]);
 
   // Fetch live venues from Supabase on mount
   useEffect(() => {
@@ -314,12 +345,6 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     const interval = setInterval(evaluateTime, 10000);
     return () => clearInterval(interval);
   }, [scrubTime, isFrozen]);
-
-  useEffect(() => {
-    if (scrubTime !== null) {
-      setCurrentHour(scrubTime);
-    }
-  }, [scrubTime]);
 
   const currentPhase = useMemo<TimePhase>(() => {
     const hour = currentHour;
@@ -525,7 +550,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     const cleaned = searchQuery.toLowerCase().trim();
 
     if (cleaned.length >= 3) {
-      let foundVector = [0, 0, 0, 0, 0, 0, 0, 0];
+      const foundVector = [0, 0, 0, 0, 0, 0, 0, 0];
       let matches = 0;
       KEYWORD_VECTORS.forEach(kv => {
         const isMatch = kv.keys.some(key => cleaned.includes(key));
@@ -576,6 +601,8 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   // Unified Ranking & Score Calculator
   const rankedVenues = useMemo<ScoredVenue[]>(() => {
     const activeWeights = activeIntentVector ? SCORING_WEIGHTS.activeSearch : SCORING_WEIGHTS.passive;
+    const daypart = getCircadianDaypart(currentHour);
+    const explicitCategoryIntent = hasExplicitCategoryIntent(searchQuery, selectedPills);
 
     const cityFilteredVenues = dbVenues.filter(v => {
       if (city === 'BUE') return v.lat < 0; // Southern hemisphere
@@ -603,16 +630,16 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
       }
 
       // Memory Resonance (M)
-      let mScore = savedVenueIds.includes(venue.id) ? 1.0 : 0.0;
+      const mScore = savedVenueIds.includes(venue.id) ? 1.0 : 0.0;
       
       // Novelty Factor (N) - simplified for now
-      let nScore = isColdStart ? 0.3 : 0.0; // Mild boost for cold start
+      const nScore = isColdStart ? 0.3 : 0.0; // Mild boost for cold start
 
       const xScore = venue.quality;
 
       // Temporary override while testing Phase 4 equation
       // S = wcC + wtT + wsSp + wiI + wnN + wmM
-      const finalScore = (
+      const baseScore = (
         activeWeights.circadian * cScore +
         (isColdStart ? 0 : activeWeights.taste * tScore) +
         activeWeights.intent * iScore +
@@ -620,21 +647,32 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         (nScore * 0.1) + // Novelty weight
         (mScore * 0.1)   // Memory weight
       );
+      const circadianBias = explicitCategoryIntent ? 0 : getCircadianCategoryBias(daypart, venue);
+      const finalDisplayScore = Math.max(0, Math.min(1.2, baseScore + circadianBias));
 
       return {
         ...venue,
-        scoreFinal: finalScore.toFixed(3),
+        scoreFinal: finalDisplayScore.toFixed(3),
         breakdown: {
           circadian: cScore,
           taste: tScore,
           intent: iScore,
           context: xScore
         },
+        rankingDebug: process.env.NODE_ENV === 'development'
+          ? {
+            baseScore,
+            circadianBias,
+            finalDisplayScore,
+            daypart,
+            categoryKind: getVenueCategoryKind(venue),
+          }
+          : undefined,
         originalIndex
       };
     });
 
-    return scored
+    const ranked = scored
       .sort((a, b) => {
         const scoreA = parseFloat(a.scoreFinal);
         const scoreB = parseFloat(b.scoreFinal);
@@ -642,9 +680,15 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
           return a.originalIndex - b.originalIndex;
         }
         return scoreB - scoreA;
-      })
-      .map(({ originalIndex, ...rest }) => rest as ScoredVenue);
-  }, [currentHour, currentDrift, activeIntentVector, dbVenues, savedVenueIds, identityCentroid, city]);
+      });
+    const guarded = applyCircadianMixGuardrail(ranked, daypart, explicitCategoryIntent);
+
+    return guarded
+      .map(({ originalIndex: _originalIndex, ...rest }) => {
+        void _originalIndex;
+        return rest as ScoredVenue;
+      });
+  }, [currentHour, currentDrift, activeIntentVector, dbVenues, savedVenueIds, identityCentroid, city, searchQuery, selectedPills]);
 
   return (
     <CircadianContext.Provider
@@ -671,6 +715,9 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         rankedVenues,
         savedVenueIds,
         toggleSaveVenue,
+        dismissedVenueIds,
+        dismissVenue,
+        resetDismissedVenues,
         dimensionLabels: DIMENSION_LABELS,
         language,
         setLanguage,

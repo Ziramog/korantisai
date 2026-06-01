@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Compass, Navigation, Car, Map as MapIcon2, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { ScoredVenue } from '../../contexts/CircadianContext';
-import { useCircadian } from '../../contexts/CircadianContext';
 
 interface AtlasVenuePreviewProps {
   venue: ScoredVenue;
@@ -11,11 +10,9 @@ interface AtlasVenuePreviewProps {
 }
 
 export default function AtlasVenuePreview({ venue, onOpenDetail }: AtlasVenuePreviewProps) {
-  const { language } = useCircadian();
   const [showNavMenu, setShowNavMenu] = useState(false);
 
   const placeCue = venue.location || venue.atmosphere.replace('-', ' ');
-  const tagline = language === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline;
 
   const handleNavClick = (e: React.MouseEvent) => {
     e.stopPropagation();

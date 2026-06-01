@@ -3,7 +3,8 @@
 import { memo, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Search, Map, User } from 'lucide-react';
-import type { ScoredVenue } from '../contexts/CircadianContext';
+import { useCircadian, type ScoredVenue } from '../contexts/CircadianContext';
+import { t } from '../utils/i18n';
 
 export type MainTab = 'explore' | 'atlas' | 'taste';
 
@@ -26,6 +27,7 @@ const NAV_ITEMS: Array<{
 const NAV_SPRING = { type: 'spring', damping: 28, stiffness: 260, mass: 0.8 } as const;
 
 function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
+  const { language } = useCircadian();
   const prefersReducedMotion = useReducedMotion();
   const { scrollY } = useScroll();
   const [isVisible, setIsVisible] = useState(true);
@@ -69,7 +71,7 @@ function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
                     key={item.id}
                     type="button"
                     onClick={() => setActiveTab(item.id)}
-                    aria-label={item.label}
+                    aria-label={t(item.id, language) || item.label}
                     aria-pressed={isActive}
                     className="group relative flex items-center justify-center p-1"
                   >

@@ -1,0 +1,1609 @@
+{
+  "generated_at": "2026-06-01T17:26:32.732Z",
+  "venues": [
+    {
+      "candidate_id": "45233e763e36b65b",
+      "google_place_id": "ChIJHUjYLsO1vJUR3Miis48-MSE",
+      "venue_name": "Blanca Deco and Cafe",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-vsPCGssOQy4-B3hJyJDnGb9Tr_aaguWpaOH2o6zJZsY-h8f6_ekvJtoJMIU16HK2AUmDwwMteUl0txlp6zaEM2CsTpcqHvRvzaqjDRJs7Szjdt7-YFaPB_xhcPqKSGkkxv1xUbXeeN5MjhszNw7sQZLCh3tJ3dkJnv9QHwcLEMvAv_5G4DKwllVzOO2q6t9oPoMvNzR-J8jhmLPFxED2zDLACBdWHrDPlFuadzz9cWCGHAzp62FhVdAFW0V9gfTpz5eD7Sjo6FEnflGuqwJAzrbKIVacx74RMw66iZ7h3r7SNY7WPJO8vxnh1nrAbmCMfx8h_jDuZJYJWhLkIyO-Jh3BwyYT16rItDWOy0UonrfkNDqtV5yNj1YHjbcO8_VEmzoiLe4KCKIK_dglQa5IasWIYU-y3KFIbbJGAu7rAVBhCqTk4lNwXa8Xc9gg",
+          "quality_score": 90,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-txfGA5Q_Fy1h4Hv51uTzfIdHG_XT7Wym-8ULu2rrAtX8eYNtmPGZhVQmRP2cPQRR9_e3it933v4GqWL_bfsWJus0pn8ckhfh7GYFZ4LRjkg-Dpnfhb0YKw-hyyjLBb7dYGRbGIduBjruOOwJk9B2cjoSEtILLsrmvvniZDneHbB549BP53dniDPybuO38lmJza2LOJL_TzrmEHRTCqsitloCfRbuaXYv4SdggBGSXKBPaSvvB1-UZgO4V9mAcVBeTLTNJJNytmGTj0bX2bTqtjbrTdlzvfkILW2V9BFSoj08es9EGoQfmsFRGSByhjevF0CRI7ub50x24WxjSFX1V-q70gtVz1_9IssS3xOzBMgZfbPXYjkJQ1M1nFwlmBDg7s1X8uvyeB2o6FluVD8K255Mq2_r5TTm2265Aecu_iN6NV",
+          "quality_score": 75,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-sW_Dw4qWTmx1Fl4Ms6YwH_VEga-MkTxGwVC5-vJixJNcmiy8teZ4AXLOUH8siTkSi4br83yl8IqBrrzXSWeFokZ4P16wWn24O4m7kHbOg0UWQZsAaGxcjhQSF17nDBKVkDdFhryaV1vGZzYWbHhoxY40T84rjnwiLRLPyMlBWQ3f731nxlxmBgjacFS87-XIwewbutq4v22VjHoCehS_d3NqNMRZ3-d3t6mW-VsRIj1G0RmELGdhdtMZdK9yUa4YHeM64UZurzidQ2xYxhCNPNIlyuDXROH61nvMah0635w1PuRbTKFkkvDZZwFfYL7AmjnQopif6SzHRZha1yblptx6ixT5zEwrp7S0_-3-iJ7AQZhtH4wh7cxvU7j9WamhEDvjOQME2vKdNTXjucn6FYcN8GA954a7BrPfqv7bpqPZo7Ug9E3ecX1R23Pg",
+          "quality_score": 65,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 90,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-tVFIt0ayMnu7jmUvqJfAlCulb7rg-hXmsLKQ8A7AlY1xCTT3QWUJerRFgWo4_RfpLaOrjzjHZF9mSvoF-lYXcJUs8YFkNs52g7nrv6FIW2ba_z4IHluSMT-h7H_ETN34m-NooXw65LE4XqfIaQr78sXGiPhBJh3yP5kweqHrzkyRnAXAFKYMwnaDQTtPxludNg8uvlSryeN2Z684xY0CJwQc_s_cp6UV57BVJvgnGvPt4kqLu0ejCT2-bl7vFQHS5o5ucmoGJro1FqYjE3TX1Jjqi2wrdFV0rFq003vmMurDi1ypPDPp6S_cXn_I1CCBvq4Ib8bSv9PX6DWUQcwh7_MdciVQK2-LfdbnBYxaGjWxV7O8PLU5UfFxZDQAmkrweCQwyiBQUdBZcSD2Sqxt6K1v2WMe5QGpeYSAKbc7xC9H9p6HkPduCus3KwQJMz",
+          "quality_score": 65,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-vAPJZnUCo5i7JludfJJJ8nb-62l8BwJXKUPadDl41PxDjrd2JiAIb7hl5MoGj8PN1FckZ58s8CVfEn9aW-Vn1vgT3fQ9W9Zx5VWmGVLotqaa-QYbZe1QifL2bPagl8mSrdSyZLJU0hNgnFsWucw6RMd6_UKLRCoWilMezZ1MCO9vJMTJENdFyKyW5tfN6pjBgBfq_mnQHGjbODC4UzBtypvSrS9vrGuM9T4vGxFTXQM7Dk51G1OreaH4winYPVZKFych7-KWa7CoBJzw2WDmHrt-r_K9rlK3OjiN7ZwHv8j0RmMubRnWYr1ZTX0bhKdvHD8Yg8tkDWjUa9vHPzRReoC2tSZhtgZCcwLwiDzzJ6LGHNJ5PRgVgxZLRfQdzBJTNfhxalYXTO5DV0gDpyLL5oFSyQfA4toTgTGr-1IlZwiQ",
+          "quality_score": 80,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-tJMtJY4_-eUsbONyvqFmn1f-A1uh34Z_Sgqg9uYzJu1bcvlid6iTfD_iYRP3Ms26lHGsuUUsEwM8ZegrLR2DFLsiFOYB8kD2FSBMrj_8TudkFvsnpM_skmIxBmV99zYKp7l2C0WhUecDTGk48xzezpIebBqLyXoDeJf8yb5EFNkUUtHLhDl7pJdHkMSR1kkpPmcZiJxGWbPfat-j3fCa-gdbvPLrXsB_1fd64i1cjBGbDLnSYNR2h6UOmvw4LRHGxuW3WfPirWc2Dzn1OdMFfRns-7EMubcJedm1fTzqu11KSFveMAG2lPSh_XSlnVfPAxVDk8Yeh4s6ZgteDj3OLIyknpPoV3UNeLUUpUWyOwePMTJf5eYNzwbQX70C2-anZsg5ZLh_pDXn0kEAeIJykLrSCCxL6XWeaRLz-PIomtDnRoBWqfq6ayiYlHk9SP",
+          "quality_score": 70,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-u03O6L395C0_nZ6xuUDUV_zEuNtN45mI8LEcZ2ebBOAoUccPMlEjM9TVBkucUXz-myy-LcIDFb2WtjRIrORgZipUXBLHVTSQcufs49YFBzrWeJYMDc_a0E95pczMZS1L9mZdJmnNSBExQ4r0BTSiqBUReYK8-v2FqO8eqE9pQwVrl5LkDYMLhefyvY_GKSuuaKk5fWOyjkAgQ0LR1Lc7cvsUwzNfAM8LqKbjlnJnkWPa3gwzpBwd5MBtkqFS_4rIfWhQlCs2wR74StjYb0XHzYrIVEaAjOcjkfXffZWXW_LB6lj0KfEBDtDJ_EyVcH6efz888mH3LnnS6tz7GVS60JrHbLW9mOBi3WUGT3SYJyr4Yt4Ts9R0apTSNJytu5zIWIenCMg8-M_umM5lfYBrOjggnzvKliq2CzGjEULwq6lrvF0cite45GT32dPxtj",
+          "quality_score": 75,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJHUjYLsO1vJUR3Miis48-MSE/photos/Ab43m-s8I0WAnCuqs-XiQAmsgEieFSBOarphFQ4229P-GoN4ERKyD01L8BlOPDD2Ho7P4TZZXYmaa3jk3-oFXAA790fNMClqfbM4ukylHSD0TT-gFACe8tP4z5ZYfQyG5jB_lM8AGvUspbMN7qCm-3I2EokBLCaUe7lzkhUsSm9TN-blf7hQVJFn3yY7v4rs96A-nHZOnmYBRLYyN5LHfQ-lwim2_rnulUUgJ0IdFHPg7qsnudUV7tXk2zxFUJqWctgpQ4WX4oMjyhrbIzszYos1CoVrMwage9-NTbPL4DPtong6Qhs809eQe4sNxQz6Nr3jB1GpJDmUUA_ftjGSsUNGM-Dq73YHBcAnphgSk-sRfMJYj5K-GRpqkRC0PwlWSL-5fqxNgGNyA7banZqRi7vZvaOWqfxDq8mIJJv92AbRj1ChrBH87WDj4g5u8oJ1qKLu",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "867c25e43776ac23",
+      "google_place_id": "ChIJMZMCq4y1vJURRfysuSq4vCA",
+      "venue_name": "Julia",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-tjbtaZLqvNSmEngx2Q5MqyjDse04NRv7FTPKYXL2Kc7iXcfguf07ECtCVeLMujZI0XFAHZeb5Kyjt6rzYsD61prbv4HjlJtjrjmqhRoZK0AkCtSbmikEAdqYwjCxzvxmcTLYkRoCQiOtYH8UtlQ1ZtATqahsCtbWzaU0LbPhskZZlWJL4LudjRhh0vQXOfhLGzyynUQIZID3SJ7vVSpJ4cn2UqaNwC9BRIQIex_jSsr32qJhYm2JPhiIMppTcYbjlj3uSjVAyF4iaZry2TLmXoFACyMfW-0xI8ntTNbop3DU1Oa497IpZemF8s22vX-aEIRcoUETM6rBNzeepusP0OPWoBrY0q2lc0ALM43pNSXTkkH8wn84LYq4ikzYaZJu11mk6KWw4wte0xorbsrT4xouZJ9T37C1e57B5I0kDqllFN",
+          "quality_score": 75,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-tRnOqdxuCab5G_1Oc_Z0DxF7-AsAXPjeTFFZCq2YFfXvf1Cn8RG6JaKqJmCvs_xscCOznrcXFNHbw3rszEDmWQLanD2oBlouhmDvn2Mpkz-azNZ8YDzxEhsboyVwgYWY0kGokU-SOqk2UoKqer25kNBklmABdhgeIDjemaWe3sca52Ie6D61HsQLQju0Pc9BOQ8DqTUP9vRI_EfSZyAEVYjj3ALOhZTZ8MbIDsXgnNdI9Qm9fvBlnHzC5wGbcFyveXoo3-iUxwMpCZMtho2UbwTp6MFV9bs_-hwX5j7mjz3QogArPW1mkI4lBy5g9Z6LzxjXA3k4nfTsMWWeJcWg8F-Kr6uNNt0PhXoBSCDythnODRf_zP3a3p-Qa_70ts75aFDPk42espx_pL3GwJW5v2DhayzK5xNp4cQA33nDzq6Q",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-v8gLD84DuObzNM2PCrcfboRT6bpE6-opMsDncINGhUuNjbsR_VG4C7CQQ71YdCsNVUok1Ai0o6UqIpCda7Ak4_3VzDRZwSNhMnBUi5i8WOBzvdnCp_8Dd6YMBx-XTPme_K1YW6ZhMjIidAjD0X2Ze0vPA0CpydTZFBxboXxvBzollMWogfNOoO1-37xAPgNABD6WWQfFGP0Ub3p8iPR0gV2Ht6BzgSHFGxY8kuxIlMptShDbBg-RnusBo5H0uOOKyxjT5zik0Fr7PZIaQ8zGpIoF610_bfWdezAUosg1nHCsZYCH54cle6v5Tu6ULmnGHlACz0IiRrVeAc4cfHTjolj4Y5dnEtvpUUIZzvvykznvNdw_HkEb7N9SCkdbFMko7klge7SaVhU2Aj1ReykruEH_27QmPHbCjfO0HjcppvmQYYvIouPHHfydUG2diy",
+          "quality_score": 60,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-u4FK98gkqiIU5XxmUHRQcno2JM7r1iPm5QrH2FnVfIayjDwGqaIm955IX_B28bvaYzhBoVkSMyZiOm_u1Ib46WsJmXxMR7dB2DWHpyCaojnQtqOwre1iL030Vdlo0FAZ_4PisGKtzF4OZuIbRj5XYIpmOa7_Zf3guclYkIqds-hF5nPsFgzzwv-i9rQIF6fXVnsAcZJs_16iYnxHh4awqUmYjY8ycuN2NF30v3mDLy0NhmCkU9LH68jrSNxjzK-YYIHkU_x-3jeEvCE_n42k1roBMepiIcVtA2Xi73SiX-AwNh9_QgqEUzb5NOrbkyyn8MXJKX3cHf4R4No8SFq8HH1_P2IvHglrXuWMwJM3alS7Jbp8AapQh7NavEEIN0q4E2837GiKyl6cUOUnbF2wJ0idCEmLUFRg6PgXw-Typ5ltm1XXLRHZvSz1Wlpw",
+          "quality_score": 75,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-u0nXUUhC1jTjgSXzK4FxO6sxzPvBsvXG9NWFJrDdBrChFvp8SCpvDY6n10GFUAvsDyOtOw8rCzeGoVFHArtoUlk4EtHkW455QHv2r336zTczw-wma5Fq7DWTBVupDcZ-5NvbAx_A2u3Yr5FyKbZFB87yxwE1TpOk0zcgNY6Rq788w0PNGbM3HIawLLGKhtDjVlSHGpI5citI9ggzw9hPi6iyVXOJYPD4gXhwb7IG329khP5xD8rWwjglte9jKzGbT3WJbybmDpuCrifgUS0PpFk7z0wMup7z6u30Ep8EheKuNkilJdcQfy4CX4pjXlM0C6DzeI5-edVbpTArEIICje2TQYo7oVpR-JMbsJRvLUcQWA8RwwTJTELLiJMBaxqJcX25FzZBqi5arJjtAAqYRxZN0oKJD_BoYb78uDEr_QGZ5O",
+          "quality_score": 60,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-v-c_c5mvwCeFTvKr46fwdQLq7BMiLiFA0Wn13FcqNjiayOws1LrHQgJGvEK8HHB4L4w9-ZB9k84puHl715T8784bA_5jry1MVSs3Kh6pzYGcuxx2LtPWSrtt-PDG95xhseHdkaLLdxoiXxUyaydQjdDGUJl-wBZqtl5Nns499ssW3oBEo-dfOuploDCLxxvpzMfndzEGPftstxXmBBCBryACPwpFx5chrOHpfx-6OTarKjEhfo7-P7_fYtsi12jLi36bxRQpz0NvLQekp-1Vv3h4II1WxjsR-3Ore1QzXmMNeWfxA-qB76c_oUT_vCFQ4-m6uJWAbSzPVN8Mf5SIkTC7adrFysFNS0ZePIjr3XLoJIk2BeLpOxVwBz8_vyrtmXLsJ_sCzQTU4f-Otq7VhejAL5-RDBXOQY85kyxoUHi1UDOlaSFVab0e13hiAJ",
+          "quality_score": 30,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-tpL-MJtmr15QEhaBTLBud2o80KcBkKYOOnzWtRJ4rgJaeFh_8kV0bSbcXOghiWZV7MHSq5MFm9aPIKONEg_xwF2tqe3t6_l_iDc9_94WWCaOkEn8sr1iizSxd_MVEelhmJjh7eoy0hicRFg1vz7gXkcD55ubRo_Nk40Dgt4L3ZqSKKUz3mZzIM5V2XVrrlqS2Z7e4pAT28ZJuhxf8eQkjkWi046wJ85BpxjxdLaxbdzLsIWH_lYpQred4O_dDT_znzuTH_aWRZS0Pf5rIFKFCBqswcR8QPQPAAjn1wwhDuRw",
+          "quality_score": 40,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJMZMCq4y1vJURRfysuSq4vCA/photos/Ab43m-sf8Y5qxbM_JXWuqnMONgPHtScLbVVw4dUOGG-kLwVh0ola7XQftSmOokEHN6iEStDqD-W6PlgqLPxiuJpVE485K7aTReGE42V4ich3iq6za_cz6Bib79SjFh37bIJe_hGn6rNxJ2nVnIfq_3durK75FbXG9h6NeQXgg7Z__hlUzZ4ozypJWn8AcbII2FPY4rOnrn7mRYDbiB0HvuH-2XukZYhR0zZYBZD-6Uj6CpyBroH-lfEvKIZ5hCeh6svKeKUyzkIBHorZBKzDZsILpDarr_MwGxcYsQdxl-Qs3lEph6zAqnFC9yBoAn4j-GAi3sS_Bh4BQC0Z5iuBVfKH7kj3xyT5vRiT685vX4XrO6iHJZWzuo9-y8tfLu6ntqXOAg7zY8LYNk_lxwXqi1ZzIv3bntNCt85HV4BXHQPycbGQj0_l",
+          "quality_score": 60,
+          "hero_suitability_score": 40,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "710b763f932de83e",
+      "google_place_id": "ChIJKYYltZnKvJUR1B3un_qNkho",
+      "venue_name": "Roux",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-vpfGEQXxHxwDp0UX9gm_38p1mOPZAhFMskuWS0hFmKlKsXItf3-uPAxzWlH963dCoWl_EulGgxGLgNN6zbunA8UfZ7W1c5wsHniLiFrLKyshfowDvfFrfhRJTIfUa-JOH9-X6UqoddTufd3Z-dPFunk9QA1gzsmnukWg6a_atYXl80XlH61kRyp69UBAjpuebjVnvz4W_Ghq6blHQTBYRxYc7w6cAB4LUd4ExtIAaPIAlrSQnMevMhX07OY9pb4TisTlOkdPoQz5iwYjcqAymjQ8MMGkfU1gO5zT9HFTcX6veXbY3o7mt3-7JEKf69GQGzTgwwB6pM6AP1XJIePFXpxAwO_ueZ9ecO81YJp46Oxb6F6zpI_10NEvOdkSBbWNo6ciniuNJaGFO5K9ujUN_uqK_OUOGNABnH7cPdAaM",
+          "quality_score": 75,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-th0Djgfr09elGqzylBqA-Gefypd8Mae0QQNi1U9NANAZ5_hBhTtjAQRjWfaXwr8rlU2NSo2z3pitivxYpkU_8hsjqlU6wY_S1ZkmN0C5HBDKzr4Gp0v6kjzb9uf_XCMbPB6CwpcXKXT5kamG4tHw1cQIJc8hvxAt-w1f0wh8qV_witRKISJa-VETXoZF6lH5OhDZMeXFKLUieOkF1ziMwC5Ilb9ttyDnUOXXPaKJHjUAHDKJetyS7OMGeQI3CGxhLvMru2GQIjJfFNkUAvkwMqXpuexAPvEQAE8Sk_3r5Tr0pBxTXUbdGXY4HpWtWiEKH491c_4uPgyy9jI_wSTKWNxXkFL-ncr-6xQCGXvo0lIwV79le8bfZBBsFWLa1eneC2ENN2H1uAqOEqtuhmvbyktltXY_Omj8ooiIbJTA5h2I1ys4jjF5eVgj3RkA",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-vXnaxQfqWCwKHgXwg-MCXgZXM3xNnkFVkj7PHbqJkQLZHka3V1eNraq4QBQG2s1X7e9eg6zgCzQVUsq9G17a2GpkpXR1dvpEFVIiEHCJsHyYoTpU0WPiJ8Ivhcjmplvmjdy3PjAGj6oc8QLBdyt85hVDm4MEsiHflbdg09ZSE1h4VQJlLnWg9ntvJce-xFTbh8aUeOWs9qRGsrO-VqRqI_ZSwIx3QC7HVjWe0gD6o6FdEqsYHMEpjeOToblgTFFIlN60XlmSBxBv0FFcUXj02QScFz5rARqwr_vso4PB1booA4xNFxcQ_lqRu3Wa-1cmMZeOcYBHcNXprhT96Eb-0UdSHFcqJstiChiSO5V9vFZ0dRC1m-SJgGql6jRXObjFQFegzv4UFYtjQz9KgOIcoz7x3V4wQzi87nzYektAI5MBY",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-sezlfkJx2jbjNtr0K_7gFp9mYLI-EKXo3Ga3E7a3QQxTp-eQrwyZ7FdLtrlO6dmTfUuKvL-HIWeWnT5NXk_k1f7hDoGsN7VdX2mbqt4RijZb5v4kV23zvLItRgSi59wnAbnU4o7mNndCzvwSDQ4p_86rOPHg_-ZbQyCDQwaGpGPje06F12p9QTtLcepn1l4RbqDy7WBtfYUAcOvhFOFwEoLutcJPrYDdHEIt1mvm89aw62r-Z6THd_CUMusjEYtSbWns-Q52kdNgohiFpHHUiqpMkwJXpPJWu5U-CgYf1WA3sBTwVkxcSmInB7yCyUwqupHVbZ61fCXIRemCLG81zyBn2u90WldrRsCMNqwJwLUOog0wqJL0KQS-ZfN0vM_SRnc_IzmAjZeJXByFssyhJFJozb4PH2yz8haZR8XEVHMxGDsqYbizBNj9kWrg",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-sSeopSMhmzgWdiZO4d3t5S6VbYbnqMsjb6aCnVzwwhpDhiXEeOP8sBEtfKgvjZ97ualhk5YXN7bp0mbpUBHKYUsUt5axWIwj6UCY7d38RVDrcR85wXblHmUxFMeQ7XkMViGhTVO10-sDjfEh8BhBsr1BbWj5w7AYPNfPKVHn_21yJOl8VC60Mj7Ji0HlPCX9fLgfskQqfFSzPupCIpTws6bk9sU7u4RipQbHR6RDV28gtwF6RmxWY8V3DTaS8UerB0s1GL54cIqxIaAxmrpQ8F_E_reyM61jJmAv_G7h-PZgBLsIDYfgW6s3YUR9BIq0kYNCwvZFBPBWFq23XWWT1hW6J8ifrNqE65YyGZGPjUPueFE8kn8yS7_dqd5AfKTOD4AdmBntKSL6vRwo9IN0jqWwFE5WtptHgfyxpIFA2_xyO6Q70WwEt3LC8_lEJG",
+          "quality_score": 70,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-vExKo63Cb6_Qba6H0vbp9abT3PC3GG-1TP2H1DKI93Gt7m3ZVCKM6el0OhhZnSqeVLjtgoIXg0rUpl65xYN3dbs6CsdBM0nqW2neORXpA0jI3t23TblrgY9hEZFC2mkZ5PW9PciRZ0rrWTvRMr9KjTZ-Sl_wdcLPLAK02twUJBF95Ub2vxwvl1G9DXihFiCRBl8tU4boGwyJn205vySMD_eCi8MCSbDwkSpBW2J8E40AORArwyS6uwZZPE6kkOeyYMxNzOZBXRgBiJpJ_17TpJrwHwskp2vlqY3oAIRYAjeNrK062YbLnqstlh8pPPE7kP6UgIIt7_uIh2JMPaAK_tKkMFfroRY-tiNva7E3TA1oOhE-zeOpybUoB2utXqLG8sBovDwxoGGraEhF9IVaUG02CZbJR7h7Tb6VlmpRXsHCPN-jvXXRcJn1EytEJG",
+          "quality_score": 70,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-tQPQ1-9o2gbXOtconF5b_3fRfzpvJ7_v8ZDHfrB-TNX6LFhvn_B7rS6qLH0Co_4wC9ohqLx9i41Lj0yxZUNmJ7mly41l5usftGWLL683Lci2056UBx-DYHIYvh9Qbf_4SN4ZVMI4AsKUQufhYCby0MBSWica9j5bzkILnIUKoxI7mMyvaZ81ZHJE6HsHl0Q6S5en4DPDRnUrpEFGgPU0pMvtdLw-FRmHeM11sIl0beib0HELFLYK8OhGHbwI7jYccPMEqsfXBeI29vUuFLL2Z7rk_py5G9d3PB8B3QsZ3UjbHyXwQqO6wcTxFtXCR-MUB-_PKcs5SdWDygOSVrs-CkqsPhc1galPR2Zv6f8I34rTn89lTUHdn4kWIHl8mbXfNBUP72zc07H4HBB7FshVbjCymdDHiDKCY8eGwPQaIra2sddknaNYnuu3aI4k8l",
+          "quality_score": 50,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJKYYltZnKvJUR1B3un_qNkho/photos/Ab43m-s53ozim1Ec-rzl2xVWel4ovkroQneanRu87izrL7EVFjMrPsuDUJ9sltRlFDEl82AyZETaajTXZBH4qA5sDy3KQ1BzsBRY66-ZVCT1Yoso8jr7ccWqgKFSKkUl1UdoNobZwKYpKw1VY0GlF06qIwMcdjFKXsb-iOD7eQDCjk_jNsh8wQ4R_Mzj7yAh73SBRo2XTl9I9nvWYFj6CZwfDWPlw92xzdCq7GyTuMLU0_Nk3MmQc-36aeJa3uJ49kAB_FsCwBkHrVsxfqal8vPwo2hgMes7466xIElowaaK1RbPYS1kpUL8EKhrqwcko0dTV0n6qokGU2L2g1kFeje7V1ZAbrCgb3GlKX8hx0yucSelTKOmgKYpYMCQAA0dCYWUF_C3ml5PQI5f6tla3zOMS-71F2IphyRs0Fc7u8ckXM9Re1JQ4Ok1nXoLJz1F0wFV",
+          "quality_score": 60,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 75,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "3685b3837a988034",
+      "google_place_id": "ChIJ-dd4uo21vJURyRbXtTjQNlU",
+      "venue_name": "Anchoita",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-uU3ZFRv8NyWYYpr-Fpf886dvM7McoT43H0l2vpuTEP3OZZYW4qQ9r_hBOTZIdTQ2XHWJiyfBs7ZL4oIjStNomjUGYmocDSf2Ya3b_PvnKwzwjFtyAYwpCEM_Sah7-GSZBkT93_97Cao4B9XANxWF7EEoGOn8h7J7ZcPjbX_yfd3dhztVu6-1uu63rx6EV0Awd1RLv4DfPbdxp2j9X0XfTxoA9a0k0ec6flQ7JrChf0gMTTsCnmED_1AwP_dzM4XsdRJvnPXu9yCPy8t_o6jd9CX7sq1vGS6bF8C-2veW3O1KcJxA8NOnwewGt8VAEkW39pG8mVQMdMRUcqYMprlT6yKenSAbt750kpUUgN4TV9ZBRcdXUnLzw-MQ01WGy9hNtfamu3fBJEjqEah0pehZBe9GK4K_P1xeKSvsfab27rVi_izfxi5jumaPvtrmRF",
+          "quality_score": 85,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-vBIutOC5zRMhWxI1N0soZFL868uDc7AKHuQwiySEjRTRLlcwKWEtE-NP5uvakl7rVnHOj4rujzwxzaDtjTI5uQZUumBTezDZKnIVhjneqlnbQOHnIkGin0czStiFkjEzNmhZdHRTbsOrI3XDAssEJdGwo6ahK0SND_GtxCCeZYVpeMOoe2dkE6m2isP2HH5m7XSz6PNxgFaPTQw9b8AfnmXV50XqvIiYqbVN_wQ7MZErnuKV8Z2sSk6BZhtFCjKAv1uh6MLkXPXsyyVSE50WnAlHsyxfvKsG1kGf2vhbtTAJ9aDL5j0KjzgzNt1epz63mEatwCwc04gMW4VaSy47HUkxOwwk4pKc9qg_zlBEB2dsM_YZ0-AUG0kAUNRHvfix8U6OoIY-bTfQ15oSyOg-FF6CDj6XKoRAY0HCyIjjUGNt6a-FsjG4a1HGEZ0-An",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-uSOTu-AizwMdvtlO5ypE0TCvauMSff8Q5wnO5x67oR6zje8TiI89AS5ktsZB9i2QbyPZ70-312riTm4I4OsBlPn3Zzys6f1MvprbQfMtfU7aoyfYajnOc0PYXuVkjnC4UXdwwGDQnNXLK3KP--Mll_sV9osj8wmZ7btAsyQG3kEeF6DbXyZNYcImQlJ9vuw8ggYdmOMpnqIixXrJIWkUntfTNc-UPs_dAYzz861PPDGjIawK6d5JBcm_c8qrfT5HSKZqvh_Tg5wl95i3d4u6ukGQtLG2eevVU-CdkkQFPRuPFuEIk0HNx9WK7RQPK7fCrBeF5CHBz8BVWOYg5B0x1SfmRzs1qxOoRl4GZAX9WNTIK7LbDSR0PkaFh5Y50IWx3POtilVVPFCqDl89pZcTloO_D5qG2peBNQeGhQLW6YuK6U-YYgcmNGJvM0K6oE",
+          "quality_score": 50,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-vNnBLoyXwYlI6UWMfxqWsJwTORDalyYbm8ejY8zaTSLM9Tbh3at-Bdu_1oq6Uw_lUaj6STH582YlGvV6p8u3LS2TM_S93z-UsqXNZ9E_hZG3QcdJpxeF8JlEkXEhP4Xi8aVXqOr0CF--AchpzLpXRsEDuRxKJYneG0WozqcCJGcgsi72HYjDdsZBIltPpyNGmB08k3xOm3blbMAb0b3PfAYBlGr6mWWTJsc8Ld6b9xwzYLdIVJXnGll5oquoLd3kFnnJGdmSZ4-dEWnmScybPNm-Gj4oQ17mhSzS2sBHlr1MPV_dITEOqalcLKVVKyrM51mrJXsmdJoF6p1innbYySiYFO408LggBPUVG_KeQpatuE3J7_bVT-Dhj2DgnMyMYo83EiI55d7OmaoA5Nncui7DvPnC5LfWZV-RdrP01k3niIHIJHqyeSZZKGqrO7",
+          "quality_score": 50,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-s8YHJG0gxE-6_6BJqjjWBK0J3kbfGKcHg64htVxXjfeEdebhmlwueUlYN75ZwR8feW4LthSWk_uNpQLZ6cWg-Drv6047zOw2BoiRCJDr3EDMDqqBidJ6780uzzAYfPWAz3P8Sw6CYLdF-jqFq2DXyYP6PMQJ5RA_IMF2-zA7_YoydfS0RPCR67PXLUN1rYsbcne_HKR8oIZwZdGfmmqRgUlVq5TjXYurYA6C-WAGXrLrRHIcxFr2vuY1fcjKHaMclc7W32_Obz-uQ-66SxbuiN8DmxuJ4inEkh1-pklAXdpJUTFoVt68v1H8Q0Ha-LC3HWBvJrOWwCD9XmUyakepZu7IGzKHtzpCZ2kblA4qZmqq7mfdEAT3g8_PQSZfOoDUUTX2JcofBzEbf96lHnbYw-Xzya8018fcJMCaKFefUwe-Lrgh-ZtuWqT0powmSX",
+          "quality_score": 40,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-t31YHQTelIuPwkdtOFaE0vOOKOI-JNs2vqRXuPb2fY-6-pHHxB20KcgDd_vN1fFG5qyFdy8ZgGsmQ-moD5uMdRr-QnT5aGDlDxa8xTSY69OHOX2upcQMwsStg6ofFl4OHmNA1i--0T9VTgLvzd8AL1LLSdloYX9o7R-zsLCLQtU8LJjNL6toQYvFHX9RjeUiQw3rvNzfBoVPjjWYTB67in3EupDMfqB9LqOVQ8XM6mAa6rTBz4TjWz0tW2P615lYZKSFCelOHrOflcM3MTwdA_ibE6Fr7DHd56DsP1oH7uDO03lBW-C_Qde_t5ZT-JM9XbK5wAeGVt1SZZuxSta3UR_IOiVAOuJ7Tkn7zX5mewfnPuyhIIAiWXnqLhVvbqKQVj9LEhsP1twjdSmOkaf4mtMghegwfojHHQN3zjsMBFlVLn_g8tYsFw9fqUCPQD",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-vB0eGKbLkDwDJ4u-jpTHjRff2E-NR1WKQVs3KlFgLEv76WnhTwBX3wJxOc1U1M4T9az5ZU0yPqWoAvny8UX-H3R9n7RRhCFcrsD5cHBe7IzxzwuxvlXTTngroHUjxBf0uBOezYi9mGU1CwzJ_rjkeOqVGHG20DnK2NzFfc57IE6Wp5Vucfm2aRoQig56oPeLSpQeYvG4BQbrWR13_XpjK-l8j7uhTkbX6r3rr0zZ9kwn3t1KzlBqTslIyj7VTxVEmm48rmhb9W94KOkNFYRq_mjc4J5jx8h5qXZrEvl7UG3G8MM4tfuYoDDfSj-e373-qC7BWjpZWzNY9qCaxWT6QmNBfsBwBrRahF5fuS6yka0hz3VIuSlxttDTLzIxlm27-yrUG6C10BRzdaqAZYUO_hPEJ-fP8TSeRg3kUO-nZSDart4bJ519RPJYZsjlD_",
+          "quality_score": 60,
+          "hero_suitability_score": 50,
+          "card_suitability_score": 40,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJ-dd4uo21vJURyRbXtTjQNlU/photos/Ab43m-vUdhYDN4iakug4d7s94Zh_tbElHIgfKVGvGx1timlzMczH7t1fFarWYsFgrJp4uWeOf-7Gp3b9eMnOPAL1NF1F34BBZ5xzqAYUpHx9qXXp8UQXvvce1odPZB5PoeyFEiJzHCpsPxRoZ0CLhqey_Us4hMRgqbGcXV1uIrM65RHBuIRChiy8dRnXC2phE3iulwcrwSkXEaORiGsl3xzPbK6zoBUKKnVVHTq_u3BAIa49FE9zwLtDmRNJ0uFP4R_At2YsAk5zgSbr0PBdjFSrushZ4p-hPcLt1zz8FxSk5xpIOwvpIBPo8-5oY00BW2JAVnQ-j3Z7D8hT4xymaDntfRByty_RYu6PEjDv7la2Bf1yY_jEx404iT6D1OO3Ay-a_VU54LJSzEaZ1XdXBd3ZhA2tvukE0N-ORa2MIEtw8N6_vyVzQqxQOGLvV88EDQ",
+          "quality_score": 60,
+          "hero_suitability_score": 40,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "15099ff5f4365522",
+      "google_place_id": "ChIJKcgRZLjKvJURv0XnanBXRCg",
+      "venue_name": "El Cuartito",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-sS_ZKVkCd3jAftMYnAr6p-ytG1LvmKyqTafmX3p_WNH6sApG5w1GCuxisVnGj5Rja1n1RGA1PpCbsc-5iOqkQYN8vcUCxCS3KUAdB_7SAXl4N75czDwrlTi0d3m1cZYTWQ713lgpSn6Gk6UMfy-L4wMtRWfHI5tqk_jOA4LeA-52MkW5LFTHBDThKaDprKsekWEWn44uDSk8a9yTkzAhrR2KTWQL1vz0gLX7ATvX2-YEfOapvJBnP-trDv2v-xqsTIa8Ba2VArPyYtEQ5WrHArkCc8_BIOZneQQzIX78O77UEAlq8Fz8Vbv6mTHicKbTnyOMCpQ7zo7yWdLkk5rhMgCvvjIcboLChVCkY99ZMDMgFuc8R2XAgDGCyi7wqlWOacUYmLPp8g2JTLXaXEFcpNFasUIXH2TybJYxZmTwpbq3kBaMKyPKiCIyxA3g",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-uy9ac5Cj-Fh6tgN1kz5dnenVWyFTZOm43SDt4XgUOWZNinEP6GLSZ8YGFGj1pcGc2ftfvwd5hNYQCCShkcLB2dyxAtgHnYSYDjaeKM-hhtd7HqCR_DVkr_7RpNYPaKz5GfdO8wO9A5KMRJGy7EfkX5lKYScSMUKch3vgeHZkQWp0jPiK55qBZxJvZ7zCVnvcTl58VwGV19nIkv9LvhCg7cq3KGdwbaDZSlSs1e-Rueo4Pb5hl0dwx6JVzSm0Dk_lwZ-JksWi8Vv_EJjagxxmmbnjk_w9Bv1AIy1_bSR0FsVwruRsx8ZiiAdVYkGymUq28eV_rZBZf0Ukp9Q-FVvzWVxDsaYIJ0gv8yMfgP17VvZgIbWS6w3A3j2lUl6jjSG7AacyHYgO11DKDE1xGyLz70429J3RHlh7N9YYUIOpmbH5NEoJPSTp_gGd1pUGF0",
+          "quality_score": 75,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-tDi9XNrlt2obKjPY4MiITAuyj2BNFDhKLFLbJnYKGj3ZH-PJb1YO95LXcAAfRJckX4UU1UqKgBLm707ONTUQgD-41Vpu-ALdEMWTkKWTwiSHQ_0Z6r2QBGkURsScjsJB7_8DFYk1d1LJSJBYL6D6Zfz1auzh8bQdIvK5k20ymg3pY4cvpjIuh6QzJaCt30kkrU8wApq0IkxAYA3yVso98GAw5319tbh9ZKr7PsjjRQ28-nOXADHdrYcv8ZDMfEUZEZ5W9zRZgxUBTgTUnOaG1MAE3WX2rhI7iHUBgJdJAsOBxZbEu9UedpcWvmhWQY0ZACEjXnwLEpUvqc30K9rryOeXhvBCXC4G3rDLx2dxKWtz31Yt39MmV3WdXmXTVXqB7OT4RG-DWyfcVEZLnYheJEk158V74R21X-Bn-FVXAC7g",
+          "quality_score": 65,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-vZJ65qMo_-sM2DVfYX7FjrST5Cpl11XP7lZFcGDw4azyOF_cNpdDQasNHCj2UW-eCZJBzNjJnsPKvUjCs5an5o2GGtNtF-ZqNIM6MdFjjDxyrSiRy6ERzduisiwipOzei1AOYMCQNau63zne_5LktfYCtcA_oLft0DSXQRB8U5oSBERfBczBDvuqKn5dC-V4jWc8oqXXo6t3KQogCaSNA27A6ThsW1LKGJAg_b0UsIInJe8hVs82YPo8nFK98P6X_s_rYeJ2N74xKScwtP6GiuQs-Fwz8FdveauEYekchpWIHe1RnKVv4JyzqZyXHcXKT2GZboknNznTn6ybiONWhOqsKAheF7Ob3IOsUYiPxgks4CUq3UurPbDaWPgtZ8Dwp60uFqR7Y8QyO_3nOTwpDgnH-BfwrdDJolikDSEj4",
+          "quality_score": 75,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-t3lcAFIBgiL_8xCuqRCe7V3taPt-zoR7N7Mv084q6Qqcn30IECLxmkFOBpJ64VFxCVR0r3M_OTL7Ypw2IWJRnwwaO1nsVq6pUaBc6K8Mk0GDL0-QXSZ29L8Dyf6VuO4vgUS81x_JdXbq3FU9uwngMr1jiHyXaHq3RInifRWXs2y9FAyvFBLLxb3STJDCf43bwfTY5i6obeSK0Uh9KmUgcxJB_pCwJqD-r65tkmYIryVoc9rIZ16o2CDRe6K-LxBlOJe2qZGwX4r8wdHvWRmvxPe5QZp5hJ716-_bqYV8HIET3DuAYfhVWSb-rtrh7ujf1Sn08a06mkc82Dvidh06O-AYW-gVAyp9B__dKG7NaWqPqHJRASnp96OaO0DHOYNlInorbZ4GxMzISlPJ_Ziig5LGWdawhOKsWfuuPXQmo9xwZMkg2n_tTy1Os3kN4u",
+          "quality_score": 50,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 60,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-vX8oflLMc1KMMNsexny3ivhQhXzUhkQqFU_yDwstQKupngtltRd_NZVlgcUIfOexl0oR-VdWht9BHQABFLZZEqA7SX8oOBYueTYg-wwEk9Pq77s-QLtvr7WgUF8-a-8_LQEF-z66ZNEh8ceQNqSZGEPIlRRMaC4mV-vxHWPp20j7K7ojNMSm_1VneO_bnC46oVhTqPkQvFD4sPneR6XPpcpbQWi1pG6wDEqYo6T-5n41sw13PXYgbTuU8qa3XYM8MRnxZCl2v8juQZ_SgvYQy8-sH11rM-EJx7aWBa2sovr_Sev6-ElTh4YS9UU9dosYN-KZzYvxLG5A5H5OZT_H74S9IZbELrzXnsjouUy1OrPwDKOKYQaGcjjlmKkzPYL6fk9GDIMr5rBlaUlFtDsewOBjS5-Z3KRu78R-Ls-py1EKXo1ump_o7p7YiZNg",
+          "quality_score": 80,
+          "hero_suitability_score": 50,
+          "card_suitability_score": 60,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-tLoeikZXdWWXCu4AJbMAe5OZOqbrbqEFnLzX-j_iBpJvllCwkfualguY7OQJHe0zKah2EY9vuOTkEZADDW5gk7K7x6pNpn8F8I1vcbVLYy_kkvPFEqRDnVGuN3yTC_o7cUhpb4kjL_HH3UV5np27-BdqZUg2j1wNNYj1s9Ru3nkfsnf1v4vUUhvi91pz1xeUkdmXniQErWmTagH4OiRVSA-ptCPCQ764Y7HxZb1rSzxrdJbZV8gQhJdpgaiPArujboUCfcxKspyyLwkainMksYGJBMTFktu4WD-wIYmCuEvPnnWLUIyD-OvXb_NIPAL7D-2YDSQ64uYP4DmWhLdT7Pu5MsYi7AtWhiRo01Eq6hdxWbmrX0wOYKd2RzcrSCYTih7CMTzH2gxlW3jVlWHya__dMZ-CGOlTjw7mw28zRGXgT0igF46fcMnAcdbVNO",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 40,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJKcgRZLjKvJURv0XnanBXRCg/photos/Ab43m-vpNBx50EtYoz9vaOfA-aPS7ydDTXtqepkMl6_wk9u4n5I8gmY259nOv7ijOu2AWths5YDTIzlShyHoYDiBdOl8TFl4fLoVlrDHTu8cdOMjEfHRWNsnbOH2gvvrFd3RT8MeZvR7fzrkDsGtvx33ql5Jcg6aIfdcsZhhLckYGYoJzMg123mUEPpLijK97c9dgi9npa3pMvIVVs0X6zbnucCPQBYl18CcqB0i8sxQtPKmleaEvHA7WPBlPDlYN09j-MSN-JIOmFrKdI00dEIEx0NzZKD0g1a19gHHpQUXHhGn2gW0htx6gldVgJqNo9CFLOvcH3rdHWQ_lvr6NC23oGwSBXJ3rD_D1BmfFSk0H18UAN6W26XLB69S4upaOOCVQXHIME89aAHrMrMUAp_aCP9bOqwG3JfSE84REP7Y-k149NYE-STAmC-sFPkYk58J",
+          "quality_score": 70,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "5bd1c65d45c6d160",
+      "google_place_id": "ChIJaZuHKES1vJURFUHa25lVQRI",
+      "venue_name": "Reliquia",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-uCGKcGzm5xxcOKoKpnKcizOgiw6zLQ-9OtIIDK1q6pRcf1wZJtylCjOHhvsJQwb_WYjpJEJ73n2eZdYFYgHjeWFbRoWFDuNu6ULbB_9NBpT_a8GvmkMgT15RQCT1hLy2KC2HvJ8q9Y-04hWswLmTruaDnq1-55du0cXXGDuZKxP5nBKVzX_34IK7CuWQ3R_6IdhpGAndnHLvrSshH09r2dTjZrOKgMVORtZcY_fNwzRvUrfIRJel2IWv9_wjQh46ukEsQkkVBkI16Z5CvR4Pq9fiMGzCZzIYfODHVDn-1ShYMDoUQ1ozl1j0hNzVhUHFyLhQTYKaVIM7SMxAFu6Q7v4-JQcHs3-KaJnW-h1Lk-0BA_tW0sTHqNHwMIizcuZjlzhJYh__PK3FcLoZIcchKMTP9Ne413Ry4zPczsH56Q4QoDBXyFHDdEFX5QiBr8",
+          "quality_score": 85,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-te1tapEjaYjEBGKzzhA2l54NU5Pp7OKBZFG4mWqOLe_sEAzfCKkiIBgAvE1Pl-eJlDmHP6eljEukrc4yPNdl8AIk7ggAbugvEfJNCFUzc_4RiVKDgNjf2y1GyvwDsHJaUyP1AcKI1CUzWtXosrqh3y3i_-M25V4-rouvPQrhdDrqSUdme61I0HuDg5ZtP0TJ2241haCdN4R1gdK_ywO8dHhZECJivrG5HoJa-T68gCdCQSscspyn2O6yMZvxfT0kETg_-10bC3ejmbnmumhLy5iKJUTm8cHnkqrs51NOGmsz9eAPBuYNPlAIaSShdZqsjWbadA1li7JopepphVqgN7ZivFc8nJdWqP2BV_lAdY08rFv3Vuya2YVYQDfwZ4OuEw9Tv4H_g0qYcoKXXFq6XS_3MvqZtKXtvYoIKtglySu7MtwOP-wwP7wFOCnYac",
+          "quality_score": 75,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-u2pUZe6gqhMA7nszE1_GEBlZqSV_yOybF8ZRXE58rqBQ4aprDVUh5uMeFkYIUXhpvPEEQDIToGwPmvR4wAh-SZ8NyC11CjFdHdGgURhH6Df7KCwGL2peCp8WYjNCRslyh2g2nOGWa9J94kQ9QvFrPf8z6X9jwnpxgA2aSPsf2HDlQzM6neXomF1t5_zDKLsdeuKjG_tkmZdi0QHxtUBREvmEcd2MtH3aonW0Gu8M6uIMLdjsk5SUmaI-WGXUHfwDQ6P0-gvXB_8LVlyukNYvFykeOuR9P7bAVwFCmD8Rf7SD4PLIMYugR45dN4VcOtCvCKI4oXUAmXCppQpQ-N2vhRCfiEgA6kMpoKllLxEe19XZD0iXjTvskw1sNK4nvfJXHd8mof7RwI7cwFWjj9kxhRsde0DcAzsUd3Sr4vr_C8R--wBXoN8F8XG6VOl4B-",
+          "quality_score": 65,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-tEQdw3akmR8oFjwNMcNOWZEIHE-v7v55A_7gBvnAG5sOCkKhLRuI_rsVJU6mivG5TjcZWJfljPPVALAivhDMJtYfsM9hr4dPnsdfMSHq2hNQRCwA83qDqU6ihsJXZDOGFCqDz3vXdQMqEvSIEeHIRPxUHYtK7uT_EBMtg4ZqfsoxSl5Xo10dlzTCydKKXtKGq1KDMNYGW3MEY53egr59jvGYd5zEmB9vsqGEh8wD2dk7dkCAKUKBu0wSsebPpDXR8XdS2XAaOa_-rKYffQmgCaqwxLJmt1eOKmmiicYwFpNDOgifYWdwQuHmmuTkY_Ia4H5JgcZnyW1SY7wDWXIDa-5-YH0OdgX-vvYWkS25doTfKgWcssey9ZNV6FkGpRGd7I8cHMZ4zEW6srH4yS8ATilybzZRRqzGJDbEQBm4R3Yg",
+          "quality_score": 50,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-sK3SqIA4a2k61x1l-KX8PdI0gQT0UWIC5aSFXwaRDMyb3Bf-BRBXM9vBtVL3UiZIwXRctzmqmUYZFLt3jkgAPyn_rZJ8x8VGoa7pLLc_zcCW6CmrO_pgYUC7gaycJ9Vc1mHF7Pkp51UZsDrW2Zo8Zlc5xXshk1O_dU96Ct4YHgFxosIGNOR14HHVk8f6MfpKeGpA9rotAAwcX6VZI1yFtDWmL8VRqFKv9-GorjqOzmebxiRZGo0Wp0bzF0_JhDqwkGtttoocg1cOywewE8XzA88JnvYDngs3-lZLqQdHg9gfb5W3qyQ4KbbsxHzxwjXRpEU6a3rqG6wlCZCih3pBaYwFaEgGG4a0eY44iJpmmTaMqtKvyeydudJSO_EylGlwVVuqB1uiRpkB7hickl0_BkXlHAiL1ubz9xeFmakPISVfAdNYTkTFKL_BXG60dH",
+          "quality_score": 45,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-t4sjb2zXS64ApktxiYEQ5gH71XUTOuVXSpGQGDOSMNiLKpfhmhsvZji7EuxScfgLYVCEQ4ZZlkjisaWzH71wZ7Co57t_EFPmTNNdGg-_MwIeSLi1s9SbF1Ea1ksFyyowvzVqCzQmStCcvutIkdrw41SyaLACzpNSA93ie3e8PCfZnSE_jDxGz18wdrBC8TBIZK_PjjZtDdguixQmIp982BSBLorBuCmwxfJ98qCCGvC3GeQ6anOvN75KoTKcBCpJfH3gqknFMIqVBJTt4wej17EGY0xOnKbBeEcgpGQiTNRg",
+          "quality_score": 60,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-sNaKSFTyCROigMGtR7V5QfG-wrMbbMoDnRR-CKbQZbJ-Ngdh-FgPN_dn0UL5gPPOpee9iAwsVZf7YRBqsj2wp0u41Ridjx1P3PGo-0Kszgli4NBb5mui02EJBO41k0nzzzS8MJ-DfVR1mccTQEbL3W8YDtAXXyQas821UKOcpg7-BCiAepjMwXq6UwT3diuJLTVw2f7sW20p303h0dInGDnxqMzGPfSxNKGXzwS1XnyaptMP70y6ux3iBaE0eAtomWdmTY1eaXhyetdQ6bc879W3TOLI2HOOzbZSqZSCljrnKDGZ2NBFFzzV1mIG06DIYO8UMQiiiUmRspR810KIPtZvl5AQBoSLUJehXsCWS063X-e_14tLzjuNWzjRVBso8whnnhXW_F2IKo9Syb3Um2cDAzP6xMgD82ckSTRUNVtg",
+          "quality_score": 50,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJaZuHKES1vJURFUHa25lVQRI/photos/Ab43m-vU34yJmuaYt93gxbElI_dY7TGta-fEihIDSDOPCLWNs6NZL0GzIt00ZELrjHu3lF2twvzErpRoYgEuDldESs24COQS1smgvUz9pKf62w4oDB8ba30eA0mtbeyKc0S2Rq_7Knnt0u-hIbakNUw5LfS3j8eTy2Lt6b6bQcsKoiVlD3PEUs5hP8eEXvm6_4PKNWrn-gipeLAbSovErXRTRf6SDCAcfxazTj085I69I0-ZSc0uqf7VPeoTbnQe8i3fzH6yHFHY9uLlRqqvk1Vr9aEUrw1jRQMyhZ7_Yyk4YL7rJ4eFeL1l69Ogjm9x_qFM80-8242Q2fcY00XaPuaLqtNRwyerp63duhQATcmMICUOgmeQIdW9iWA6OzhoayjKeN6xLOwoNHCPdqhmEbVp1lD7aS6ur1G4_0IMYkx6XIlmmQ",
+          "quality_score": 40,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "14b057060c2e15f3",
+      "google_place_id": "ChIJ9VPPDEW1vJUR5pnE3ycOTSU",
+      "venue_name": "Apu Nena",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-s8eofC-hrvlSGC9S9yUq_IC_j3yKcvKQB_2Pw421xgBg0n6XZFT2sqLbBTthXDr1dzka6ijsmc1ORCzvUcEhM13acCF0KxEU-XD6UVAs_dVUpyAXge9JT9yQt1kVG326Ln0B4PMVdcqUub_gd4DQ_eO8bkKyv8-3iArAMIlhJDeU4R9x8kaCRGaStVctP91iOkXFo3beJcDMxU_tOiEHl8kRuBCOZBjveD3bIXEbSXdSzvEns4qrHboUTJTG_S3X8R-UgQWLeigxqwzIkqHNRef2kBxzKXJyfNXk_z0WP3bA",
+          "quality_score": 85,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-sXzdkwfYjjzdRIkPTEzQpVYgNHoSJUMjiUiSw6CELK2bpxdPVix-AfAnJkGOSSUE3dq-CRXG9Fz7BqiOchAdjRZMW58_TwyuT5iXV3-qFax2XQVi7kocmqKbjnIuheVZHtgH7PloZg3UK0gGN1JQNx-KTx8OW2t7U0KSa1UJ7KCkeWJDEwfuDSC2ROC65ZlZ1rGw8lpAa-5MwRCFLTIB8G_n1l0n5Uw3V84hKoS3pwc0imMiI18hcqucScOFFBD-j3UXdyVaaqnF3pjkuhAVP0OZckALAHUG6v1pd4XjWqgg",
+          "quality_score": 85,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-uGN4K47WYL2lFo8lxzJPDS03zUxE00zSJ13Cd9taY8kBjj6bNYIolEPWZNizdZseJ_EbGDI3eUYm-L6mCgYat_9TAsJNkZjylZ_YqtrScqM8alzAY5sV9lp0udkljavoUUuYBjL05WBfiNdr7gD4CsiKEwrYeOIDVLZZY7FM9GrefFg1LwG-7QQrLn1Teyzu-RF4_Q1zQOqgW3gzo-rXmEIrwmnLVl8lbM-k_1TGmAYpN456PLYbmjcSYRp4wMTzK17c0R0K1suOuL94kAqRL-1lIaLk_9WmXu_eB4GImUaA",
+          "quality_score": 50,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-sQrxqDDOZC9VSAtHviKsYIpuEanaDe-9jh7Bry32AD08EdPLLzsvF33YijRcmrUU5VnUZL2tiJ4hIPWZKqnKs1CDGw181xb6d7F9n068XYvNFEhe1oZgIKrSLCGrb4eAjQ8Ybzb6sXdM9OoIcn9tb3wfcw_kWeznDc0vgGQqwFGtPEY3ZVhsdj0WoNwYnwQaR0s1kN54U4_FR6hv3iWCLKHBs3bhI_dd_1RTqJm7R_vBwd9QQWURcxQhowCEoMg2vSEnqqaJwfyrUXibkpfkLGH2H84l0D9upxVD9rAGH1z5xPZmdO7e5ieIQVQUfLyeWBtNGyybz4MRD7d8KMjHEspMeTSHE6LE8xw1r5JlH6zFIL9v6Cpt5EGsg3yEcU_PYEsE6md-nE29wezTAy-c3PsmHDXXtv-ZgD9YpNOp0uAuYneWjAqpzwbx2yySu3",
+          "quality_score": 60,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-uLxdYx7zUgGXwE2PUkLpV7DEFszbecYwQCcMuMasSLsjwos0SRrehRxVsp_VmP8KD0btNfSL1sWPpkBGEfBUvdqBJEkO4_8l2vscCBTconAW3tw0RH-jYjPA1HlgwkFYDaceWu_RQZ-tc2lfUDqP1Z-Hxence8MBt7GJHB0jwlnttzU2-9gyV1KpNwWb4CM6iI0FewZFZ7-UVQGOf2zT_5MvyvR7m1nZ4uGwBZg57eYCgKRoj1okymBiifzJi8y75yFYX00p24HfHJm5vy9E9VbsFw-JdIgbjLFAiA8jzdOa-Ge_VCBd0LuvFNenVpOmH1mlZgPQU8_XT4jPO2V7u_ycPk6YQ1oEamTk2GxSLoVfI9Giee42TE-VNERGmSaiSPy2_qsI_bfWIloyq91dvH7MgQk6lt_mM6E7kipsE84zO7tkUdh8qs1kWWygal",
+          "quality_score": 50,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-sGVTjHigeVsyvjgeXQG8-lpxK3AIAc1s9fP37TQc9IL9ZYwk26jDAl-wZmHQ2Huvdm8-bEUmUGchYG20hSkDBWs7C7jzaT_6a7xbdxPMdnhWeKErbMiBwbTgcdCP8r_GEVIoTD-wzGVu4MLJ3CGEMJ1WnxlF3mRi8A3FIeXtNKlbD_8ery-mptwdgi7ZDpoVWLVPYkYQPhrGlZU1XcRUvJ3IHLsAeMbliSgkuA365o5Ac2pvok2S530HpiG2m_YzncQUBhC4ngqdNzbPfLjDe7BMVokUgjZn8W91jLSJ0djbDbfE0UKaAOEQMff8Myj6szEeG-AZ2fLEo4GDS-LWRPlMgyJSgbyDnBNWVT0Le-snwclKDnzBUQHFmdYVozc_maMEsJE4yzGhtyITkt29-GZ99ZUDvP3ALkAhq_Xv3BhZysPkKWxiw7_89ZECGw",
+          "quality_score": 50,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-usezbckmgtSOO5YQL1WCXnFQfWd9R-TM0DwmIKTxKnGuJ4hVjr-C1qDz9T03bHj3CZoQsXP97HgMy8GWGjUhsp5eO6hT2US3KI83oJRoHypDIKD4lVoTrlavXybDlGbsy2IE-ngDxTN82-J4RZxphI2H7tzaUDZXjlE1oxIyGEd7c3bjoQ_gG05vPwdtIHpzln1_7iduT9BZ5UuT7k5V1WzigtUB8PjjHy4N5HaF2sH4leyxFt7XFNaEq85kZEd2ty9riCmNqOQltDgsHhW-sPeznmHmQcJW2Us8VyDDbud3UKwZGQSRQOj7aVzhbiYXhJ-cBuizXfqmKi0oCspIaj_XPy-N9kP0O5gzTD1lx-oRZp1A8h7elJxPjNqAVrWi8RBCY4mSry084SB6oaOQrqjhM2SAzdfzMnT6UZM6gowBr_R5GAb5KR8CwBG92C",
+          "quality_score": 60,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 40,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJ9VPPDEW1vJUR5pnE3ycOTSU/photos/Ab43m-s-VxmBUVJbrPe0Xdzi4iUyfpFA2t2rJLvh7Hej6q8cESPt-WxR7tWhscZm7SdIsg885-d1zw1qY07AZaBYN8tMhJ7Nk4epdZqm4Ncv7UX4BebDEVqrG-k8f3RfPJrXDVJkIwqQgf21bN1gPG3fvs8FZX5NZ5jDjsICzAHxDafJdCu7iADIbJyxahQ56D_UfhdWjuh8-0gLwLCGBR3WketYn3mYwAM8XsOw9sYRzdm4GPHQfYj4Q-SKcxaP63iaq1-T5FdVvZlxboazvuP8SDIQqayIfyj5pwhnMvYAlnfEdlaFxaE-SW1wXYmODH7eSk9QWg7OSXNe9n0QgHW8MHZ58bwiqGFz0MDd0IgU0jGfRYylv5BsZjDXDgkVE3E6cNhgU_3iONGtTApSKc_2OzSePQo3484pmgG6mwMGtU2PSjiQ90IYbg6XZ9Xj9g",
+          "quality_score": 60,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "6aaa462b342c9f70",
+      "google_place_id": "ChIJRz6gfke1vJURQy4TWxMJuSY",
+      "venue_name": "Corte Comedor",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-shQj5a16hPkY7YTA6nCbxa6aWtz5oeojsOrp0rN9vwwMjbVU1P9G88G-XpgqkRRys8VUiFUWJtUsMhvP4W5sFYIvVtA5vQNct4LU9CmRhT-1xFaJ6gn4a49BV2ZmSYd_qoGy9lGrU9zCe4sVJi8vjPmv9kNJf0vJtcNCZXSL79Xc9_nVw10ciNXifjpxRyXm3zIK5F7JBfnCLvuMy_x2PFMfh6yO6Z6yhgQ9_qSzpo9RZcJDl7jjVfH_Xabg5_uixwt-mrr_ZPGr8RH00UXiycmtLMX3VaHK_2ySccSt-_kw",
+          "quality_score": 75,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-sWnCHWpIBYPVIM4WfAtMX2uAFL5XrwHAWKR4BfkZ7rriDAPf5WXBRCWQTog2uUsua7TSuQMHYi_NCuNENUhzv2PB0IJsOF3JQR1XAMuna2Yn_SimKAvkYckIuraV9wXx_n30UJTuzBJAzC3s-8JOcnVZrU4nXEygIAR5A3p7fJAMnxf6GlXv6DRRQ4oUdz8otSo0Isd_r-XFuU7pm629PuWycIShayf9AO5rG5eP3uNDEBT8gFN6p9owysRDcRdbqRxGr0N9FdF6bC7uFOubiywHiH92Fjc25lvPAcXjIus_9w9wAAviNFFtVjhJ_rteDrpwsjkmGAovEOwvTCd2U9Dk7kv5R2Zea-_5v62ubrGLFGnNkLzDMyznJtbVLEMX8ZKhpGxwzeOjo7WO0J0Ls6Zm6szaqg4s43yXY7rYpEqV_iR186JGAjgJaGVali",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-vuU0rqwIBNU9O4JUlBQycW363lZqKwrIYwvYxrPptBhco1TB7ZnGNXpScCITL291XpWiuCNWoziCzOR-cMiNWQ2CZAYiyVZW58c-D5NiSqng4S-099CVlEjKKHC-Osifk7HrC_5lsN3RaGPvqXrQm14SeTgjTTCBpz4F1ulqLtXfPADlx1p3N-ATgy2HsLiId5mt8oWm-npMpZYSJhtqhByOSKxKtPJh47LgyByxUUjBrXmdawuMKpkQxAC0su6YyHT2dN7wOcyXMalIBEBuO512SfiWyy2e3MDEvGU1l18uz__tzO9OQXxeepJyh3uxb-QPa9pBQZ8tyVL2VY2Y108JlbWssuzVX7N5iyjompuy-k-lRl6K50oHcq0eTlNh924QX3ES172-p6_rqs0BGCLxHopZxO1dk8amZUSwPlBbpsamaTbQThh0_4KGg3",
+          "quality_score": 50,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-utWEj3EygI_KvRBVj3ce6Ho-0I7X1vnfFFsGE_a1MHQSBIoMAfz1etIRnLP2Zj4OHbG-tIWSNEBvWpBkvY5NbaEO6bF4CbMdO52rPQ1omssYSAVA5rryWty4XUvAVQpm1015H9wUrYH3vKUuHXiAPdfdejoweMBdjyYrY3IQ0CA7BVkLaey8Ej-MeFAc0ZrJXy2mRajMxHBFTvasvBXxF-O0DDs6Qgl8CHFYICpGynTN4snDJLb1bmXO_1c7oxIf8v87orAD17GapYxsFfvsh8Qfljxl5ZOeQmrndlb3fXfA",
+          "quality_score": 0,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 90,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-sCpZqgnwiZPNeCvG9oSu_kl2n5JcSPSiRqG0qUkYumksEzMJq7085zI1lqMvCARXc-Iula5LkZgI9q_Li4TG-3mVxbqE2fsIXSYiEIDab-BA-TBEJyJMSi66Zy_c18JaBBagYjXIbbLZItPnpawKbSjpN71CQO70wyitkuEbZqU54Y8qP0aYTxxZDUeT8ENtj1maSenf1DeUG7RndrD9l8wJ0XUL2OUFaZpXUjUFudNjEblD-uT6F8A4w9o3Pn9lXYE63kC1KQYorsZe_abgbkKXa1iyz3dxYd3CW_Vge9X0cb8LFox5uCEjUrGbcVyhYpnWSq77jnklnTA7BvIjNqBGmbRw2yMsxs0e0cCLE3EFT1ggYiiRyIZBxPfa7u5rfVFmyagmFcp0J0Wvtoh2McoS7yOMplGvBjyH_ye5oS0ZZKULffx1OrCagoaHAO",
+          "quality_score": 30,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-tk5LezvceUr9049l3UDu9A5KobxGRwpdkr9tEv38qDbgdhS9yGFXtN146RKLDIybUt6MvVWbRvIQVPO7y6X8zTH3ur_qipING_Ze1kt1G41z9UB7BtWVC_2KwKagpNIgVyLoXBkqDLPN4o4HfV59HITAMn9lJKcwkLSmfayA6ypjpS_REqmgvIsyUpKV18IwVyyopJxDp0_m4HRAVk188q6dsNLr2SpZ6Sj92jgFDzScSvdugN6KzhHJKiTmuWDRplPNUw7-zDflnmvPBbKivxw6V8gtDBXmyXlUmtdrEX1irSsceUo8BE_NH9Iphr2KQNXn_PiiADWhJbLO99iz3fC3ZD2k7j6prDwhASwu4b0ICD6dUzRvj7eDvNMH54YFxmku6DXz1YtIgSQ7BQIHwBkl26zw1sa5Xh1Z1S0EEp3aPteAaxCJybkOGikPxK",
+          "quality_score": 40,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-vGVgfaX6AKHmO05cFVBKhExtxItePW4k8SgSuS3mXsbn0ZZJBNWY-BgNP0BIDbraGaV1t9Z1E1hPrDJNsqEO5hwvnyAFNTVyB4qGpvue6llH7MCZMUjBa0yqc6LXAyV-lFYrLybpbYDAt5DSDgSbiUo00Fwg3HSajcPWMlmbp5qstEwwBi-sVshiacKCNyR7KIzfcdNjyMRFn-KcAkzW8J2MBRNsS7Kifzof3v2pKY4OMhtlYkxrPdRTyeAsCVUzRWui-Xq6GnVYBC8qyD-UCKKTYnAz3ZAf6YbzLBIOjujHmpaE4-nLK-AVmDFDft8jR3O_fXq0WRnvCyfKJ3-k6fvG2aiAEhB64nnKJcsT32WiPl9d_JYQlpk3aVTV2b3X3fmw8BWi_monAYEK-t3qldnMmOiG7mMtaIVszjnhkL8WtMjj-N0Z19VhW2Jg",
+          "quality_score": 30,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 40,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJRz6gfke1vJURQy4TWxMJuSY/photos/Ab43m-sR7TmwEQ0agy0TxwSOvRXuqox3aPQy1brHt7OuWdQOjZJ6i9Ur1ZI0gGpnkTmOAobs-O_qZhiYX-rIFPTdhEreA_-2jhhUUbnk-iS2VwFlHZj0LkREzLi1bf7zwyBJSX_y_rkdF6iz2cL8uFdxg18k3vQq0Iaj3JcbjOkp95PJ0NBq8XXxboZTOrqdPvsBRulYmQ9qmZT912SzxiuV4I9pCb1NZN6iYfUNRpPawYxRUAVDb3u5k17wyIATqBObCb7OZMgv9ZitU4OOXru5lV3wNnUAUa-PcFsqSbdnbGUs7w",
+          "quality_score": 40,
+          "hero_suitability_score": 20,
+          "card_suitability_score": 30,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "6124e2c824bd8b04",
+      "google_place_id": "ChIJm86rLcTKvJURjRPk21bRoro",
+      "venue_name": "Guerrin",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-tBx_3U505nVMXowX26F4WZdKgq3P-sDuZBOBHygAQ3zXWG25Ux9qFKhpGbfBktNb25zflWRkNKIHS6KwmK908UIhYens3hWbSTnDWh9hsTV2W7j1uvmNUM1E15fh-mLkmWarCfdP24bTxz62PbNvriBzQA2s1szJQHKau5vlvcXm7Vyh_trsQ5RJBeDpFq1ZFXU0asFr1erT2LR02XDipFS2mo0yIouExJkK3_Jjm6bm4cTbmPpxmY17U5SO6hk8Z3PU4fzdvi8riJ5ydYWY1ftTVisN-r2utstUEF-NhxK3G63pyjGzyzZ3__CHSqWlUa5jDOCiVGm4DmkXIWQfvedgVmAcNNLcNJYEm_aDfJDV0L2jOO6KSQ5sQAOWKoIq9CnGyURR1uJ3KlrbdirtpormXlG0STCObALF9-1mpyk679FQct3lteOwhu44l0",
+          "quality_score": 90,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-vHuv7oYow9hV64Z5-32iy7v11AZw130mj1p4gcNnYVWbXaLfnwPElQ52IcQwm3jezbTUqMKKIOmrE5yk3rQAjQY9yeVybv4Gb4lxi2CPNj-yTkN3FN9pP-Sezgv2rlDu3LrjA98UpheddWyR0-EeUxwyWoYytPbi1Bre5UCnl0Dg4LYCQe6vVKwiexfFIfq2cCZiTwWd0eVxyBU8oj1bCXF43OBlYIFGKS2Op3yK6JBXHy_0Upc_i4QXTOBfcoR8DeYcgfg-W0q-kqH9IJC4ppG3MFMiaoXqZQvo4VVGZXouPhYOmY4U7wNvp3SioSIKeH5QSBoZ04qwVvwIysTlKBQgwcdPYRiuVslo0nCuYikndoV9f3rhhOKUy9b2AcrBi0nKggjrSFdAOS7cAam_8tKxVp25vVdNTdXAc4NVGRDfdp2tnD0rgtMBrsvA",
+          "quality_score": 75,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-txxx2FdrvKPyVwoKiZffAJOBX0F5mBK59KA236y-kt8EF9pM3zEu3Ziky5IE48lpXG_2ocd8BxiLZ4gFqVypYTQkGsffmhoeyAkhF8MggZPhBOJMnJRF8FDFSjeW0aaKj6LTYaX2yDjJN4VLlrlvAuJLH15K9C6etE1anfoICisONGhC44mKWmtUKrsFdAA8dFV1uIgPTsttCNVp3q8YRY4GRVCLoR0h7uUiok1mqghK-yuM94j2KyuP3u3KmEulurvCRPyWb9cJIW-gy6-pnWqYFKVETgrFGD8LUqWOG3nXHee7bo_INV2EPWb9AEbxZI_wBn8Q5xCTOsxSsPTADj3G-KUpDKnnMjZwXPXfkJkLKnnxxb7_cu6Hvemiw8ichYZA2duh4DR76352S1aN6jD9lkLpPatX1cwOs-Vp3F3V9qG4WVFurbWh67rNzD",
+          "quality_score": 75,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 90,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-vnhggVYiKJJfZGKMUToqE1Bf4a3XBgvW1-nIb_pK8gBdMQiqK_h7XlWb4PwdwsL5CsILX1AOQLxu_vsA4n-WAC0iP-ldLQ6J3SDU4fS7V0n_7Z6izOSE3fIAb0eN8xzskEoNIcbRgDaScIslrdsAUcce1pduOOWzEf-5LSOOGdLeHl8-8ZWoMSNmml5GUDNkBEz8F-dtUgRzOwM2spP_DCbKo6-KzUHX157mvEXHMElixeYs0beGYQAB1_CaTapRgkMrqn4WCK65MWE0gOlhiGysEuW5QWD9S1nOjdu-FI9S3c5FtbEhjFLeZlbRHFfO4X_CsrzD6P-gUO-BZUG3IBaAMQpx2p6QV1EuNjUUczsycBiG6W2KAQUJS2oyRR3tIsGdpjzPkr7DF2aZ0-P63ybKnXPj73QtMbP5uEb51XYBARqpVexMF_GtuFnFYy",
+          "quality_score": 60,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-uSEEHCRPAZKCyTsCsE--kMRCnH3sh6RNcZifQgOYGd1XpBH9aeEmCIrtBSBgkv3vmOi7fAWm1o3ijVq4Ied0hIIpeUMSIIqFRMmHPLba_8v4KKVm_bu1n0v4ZGStO6IKX_VCAz69HzW55b6RqIuG4orjvp_gpHjy4eY04Dnl3scoUh1E7FEm9mJij2J9IXC2mqDLakt_m8Vn7TjGGrfs_K7K6AbNA1wTMZYCZFAJeC5OfkdwP9AQqz2dO-g81SNv2uGQo0uBSFkKqEmeK0BVibBrMurWujWIDxc3KwSuTljsbj77CRB1UGppNCnjm_rHR4W8N80Pn33wQln68GxHpwj6SGFSenDvqw3z77jvOmlpZc_WfKbJ0uOjNOLnOlue2FMq_TgQ-D8A92yCEp3sOJlyDOU1CulMMIfGGterW_3tXdH2Ik-srCY33uGg",
+          "quality_score": 75,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-tSjRr6hO3mICpy5IHGQhtqJ64V0JhwGyvVHuR4q_Un3G_dARlX_foP0cTuHQiKegcwD6W6OZ_ghAJOIcgWl7zLK04bsiweoj9rGIXO2gbzjqUjBntAHd6-1O3uoDubvhwEgsnfTF7H1kMR6qJQtULVDnrRtR2uAFb1R2uzsl5Gj2tXSF3PI0vFusLsWXFBR-cWsdCkRqxj58uSRi9k4Xfe882dFCaRlHhG61StlndchUWi_H1_dw6ID5ROPaF47Xb6nB77Z4Lsq4I7x0woZS5Fihyw-OiGtfZc4fV4IaqY_GieepSzmaqCw1rxD9BVWR6bfOCmsvHoRpF18GfXqJAAmIDTnmPGhOhy9X-YdJwJr1yUfpK7JaSO_kMbU4zNV2etzs9kK5o-HGz0PQVoC_WBj2UZ2sKvQFuPWgsx2NaE9NcxqYeCJoLpA8b-eg",
+          "quality_score": 80,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-tg7AXpI_o6Qwws3kyqL7CW7F48ltDIjz991uQWGurtpS1omn2v8EY2u20WQKSCDw1F68xXUiymVkQLQy5-oBXzR4e0rTitEj42qxH88kcN7Vyz6ks5ydg0wZC0Llsud6qdma3h1VCO7wihk9NPrXggXvPnCW2FmEnZm-5VHkeuPW3ERO8VRbAxXc_4m02XFbKIZ74_xpjd_RcPNbjTc7rpF50Vl9VW4bFFZoGBO3j84GMaC6EkXOABO7FtFToF6NDf1A5Kcain6ld_EKyOMa4gEaJC1fADvRiAfIm7a8bYkfzcZSmvpxg2ZQzTY0F5mareNZaKiNE3BVaq3wFD4KDmupeiYeXoa9g33nwJVbiFvxEnN3V_D5A-qJT23gdcLPqZYzKbYfP62AjrTIqRLz6_oEoXkxY5FOOBKnoISiGifgWKA9R35T0xxYPcS8AJ",
+          "quality_score": 75,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 60,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJm86rLcTKvJURjRPk21bRoro/photos/Ab43m-vy8y_PXCP0PVaszEw3KDgSacbWlouhcaHeWSASIULPQ4j9_zQSIpyo60RVeOYpGdAQ3A9dhyfeZjqr0XKPBolAlGEzVWbjW56yaF54fPotIpxvj0d51xNDOY8JLkev1xnRoWT5NO_ifWbk7CW6VtjjPFU9tZOArAvbGHDr9_-nvD48upytCmlxdWUOuXIFWOVt0ZtmPa38M5Ed9otOCWEBIRfB4_QOAH9G4WJDlcm-5cH5iyPrDQnCGyoEJ981IY-oMel5kLwhZTRwibpSFCldOmsrdUKvmVpbmf8We5TVqG7UuOE_JlbD2WFxmsSCwajBqLfNe_KX7tumt_3lXRk4yiVL_zMevYwMOe2pj-XgDHGMv9vogyqq4lZ521V4GiIMP8mBYIRd6h0IH5cnVDc5gq9S3l8svtNKdHXI9LUfLMgkZizyFtjGML4sVqLu",
+          "quality_score": 75,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "0ce79031cfdfed80",
+      "google_place_id": "ChIJ7yoB8i01o5URXijw57yzW0U",
+      "venue_name": "Cabaña Las Lilas",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-s8d6SNfZBZc-NEgUSRldXZEwjYtX6DkfBh4WNBpU5_yaEAq1qh4liRlIDfHVHwTmhjiHH9EAkwf1HgBc_tv_NbI_zL9NQJBkZ85eA0p_Z6amBbacICueWbnnvXdafEwlvmLOA47CeFeG2l5qpwn_9ggjxxMU4nmk1qFEdLTj6ThBO261T3RYBHtEq0BJtWO8NVTkhIpGpNU9TfozDl8hrL4ZxLrENKr-1BotZ13xF3WlSGZebk9TMCsc36F107wD8wpab0duE2du1gEna746YcRi6wHb6yivuGOjrcQAbcyJsVK3Lu6X2K41yDCxXdkRTGvX3IZGMECLpwPYK5qWjrr63miNhldMdJpysyKnYvGFXhLyR7v9cAXQf6v6o7VsfNmRh3YQZ0Hl3wQoLjjv7ixNiCpJy7CACKiukRzlsnsDJe",
+          "quality_score": 90,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-sYeaFcG5u99MHapBBSDY6DA4W6Exn71h5sOZpQh6uU1wIBeEKlMs9Mwm33fxXLDS7v-yGDeuMc3MxRdTeM0uqN_G3pOr63Oe3GFEh46FzH74gEX2IFKc_3wqMuCSROo9Dm_VAHzAmcvh6Rq3MZNIeUGcZcH5hH0Ge8T_vsjaetHtSCu_TWeeal_0WfB4aeUEPNeEGDpeQK_kVkWu5awlBibSgnKt417JT9MT8z9NKnD8IuhKAgKCSiEFvFn9OIwS3cjP9fOS1z6guVsRflhjyiiklUYhXLWAgIP36tEp_hs3NSbN8_3U_RHEE3stOEIw47sttkhx8qdmuu1mvMAEXwIrViUi0ziRIJHZjQo5yhj0dEuLNF4Tuz5hvH4hB29NTWG1C3izLjTK5peyisx1iB7_GzFogu37jTKu5_aHw",
+          "quality_score": 90,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-u2qWaUHK4zZVbfyKgM58DFOGQd7nsZFBWDsVMcvZlVckm1VwAcVokCSnt8TIwd4L2J85XmTqhW-AgffHrF2nixxs3uopCDsfRAgHQ0hX70-PZtrkqyy2w_dEfiix9d-CUJVbTf-MuPMl9RoAGZnHs-lMjXNNISDJEnltcewoOV8ILld_WhrW123CpSKkxtzqnby92s8TLHr4iGObz35Gfk8YjbhrSDB1fJYnZRfs3HdY0heTwl6ozYqiki_N2_COj-hR9SQP42xsGZv5b9A35CosZf-qfQyjTC2rMdNKTHZzzjNdoM3XwZYVzxLqpxAz9TCVWjrUcjY3eawKQHYWn0UPCq1BYeeas7bz5ZsY-uMOSqFnCW05JPfERjJ6eCSP0mnBOxeaiXZAFqSWjjjmU4dI_aeJVo9wulE-6knRD_KA",
+          "quality_score": 75,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-uzuaXjezUfFRqeerktPSQ93-S7YEv1bkLAoqyFBfX_kHY4E--K48eZZxG50oO1C2aLNscUHvdHgt4tUSXO5bFi4Emq1rNtjqRKfo8-YB6hllatIAYxJPl-JZF94vCqkY5rjSihaaF3M4yLtMh9dhdnqEFcX7QcjSo2Go3OwtZ9Kqd8Pp7c78YP87M8c-9Rxr1CaaAT8c8MSn_GVbQYSJbgaGXHElEkPboZ5O9tH2ctbrx8o-CcqN-IVG9bVKPRoitHiY4AG38JfqxNqzCP8Ws8SsFkWmyIe6VSRuohE-eFjd1Kx-7jU_VvKHzfJPelbfmRtzfEOSWjJyrX-tYyoa-5tOTHS46tW0giVqCggNcXNob6EomqShOmPexVVyg4BAFf6HjU9vOPLJh6FbwpkaFGsHwihvDhSUBX7Nt5NbRI2lUiNYsU0WL0Fy3anEwu",
+          "quality_score": 80,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-t401byAvqnQZt7Knjy_m-XNfZ3sn59FYRHCDk7oSDlcKJBgRMOLR5uXhPI-nyOYB2SitKncefpLne0CAX_RURa9mMf57pc_4z1UQUKeNzNAl5AmP59pJvUVSUUeBlZ6kGk4Jtdyhh74o5EnppOwBXjPcTSsHv2X4cqj7AzNsOOGPe8I2X9EC-f2yLM1di0F7Bsr4n7Ij7spqR0sbcsrMZZyFpgSYxOQPYP_PY-cnJ-cXp8veST7MUhbbKlEj5LKUGUbJ_apFzU-RKspSo7vM7wBdBDYIVCJyOC0E2t3z-S8J6JZgX5zarIFhoQ-8uL9uSjB0Mw7wL4D47errzkND0qjndzo4rYzCogcw74di4ons7EhiksflN490WB-L44imm9px9zBbytvWTxzrFlx8-S57x0RdtlIL7-o2fGZaMuIO0CZSX7AIV0P2eZIGK-",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-slpW5-WWZqocRhwoUQRzr44DN9gl8Cwod1iyiQbwBzhTuHsh6y2jpCuZGhrlhFlJfXV0yCsceJDDZcu66A3cuqwRuBcuXXoqVKxtkyOHv1uy4P076gyjxPy0MZG9QnPZ2PafHzDYJvLCR1hrD0qhoyFXQwU0uaB0KU07bl1ZyC8Enq97O59QGLcQ5EdSkPpsCMuqA0ITp39yBrPBB7tZKMsNEODo5We2qgLq1Qhrd_PmPZllM4WJ1FP9H8P_5VxAsdF63Q8mWJXMdojbJq8x2YgUJuh03HMjITm09XsyOXzTWAzeCprjCxUtG2QC6hyi_M5sR9ULZyiTsswZ8a7FL88d8de2om2ekGkoc1aenrp8LlVkT91E9kSnGly3fDMf6s8iX7gWwHQIXKl1ohlkBm1U23UzMzx4cWjdXBoQ-oo31UraVOtADSfKDbOLkU",
+          "quality_score": 75,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-utndUkHABu5EEwzbH8erO83R3Ht3JkbynC2L-7-bC9k6P_-XuXHybo91wR6in7gbwXEJj0vaHccpKT-S80tG5U8iG5RKYakHpWMHhBHHxZJwvjhRffM73cISXc528ckP_ckcOonRmM8d9aAwsTdE1Jx_DGymOzl9X8Lkj9ws2PA_FrySsugwvGxakihYRPdr7mb74f6aqomjqrNPYmN_pAQP7OW6oPVgVHRLhTBZ_z7woh2E7VxaW-V8dSLXRhA4yR6zuKFl_ZkVHkpItsH-Csuji8vXVVYo5aHG5KDUAWVha2q8SXIqZM2KhzPewQShWhWsTFkjNRE77qHARZ5-lRTv7T_6aKH_8dgKgsqZL2QIwVAqc7SqOaKfujvR549rorQ59ZX_YrnnSlS0f5FgzL-ddXwvtBOHzRWNWrMEAd3SU5Bty4nhKyeqsjjg",
+          "quality_score": 50,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 60,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJ7yoB8i01o5URXijw57yzW0U/photos/Ab43m-tu0zIh5CCHGZ0M3hY7VIaHwKvl488W8ZWjZtA7KqgLThEZ7nFKTcrOTBIylo-9zyJamme8NX9nDHyJJ_tZ-bJiexGybiFCKPeH7POQLKLrKmqs2Hq3aVT8Afc1BXk1A6C0ceD5YF3Nt-70qtsZtSSU-fUO9hL4ht1OH069Thm3RO5BeScxXUQjiuRqGHMdiSvlUKwX9pSVgkI7be4rwM59RdIOh1Zac0_z-PEZfAgQIY_IqV6RPdiVWc1ES1otCegEJPGy4SOUrhMxYpTqy5P57UzI4lqGFWO-Xn82Ppp9KEQDsD2xmPXPNnX0b0gLu6inbBAND8R-Nr6NBq73V2IOn73YUF246Xk8y9bGG4KYPuuxJL-i7CtoMgcZ_8dvy4k1PCk7aBV8r9xdLysMpTP8tE0yzgcCtWDwdrUpXQvf6p4UzLJFL8aGHO167w",
+          "quality_score": 50,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 70,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "d91ec380feada0e8",
+      "google_place_id": "ChIJGfegidK1vJURGaueRjMuAc0",
+      "venue_name": "Vini Bar",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-srd6-JcX0lTINwPaBJ4t9Tp-3ZPfduaBN-QRi2t-wqriHk8JGohnrhQyf-L4_degqrALU_R244WIacR9Yz4tqSYxcqNxyOshEMurQ3rbOPP8rqzcGL4s61618QJBIcTELuqZxMey5Ln2SFKOUyw9nH5-c3WleDb-ukRGGQjKfr3FrHHWdmjvmKLxeiLBYngTSR9sIg1y0hXtc3e8b5Q57zQ27v1dYndMLXiolyRiLLDwUF9a2bZcIpJHD4pYOasDYD-7BfaPs6zw6tMJBjxFzXm4fygVqZ2kUMbxq37QH1kAPq-Jui-B1vMrjnwoU933Cxour2dfwHle8DJkkX02yIq_BjVcXqwfbI1HW425pvSI4zSlsd_hNj-nSegUGWU0MFbLsvPBTautqY4-Jmri7fE-XwqY461sLXL2KtDMz9AQ",
+          "quality_score": 80,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-vbDkZKYDZeRyZUPqD5iErtI8zHMgm5U05_U3qUhZ2C2zjBsxsRSj9SnzpO_WzdMHRfmf8glFS8IDgtlbPakA9KgJ2HFbnP2uRZVs_LjzNG1EAN3wNdrdQuTrw1RL94diMTv6WLZljjJwchyBeQVqwvc94jaYERLQ0WcrxYSGwE2bSA-IC0-CmXZ2iwTkvSDyPpz1NUZN-P7rkWvlFZmZgEqD3kGFyjyon4oTotS1Slfs5hlqunJe5vsDky7EhIBAKH1NxW0J_uDeI9K0Uu7Ad7i0WLO2LpP0U-y5Ds5Gbzq4TP-3w1xRJNeKo1vo8XgVV2dRPTttmC3WECnAIjApkVKHaRQjYMqqmi-HH--QiIJAGuG2vnDsbCHZngPRJxLM-KVg8fEjuDKDJ4GZqJJOhJrQBUZiXTzKIzpzl4uF1oQYT5",
+          "quality_score": 85,
+          "hero_suitability_score": 78,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-txY_iA5yr6dXQCwWsPxw4Q3LJ5THYAJKvZq2kfg883owDDNofjeiqxPNPl6_FWIpM7RyUVS7OWTsksOJ4Zq3rBd8z50kTlOwchNPTUzYcFtQOO1yB-FrkLYOsdQiImk3kaaVMBsb7Q69tgBkXSvlu8gdOjTCtuxHFlOD23T7KmeNwPSk0D0G6G82o7-Nb5dRGyY1MVw4nRUHcOMyA1RaX5CIh0PrJwoTYqwlHwhGMfT2CqGFbAZfuQ4O6evcglLIyran4YaCHeUYKg2nA6srxARo1Gxzi6XhJB-7JjnY3YYX4ott4c7ziteYu39Lplt4v-Z2o7zLdrlCS3MruGFZnwTP82cOJBi7V4iRtCUe42DpunXQl__i4X2HbyPsG4zTDUMC43la3WZ1ziRwUrumG13_ddHNP_AKu1NYXK0XGrCIeFHWJcsLtwMB03qumQ",
+          "quality_score": 80,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-viqM_yEGYl3-p7e4vS2ve7p1zXTWt_Lspl-oq1SL_OailsJNYYE2d6UpB5P7zir5Ogvbxq8hrDUv0Kg4H4s0Ybikd3XlG_CJCLEJdRfvZAPmG03TdnOWEIFDjsY2q-k7gM-IX_Mqqo9a59tMyzTaoKYhTIiQeqRx5Hb3huy1OeLlf20z_-h9swdd5yaUNFF9-lTHVtxPc9oD4PxqV4NRFq_E7v96axvjcablPbBxSZ-flUC-6FP0XTbqOxaleM9pFpYx4gAeygJYW6X8Q91kgyyMg7FReHl6Vc5DRzh0i5M-2zBUfqHwI7EBBKD_a-kQ6gs6-tz35EHv0HA2RPia4grUvPJnhM0lmCSymPXRrtMVtWuavkQfYF4-BZEemVJiHlkp689Qq8fioP7qJ8kawjh2L-Y7iX9wOgwYjwex6EY_ql",
+          "quality_score": 85,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-vJ-Yw_cM12D4I8mRG7S6KfVE43aCc8sHSlT7688mvia7MfV7TryIAX7OymeFbGeDslYvme2ba_i57cbTgRpscDA7iNXFOLoQGtHoh0qh_DLYHB8krQ4BMIoISryI1fOWs0GaH7g7Jgy72dBwjINt5CS8GEyirkDvBk57T3k8epmXNfoArRwYlSHk66szPs0KyVgPdjqmzrC2sqQNaMFoycG-ANEvltzyWeOwBKMjc6ngCNvCKAXMSa2QRK4EQXoxr_EYix7t8DAjF7pnoLjcKlOpvKxeGCB5s3L7BacE0Lss9X5UaPO4F9ymLdhsE0tbTPxLJ6XbhahxXsGnj5r52f1nZbAKH8wVk-AWKxjA2GiHIf8AolWXGpGEsOO8OuHIcAhE6nFMqI7yxd5UU6GBOU0W8eMd2rEAzadrzreD8",
+          "quality_score": 80,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-vGiDk1oEnHzuyjrNUIsXwsK9kTak64B5cgrhOIfsOHOH5AIEGGkfAq3qXyqKkDkfwQw3GzuSvvyQWlYUnzmTaObnCgDqfjmfmP2ZO--cdeFwQnfwlAmcBzdRtFVHjq5kfZEPFwBIXyyNIj-_yZM4qWsUquxSVQShckULXb2fbErPkkyFmLx-FFFn4e5kt6FVu-egIzavu6j53I8tSOEXFr8gZYYpr9fpb3dLO4ZxXkpCtwY9OVFDsdHOqVTd7Pl9_h3OXSunP1mKfZu8g4kwJr2wjx1u9Oxe_kQ4tgGJ0-fgk8cdD8mayTacWRjF94vgP0dVbeIoucF6am-njLJSfJ6pi0iuUgTaCmCOUBxgw6tnLLCI6STh1WrCdyRAdH2f2xKyEXRdKQCTF2KLEOz-AkXCqWigr0--d8nIeESNxtQpih0jlqxinnxlBEAQmN",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-v4k32ZCzRk4RphgvWTFnRuIMx165eibvMFwPDQkRn42tRjcBmxiJAiPcJRhcRspEtqIyR-SngDJPmId4it2Z3P7WdubhfHFDNLdkhhMruT26mC3bVlJheJYTFT_KXFXb3mMbI9467hdFU5Xc9pPiK1rahpsshAzT-aTWGj0Q5hnKAfol4W0bWABr7UaAG-7z3Q9pEUpAJnJeJRWjUJAZFpmxujpB46Ae8eOhadMCPbz_dxmMYDM2gHR_IichlzF_088dMxrieabM7mQV04yp__Fwt5qXuzUP0RfhRiPtm0O8QSYaQMHpOIk4fNzaHqayBCc4cGWJXA-XUoCrvqTGxKmHY1pKsLamS3Z-b0lRuZ4tEfPVORTbWQGhhWfyEY-hEBD41yo6lROsBv3LuE6mrQZC72hag5vPx9tBu6DdxGacR-",
+          "quality_score": 65,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 55,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJGfegidK1vJURGaueRjMuAc0/photos/Ab43m-uEAZpgOyUxeTK_-j_c_DLEJxPksSKOYK9O3ocJrrjwrsfhW4OILJbIIpO5lhVHNJSylUkXKOz7XKJ3ZL3YYrTGMUzCPmLrJbWIrAYY_90eU-4Mnc6iMfFoD8e3VvIV28fgHM-6ASi51v21T9ThuXhR82txrxLL7etHOo0TzI1USWWDtyXnssQjJYM2kmL0GpYkZeZ0NWL4pHLehgMc3A_Z9rZgrYOd6MvzOKJH-ibpGjEq9KKp9w1eTIOk6xL0IQjJOlQLq93cmWDjoiYLLfB_gxPZYcCiha7FVJrfInQ5ILotXgisArnIUS57GzTnMvuMvXRed7uBYQMg8efpViUHlE2eciuiivYwY3S4vhYJlquHTJcUhmMppz5L7Mmb8bfMQaRvojz8uwiP96DW_EVUbXk6IysombTUstHLsk4kGQ",
+          "quality_score": 70,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "bf3926a3b0d6ae9a",
+      "google_place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "venue_name": "Gran Bar Danzon",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-sMj1294lhvONfQMV9bZI5GCClVY6ZXiiEPdp995QgQJ1-lbfLul8MkZ86WbUepRmqG7nOctxnmjts7d39BRKppyscT2Dy4LqB-BkFOYWywgvMf9Nye6Uz2iPvyxMYFKiwwgmKwjZ9_ulSTC-v97_ZC3nmH-XcVA_CULOGsWePfh-RI5ALvuvi2FMXqCP_pz-9wVvpwvGoDiL548IdoQlDKLMtETUbKbcrxvfs8_RU3JAvfqcaQxVKwwxVQM7mb5jPuARpYA-ulAh-LBDTTvjBXh_4R1PVlRp3WMURft7H5-vtwOh2yhbBBCiA_3R8uj5oLiYBnC-152kkVETKDhLZ7MUMZOuUTaNBtj56AO9Wa-LrwT8gqfx8itFt7IGKVH1cVtzVqVgUBjo7WpKuIFpI8a2662R7Yo4_H1QsXHkhlq3qP",
+          "quality_score": 90,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-uFmW3C_1s83qQ9tbw5ty3vTUGpeecL449XLYwtOlLwfHD3AI4CVDinukgknzbh4Zutd1hJglXvS0fqk-WAPBpHvCpnaGmXet8MMeQUGf8Ox8kpKJywvivsLBXTHo2ekjaC8PTeB7gOyVMO3stV1fHJkbH7EI6S1xWCTS0Dv-zN549af10bVLgkp3cD8RDtCh6SCkgNDEt38OWb7euVO0q7_nrggvwSIiifRdHblkABL1BVNZbCOOWNXjNtEJ-IHffC5BxDP9Zo8grYNEHH1EU04xXKyWV576_uRpOjVpmLsfw38S3UTMl8N3_uVLGQp4etg6zqqd8MnXbxVLVxOI50olSj_cuYp5WKmPMl1WMRcyiCVkT6OXYEOnrsj5_aFMI6sOd7P9dTPdStZ9bpj452PBz3cyHH2tBamEwhOXNUr5TkIggaqm104FY5Rp5b",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-ufgSUVSa7aA4gdaQBLiq931QijwtF4y4dr-YCjervYsIlKSGRARnq9w5OSupGXmimTndpWA929neAPIIlCgAhm2B-ef_apWEnCu39WZFOx3RpCNAus5tPSof4Rolr3QeyJJByU1chbwM1luW_gEvLnvEzFMARK7HueOAIT9cD3r9-4uE_SGl7xTVpEKKqMEYeZ5aRJG-6OPSq8WxgVA3a9FNIJYmIzyrlIx-VgoQDgVPhCAbScM4RcTcOWicZwq2P9W-N_Z7fZ02gm5sr8rXWVh_R68iHt5gunaKii5uqYxw",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-syCcmg9v-B4-klIZfg2F7NBv5jWv7txYwJibx42TjOdINoytcSDbIhiTv6fU-F1CsIXHjB_n_8J-Zq_rXGcn2rHhjDSSUqjCTRiAxl5ZldvEY4VhklwkdQPH_UoZUSMexKmVdihl2JYRaniuLr0ibzvnTuTpX06KCVpYUw90u4-C0t5K5368B-ieJxYOPXY8u5-nI8IGBkJgplUgwuF9h37k2Z9iptZ-E0qxaV9aNJoPq1AGETkkHD3Sg3ydDD-xnKpMHnYR1Mq2rwomi6rnNNE1ABdPmRkhbQB_K0F4IURg",
+          "quality_score": 30,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 95,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-uGsO8qAbCq7OhUE5s_lcJsRt-JPgLOX3eXiARozDsMXvdswuqUFOC1gu0GDI0T3IVNU15cKbVB93yM1tTm4lPzErolnYVAK8Wh1fHevP3QLFExn3FhVX2doH2BXzBvMnt8VMYBkkS3Lworv6bN-RgDxcRoY1-ScSYY_3tF-f-xXA3mftksqRO4DPwL1XRaOw-iiMwQmd6pxdKw0vNg6TDmI735GXVSmnlIedEWsLKd5cnD9Binsk6J2glqizreDSyi5i_97uULEYlc4CF7dcPuho0iLv3SF74KXzWI3pqhxT6vEcOMyf8lEFxBBQuRFleVAnPWhtRDS-lpml_c03Fswz8_DQwfCT6fmum75eIVLgoqc5_EudEQqfRmkzKljKUrPZgRx0xstK4p0XXASmfhtQo809KhtOiLDfc_DtRPil1b24AXLnn25k9U20ph",
+          "quality_score": 75,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-tDb4gGPvImWvWClHL0H6OiwD37IfWdfP_cAb-yURZLVr2ICZp8IwZCK_Y_zlx5iWLX68wW6uEFZNvm5jyZQ0j6gen-YNkt-rtI7kTlJjEOGYXT4lNd4TUAKX3bw5ngz1tHFeca8CfVASFGmD0Gi9Dce6KPoEZTNUUJkOHsa7B2pGRcTcdpH1hXa3qtuigOk8CreuuW1wfdrcSieb1dmMXrHOQ747RMg_ILFRmkPY2QAtXtQJ40yfzLl9PGbUXdvnqyy2sPNsMRywW53nnnpIlRV_YQSWpFcNXJeu0LrL4lAWEh1bw7_0KrEX9kggPcm2U67MUYrI8XP_elyVwmrSND6YGbt-FxEEBSECx_gF3_OglCnx5V_cwkcu_tz0KYzXxWsOUVJdFCuvBmRMgcAX0sbY5Ks4FJM3FaJphJ2aTA6EctBZGqQzMoo3ZaK_Bt",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-urL8xK91t8GNgp4Qib5Fxfmwg_p1tKtab0MoSwRMPugdFHngTT9qk7AoKTp4g_wfcz4wwTkaJ_4AfvGBBE526WEsD48-GMWGlx9Cj8j3_8oqpQC42gRFkAgs4ghn6ORoy4QL7NpYX6xFCkBFeo3fl7B88LtauUM1pgzOWXns7ImQNpDiGu9a-xAFc44qeZmwsCB8s7w1axNr_N2wj7rSYouqtHbwW5a09mgspbL7qcr4WvVlzvMWJe-qPgKlmtl8ed6ILIxpiUNlGMp51h4nASFH-27eiCW9BTYFaLEABmoOXChIUwfEratTbgzO9LSW1fupleG8TBiCPnUExnGi6UDr8Kzxe0rBQLzmKJrokgzE2oL9EYT4zuzdquKn0AXM-m03AVQMI39XNpMRdGlTl9UILIrO2rwB3DtBjzdBhLlq0",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/Ab43m-vyW8J7SSABAzMlE7Rp3lspXdTA_cTy7oQnQesdmK8JDt4Puj7eZ7p6RKKb9xY-BYiPEeDzg-rEzjKlNcE_UBFDlakASL2_JMitdhEf7JuUFpqoTIeXK-eIJ8qE5OzO0cfkaqpnfxtfV97YuiU1H95qKHGZ78Fg8bQFesw-zjXYdOKHFz_hmUXTcDyQtjNKoaOng7ykTtSxo2pQUi-9R9_BIZ7tdMBuZnOFFkWyVTCU3kufysiuXf5NbtXvrc03XPrVU-sMBH1-BSDXYzRRXpR368qDFQSlwOSzR1iB6X000tF9ZL5lxLaY0HH5rEdYFUfSiOuM4jSi6RVVlK-iR30b4FyztB_O_Jf73jSJp1jJNzMAzcU6jPka-ExPscJPLdPejDY1HGaJsYLt-uglIfu89IHmrhBLuxyqjKVrfne112En1A1mrR3Te6yTAeJv",
+          "quality_score": 40,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 80,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "bae6687c67a7f35b",
+      "google_place_id": "ChIJy4qUv4q1vJUR8rayMlrFSIg",
+      "venue_name": "878 Bar",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-vaXS3Y9MDF4sbhvAs77GoYCFc9TIyoGjUxgMXuQpmCL7_sAiMlE59G4puJnVAwxb4QC0sK4-9Gw2hI_kDXn5pQbbAYkvgLsFemSdxvE3jyh60DLd0bM61MnYz967CKOEHRuTGCZaqeEihsI2kpYw1YprRssCjsGhumle4IxoUqmHlg_dwp4Nj53sOhLDkYt-P58m0uqniAQqmTXyCcvPLkDkI2qYdoY8hC_IRw9Pf9nOc8o5gixZ1ytjbmwRgovrtH3rFXc3wnWnxuR2wpaXTtSdFHZoF-1b9HAZdNqYn2EIJNPym3uue2vsvZLP6OV9-v7cAxnJMdTbKp2tdebbZmCxRpzWnvjKsmbxuDxR-z_N85jC0tWZeVEFoiKg3xLneIB8P2ky30OJuHdDcEn58i7qqIR_ko3PEC1-vTG0_0Wqc",
+          "quality_score": 85,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-vyO3d40pO32PRGnELRdn62B7Wh3W0g-93caryxuKQaGW-CKTrdtNTQ7CSOXuVoI0JJVKcUnY5XcCjMoy7FIMEHit83H1Ewf6--RWOH-aB1fNNKmXjtyTjCpzj5R15JrYkmOdq0vQMQOACjIt8lLVUK3GmrOEg8Mt5Qd2WyySHaPoKDPIf-wqcCT43Q_Qm5jVbCobWupbbJwIz2svbri1v-kjvGelSETQBxgUZ6JSLKZO6ec1WERoeTjCv2m-vKCtnrwDf9kdLN3hEllmz3W8o3bkKJK6l_Yf6no5mKnv3jGY9BPK8jgVl7yx2iAKa4aLFX7sECjG254v7b1rRJ5wV150ReA--y0VHetcj8D1aC-xqIoo3zAsZtqcYneD4CCmQTR_SSWOAm9freOtyGDSlN1I94OtyzLEZjFC5nMXvlGw",
+          "quality_score": 85,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-uTbopkElmuAdvb71ewUdxNq3r-EsaDr1cWBIlX8XBHZ23Zpw3ff7ITdJX078VS6-DzyymOvaOa26WqOOnskKpr7aV87Tjy5Biio6lUBuf0YmbgrBio7rZ9HZ0MrpKSB85000-c0lJG7n3nKbtZl2gEf76ekj7e1nEoRhpkg4IrtLzksmEMvcq2775qMJ3XP7etVSnUr3mPVUHYqMCONntHdz69m0nr3RcUy76NOEr7Zlp4jHD9zKXWhCIPBQJl26cK1-U7dXJVitKOF0o8M6VvjOA_0iIE_4DSeoRjskql76q0a3WQtRaCfiBI7x7ROv9F7iIsLYLFrU2ZeqeIPDo2HW2ILU1gB_33-ibwtfZaXIaFbzkb5VRxNyGIMM3Bc1pKhA5p8ykkAZoNsBL7TTA_0xick1oNc03JYpDoY8i2P5mMG9bxQQmy7zV5h7Dy",
+          "quality_score": 60,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-tEqtK__U6rDRynEePDL0zOUVTtpppjAtAZseQ1--p88gefutNTLUXDglmnG7YtEXxBzcnJwTgSoup6c-tQRRkd-NT2lR7AvA60KPwnvlTFaOM4b1fwGNPYLUcuvOnF_dnwt6WFtCy9O2clhc8vWc4oquoerIRj6Dx_YdCqdjhL-CaV_0Y9BRyPma7OLcH4Qj9iO7J9M8e_Kg2DEfgWQoiT1i2gU3f3WU_WsmkbAoj17UZwPjeaDJbbkAn9vLVxECl1RtVOMnmdlqPZVnBWiCfPfJtH7mwYb5Ur0SKJBjjwXV08f2o1YrE8v5gojzMTUkanQ9CWslUVScjJhKh_5dxWA94zQt2NNWNOQavd1fAe9DYVblqacjeGhLFgYynOlBkCHiMylhZ-ocOHC_GrVZzU5ozo3OWlPXwtRTGxNKf4kA",
+          "quality_score": 60,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-s9ZLgeWJ67Xej8yjtukDewq8HiKhu5JRRhjXLbv5y1VTBiP9Ddams2matad3-YvqDKE7g5mwdvG2o8uu4XqTas_hs5J2Rl2LNRvORr_QE3RSkkXRZQCWI7Umrnrq3s9od99uKVCcNOfvgcxqqbbbcHUjmF90fbc8tS6USILOx9vN9rWMai4wQz-VGDgHYv-V3xrHshMpS49tfIwYKcbtuwh_2rj3pGVrLcmM18jcFA71jbeDpd05RytI9JxjnWVjn5NYX3UkhozEJPfJ3TMiW7BbiH6pEUq_OR-IltLATPHg2Ia8bWJMzmBbIfoG8f0yeNNIvWrykMBRqk10IzfQFQfnbBDtn0XcigJAfFf445RefpF7wdmMB0rENDBjHP9np0XxgGLU8JK6vR40_H65itzC74UILCqdyqHTcWt4Bfr717jUzFx0r9xDHFTjOA",
+          "quality_score": 80,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 65,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-sxpokf9JhlCrLhCmswxhazco1eirUG3x7s4urWb3624KMjyIfSmwEZJO54vXlRZB0KdgC-q6Au27kPFnSB1PGey4vGzfX41BpLF1W0RmxZHjYaY2J9n8YLpPDEUCjBiicL-U-rbB8asbHrd12yDwWxcmK0T1nx12SpJMxZmpmwp17pyeBFJCDidPXwCAVAPaLzpPeA_YZ8jfvAI54jPmdXyUx4uCnqDMTWtzEpu0oWOJdnF90IbmSkOLx92rKOcqVazhXYdHSPw_IMtnEfy3tocfZ2hFYaYmOuCJhUw1HwOUszN46njH8vDxP8Ew7xSx9c14SU2AclMLgd53dp56IRKQCKQD392nD9fosU1X5qSsBX36uB2VtELV2pVZicWv85_7Ok8hzyAO2YbJQ0IUvQZoFutOE_Po5ltiON9Dll-d6wnZ1Fcg32x2nhD4mQ",
+          "quality_score": 80,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-sM-ReL1RX9apc0airO-z7jEER9HtfxiiHVebs7eMMHQqkvtpmMYzeBil2QrNSbdmP2nUaaQeoXea7GfSV1ijfihT8xS4KJzXrbD7lWR5HmB5zppuPJn48wYbU0vqlMGmRtqVDUrUI3B5xocTzwLjGlCAHk-k90eXph_S_Z9zBhM7K1zYn0J0pDJ-F9CQv_G-vE9sBWrYs49Ypj64Z_x5-Dh0x9PFnWvulPp009S_3RwOrGxPAlP30W7Xu6lYkuQl8o7HRba-tGmAdronSETJ_GZdDm6dpb5qCJRKL6W9CV3lyT85Igz820RYwVhQc_HeLphUJTKAwGzCPObLxC4L4SdKcV4LZQstszk4OM9E64Zvl8_eS7sUlF8-lHIH3cOJlRyBWGBgzQkVb0PQxe8hk0Ne-vjSKWjMTTgXL-f4cTRZIfbgwJqs8I1VIzxQ11",
+          "quality_score": 65,
+          "hero_suitability_score": 55,
+          "card_suitability_score": 60,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJy4qUv4q1vJUR8rayMlrFSIg/photos/Ab43m-stNb7Ufod1ftJALPGE3L8Rt1402erbCwgYsL21O2sgrbPvkCFmkEOWLsi0l1g_MOXI6iRkLIlyYjGgpRSx5XZAxxB-B7EM4crjD1-H92dFfk2ZrZZPl-tyrHT4sseSzqrKR1uxggL1-kwV4q6mgUq9qnuVaOn2aoWht0wy5SKmEqzNZ0uOSXRp9kHJ2Siu39LUn3K_GevODCPNYiGmUymwVf8-dr81I3R5--zX13Ep--efWWDgFZzJaLdu6C65kyyfgL9xUM3J-RYv1rIA1FfM595bev32CvjiESnlqxxLmPBlKQ6tQwQASQuN3ajMB0xrA8wMpxs-fCOqYHmiJWaM_AkcMHffyFpZsJgfBWF6S-vjxuJtT88kfCqTVsJQet3GFbtEJoF4i6qQa1GmfhrQCpXDiOp5WI2ZPsvE_Wfpsw",
+          "quality_score": 65,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "50a0481f6eb23fea",
+      "google_place_id": "ChIJT1fyLrnKvJURP1-qNQDw3Kg",
+      "venue_name": "Milion",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-s6riYOxk9uoi_RykCaH50V-0Wzn2xzV4T2nbdkKy94GZN3AJuqH2hnZ1b5ttT2mEC39HPYdBNSpnfYF9OoTOPVUzk-VxYPHPh2nCHkSWSQYdnc1k2gjUVsYKjeZmUSdqB3Mzg0ILR6Fr0cmZcWI5tGWQzQdt9GTRAQJyuf7h_Glrn51oz131U9ULuqti4vw0WE_wFZxiL9-2cAMMHvzAy53Gh9Vf1pZCSvnTiLJ9wLwbbQYg6qnUyMtRorA2UtR9Fe7oBeODN-usp6_QhkcRjG0Ojr1g38mEf29w_x7aBdKn4--85fbChr-jpqPKknCD0fiAfUD0NTSl1J0HnIGRyKMZv5JEXG_Ybs5-BC-Ar4qSY9owtW9_GLqE1FXED5kgz68mF0QwSTrYn767yqxRcR7C_rey07WdONoI-xKqnMbV7NYZ46QiPcZp7UKw",
+          "quality_score": 80,
+          "hero_suitability_score": 88,
+          "card_suitability_score": 87,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-u-CtZtk66wzTKOKccxHo3QxWJ3LfJ-hpAu3xivdae55M2RCVLIQf_huvIVzBtTbHhN__mV7CxrPr7eJqGBasVofIHKixLuxt2Lr2J_rqOsXF1mTq55ctEHHcqBmh67xnu8-LD4RC2GeU7_y0MEtCN9Pk5s4zTkfFdxflnWRZisqus91JAQ6-Yb7i3WxFKvvye9CGzSCmKqV1I7moJ0p6BE0_KpI9Ah_q1moXaPt19luwtzGdIifYaVukOElWP8cPbi1RSHkUUCoTrTBlEbDx-mLRr-1JfH2KcavDJ4w2SlnT9Y59Fx4VR1usLCzDobTz8XE4Fq4m3z-uFpfa173O1iAhUR4QejX_lI8cZtgA8b0jbzCwDAJkBe5EpOcQcog9fh4rdQ-Vx1Rxn3iZqx0oa6lsMrQzPRH21k2bQTaGzBwhdUR0KVL082KNZUePm5",
+          "quality_score": 90,
+          "hero_suitability_score": 85,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-ui0GKECL4uo-k1R0QVlPpPA82gb5ylWhj7QGHo7bMh0rzXD-xG8vmZ_5kWkNYejknazDs9sq5Qgn8lb3x7ZpIcUf1HFe6ySaPByKMnfJ2O-26YzQ9WY_j2B4J8OIdjU5kIj3uam5QmplhOa-eVxdtXldyk2rdsjypIdA--3pi0iLrZQfJ2BVAveX50BzVFtbELMNSDtJnnYoZliK9-JLOARW08BuGAbhnUF1QuKa-vejNbugggtQKLReb6-_U5i3yemq_Ys3d_CzwGawLX8BvlQnRXdPZBLvrMNpRXpiwxB6BxGOrZvHkUTMaJddoEEw31g8SNdAcGWA0ngJd8wUR9y-w9twNlNQGy57arMoNtFM42-ePLfeKim3w1aIQSmPSND9Fm6VplmDo47YNtG-xx2M2x6L1Hl4qNBAxvnvZ6fBgKh-8PtH8m7i_dug",
+          "quality_score": 95,
+          "hero_suitability_score": 80,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-sNfSD3QA6-QGE61XlPSujNB5IINd6JSV03N1DWA2IFQ8K8Z7qLpO4U3WZMYjEqavCJC6Lj5NCwMAbuCBS1phCSs13RgDGPrsnkyVPOWSODpJ__VgivftFqVfalh8xAsYnIn0ExQeSBrHFMQeQRWC2GtXxIFc9D9E3-krML9a7zh9KcOabUFwq-D40N79uosF34fJHl_cWYSIaXUSB3vKwYWYfq8c97qUB0NqY1IGk_w3xj_KQmlriI8bnPF-osDA6IEOzwvGaUIfhqc8CoaU_4H5YvT3TaK6l4EHRYRFkPqRfMrf13bSsErxjcPEd7CCv20knn2JPgXyS_13nzz5OP9d-dtZ46kNnmZAEOdrAcAZN83UmzDkCSk-elp6ptj-UJOrYUX8B5dvWxGnvV4AAXMOYKFkq2kjNV34RZ_Q3t_w",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-sx_CL_0ToQrF84_CDGBcXKrLVStbw3WgGnDEg0RowpDKNcYQi2VCE4-vG-GAjFOha_Tu-eeLsAiKnpe9yLgeSkGLPmx6HSX7w2UDR0NTlL318crAfcwwkFzqtI4FzJmOpjUcg_bWU7piDCAdAJSzjTx644eMP-DA6I8VsLgCew_zDjKQhCSygf4zI0veBrgFJ8Ed640tEDBc_4Qyefl397Wtf_dJhkrbMUoWYwTIbaGZOkbmCJVcp09T8rsXBbhJVqtc8q8xb8j8ZbOvS7_ByxKZUUbW8eyzqkcJtqaF0TkKjAKWkIasGWmY8lee4enwHdxo50GeswoBHtHHfZ8IhGQ7yDrcQlvQlLyfaniaiJzFHQ5UVT_OzMUQfIaDJqED30JLMaEkD_DXHf2Yb65dHsa8teYyNhBW1IhfCjygHz3IWTtDM_CPC_8pt5pA",
+          "quality_score": 90,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-sMzkYCv9BkNpNVINMsyuscIBtP-9BDkUcU3ySoUtIrSlUqmuDqKLe77w8eDVTSEIaqLqUXjcBi88fTj6JkKx1_QdodVqA53rjclbZULoCpT7wUKhWzdK01weU8QB1PvNnZNBvVwN_b1VtuDAD3P7SostubNyD40IqHCnTDKa-8HEa-_Uxx5uzo9hOt_tEH2fEPcZBf49TQo_IC97zp5SDqXs9TdCJoAHg-MZRvusJaH2DY8poS96QwKr7QlSIRH8R91B_c8fjzLw4ND3IHdhlVJMY7ZjCJ0-jPjlgzpQdg8p3pNLO3dIReshpDH7btuEd18AGnlsN0zM5YUnYMr8z_utVtxmXnwiiJjJGD66fFZsfqMZGqIUSnOtwFU4lprHNvuKztofsB-S236Nz9RluRuZVdtqa1q6qDKhGxLM3yXB3AVSW5A1Kz6k1NYNl2",
+          "quality_score": 90,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-tbs8LlFlrMqJOIVu5xDhBd4CbfeVTA7ciNx5DpjIQcZyGNtOzgtc3n9626pWhAeQ3mUcuAuDR9gtKfHKDAMQVbUaIxJyTW4BibUFaUJJrJDNDYmYnTGcSGIl4VxE_dQ7wetKnEjb5LrwhhFmXv9TGTs6GW-jWCCUE6iQPkoGCZ-zbOdhF1bgGKuYCrzeRfD7TLbsv2FlKRHzXNO5qSUePpkbiGn05iR5069pVWW_TC1MoPZH800RiJJSsoTGuTphshky0DhtN3zsHU5DMKfnK3WfFtBb4JB-4bMWLO05HbEhzROcvQ9-JA2EBBfpdVU2Qr0sFS5RKMGVkvpHpTfVgcW8TVupG-GWbJRBFymCx2BKvXCaQfXM5pqxQaHmoL5g1jkFCbmvkmVlgJjwUcZ_YLYKssLGSwMccRCCg_APZTmKDmb1aRkhPuKE9oAAIf",
+          "quality_score": 60,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJT1fyLrnKvJURP1-qNQDw3Kg/photos/Ab43m-vn7iCNlNPVfHWyjnhwSBkdNcQFXUCx5BWAbFFseRjfE4XcvXe80icuCoYy4TAS8Nhrq9BG-5CJMrAChuoEkX9NKxN85UiDgwK4hXtsM-Fhqo2aVwSJoGxftA2esrCHx2os6Uf5F3-2fAfOutny6s04YU6ZW1Vnqfp5TnZKlk_3BVCq___jcQAWQUmqu2xWqXWZvyUalbHTlYGVqD-VPPdM7HTuz9rA0DwHyRPRe7OuO1KlwAzTpgoiRsy-o6qVjpS6QscXKP7-sEx-FQM6hlwA_zkSdkvU_PY5rc998XpCyn6HCo4Yzyek2HbNOoQgTf_7eX44Pj2RkV4WpSGHD9uaJnN57rR2MaKLAgIu5po0H5rSkf8PELEOW0FErUaeUSLyZ6QRAGqBm9RBSsxLKm7U5O00kRLsV_2wQMx1e2NxUl5DeIaSMaQ4C4zk6KtO",
+          "quality_score": 80,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 75,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "e180e3e7816a3bb0",
+      "google_place_id": "ChIJhQIMStM0o5URWvHT37YudbM",
+      "venue_name": "Plaza Bar",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-uXL_i9ILmLs749k7JDtZYWRSjkhlpy6rWkP2IxxK1r9S4Sxg-0y4oyGWSAAfe7K6_25cIzm6ysXT8MKSivGGjRWJ3eMEdSbPjhxm6iJ4eHpTZhRFCblTxFy9n7ZbtgJW36KI5N_5wCBfWijrGz8bdkUvyZuuZ2555rjDUePy2mxJTR0zjKBf6OtYGL2l-fyC1ih8qj1NkeMNbwMve3wcu-DXkw8IrR_1cS600vNwS-aEJbbI5jPraAfcwf8kSwguiEAMfUDi7aYUzKtsS0UaFCGY39F4jnGItTo2fQyMChBTWHJZVHNA3rxFVk-yvwOLeqh4uCKpvWPGEa7XCED-Rxyxf8hGe5xvBTx05ySh8f_0Rc7gcMqu3ylfMUP9zoz0_EMthN5gHt5fR-bWJghI-j7Gtg1vPWQPHsDtpA874Zub7QS5-AY3eXs0nLbfdz",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-uAFs-XPVlOaXcRuvgtK2s0FhUzxiq5HaoIItN6h7LFXmXffLYoWma6tdjUfrp0uaXdF5oywJLSyJSv2QLsAgoWoDt7yfAOEibisIqpvx527JFF0ko6SKaVr3UsQZ2RExQmkPD5WlkUCWNILo2qtmNTzGsT-R-Zce3VZKiH89pl5xY4WN3zYlrP-2x_Jbqh35EdQDaFsRJKuS_heFMxG72oreAMdlQ8-YwiScS7CvYK4EiJOcoLzQVtMf6ixzvT1u7pg9Uot3VQCBK-0eKZqhph7AcV2dQDo3sa6BKVp2JtW7M9OKT8OsOot0nR5utrKnvxyHvmPNBH5DOPF4YOHNhVV2e8nYM2eMSaccZ_AIw7m7lzR9emNIoU98hAH9SQn3-dwZEeXkcQ-xSHHp4xLgTjsKANDSULJ7AKBdOuaJe6mtxxHq9quJ3L8T9OrwFu",
+          "quality_score": 80,
+          "hero_suitability_score": 65,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-t82a_IYnziL7Z2dbJQJ3rbY86vVmwlrknvpzqn-i3P3Re09S7TpNnIU0MeIC6Sj6Bq4ZcTkqKF1OvJucQ-fbI63SoWbbFouRc3KmG0w8hRe6r52UaALN4supZUyQH1--Kgq2ASt8KhUmtiYSEQvLWt67C78hceXvNjQRS8_p8K_XikZ9MJOW9NNgGiMKFCWt1q7--J0R2JuIFltjiXZdUTgm3pMqVK28RNamDgd5rRI6DvqydhM40sk8dPALNctEwbUGdz2ecV19Ih5iivNvyAgBWPccwFRYx5gGL5a-iJ4vj3tUVIwKMBEx5Q4KWbN6oOk4RlAeiqZXFjbno6HZYM7DntNLuAwaZHVdAaVhHI7-Hb5suzk2QxuRnxSVes2enGxy2a5My3GLF-s6Bdsx7rTAwsxrRzNvn1wZL6a1a9RXTkBeA1c4jP0mbDJ9fy",
+          "quality_score": 70,
+          "hero_suitability_score": 50,
+          "card_suitability_score": 60,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-vavBWjLuU-UFFJmdjR5nwEsz5KsM4TUjiZwNTw8o_sjpwDel1p6VatmnkdYjeyRSemx9wnF0u4REG8_2DKOVDtGCXlZ3ndX4vpd-9805qFh_R6sQKMecdsxKmdn4WN8yNdj14O5I2EVmQxEnTFfQkxwgkjRi7Oat17aAlZnSIG0O4npkxx2HBYtee36qEouco9gHHm-NzdKyIY52eGjKLd2tEJnfIr6jeozH1pGkfR2tervTqicKq5eOqF8cALVh2pwQIUjsWGe73hi2Ocal8rW83Ri054bDFnCALdssR_0xnW0_r1SbxRBE4rBePAdv_75C-pN1vGxb8Xq6MYFSXsMXpYKnLq5sqtSS9Io1vluKZwxm6XbUwlb__Lq4wKo181N_aKAiuetESOq0Ba-mBUB5Fxo_QqaCxeY2k5q-7zBhrzJmXz5yqXY37WnQ",
+          "quality_score": 65,
+          "hero_suitability_score": 50,
+          "card_suitability_score": 55,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-sSbd6oA4g4HDn-RH3Feztg25p9FqmcK0TvdPpA8KRvTnYYkt-KD4RZ8hHWeck7eWddDd2nIpxsFZaKmAc3jvWGkAKtq-DIatT-huXqJLMHsUKdwbyIJYCd4YGGdCiasCUn7XbzjPvZI2CgsFighmfYlP_JQXS61O4VAxHqWY0E-JZA6x4GmoLtiXXVW_Z5UxVrTh9o7IYYuxo_z5ztvxwETWXr8DGrvfr8UF_2-woYrhqxpiiiD3P4-dK-eJvAp5xny-2ADU29PYoiNJ3aU_azv32R0kavjiltgtj8aGBRZrPoPE9SKimv0sZn63ha5gH2UMNy5C_YpcvRLYBd0Ce3e-g8YX9PouJPiD_R9VFCbE5Ltsetz0vX3YGYvWpu2EpVDLVZF86RFIq5GRjXBWDeX0A-h97QxjV3uAAKrkiPFFI-5o3Jo-aNw54P-qD6",
+          "quality_score": 60,
+          "hero_suitability_score": 50,
+          "card_suitability_score": 55,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-sGc23PYWvFll05XhYJUDiCICYdePMknRefsecNX59M7t58ccEQMcgGuuOcpq8tAji1eWE1aaTFbY9bOqdKt2Sf_oyGd-vB9ek9P5d28hhfVJ4xh954v_GOBhZoQMW0X1o8_R8Td2NSAunIbU9_urtxHtAD3IpiwAVPCY6WmB04AiUlS3_KFrsYYGOeWbe3FzBjMIO2YRQXnYMWlXtaJgocTVq0_S3fa30jZwdrZsQbrJBbdPyRIJ3f_sxnDzjSBjhHIADbcuav0Z1Qftu-tI26bzu4IEiIBTp0fMNyHhBpzfj9-VBUl1EOwKUXtIXM9R-ZNvBTNh3pwMIwPNrN9ZXz-fNYiW-ZCR4ySD27OvbASgA81SLhopW40BMI3oQLl0bX96RFVoTpKiTv0ogFoURt9-8MzEoEKURmWZyPlqsCYQ",
+          "quality_score": 60,
+          "hero_suitability_score": 50,
+          "card_suitability_score": 55,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-sN0In2Cfss1-9sPNJjuU_afU9wdDn28H8s04kktFR781la8lHrMV9iA-Ek9XdfnG9h4Z7iBqbdDlzACaPmssEuvm4oyr7jxhNfGaBhoOafo8LHy98JF-b9q-8Uob8c1hmWfL0LMojFweIi01Tg_eVTZFGSoQTiQCnKoR411IrdbDFY10UNgLy98gaO7PpJeqZUkaJnRvgfhej_Wi8NkRNX0xsYxT9WimqbLrNlWCDq1BhnxdRdazreaxBurFHlqR68IVta1jCH7rcF2o6AhZAygVskG_rYDf4ggd_Tmj3XcFawaFKhV5WOvDva7q8iHnM-6_YY5YnvuDmFJ1iSVxb3XW6GqyipuJEdEMk84CWFivOQhTsOaXBDwTY9wM4wfGwFJ-csvOXP6wzofqlGaJ3CxppAhU_SBDhhdqAwgBVz7w",
+          "quality_score": 65,
+          "hero_suitability_score": 40,
+          "card_suitability_score": 55,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJhQIMStM0o5URWvHT37YudbM/photos/Ab43m-uT7ibc5xCP-_6pu8WmuF8d97gQ1shYuUltX6Cngi2wkVxCAj_wYZkuVkPhynfNl7l7nty5QshbMPpXbTP9j3R7ss9DbBQ8Cs9aMqQqE14oCNCBgmB6dI7DIy1M38cKlXIVPHYvUnT1CMuRYTfqH7B1KEDoBX74kUDaA-B5CfqGtai53nxiiV7EXva1Ia1XPjGjI-Jd-hl-8jMHNVl_IJmXS7FUaW-lHGP1FL2f0xE7oKMih51ve3GkOuffPNPwWUlcUJFFecYYSG3lN7ZDE2Q2WbapnuCiTirY68s7pHkhd2vlYrHmvK1_F7MxgY1TziWgH0ZN-2DCrVsdsJKmThnfGLm7rdsR5NB8j1y7rJj_x5CeUjndv333bhKT_LMyn7xdLoITIRaXZXSCH3lH8tC8sr5uHxXHmNJ1DESDh0NHKA",
+          "quality_score": 60,
+          "hero_suitability_score": 45,
+          "card_suitability_score": 50,
+          "source": "vision"
+        }
+      ]
+    },
+    {
+      "candidate_id": "dee461d82c34b6d6",
+      "google_place_id": "ChIJVfJW2oe1vJUR2NfFT9Dj6Ws",
+      "venue_name": "Mixtape Bar",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [
+        {
+          "role": "hero",
+          "sort_order": 0,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-vXS3djl3Ru9d1My82fEmT62pZCnpgYekmLgskChExE3jk5tqGNOQ2gfL_mC2PKhUYe3WbDqREt7BHZZcxFQEX5QdPlGAc3g5HAZLeaZDFAEtePMinZ7tBan4KA8btTxcvFDQf7rqragOQjptiN25ih9H8iPCJKv5cZ9EFh-QQ5Yc0EqqPhpe8P4tkbtg5WmuPLnFUoI1vT-dYcqRgSu1cLJc8J_0y5SSA45ITz9rllLJqsaXrlGD_5O7lkhbgOwFmXdmThGO6zSPrZKPjJItsOUw3gchDwM-2I9wtSKt-EpCq4cG8Xj2n-8cv8FgC9AocNmt6TngoyoHZM3hptbXD6jYjmUYgvHfAPACQKb8i3QaXbaDiFY1nAc122Za_VET_8MT9dD6FH7YHTTKUff9-D0j3L2V5DQHVO1atn0QnE3g",
+          "quality_score": 70,
+          "hero_suitability_score": 90,
+          "card_suitability_score": 85,
+          "source": "vision"
+        },
+        {
+          "role": "card",
+          "sort_order": 1,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-sr_tYxoogs4OoaMHlZQY4eeOHSSEa8fVSJKnN7albaZYn6_YcvjKLYdH9NWJAmVQs831GJfQg8pctLcKmZK0eVJP0NkPHKEwMyb0gSArmrCiXAc8jeJJwOxKYffhbQn7efYhVFZAZjMvGIIVf5DRNVVonjtAgI7hG067PA_sCjo0cGDCk-fBJ7deXHHMr_f0YxY645qPx8h3tsqBn2h5MoSmTbM2EstXhdd_XKlMZ-BqcRIdtycGXRKDsqi5sN4RU0do-oWzhE5Ucy8QXmQNJX2r2UCYQLqIT2YkEoqbK0ZZOXIVW1bbcQmDhvtLSNmDl-6qWm592bEFWfo6UMU4N2rDNRS1dZOPBSjavRMaPHKAMd5uEQ6D_YBqNuymMhR51TF2YZ-vGxXcXjWRyja6JJxNHgUSC7SxXU5b7EuJNUsMa_KKDJuUu_zIiga9yK",
+          "quality_score": 85,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 2,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-uyRgkoOxax8zXzg4BBzXUx2m9TLQpmwoVaQJLHxWm90yszZaLH9MBNv7AIlT2RpkEwYN7W7XjiTID89LzJmJyjUd1wM1F0dNSg_0IMe1i9Hm4W2LbMxle1IWkM3vdrIeCxqXvLXEGwjJ97OS4MkgGkwhAOv7C1gTERW7vc3RNc_C8m2yCrnHsToxR_OSA23X7H4h4DpwF6dKIn66guWW0uT1mgy-tut6LUjKzimXdy4haVbysgsmi52ypCeGprVDWqpnaVBeEE9QmurLNPShb9DpD2xQtuhXE36XFWQf0QzTwshvvgRguIOPQOjg1b0e5nUDpW6g4udfbIIxCqIhh7DSTRwD-bEaMIuXl1ePCm_4OVor8QjYjHsaLJmb0Sm7UqxC0QCl6V71YCP_CsXUb8MthvApoZ-cflN9zV0dwuxg",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 3,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-tanHkKj3584USkg37AixO5pqMXP7nk3tvgV9ATuLzhxEKPK08941VerNa0sdTEivpTZmdd8DS8eAuj9PdyRS52ZFCR_tnZ03K8gWz90e1LPwqDm-jh2N3MtbCGSRh6M05kXzqBn_pHoYAcJe8nLiA7NiiSanYyZT06MXUgyDYSnWnLy3fYUeesMEZh6N45dRxRvZMP94ECu9aYt_hI4UzZVlmqFUJCjhCiJVUS-Bea-R9PbFW2lippKUf-h88D9Qg5aV0GQ_ZQa9v_PDPEyLxnPPxXjRxTxaiQyDVr7HTLvdIstIuNjSdAI9F1nQcTtpqfNAnW12vAVIbFkCcJqsMCQs2MEE2MzVrGgR88rd0CKiTnO5mlA5Hldr02Ila22hszq6DpYS5lxoi5Qx1LB4SzsDgfgx4ulq6A1E8-ucY",
+          "quality_score": 80,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 4,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-t4i5cwARQ-tHViTkfIOMYldSsV-0Q47WG9JxfRglbUqaLmLKASkhzdrv79k3OeBgDOKq43OXgLf8B0Qw2zy8vqtHwwTf7ey2nhLxQez-w4kxxNkeh0U-XYeC7VdKgkoW2_o2Onz8obtjfLqbmTUZNFpq3rhSZHgkzROMTHznHQz_3a85GXboCoCdO7yNSRcQPjyOsOB5FgyHGU8e9dM-6t2eFexmyTyTD1tEZ2nxJri32p7Tun8h-GXNXRp6Cnx23S_QKLqpTyUg-jWVHIhdldqiqV0EjdQq035QoCU8-fvCNsnUsbk_9AwpLmSAoCesbZAz7dJghkcH5fA9B7LHCsoAVu_yLeloLBHJjIDQDHCqvCtM-LTJHI3_WirIo8KTTrYcT3dYKOfpETBv3s90Uc3aukk3qNw1buVSzRzvQ",
+          "quality_score": 70,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 80,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 5,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-v-qtXBGUFH0Fdl9Hn0EmskaFqoXsGmjIgsytSSN19eWRiTzO1deEXVP9Q9hjfHTZwHXK92oIBbTpsi6kZ297Y_Yx5wYYamEo1HD8DBq8YaAeo9lYv42R2UCt6u60LVS4GMa0h9fzYlMcdAXTCZaX-uFRZqXSOamqT-JQHiDg8xsVQgNY2vbQlLUzz101ageBBZlroFpOHjylnJ-knzzihMIKkW-o3jTVAw6GgCJPtTJ5hqwnLLGJsh8Ai6UgKnOVwB-T9ak0lHapxAz6JqeBUtojdPPjppYcGPPKVXceSgKM3RVO0Ta-YHF3z4YyClZ85ROKsoK-6_Sai9eUacXJocAJT5YwW6MCmi_-F0XdmwDvceltq_MiLZB-WBILXaXLG1zGbDgyABGDqwPj-h6ZLD689JqL4SNiUr1nESM2Gkp6kwFhUfCou8Z_s8rovu",
+          "quality_score": 80,
+          "hero_suitability_score": 70,
+          "card_suitability_score": 75,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 6,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-vRfUvK1BBqz58mlqjEGjna17ghMlRKr80BWeYRc3USGLPLKmZmTnUyVzZJ1ZWnqAYPMwSrGESNgNKXqk7a5l5WgXRvV6RCIgwfCr3zndib1FspIfVZqhW2iyXYROCrAk2auAOoof6rcABtdtKHve-ZGjKAJRvLgmBzgdpBibZYz8SXDt3HDpqkH2Ds7wZQLpzl7h3z9Db_I6AcLA0gaszkJSNU0hCBIiMmPvHl6Kjk3pQfHo6y6HEtE1emDWmI3im723NvjycoF7YPueNWsSANfC0ePYpmWXSku0yD0TmTWWRNgUnFcTxok6IZzNEr5UTuWCHoKrLvEWMYPp73uc7e0dv6sJ6t6Ay-Mr1-8XZRAGJ4SB2r1FRlrPY2zNgMoxXwmh3-VP3p1VWIC2DcPi-sU7SxZ7dBnOwHDuaSnTg0vC2TxuL6N6KG8tG3S9Uo",
+          "quality_score": 80,
+          "hero_suitability_score": 75,
+          "card_suitability_score": 70,
+          "source": "vision"
+        },
+        {
+          "role": "gallery",
+          "sort_order": 7,
+          "google_photo_reference": "places/ChIJVfJW2oe1vJUR2NfFT9Dj6Ws/photos/Ab43m-tqqze6uIi3a_zj4kukkaG-EDO0ohGFX2iPIhrGoKFZnSHFvJ8JxAxmTWN0PTE28ACAuqJ_GxxfvXKBfI2K1_t9FMiwazkgH_njVPmI6QkA5bdVplAzEwTJVQUpM_am0IJuvpen-z9l3AI58XgvB1Y5rpbkPCvjmaTXTwsoTqU7uFu_G6y4Q6RxbK58JstksQV_bPHLXhrNDi8lWqfbunghGf-ikvw4rnTNFFMgSjJUUPUuS3tsx0ZgYxYmYexOa138-IW3hY0i-Swqhe9pJcDBaxEUSJk8WrtXvntJvT1sJgw992mljrlrti3oJuR1zblZJWxijW4WrgP0lXQA4jIWSw76Aplmin1zNHKLK5QpzZPUtMr99fehCCPey0ZCiRyHqHNTPKxTLcCIGjEyN2siVU4k5lOwNeX5YSgh_NGoYdSS",
+          "quality_score": 85,
+          "hero_suitability_score": 60,
+          "card_suitability_score": 70,
+          "source": "vision"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "candidate_id": "f9d17b270804324a",
+      "google_place_id": "ChIJx3R2gAW1vJURalNI5EZBWi4",
+      "venue_name": "L Harmonie",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "77f3f0f1f63e2056",
+      "google_place_id": "ChIJR9k_MUC1vJURgJzhG979DPc",
+      "venue_name": "Altar Cafe",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "939a06af330c981a",
+      "google_place_id": "ChIJXa-DyUm1vJURp-oe-kjnF5U",
+      "venue_name": "La Garage",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "6b0924cbea2810b2",
+      "google_place_id": "ChIJi9RzxDa1vJURDUfZe1YDbHE",
+      "venue_name": "La Panera Rosa",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "6ab2508d5e018222",
+      "google_place_id": "ChIJEypxBdvLvJUReFk8DJzEyNY",
+      "venue_name": "Amarante",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "0105a07c4be46f98",
+      "google_place_id": "ChIJQc4WrNPKvJURgYeA_FNuPWE",
+      "venue_name": "London City",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "8f6f724d996b428d",
+      "google_place_id": "ChIJW3zKruW1vJURD6uFxJtoeG8",
+      "venue_name": "La Kitchen",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "262b0298a9327669",
+      "google_place_id": "ChIJZRdvRcrKvJURowdIEaS0F6o",
+      "venue_name": "Florida Garden",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "1029a2751747506a",
+      "google_place_id": "ChIJWRZh0zLLvJURCveQTYUsUx4",
+      "venue_name": "Hierbabuena",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "119051ad76f707f4",
+      "google_place_id": "ChIJX52LW3XKvJURCOdY4OdgJfk",
+      "venue_name": "Malvon",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "d4cd2a18cb10805b",
+      "google_place_id": "ChIJvbiWAEvLvJURjemmjyU3q4E",
+      "venue_name": "Maleza Cafe",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "match status unmatched; eligibility rejected"
+    },
+    {
+      "candidate_id": "e33c63a483c28ca8",
+      "google_place_id": "ChIJs2W8VSu1vJURsqAjVX1JwWY",
+      "venue_name": "Morro Cafe",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "1a9a523cace5734f",
+      "google_place_id": "ChIJoc7qQgC1vJUR2nbx00cnMQo",
+      "venue_name": "Le Ble Las Canitas",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "a1b7cd5460d538f0",
+      "google_place_id": "ChIJ64ZDLpq2vJURD8JZwL8YRNI",
+      "venue_name": "Moshu Las Canitas",
+      "city": "buenos-aires",
+      "category": "cafe",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "109a9a47bb038eb4",
+      "google_place_id": "ChIJEWoZ1CzLvJURLHA_B6T5nL0",
+      "venue_name": "Cafe San Juan",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "57fbb7027a4a5462",
+      "google_place_id": "ChIJAwDJL0u0vJURY9lYjlO_gP0",
+      "venue_name": "Narda Comedor",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "ff6b5103adf84fa5",
+      "google_place_id": "ChIJdQu60jLLvJURdbXjzzfNwJY",
+      "venue_name": "Napoles",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "07b1ddc4d92ebb4c",
+      "google_place_id": "ChIJKaSlIATKvJURnhxTrnzX2HE",
+      "venue_name": "Dada Bistro",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "0d182424a9b357a8",
+      "google_place_id": "ChIJrzO8HCo1o5URDHNY4yuuY4Y",
+      "venue_name": "Chila",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "3f51e195e8969b28",
+      "google_place_id": "ChIJKYcCF961vJURCaCkt2bKCLU",
+      "venue_name": "Cucina Paradiso Colegiales",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility rejected"
+    },
+    {
+      "candidate_id": "a88a9b44d8cd6bb9",
+      "google_place_id": "ChIJs7kouHS1vJURlgc20m1jeCc",
+      "venue_name": "Narda Lepes Mercado",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "62ce0f0668318543",
+      "google_place_id": "ChIJ2600ZL21vJURMU3WOcuR-S4",
+      "venue_name": "Las Cholas",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "bc2a0bd03043207e",
+      "google_place_id": "ChIJZ53W1pe1vJURKpaXo-qmdfs",
+      "venue_name": "Olsen Las Canitas",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "2ce5eb24f47cabaf",
+      "google_place_id": "ChIJz6Zqi8rKvJURB68ypL68f8A",
+      "venue_name": "Filo",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "cb393705f53161d4",
+      "google_place_id": "ChIJlaweudrKvJURVg2un8e4GK4",
+      "venue_name": "36 Billares",
+      "city": "buenos-aires",
+      "category": "restaurant",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "688e9aef29b15279",
+      "google_place_id": "ChIJe03kDAC1vJURbAicNwrc8mc",
+      "venue_name": "La Cava de Vittorio",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "81967df30f4afa01",
+      "google_place_id": "ChIJt9qyCt21vJURh94k678ornc",
+      "venue_name": "Vina de San Telmo",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [],
+      "skipped_reason": "match status ambiguous_match; eligibility rejected"
+    },
+    {
+      "candidate_id": "d96b5787a1af33b2",
+      "google_place_id": "ChIJ2zxKZbzKvJURBS2TCzBYvkI",
+      "venue_name": "Aldo Vinoteca Recoleta",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [],
+      "skipped_reason": "match status unmatched; eligibility rejected"
+    },
+    {
+      "candidate_id": "4adba3e2138c5eb3",
+      "google_place_id": "ChIJr12SLey1vJURYOyP8SwVyyY",
+      "venue_name": "Finde",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [],
+      "skipped_reason": "match status unmatched; eligibility rejected"
+    },
+    {
+      "candidate_id": "010d3a1cd8f0ad70",
+      "google_place_id": "ChIJUdgBwJK1vJURAAo9QzGeVAI",
+      "venue_name": "Hache Almacen",
+      "city": "buenos-aires",
+      "category": "wine_bar",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "cf4b6889226bbe70",
+      "google_place_id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "venue_name": "Trade Sky Bar",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [],
+      "skipped_reason": "already public; already has Cloudinary hero"
+    },
+    {
+      "candidate_id": "3b32c02b652eb143",
+      "google_place_id": "ChIJs6MCZSvLvJURSm9uI7TWTdA",
+      "venue_name": "Bierlife",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "91ed7aecaa6cd9d9",
+      "google_place_id": "ChIJobZ2Os21vJURgpKVcKNVom4",
+      "venue_name": "Puerta Uno",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    },
+    {
+      "candidate_id": "33802fe1e8c52bbb",
+      "google_place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "venue_name": "Danzon Bar",
+      "city": "buenos-aires",
+      "category": "cocktail_bar",
+      "selected_photos": [],
+      "skipped_reason": "eligibility pending_review"
+    }
+  ]
+}

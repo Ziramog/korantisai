@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-01T17:26:51.538Z",
+  "current_fields": [
+    "id",
+    "name",
+    "category",
+    "location",
+    "cardSize",
+    "spacing",
+    "heroImage",
+    "cardImage",
+    "imageUrl",
+    "galleryImages",
+    "images",
+    "atmosphere",
+    "quality",
+    "tagline",
+    "narrative",
+    "tags",
+    "tasteVector",
+    "lat",
+    "lng"
+  ],
+  "route_contact_fields": {
+    "phone": false,
+    "website": false,
+    "googleMapsUrl": false,
+    "contact": false,
+    "instagram": false,
+    "whatsapp": false,
+    "reservationUrl": false
+  },
+  "source_availability": {
+    "phone": 10,
+    "website": 17,
+    "google_maps": 18
+  },
+  "recommended_shape": {
+    "contact": {
+      "phone": null,
+      "website": null,
+      "instagram": null,
+      "whatsapp": null,
+      "reservationUrl": null,
+      "googleMapsUrl": null
+    }
+  }
+}

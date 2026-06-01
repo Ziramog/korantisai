@@ -1,0 +1,426 @@
+{
+  "generated_at": "2026-06-01T17:26:47.676Z",
+  "mode": "dry-run",
+  "plans": [
+    {
+      "venue": "Crisol",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Cuervo Café",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "El Boliche de Roberto",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Florería Atlántico",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Invernadero",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Florería Atlántico",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "La Biela",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Lattente",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Melbourne Café",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Ninina",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Oporto Almacén",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Padre Coffee Roasters",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Surry Hills Coffee",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Uptown Bar",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Café Cuervo",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Birkin",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Mishiguene",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Origen Coffee House",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Parrilla Don Julio",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Tres Monos",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Verne Club",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Attaboy",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Crisol Café",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Devoción",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Libros del Pasaje",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Niño Gordo",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "John & Joe | Café de Especialidad",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "TERRASOHO - Specialty Coffee",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Vive Café Cafe de especialidad , cafés de campeonatos",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Café Boheme - Café de Especialidad",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "RITA® Specialty Coffee Armenia",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Toki Moment - Specialty Coffee",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Import Coffee Co.",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Koofi | Café de especialidad",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Tona Café",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Don Julio Parrilla",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "scope": "public",
+      "website": "http://www.tradeskybar.com/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Wine Window Argentina (Palermo Soho)",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Backroom Bar",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Kraken bar",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Verne Club",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Bari Coffee & Drinks",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Birdy Birds Specialty Coffee Roasters",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Ciao Cacao Specialty coffee",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Ciro Palermo",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Bestial Fly Bar",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "CICHAUS",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "El Preferido de Palermo",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Kaldi",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Rita Specialty Coffee Soler",
+      "scope": "public",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Blanca Deco and Cafe",
+      "scope": "candidate",
+      "website": "http://www.blancadecocafe.com/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Julia",
+      "scope": "candidate",
+      "website": "https://www.instagram.com/julia.restaurante/?hl=es-la",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Roux",
+      "scope": "candidate",
+      "website": "http://www.rouxresto.com/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Anchoita",
+      "scope": "candidate",
+      "website": "https://anchoita.com.ar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "El Cuartito",
+      "scope": "candidate",
+      "website": "https://www.instagram.com/cuartito_paginaoficial/?hl=es",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Reliquia",
+      "scope": "candidate",
+      "website": "https://www.instagram.com/reliquia.restaurante/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Apu Nena",
+      "scope": "candidate",
+      "website": "https://www.apunena.com/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Corte Comedor",
+      "scope": "candidate",
+      "website": "https://www.instagram.com/cortecomedor/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Guerrin",
+      "scope": "candidate",
+      "website": "https://guerrin.com.ar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Cabaña Las Lilas",
+      "scope": "candidate",
+      "website": "http://www.restaurantlaslilas.com.ar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Vini Bar",
+      "scope": "candidate",
+      "website": "https://instagram.com/vini__bar?utm_medium=copy_link",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Gran Bar Danzon",
+      "scope": "candidate",
+      "website": "https://granbardanzon.com.ar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "878 Bar",
+      "scope": "candidate",
+      "website": "http://www.878bar.com.ar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Milion",
+      "scope": "candidate",
+      "website": "http://www.milion.com.ar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Plaza Bar",
+      "scope": "candidate",
+      "action": "skipped",
+      "reason": "no official website from Google Places"
+    },
+    {
+      "venue": "Trade Sky Bar",
+      "scope": "candidate",
+      "website": "http://www.tradeskybar.com/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    },
+    {
+      "venue": "Mixtape Bar",
+      "scope": "candidate",
+      "website": "https://www.instagram.com/mixtape.bar/",
+      "action": "dry_run_plan",
+      "reason": "homepage fetch not executed in safe default mode"
+    }
+  ],
+  "links": []
+}

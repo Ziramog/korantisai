@@ -76,7 +76,7 @@ export default function AuthPanel() {
         </div>
         <h2 className="text-2xl font-display text-k-text tracking-wide mb-2">{t('loginHeader', language)}</h2>
         <p className="text-xs font-sans text-k-text-secondary leading-relaxed">
-          {mode === 'magic' ? t('loginDesc', language) : 'Enter your email and password to continue.'}
+          {mode === 'magic' ? t('loginDesc', language) : t('passwordLoginDesc', language)}
         </p>
       </div>
 
@@ -85,7 +85,7 @@ export default function AuthPanel() {
           <div className="w-12 h-12 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 mb-4 shadow-lg">
             <CheckCircle2 size={24} />
           </div>
-          <h3 className="text-sm font-sans text-k-text mb-2">Magic link sent</h3>
+          <h3 className="text-sm font-sans text-k-text mb-2">{t('magicLinkSent', language)}</h3>
           <p className="text-xs font-sans text-k-text-tertiary">{t('checkEmail', language)}</p>
         </div>
       ) : status === 'success' && mode === 'password' ? (
@@ -93,8 +93,8 @@ export default function AuthPanel() {
           <div className="w-12 h-12 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 mb-4 shadow-lg">
             <CheckCircle2 size={24} />
           </div>
-          <h3 className="text-sm font-sans text-k-text mb-2">Account created</h3>
-          <p className="text-xs font-sans text-k-text-tertiary">Please check your email to verify your account, or wait to be redirected.</p>
+          <h3 className="text-sm font-sans text-k-text mb-2">{t('accountCreated', language)}</h3>
+          <p className="text-xs font-sans text-k-text-tertiary">{t('accountVerify', language)}</p>
         </div>
       ) : (
         <form onSubmit={handleAuth} className="flex flex-col gap-4 relative z-10">
@@ -116,7 +116,7 @@ export default function AuthPanel() {
             <div className="relative">
               <input
                 type="password"
-                placeholder="Password"
+                placeholder={t('passwordPlaceholder', language)}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-k-surface/50 border border-k-border-light text-k-text text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:border-k-gold/50 focus:bg-k-surface transition-all placeholder:text-k-text-tertiary font-sans"
@@ -151,7 +151,7 @@ export default function AuthPanel() {
               }}
               className="text-[10px] text-k-text-tertiary hover:text-k-text-secondary font-sans uppercase tracking-widest transition-colors"
             >
-              {mode === 'magic' ? 'Use password instead' : 'Use magic link instead'}
+              {mode === 'magic' ? t('usePasswordInstead', language) : t('useMagicLinkInstead', language)}
             </button>
             
             <button
@@ -162,7 +162,7 @@ export default function AuthPanel() {
               }}
               className="text-[10px] text-red-400/50 hover:text-red-400 font-sans uppercase tracking-widest transition-colors mt-2 border border-red-400/20 py-2 rounded-lg"
             >
-              Bypass Auth (Dev Mode)
+              {t('bypassAuth', language)}
             </button>
           </div>
         </form>
