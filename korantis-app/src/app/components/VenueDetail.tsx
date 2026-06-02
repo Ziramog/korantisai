@@ -30,6 +30,17 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
     { src: venue.heroImage, role: 'hero' },
     ...galleryImages,
   ];
+  const practicalSignalPattern = /precio|price|reserva|reservation|ruido|noise|confirmed|confirmado|confidence|confianza|editorial/i;
+  const ambientSignals = [
+    ...venue.tags.map((tag, index) => displayVenue.displayTags[index] || tag),
+    ...description.bestFor,
+  ].filter((tag, index, values) => (
+    tag
+    && !practicalSignalPattern.test(tag)
+    && values.findIndex((value) => value.toLowerCase() === tag.toLowerCase()) === index
+  ));
+  const visibleAmbientSignals = ambientSignals.slice(0, 8);
+  const hiddenAmbientSignalCount = Math.max(0, ambientSignals.length - visibleAmbientSignals.length);
 
   // Scroll back to the top of the detail view on mount
   useEffect(() => {
@@ -112,14 +123,14 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         />
 
         {/* Hero Meta Info - Responsive bottom positioning */}
-        <div className="absolute bottom-6 left-5 right-5 md:left-12 z-20 flex flex-col gap-2 max-w-2xl">
+        <div className="absolute bottom-7 left-5 right-5 md:bottom-10 md:left-12 z-20 flex flex-col gap-2.5 max-w-2xl">
           <span className="text-[10px] text-k-gold tracking-widest uppercase font-sans font-medium">
             {displayVenue.displayCategory}
           </span>
-          <h1 className="text-k-text font-display text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide drop-shadow-md leading-tight">
+          <h1 className="text-k-text font-display text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide drop-shadow-md leading-[0.98]">
             {venue.name}
           </h1>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-k-text-secondary font-sans text-xs mt-0.5">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-k-text-secondary font-sans text-xs mt-1">
             <div className="flex items-center gap-1">
               <MapPin size={11} className="text-k-gold-muted" />
               <span>{venue.location}</span>
@@ -133,12 +144,12 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
       {/* Main Container */}
       <main className="max-w-4xl mx-auto px-5 md:px-12 mt-8 md:mt-12">
         {/* Poetic Narrative Section */}
-        <section className="mb-10 border-b border-k-border/30 pb-10">
-          <div className="flex flex-col gap-3">
-            <p className="text-lg md:text-2xl text-k-gold-light font-display italic font-light leading-relaxed max-w-3xl">
+        <section className="mb-11 border-b border-k-border/30 pb-11">
+          <div className="flex flex-col gap-5">
+            <p className="text-lg md:text-2xl text-k-gold-light font-display italic font-light leading-[1.42] max-w-3xl">
               &ldquo;{description.oneLiner}&rdquo;
             </p>
-            <p className="text-xs md:text-sm text-k-text-secondary font-sans font-light leading-relaxed mt-3 text-justify">
+            <p className="text-[13px] md:text-sm text-k-text-secondary font-sans font-light leading-[1.9] md:leading-[1.95] text-left md:text-justify max-w-3xl">
               {description.summary}
             </p>
           </div>
@@ -150,22 +161,16 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             {t('atmosphericCharacter', language)}
           </h3>
           <div className="flex flex-wrap gap-2">
-            {venue.tags.map((tag, index) => (
+            {visibleAmbientSignals.map((tag) => (
               <span key={tag} className="px-3.5 py-1.5 rounded-lg border border-k-gold/10 text-[11px] font-sans tracking-wide text-k-gold bg-k-gold-dim/40 shadow-sm">
-                {displayVenue.displayTags[index] || tag}
+                {tag}
               </span>
             ))}
-            {description.bestFor.map((value) => (
-              <span key={value} className="px-3.5 py-1.5 rounded-lg border border-k-gold/10 text-[11px] font-sans tracking-wide text-k-gold bg-k-gold-dim/40 shadow-sm">
-                {value}
+            {hiddenAmbientSignalCount > 0 && (
+              <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary/70 bg-white/[0.015]">
+                +{hiddenAmbientSignalCount} {language === 'es' ? 'señales' : 'signals'}
               </span>
-            ))}
-            <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
-              {description.energyLabel}
-            </span>
-            <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
-              {description.noiseLabel}
-            </span>
+            )}
           </div>
         </section>
 
@@ -189,7 +194,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                     {block.label}
                   </span>
                   {(venue.atmosphere === block.phase || (venue.atmosphere === 'late-night' && block.phase === 'night')) && (
-                    <span className="text-[8px] font-sans px-2 py-0.5 rounded-full border border-k-gold/20 text-k-gold font-medium bg-k-gold-dim">
+                    <span className="text-[8px] font-sans px-2 py-0.5 rounded-full border border-k-gold/15 text-k-gold/75 font-medium bg-k-gold/5">
                       {t('activePhase', language)}
                     </span>
                   )}
@@ -254,6 +259,9 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
         {/* Quiet Structural Utilities - Responsive stacking layout */}
         <section className="mb-8 p-5 bg-k-surface/20 border border-k-border/30 rounded-2xl">
+          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-5">
+            {t('beforeGoing', language)}
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 divide-y md:divide-y-0 md:divide-x divide-k-border/30">
             <div className="flex gap-3.5 items-start pb-4 md:pb-0">
               <Clock className="text-k-gold flex-shrink-0 mt-0.5" size={14} />
@@ -272,8 +280,14 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                 <span className="text-[9px] text-k-text-tertiary font-sans tracking-wider uppercase block mb-1 font-medium">
                   {t('investment', language)}
                 </span>
-                <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  {description.priceLabel}. {description.reservationHint}. {description.confidenceLabel}.
+                <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed block">
+                  {description.priceLabel}.
+                </span>
+                <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed block">
+                  {description.reservationHint}.
+                </span>
+                <span className="text-[11px] text-k-gold/70 font-sans leading-relaxed block mt-1">
+                  {description.confidenceLabel}.
                 </span>
               </div>
             </div>

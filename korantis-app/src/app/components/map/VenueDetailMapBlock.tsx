@@ -67,7 +67,11 @@ export default function VenueDetailMapBlock({ venue, onOpenInAtlas }: VenueDetai
         >
           {t('openInAtlas', language)}
         </button>
-        <button className="flex-1 py-3 px-4 rounded-full border border-white/5 bg-white/[0.02] text-k-text-secondary text-[11px] font-sans hover:bg-white/[0.05] hover:text-k-text transition-colors uppercase tracking-wider text-center cursor-pointer">
+        <button
+          type="button"
+          className="flex-1 py-3 px-4 rounded-full border border-white/5 bg-white/[0.02] text-k-text-secondary text-[11px] font-sans hover:bg-white/[0.05] hover:text-k-text transition-colors uppercase tracking-wider text-center cursor-pointer"
+          aria-label={t('viewNearbyAtmospheres', language)}
+        >
           {t('exploreNearbyAtmospheres', language)}
         </button>
       </div>
