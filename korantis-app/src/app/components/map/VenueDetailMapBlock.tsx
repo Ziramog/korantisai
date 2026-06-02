@@ -18,14 +18,14 @@ export default function VenueDetailMapBlock({ venue, onOpenInAtlas }: VenueDetai
   const { language } = useCircadian();
 
   return (
-    <section className="mb-14 border-t border-k-border/30 pt-10">
+    <section className="mb-14 border-t border-k-border/30 pt-11">
       <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-3">
         {t('spatialPlacement', language)}
       </h3>
       <h2 className="text-xl md:text-2xl font-display text-k-text mb-2 tracking-wide">
         {t('whereAtmosphereLives', language)}
       </h2>
-      <p className="text-xs text-k-text-secondary font-sans font-light mb-6">
+      <p className="text-xs text-k-text-secondary font-sans font-light mb-7">
         {t('mapPointInLocation', language, { location: venue.location })}
       </p>
 
@@ -62,6 +62,7 @@ export default function VenueDetailMapBlock({ venue, onOpenInAtlas }: VenueDetai
 
       <div className="flex flex-col sm:flex-row gap-3 relative z-10">
         <button
+          type="button"
           onClick={onOpenInAtlas}
           className="flex-1 py-3 px-4 rounded-full border border-k-gold/30 bg-k-gold/5 text-k-gold text-[11px] font-sans hover:bg-k-gold/10 transition-colors uppercase tracking-wider text-center cursor-pointer shadow-[0_0_15px_rgba(201,169,110,0.05)]"
         >

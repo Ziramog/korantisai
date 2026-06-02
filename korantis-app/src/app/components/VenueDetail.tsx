@@ -16,6 +16,94 @@ interface VenueDetailProps {
   onOpenInAtlas: () => void;
 }
 
+const practicalSignalPattern = /precio|price|reserva|reservation|ruido|noise|confirmed|confirmado|confidence|confianza|editorial/i;
+const internalTagPattern = /consumer|ready|lista|sistema|system|staging|published|public|google|cloudinary|fallback/i;
+
+function venueText(venue: ScoredVenue) {
+  return [
+    venue.name,
+    venue.category,
+    venue.atmosphere,
+    venue.location,
+    ...(venue.tags || []),
+  ].join(' ').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+}
+
+function getRhythmNote(venue: ScoredVenue, fallbackNotes: string[], language: 'en' | 'es') {
+  const usefulNote = fallbackNotes.find((note) => !practicalSignalPattern.test(note));
+  if (usefulNote) return usefulNote;
+
+  const text = venueText(venue);
+  const isCafe = /cafe|coffee|bakery|brunch|panaderia/.test(text);
+  const isWine = /wine|vino|bodega/.test(text);
+  const isBar = /bar|cocktail|coctel|speakeasy|rooftop|lounge/.test(text);
+  const isRestaurant = /restaurant|parrilla|comedor|cena|dinner/.test(text);
+
+  if (language === 'es') {
+    if (isWine) return 'Pausa lenta. Mejor para una copa, conversación y quedarse un poco más.';
+    if (isBar) return 'Ritmo social. Mejor para una salida sin apuro.';
+    if (isRestaurant) return 'Ritmo de mesa. Mejor cuando la comida es el plan.';
+    if (isCafe) return 'Pausa breve. Mejor para café o un encuentro sin demasiada presión.';
+    return 'Pausa lenta. Mejor cuando no hay apuro.';
+  }
+
+  if (isWine) return 'Slow pause. Better for a glass, conversation, and staying a little longer.';
+  if (isBar) return 'Social rhythm. Better for a night out without rushing.';
+  if (isRestaurant) return 'Table-paced. Better when the meal is the plan.';
+  if (isCafe) return 'Short pause. Better for coffee or a low-pressure meeting.';
+  return 'Slow pause. Better when there is no rush.';
+}
+
+function getMomentDescription(venue: ScoredVenue, phase: 'morning' | 'afternoon' | 'night', language: 'en' | 'es') {
+  const text = venueText(venue);
+  const isCafe = /cafe|coffee|bakery|brunch|panaderia/.test(text);
+  const isWine = /wine|vino|bodega/.test(text);
+  const isBar = /bar|cocktail|coctel|speakeasy|rooftop|lounge/.test(text);
+  const isRestaurant = /restaurant|parrilla|comedor|cena|dinner/.test(text);
+
+  if (language === 'es') {
+    if (phase === 'morning') {
+      if (isCafe) return 'Más calmo temprano. Mejor para café o una pausa breve.';
+      if (isBar || isWine) return 'Más bajo temprano. Mejor dejarlo para una pausa más tarde.';
+      if (isRestaurant) return 'Más tranquilo fuera del ritmo principal. Mejor si buscás menos escena.';
+      return 'Más calmo temprano. Mejor para empezar sin apuro.';
+    }
+
+    if (phase === 'afternoon') {
+      if (isWine || isBar) return 'Buen momento para una copa lenta, algo simple y conversación.';
+      if (isRestaurant) return 'Buen momento para almuerzo, sobremesa o una mesa sin tanta prisa.';
+      if (isCafe) return 'Buen momento para una pausa lenta, lectura breve o algo dulce.';
+      return 'Buen momento para una pausa lenta y conversación.';
+    }
+
+    if (isWine) return 'Más cálido y social. Mejor para vino, comida y quedarse un poco más.';
+    if (isBar) return 'Más social y producido. Mejor para una salida con energía.';
+    if (isRestaurant) return 'Más cálido y de mesa. Mejor para cenar y quedarse un poco más.';
+    if (isCafe) return 'Más bajo y tranquilo. Mejor para una pausa corta si sigue abierto.';
+    return 'Más cálido y social. Mejor para quedarse un poco más.';
+  }
+
+  if (phase === 'morning') {
+    if (isCafe) return 'Calmer early. Better for coffee or a brief pause.';
+    if (isBar || isWine) return 'Quieter early. Better saved for a later pause.';
+    if (isRestaurant) return 'Quieter outside the main rhythm. Better if you want less scene.';
+    return 'Calmer early. Better for starting without rushing.';
+  }
+
+  if (phase === 'afternoon') {
+    if (isWine || isBar) return 'A good moment for a slow glass, something simple, and conversation.';
+    if (isRestaurant) return 'A good moment for lunch, a longer table, or less rush.';
+    if (isCafe) return 'A good moment for a slow pause, short reading, or something sweet.';
+    return 'A good moment for a slow pause and conversation.';
+  }
+
+  if (isWine) return 'Warmer and more social. Better for wine, food, and staying a little longer.';
+  if (isBar) return 'More social and produced. Better for an energetic night out.';
+  if (isRestaurant) return 'Warmer and table-led. Better for dinner and staying a little longer.';
+  if (isCafe) return 'Lower and quieter. Better for a short pause if it is still open.';
+  return 'Warmer and more social. Better for staying a little longer.';
+}
+
 export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetailProps) {
   const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -30,17 +118,18 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
     { src: venue.heroImage, role: 'hero' },
     ...galleryImages,
   ];
-  const practicalSignalPattern = /precio|price|reserva|reservation|ruido|noise|confirmed|confirmado|confidence|confianza|editorial/i;
   const ambientSignals = [
     ...venue.tags.map((tag, index) => displayVenue.displayTags[index] || tag),
     ...description.bestFor,
   ].filter((tag, index, values) => (
     tag
     && !practicalSignalPattern.test(tag)
+    && !internalTagPattern.test(tag)
     && values.findIndex((value) => value.toLowerCase() === tag.toLowerCase()) === index
   ));
-  const visibleAmbientSignals = ambientSignals.slice(0, 8);
+  const visibleAmbientSignals = ambientSignals.slice(0, 7);
   const hiddenAmbientSignalCount = Math.max(0, ambientSignals.length - visibleAmbientSignals.length);
+  const rhythmNote = getRhythmNote(venue, description.goodToKnow, language);
 
   // Scroll back to the top of the detail view on mount
   useEffect(() => {
@@ -56,23 +145,17 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
     {
       phase: 'morning',
       label: t('morning', language),
-      desc: venue.atmosphere === 'morning' 
-        ? t('morningActiveDesc', language)
-        : t('morningDefaultDesc', language)
+      desc: getMomentDescription(venue, 'morning', language),
     },
     {
       phase: 'afternoon',
       label: t('afternoon', language),
-      desc: venue.atmosphere === 'afternoon'
-        ? t('afternoonActiveDesc', language)
-        : t('afternoonDefaultDesc', language)
+      desc: getMomentDescription(venue, 'afternoon', language),
     },
     {
       phase: 'night',
       label: t('night', language),
-      desc: (venue.atmosphere === 'night' || venue.atmosphere === 'late-night')
-        ? t('nightActiveDesc', language)
-        : t('nightDefaultDesc', language)
+      desc: getMomentDescription(venue, 'night', language),
     }
   ];
 
@@ -216,7 +299,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
               </h3>
             </div>
             <div
-              className="flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] md:px-0 [&::-webkit-scrollbar]:hidden"
+              className="flex snap-x snap-mandatory scroll-px-5 gap-4 overflow-x-auto px-5 pr-[14vw] pb-2 [-ms-overflow-style:none] [scrollbar-width:none] md:px-0 md:pr-0 [&::-webkit-scrollbar]:hidden"
               aria-label={language === 'es' ? 'Escenas del ambiente' : 'Atmospheric scenes'}
             >
               {galleryImages.map((image, index) => (
@@ -224,14 +307,14 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                   type="button"
                   key={image.id || `${venue.id}-gallery-${index}`}
                   onClick={() => setSelectedImageIndex(index + 1)}
-                  className="group relative aspect-[4/5] w-[82vw] max-w-[360px] shrink-0 snap-center cursor-zoom-in overflow-hidden rounded-2xl border border-k-gold/10 bg-[#100D0A] shadow-[0_24px_70px_rgba(0,0,0,0.34)] focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-k-black md:w-[min(42vw,360px)]"
+                  className="group relative aspect-[4/5] w-[80vw] max-w-[360px] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-2xl border border-k-gold/10 bg-[#100D0A] shadow-[0_24px_70px_rgba(0,0,0,0.34)] focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-k-black md:w-[min(38vw,360px)]"
                   aria-label={`${language === 'es' ? 'Ampliar imagen' : 'Expand image'} ${index + 1} ${language === 'es' ? 'de' : 'of'} ${venue.name}`}
                 >
                   <Image
                     src={image.src || venue.heroImage}
                     alt={`${venue.name} ${t('detailVignetteAlt', language)}`}
                     fill
-                    sizes="(min-width: 768px) 360px, 82vw"
+                    sizes="(min-width: 768px) 360px, 80vw"
                     className="object-cover opacity-90 saturate-[0.92] transition duration-1000 ease-out group-hover:scale-[1.025] group-hover:opacity-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A0705]/45 via-transparent to-[#0A0705]/10 opacity-70 transition-opacity duration-700 group-hover:opacity-45" />
@@ -270,7 +353,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                   {t('temporalPace', language)}
                 </span>
                 <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  {description.goodToKnow.join(' ')}
+                  {rhythmNote}
                 </span>
               </div>
             </div>

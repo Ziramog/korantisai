@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-01T23:26:44.546Z",
+  "generated_at": "2026-06-01T23:49:42.902Z",
   "totals": {
-    "api_url": "http://localhost:3000/api/venues",
+    "api_url": "https://korantis-app.vercel.app/api/venues",
     "total_venues": 66,
     "cloudinary_url_venues": 64,
     "legacy_proxy_venues": 0,

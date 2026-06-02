@@ -1,7 +1,7 @@
 # API Cloudinary Cutover Verification
 
-Generated: 2026-06-01T23:26:44.546Z
-API URL: http://localhost:3000/api/venues
+Generated: 2026-06-01T23:49:42.902Z
+API URL: https://korantis-app.vercel.app/api/venues
 
 ## Totals
 
