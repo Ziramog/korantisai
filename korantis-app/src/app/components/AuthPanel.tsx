@@ -5,6 +5,7 @@ import { createClient } from '@/utils/supabase/client';
 import { Sparkles, Mail, Loader2, CheckCircle2 } from 'lucide-react';
 import { useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
+import { trackEvent } from '@/lib/analytics';
 
 export default function AuthPanel() {
   const { language, setLanguage, setIsAuthenticated, setUserId } = useCircadian();
@@ -23,18 +24,24 @@ export default function AuthPanel() {
     setErrorMessage('');
 
     if (mode === 'magic') {
+      trackEvent('auth_magic_link_requested');
       const { error } = await supabase.auth.signInWithOtp({
         email,
         options: { emailRedirectTo: `${window.location.origin}/auth/callback` },
       });
 
       if (error) {
+        trackEvent('auth_magic_link_failed', {
+          error_status: error.status || 'unknown',
+        });
         setStatus('error');
         setErrorMessage(error.status === 429 ? t('magicLinkError', language) : error.message);
       } else {
+        trackEvent('auth_magic_link_sent');
         setStatus('success');
       }
     } else {
+      trackEvent('auth_password_submitted');
       // Password Login
       const { error } = await supabase.auth.signInWithPassword({
         email,
@@ -49,17 +56,21 @@ export default function AuthPanel() {
             password,
           });
           if (signUpError) {
+            trackEvent('auth_signup_failed');
             setStatus('error');
             setErrorMessage(signUpError.message);
           } else {
+            trackEvent('auth_signup_created');
             // Auto login after sign up if email confirmation is disabled, otherwise wait
             setStatus('success');
           }
         } else {
+          trackEvent('auth_password_failed');
           setStatus('error');
           setErrorMessage(error.message);
         }
       } else {
+        trackEvent('auth_password_login_succeeded');
         setStatus('idle');
         // Will trigger onAuthStateChange
       }
@@ -145,6 +156,10 @@ export default function AuthPanel() {
             <button
               type="button"
               onClick={() => {
+                trackEvent('auth_mode_changed', {
+                  previous_mode: mode,
+                  next_mode: mode === 'magic' ? 'password' : 'magic',
+                });
                 setMode(mode === 'magic' ? 'password' : 'magic');
                 setStatus('idle');
                 setErrorMessage('');
@@ -157,6 +172,7 @@ export default function AuthPanel() {
             <button
               type="button"
               onClick={() => {
+                trackEvent('auth_bypassed');
                 setUserId('dev-mock-user-123');
                 setIsAuthenticated(true);
               }}

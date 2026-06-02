@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Compass, Navigation, Car, Map as MapIcon2, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { ScoredVenue } from '../../contexts/CircadianContext';
+import { trackVenueEvent } from '@/lib/analytics';
 
 interface AtlasVenuePreviewProps {
   venue: ScoredVenue;
@@ -16,6 +17,9 @@ export default function AtlasVenuePreview({ venue, onOpenDetail }: AtlasVenuePre
 
   const handleNavClick = (e: React.MouseEvent) => {
     e.stopPropagation();
+    trackVenueEvent('atlas_navigation_menu_toggled', venue, {
+      open: !showNavMenu,
+    });
     setShowNavMenu(!showNavMenu);
   };
 
@@ -67,6 +71,7 @@ export default function AtlasVenuePreview({ venue, onOpenDetail }: AtlasVenuePre
             <div className="pt-3 mt-3 border-t border-white/10 flex gap-2">
               <a 
                 href={getUberLink()} 
+                onClick={() => trackVenueEvent('external_navigation_clicked', venue, { provider: 'uber' })}
                 className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-[11px] font-sans font-medium tracking-wide transition-all border border-white/10 shadow-sm"
               >
                 <Car size={14} /> Uber
@@ -75,6 +80,7 @@ export default function AtlasVenuePreview({ venue, onOpenDetail }: AtlasVenuePre
                 href={getMapsLink()} 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => trackVenueEvent('external_navigation_clicked', venue, { provider: 'google_maps' })}
                 className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-[11px] font-sans font-medium tracking-wide transition-all border border-white/10 shadow-sm"
               >
                 <MapIcon2 size={14} /> Maps

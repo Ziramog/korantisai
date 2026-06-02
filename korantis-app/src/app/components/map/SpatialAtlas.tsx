@@ -13,6 +13,7 @@ import { t, translateVenueField } from '../../utils/i18n';
 import { MAPBOX_STYLE } from './mapStyle';
 import KorantisMarker from './KorantisMarker';
 import AtlasVenuePreview from './AtlasVenuePreview';
+import { trackEvent, trackVenueEvent } from '@/lib/analytics';
 
 interface SpatialAtlasProps {
   onVenueClick: (venue: ScoredVenue) => void;
@@ -97,7 +98,13 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
       {/* Mode Switch */}
       <div className="flex items-center justify-center md:justify-start gap-4 mb-12">
         <button 
-          onClick={() => setAtlasMode('spatial')}
+          onClick={() => {
+            trackEvent('atlas_mode_changed', {
+              previous_mode: atlasMode,
+              next_mode: 'spatial',
+            });
+            setAtlasMode('spatial');
+          }}
           className={`px-5 py-2 rounded-full border text-xs font-sans transition-all duration-300 ${
             atlasMode === 'spatial' 
               ? 'border-k-gold/30 text-k-gold bg-k-gold/5 shadow-[0_0_15px_rgba(201,169,110,0.1)]' 
@@ -107,7 +114,14 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
           {t('spatialAtlas', language)}
         </button>
         <button 
-          onClick={() => setAtlasMode('saved')}
+          onClick={() => {
+            trackEvent('atlas_mode_changed', {
+              previous_mode: atlasMode,
+              next_mode: 'saved',
+              saved_count: savedVenues.length,
+            });
+            setAtlasMode('saved');
+          }}
           className={`px-5 py-2 rounded-full border text-xs font-sans transition-all duration-300 ${
             atlasMode === 'saved' 
               ? 'border-k-gold/30 text-k-gold bg-k-gold/5 shadow-[0_0_15px_rgba(201,169,110,0.1)]' 
@@ -157,6 +171,10 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                           clusterCount={pointCount}
                           onClick={(e) => {
                             e.stopPropagation();
+                            trackEvent('atlas_cluster_clicked', {
+                              point_count: pointCount,
+                              zoom: Number(viewState.zoom.toFixed(2)),
+                            });
                             if (supercluster) {
                               const expansionZoom = Math.min(supercluster.getClusterExpansionZoom(cluster.id as number), 20);
                               setViewState({ ...viewState, longitude, latitude, zoom: expansionZoom });
@@ -172,7 +190,16 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                       <KorantisMarker 
                         isActive={cluster.properties.isActive} 
                         isSaved={cluster.properties.isSaved} 
-                        onClick={(e) => { e.stopPropagation(); setSelectedVenueId(cluster.properties.venueId); }} 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const venue = rankedVenues.find((item) => item.id === cluster.properties.venueId);
+                          if (venue) {
+                            trackVenueEvent('atlas_marker_clicked', venue, {
+                              zoom: Number(viewState.zoom.toFixed(2)),
+                            });
+                          }
+                          setSelectedVenueId(cluster.properties.venueId);
+                        }} 
                       />
                     </Marker>
                   );
@@ -187,7 +214,10 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
               {selectedVenue && (
                 <AtlasVenuePreview 
                   venue={selectedVenue} 
-                  onOpenDetail={() => onVenueClick(selectedVenue)} 
+                  onOpenDetail={() => {
+                    trackVenueEvent('atlas_preview_opened', selectedVenue);
+                    onVenueClick(selectedVenue);
+                  }} 
                 />
               )}
             </div>
@@ -275,7 +305,10 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                   {savedVenues.map((venue) => (
                     <div 
                       key={venue.id}
-                      onClick={() => onVenueClick(venue)}
+                      onClick={() => {
+                        trackVenueEvent('saved_venue_clicked', venue);
+                        onVenueClick(venue);
+                      }}
                       className="p-4 bg-[#0A0806] border border-white/5 rounded-xl flex items-center gap-4 hover:border-k-gold/20 hover:bg-[#0F0D0B] transition-all duration-300 cursor-pointer shadow-md group"
                     >
                       <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 border border-white/5">
@@ -296,6 +329,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
+                            trackVenueEvent('saved_venue_removed', venue);
                             toggleSaveVenue(venue.id);
                           }}
                           className="p-2 text-k-gold hover:text-k-text-secondary transition-colors cursor-pointer"

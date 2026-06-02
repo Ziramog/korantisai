@@ -1,16 +1,35 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useCircadian } from '../contexts/CircadianContext';
 import { Search, Sparkles } from 'lucide-react';
 import { t } from '../utils/i18n';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { trackEvent } from '@/lib/analytics';
 
 export default function SearchBar() {
   const { searchQuery, setSearchQuery, language } = useCircadian();
   const { scrollY } = useScroll();
   
   const [searchState, setSearchState] = useState<'expanded' | 'compressed' | 'hidden'>('expanded');
+  const lastTrackedQuery = useRef('');
+
+  useEffect(() => {
+    const cleaned = searchQuery.trim().toLowerCase();
+    const timeout = window.setTimeout(() => {
+      if (cleaned === lastTrackedQuery.current) return;
+      lastTrackedQuery.current = cleaned;
+      trackEvent('search_query_changed', {
+        query_length: cleaned.length,
+        has_query: cleaned.length > 0,
+        has_work_intent: /\b(work|laptop|study|read|focus)\b/.test(cleaned),
+        has_coffee_intent: /\b(coffee|cafe|espresso)\b/.test(cleaned),
+        has_night_intent: /\b(night|bar|cocktail|wine|dinner|date)\b/.test(cleaned),
+      });
+    }, 900);
+
+    return () => window.clearTimeout(timeout);
+  }, [searchQuery]);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const velocity = scrollY.getVelocity();
@@ -75,6 +94,7 @@ export default function SearchBar() {
                 type="text" 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onFocus={() => trackEvent('search_focused', { state: searchState })}
                 placeholder={t('searchPlaceholder', language)}
                 className="w-full rounded-[2rem] py-4 pl-12 pr-6 text-[#8A7A5A] placeholder:text-[#5B4E3E] focus:outline-none font-sans text-[15px] shadow-2xl pointer-events-auto transition-colors"
                 style={{ 
@@ -133,6 +153,10 @@ export default function SearchBar() {
                   <button 
                     key={pill.value}
                     onClick={() => {
+                      trackEvent(isSelected ? 'search_pill_removed' : 'search_pill_added', {
+                        pill: pill.value,
+                        query_length: searchQuery.trim().length,
+                      });
                       if (isSelected) {
                         setSearchQuery(searchQuery.replace(new RegExp(pill.value, 'ig'), '').trim());
                       } else {
@@ -162,7 +186,12 @@ export default function SearchBar() {
               border: '1px solid rgba(201, 169, 110, 0.45)',
               boxShadow: '0 10px 30px rgba(0,0,0,0.8)'
             }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => {
+              trackEvent('search_compressed_clicked', {
+                has_query: searchQuery.trim().length > 0,
+              });
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           >
             <Search size={14} className="text-[#5B4E3E] ml-1" />
             <span className="text-[13px] font-sans text-[#8A7A5A] truncate">

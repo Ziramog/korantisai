@@ -17,6 +17,7 @@ import AuthPanel from './components/AuthPanel';
 import HeaderControls from './components/HeaderControls';
 import SpatialAtlas from './components/map/SpatialAtlas';
 import { t } from './utils/i18n';
+import { trackEvent, trackVenueEvent } from '@/lib/analytics';
 
 type EditorialFeedSlot = Pick<ScoredVenue, 'cardSize' | 'spacing'>;
 
@@ -87,6 +88,13 @@ export default function Home() {
   // Re-link telemetry inside component event handler
   const { recordClick } = useCircadian();
   const handleVenueClick = (venue: ScoredVenue) => {
+    trackVenueEvent('venue_card_clicked', venue, {
+      active_tab: activeTab,
+      saved: savedVenueIds.includes(venue.id),
+    });
+    trackVenueEvent('venue_detail_opened', venue, {
+      source: activeTab,
+    });
     recordClick(venue.atmosphere);
     setSelectedVenue(venue);
   };
@@ -119,8 +127,12 @@ export default function Home() {
           >
             <VenueDetail 
               venue={selectedVenue} 
-              onBack={() => setSelectedVenue(null)} 
+              onBack={() => {
+                trackVenueEvent('venue_detail_back_clicked', selectedVenue);
+                setSelectedVenue(null);
+              }} 
               onOpenInAtlas={() => {
+                trackVenueEvent('venue_detail_atlas_opened', selectedVenue);
                 setAtlasPreSelectedVenueId(selectedVenue.id);
                 setSelectedVenue(null);
                 setActiveTab('atlas');
@@ -159,7 +171,10 @@ export default function Home() {
                       <VenueCard 
                         venue={presentation}
                         onSelect={() => handleVenueClick(source)}
-                        onSpatialTap={() => setActiveTab('atlas')}
+                        onSpatialTap={() => {
+                          trackVenueEvent('venue_card_atlas_opened', source);
+                          setActiveTab('atlas');
+                        }}
                       />
                     </motion.div>
                   ))}
@@ -171,7 +186,10 @@ export default function Home() {
             {activeTab === 'atlas' && (
               <SpatialAtlas 
                 onVenueClick={handleVenueClick} 
-                onExploreClick={() => setActiveTab('explore')} 
+                onExploreClick={() => {
+                  trackEvent('atlas_empty_explore_clicked');
+                  setActiveTab('explore');
+                }} 
                 initialSelectedVenueId={atlasPreSelectedVenueId}
               />
             )}

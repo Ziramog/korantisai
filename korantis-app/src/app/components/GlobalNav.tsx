@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useReducedMotion, useScroll, useMotionValueEve
 import { Search, Map, User } from 'lucide-react';
 import { useCircadian, type ScoredVenue } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
+import { trackEvent } from '@/lib/analytics';
 
 export type MainTab = 'explore' | 'atlas' | 'taste';
 
@@ -70,7 +71,13 @@ function GlobalNav({ activeTab, setActiveTab, selectedVenue }: GlobalNavProps) {
                   <button
                     key={item.id}
                     type="button"
-                    onClick={() => setActiveTab(item.id)}
+                    onClick={() => {
+                      trackEvent('navigation_tab_changed', {
+                        previous_tab: activeTab,
+                        next_tab: item.id,
+                      });
+                      setActiveTab(item.id);
+                    }}
                     aria-label={t(item.id, language) || item.label}
                     aria-pressed={isActive}
                     className="group relative flex items-center justify-center p-1"

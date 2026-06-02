@@ -5,6 +5,7 @@ import type { Session } from '@supabase/supabase-js';
 import type { Venue } from '../data/venues';
 import { createClient } from '@/utils/supabase/client';
 import { getLocale, setLocale as persistLocale, subscribeLocale, type Locale } from '@/lib/i18n';
+import { trackEvent } from '@/lib/analytics';
 import {
   applyCircadianMixGuardrail,
   getCircadianCategoryBias,
@@ -251,9 +252,24 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     setDismissedVenueIds([]);
   }, []);
   const setLanguage = useCallback((lang: Locale) => {
+    trackEvent('language_changed', {
+      previous_language: getLocale(),
+      next_language: lang,
+    });
     persistLocale(lang);
   }, []);
   const [city, setCity] = useState<'BUE' | 'NYC'>('BUE');
+  const setTrackedCity = useCallback((nextCity: 'BUE' | 'NYC') => {
+    setCity((previousCity) => {
+      if (previousCity !== nextCity) {
+        trackEvent('city_changed', {
+          previous_city: previousCity,
+          next_city: nextCity,
+        });
+      }
+      return nextCity;
+    });
+  }, []);
 
   const fetchProfile = useCallback(async (uid: string) => {
     const { data, error } = await supabase
@@ -452,6 +468,10 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
 
   // Telemetry updates
   const recordClick = (atmosphere: string) => {
+    trackEvent('taste_signal_recorded', {
+      signal_type: 'click',
+      atmosphere,
+    });
     applyDecay();
     const target = ATMOSPHERE_VECTORS[atmosphere];
     if (!target) return;
@@ -475,6 +495,10 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     applyDecay();
     const target = ATMOSPHERE_VECTORS[atmosphere];
     if (!target || durationMs < 2000) return;
+    trackEvent('venue_card_dwelled', {
+      atmosphere,
+      dwell_seconds: Number((durationMs / 1000).toFixed(1)),
+    });
 
     const deltaSeconds = (durationMs - 2000) / 1000;
     const dwellReward = Math.log(1 + deltaSeconds);
@@ -498,6 +522,9 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   };
 
   const recordPassThrough = (atmosphere: string) => {
+    trackEvent('venue_card_passed', {
+      atmosphere,
+    });
     applyDecay();
     const target = ATMOSPHERE_VECTORS[atmosphere];
     if (!target) return;
@@ -512,6 +539,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   };
 
   const resetTaste = () => {
+    trackEvent('taste_profile_reset');
     const neutral = [0, 0, 0, 0, 0, 0, 0, 0];
     setIdentityCentroid(neutral);
     setCurrentDrift(neutral);
@@ -522,6 +550,14 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   // Saved / Bookmark Atlas
   const toggleSaveVenue = async (id: string) => {
     const isSaved = savedVenueIds.includes(id);
+    const venue = dbVenues.find((item) => item.id === id);
+    trackEvent(isSaved ? 'venue_unsaved' : 'venue_saved', {
+      venue_id: id,
+      venue_name: venue?.name,
+      venue_category: venue?.category,
+      venue_location: venue?.location,
+      authenticated: isAuthenticated,
+    });
     const nextSaved = isSaved ? savedVenueIds.filter(v => v !== id) : [...savedVenueIds, id];
     setSavedVenueIds(nextSaved);
 
@@ -725,7 +761,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         language,
         setLanguage,
         city,
-        setCity,
+        setCity: setTrackedCity,
         setIsAuthenticated,
         setUserId
       }}
