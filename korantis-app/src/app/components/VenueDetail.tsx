@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, DollarSign, MapPin, Heart } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { localizeVenueForDisplay, t } from '../utils/i18n';
 import VenueDetailMapBlock from './map/VenueDetailMapBlock';
+import { localizeVenueDescriptionForDisplay } from '@/lib/descriptions/venueDescriptionModel';
 
 interface VenueDetailProps {
   venue: ScoredVenue;
@@ -19,6 +20,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
+  const description = localizeVenueDescriptionForDisplay(venue, language);
   const galleryImages = (venue.galleryImages || [])
     .filter((image) => image.src && !image.src.includes('/venue_invernadero.png'))
     .slice(0, 6);
@@ -117,10 +119,10 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         <section className="mb-10 border-b border-k-border/30 pb-10">
           <div className="flex flex-col gap-3">
             <p className="text-lg md:text-2xl text-k-gold-light font-display italic font-light leading-relaxed max-w-3xl">
-              &ldquo;{displayVenue.displayTagline}&rdquo;
+              &ldquo;{description.oneLiner}&rdquo;
             </p>
             <p className="text-xs md:text-sm text-k-text-secondary font-sans font-light leading-relaxed mt-3 text-justify">
-              {displayVenue.displayDescription}
+              {description.summary}
             </p>
           </div>
         </section>
@@ -136,11 +138,16 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                 {displayVenue.displayTags[index] || tag}
               </span>
             ))}
+            {description.bestFor.map((value) => (
+              <span key={value} className="px-3.5 py-1.5 rounded-lg border border-k-gold/10 text-[11px] font-sans tracking-wide text-k-gold bg-k-gold-dim/40 shadow-sm">
+                {value}
+              </span>
+            ))}
             <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
-              {t('softAcousticDensity', language)}
+              {description.energyLabel}
             </span>
             <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary bg-white/[0.02]">
-              {t('sustainedPacing', language)}
+              {description.noiseLabel}
             </span>
           </div>
         </section>
@@ -216,7 +223,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                   {t('temporalPace', language)}
                 </span>
                 <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  {t('temporalPaceDesc', language)}
+                  {description.goodToKnow.join(' ')}
                 </span>
               </div>
             </div>
@@ -227,7 +234,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                   {t('investment', language)}
                 </span>
                 <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  {t('investmentDesc', language)}
+                  {description.priceLabel}. {description.reservationHint}. {description.confidenceLabel}.
                 </span>
               </div>
             </div>
