@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Clock, DollarSign, MapPin, Heart } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { localizeVenueForDisplay, t } from '../utils/i18n';
 import VenueDetailMapBlock from './map/VenueDetailMapBlock';
+import VenueImageLightbox from './VenueImageLightbox';
 import { localizeVenueDescriptionForDisplay } from '@/lib/descriptions/venueDescriptionModel';
 
 interface VenueDetailProps {
@@ -17,6 +18,7 @@ interface VenueDetailProps {
 
 export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetailProps) {
   const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
+  const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<number | null>(null);
 
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
@@ -29,6 +31,10 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [venue.id]);
+
+  const closeLightbox = useCallback(() => {
+    setSelectedGalleryIndex(null);
+  }, []);
 
   // Derived timeline attributes matching the design mock
   const timeBlocks = [
@@ -193,9 +199,12 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             </h3>
             <div className="grid grid-cols-3 gap-3">
               {galleryImages.map((image, index) => (
-                <div
+                <button
+                  type="button"
                   key={image.id || `${venue.id}-gallery-${index}`}
-                  className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group"
+                  onClick={() => setSelectedGalleryIndex(index)}
+                  className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group cursor-zoom-in focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-k-black"
+                  aria-label={`${language === 'es' ? 'Ampliar imagen' : 'Expand image'} ${index + 1} ${language === 'es' ? 'de' : 'of'} ${venue.name}`}
                 >
                   <Image
                     src={image.src || venue.heroImage}
@@ -204,11 +213,20 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
                     sizes="(min-width: 768px) 220px, 30vw"
                     className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
                   />
-                </div>
+                </button>
               ))}
             </div>
           </section>
         )}
+
+        <VenueImageLightbox
+          images={galleryImages}
+          index={selectedGalleryIndex}
+          venueName={venue.name}
+          language={language}
+          onClose={closeLightbox}
+          onChange={setSelectedGalleryIndex}
+        />
 
         {/* Spatial Placement Map Block */}
         <VenueDetailMapBlock venue={venue} onOpenInAtlas={onOpenInAtlas} />
