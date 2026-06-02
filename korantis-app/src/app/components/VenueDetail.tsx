@@ -19,6 +19,9 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
+  const galleryImages = (venue.galleryImages || [])
+    .filter((image) => image.src && !image.src.includes('/venue_invernadero.png'))
+    .slice(0, 6);
 
   // Scroll back to the top of the detail view on mount
   useEffect(() => {
@@ -176,37 +179,29 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         </section>
 
         {/* Cinematic Visual Gallery */}
-        <section className="mb-14">
-          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-            {t('vignettes', language)}
-          </h3>
-          <div className="grid grid-cols-3 gap-3">
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
-              <Image 
-                src="/venue_cuervo.png" 
-                alt={t('detailVignetteAlt', language)}
-                fill 
-                className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 
-              />
+        {galleryImages.length > 0 && (
+          <section className="mb-14">
+            <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
+              {t('vignettes', language)}
+            </h3>
+            <div className="grid grid-cols-3 gap-3">
+              {galleryImages.map((image, index) => (
+                <div
+                  key={image.id || `${venue.id}-gallery-${index}`}
+                  className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group"
+                >
+                  <Image
+                    src={image.src || venue.heroImage}
+                    alt={`${venue.name} ${t('detailVignetteAlt', language)}`}
+                    fill
+                    sizes="(min-width: 768px) 220px, 30vw"
+                    className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+              ))}
             </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
-              <Image 
-                src="/venue_rooftop.png" 
-                alt={t('detailVignetteAlt', language)}
-                fill 
-                className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 
-              />
-            </div>
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group">
-              <Image 
-                src="/venue_oporto.png" 
-                alt={t('detailVignetteAlt', language)}
-                fill 
-                className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 
-              />
-            </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* Spatial Placement Map Block */}
         <VenueDetailMapBlock venue={venue} onOpenInAtlas={onOpenInAtlas} />
