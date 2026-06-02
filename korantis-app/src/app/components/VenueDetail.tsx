@@ -18,7 +18,7 @@ interface VenueDetailProps {
 
 export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetailProps) {
   const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
-  const [selectedGalleryIndex, setSelectedGalleryIndex] = useState<number | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
 
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
@@ -26,6 +26,10 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   const galleryImages = (venue.galleryImages || [])
     .filter((image) => image.src && !image.src.includes('/venue_invernadero.png'))
     .slice(0, 6);
+  const viewerImages = [
+    { src: venue.heroImage, role: 'hero' },
+    ...galleryImages,
+  ];
 
   // Scroll back to the top of the detail view on mount
   useEffect(() => {
@@ -33,7 +37,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   }, [venue.id]);
 
   const closeLightbox = useCallback(() => {
-    setSelectedGalleryIndex(null);
+    setSelectedImageIndex(null);
   }, []);
 
   // Derived timeline attributes matching the design mock
@@ -99,6 +103,13 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
           {/* Rich Cinematic Dark Gradient Mask */}
           <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/40 to-transparent"></div>
         </motion.div>
+
+        <button
+          type="button"
+          onClick={() => setSelectedImageIndex(0)}
+          className="absolute inset-0 z-10 cursor-zoom-in focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/60 focus-visible:ring-inset"
+          aria-label={`${language === 'es' ? 'Ampliar imagen principal de' : 'Expand hero image of'} ${venue.name}`}
+        />
 
         {/* Hero Meta Info - Responsive bottom positioning */}
         <div className="absolute bottom-6 left-5 right-5 md:left-12 z-20 flex flex-col gap-2 max-w-2xl">
@@ -193,26 +204,36 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
         {/* Cinematic Visual Gallery */}
         {galleryImages.length > 0 && (
-          <section className="mb-14">
-            <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-              {t('vignettes', language)}
-            </h3>
-            <div className="grid grid-cols-3 gap-3">
+          <section className="mb-14 -mx-5 md:mx-0">
+            <div className="px-5 md:px-0">
+              <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
+                {t('vignettes', language)}
+              </h3>
+            </div>
+            <div
+              className="flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] md:px-0 [&::-webkit-scrollbar]:hidden"
+              aria-label={language === 'es' ? 'Escenas del ambiente' : 'Atmospheric scenes'}
+            >
               {galleryImages.map((image, index) => (
                 <button
                   type="button"
                   key={image.id || `${venue.id}-gallery-${index}`}
-                  onClick={() => setSelectedGalleryIndex(index)}
-                  className="relative aspect-[4/5] rounded-lg overflow-hidden border border-k-border/40 group cursor-zoom-in focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-k-black"
+                  onClick={() => setSelectedImageIndex(index + 1)}
+                  className="group relative aspect-[4/5] w-[82vw] max-w-[360px] shrink-0 snap-center cursor-zoom-in overflow-hidden rounded-2xl border border-k-gold/10 bg-[#100D0A] shadow-[0_24px_70px_rgba(0,0,0,0.34)] focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-k-black md:w-[min(42vw,360px)]"
                   aria-label={`${language === 'es' ? 'Ampliar imagen' : 'Expand image'} ${index + 1} ${language === 'es' ? 'de' : 'of'} ${venue.name}`}
                 >
                   <Image
                     src={image.src || venue.heroImage}
                     alt={`${venue.name} ${t('detailVignetteAlt', language)}`}
                     fill
-                    sizes="(min-width: 768px) 220px, 30vw"
-                    className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                    sizes="(min-width: 768px) 360px, 82vw"
+                    className="object-cover opacity-90 saturate-[0.92] transition duration-1000 ease-out group-hover:scale-[1.025] group-hover:opacity-100"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0705]/45 via-transparent to-[#0A0705]/10 opacity-70 transition-opacity duration-700 group-hover:opacity-45" />
+                  <div className="absolute inset-x-3 bottom-3 flex justify-between text-[9px] uppercase tracking-[0.24em] text-k-text/45">
+                    <span>{language === 'es' ? 'Escena' : 'Scene'}</span>
+                    <span>{String(index + 1).padStart(2, '0')}</span>
+                  </div>
                 </button>
               ))}
             </div>
@@ -220,12 +241,12 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         )}
 
         <VenueImageLightbox
-          images={galleryImages}
-          index={selectedGalleryIndex}
+          images={viewerImages}
+          index={selectedImageIndex}
           venueName={venue.name}
           language={language}
           onClose={closeLightbox}
-          onChange={setSelectedGalleryIndex}
+          onChange={setSelectedImageIndex}
         />
 
         {/* Spatial Placement Map Block */}

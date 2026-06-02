@@ -70,14 +70,14 @@ export default function VenueImageLightbox({
     <AnimatePresence>
       {isOpen && currentImage?.src && (
         <motion.div
-          className="fixed inset-0 z-[120] bg-black/95 backdrop-blur-sm"
+          className="fixed inset-0 z-[120] bg-[#070504]/95 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-label={language === 'es' ? `Imagen ampliada de ${venueName}` : `Expanded image of ${venueName}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.24, ease: imageEase }}
+          transition={{ duration: 0.32, ease: imageEase }}
         >
           <button
             type="button"
@@ -92,7 +92,7 @@ export default function VenueImageLightbox({
             initial={{ opacity: 0, scale: 0.985 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.985 }}
-            transition={{ duration: 0.36, ease: imageEase }}
+            transition={{ duration: 0.48, ease: imageEase }}
           >
             <Image
               src={currentImage.src}
@@ -105,14 +105,14 @@ export default function VenueImageLightbox({
           </motion.div>
 
           <div className="absolute left-4 right-4 top-4 z-10 flex items-center justify-between md:left-6 md:right-6">
-            <div className="text-[10px] uppercase tracking-[0.28em] text-white/45">
+            <div className="font-sans text-[10px] uppercase tracking-[0.28em] text-k-gold/45">
               {index !== null ? `${index + 1} / ${images.length}` : ''}
             </div>
             <button
               type="button"
               onClick={onClose}
               aria-label={language === 'es' ? 'Cerrar imagen' : 'Close image'}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/30 text-white/70 backdrop-blur-md transition hover:border-white/25 hover:text-white"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-k-gold/10 bg-[#0F0D0B]/35 text-k-text-secondary/70 backdrop-blur-md transition hover:border-k-gold/25 hover:text-k-text"
             >
               <X size={16} />
             </button>
@@ -124,7 +124,7 @@ export default function VenueImageLightbox({
                 type="button"
                 onClick={() => onChange((index - 1 + images.length) % images.length)}
                 aria-label={language === 'es' ? 'Imagen anterior' : 'Previous image'}
-                className="absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/20 text-white/65 backdrop-blur-md transition hover:border-white/25 hover:text-white md:left-6"
+                className="absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-k-gold/10 bg-[#0F0D0B]/20 text-k-text-secondary/45 backdrop-blur-md transition hover:border-k-gold/25 hover:text-k-text md:left-6"
               >
                 <ChevronLeft size={18} />
               </button>
@@ -132,7 +132,7 @@ export default function VenueImageLightbox({
                 type="button"
                 onClick={() => onChange((index + 1) % images.length)}
                 aria-label={language === 'es' ? 'Imagen siguiente' : 'Next image'}
-                className="absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/20 text-white/65 backdrop-blur-md transition hover:border-white/25 hover:text-white md:right-6"
+                className="absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-k-gold/10 bg-[#0F0D0B]/20 text-k-text-secondary/45 backdrop-blur-md transition hover:border-k-gold/25 hover:text-k-text md:right-6"
               >
                 <ChevronRight size={18} />
               </button>
