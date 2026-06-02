@@ -1,5 +1,6 @@
 import { en } from './dictionaries/en';
 import { es } from './dictionaries/es';
+import venueContentEs from './venueContentEs.json';
 import type { Locale, TranslationParams, VenueDisplayFields } from './types';
 
 export type { Locale, TranslationParams, VenueDisplayFields } from './types';
@@ -120,6 +121,15 @@ const intentTranslations: Record<string, string> = {
   'long stay': 'estadía larga',
 };
 
+type VenueContentEs = {
+  id: string;
+  tagline_es?: string;
+  narrative_es?: string;
+  tags_es?: string[];
+};
+
+const venueContentEsById = venueContentEs as Record<string, VenueContentEs>;
+
 export function normalizeLocale(locale: string | null | undefined): Locale {
   return locale === 'es' ? 'es' : 'en';
 }
@@ -203,9 +213,11 @@ export function translateVenueField(
 
 export function localizeVenueForDisplay<
   TVenue extends {
+    id?: string | null;
     category?: string | null;
     category_es?: string | null;
     tags?: string[] | null;
+    tags_es?: string[] | null;
     intents?: string[] | null;
     atmosphere?: string | null;
     tagline?: string | null;
@@ -214,19 +226,35 @@ export function localizeVenueForDisplay<
     narrative_es?: string | null;
   },
 >(venue: TVenue, locale: Locale): VenueDisplayFields<TVenue> {
+  const spanishFallback = locale === 'es' && venue.id
+    ? venueContentEsById[venue.id]
+    : null;
+
   const displayCategory =
     locale === 'es' && venue.category_es
       ? venue.category_es
       : translateVenueField(venue.category, locale, 'category');
 
-  const displayTags = (venue.tags || []).map((tag) => translateTag(tag, locale));
+  const displayTags = locale === 'es' && venue.tags_es?.length
+    ? venue.tags_es
+    : locale === 'es' && spanishFallback?.tags_es?.length
+      ? spanishFallback.tags_es
+      : (venue.tags || []).map((tag) => translateTag(tag, locale));
   const displayIntents = (venue.intents || []).map((intent) =>
     translateIntent(intent, locale),
   );
   const displayTagline =
-    locale === 'es' && venue.tagline_es ? venue.tagline_es : venue.tagline || '';
+    locale === 'es' && venue.tagline_es
+      ? venue.tagline_es
+      : locale === 'es' && spanishFallback?.tagline_es
+        ? spanishFallback.tagline_es
+        : venue.tagline || '';
   const displayDescription =
-    locale === 'es' && venue.narrative_es ? venue.narrative_es : venue.narrative || '';
+    locale === 'es' && venue.narrative_es
+      ? venue.narrative_es
+      : locale === 'es' && spanishFallback?.narrative_es
+        ? spanishFallback.narrative_es
+        : venue.narrative || '';
 
   return {
     ...venue,

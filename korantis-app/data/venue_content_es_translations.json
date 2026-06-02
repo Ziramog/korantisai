@@ -1,0 +1,741 @@
+{
+  "generated_at": "2026-06-02T00:44:04.432Z",
+  "source": "presentation_layer_translation_from_current_api_payload",
+  "locale": "es",
+  "total_venues": 66,
+  "translated_venues": 66,
+  "missing": [],
+  "venues": {
+    "4403e7f1-09f5-4323-af0f-aae6df2b899d": {
+      "id": "4403e7f1-09f5-4323-af0f-aae6df2b899d",
+      "tagline_es": "Enfoque matutino y rituales suaves",
+      "narrative_es": "Un santuario minimalista",
+      "tags_es": [
+        "Minimal",
+        "Mañana",
+        "Ritual",
+        "Suave"
+      ]
+    },
+    "073deb0a-682e-4730-8d3f-0d75c9d3abbd": {
+      "id": "073deb0a-682e-4730-8d3f-0d75c9d3abbd",
+      "tagline_es": "Templo industrial",
+      "narrative_es": "Puristas del café de especialidad",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "542765fa-9f15-436b-8846-81870f97d7e3": {
+      "id": "542765fa-9f15-436b-8846-81870f97d7e3",
+      "tagline_es": "Donde el tango vive en las paredes y el neón rojo nunca duerme.",
+      "narrative_es": "El bandoneón exhala. Los desgastados pisos de madera recuerdan mil milongas. El neón rojo tiñe las paredes. Esto no es un espectáculo — aquí el tango aún respira.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "6dfb725e-0b18-414d-af4c-0c6f3afa5622": {
+      "id": "6dfb725e-0b18-414d-af4c-0c6f3afa5622",
+      "tagline_es": "Escondido bajo la superficie",
+      "narrative_es": "Un vault de cócteles subterráneo",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "9035f5cb-ccda-49cc-ad8c-b90bcfe8d167": {
+      "id": "9035f5cb-ccda-49cc-ad8c-b90bcfe8d167",
+      "tagline_es": "Cenando dentro de un invernadero vivo, donde la naturaleza pone la mesa.",
+      "narrative_es": "Los techos de vidrio filtran la luz de la tarde a través de un dosel de helechos y palmas tropicales. El aire se siente diferente aquí — húmedo, verde, vivo. Cada plato llega como un espécimen botánico.",
+      "tags_es": [
+        "Botánico",
+        "Verde",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "97833fe8-7fe1-45dc-8d9b-931573ab0398": {
+      "id": "97833fe8-7fe1-45dc-8d9b-931573ab0398",
+      "tagline_es": "Escondido bajo la superficie, donde las noches se sienten como cine.",
+      "narrative_es": "Una calidez subterránea moldeada por luz ámbar, jazz suave y conversaciones que naturalmente se deslizan más allá de la medianoche. Se siente como salir del tiempo.",
+      "tags_es": [
+        "Ámbar",
+        "Lento",
+        "Cálido"
+      ]
+    },
+    "4155059e-8861-4c84-bd2e-ad13e2895ab4": {
+      "id": "4155059e-8861-4c84-bd2e-ad13e2895ab4",
+      "tagline_es": "Un siglo de conversaciones bajo el antiguo árbol de goma.",
+      "narrative_es": "Mesas de mármol, elegancia porteña y la sombra moteada de un árbol que ha visto pasar generaciones. El mozo conoce tu pedido antes de que hables.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "007e1609-d51f-4e44-828e-1140e3f92497": {
+      "id": "007e1609-d51f-4e44-828e-1140e3f92497",
+      "tagline_es": "La cuna del café de especialidad de Buenos Aires.",
+      "narrative_es": "Un espacio estrecho y bullicioso donde el enfoque está completamente en la taza. La energía es alta, la extracción es perfecta y la gente se derrama sobre la vereda.",
+      "tags_es": [
+        "Bullicioso",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "8775369b-fefd-4691-b298-de4b937e16a9": {
+      "id": "8775369b-fefd-4691-b298-de4b937e16a9",
+      "tagline_es": "Calidez industrial y mañanas animadas.",
+      "narrative_es": "Ladrillo expuesto se encuentra con tostadores de especialidad. El barista se mueve con precisión silenciosa. El vapor se eleva contra la luz de la mañana que entra por las ventanas del almacén.",
+      "tags_es": [
+        "Animado",
+        "Mañana",
+        "Silencioso",
+        "Cálido"
+      ]
+    },
+    "d3ee3084-cc06-4267-b92f-118612186125": {
+      "id": "d3ee3084-cc06-4267-b92f-118612186125",
+      "tagline_es": "Calidez dorada y el murmullo de las tardes lentas.",
+      "narrative_es": "El sol de la tarde pinta todo de ámbar. Los pasteles brillan tras el vidrio curvado. Las conversaciones se vuelven más suaves a medida que la luz se profundiza.",
+      "tags_es": [
+        "Ámbar",
+        "Dorado",
+        "Lento",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "1b1bb183-5d09-4cb6-8c41-ce92485d805a": {
+      "id": "1b1bb183-5d09-4cb6-8c41-ce92485d805a",
+      "tagline_es": "Vino, atardecer y el arte lento de quedarse.",
+      "narrative_es": "La terraza captura la última luz dorada. El Malbec brilla en la copa. Las conversaciones se extienden a través de tablas de quesos y silencios compartidos. Nadie tiene prisa.",
+      "tags_es": [
+        "Dorado",
+        "Lento",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "971fec7c-770b-49f3-bd06-1fc95bce465b": {
+      "id": "971fec7c-770b-49f3-bd06-1fc95bce465b",
+      "tagline_es": "Aromas de café tostado en un entorno brutalista.",
+      "narrative_es": "Concreto, acero y el fuerte aroma de granos tostados. Se siente como una sala de máquinas para la cafeína. Enfocado, serio y excelente.",
+      "tags_es": [
+        "Enfocado",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "3d2d1d0d-bd7a-43c4-a493-ed61ed28a3cd": {
+      "id": "3d2d1d0d-bd7a-43c4-a493-ed61ed28a3cd",
+      "tagline_es": "Aireado, lleno de luz y sin prisa.",
+      "narrative_es": "Una esquina soleada que parece importada de Sídney. Ventanas amplias, madera clara y flat whites que saben como deberían. Excelente para trabajar suavemente.",
+      "tags_es": [
+        "Suave",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "7a2ba9ee-5116-448a-93f4-33582e65b882": {
+      "id": "7a2ba9ee-5116-448a-93f4-33582e65b882",
+      "tagline_es": "Luces de la ciudad abajo, cócteles lentos arriba.",
+      "narrative_es": "El horizonte brilla más allá de la barandilla. El viento lleva fragmentos de música desde abajo. Aquí, las conversaciones se convierten en confesiones y la noche se siente infinita.",
+      "tags_es": [
+        "Lento",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "1640a898-ed27-45c0-9a6f-9e0582a792b7": {
+      "id": "1640a898-ed27-45c0-9a6f-9e0582a792b7",
+      "tagline_es": "Paredes de piedra rústica y el lento ritual del espresso.",
+      "narrative_es": "Paredes de piedra gruesa mantienen el frescor de la mañana. El espresso llega en cerámica, oscuro y deliberado. San Telmo despierta lentamente a través de la ventana.",
+      "tags_es": [
+        "Mañana",
+        "Ritual",
+        "Lento"
+      ]
+    },
+    "cf73483e-0168-4421-a07d-0a33fe85f659": {
+      "id": "cf73483e-0168-4421-a07d-0a33fe85f659",
+      "tagline_es": "Brunch animado en la vereda y charlas de mediodía.",
+      "narrative_es": "Siempre ocupado, siempre vibrante. El piso de terrazo y los detalles de bronce le dan un toque parisino, pero la energía es puramente porteña.",
+      "tags_es": [
+        "Animado",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "a40f0cfa-c21b-49bb-ae49-c1169bc3e655": {
+      "id": "a40f0cfa-c21b-49bb-ae49-c1169bc3e655",
+      "tagline_es": "Memoria inmigrante transformada en alta cocina.",
+      "narrative_es": "Una celebración ruidosa y alegre de la cocina de la diáspora judía. La música puede empezar a sonar, la gente puede comenzar a aplaudir, pero la comida es muy seria.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "ChIJi0KSF-DLvJURYWbYvNEknrg": {
+      "id": "ChIJi0KSF-DLvJURYWbYvNEknrg",
+      "tagline_es": "Baño de luz dorada suave que danza sobre superficies elegantes.",
+      "narrative_es": "Baño de luz dorada suave que danza sobre superficies elegantes, el lugar irradia una calidez acogedora, invitándote a quedarte. El flujo rítmico de las conversaciones crea un suave murmullo que llena el aire, tejiendo un tapiz reconfortante de conexión y soledad. Aquí, el tiempo parece estirarse, permitiendo que los momentos se desplieguen como pétalos, revelando un espacio tranquilo donde la reflexión se mezcla sin esfuerzo con la camaradería. Aromas delicados de café recién hecho se mezclan con una palpable sensación de serenidad, haciendo que cada visita se sienta como una escapada apreciada. La atmósfera general irradia un entusiasmo silencioso, provocando sonrisas y fomentando nuevas amistades en medio de un fondo de colores suaves que evocan tanto paz como inspiración. Es una especie de santuario, donde el mundo exterior se disipa, dejando solo una textura emocional envolvente, rica en promesas y profunda simplicidad.",
+      "tags_es": [
+        "Dorado",
+        "Silencioso",
+        "Suave",
+        "Cálido",
+        "Buenos Aires",
+        "Café Especial"
+      ]
+    },
+    "b10ad680-2020-4343-9790-11b0ce871cd4": {
+      "id": "b10ad680-2020-4343-9790-11b0ce871cd4",
+      "tagline_es": "El templo de la carne y el fuego argentino.",
+      "narrative_es": "Paredes de ladrillo alineadas con botellas de vino firmadas por comensales. El olor a humo de leña y grasa asada es embriagador. Una experiencia religiosa para los carnívoros.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "3f4fd293-8bc7-4446-995b-a5756a9102d1": {
+      "id": "3f4fd293-8bc7-4446-995b-a5756a9102d1",
+      "tagline_es": "Energía punk rock se encuentra con la coctelería de clase mundial.",
+      "narrative_es": "Luces de neón, música alta y cócteles que están entre los mejores del mundo. Es estrecho, caótico y completamente inolvidable.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "7f6c7bc7-f4d6-4dfb-bbc8-cfb5776bbb33": {
+      "id": "7f6c7bc7-f4d6-4dfb-bbc8-cfb5776bbb33",
+      "tagline_es": "Un búnker de cócteles subterráneo donde el tiempo se dobla como el cobre.",
+      "narrative_es": "Desciende por una escalera estrecha a un mundo de latón, cuero y el brillo ámbar de Edison. Cada cóctel es una pequeña invención. Las paredes susurran de expediciones nunca realizadas.",
+      "tags_es": [
+        "Ámbar",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "ChIJ-dd4uo21vJURyRbXtTjQNlU": {
+      "id": "ChIJ-dd4uo21vJURyRbXtTjQNlU",
+      "name": "Anchoita",
+      "category": "restaurant",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurant"
+      ]
+    },
+    "a05e9db1-92e8-4bdb-9cc9-74aa02f94394": {
+      "id": "a05e9db1-92e8-4bdb-9cc9-74aa02f94394",
+      "tagline_es": "Sin menús. Solo tú, el bartender y la noche.",
+      "narrative_es": "Escondido detrás de la puerta de una sastrería, el espacio es estrecho, oscuro e intensamente personal. Las bebidas están adaptadas a tu estado de ánimo exacto.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "f770000d-7187-444e-8ee7-524645aa6824": {
+      "id": "f770000d-7187-444e-8ee7-524645aa6824",
+      "tagline_es": "Claridad nórdica se encuentra con la contención japonesa en un ritual matutino tranquilo.",
+      "narrative_es": "Madera clara, un solo pour-over de cerámica y luz solar que te hace olvidar la ciudad afuera. Cada detalle ha sido considerado, cada exceso eliminado.",
+      "tags_es": [
+        "Mañana",
+        "Silencioso",
+        "Ritual"
+      ]
+    },
+    "d9ba2a08-b565-482e-bfdb-02b54f1af9d2": {
+      "id": "d9ba2a08-b565-482e-bfdb-02b54f1af9d2",
+      "tagline_es": "Granos colombianos tostados en el corazón de Brooklyn.",
+      "narrative_es": "Un enorme tragaluz ilumina una pared verde viva. El aroma del café recién tostado flota en el aire, creando un vibrante santuario matutino.",
+      "tags_es": [
+        "Verde",
+        "Mañana",
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "b54f76f3-e271-4645-ab7f-4126412b054c": {
+      "id": "b54f76f3-e271-4645-ab7f-4126412b054c",
+      "tagline_es": "Donde las historias viven entre los estantes y el vapor.",
+      "narrative_es": "Los libros cubren cada pared. La máquina de espresso zumba detrás de pilas de poesía. La luz de la tarde cae sobre páginas abiertas. Las horas se disuelven.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "ebbba81e-6590-47ce-80b7-c5ac478e829f": {
+      "id": "ebbba81e-6590-47ce-80b7-c5ac478e829f",
+      "tagline_es": "Un sueño febril de faroles rojos y umami.",
+      "narrative_es": "Cientos de faroles de papel rojos cuelgan del techo. La estética es una sobrecarga surrealista de la cultura pop, combinando con una comida intensamente sabrosa y juguetonamente irreverente.",
+      "tags_es": [
+        "Atmosférico",
+        "Buenos Aires",
+        "Listo para el consumidor"
+      ]
+    },
+    "ChIJKcgRZLjKvJURv0XnanBXRCg": {
+      "id": "ChIJKcgRZLjKvJURv0XnanBXRCg",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJaZuHKES1vJURFUHa25lVQRI": {
+      "id": "ChIJaZuHKES1vJURFUHa25lVQRI",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJ9VPPDEW1vJUR5pnE3ycOTSU": {
+      "id": "ChIJ9VPPDEW1vJUR5pnE3ycOTSU",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJjYOU2TUyrAMRbQ66NLlqSLs": {
+      "id": "ChIJjYOU2TUyrAMRbQ66NLlqSLs",
+      "tagline_es": "Baño de luz suave, el lugar da vida a las primeras horas de la mañana, donde la luz del sol acaricia cada rincón, pintando un lienzo",
+      "narrative_es": "Baño de luz suave, el lugar da vida a las primeras horas de la mañana, donde la luz del sol acaricia cada rincón, pintando un lienzo de calidez y confort. Cada sorbo de café resuena como un suave murmullo en medio del zumbido tranquilo de la conversación, invitando a los buscadores de soledad y mariposas sociales por igual a su abrazo. El aire está impregnado con un tapiz fragante de granos tostados, creando un capullo familiar que se siente tanto animado como íntimo. Los momentos se estiran lujosamente mientras el tiempo danza languidamente, permitiendo a los clientes saborear cada experiencia, ya sea solos con sus pensamientos o perdidos en una charla suave. La atmósfera vibra con un trasfondo de camaradería, fomentando conexiones forjadas sobre gustos compartidos y la simple alegría del café. Aquí, el mundo exterior se desvanece, dejando solo la embriagadora mezcla de sabor y sentimiento, donde cada visita se convierte en un ritual atesorado.",
+      "tags_es": [
+        "Íntimo",
+        "Animado",
+        "Mañana",
+        "Tranquilo",
+        "Ritual",
+        "Social"
+      ]
+    },
+    "ChIJz_CYqwXLvJURdYrjf58EhfI": {
+      "id": "ChIJz_CYqwXLvJURdYrjf58EhfI",
+      "tagline_es": "Baño de luz dorada suave de la mañana, el café exuda un encanto que te atrae a su cálido abrazo.",
+      "narrative_es": "Baño de luz dorada suave de la mañana, el café exuda un encanto que te atrae a su cálido abrazo. Los rayos de sol bailan juguetonamente a través de las ventanas, iluminando las mesas de madera rústica donde el zumbido tranquilo de las conversaciones se mezcla con el suave tintineo de las tazas. Afuera, un par de mesas de bistró invitan a quienes buscan consuelo bajo las hojas moteadas, mientras que adentro, una calma acogedora ofrece un breve escape del mundo exterior. El aire fragante está impregnado de toques de productos horneados, envolviendo a los clientes en una dulce nostalgia, como si el tiempo mismo se moviera un poco más lento aquí, permitiendo que los momentos se prolonguen y los pensamientos respiren. A pesar de la soledad ocasional, la atmósfera palpita con una delicada energía social, una camaradería tácita compartida entre amantes del café y soñadores por igual, haciendo que cada sorbo se sienta como un ritual atesorado en el santuario de una ciudad bulliciosa.",
+      "tags_es": [
+        "Bullicioso",
+        "Dorado",
+        "Mañana",
+        "Tranquilo",
+        "Ritual",
+        "Lento"
+      ]
+    },
+    "ChIJTUHwQJK1vJURdEmmL52Y2p0": {
+      "id": "ChIJTUHwQJK1vJURdEmmL52Y2p0",
+      "tagline_es": "En el corazón de Buenos Aires, una luz dorada se derrama sobre el acogedor umbral de Vive Cafe, donde la charla se mezcla con el",
+      "narrative_es": "En el corazón de Buenos Aires, una luz dorada se derrama sobre el acogedor umbral de Vive Cafe, donde la charla se mezcla con el tintineo de las tazas, cada sonido una suave nota en esta sinfonía urbana. El espacio íntimo, abrazado por una fachada amarilla pintada, invita tanto a la soledad como a la comunión; rincones íntimos susurran a quienes están perdidos en sus pensamientos, mientras que las mesas bañadas por el sol derraman risas en el aire. Hay una energía palpable, un pulso vibrante que da vida a la atmósfera, mientras los clientes saborean sus cafés elaborados con maestría, disfrutando de la calidez de un abrazo acogedor. El tiempo se detiene aquí, estirándose como los suaves aromas que flotan desde los pasteles frescos, abrazando sin esfuerzo la paradoja de un lugar que se siente tanto familiar como encantador, un santuario donde los momentos se detienen y cada sorbo se convierte en una pincelada en el lienzo de una mañana perfecta.",
+      "tags_es": [
+        "Acogedor",
+        "Dorado",
+        "Íntimo",
+        "Mañana",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJRz6gfke1vJURQy4TWxMJuSY": {
+      "id": "ChIJRz6gfke1vJURQy4TWxMJuSY",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJm86rLcTKvJURjRPk21bRoro": {
+      "id": "ChIJm86rLcTKvJURjRPk21bRoro",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJ7yoB8i01o5URXijw57yzW0U": {
+      "id": "ChIJ7yoB8i01o5URXijw57yzW0U",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJGfegidK1vJURGaueRjMuAc0": {
+      "id": "ChIJGfegidK1vJURGaueRjMuAc0",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "bar_de_vino"
+      ]
+    },
+    "ChIJm0LQolPLvJURWGs-P6DPvxM": {
+      "id": "ChIJm0LQolPLvJURWGs-P6DPvxM",
+      "tagline_es": "Ubicado en una avenida arbolada, el café irradia un encanto tranquilo, invitando a los clientes a quedarse en su suave abrazo.",
+      "narrative_es": "Ubicado en una avenida arbolada, el café irradia un encanto tranquilo, invitando a los clientes a quedarse en su suave abrazo. La luz del sol filtra a través de las hojas susurrantes, proyectando sombras moteadas sobre la acera, mientras las risas y el suave murmullo de las conversaciones flotan en el aire como una brisa cálida. La terraza al aire libre ofrece un lugar perfecto para disfrutar del ritmo del vecindario, un compás pausado interrumpido por los gritos ocasionales de los niños que juegan al otro lado de la calle. Aquí, la soledad se mezcla sin esfuerzo con la energía de la comunidad, creando una mezcla armónica donde se puede saborear un exquisito espresso, rodeado de sonrisas y la serenata de la naturaleza. Es un espacio que se siente tanto íntimo como expansivo, un santuario donde los momentos se alargan y profundizan, y el mundo exterior se desvanece, invitando a una exploración de pensamientos y calidez.",
+      "tags_es": [
+        "Íntimo",
+        "Suave",
+        "Cálido",
+        "Buenos_Aires",
+        "Café_de_Especialidad",
+        "Validación"
+      ]
+    },
+    "ChIJBQV-6OK1vJURGbmHPh3oOgY": {
+      "id": "ChIJBQV-6OK1vJURGbmHPh3oOgY",
+      "tagline_es": "Bañado en la suave luz de la mañana, el café se despliega como un acogedor refugio, donde el sol se filtra a través de delicadas",
+      "narrative_es": "Bañado en la suave luz de la mañana, el café se despliega como un acogedor refugio, donde el sol se filtra a través de delicados cristales, iluminando la cálida madera y la exuberante vegetación. El aire está lleno de un sutil murmullo de risas y conversaciones, un mosaico de energías que se entrelazan en una alegre sinfonía. Aquí, los rincones susurran de soledad, invitando a quienes buscan consuelo en medio del pulso rítmico del intercambio social, mientras la terraza al aire libre llama con la suave caricia de una brisa, mezclando los aromas del café rico y las flores en flor. La textura emocional es una de comodidad y camaradería: un lugar que se siente como un secreto compartido entre amigos, donde cada sorbo y sonrisa ofrece un sabor de pertenencia. El tiempo se desliza sin ser notado, mientras los clientes se pierden en pensamientos reflexivos o diálogos animados, envueltos en la encantadora atmósfera del café.",
+      "tags_es": [
+        "Acogedor",
+        "Verde",
+        "Mañana",
+        "Social",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJi3BXstfLvJURdNbYxa0qaYs": {
+      "id": "ChIJi3BXstfLvJURdNbYxa0qaYs",
+      "tagline_es": "Ubicado en el bullicioso corazón de Buenos Aires, este refugio íntimo irradia una suave calidez, envolviendo a sus clientes en un tierno abrazo",
+      "narrative_es": "Ubicado en el bullicioso corazón de Buenos Aires, este refugio íntimo irradia una suave calidez, envolviendo a sus clientes en un tierno abrazo de suave luz ambiental. Los murmullos apagados crean un tapiz acogedor de conversación, envolviéndote como un chal pacífico mientras el aire resuena sutilmente con el rico y terroso aroma del matcha y el café recién hecho. Cada visita se despliega como un ritual silencioso, una escapada momentánea del frenético ritmo de la vida urbana. El rítmico tintineo de las tazas acentúa este santuario, mejorando el profundo sentido de comunidad, mientras los rincones acogedores invitan a la reflexión solitaria. El tiempo se detiene aquí: los días se sienten expansivos, dulcemente prolongados como las delicadas notas de un latte perfectamente elaborado. En este retiro tranquilo, uno descubre no solo una bebida, sino una conexión profundamente sentida con una cultura tanto distante como asombrosamente cercana, un hermoso recordatorio de que el hogar se puede encontrar en lugares inesperados.",
+      "tags_es": [
+        "Bullicioso",
+        "Acogedor",
+        "Íntimo",
+        "Silencioso",
+        "Ritual",
+        "Suave"
+      ]
+    },
+    "ChIJh9Qpx7nKvJURLoDB8VNMen8": {
+      "id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "bar_de_vino"
+      ]
+    },
+    "ChIJy4qUv4q1vJUR8rayMlrFSIg": {
+      "id": "ChIJy4qUv4q1vJUR8rayMlrFSIg",
+      "name": "878 Bar",
+      "category": "cocktail_bar",
+      "tagline": "",
+      "narrative": "",
+      "tags_es": [
+        "bar_de_cócteles"
+      ]
+    },
+    "ChIJT1fyLrnKvJURP1-qNQDw3Kg": {
+      "id": "ChIJT1fyLrnKvJURP1-qNQDw3Kg",
+      "name": "Milion",
+      "category": "cocktail_bar",
+      "tagline": "",
+      "narrative": "",
+      "tags_es": [
+        "bar_de_cócteles"
+      ]
+    },
+    "ChIJhQIMStM0o5URWvHT37YudbM": {
+      "id": "ChIJhQIMStM0o5URWvHT37YudbM",
+      "name": "Plaza Bar",
+      "category": "cocktail_bar",
+      "tagline": "",
+      "narrative": "",
+      "tags_es": [
+        "bar_de_cócteles"
+      ]
+    },
+    "ChIJ0y3PVmXLvJURLQ9QJvnOQSU": {
+      "id": "ChIJ0y3PVmXLvJURLQ9QJvnOQSU",
+      "tagline_es": "Bañado en la suave luz ámbar de la mañana, el lugar se despliega como un jardín secreto escondido entre las bulliciosas calles",
+      "narrative_es": "Bañado en la suave luz ámbar de la mañana, el lugar se despliega como un jardín secreto escondido entre las bulliciosas calles de Buenos Aires. El aire está impregnado de una suave energía social, donde los susurros de conversación se mezclan con el ritmo de las tazas tintineando. Es un santuario donde el tiempo se estira languidamente, permitiendo a los clientes perderse en el abrazo aromático del café recién hecho y el invitante aroma de delicias horneadas. Cada rincón guarda una sutil promesa de soledad, incluso en medio de la calidez de las risas compartidas, envolviendo a los visitantes en un capullo de encanto. El pulso rítmico de la música suave danza entre las paredes, creando una atmósfera que es tanto vibrante como tiernamente introspectiva, un telón de fondo perfecto para momentos fugaces de conexión o reflexión pacífica. Aquí, la mezcla de luz y sonido envuelve el corazón, creando una textura emocional indeleble que invita a quedarse un poco más.",
+      "tags_es": [
+        "Ámbar",
+        "Bullicioso",
+        "Mañana",
+        "Social",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJ6wGS5qbLvJUReBneuvpYy6s": {
+      "id": "ChIJ6wGS5qbLvJUReBneuvpYy6s",
+      "tagline_es": "Ubicado en una esquina bulliciosa de la ciudad, el puesto de café irradia una cálida atmósfera bañada en suave luz dorada que se filtra",
+      "narrative_es": "Ubicado en una esquina bulliciosa de la ciudad, el puesto de café irradia una cálida atmósfera bañada en suave luz dorada que se filtra a través de grandes ventanas, proyectando sombras suaves sobre el pulido mostrador de madera. Aquí, el tiempo se desliza con tranquilidad, cada taza de café elaborada con meticuloso cuidado, creando un contrapunto tranquilo a la vibrante energía que late a su alrededor. El aire está impregnado de ricos y embriagadores aromas que giran en armonía con susurros de risas y charlas alegres, invitando tanto a quienes buscan soledad como a las mariposas sociales. Mientras observas el ritual de preparación realizado por los dedicados baristas, una sensación de pertenencia te envuelve: un abrazo acogedor y discreto que se siente tanto íntimo como expansivo. La atmósfera rebosa de posibilidades y conexiones, entrelazándose en un delicioso tapiz de experiencias compartidas y quietud personal, convirtiéndolo en un santuario para soñadores y hacedores por igual.",
+      "tags_es": [
+        "Bullicioso",
+        "Dorado",
+        "Íntimo",
+        "Silencioso",
+        "Ritual",
+        "Social"
+      ]
+    },
+    "ChIJRUJ72ffLvJURJBByWf574-U": {
+      "id": "ChIJRUJ72ffLvJURJBByWf574-U",
+      "tagline_es": "Ubicado en el bullicioso corazón de Buenos Aires, este acogedor café emerge como un oasis tranquilo en medio de la expansión urbana.",
+      "narrative_es": "Ubicado en el bullicioso corazón de Buenos Aires, este acogedor café emerge como un oasis tranquilo en medio de la expansión urbana. La luz del sol se filtra suavemente a través de grandes ventanas, proyectando un cálido resplandor sobre tazas y platos de cerámica, mientras el aire zumbido con el suave murmullo de la charla convivial, punctuado por las risas de amigos. La atmósfera está impregnada de un ritmo encantador, donde la soledad encuentra consuelo entre sonrisas amistosas, y cada rincón invita a momentos de reflexión tranquila. Aquí, el ritmo es lo suficientemente lento como para saborear la atmósfera encantadora, donde el aroma del café revitaliza el espíritu mientras tonos cálidos y acogedores acunan verdades emocionales. Un lienzo de arte se despliega en delicados diseños de latte, invitando tanto a los habituales como a los nuevos a acurrucarse en el suave abrazo de este refugio comunitario, protegido del mundo pero conectado a un tapiz de vidas: una danza de serenidad en medio de la vivacidad de la existencia.",
+      "tags_es": [
+        "Bullicioso",
+        "Acogedor",
+        "Silencioso",
+        "Lento",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJVfJW2oe1vJUR2NfFT9Dj6Ws": {
+      "id": "ChIJVfJW2oe1vJUR2NfFT9Dj6Ws",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "bar_de_cócteles"
+      ]
+    },
+    "ChIJoYl36oa1vJURWWhqD9z3UV8": {
+      "id": "ChIJoYl36oa1vJURWWhqD9z3UV8",
+      "tagline_es": "En el suave abrazo de Don Julio, el tiempo se despliega suavemente, invitando los ecos de suaves conversaciones y el delicado tintineo de copas.",
+      "narrative_es": "En el suave abrazo de Don Julio, el tiempo se despliega suavemente, invitando los ecos de suaves conversaciones y el delicado tintineo de copas a permanecer en el aire. Este refugio íntimo, bañado en un cálido resplandor terroso, acoge a sus comensales en un tapiz de calidez y camaradería, atrayéndolos más profundamente a su rica atmósfera. Bajo el suave vaivén de la luz de las velas, la energía palpita sutilmente: una orquesta de risas, intercambios sinceros y secretos susurrados compartidos sobre el tintineo de cristales finos. Las emociones se entrelazan en la atmósfera como una bruma aromática, insinuando conexión y celebración. Cada momento se extiende lujosamente, como si el mundo exterior se hubiera desvanecido, dejando solo el embriagador atractivo de la indulgencia lenta: una copa de vino saboreada rítmicamente, bocados degustados con atención, convirtiendo una simple comida en un inolvidable tapiz de deleite culinario y calidez.",
+      "tags_es": [
+        "Íntimo",
+        "Lento",
+        "Suave",
+        "Cálido",
+        "Buenos Aires",
+        "Restaurante"
+      ]
+    },
+    "ChIJL4vp1rI1o5UR2pdCZgadG9w": {
+      "id": "ChIJL4vp1rI1o5UR2pdCZgadG9w",
+      "tagline_es": "A medida que el crepúsculo envuelve el lugar con su abrazo aterciopelado, la luz dorada se derrama sobre la terraza, una suave iluminación que danza en rostros animados.",
+      "narrative_es": "A medida que el crepúsculo envuelve el lugar con su abrazo aterciopelado, la luz dorada se derrama sobre la terraza, una suave iluminación que danza en rostros animados y en silencios pensativos. Aquí, muy por encima de las bulliciosas calles, una vibrante colectividad permea el aire; las risas se mezclan con el pulso rítmico de la música, añadiendo una energía eléctrica que tanto revitaliza como calma. Las amplias vistas de la ciudad resplandeciente—un lienzo extenso de luces—invitan tanto a los buscadores de soledad como a los fiesteros sociales. Es un lugar donde el tiempo se detiene, sentido en la suave transición del atardecer a los cielos estrellados; los comensales se detienen, perdidos en la maravilla, interrumpidos por momentos de descubrimiento compartido y conversaciones íntimas. El panorama invita a la exploración del yo mientras se contempla el horizonte, susurrando también la emoción de la alegría compartida—una rara fusión de contemplación tranquila y el embriagador entusiasmo de la conexión humana.",
+      "tags_es": [
+        "Bullicioso",
+        "Calmo",
+        "Dorado",
+        "Íntimo",
+        "Silencioso",
+        "Social"
+      ]
+    },
+    "ChIJMTW6XOy1vJURhwA8tpXWV0M": {
+      "id": "ChIJMTW6XOy1vJURhwA8tpXWV0M",
+      "tagline_es": "Baño en el suave resplandor de bombillas Edison colgantes, el aire dentro de este encantador lugar zumbido con una cálida invitación—un refugio del",
+      "narrative_es": "Baño en el suave resplandor de bombillas Edison colgantes, el aire dentro de este encantador lugar zumbido con una cálida invitación—un refugio del calor sofocante exterior. El suave susurro de risas y cristales tintineando se entrelazan, creando un vibrante coro que danza entre la soledad y la camaradería. Cada sorbo de vino, una historia arraigada en los años 1500, resuena con el latido del lugar, mientras los comensales se pierden en las conversaciones exuberantes que brotan entre bocados cuidadosamente seleccionados. Una atmósfera lujosa pero discreta encapsula la esencia de las calles europeas, invitando momentos de conexión, mientras un sutil toque de nostalgia calienta el alma. Amigos intercambian bromas, extraños se unen en risas compartidas, y las paredes mismas parecen inclinarse, susurrando historias de tierras lejanas mientras el día se despliega en un delicioso tapiz de sabor y aroma.",
+      "tags_es": [
+        "Suave",
+        "Cálido",
+        "Buenos Aires",
+        "Bar de Vinos",
+        "Validación"
+      ]
+    },
+    "ChIJ5xXRypi1vJURbyPHDWVCJL8": {
+      "id": "ChIJ5xXRypi1vJURbyPHDWVCJL8",
+      "tagline_es": "Ubicado detrás de una puerta discreta en el corazón de SoHo, el Backroom Bar emerge como un encantador escondite, bañado en suave luz dorada.",
+      "narrative_es": "Ubicado detrás de una puerta discreta en el corazón de SoHo, el Backroom Bar emerge como un encantador escondite, bañado en suave luz dorada que danza a lo largo de las elegantes líneas de su acogedor interior. El aire vibra con el bajo murmullo de conversaciones animadas, punctuado por las suaves notas de jazz en vivo que se entrelazan con la calidez, creando una atmósfera cultivada pero íntima. Aquí, en medio de la exuberante vegetación del patio aislado, el tiempo se despliega languidamente, invitando a los comensales a sumergirse en el momento. Un lienzo perfecto tanto para la reflexión solitaria como para reuniones vibrantes, el Backroom Bar se siente como un secreto atesorado, ofreciendo consuelo y conexión en igual medida. Cada sorbo de cócteles elaborados con destreza resuena con una belleza curada, reflejando la textura emocional del espacio—tanto vigorizante como reconfortante, un verdadero oasis donde el pulso de Buenos Aires se suaviza y revela el arte de relajarse.",
+      "tags_es": [
+        "Acogedor",
+        "Dorado",
+        "Verde",
+        "Íntimo",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJE_yL4Ss1o5URmOIYvCF6GUU": {
+      "id": "ChIJE_yL4Ss1o5URmOIYvCF6GUU",
+      "tagline_es": "A medida que el crepúsculo desciende sobre la marina, una suave luminosidad danza sobre superficies pulidas, lanzando un cálido abrazo que invita tanto a la soledad como a la conexión.",
+      "narrative_es": "A medida que el crepúsculo desciende sobre la marina, una suave luminosidad danza sobre superficies pulidas, lanzando un cálido abrazo que invita tanto a la soledad como a la conexión. La suave brisa de risas se mezcla con el murmullo de las olas distantes, creando una banda sonora que calma pero también revitaliza el espíritu. Los comensales se acomodan en su entorno, disfrutando de la camaradería que florece en el aire, punctuada por el ritmo de copas tintineando y el susurro de conversaciones amables. Aquí, cada momento se extiende sin esfuerzo, donde el tiempo contiene la respiración, permitiendo que los placeres de la compañía y las vistas escénicas permanezcan. El resplandor acogedor del bar refleja una promesa de calidez en las noches más frescas, mientras la cuidadosa selección musical teje un hilo invisible a través de la reunión, amplificando la atmósfera—un capullo reconfortante donde cada invitado se entrelaza en el tejido de la experiencia compartida, mientras el horizonte brilla con potencial.",
+      "tags_es": [
+        "Suave",
+        "Cálido",
+        "Buenos Aires",
+        "Restaurante",
+        "Validación"
+      ]
+    },
+    "ChIJCSbMQ37KvJUR53QqcjoxSXw": {
+      "id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "tagline_es": "En el abrazo tenuemente iluminado del Verne Club, las sombras bailan bajo suaves luces ámbar, proyectando un cálido y acogedor resplandor que envuelve los",
+      "narrative_es": "En el abrazo tenuemente iluminado del Verne Club, las sombras bailan bajo suaves luces ámbar, proyectando un cálido y acogedor resplandor que envuelve los ricos muebles de terciopelo y las pulidas barras de madera. Una energía vibrante, casi palpable, vibra en el aire, mientras las risas y los cristales tintineando se fusionan en una sinfonía de jolgorio nocturno. La atmósfera palpita cómodamente, manteniendo un delicado equilibrio entre la conversación animada y la soledad íntima. En medio de la ocasional afluencia de comensales, el fondo zumbido con vida—un refugio cuidadosamente curado que susurra historias de confidencias nocturnas y sueños compartidos. Cada rincón ofrece un sentido de santuario, mientras la intimidad susurrada atrae a quienes buscan un retiro sublimemente compuesto. Aquí, la textura emocional es tan rica como los cócteles elaborados con intención, tejiendo calidez en el corazón de la vida nocturna de Palermo, donde cada sorbo te invita a profundizar en un adictivo tapiz de sabor y conexión.",
+      "tags_es": [
+        "Ámbar",
+        "Tenue",
+        "Íntimo",
+        "Suave",
+        "Cálido",
+        "Buenos Aires"
+      ]
+    },
+    "ChIJ5X4bZADLvJURvbdTaFA9psw": {
+      "id": "ChIJ5X4bZADLvJURvbdTaFA9psw",
+      "tagline_es": "Bajo el suave abrazo de la luz de la mañana que filtra a través de los asientos semi-exteriores, una sutil atmósfera se despliega como un libro bien querido, invitando tanto a",
+      "narrative_es": "Bajo el suave abrazo de la luz de la mañana que filtra a través de los asientos semi-exteriores, una sutil atmósfera se despliega como un libro bien querido, invitando tanto a la soledad como a la calidez de la compañía. Aquí, en medio del suave zumbido de la bulliciosa Avenida Corrientes, el mundo exterior danza vibrante, pero dentro, una reconfortante pausa se apodera. Las risas de las mesas vecinas se mezclan con el suave tintineo de la cristalería, punctuando el aire con una alegría sin esfuerzo. Cada sorbo de café se convierte en una pausa deliberada, un momento sostenido en un intercambio íntimo entre comensales y baristas, donde el tiempo se desliza languidamente, instando a uno a quedarse un momento más. El aire está perfumado con un toque de ricos brebajes y pasteles azucarados, anclando la experiencia tanto en una nostálgica dicha como en una serena anticipación. En este pequeño refugio, incluso la rutina comienza a sentirse extraordinaria, un espacio sagrado dedicado al ritual de la conexión, tanto con otros como con uno mismo.",
+      "tags_es": [
+        "Bullicioso",
+        "Íntimo",
+        "Mañana",
+        "Ritual",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJlTkBDdrLvJURW7t_NrgxmRo": {
+      "id": "ChIJlTkBDdrLvJURW7t_NrgxmRo",
+      "tagline_es": "En el corazón de la ciudad, un pequeño café se despliega como un refugio atemporal, donde la suave luz ámbar baña el acogedor",
+      "narrative_es": "En el corazón de la ciudad, un pequeño café se despliega como un refugio atemporal, donde la suave luz ámbar baña el acogedor interior, invitando momentos de reflexión tranquila. Aquí, los aromas entrelazados de café y dulces crean un abrazo atmosférico, ofreciendo consuelo en medio del clamor urbano. El ritmo fluctúa, punctuado por el suave murmullo de la conversación, mientras la calidez de los intercambios amistosos llena el aire con un palpable sentido de conexión. A veces, la tranquilidad se ve interrumpida por una voz demasiado alta, un recordatorio del mundo exterior que se acerca a este enclave íntimo. Aun así, hay un encanto innegable en la cacofonía, mientras las risas danzan con el tintineo de las tazas, creando un vibrante tapiz de energía comunitaria. Este es un espacio que resuena tanto con la soledad de un libro bien leído como con las risas de historias compartidas, capturando la esencia de la conexión humana dentro de sus cuatro paredes.",
+      "tags_es": [
+        "Ámbar",
+        "Acogedor",
+        "Íntimo",
+        "Silencioso",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJ9SAGg4m1vJURTgnbaa593To": {
+      "id": "ChIJ9SAGg4m1vJURTgnbaa593To",
+      "tagline_es": "Ubicado en una encantadora calle empedrada en Palermo, esta cafetería brilla con calidez, donde la luz filtra suavemente a través de grandes ventanas, proyectando",
+      "narrative_es": "Ubicado en una encantadora calle empedrada en Palermo, esta cafetería brilla con calidez, donde la luz filtra suavemente a través de grandes ventanas, proyectando un suave resplandor que invita tanto a la soledad como a la conversación íntima. El murmullo de las risas se mezcla con el suave tintineo de las tazas, creando una suave sinfonía que danza en el aire, encarnando una energía social serena pero vibrante. Los comensales se quedan, atraídos al espacio donde el reconfortante aroma de pasteles recién horneados se entrelaza con el rico aroma del café, encendiendo un encantamiento languido que convierte momentos fugaces en recuerdos atesorados. Cada rincón parece acunar el alma, ofreciendo un santuario sereno donde el mundo exterior se desvanece en un murmullo distante. Aquí, la atmósfera palpita con la pasión de su dueño, cuya dedicación infunde el aire, creando un capullo nutritivo para todos los que entran, dejando corazones calentados y espíritus elevados.",
+      "tags_es": [
+        "Íntimo",
+        "Social",
+        "Suave",
+        "Cálido",
+        "Buenos Aires",
+        "Café Especial"
+      ]
+    },
+    "ChIJrzrdUwC1vJURhoUnsxnGpxw": {
+      "id": "ChIJrzrdUwC1vJURhoUnsxnGpxw",
+      "tagline_es": "Baño en la suave luz de la mañana que se derrama a través de las ventanas abiertas, el café zumbido con una energía tranquila, un baile de risas y",
+      "narrative_es": "Baño en la suave luz de la mañana que se derrama a través de las ventanas abiertas, el café zumbido con una energía tranquila, un baile de risas y conversaciones íntimas entrelazándose en el aire. Afuera, las sombras moteadas de la vegetación verde se mecen con la suave brisa, invitando a los comensales a acurrucarse en su propio rincón de serenidad, donde el mundo se siente tanto distante como dolorosamente cercano. Dentro, el ritmo es pausado, permitiendo que la alegría se despliegue como los delicados pasteles que adornan cada mesa, susurrando secretos mientras descansan sobre manteles crujientes. En medio de este rico tapiz de calidez y conexión, una corriente subyacente de soledad prospera—un espacio donde uno puede sorber lentamente jugo recién exprimido, sin preocuparse por el tiempo, envuelto en el suave abrazo de la comunidad y la tranquilidad. Cada momento se siente suspendido, cargado con la efímera dulzura de los placeres compartidos, dejando impresiones resonantes mucho después de que uno se haya separado del reconfortante abrazo del lugar.",
+      "tags_es": [
+        "Íntimo",
+        "Mañana",
+        "Silencioso",
+        "Lento",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJjcOdCGC1vJUR77bwV_1cAfc": {
+      "id": "ChIJjcOdCGC1vJUR77bwV_1cAfc",
+      "tagline_es": "En el corazón de la ciudad, Bestial FlyBar vibra con una curiosa energía, donde el diseño excéntrico colisiona con la bulliciosa camaradería.",
+      "narrative_es": "En el corazón de la ciudad, Bestial FlyBar vibra con una curiosa energía, donde el diseño excéntrico colisiona con la bulliciosa camaradería. La decoración caprichosa—una exuberante mezcla de colores vibrantes y texturas eclécticas—envuelve a los visitantes en un abrazo juguetón. A medida que la luz del sol se apaga, la atmósfera se transforma bajo luces suavemente brillantes, proyectando un cálido tono que danza sobre los rostros, alentando risas y conversaciones animadas. La atmósfera palpita al ritmo de melodías eclécticas, invitando a los comensales a sumergirse en la animada escena social mientras proporciona rincones ocultos para secretos susurrados y reflexiones solitarias. El telón de fondo de luces titilantes de la ciudad añade una capa encantadora a la experiencia, creando un sentido de maravilla y posibilidad. Aunque los sabores pueden decepcionar, el entorno vívido y las interacciones animadas tejen un tapiz de momentos emocionantes, dejando una marca indeleble en el corazón.",
+      "tags_es": [
+        "Bullicioso",
+        "Vivo",
+        "Social",
+        "Suave",
+        "Cálido",
+        "Buenos Aires"
+      ]
+    },
+    "ChIJ9bt5PRbLvJURnIEFxAxQoKU": {
+      "id": "ChIJ9bt5PRbLvJURnIEFxAxQoKU",
+      "tagline_es": "Ubicado en el corazón de un bullicioso Buenos Aires, el lugar se despliega como un cálido abrazo, brillando bajo la suave luz que",
+      "narrative_es": "Ubicado en el corazón de un bullicioso Buenos Aires, el lugar se despliega como un cálido abrazo, brillando bajo la suave luz que se derrama de los accesorios vintage. La decoración, un tapiz ecléctico de texturas y colores, invita a los huéspedes a un santuario donde las risas se mezclan con el tintineo de copas. A medida que los comensales se relajan, un ritmo languido los envuelve, permitiendo que los momentos se estiren como rayos de sol perezosos—perfectos para susurrar secretos o disfrutar de conversaciones tentadoras. En el escaso abrazo de una noche más tranquila, el aire vibra con un sentido de expectativa, como la quietud antes de una sinfonía. Aquí, la atmósfera zumbido, cargada con una energía suave que fomenta la conexión pero ofrece consuelo, transforma cada reunión en una celebración íntima, una comunión de almas bajo el resplandor ambiental. Una palpable magia persiste, llamando incluso al solitario vagabundo a rendirse a la camaradería envuelta en un acogedor capullo.",
+      "tags_es": [
+        "Bullicioso",
+        "Acogedor",
+        "Íntimo",
+        "Silencioso",
+        "Suave",
+        "Cálido"
+      ]
+    },
+    "ChIJRazshIa1vJURczNt-pu4coU": {
+      "id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "tagline_es": "El Preferido se despliega como un tapiz suntuoso bajo el parpadeo de luces cálidas y ambientales.",
+      "narrative_es": "El Preferido se despliega como un tapiz suntuoso bajo el parpadeo de luces cálidas y ambientales. El aire está cargado de una energía palpable; un murmullo rítmico de conversaciones suaves se mezcla con el tintineo de copas, creando un espacio íntimo pero vibrante que envuelve tanto a comensales solitarios como a grupos animados. Afuera, la suave brisa de la noche invita a un encanto etéreo, mientras que adentro, el bar abierto revela el arte de la preparación, cada movimiento delicado acentuado por la suave cadencia de risas y cubiertos. Aquí, los momentos se estiran lujosamente; el tiempo fluye, permitiendo que la soledad y la compañía bailen en tándem. En este santuario de la gastronomía, cada detalle resuena con cuidado, ofreciendo un refugio donde los sabores florecen y las conexiones se profundizan, dejando una huella indeleble en el alma.",
+      "tags_es": [
+        "Íntimo",
+        "Animado",
+        "Suave",
+        "Cálido",
+        "Buenos Aires",
+        "Restaurante"
+      ]
+    },
+    "ChIJPw7iEre1vJUR45b1pkFOPlI": {
+      "id": "ChIJPw7iEre1vJUR45b1pkFOPlI",
+      "tagline_es": "En el suave abrazo de la luz de la mañana, Kaldi se despliega como un libro querido, cada página una suave invitación a quedarse.",
+      "narrative_es": "En el suave abrazo de la luz de la mañana, Kaldi se despliega como un libro querido, cada página una suave invitación a quedarse. Dentro, una sinfonía de conversaciones suaves resuena bajo el zumbido de las máquinas de espresso, creando un pulso reconfortante de energía social que se siente íntima pero expansiva. Las mesas se bañan en el brillo dorado que filtra a través de las ventanas, invitando a los clientes a una contemplación pausada, mientras el frío exterior contrasta marcadamente con la calidez de las risas compartidas entre amigos. Este espacio, con su encanto sin pretensiones, mantiene un delicado equilibrio entre la soledad y la sociabilidad, ofreciendo momentos de reflexión serena en medio del reconfortante bullicio. Cada sorbo de café, sencillo pero profundo, se convierte en una meditación, mientras el aire es un tapiz tejido de ricos aromas y camaradería suave, evocando un sentido de pertenencia similar a una tarde bañada por el sol con compañeros queridos, donde el tiempo se desenreda y cada latido se sincroniza con el ritmo de los placeres simples de la vida.",
+      "tags_es": [
+        "Dorado",
+        "Íntimo",
+        "Mañana",
+        "Lento",
+        "Social",
+        "Suave"
+      ]
+    },
+    "ChIJlXfzUMu1vJURPR5ZJW1uCyo": {
+      "id": "ChIJlXfzUMu1vJURPR5ZJW1uCyo",
+      "tagline_es": "Baño en la suave luz de una mañana en Buenos Aires, Rita Specialty Coffee resuena con una energía acogedora, invitando a buscadores de soledad y",
+      "narrative_es": "Baño en la suave luz de una mañana en Buenos Aires, Rita Specialty Coffee resuena con una energía acogedora, invitando a buscadores de soledad y mariposas sociales por igual a su exuberante abrazo verde. Acústicas sutiles de risas suaves y el tintineo de tazas de cerámica componen una sinfonía edificante, envolviendo a los clientes en calidez. El aire, fragante con café recién hecho y flores naturales, danza alrededor de la mezcla de decoración rústica y moderna, creando una atmósfera que se siente tanto íntima como expansivamente acogedora. El tiempo se desliza languidamente aquí; cada sorbo de espresso rico y cada bocado de pasteles caseros parece extender el momento, incitando conversaciones que se deslizan en ritmos fáciles. Entre los rayos de sol dorados que filtran a través de las ventanas, se crean recuerdos: serenos, pero vibrantes, como la esencia misma de Buenos Aires anidada dentro de sus paredes.",
+      "tags_es": [
+        "Acogedor",
+        "Dorado",
+        "Verde",
+        "Íntimo",
+        "Mañana",
+        "Social"
+      ]
+    },
+    "ChIJHUjYLsO1vJUR3Miis48-MSE": {
+      "id": "ChIJHUjYLsO1vJUR3Miis48-MSE",
+      "name": "Blanca Deco and Cafe",
+      "category": "café especial",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "café especial"
+      ]
+    },
+    "ChIJMZMCq4y1vJURRfysuSq4vCA": {
+      "id": "ChIJMZMCq4y1vJURRfysuSq4vCA",
+      "name": "Julia",
+      "category": "restaurante",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    },
+    "ChIJKYYltZnKvJUR1B3un_qNkho": {
+      "id": "ChIJKYYltZnKvJUR1B3un_qNkho",
+      "name": "Roux",
+      "category": "restaurante",
+      "tagline_es": "",
+      "narrative_es": "",
+      "tags_es": [
+        "restaurante"
+      ]
+    }
+  }
+}

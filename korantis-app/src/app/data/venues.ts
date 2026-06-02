@@ -19,6 +19,7 @@ export interface Venue {
   tagline: string;
   narrative: string;
   tags: string[];
+  tags_es?: string[];
   tasteVector?: number[]; // Added for Phase 3E Database Vector Integration
   lat: number;
   lng: number;
