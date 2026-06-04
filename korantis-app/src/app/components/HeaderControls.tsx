@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import Image from 'next/image';
 import { useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
 
@@ -25,8 +26,15 @@ export default function HeaderControls() {
       transition={{ type: 'spring', damping: 25, stiffness: 200 }}
       className="fixed top-6 left-0 right-0 z-50 flex items-center justify-between px-6 pointer-events-none"
     >
-      <div className="pointer-events-auto">
-        <h1 className="font-display text-xl tracking-[0.2em] text-k-text uppercase">Korantis</h1>
+      <div className="pointer-events-auto flex items-center gap-2.5">
+        <Image 
+          src="/korantislogo.jpeg" 
+          alt="Korantis" 
+          width={22} 
+          height={22} 
+          className="rounded-[4px] object-cover mix-blend-screen opacity-90"
+        />
+        <h1 className="font-display text-xl tracking-[0.2em] text-k-text uppercase mt-[2px]">Korantis</h1>
       </div>
       
       <div className="pointer-events-auto">
