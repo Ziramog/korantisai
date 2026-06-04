@@ -11,6 +11,7 @@ import VenueCard from './components/VenueCard';
 import GlobalNav from './components/GlobalNav';
 import TasteRadar from './components/TasteRadar';
 import TheOracle from './components/taste/TheOracle';
+import HeroIntro from './components/taste/HeroIntro';
 import VenueDetail from './components/VenueDetail';
 import AtmosphereDebug from './components/AtmosphereDebug';
 import AuthPanel from './components/AuthPanel';
@@ -100,11 +101,9 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full min-h-screen text-k-text overflow-x-hidden scroll-smooth relative">
+    <div className="w-full min-h-screen text-k-text overflow-x-clip scroll-smooth relative">
       {/* FIXED ELEMENTS OUTSIDE TRANSFORM CONTAINERS */}
-      {activeTab === 'explore' && !selectedVenue && (
-        <SearchBar />
-      )}
+
       
       <GlobalNav 
         activeTab={activeTab} 
@@ -146,15 +145,18 @@ export default function Home() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full pb-32 pt-6"
+            className="w-full pb-40 pt-6"
           >
             {/* EXPLORE / SEARCH FEED TAB */}
             {activeTab === 'explore' && (
-              <div className="w-full max-w-4xl mx-auto px-6 md:px-12 flex flex-col items-center">
+              <div className="w-full max-w-4xl mx-auto flex flex-col items-center">
                 
+                <HeroIntro />
+                <SearchBar />
+
                 <motion.div 
                   layout
-                  className="w-full flex flex-col items-center pt-[calc(28vh-7px)]"
+                  className="w-full px-6 md:px-12 flex flex-col items-center pt-4"
                 >
                   {editorialVenues.map(({ source, presentation }) => (
                     <motion.div

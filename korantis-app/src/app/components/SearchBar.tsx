@@ -197,14 +197,18 @@ export default function SearchBar() {
   });
 
   const PILLS = [
-    { value: 'quiet', label: t('pillQuiet', language) },
-    { value: 'warm', label: t('pillWarm', language) },
-    { value: 'natural light', label: t('pillNaturalLight', language) },
-    { value: 'hidden gem', label: t('pillHiddenGem', language) },
+    { value: 'eat', label: t('categoryEat', language) },
+    { value: 'coffee', label: t('categoryCoffee', language) },
+    { value: 'drinks', label: t('categoryDrinks', language) },
+    { value: 'night', label: t('categoryNight', language) },
+    { value: 'quiet', label: t('categoryQuiet', language) },
+    { value: 'intimate', label: t('categoryIntimate', language) },
+    { value: 'social', label: t('categorySocial', language) },
+    { value: 'hidden', label: t('categoryHidden', language) },
   ];
 
   return (
-    <div className="fixed top-28 left-0 right-0 z-40 flex flex-col items-center pointer-events-none px-6">
+    <div className="sticky top-20 z-40 flex flex-col items-center pointer-events-none px-6 w-full min-h-[160px]">
       <motion.div
         className="relative pointer-events-auto w-full max-w-xl mx-auto"
         initial="expanded"
