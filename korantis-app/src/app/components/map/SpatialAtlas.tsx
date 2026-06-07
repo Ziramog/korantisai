@@ -24,8 +24,13 @@ interface SpatialAtlasProps {
 export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSelectedVenueId }: SpatialAtlasProps) {
   const { language, savedVenueIds, toggleSaveVenue, rankedVenues } = useCircadian();
   const [selectedVenueId, setSelectedVenueId] = useState<string | null>(initialSelectedVenueId || null);
+  
+  const mapVenues = useMemo(() => {
+    return rankedVenues.filter(v => typeof v.lat === 'number' && typeof v.lng === 'number');
+  }, [rankedVenues]);
+
   const initialSelectedVenue = initialSelectedVenueId
-    ? rankedVenues.find((venue) => venue.id === initialSelectedVenueId)
+    ? mapVenues.find((venue) => venue.id === initialSelectedVenueId)
     : null;
 
   const [viewState, setViewState] = useState({
@@ -39,9 +44,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
   const [bounds, setBounds] = useState<[number, number, number, number]>([-180, -85, 180, 85]);
 
   const points = useMemo(() => {
-    return rankedVenues
-      .filter(v => v.lat && v.lng)
-      .map(venue => ({
+    return mapVenues.map(venue => ({
         type: 'Feature' as const,
         properties: {
           cluster: false,
@@ -54,7 +57,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
           coordinates: [venue.lng, venue.lat]
         }
       }));
-  }, [rankedVenues, selectedVenueId, savedVenueIds]);
+  }, [mapVenues, selectedVenueId, savedVenueIds]);
 
   const { clusters, supercluster } = useSupercluster({
     points,
@@ -64,22 +67,22 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
   });
 
   const selectedVenue = useMemo(() => {
-    return rankedVenues.find(v => v.id === selectedVenueId) || null;
-  }, [rankedVenues, selectedVenueId]);
+    return mapVenues.find(v => v.id === selectedVenueId) || null;
+  }, [mapVenues, selectedVenueId]);
 
   // Compute saved venues
   const savedVenues = useMemo(() => {
-    return rankedVenues.filter(v => savedVenueIds.includes(v.id));
-  }, [rankedVenues, savedVenueIds]);
+    return mapVenues.filter(v => savedVenueIds.includes(v.id));
+  }, [mapVenues, savedVenueIds]);
 
   // Compute collection counts
   const collectionCounts = useMemo(() => {
     return {
-      afterMidnight: rankedVenues.filter(v => v.atmosphere === 'late-night' || v.atmosphere === 'night').length,
-      morningRitual: rankedVenues.filter(v => v.atmosphere === 'morning').length,
-      sundayCalm: rankedVenues.filter(v => v.atmosphere === 'afternoon' || v.atmosphere === 'dawn').length,
+      afterMidnight: mapVenues.filter(v => v.atmosphere === 'late-night' || v.atmosphere === 'night').length,
+      morningRitual: mapVenues.filter(v => v.atmosphere === 'morning').length,
+      sundayCalm: mapVenues.filter(v => v.atmosphere === 'afternoon' || v.atmosphere === 'dawn').length,
     };
-  }, [rankedVenues]);
+  }, [mapVenues]);
 
   return (
     <div className="w-full h-[calc(100vh-120px)] flex flex-col pt-4 animate-fade-in relative z-0">
@@ -165,7 +168,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
           <div className="absolute bottom-6 left-0 right-0 z-10">
             <div className="flex gap-4 overflow-x-auto px-6 pb-4 scrollbar-hide snap-x">
               <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
-              {rankedVenues.map(venue => (
+              {mapVenues.map(venue => (
                 <div key={venue.id} className="w-[280px] shrink-0 snap-center cursor-pointer" onClick={() => {
                   if (selectedVenueId === venue.id) {
                     trackVenueEvent('atlas_card_opened', venue);

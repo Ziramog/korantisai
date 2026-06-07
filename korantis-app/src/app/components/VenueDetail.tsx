@@ -212,7 +212,14 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
           <Heart size={20} className={isSaved ? "text-[#C9A96E] fill-[#C9A96E]" : "text-[#B0A898]"} />
           <span className="text-[10px] font-sans uppercase tracking-widest text-[#B0A898]">{isSaved ? t('unsave', language) : t('save', language)}</span>
         </button>
-        <button className="flex-1 flex flex-col items-center justify-center gap-2 py-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5">
+        <button 
+          onClick={() => {
+            if (venue.lat && venue.lng) {
+              window.open(`https://www.google.com/maps/dir/?api=1&destination=${venue.lat},${venue.lng}`, '_blank');
+            }
+          }}
+          className="flex-1 flex flex-col items-center justify-center gap-2 py-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5"
+        >
           <Navigation size={20} className="text-[#B0A898]" />
           <span className="text-[10px] font-sans uppercase tracking-widest text-[#B0A898]">Ir</span>
         </button>
