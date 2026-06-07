@@ -158,16 +158,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
               <div className="absolute inset-0 pointer-events-none mix-blend-color flex bg-[#2E251E]/30" />
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(201,169,110,0.03)_0%,rgba(10,8,6,0.5)_100%)] pointer-events-none" />
 
-              {/* Selected Venue HUD */}
-              {selectedVenue && (
-                <AtlasVenuePreview 
-                  venue={selectedVenue} 
-                  onOpenDetail={() => {
-                    trackVenueEvent('atlas_preview_opened', selectedVenue);
-                    onVenueClick(selectedVenue);
-                  }} 
-                />
-              )}
+              {/* Removed Selected Venue HUD overlay as requested (Fix 4 Option A) */}
           </div>
           
           {/* Horizontal Scrolling Cards Below Map */}
@@ -175,14 +166,19 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
             <div className="flex gap-4 overflow-x-auto px-6 pb-4 scrollbar-hide snap-x">
               <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
               {rankedVenues.map(venue => (
-                <div key={venue.id} className="w-[280px] shrink-0 snap-center" onClick={() => {
-                  setSelectedVenueId(venue.id);
-                  setViewState({
-                    ...viewState,
-                    longitude: venue.lng || viewState.longitude,
-                    latitude: venue.lat || viewState.latitude,
-                    zoom: 15.5
-                  });
+                <div key={venue.id} className="w-[280px] shrink-0 snap-center cursor-pointer" onClick={() => {
+                  if (selectedVenueId === venue.id) {
+                    trackVenueEvent('atlas_card_opened', venue);
+                    onVenueClick(venue);
+                  } else {
+                    setSelectedVenueId(venue.id);
+                    setViewState({
+                      ...viewState,
+                      longitude: venue.lng || viewState.longitude,
+                      latitude: venue.lat || viewState.latitude,
+                      zoom: 15.5
+                    });
+                  }
                 }}>
                   <div className={`p-3 rounded-2xl bg-[#0F0D0B] border transition-all ${selectedVenueId === venue.id ? 'border-[#C9A96E]/50 shadow-lg' : 'border-white/10'}`}>
                     <div className="relative w-full h-32 rounded-lg overflow-hidden mb-3">

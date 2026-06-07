@@ -4,7 +4,6 @@ import { memo } from 'react';
 import Image from 'next/image';
 import { type ScoredVenue } from '../contexts/CircadianContext';
 import { trackEvent } from '@/lib/analytics';
-import { formatTagsForCard } from '../utils/tags';
 
 interface CompactCardProps {
   venue: ScoredVenue;
@@ -12,10 +11,6 @@ interface CompactCardProps {
 }
 
 function CompactCard({ venue, onSelect }: CompactCardProps) {
-  // Extract up to 2 tags
-  const tags = formatTagsForCard(venue.tags);
-  const displayTags = tags.slice(0, 2);
-
   return (
     <article 
       onClick={() => {
@@ -43,15 +38,7 @@ function CompactCard({ venue, onSelect }: CompactCardProps) {
           {venue.location}
         </p>
         
-        {displayTags.length > 0 && (
-          <div className="flex items-center gap-1.5 mt-1.5">
-            {displayTags.map(tag => (
-              <span key={tag} className="text-[9px] uppercase tracking-wider font-sans text-[#C9A96E] bg-[#C9A96E]/10 px-1.5 py-0.5 rounded">
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
+        {/* Removed mood tags as requested for cleaner UI at this size */}
       </div>
     </article>
   );

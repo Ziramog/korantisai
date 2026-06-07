@@ -113,6 +113,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
   const description = localizeVenueDescriptionForDisplay(venue, language);
+  const hasEditorialCopy = (venue as Record<string, unknown>).hasEditorialCopy === true;
   const galleryImages = (venue.galleryImages || [])
     .filter((image) => image.src && !image.src.includes('/venue_invernadero.png'))
     .slice(0, 6);
@@ -122,6 +123,10 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   ];
 
   const rhythmNote = getRhythmNote(venue, description.goodToKnow, language);
+  
+  const isConfirmedPrice = description.priceLabel && !description.priceLabel.toLowerCase().includes('no confirmad');
+  const isConfirmedRes = description.reservationHint && !description.reservationHint.toLowerCase().includes('no confirmad');
+  const hasAntesDeIr = isConfirmedPrice || isConfirmedRes || Boolean(rhythmNote);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -218,14 +223,16 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
       </section>
 
       {/* 4. Descripción Corta */}
-      <section className="px-6 max-w-2xl mx-auto w-full mb-12">
-        <p className="text-xl md:text-2xl text-[#C9A96E] font-display italic font-light mb-6 leading-relaxed">
-          &ldquo;{description.oneLiner}&rdquo;
-        </p>
-        <p className="text-sm md:text-base text-[#B0A898] font-sans font-light leading-[1.8] text-justify">
-          {description.summary}
-        </p>
-      </section>
+      {hasEditorialCopy && (
+        <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+          <p className="text-xl md:text-2xl text-[#C9A96E] font-display italic font-light mb-6 leading-relaxed">
+            &ldquo;{description.oneLiner}&rdquo;
+          </p>
+          <p className="text-sm md:text-base text-[#B0A898] font-sans font-light leading-[1.8] text-justify">
+            {description.summary}
+          </p>
+        </section>
+      )}
 
       {/* 5. Mejor Para */}
       {description.bestFor.length > 0 && (
@@ -263,27 +270,36 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
       </section>
 
       {/* 7. Info Práctica */}
-      <section className="px-6 max-w-2xl mx-auto w-full mb-12">
-        <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">Antes de ir</h3>
-        <div className="flex flex-col gap-5 p-5 rounded-2xl border border-white/5 bg-white/[0.02]">
-          <div className="flex gap-4 items-start">
-            <Clock size={16} className="text-[#C9A96E] shrink-0 mt-0.5" />
-            <div>
-              <span className="text-[9px] text-[#8A7A5A] font-sans tracking-wider uppercase block mb-1">Ritmo</span>
-              <p className="text-xs md:text-sm text-[#B0A898] leading-relaxed">{rhythmNote}</p>
-            </div>
+      {hasAntesDeIr && (
+        <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+          <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">Antes de ir</h3>
+          <div className="flex flex-col gap-5 p-5 rounded-2xl border border-white/5 bg-white/[0.02]">
+            {Boolean(rhythmNote) && (
+              <>
+                <div className="flex gap-4 items-start">
+                  <Clock size={16} className="text-[#C9A96E] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-[9px] text-[#8A7A5A] font-sans tracking-wider uppercase block mb-1">Ritmo</span>
+                    <p className="text-xs md:text-sm text-[#B0A898] leading-relaxed">{rhythmNote}</p>
+                  </div>
+                </div>
+                {(isConfirmedPrice || isConfirmedRes) && <div className="h-px bg-white/5 w-full" />}
+              </>
+            )}
+            
+            {(isConfirmedPrice || isConfirmedRes) && (
+              <div className="flex gap-4 items-start">
+                <DollarSign size={16} className="text-[#C9A96E] shrink-0 mt-0.5" />
+                <div>
+                  <span className="text-[9px] text-[#8A7A5A] font-sans tracking-wider uppercase block mb-1">Detalles</span>
+                  {isConfirmedPrice && <p className="text-xs md:text-sm text-[#B0A898] mb-1">{description.priceLabel}</p>}
+                  {isConfirmedRes && <p className="text-xs md:text-sm text-[#B0A898]">{description.reservationHint}</p>}
+                </div>
+              </div>
+            )}
           </div>
-          <div className="h-px bg-white/5 w-full" />
-          <div className="flex gap-4 items-start">
-            <DollarSign size={16} className="text-[#C9A96E] shrink-0 mt-0.5" />
-            <div>
-              <span className="text-[9px] text-[#8A7A5A] font-sans tracking-wider uppercase block mb-1">Detalles</span>
-              <p className="text-xs md:text-sm text-[#B0A898] mb-1">{description.priceLabel}</p>
-              <p className="text-xs md:text-sm text-[#B0A898]">{description.reservationHint}</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* 8. Mapa */}
       <section className="px-6 max-w-2xl mx-auto w-full mb-12">

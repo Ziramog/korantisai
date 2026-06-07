@@ -654,8 +654,13 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     const explicitCategoryIntent = hasExplicitCategoryIntent(searchQuery, selectedPills);
 
     const cityFilteredVenues = dbVenues.filter(v => {
-      if (city === 'BUE') return v.lat < 0; // Southern hemisphere
-      if (city === 'NYC') return v.lat > 0; // Northern hemisphere
+      if (city === 'BUE' && v.lat >= 0) return false; // Southern hemisphere
+      if (city === 'NYC' && v.lat <= 0) return false; // Northern hemisphere
+      
+      const activeZones = selectedPills.filter(p => ['palermo', 'chacarita', 'villa crespo', 'recoleta', 'belgrano', 'microcentro'].includes(p));
+      if (activeZones.length > 0) {
+        if (!activeZones.some(z => (v.location || '').toLowerCase().includes(z))) return false;
+      }
       return true;
     });
 
