@@ -17,6 +17,28 @@ export type VenueRow = {
   last_updated: string;
 };
 
+type VenueStatus = VenueRow['status'];
+type ResonanceLabel = VenueRow['resonance']['label'];
+
+type RawVenueRow = {
+  id: string;
+  name: string;
+  city?: string | null;
+  status?: VenueStatus | null;
+  updated_at?: string | null;
+  tags?: Array<{
+    editorial_themes?: string[] | null;
+  }> | null;
+  quality?: Array<{
+    completeness_score?: number | null;
+    review_count?: number | null;
+  }> | null;
+  resonance?: Array<{
+    cosine_similarity?: number | null;
+    classification?: ResonanceLabel | null;
+  }> | null;
+};
+
 export async function GET() {
   const cookieStore = cookies();
   const supabase = createServerClient(
@@ -61,7 +83,7 @@ export async function GET() {
   }
 
   // Transform the data to match the UI expectations
-  const mappedVenues: VenueRow[] = (data || []).map((v: any) => ({
+  const mappedVenues: VenueRow[] = ((data || []) as RawVenueRow[]).map((v) => ({
     id: v.id,
     name: v.name,
     city: v.city || 'Unknown',

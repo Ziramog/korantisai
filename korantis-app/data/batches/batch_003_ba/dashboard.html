@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Batch Review - batch_003_ba</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0f10;
+      --panel: #171a1c;
+      --panel-soft: #202427;
+      --border: #343a3f;
+      --text: #f1eee7;
+      --muted: #a7a097;
+      --gold: #c8a96a;
+      --green: #74b892;
+      --red: #d97b73;
+      --blue: #7ba7d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header, main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--border); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 24px; font-weight: 650; }
+    h2 { margin: 36px 0 16px; font-size: 18px; }
+    h3 { font-size: 15px; }
+    .muted { color: var(--muted); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat, .card, .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat { padding: 16px; }
+    .stat strong { display: block; margin-top: 6px; font-size: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card { overflow: hidden; }
+    .image {
+      height: 150px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-body { padding: 14px; display: grid; gap: 8px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .badge.auto_staged { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.needs_review { color: var(--gold); border-color: rgba(200, 169, 106, .5); }
+    .badge.blocked { color: var(--red); border-color: rgba(217, 123, 115, .5); }
+    .score { color: var(--blue); font-variant-numeric: tabular-nums; }
+    .section-panel { padding: 14px; margin-bottom: 12px; }
+    .dist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .button-row { display: flex; gap: 8px; margin-top: 10px; }
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel-soft);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 8px 10px;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="muted">Korantis Defensive Staging Review</p>
+    <h1>batch_003_ba - Buenos Aires</h1>
+    <div class="summary">
+      <div class="stat"><span class="muted">Input</span><strong>25</strong></div>
+      <div class="stat"><span class="muted">Auto staged</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Needs review</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Blocked</span><strong>25</strong></div>
+      <div class="stat"><span class="muted">Cost</span><strong>pending</strong></div>
+      <div class="stat"><span class="muted">Runtime</span><strong>2 ms</strong></div>
+    </div>
+  </header>
+  <main>
+    <h2>Venue Preview</h2>
+    <section class="grid"><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Floreria Atlantico</h3>
+      <p class="muted">Retiro / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Gran Bar Danzon</h3>
+      <p class="muted">Retiro / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Verne Club</h3>
+      <p class="muted">Palermo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Presidente Bar</h3>
+      <p class="muted">Recoleta / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Frank&#039;s Bar</h3>
+      <p class="muted">Palermo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Negroni Cocktail Bar</h3>
+      <p class="muted">Palermo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Uptown Bar Buenos Aires</h3>
+      <p class="muted">Palermo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Victoria Brown Bar</h3>
+      <p class="muted">Palermo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Cafe Tortoni</h3>
+      <p class="muted">Monserrat / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>LAB Training Center &amp; Coffee Shop</h3>
+      <p class="muted">Palermo / coffee_shop</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Cuervo Cafe</h3>
+      <p class="muted">Palermo / coffee_shop</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Full City Coffee House</h3>
+      <p class="muted">Palermo / coffee_shop</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Birkin Coffee</h3>
+      <p class="muted">Palermo / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Coffee Town Palermo</h3>
+      <p class="muted">Palermo / coffee_shop</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Lattente Palermo</h3>
+      <p class="muted">Palermo / coffee_shop</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Oporto Almacen</h3>
+      <p class="muted">Belgrano / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Proper Buenos Aires</h3>
+      <p class="muted">Palermo / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Aramburu Restaurante</h3>
+      <p class="muted">Recoleta / fine_dining</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Don Julio Parrilla</h3>
+      <p class="muted">Palermo / parrilla</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Elena Restaurant</h3>
+      <p class="muted">Retiro / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>La Biela</h3>
+      <p class="muted">Recoleta / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Bar 878</h3>
+      <p class="muted">Villa Crespo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Milion Buenos Aires</h3>
+      <p class="muted">Recoleta / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>CoChinChina Buenos Aires</h3>
+      <p class="muted">Palermo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 6</span></div>
+      <h3>Sacro Buenos Aires</h3>
+      <p class="muted">Palermo / plant_based</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article></section>
+    <h2>Needs Review</h2>
+    <section class="section-panel muted">No needs-review candidates.</section>
+    <h2>Blocked</h2>
+    <section class="section-panel">
+    <h3>Floreria Atlantico <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Gran Bar Danzon <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Verne Club <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Presidente Bar <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Frank&#039;s Bar <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Negroni Cocktail Bar <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Uptown Bar Buenos Aires <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Victoria Brown Bar <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cafe Tortoni <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>LAB Training Center &amp; Coffee Shop <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cuervo Cafe <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Full City Coffee House <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Birkin Coffee <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Coffee Town Palermo <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Lattente Palermo <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Oporto Almacen <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Proper Buenos Aires <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Aramburu Restaurante <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Don Julio Parrilla <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Elena Restaurant <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>La Biela <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Bar 878 <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Milion Buenos Aires <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>CoChinChina Buenos Aires <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Sacro Buenos Aires <span class="score">6</span></h3>
+    <p class="muted">Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, few_reviews, missing_website, missing_instagram, missing_hours, missing_price_hint, missing_moments</p>
+  </section>
+    <h2>Distribution</h2>
+    <section class="dist">
+      <section class="section-panel"><h3>Mood distribution</h3><p class="muted">none</p></section>
+      <section class="section-panel"><h3>Neighborhood distribution</h3><p>Palermo <span class="score">15</span></p><p>Recoleta <span class="score">4</span></p><p>Retiro <span class="score">3</span></p><p>Monserrat <span class="score">1</span></p><p>Belgrano <span class="score">1</span></p><p>Villa Crespo <span class="score">1</span></p></section>
+    </section>
+  </main>
+</body>
+</html>

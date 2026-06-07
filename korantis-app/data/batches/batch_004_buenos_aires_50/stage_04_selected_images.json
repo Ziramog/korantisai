@@ -1,0 +1,1467 @@
+{
+  "batch_id": "batch_004_buenos_aires_50",
+  "generated_at": "2026-06-07T19:58:33.950Z",
+  "validation_status": "imported_needs_validation",
+  "publication_status": "not_approved_for_publication",
+  "selected_images": [
+    {
+      "venue_name": "A DONDE",
+      "selected_image": {
+        "venue_name": "A DONDE",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN2QfBqxFldk7gcLfRiXLOdZ7_Rxt65Bduz2ej8MCPsy9VGPTeH_bTU8c2VHK0ADA_OJcSq6XlA769W3IQepfiDyiGaYDI07k154uaBX6O2Y4NbSLG1ix2LleaHzk0wnUxZv08k0JhYyL4EdbqYRfId=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Wide, sharp interior shot of a restaurant/bar with green-tiled tables, dark leather chairs, warm wood shelving stocked with bottles, concrete ceiling, and dramatic pendant lighting; no people present."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Alvear Roof Bar",
+      "selected_image": {
+        "venue_name": "Alvear Roof Bar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNCdS2yW8e_ufzpQCXx-uiCdwAek38UFylnza1nGwC0j5rePkESVlzBkugGfIlVW7rN1RlSe5Y32deLKdqBYUy1z8kPVmzI4KEQKU41USXKL_z9vTc2TBsyp5xSJAUiJXyr5U4JS_lyQL_yKOV_ggKU=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 900,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Nighttime exterior view of a bar entrance with arched doorway, pink neon 'Alvear Roof Bar' sign, open double doors revealing a warmly lit interior with a bar counter and stools. Clear architectural facade shot."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Anselmo Lounge & Wine Bar",
+      "selected_image": {
+        "venue_name": "Anselmo Lounge & Wine Bar",
+        "resolved_image_url": "https://lirp.cdn-website.com/72ef65f2/dms3rep/multi/opt/standard01-a10076c3-1920w.jpg",
+        "source_url": "https://www.anselmohotel.com/",
+        "source_type": "official_website",
+        "width": 1920,
+        "height": 805,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit hotel bedroom with a neatly made bed, neutral tones, large window with sheer curtains, framed artwork, and a seating area visible."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 160,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Banu",
+      "selected_image": {
+        "venue_name": "Banu",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNqbdnX-BuAgbQdOsB27uFOpIOfT9w9P_F_DrF6rYZWLtXjXW7zyB7KWK56MKGRjwI6ENGqkYrlpTmLoxYy7CskdNiv67-3Nj6A7_J5HBUeOhnBdqmGgauV_GG6lJeEI01i3xc4imuxYa7czMLPd4d0LA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7161783056104383474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Dimly lit restaurant interior with wooden tables set with glassware, pendant lights, large windows showing street view, potted plants, and exposed concrete ceiling creating a moody, intimate atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Barine - café de especialidad",
+      "selected_image": {
+        "venue_name": "Barine - café de especialidad",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZORFLGoEIVayOiwRc7lCNryaA4ScGookzD97qwLo7RYGveCDXgu3yPlymIi3U_vJnlJZsumxg4mR9EHogVhegqjEzWJxZuHjwHdYQeoEO-qxDlpyAsJcXQN-dZV4YqNQLbT5Lgdk4ebI5EDU-3QKz6y=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear interior of a cafe showing counter, pastry display, wood furniture and bright lighting."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "BAUTISTA Av. Rivadavia",
+      "selected_image": {
+        "venue_name": "BAUTISTA Av. Rivadavia",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNuBgjn-jW2MU3K2jaxuLUy2RwN7WA-XIDKS3sJQ-dVYw7AkA-K1rKyu77TsNO9EVeXIsOYs9drwqvzC3qVV_WafN0BEawPvofLXymDL3h0VZYjtjYgTqxvaPDYwWBAKR5BZ0E4KC3AWkVROA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear exterior facade shot of 'BAUTISTA BAR & CAFE' with blue awning, signage, and visible storefront windows on a corner building under bright daylight."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "BOCANADA",
+      "selected_image": {
+        "venue_name": "BOCANADA",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN93dyc2SaKz9IyUTMgw5XRr6UzmURZT8TKRu4vDpNS8gRRVq-Zob_lZXL44arFX9Hzea_7CWA-DaMN0lsQIGaebrFRI010wUe_0JAsNt6xtwQAv2pCxFEyT9XOmAYNpK3W0Aqb0mPua__aIkX-5_Qm1w=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear daytime street-level view of an ornate turquoise historic building facade with 'TOKENS' signage, flanked by detailed neighboring buildings, and outdoor cafe seating with patrons in the foreground."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 73,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Borja Specialty Coffee",
+      "selected_image": {
+        "venue_name": "Borja Specialty Coffee",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOdU-f8GCKBwvEy8dQYBlo2Z9Z2Rm9O5nGEor6QIvjzBzXGN03ukNUA2YsHvS1UxnGhK9DnZjOYavsA4pVDToT5XsvHMEeKJS5FEjkJGZdTE8nmO0knhyoq3I6kqWHUR2AaA_38dFeJ1gLT37OHHYkPEQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=15168335462933671006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear exterior view of a small specialty coffee shop facade at night, with visible signage 'BORJA', awning, open entrance revealing a warmly lit interior with counter and espresso equipment, decorative mural on utility panel, and sidewalk foreground."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Bruce Wine",
+      "selected_image": {
+        "venue_name": "Bruce Wine",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNGufJvysetVOR-O7At3gjdtA-lAGuV0o8z0FzI50GBD-PzYmu4l-vQ0E7N55sujMHgECfb9MFrQjN4X-eGMl9VnM2x8Gc2ufq8v5LG505yb44V8Dw9MflcyF7mDA3eD99KOuzA_hhnWJQnbFp_SKTU=s4800-w1200-h676",
+        "source_url": "https://maps.google.com/?cid=4325757478306474729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 676,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Exposed brick wall, ornate mirror reflecting bottle shelves, pendant lighting, marble table, and dried floral arrangement in a styled bar/restaurant interior captured in black and white."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Café Registrado",
+      "selected_image": {
+        "venue_name": "Café Registrado",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxXoEcjDVqiKOZYtyMXKp8JbQAYeKXF5C4Y4yhUwp9PdvP6FRBvMgTWnznwGYf332TV7QdkYQpumJ3I64wM14ilZTRwEGIqfFCir3ieccjYc1_j2Yez4URuLLHAEFlSyhsr1LVnoFSMRANeno=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=17949790177853540600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Interior of a cafe/coffee shop with industrial concrete walls, distinctive copper pendant lights, large windows, wooden tables and chairs, and decorative greenery with neon sign. Multiple patrons are present but the space and design are the clear focus."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cave Canem",
+      "selected_image": {
+        "venue_name": "Cave Canem",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPr7Xbu6zTDfEPfoxwPd_COHNqqArd1JoslgWcsq2jw7zqDuxa6YqOI6M21cOiC-egL5iwX17vp6xASI6rkPYMcgFQ2gvo3atKa1jcV-wtbB8WEZkofKa5aFT1LAIAXSlfxVM_hRj12xHMpSEJQFE7-Ag=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8081873414369609183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1205,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Close-up of pizza and beer on a wooden bar counter with a backlit shelf of liquor bottles and a refrigerated display in the background, conveying a warm, casual pub atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cobre Café",
+      "selected_image": {
+        "venue_name": "Cobre Café",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgkD9LE1lpAGyygtfjUZIC3gx0LJs26F0ilDi4w3OdmjXQLmXesOd5XPE8vSt7H7-R6aLct5oCQ3M_3jpJV5egMvsdulWxIqnUBDoRRK2ot4LxYcPFWMR0RK1mPibuBsVebzopTUENmtbaPnA=s4800-w1600-h1573",
+        "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 900,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Clear interior view of a coffee shop counter with exposed distressed concrete walls, espresso machine, pastry display case, coffee grinders, plants, and a barista working behind the counter."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Contraluz",
+      "selected_image": {
+        "venue_name": "Contraluz",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOMyna2PuRSxT3sXC_kw4GF6woEoYSJXaTnskh_ucviN2Ex-REIvqHD7xGEq-g3bZc-Ioy650VANNxDxsoglNIw6GSifhJmiX4rIjg7Z4PHBvvHp1BorARGihKMFN8aVLWjRaX6_2gzdUmgqw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Spacious, upscale restaurant interior with a dramatic glass atrium ceiling, polished marble floors, white-clothed tables, and warm lamp lighting. No people are visible, and the layout is clearly presented."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cosecha Almagro",
+      "selected_image": {
+        "venue_name": "Cosecha Almagro",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOMlDriSkP5lKRVcenkyGPoeCk4r9KsBRuyJHw3NwPrfiErxN20oLouKM0NGD7FKpue-sMnCMboX8zwU4zeIJpTNl7v7dYTs-4bo059N0xM6hKSvt6hoghC19wDA3Nf1oO8NJeUS_4asXR2QM-WE3vz=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=12664176431195853697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear interior of a cafe/shop with wooden dining table, chairs, retail shelves, glass display case, botanical wall mural, pendant lighting, and tiled floor; well-lit and in focus with no people dominating the frame."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cuervo Café",
+      "selected_image": {
+        "venue_name": "Cuervo Café",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNHvociazTItNwQm6JUHuIawmsTWqG8eDka0L2t6oJO8IPIay7tVV1VYv3biAvy3-grKn4FcPYGeLdSI74-2H5WBp8MCF-uqwjc1g7Nk9qBZUgH7V7GSHXbmLk5MgWdYrAgcrp7_q9VUL-JIQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=15670044895945950604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Interior view of a coffee shop with a prominent espresso machine, grinder, pendant lighting, display case with baked goods, and shelving with jars and merchandise. Warm lighting and wooden counter convey a cozy atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Duhau Restaurante & Vinoteca",
+      "selected_image": {
+        "venue_name": "Duhau Restaurante & Vinoteca",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNOZ2xkIbn8Vcf3llCLI3XyD8iZtCVWymoMsArPnO1mMNAZkAjdw8ZHV7NcPLHYrhYS_WyzA9EMRRfCtus-TYONTUEWmeq7cjpXJp1CecBQDUjqOmizNC86RAYW6bU_BjcT0gwR2ufjwad7aJbUd2tRSA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Overhead view of a courtyard garden with manicured lawn, rectangular reflecting pools, outdoor dining tables, red awnings, and a tall ivy-covered building facade surrounded by trees."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Farmacia Lezama - Bistrot",
+      "selected_image": {
+        "venue_name": "Farmacia Lezama - Bistrot",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNS-YIfBPTzdLEKgG3DnDFBDPGuiDOC_ViSNFqBBgfxU4oTrQzSNU-h1oZwz24BX4XYbWwL7MKVyFj8RowLwWAXdx8PovP6hv4O-pmwmaEFBYzo9Q90HV-b6afClwwtP2GaxUaCXIbE4eUUJ16V-9Nd=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1205,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Interior view of a dimly lit, intimate bar/restaurant with red ambient lighting, crystal chandelier, wood display cabinets with bottles, white-clothed tables set with candles and glassware, and a bartender working behind the counter."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "selected_image": {
+        "venue_name": "Intervalo Bar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrEZoXM5jGAKoEeeDXne5NUEvV1VbphZpT2Q2NrxPnQ7aysjYi2qiT11IEH4oe0PBQ6xdkdH3iMw8h1Zu3NAZpjfCbaPtaL_v148rJTNhoxfC2mJyexxOOx_CCoMdeS7Qtc0YS8bA5vWfLugfHwDEnuQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 900,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "gallery_atmosphere",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Curved, multi-tiered bar backlit with warm lighting displaying a wide variety of liquor bottles and glassware, evoking a cozy, upscale lounge atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 128,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "L'Antiquario Cafe Bistro",
+      "selected_image": {
+        "venue_name": "L'Antiquario Cafe Bistro",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOt3xHCzjg1bzHerevSq4Zk6fzRlPyVOpOnLq1I8g_AekGSjrFMgfKdEP7eqEz8bS0tKXBjM-4YPepVSJwvjVBtOzowgXsaRhC6OJIjEmjZzw_EkvMBWQoMEKF8a1uzQ6WFf0ybPxtNwQTc9aUGAKWrwQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 901,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Interior of a bar/cafe with ornate chandeliers, terracotta walls, wooden bar, bottles on shelves, and dining seating clearly visible in warm lighting."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 113,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Carbonera",
+      "selected_image": {
+        "venue_name": "La Carbonera",
+        "resolved_image_url": "https://lacarbonerasantelmo.com/wp-content/uploads/2025/11/La-Carbonera-Terraza-scaled.jpg",
+        "source_url": "https://lacarbonerasantelmo.com/",
+        "source_type": "official_website",
+        "width": 2560,
+        "height": 1707,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear, well-lit rooftop restaurant/bar interior with retractable glass ceiling, bar area with bottles, and ample wooden tables and pink chairs. Spacious and inviting."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 160,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Giralda",
+      "selected_image": {
+        "venue_name": "La Giralda",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMvT-WVovhFV5YcHXBhdLQjPpdqArV1x8yTw6OVienMSyWAJgIWuk9Ko1xo8YYI3ejriIWFdUe9ALuN-cih7FmumSrL--XX7y-5qVlrecvNxvtTwFmaVglPA_tg-b_1u3hjcAN5P4Suq_OjWw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1067,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear exterior shot of La Giralda cafe facade with outdoor seating, two people dining at a table, natural daylight, sharp focus, and prominent signage visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 73,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Las Pizarras bistro",
+      "selected_image": {
+        "venue_name": "Las Pizarras bistro",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOTFg--M_EDGy_Fq0Y1qIVNsJjXg-3BePR6LUVYybHpr4ofHg2T7aB_Pwobbaf4HJB31dTTRXqsCo5Eb46i-zKFs6zgaAaDtBau4-Nh9_RtynS6dlJmr6yNWgb8fcmJFqES7sR_2VmHg--Dtw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "gallery_atmosphere",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Black-and-white interior of an empty restaurant with set tables, wine glasses, bench seating, wall chalkboards, and large front windows letting in bright daylight, creating a moody contrast."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 128,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "LE CLUB BACAN",
+      "selected_image": {
+        "venue_name": "LE CLUB BACAN",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOFD-M5m1Mt_RDBDNe3Ufs06MRMsWyM9aM0ofkxKFjHzyLnOjt2dWdmHt_ETKTBdgsAQqWctgOKaFg_V_S7mce-gQzl671VscQqkPzEzo_Yj8GdTxT0SpkaN7TfrCZrqitMNu4VUbzU7PCEWg=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Dark wood-paneled lounge with tufted leather sofas, velvet chairs, warm table lamp glow, and floral arrangements conveying an upscale, intimate atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Le Rêve Bistró",
+      "selected_image": {
+        "venue_name": "Le Rêve Bistró",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPhojQn6LqAcHdxyuimiGq7W_aY-2xTqfQb8MuM0z-KA-fQKawXPVT_26SRXXkNUTTe-8_4TJXuRv-Ly8FCZjbI4D0_YrKU7OLDONOGmHis-XTPOkQZYllXkJHXop9uSm2ZfJ2A_JRPYvM7Qjuz1766kA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Well-lit restaurant interior with round wooden tables, green banquette seating, subway tile backsplash, large mirrors, and warm pendant and table lamp lighting creating a cozy, inviting dining atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Los Jardines De Las Barquin",
+      "selected_image": {
+        "venue_name": "Los Jardines De Las Barquin",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZFVyypCf8r5hwAYSa6WskuXkjm60CAnGP9Hf5L4_8e0b9OSAxMdHfzhryLMtj-E-MWC4kbCciO1mHuL9iw6SgkPbLr1-5q-iCyxTlXvJ7RUGoG2M2uSctf0KR1DjkdaFzhYO5c7Dtb8uBhg=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=12080270847006215866&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "gallery_atmosphere",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Outdoor patio dining area with black-and-white woven bistro chairs, round tables set with plates and glassware, warm wooden decking, surrounded by dense green hedges and tropical plants, illuminated by warm golden-hour sunlight under awnings."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 128,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Lutero Bar",
+      "selected_image": {
+        "venue_name": "Lutero Bar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNtYAAt_p52l-3eE-aSUwRBSSgobLmHI5F6cJROf1rhVo93qvNSF2kQzuZ5Nd-S15HBpCQ8iv1lIa2nZw3z9vcEov68316_ox02blwfU92KHBTW_NuFJBjUJinOnkuNk0G2jJpHAre0tBhJalE=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=815401023010461123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 901,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "acceptable",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Nighttime exterior of a corner building with illuminated bar/restaurant, warm red-orange interior lighting, outdoor seating with patrons, and visible street corner. Clear facade and entrance suitable as a hero exterior shot, though slightly dark overall."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 98,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Naranjo Bar",
+      "selected_image": {
+        "venue_name": "Naranjo Bar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPybc2xo_DL_iwg-F4dl9sst-809a4fZms7P4nLbQi_t7HJoaXfwqOPCculzNQ992Ezx9Lu-4lUxoO8g7Yb1YRdDGrs-TKJbtbbsm3OAvMaDQouYA7RLd5XITdwp-u8lTMUMp6xr8orNxt3kyY=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=318109230481729741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 721,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear exterior facade of a shop with large wooden-framed windows, open wooden door revealing bottle shelves inside, street number visible, and tree reflections on glass in bright daylight."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Negresco Bistró",
+      "selected_image": {
+        "venue_name": "Negresco Bistró",
+        "resolved_image_url": "https://www.palladiohotelbuenosaires.com/wp-content/uploads/sites/7/2021/12/palladio_hotel_mgallery_restaurant_slide_01-2200x1200.jpg",
+        "source_url": "https://www.palladiohotelbuenosaires.com/gastronomia/",
+        "source_type": "official_website",
+        "width": 2200,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Polished marble bar counter with upholstered barstools, mirrored shelving with potted plants, white tablecloth dining area, and a person in the background; warm lighting and elegant finishes indicate an upscale restaurant interior."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 160,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Nido de Tigre",
+      "selected_image": {
+        "venue_name": "Nido de Tigre",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP0nGLrI3PTxeNohvKUmMN3mtI6wSijY2PuvFMoGt-gMJ7wSCXywMohjNaJSqnoG1c9Epq0RBgb35Xew1o-HNCvx6-GVfB1LGSQD5tQh69r9rKJPkhV9P7oTz_gFuHcG3bhJEIjROl5XKos5qqK_mu87g=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=16636718572862495582&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1067,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Cozy lounge interior with red sofas, small tables, warm dim lighting from candles and globe sconces, textured ceiling tiles, and a decorative window with wrought iron."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Osaka Concepción",
+      "selected_image": {
+        "venue_name": "Osaka Concepción",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWAW6HA2BDEd6LGyIp_C7OWBZXSQWdtEtqSsp9KPQhlT9LVNCqbCpKRn6SvPR_rtbYt0efji67lOQk3Pr8R79Iz13Xap6c2Fa4ocs2rsYRbwTMnlfKTyPvEcGrBOkRtsyP1uDTkXp6XhVojEU3ORy-QA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8315020386853656953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Well-lit interior of a restaurant featuring wooden tables, chairs, and decorative slatted walls. Warm, dim ambient lighting with a clearly visible dining space and open kitchen area in the background."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Petit Colón",
+      "selected_image": {
+        "venue_name": "Petit Colón",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN5Ew1B0Mn1DguUlLBlA82t-RUkIZ6x-se0C4cQgkOsz6IneE6Ss6MCHrqZsNPd6s5-xLcb00zOMQcM0q4vpovDvBT3zCJtB5jv3Ohmfo3FSfWvXd-ielw08S-cLVtl_OhoHaF4JNTx03ezVlxoud50oQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=15709916980555088992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear view of an ornate cafe/bar interior with dark wood paneling, brass fixtures, marble floor, chandeliers, and ambient warm lighting, suitable as a hero image."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Piano Nobile",
+      "selected_image": {
+        "venue_name": "Piano Nobile",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZON1543pHJwE6XGnG_fjiktSAPut0H3bSD0yVESZfMklPLkQQwYYw_NnxHK0qCormAOxNbTFPY0gMF6Gyr5R0wac96jngomJzA0iNrdObHPwBtC1SooiRyHEeWMzGP6B7zFrEsBCdr7htwazBfjKAUr=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=3901090374882591500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Elegant interior with ornate crystal chandelier, classical wall paneling, parquet flooring, and round tables set with white linens; foreground drinks on a table in soft natural light create a warm, refined atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Pipi Lounge",
+      "selected_image": {
+        "venue_name": "Pipi Lounge",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNp4UgTw5G0oAL0vpV2nqX5pvPkBoOuVUtntN8wXd_1RySjIZA1pCzd1ecge2ZUy13zCe4EQw3eJnOEL6XQ5ncYfH5BOAnOGpMZNRtmNKgy9d2VBs6nTxMD4PsPBsoAA63PGA_RqKU4NitFgtNthy7G=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=6815438955757224198&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear interior view of a bar with hanging greenery, pendant lights, tiled bar front, shelving with bottles, and bar stools; well-lit and in focus."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roster Cafe Recoleta",
+      "selected_image": {
+        "venue_name": "Roster Cafe Recoleta",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPmjdIyGxM4x9LgA21OEzeaGFCyBh8sb0VXDjPdEaiXiDCMZQbUtPQJNxEhQowqK0EReIzhRb6gpKNDc3CXsfPEfIEmln-RCjkFnoFvYHPD7Md5so8OiTm5PvS7jkEoJRQudsUpT-pPZ3U8mq0iBfqb=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=1954294194887979013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Well-lit interior of a small cafe/coffee shop with industrial-style exposed pipe pendant lighting, wooden counter, yellow metal stools, round wooden tables with black metal chairs, dark teal wall with shelves, and a bench with coffee sack cushions. Clear spatial composition suitable as a hero image."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Salvaje Bakery",
+      "selected_image": {
+        "venue_name": "Salvaje Bakery",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNJcrcimI1Wdfzjpv686sKobGUQTefRQOGslsmiAbo_anWrzFDk8l4plY84mc4e4zlWJtLTDZRVzTxK95-xJqtMxfuiZ6uskP6DLYDgi9GdAmQvj09ZYKh5FZdwu30UTVwmzM2lK5D8TUwmFLdoV1Au3Q=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=6783284434165223701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Interior of a bakery/café with walls densely covered in framed art, posters, and vinyl records, warm pendant lighting, and a counter displaying breads and pastries in baskets with chalkboard price signs."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Selva Mía",
+      "selected_image": {
+        "venue_name": "Selva Mía",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMqxTH89230i-akCLmCYyXjUIAz1gwVR_hHiK-XsA6YiFP1dfPvau12wgUWMrid83PnFvyZlWixESSZ4vScIUP4mXQ0SUD9pVxCeWFezhz4CI3dtZhFrkokow-hEAdhCucXRA3Et-t5bY4-=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=6696505739768196920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "gallery_atmosphere",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "acceptable",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Outdoor dining area at night surrounded by dense trees, illuminated by string lights, with a stone water feature lit in blue/purple and seated patrons at tables."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 118,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Social Paraíso Bistró | Recoleta",
+      "selected_image": {
+        "venue_name": "Social Paraíso Bistró | Recoleta",
+        "resolved_image_url": "https://static.wixstatic.com/media/0bc1c7_9cac9f047b7b44f2b379ef3e3bfb5786~mv2.jpg",
+        "source_url": "http://www.social-paraiso.com/",
+        "source_type": "official_website",
+        "width": 3000,
+        "height": 2250,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Ornate, well-lit building facade with detailed floral relief carvings, arched entryways, and a hanging 'Social Paraiso Bistro' sign, captured from a low angle at dusk."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 120,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "SOFÁ - un bar",
+      "selected_image": {
+        "venue_name": "SOFÁ - un bar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPY8AZ5ufwCCAegJ5-1wfoj99_F9igJvmMrEGZcKMlMKU93URPHVn22_GZd54X826qLsJ4dIorhBCqfxPR8A7aPAIMGYdwyjxDUy8Lq0YbnfxTur4ipnIzAXymouJXFDUmAxgUObhutnMZe=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=2632505094587415938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Well-lit bar interior with a marble countertop, backlit shelves of liquor bottles, bar stools, and dark wood flooring under low ambient lighting, creating an intimate speakeasy atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "St. Regis Restaurant",
+      "selected_image": {
+        "venue_name": "St. Regis Restaurant",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN0tO3aKHNlvFta1kUwv7zmrWLDaz_lmAW07UGQOvAW9yAbntfu5iP5d-Fe-JqIxicSVTL-LcrlKtC25fly13ipyUjUBLB5C6qTS_2X6Ny79eTwBFEaIMI5BNNOIajJWNyJ-loZ5VqfJXdqN6c=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=978498321131030548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 900,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Grand interior with crystal chandelier, polished marble floors, gold-toned walls, and an ornate table with floral arrangements; spacious, well-lit, and suitable as a hero shot."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "The Coffee Store Plaza Almagro",
+      "selected_image": {
+        "venue_name": "The Coffee Store Plaza Almagro",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNQ59qW2cnC53X0J3DTSnaWSCpjFfpjj31Jik9RhHrOrH5UE4YwhWMeUxfjvqoDcrZAOEH2h6SqxU9_WlQ49FDwxwb0ae3iahVfFeOwu0ytl-lSiLBLfBppMqpiHLMAD-2NjOPQzIiwkl3H73U=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=1662111345895966467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear exterior facade shot of 'The Coffee Store' with large glass windows, visible signage 'WE ARE COFFEE BELIEVERS', outdoor seating with black metal tables and chairs, and a modern dark gray storefront with brick upper level. Good daylight and sharp focus."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Tostado - Nuñez",
+      "selected_image": {
+        "venue_name": "Tostado - Nuñez",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMjbqClFXIE_5J9kP7SUFunVaAW0PxztyXMcw99SG0U1W2BX23HfYJ-NNIZlfSwzI17dod1Gzt3j9DBZOQWdj1Gmo0dNDDt-7snd4NFljgyz9vWuxjkmXpngA3L7HBm7vuFNNh32pGwISvmLgyGSm3IAA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=3077934836415495499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Wide interior view showcasing industrial-style ceiling with rows of caged pendant lights, concrete beam, tiled floors, and visible dining areas and bar, with clear depth and good lighting."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Tostado - Puerto Madero",
+      "selected_image": {
+        "venue_name": "Tostado - Puerto Madero",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWjvw6mP1xTOexahuSM21MAl8csGQ2mjSJ_X-zhQDvsp06sogsfiCU52hp1BA3CWunh2D3p6YC1pN4Fq6dufJuCWOtKPl9a3O0jKjYCN0s8Yzcvrsv3rD2TMAvMotO1Sz3XNUl53spndSaCeFUYWVU=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=17145912401377605751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "gallery_atmosphere",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Café interior with leather seating, large windows, espresso cup branded 'TOSTADO' on a tray, conveying a warm, inviting atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 128,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Tradition & Rebellion",
+      "selected_image": {
+        "venue_name": "Tradition & Rebellion",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPFFpDGDVeNSHO2espoaMqKb2cFycuZ0tMzdIPeTyNz41mA20KqwDN4B_sQ9Brb-_9BGTwJcIpMqmud3Fi_ztaJs_G9Y-KNwu35RdlaO69klQoxHhKCE6er5BrgNprDpzSZwNhp2lC-2q_qgQ7o6ZE1Nw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=14681956760748201560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "gallery_atmosphere",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Nighttime cityscape view from an elevated vantage point showing a river, illuminated city skyline with a prominent red-lit tower, and a warmly lit floating riverside venue with string lights and crowds below, framed by a red railing in the foreground."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 128,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Verdot Wine Bar",
+      "selected_image": {
+        "venue_name": "Verdot Wine Bar",
+        "resolved_image_url": "https://verdotwinebar.com/hero.webp",
+        "source_url": "http://www.verdotwinebar.com/",
+        "source_type": "official_website",
+        "width": 1920,
+        "height": 1440,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "acceptable",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Wide interior shot of a dimly lit restaurant with visible bar, wine cellar walls, multiple set tables with glassware, pendant lighting, and reflective floors conveying an upscale intimate atmosphere."
+        },
+        "risk_flags": [
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 150,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    }
+  ],
+  "venues_without_hero_candidate": [
+    "Bar PUNTO MONA",
+    "Cafeto 2020",
+    "Bicho Café de Especialidad Recoleta",
+    "Veredita",
+    "Don Gato"
+  ],
+  "ready_to_connect_hero_image": true
+}

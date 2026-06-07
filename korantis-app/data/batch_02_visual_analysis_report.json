@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-06-06T23:04:38.432Z",
+  "batch_id": "ba_batch_02_m27_source_fullres_queue",
+  "publish_ready": false,
+  "staging_ready": "partial",
+  "venue_coverage": {
+    "requested": 25,
+    "processed": 25,
+    "source_records": 25,
+    "m3_venues_unique": 8
+  },
+  "evidence_coverage": {
+    "official_websites_found": 25,
+    "reservation_links_found": 3,
+    "menu_links_found": 4,
+    "whatsapp_links_found": 3,
+    "phone_numbers_found": 5,
+    "price_hints_found": 1,
+    "factual_evidence_items_found": 25
+  },
+  "image_coverage": {
+    "raw_image_candidates_found": 176,
+    "resolved_fullres_candidates": 153,
+    "final_vision_queue_size_pre_sanitizer": 75,
+    "sanitized_queue_size": 52
+  },
+  "m3_visual_results": {
+    "m2_venues_requested": 25,
+    "m2_venues_processed": 25,
+    "m2_raw_image_candidates": 176,
+    "m2_final_vision_queue_pre_sanitizer": 75,
+    "sanitized_m3_items": 52,
+    "m3_total_items": 52,
+    "m3_ok_photo": 30,
+    "m3_skipped": 22,
+    "m3_below_preferred_resolution": 22,
+    "m3_unique_venues": 8
+  },
+  "scene_type_distribution": {
+    "logo": 1,
+    "product_food": 18,
+    "gallery_atmosphere": 2,
+    "hero_interior": 6,
+    "decorative": 1,
+    "hero_exterior": 1,
+    "crowd": 1
+  },
+  "selected_candidates": [
+    {
+      "venue_name": "Verne Club",
+      "scene_type": "hero_interior",
+      "image_role": "hero_candidate",
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "max_dim": 920,
+      "below_preferred_resolution": true,
+      "risk_flags": [
+        "below_preferred_resolution",
+        "face_release_needed"
+      ],
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+      "resolved_image_url": "https://www.theworlds50best.com/discovery/filestore/jpg/Verne Club-Buenos Aires-Argentina-2.jpg"
+    },
+    {
+      "venue_name": "Verne Club",
+      "scene_type": "gallery_atmosphere",
+      "image_role": "gallery_candidate",
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "max_dim": 920,
+      "below_preferred_resolution": true,
+      "risk_flags": [
+        "below_preferred_resolution",
+        "face_release_needed",
+        "low_contrast_review_needed"
+      ],
+      "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+      "resolved_image_url": "https://www.theworlds50best.com/discovery/filestore/jpg/Verne Club-Buenos Aires-Argentina-1.jpg"
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "scene_type": "gallery_atmosphere",
+      "image_role": "gallery_candidate",
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "max_dim": 950,
+      "below_preferred_resolution": true,
+      "risk_flags": [
+        "below_preferred_resolution",
+        "face_release_needed",
+        "low_contrast_review_needed"
+      ],
+      "source_url": "https://granbardanzon.com.ar/",
+      "resolved_image_url": "https://granbardanzon.com.ar/wp-content/uploads/2020/08/FEED-I-BASA-4.jpg"
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "scene_type": "hero_interior",
+      "image_role": "hero_candidate",
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "max_dim": 1500,
+      "below_preferred_resolution": false,
+      "risk_flags": [
+        "face_release_needed"
+      ],
+      "source_url": "https://www.oportoalmacen.com.ar/",
+      "resolved_image_url": "https://www.oportoalmacen.com.ar/images/main-oporto.jpg"
+    },
+    {
+      "venue_name": "La Biela",
+      "scene_type": "hero_exterior",
+      "image_role": "hero_candidate",
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "max_dim": 1240,
+      "below_preferred_resolution": false,
+      "risk_flags": [
+        "face_release_needed"
+      ],
+      "source_url": "https://labiela.com/english",
+      "resolved_image_url": "https://img1.wsimg.com/isteam/ip/9d33b93b-c5c2-4a38-b843-6b534b3cf1de/La%20Biela-21abf06.png/:/cr=t:3.51%25,l:0%25,w:100%25,h:92.97%25/rs=w:1240,h:620,cg:true"
+    },
+    {
+      "venue_name": "Florería Atlántico",
+      "scene_type": "hero_interior",
+      "image_role": "hero_candidate",
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "max_dim": 620,
+      "below_preferred_resolution": true,
+      "risk_flags": [
+        "below_preferred_resolution",
+        "face_release_needed",
+        "low_contrast_review_needed"
+      ],
+      "source_url": "https://www.theworlds50best.com/bars/the-list/floreria-atlantico.html",
+      "resolved_image_url": "https://www.theworlds50best.com/bars/filestore/jpg/Floreria Atlantico-interior_W50BB24-PROFILE.jpg"
+    }
+  ],
+  "venues_with_hero_candidates": [
+    "Verne Club",
+    "Oporto Almacén",
+    "La Biela",
+    "Florería Atlántico"
+  ],
+  "venues_with_card_candidates": [
+    "Verne Club",
+    "Gran Bar Danzon"
+  ],
+  "venues_with_gallery_candidates": [],
+  "venues_without_usable_visual_candidates": [
+    {
+      "venue_name": "El Preferido de Palermo",
+      "reason": "all items skipped at dimension gate (<512px)",
+      "items_total": 4,
+      "items_skipped": 4
+    }
+  ],
+  "source_poor_venues": [
+    "Don Julio Parrilla",
+    "Milion",
+    "Ninina",
+    "Anchoita",
+    "Uptown Bar",
+    "Vini Bar"
+  ],
+  "risks": {
+    "rights_review_needed": 0,
+    "face_release_needed": 6,
+    "identity_review_needed": 1,
+    "below_preferred_resolution_candidates": 4,
+    "ok_photos_with_faces": 4,
+    "ok_photos_below_preferred_resolution": 22,
+    "product_food_ok_photos": 18
+  },
+  "known_findings": [
+    "52 total sanitized M3 items.",
+    "30 M3 ok_photo records.",
+    "22 skipped below_min_dimension records.",
+    "Product-food images dominated ok_photo outputs and can only be reference_only.",
+    "Only Oporto Almacen has a strong full-resolution hero-interior candidate.",
+    "The sanitizer must validate real dimensions before M3 in future batches."
+  ]
+}

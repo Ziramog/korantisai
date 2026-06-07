@@ -1,0 +1,38 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "city": "Buenos Aires",
+  "created_at": "2026-06-06T00:00:00.000Z",
+  "notes": "Stage 01 Google Places extraction test input. Does not call Supabase, Cloudinary, M3, or UI paths.",
+  "venues": [
+    {
+      "name": "Verne Club",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "Cocktail bar seed for Stage 01 extraction."
+    },
+    {
+      "name": "Oporto Almacén",
+      "neighborhood": "Palermo",
+      "type": "restaurant",
+      "notes": "Restaurant seed for Stage 01 extraction."
+    },
+    {
+      "name": "Gran Bar Danzón",
+      "neighborhood": "Retiro",
+      "type": "wine_bar",
+      "notes": "Wine bar and restaurant seed for Stage 01 extraction."
+    },
+    {
+      "name": "La Biela",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "notes": "Historic cafe seed for Stage 01 extraction."
+    },
+    {
+      "name": "Florería Atlántico",
+      "neighborhood": "Retiro",
+      "type": "cocktail_bar",
+      "notes": "Cocktail bar seed for Stage 01 extraction."
+    }
+  ]
+}

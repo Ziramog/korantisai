@@ -9,82 +9,43 @@ import { ScoredVenue, useCircadian } from './contexts/CircadianContext';
 import SearchBar from './components/SearchBar';
 import VenueCard from './components/VenueCard';
 import GlobalNav from './components/GlobalNav';
-import TasteRadar from './components/TasteRadar';
-import TheOracle from './components/taste/TheOracle';
-import HeroIntro from './components/taste/HeroIntro';
 import VenueDetail from './components/VenueDetail';
 import AtmosphereDebug from './components/AtmosphereDebug';
 import AuthPanel from './components/AuthPanel';
 import HeaderControls from './components/HeaderControls';
 import SpatialAtlas from './components/map/SpatialAtlas';
+import MoodPills from './components/MoodPills';
+import ZonePills from './components/ZonePills';
+import ContextualSection from './components/ContextualSection';
+import ThematicCarousel from './components/ThematicCarousel';
+import SearchModal from './components/SearchModal';
+import GuardadosTab from './components/GuardadosTab';
+import VosTab from './components/VosTab';
 import { t } from './utils/i18n';
 import { trackEvent, trackVenueEvent } from '@/lib/analytics';
-
-type EditorialFeedSlot = Pick<ScoredVenue, 'cardSize' | 'spacing'>;
-
-const EDITORIAL_FEED_PATTERN: EditorialFeedSlot[] = [
-  { cardSize: 'layered', spacing: 'breathe' },
-  { cardSize: 'compact', spacing: 'tight' },
-  { cardSize: 'immersive', spacing: 'breathe' },
-  { cardSize: 'cinematic', spacing: 'isolated' },
-  { cardSize: 'layered', spacing: 'breathe' },
-  { cardSize: 'compact', spacing: 'tight' },
-  { cardSize: 'immersive', spacing: 'isolated' },
-  { cardSize: 'cinematic', spacing: 'breathe' },
-];
 
 export default function Home() {
   const { 
     isAuthenticated,
     rankedVenues, 
     savedVenueIds, 
-    currentDrift,
     currentPhase,
     language,
     setLanguage
   } = useCircadian();
 
-  const [activeTab, setActiveTab] = useState<'explore' | 'atlas' | 'taste'>('explore');
+  const [activeTab, setActiveTab] = useState<'explore' | 'atlas' | 'guardados' | 'vos'>('explore');
   const [selectedVenue, setSelectedVenue] = useState<ScoredVenue | null>(null);
   const [atlasPreSelectedVenueId, setAtlasPreSelectedVenueId] = useState<string | null>(null);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
-  const editorialVenues = useMemo(() => {
-    return rankedVenues.map((venue, index) => {
-      const slot = EDITORIAL_FEED_PATTERN[index % EDITORIAL_FEED_PATTERN.length];
-      return {
-        source: venue,
-        presentation: {
-          ...venue,
-          cardSize: slot.cardSize,
-          spacing: slot.spacing,
-        },
-      };
-    });
+  const aloneVenues = useMemo(() => {
+    return rankedVenues.filter(v => (v.tags || []).includes('QUIET') || (v.tags || []).includes('WORK_FRIENDLY')).slice(0, 5);
   }, [rankedVenues]);
 
-  // Generate dynamic atmospheric text descriptors based on transient vectors
-  const tasteDescriptor = useMemo(() => {
-    // Look at vector dimensions to write a custom description
-    // Dim 0: Solitude (-1) vs Sociality (+1)
-    // Dim 3: Sunlight (-1) vs Amber Enclosure (+1)
-    // Dim 4: Fast Ritual (-1) vs Slow Pause (+1)
-    const socialVal = currentDrift[0];
-    const enclosureVal = currentDrift[3];
-    const paceVal = currentDrift[4];
-
-    const socialStr = socialVal < -0.2 ? t('socialIntimate', language) : socialVal > 0.2 ? t('socialBuzzing', language) : t('socialBalanced', language);
-    const lightStr = enclosureVal < -0.2 ? t('lightAiry', language) : enclosureVal > 0.2 ? t('lightAmber', language) : t('lightEven', language);
-    const paceStr = paceVal < -0.2 ? t('paceEfficient', language) : paceVal > 0.2 ? t('paceSlow', language) : t('paceLeisurely', language);
-
-    return t('tasteDynamic', language, {
-      social: socialStr,
-      light: lightStr,
-      pace: paceStr,
-    });
-  }, [currentDrift, language]);
-
-
-
+  const dateVenues = useMemo(() => {
+    return rankedVenues.filter(v => (v.tags || []).includes('DATE_NIGHT') || (v.tags || []).includes('INTIMATE')).slice(0, 5);
+  }, [rankedVenues]);
 
   // Re-link telemetry inside component event handler
   const { recordClick } = useCircadian();
@@ -103,7 +64,6 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen text-k-text overflow-x-clip scroll-smooth relative">
       {/* FIXED ELEMENTS OUTSIDE TRANSFORM CONTAINERS */}
-
       
       <GlobalNav 
         activeTab={activeTab} 
@@ -114,6 +74,12 @@ export default function Home() {
       {!selectedVenue && <HeaderControls />}
       
       <AtmosphereDebug />
+
+      <SearchModal 
+        isOpen={isSearchOpen} 
+        onClose={() => setIsSearchOpen(false)} 
+        onSelectVenue={handleVenueClick}
+      />
 
       <AnimatePresence mode="wait">
         {selectedVenue ? (
@@ -145,41 +111,104 @@ export default function Home() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full pb-40 pt-6"
+            className={`w-full pb-24 ${activeTab === 'atlas' ? '' : 'pt-24'}`}
           >
             {/* EXPLORE / SEARCH FEED TAB */}
             {activeTab === 'explore' && (
-              <div className="w-full max-w-4xl mx-auto flex flex-col items-center">
+              <div className="w-full flex flex-col items-center">
                 
-                <HeroIntro />
-                <SearchBar />
+                <SearchBar onOpenSearch={() => setIsSearchOpen(true)} />
+                <MoodPills />
+                <ContextualSection onSelectVenue={handleVenueClick} />
+
+                <div className="w-full max-w-4xl mx-auto px-6 mb-4 mt-6">
+                  <h2 className="font-display text-xl text-[#C9A96E]/90 tracking-wide italic">
+                    Lo nuevo
+                  </h2>
+                </div>
+
+                {rankedVenues.length === 0 && (
+                  <div className="w-full max-w-4xl px-4 md:px-12 flex flex-col gap-12 pb-12 animate-pulse mt-4">
+                    {[1, 2, 3].map(i => (
+                      <div key={i} className="w-full flex flex-col gap-4">
+                        <div className="w-full aspect-[3/2] bg-white/5 rounded-2xl" />
+                        <div className="flex flex-col gap-2 px-1">
+                          <div className="w-1/3 h-8 bg-white/5 rounded" />
+                          <div className="w-2/3 h-4 bg-white/5 rounded" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
 
                 <motion.div 
                   layout
-                  className="w-full px-6 md:px-12 flex flex-col items-center pt-4"
+                  initial="hidden"
+                  animate="visible"
+                  variants={{
+                    visible: { transition: { staggerChildren: 0.15 } },
+                    hidden: {}
+                  }}
+                  className="w-full max-w-4xl px-4 md:px-12 flex flex-col items-center gap-12 pb-12"
                 >
-                  {editorialVenues.map(({ source, presentation }) => (
-                    <motion.div
-                      key={source.id}
-                      layout
-                      transition={{
-                        type: 'spring',
-                        stiffness: 180,
-                        damping: 26,
-                        mass: 1.1
-                      }}
-                      className="w-full flex justify-center"
-                    >
-                      <VenueCard 
-                        venue={presentation}
-                        onSelect={() => handleVenueClick(source)}
-                        onSpatialTap={() => {
-                          trackVenueEvent('venue_card_atlas_opened', source);
-                          setActiveTab('atlas');
-                        }}
-                      />
-                    </motion.div>
-                  ))}
+                  {rankedVenues.map((venue, index) => {
+                    // Inject Carousels
+                    const showAloneCarousel = index === 2 && aloneVenues.length > 0;
+                    const showDateCarousel = index === 5 && dateVenues.length > 0;
+
+                    // Alternating Hero and Standard cards
+                    // 0: hero, 1: standard, 2: standard, 3: hero, 4: standard, 5: standard
+                    const isHero = index % 3 === 0;
+
+                    return (
+                      <div key={venue.id} className="w-full">
+                        {showAloneCarousel && (
+                          <div className="w-[100vw] relative left-1/2 -translate-x-1/2 mb-12">
+                            <ThematicCarousel 
+                              title="Para estar solo" 
+                              venues={aloneVenues} 
+                              onSelectVenue={handleVenueClick} 
+                            />
+                            <ZonePills />
+                          </div>
+                        )}
+                        {showDateCarousel && (
+                          <div className="w-[100vw] relative left-1/2 -translate-x-1/2 mb-12">
+                            <ThematicCarousel 
+                              title="Citas sin ruido" 
+                              venues={dateVenues} 
+                              onSelectVenue={handleVenueClick} 
+                            />
+                          </div>
+                        )}
+
+                        <motion.div
+                          layout
+                          variants={{
+                            hidden: { opacity: 0, y: 40 },
+                            visible: { opacity: 1, y: 0 }
+                          }}
+                          transition={{
+                            type: 'spring',
+                            stiffness: 180,
+                            damping: 26,
+                            mass: 1.1
+                          }}
+                          className="w-full flex justify-center"
+                        >
+                          <VenueCard 
+                            venue={venue}
+                            variant={isHero ? 'hero' : 'standard'}
+                            onSelect={() => handleVenueClick(venue)}
+                            onSpatialTap={() => {
+                              trackVenueEvent('venue_card_atlas_opened', venue);
+                              setActiveTab('atlas');
+                            }}
+                          />
+                        </motion.div>
+                      </div>
+                    );
+                  })}
                 </motion.div>
               </div>
             )}
@@ -196,127 +225,20 @@ export default function Home() {
               />
             )}
 
-            {/* TASTE PROFILE TAB */}
-            {activeTab === 'taste' && (
-              <div className="max-w-4xl mx-auto px-6 md:px-12 pt-12 md:pt-24 animate-fade-in">
-                {!isAuthenticated ? (
-                  <div className="flex flex-col items-center justify-center min-h-[50vh]">
-                    <AuthPanel />
-                  </div>
-                ) : (
-                  <>
-                    <header className="mb-10 text-center md:text-left md:flex md:items-center md:gap-6">
-                      <div className="w-16 h-16 rounded-full bg-k-gold-dim border border-k-gold/20 flex items-center justify-center text-k-gold mx-auto md:mx-0 shadow-lg flex-shrink-0">
-                        <User size={28} />
-                      </div>
-                      <div className="mt-4 md:mt-0">
-                        <h1 className="text-k-text font-display text-4xl md:text-5xl mb-2.5 tracking-wide">
-                          {t('tasteCoordinates', language)}
-                        </h1>
-                        <p className="text-sm text-k-text-secondary font-sans font-light">
-                          {t('tasteDesc', language)}
-                        </p>
-                      </div>
-                    </header>
+            {/* GUARDADOS TAB */}
+            {activeTab === 'guardados' && (
+              <GuardadosTab 
+                onVenueClick={handleVenueClick}
+                onExploreClick={() => {
+                  trackEvent('guardados_empty_explore_clicked');
+                  setActiveTab('explore');
+                }}
+              />
+            )}
 
-                    <div className="mb-20">
-                      <TheOracle />
-                    </div>
-
-                    <div className="w-full h-px bg-k-border mb-16" />
-
-                    <main className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                      {/* Radar Diagram */}
-                      <div className="flex flex-col items-center">
-                        <TasteRadar />
-                      </div>
-
-                      {/* Latent Vector Details */}
-                      <div className="flex flex-col gap-6">
-                        <section className="p-6 bg-k-surface-elevated/10 border border-k-border/50 rounded-2xl shadow-xl relative">
-                          <div className="absolute top-6 right-6 text-k-gold">
-                            <Sparkles size={16} className="animate-pulse" />
-                          </div>
-                          <h3 className="text-xs font-sans uppercase tracking-widest text-k-gold mb-3.5 font-medium">
-                            {t('atmosphericInsights', language)}
-                          </h3>
-                          <p className="text-xs text-k-text-secondary font-sans font-light leading-loose text-justify">
-                            {tasteDescriptor}
-                          </p>
-                        </section>
-
-                        {/* Matched Archetypes */}
-                        <section>
-                          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-                            {t('strongestAffinities', language)}
-                          </h3>
-                          <div className="flex flex-col gap-3">
-                            <div className="flex items-center gap-3.5 p-3 rounded-xl border border-k-border bg-k-surface/20">
-                              <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/5">
-                                <Image src="/venue_floreria.png" alt={t('sanctuaryImageAlt', language)} fill className="object-cover" />
-                              </div>
-                              <div className="flex-grow">
-                                <h4 className="text-xs font-sans font-medium">{t('hiddenSanctuary', language)}</h4>
-                                <p className="text-[10px] text-k-text-tertiary font-sans">{t('latentMatch', language, { score: 92 })}</p>
-                              </div>
-                            </div>
-                            <div className="flex items-center gap-3.5 p-3 rounded-xl border border-k-border bg-k-surface/20">
-                              <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/5">
-                                <Image src="/venue_crisol.png" alt={t('ritualImageAlt', language)} fill className="object-cover" />
-                              </div>
-                              <div className="flex-grow">
-                                <h4 className="text-xs font-sans font-medium">{t('minimalistRitual', language)}</h4>
-                                <p className="text-[10px] text-k-text-tertiary font-sans">{t('latentMatch', language, { score: 87 })}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-
-                        {/* Meta Preferences */}
-                        <section className="grid grid-cols-2 gap-4">
-                          <div className="p-4 bg-k-surface-elevated/20 border border-k-border rounded-xl">
-                            <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">{t('metaPreferences', language)}</span>
-                            <span className="text-xs text-k-gold font-sans capitalize">{currentPhase.replace('-', ' ')}</span>
-                          </div>
-                          <div className="p-4 bg-k-surface-elevated/20 border border-k-border rounded-xl">
-                            <span className="text-[9px] font-sans uppercase tracking-wider text-k-text-tertiary block mb-1">{t('atlasIndex', language)}</span>
-                            <span className="text-xs text-k-gold font-sans">{savedVenueIds.length} {t('bookmarks', language)}</span>
-                          </div>
-                        </section>
-                        
-                        {/* Language Preferences */}
-                        <section className="mt-4">
-                          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-                            {t('language', language)}
-                          </h3>
-                          <div className="flex p-1 rounded-xl bg-k-surface-elevated/20 border border-k-border w-max">
-                            <button
-                              onClick={() => setLanguage('es')}
-                              className={`px-6 py-2 rounded-lg text-xs font-sans tracking-wide transition-all duration-300 ${
-                                language === 'es' 
-                                  ? 'bg-k-gold-dim text-k-gold shadow-sm' 
-                                  : 'text-k-text-secondary hover:text-white'
-                              }`}
-                            >
-                              {t('spanish', language)}
-                            </button>
-                            <button
-                              onClick={() => setLanguage('en')}
-                              className={`px-6 py-2 rounded-lg text-xs font-sans tracking-wide transition-all duration-300 ${
-                                language === 'en' 
-                                  ? 'bg-k-gold-dim text-k-gold shadow-sm' 
-                                  : 'text-k-text-secondary hover:text-white'
-                              }`}
-                            >
-                              {t('english', language)}
-                            </button>
-                          </div>
-                        </section>
-                      </div>
-                    </main>
-                  </>
-                )}
-              </div>
+            {/* VOS TAB */}
+            {activeTab === 'vos' && (
+              <VosTab />
             )}
 
           </motion.div>

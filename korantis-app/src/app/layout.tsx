@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Playfair_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 
 import { CircadianProvider } from "./contexts/CircadianContext";
 import Analytics from "./components/Analytics";
+import Onboarding from "./components/Onboarding";
 
 export default function RootLayout({
   children,
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body className="k-app-shell bg-k-black text-k-text font-sans antialiased overflow-x-hidden w-screen m-0 p-0">
         <Analytics />
         <CircadianProvider>
@@ -40,6 +41,7 @@ export default function RootLayout({
           {/* Main Content Layer */}
           <main className="relative z-10 w-full min-h-screen">
             {children}
+            <Onboarding />
           </main>
         </CircadianProvider>
       </body>

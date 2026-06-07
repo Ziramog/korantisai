@@ -36,6 +36,27 @@ export type VenueDetail = {
   };
 };
 
+type VenueEmbeddingRow = {
+  source_text: string | null;
+  embedding: string | number[] | null;
+};
+
+function parseEmbedding(embedding: string | number[] | null | undefined): number[] {
+  if (Array.isArray(embedding)) {
+    return embedding;
+  }
+
+  if (typeof embedding === 'string') {
+    return JSON.parse(embedding) as number[];
+  }
+
+  return [];
+}
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : 'Unknown error';
+}
+
 export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   
@@ -92,11 +113,11 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
       layer2: {
         curatorialVoice: layer2Embedding.data?.source_text || "No curatorial text found",
         editorialTagline: "N/A", // Not stored in schema directly, typically joined or omitted
-        embedding: layer2Embedding.data?.embedding ? JSON.parse(layer2Embedding.data.embedding) : []
+        embedding: parseEmbedding((layer2Embedding.data as VenueEmbeddingRow | null)?.embedding)
       },
       layer3: {
         atmosphereProse: atmosphereRes.data?.prose || layer3Embedding.data?.source_text || "No atmosphere prose generated",
-        embedding: layer3Embedding.data?.embedding ? JSON.parse(layer3Embedding.data.embedding) : []
+        embedding: parseEmbedding((layer3Embedding.data as VenueEmbeddingRow | null)?.embedding)
       },
       comparison: {
         cosineSimilarity: resonanceRes.data?.cosine_similarity || 0,
@@ -114,8 +135,8 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     };
 
     return NextResponse.json({ detail });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("Error fetching venue detail:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: getErrorMessage(error) }, { status: 500 });
   }
 }

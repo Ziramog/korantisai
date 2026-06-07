@@ -1,0 +1,137 @@
+{
+  "batch_id": "batch_004_buenos_aires_50",
+  "generated_at": "2026-06-07T21:23:41.899Z",
+  "files": [
+    {
+      "label": "Venue seed",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\venue_seed_report.md",
+      "exists": true,
+      "size_bytes": 16119
+    },
+    {
+      "label": "Stage 01 raw venues",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_01_report.md",
+      "exists": true,
+      "size_bytes": 3874
+    },
+    {
+      "label": "Stage 02 sources",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_02_source_discovery_report.md",
+      "exists": true,
+      "size_bytes": 14808
+    },
+    {
+      "label": "Stage 03 images",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_03_report.md",
+      "exists": true,
+      "size_bytes": 1894
+    },
+    {
+      "label": "Stage 04 M3 vision",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_04_report.md",
+      "exists": true,
+      "size_bytes": 3182
+    },
+    {
+      "label": "Selected image connector",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\connect_selected_images_report.md",
+      "exists": true,
+      "size_bytes": 8745
+    },
+    {
+      "label": "Stage 05 editorial",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_05_report.md",
+      "exists": true,
+      "size_bytes": 2477
+    },
+    {
+      "label": "Stage 06 quality gate",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\quality_gate_report.md",
+      "exists": true,
+      "size_bytes": 12676
+    },
+    {
+      "label": "Stage 07 approval manifest",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\approval_manifest_report.md",
+      "exists": true,
+      "size_bytes": 4286
+    },
+    {
+      "label": "Stage 08 staging dry-run",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\supabase_staging_dry_run_report.md",
+      "exists": true,
+      "size_bytes": 29045
+    },
+    {
+      "label": "Stage 09 publication review",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\publication_review_report.md",
+      "exists": true,
+      "size_bytes": 7444
+    },
+    {
+      "label": "Reviewed decision manifest",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\publication_decision_manifest.reviewed.json",
+      "exists": true,
+      "size_bytes": 48175
+    },
+    {
+      "label": "Stage 10 Cloudinary",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\cloudinary_materialization_report.md",
+      "exists": true,
+      "size_bytes": 7471
+    },
+    {
+      "label": "Stage 11 public projection",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\public_projection_report.md",
+      "exists": true,
+      "size_bytes": 1695
+    },
+    {
+      "label": "Stage 11 apply",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\public_projection_apply_report.md",
+      "exists": true,
+      "size_bytes": 602
+    }
+  ],
+  "counts": {
+    "quality_gate": {
+      "input": 50,
+      "ready_for_db_staging": 44,
+      "auto_staged": 0,
+      "needs_review": 0,
+      "blocked": 6,
+      "approved": 0,
+      "rejected": 0,
+      "staged": 0,
+      "published": 0
+    },
+    "decision_manifest": {
+      "total": 50,
+      "approved": 30,
+      "paused": 18,
+      "rejected": 2
+    },
+    "cloudinary": {
+      "mode": "apply",
+      "considered": 30,
+      "uploaded": 30,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    "public_projection": {
+      "intended_public_venue_writes": 30,
+      "intended_venue_image_writes": 30,
+      "approved_projected": 30,
+      "skipped_count": 20
+    }
+  },
+  "commands": {
+    "full_batch_dry_run": "npx tsx pipeline/run_full_batch.ts batch_004_buenos_aires_50 --max-images-per-venue 4",
+    "publication_review": "npx tsx pipeline/stages/09_generate_publication_review.ts batch_004_buenos_aires_50",
+    "public_projection_dry_run": "npx tsx pipeline/stages/11_project_to_public.ts batch_004_buenos_aires_50 --dry-run",
+    "cloudinary_dry_run": "npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_004_buenos_aires_50 --dry-run",
+    "cloudinary_apply": "npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_004_buenos_aires_50 --apply",
+    "public_projection_apply_hidden": "npx tsx pipeline/stages/11_project_to_public.ts batch_004_buenos_aires_50 --apply",
+    "activation_future": "npx tsx pipeline/stages/12_activate_public_venues.ts batch_004_buenos_aires_50 --apply"
+  }
+}

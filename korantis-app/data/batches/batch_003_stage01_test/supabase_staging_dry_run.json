@@ -1,0 +1,2077 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T18:37:51.089Z",
+  "mode": "dry_run",
+  "dry_run_only": true,
+  "approved_count": 4,
+  "blocked_count": 1,
+  "schema_compatibility": {
+    "read_only_live_probe_attempted": true,
+    "read_only_live_probe_succeeded": true,
+    "tables": [
+      {
+        "table": "staging_venues",
+        "found": true,
+        "columns_found": [
+          "id",
+          "name",
+          "city",
+          "category_seed",
+          "status",
+          "canonical_data",
+          "atmosphere_prose",
+          "enrichment_data",
+          "pipeline_batch_id",
+          "pipeline_status",
+          "eligibility_score",
+          "primary_atmosphere",
+          "mood_tags"
+        ],
+        "missing_columns": [
+          "curation_status",
+          "eligibility",
+          "evidence",
+          "best_for",
+          "grounded_description",
+          "curation_notes"
+        ],
+        "checked_columns": [
+          {
+            "column": "id",
+            "found": true
+          },
+          {
+            "column": "name",
+            "found": true
+          },
+          {
+            "column": "city",
+            "found": true
+          },
+          {
+            "column": "category_seed",
+            "found": true
+          },
+          {
+            "column": "status",
+            "found": true
+          },
+          {
+            "column": "canonical_data",
+            "found": true
+          },
+          {
+            "column": "atmosphere_prose",
+            "found": true
+          },
+          {
+            "column": "enrichment_data",
+            "found": true
+          },
+          {
+            "column": "pipeline_batch_id",
+            "found": true
+          },
+          {
+            "column": "pipeline_status",
+            "found": true
+          },
+          {
+            "column": "curation_status",
+            "found": false
+          },
+          {
+            "column": "eligibility_score",
+            "found": true
+          },
+          {
+            "column": "eligibility",
+            "found": false
+          },
+          {
+            "column": "evidence",
+            "found": false
+          },
+          {
+            "column": "primary_atmosphere",
+            "found": true
+          },
+          {
+            "column": "mood_tags",
+            "found": true
+          },
+          {
+            "column": "best_for",
+            "found": false
+          },
+          {
+            "column": "grounded_description",
+            "found": false
+          },
+          {
+            "column": "curation_notes",
+            "found": false
+          }
+        ],
+        "fallback_decision": "Map only found columns and skip missing columns: curation_status, eligibility, evidence, best_for, grounded_description, curation_notes."
+      },
+      {
+        "table": "venue_images",
+        "found": true,
+        "columns_found": [
+          "id",
+          "venue_id",
+          "photo_reference",
+          "google_photo_reference",
+          "width",
+          "height",
+          "is_cover",
+          "status",
+          "url",
+          "role",
+          "source",
+          "quality_score",
+          "hero_suitability_score",
+          "selection_data",
+          "rights_status",
+          "is_selected_hero",
+          "sort_order"
+        ],
+        "missing_columns": [
+          "photo_scores"
+        ],
+        "checked_columns": [
+          {
+            "column": "id",
+            "found": true
+          },
+          {
+            "column": "venue_id",
+            "found": true
+          },
+          {
+            "column": "photo_reference",
+            "found": true
+          },
+          {
+            "column": "google_photo_reference",
+            "found": true
+          },
+          {
+            "column": "width",
+            "found": true
+          },
+          {
+            "column": "height",
+            "found": true
+          },
+          {
+            "column": "is_cover",
+            "found": true
+          },
+          {
+            "column": "status",
+            "found": true
+          },
+          {
+            "column": "url",
+            "found": true
+          },
+          {
+            "column": "role",
+            "found": true
+          },
+          {
+            "column": "source",
+            "found": true
+          },
+          {
+            "column": "quality_score",
+            "found": true
+          },
+          {
+            "column": "hero_suitability_score",
+            "found": true
+          },
+          {
+            "column": "photo_scores",
+            "found": false
+          },
+          {
+            "column": "selection_data",
+            "found": true
+          },
+          {
+            "column": "rights_status",
+            "found": true
+          },
+          {
+            "column": "is_selected_hero",
+            "found": true
+          },
+          {
+            "column": "sort_order",
+            "found": true
+          }
+        ],
+        "fallback_decision": "Map only found columns and skip missing columns: photo_scores."
+      },
+      {
+        "table": "venue_atmosphere",
+        "found": true,
+        "columns_found": [
+          "id",
+          "venue_id",
+          "prose",
+          "word_count",
+          "model"
+        ],
+        "missing_columns": [],
+        "checked_columns": [
+          {
+            "column": "id",
+            "found": true
+          },
+          {
+            "column": "venue_id",
+            "found": true
+          },
+          {
+            "column": "prose",
+            "found": true
+          },
+          {
+            "column": "word_count",
+            "found": true
+          },
+          {
+            "column": "model",
+            "found": true
+          }
+        ],
+        "fallback_decision": "Treat as not staging-compatible unless FK compatibility with staging venue ids is confirmed; use staging_venues.atmosphere_prose fallback."
+      },
+      {
+        "table": "quality_scores",
+        "found": true,
+        "columns_found": [
+          "venue_id",
+          "review_count",
+          "has_images",
+          "has_prose",
+          "has_embeddings",
+          "resonance_score",
+          "editorial_themes",
+          "interpretation_notes",
+          "atmosphere_word_count",
+          "last_processed_at",
+          "pipeline_quality_data"
+        ],
+        "missing_columns": [],
+        "checked_columns": [
+          {
+            "column": "venue_id",
+            "found": true
+          },
+          {
+            "column": "review_count",
+            "found": true
+          },
+          {
+            "column": "has_images",
+            "found": true
+          },
+          {
+            "column": "has_prose",
+            "found": true
+          },
+          {
+            "column": "has_embeddings",
+            "found": true
+          },
+          {
+            "column": "resonance_score",
+            "found": true
+          },
+          {
+            "column": "editorial_themes",
+            "found": true
+          },
+          {
+            "column": "interpretation_notes",
+            "found": true
+          },
+          {
+            "column": "atmosphere_word_count",
+            "found": true
+          },
+          {
+            "column": "last_processed_at",
+            "found": true
+          },
+          {
+            "column": "pipeline_quality_data",
+            "found": true
+          }
+        ],
+        "fallback_decision": "All expected dry-run columns found."
+      },
+      {
+        "table": "venue_quality",
+        "found": true,
+        "columns_found": [
+          "id",
+          "venue_id",
+          "review_count",
+          "has_atmosphere",
+          "has_embedding",
+          "has_images",
+          "completeness_score",
+          "ready_for_review"
+        ],
+        "missing_columns": [],
+        "checked_columns": [
+          {
+            "column": "id",
+            "found": true
+          },
+          {
+            "column": "venue_id",
+            "found": true
+          },
+          {
+            "column": "review_count",
+            "found": true
+          },
+          {
+            "column": "has_atmosphere",
+            "found": true
+          },
+          {
+            "column": "has_embedding",
+            "found": true
+          },
+          {
+            "column": "has_images",
+            "found": true
+          },
+          {
+            "column": "completeness_score",
+            "found": true
+          },
+          {
+            "column": "ready_for_review",
+            "found": true
+          }
+        ],
+        "fallback_decision": "All expected dry-run columns found."
+      }
+    ]
+  },
+  "venue_mappings": [
+    {
+      "venue_name": "Oporto Almacén",
+      "source_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+      "target_staging_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+      "category": "restaurant",
+      "neighborhood": "Palermo",
+      "canonical_data_payload_preview": {
+        "place_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+        "name": "Oporto Almacén",
+        "address": "11 de Septiembre de 1888 4152, C1429BJB Cdad. Autónoma de Buenos Aires",
+        "neighborhood": "Palermo",
+        "city": "Buenos Aires",
+        "coordinates": {
+          "lat": -34.5414946,
+          "lng": -58.4645778
+        },
+        "google_maps_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "website_url": "https://oporto.meitre.com/",
+        "phone": "+54 9 11 3916-2646",
+        "venue_type": "restaurant",
+        "tagline": "Oporto Almacén: warm restaurant character in Palermo",
+        "description": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "date_night"
+        ],
+        "evidence_confidence": 0.88,
+        "quality_gate_status": "ready_for_db_staging",
+        "staging_score": 100,
+        "hero_image": {
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+          "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_type": "google_places",
+          "width": 1600,
+          "height": 721,
+          "publication_status": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        }
+      },
+      "hero_image_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+      "image_rights_status": "not_approved_for_publication",
+      "tags": [
+        "warm",
+        "intimate",
+        "date_night"
+      ],
+      "tagline": "Oporto Almacén: warm restaurant character in Palermo",
+      "description": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+      "quality_status": "ready_for_db_staging",
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "intended_writes": [
+        {
+          "table": "staging_venues",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "id",
+          "fields_to_write": {
+            "id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+            "name": "Oporto Almacén",
+            "city": "buenos_aires",
+            "category_seed": "restaurant",
+            "status": "ready_for_review",
+            "canonical_data": {
+              "place_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+              "name": "Oporto Almacén",
+              "address": "11 de Septiembre de 1888 4152, C1429BJB Cdad. Autónoma de Buenos Aires",
+              "neighborhood": "Palermo",
+              "city": "Buenos Aires",
+              "coordinates": {
+                "lat": -34.5414946,
+                "lng": -58.4645778
+              },
+              "google_maps_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "website_url": "https://oporto.meitre.com/",
+              "phone": "+54 9 11 3916-2646",
+              "venue_type": "restaurant",
+              "tagline": "Oporto Almacén: warm restaurant character in Palermo",
+              "description": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+              "mood_tags": [
+                "warm",
+                "intimate",
+                "date_night"
+              ],
+              "evidence_confidence": 0.88,
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100,
+              "hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1600,
+                "height": 721,
+                "publication_status": "not_approved_for_publication",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_interior",
+                  "atmosphere_signal": "warm_cozy",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                }
+              }
+            },
+            "atmosphere_prose": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+            "enrichment_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "pipeline_status": "ready_for_db_staging",
+              "quality_gate": {
+                "pipeline_batch_id": "batch_003_stage01_test",
+                "status": "ready_for_db_staging",
+                "staging_score": 100,
+                "errors": [],
+                "warnings": [
+                  "medium_rights_risk",
+                  "missing_instagram",
+                  "image_rights_review_required_before_publication",
+                  "rights_review_needed"
+                ],
+                "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+              },
+              "raw": {
+                "place_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+                "google_maps_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "website_url": "https://oporto.meitre.com/",
+                "address": "11 de Septiembre de 1888 4152, C1429BJB Cdad. Autónoma de Buenos Aires",
+                "coordinates": {
+                  "lat": -34.5414946,
+                  "lng": -58.4645778
+                },
+                "rating": 4.2,
+                "user_ratings_total": 2937,
+                "business_status": "OPERATIONAL",
+                "operational_status": "operational"
+              },
+              "evidence": {
+                "confidence": 0.88,
+                "sources": [
+                  {
+                    "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                    "source_type": "google_places",
+                    "confidence": 0.9
+                  }
+                ],
+                "contact": {
+                  "website": "https://oporto.meitre.com/",
+                  "phone": "+54 9 11 3916-2646"
+                },
+                "warnings": [],
+                "factual_notes": [
+                  "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+                ]
+              },
+              "editorial": {
+                "tagline": "Oporto Almacén: warm restaurant character in Palermo",
+                "description": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+                "description_short": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+                "mood_tags": [
+                  "warm",
+                  "intimate",
+                  "date_night"
+                ],
+                "mood_confidence": 0.78,
+                "moments": [
+                  "dinner plans",
+                  "date-night option"
+                ]
+              },
+              "selected_hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1600,
+                "height": 721,
+                "rights_risk": "medium",
+                "risk_flags": [
+                  "rights_review_needed",
+                  "preferred_resolution"
+                ],
+                "publication_status": "not_approved_for_publication",
+                "validation_status": "imported_needs_validation",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_interior",
+                  "atmosphere_signal": "warm_cozy",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                },
+                "quality_gate_status": "ready_for_db_staging",
+                "staging_score": 100
+              }
+            },
+            "pipeline_batch_id": "batch_003_stage01_test",
+            "pipeline_status": "ready_for_db_staging",
+            "eligibility_score": 100,
+            "primary_atmosphere": "warm_cozy",
+            "mood_tags": [
+              "warm",
+              "intimate",
+              "date_night"
+            ]
+          },
+          "source_fields": {
+            "id": "venue.raw.place_id",
+            "name": "venue.raw.name",
+            "city": "venue.raw.city",
+            "category_seed": "venue.raw.type",
+            "status": "quality_gate.status",
+            "canonical_data": "VenueComplete raw/editorial/evidence/hero_image",
+            "atmosphere_prose": "venue.editorial.description",
+            "enrichment_data": "VenueComplete evidence/editorial/hero_image plus quality gate metadata",
+            "pipeline_batch_id": "approval_manifest.batch_id",
+            "pipeline_status": "quality_gate.status",
+            "mood_tags": "venue.editorial.mood_tags"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "curation_status",
+              "reason": "Column curation_status not found on live staging_venues schema probe."
+            },
+            {
+              "field": "eligibility",
+              "reason": "Column eligibility not found on live staging_venues schema probe."
+            },
+            {
+              "field": "evidence",
+              "reason": "Column evidence not found on live staging_venues schema probe."
+            },
+            {
+              "field": "best_for",
+              "reason": "Column best_for not found on live staging_venues schema probe."
+            },
+            {
+              "field": "grounded_description",
+              "reason": "Column grounded_description not found on live staging_venues schema probe."
+            },
+            {
+              "field": "curation_notes",
+              "reason": "Column curation_notes not found on live staging_venues schema probe."
+            }
+          ]
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id + photo_reference",
+          "fields_to_write": {
+            "venue_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 721,
+            "is_cover": true,
+            "status": "reference_only",
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+            "role": "hero",
+            "source": "google_places",
+            "quality_score": 100,
+            "hero_suitability_score": 100,
+            "selection_data": {
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+              "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "width": 1600,
+              "height": 721,
+              "rights_risk": "medium",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status": "not_approved_for_publication",
+              "validation_status": "imported_needs_validation",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100
+            },
+            "rights_status": "not_approved_for_publication",
+            "is_selected_hero": true,
+            "sort_order": 0
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "photo_reference": "venue.hero_image.original_image_url fallback resolved_image_url fallback deterministic venue/source/role/sort_order reference",
+            "google_photo_reference": "venue.hero_image source if google_places",
+            "url": "venue.hero_image.resolved_image_url",
+            "role": "hero_image.role",
+            "photo_scores": "venue.hero_image.classification",
+            "selection_data": "venue.hero_image metadata plus Stage 04 selection context",
+            "rights_status": "venue.hero_image.publication_status",
+            "is_selected_hero": "true for selected Stage 04 hero image"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "photo_scores",
+              "reason": "Column photo_scores not found on live venue_images schema probe."
+            }
+          ]
+        },
+        {
+          "table": "quality_scores",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+            "review_count": 2937,
+            "has_images": true,
+            "has_prose": true,
+            "has_embeddings": false,
+            "editorial_themes": [
+              "warm",
+              "intimate",
+              "date_night"
+            ],
+            "interpretation_notes": "Quality gate ready_for_db_staging; dry-run only.",
+            "atmosphere_word_count": 31,
+            "last_processed_at": "2026-06-07T18:37:49.792Z",
+            "pipeline_quality_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "status": "ready_for_db_staging",
+              "staging_score": 100,
+              "errors": [],
+              "warnings": [
+                "medium_rights_risk",
+                "missing_instagram",
+                "image_rights_review_required_before_publication",
+                "rights_review_needed"
+              ],
+              "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+            }
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "review_count": "venue.raw.user_ratings_total",
+            "has_images": "Boolean(venue.hero_image)",
+            "has_prose": "Boolean(venue.editorial.description)",
+            "editorial_themes": "venue.editorial.mood_tags",
+            "pipeline_quality_data": "candidate status/staging_score/errors/warnings/review_reason"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_atmosphere",
+          "operation": "insert",
+          "operation_type": "insert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+            "prose": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+            "word_count": 31,
+            "model": "deterministic_stage_05_no_model_call"
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "prose": "venue.editorial.description",
+            "word_count": "computed from description",
+            "model": "constant deterministic_stage_05_no_model_call"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication.",
+            "Dry-run documents possible payload only; real sync should prefer staging_venues.atmosphere_prose unless venue_atmosphere is confirmed staging-compatible."
+          ],
+          "fields_skipped": [
+            {
+              "field": "*",
+              "reason": "Skipped for real sync unless confirmed compatible: known venue_atmosphere schema references public.venues, not staging_venues."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "source_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "target_staging_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "category": "bar",
+      "neighborhood": "Retiro",
+      "canonical_data_payload_preview": {
+        "place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+        "name": "Gran Bar Danzon",
+        "address": "Libertad 1161, C1012AAW Cdad. Autónoma de Buenos Aires",
+        "neighborhood": "Retiro",
+        "city": "Buenos Aires",
+        "coordinates": {
+          "lat": -34.5948985,
+          "lng": -58.3842924
+        },
+        "google_maps_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "website_url": "https://granbardanzon.com.ar/",
+        "phone": "+54 11 4811-1108",
+        "venue_type": "bar",
+        "tagline": "Gran Bar Danzon: intimate bar energy in Retiro",
+        "description": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+        "mood_tags": [
+          "intimate",
+          "late_night",
+          "cinematic",
+          "social"
+        ],
+        "evidence_confidence": 0.88,
+        "quality_gate_status": "ready_for_db_staging",
+        "staging_score": 100,
+        "hero_image": {
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+          "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_type": "google_places",
+          "width": 1600,
+          "height": 1200,
+          "publication_status": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "dark_intimate",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        }
+      },
+      "hero_image_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+      "image_rights_status": "not_approved_for_publication",
+      "tags": [
+        "intimate",
+        "late_night",
+        "cinematic",
+        "social"
+      ],
+      "tagline": "Gran Bar Danzon: intimate bar energy in Retiro",
+      "description": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+      "quality_status": "ready_for_db_staging",
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "intended_writes": [
+        {
+          "table": "staging_venues",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "id",
+          "fields_to_write": {
+            "id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+            "name": "Gran Bar Danzon",
+            "city": "buenos_aires",
+            "category_seed": "bar",
+            "status": "ready_for_review",
+            "canonical_data": {
+              "place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+              "name": "Gran Bar Danzon",
+              "address": "Libertad 1161, C1012AAW Cdad. Autónoma de Buenos Aires",
+              "neighborhood": "Retiro",
+              "city": "Buenos Aires",
+              "coordinates": {
+                "lat": -34.5948985,
+                "lng": -58.3842924
+              },
+              "google_maps_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "website_url": "https://granbardanzon.com.ar/",
+              "phone": "+54 11 4811-1108",
+              "venue_type": "bar",
+              "tagline": "Gran Bar Danzon: intimate bar energy in Retiro",
+              "description": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+              "mood_tags": [
+                "intimate",
+                "late_night",
+                "cinematic",
+                "social"
+              ],
+              "evidence_confidence": 0.88,
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100,
+              "hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1600,
+                "height": 1200,
+                "publication_status": "not_approved_for_publication",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_interior",
+                  "atmosphere_signal": "dark_intimate",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                }
+              }
+            },
+            "atmosphere_prose": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+            "enrichment_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "pipeline_status": "ready_for_db_staging",
+              "quality_gate": {
+                "pipeline_batch_id": "batch_003_stage01_test",
+                "status": "ready_for_db_staging",
+                "staging_score": 100,
+                "errors": [],
+                "warnings": [
+                  "medium_rights_risk",
+                  "missing_instagram",
+                  "image_rights_review_required_before_publication",
+                  "rights_review_needed"
+                ],
+                "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+              },
+              "raw": {
+                "place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+                "google_maps_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "website_url": "https://granbardanzon.com.ar/",
+                "address": "Libertad 1161, C1012AAW Cdad. Autónoma de Buenos Aires",
+                "coordinates": {
+                  "lat": -34.5948985,
+                  "lng": -58.3842924
+                },
+                "rating": 4.4,
+                "user_ratings_total": 4427,
+                "business_status": "OPERATIONAL",
+                "operational_status": "operational"
+              },
+              "evidence": {
+                "confidence": 0.88,
+                "sources": [
+                  {
+                    "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                    "source_type": "google_places",
+                    "confidence": 0.9
+                  }
+                ],
+                "contact": {
+                  "website": "https://granbardanzon.com.ar/",
+                  "phone": "+54 11 4811-1108"
+                },
+                "warnings": [],
+                "factual_notes": [
+                  "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+                ]
+              },
+              "editorial": {
+                "tagline": "Gran Bar Danzon: intimate bar energy in Retiro",
+                "description": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+                "description_short": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+                "mood_tags": [
+                  "intimate",
+                  "late_night",
+                  "cinematic",
+                  "social"
+                ],
+                "mood_confidence": 0.78,
+                "moments": [
+                  "after-work drinks",
+                  "late-night plans"
+                ]
+              },
+              "selected_hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1600,
+                "height": 1200,
+                "rights_risk": "medium",
+                "risk_flags": [
+                  "rights_review_needed",
+                  "preferred_resolution"
+                ],
+                "publication_status": "not_approved_for_publication",
+                "validation_status": "imported_needs_validation",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_interior",
+                  "atmosphere_signal": "dark_intimate",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                },
+                "quality_gate_status": "ready_for_db_staging",
+                "staging_score": 100
+              }
+            },
+            "pipeline_batch_id": "batch_003_stage01_test",
+            "pipeline_status": "ready_for_db_staging",
+            "eligibility_score": 100,
+            "primary_atmosphere": "dark_intimate",
+            "mood_tags": [
+              "intimate",
+              "late_night",
+              "cinematic",
+              "social"
+            ]
+          },
+          "source_fields": {
+            "id": "venue.raw.place_id",
+            "name": "venue.raw.name",
+            "city": "venue.raw.city",
+            "category_seed": "venue.raw.type",
+            "status": "quality_gate.status",
+            "canonical_data": "VenueComplete raw/editorial/evidence/hero_image",
+            "atmosphere_prose": "venue.editorial.description",
+            "enrichment_data": "VenueComplete evidence/editorial/hero_image plus quality gate metadata",
+            "pipeline_batch_id": "approval_manifest.batch_id",
+            "pipeline_status": "quality_gate.status",
+            "mood_tags": "venue.editorial.mood_tags"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "curation_status",
+              "reason": "Column curation_status not found on live staging_venues schema probe."
+            },
+            {
+              "field": "eligibility",
+              "reason": "Column eligibility not found on live staging_venues schema probe."
+            },
+            {
+              "field": "evidence",
+              "reason": "Column evidence not found on live staging_venues schema probe."
+            },
+            {
+              "field": "best_for",
+              "reason": "Column best_for not found on live staging_venues schema probe."
+            },
+            {
+              "field": "grounded_description",
+              "reason": "Column grounded_description not found on live staging_venues schema probe."
+            },
+            {
+              "field": "curation_notes",
+              "reason": "Column curation_notes not found on live staging_venues schema probe."
+            }
+          ]
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id + photo_reference",
+          "fields_to_write": {
+            "venue_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 1200,
+            "is_cover": true,
+            "status": "reference_only",
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+            "role": "hero",
+            "source": "google_places",
+            "quality_score": 100,
+            "hero_suitability_score": 100,
+            "selection_data": {
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+              "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "width": 1600,
+              "height": 1200,
+              "rights_risk": "medium",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status": "not_approved_for_publication",
+              "validation_status": "imported_needs_validation",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "dark_intimate",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100
+            },
+            "rights_status": "not_approved_for_publication",
+            "is_selected_hero": true,
+            "sort_order": 0
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "photo_reference": "venue.hero_image.original_image_url fallback resolved_image_url fallback deterministic venue/source/role/sort_order reference",
+            "google_photo_reference": "venue.hero_image source if google_places",
+            "url": "venue.hero_image.resolved_image_url",
+            "role": "hero_image.role",
+            "photo_scores": "venue.hero_image.classification",
+            "selection_data": "venue.hero_image metadata plus Stage 04 selection context",
+            "rights_status": "venue.hero_image.publication_status",
+            "is_selected_hero": "true for selected Stage 04 hero image"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "photo_scores",
+              "reason": "Column photo_scores not found on live venue_images schema probe."
+            }
+          ]
+        },
+        {
+          "table": "quality_scores",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+            "review_count": 4427,
+            "has_images": true,
+            "has_prose": true,
+            "has_embeddings": false,
+            "editorial_themes": [
+              "intimate",
+              "late_night",
+              "cinematic",
+              "social"
+            ],
+            "interpretation_notes": "Quality gate ready_for_db_staging; dry-run only.",
+            "atmosphere_word_count": 32,
+            "last_processed_at": "2026-06-07T18:37:49.793Z",
+            "pipeline_quality_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "status": "ready_for_db_staging",
+              "staging_score": 100,
+              "errors": [],
+              "warnings": [
+                "medium_rights_risk",
+                "missing_instagram",
+                "image_rights_review_required_before_publication",
+                "rights_review_needed"
+              ],
+              "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+            }
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "review_count": "venue.raw.user_ratings_total",
+            "has_images": "Boolean(venue.hero_image)",
+            "has_prose": "Boolean(venue.editorial.description)",
+            "editorial_themes": "venue.editorial.mood_tags",
+            "pipeline_quality_data": "candidate status/staging_score/errors/warnings/review_reason"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_atmosphere",
+          "operation": "insert",
+          "operation_type": "insert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+            "prose": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+            "word_count": 32,
+            "model": "deterministic_stage_05_no_model_call"
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "prose": "venue.editorial.description",
+            "word_count": "computed from description",
+            "model": "constant deterministic_stage_05_no_model_call"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication.",
+            "Dry-run documents possible payload only; real sync should prefer staging_venues.atmosphere_prose unless venue_atmosphere is confirmed staging-compatible."
+          ],
+          "fields_skipped": [
+            {
+              "field": "*",
+              "reason": "Skipped for real sync unless confirmed compatible: known venue_atmosphere schema references public.venues, not staging_venues."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "venue_name": "La Biela",
+      "source_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+      "target_staging_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+      "category": "cafe",
+      "neighborhood": "Recoleta",
+      "canonical_data_payload_preview": {
+        "place_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+        "name": "La Biela",
+        "address": "Av. Pres. Manuel Quintana 596, C1129 Cdad. Autónoma de Buenos Aires",
+        "neighborhood": "Recoleta",
+        "city": "Buenos Aires",
+        "coordinates": {
+          "lat": -34.587884599999995,
+          "lng": -58.3908202
+        },
+        "google_maps_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "website_url": "https://la-biela.shop/",
+        "phone": "+54 11 4804-0449",
+        "venue_type": "cafe",
+        "tagline": "La Biela: warm cafe character in Recoleta",
+        "description": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "historic"
+        ],
+        "evidence_confidence": 0.88,
+        "quality_gate_status": "ready_for_db_staging",
+        "staging_score": 100,
+        "hero_image": {
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+          "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_type": "google_places",
+          "width": 1200,
+          "height": 1600,
+          "publication_status": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_exterior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        }
+      },
+      "hero_image_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+      "image_rights_status": "not_approved_for_publication",
+      "tags": [
+        "warm",
+        "intimate",
+        "historic"
+      ],
+      "tagline": "La Biela: warm cafe character in Recoleta",
+      "description": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+      "quality_status": "ready_for_db_staging",
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "intended_writes": [
+        {
+          "table": "staging_venues",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "id",
+          "fields_to_write": {
+            "id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+            "name": "La Biela",
+            "city": "buenos_aires",
+            "category_seed": "cafe",
+            "status": "ready_for_review",
+            "canonical_data": {
+              "place_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+              "name": "La Biela",
+              "address": "Av. Pres. Manuel Quintana 596, C1129 Cdad. Autónoma de Buenos Aires",
+              "neighborhood": "Recoleta",
+              "city": "Buenos Aires",
+              "coordinates": {
+                "lat": -34.587884599999995,
+                "lng": -58.3908202
+              },
+              "google_maps_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "website_url": "https://la-biela.shop/",
+              "phone": "+54 11 4804-0449",
+              "venue_type": "cafe",
+              "tagline": "La Biela: warm cafe character in Recoleta",
+              "description": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+              "mood_tags": [
+                "warm",
+                "intimate",
+                "historic"
+              ],
+              "evidence_confidence": 0.88,
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100,
+              "hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1200,
+                "height": 1600,
+                "publication_status": "not_approved_for_publication",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_exterior",
+                  "atmosphere_signal": "warm_cozy",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                }
+              }
+            },
+            "atmosphere_prose": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+            "enrichment_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "pipeline_status": "ready_for_db_staging",
+              "quality_gate": {
+                "pipeline_batch_id": "batch_003_stage01_test",
+                "status": "ready_for_db_staging",
+                "staging_score": 100,
+                "errors": [],
+                "warnings": [
+                  "medium_rights_risk",
+                  "missing_instagram",
+                  "image_rights_review_required_before_publication",
+                  "rights_review_needed"
+                ],
+                "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+              },
+              "raw": {
+                "place_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+                "google_maps_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "website_url": "https://la-biela.shop/",
+                "address": "Av. Pres. Manuel Quintana 596, C1129 Cdad. Autónoma de Buenos Aires",
+                "coordinates": {
+                  "lat": -34.587884599999995,
+                  "lng": -58.3908202
+                },
+                "rating": 4.2,
+                "user_ratings_total": 13184,
+                "business_status": "OPERATIONAL",
+                "operational_status": "operational"
+              },
+              "evidence": {
+                "confidence": 0.88,
+                "sources": [
+                  {
+                    "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                    "source_type": "google_places",
+                    "confidence": 0.9
+                  }
+                ],
+                "contact": {
+                  "website": "https://la-biela.shop/",
+                  "phone": "+54 11 4804-0449"
+                },
+                "warnings": [],
+                "factual_notes": [
+                  "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+                ]
+              },
+              "editorial": {
+                "tagline": "La Biela: warm cafe character in Recoleta",
+                "description": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+                "description_short": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+                "mood_tags": [
+                  "warm",
+                  "intimate",
+                  "historic"
+                ],
+                "mood_confidence": 0.78,
+                "moments": [
+                  "afternoon coffee",
+                  "classic city stop"
+                ]
+              },
+              "selected_hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1200,
+                "height": 1600,
+                "rights_risk": "medium",
+                "risk_flags": [
+                  "rights_review_needed",
+                  "preferred_resolution"
+                ],
+                "publication_status": "not_approved_for_publication",
+                "validation_status": "imported_needs_validation",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_exterior",
+                  "atmosphere_signal": "warm_cozy",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                },
+                "quality_gate_status": "ready_for_db_staging",
+                "staging_score": 100
+              }
+            },
+            "pipeline_batch_id": "batch_003_stage01_test",
+            "pipeline_status": "ready_for_db_staging",
+            "eligibility_score": 100,
+            "primary_atmosphere": "warm_cozy",
+            "mood_tags": [
+              "warm",
+              "intimate",
+              "historic"
+            ]
+          },
+          "source_fields": {
+            "id": "venue.raw.place_id",
+            "name": "venue.raw.name",
+            "city": "venue.raw.city",
+            "category_seed": "venue.raw.type",
+            "status": "quality_gate.status",
+            "canonical_data": "VenueComplete raw/editorial/evidence/hero_image",
+            "atmosphere_prose": "venue.editorial.description",
+            "enrichment_data": "VenueComplete evidence/editorial/hero_image plus quality gate metadata",
+            "pipeline_batch_id": "approval_manifest.batch_id",
+            "pipeline_status": "quality_gate.status",
+            "mood_tags": "venue.editorial.mood_tags"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "curation_status",
+              "reason": "Column curation_status not found on live staging_venues schema probe."
+            },
+            {
+              "field": "eligibility",
+              "reason": "Column eligibility not found on live staging_venues schema probe."
+            },
+            {
+              "field": "evidence",
+              "reason": "Column evidence not found on live staging_venues schema probe."
+            },
+            {
+              "field": "best_for",
+              "reason": "Column best_for not found on live staging_venues schema probe."
+            },
+            {
+              "field": "grounded_description",
+              "reason": "Column grounded_description not found on live staging_venues schema probe."
+            },
+            {
+              "field": "curation_notes",
+              "reason": "Column curation_notes not found on live staging_venues schema probe."
+            }
+          ]
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id + photo_reference",
+          "fields_to_write": {
+            "venue_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+            "width": 1200,
+            "height": 1600,
+            "is_cover": true,
+            "status": "reference_only",
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+            "role": "hero",
+            "source": "google_places",
+            "quality_score": 100,
+            "hero_suitability_score": 100,
+            "selection_data": {
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+              "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "width": 1200,
+              "height": 1600,
+              "rights_risk": "medium",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status": "not_approved_for_publication",
+              "validation_status": "imported_needs_validation",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100
+            },
+            "rights_status": "not_approved_for_publication",
+            "is_selected_hero": true,
+            "sort_order": 0
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "photo_reference": "venue.hero_image.original_image_url fallback resolved_image_url fallback deterministic venue/source/role/sort_order reference",
+            "google_photo_reference": "venue.hero_image source if google_places",
+            "url": "venue.hero_image.resolved_image_url",
+            "role": "hero_image.role",
+            "photo_scores": "venue.hero_image.classification",
+            "selection_data": "venue.hero_image metadata plus Stage 04 selection context",
+            "rights_status": "venue.hero_image.publication_status",
+            "is_selected_hero": "true for selected Stage 04 hero image"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "photo_scores",
+              "reason": "Column photo_scores not found on live venue_images schema probe."
+            }
+          ]
+        },
+        {
+          "table": "quality_scores",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+            "review_count": 13184,
+            "has_images": true,
+            "has_prose": true,
+            "has_embeddings": false,
+            "editorial_themes": [
+              "warm",
+              "intimate",
+              "historic"
+            ],
+            "interpretation_notes": "Quality gate ready_for_db_staging; dry-run only.",
+            "atmosphere_word_count": 31,
+            "last_processed_at": "2026-06-07T18:37:49.794Z",
+            "pipeline_quality_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "status": "ready_for_db_staging",
+              "staging_score": 100,
+              "errors": [],
+              "warnings": [
+                "medium_rights_risk",
+                "missing_instagram",
+                "image_rights_review_required_before_publication",
+                "rights_review_needed"
+              ],
+              "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+            }
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "review_count": "venue.raw.user_ratings_total",
+            "has_images": "Boolean(venue.hero_image)",
+            "has_prose": "Boolean(venue.editorial.description)",
+            "editorial_themes": "venue.editorial.mood_tags",
+            "pipeline_quality_data": "candidate status/staging_score/errors/warnings/review_reason"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_atmosphere",
+          "operation": "insert",
+          "operation_type": "insert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+            "prose": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+            "word_count": 31,
+            "model": "deterministic_stage_05_no_model_call"
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "prose": "venue.editorial.description",
+            "word_count": "computed from description",
+            "model": "constant deterministic_stage_05_no_model_call"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication.",
+            "Dry-run documents possible payload only; real sync should prefer staging_venues.atmosphere_prose unless venue_atmosphere is confirmed staging-compatible."
+          ],
+          "fields_skipped": [
+            {
+              "field": "*",
+              "reason": "Skipped for real sync unless confirmed compatible: known venue_atmosphere schema references public.venues, not staging_venues."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "source_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+      "target_staging_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+      "category": "cocktail_bar",
+      "neighborhood": "Retiro",
+      "canonical_data_payload_preview": {
+        "place_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+        "name": "Floreria Atlántico",
+        "address": "Arroyo 872, C1007 Cdad. Autónoma de Buenos Aires",
+        "neighborhood": "Retiro",
+        "city": "Buenos Aires",
+        "coordinates": {
+          "lat": -34.5915325,
+          "lng": -58.3797127
+        },
+        "google_maps_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "website_url": "http://floreriaatlantico.com.ar/",
+        "phone": "+54 11 3984-7849",
+        "venue_type": "cocktail_bar",
+        "tagline": "Floreria Atlántico: intimate cocktail bar energy in Retiro",
+        "description": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+        "mood_tags": [
+          "intimate",
+          "late_night",
+          "cinematic",
+          "social"
+        ],
+        "evidence_confidence": 0.88,
+        "quality_gate_status": "ready_for_db_staging",
+        "staging_score": 100,
+        "hero_image": {
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+          "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_type": "google_places",
+          "width": 1600,
+          "height": 1200,
+          "publication_status": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "dark_intimate",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        }
+      },
+      "hero_image_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+      "image_rights_status": "not_approved_for_publication",
+      "tags": [
+        "intimate",
+        "late_night",
+        "cinematic",
+        "social"
+      ],
+      "tagline": "Floreria Atlántico: intimate cocktail bar energy in Retiro",
+      "description": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+      "quality_status": "ready_for_db_staging",
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "intended_writes": [
+        {
+          "table": "staging_venues",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "id",
+          "fields_to_write": {
+            "id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+            "name": "Floreria Atlántico",
+            "city": "buenos_aires",
+            "category_seed": "cocktail_bar",
+            "status": "ready_for_review",
+            "canonical_data": {
+              "place_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+              "name": "Floreria Atlántico",
+              "address": "Arroyo 872, C1007 Cdad. Autónoma de Buenos Aires",
+              "neighborhood": "Retiro",
+              "city": "Buenos Aires",
+              "coordinates": {
+                "lat": -34.5915325,
+                "lng": -58.3797127
+              },
+              "google_maps_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "website_url": "http://floreriaatlantico.com.ar/",
+              "phone": "+54 11 3984-7849",
+              "venue_type": "cocktail_bar",
+              "tagline": "Floreria Atlántico: intimate cocktail bar energy in Retiro",
+              "description": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+              "mood_tags": [
+                "intimate",
+                "late_night",
+                "cinematic",
+                "social"
+              ],
+              "evidence_confidence": 0.88,
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100,
+              "hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1600,
+                "height": 1200,
+                "publication_status": "not_approved_for_publication",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_interior",
+                  "atmosphere_signal": "dark_intimate",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                }
+              }
+            },
+            "atmosphere_prose": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+            "enrichment_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "pipeline_status": "ready_for_db_staging",
+              "quality_gate": {
+                "pipeline_batch_id": "batch_003_stage01_test",
+                "status": "ready_for_db_staging",
+                "staging_score": 100,
+                "errors": [],
+                "warnings": [
+                  "medium_rights_risk",
+                  "missing_instagram",
+                  "image_rights_review_required_before_publication",
+                  "rights_review_needed"
+                ],
+                "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+              },
+              "raw": {
+                "place_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+                "google_maps_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "website_url": "http://floreriaatlantico.com.ar/",
+                "address": "Arroyo 872, C1007 Cdad. Autónoma de Buenos Aires",
+                "coordinates": {
+                  "lat": -34.5915325,
+                  "lng": -58.3797127
+                },
+                "rating": 4.2,
+                "user_ratings_total": 7842,
+                "business_status": "OPERATIONAL",
+                "operational_status": "operational"
+              },
+              "evidence": {
+                "confidence": 0.88,
+                "sources": [
+                  {
+                    "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                    "source_type": "google_places",
+                    "confidence": 0.9
+                  }
+                ],
+                "contact": {
+                  "website": "http://floreriaatlantico.com.ar/",
+                  "phone": "+54 11 3984-7849"
+                },
+                "warnings": [],
+                "factual_notes": [
+                  "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+                ]
+              },
+              "editorial": {
+                "tagline": "Floreria Atlántico: intimate cocktail bar energy in Retiro",
+                "description": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+                "description_short": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+                "mood_tags": [
+                  "intimate",
+                  "late_night",
+                  "cinematic",
+                  "social"
+                ],
+                "mood_confidence": 0.78,
+                "moments": [
+                  "after-work drinks",
+                  "late-night plans"
+                ]
+              },
+              "selected_hero_image": {
+                "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+                "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+                "source_type": "google_places",
+                "width": 1600,
+                "height": 1200,
+                "rights_risk": "medium",
+                "risk_flags": [
+                  "rights_review_needed",
+                  "preferred_resolution"
+                ],
+                "publication_status": "not_approved_for_publication",
+                "validation_status": "imported_needs_validation",
+                "classification": {
+                  "shows_space": true,
+                  "is_hero_usable": true,
+                  "scene": "hero_interior",
+                  "atmosphere_signal": "dark_intimate",
+                  "quality": "high",
+                  "model_used": "MiniMax-M3",
+                  "has_identifiable_faces": false
+                },
+                "quality_gate_status": "ready_for_db_staging",
+                "staging_score": 100
+              }
+            },
+            "pipeline_batch_id": "batch_003_stage01_test",
+            "pipeline_status": "ready_for_db_staging",
+            "eligibility_score": 100,
+            "primary_atmosphere": "dark_intimate",
+            "mood_tags": [
+              "intimate",
+              "late_night",
+              "cinematic",
+              "social"
+            ]
+          },
+          "source_fields": {
+            "id": "venue.raw.place_id",
+            "name": "venue.raw.name",
+            "city": "venue.raw.city",
+            "category_seed": "venue.raw.type",
+            "status": "quality_gate.status",
+            "canonical_data": "VenueComplete raw/editorial/evidence/hero_image",
+            "atmosphere_prose": "venue.editorial.description",
+            "enrichment_data": "VenueComplete evidence/editorial/hero_image plus quality gate metadata",
+            "pipeline_batch_id": "approval_manifest.batch_id",
+            "pipeline_status": "quality_gate.status",
+            "mood_tags": "venue.editorial.mood_tags"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "curation_status",
+              "reason": "Column curation_status not found on live staging_venues schema probe."
+            },
+            {
+              "field": "eligibility",
+              "reason": "Column eligibility not found on live staging_venues schema probe."
+            },
+            {
+              "field": "evidence",
+              "reason": "Column evidence not found on live staging_venues schema probe."
+            },
+            {
+              "field": "best_for",
+              "reason": "Column best_for not found on live staging_venues schema probe."
+            },
+            {
+              "field": "grounded_description",
+              "reason": "Column grounded_description not found on live staging_venues schema probe."
+            },
+            {
+              "field": "curation_notes",
+              "reason": "Column curation_notes not found on live staging_venues schema probe."
+            }
+          ]
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id + photo_reference",
+          "fields_to_write": {
+            "venue_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 1200,
+            "is_cover": true,
+            "status": "reference_only",
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+            "role": "hero",
+            "source": "google_places",
+            "quality_score": 100,
+            "hero_suitability_score": 100,
+            "selection_data": {
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+              "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "width": 1600,
+              "height": 1200,
+              "rights_risk": "medium",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status": "not_approved_for_publication",
+              "validation_status": "imported_needs_validation",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "dark_intimate",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "quality_gate_status": "ready_for_db_staging",
+              "staging_score": 100
+            },
+            "rights_status": "not_approved_for_publication",
+            "is_selected_hero": true,
+            "sort_order": 0
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "photo_reference": "venue.hero_image.original_image_url fallback resolved_image_url fallback deterministic venue/source/role/sort_order reference",
+            "google_photo_reference": "venue.hero_image source if google_places",
+            "url": "venue.hero_image.resolved_image_url",
+            "role": "hero_image.role",
+            "photo_scores": "venue.hero_image.classification",
+            "selection_data": "venue.hero_image metadata plus Stage 04 selection context",
+            "rights_status": "venue.hero_image.publication_status",
+            "is_selected_hero": "true for selected Stage 04 hero image"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": [
+            {
+              "field": "photo_scores",
+              "reason": "Column photo_scores not found on live venue_images schema probe."
+            }
+          ]
+        },
+        {
+          "table": "quality_scores",
+          "operation": "upsert",
+          "operation_type": "upsert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+            "review_count": 7842,
+            "has_images": true,
+            "has_prose": true,
+            "has_embeddings": false,
+            "editorial_themes": [
+              "intimate",
+              "late_night",
+              "cinematic",
+              "social"
+            ],
+            "interpretation_notes": "Quality gate ready_for_db_staging; dry-run only.",
+            "atmosphere_word_count": 32,
+            "last_processed_at": "2026-06-07T18:37:49.794Z",
+            "pipeline_quality_data": {
+              "pipeline_batch_id": "batch_003_stage01_test",
+              "status": "ready_for_db_staging",
+              "staging_score": 100,
+              "errors": [],
+              "warnings": [
+                "medium_rights_risk",
+                "missing_instagram",
+                "image_rights_review_required_before_publication",
+                "rights_review_needed"
+              ],
+              "review_reason": "Ready for Supabase staging sync. Not approved for public publication."
+            }
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "review_count": "venue.raw.user_ratings_total",
+            "has_images": "Boolean(venue.hero_image)",
+            "has_prose": "Boolean(venue.editorial.description)",
+            "editorial_themes": "venue.editorial.mood_tags",
+            "pipeline_quality_data": "candidate status/staging_score/errors/warnings/review_reason"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_atmosphere",
+          "operation": "insert",
+          "operation_type": "insert",
+          "unique_key_used": "venue_id",
+          "fields_to_write": {
+            "venue_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+            "prose": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+            "word_count": 32,
+            "model": "deterministic_stage_05_no_model_call"
+          },
+          "source_fields": {
+            "venue_id": "venue.raw.place_id",
+            "prose": "venue.editorial.description",
+            "word_count": "computed from description",
+            "model": "constant deterministic_stage_05_no_model_call"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic dry-run preview.",
+            "Only approval_manifest.approved_for_db_staging venues are mapped.",
+            "Images remain reference-only and not approved for publication.",
+            "Dry-run documents possible payload only; real sync should prefer staging_venues.atmosphere_prose unless venue_atmosphere is confirmed staging-compatible."
+          ],
+          "fields_skipped": [
+            {
+              "field": "*",
+              "reason": "Skipped for real sync unless confirmed compatible: known venue_atmosphere schema references public.venues, not staging_venues."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped_venues": [
+    {
+      "venue_name": "Verne Club",
+      "reasons": [
+        "no_hero_image"
+      ]
+    }
+  ],
+  "apply_preflight": {
+    "venue_images_conflict_key": "venue_id,photo_reference",
+    "required_unique_index_sql": "create unique index if not exists venue_images_venue_photo_reference_uidx\non venue_images (venue_id, photo_reference);",
+    "required_unique_index_verified": false,
+    "required_unique_index_assumed": false,
+    "required_unique_index_note": "Index metadata is not exposed through the current Supabase/PostgREST schemas; --apply must fail before writes unless explicitly confirmed.",
+    "venue_atmosphere_excluded_from_apply": true,
+    "apply_idempotent_after_index": true,
+    "partial_writes_detected": {
+      "checked": true,
+      "staging_venues_for_batch": 4,
+      "venue_images_for_approved_venues": 14,
+      "selected_hero_images_for_approved_venues": 4,
+      "quality_scores_for_approved_venues": 4,
+      "partial_writes_detected": true,
+      "notes": [
+        "4 staging_venues rows found for batch batch_003_stage01_test.",
+        "14 venue_images rows found for approved venue ids.",
+        "4 selected Stage 08 hero image rows found for approved venue ids.",
+        "4 quality_scores rows found for approved venue ids."
+      ]
+    }
+  },
+  "safety_checks": {
+    "no_supabase_writes": true,
+    "no_public_venues_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_image_rights_approval": true,
+    "no_ui_files_touched": true,
+    "no_external_model_calls": true,
+    "no_migrations_created_or_applied": true
+  }
+}

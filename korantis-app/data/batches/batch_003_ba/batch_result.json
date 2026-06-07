@@ -1,0 +1,1931 @@
+{
+  "batch_id": "batch_003_ba",
+  "city": "Buenos Aires",
+  "generated_at": "2026-06-07T01:40:23.651Z",
+  "status": "completed",
+  "summary": {
+    "input": 25,
+    "auto_staged": 0,
+    "needs_review": 0,
+    "blocked": 25,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "stage_statuses": [
+    {
+      "stage": "01_extract_data",
+      "status": "skipped",
+      "notes": "Stubbed for MVP; accepts input or prebuilt VenueComplete records."
+    },
+    {
+      "stage": "02_collect_evidence",
+      "status": "skipped",
+      "notes": "Stubbed for MVP; no external APIs called."
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "skipped",
+      "notes": "Stubbed for MVP; no scraping or image download performed."
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "skipped",
+      "notes": "Stubbed for MVP; M3 not called."
+    },
+    {
+      "stage": "05_generate_editorial",
+      "status": "skipped",
+      "notes": "Stubbed for MVP; no LLM called."
+    },
+    {
+      "stage": "06_score_and_stage",
+      "status": "completed",
+      "notes": "Deterministic local scoring completed."
+    },
+    {
+      "stage": "07_stage_to_supabase",
+      "status": "skipped",
+      "notes": "No Supabase writes in MVP."
+    },
+    {
+      "stage": "08_promote_staged",
+      "status": "skipped",
+      "notes": "No publication path in MVP."
+    }
+  ],
+  "config": {
+    "minImageWidth": 800,
+    "minHeroWidth": 800,
+    "hardBlockHeroBelow": 600,
+    "preferredHeroWidth": 1024,
+    "minMoodConfidence": 0.6,
+    "minEvidenceConfidence": 0.3,
+    "autoStageThreshold": 75,
+    "maxWarningsAutoStage": 2,
+    "maxImageCandidatesPerVenue": 8,
+    "maxReviewsToProcess": 30,
+    "allowedMoodTags": [
+      "quiet",
+      "warm",
+      "romantic",
+      "lively",
+      "intimate",
+      "cinematic",
+      "historic",
+      "creative",
+      "work_friendly",
+      "date_night",
+      "late_night",
+      "outdoor",
+      "hidden_gem",
+      "refined",
+      "social"
+    ],
+    "allowedVenueTypes": [
+      "bar",
+      "cocktail_bar",
+      "cafe",
+      "restaurant",
+      "coffee_shop",
+      "fine_dining",
+      "bistro",
+      "parrilla",
+      "wine_bar",
+      "plant_based",
+      "unknown"
+    ],
+    "allowedImageSourceTypes": [
+      "official_website",
+      "official_gallery",
+      "press_media",
+      "michelin",
+      "fifty_best",
+      "city_tourism",
+      "editorial_review",
+      "instagram",
+      "google_places",
+      "ugc",
+      "unknown"
+    ],
+    "allowedStageStatuses": [
+      "pending",
+      "running",
+      "completed",
+      "failed",
+      "skipped",
+      "auto_staged",
+      "needs_review",
+      "blocked",
+      "approved",
+      "rejected",
+      "staged",
+      "published"
+    ],
+    "blockingErrors": [
+      "missing_name",
+      "missing_coordinates",
+      "missing_address",
+      "missing_google_maps_url",
+      "missing_neighborhood",
+      "missing_type",
+      "venue_not_operational",
+      "no_hero_image",
+      "hero_below_hard_minimum",
+      "hero_high_rights_risk",
+      "hero_does_not_show_space",
+      "hero_not_usable",
+      "missing_or_short_tagline",
+      "missing_description",
+      "fewer_than_two_mood_tags",
+      "invalid_mood_tags",
+      "evidence_confidence_below_minimum"
+    ],
+    "reviewWarnings": [
+      "score_below_auto_stage_threshold",
+      "too_many_warnings_for_auto_stage",
+      "medium_rights_risk",
+      "below_preferred_resolution",
+      "low_mood_confidence",
+      "low_evidence_confidence",
+      "few_reviews",
+      "tagline_over_80_chars",
+      "missing_website",
+      "missing_instagram",
+      "missing_hours",
+      "missing_price_hint",
+      "missing_moments"
+    ]
+  },
+  "candidates": [
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Floreria Atlantico",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Floreria Atlantico",
+            "neighborhood": "Retiro",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch; verify official and 50 Best image sources."
+          },
+          "name": "Floreria Atlantico",
+          "city": "Buenos Aires",
+          "neighborhood": "Retiro",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Gran Bar Danzon",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Gran Bar Danzon",
+            "neighborhood": "Retiro",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch; prioritize spatial bar interior photography."
+          },
+          "name": "Gran Bar Danzon",
+          "city": "Buenos Aires",
+          "neighborhood": "Retiro",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Verne Club",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Verne Club",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch; below-preferred Batch 02 hero candidate needs stronger source."
+          },
+          "name": "Verne Club",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Presidente Bar",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Presidente Bar",
+            "neighborhood": "Recoleta",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Presidente Bar",
+          "city": "Buenos Aires",
+          "neighborhood": "Recoleta",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Frank's Bar",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Frank's Bar",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Frank's Bar",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Negroni Cocktail Bar",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Negroni Cocktail Bar",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Negroni Cocktail Bar",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Uptown Bar Buenos Aires",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Uptown Bar Buenos Aires",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch; preserve identity ambiguity around Uptown / Uptown & The Bronx."
+          },
+          "name": "Uptown Bar Buenos Aires",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Victoria Brown Bar",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Victoria Brown Bar",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Victoria Brown Bar",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Cafe Tortoni",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Cafe Tortoni",
+            "neighborhood": "Monserrat",
+            "type": "cafe",
+            "notes": "First AI-first defensive-staging batch; historic spatial photography should be prioritized."
+          },
+          "name": "Cafe Tortoni",
+          "city": "Buenos Aires",
+          "neighborhood": "Monserrat",
+          "type": "cafe",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "LAB Training Center & Coffee Shop",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "LAB Training Center & Coffee Shop",
+            "neighborhood": "Palermo",
+            "type": "coffee_shop",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "LAB Training Center & Coffee Shop",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "coffee_shop",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Cuervo Cafe",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Cuervo Cafe",
+            "neighborhood": "Palermo",
+            "type": "coffee_shop",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Cuervo Cafe",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "coffee_shop",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Full City Coffee House",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Full City Coffee House",
+            "neighborhood": "Palermo",
+            "type": "coffee_shop",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Full City Coffee House",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "coffee_shop",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Birkin Coffee",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Birkin Coffee",
+            "neighborhood": "Palermo",
+            "type": "cafe",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Birkin Coffee",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cafe",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Coffee Town Palermo",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Coffee Town Palermo",
+            "neighborhood": "Palermo",
+            "type": "coffee_shop",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Coffee Town Palermo",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "coffee_shop",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Lattente Palermo",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Lattente Palermo",
+            "neighborhood": "Palermo",
+            "type": "coffee_shop",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Lattente Palermo",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "coffee_shop",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Oporto Almacen",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Oporto Almacen",
+            "neighborhood": "Belgrano",
+            "type": "restaurant",
+            "notes": "First AI-first defensive-staging batch; Batch 02 strongest full-resolution spatial hero candidate."
+          },
+          "name": "Oporto Almacen",
+          "city": "Buenos Aires",
+          "neighborhood": "Belgrano",
+          "type": "restaurant",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Proper Buenos Aires",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Proper Buenos Aires",
+            "neighborhood": "Palermo",
+            "type": "restaurant",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Proper Buenos Aires",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "restaurant",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Aramburu Restaurante",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Aramburu Restaurante",
+            "neighborhood": "Recoleta",
+            "type": "fine_dining",
+            "notes": "First AI-first defensive-staging batch; Michelin/editorial image sources likely relevant."
+          },
+          "name": "Aramburu Restaurante",
+          "city": "Buenos Aires",
+          "neighborhood": "Recoleta",
+          "type": "fine_dining",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Don Julio Parrilla",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Don Julio Parrilla",
+            "neighborhood": "Palermo",
+            "type": "parrilla",
+            "notes": "First AI-first defensive-staging batch; Batch 02 source-poor venue requiring better spatial sourcing."
+          },
+          "name": "Don Julio Parrilla",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "parrilla",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Elena Restaurant",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Elena Restaurant",
+            "neighborhood": "Retiro",
+            "type": "restaurant",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Elena Restaurant",
+          "city": "Buenos Aires",
+          "neighborhood": "Retiro",
+          "type": "restaurant",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "La Biela",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "La Biela",
+            "neighborhood": "Recoleta",
+            "type": "cafe",
+            "notes": "First AI-first defensive-staging batch; Batch 02 exterior candidate needs venue verification."
+          },
+          "name": "La Biela",
+          "city": "Buenos Aires",
+          "neighborhood": "Recoleta",
+          "type": "cafe",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Bar 878",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Bar 878",
+            "neighborhood": "Villa Crespo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Bar 878",
+          "city": "Buenos Aires",
+          "neighborhood": "Villa Crespo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Milion Buenos Aires",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Milion Buenos Aires",
+            "neighborhood": "Recoleta",
+            "type": "bar",
+            "notes": "First AI-first defensive-staging batch; Batch 02 source-poor venue."
+          },
+          "name": "Milion Buenos Aires",
+          "city": "Buenos Aires",
+          "neighborhood": "Recoleta",
+          "type": "bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "CoChinChina Buenos Aires",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "CoChinChina Buenos Aires",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "CoChinChina Buenos Aires",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_ba",
+      "venue_name": "Sacro Buenos Aires",
+      "status": "blocked",
+      "staging_score": 6,
+      "review_reason": "Blocked by hard errors: missing_coordinates, missing_address, missing_google_maps_url, no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "errors": [
+        "missing_coordinates",
+        "missing_address",
+        "missing_google_maps_url",
+        "no_hero_image",
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "few_reviews",
+        "missing_website",
+        "missing_instagram",
+        "missing_hours",
+        "missing_price_hint",
+        "missing_moments"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Sacro Buenos Aires",
+            "neighborhood": "Palermo",
+            "type": "plant_based",
+            "notes": "First AI-first defensive-staging batch."
+          },
+          "name": "Sacro Buenos Aires",
+          "city": "Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "plant_based",
+          "operational_status": "unknown",
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0,
+          "sources": [],
+          "warnings": [
+            "stub_evidence_pending"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "stub_images_pending"
+          ]
+        },
+        "editorial": {
+          "mood_tags": [],
+          "mood_confidence": 0,
+          "warnings": [
+            "stub_editorial_pending"
+          ]
+        },
+        "review_count": 0,
+        "pipeline_notes": [
+          "MVP orchestrator stub record. Real stages 01-05 are not implemented yet."
+        ]
+      }
+    }
+  ],
+  "mood_distribution": {},
+  "neighborhood_distribution": {
+    "Retiro": 3,
+    "Palermo": 15,
+    "Recoleta": 4,
+    "Monserrat": 1,
+    "Belgrano": 1,
+    "Villa Crespo": 1
+  },
+  "cost_placeholder": {
+    "estimated_usd": null,
+    "notes": "Cost tracking placeholder. No external model/API calls were made by this MVP orchestrator."
+  },
+  "runtime_placeholder": {
+    "started_at": "2026-06-07T01:40:23.649Z",
+    "finished_at": "2026-06-07T01:40:23.651Z",
+    "duration_ms": 2
+  }
+}

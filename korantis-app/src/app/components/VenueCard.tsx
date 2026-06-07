@@ -2,18 +2,20 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { Compass } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Heart, MapPin } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { localizeVenueForDisplay, t } from '../utils/i18n';
+import { formatTagsForCard, isMoodTag } from '../utils/tags';
 
 interface VenueCardProps {
   venue: ScoredVenue;
   onSelect: (venue: ScoredVenue) => void;
   onSpatialTap?: (venue: ScoredVenue) => void;
+  variant?: 'hero' | 'standard';
 }
 
-export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardProps) {
+export default function VenueCard({ venue, onSelect, onSpatialTap, variant = 'standard' }: VenueCardProps) {
   const {
     recordDwell,
     recordPassThrough,
@@ -28,6 +30,8 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
     const params = new URLSearchParams(window.location.search);
     return params.get('debug') === 'taste' || params.get('debug') === 'circadian';
   });
+  
+  const [showToast, setShowToast] = useState(false);
 
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
@@ -61,187 +65,96 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
     );
 
     observer.observe(cardEl);
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, [venue.atmosphere, recordDwell, recordPassThrough]);
 
-  // Map spacing layout attributes
-  const spacingStyles = {
-    tight: 'my-6 md:my-10',
-    breathe: 'my-16 md:my-28',
-    isolated: 'my-24 md:my-40',
-  }[venue.spacing];
-
-  const renderBookmark = (className = 'k-card__bookmark') => (
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        toggleSaveVenue(venue.id);
-      }}
-      className={`${className} ${isSaved ? 'is-saved is-visible' : ''}`}
-      aria-label={isSaved ? t('unsave', language) : t('save', language)}
-      aria-pressed={isSaved}
-    >
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21V5z" />
-      </svg>
-    </button>
-  );
-
-  const renderTags = (variant: 'frost' | 'ghost' | 'gold' | 'outlined') => (
-    <div className="k-card__tags">
-      {venue.tags.map((tag, index) => (
-        <span key={tag} className={`k-tag k-tag--${variant}`}>
-          {displayVenue.displayTags[index] || tag}
-        </span>
-      ))}
-    </div>
-  );
-
-  // Render specific layout compositions based on prototype card variants
-  const renderCardContent = () => {
-    switch (venue.cardSize) {
-      case 'layered':
-        return (
-          <>
-            <div className="k-card__image-wrap">
-              <Image
-                src={venue.heroImage}
-                alt={venue.name}
-                fill
-                priority={venue.id === 'floreria'}
-                className="k-card__image"
-              />
-              <div className="k-card__vignette"></div>
-            </div>
-            {renderBookmark()}
-            <div className="k-card__panel">
-              <div className="k-card__panel-header">
-                <div>
-                  <h3 className="k-card__name">{venue.name}</h3>
-                  <p 
-                    className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
-                    onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                    aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
-                  >
-                    <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
-                    {placeCue}
-                  </p>
-                </div>
-              </div>
-              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
-              {renderTags('gold')}
-            </div>
-          </>
-        );
-
-      case 'immersive':
-        return (
-          <>
-            <div className="k-card__image-wrap">
-              <Image
-                src={venue.heroImage}
-                alt={venue.name}
-                fill
-                priority={venue.id === 'floreria'}
-                className="k-card__image"
-              />
-              <div className="k-card__gradient"></div>
-            </div>
-            {renderBookmark()}
-            <div className="k-card__content">
-              <div className="k-card__accent-line"></div>
-              <h3 className="k-card__name">{venue.name}</h3>
-              <p 
-                className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
-                onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
-              >
-                <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
-                {placeCue}
-              </p>
-              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
-              {renderTags('ghost')}
-            </div>
-          </>
-        );
-
-      case 'cinematic':
-        return (
-          <>
-            <div className="k-card__image-wrap">
-              <Image
-                src={venue.heroImage}
-                alt={venue.name}
-                fill
-                className="k-card__image"
-              />
-              <div className="k-card__gradient"></div>
-            </div>
-            {renderBookmark()}
-            <div className="k-card__content">
-              <h3 className="k-card__name">{venue.name}</h3>
-              <p 
-                className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
-                onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
-              >
-                <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
-                {placeCue}
-              </p>
-              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
-              {renderTags('frost')}
-            </div>
-          </>
-        );
-
-      case 'compact':
-      default:
-        return (
-          <>
-            <div className="k-card__image-wrap">
-              <Image
-                src={venue.heroImage}
-                alt={venue.name}
-                fill
-                className="k-card__image"
-              />
-            </div>
-            <div className="k-card__content">
-              <h3 className="k-card__name">{venue.name}</h3>
-              <p 
-                className="k-card__location flex items-center gap-1.5 cursor-pointer hover:text-k-gold transition-colors group/spatial"
-                onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
-                aria-label={t('openInSpatialAtlas', language, { name: venue.name })}
-              >
-                <Compass size={13} className="opacity-70 group-hover/spatial:opacity-100" />
-                {placeCue}
-              </p>
-              <p className="k-card__tagline">{displayVenue.displayTagline}</p>
-              {renderTags('ghost')}
-            </div>
-          </>
-        );
-    }
-  };
-
   return (
-    <div
-      ref={ref}
-      className={`w-full max-w-[var(--k-mobile-max)] ${spacingStyles}`}
-    >
+    <div ref={ref} className="w-full relative group">
       <motion.article
         layoutId={`card-wrap-${venue.id}`}
         onClick={() => onSelect(venue)}
-        className={`k-card k-card--${venue.cardSize} ${isSaved ? 'is-saved' : ''}`}
+        className="w-full flex flex-col gap-4 cursor-pointer relative"
       >
-        {renderCardContent()}
+        {/* Full-width atmospheric image */}
+        <div className={`relative w-full rounded-2xl overflow-hidden bg-[#0F0D0B] border border-white/5 group-hover:border-[#C9A96E]/30 transition-colors ${
+          variant === 'hero' ? 'aspect-[3/2] sm:aspect-[16/10]' : 'aspect-[4/3] sm:aspect-[3/2]'
+        }`}>
+          <Image
+            src={venue.heroImage || '/venue_floreria.png'}
+            alt={venue.name}
+            fill
+            sizes="(max-width: 768px) 100vw, 800px"
+            className="object-cover transition-transform duration-1000 group-hover:scale-105"
+            priority={venue.id === 'floreria'}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/50 opacity-50 group-hover:opacity-70 transition-opacity duration-500" />
+          
+          {/* Bookmark Corner */}
+          <motion.button
+            whileTap={{ scale: 0.8 }}
+            animate={isSaved ? { scale: [1, 1.3, 1] } : { scale: 1 }}
+            transition={{ duration: 0.3 }}
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleSaveVenue(venue.id);
+              if (!isSaved) {
+                setShowToast(true);
+                setTimeout(() => setShowToast(false), 3000);
+              }
+            }}
+            className={`absolute top-4 right-4 w-10 h-10 rounded-full flex items-center justify-center transition-colors ${
+              isSaved 
+                ? 'bg-[#C9A96E] text-black shadow-[0_0_15px_rgba(201,169,110,0.5)]' 
+                : 'bg-black/50 text-white/70 hover:bg-black/80 hover:text-white backdrop-blur-md border border-white/10'
+            }`}
+            aria-label={isSaved ? t('unsave', language) : t('save', language)}
+          >
+            <Heart size={20} className={isSaved ? "fill-current" : ""} />
+          </motion.button>
+        </div>
+
+        {/* Content Block */}
+        <div className="flex flex-col px-1">
+          <div className="flex items-start justify-between gap-4 mb-1">
+            <h3 className="font-display text-2xl text-[#F5F0E8] tracking-wide">
+              {venue.name}
+            </h3>
+            <button
+              onClick={(e) => { e.stopPropagation(); onSpatialTap?.(venue); }}
+              className="flex items-center gap-1 text-[#8A7A5A] hover:text-[#C9A96E] transition-colors mt-2"
+            >
+              <MapPin size={14} />
+              <span className="text-[11px] font-sans font-light uppercase tracking-widest">{placeCue}</span>
+            </button>
+          </div>
+          
+          <p className="font-display italic text-sm text-[#B0A898]/90 leading-relaxed mb-4">
+            {displayVenue.displayTagline}
+          </p>
+
+          <div className="flex flex-wrap items-center gap-2">
+            {formatTagsForCard(displayVenue.displayTags || venue.tags).map((tag) => {
+              const mood = isMoodTag(tag);
+              return (
+                <span 
+                  key={tag} 
+                  className={`px-3 py-1.5 rounded-sm ${
+                    mood 
+                      ? 'text-[10px] font-sans font-medium uppercase tracking-[0.1em] text-[#C9A96E] bg-[#C9A96E]/10 border border-[#C9A96E]/40'
+                      : 'text-[10px] font-sans font-medium uppercase tracking-[0.1em] text-white/50 bg-white/5 border border-white/10'
+                  }`}
+                >
+                  {tag}
+                </span>
+              );
+            })}
+          </div>
+        </div>
 
         {/* Dynamic Vector Score Debug HUD badge */}
         {debugMode && (
-          <div className="absolute bottom-4 right-4 z-30 bg-black/85 border border-white/10 rounded px-2 py-1 font-mono text-[8px] text-white/70 pointer-events-none tracking-tight">
-            <span className="text-k-gold font-bold">S:{venue.scoreFinal}</span> |
+          <div className="absolute top-4 left-4 z-30 bg-black/85 border border-white/10 rounded px-2 py-1 font-mono text-[8px] text-white/70 pointer-events-none tracking-tight">
+            <span className="text-[#C9A96E] font-bold">S:{venue.scoreFinal}</span> |
             <span> C:{venue.breakdown.circadian.toFixed(2)}</span> |
             <span> T:{venue.breakdown.taste.toFixed(2)}</span> |
             <span> I:{venue.breakdown.intent.toFixed(2)}</span> |
@@ -249,6 +162,20 @@ export default function VenueCard({ venue, onSelect, onSpatialTap }: VenueCardPr
           </div>
         )}
       </motion.article>
+
+      <AnimatePresence>
+        {showToast && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            className="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-[#C9A96E] text-[#1a1a1a] px-4 py-2 rounded-full font-sans text-sm shadow-[0_0_20px_rgba(201,169,110,0.3)] flex items-center gap-2 pointer-events-none"
+          >
+            <Heart size={16} className="fill-current" />
+            <span className="font-medium tracking-wide">Guardado</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

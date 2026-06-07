@@ -17,24 +17,38 @@ function cosineSimilarity(A: number[], B: number[]): number {
 const EMBEDDINGS_FILE = path.join(__dirname, '..', '..', 'data', 'embeddings.json');
 const REPORT_FILE = path.join(__dirname, '..', '..', 'data', 'divergence_report.md');
 
+type VenueEmbeddingRecord = {
+  venueName: string;
+  l2Vector: number[];
+  l3Vector: number[];
+  l2Text: string;
+  l3Text: string;
+};
+
+type DivergenceResult = VenueEmbeddingRecord & {
+  venueId: string;
+  similarity: number;
+};
+
 async function main() {
   if (!fs.existsSync(EMBEDDINGS_FILE)) {
     console.error(`Embeddings file not found: ${EMBEDDINGS_FILE}`);
     process.exit(1);
   }
 
-  const embeddingsData = JSON.parse(fs.readFileSync(EMBEDDINGS_FILE, 'utf-8'));
-  const results = [];
+  const embeddingsData = JSON.parse(fs.readFileSync(EMBEDDINGS_FILE, 'utf-8')) as Record<string, VenueEmbeddingRecord>;
+  const results: DivergenceResult[] = [];
 
   for (const [venueId, data] of Object.entries(embeddingsData)) {
-    const venueData = data as any;
-    const similarity = cosineSimilarity(venueData.l2Vector, venueData.l3Vector);
+    const similarity = cosineSimilarity(data.l2Vector, data.l3Vector);
     results.push({
       venueId,
-      venueName: venueData.venueName,
+      venueName: data.venueName,
       similarity,
-      l2Text: venueData.l2Text,
-      l3Text: venueData.l3Text
+      l2Text: data.l2Text,
+      l3Text: data.l3Text,
+      l2Vector: data.l2Vector,
+      l3Vector: data.l3Vector
     });
   }
 

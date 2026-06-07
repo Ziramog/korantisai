@@ -23,7 +23,7 @@
   --color-k-text-tertiary: var(--k-text-tertiary);
   --color-k-text-inverse: var(--k-text-inverse);
 
-  --font-display: var(--font-cormorant);
+  --font-display: var(--font-playfair);
   --font-sans: var(--font-dm-sans);
 }
 
@@ -65,7 +65,7 @@
     --k-ease-cinematic: cubic-bezier(0.22, 0.61, 0.36, 1);
 
     /* Canonical card tokens */
-    --k-font-display: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+    --k-font-display: var(--font-playfair), 'Playfair Display', Georgia, serif;
     --k-font-body: var(--font-dm-sans), 'DM Sans', 'Helvetica Neue', sans-serif;
     --k-text-title: clamp(1.25rem, 3vw, 1.625rem);
     --k-text-title-sm: clamp(1.0625rem, 2.5vw, 1.25rem);

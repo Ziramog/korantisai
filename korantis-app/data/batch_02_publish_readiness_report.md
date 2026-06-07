@@ -1,0 +1,44 @@
+# Batch 02 Publish Readiness Report
+
+Generated: 2026-06-06T23:04:38.240Z
+
+Publish ready: **false**
+Staging ready: **partial**
+
+## Confirmed Counts
+
+| Metric | Value |
+|---|---:|
+| m2_venues_requested | 25 |
+| m2_venues_processed | 25 |
+| m2_raw_image_candidates | 176 |
+| m2_final_vision_queue_pre_sanitizer | 75 |
+| sanitized_m3_items | 52 |
+| m3_total_items | 52 |
+| m3_ok_photo | 30 |
+| m3_skipped | 22 |
+| m3_below_preferred_resolution | 22 |
+| m3_unique_venues | 8 |
+
+## Blockers
+
+- No candidate is approved for publication.
+- Only one strong full-resolution hero candidate was found.
+- Many ok_photo results are product_food, logo, decorative, crowd, or below preferred resolution.
+- Face release, identity, and rights review flags must be resolved before any publication use.
+
+## Risk Summary
+
+| Metric | Value |
+|---|---:|
+| rights_review_needed | 0 |
+| face_release_needed | 6 |
+| identity_review_needed | 1 |
+| below_preferred_resolution_candidates | 4 |
+| ok_photos_with_faces | 4 |
+| ok_photos_below_preferred_resolution | 22 |
+| product_food_ok_photos | 18 |
+
+## Next Action
+
+Review dry-run staging outputs and improve pre-M3 dimension/content validation before another batch.

@@ -1,0 +1,2051 @@
+{
+  "batch_id": "batch_004_buenos_aires_50",
+  "generated_at": "2026-06-07T20:44:10.103Z",
+  "minimax_called": true,
+  "model_used": "MiniMax-M2.7",
+  "venues_processed": 50,
+  "successful_generations": 49,
+  "failed_generations": 1,
+  "invalid_json_count": 1,
+  "mood_distribution": {
+    "warm": 38,
+    "intimate": 32,
+    "creative": 12,
+    "quiet": 22,
+    "work_friendly": 15,
+    "date_night": 15,
+    "late_night": 20,
+    "hidden_gem": 11,
+    "social": 15,
+    "outdoor": 7,
+    "refined": 22,
+    "romantic": 24,
+    "historic": 7,
+    "cinematic": 1,
+    "lively": 1
+  },
+  "evidence_confidence_distribution": {
+    "low": 1,
+    "medium": 0,
+    "high": 49
+  },
+  "status_counts_after_scoring": {
+    "input": 50,
+    "ready_for_db_staging": 0,
+    "auto_staged": 21,
+    "needs_review": 22,
+    "blocked": 7,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "remaining_blockers_by_venue": {
+    "Roster Cafe Recoleta": [],
+    "Cafeto 2020": [
+      "no_hero_image"
+    ],
+    "Cobre Café": [],
+    "Borja Specialty Coffee": [],
+    "Cosecha Almagro": [],
+    "Cuervo Café": [],
+    "Café Registrado": [],
+    "The Coffee Store Plaza Almagro": [],
+    "Tostado - Puerto Madero": [],
+    "Salvaje Bakery": [],
+    "Barine - café de especialidad": [],
+    "Bicho Café de Especialidad Recoleta": [
+      "no_hero_image"
+    ],
+    "Le Rêve Bistró": [],
+    "Las Pizarras bistro": [],
+    "Negresco Bistró": [],
+    "Piano Nobile": [],
+    "L'Antiquario Cafe Bistro": [],
+    "Farmacia Lezama - Bistrot": [],
+    "A DONDE": [],
+    "Contraluz": [],
+    "St. Regis Restaurant": [
+      "missing_or_short_tagline",
+      "missing_description",
+      "fewer_than_two_mood_tags",
+      "evidence_confidence_below_minimum"
+    ],
+    "Banu": [],
+    "Selva Mía": [],
+    "Intervalo Bar": [],
+    "BOCANADA": [],
+    "Cave Canem": [],
+    "Lutero Bar": [],
+    "Nido de Tigre": [],
+    "SOFÁ - un bar": [],
+    "Bar PUNTO MONA": [
+      "no_hero_image"
+    ],
+    "Veredita": [
+      "no_hero_image"
+    ],
+    "Don Gato": [
+      "no_hero_image"
+    ],
+    "Social Paraíso Bistró | Recoleta": [],
+    "GRAPIN": [
+      "no_hero_image"
+    ],
+    "Pipi Lounge": [],
+    "LE CLUB BACAN": [],
+    "Osaka Concepción": [],
+    "Tradition & Rebellion": [],
+    "Alvear Roof Bar": [],
+    "La Carbonera": [],
+    "Naranjo Bar": [],
+    "Duhau Restaurante & Vinoteca": [],
+    "Verdot Wine Bar": [],
+    "Bruce Wine": [],
+    "Anselmo Lounge & Wine Bar": [],
+    "Los Jardines De Las Barquin": [],
+    "BAUTISTA Av. Rivadavia": [],
+    "Tostado - Nuñez": [],
+    "La Giralda": [],
+    "Petit Colón": []
+  },
+  "results": [
+    {
+      "venue_name": "Roster Cafe Recoleta",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Industrial soul meets Recoleta warmth",
+        "description_short": "Roster Cafe Recoleta pairs industrial design with warm wood tones in Buenos Aires' most refined neighborhood. The split-hour schedule invites focused morning and afternoon coffee rituals.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "creative",
+          "quiet"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Focused work session",
+          "Quiet conversation",
+          "Afternoon pause",
+          "Solo coffee appreciation"
+        ],
+        "best_for": [
+          "Specialty coffee",
+          "Industrial aesthetic",
+          "Intimate conversations",
+          "Focused work",
+          "Quiet moments"
+        ],
+        "not_for": [
+          "Late night gatherings",
+          "Large groups",
+          "Social parties"
+        ],
+        "primary_atmosphere": "Industrial-warm cafe with exposed pipes, teal walls, and wooden accents creating an intimate Buenos Aires coffee space",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.92,
+        "editorial_notes": "Grounded in high-quality hero image showing exposed pipe pendant lighting, wooden counter, yellow stools, dark teal walls with shelves, and coffee sack cushions. Rating 4.9 from 176 reviews supports quality claims. Split hours and Recoleta location support quiet and refined characterization.",
+        "grounded_description": "Industrial-inspired cafe in Recoleta featuring exposed pipe pendant lighting, dark teal walls, and warm wooden surfaces. The intimate space combines yellow metal stools and coffee sack cushions with a refined neighborhood backdrop for focused coffee rituals."
+      }
+    },
+    {
+      "venue_name": "Cafeto 2020",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Morning rituals and late-day pauses in Chacarita",
+        "description_short": "A neighborhood cafe on Avenida Corrientes in the evolving Chacarita district. Reliable hours from early morning through evening make it a steady presence in the local routine.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "work_friendly",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "early morning coffee",
+          "afternoon work sessions",
+          "casual neighborhood meetups",
+          "evening wind-down",
+          "weekend routine"
+        ],
+        "best_for": [
+          "regular coffee runs",
+          "remote work",
+          "casual dates",
+          "neighborhood gatherings",
+          "early risers"
+        ],
+        "not_for": [],
+        "primary_atmosphere": "Neighborhood cafe with a reliable, everyday rhythm",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.45,
+        "editorial_notes": "Grounded in venue name, category, hours, rating, and review count. No image vision data present, so visual atmosphere claims are avoided. Mood tags inferred from cafe category and operational hours rather than confirmed atmosphere details. Review content not available for deeper behavioral insights.",
+        "grounded_description": "Cafeto 2020 operates as a neighborhood cafe on Avenida Corrientes in Chacarita, maintaining consistent 7AM–10PM hours across the week. A 4.4 rating from 833 reviews suggests consistent quality and community trust."
+      }
+    },
+    {
+      "venue_name": "Cobre Café",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Industrial vibes and serious coffee in Villa Crespo",
+        "description_short": "Cobre Café brings industrial aesthetics to Villa Crespo with exposed concrete walls, espresso equipment, and greenery. A neighborhood café drawing locals with solid coffee and a work-friendly daytime schedule.",
+        "mood_tags": [
+          "warm",
+          "creative",
+          "work_friendly",
+          "quiet",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning remote work sessions",
+          "Casual weekend meetups",
+          "Solo coffee breaks",
+          "Afternoon study sessions",
+          "Low-key social hangs"
+        ],
+        "best_for": [
+          "Remote work",
+          "Casual catch-ups",
+          "Solo focus time",
+          "Coffee enthusiasts",
+          "Neighborhood discovery"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Large group events",
+          "Special occasion dining"
+        ],
+        "primary_atmosphere": "Industrial-warm café with exposed concrete, copper accents, and espresso focus",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in operational venue data (rating 4.6, 767 reviews, confirmed hours) and high-quality image vision showing industrial interior with coffee equipment, distressed concrete walls, plants, and barista activity. No invented claims about awards or rankings.",
+        "grounded_description": "A neighborhood café in Villa Crespo defined by its industrial interior—exposed distressed concrete walls, espresso machines, and copper accents softened by plants. The space balances creative atmosphere with work-friendly functionality, drawing consistent local patronage reflected in its 4.6-star rating."
+      }
+    },
+    {
+      "venue_name": "Borja Specialty Coffee",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee rooted in Belgrano's quiet rhythm",
+        "description_short": "A thoughtfully crafted specialty coffee shop tucked into Belgrano, where warm lighting and careful preparation define the experience. Consistent crowds and over 1,100 reviews speak to its established local standing.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "hidden_gem",
+          "creative",
+          "work_friendly"
+        ],
+        "moments": [
+          "Morning focus session with specialty pour-over",
+          "Afternoon reading break off the busy streets",
+          "Casual first meet in a low-pressure setting",
+          "Remote work afternoon with good espresso",
+          "Solo coffee exploration in a new neighborhood"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Remote workers wanting quiet focus",
+          "Neighborhood regulars",
+          "Low-key conversations"
+        ],
+        "not_for": [
+          "Nightlife seekers",
+          "Large group gatherings",
+          "Loud social scenes"
+        ],
+        "primary_atmosphere": "Warm and quietly focused, with intimate interior lighting and a neighborhood gem feel",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in supplied venue facts: specialty designation from name, 1151 reviews supporting established reputation, 4.2 rating confirming quality, Belgrano location supporting hidden_gem tag. Image vision confirms warm_cozy signal through visible awning, night lighting, and interior glow. No invented claims—copy reflects only what is present.",
+        "grounded_description": "Borja Specialty Coffee occupies a small facade on Avenida Juramento with a distinctive awning and decorative mural, opening to a warmly lit interior where espresso equipment and the counter take center stage. Its consistent 8:30AM–8PM schedule and strong local review volume indicate a neighborhood anchor rather than a tourist draw."
+      }
+    },
+    {
+      "venue_name": "Cosecha Almagro",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Cosecha Almagro: café de barrio con alma verde",
+        "description_short": "Café de barrio en Almagro con ambiente cálido y detalles botánicos. Espacio acogedor para coffee breaks o encuentros casuales.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "social",
+          "creative",
+          "work_friendly"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Remote work sessions",
+          "Casual catch-ups",
+          "Creative inspiration breaks",
+          "Neighborhood wandering"
+        ],
+        "best_for": [
+          "Solo work",
+          "Friendly meetups",
+          "Coffee enthusiasts",
+          "Relaxed afternoons",
+          "Local exploration"
+        ],
+        "not_for": [
+          "Late night outings",
+          "Large groups",
+          "High-energy social scenes"
+        ],
+        "primary_atmosphere": "Cálido café de barrio con detalles creativos y ambiente acogedor",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Metadata grounded in venue category (cafe), operational hours (9AM-9PM), location (Almagro neighborhood), rating (4.3/837 reviews), and detailed image vision showing warm interior with wooden furniture, botanical wall mural, pendant lighting, and tiled floor indicating a cozy, well-designed space. No external claims invented.",
+        "grounded_description": "Café de Almagro que combina un interior cálido con toques botánicos. Mesa de madera, iluminación colgante y mural vegetal definen su atmósfera acogedora y creativa."
+      }
+    },
+    {
+      "venue_name": "Cuervo Café",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A warm corner in Palermo for quality coffee and slow mornings",
+        "description_short": "Cuervo Café anchors El Salvador 4580 in Palermo with a devoted local following—4.6 stars across nearly 3,700 reviews reflect consistent quality. The interior centers on espresso craft with warm pendant lighting and a wooden counter inviting unhurried sessions.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "social",
+          "quiet",
+          "intimate"
+        ],
+        "moments": [
+          "solo morning coffee ritual",
+          "flexible remote work sessions",
+          "casual catch-ups with friends",
+          "quiet reading or journaling",
+          "low-key study dates"
+        ],
+        "best_for": [
+          "quality espresso seekers",
+          "Palermo locals",
+          "morning routines",
+          "relaxed daytime socializing"
+        ],
+        "not_for": [
+          "late-night gatherings",
+          "large group events",
+          "quick grab-and-go stops"
+        ],
+        "primary_atmosphere": "Warm and grounded—a Palermo coffee house with wooden surfaces, pendant lighting, and an honest espresso setup that rewards slowing down.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Rating and review volume provide solid credibility. Image vision directly confirms warm_cozy interior with specific visual details (espresso machine, wooden counter, pendant lights, baked goods display). Hours indicate daytime operation only—no late-night claim risk. No awards, pricing, or menu specifics invented.",
+        "grounded_description": "Inside Cuervo Café, an espresso machine and grinder command the wooden counter beneath warm pendant lighting, while a display case of baked goods and shelves of merchandise complete the picture of a neighborhood staple. The space balances functionality with coziness—suitable for lingering over a flat white or settling into focused work."
+      }
+    },
+    {
+      "venue_name": "Café Registrado",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Industrial-style cafe with copper lights and urban character",
+        "description_short": "A solid Palermo staple with industrial concrete walls, copper pendant lights, and abundant greenery. The spacious interior balances work-friendly zones with cozy corners, making it versatile for remote work or casual meetups.",
+        "mood_tags": [
+          "creative",
+          "work_friendly",
+          "social",
+          "warm",
+          "quiet"
+        ],
+        "moments": [
+          "Working remotely with good coffee",
+          "Casual afternoon catch-up",
+          "Solo reading or journaling",
+          "Creative brainstorming session",
+          "Low-key weekend brunch"
+        ],
+        "best_for": [
+          "Remote work",
+          "Casual socializing",
+          "Coffee enthusiasts",
+          "Long leisurely coffees",
+          "Creative professionals"
+        ],
+        "not_for": [
+          "Romantic dates",
+          "Late-night scenes",
+          "Historic atmosphere seekers"
+        ],
+        "primary_atmosphere": "Industrial-modern cafe with warm natural light and considered design details",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Grounded in confirmed image showing industrial concrete interior with copper lighting, wooden furniture, and greenery. Rating of 4.2 with 5888 reviews confirms consistent quality. Hours and operational status verified. No claims of awards or iconic status made.",
+        "grounded_description": "Located on Costa Rica in Palermo, Café Registrado stands out for its industrial-chic interior featuring concrete walls, distinctive copper pendant lights, and decorative greenery. Large windows flood the space with natural light while wooden tables and a neon sign add warmth and character to the well-designed interior."
+      }
+    },
+    {
+      "venue_name": "The Coffee Store Plaza Almagro",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Buenos Aires café culture at its brightest",
+        "description_short": "A dedicated coffee house in the heart of Almagro, The Coffee Store brings serious coffee culture to a residential corner of Buenos Aires with spacious outdoor seating and bright, welcoming interiors.",
+        "mood_tags": [
+          "work_friendly",
+          "social",
+          "outdoor",
+          "quiet",
+          "warm"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Remote work sessions",
+          "Casual catch-ups",
+          "Weekend slow mornings"
+        ],
+        "best_for": [
+          "Coffee lovers",
+          "Remote workers",
+          "Outdoor seating",
+          "Daytime gatherings"
+        ],
+        "not_for": [
+          "Late night scenes",
+          "Romantic dinners"
+        ],
+        "primary_atmosphere": "Bright, airy coffeehouse with strong natural light streaming through large glass windows and a comfortable outdoor terrace",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.8,
+        "editorial_notes": "Metadata grounded in venue's coffee-focused branding from signage, confirmed outdoor seating visible in exterior shot, consistent 8am weekday opening aligning with work-friendly positioning, Almagro neighborhood context, and high review volume (2161) with 4.5 rating supporting social/work reputation. Image confirms bright_airy atmosphere with large windows and good daylight.",
+        "grounded_description": "Located on Jerónimo Salguero in the residential Almagro neighborhood, this coffee store positions itself as a destination for committed coffee drinkers, with clear branding declaring 'WE ARE COFFEE BELIEVERS'. The exterior shot reveals a modern dark gray storefront with brick accents, framed by large glass windows and black metal outdoor furniture, creating a bright and approachable daytime atmosphere."
+      }
+    },
+    {
+      "venue_name": "Tostado - Puerto Madero",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Warm café culture meets Puerto Madero elegance",
+        "description_short": "A well-rated café in Puerto Madero with leather seating and large windows. Open daily from 7AM to 9PM, drawing locals with its warm atmosphere and consistent quality.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "work_friendly",
+          "social",
+          "date_night"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Casual business meeting",
+          "Afternoon break with a view",
+          "Relaxed date afternoon",
+          "Solo work session"
+        ],
+        "best_for": [
+          "Reliable daily café",
+          "Upscale neighborhood vibe",
+          "Comfortable work sessions",
+          "Low-key dates",
+          "Quality espresso"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Budget-conscious visitors",
+          "Fast-paced dining"
+        ],
+        "primary_atmosphere": "A warm, refined café with leather seating and natural light, embodying the upscale Puerto Madero waterfront aesthetic.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.8,
+        "editorial_notes": "Image vision confirms warm_cozy atmosphere with leather seating and branded espresso service. Rating of 4.6 from 2619 reviews supports consistent quality claims. Puerto Madero location establishes refined neighborhood context. Hours are consistently 7AM-9PM across all days.",
+        "grounded_description": "Tostado offers a warm café experience in Puerto Madero's upscale waterfront district. The interior features leather seating and large windows that create an inviting atmosphere for both work and leisure, backed by a 4.6-star rating from a substantial local following."
+      }
+    },
+    {
+      "venue_name": "Salvaje Bakery",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Wild flavors, artistic soul",
+        "description_short": "Salvaje Bakery brings artisan breads and pastries to Palermo's creative scene, served in a warmly eclectic interior where art-covered walls and vinyl records set a distinctive tone.",
+        "mood_tags": [
+          "warm",
+          "creative",
+          "social",
+          "intimate",
+          "hidden_gem"
+        ],
+        "moments": [
+          "morning coffee ritual",
+          "casual creative catch-up",
+          "solo pastry break",
+          "neighborhood brunch",
+          "afternoon work session"
+        ],
+        "best_for": [
+          "fresh artisan baking",
+          "eclectic atmosphere lovers",
+          "Palermo explorers",
+          "Instagram-worthy interiors",
+          "relaxed café culture"
+        ],
+        "not_for": [
+          "formal business meetings",
+          "large group events",
+          "quick grab-and-go"
+        ],
+        "primary_atmosphere": "Warm, art-filled café with eclectic décor creating an intimate neighborhood sanctuary",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Image vision confirms warm_cozy atmosphere with densely decorated walls, pendant lighting, and artisan product display. High extraction confidence (0.9) from venue data supports 4.4 rating with 3,117 reviews indicating consistent quality. Hours and operational status verified.",
+        "grounded_description": "The interior reveals walls densely covered in framed art, posters, and vinyl records beneath warm pendant lighting, with a counter displaying breads and pastries in baskets alongside chalkboard price signs. This artistic décor creates a distinctive café identity matching the 'wild' (salvaje) name."
+      }
+    },
+    {
+      "venue_name": "Barine - café de especialidad",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee culture in a bright Palermo café",
+        "description_short": "A specialty coffee destination in Palermo's Soler street with a bright, airy interior and artisan pastries. The space combines quality espresso with a welcoming atmosphere for daily rituals.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "work_friendly",
+          "refined"
+        ],
+        "moments": [
+          "morning espresso ritual",
+          "focused remote work sessions",
+          "casual afternoon catch-ups",
+          "quiet solo reading"
+        ],
+        "best_for": [
+          "specialty coffee seekers",
+          "remote workers",
+          "leisurely morning starts"
+        ],
+        "not_for": [
+          "late-night gatherings",
+          "large group events"
+        ],
+        "primary_atmosphere": "Bright, airy café interior with wood accents and natural light, creating a calm and refined coffee experience",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in specialty coffee focus from venue name, high-resolution interior image showing bright airy atmosphere with wood furniture and pastry display, solid 4.7 rating from 231 reviews, and consistent Palermo neighborhood positioning. Operational hours support morning/daytime focus.",
+        "grounded_description": "Barine brings specialty coffee culture to Palermo's Soler street, presenting a bright interior space with wood furniture and a curated pastry selection. The café maintains consistent 8:30 AM openings across most days, positioning itself as a daily destination rather than a late-evening venue."
+      }
+    },
+    {
+      "venue_name": "Bicho Café de Especialidad Recoleta",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee culture in Recoleta's refined cultural corridor",
+        "description_short": "Specialty coffee café in Recoleta with a 4.5 rating across 1,169 reviews. Operates 8:30 AM to 8:30 PM daily.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "work_friendly",
+          "refined",
+          "creative"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Afternoon work session",
+          "Quiet conversation",
+          "Solo reading time",
+          "Coffee tasting escape"
+        ],
+        "best_for": [
+          "Specialty coffee enthusiasts",
+          "Remote workers",
+          "Morning routines",
+          "Quiet conversations",
+          "Neighborhood locals"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Large group events",
+          "Party scenes"
+        ],
+        "primary_atmosphere": "Refined specialty coffee café in Recoleta's cultural district, attracting coffee enthusiasts and remote workers seeking a quiet, work-friendly environment",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.75,
+        "editorial_notes": "Grounded in 4.5 rating and 1,169 reviews, consistent daily hours, and Recoleta neighborhood positioning. No image vision data was provided, so atmospheric claims are conservative and mood confidence is reduced accordingly.",
+        "grounded_description": "A specialty coffee destination in Recoleta's cultural corridor, Bicho Café draws locals and visitors with its focused coffee program and neighborhood café atmosphere. The consistent 8:30 AM–8:30 PM schedule supports daily routines from morning espresso through afternoon work sessions."
+      }
+    },
+    {
+      "venue_name": "Le Rêve Bistró",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A dreamy bistro in Palermo for warm, intimate evenings",
+        "description_short": "Le Rêve Bistró offers French-inspired dining in a warm, candlelit setting with green banquette seating and rich wood accents. Open nightly from 6PM, this Palermo gem draws couples and friends seeking an intimate evening out.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "romantic",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "Romantic dinners for two",
+          "Late evening gatherings",
+          "Special occasions",
+          "intimate conversations",
+          "Post-dinner drinks"
+        ],
+        "best_for": [
+          "Couples seeking ambiance",
+          "Date night in Palermo",
+          "Evening dining",
+          "Intimate celebrations",
+          "Late-night dining"
+        ],
+        "not_for": [
+          "Quick lunches",
+          "Large groups",
+          "Family dining with young children"
+        ],
+        "primary_atmosphere": "A warm, intimate French bistro with candlelit tables, green banquettes, and rich wood tones—perfect for romantic evenings and late-night conversations.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing warm pendant and table lamp lighting, round wooden tables, green banquette seating, subway tile accents, and large mirrors. Venue hours confirm evening-only service (6PM-close) matching the intimate dinner setting. Rating of 4.5 across 586 reviews supports consistent quality. No awards or accolades cited in provided data.",
+        "grounded_description": "Le Rêve Bistró occupies a warmly lit interior with round wooden tables, green banquette seating, and subway tile details accented by large mirrors and soft pendant lighting. Located on Nicaragua in Palermo, the restaurant serves French-inspired cuisine nightly from 6PM, drawing guests seeking an intimate, candlelit dining experience."
+      }
+    },
+    {
+      "venue_name": "Las Pizarras bistro",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A moody wine bistro in Palermo's creative heart",
+        "description_short": "An intimate wine-focused bistro in Palermo with dark, atmospheric interiors and chalkboard menus. Evening-only operation creates a focused, refined dining experience.",
+        "mood_tags": [
+          "intimate",
+          "romantic",
+          "quiet",
+          "refined",
+          "date_night"
+        ],
+        "moments": [
+          "Romantic dinners",
+          "Special occasions",
+          "Wine-focused evenings",
+          "Intimate conversations",
+          "Low-key celebrations"
+        ],
+        "best_for": [
+          "Wine lovers",
+          "Couples",
+          "Foodies",
+          "Date nights",
+          "Special occasions"
+        ],
+        "not_for": [
+          "Large groups",
+          "Quick meals",
+          "Budget dining"
+        ],
+        "primary_atmosphere": "Dark, intimate wine bistro with moody contrast and sophisticated Palermo charm",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image showing dark intimate interiors with wine glasses, bench seating, chalkboards and moody contrast. Venue operates evening-only (7-11:30 PM) in trendy Palermo neighborhood with 1167 reviews supporting established reputation. Chalkboards and wine-focused setting confirmed.",
+        "grounded_description": "This Palermo bistro features dark, intimate interiors with chalkboard menus, bench seating, and wine glasses set against moody lighting. Operating only for dinner service, it offers a refined, focused experience in one of Buenos Aires' most creative neighborhoods."
+      }
+    },
+    {
+      "venue_name": "Negresco Bistró",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Elegant Recoleta bistró with warm marble-bar charm",
+        "description_short": "An upscale bistró set within the Palladio Hotel in Recoleta, featuring polished marble counters and warm, refined interiors. The venue draws a loyal local crowd for all-day dining from early morning through midnight.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "romantic",
+          "intimate",
+          "date_night"
+        ],
+        "moments": [
+          "after-gallery dinners",
+          "intimate celebrations",
+          "leisurely brunches",
+          "business lunches",
+          "late-evening dining"
+        ],
+        "best_for": [
+          "romantic dinners",
+          "refined dining",
+          "cultural outings",
+          "intimate gatherings",
+          "all-day relaxed dining"
+        ],
+        "not_for": [
+          "casual quick bites",
+          "loud social gatherings",
+          "budget dining"
+        ],
+        "primary_atmosphere": "Warm and refined Recoleta bistró with marble accents and elegant table settings",
+        "evidence_confidence": 0.92,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in a 4.7-star rating across 899 reviews and a warm_cozy interior image showing polished marble bar counters, mirrored shelving with plants, and white tablecloth dining in warm lighting. The Recoleta location supports cultural-outing and date-night moments.",
+        "grounded_description": "Negresco Bistró offers polished marble-bar elegance within the Palladio Hotel in Recoleta, serving all-day dining under warm lighting. The refined interior and consistent high ratings make it a reliable choice for intimate and romantic occasions."
+      }
+    },
+    {
+      "venue_name": "Piano Nobile",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Elegant dining within a Recoleta palace",
+        "description_short": "Piano Nobile offers refined Continental cuisine within the historic Palacio Duhau in Recoleta. The restaurant features an elegant interior with ornate crystal chandeliers, classical paneling, and parquet flooring.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "historic",
+          "romantic",
+          "intimate"
+        ],
+        "moments": [
+          "Special occasion dinners",
+          "Elegant date nights",
+          "Celebrating milestones",
+          "Quiet celebratory lunches",
+          "Business dining"
+        ],
+        "best_for": [
+          "Refined dining experiences",
+          "Historic setting appreciation",
+          "Romantic occasions",
+          "Special celebrations",
+          "Cultural immersion"
+        ],
+        "not_for": [
+          "Casual quick bites",
+          "Budget-conscious dining",
+          "Large group gatherings"
+        ],
+        "primary_atmosphere": "Warm, refined historic elegance within a Recoleta palace setting",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Grounded in visual image evidence showing ornate chandelier, classical paneling, parquet flooring, and white linen-dressed tables in soft natural light. Venue location confirmed at Palacio Duhau in Recoleta with 727 reviews supporting 4.5 rating. No invented claims about awards, pricing, or specific menu items.",
+        "grounded_description": "Set within the historic Palacio Duhau in Recoleta, Piano Nobile presents an elegant interior with ornate crystal chandeliers, classical wall paneling, and parquet flooring beneath soft natural light. Round tables dressed in white linens create a refined setting for Continental dining."
+      }
+    },
+    {
+      "venue_name": "L'Antiquario Cafe Bistro",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A warm bistro in historic San Telmo, where antique charm meets late-night ease.",
+        "description_short": "L'Antiquario Cafe Bistro blends ornate vintage decor with a cozy terracotta interior in the heart of San Telmo. Warm lighting and intimate seating create a space equally suited to quiet morning coffee or lingering late into the night.",
+        "mood_tags": [
+          "warm",
+          "historic",
+          "intimate",
+          "late_night",
+          "romantic"
+        ],
+        "moments": [
+          "Morning espresso in a historic corner",
+          "Quiet afternoon work session",
+          "Romantic dinner for two",
+          "Late-night drinks after 10PM",
+          "Intimate gathering with close friends"
+        ],
+        "best_for": [
+          "Intimate dining",
+          "Late-night socializing",
+          "Historic neighborhood exploration",
+          "Remote work with good WiFi",
+          "Romantic evenings"
+        ],
+        "not_for": [
+          "Large group celebrations",
+          "Quick grab-and-go meals",
+          "Budget-conscious dining"
+        ],
+        "primary_atmosphere": "Warm, antique-filled bistro with historic San Telmo character and intimate late-night appeal",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.92,
+        "editorial_notes": "Grounded in image vision showing warm_cozy interior with ornate chandeliers, terracotta walls, wooden bar, and warm lighting. Venue name 'Antiquario' and San Telmo location reinforce historic character. Extended hours to 2AM on weekends support late_night tag. High quality image and 0.9 extraction confidence provide solid venue data foundation.",
+        "grounded_description": "The interior showcases ornate chandeliers and a wooden bar backed by shelves of bottles, with terracotta walls and dining seating arranged for intimate gatherings. Warm lighting throughout emphasizes the cozy, vintage atmosphere that defines this San Telmo staple."
+      }
+    },
+    {
+      "venue_name": "Farmacia Lezama - Bistrot",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Historic pharmacy turned intimate San Telmo bar",
+        "description_short": "A converted pharmacy in San Telmo with warm, candlelit interiors and red ambient lighting. Open late evening Tuesday through Saturday for intimate dining and cocktails.",
+        "mood_tags": [
+          "intimate",
+          "warm",
+          "romantic",
+          "refined",
+          "late_night"
+        ],
+        "moments": [
+          "A candlelit date night",
+          "Late evening cocktails in San Telmo",
+          "A special occasion dinner",
+          "Intimate anniversary dinner",
+          "After-dinner drinks in a historic setting"
+        ],
+        "best_for": [
+          "Couples seeking intimacy",
+          "Late-night wine or cocktails",
+          "Historic atmosphere lovers",
+          "Special occasion dinners",
+          "San Telmo evening wanderers"
+        ],
+        "not_for": [
+          "Quick weeknight dinners",
+          "Large group gatherings",
+          "Sunday visits"
+        ],
+        "primary_atmosphere": "Warm, candlelit intimacy with red ambient lighting and historic character—crystal chandeliers above white-clothed tables in a converted pharmacy setting.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in high-quality image vision showing dimly lit interior with red ambient lighting, crystal chandelier, wood bottle cabinets, white-clothed tables with candles and glassware. Venue rating 4.7 with 99 reviews supports quality claims. Hours confirm late-night operation. No invented awards, menu items, or pricing used. San Telmo neighborhood adds historic context per venue address.",
+        "grounded_description": "Farmacia Lezama occupies a converted pharmacy in San Telmo, its interior bathed in warm red ambient lighting with crystal chandeliers casting a glow over white-clothed tables set with candles and glassware. The space combines historic architectural character with intimate bar atmosphere, drawing guests for evening dining and cocktails."
+      }
+    },
+    {
+      "venue_name": "A DONDE",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where design meets the night",
+        "description_short": "A refined restaurant in Villa Crespo where dark leather, green-tiled tables, and warm wood shelving create an intimate atmosphere for slow evenings and long conversations.",
+        "mood_tags": [
+          "intimate",
+          "warm",
+          "refined",
+          "romantic",
+          "late_night"
+        ],
+        "moments": [
+          "romantic dinners",
+          "late evening drinks",
+          "celebration dinners",
+          "date nights",
+          "intimate gatherings"
+        ],
+        "best_for": [
+          "romantic meals",
+          "special occasions",
+          "wine enthusiasts",
+          "evening dining",
+          "design lovers"
+        ],
+        "not_for": [
+          "quick bites",
+          "casual lunch",
+          "large groups"
+        ],
+        "primary_atmosphere": "Dark, intimate, and refined—moody lighting over green-tiled tables and warm wood shelves set the tone for unhurried evenings",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high-quality hero image showing dark leather chairs, green-tiled tables, warm wood bottle shelving, and dramatic pendant lighting over concrete ceiling. Supported by 4.9 rating (238 reviews), evening-only operation schedule (closed Mon-Tue), and Villa Crespo neighborhood positioning. No invented awards or claims.",
+        "grounded_description": "Tucked into Villa Crespo, A DONDE wraps guests in a moody, design-forward interior of dark leather and green tile, warmed by wood shelving and soft pendant light. Evening hours and a 4.9 rating suggest a place for unhurried, intentional dining."
+      }
+    },
+    {
+      "venue_name": "Contraluz",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Light through glass, dining beneath the atrium",
+        "description_short": "Upscale restaurant in the Alvear Art Hotel featuring a dramatic glass atrium ceiling and warm, refined interiors. Elegant white-clothed tables and polished marble floors set the stage for a sophisticated dining experience in the heart of Retiro.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "romantic",
+          "work_friendly",
+          "intimate"
+        ],
+        "moments": [
+          "Business dinners",
+          "Romantic dates",
+          "Celebratory dinners",
+          "Work lunches",
+          "Quiet conversations"
+        ],
+        "best_for": [
+          "Upscale dining",
+          "Architectural appreciation",
+          "Professional meetings",
+          "Intimate evenings",
+          "Special occasions"
+        ],
+        "not_for": [
+          "Casual dining",
+          "Budget-conscious diners",
+          "Large groups"
+        ],
+        "primary_atmosphere": "Refined and warm, with a dramatic glass atrium creating an upscale yet welcoming ambiance.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in high-quality image showing the dramatic glass atrium ceiling, warm lighting, white-clothed tables, and polished marble floors. Rating of 4.7 from 208 reviews supports upscale positioning. Generous operating hours (7 AM-11:30 PM daily) indicate a full-service establishment. Connection to Alvear Art Hotel reinforces refined positioning.",
+        "grounded_description": "Contraluz offers an elegant dining experience beneath a striking glass atrium in Buenos Aires' Retiro district. The restaurant combines warm lighting, polished marble floors, and white-clothed tables to create a refined atmosphere suitable for both professional gatherings and intimate occasions."
+      }
+    },
+    {
+      "venue_name": "St. Regis Restaurant",
+      "success": false,
+      "model_used": "MiniMax-M2.7",
+      "error": "editorial_invalid_json"
+    },
+    {
+      "venue_name": "Banu",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Intimate bistro in Centro with moody lighting and late-night hours",
+        "description_short": "A refined bistro in Buenos Aires' Centro serving breakfast through late-night dining. Dimly lit interior with wooden tables, pendant lights, and potted plants creates a moody, intimate atmosphere.",
+        "mood_tags": [
+          "intimate",
+          "romantic",
+          "late_night",
+          "refined",
+          "date_night"
+        ],
+        "moments": [
+          "Late evening dinners",
+          "Romantic dinners",
+          "After-dinner drinks",
+          "Intimate gatherings",
+          "Date nights"
+        ],
+        "best_for": [
+          "Romantic dinners",
+          "Late-night dining",
+          "Intimate gatherings",
+          "Date nights",
+          "After-work unwinding"
+        ],
+        "not_for": [
+          "Large groups",
+          "Quick lunch stops",
+          "Family gatherings with children"
+        ],
+        "primary_atmosphere": "Dimly lit bistro with exposed concrete ceiling, wooden tables set with glassware, pendant lights, and potted plants creating a moody, intimate ambiance.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality image vision showing the interior space with dark intimate atmosphere. Hours support late-night occasion claims. Rating and review count indicate consistent quality. No invented claims—all attributes traceable to supplied venue data or visual evidence.",
+        "grounded_description": "Banu occupies a dimly lit space with exposed concrete ceiling, wooden tables set with glassware, pendant lights, and potted plants. Large windows reveal the street outside while maintaining the moody interior atmosphere. Open daily from 10AM with extended hours until midnight or 1AM on most evenings."
+      }
+    },
+    {
+      "venue_name": "Selva Mía",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Jungle-lush outdoor bar in Palermo with fairy lights and late-night drinks",
+        "description_short": "Outdoor bar in Palermo with lush tree surroundings and fairy lights. Operates late nightly, making it a solid choice for late-night outdoor drinks in the neighborhood.",
+        "mood_tags": [
+          "intimate",
+          "outdoor",
+          "late_night",
+          "romantic",
+          "social"
+        ],
+        "moments": [
+          "Late-night outdoor drinks",
+          "Date night under lights",
+          "Social gatherings in nature",
+          "Post-dinner walks",
+          "Weekend evening escapes"
+        ],
+        "best_for": [
+          "Late-night outdoor drinking",
+          "Date nights",
+          "Atmospheric evenings",
+          "Social gatherings",
+          "Relaxed nights out"
+        ],
+        "not_for": [
+          "Daytime quick visits",
+          "Work meetings",
+          "Large groups seeking loud music"
+        ],
+        "primary_atmosphere": "Lush outdoor space with tree surroundings, fairy lights, and a lit water feature creating a dark, intimate nighttime setting",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in supplied image showing outdoor dining at night with trees and lighting, late-night operational hours Thu-Sat, high 4.7 rating, and Palermo neighborhood context. Name suggests jungle theme consistent with lush visual.",
+        "grounded_description": "Selva Mía is an outdoor bar in Palermo where dense trees and string lights create a lush, intimate setting. The venue stays open until 1–2 AM most nights, offering a nighttime escape with a lit water feature adding ambient glow to the outdoor space."
+      }
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Intervalo Bar: Recoleta's intimate evening retreat for crafted cocktails.",
+        "description_short": "An upscale bar in Recoleta with a perfect 5-star rating, offering a warm multi-tiered space for late-night cocktails. Opens daily at 7PM with extended hours through the weekend.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "intimate",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "Evening cocktails in Recoleta",
+          "Late-night drinks",
+          "Date night outings",
+          "Special occasion celebrations",
+          "Intimate gatherings"
+        ],
+        "best_for": [
+          "Evening cocktails",
+          "Late-night drinks",
+          "Date nights",
+          "Upscale lounge experience",
+          "Intimate gatherings"
+        ],
+        "not_for": [
+          "Daytime visits",
+          "Large groups",
+          "Budget-conscious spending"
+        ],
+        "primary_atmosphere": "Warm, upscale lounge with curved multi-tiered bar and backlit liquor display, creating an intimate evening retreat.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in strong venue data: perfect 5-star rating with 181 reviews, confirmed operational hours, and high-quality image vision showing warm cozy atmosphere with refined bar design. Recoleta neighborhood location adds prestige context.",
+        "grounded_description": "Intervalo Bar occupies Planta Baja on Vicente López in Recoleta, offering a warm multi-tiered bar backlit with a wide variety of liquor bottles and glassware. The venue maintains a perfect 5-star rating across 181 reviews, opening nightly at 7PM with extended hours until 3:30AM on weekends."
+      }
+    },
+    {
+      "venue_name": "BOCANADA",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "San Telmo's turquoise corner bar",
+        "description_short": "A turquoise-hued corner bar on the edge of San Telmo, set in a beautifully preserved historic building with a breezy terrace.",
+        "mood_tags": [
+          "outdoor",
+          "historic",
+          "social",
+          "late_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Afternoon terrace drinks in San Telmo",
+          "Post-exploration wind-down",
+          "Late-night Thu–Sat sessions",
+          "Casual drinks with friends",
+          "People-watching from the sidewalk"
+        ],
+        "best_for": [
+          "Outdoor terrace lovers",
+          "Late-night explorers",
+          "San Telmo atmosphere seekers",
+          "Social gatherings",
+          "Hidden gem hunters"
+        ],
+        "not_for": [
+          "Private conversations",
+          "Ultra-quiet settings",
+          "Fast-service expectations"
+        ],
+        "primary_atmosphere": "Bright, historic, and social with a distinctive turquoise facade and breezy outdoor terrace",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in the visible turquoise historic building facade, outdoor seating with patrons, San Telmo location, and late-night hours extending to 3 AM on weekends. The 417 reviews and 4.4 rating support a popular, well-regarded venue without overstating fame. No invented awards or claims.",
+        "grounded_description": "Set in a distinctive turquoise historic building on the border of San Telmo, BOCANADA draws locals and visitors to its breezy outdoor terrace for daytime drinks and late-night sessions Thu–Sat. With a 4.4 rating across 417 reviews, it occupies a charming corner spot where ornate architecture meets casual bar energy."
+      }
+    },
+    {
+      "venue_name": "Cave Canem",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A warm subterranean escape in San Telmo's nightlife",
+        "description_short": "A cozy evening bar in San Telmo with a warm, backlit interior and late-night hours. Cave Canem serves pizza and drinks in an intimate setting that attracts locals seeking a quieter alternative to crowded venues.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "late_night",
+          "hidden_gem",
+          "social"
+        ],
+        "moments": [
+          "Evening drinks before midnight",
+          "Late-night gathering with friends",
+          "Casual pizza and beer",
+          "San Telmo neighborhood wandering"
+        ],
+        "best_for": [
+          "Night owls",
+          "Locals and regulars",
+          "Low-key socializing",
+          "Pizza and drinks"
+        ],
+        "not_for": [
+          "Early evening dining",
+          "Large groups",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "Warm, cozy subterranean bar with backlit shelves and intimate seating",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in venue hours (7PM-3AM/5AM), San Telmo location, 4.7 rating with 288 reviews, and image vision showing warm_cozy atmosphere with wooden counter, pizza, beer, and backlit bottles. No awards, prices, or booking info in provided data.",
+        "grounded_description": "Cave Canem occupies a subterranean space in San Telmo, Buenos Aires, with a warm backlit interior featuring wooden counters and a selection of liquor. The bar opens at 7PM daily and stays open late, drawing locals for pizza, beer, and intimate conversation in a cozy setting away from busier tourist spots."
+      }
+    },
+    {
+      "venue_name": "Lutero Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Corner bar glow in Chacarita with warm red-orange light",
+        "description_short": "A neighborhood bar on Jorge Newbery in Chacarita, known for its warm evening lighting and outdoor seating. Opens nightly from 7 PM with late-night hours running until 1–2 AM.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "romantic",
+          "creative",
+          "date_night"
+        ],
+        "moments": [
+          "evening drinks with friends",
+          "casual dates",
+          "weekend nightcap",
+          "late-night conversations",
+          "pre-dinner drinks"
+        ],
+        "best_for": [
+          "neighborhood regulars",
+          "casual dates",
+          "late-night drinks",
+          "outdoor seating seekers",
+          "evening gatherings"
+        ],
+        "not_for": [
+          "large groups",
+          "early afternoon visits",
+          "work meetings"
+        ],
+        "primary_atmosphere": "A warmly lit corner bar with red-orange glow and outdoor seating in the creative Chacarita neighborhood",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing warm_cozy atmosphere signal with red-orange lighting and outdoor seating. Hours confirm evening-focused operation. Neighborhood context (Chacarita) and rating/review count support established venue presence. No invented claims.",
+        "grounded_description": "Lutero Bar occupies a corner spot on Av. Jorge Newbery in Chacarita, its facade illuminated with warm red-orange light in the evening hours. The bar draws locals for nightly drinks from 7 PM onward, with outdoor seating visible from the street corner."
+      }
+    },
+    {
+      "venue_name": "Nido de Tigre",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A cozy late-night nest in Chacarita for intimate evening drinks",
+        "description_short": "Nido de Tigre is a dimly lit lounge bar in the Chacarita neighborhood with red sofas, candlelit tables, and warm globe sconces. Opens at 7pm and serves until 2am, perfect for unhurried evening conversations.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "romantic",
+          "late_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Late evening drinks",
+          "Intimate conversations",
+          "Romantic date nights",
+          "Cozy gatherings",
+          "Discovering a local favorite"
+        ],
+        "best_for": [
+          "Late-night conversations",
+          "Romantic evenings",
+          "Cozy date nights",
+          "Unhurried drinks",
+          "Quiet evenings"
+        ],
+        "not_for": [
+          "Daytime hangs",
+          "Large group celebrations",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "A warm, candlelit lounge with red sofas and wrought iron accents, open late for intimate evenings",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high-quality interior image showing warm lighting, red sofas, and intimate seating. Venue data confirms late-night hours (2am), perfect 5.0 rating from 102 reviews, and evening-only opening schedule. Chacarita neighborhood location supports 'hidden gem' classification.",
+        "grounded_description": "Nido de Tigre occupies a cozy lounge interior with red sofas, small candlelit tables, and warm globe sconces casting dim light across textured ceiling tiles. A decorative wrought iron window adds character to this intimate space, which opens only in the evening and operates until 2am."
+      }
+    },
+    {
+      "venue_name": "SOFÁ - un bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A hidden speakeasy in Chacarita with dim lights and top-shelf spirits",
+        "description_short": "A dimly lit speakeasy-style bar in Chacarita featuring marble counters and backlit liquor shelves. Opens at 7PM for intimate evening drinks.",
+        "mood_tags": [
+          "intimate",
+          "late_night",
+          "hidden_gem",
+          "romantic",
+          "quiet"
+        ],
+        "moments": [
+          "Late-night conversations",
+          "First dates",
+          "Quiet drinks with a friend",
+          "After-dinner cocktails",
+          "Low-key celebrations"
+        ],
+        "best_for": [
+          "Couples",
+          "Close friends",
+          "Cocktail enthusiasts",
+          "Night owls",
+          "Intimate gatherings"
+        ],
+        "not_for": [
+          "Large groups",
+          "Early evenings",
+          "Family outings"
+        ],
+        "primary_atmosphere": "Intimate speakeasy with marble bar, backlit spirits, and low ambient lighting",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality image vision showing marble countertop, backlit liquor shelves, and speakeasy atmosphere. Venue hours (7PM-2/3:30AM) confirm evening and late-night focus. Rating 4.4 from 799 reviews supports consistent experience quality. Neighborhood Chacarita and Instagram-only presence suggest hidden gem status.",
+        "grounded_description": "Tucked in Chacarita, this speakeasy-style bar wraps guests in low ambient lighting with a polished marble bar counter and backlit shelves displaying an extensive liquor collection. The space opens at 7PM, catering to those seeking intimate evening conversations over cocktails."
+      }
+    },
+    {
+      "venue_name": "Bar PUNTO MONA",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where Chacarita comes alive after dark",
+        "description_short": "A neighborhood bar in Chacarita drawing locals with its evening-only schedule and late-night hours. Consistently rated 4.5 across nearly 700 reviews.",
+        "mood_tags": [
+          "intimate",
+          "late_night",
+          "hidden_gem",
+          "creative",
+          "social"
+        ],
+        "moments": [
+          "Late-night drinks on weekends",
+          "Discovering a neighborhood favorite",
+          "Casual hangouts with friends",
+          "An intimate evening out"
+        ],
+        "best_for": [
+          "Late-night drinks",
+          "Neighborhood exploration",
+          "Creative cocktails",
+          "Social gatherings"
+        ],
+        "not_for": [
+          "Daytime visits",
+          "Work-friendly settings",
+          "Quick daytime stops"
+        ],
+        "primary_atmosphere": "An intimate late-night neighborhood bar with a creative edge, operating only on Thursday through Sunday evenings.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in venue metadata: 4.5 rating across 684 reviews confirms consistent quality; limited operating hours (closed Mon-Wed, evening start) strongly indicate late-night focus; no image vision data prevents visual atmosphere claims, so mood confidence is reduced accordingly.",
+        "grounded_description": "Bar PUNTO MONA operates Thursday through Sunday evenings in Chacarita, closing as late as 3 AM on weekends. Its strong 4.5 rating from nearly 700 reviews suggests a loyal local following and consistent experience."
+      }
+    },
+    {
+      "venue_name": "Veredita",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Vinos y atardeceres en Chacarita",
+        "description_short": "Veredita es un bar de vinos de barrio en Chacarita con una calificación destacada de 4.8 basada en 315 reseñas. Abre sus puertas_only evenings, from Tuesday through Saturday, inviting guests for a curated wine experience.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "quiet",
+          "date_night"
+        ],
+        "moments": [
+          "after-work unwind",
+          "date night",
+          "quiet evening with wine",
+          "late-night glass",
+          "intimate gathering"
+        ],
+        "best_for": [
+          "wine enthusiasts",
+          "couples",
+          "quiet evenings",
+          "late-night visits",
+          "neighborhood locals"
+        ],
+        "not_for": [
+          "quick conversations",
+          "large groups",
+          "daytime visits"
+        ],
+        "primary_atmosphere": "A neighborhood wine bar with warm, intimate evening vibes in Chacarita",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in the bar's wine focus (devinos), evening-only hours, high rating of 4.8 from 315 reviews, and Chacarita neighborhood context. No visual image was provided, so atmosphere claims are inferred from textual data only, lowering mood confidence. Instagram presence confirmed but no detailed description fields available.",
+        "grounded_description": "Veredita is a neighborhood wine bar located on Av. Jorge Newbery in Chacarita, Buenos Aires, with strong local acclaim reflected in its 4.8 rating. Open Tuesday through Saturday from 6PM, it offers a focused evening experience centered on wine service."
+      }
+    },
+    {
+      "venue_name": "Don Gato",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Nightly cocktails and late hours in Chacarita's quiet corner",
+        "description_short": "Don Gato is a neighborhood bar in Chacarita drawing locals with cocktails and late-night hours on Fitz Roy. Open Wednesday through Sunday from 8PM to 3AM, it holds a solid 4.7 rating from 93 reviews.",
+        "mood_tags": [
+          "late_night",
+          "quiet",
+          "warm",
+          "intimate",
+          "date_night"
+        ],
+        "moments": [
+          "evening cocktails",
+          "late-night drinks",
+          "date night",
+          "casual hangout",
+          "neighborhood vibes"
+        ],
+        "best_for": [
+          "local bar scene",
+          "late-night drinks",
+          "casual evening",
+          "neighborhood exploration",
+          "date night"
+        ],
+        "not_for": [
+          "early evenings",
+          "family gatherings",
+          "large groups"
+        ],
+        "primary_atmosphere": "Late-night neighborhood bar with cocktails and local character",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in confirmed venue facts: bar category, Chacarita neighborhood location, Fitz Roy address, operational hours (8PM–3AM Wed–Sun), 4.7 rating from 93 reviews, and active website and phone. No image vision data present, so visual atmosphere claims are avoided and mood confidence is reduced accordingly.",
+        "grounded_description": "Don Gato is a neighborhood bar in Chacarita, Buenos Aires, drawing locals with cocktails and late-night hours on Fitz Roy. Open Wednesday through Sunday from 8PM to 3AM, it holds a solid 4.7 rating from 93 reviews."
+      }
+    },
+    {
+      "venue_name": "Social Paraíso Bistró | Recoleta",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A hidden Recoleta gem with ornate facades and intimate cocktail allure",
+        "description_short": "An intimate cocktail bar tucked in Recoleta beneath an ornate 19th-century facade with intricate floral reliefs and arched entryways. Open evenings for crafted drinks in a warm, secluded setting.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "quiet",
+          "hidden_gem",
+          "historic"
+        ],
+        "moments": [
+          "Pre-dinner cocktails in Recoleta",
+          "Intimate conversations over drinks",
+          "Evening escapes in the city",
+          "Special celebrations",
+          "Late evening conversations"
+        ],
+        "best_for": [
+          "Cocktail enthusiasts",
+          "Romantic evenings",
+          "Quiet conversations",
+          "Appreciating historic architecture",
+          "Evening outings"
+        ],
+        "not_for": [
+          "Daytime visits",
+          "Large groups",
+          "Sunday outings"
+        ],
+        "primary_atmosphere": "Warm and intimate cocktail experience within a historic, ornate Recoleta building",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Metadata grounded in 4.8 rating from 1070 reviews, high-quality hero exterior image showing ornate historic building with warm lighting at dusk, Recoleta neighborhood context, and explicit warm_cozy atmosphere signal from image vision model.",
+        "grounded_description": "This Recoleta cocktail bar occupies an ornate 19th-century building featuring intricate floral relief carvings and arched entryways illuminated at dusk. With a 4.8 rating across 1,070 reviews and operating from 5PM to midnight, it offers intimate crafted cocktails in a warm, secluded setting."
+      }
+    },
+    {
+      "venue_name": "GRAPIN",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "San Telmo's evening retreat for considered cocktails",
+        "description_short": "A neighborhood cocktail bar in historic San Telmo drawing locals with evening hours and a 4.7-rated drinks program. The intimate setting draws a consistent crowd seeking a quieter alternative to the district's livelier options.",
+        "mood_tags": [
+          "quiet",
+          "historic",
+          "intimate",
+          "date_night"
+        ],
+        "moments": [
+          "Evening aperitivo",
+          "Late evening conversations",
+          "Quiet pre-dinner drinks",
+          "Relaxed date in the neighborhood"
+        ],
+        "best_for": [
+          "Couples",
+          "Solo evening wanderers",
+          "Quiet gatherings",
+          "Neighborhood regulars"
+        ],
+        "not_for": [
+          "Large groups",
+          "Daytime visits",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "Evening neighborhood intimacy in historic San Telmo",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.55,
+        "editorial_notes": "Grounded in operational hours (evening-focused 6PM-midnight), 4.7 rating from 500 reviews indicating consistent local appreciation, cocktail_bar category, and San Telmo's historic neighborhood context. No image vision data present so mood confidence reduced accordingly. No visual or menu-specific claims made.",
+        "grounded_description": "GRAPIN operates as San Telmo's evening cocktail destination with strong local traction. The bar's evening schedule and solid rating suggest a neighborhood fixture for considered drinks rather than a tourist-heavy venue."
+      }
+    },
+    {
+      "venue_name": "Pipi Lounge",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Lush garden cocktails in Villa Crespo's cozy nest",
+        "description_short": "A lush interior cocktail bar in Villa Crespo with hanging greenery, warm pendant lighting, and a tiled bar front. The space strikes a cozy, intimate mood with curated cocktails and a relaxed neighborhood vibe.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "hidden_gem",
+          "romantic",
+          "creative"
+        ],
+        "moments": [
+          "weekend date",
+          "intimate catch-up",
+          "pre-dinner drink",
+          "solo evening wind-down",
+          "celebrating something special"
+        ],
+        "best_for": [
+          "intimate conversations",
+          "creative cocktails",
+          "neighborhood discovery",
+          "relaxed evenings",
+          "romantic dates"
+        ],
+        "not_for": [
+          "large groups",
+          "sport watching",
+          "work meetings"
+        ],
+        "primary_atmosphere": "A lush, warm interior cocktail bar with natural greenery and soft pendant lighting that creates a cozy, curated neighborhood vibe.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high-quality visual evidence (hero_interior, MiniMax-M3) showing clear details: hanging greenery, pendant lights, tiled bar front, shelving with bottles, bar stools. Warm_cozy atmosphere signal directly aligns with visual elements. Venue name 'Pipi' is a local nickname (no meaning invented). Rating 4.3/118 reviews confirms operational quality. Villa Crespo neighborhood context added for grounding.",
+        "grounded_description": "A cocktail bar tucked into Villa Crespo with an interior dressed in hanging greenery, warm pendant lights, and a tiled bar front. The space is designed for lingering—candlelit tables, curated bottle displays, and stools arranged for intimate seating create a cozy, curated atmosphere."
+      }
+    },
+    {
+      "venue_name": "LE CLUB BACAN",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Upscale cocktail lounge with late-night service in Retiro.",
+        "description_short": "Refined lounge inside Hotel Casa Lucia with dark wood interiors and leather seating. Offers curated cocktails with late-night hours on weekends.",
+        "mood_tags": [
+          "intimate",
+          "refined",
+          "late_night",
+          "romantic",
+          "warm"
+        ],
+        "moments": [
+          "Late-night cocktails",
+          "Romantic evening out",
+          "Intimate conversations",
+          "Date night",
+          "Post-dinner drinks"
+        ],
+        "best_for": [
+          "Couples",
+          "Night owls",
+          "Intimate gatherings",
+          "Upscale experience",
+          "Cocktail enthusiasts"
+        ],
+        "not_for": [
+          "Large groups",
+          "Budget drinking",
+          "Quick stops"
+        ],
+        "primary_atmosphere": "Dark, refined lounge with warm lamp glow, tufted leather sofas, and velvet chairs creating an intimate, upscale setting.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Metadata grounded in venue rating (4.9), review count (273), and image vision showing dark wood-paneled lounge with warm lighting and intimate seating arrangements. Late-night hours (1 AM Thu-Sat) confirmed from operational data. Website indicates hotel connection (Hotel Casa Lucia).",
+        "grounded_description": "Located in Retiro, this refined cocktail bar features a dark wood-paneled interior with tufted leather sofas and velvet chairs illuminated by warm table lamps. With a 4.9 rating from 273 reviews and service until 1 AM on weekends, it offers a sophisticated late-night drinking experience."
+      }
+    },
+    {
+      "venue_name": "Osaka Concepción",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Japanese-Peruvian soul in a warm Colegiales corner",
+        "description_short": "Osaka Concepción brings Nikkei flavors to a refined cocktail bar setting in Colegiales, pairing a focused menu with craft drinks in a warmly lit interior.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "romantic",
+          "date_night",
+          "refined"
+        ],
+        "moments": [
+          "Date night dinners",
+          "Celebration meals",
+          "After-work conversations",
+          "Late-night cocktails",
+          "Special occasion dinners"
+        ],
+        "best_for": [
+          "Couples seeking intimacy",
+          "Nikkei cuisine lovers",
+          "Cocktail enthusiasts",
+          "Special celebrations",
+          "Evening rituals"
+        ],
+        "not_for": [
+          "Quick lunch stops",
+          "Large groups"
+        ],
+        "primary_atmosphere": "A warm, dimly lit interior with wooden elements and an open kitchen, creating an intimate dining and cocktail space",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in venue name and website indicating Nikkei cuisine, operational hours showing dinner service emphasis, and image vision confirming warm intimate atmosphere with wooden decor and dim lighting. Rating of 4.7 from 1169 reviews supports refined positioning.",
+        "grounded_description": "Located on Concepción Arenal in the Colegiales neighborhood, this cocktail bar and restaurant features a warmly lit interior with wooden tables and decorative slatted walls. Open daily for lunch and dinner service until midnight, it serves Japanese-Peruvian Nikkei cuisine alongside craft cocktails."
+      }
+    },
+    {
+      "venue_name": "Tradition & Rebellion",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Skyline toasts and river lights at Puerto Madero's intimate rooftop.",
+        "description_short": "An intimate rooftop cocktail bar in Puerto Madero with sweeping views of the river and city skyline. Offers refined drinks and late-night service, making it a standout evening destination in Buenos Aires.",
+        "mood_tags": [
+          "romantic",
+          "intimate",
+          "cinematic",
+          "late_night",
+          "refined"
+        ],
+        "moments": [
+          "Evening aperitivo by the water",
+          "Late-night cocktails with skyline views",
+          "Romantic rooftop date",
+          "Pre-dinner drinks with panoramic views",
+          "Nightcap under city lights"
+        ],
+        "best_for": [
+          "Couples seeking atmosphere",
+          "Night owls",
+          "Scenic evening drinks",
+          "Special occasions",
+          "Photography-worthy views"
+        ],
+        "not_for": [
+          "Daytime gatherings",
+          "Budget-conscious visitors",
+          "Large group events"
+        ],
+        "primary_atmosphere": "Dark, intimate rooftop bar with warm lighting, waterfront positioning, and dramatic nighttime cityscape framing.",
+        "evidence_confidence": 0.95,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high-confidence venue data (4.8 rating, 627 reviews, operational status) and selected image showing dark intimate atmosphere with nighttime river and city skyline views. Late-night hours (to 3 AM weekends) support late_night tag. Rooftop waterside positioning in Puerto Madero supports cinematic and romantic mood tags.",
+        "grounded_description": "Located on Olga Cossettini in Puerto Madero, this elevated cocktail venue offers commanding views of the river and Buenos Aires skyline, including a distinctive red-lit tower visible from the terrace. The space combines intimate dark interiors with warm outdoor lighting, creating a cinematic setting for evening cocktails."
+      }
+    },
+    {
+      "venue_name": "Alvear Roof Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Rooftop intimacy above Palermo's evening skyline",
+        "description_short": "Perched on the 11th floor of an Alvear avenue building, this Palermo rooftop bar offers an intimate evening escape with warmly lit interiors and pink neon signage beckoning from the doorway.",
+        "mood_tags": [
+          "intimate",
+          "warm",
+          "romantic",
+          "refined",
+          "date_night"
+        ],
+        "moments": [
+          "evening cocktails",
+          "special occasion",
+          "post-dinner drinks",
+          "celebration",
+          "intimate gathering"
+        ],
+        "best_for": [
+          "couples",
+          "small groups",
+          "night owls",
+          "romantic evenings",
+          "special celebrations"
+        ],
+        "not_for": [
+          "casual daytime drinks",
+          "large groups",
+          "work meetings"
+        ],
+        "primary_atmosphere": "An intimate rooftop retreat with warm lighting and pink neon glow, offering a romantic escape above Palermo's evening streets.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in the 11th floor location, evening-only hours, pink neon signage visible in the nighttime exterior shot, warmly lit interior visible through open doors, and the intimate atmosphere signal from image vision. Rating of 4.5 from 1074 reviews supports quality claims. No invented claims about awards, menu items, or prices.",
+        "grounded_description": "A rooftop sanctuary on the 11th floor of Av. Alvear, where pink neon illuminates an arched doorway into a warmly lit interior. Open Wednesday through Sunday evenings, the space offers an intimate setting above Palermo's nocturnal streets."
+      }
+    },
+    {
+      "venue_name": "La Carbonera",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Rooftop bar with retractable glass ceiling in San Telmo",
+        "description_short": "Bright rooftop bar in San Telmo with a retractable glass ceiling offering flexible indoor-outdoor seating. Wooden tables and pink chairs create a warm, inviting space with extended weekend hours.",
+        "mood_tags": [
+          "warm",
+          "outdoor",
+          "late_night",
+          "creative",
+          "social"
+        ],
+        "moments": [
+          "afternoon rooftop drinks",
+          "evening escapes with friends",
+          "weekend hangs",
+          "late-night gatherings",
+          "casual date drinks"
+        ],
+        "best_for": [
+          "outdoor lovers",
+          "social gatherings",
+          "late-night sessions",
+          "San Telmo explorers",
+          "creative crowds"
+        ],
+        "not_for": [
+          "quiet work sessions",
+          "intimate solo dinners",
+          "private conversations"
+        ],
+        "primary_atmosphere": "Bright, airy rooftop bar with retractable glass ceiling, warm wooden furniture, and vibrant social energy",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing bright rooftop interior with retractable glass ceiling, wooden tables, and pink chairs. Venue hours confirm late-night Fri-Sat operation. San Telmo neighborhood context provides historic/creative grounding. No invented claims—all facts from supplied data.",
+        "grounded_description": "La Carbonera occupies a bright rooftop space in San Telmo with a retractable glass ceiling, allowing the bar area to shift between open-air and enclosed modes. The well-lit interior features wooden tables and pink chairs, creating a warm and spacious atmosphere that carries into extended weekend hours."
+      }
+    },
+    {
+      "venue_name": "Naranjo Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "An orange tree's glow in Chacarita's evening light",
+        "description_short": "A cozy evening bar in the Chacarita neighborhood with wooden-framed windows and a curated selection of bottles. Opens nightly at 6pm, with Saturday afternoon service.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "date_night",
+          "hidden_gem",
+          "quiet"
+        ],
+        "moments": [
+          "Evening pre-dinner drinks",
+          "Low-key date nights",
+          "Weekend afternoon pauses",
+          "Quiet conversations with friends"
+        ],
+        "best_for": [
+          "Craft drinks",
+          "Local neighborhood vibe",
+          "Intimate gatherings",
+          "Relaxed evenings"
+        ],
+        "not_for": [
+          "Large groups",
+          "Late-night partying",
+          "Sports viewing"
+        ],
+        "primary_atmosphere": "Warm and intimate evening bar with wooden accents and neighborhood character",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in operational hours showing evening focus, selected image showing warm wooden exterior with bottle shelves, and 4.1 rating from 1189 reviews indicating consistent quality. The venue name 'Naranjo' (orange tree) connects to tree reflections visible in the photo. Chacarita is a residential neighborhood outside central BA tourist zones.",
+        "grounded_description": "Naranjo Bar occupies a corner spot in Chacarita, a residential neighborhood known for its tree-lined streets and local character. The exterior features large wooden-framed windows and an open doorway that reveals rows of bottles inside, suggesting a drinks-focused establishment with crafted intention."
+      }
+    },
+    {
+      "venue_name": "Duhau Restaurante & Vinoteca",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A lush garden sanctuary in Recoleta's heart",
+        "description_short": "Refined restaurant with a lush garden courtyard and vinoteca, set within the historic Palacio Duhau Park Hyatt in Recoleta. Outdoor dining surrounded by manicured greenery and reflecting pools.",
+        "mood_tags": [
+          "romantic",
+          "refined",
+          "historic",
+          "outdoor",
+          "intimate"
+        ],
+        "moments": [
+          "An intimate dinner beneath ivy-covered walls",
+          "Celebrating a special occasion in the garden",
+          "A romantic evening with wine from the vinoteca",
+          "A refined business lunch in Recoleta",
+          "A tranquil escape in the city's heart"
+        ],
+        "best_for": [
+          "Romantic dinners",
+          "Special occasions",
+          "Wine enthusiasts",
+          "Garden lovers",
+          "Refined celebrations"
+        ],
+        "not_for": [
+          "Casual dining",
+          "Budget-conscious diners",
+          "Fast-paced meals"
+        ],
+        "primary_atmosphere": "A lush, historic garden courtyard offering refined outdoor dining within Recoleta's prestigious Park Hyatt.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.9,
+        "editorial_notes": "The hero exterior image provides strong visual grounding for the garden courtyard atmosphere with manicured lawn, reflecting pools, and ivy-covered facade. The venue's Recoleta location and Park Hyatt affiliation establish the refined, historic character. The vinoteca component supports wine-focused occasions.",
+        "grounded_description": "Set within the historic Palacio Duhau Park Hyatt, Duhau Restaurante & Vinoteca offers an elegant garden courtyard experience with reflecting pools and outdoor dining beneath red awnings. The ivy-covered Belle Époque facade frames a refined space where Argentine cuisine meets an extensive wine program in one of Recoleta's most atmospheric settings."
+      }
+    },
+    {
+      "venue_name": "Verdot Wine Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "An intimate wine sanctuary in Recoleta's heart",
+        "description_short": "Verdot Wine Bar is an intimate wine-focused bar in Buenos Aires' upscale Recoleta neighborhood. The dimly lit space features wine cellar walls and curated selections, creating an upscale intimate atmosphere.",
+        "mood_tags": [
+          "intimate",
+          "refined",
+          "romantic",
+          "late_night",
+          "quiet"
+        ],
+        "moments": [
+          "Quiet evening conversations",
+          "Intimate date nights",
+          "Post-dinner wine sessions",
+          "Special occasion celebrations",
+          "Solo wine appreciation"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Couples seeking romance",
+          "Late-night unwind",
+          "Intimate gatherings",
+          "Connoisseur experiences"
+        ],
+        "not_for": [
+          "Large groups",
+          "Casual quick drinks",
+          "Family dining"
+        ],
+        "primary_atmosphere": "Upscale intimate wine bar with dark mood lighting, wine cellar walls, and refined pendant fixtures creating a sophisticated evening ambiance in Recoleta",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high-quality image vision metadata showing dimly lit interior with wine cellar walls, bar, set tables with glassware, and pendant lighting. Venue facts confirm wine bar category, Recoleta location, 4.6 rating, and operational status. Atmospheric description derives directly from visual evidence and venue type.",
+        "grounded_description": "A refined wine bar in Recoleta where dim amber lighting casts a warm glow over wine cellar walls and tables set with care. The space balances intimate coziness with understated sophistication, making it well-suited for unhurried evenings with wine as the focus."
+      }
+    },
+    {
+      "venue_name": "Bruce Wine",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Industrial elegance meets San Telmo intimacy",
+        "description_short": "An evening bar in historic San Telmo where exposed brick and industrial textures meet refined touches like marble surfaces and ornate vintage details. The space balances raw urban character with sophisticated warmth, making it a refined retreat for after-dark conversations.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "romantic",
+          "quiet"
+        ],
+        "moments": [
+          "After-dinner drinks",
+          "Late-night conversations",
+          "Date night retreats",
+          "Quiet evening escapes",
+          "Intimate gatherings"
+        ],
+        "best_for": [
+          "Couples",
+          "After-dark aperitivo",
+          "Intimate conversations",
+          "San Telmo explorers",
+          "Refined atmosphere seekers"
+        ],
+        "not_for": [
+          "Large groups",
+          "High-energy nightlife",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "Elegantly industrial, with raw exposed brick softened by marble tables, vintage mirrors, and dried florals",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality image vision showing industrial interior with refined details, 4.7 rating from 125 reviews, evening-only hours indicating intimate atmosphere, and San Telmo's historic neighborhood context. No invented claims about awards or accolades.",
+        "grounded_description": "Located on Perú street in San Telmo, Bruce Wine presents an interior of exposed brick walls and industrial pendant lighting contrasted with marble surfaces, an ornate mirror, and dried floral arrangements. The bar opens at 4:30 PM and operates late into the night, positioning itself as a refined evening destination within one of Buenos Aires' most historic neighborhoods."
+      }
+    },
+    {
+      "venue_name": "Anselmo Lounge & Wine Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "24-hour refinement in the heart of San Telmo",
+        "description_short": "Anselmo Lounge & Wine Bar offers 24-hour hospitality within a San Telmo hotel, blending relaxed lounge comfort with curated wine service in a bright, contemporary setting.",
+        "mood_tags": [
+          "refined",
+          "quiet",
+          "date_night",
+          "work_friendly",
+          "late_night"
+        ],
+        "moments": [
+          "After-gallery wandering in San Telmo",
+          "Extended evening conversations",
+          "Remote work sessions with wine",
+          "Low-key date night",
+          "Late-night decompression"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Hotel-seeking visitors",
+          "Late-night patrons",
+          "Quiet conversations",
+          "Work meets leisure"
+        ],
+        "not_for": [
+          "High-energy nightlife seekers",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "Bright, contemporary hotel lounge with refined wine service and 24-hour accessibility",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in venue name, 24-hour operational hours, San Telmo location, and bright airy interior vision. Rating and reviews provide light credibility signal. Mood confidence reduced because image depicts hotel bedroom rather than wine bar interior, making lounge atmosphere partially inferred rather than visually confirmed.",
+        "grounded_description": "Set within a San Telmo hotel, this 24-hour lounge and wine bar presents itself through bright, airy interiors with neutral tones and thoughtful décor, offering a refined setting for wine service at any hour."
+      }
+    },
+    {
+      "venue_name": "Los Jardines De Las Barquin",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A lush garden retreat in the heart of Retiro",
+        "description_short": "Garden restaurant featuring an outdoor patio surrounded by dense tropical greenery and warm wooden decking. Black-and-white bistro chairs and tables set with glassware create an intimate al fresco dining experience under golden-hour light.",
+        "mood_tags": [
+          "outdoor",
+          "intimate",
+          "warm",
+          "romantic",
+          "quiet"
+        ],
+        "moments": [
+          "lazy weekend brunches",
+          "peaceful afternoon escapes",
+          "intimate conversations over lunch",
+          "photography-friendly moments",
+          "relaxed garden gatherings"
+        ],
+        "best_for": [
+          "garden lovers",
+          "quiet daytime dining",
+          "intimate gatherings",
+          "nature appreciation",
+          "relaxed Buenos Aires afternoons"
+        ],
+        "not_for": [
+          "late-night social scenes",
+          "large group events",
+          "work meetings"
+        ],
+        "primary_atmosphere": "Lush garden courtyard with tropical plants, warm golden-hour lighting, and intimate bistro-style seating",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing lush outdoor patio with tropical plants, warm lighting, and bistro seating. Venue name and operational hours (11AM-6PM daytime only) support the quiet, relaxed daytime atmosphere. 618 reviews and 4.3 rating indicate consistent visitor experience. No awards, pricing, or menu data available.",
+        "grounded_description": "Los Jardines De Las Barquin is a garden restaurant in the Retiro neighborhood of Buenos Aires, featuring an outdoor patio dining area surrounded by dense green hedges and tropical plants. The space showcases black-and-white woven bistro chairs on warm wooden decking, illuminated by golden-hour sunlight filtering through the garden canopy."
+      }
+    },
+    {
+      "venue_name": "BAUTISTA Av. Rivadavia",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A bright corner spot on Rivadavia for morning coffee through evening drinks",
+        "description_short": "A well-established bar and cafe on Av. Rivadavia in Almagro, drawing a loyal local crowd with its all-day accessibility and consistent quality over nearly a thousand reviews.",
+        "mood_tags": [
+          "work_friendly",
+          "social",
+          "warm",
+          "quiet",
+          "refined"
+        ],
+        "moments": [
+          "morning caffeine ritual",
+          "afternoon work session",
+          "casual neighborhood catch-up",
+          "solo afternoon escape",
+          "early evening unwind"
+        ],
+        "best_for": [
+          "daily routine",
+          "remote work",
+          "casual hangs",
+          "reliable repeat visits",
+          "Almagro locals"
+        ],
+        "not_for": [
+          "late night scene",
+          "private conversations",
+          "large groups"
+        ],
+        "primary_atmosphere": "Bright and approachable corner cafe-bar with natural light flooding through storefront windows, a blue awning marking the entrance on a busy Rivadavia block.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.75,
+        "editorial_notes": "Grounded in operational hours (all-day, not late night), high review volume (947 reviews, 4.4 rating), and image vision showing bright corner facade with blue awning under daylight. The daytime-heavy schedule and storefront visibility suggest accessibility and sociability rather than intimacy or hidden charm.",
+        "grounded_description": "The corner storefront on Av. Rivadavia catches plenty of light through its large windows, the blue awning making it easy to spot as you walk through Almagro. With nearly a thousand reviews and a 4.4 rating, Bautista has built a reputation as a dependable neighborhood fixture open from breakfast through dinner."
+      }
+    },
+    {
+      "venue_name": "Tostado - Nuñez",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Industrial soul, neighborhood warmth",
+        "description_short": "Industrial-inspired cafe in Nuñez with exposed concrete and caged pendant lights creating an airy, open atmosphere.",
+        "mood_tags": [
+          "social",
+          "work_friendly",
+          "warm",
+          "creative",
+          "refined"
+        ],
+        "moments": [
+          "Casual brunch with friends",
+          "Morning coffee and emails",
+          "Afternoon meeting",
+          "Relaxed lunch break",
+          "Solo work session"
+        ],
+        "best_for": [
+          "Cafe lovers",
+          "Daytime dining",
+          "Social gatherings",
+          "Remote work",
+          "Breakfast and lunch"
+        ],
+        "not_for": [
+          "Late night scenes",
+          "Romantic dinners",
+          "Very intimate settings"
+        ],
+        "primary_atmosphere": "Industrial-chic neighborhood cafe with high ceilings, open layout, and caged lighting",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in 2426 reviews supporting the 4.5 rating, extended weekday hours from 7:30 AM, and image vision showing industrial interior with pendant lights, concrete beams, and tiled floors indicating a spacious, work-friendly daytime venue in residential Nuñez.",
+        "grounded_description": "Tostado - Nuñez is an industrial-style cafe in the residential Nuñez neighborhood, featuring an open interior with high ceilings, exposed concrete beams, and rows of caged pendant lights over tiled floors. Open daily from early morning, it serves as a reliable daytime destination for breakfast, coffee, and casual meals."
+      }
+    },
+    {
+      "venue_name": "La Giralda",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Historic corner café with outdoor charm on Corrientes",
+        "description_short": "A long-standing café-bar in Centro with outdoor seating and extended hours, popular for morning coffee and late-night drinks alike.",
+        "mood_tags": [
+          "outdoor",
+          "lively",
+          "warm",
+          "work_friendly",
+          "social"
+        ],
+        "moments": [
+          "morning coffee ritual",
+          "casual evening drinks",
+          "weekend late night",
+          "people-watching on the terrace",
+          "informal catch-ups"
+        ],
+        "best_for": [
+          "outdoor seating lovers",
+          "night owls (Fri-Sat 24hr)",
+          "casual socializing",
+          "downtown convenience"
+        ],
+        "not_for": [
+          "intimate quiet dinners",
+          "formal dining"
+        ],
+        "primary_atmosphere": "Bright, airy Argentine café with outdoor terrace, situated on a lively Centro corner with classic neighborhood energy",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.92,
+        "editorial_notes": "Grounded in exterior photo showing outdoor seating and natural daylight, extended operating hours including 24hr weekends, high review volume (5,923) on Av. Corrientes location, and 4.4 rating. No invented claims.",
+        "grounded_description": "A classic Buenos Aires café-bar on Avenida Corrientes with visible outdoor terrace seating, operating since early morning through late night with 24-hour weekends, consistently rated 4.4 across nearly 6,000 reviews."
+      }
+    },
+    {
+      "venue_name": "Petit Colón",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A timeless Centro cafe with old-world charm and warm ambient glow",
+        "description_short": "Petit Colón occupies a classic Centro corner with ornate dark wood paneling, brass fixtures, and chandeliers casting warm light across marble floors. The long-standing neighborhood fixture draws a steady crowd from morning coffee through late-night conversations.",
+        "mood_tags": [
+          "warm",
+          "historic",
+          "refined",
+          "late_night",
+          "social"
+        ],
+        "moments": [
+          "Morning espresso ritual",
+          "Afternoon work session",
+          "Evening aperitivo",
+          "Late-night conversation",
+          "Casual date"
+        ],
+        "best_for": [
+          "Reliable all-day dining",
+          "Classic Buenos Aires atmosphere",
+          "People-watching",
+          "Business meetings",
+          "Pre-theater drinks"
+        ],
+        "not_for": [
+          "Budget travelers",
+          "Fast casual dining"
+        ],
+        "primary_atmosphere": "Warm, historic European-inspired cafe with refined decor and ambient evening glow",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Grounded in high-quality hero image showing ornate interior details (dark wood, brass, marble, chandeliers) and 7,907 Google reviews supporting sustained popularity. Hours and location data confirm late-night and Centro positioning. No awards or Michelin/50 Best claims added.",
+        "grounded_description": "Dark wood paneling, brass fixtures, and soft chandelier light define Petit Colón's intimate interior. Open daily from 6 AM until midnight, the Centro institution balances morning coffee culture with evening aperitivo ritual."
+      }
+    }
+  ]
+}

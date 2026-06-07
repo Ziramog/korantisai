@@ -1,0 +1,2540 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "city": "Buenos Aires",
+  "generated_at": "2026-06-07T15:09:12.421Z",
+  "status": "completed",
+  "summary": {
+    "input": 5,
+    "ready_for_db_staging": 4,
+    "auto_staged": 0,
+    "needs_review": 0,
+    "blocked": 1,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "stage_statuses": [
+    {
+      "stage": "01_extract_data",
+      "status": "completed",
+      "notes": "Read existing Stage 01 artifact; no external call made."
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "completed",
+      "notes": "Read existing Stage 03/04 image artifacts; no image discovery rerun."
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "completed",
+      "notes": "Read existing real M3-selected image artifact; M3 was not called by this connector."
+    },
+    {
+      "stage": "connect_selected_images",
+      "status": "completed",
+      "notes": "Selected heroes connected into VenueComplete and score_and_stage rerun."
+    },
+    {
+      "stage": "07_stage_to_supabase",
+      "status": "skipped",
+      "notes": "No Supabase writes."
+    },
+    {
+      "stage": "08_promote_staged",
+      "status": "skipped",
+      "notes": "No publication path."
+    },
+    {
+      "stage": "05_enrich_editorial",
+      "status": "completed",
+      "notes": "Deterministic local enrichment from Stage 01/04 evidence only. No model calls."
+    },
+    {
+      "stage": "06_score_and_stage",
+      "status": "completed",
+      "notes": "Re-scored after editorial enrichment."
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "completed",
+      "notes": "Deterministic local gate for Supabase staging eligibility only. No sync or publication."
+    },
+    {
+      "stage": "07_stage_to_supabase",
+      "status": "skipped",
+      "notes": "Not run. No Supabase writes."
+    },
+    {
+      "stage": "08_promote_staged",
+      "status": "skipped",
+      "notes": "Not run. No publication."
+    }
+  ],
+  "config": {
+    "minImageWidth": 800,
+    "minHeroWidth": 800,
+    "hardBlockHeroBelow": 600,
+    "preferredHeroWidth": 1024,
+    "minMoodConfidence": 0.6,
+    "minEvidenceConfidence": 0.3,
+    "autoStageThreshold": 75,
+    "maxWarningsAutoStage": 2,
+    "maxImageCandidatesPerVenue": 8,
+    "maxReviewsToProcess": 30,
+    "allowedMoodTags": [
+      "quiet",
+      "warm",
+      "romantic",
+      "lively",
+      "intimate",
+      "cinematic",
+      "historic",
+      "creative",
+      "work_friendly",
+      "date_night",
+      "late_night",
+      "outdoor",
+      "hidden_gem",
+      "refined",
+      "social"
+    ],
+    "allowedVenueTypes": [
+      "bar",
+      "cocktail_bar",
+      "cafe",
+      "restaurant",
+      "coffee_shop",
+      "fine_dining",
+      "bistro",
+      "parrilla",
+      "wine_bar",
+      "plant_based",
+      "unknown"
+    ],
+    "allowedImageSourceTypes": [
+      "official_website",
+      "official_gallery",
+      "press_media",
+      "michelin",
+      "fifty_best",
+      "city_tourism",
+      "editorial_review",
+      "instagram",
+      "google_places",
+      "ugc",
+      "unknown"
+    ],
+    "allowedStageStatuses": [
+      "pending",
+      "running",
+      "completed",
+      "failed",
+      "skipped",
+      "auto_staged",
+      "needs_review",
+      "blocked",
+      "approved",
+      "rejected",
+      "staged",
+      "published"
+    ],
+    "blockingErrors": [
+      "missing_name",
+      "missing_coordinates",
+      "missing_address",
+      "missing_google_maps_url",
+      "missing_neighborhood",
+      "missing_type",
+      "venue_not_operational",
+      "no_hero_image",
+      "hero_below_hard_minimum",
+      "hero_high_rights_risk",
+      "hero_does_not_show_space",
+      "hero_not_usable",
+      "missing_or_short_tagline",
+      "missing_description",
+      "fewer_than_two_mood_tags",
+      "invalid_mood_tags",
+      "evidence_confidence_below_minimum"
+    ],
+    "reviewWarnings": [
+      "score_below_auto_stage_threshold",
+      "too_many_warnings_for_auto_stage",
+      "medium_rights_risk",
+      "below_preferred_resolution",
+      "low_mood_confidence",
+      "low_evidence_confidence",
+      "few_reviews",
+      "tagline_over_80_chars",
+      "missing_website",
+      "missing_instagram",
+      "missing_hours",
+      "missing_price_hint",
+      "missing_moments"
+    ]
+  },
+  "candidates": [
+    {
+      "batch_id": "batch_003_stage01_test",
+      "venue_name": "Verne Club",
+      "status": "blocked",
+      "staging_score": 69,
+      "review_reason": "Blocked: no_hero_image",
+      "errors": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Verne Club",
+            "neighborhood": "Palermo",
+            "type": "cocktail_bar",
+            "notes": "Cocktail bar seed for Stage 01 extraction."
+          },
+          "name": "Verne Club",
+          "city": "Buenos Aires",
+          "place_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+          "address": "Av. Medrano 1475, C1179 Cdad. Autónoma de Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar",
+          "coordinates": {
+            "lat": -34.5919254,
+            "lng": -58.41891
+          },
+          "google_maps_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "google_place_types": [
+            "cocktail_bar",
+            "pub",
+            "bar_and_grill",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "association_or_organization",
+            "establishment"
+          ],
+          "website_url": "http://www.vernecocktailclub.com/",
+          "hours": "Monday: 7:00 PM – 2:00 AM; Tuesday: 7:00 PM – 2:00 AM; Wednesday: 7:00 PM – 2:00 AM; Thursday: 7:00 PM – 2:00 AM; Friday: 7:00 PM – 3:00 AM; Saturday: 7:00 PM – 3:00 AM; Sunday: 7:00 PM – 2:00 AM",
+          "price_hint": "PRICE_LEVEL_MODERATE",
+          "rating": 4.5,
+          "user_ratings_total": 3698,
+          "price_level": 2,
+          "phone": "+54 11 7638-6823",
+          "business_status": "OPERATIONAL",
+          "operational_status": "operational",
+          "extraction_confidence": 0.9,
+          "extraction_warnings": [],
+          "raw_google_place": {
+            "query": "Verne Club Palermo Buenos Aires",
+            "candidate_count": 1,
+            "place": {
+              "id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+              "types": [
+                "cocktail_bar",
+                "pub",
+                "bar_and_grill",
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "association_or_organization",
+                "establishment"
+              ],
+              "nationalPhoneNumber": "011 7638-6823",
+              "internationalPhoneNumber": "+54 11 7638-6823",
+              "formattedAddress": "Av. Medrano 1475, C1179 Cdad. Autónoma de Buenos Aires",
+              "location": {
+                "latitude": -34.5919254,
+                "longitude": -58.41891
+              },
+              "rating": 4.5,
+              "googleMapsUri": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "websiteUri": "http://www.vernecocktailclub.com/",
+              "regularOpeningHours": {
+                "openNow": true,
+                "periods": [
+                  {
+                    "open": {
+                      "day": 0,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 1,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 1,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 2,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 2,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 3,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 3,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 4,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 4,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 5,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 5,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 6,
+                      "hour": 3,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 6,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 0,
+                      "hour": 3,
+                      "minute": 0
+                    }
+                  }
+                ],
+                "weekdayDescriptions": [
+                  "Monday: 7:00 PM – 2:00 AM",
+                  "Tuesday: 7:00 PM – 2:00 AM",
+                  "Wednesday: 7:00 PM – 2:00 AM",
+                  "Thursday: 7:00 PM – 2:00 AM",
+                  "Friday: 7:00 PM – 3:00 AM",
+                  "Saturday: 7:00 PM – 3:00 AM",
+                  "Sunday: 7:00 PM – 2:00 AM"
+                ],
+                "nextCloseTime": "2026-06-07T06:00:00Z"
+              },
+              "businessStatus": "OPERATIONAL",
+              "priceLevel": "PRICE_LEVEL_MODERATE",
+              "userRatingCount": 3698,
+              "displayName": {
+                "text": "Verne Club",
+                "languageCode": "es"
+              },
+              "primaryType": "cocktail_bar",
+              "photos": [
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3ktmMQOr8tQV1FejSo_JEDa2mPqTngyg1DHFocpAVIurGWnTMwniXEGKjRd2T1j2o36kAwJbgSdG7R3q6Xp29zykOypCEovYlnHRzc7udp4vkGppeB213sQv38RU5JjEq9KOMW9nnfNYp93qMupOPl4brLRdZoorVs82u4rwfLQrBuO8FFW4-lakwqa2k0HhOhImS8CMnXKeSLCkz04E03sBsmeSfmxYaEZV7rLK-0FqrAKZsdNGRkwzB5xFabQJgInWjFOOPpNq9-MSndhjN1ip8S1vZiUKxqsd_Fdujnvk1cLRYysR691R5mo3fEig6ROr8SVJ3_42tOiOLx-Nl1o-JcgYZYmKKIQWtsjlB3LygGW_W3efe2v1ey5q3EEN2rTKr3JAZ--ItS8RGpFrF9LUPTYkdfNXnBuzfrdjBWv8w",
+                  "widthPx": 1440,
+                  "heightPx": 809,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Verne Club",
+                      "uri": "https://maps.google.com/maps/contrib/116265583026835311475",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW1vewrgsGbcZ8KMYPbb1rEHU6qHxZkVYk-VYNkNyJfmazvg3gZ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDakLDYPA&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDakLDYPA!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3laYAOubbCkO_Mo9Ppl4ifjyv1_q4JZJQ3k_4qcvftmrjmQsNG0HgpTvKN3Iwb3zJNDIvrUMy4SlTIcMF0Af9x2mVd4XhyxNGoR8LlrRQUUZ8nn9XQwMfkUNyY--3QaGcQsd5MpOIkVal479ycnxIg5hOLm8XI_uQD446DVVqg5EnBaWqFw_nXb7RHA8Uc5_vxizPQoqSxRq7DuzNSwxeK_OvZmKC_oQNMKOzMjfvplA1JFUtYQZAeGLlM9YFQL3UyyV4YtHpUcM12TqTV843lMY0YG--UP6lIB4IEOkBmNKnvhuQJLvjhf9pmExrpv7cvNdj02Ao654f9uf7WvKgEVVUvK7kFJP000IK-ATSZb0sYv3UpJXfbKlD9CFBCCDsrg79VXkJ5epO7sLxZRbUK9rUOhLvasngssOtvZLt3AHHYP",
+                  "widthPx": 3200,
+                  "heightPx": 4800,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Verne Club",
+                      "uri": "https://maps.google.com/maps/contrib/116265583026835311475",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW1vewrgsGbcZ8KMYPbb1rEHU6qHxZkVYk-VYNkNyJfmazvg3gZ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICv5qjE5QE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICv5qjE5QE!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3lHOw0pvINN9cqyyiL4HpIkL2HUqFaZF_YFSll88e_jGwDn9zScBP0qHpS0cUFvLJN2ul1fSc7kRrvW-PESE5jWqdwPMp_WL8d2teBSy03rkTVkNLSFYBtwWevmBVLh1Ne5KqNogoVp_eUCmyZARhG_jrnsIfnSkaeoxq5ojx34rGFv-x6BVrx17LhLVVB2bJN4brTlh3B7EsLwxpwCwVPw-LU5XofUCiUzCJyZOCP6a1BJARcpd44jNGv-Ykr-dKjjEtOl37ZJP2unKm_Szic1FoOMEl1idt7I6AT7sNIUhn0v4mP7dLdBAt28YPfOTMmevYGxCXScpxBFGP12-Kw4wMpvyFu3-NgS5atcf67xUXTDn-j2ueVina4Wv8-XXRvtlturEO-Mawk7kG2DSnnlwEA4skfe1BjIvyp3GlHSLxbphxVbrQoVEpsKDCwc",
+                  "widthPx": 720,
+                  "heightPx": 1106,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Dean Jamikolo",
+                      "uri": "https://maps.google.com/maps/contrib/118438660817450059275",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK8rUpeDcgwPV-ybIZQcWWGwdj5q5JpQuhAsbW0eoVOtiFplQ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDlkKzjh9lmjLe3vwkaNgI2&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDlkKzjh9lmjLe3vwkaNgI2!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3nEVKl6-QYosFuQ0B2SP5TscRp-m4fcWOtU0Yk4mVUIt7F4Sc1sWA8gxep6_7c2Jof7B5ij479IScUsBRJEA_TxCRTukilqn7jvWe2MNGKilSRjAiHEgij1Jc18xByoeKQcSDtSOnaGbP1nA3YvqH7wftVvx4NS-RHb-7q4SqlqnO_pQpijwQ_hG1aMuYUcNWPKD_q57cSkulrJ7CE7ILgtgYgTFa5b5W2kZbuhJ6xft13shuhiYSfE0yZ0ZiVQOwuZZjYetbIaQqHfW6TvGLT5XnOCevN6Gj8hJbr2TOgodcKf_zSrIsTwNakMzdehpjIoda1yZ0y4zS2oPxrfO2Ne0ozFy22D1W8r4PM3_xjzguhCcVyD7ldPNO4oT0yRPH-vR5wXhDLytk2bCUJKZWKkvPZQXBGOBfuTLibNs0Q-LZb87bf8qa_4bEZm1ru8",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Candela Noceda",
+                      "uri": "https://maps.google.com/maps/contrib/113086069852757762629",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIE34hTqPTt4k6vWUijV4nOyriwvLnJkKbYllY1GCEoFZVG7XA=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBUIiP1aNrouIrtzJHKvlrg&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBUIiP1aNrouIrtzJHKvlrg!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3k8VEmFWw8--jD5PaDW820nVH6WJgkzCUWnTCQFbKqhx1qpVc73KZ-gc2SRxy4ZjMz0fmnXSldxRQ-bIKc66fnBvlUziTn2kUtzgnZvqb1Nvg03Pmo6IDHoiFXPLMPURshwaubsFhh1xO-d50JvC3W5dSBtWftFovJCteB39D7Z6mb024AjGbYX9XoCa1ycQI_Rg3Omu4gZg5BBSfOjyJBsMfrmx7utPg3IRyUUidEIvP8J8V9c3p6OYSE5oaXnmYxDNvPjQ0K9I72ZIayuR5OinCexbaaaWJatocmkPrvNXrT1_HAYbgfjDg6JBDFPgGu9tcvotZM7Tmbl1Gh2FoZDnTkwB84hi-0txKoKZuWCbXM15Ex3nBXbNiZC4fXe0JwnyWF-1qbsoek-xc2bt0dAZfhtCkC972U4CMgxf3nJ8QJy9cR_g7-aMZOVOqBW",
+                  "widthPx": 3000,
+                  "heightPx": 4000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Laura Maria",
+                      "uri": "https://maps.google.com/maps/contrib/108010340141269116048",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLiOpnEB77bocX_88rULItTLGTAZHKqiqPxqxgcQPoczjP9Yw=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA0vD9W43SXcLDwt_T36Z7h&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA0vD9W43SXcLDwt_T36Z7h!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3n1ibqwyylFJEJ36jeI39dVq9DG2uslzKTLqR8-Up3CvUsBH2Brgb40rFYfLiAIjkp-UqUA-4On6aBVuanSG1s6LhHYe_a5ogZTPm4uHVebA7W0y0YhH9Bm0kfNVJJwa0X0tZBN8-UWBRkxoE3t8enyMhGyiESuDhDMFMN77YQ_OEc8jKuWeqhnv6NEVNLIKAfHzPE0fBTbxjvKOgdKx1KLVCxv4ljgmW-G7B36BR_nPxMsCsHirVysvNLzMLAlHyapjoHF6s5MOZNu5Ku1iBU8x7rhj-6dbR-IlrwF06aW4CdisGPOgukiu6GoIvZe0D3LGYKEcC4qmfGj6s4ecEFlJW-KsEKo33JwgFpTXGg02CGgSRdVigzAHsmjxb4Ycyg-ERtuovIYgttKY24B4bgxoCTC1oNxo8Gy2a_i7B5ZjXRm_rkMUaWUsvDydU3T",
+                  "widthPx": 3000,
+                  "heightPx": 4000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Laura Maria",
+                      "uri": "https://maps.google.com/maps/contrib/108010340141269116048",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLiOpnEB77bocX_88rULItTLGTAZHKqiqPxqxgcQPoczjP9Yw=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDKuymzU4kKXxJhgqbOlfB8&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDKuymzU4kKXxJhgqbOlfB8!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3lliLBILS6d77qPzsNmsyIAt3N2hKxelL3K29MOF_x1rVjVp2j1tSeZm1htH9hbttar20g5F7Mqe-UPVqcg7_pA3qmzTexTM4ql7z2aUH7zMloe755zE-j_4gJ5zJuHQXVYz6e6HN48SQOrQ7gK2eY1cqDizEmEbHP9BgtBhqHn8LkRONlytgoafSIMTcHKEgjLCLKjqks1l-GS2-S7hKClNEvS8Pw_CfGqHtL-OR7etfF1cTB4tpM9H09Ieh3wNg5Q_U_AYyuv_GO-IOSCmv8awIVQtpATRE8ZBEYM-mQKgADEZvahepXKo_JYKl6lI3T2L9oWv8ZpORzzvHTXjDpnM8lzESyoCzbj35o2lUzVA3HNbJIrkr0H635Dj3RlwAQwClALFlhvioDcAt3U7wlUFLGeJo0dor5Tk3ygMDo3TRMckq6sGM8LX3AHOg",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Candela Noceda",
+                      "uri": "https://maps.google.com/maps/contrib/113086069852757762629",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIE34hTqPTt4k6vWUijV4nOyriwvLnJkKbYllY1GCEoFZVG7XA=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBodpw6SOsKmwo4DdGdyNiH&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBodpw6SOsKmwo4DdGdyNiH!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3k0Y00F4zq5uTmOYpSuiN4MB1pPkvUuJh571vGnmN0OHcUauPpN4l8dhGawMpMicZx_QRNEMlv6eUdXbP6a_bXm52egANaCCB_1n18MZ5oHyCdWa1K2AOUHCQnlZ2V4h7ICIRXbm7uUqAtX1i4btZXakmL7qJyJsnFf9b-DGhKkYjOUBate1Ep36XbEuTJw7dymSj78XCfMumGg0Z2MpKyPeklJZeHN0lhH9Um4hVxSBPDfbSa38kf5yddYrhqwgIeGFEuoQoL4HR0Pvpeur7K8u8d-NveuI5LRRVO1nVZKHfpNeW7PqDbfSuYSXwWL7ts3WHzDfL0HgNpBviu6pmSt3Zex_tKeMwfTsMLLSnHFv4dy22m_l7f1aFJPYxJSyzzbFFM0DEbhfw-5Wxl8s8uvKQM_maaN-LDRC5R2fhBmEG3tbiCjwmGGcqVCZ_mV",
+                  "widthPx": 4080,
+                  "heightPx": 2296,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Lucia Stefanuto",
+                      "uri": "https://maps.google.com/maps/contrib/117547142306566958871",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXErvsKhgyunR6ZRLV1YZe_IQOwo3ae_6RJ0l4revv1Uk-dv7AE5g=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA6I19iQ4JURbNKOFh8RGgk&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA6I19iQ4JURbNKOFh8RGgk!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3mPmgo8DeeTQL8DP7rkykMfTFl0hdQPXsVsie-rpLDs0h204Rz6qkM4nHyvV8an5vECzYdxOVfpW8SfWLlvc0vx128TaFui6Edjm-U-Avsf0J595NOWbK_XLscdiuxqlBdxSfAqy6dfUesGv6gB16C_OKUCa0Ftpo-i8su-nmtsg5oXPPGozVdJLdlF4UjsYtlFuAQ7KSAnD3YMbeHwfPjAzKt_Q-RJzG2n9mwhBHdTWIH3B4gOYYs4Ur5ZDMOaF8jeAQo2JKKydxKBi2kjs3PGrYHL2_WG1hVMVGNykqw20vugIJJ-DRd2o8Yf0R41Etr2sFLbgZmP_9Np1m6AGVFTf0vqi6jTlJXax62buEjfQcHjelWCKNql3g8usqeT98wRxdldPDKWr3CcTZWqfyP45yox1HhryhDsBAmGC5KvHyXwN3To5RSPixd96vso",
+                  "widthPx": 720,
+                  "heightPx": 833,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Dean Jamikolo",
+                      "uri": "https://maps.google.com/maps/contrib/118438660817450059275",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK8rUpeDcgwPV-ybIZQcWWGwdj5q5JpQuhAsbW0eoVOtiFplQ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhByru3egDJHyNXfYtOMN93W&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhByru3egDJHyNXfYtOMN93W!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                },
+                {
+                  "name": "places/ChIJCSbMQ37KvJUR53QqcjoxSXw/photos/AaVGc3mwT-B_DjTqJVKakJX4K8F92I0KDoEHaZ7YncYZfGIrupSpRWtGVzkmgdLzXE-GJsKYKD602PeHq1RwrKAjSUxsH7nBleekh5EXRSJy7uphHVV55wt_iJlvXj861FbOMJ9dnuelbhkZzzIpcBK5cfSdolyg-RMgPq9nyG4y6YTMvmRFoa0zHj6LsjKWyjM8Pe76PgXfTl9Tz4Jh8shyiBrVGqJl1XykgYsNzV5_6urE4LY2-0GhfYQVuj4wbfoFuX6U52IPe5DGEVEo3w6u3bwVjpUw4dAH6nT8dk3PKokdgmrs8mWZB6Xpb2Dit7AP9uIIzyj7oqubc0F8VYOr_xRrKXPvu9mSmQLQai4sFFwd7RhYPJ57AdgQOG9lBfPeckDx3jatNwSRpwgcrMUvw3VS8khHF_IpVQFRL9jN4KZpUf1G1XkdSj9obtuuAV8k",
+                  "widthPx": 3621,
+                  "heightPx": 3384,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Pablo Jing’an",
+                      "uri": "https://maps.google.com/maps/contrib/103534320690370612692",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIJUwJHZH1JYVrmYIOrN7LV3FzSzlMMugIg5pPqJOMewELxCg=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBnJ5J6vlv_OeLkYYSyUhmK&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBnJ5J6vlv_OeLkYYSyUhmK!2e10!4m2!3m1!1s0x95bcca7e43cc2609:0x7c49313a722a74e7"
+                }
+              ]
+            }
+          },
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0.62,
+          "sources": [
+            {
+              "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "confidence": 0.9
+            }
+          ],
+          "contact": {
+            "website": "http://www.vernecocktailclub.com/",
+            "phone": "+54 11 7638-6823"
+          },
+          "warnings": [],
+          "factual_notes": [
+            "evidence_confidence:0.62 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume"
+          ]
+        },
+        "images": {
+          "candidates": [],
+          "has_hero_image": false,
+          "spatial_candidate_count": 0,
+          "product_candidate_count": 0,
+          "warnings": [
+            "no_selected_stage_04_hero_image"
+          ]
+        },
+        "editorial": {
+          "tagline": "Verne Club: cocktail bar in Palermo",
+          "description": "Verne Club is a cocktail bar in Palermo with verified basic venue data but no usable Stage 04 hero image yet. Google Places support is strong, with 4.5 stars across 3,698 reviews.",
+          "description_short": "Verne Club is a cocktail bar in Palermo with verified basic venue data but no usable Stage 04 hero image yet. Google Places support is strong, with 4.5 stars across 3,698 reviews.",
+          "mood_tags": [
+            "late_night",
+            "social"
+          ],
+          "mood_confidence": 0.62,
+          "moments": [
+            "after-work drinks",
+            "late-night plans"
+          ],
+          "warnings": [
+            "no_stage_04_atmosphere_signal"
+          ]
+        },
+        "review_count": 3698,
+        "review_count_processed": 0,
+        "pipeline_notes": [
+          "No usable Stage 04 selected hero image available.",
+          "Stage 05 editorial enrichment generated locally from Stage 01 factual data and Stage 04 image metadata only."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_stage01_test",
+      "venue_name": "Oporto Almacén",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
+      "errors": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Oporto Almacén",
+            "neighborhood": "Palermo",
+            "type": "restaurant",
+            "notes": "Restaurant seed for Stage 01 extraction."
+          },
+          "name": "Oporto Almacén",
+          "city": "Buenos Aires",
+          "place_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+          "address": "11 de Septiembre de 1888 4152, C1429BJB Cdad. Autónoma de Buenos Aires",
+          "neighborhood": "Palermo",
+          "type": "restaurant",
+          "coordinates": {
+            "lat": -34.5414946,
+            "lng": -58.4645778
+          },
+          "google_maps_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "google_place_types": [
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "website_url": "https://oporto.meitre.com/",
+          "hours": "Monday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM; Tuesday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM; Wednesday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM; Thursday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM; Friday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM; Saturday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM; Sunday: 12:00 – 4:00 PM",
+          "price_hint": "PRICE_LEVEL_EXPENSIVE",
+          "rating": 4.2,
+          "user_ratings_total": 2937,
+          "price_level": 3,
+          "phone": "+54 9 11 3916-2646",
+          "business_status": "OPERATIONAL",
+          "operational_status": "operational",
+          "extraction_confidence": 0.9,
+          "extraction_warnings": [],
+          "raw_google_place": {
+            "query": "Oporto Almacén Palermo Buenos Aires",
+            "candidate_count": 1,
+            "place": {
+              "id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+              "types": [
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+              ],
+              "nationalPhoneNumber": "011 15-3916-2646",
+              "internationalPhoneNumber": "+54 9 11 3916-2646",
+              "formattedAddress": "11 de Septiembre de 1888 4152, C1429BJB Cdad. Autónoma de Buenos Aires",
+              "location": {
+                "latitude": -34.5414946,
+                "longitude": -58.4645778
+              },
+              "rating": 4.2,
+              "googleMapsUri": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "websiteUri": "https://oporto.meitre.com/",
+              "regularOpeningHours": {
+                "openNow": true,
+                "periods": [
+                  {
+                    "open": {
+                      "day": 0,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 0,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 1,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 1,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 1,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 2,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 2,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 2,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 2,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 3,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 3,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 3,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 3,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 4,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 4,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 4,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 4,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 5,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 5,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 5,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 5,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 6,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 6,
+                      "hour": 12,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 6,
+                      "hour": 16,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 6,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 0,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  }
+                ],
+                "weekdayDescriptions": [
+                  "Monday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM",
+                  "Tuesday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM",
+                  "Wednesday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM",
+                  "Thursday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM",
+                  "Friday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM",
+                  "Saturday: 12:00 – 4:00 PM, 8:00 PM – 12:00 AM",
+                  "Sunday: 12:00 – 4:00 PM"
+                ],
+                "nextCloseTime": "2026-06-07T03:00:00Z"
+              },
+              "businessStatus": "OPERATIONAL",
+              "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+              "userRatingCount": 2937,
+              "displayName": {
+                "text": "Oporto Almacén",
+                "languageCode": "es"
+              },
+              "primaryType": "restaurant",
+              "photos": [
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3neYlca4Z8RMJ8Lh72k7icN6bdmKFooMe2VMbR1u-d8FqbeQokBJ4CS8PWAYv5SZac4BbDFBGeS3k7_5dvf7BU5bDp_xkeXcSlYhxyhaB27ijHeauXO91ap2p59nXdrO-iP16hE91rTVtwhszeImyGiWa97btt1f7O76iPEm-moG4syWvtLaUzkb_gLCaJ56LnMJrKDtp-4fVmnAYduedz_jctj32B3-iv1lRJ0GQMROGxXUrjS0mUUSU72pegGkIviCMjbA1_Yy5_MPHg6GsjOhenDJ0Cyv6Ln4KfX7xlpn8fI50l_DTsHZvYtQVkZEYSJzQ373iKTj3klESMd56Ur1cLVHQ7TAMp4FRmvFWffXfck8MOHxcTpQjBikrdfKJ9lZu_NyrXzqs6ojCSMmeuM59Fwf2yK0hSDDhcGNUs",
+                  "widthPx": 4032,
+                  "heightPx": 1816,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Sergio Abbondanza",
+                      "uri": "https://maps.google.com/maps/contrib/105601327444199605275",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJVKVzF-WFnKOJSG8ksSMn1ur5_dvuPY4HThCj7Jd-0KrzS6Q=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICWro6xYA&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWro6xYA!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3mZonQwysQNl5o1sieW1rAb-iEsnZPxzp-rjYsxy7dz9Gk5zeE2iolTdWEskzARFJLbL-15h1x-54UACtQMPKlelD7Y1TogwuQYrD29GZ6yKfpJn-QadUB3jaPNhlO6sUoNPVlfjjW1ZntnystbTpo9B0ptZmitHpUBYjG7B3Z7dRAwo0kgKPFCZgirp0dg0BzXcUhtfcdVCIEXhp0el49FdCiqgOhsdNzCdwMOiAhUIEc28g-gIBhrIoWUgD-K3mZNgx3VXpW-otUBxHHK-xmuwHyjlK9JHWRXLSogzenhh9Gcus6LpISz5k34SL_OLYXYZse5hot4ig3v9EO6oKII-6g3vGVsIbgdxhuLHy_7klCzb8FsPeFlN6Tmu5PpdjG_ckBTvXLbsScYDFCUPserecdMJyXydAFOtdRRJM4",
+                  "widthPx": 2048,
+                  "heightPx": 1365,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Oporto Almacén",
+                      "uri": "https://maps.google.com/maps/contrib/108265303680687558092",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXRAO-jJqKLFXMMsPftZOvvAFP8HitwHRNioziQTHFfzo5RyE4=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC6jrbrPw&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6jrbrPw!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3mscLUu7tVDhq5B4HLs2F5QKcE-6tMhMWrouwRtg1M3FWCxgbqRvVaxPNsGvJuowLN-lgPLkdRZBAqGcAykKfVC7_F2aSnjvi4Ztf7XKTq8h5iYHoED27AeOohT-y5Kld7K8Joi23oKTMz5oKINCADRFIMikN2ltRAW0UK-c7QnNULHeJNZkhiYFSpA5oGtmIUfmYLrqqhdhaehJ0tNtG6RwvW658Idf77t76Ev5N4npboYXBV17nMtDAdpkDX_ZB9JxFq6O2XluDLZaCk1rtcALP4My2USazKpWy6rPMN3vweVJLbfxNCwp9AgXXOELwzAVhTrHdhgiImkWX5VFF_jumEOg0g5R3xLE2w-_vbfGRqxduxniuC_pxUnPwaw8kqvmK3MkZYgHK_8hC4-4fcSXfLwcwlEPjyuNI17eoRXHAB_VffKc71CZkOt-g",
+                  "widthPx": 4096,
+                  "heightPx": 3072,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Mariano n",
+                      "uri": "https://maps.google.com/maps/contrib/101826359673380229333",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU97FxdkMfkVPWLDUC-_7SlT9Qso8DhLqTQP4UQQIWA6Q7-E0E=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBrLE_RPXXYx-_RH-rUrVVm&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBrLE_RPXXYx-_RH-rUrVVm!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3lm7NnoNuoahFTgK2MN2TMwuY5sBAVrRkmlLJFH7k3e6JQUzHlYUCCLarH9vFe0CVUdK8lVwSVHi0wSqNdJ0TbQ4PLkcyPAssp5NoSWvA7pmKvT10gvnV93f9DcA_ACRcz7W3m8ARXCtDQCC2vp4Esc0jeWp3wYNQZoVwH2WiNeSTbcczZ8jiDcZqFKjvAXtwYwwtYxglg7CHFvxRO66CEZLprkgu1zUSdPtjutSrXJ9SOOIB7RQcWUFj9OhH6GqmzdzQ7XPxbEloOJ_joBqiAVzc0sFuB24NU45efm3HhK5cNiAR_EHsstmH_GQRNQNJk9-3dG_PDapj1qJ6tzjqZDF_hK3M9tb8wmCWt-MXmbqk2u5CzHFOMGckQ2fwVLJz0NhCxhfTBDPX_ON31og2GDTTmgq13ZmCIN-GNDJ8aj0Q",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "claudia suica",
+                      "uri": "https://maps.google.com/maps/contrib/110339971536285461700",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUE1hfUY9YQFcM-vhdv-b6AJ62DHA0YGF_6HUGY0CNfNmg50sUl=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDPtoutSA&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDPtoutSA!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3kDZoF0M7EswGqXYEQ76rWdE_ex8uf0Hz5JLSMLdWo-TgAP5oiqKGSSjq8rOB5d1Ntbj-__Hgp-m70ssy04yf2cv102AXRkydgspoE3GHjho1hqvOqbPUmrxnsul0dd9L-FGprI70vp2traJKsP0haSAAt9CzTqGaJpv4zuPFq2nSUTcTF5AMvWCThPotdzKZqAyt47Zl5U4ZyvEi703kl8L-PNjL64sZCLmKZvmDevQsmhjq8NFup9BDlpdM-SaRForrR2tetqxH30N9_wdws3mORHrAkcDu-cS_gciggNUSIi0min2VQQWdjOEsxy-pzna1aqn5AJQ29VxavriAhNM0mPt4EE2_XTCq8HStnbhCmp6qGOlGi0d_Yh8dfsQAxq6iXYGquPmY0E_te0hIQxBFLg63QKcPo-IQ3RBJ8",
+                  "widthPx": 1848,
+                  "heightPx": 4000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Hernan Marcos Plohn",
+                      "uri": "https://maps.google.com/maps/contrib/108242580357807813035",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUlIOZCpVuWnULL0__ST1ZQ6bE4hMnM9fE91ngm4J0XVkSN0p36=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICX3unGDQ&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICX3unGDQ!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3kqjHjgorv0aEbcp4OZbDYCLxOJHKYyNx5sOi7M_OQHpyjThXRBuPdd2LYnGjidJdshWQ4FCrmsHaLfIrZzO5NUlZXLpVFpvTQVUDkFO0Kfkz2YK_nTAwk1hKKluLNrgj8wYlXSGpZEXZ_P0WmoraT-Z13UQXi0BoezFjmbhJ5CkJFrkSPQS2cyTK33wbXIhJ0vGcRRc5tsME2oLVIhUBQCC6RjtAHXqe7rz-bZuQSOoO1JxI2sVBuShBbLXbuS7t52aJvHBFdHnG1zdgMhthGHCFbDDAB8f3Mur8BVA-8tpWzagTKPVLmsRc69HIFim14CH-HeTDRrmuVn9625QYGMwmsXzOe5LhVsGtl3IjMWH-u2ThLWCGtacqcsAc_lLdi2F4801PUglk67ous998qN3VoeWotbOhwc2iiSISI3ynj51nVK1qd_1T9JXn4T",
+                  "widthPx": 2749,
+                  "heightPx": 2652,
+                  "authorAttributions": [
+                    {
+                      "displayName": "charly ar",
+                      "uri": "https://maps.google.com/maps/contrib/108035421109692925145",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUaZVmK4LuBheYD8EazbN7LYfTb031lyy3E-gmROfgAq9PGtP4=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDqeZpzHFH7V_4e6V5OHM8i&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDqeZpzHFH7V_4e6V5OHM8i!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3lv76R1aYgfNL3hIiHjfa5gjvcrU4lyKK8paE-K5G80OXA78Kykd6s9dZGY0F_hx0jK3xppcqesI_k01QjW2PAlku-oLEpYTf_mOgFD2m4NSUHVvPaLTBXB4T6xk9oXZpuj4fsbAbksbPQtEjrIlcOQSEacbcGHiyyx12UkU0nzVEHwsJjBpxV8bw_FmKgtD2G7ZMcNj3G9FeCz8FQO1-vIE5ttfXr-TH_8ZPV7BWNzL-RSNvs27XoRpq36DK9r6_pY6geK_PPPcrl1ufAusmlnQXL3IRmY-ZeYTvegi3XDujZAz-qL_9xgMjPnn7SSlxbUtmgjFIF5h__FnEjLADP9hc-7HRjODIAYq1zNXezR_yMeh8mH1V6xPZKIJyvO3xpYtE46nVcNBIMWOLfeAyYxcz3oLZOUU29FVNBwfxX7WPxuz1fkOuTdIjPuvArY",
+                  "widthPx": 3072,
+                  "heightPx": 4080,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Carlos Joseph",
+                      "uri": "https://maps.google.com/maps/contrib/105126188535885526132",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ3jRpFKTi9IWGWX5kMh5lg67F5cypoNMvE5fIKMWPu12PbD3i-=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAYqL9nQp_-x9TM9Rghc-4Y&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAYqL9nQp_-x9TM9Rghc-4Y!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3le6__j-pbAQec9K8NYLCO5GwCttSEaGhteVHLs-3mzbxIXO7P7TNFuDlVcrGvrPmf0mDpXOH8HZmVswD_MOvrBQqnjITPUJeZDQMkyNS0ZwhLzjbcSE17pSrPDuG0QItvMi0AMNE8HMxBplKdCQ__5OqczmnX_vfPzN9aoBnrMevRY4U9DHKEFEj509TOa2miPU50pLs3_b07aC8Hj5bORoC7HPkZbknN7twy0QB2cLrxtAxrn69oqNZE8-c3G7bDpCUFugaJSthmG5GZFHrm-BNJI4RepZEapQqd8mEMsnk7h3ATe6MNbSQf9of1mMrLh7s5iw3yaHKxDggdzE3spnnG4cgCKiQiKiYuu0vefohUOWgd4PQ2FFjG0R7wTBPaOKNboeRDmicgwX5GsrPyaHdDOAapndZxQxlUeFT6DWPgL",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Lucia Navarro",
+                      "uri": "https://maps.google.com/maps/contrib/106066730687148054096",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW70Obla8-dUi9nJppLhhpS64JZZB9MxY9hnx3m8OiipRuR7fqm5A=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDHpvvLkgE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDHpvvLkgE!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3krfGB7jlk3YQ450pai1GvcpOy-jhUDlWKdrW4nU3r-Hq5LlmLv6dOtwqj0pdRhesNW0OBO3GsrRRtWXGDHMlc_r_gopjre_7BfeXHOpK78ckMzUkkubhHKkIe7U6O0L5pz2QHnDGOtwP4sSN5WCp2lC907FFpBppiN45S-fTdVn8GtE8WlWLl-hcXaeTJhJVmSZA6bh-sNPDpUgkwrtIxzJyjco8BznjfJUei80LEmDZ-z9pmUBc_aWXM4NYGHyp6f-6XF8jmtjJzS_OSroqh2E1YJUcqV2gpXDlBcwVkXiW3r_K_a289o3ezq9yTKO70vy3JOvqZvwok9TUVUCSV3fhRstKNJkmS_iFs_pkoOpea77zcoSFDEOAcXmjt_Qhb5GIqSFu2he4rTDK0NWx2icd40a2Eo-Wo4qV1G9AhwOg",
+                  "widthPx": 4032,
+                  "heightPx": 3024,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Liliana Canerhoff",
+                      "uri": "https://maps.google.com/maps/contrib/112146037060575200509",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXR3WReR_fXSwreF9bxAZT69fwppnZkWlf-PK4YgBUnlyWtZxJ89g=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEP-I6MC5ytnGNw&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEP-I6MC5ytnGNw!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                },
+                {
+                  "name": "places/ChIJ9_Wpip-2vJURSyBdySgpgsM/photos/AaVGc3kIUsa_PtohxQfy19mh5GAQ5gAVCjtkqnVo02pVLdktvubc9EdZB-evL12A3QkOHEqwQ1kDRMgU01whsRzMbZHYjL--kKOnZvtil3DZ3HFz4hSP4II4MudwpyQ6MDh1TA4e2qDnnUaLBD7LYkconTvtmcJdMU-2X76III51QigZFvFGbrTQ_3XYY_2wNSJV-ruuuRSzTJTxU82-wEYZWvIOl-tXziYDPVGEHoNVIDGZfOdi6RI4MSRm5U_1RMHoTzcUBQ0dn08IvOX8FCnle8nUhhq93XWvkCd6hmT2LQL7eh76A5vX6KHkv7-43FQ8rl52uBbk1VyOD67ytqxcNEJivB6dq-68I1j23wBHTOxxptME_lljLx9gcCzzN4l925Pui4Ib88plmt6N1_eLbKXhbMkN1VRUtuCvsXgDIj92q7U4",
+                  "widthPx": 1848,
+                  "heightPx": 4000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Hernan Marcos Plohn",
+                      "uri": "https://maps.google.com/maps/contrib/108242580357807813035",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUlIOZCpVuWnULL0__ST1ZQ6bE4hMnM9fE91ngm4J0XVkSN0p36=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICX3unG9QE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICX3unG9QE!2e10!4m2!3m1!1s0x95bcb69f8aa9f5f7:0xc3822928c95d204b"
+                }
+              ]
+            }
+          },
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0.88,
+          "sources": [
+            {
+              "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "confidence": 0.9
+            }
+          ],
+          "contact": {
+            "website": "https://oporto.meitre.com/",
+            "phone": "+54 9 11 3916-2646"
+          },
+          "warnings": [],
+          "factual_notes": [
+            "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+          ]
+        },
+        "images": {
+          "hero": {
+            "venue_name": "Oporto Almacén",
+            "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+            "source_type": "google_places",
+            "rights_hint": "google_places_photo_attribution_required",
+            "rights_risk": "medium",
+            "width": 1600,
+            "height": 721,
+            "content_length": 0,
+            "shows_space": true,
+            "usable": true,
+            "role": "hero",
+            "risk_flags": [
+              "rights_review_needed",
+              "preferred_resolution"
+            ],
+            "validation_status": "imported_needs_validation",
+            "publication_status": "not_approved_for_publication",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a restaurant/wine bar with well-lit dining tables, wine shelves, pendant lights, and an open kitchen; person is a minor element, not dominating.",
+            "classification": {
+              "shows_space": true,
+              "is_hero_usable": true,
+              "scene": "hero_interior",
+              "atmosphere_signal": "warm_cozy",
+              "quality": "high",
+              "model_used": "MiniMax-M3",
+              "has_identifiable_faces": false
+            }
+          },
+          "candidates": [
+            {
+              "venue_name": "Oporto Almacén",
+              "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 721,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a restaurant/wine bar with well-lit dining tables, wine shelves, pendant lights, and an open kitchen; person is a minor element, not dominating.",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            }
+          ],
+          "has_hero_image": true,
+          "spatial_candidate_count": 1,
+          "product_candidate_count": 0,
+          "warnings": [
+            "medium_rights_risk",
+            "rights_review_needed"
+          ]
+        },
+        "hero_image": {
+          "venue_name": "Oporto Almacén",
+          "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_hint": "google_places_photo_attribution_required",
+          "rights_risk": "medium",
+          "width": 1600,
+          "height": 721,
+          "content_length": 0,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "validation_status": "imported_needs_validation",
+          "publication_status": "not_approved_for_publication",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a restaurant/wine bar with well-lit dining tables, wine shelves, pendant lights, and an open kitchen; person is a minor element, not dominating.",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        },
+        "editorial": {
+          "tagline": "Oporto Almacén: warm restaurant character in Palermo",
+          "description": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+          "description_short": "Oporto Almacén is a restaurant in Palermo with a warm, cozy atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 2,937 reviews.",
+          "mood_tags": [
+            "warm",
+            "intimate",
+            "date_night"
+          ],
+          "mood_confidence": 0.78,
+          "moments": [
+            "dinner plans",
+            "date-night option"
+          ],
+          "warnings": []
+        },
+        "review_count": 2937,
+        "review_count_processed": 0,
+        "pipeline_notes": [
+          "Stage 04 selected image connected. Publication remains not approved.",
+          "Stage 05 editorial enrichment generated locally from Stage 01 factual data and Stage 04 image metadata only."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_stage01_test",
+      "venue_name": "Gran Bar Danzon",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
+      "errors": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Gran Bar Danzón",
+            "neighborhood": "Retiro",
+            "type": "wine_bar",
+            "notes": "Wine bar and restaurant seed for Stage 01 extraction."
+          },
+          "name": "Gran Bar Danzon",
+          "city": "Buenos Aires",
+          "place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+          "address": "Libertad 1161, C1012AAW Cdad. Autónoma de Buenos Aires",
+          "neighborhood": "Retiro",
+          "type": "bar",
+          "coordinates": {
+            "lat": -34.5948985,
+            "lng": -58.3842924
+          },
+          "google_maps_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "google_place_types": [
+            "bar",
+            "bar_and_grill",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "website_url": "https://granbardanzon.com.ar/",
+          "hours": "Monday: 7:00 PM – 1:00 AM; Tuesday: 7:00 PM – 1:00 AM; Wednesday: 7:00 PM – 1:00 AM; Thursday: 7:00 PM – 3:00 AM; Friday: 7:00 PM – 3:00 AM; Saturday: 8:00 PM – 3:00 AM; Sunday: 8:00 PM – 1:00 AM",
+          "price_hint": "PRICE_LEVEL_EXPENSIVE",
+          "rating": 4.4,
+          "user_ratings_total": 4427,
+          "price_level": 3,
+          "phone": "+54 11 4811-1108",
+          "business_status": "OPERATIONAL",
+          "operational_status": "operational",
+          "extraction_confidence": 0.9,
+          "extraction_warnings": [],
+          "raw_google_place": {
+            "query": "Gran Bar Danzón Retiro Buenos Aires",
+            "candidate_count": 1,
+            "place": {
+              "id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+              "types": [
+                "bar",
+                "bar_and_grill",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+              ],
+              "nationalPhoneNumber": "011 4811-1108",
+              "internationalPhoneNumber": "+54 11 4811-1108",
+              "formattedAddress": "Libertad 1161, C1012AAW Cdad. Autónoma de Buenos Aires",
+              "location": {
+                "latitude": -34.5948985,
+                "longitude": -58.3842924
+              },
+              "rating": 4.4,
+              "googleMapsUri": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "websiteUri": "https://granbardanzon.com.ar/",
+              "regularOpeningHours": {
+                "openNow": true,
+                "periods": [
+                  {
+                    "open": {
+                      "day": 0,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 1,
+                      "hour": 1,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 1,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 2,
+                      "hour": 1,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 2,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 3,
+                      "hour": 1,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 3,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 4,
+                      "hour": 1,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 4,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 5,
+                      "hour": 3,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 5,
+                      "hour": 19,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 6,
+                      "hour": 3,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 6,
+                      "hour": 20,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 0,
+                      "hour": 3,
+                      "minute": 0
+                    }
+                  }
+                ],
+                "weekdayDescriptions": [
+                  "Monday: 7:00 PM – 1:00 AM",
+                  "Tuesday: 7:00 PM – 1:00 AM",
+                  "Wednesday: 7:00 PM – 1:00 AM",
+                  "Thursday: 7:00 PM – 3:00 AM",
+                  "Friday: 7:00 PM – 3:00 AM",
+                  "Saturday: 8:00 PM – 3:00 AM",
+                  "Sunday: 8:00 PM – 1:00 AM"
+                ],
+                "nextCloseTime": "2026-06-07T06:00:00Z"
+              },
+              "businessStatus": "OPERATIONAL",
+              "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+              "userRatingCount": 4427,
+              "displayName": {
+                "text": "Gran Bar Danzon",
+                "languageCode": "es"
+              },
+              "primaryType": "bar",
+              "photos": [
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3lc6Wm0Er-NphdPa4lj27xBW9RcV7u3vUXP4OUxLZYOY1yEwDmioGShSkGBgzUhr3EWb7GLs19xgYADqAGgdb1IgIe3MDddc0kBR02FLOMDsunJTlC7vsgF8M5fpUcDL9sreM3PXfUWl2Q7pPjxhNIJrS7TOj1B0uu-9FIdmpPKtsaSHbTDX3vKi00HbZHpgjgJ-8pkchzWj6Ok6kq_AW82UsZF2S859cSdne_sZ10RqBYG91hVMoc2tGparjRH8S6XjIyLl6JgaSm5nosZnqxyaCLtYKXeOfsvTidsKH90Hws3cbvifq2NncfcKlRjtfCjlKrq7EDOdEYo9wonu24Fhy6L5q1VP6OVylyJWSgeTr1gsVKJxAt-K_3FGjjV6T2Dq690C4duVNvUEf3OhNN4Df5JRYT6mrce8Jc3TP2E5XABasVUdL9LgFgjsB1T",
+                  "widthPx": 4000,
+                  "heightPx": 3000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Maria del Carmen Ansola",
+                      "uri": "https://maps.google.com/maps/contrib/110191570795276632879",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXUwPpNHzxGKryAFuEm-Q4PpfixmgW2bi491J0oG-MGp9DN5INM=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDUKKBHmRxrn-wPCcSbmbaW&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDUKKBHmRxrn-wPCcSbmbaW!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3l-1SCLYMG9SQbAbwhLxSNLO4yCwBsdrPoV-R_K-O4ZHU7Vk43jUGbRxDuWhf7trA0lTf7v7S5wPcB37uI-_89ApfRUBtd7SWAxtx6o5Yr9SswCfosXhDqi2l094KqMgYm4stGHYCdB1E7QkOY4r2zeZgYRh5qzpMWxrOet4a_5PWEdlauWGqWWQga9XvoP78D-GfzcMbRoT9kS112rIXfQSEtJBdDQZerjG6QzNPZlvKbZlM9-kfbgooAAmyHsa2EgKYDyv8TDMfZ0Lf0-g6B17Tav0KPs3_11viIARsh6NqpL_inYeZQMounl6ZxND6mH4T94li_PU5Ldozmz1nWjzmOh7WNi8C_cWv2UU_L3cZyKDWY-5lmCvrHr_70nfxi5JaK6aC9iLE1Era5K8NMYacypnINLvxzHhcW_JtWXxftYwFuntMSJXvYz91aT",
+                  "widthPx": 1125,
+                  "heightPx": 1404,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Gran Bar Danzon",
+                      "uri": "https://maps.google.com/maps/contrib/116051070082884271995",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIx5LMsEtHeHWRllX0zYYSQczGCptbqSi4fgng7c6lquGJvLg=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAo7vYBJhX28ugo7tvG4fd8&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAo7vYBJhX28ugo7tvG4fd8!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3nyqodQc7Iu6rzrdtH2r8DmPVjkhWahJUlBzxk9kY_GgT9ysmL0RhtKmBunu3l9bejGP38h8MPIuH-wPdBGTlrdkL8dlCW9cjLky38SdAjnT7yNGcAf1LAnhQXZOdT0TeakWl40Y0ZLQE9V3P7CghUaGwh40km5rnPfvF-VSaV7JWaVf19j4JDEotGHOk8Pm-CfKRCtkWjZ0_BVLIpZV9NllJt9XX1rJWYp7dOhpLLCsHB8hVXtthdE1XrYu5jfpiOM7kIRK94SWiSWeGLZB2n0wXDxZKYhsSe2tqYdV4Z7wkP-RleZ2OJCc1aWmJ2fMfzD_PKmCSH0lf5rK6j8vi2VoDsly_ByRdSmde4zRqcKJqoNgRE-x0RvuuHtQtMHqfkyJwduFVZUoINXzsKvTu827yN6-jey1gK3LmqrudvhLh9AKNp2BxOG_0aPTMYc",
+                  "widthPx": 4000,
+                  "heightPx": 3000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Maria del Carmen Ansola",
+                      "uri": "https://maps.google.com/maps/contrib/110191570795276632879",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXUwPpNHzxGKryAFuEm-Q4PpfixmgW2bi491J0oG-MGp9DN5INM=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAD5HeaFcWQKVBcPg79PXFs&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAD5HeaFcWQKVBcPg79PXFs!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3n52Ff_7A_wMIR0q1FVYDC4D7syutq8D-MTFL8C2Y1CXcYgor75sxXFVE0xM9fwsrWV7a5ksCKcOSNY_eL-aF3g1iyGOS473Lg2iffRwe37qPn2DF32P3SQxDlluZKSQg2uyn31sDK94BF9bWaAAgycunAEkfHgvOdtLgFlDbcga3JPMwmBADMX5zJsXCCiMSo5Jn-p84Kao1CyO9kujMBX7uxAhlJjaRTBflzD25kX2KD8sj7yyM46hjt69pVQOE4R6y0YHhv7cdsNFIw8TUueLU4Vh12Wu1hIkcac2kAKl-XzPiJhRySjy7d7s6tLD9A6_M4f-9cw5Cy3b2FnXut_Tkz_BbMtvXs7QyWt_IQgfJA9WvBsRX30sSBJqZtKVwXP-2XqSuXpds3KrdbZW6T19Sm6ryvP5KjcrAPNdoKRoEO68BhIWCt6vf1qoQ",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Sébastien Gautier",
+                      "uri": "https://maps.google.com/maps/contrib/110779186439962523894",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLQ3YiOF7yJgxxFv1XTl3bjzM7nlcd1Za56vhClpFDJtEvHCQ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBKTHaAYP3ddCJtOpK3uaEu&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBKTHaAYP3ddCJtOpK3uaEu!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3nuS0FuMpaZC6dch4SU-0XSVGb8DpQhe4WaR2AabF3AF0EWyILR6VeVSLRBXKBgnDt57QracHkG2QKu8OPD6-qXUpv7ArL4yviR3uKnzXDmhOUNTT9Knbrcv706biZWhOVldMw001rSZgJOWqgwuJjPcYl3hqxR2wt45alLBuAIfEJ2f4qd1uA4ytBcL7umZgWOVjay-qgdUTlQ2llw1sjpo1NfSth3nCKj7VXwukKqFAzA0sPUa4QSmh7yT8wJM-YEX4B1uoLNUJ0uA0MOBZwBus8LELIZiZyUMWkByMJXSiiSrZAm19z63lfwWuEG2hFJx4VqWnnn7dQv71I8fb3mxfwFKP3xw-3sUGkQSEIeekLFGOYnlNEtgzn31MkLgIcCcJO5qe3ZeNw-rPSh_w7xE-KMAV3vZps_xENgaLBxsG1pSsk40f_Vgg62zlxy",
+                  "widthPx": 3072,
+                  "heightPx": 4080,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Carlos Joseph",
+                      "uri": "https://maps.google.com/maps/contrib/105126188535885526132",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ3jRpFKTi9IWGWX5kMh5lg67F5cypoNMvE5fIKMWPu12PbD3i-=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDBr-Uq8YDtW-lbhp_mUbAw&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDBr-Uq8YDtW-lbhp_mUbAw!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3l0F9Yvkz3CcMAj60Ydn7ISDlRHi2MreXBwaox1iguvrE5oikFDWnDo7PddvlfUpFF40nvCGGDDjb_f9MnAn8Yr0PJumJ1wsRBu5Qi33Ah7-pnsqLRMf0406usnlVgL4maLry4gvXN-eE__OXRhL3Uoc0nlS8GX3iW1-fBfhAFYbHzTRcwT9uXQxrY0LdtuZ9foXwFvCRdMj406O3d0zG6B_bs_GtmVUChWZWKIWX8V3l10L4mm8vwC7AMLi1UiXCNuzvqdA6K6C5yH8U83AyBd0kcWiQvC-TwmoA9SSDO6iglIh5Jp0YslyG7sQgBC2m74IbzN1veIbPll4ol7empHadFB83LTHKMQEsvlp8BjjswJcGpM1kQqwRbbZAm2W3Ec2lHjI_XWb0TPaIX9f_nwloSYqNPDwD0To2-53lLUv-Zy",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Georgina",
+                      "uri": "https://maps.google.com/maps/contrib/111635993882074431628",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUYlPvMt5Oc5zqoQy2oBtrk-Q1igSL636iT76Ne3Z3MBk3OdWf0OA=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEN7_1rapxIuf-AE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEN7_1rapxIuf-AE!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3mhjFsFcOhLO-aai4nFv10XGGGkKwapwE9WYQGkmrjuXN_3rBP9khEngITd1ji6423bIxHUtE7jJHiWdnEKDiTYdHtFRNSWe_owVBjzmmf0e-sLR2PCPaoarEvls099mysU-L2eQoAsKQQRiswLfJcqFFdAaYR6mtS1Z_klkIuBt5-RKDiXsh8Ww9SPIO3oOSSJTZSge_Vd3CsDGr0JHt9Km_Q4bANWx85biNGatd7NcTQyNAZ2893-fu7i53xVnyxjIs9ixM01A5qWlBp8iIj2eMxtqUj64l9tAZJ-xC9DIMSzrJ0kvbGZo5KEfacZvO4QH-UsmH27eUE0GcuiWnwSGqG5l_QDdOa3w2YPB6tZ7w2emWoFek6TgXvrfPhrQXMuj4jEwQqRCBmsG4Z_EreRqjYVDOEpWy0fVxWPRx8uGAM",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Georgina",
+                      "uri": "https://maps.google.com/maps/contrib/111635993882074431628",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUYlPvMt5Oc5zqoQy2oBtrk-Q1igSL636iT76Ne3Z3MBk3OdWf0OA=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEPXK-fvspaWYogE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEPXK-fvspaWYogE!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3kQDiwkypCRwpI6_cwRqvjxNrXSoXrUQ7Ibg4Gyhn5VPM2anOtOCyHGKe4oeVZo2tGTfniYNwtgkDRt4cT2LD4W4ZhJX852tKgHLc99ot4XDUIb2pLKbroJqibAEJwAa8rlZEU3nqbaWouCT67dspVKMvzcDj0Jz2wIYavzVjoX5pdnJnNIbQj33HYz0uCSgO8TUcwXgpURWV5TgS8fkojPid38n1YkQ5_NPXIy6kPZpGGeKTIyZ7NVcY3sKMuYqOjJFIbb2pjCFy3zMYbH5qZxaupTIkCz5AgKh9ZKwCiU4iENR7hVWg2n0VGfsvYOovdQz57X-wUEv7nO03r7hdjK6SAyo2-u9mSkTAMqM4-HV7BPF56_76ViKf9v7ioT2mUpxZmwKo4W0ReFU4lE5d4UNGhm6DjDGyw3PxafHKMxZFkeDX3qvguzLFBFOdOa",
+                  "widthPx": 4032,
+                  "heightPx": 3024,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Alexandre GR",
+                      "uri": "https://maps.google.com/maps/contrib/112590496703238695252",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXvVzxkOpPEiDKC9ubs22mhEVE6Er0AEI4ryIpLbmVnoOC47iM=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCIpKqnwkxc5VNjqgRgCUc0&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCIpKqnwkxc5VNjqgRgCUc0!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3kGjsjXrDn2I6me_q_269fag1UbSFKffFnCYTRbg2iM5jDZwJyIfeLOm83cnyd8QuMdhcl1u0k93PFGPrgD8t1m6Ug74KUQYCF__hB7G2q44a-MKxOvtrmqSGvaE9aQo6tU6BVXdquj35y4Ql2h66PN1wfbeZsjrIi-0ea3UfHR0xbJmjFN-XlvBKLa-fmZoQbQ-PlSSlEb1dBuVLWd4IIurxrqxfiV5n4dWNYB6yBw3XbCEcqTPa1fz24Fnhlux5N-Dy99rCNVco3A0y4OyEhd_GnANThTYARM-llb6EvS97YOE1hmBcOIFuZz5Lh5DjUNj4B8VVxwipsWp3ApTFyx4NrC-WKXyXO8nsKcJYeRxMqTk7eELhOLyoFejccBN2waAE67LpyRQFAmKdL_vuJ-9vi5q46H79K2gnpS7qmutHhereNe6fTDcKC5wA",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Lucas Arias",
+                      "uri": "https://maps.google.com/maps/contrib/103321712919040134195",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX652ldw5Bp-Wl0wP21HZFy57eK2Mk9wzcU7TZuJb2J928pOaLpkQ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhB2dZOTgeORdaQyjvbC9Jib&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB2dZOTgeORdaQyjvbC9Jib!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                },
+                {
+                  "name": "places/ChIJh9Qpx7nKvJURLoDB8VNMen8/photos/AaVGc3lmAxBRYp_GJI166SDB2GDiDoS3qggH2O-lemBPJuHY_4gonVC2CprB44Nn594U2oVMUB0kh4oxigg6bFp6odkk_3SLqhkhqxgJNam3GDGBPgUEeQINd5agb0v7XLYZynZnhEMZN2c52bJO_c90SiQRRk0vYEDpEe7gmuYENziPT-9YyOmRet8fNVljDNFN_tPdsnnJ8AnwKLttvjKr-p35ft_FH4KOTOy1F-s2d1tvZIIkHbA_CGddw25qmM2Q9gNFLn9J5WIWGEc-b0R6qeVv47KS6mFFfIOm-H0N40tx7np5KfrCmQ7CeEdJOooSPqVy9_jHSmRqV_3T74uV98-u-ZUXvjheY0sU5hISbBgqFrg05twYV1jCN9XS68fqnzYfYc1YOrECc7MpDUTrEhNAE9TV0Uluav1IJ9_KvJepsJm37kEENssDb16n6KGF",
+                  "widthPx": 1600,
+                  "heightPx": 1200,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Mauricio Somma",
+                      "uri": "https://maps.google.com/maps/contrib/104915294413172559973",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUi4V_Gh2429w3o1mPHZzyxQTp4xbxzDLpXEL_J6AkOcJJloPZp=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhB7UCXywSWh6e2KuwcKUx_G&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB7UCXywSWh6e2KuwcKUx_G!2e10!4m2!3m1!1s0x95bccab9c729d487:0x7f7a4c53f1c1802e"
+                }
+              ]
+            }
+          },
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0.88,
+          "sources": [
+            {
+              "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "confidence": 0.9
+            }
+          ],
+          "contact": {
+            "website": "https://granbardanzon.com.ar/",
+            "phone": "+54 11 4811-1108"
+          },
+          "warnings": [],
+          "factual_notes": [
+            "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+          ]
+        },
+        "images": {
+          "hero": {
+            "venue_name": "Gran Bar Danzon",
+            "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+            "source_type": "google_places",
+            "rights_hint": "google_places_photo_attribution_required",
+            "rights_risk": "medium",
+            "width": 1600,
+            "height": 1200,
+            "content_length": 0,
+            "shows_space": true,
+            "usable": true,
+            "role": "hero",
+            "risk_flags": [
+              "rights_review_needed",
+              "preferred_resolution"
+            ],
+            "validation_status": "imported_needs_validation",
+            "publication_status": "not_approved_for_publication",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Wide view of a bar interior with extensive floor-to-ceiling wine racks, wine glassware, bar counter with place settings, and warm low-key lighting creating a dark, intimate atmosphere.",
+            "classification": {
+              "shows_space": true,
+              "is_hero_usable": true,
+              "scene": "hero_interior",
+              "atmosphere_signal": "dark_intimate",
+              "quality": "high",
+              "model_used": "MiniMax-M3",
+              "has_identifiable_faces": false
+            }
+          },
+          "candidates": [
+            {
+              "venue_name": "Gran Bar Danzon",
+              "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 1200,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Wide view of a bar interior with extensive floor-to-ceiling wine racks, wine glassware, bar counter with place settings, and warm low-key lighting creating a dark, intimate atmosphere.",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "dark_intimate",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            }
+          ],
+          "has_hero_image": true,
+          "spatial_candidate_count": 1,
+          "product_candidate_count": 0,
+          "warnings": [
+            "medium_rights_risk",
+            "rights_review_needed"
+          ]
+        },
+        "hero_image": {
+          "venue_name": "Gran Bar Danzon",
+          "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_hint": "google_places_photo_attribution_required",
+          "rights_risk": "medium",
+          "width": 1600,
+          "height": 1200,
+          "content_length": 0,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "validation_status": "imported_needs_validation",
+          "publication_status": "not_approved_for_publication",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Wide view of a bar interior with extensive floor-to-ceiling wine racks, wine glassware, bar counter with place settings, and warm low-key lighting creating a dark, intimate atmosphere.",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "dark_intimate",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        },
+        "editorial": {
+          "tagline": "Gran Bar Danzon: intimate bar energy in Retiro",
+          "description": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+          "description_short": "Gran Bar Danzon is a bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.4 stars across 4,427 reviews.",
+          "mood_tags": [
+            "intimate",
+            "late_night",
+            "cinematic",
+            "social"
+          ],
+          "mood_confidence": 0.78,
+          "moments": [
+            "after-work drinks",
+            "late-night plans"
+          ],
+          "warnings": []
+        },
+        "review_count": 4427,
+        "review_count_processed": 0,
+        "pipeline_notes": [
+          "Stage 04 selected image connected. Publication remains not approved.",
+          "Stage 05 editorial enrichment generated locally from Stage 01 factual data and Stage 04 image metadata only."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_stage01_test",
+      "venue_name": "La Biela",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
+      "errors": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "La Biela",
+            "neighborhood": "Recoleta",
+            "type": "cafe",
+            "notes": "Historic cafe seed for Stage 01 extraction."
+          },
+          "name": "La Biela",
+          "city": "Buenos Aires",
+          "place_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+          "address": "Av. Pres. Manuel Quintana 596, C1129 Cdad. Autónoma de Buenos Aires",
+          "neighborhood": "Recoleta",
+          "type": "cafe",
+          "coordinates": {
+            "lat": -34.587884599999995,
+            "lng": -58.3908202
+          },
+          "google_maps_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "google_place_types": [
+            "cafe",
+            "food",
+            "point_of_interest",
+            "establishment"
+          ],
+          "website_url": "https://la-biela.shop/",
+          "hours": "Monday: 8:00 AM – 12:00 AM; Tuesday: 8:00 AM – 12:00 AM; Wednesday: 8:00 AM – 12:00 AM; Thursday: 8:00 AM – 12:00 AM; Friday: 8:00 AM – 1:00 AM; Saturday: 8:00 AM – 1:00 AM; Sunday: 8:00 AM – 12:00 AM",
+          "price_hint": "PRICE_LEVEL_EXPENSIVE",
+          "rating": 4.2,
+          "user_ratings_total": 13184,
+          "price_level": 3,
+          "phone": "+54 11 4804-0449",
+          "business_status": "OPERATIONAL",
+          "operational_status": "operational",
+          "extraction_confidence": 0.9,
+          "extraction_warnings": [],
+          "raw_google_place": {
+            "query": "La Biela Recoleta Buenos Aires",
+            "candidate_count": 1,
+            "place": {
+              "id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+              "types": [
+                "cafe",
+                "food",
+                "point_of_interest",
+                "establishment"
+              ],
+              "nationalPhoneNumber": "011 4804-0449",
+              "internationalPhoneNumber": "+54 11 4804-0449",
+              "formattedAddress": "Av. Pres. Manuel Quintana 596, C1129 Cdad. Autónoma de Buenos Aires",
+              "location": {
+                "latitude": -34.587884599999995,
+                "longitude": -58.3908202
+              },
+              "rating": 4.2,
+              "googleMapsUri": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "websiteUri": "https://la-biela.shop/",
+              "regularOpeningHours": {
+                "openNow": true,
+                "periods": [
+                  {
+                    "open": {
+                      "day": 0,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 1,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 1,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 2,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 2,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 3,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 3,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 4,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 4,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 5,
+                      "hour": 0,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 5,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 6,
+                      "hour": 1,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 6,
+                      "hour": 8,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 0,
+                      "hour": 1,
+                      "minute": 0
+                    }
+                  }
+                ],
+                "weekdayDescriptions": [
+                  "Monday: 8:00 AM – 12:00 AM",
+                  "Tuesday: 8:00 AM – 12:00 AM",
+                  "Wednesday: 8:00 AM – 12:00 AM",
+                  "Thursday: 8:00 AM – 12:00 AM",
+                  "Friday: 8:00 AM – 1:00 AM",
+                  "Saturday: 8:00 AM – 1:00 AM",
+                  "Sunday: 8:00 AM – 12:00 AM"
+                ],
+                "nextCloseTime": "2026-06-07T04:00:00Z"
+              },
+              "businessStatus": "OPERATIONAL",
+              "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+              "userRatingCount": 13184,
+              "displayName": {
+                "text": "La Biela",
+                "languageCode": "en"
+              },
+              "primaryType": "cafe",
+              "photos": [
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3nxLP6ibhknnJMQSwrr3K3WqVQyihOhO7Oi_N07VkKhKcDHpZSguCaJsbMpAgnQcAy_GdcioodvNvMx73lGXD_nDManxciYKWPdOkCzxHP1A7l1F3VapePM1PjedxXlmpfDyf52XXuBtFUdgAEknkbwXlOOICTWobGVe6VhkgQjExD1-ZCYHHGecrQN4R6MsUbN_BPuTsFCMwFJ-gbXxCH994GuqskY67VfzErqWq51gj9tZB4xITSQRkKP23CHclMVgp6NNVH_S7tNOUARnbmr_w14Opr3Dw6FfFwPEeV6JkfAypnFQ_oqPIF3HxY5_ynaJxVclzHxUMgiKHxlfz1FUiF0dCADgny_qu10Y2k5ApcBYsKoGdvBUuNGB0z3Zmjg4FFdUylpiVqmxvZXjBNMtwYSq9hX06E0azlgO1FT2y0wugvTI-U90NxYI76M",
+                  "widthPx": 2322,
+                  "heightPx": 1305,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Gustavo. A",
+                      "uri": "https://maps.google.com/maps/contrib/117181831820458146672",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIPLKt03BrCKXNoHMO0vU4Io7x8NDUDOnrFYWZkZwEW1NDKh8vt=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDENKdpvDPwzv3_f7v4xyvo&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDENKdpvDPwzv3_f7v4xyvo!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3n176JGqnbjkP8L5luGg-xe6ELIzWLbIcC-jL66nixnNhfuWHyrGOEEhTr26V8c_CW4f2cbjhn8MwWSBbESZGDp9IiGkD3uJEQbHaa_Qwska_EwSLp_5cYc5OlOMOnnu5HYUFnjZByRn4B9141Ku_k2z6vayGZ8Zp_eu1aHeTNE0GoA629wg2ijJXEfhnxEi6pQ7jKIXaZJa98qpTqMJ6I5MkOuKvP1EDhphD76KmTxAqhctWwfuruHG1JVB01r17oWQPrPRaKGFYYsFBOsKDdiFdyMvooomykgvTVmWNVN3ew7vVobaZt5DPVQgjbwGC4XdPBVb0CYJPa8zhlqJh5FmbNPf9c9kaqU74D-ow0szI-xTSN_TltpdXSu5dvSvXGLbh3RHYRSOHGe_fx6WJH6Z8rMXj4P87lxlmyWqbh6GPmM",
+                  "widthPx": 2039,
+                  "heightPx": 1529,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Gustavo. A",
+                      "uri": "https://maps.google.com/maps/contrib/117181831820458146672",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIPLKt03BrCKXNoHMO0vU4Io7x8NDUDOnrFYWZkZwEW1NDKh8vt=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID2yInL0gE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID2yInL0gE!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3nClELd5L2RrMSGLpmh8i0zB_SsGWbd6wgjyzAoW8v9o9sHybV0Rs3Zb5-3n6elYy_b8qRT9lCifeCLaN2AcNOLUcs7yuOC115IJ4pI5vjIqiwdvq0TZprnuICB4Vxf5HuBURjth8TvSQYB6Mi95YeMrmsP1vqCidm3RZkOju5eumFXwNK0HNjuMa1dvR-BrgonMJVFZFwFUrVbaHHbtZhER_c5HMmMTTtM8nAcKF4uRWg7XLN6y4ohxZtAtoOJuBwravhsmkeGS_5iGSoCxD_5Bm7gKZOWkW3OLZw4w9y6U_E8W-zo9GiXHGv47LPcdq8DSggGfxLWf0Mwbikmj3Ps9a9POB7lqvZ2IX7s5j29JeQJfWcPGouALXwhw-zZ-bnu_4krat0f_YXYxks5tC7YEfzb_iRbH_rb0RFKhXc6w-bqSPdBEjlIrk0jxn50",
+                  "widthPx": 3060,
+                  "heightPx": 4080,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Nico las",
+                      "uri": "https://maps.google.com/maps/contrib/113367169829758369799",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVIVii28MioNfqXzA8ChyBscQ0mdvnbYMjSEhjdXSVZlqC3x5ib=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDvAMIYVZgouSDYsHqIpJ31&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvAMIYVZgouSDYsHqIpJ31!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3nFqo7WzHAgf_hef5NF_x-sEGP2j61E2_piwLYlDkVMA5SdDpph98gSAiRAdyhZp2RTvGgr5M-wiQDoA26UxIyfJ3JheoIUk2MBk674QbSORwia3yJe3gpwDgOhWJixr55LHAemEyplLn-jWODn8Ald7Vb2p6UAIOurwBQ4Dp5Hty0P2gs73QQrO49OIbuIE_8-dRW4dRQnZ3jriAQrvygGizgXDnnvJ07H0DOIpMmWCTFCtpTY9QO-CGeotouKRcRq8QCuJUZyhDe9IDQE4_A2faXTb8TMcB3NaKv7TXMuNBBh4hdpCDhertjuSic71J_344GqSgz4MdNIOWcbQoEGqFWxiuFG87fEzDlRYPgmXp2VXGGLZGGjKMi7CfklxMnhuTBodv0bHEmKjKAqxonEbFzWx11xFrlW2r0xl-GlN4-iZOjMH8thBVeO6Q",
+                  "widthPx": 4032,
+                  "heightPx": 3024,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Tato Prinsi",
+                      "uri": "https://maps.google.com/maps/contrib/108592850534768083683",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVAtUwNIqwe4jYz3Gf06Nj6Zu2Uwxv9Disy6qIpndrfdsUr98w=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA6PxPG0udVLpv6MmKF0pXG&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA6PxPG0udVLpv6MmKF0pXG!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3nC_isAKtXyXZRlBmWbPR1kuFTtA8PknaoTUKBQ8y-sjB4jVPhFh6ZYmVdT6q4G_Wl9MA0qk1tSTzKcTXo4oOHfKnb0uW_yRAIJwwUUxD9vNYGyDzdK0gM6e-RHmSR5WoqH_OUWkd3HIuoxaE5n7mLDl2o6Tc77klbxQqqsIH5MC8mPPj5ytDOSh5VIXfNsCKUtF5EZs6SDPgv0a1prE9eaDmU5A8_LVHqlhmlrese0ljCnKiwGVDaaJK84m6Uyc3Y-LcUrZYZnxyYl3kSZJodLzxypYNKxRwmK4IVoiZvhVkC72idsQMaG3MCziBX9zJ2kF2urd_Ol8PdmXPBsXeYmpWkFNuL9jt4KEmSdymix3YqGNZEh-51JR9cUdQ-fn-XvvGOhq41H6aOAObcBEmwMF8WcW1Dxv2AoPauoDc4461Ioi-Dok-4JhvjpzyBj",
+                  "widthPx": 3000,
+                  "heightPx": 4000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Lorena Russo",
+                      "uri": "https://maps.google.com/maps/contrib/108273878875137283948",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWX-D_GIHNp-zf5ityV7uVU-gO1HnxOHPeftbr_rptuhAhSER6zRA=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDodoNznkplUQvrMQP-06Kt&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDodoNznkplUQvrMQP-06Kt!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3nvehu-K3YkJKX_23z5rjZKzK4vV4Uk2yMufAt2dCMd0s3xxspgs8C9vWuFve9AZOjSxZHowffZ59nB9I7ev_Y80q8oQI2X9wlNbyhwiQuEDBAuY0CRNad7qsf4arUjKJLUhuAUc_HyLN7VnDezrLdLnW835DbMYDz04DKVT7a_fQ7twZ_Y1ZteLbAbE8EYmc1ui39qYYRxwxlI27G1kyPvn7DDdS5qv9g-4o1EHNl6yK4_bTpPctc9V_xmwZxNjmEsBjI-QzaCI9RUkulXPlhB1wPw7Y8coSw1PEx71GDVUmOeOsofYDNSGfTgMF-QnEwAWh4zGiavcVlHiLX-OiuPemLN08MlU96FhN1he9RgchceKAAcV3K1Oa1RLpBZh7-B8ZXTJmC-9t7eFMacYeI0h5lG-88dY5pTPNWNv5sEvcDK3RyownanaMcLqgYB",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Olga Lucia Restrepo",
+                      "uri": "https://maps.google.com/maps/contrib/108973266456810016711",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJSa3x-WKy7d4BX2ylOas8nIeWebhC_t8scwqElkQj5UFTO6w=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBs7gj1SrWO8k9XNgWO5-Il&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBs7gj1SrWO8k9XNgWO5-Il!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3m6wgPJYW_rQuqp879_1U3zJ2ProzcCXVrLrPVUnhulPQrNJCI70XP4G3zN2RHLiUXWE5DL-vDoOzGb3Osgwy9v7d8qaYk6e8KRdgxe8vAoKxENy4b6RZ19amb0g0PUPt1uNx6KSJx97C_QkISL0ZTRdU5wGh7zapX_BkX9Fjz89zv6gZZNrSj4PZDMKAftLErQf-p1kbFwnb6ICdLb2OgFkhhderCRZAUDNHQl2T6OCxqswZdpMBQUVDfn6bbFeJZtxQVMY5D4WQHFWhVDbd1JRBHTlC33fJQRpWGZhSp095oAFknpOY1roViNHN_N2bUSUkUXwwcLPfHaIdMKPf6-dDVH8z4Z4Athr-16-hkXNf1OMoVP3ZTcuJtS5kPzXPINJkZNpIdYsuFXRSpMN1IjTSfCkFaL5nTFW88W92HiZJQ5TdE6dEuhuJlH2Fx0",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Jonathan Jurado",
+                      "uri": "https://maps.google.com/maps/contrib/110747477293715473694",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUWc6dMe_VL-sq1b5jJp_HY1VMg8F7HqvD4G5eoAULibOsAF3CT=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhANVxY8fb7NtzWfAzQNJdcL&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhANVxY8fb7NtzWfAzQNJdcL!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3lTMFwtArHQSyif_U6Fnt1in5YZYwZMaUBSFiKK3fVzrepFWSaJnb_2UyLWku481ePkCAX8mOKjY1efAvHa7KHQe1NJkDg-c0ftofwUUBVveJZTpnz9ZIXoXunGi0y2rljkWv0fLxAemQYdZm4WqFEwKCxCynb0tNFtqlMjWiS96OSXWWwdDDlNuYOI7QG-gOyZqymsbl1B5hajH3m24AzN87xOdG_CTnUV7Aa--s6RjFgCCN7GpghWYcm_3jfj21esByz2F7RRgKyUaD489GAOrf8Z9yiE-uZfkeMvf2hGPhmbTqscs0XBy2WJdOhBe-Bq5TDvm2bPTAkT0AdYugl2ugrF28UsT12ZKZcn3NlLnASNeMJmZj41tZpua9bpUKgioy1ayjDUArEyhXTrbh3osOl_xHfpMWIy169zpCrkic8wYg8jg_5Dw0-ohDBT",
+                  "widthPx": 4032,
+                  "heightPx": 3024,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Olivia Tam",
+                      "uri": "https://maps.google.com/maps/contrib/114801940150654999735",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUmGjQmdVdFwX5yyFaCokqZ9wiYxRhZvtBUggv0zZ9sgPUs1E6c=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCdp7TkJy7NfjgxgAPu145w&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCdp7TkJy7NfjgxgAPu145w!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3n7mhpO_L8mYO1GK2dcdDlfCqdoAzyovhghLhcsEUDpmI9FF5BGXkJRziNY2lblJd-G7jFaD8zjtRsTVHZzwZ4dd3AmrU-OVj9rMSfAj5VSKyB0wlvW4HSqMYR5NXzrlVrp7kLHIWcDW1aGMD551bcVIQK1EG3iOQ5AHhWxT-_m4Y9mVoh0jTXBHbcIY627cpUgaG1ZZ9Sv8hMrNR3NjUxsRvRAxo2qJ4IQPw6MKVzzLRi2J1gElvyUxC1Txw9wb-2nCvroWTiTWDHXuc5JiAtFzt-oUGM610V2Ns4ic8EmMV0N9a0dsA_KIfoUX-mFDlcPtMk4LfG4uEKkI68qmhuuMDMjfkYC4067Y7Swf2VcGjZShOb5xEcyoFGsclSGVD969hZxx81WxbT8a2RvKqkOw7OfZ86U_lfdNK4EfhnuswzXDx5NG_tjZhIgM6Wq",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Leonardo Figueiró",
+                      "uri": "https://maps.google.com/maps/contrib/110336973991408888919",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIIV7Npmth41uE2Exf6Kgb08ouvlwIoME4lXWnppBf6_s3TcQ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCklKJbYqZDFFeQuN3s3jvJ&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCklKJbYqZDFFeQuN3s3jvJ!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                },
+                {
+                  "name": "places/ChIJPXhNCKPKvJUREtJrc0ejdKs/photos/AaVGc3nu-lbeQ5jic3pG-U8ixFTZhhOpYUa1ek4uPTem4krcfSbiixsg62kZYq7Mo26XoOzO8flK6lJkw-yRxEW2zEngrMbyjYbYa8BXtw5Kyqk7N3tR-4Ec3tWne0ibKBzuEwe6nvZtk3bHW_CvA-b1LcXxcKDvvZVEz2Z0w18QQ6haDsOdfoSfX5latiQorrxZ4Sil5uEjWIi_7bPR5-cezv5vuc8ku5WJSN_A6-29uz48-m2bML2uaD6kWAfHyDcBKavpqa0MmfHYVhbPGBuO1ucNhs_nAm939-J-aIH-1_wGH5wghtwuNSpjVNZn9B59-1zRU1dW1Fv9LqQJGU_PzHgFKUw_U65QAmYwhiS_1dSSxqu0LglWSyESTieBiizeIHp5mgmqvg8KGGDFpsq9o1USiLL67EPoP1lo8kISYUFl_rwt6KS3M1vz8rnGglYU",
+                  "widthPx": 4253,
+                  "heightPx": 3481,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Fernanda Xavier",
+                      "uri": "https://maps.google.com/maps/contrib/110289151549400149798",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL2anpuOYzkFqZsY3RGqwUQuv2Hgesi1m_yGccIZon_rSxSfg=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAi6wTynMKktE16SJHf58n9&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAi6wTynMKktE16SJHf58n9!2e10!4m2!3m1!1s0x95bccaa3084d783d:0xab74a347736bd212"
+                }
+              ]
+            }
+          },
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0.88,
+          "sources": [
+            {
+              "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "confidence": 0.9
+            }
+          ],
+          "contact": {
+            "website": "https://la-biela.shop/",
+            "phone": "+54 11 4804-0449"
+          },
+          "warnings": [],
+          "factual_notes": [
+            "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+          ]
+        },
+        "images": {
+          "hero": {
+            "venue_name": "La Biela",
+            "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+            "source_type": "google_places",
+            "rights_hint": "google_places_photo_attribution_required",
+            "rights_risk": "medium",
+            "width": 1200,
+            "height": 1600,
+            "content_length": 0,
+            "shows_space": true,
+            "usable": true,
+            "role": "hero",
+            "risk_flags": [
+              "rights_review_needed",
+              "preferred_resolution"
+            ],
+            "validation_status": "imported_needs_validation",
+            "publication_status": "not_approved_for_publication",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior shot of 'La Biela' cafe facade with green awning, ornate green architecture, statues of tango figures by a red 'Correo Argentino' mailbox, and outdoor seating visible.",
+            "classification": {
+              "shows_space": true,
+              "is_hero_usable": true,
+              "scene": "hero_exterior",
+              "atmosphere_signal": "warm_cozy",
+              "quality": "high",
+              "model_used": "MiniMax-M3",
+              "has_identifiable_faces": false
+            }
+          },
+          "candidates": [
+            {
+              "venue_name": "La Biela",
+              "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1200,
+              "height": 1600,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior shot of 'La Biela' cafe facade with green awning, ornate green architecture, statues of tango figures by a red 'Correo Argentino' mailbox, and outdoor seating visible.",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            }
+          ],
+          "has_hero_image": true,
+          "spatial_candidate_count": 1,
+          "product_candidate_count": 0,
+          "warnings": [
+            "medium_rights_risk",
+            "rights_review_needed"
+          ]
+        },
+        "hero_image": {
+          "venue_name": "La Biela",
+          "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_hint": "google_places_photo_attribution_required",
+          "rights_risk": "medium",
+          "width": 1200,
+          "height": 1600,
+          "content_length": 0,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "validation_status": "imported_needs_validation",
+          "publication_status": "not_approved_for_publication",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior shot of 'La Biela' cafe facade with green awning, ornate green architecture, statues of tango figures by a red 'Correo Argentino' mailbox, and outdoor seating visible.",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_exterior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        },
+        "editorial": {
+          "tagline": "La Biela: warm cafe character in Recoleta",
+          "description": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+          "description_short": "La Biela is a cafe in Recoleta with a warm, cozy atmosphere. The selected exterior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 13,184 reviews.",
+          "mood_tags": [
+            "warm",
+            "intimate",
+            "historic"
+          ],
+          "mood_confidence": 0.78,
+          "moments": [
+            "afternoon coffee",
+            "classic city stop"
+          ],
+          "warnings": []
+        },
+        "review_count": 13184,
+        "review_count_processed": 0,
+        "pipeline_notes": [
+          "Stage 04 selected image connected. Publication remains not approved.",
+          "Stage 05 editorial enrichment generated locally from Stage 01 factual data and Stage 04 image metadata only."
+        ]
+      }
+    },
+    {
+      "batch_id": "batch_003_stage01_test",
+      "venue_name": "Floreria Atlántico",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
+      "errors": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "venue": {
+        "raw": {
+          "input": {
+            "name": "Florería Atlántico",
+            "neighborhood": "Retiro",
+            "type": "cocktail_bar",
+            "notes": "Cocktail bar seed for Stage 01 extraction."
+          },
+          "name": "Floreria Atlántico",
+          "city": "Buenos Aires",
+          "place_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+          "address": "Arroyo 872, C1007 Cdad. Autónoma de Buenos Aires",
+          "neighborhood": "Retiro",
+          "type": "cocktail_bar",
+          "coordinates": {
+            "lat": -34.5915325,
+            "lng": -58.3797127
+          },
+          "google_maps_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "google_place_types": [
+            "cocktail_bar",
+            "bar",
+            "point_of_interest",
+            "establishment"
+          ],
+          "website_url": "http://floreriaatlantico.com.ar/",
+          "hours": "Monday: 11:00 AM – 1:30 AM; Tuesday: 11:00 AM – 1:30 AM; Wednesday: 11:00 AM – 1:30 AM; Thursday: 11:00 AM – 1:30 AM; Friday: 11:00 AM – 2:00 AM; Saturday: 4:00 PM – 2:00 AM; Sunday: 4:00 PM – 1:30 AM",
+          "price_hint": "PRICE_LEVEL_EXPENSIVE",
+          "rating": 4.2,
+          "user_ratings_total": 7842,
+          "price_level": 3,
+          "phone": "+54 11 3984-7849",
+          "business_status": "OPERATIONAL",
+          "operational_status": "operational",
+          "extraction_confidence": 0.9,
+          "extraction_warnings": [],
+          "raw_google_place": {
+            "query": "Florería Atlántico Retiro Buenos Aires",
+            "candidate_count": 1,
+            "place": {
+              "id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+              "types": [
+                "cocktail_bar",
+                "bar",
+                "point_of_interest",
+                "establishment"
+              ],
+              "nationalPhoneNumber": "011 3984-7849",
+              "internationalPhoneNumber": "+54 11 3984-7849",
+              "formattedAddress": "Arroyo 872, C1007 Cdad. Autónoma de Buenos Aires",
+              "location": {
+                "latitude": -34.5915325,
+                "longitude": -58.3797127
+              },
+              "rating": 4.2,
+              "googleMapsUri": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "websiteUri": "http://floreriaatlantico.com.ar/",
+              "regularOpeningHours": {
+                "openNow": true,
+                "periods": [
+                  {
+                    "open": {
+                      "day": 0,
+                      "hour": 16,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 1,
+                      "hour": 1,
+                      "minute": 30
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 1,
+                      "hour": 11,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 2,
+                      "hour": 1,
+                      "minute": 30
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 2,
+                      "hour": 11,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 3,
+                      "hour": 1,
+                      "minute": 30
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 3,
+                      "hour": 11,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 4,
+                      "hour": 1,
+                      "minute": 30
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 4,
+                      "hour": 11,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 5,
+                      "hour": 1,
+                      "minute": 30
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 5,
+                      "hour": 11,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 6,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  },
+                  {
+                    "open": {
+                      "day": 6,
+                      "hour": 16,
+                      "minute": 0
+                    },
+                    "close": {
+                      "day": 0,
+                      "hour": 2,
+                      "minute": 0
+                    }
+                  }
+                ],
+                "weekdayDescriptions": [
+                  "Monday: 11:00 AM – 1:30 AM",
+                  "Tuesday: 11:00 AM – 1:30 AM",
+                  "Wednesday: 11:00 AM – 1:30 AM",
+                  "Thursday: 11:00 AM – 1:30 AM",
+                  "Friday: 11:00 AM – 2:00 AM",
+                  "Saturday: 4:00 PM – 2:00 AM",
+                  "Sunday: 4:00 PM – 1:30 AM"
+                ],
+                "nextCloseTime": "2026-06-07T05:00:00Z"
+              },
+              "businessStatus": "OPERATIONAL",
+              "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+              "userRatingCount": 7842,
+              "displayName": {
+                "text": "Floreria Atlántico",
+                "languageCode": "en"
+              },
+              "primaryType": "cocktail_bar",
+              "photos": [
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3n28M1gI_h7GqItU0nXchRoF8iTSL-vFiboReO8wWWQJXqbyWkEYlHjIZajrxluanC4D_CX_wry8NRJZQJ86oz4a57nC8nyUP1PTmfuBKg88WzYoGGsBpgHSOHIVTvhLB6RkscuuIy_ewwK-GHhA37i-yS22ws0_gPvcPDXaKgtpTSwewxIlvNBVvzS6wReIN6Ow3fh2GlkXn-J6IqZ0Xv8uM-wg0JeDTo2_LOzNZgSL40DSR91jLYknhOR8u1J3TBJhd5JjLVzwRt2vzlkGP5_TQK3-OII5OmpZU0moRCI44GEhgwfpLIKqW1OxP69UpwsCl3CyjN5hQLXw8w2aBuuNbPVlsTpO1wDl571_uUzNH4eniIA1fRGyWWHk6v516BuAQGXVfo21lamIfGgV9ApsCXTnVWI0HJOHmrHF8EDBPE",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Katherine Fredes",
+                      "uri": "https://maps.google.com/maps/contrib/106559157021683357216",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXrq-mDbJZ8p6ZSRo27YlAHOr-YVW41uRBUhPBqo4mS9rupOGFF=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEOTImYqlxe73zgE&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEOTImYqlxe73zgE!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3mBRxhx3K4LZPBXwk4zF4yR6579WORL0uuCtkjYV3RVsD3Rw0_ixVuBYHsQTg5UatouitPzrmEYYaR9coOqSz-vgX7jrT6X4WVmXizUe20F7ZFMZ6UrytvU436CLJRezYoadctZMCinP-E4I9H3WY6B5X-5ZBa0tIYFASYg0VV6em_HEgITnBCFmGJ6rMhW-I22HPd2fn5y-M_DX1A2NUQvsWVDbcU4YZhxKbTDlew0DNs_d7Ug02hj5SEmCDU-y9Xt77hrcd1WiZRqA5jHqhtGkLRAADOYh6ceZJ34tBYeofxWeHEb-VrP9CuuZekS2PZwAxtpGB0QNN9_-yRUVGdmtPf63Xe7ytbj2l2e0GOqR2zsIL8JLdbEMQf2_NNhshvQBW3_A6IY3ahADYReT34mMClCN_wgT0szc6rBtz8JQTpQ_pOVXDMMO_rI_YaP",
+                  "widthPx": 3600,
+                  "heightPx": 4800,
+                  "authorAttributions": [
+                    {
+                      "displayName": "John Singh",
+                      "uri": "https://maps.google.com/maps/contrib/104101290405836694491",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIq9im6zDRD02472RGKSkDHwPUGpF5yD2jUAHMi9OCJB3KHBgM=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDvdWTV2M7cyai7jsHkInYC&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvdWTV2M7cyai7jsHkInYC!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3leMmE6nuymuiz7ab33QerydhwK5hw2nBSuNLhzt5PrEZKl--yKnD0Nf-b0gCGkEg59w1JoqiA3mRVXvbVi8uJWbwvcs7QNMg7xnofCpmsLQXRIeq_SW4vvM4K1TS1I2_OrzWQr5HPgcJXsgZRpRXTwMoG1q1YnCQRQZm2JoHdwvt84j_fjdFDXGS0Zwlcq-sm_QmLtZqqryexS6nqqluEFmADh7cv09VzeHJhe_CEIG7hKKCni83dDFzFp0Lp17bXjpxFvFKeoOU1TOTmOh_ATB49e8XpIhV21GbQT1K3YwlGwyD_d3sm28Mhup5-aI7m_KblxgZPxamZPomlO6m10PDA-skPdihiOjU4fsjc3gyh4gOFrfGhwCvl54LyhGLKHmWJZ2Yy3ZzMU72O_ZzqQI8yvJ6cdXyLYS-kSpqe479vLVF9qFKozNG7lDIgb",
+                  "widthPx": 4032,
+                  "heightPx": 3024,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Adolfo Díaz",
+                      "uri": "https://maps.google.com/maps/contrib/111189609840854419220",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXIjjQQgHOll3sx1LJXACI7q2a3hqKjvQixNXwsix3E1CKyfvL7=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDSlWw_KVrjHoEF36YZdFAu&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDSlWw_KVrjHoEF36YZdFAu!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3kn-f4LKyNpXXNLZA5jx7UPMWcRh-4Lg_e8Yq2i0lRgKfczU-9XqL_fozTNMxWhuSMLqU6NDvLfF0LBVhuqhYjEa4v-_jB1NFTSXL57AE_uyTm2vMdfhLiEgeYacEeZkJLZVDFruuC-XJdm3fmnTAMpDzLb4ApHmkljLSL5WrZCgN9JWJEIYrrYDNBNvOPATX1PtN7ZfYLcKbJbg1oQBzfssOOMnpiE4YgaXPCuxY2Q3Mtk9Iq8TSqpP-hXIcjsmR-4km2VApsK61nSc0vTtJvEbjUyS3IZS7RkoocHVxtEocZa4bM0Eq9Xpw_n16OmSz3tRce0oeb5QFlW-0WErMc5IGk2M5dhJz2gxWvZ5zdKuC_xXK_KOLWQi6qAO_9rk3uyAkbVGAmNmp0O5nqXsOYsKk_IGALPDR5R03XscwhSqF0FxC4KP7aw-alymnWQ",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "ivi rojas",
+                      "uri": "https://maps.google.com/maps/contrib/106352604933611708924",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKFaJyO9MH3dVXEfrzEH4OoEk3DqVnBOkEUZSl3uECNRYBFcg=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhD2yeTwwLZYW663gSpQlRuq&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD2yeTwwLZYW663gSpQlRuq!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3kxwX38glRViXGHa2bDdUi0oP2rTe5jLheiaSRYdS0To3KYgUsSdkfZ_YDuDX8mrl6zAJxmypZIYEPtVhJ5ya0FBW1sad_m_1L42GVwrnXmk5HGwxfonKrC5uilU3SR9ZZ0riTgSNpiAdzpj0IuYz79Zu0AYNHALXt3mlMu_Ust1Uj2zEHCP1_86RHkdqFxZT0rUjHNvpeIcsnQABvEUpKeEbwMc_MyHjOA1UtymxcxEiUcUX2ukglVl8roPhIVJ9xm-Al49r78w9VkuUh5IKmQeVJ7-2vOAswXtSWhLoAonXD7GRmtmyH_fsj5_zqdxMKVoe7__E3W4sYJraOcRgXAspPyai4-CURlEAl5Qo7_Y_yLWSz07lLDNKy46rGclFrv5YPyPbMuFFKJ9DgInbzvOIixCvgxtYNCHwOgZA8M-UePYaEuVxb_HPSD4QQv",
+                  "widthPx": 4000,
+                  "heightPx": 3000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Michael Wilson",
+                      "uri": "https://maps.google.com/maps/contrib/101909243554091330000",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVcLAJx5e-6zy8qP0h68aoQ7k6B2BAOQM2ETebVg39dInmZSkY61g=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDwONBv5ZQ-egWVNGxIqFWD&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDwONBv5ZQ-egWVNGxIqFWD!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3ne1nxMmW0yHEpgcohvF6lqQbnFIab0AKwMVloh-pz-NA2E6OOMwBQsIOwXeojCTyV5VQuP9kL8Y-bCzrc0zNPRFLqLDdo3hzRP8Rqy6TI9P6KOf5gRQqVX4RrEu6AwPJDGUOCMc5TuxvGpEQHyKExKXAPEAHFLQti857zHNeJmRDvE5DCff0t0FLoPL47VlFxJ6sC7MT8utPE8_iVcEZPBOhgrceZBncyBMGurOmO340NxmNyggkYjTGGJOhNX0i6SVZL5mUBxeor-f9YN02PLCy22jelL0MWUDsg2xxkkLHxWwzDYZ0r4EHKjm0c_Aams8p_XhYV5_svRMS9XNPBP5ZxTcSw9DmDpvIp1IP5AUnZ2DBoWr5NsiUtD5aZcdSkXen4EJKPpo5yziDueNaNeSN7ME3qrWyErOr7isfI_sINgbSUB43GatAb4ZQ",
+                  "widthPx": 3024,
+                  "heightPx": 4032,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Romulo Isoppo",
+                      "uri": "https://maps.google.com/maps/contrib/112293241696895333944",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXlu1MJqSGn9nLtADfavr8Oflg7I84OlEvhqn3xAk_J69XyU8kF=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBfPryeIeQOPoW_4Cz8z3Hj&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBfPryeIeQOPoW_4Cz8z3Hj!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3kO6mCWBDV-2zGFohwcAokHOCHvbSCRmGesLnK2-6RWcl1Dd7Lshh4c_cSJaH6MyCttBuYEIAUf_bO_sehu07754K9VkaQI9T4vaVEWx2l4jMiu0etv_SxuYPCgXM3ui_PDcCv_CGLpLgN3ez7-Ysx5poU4IkXL09gW0JmeB1HVgI6wVV3o6ZUiBzc4cymqEthxoNfHGWTAX3tK5qNiLAQ8So_yUHfnhIdV3p3edLfT0EMKmdouAO-_Hb9aj9jvaRDgTkxHuZRbm5iW4IVhBnq_KVi85r1iWJ-rhw9pKfK2p0Usj_9PYKoaLlBrV9GZ_YH15oOLWYb3iV9y0l2ZFebBoGB0p3fQtKVPxD1BK4MVKLsG3Ej4yya8AwVVaKcouL1sFcRfwVsi6H8dsgXm1y15UV88pUM1nIHcMC0y2spGjWxOy61FXokB9NNOjQWx",
+                  "widthPx": 4032,
+                  "heightPx": 3024,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Fernando",
+                      "uri": "https://maps.google.com/maps/contrib/105949177499577699678",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWKXzIPl7oOKNsVBOCdsrreDDTHfpBO0uIsfKHnKJhNjSoIrwQ=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhASNzlooWiC-F1PBtaSzaDy&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhASNzlooWiC-F1PBtaSzaDy!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3mSkzhT8Qe95xqh9oCK2FGStTjwKrCGQ6PV0Lo-MytylxGrbslvNMtvhy_AKg-ZdwUo0XwpqyaC8EcsGatwCn8doqBELggRjWeUzjA2mv4DlPU7rm-b6oQQF81FPemXeteWt8zMALX4sk2uTpXqgtFk-kwuSen4ulpX3vTJMb3_9Q_9cYh705dGpkCXLD8Pj9c35fGLSBCOXLmjS456TQKzNBCp0ywlDOQxOLJvuG2NyPysdL70VBD4WfpHrY9bkzp_CmluOetZDRtjAa2B9Jvwm6yPeGMSRankKQhaUk-oN8JNNvnZmypm9XjDaI8mJE9vTpYFhrd88WnIxbLqhvIJcVjDja78jH8dGY8asW9BPCK7O1oRHJUOdLhBdZI6Sy9WZ3PW5qv1fOMQXXVJdAbeOHcGSgCrXhFxinh7Zx2OQdbsKxBzsN1UbRoXrIex",
+                  "widthPx": 3600,
+                  "heightPx": 4800,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Zoe Gupta",
+                      "uri": "https://maps.google.com/maps/contrib/103409716290600060768",
+                      "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ73406avAaWG1nv_KirlcUjG4Z3TJIaIOY8G5Fbdao95P7xA=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCpJg7tV7kGP-H-ds-s_Aws&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCpJg7tV7kGP-H-ds-s_Aws!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3m83p0I82ImR6Axq_XkRYJDk7H8zip7auLHVntdtSMt56JNDqdeDWXotrlodbrRmvG87sAjAQae6mDKb1hiGARRRbF_lXrrOGDYLAQGU7Kj9GKInrIK--pcRLu48P3mPKrIUCTv420BRCUUFeRGNOeEdaUlg0EWPT6lfZQBKhu0rRJn_ich_fONv7kgw1168ltTOtSh2HOZArEpod8zgRaf05Eu3C0V0LmotO-DYlO_n3dIVZfRuDs3JfQwLOisTS4Gg8Hpsful3MXLY9rHN8PBZsq0DlPzo_2CSSRB7p77sYQj6hGkyzazpTZck7CWmd0rVisBTXhzQTXITX8_3sxf8oV5bohxmJ6u51sGLfyDKRPIVV-Z5IW4hzoEHDuS4OQaWFSl82Bd9WXfe-3MxDXOu6BgoKSV0TImDcmOZRCASRkV2poR6FYgDD5oyN1X",
+                  "widthPx": 3000,
+                  "heightPx": 4000,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Lucy Villegas",
+                      "uri": "https://maps.google.com/maps/contrib/107404701293017108489",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWO8bUlaELaTybYw5cSnGmJ_FhJNg-lgWTduFNrAmnCN_0ALIQi9A=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDEWfRX8886FqP6gFNcNtQw&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDEWfRX8886FqP6gFNcNtQw!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                },
+                {
+                  "name": "places/ChIJJY8xLrHKvJURGgoMqdg8pXE/photos/AaVGc3m2tzyVKQcsE72ez-0RVTtxtiFTr1ys-0R_EJvi3YyOEHn-ZYg8OewcRemdxs7CwW4mvWkhno2T3LP88U8fdUbqlZG14SjPnGXObGmU89K4DVFUFd4chqevbmSiyxfSekODDz98jIYn4ZBJ029Gqa5V3iNJkcC44lCoXVZZ_WbZxBWsP1K99uQzWeT__6pVREPubXtxBp4eZ5DPfVxRRfrqelN4s-wGKcozwwba7808xuD9o7DbAT3E0OkT9_a7iEKp6yN2tFemEMKOSs4rYGaC7LHcjmR9dycrTprxbXgmxkcpODB0NYSjl6h4_p_rO4Y5FNpxV3HtnNVlQGESQu-nbG9kZ7kKlj9eTIpNBJaFZmk5zIpSoNgzoqTONoxwywItblGnW69qPLK2vTY8XE5_9X7ytjDJXoiYbU2IvnsOCA",
+                  "widthPx": 3088,
+                  "heightPx": 3088,
+                  "authorAttributions": [
+                    {
+                      "displayName": "Isis Lari Sucaria",
+                      "uri": "https://maps.google.com/maps/contrib/103450326071831964003",
+                      "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWJMotdsTDVaS3KIVizug1Vz2j7aMePXspsMBaEE0Buw21o_rk_8A=s100-p-k-no-mo"
+                    }
+                  ],
+                  "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDu4Z_eAg&hl=en&gl=AR",
+                  "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDu4Z_eAg!2e10!4m2!3m1!1s0x95bccab12e318f25:0x71a53cd8a90c0a1a"
+                }
+              ]
+            }
+          },
+          "raw_reviews": []
+        },
+        "evidence": {
+          "confidence": 0.88,
+          "sources": [
+            {
+              "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_type": "google_places",
+              "confidence": 0.9
+            }
+          ],
+          "contact": {
+            "website": "http://floreriaatlantico.com.ar/",
+            "phone": "+54 11 3984-7849"
+          },
+          "warnings": [],
+          "factual_notes": [
+            "evidence_confidence:0.88 - high Stage 01 match confidence; maps address and coordinates present; official website present; substantial Google review volume; Stage 04 usable hero metadata present; high-quality selected image"
+          ]
+        },
+        "images": {
+          "hero": {
+            "venue_name": "Floreria Atlántico",
+            "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+            "source_type": "google_places",
+            "rights_hint": "google_places_photo_attribution_required",
+            "rights_risk": "medium",
+            "width": 1600,
+            "height": 1200,
+            "content_length": 0,
+            "shows_space": true,
+            "usable": true,
+            "role": "hero",
+            "risk_flags": [
+              "rights_review_needed",
+              "preferred_resolution"
+            ],
+            "validation_status": "imported_needs_validation",
+            "publication_status": "not_approved_for_publication",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Well-lit bar interior with extensive liquor shelves, wine fridge, glassware, and potted plants on a wooden counter, conveying a warm, intimate speakeasy atmosphere.",
+            "classification": {
+              "shows_space": true,
+              "is_hero_usable": true,
+              "scene": "hero_interior",
+              "atmosphere_signal": "dark_intimate",
+              "quality": "high",
+              "model_used": "MiniMax-M3",
+              "has_identifiable_faces": false
+            }
+          },
+          "candidates": [
+            {
+              "venue_name": "Floreria Atlántico",
+              "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 1200,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Well-lit bar interior with extensive liquor shelves, wine fridge, glassware, and potted plants on a wooden counter, conveying a warm, intimate speakeasy atmosphere.",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "dark_intimate",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            }
+          ],
+          "has_hero_image": true,
+          "spatial_candidate_count": 1,
+          "product_candidate_count": 0,
+          "warnings": [
+            "medium_rights_risk",
+            "rights_review_needed"
+          ]
+        },
+        "hero_image": {
+          "venue_name": "Floreria Atlántico",
+          "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_hint": "google_places_photo_attribution_required",
+          "rights_risk": "medium",
+          "width": 1600,
+          "height": 1200,
+          "content_length": 0,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "validation_status": "imported_needs_validation",
+          "publication_status": "not_approved_for_publication",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Well-lit bar interior with extensive liquor shelves, wine fridge, glassware, and potted plants on a wooden counter, conveying a warm, intimate speakeasy atmosphere.",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "dark_intimate",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          }
+        },
+        "editorial": {
+          "tagline": "Floreria Atlántico: intimate cocktail bar energy in Retiro",
+          "description": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+          "description_short": "Floreria Atlántico is a cocktail bar in Retiro with a dark, intimate atmosphere. The selected interior image shows usable venue atmosphere; Google Places support is strong, with 4.2 stars across 7,842 reviews.",
+          "mood_tags": [
+            "intimate",
+            "late_night",
+            "cinematic",
+            "social"
+          ],
+          "mood_confidence": 0.78,
+          "moments": [
+            "after-work drinks",
+            "late-night plans"
+          ],
+          "warnings": []
+        },
+        "review_count": 7842,
+        "review_count_processed": 0,
+        "pipeline_notes": [
+          "Stage 04 selected image connected. Publication remains not approved.",
+          "Stage 05 editorial enrichment generated locally from Stage 01 factual data and Stage 04 image metadata only."
+        ]
+      }
+    }
+  ],
+  "mood_distribution": {
+    "late_night": 3,
+    "social": 3,
+    "warm": 2,
+    "intimate": 4,
+    "date_night": 1,
+    "cinematic": 2,
+    "historic": 1
+  },
+  "neighborhood_distribution": {
+    "Palermo": 2,
+    "Retiro": 2,
+    "Recoleta": 1
+  },
+  "cost_placeholder": {
+    "estimated_usd": null,
+    "notes": "No MiniMax, OpenAI, external model, Supabase, Cloudinary, publication, or deploy calls were made by Stage 06."
+  },
+  "runtime_placeholder": {
+    "started_at": "2026-06-07T15:09:12.421Z",
+    "finished_at": "2026-06-07T15:09:12.421Z",
+    "duration_ms": 0
+  }
+}

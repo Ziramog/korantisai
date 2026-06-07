@@ -1,0 +1,532 @@
+{
+  "batch_id": "batch_003_prebuilt_test",
+  "city": "Buenos Aires",
+  "created_at": "2026-06-06T00:00:00.000Z",
+  "notes": "Prebuilt VenueComplete smoke test for score_and_stage and dashboard review. No external APIs, M3, Supabase, Cloudinary, or publication steps are involved.",
+  "prebuilt_venues": [
+    {
+      "raw": {
+        "input": {
+          "name": "Oporto Almacén",
+          "neighborhood": "Belgrano",
+          "type": "restaurant"
+        },
+        "name": "Oporto Almacén",
+        "city": "Buenos Aires",
+        "address": "11 de Septiembre 4152, Buenos Aires",
+        "neighborhood": "Belgrano",
+        "type": "restaurant",
+        "coordinates": {
+          "lat": -34.5487,
+          "lng": -58.4569
+        },
+        "google_maps_url": "https://maps.google.com/?q=Oporto+Almacen+Buenos+Aires",
+        "website_url": "https://www.oportoalmacen.com.ar/",
+        "instagram_url": "https://www.instagram.com/oportoalmacen/",
+        "hours": "Daily lunch and dinner service",
+        "price_hint": "$$$",
+        "operational_status": "operational",
+        "raw_reviews": []
+      },
+      "evidence": {
+        "confidence": 0.86,
+        "sources": [
+          {
+            "source_url": "https://www.oportoalmacen.com.ar/",
+            "source_type": "official_website",
+            "evidence_text": "Official site and venue-controlled photography.",
+            "confidence": 0.9
+          }
+        ],
+        "contact": {
+          "website": "https://www.oportoalmacen.com.ar/",
+          "instagram": "https://www.instagram.com/oportoalmacen/",
+          "reservation_url": "https://www.oportoalmacen.com.ar/"
+        },
+        "factual_notes": [
+          "Official venue source available.",
+          "Batch 02 produced the strongest full-resolution spatial candidate."
+        ],
+        "warnings": []
+      },
+      "hero_image": {
+        "venue_name": "Oporto Almacén",
+        "source_url": "https://www.oportoalmacen.com.ar/",
+        "resolved_image_url": "https://www.oportoalmacen.com.ar/images/main-oporto.jpg",
+        "source_type": "official_website",
+        "rights_hint": "venue_controlled",
+        "rights_risk": "low",
+        "width": 1500,
+        "height": 1000,
+        "shows_space": true,
+        "usable": true,
+        "role": "hero",
+        "notes": "Full-resolution spatial interior candidate."
+      },
+      "images": {
+        "hero": {
+          "venue_name": "Oporto Almacén",
+          "source_url": "https://www.oportoalmacen.com.ar/",
+          "resolved_image_url": "https://www.oportoalmacen.com.ar/images/main-oporto.jpg",
+          "source_type": "official_website",
+          "rights_hint": "venue_controlled",
+          "rights_risk": "low",
+          "width": 1500,
+          "height": 1000,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "notes": "Full-resolution spatial interior candidate."
+        },
+        "candidates": [],
+        "has_hero_image": true,
+        "spatial_candidate_count": 3,
+        "product_candidate_count": 0,
+        "warnings": []
+      },
+      "editorial": {
+        "tagline": "A calm Belgrano dining room with lived-in warmth and polished restraint.",
+        "description": "Oporto Almacén feels steady and atmospheric: a composed neighborhood dining room with warm materials, unfussy service, and enough visual depth to carry a hero image without overstating the scene.",
+        "description_short": "A composed neighborhood dining room with warm materials and polished restraint.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "quiet"
+        ],
+        "mood_confidence": 0.88,
+        "moments": [
+          "slow dinner",
+          "quiet date",
+          "neighborhood lunch"
+        ],
+        "warnings": []
+      },
+      "review_count": 30,
+      "review_count_processed": 30,
+      "pipeline_notes": [
+        "Prebuilt test record expected to auto_stage."
+      ]
+    },
+    {
+      "raw": {
+        "input": {
+          "name": "Florería Atlántico",
+          "neighborhood": "Retiro",
+          "type": "cocktail_bar"
+        },
+        "name": "Florería Atlántico",
+        "city": "Buenos Aires",
+        "address": "Arroyo 872, Buenos Aires",
+        "neighborhood": "Retiro",
+        "type": "cocktail_bar",
+        "coordinates": {
+          "lat": -34.5907,
+          "lng": -58.3789
+        },
+        "google_maps_url": "https://maps.google.com/?q=Floreria+Atlantico+Buenos+Aires",
+        "website_url": "https://floreriaatlantico.com.ar/",
+        "instagram_url": "https://www.instagram.com/floreriaatlantico/",
+        "hours": "Evening cocktail service",
+        "price_hint": "$$$",
+        "operational_status": "operational",
+        "raw_reviews": []
+      },
+      "evidence": {
+        "confidence": 0.82,
+        "sources": [
+          {
+            "source_url": "https://floreriaatlantico.com.ar/",
+            "source_type": "official_website",
+            "evidence_text": "Official venue presence and editorial listings.",
+            "confidence": 0.84
+          }
+        ],
+        "contact": {
+          "website": "https://floreriaatlantico.com.ar/",
+          "instagram": "https://www.instagram.com/floreriaatlantico/"
+        },
+        "factual_notes": [
+          "Recognized cocktail bar with strong editorial signal."
+        ],
+        "warnings": []
+      },
+      "hero_image": {
+        "venue_name": "Florería Atlántico",
+        "source_url": "https://floreriaatlantico.com.ar/",
+        "resolved_image_url": "https://www.theworlds50best.com/bars/filestore/jpg/Floreria Atlantico-interior_W50BB24-PROFILE.jpg",
+        "source_type": "fifty_best",
+        "rights_hint": "editorial_review",
+        "rights_risk": "low",
+        "width": 1280,
+        "height": 850,
+        "shows_space": true,
+        "usable": true,
+        "role": "hero",
+        "notes": "Spatial interior placeholder for scoring test."
+      },
+      "images": {
+        "hero": {
+          "venue_name": "Florería Atlántico",
+          "source_url": "https://floreriaatlantico.com.ar/",
+          "resolved_image_url": "https://www.theworlds50best.com/bars/filestore/jpg/Floreria Atlantico-interior_W50BB24-PROFILE.jpg",
+          "source_type": "fifty_best",
+          "rights_hint": "editorial_review",
+          "rights_risk": "low",
+          "width": 1280,
+          "height": 850,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "notes": "Spatial interior placeholder for scoring test."
+        },
+        "candidates": [],
+        "has_hero_image": true,
+        "spatial_candidate_count": 2,
+        "product_candidate_count": 0,
+        "warnings": []
+      },
+      "editorial": {
+        "tagline": "A subterranean cocktail room where the night turns cinematic without losing its ease.",
+        "description": "Florería Atlántico carries a strong sense of descent and discovery: warm light, dense conversation, and a room that feels more like a hidden evening ritual than a conventional bar.",
+        "description_short": "A hidden cocktail room with warm light and cinematic nighttime energy.",
+        "mood_tags": [
+          "cinematic",
+          "late_night",
+          "intimate"
+        ],
+        "mood_confidence": 0.84,
+        "moments": [
+          "late cocktails",
+          "date night",
+          "after dinner"
+        ],
+        "warnings": []
+      },
+      "review_count": 24,
+      "review_count_processed": 24,
+      "pipeline_notes": [
+        "Prebuilt test record expected to auto_stage."
+      ]
+    },
+    {
+      "raw": {
+        "input": {
+          "name": "Verne Club",
+          "neighborhood": "Palermo",
+          "type": "cocktail_bar"
+        },
+        "name": "Verne Club",
+        "city": "Buenos Aires",
+        "address": "Medrano 1475, Buenos Aires",
+        "neighborhood": "Palermo",
+        "type": "cocktail_bar",
+        "coordinates": {
+          "lat": -34.5898,
+          "lng": -58.4216
+        },
+        "google_maps_url": "https://maps.google.com/?q=Verne+Club+Buenos+Aires",
+        "website_url": "https://www.verneclub.com/",
+        "instagram_url": "https://www.instagram.com/verneclub/",
+        "hours": "Evening cocktail service",
+        "price_hint": "$$$",
+        "operational_status": "operational",
+        "raw_reviews": []
+      },
+      "evidence": {
+        "confidence": 0.48,
+        "sources": [
+          {
+            "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+            "source_type": "fifty_best",
+            "evidence_text": "Editorial listing and spatial candidate source.",
+            "confidence": 0.55
+          }
+        ],
+        "contact": {
+          "website": "https://www.verneclub.com/",
+          "instagram": "https://www.instagram.com/verneclub/"
+        },
+        "factual_notes": [
+          "Batch 02 hero candidate was below preferred resolution."
+        ],
+        "warnings": []
+      },
+      "hero_image": {
+        "venue_name": "Verne Club",
+        "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+        "resolved_image_url": "https://www.theworlds50best.com/discovery/filestore/jpg/Verne Club-Buenos Aires-Argentina-2.jpg",
+        "source_type": "fifty_best",
+        "rights_hint": "editorial_review",
+        "rights_risk": "medium",
+        "width": 920,
+        "height": 600,
+        "shows_space": true,
+        "usable": true,
+        "role": "hero",
+        "risk_flags": [
+          "below_preferred_resolution",
+          "medium_rights_risk"
+        ],
+        "notes": "Below preferred resolution and medium rights risk for review path."
+      },
+      "images": {
+        "hero": {
+          "venue_name": "Verne Club",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+          "resolved_image_url": "https://www.theworlds50best.com/discovery/filestore/jpg/Verne Club-Buenos Aires-Argentina-2.jpg",
+          "source_type": "fifty_best",
+          "rights_hint": "editorial_review",
+          "rights_risk": "medium",
+          "width": 920,
+          "height": 600,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "below_preferred_resolution",
+            "medium_rights_risk"
+          ],
+          "notes": "Below preferred resolution and medium rights risk for review path."
+        },
+        "candidates": [],
+        "has_hero_image": true,
+        "spatial_candidate_count": 2,
+        "product_candidate_count": 1,
+        "warnings": []
+      },
+      "editorial": {
+        "tagline": "An intimate Jules Verne inspired cocktail room with amber shadows, theatrical detail, and enough mystery to slow the whole evening down.",
+        "description": "Verne Club has the right atmospheric ingredients for Korantis, but the current placeholder record intentionally carries review warnings around rights, resolution, confidence, review volume, and a long tagline.",
+        "description_short": "An intimate cocktail room with amber shadows and theatrical detail.",
+        "mood_tags": [
+          "intimate",
+          "cinematic",
+          "late_night"
+        ],
+        "mood_confidence": 0.55,
+        "moments": [
+          "late cocktails"
+        ],
+        "warnings": []
+      },
+      "review_count": 8,
+      "review_count_processed": 8,
+      "pipeline_notes": [
+        "Prebuilt test record expected to needs_review."
+      ]
+    },
+    {
+      "raw": {
+        "input": {
+          "name": "Gran Bar Danzón",
+          "neighborhood": "Retiro",
+          "type": "cocktail_bar"
+        },
+        "name": "Gran Bar Danzón",
+        "city": "Buenos Aires",
+        "address": "Libertad 1161, Buenos Aires",
+        "neighborhood": "Retiro",
+        "type": "cocktail_bar",
+        "coordinates": {
+          "lat": -34.5945,
+          "lng": -58.3844
+        },
+        "google_maps_url": "https://maps.google.com/?q=Gran+Bar+Danzon+Buenos+Aires",
+        "website_url": "https://granbardanzon.com.ar/",
+        "instagram_url": "https://www.instagram.com/granbardanzon/",
+        "hours": "Evening bar and dinner service",
+        "price_hint": "$$$",
+        "operational_status": "operational",
+        "raw_reviews": []
+      },
+      "evidence": {
+        "confidence": 0.52,
+        "sources": [
+          {
+            "source_url": "https://granbardanzon.com.ar/",
+            "source_type": "official_website",
+            "evidence_text": "Official site available, image candidate needs review.",
+            "confidence": 0.6
+          }
+        ],
+        "contact": {
+          "website": "https://granbardanzon.com.ar/",
+          "instagram": "https://www.instagram.com/granbardanzon/"
+        },
+        "factual_notes": [
+          "Gallery candidate should not auto-stage without stronger hero."
+        ],
+        "warnings": []
+      },
+      "hero_image": {
+        "venue_name": "Gran Bar Danzón",
+        "source_url": "https://granbardanzon.com.ar/",
+        "resolved_image_url": "https://granbardanzon.com.ar/wp-content/uploads/2020/08/FEED-I-BASA-4.jpg",
+        "source_type": "official_website",
+        "rights_hint": "venue_controlled",
+        "rights_risk": "medium",
+        "width": 950,
+        "height": 950,
+        "shows_space": true,
+        "usable": true,
+        "role": "hero",
+        "risk_flags": [
+          "below_preferred_resolution",
+          "medium_rights_risk"
+        ],
+        "notes": "Gallery/card-like image promoted as hero for score test; should require review."
+      },
+      "images": {
+        "hero": {
+          "venue_name": "Gran Bar Danzón",
+          "source_url": "https://granbardanzon.com.ar/",
+          "resolved_image_url": "https://granbardanzon.com.ar/wp-content/uploads/2020/08/FEED-I-BASA-4.jpg",
+          "source_type": "official_website",
+          "rights_hint": "venue_controlled",
+          "rights_risk": "medium",
+          "width": 950,
+          "height": 950,
+          "shows_space": true,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "below_preferred_resolution",
+            "medium_rights_risk"
+          ],
+          "notes": "Gallery/card-like image promoted as hero for score test; should require review."
+        },
+        "candidates": [],
+        "has_hero_image": true,
+        "spatial_candidate_count": 1,
+        "product_candidate_count": 1,
+        "warnings": []
+      },
+      "editorial": {
+        "tagline": "A polished wine and cocktail room with low light, social energy, and a rhythm that works better after office hours than before dinner.",
+        "description": "Gran Bar Danzón is close to usable for staging but intentionally carries enough uncertainty to demonstrate the needs-review path in the dashboard and batch result.",
+        "description_short": "A polished wine and cocktail room with low light and social energy.",
+        "mood_tags": [
+          "lively",
+          "refined",
+          "social"
+        ],
+        "mood_confidence": 0.58,
+        "moments": [
+          "after work",
+          "cocktails"
+        ],
+        "warnings": []
+      },
+      "review_count": 9,
+      "review_count_processed": 9,
+      "pipeline_notes": [
+        "Prebuilt test record expected to needs_review."
+      ]
+    },
+    {
+      "raw": {
+        "input": {
+          "name": "La Biela",
+          "neighborhood": "Recoleta",
+          "type": "cafe"
+        },
+        "name": "La Biela",
+        "city": "Buenos Aires",
+        "address": "Av. Pres. Manuel Quintana 596, Buenos Aires",
+        "neighborhood": "Recoleta",
+        "type": "cafe",
+        "coordinates": {
+          "lat": -34.5871,
+          "lng": -58.3927
+        },
+        "google_maps_url": "https://maps.google.com/?q=La+Biela+Buenos+Aires",
+        "website_url": "https://labiela.com/",
+        "instagram_url": "https://www.instagram.com/labiela/",
+        "hours": "Daytime and evening cafe service",
+        "price_hint": "$$",
+        "operational_status": "operational",
+        "raw_reviews": []
+      },
+      "evidence": {
+        "confidence": 0.66,
+        "sources": [
+          {
+            "source_url": "https://labiela.com/",
+            "source_type": "official_website",
+            "evidence_text": "Official source available, but hero identity requires verification.",
+            "confidence": 0.72
+          }
+        ],
+        "contact": {
+          "website": "https://labiela.com/",
+          "instagram": "https://www.instagram.com/labiela/"
+        },
+        "factual_notes": [
+          "Exterior candidate does not sufficiently prove the interior/spatial experience."
+        ],
+        "warnings": []
+      },
+      "hero_image": {
+        "venue_name": "La Biela",
+        "source_url": "https://labiela.com/english",
+        "resolved_image_url": "https://img1.wsimg.com/isteam/ip/9d33b93b-c5c2-4a38-b843-6b534b3cf1de/La%20Biela-21abf06.png/:/cr=t:3.51%25,l:0%25,w:100%25,h:92.97%25/rs=w:1240,h:620,cg:true",
+        "source_type": "official_website",
+        "rights_hint": "venue_controlled",
+        "rights_risk": "low",
+        "width": 1240,
+        "height": 620,
+        "shows_space": false,
+        "usable": true,
+        "role": "hero",
+        "risk_flags": [
+          "identity_review_needed"
+        ],
+        "notes": "Exterior/identity verification issue intentionally blocks this record."
+      },
+      "images": {
+        "hero": {
+          "venue_name": "La Biela",
+          "source_url": "https://labiela.com/english",
+          "resolved_image_url": "https://img1.wsimg.com/isteam/ip/9d33b93b-c5c2-4a38-b843-6b534b3cf1de/La%20Biela-21abf06.png/:/cr=t:3.51%25,l:0%25,w:100%25,h:92.97%25/rs=w:1240,h:620,cg:true",
+          "source_type": "official_website",
+          "rights_hint": "venue_controlled",
+          "rights_risk": "low",
+          "width": 1240,
+          "height": 620,
+          "shows_space": false,
+          "usable": true,
+          "role": "hero",
+          "risk_flags": [
+            "identity_review_needed"
+          ],
+          "notes": "Exterior/identity verification issue intentionally blocks this record."
+        },
+        "candidates": [],
+        "has_hero_image": true,
+        "spatial_candidate_count": 0,
+        "product_candidate_count": 0,
+        "warnings": []
+      },
+      "editorial": {
+        "tagline": "A historic Recoleta cafe with sidewalk ritual and old-city gravity.",
+        "description": "La Biela has a strong historical identity, but this test record intentionally blocks because the selected hero candidate does not demonstrate the spatial venue experience clearly enough.",
+        "description_short": "A historic Recoleta cafe with sidewalk ritual and old-city gravity.",
+        "mood_tags": [
+          "historic",
+          "social"
+        ],
+        "mood_confidence": 0.74,
+        "moments": [
+          "afternoon coffee",
+          "tourist meeting point"
+        ],
+        "warnings": []
+      },
+      "review_count": 18,
+      "review_count_processed": 18,
+      "pipeline_notes": [
+        "Prebuilt test record expected to block."
+      ]
+    }
+  ]
+}

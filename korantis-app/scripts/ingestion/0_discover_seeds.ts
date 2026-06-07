@@ -3,6 +3,21 @@ import * as dotenv from 'dotenv';
 dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
 import { createClient } from '@supabase/supabase-js';
 
+type GooglePlace = {
+  id: string;
+  displayName?: {
+    text?: string;
+  };
+};
+
+type GooglePlacesSearchResponse = {
+  places?: GooglePlace[];
+};
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
 const GOOGLE_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -39,7 +54,7 @@ async function searchGooglePlaces(query: string, limit: number) {
     throw new Error(`Google Places API error: ${response.statusText}`);
   }
 
-  const data = await response.json();
+  const data = await response.json() as GooglePlacesSearchResponse;
   return data.places || [];
 }
 
@@ -76,8 +91,8 @@ async function main() {
           totalAdded++;
         }
       }
-    } catch (e: any) {
-      console.error(`Failed to process target "${target.query}":`, e.message);
+    } catch (error: unknown) {
+      console.error(`Failed to process target "${target.query}":`, getErrorMessage(error));
     }
   }
   

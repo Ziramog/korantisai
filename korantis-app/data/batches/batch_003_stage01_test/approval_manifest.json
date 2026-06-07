@@ -1,0 +1,81 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T15:09:24.346Z",
+  "approved_for_db_staging": [
+    {
+      "venue_name": "Oporto Almacén",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Biela",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ],
+  "needs_review": [],
+  "blocked": [
+    {
+      "venue_name": "Verne Club",
+      "status": "blocked",
+      "staging_score": 69,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ]
+}

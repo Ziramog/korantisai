@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Batch Review - batch_004_buenos_aires_50</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0f10;
+      --panel: #171a1c;
+      --panel-soft: #202427;
+      --border: #343a3f;
+      --text: #f1eee7;
+      --muted: #a7a097;
+      --gold: #c8a96a;
+      --green: #74b892;
+      --red: #d97b73;
+      --blue: #7ba7d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header, main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--border); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 24px; font-weight: 650; }
+    h2 { margin: 36px 0 16px; font-size: 18px; }
+    h3 { font-size: 15px; }
+    .muted { color: var(--muted); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat, .card, .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat { padding: 16px; }
+    .stat strong { display: block; margin-top: 6px; font-size: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card { overflow: hidden; }
+    .image {
+      height: 150px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-body { padding: 14px; display: grid; gap: 8px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .badge.ready_for_db_staging { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.auto_staged { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.needs_review { color: var(--gold); border-color: rgba(200, 169, 106, .5); }
+    .badge.blocked { color: var(--red); border-color: rgba(217, 123, 115, .5); }
+    .score { color: var(--blue); font-variant-numeric: tabular-nums; }
+    .section-panel { padding: 14px; margin-bottom: 12px; }
+    .dist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .button-row { display: flex; gap: 8px; margin-top: 10px; }
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel-soft);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 8px 10px;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="muted">Korantis Defensive Staging Review</p>
+    <h1>batch_004_buenos_aires_50 - Buenos Aires</h1>
+    <div class="summary">
+      <div class="stat"><span class="muted">Input</span><strong>50</strong></div>
+      <div class="stat"><span class="muted">Ready for DB staging</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Auto staged</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Needs review</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Blocked</span><strong>50</strong></div>
+      <div class="stat"><span class="muted">Cost</span><strong>pending</strong></div>
+      <div class="stat"><span class="muted">Runtime</span><strong>0 ms</strong></div>
+    </div>
+  </header>
+  <main>
+    <h2>Venue Preview</h2>
+    <section class="grid"><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPmjdIyGxM4x9LgA21OEzeaGFCyBh8sb0VXDjPdEaiXiDCMZQbUtPQJNxEhQowqK0EReIzhRb6gpKNDc3CXsfPEfIEmln-RCjkFnoFvYHPD7Md5so8OiTm5PvS7jkEoJRQudsUpT-pPZ3U8mq0iBfqb=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Roster Cafe Recoleta</h3>
+      <p class="muted">Recoleta / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Cafeto 2020</h3>
+      <p class="muted">Chacarita / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNgkD9LE1lpAGyygtfjUZIC3gx0LJs26F0ilDi4w3OdmjXQLmXesOd5XPE8vSt7H7-R6aLct5oCQ3M_3jpJV5egMvsdulWxIqnUBDoRRK2ot4LxYcPFWMR0RK1mPibuBsVebzopTUENmtbaPnA=s4800-w1600-h1573" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Cobre Café</h3>
+      <p class="muted">Villa Crespo / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOdU-f8GCKBwvEy8dQYBlo2Z9Z2Rm9O5nGEor6QIvjzBzXGN03ukNUA2YsHvS1UxnGhK9DnZjOYavsA4pVDToT5XsvHMEeKJS5FEjkJGZdTE8nmO0knhyoq3I6kqWHUR2AaA_38dFeJ1gLT37OHHYkPEQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Borja Specialty Coffee</h3>
+      <p class="muted">Belgrano / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOMlDriSkP5lKRVcenkyGPoeCk4r9KsBRuyJHw3NwPrfiErxN20oLouKM0NGD7FKpue-sMnCMboX8zwU4zeIJpTNl7v7dYTs-4bo059N0xM6hKSvt6hoghC19wDA3Nf1oO8NJeUS_4asXR2QM-WE3vz=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Cosecha Almagro</h3>
+      <p class="muted">Almagro / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNHvociazTItNwQm6JUHuIawmsTWqG8eDka0L2t6oJO8IPIay7tVV1VYv3biAvy3-grKn4FcPYGeLdSI74-2H5WBp8MCF-uqwjc1g7Nk9qBZUgH7V7GSHXbmLk5MgWdYrAgcrp7_q9VUL-JIQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Cuervo Café</h3>
+      <p class="muted">Palermo / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOxXoEcjDVqiKOZYtyMXKp8JbQAYeKXF5C4Y4yhUwp9PdvP6FRBvMgTWnznwGYf332TV7QdkYQpumJ3I64wM14ilZTRwEGIqfFCir3ieccjYc1_j2Yez4URuLLHAEFlSyhsr1LVnoFSMRANeno=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Café Registrado</h3>
+      <p class="muted">Palermo / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNQ59qW2cnC53X0J3DTSnaWSCpjFfpjj31Jik9RhHrOrH5UE4YwhWMeUxfjvqoDcrZAOEH2h6SqxU9_WlQ49FDwxwb0ae3iahVfFeOwu0ytl-lSiLBLfBppMqpiHLMAD-2NjOPQzIiwkl3H73U=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>The Coffee Store Plaza Almagro</h3>
+      <p class="muted">Almagro / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNWjvw6mP1xTOexahuSM21MAl8csGQ2mjSJ_X-zhQDvsp06sogsfiCU52hp1BA3CWunh2D3p6YC1pN4Fq6dufJuCWOtKPl9a3O0jKjYCN0s8Yzcvrsv3rD2TMAvMotO1Sz3XNUl53spndSaCeFUYWVU=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Tostado - Puerto Madero</h3>
+      <p class="muted">Puerto Madero / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNJcrcimI1Wdfzjpv686sKobGUQTefRQOGslsmiAbo_anWrzFDk8l4plY84mc4e4zlWJtLTDZRVzTxK95-xJqtMxfuiZ6uskP6DLYDgi9GdAmQvj09ZYKh5FZdwu30UTVwmzM2lK5D8TUwmFLdoV1Au3Q=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Salvaje Bakery</h3>
+      <p class="muted">Palermo / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZORFLGoEIVayOiwRc7lCNryaA4ScGookzD97qwLo7RYGveCDXgu3yPlymIi3U_vJnlJZsumxg4mR9EHogVhegqjEzWJxZuHjwHdYQeoEO-qxDlpyAsJcXQN-dZV4YqNQLbT5Lgdk4ebI5EDU-3QKz6y=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 64</span></div>
+      <h3>Barine - café de especialidad</h3>
+      <p class="muted">Palermo / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Bicho Café de Especialidad Recoleta</h3>
+      <p class="muted">Recoleta / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPhojQn6LqAcHdxyuimiGq7W_aY-2xTqfQb8MuM0z-KA-fQKawXPVT_26SRXXkNUTTe-8_4TJXuRv-Ly8FCZjbI4D0_YrKU7OLDONOGmHis-XTPOkQZYllXkJHXop9uSm2ZfJ2A_JRPYvM7Qjuz1766kA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Le Rêve Bistró</h3>
+      <p class="muted">Palermo / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOTFg--M_EDGy_Fq0Y1qIVNsJjXg-3BePR6LUVYybHpr4ofHg2T7aB_Pwobbaf4HJB31dTTRXqsCo5Eb46i-zKFs6zgaAaDtBau4-Nh9_RtynS6dlJmr6yNWgb8fcmJFqES7sR_2VmHg--Dtw=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Las Pizarras bistro</h3>
+      <p class="muted">Palermo / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://www.palladiohotelbuenosaires.com/wp-content/uploads/sites/7/2021/12/palladio_hotel_mgallery_restaurant_slide_01-2200x1200.jpg" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>Negresco Bistró</h3>
+      <p class="muted">Recoleta / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZON1543pHJwE6XGnG_fjiktSAPut0H3bSD0yVESZfMklPLkQQwYYw_NnxHK0qCormAOxNbTFPY0gMF6Gyr5R0wac96jngomJzA0iNrdObHPwBtC1SooiRyHEeWMzGP6B7zFrEsBCdr7htwazBfjKAUr=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Piano Nobile</h3>
+      <p class="muted">Recoleta / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOt3xHCzjg1bzHerevSq4Zk6fzRlPyVOpOnLq1I8g_AekGSjrFMgfKdEP7eqEz8bS0tKXBjM-4YPepVSJwvjVBtOzowgXsaRhC6OJIjEmjZzw_EkvMBWQoMEKF8a1uzQ6WFf0ybPxtNwQTc9aUGAKWrwQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>L&#039;Antiquario Cafe Bistro</h3>
+      <p class="muted">San Telmo / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNS-YIfBPTzdLEKgG3DnDFBDPGuiDOC_ViSNFqBBgfxU4oTrQzSNU-h1oZwz24BX4XYbWwL7MKVyFj8RowLwWAXdx8PovP6hv4O-pmwmaEFBYzo9Q90HV-b6afClwwtP2GaxUaCXIbE4eUUJ16V-9Nd=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Farmacia Lezama - Bistrot</h3>
+      <p class="muted">San Telmo / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZN2QfBqxFldk7gcLfRiXLOdZ7_Rxt65Bduz2ej8MCPsy9VGPTeH_bTU8c2VHK0ADA_OJcSq6XlA769W3IQepfiDyiGaYDI07k154uaBX6O2Y4NbSLG1ix2LleaHzk0wnUxZv08k0JhYyL4EdbqYRfId=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>A DONDE</h3>
+      <p class="muted">Villa Crespo / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOMyna2PuRSxT3sXC_kw4GF6woEoYSJXaTnskh_ucviN2Ex-REIvqHD7xGEq-g3bZc-Ioy650VANNxDxsoglNIw6GSifhJmiX4rIjg7Z4PHBvvHp1BorARGihKMFN8aVLWjRaX6_2gzdUmgqw=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Contraluz</h3>
+      <p class="muted">Retiro / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZN0tO3aKHNlvFta1kUwv7zmrWLDaz_lmAW07UGQOvAW9yAbntfu5iP5d-Fe-JqIxicSVTL-LcrlKtC25fly13ipyUjUBLB5C6qTS_2X6Ny79eTwBFEaIMI5BNNOIajJWNyJ-loZ5VqfJXdqN6c=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>St. Regis Restaurant</h3>
+      <p class="muted">Retiro / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNqbdnX-BuAgbQdOsB27uFOpIOfT9w9P_F_DrF6rYZWLtXjXW7zyB7KWK56MKGRjwI6ENGqkYrlpTmLoxYy7CskdNiv67-3Nj6A7_J5HBUeOhnBdqmGgauV_GG6lJeEI01i3xc4imuxYa7czMLPd4d0LA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Banu</h3>
+      <p class="muted">Centro / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMqxTH89230i-akCLmCYyXjUIAz1gwVR_hHiK-XsA6YiFP1dfPvau12wgUWMrid83PnFvyZlWixESSZ4vScIUP4mXQ0SUD9pVxCeWFezhz4CI3dtZhFrkokow-hEAdhCucXRA3Et-t5bY4-=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Selva Mía</h3>
+      <p class="muted">Palermo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNrEZoXM5jGAKoEeeDXne5NUEvV1VbphZpT2Q2NrxPnQ7aysjYi2qiT11IEH4oe0PBQ6xdkdH3iMw8h1Zu3NAZpjfCbaPtaL_v148rJTNhoxfC2mJyexxOOx_CCoMdeS7Qtc0YS8bA5vWfLugfHwDEnuQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Intervalo Bar</h3>
+      <p class="muted">Recoleta / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZN93dyc2SaKz9IyUTMgw5XRr6UzmURZT8TKRu4vDpNS8gRRVq-Zob_lZXL44arFX9Hzea_7CWA-DaMN0lsQIGaebrFRI010wUe_0JAsNt6xtwQAv2pCxFEyT9XOmAYNpK3W0Aqb0mPua__aIkX-5_Qm1w=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>BOCANADA</h3>
+      <p class="muted">San Telmo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPr7Xbu6zTDfEPfoxwPd_COHNqqArd1JoslgWcsq2jw7zqDuxa6YqOI6M21cOiC-egL5iwX17vp6xASI6rkPYMcgFQ2gvo3atKa1jcV-wtbB8WEZkofKa5aFT1LAIAXSlfxVM_hRj12xHMpSEJQFE7-Ag=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Cave Canem</h3>
+      <p class="muted">San Telmo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNtYAAt_p52l-3eE-aSUwRBSSgobLmHI5F6cJROf1rhVo93qvNSF2kQzuZ5Nd-S15HBpCQ8iv1lIa2nZw3z9vcEov68316_ox02blwfU92KHBTW_NuFJBjUJinOnkuNk0G2jJpHAre0tBhJalE=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Lutero Bar</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZP0nGLrI3PTxeNohvKUmMN3mtI6wSijY2PuvFMoGt-gMJ7wSCXywMohjNaJSqnoG1c9Epq0RBgb35Xew1o-HNCvx6-GVfB1LGSQD5tQh69r9rKJPkhV9P7oTz_gFuHcG3bhJEIjROl5XKos5qqK_mu87g=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Nido de Tigre</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPY8AZ5ufwCCAegJ5-1wfoj99_F9igJvmMrEGZcKMlMKU93URPHVn22_GZd54X826qLsJ4dIorhBCqfxPR8A7aPAIMGYdwyjxDUy8Lq0YbnfxTur4ipnIzAXymouJXFDUmAxgUObhutnMZe=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>SOFÁ - un bar</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Bar PUNTO MONA</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Veredita</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Don Gato</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://static.wixstatic.com/media/0bc1c7_9cac9f047b7b44f2b379ef3e3bfb5786~mv2.jpg" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>Social Paraíso Bistró | Recoleta</h3>
+      <p class="muted">Recoleta / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>GRAPIN</h3>
+      <p class="muted">San Telmo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNp4UgTw5G0oAL0vpV2nqX5pvPkBoOuVUtntN8wXd_1RySjIZA1pCzd1ecge2ZUy13zCe4EQw3eJnOEL6XQ5ncYfH5BOAnOGpMZNRtmNKgy9d2VBs6nTxMD4PsPBsoAA63PGA_RqKU4NitFgtNthy7G=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Pipi Lounge</h3>
+      <p class="muted">Villa Crespo / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOFD-M5m1Mt_RDBDNe3Ufs06MRMsWyM9aM0ofkxKFjHzyLnOjt2dWdmHt_ETKTBdgsAQqWctgOKaFg_V_S7mce-gQzl671VscQqkPzEzo_Yj8GdTxT0SpkaN7TfrCZrqitMNu4VUbzU7PCEWg=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>LE CLUB BACAN</h3>
+      <p class="muted">Retiro / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOWAW6HA2BDEd6LGyIp_C7OWBZXSQWdtEtqSsp9KPQhlT9LVNCqbCpKRn6SvPR_rtbYt0efji67lOQk3Pr8R79Iz13Xap6c2Fa4ocs2rsYRbwTMnlfKTyPvEcGrBOkRtsyP1uDTkXp6XhVojEU3ORy-QA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Osaka Concepción</h3>
+      <p class="muted">Colegiales / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPFFpDGDVeNSHO2espoaMqKb2cFycuZ0tMzdIPeTyNz41mA20KqwDN4B_sQ9Brb-_9BGTwJcIpMqmud3Fi_ztaJs_G9Y-KNwu35RdlaO69klQoxHhKCE6er5BrgNprDpzSZwNhp2lC-2q_qgQ7o6ZE1Nw=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Tradition &amp; Rebellion</h3>
+      <p class="muted">Puerto Madero / cocktail_bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNCdS2yW8e_ufzpQCXx-uiCdwAek38UFylnza1nGwC0j5rePkESVlzBkugGfIlVW7rN1RlSe5Y32deLKdqBYUy1z8kPVmzI4KEQKU41USXKL_z9vTc2TBsyp5xSJAUiJXyr5U4JS_lyQL_yKOV_ggKU=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Alvear Roof Bar</h3>
+      <p class="muted">Palermo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lacarbonerasantelmo.com/wp-content/uploads/2025/11/La-Carbonera-Terraza-scaled.jpg" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>La Carbonera</h3>
+      <p class="muted">San Telmo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPybc2xo_DL_iwg-F4dl9sst-809a4fZms7P4nLbQi_t7HJoaXfwqOPCculzNQ992Ezx9Lu-4lUxoO8g7Yb1YRdDGrs-TKJbtbbsm3OAvMaDQouYA7RLd5XITdwp-u8lTMUMp6xr8orNxt3kyY=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Naranjo Bar</h3>
+      <p class="muted">Chacarita / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNOZ2xkIbn8Vcf3llCLI3XyD8iZtCVWymoMsArPnO1mMNAZkAjdw8ZHV7NcPLHYrhYS_WyzA9EMRRfCtus-TYONTUEWmeq7cjpXJp1CecBQDUjqOmizNC86RAYW6bU_BjcT0gwR2ufjwad7aJbUd2tRSA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Duhau Restaurante &amp; Vinoteca</h3>
+      <p class="muted">Recoleta / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://verdotwinebar.com/hero.webp" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>Verdot Wine Bar</h3>
+      <p class="muted">Recoleta / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNGufJvysetVOR-O7At3gjdtA-lAGuV0o8z0FzI50GBD-PzYmu4l-vQ0E7N55sujMHgECfb9MFrQjN4X-eGMl9VnM2x8Gc2ufq8v5LG505yb44V8Dw9MflcyF7mDA3eD99KOuzA_hhnWJQnbFp_SKTU=s4800-w1200-h676" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Bruce Wine</h3>
+      <p class="muted">San Telmo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lirp.cdn-website.com/72ef65f2/dms3rep/multi/opt/standard01-a10076c3-1920w.jpg" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>Anselmo Lounge &amp; Wine Bar</h3>
+      <p class="muted">San Telmo / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPZFVyypCf8r5hwAYSa6WskuXkjm60CAnGP9Hf5L4_8e0b9OSAxMdHfzhryLMtj-E-MWC4kbCciO1mHuL9iw6SgkPbLr1-5q-iCyxTlXvJ7RUGoG2M2uSctf0KR1DjkdaFzhYO5c7Dtb8uBhg=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Los Jardines De Las Barquin</h3>
+      <p class="muted">Retiro / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNuBgjn-jW2MU3K2jaxuLUy2RwN7WA-XIDKS3sJQ-dVYw7AkA-K1rKyu77TsNO9EVeXIsOYs9drwqvzC3qVV_WafN0BEawPvofLXymDL3h0VZYjtjYgTqxvaPDYwWBAKR5BZ0E4KC3AWkVROA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>BAUTISTA Av. Rivadavia</h3>
+      <p class="muted">Almagro / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMjbqClFXIE_5J9kP7SUFunVaAW0PxztyXMcw99SG0U1W2BX23HfYJ-NNIZlfSwzI17dod1Gzt3j9DBZOQWdj1Gmo0dNDDt-7snd4NFljgyz9vWuxjkmXpngA3L7HBm7vuFNNh32pGwISvmLgyGSm3IAA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Tostado - Nuñez</h3>
+      <p class="muted">Nuñez / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMvT-WVovhFV5YcHXBhdLQjPpdqArV1x8yTw6OVienMSyWAJgIWuk9Ko1xo8YYI3ejriIWFdUe9ALuN-cih7FmumSrL--XX7y-5qVlrecvNxvtTwFmaVglPA_tg-b_1u3hjcAN5P4Suq_OjWw=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>La Giralda</h3>
+      <p class="muted">Centro / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZN5Ew1B0Mn1DguUlLBlA82t-RUkIZ6x-se0C4cQgkOsz6IneE6Ss6MCHrqZsNPd6s5-xLcb00zOMQcM0q4vpovDvBT3zCJtB5jv3Ohmfo3FSfWvXd-ielw08S-cLVtl_OhoHaF4JNTx03ezVlxoud50oQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Petit Colón</h3>
+      <p class="muted">Centro / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article></section>
+    <h2>Ready For DB Staging</h2>
+    <section class="section-panel muted">No DB-staging-ready candidates.</section>
+    <h2>Needs Review</h2>
+    <section class="section-panel muted">No needs-review candidates.</section>
+    <h2>Blocked</h2>
+    <section class="section-panel">
+    <h3>Roster Cafe Recoleta <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cafeto 2020 <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cobre Café <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Borja Specialty Coffee <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cosecha Almagro <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cuervo Café <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Café Registrado <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>The Coffee Store Plaza Almagro <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Tostado - Puerto Madero <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Salvaje Bakery <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Barine - café de especialidad <span class="score">64</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_website, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Bicho Café de Especialidad Recoleta <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_website, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Le Rêve Bistró <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Las Pizarras bistro <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Negresco Bistró <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Piano Nobile <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>L&#039;Antiquario Cafe Bistro <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Farmacia Lezama - Bistrot <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>A DONDE <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Contraluz <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>St. Regis Restaurant <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Banu <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Selva Mía <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Intervalo Bar <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>BOCANADA <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Cave Canem <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Lutero Bar <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Nido de Tigre <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>SOFÁ - un bar <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Bar PUNTO MONA <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Veredita <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Don Gato <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Social Paraíso Bistró | Recoleta <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>GRAPIN <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Pipi Lounge <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>LE CLUB BACAN <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Osaka Concepción <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Tradition &amp; Rebellion <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Alvear Roof Bar <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>La Carbonera <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Naranjo Bar <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Duhau Restaurante &amp; Vinoteca <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Verdot Wine Bar <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Bruce Wine <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Anselmo Lounge &amp; Wine Bar <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Los Jardines De Las Barquin <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>BAUTISTA Av. Rivadavia <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Tostado - Nuñez <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>La Giralda <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Petit Colón <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section>
+    <h2>Distribution</h2>
+    <section class="dist">
+      <section class="section-panel"><h3>Mood distribution</h3><p class="muted">none</p></section>
+      <section class="section-panel"><h3>Neighborhood distribution</h3><p>Recoleta <span class="score">8</span></p><p>Chacarita <span class="score">8</span></p><p>Palermo <span class="score">8</span></p><p>San Telmo <span class="score">8</span></p><p>Retiro <span class="score">4</span></p><p>Villa Crespo <span class="score">3</span></p><p>Almagro <span class="score">3</span></p><p>Centro <span class="score">3</span></p><p>Puerto Madero <span class="score">2</span></p><p>Belgrano <span class="score">1</span></p><p>Colegiales <span class="score">1</span></p><p>Nuñez <span class="score">1</span></p></section>
+    </section>
+  </main>
+</body>
+</html>

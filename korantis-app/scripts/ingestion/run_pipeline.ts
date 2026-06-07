@@ -19,7 +19,7 @@ for (const step of steps) {
   try {
     // Run synchronously, redirect stdout and stderr to the current process
     execSync(`npx tsx "${scriptPath}"`, { stdio: 'inherit' });
-  } catch (err) {
+  } catch {
     console.error(`\n❌ Pipeline failed at step: ${step}`);
     process.exit(1);
   }

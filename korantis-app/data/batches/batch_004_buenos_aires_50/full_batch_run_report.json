@@ -1,0 +1,133 @@
+{
+  "batch_id": "batch_004_buenos_aires_50",
+  "generated_at": "2026-06-07T21:21:57.796Z",
+  "input_venues": 50,
+  "mode": "plan",
+  "safety": {
+    "supabase_apply": false,
+    "cloudinary_upload": false,
+    "public_publish": false,
+    "consumer_ui_changes": false
+  },
+  "stages": [
+    {
+      "stage": "01_extract_data",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_01_raw_venues.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.793Z",
+      "finished_at": "2026-06-07T21:21:57.795Z"
+    },
+    {
+      "stage": "02_discover_sources",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_02_source_discovery.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.795Z",
+      "finished_at": "2026-06-07T21:21:57.795Z"
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_03_final_vision_queue.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.795Z",
+      "finished_at": "2026-06-07T21:21:57.795Z"
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_04_selected_images.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.795Z",
+      "finished_at": "2026-06-07T21:21:57.795Z"
+    },
+    {
+      "stage": "connect_selected_images",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\batch_result_with_images.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.795Z",
+      "finished_at": "2026-06-07T21:21:57.795Z"
+    },
+    {
+      "stage": "05_generate_editorial",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\batch_result_with_editorial.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.795Z",
+      "finished_at": "2026-06-07T21:21:57.795Z"
+    },
+    {
+      "stage": "05_alias_enriched_result",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\batch_result_enriched.json",
+      "notes": "Output missing; normal run would execute.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\batch_result_quality_gated.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    },
+    {
+      "stage": "07_generate_approval_manifest",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\approval_manifest.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    },
+    {
+      "stage": "08_supabase_staging_dry_run",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\supabase_staging_dry_run.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    },
+    {
+      "stage": "09_publication_review",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\publication_decision_manifest.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    },
+    {
+      "stage": "11_public_projection_dry_run_if_reviewed",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\public_projection_dry_run.json",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    },
+    {
+      "stage": "13_control_panel",
+      "status": "planned",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\pipeline_control_panel.html",
+      "notes": "Output already exists; normal run would skip unless --force is used.",
+      "started_at": "2026-06-07T21:21:57.796Z",
+      "finished_at": "2026-06-07T21:21:57.796Z"
+    }
+  ],
+  "final_outputs": [
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_01_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_02_source_discovery_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_03_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_04_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\connect_selected_images_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\stage_05_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\quality_gate_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\approval_manifest_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\supabase_staging_dry_run_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\publication_review_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\public_projection_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_004_buenos_aires_50\\pipeline_control_panel.html"
+  ],
+  "next_action": "Run without --plan when ready."
+}

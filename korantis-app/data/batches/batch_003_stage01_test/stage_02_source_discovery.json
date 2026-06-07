@@ -1,0 +1,485 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T18:37:35.715Z",
+  "venues_processed": 5,
+  "websites_attempted": 5,
+  "websites_fetched": 5,
+  "instagram_found": 3,
+  "menu_found": 3,
+  "reservation_found": 2,
+  "whatsapp_found": 2,
+  "editorial_mentions_found": 1,
+  "source_confidence_average": 0.78,
+  "venues": [
+    {
+      "venue_name": "Verne Club",
+      "place_id": "ChIJCSbMQ37KvJUR53QqcjoxSXw",
+      "google_maps_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "http://vernecocktailclub.com/",
+        "source_url": "http://www.vernecocktailclub.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/verneclub/",
+        "label": "Instagram: @verneclub",
+        "source_url": "http://vernecocktailclub.com/",
+        "confidence": 0.85,
+        "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Instagram: @verneclub https://www.instagram.com/verneclub/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "http://verne.meitre.com/",
+        "label": "Reservar una mesa",
+        "source_url": "http://vernecocktailclub.com/",
+        "confidence": 0.8,
+        "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Reservar una mesa http://verne.meitre.com"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "http://vernecocktailclub.com/nuestro-menu/",
+        "label": "Nuestra Carta",
+        "source_url": "http://vernecocktailclub.com/",
+        "confidence": 0.8,
+        "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Nuestra Carta http://vernecocktailclub.com/nuestro-menu/"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://wa.me/5491176386823",
+        "label": "WhatssApp",
+        "source_url": "http://vernecocktailclub.com/",
+        "confidence": 0.8,
+        "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires WhatssApp https://wa.me/5491176386823"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "http://vernecocktailclub.com/contacto/",
+          "label": "Contacto",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.7,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Contacto http://vernecocktailclub.com/contacto/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "http://vernecocktailclub.com/",
+          "source_url": "http://www.vernecocktailclub.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "http://vernecocktailclub.com/nuestro-menu/",
+          "label": "Nuestra Carta",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.8,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Nuestra Carta http://vernecocktailclub.com/nuestro-menu/"
+        },
+        {
+          "kind": "contact",
+          "url": "http://vernecocktailclub.com/contacto/",
+          "label": "Contacto",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.7,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Contacto http://vernecocktailclub.com/contacto/"
+        },
+        {
+          "kind": "reservation",
+          "url": "http://verne.meitre.com/",
+          "label": "Reservar una mesa",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.8,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Reservar una mesa http://verne.meitre.com"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://wa.me/5491176386823",
+          "label": "WhatssApp",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.8,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires WhatssApp https://wa.me/5491176386823"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://verne.meitre.com/",
+          "label": "Reservar",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.8,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Reservar https://verne.meitre.com/"
+        },
+        {
+          "kind": "menu",
+          "url": "http://vernecocktailclub.com/cocktails",
+          "label": "saber mas sobre nuestra carta",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.8,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires saber mas sobre nuestra carta /cocktails"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/verneclub/",
+          "label": "Instagram: @verneclub",
+          "source_url": "http://vernecocktailclub.com/",
+          "confidence": 0.85,
+          "evidence_text": "Verne Cocktail Club | Bar de cocktails en Palermo, Buenos Aires Instagram: @verneclub https://www.instagram.com/verneclub/"
+        }
+      ],
+      "source_confidence": 0.95,
+      "missing_fields": [
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "place_id": "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+      "google_maps_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://oporto.meitre.com/",
+        "source_url": "https://oporto.meitre.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://oporto.meitre.com/",
+          "source_url": "https://oporto.meitre.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "place_id": "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+      "google_maps_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://granbardanzon.com.ar/",
+        "source_url": "https://granbardanzon.com.ar/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/granbardanzon/",
+        "label": "",
+        "source_url": "https://granbardanzon.com.ar/",
+        "confidence": 0.85,
+        "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine https://www.instagram.com/granbardanzon/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://granbardanzon.com.ar/reservas/",
+        "label": "Reservas",
+        "source_url": "https://granbardanzon.com.ar/",
+        "confidence": 0.8,
+        "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine Reservas https://granbardanzon.com.ar/reservas/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://granbardanzon.com.ar/contacto/",
+          "label": "Contacto",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.7,
+          "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine Contacto https://granbardanzon.com.ar/contacto/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://granbardanzon.com.ar/",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://granbardanzon.com.ar/reservas/",
+          "label": "Reservas",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine Reservas https://granbardanzon.com.ar/reservas/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://granbardanzon.com.ar/contacto/",
+          "label": "Contacto",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.7,
+          "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine Contacto https://granbardanzon.com.ar/contacto/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://granbardanzon.com.ar/reserva/",
+          "label": "RESERVA AHORA",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine RESERVA AHORA /reserva/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/granbardanzon",
+          "label": "",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine https://www.facebook.com/granbardanzon"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/granbardanzon/",
+          "label": "",
+          "source_url": "https://granbardanzon.com.ar/",
+          "confidence": 0.85,
+          "evidence_text": "GRANBARDANZON - Restaurant Bar & Wine https://www.instagram.com/granbardanzon/"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "La Biela",
+      "place_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+      "google_maps_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://la-biela.shop/",
+        "source_url": "https://la-biela.shop/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://la-biela.shop/menu",
+        "label": "Menu",
+        "source_url": "https://la-biela.shop/",
+        "confidence": 0.8,
+        "evidence_text": "La Biela – Iconic Buenos Aires Café with Authentic Argentine Cuisine & Historic Charm Menu https://la-biela.shop/menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://la-biela.shop/#cotnact",
+          "label": "Contact",
+          "source_url": "https://la-biela.shop/",
+          "confidence": 0.7,
+          "evidence_text": "La Biela – Iconic Buenos Aires Café with Authentic Argentine Cuisine & Historic Charm Contact https://la-biela.shop/#cotnact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://la-biela.shop/#reviews",
+          "label": "Review",
+          "source_url": "https://la-biela.shop/",
+          "confidence": 0.65,
+          "evidence_text": "La Biela – Iconic Buenos Aires Café with Authentic Argentine Cuisine & Historic Charm Review https://la-biela.shop/#reviews"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://la-biela.shop/",
+          "source_url": "https://la-biela.shop/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://la-biela.shop/menu",
+          "label": "Menu",
+          "source_url": "https://la-biela.shop/",
+          "confidence": 0.8,
+          "evidence_text": "La Biela – Iconic Buenos Aires Café with Authentic Argentine Cuisine & Historic Charm Menu https://la-biela.shop/menu"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://la-biela.shop/#reviews",
+          "label": "Review",
+          "source_url": "https://la-biela.shop/",
+          "confidence": 0.65,
+          "evidence_text": "La Biela – Iconic Buenos Aires Café with Authentic Argentine Cuisine & Historic Charm Review https://la-biela.shop/#reviews"
+        },
+        {
+          "kind": "contact",
+          "url": "https://la-biela.shop/#cotnact",
+          "label": "Contact",
+          "source_url": "https://la-biela.shop/",
+          "confidence": 0.7,
+          "evidence_text": "La Biela – Iconic Buenos Aires Café with Authentic Argentine Cuisine & Historic Charm Contact https://la-biela.shop/#cotnact"
+        }
+      ],
+      "source_confidence": 0.75,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "place_id": "ChIJJY8xLrHKvJURGgoMqdg8pXE",
+      "google_maps_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "http://floreriaatlantico.com.ar/",
+        "source_url": "http://floreriaatlantico.com.ar/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/floreriaatlantico/",
+        "label": "floreriaatlantico",
+        "source_url": "http://floreriaatlantico.com.ar/",
+        "confidence": 0.85,
+        "evidence_text": "Florer&#237;a Atl&#225;ntico floreriaatlantico https://www.instagram.com/floreriaatlantico/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "http://floreriaatlantico.com.ar/menu-es.html",
+        "label": "Espa&ntilde;ol",
+        "source_url": "http://floreriaatlantico.com.ar/",
+        "confidence": 0.8,
+        "evidence_text": "Florer&#237;a Atl&#225;ntico Espa&ntilde;ol menu-es.html"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://api.whatsapp.com/send?phone=5491164882199&text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20reserva%20",
+        "label": "",
+        "source_url": "http://floreriaatlantico.com.ar/",
+        "confidence": 0.8,
+        "evidence_text": "Florer&#237;a Atl&#225;ntico https://api.whatsapp.com/send?phone=5491164882199&text=¡Hola%21%20Quisiera%20hacer%20una%20reserva%20"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "http://floreriaatlantico.com.ar/",
+          "source_url": "http://floreriaatlantico.com.ar/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "http://floreriaatlantico.com.ar/menu-es.html",
+          "label": "Espa&ntilde;ol",
+          "source_url": "http://floreriaatlantico.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "Florer&#237;a Atl&#225;ntico Espa&ntilde;ol menu-es.html"
+        },
+        {
+          "kind": "menu",
+          "url": "http://floreriaatlantico.com.ar/menu-en.html",
+          "label": "English",
+          "source_url": "http://floreriaatlantico.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "Florer&#237;a Atl&#225;ntico English menu-en.html"
+        },
+        {
+          "kind": "menu",
+          "url": "http://floreriaatlantico.com.ar/menu-pr.html",
+          "label": "Portugues",
+          "source_url": "http://floreriaatlantico.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "Florer&#237;a Atl&#225;ntico Portugues menu-pr.html"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/floreriaatlantico/",
+          "label": "floreriaatlantico",
+          "source_url": "http://floreriaatlantico.com.ar/",
+          "confidence": 0.85,
+          "evidence_text": "Florer&#237;a Atl&#225;ntico floreriaatlantico https://www.instagram.com/floreriaatlantico/"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://api.whatsapp.com/send?phone=5491164882199&text=%C2%A1Hola%21%20Quisiera%20hacer%20una%20reserva%20",
+          "label": "",
+          "source_url": "http://floreriaatlantico.com.ar/",
+          "confidence": 0.8,
+          "evidence_text": "Florer&#237;a Atl&#225;ntico https://api.whatsapp.com/send?phone=5491164882199&text=¡Hola%21%20Quisiera%20hacer%20una%20reserva%20"
+        }
+      ],
+      "source_confidence": 0.85,
+      "missing_fields": [
+        "reservation_url",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    }
+  ]
+}

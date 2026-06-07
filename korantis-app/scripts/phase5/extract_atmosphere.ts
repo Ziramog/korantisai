@@ -18,6 +18,27 @@ const client = new OpenAI({
 const CORPUS_DIR = path.join(__dirname, '..', '..', 'data', 'review_corpus');
 const OUT_FILE = path.join(__dirname, '..', '..', 'data', 'l3_prose.json');
 
+type AtmosphereExtractionResponse = {
+  prose: string;
+};
+
+type ReviewCorpusRecord = {
+  venueName: string;
+  reviews?: Array<{
+    text: string;
+  }>;
+};
+
+type L3ProseRecord = {
+  venueId: string;
+  venueName: string;
+  prose: string;
+};
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
 async function extractAtmosphere(venueName: string, reviews: string[]): Promise<string> {
   const prompt = `
 You are an atmospheric archivist for Buenos Aires.
@@ -60,7 +81,7 @@ ${reviews.join('\n---\n')}
   const rawContent = response.choices[0].message.content;
   if (!rawContent) throw new Error('No content returned from OpenAI');
 
-  const parsed = JSON.parse(rawContent);
+  const parsed = JSON.parse(rawContent) as AtmosphereExtractionResponse;
   return parsed.prose.trim();
 }
 
@@ -72,7 +93,7 @@ async function main() {
 
   // We are forcing a fresh regeneration of all L3 prose using GPT-4o-mini
   // to ensure a clean baseline for the divergence report.
-  let l3Prose: Record<string, any> = {};
+  const l3Prose: Record<string, L3ProseRecord> = {};
   
   const files = fs.readdirSync(CORPUS_DIR).filter(f => f.endsWith('.json'));
   let updated = false;
@@ -82,7 +103,7 @@ async function main() {
   for (const file of files) {
     const venueId = path.basename(file, '.json');
     const filePath = path.join(CORPUS_DIR, file);
-    const venueData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const venueData = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as ReviewCorpusRecord;
 
     if (!venueData.reviews || venueData.reviews.length === 0) {
       console.log(`[SKIP] No reviews found for ${venueData.venueName}, cannot generate prose.`);
@@ -90,7 +111,7 @@ async function main() {
     }
 
     console.log(`[EXTRACT] Generating atmospheric prose for ${venueData.venueName}...`);
-    const reviewTexts = venueData.reviews.map((r: any) => r.text);
+    const reviewTexts = venueData.reviews.map((review) => review.text);
     
     // Safety protection against infinite loops
     let success = false;
@@ -109,13 +130,13 @@ async function main() {
         success = true;
         updated = true;
         console.log(`        Success.`);
-      } catch (e: any) {
-        console.error(`        Attempt ${attempts} failed for ${venueData.venueName}:`, e.message);
+      } catch (error: unknown) {
+        console.error(`        Attempt ${attempts} failed for ${venueData.venueName}:`, getErrorMessage(error));
         if (attempts >= MAX_RETRIES) {
           console.error(`        Giving up on ${venueData.venueName} after ${MAX_RETRIES} attempts.`);
         } else {
           // Wait before retrying
-          await new Promise(r => setTimeout(r, 1000));
+          await new Promise((resolve) => setTimeout(resolve, 1000));
         }
       }
     }

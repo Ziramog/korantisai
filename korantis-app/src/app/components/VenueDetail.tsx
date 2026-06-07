@@ -2,13 +2,14 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ArrowLeft, Clock, DollarSign, MapPin, Heart } from 'lucide-react';
+import { ArrowLeft, Clock, DollarSign, MapPin, Heart, Share, Navigation } from 'lucide-react';
 import { ScoredVenue, useCircadian } from '../contexts/CircadianContext';
 import { localizeVenueForDisplay, t } from '../utils/i18n';
 import VenueDetailMapBlock from './map/VenueDetailMapBlock';
 import VenueImageLightbox from './VenueImageLightbox';
 import { localizeVenueDescriptionForDisplay } from '@/lib/descriptions/venueDescriptionModel';
+import SaveToast from './SaveToast';
+import CollectionSheet from './CollectionSheet';
 
 interface VenueDetailProps {
   venue: ScoredVenue;
@@ -17,7 +18,6 @@ interface VenueDetailProps {
 }
 
 const practicalSignalPattern = /precio|price|reserva|reservation|ruido|noise|confirmed|confirmado|confidence|confianza|editorial/i;
-const internalTagPattern = /consumer|ready|lista|sistema|system|staging|published|public|google|cloudinary|fallback/i;
 
 function venueText(venue: ScoredVenue) {
   return [
@@ -107,6 +107,8 @@ function getMomentDescription(venue: ScoredVenue, phase: 'morning' | 'afternoon'
 export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetailProps) {
   const { savedVenueIds, toggleSaveVenue, language } = useCircadian();
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [showToast, setShowToast] = useState(false);
+  const [showSheet, setShowSheet] = useState(false);
 
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
@@ -118,20 +120,9 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
     { src: venue.heroImage, role: 'hero' },
     ...galleryImages,
   ];
-  const ambientSignals = [
-    ...venue.tags.map((tag, index) => displayVenue.displayTags[index] || tag),
-    ...description.bestFor,
-  ].filter((tag, index, values) => (
-    tag
-    && !practicalSignalPattern.test(tag)
-    && !internalTagPattern.test(tag)
-    && values.findIndex((value) => value.toLowerCase() === tag.toLowerCase()) === index
-  ));
-  const visibleAmbientSignals = ambientSignals.slice(0, 7);
-  const hiddenAmbientSignalCount = Math.max(0, ambientSignals.length - visibleAmbientSignals.length);
+
   const rhythmNote = getRhythmNote(venue, description.goodToKnow, language);
 
-  // Scroll back to the top of the detail view on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [venue.id]);
@@ -140,7 +131,6 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
     setSelectedImageIndex(null);
   }, []);
 
-  // Derived timeline attributes matching the design mock
   const timeBlocks = [
     {
       phase: 'morning',
@@ -160,223 +150,176 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   ];
 
   return (
-    <div className="w-full min-h-screen bg-k-black pb-32 text-k-text relative z-40 overflow-x-hidden">
-      {/* Immersive Parallax Header - Optimized height for mobile */}
-      <header className="relative w-full h-[52vh] md:h-[75vh] overflow-hidden">
-        {/* Floating Controls */}
-        <div className="absolute top-6 left-5 right-5 z-50 flex gap-4 justify-between items-center">
+    <div className="w-full min-h-screen bg-[#0F0D0B] pb-32 text-[#F5F0E8] relative z-40 overflow-x-hidden">
+      {/* 1. Gallery Full-Bleed Horizontal Scroll */}
+      <header className="relative w-full h-[50vh] md:h-[60vh] bg-black">
+        {/* Floating Back Button */}
+        <div className="absolute top-6 left-5 z-50">
           <button 
             onClick={onBack}
-            className="w-10 h-10 rounded-full bg-[#0F0D0B]/60 backdrop-blur-xl border border-white/5 flex items-center justify-center text-k-text-secondary hover:text-k-text hover:bg-[#0F0D0B]/90 transition-all cursor-pointer shadow-lg"
-            aria-label={t('back', language)}
+            className="w-10 h-10 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white/80 hover:text-white transition-all shadow-lg"
           >
-            <ArrowLeft size={16} />
-          </button>
-          
-          <button 
-            onClick={() => toggleSaveVenue(venue.id)}
-            className="w-10 h-10 rounded-full bg-[#0F0D0B]/60 backdrop-blur-xl border border-white/5 flex items-center justify-center text-k-text-secondary hover:text-k-gold hover:bg-[#0F0D0B]/90 transition-all cursor-pointer shadow-lg"
-            aria-label={isSaved ? t('unsave', language) : t('save', language)}
-          >
-            <Heart size={16} fill={isSaved ? "#C9A96E" : "none"} className={isSaved ? "text-k-gold" : ""} />
+            <ArrowLeft size={18} />
           </button>
         </div>
 
-        {/* Parallax Image Wrap */}
-        <motion.div 
-          layoutId={`card-wrap-${venue.id}`}
-          className="absolute inset-0 w-full h-full"
-        >
-          <Image
-            src={venue.heroImage}
-            alt={venue.name}
-            fill
-            priority
-            className="object-cover opacity-90"
-          />
-          {/* Rich Cinematic Dark Gradient Mask */}
-          <div className="absolute inset-0 bg-gradient-to-t from-k-black via-k-black/40 to-transparent"></div>
-        </motion.div>
-
-        <button
-          type="button"
-          onClick={() => setSelectedImageIndex(0)}
-          className="absolute inset-0 z-10 cursor-zoom-in focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/60 focus-visible:ring-inset"
-          aria-label={`${language === 'es' ? 'Ampliar imagen principal de' : 'Expand hero image of'} ${venue.name}`}
-        />
-
-        {/* Hero Meta Info - Responsive bottom positioning */}
-        <div className="absolute bottom-7 left-5 right-5 md:bottom-10 md:left-12 z-20 flex flex-col gap-2.5 max-w-2xl">
-          <span className="text-[10px] text-k-gold tracking-widest uppercase font-sans font-medium">
-            {displayVenue.displayCategory}
-          </span>
-          <h1 className="text-k-text font-display text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide drop-shadow-md leading-[0.98]">
-            {venue.name}
-          </h1>
-          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-k-text-secondary font-sans text-xs mt-1">
-            <div className="flex items-center gap-1">
-              <MapPin size={11} className="text-k-gold-muted" />
-              <span>{venue.location}</span>
+        {/* Gallery Carousel */}
+        <div className="w-full h-full flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+          <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
+          {viewerImages.map((img, i) => (
+            <div key={i} className="w-full h-full flex-shrink-0 snap-start relative cursor-zoom-in" onClick={() => setSelectedImageIndex(i)}>
+              <Image src={img.src || ''} alt={`${venue.name} - ${i}`} fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F0D0B] via-transparent to-black/20" />
             </div>
-            <span className="hidden sm:inline w-1 h-1 rounded-full bg-k-border-light"></span>
-            <span className="capitalize">{displayVenue.displayAtmosphere}</span>
-          </div>
+          ))}
         </div>
       </header>
 
-      {/* Main Container */}
-      <main className="max-w-4xl mx-auto px-5 md:px-12 mt-8 md:mt-12">
-        {/* Poetic Narrative Section */}
-        <section className="mb-11 border-b border-k-border/30 pb-11">
-          <div className="flex flex-col gap-5">
-            <p className="text-lg md:text-2xl text-k-gold-light font-display italic font-light leading-[1.42] max-w-3xl">
-              &ldquo;{description.oneLiner}&rdquo;
-            </p>
-            <p className="text-[13px] md:text-sm text-k-text-secondary font-sans font-light leading-[1.9] md:leading-[1.95] text-left md:text-justify max-w-3xl">
-              {description.summary}
-            </p>
-          </div>
-        </section>
+      {/* 2. Title, Barrio, Tags */}
+      <section className="px-6 -mt-6 relative z-10 max-w-2xl mx-auto w-full">
+        <h1 className="text-4xl font-display text-[#F5F0E8] mb-2 drop-shadow-lg">{venue.name}</h1>
+        <div className="flex items-center gap-1.5 text-[#8A7A5A] font-sans text-sm mb-5">
+          <MapPin size={14} />
+          <span>{venue.location}</span>
+          <span className="mx-1">•</span>
+          <span className="capitalize">{displayVenue.displayAtmosphere}</span>
+        </div>
+        
+        <div className="flex flex-wrap gap-2 mb-8">
+          {(displayVenue.displayTags || venue.tags).slice(0, 3).map((tag: string) => (
+            <span key={tag} className="px-3 py-1.5 rounded bg-[#C9A96E]/10 border border-[#C9A96E]/20 text-[#C9A96E] text-[10px] uppercase tracking-wider font-medium">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </section>
 
-        {/* Ambient Characteristic Tags */}
-        <section className="mb-12">
-          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-            {t('atmosphericCharacter', language)}
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {visibleAmbientSignals.map((tag) => (
-              <span key={tag} className="px-3.5 py-1.5 rounded-lg border border-k-gold/10 text-[11px] font-sans tracking-wide text-k-gold bg-k-gold-dim/40 shadow-sm">
-                {tag}
+      {/* 3. CTAs */}
+      <section className="px-6 max-w-2xl mx-auto w-full flex items-center justify-between gap-4 mb-10 pb-10 border-b border-white/5">
+        <button 
+          onClick={() => {
+            toggleSaveVenue(venue.id);
+            if (!isSaved) setShowToast(true);
+            else setShowToast(false);
+          }} 
+          className="flex-1 flex flex-col items-center justify-center gap-2 py-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5"
+        >
+          <Heart size={20} className={isSaved ? "text-[#C9A96E] fill-[#C9A96E]" : "text-[#B0A898]"} />
+          <span className="text-[10px] font-sans uppercase tracking-widest text-[#B0A898]">{isSaved ? t('unsave', language) : t('save', language)}</span>
+        </button>
+        <button className="flex-1 flex flex-col items-center justify-center gap-2 py-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5">
+          <Navigation size={20} className="text-[#B0A898]" />
+          <span className="text-[10px] font-sans uppercase tracking-widest text-[#B0A898]">Ir</span>
+        </button>
+        <button className="flex-1 flex flex-col items-center justify-center gap-2 py-4 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5">
+          <Share size={20} className="text-[#B0A898]" />
+          <span className="text-[10px] font-sans uppercase tracking-widest text-[#B0A898]">Compartir</span>
+        </button>
+      </section>
+
+      {/* 4. Descripción Corta */}
+      <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+        <p className="text-xl md:text-2xl text-[#C9A96E] font-display italic font-light mb-6 leading-relaxed">
+          &ldquo;{description.oneLiner}&rdquo;
+        </p>
+        <p className="text-sm md:text-base text-[#B0A898] font-sans font-light leading-[1.8] text-justify">
+          {description.summary}
+        </p>
+      </section>
+
+      {/* 5. Mejor Para */}
+      {description.bestFor.length > 0 && (
+        <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+          <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">Mejor para</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {description.bestFor.slice(0, 5).map(item => (
+              <span key={item} className="px-4 py-2 rounded-full border border-[#C9A96E]/20 bg-[#C9A96E]/5 text-xs text-[#E8D4A6] shadow-sm">
+                {item}
               </span>
             ))}
-            {hiddenAmbientSignalCount > 0 && (
-              <span className="px-3.5 py-1.5 rounded-lg border border-white/5 text-[11px] font-sans tracking-wide text-k-text-secondary/70 bg-white/[0.015]">
-                +{hiddenAmbientSignalCount} {language === 'es' ? 'señales' : 'signals'}
-              </span>
-            )}
           </div>
         </section>
+      )}
 
-        {/* Chrono-Atmospheric Shifts (Circadian Drift) */}
-        <section className="mb-14 border-t border-k-border/30 pt-10">
-          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-5">
-            {t('circadianShifts', language)}
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {timeBlocks.map((block) => (
-              <div 
-                key={block.phase}
-                className={`p-5 rounded-xl border transition-all duration-500 ${
-                  venue.atmosphere === block.phase || (venue.atmosphere === 'late-night' && block.phase === 'night')
-                    ? 'border-k-gold/20 bg-k-gold-glow/50 shadow-md'
-                    : 'border-k-border bg-k-surface/20'
-                }`}
-              >
-                <div className="flex items-center justify-between mb-2.5">
-                  <span className="text-[9px] font-sans tracking-widest uppercase font-semibold text-k-text-tertiary">
-                    {block.label}
-                  </span>
-                  {(venue.atmosphere === block.phase || (venue.atmosphere === 'late-night' && block.phase === 'night')) && (
-                    <span className="text-[8px] font-sans px-2 py-0.5 rounded-full border border-k-gold/15 text-k-gold/75 font-medium bg-k-gold/5">
-                      {t('activePhase', language)}
-                    </span>
+      {/* 6. Por qué ir ahora (Time Blocks) */}
+      <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+        <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">El momento ideal</h3>
+        <div className="flex flex-col gap-4">
+          {timeBlocks.map(block => {
+            const isActive = venue.atmosphere === block.phase || (venue.atmosphere === 'late-night' && block.phase === 'night');
+            return (
+              <div key={block.phase} className={`p-5 rounded-2xl border transition-all ${isActive ? 'border-[#C9A96E]/30 bg-[#C9A96E]/10 shadow-[0_0_20px_rgba(201,169,110,0.05)]' : 'border-white/5 bg-white/[0.02]'}`}>
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm font-sans font-medium text-[#F5F0E8]">{block.label}</span>
+                  {isActive && (
+                    <span className="text-[9px] text-[#C9A96E] uppercase tracking-widest font-medium">Recomendado</span>
                   )}
                 </div>
-                <p className="text-[11px] text-k-text-secondary font-sans font-light leading-relaxed">
-                  {block.desc}
-                </p>
+                <p className="text-xs md:text-sm text-[#B0A898] font-light leading-relaxed">{block.desc}</p>
               </div>
-            ))}
+            );
+          })}
+        </div>
+      </section>
+
+      {/* 7. Info Práctica */}
+      <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+        <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">Antes de ir</h3>
+        <div className="flex flex-col gap-5 p-5 rounded-2xl border border-white/5 bg-white/[0.02]">
+          <div className="flex gap-4 items-start">
+            <Clock size={16} className="text-[#C9A96E] shrink-0 mt-0.5" />
+            <div>
+              <span className="text-[9px] text-[#8A7A5A] font-sans tracking-wider uppercase block mb-1">Ritmo</span>
+              <p className="text-xs md:text-sm text-[#B0A898] leading-relaxed">{rhythmNote}</p>
+            </div>
           </div>
-        </section>
-
-        {/* Cinematic Visual Gallery */}
-        {galleryImages.length > 0 && (
-          <section className="mb-14 -mx-5 md:mx-0">
-            <div className="px-5 md:px-0">
-              <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-4">
-                {t('vignettes', language)}
-              </h3>
+          <div className="h-px bg-white/5 w-full" />
+          <div className="flex gap-4 items-start">
+            <DollarSign size={16} className="text-[#C9A96E] shrink-0 mt-0.5" />
+            <div>
+              <span className="text-[9px] text-[#8A7A5A] font-sans tracking-wider uppercase block mb-1">Detalles</span>
+              <p className="text-xs md:text-sm text-[#B0A898] mb-1">{description.priceLabel}</p>
+              <p className="text-xs md:text-sm text-[#B0A898]">{description.reservationHint}</p>
             </div>
-            <div
-              className="flex snap-x snap-mandatory scroll-px-5 gap-4 overflow-x-auto px-5 pr-[14vw] pb-2 [-ms-overflow-style:none] [scrollbar-width:none] md:px-0 md:pr-0 [&::-webkit-scrollbar]:hidden"
-              aria-label={language === 'es' ? 'Escenas del ambiente' : 'Atmospheric scenes'}
-            >
-              {galleryImages.map((image, index) => (
-                <button
-                  type="button"
-                  key={image.id || `${venue.id}-gallery-${index}`}
-                  onClick={() => setSelectedImageIndex(index + 1)}
-                  className="group relative aspect-[4/5] w-[80vw] max-w-[360px] shrink-0 snap-start cursor-zoom-in overflow-hidden rounded-2xl border border-k-gold/10 bg-[#100D0A] shadow-[0_24px_70px_rgba(0,0,0,0.34)] focus:outline-none focus-visible:ring-1 focus-visible:ring-k-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-k-black md:w-[min(38vw,360px)]"
-                  aria-label={`${language === 'es' ? 'Ampliar imagen' : 'Expand image'} ${index + 1} ${language === 'es' ? 'de' : 'of'} ${venue.name}`}
-                >
-                  <Image
-                    src={image.src || venue.heroImage}
-                    alt={`${venue.name} ${t('detailVignetteAlt', language)}`}
-                    fill
-                    sizes="(min-width: 768px) 360px, 80vw"
-                    className="object-cover opacity-90 saturate-[0.92] transition duration-1000 ease-out group-hover:scale-[1.025] group-hover:opacity-100"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0705]/45 via-transparent to-[#0A0705]/10 opacity-70 transition-opacity duration-700 group-hover:opacity-45" />
-                  <div className="absolute inset-x-3 bottom-3 flex justify-between text-[9px] uppercase tracking-[0.24em] text-k-text/45">
-                    <span>{language === 'es' ? 'Escena' : 'Scene'}</span>
-                    <span>{String(index + 1).padStart(2, '0')}</span>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </section>
-        )}
+          </div>
+        </div>
+      </section>
 
-        <VenueImageLightbox
-          images={viewerImages}
-          index={selectedImageIndex}
-          venueName={venue.name}
-          language={language}
-          onClose={closeLightbox}
-          onChange={setSelectedImageIndex}
-        />
-
-        {/* Spatial Placement Map Block */}
+      {/* 8. Mapa */}
+      <section className="px-6 max-w-2xl mx-auto w-full mb-12">
+        <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">Ubicación</h3>
         <VenueDetailMapBlock venue={venue} onOpenInAtlas={onOpenInAtlas} />
+      </section>
 
-        {/* Quiet Structural Utilities - Responsive stacking layout */}
-        <section className="mb-8 p-5 bg-k-surface/20 border border-k-border/30 rounded-2xl">
-          <h3 className="text-[10px] font-sans uppercase tracking-widest text-k-text-tertiary mb-5">
-            {t('beforeGoing', language)}
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 divide-y md:divide-y-0 md:divide-x divide-k-border/30">
-            <div className="flex gap-3.5 items-start pb-4 md:pb-0">
-              <Clock className="text-k-gold flex-shrink-0 mt-0.5" size={14} />
-              <div>
-                <span className="text-[9px] text-k-text-tertiary font-sans tracking-wider uppercase block mb-1 font-medium">
-                  {t('temporalPace', language)}
-                </span>
-                <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed">
-                  {rhythmNote}
-                </span>
-              </div>
-            </div>
-            <div className="flex gap-3.5 items-start pt-4 md:pt-0 md:pl-8">
-              <DollarSign className="text-k-gold flex-shrink-0 mt-0.5" size={14} />
-              <div>
-                <span className="text-[9px] text-k-text-tertiary font-sans tracking-wider uppercase block mb-1 font-medium">
-                  {t('investment', language)}
-                </span>
-                <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed block">
-                  {description.priceLabel}.
-                </span>
-                <span className="text-[11px] text-k-text-secondary font-sans leading-relaxed block">
-                  {description.reservationHint}.
-                </span>
-                <span className="text-[11px] text-k-gold/70 font-sans leading-relaxed block mt-1">
-                  {description.confidenceLabel}.
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+      {/* 9. Lugares Similares */}
+      <section className="px-6 max-w-2xl mx-auto w-full mb-16">
+        <h3 className="text-[10px] font-sans uppercase tracking-widest text-[#8A7A5A] mb-5">Lugares Similares</h3>
+        <div className="p-8 rounded-2xl border border-white/5 border-dashed flex flex-col items-center justify-center text-center opacity-50">
+          <p className="text-xs font-sans tracking-widest uppercase text-[#8A7A5A]">En construcción (Sprint 2)</p>
+        </div>
+      </section>
+
+      <VenueImageLightbox
+        images={viewerImages}
+        index={selectedImageIndex}
+        venueName={venue.name}
+        language={language}
+        onClose={closeLightbox}
+        onChange={setSelectedImageIndex}
+      />
+
+      {/* Save Flow Modals */}
+      <SaveToast 
+        show={showToast} 
+        onClose={() => setShowToast(false)} 
+        onAddToList={() => setShowSheet(true)} 
+      />
+      
+      <CollectionSheet 
+        isOpen={showSheet} 
+        venue={venue} 
+        onClose={() => setShowSheet(false)} 
+      />
     </div>
   );
 }

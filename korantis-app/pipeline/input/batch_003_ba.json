@@ -1,0 +1,158 @@
+{
+  "batch_id": "batch_003_ba",
+  "city": "Buenos Aires",
+  "created_at": "2026-06-06T00:00:00.000Z",
+  "notes": "First AI-first defensive-staging batch. This input is venue seed data only; real extraction, image discovery, M3 classification, staging, and publication are intentionally not run by the MVP orchestrator.",
+  "venues": [
+    {
+      "name": "Floreria Atlantico",
+      "neighborhood": "Retiro",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch; verify official and 50 Best image sources."
+    },
+    {
+      "name": "Gran Bar Danzon",
+      "neighborhood": "Retiro",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch; prioritize spatial bar interior photography."
+    },
+    {
+      "name": "Verne Club",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch; below-preferred Batch 02 hero candidate needs stronger source."
+    },
+    {
+      "name": "Presidente Bar",
+      "neighborhood": "Recoleta",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Frank's Bar",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Negroni Cocktail Bar",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Uptown Bar Buenos Aires",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch; preserve identity ambiguity around Uptown / Uptown & The Bronx."
+    },
+    {
+      "name": "Victoria Brown Bar",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Cafe Tortoni",
+      "neighborhood": "Monserrat",
+      "type": "cafe",
+      "notes": "First AI-first defensive-staging batch; historic spatial photography should be prioritized."
+    },
+    {
+      "name": "LAB Training Center & Coffee Shop",
+      "neighborhood": "Palermo",
+      "type": "coffee_shop",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Cuervo Cafe",
+      "neighborhood": "Palermo",
+      "type": "coffee_shop",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Full City Coffee House",
+      "neighborhood": "Palermo",
+      "type": "coffee_shop",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Birkin Coffee",
+      "neighborhood": "Palermo",
+      "type": "cafe",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Coffee Town Palermo",
+      "neighborhood": "Palermo",
+      "type": "coffee_shop",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Lattente Palermo",
+      "neighborhood": "Palermo",
+      "type": "coffee_shop",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Oporto Almacen",
+      "neighborhood": "Belgrano",
+      "type": "restaurant",
+      "notes": "First AI-first defensive-staging batch; Batch 02 strongest full-resolution spatial hero candidate."
+    },
+    {
+      "name": "Proper Buenos Aires",
+      "neighborhood": "Palermo",
+      "type": "restaurant",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Aramburu Restaurante",
+      "neighborhood": "Recoleta",
+      "type": "fine_dining",
+      "notes": "First AI-first defensive-staging batch; Michelin/editorial image sources likely relevant."
+    },
+    {
+      "name": "Don Julio Parrilla",
+      "neighborhood": "Palermo",
+      "type": "parrilla",
+      "notes": "First AI-first defensive-staging batch; Batch 02 source-poor venue requiring better spatial sourcing."
+    },
+    {
+      "name": "Elena Restaurant",
+      "neighborhood": "Retiro",
+      "type": "restaurant",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "La Biela",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "notes": "First AI-first defensive-staging batch; Batch 02 exterior candidate needs venue verification."
+    },
+    {
+      "name": "Bar 878",
+      "neighborhood": "Villa Crespo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Milion Buenos Aires",
+      "neighborhood": "Recoleta",
+      "type": "bar",
+      "notes": "First AI-first defensive-staging batch; Batch 02 source-poor venue."
+    },
+    {
+      "name": "CoChinChina Buenos Aires",
+      "neighborhood": "Palermo",
+      "type": "cocktail_bar",
+      "notes": "First AI-first defensive-staging batch."
+    },
+    {
+      "name": "Sacro Buenos Aires",
+      "neighborhood": "Palermo",
+      "type": "plant_based",
+      "notes": "First AI-first defensive-staging batch."
+    }
+  ]
+}

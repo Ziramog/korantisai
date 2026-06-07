@@ -1,0 +1,922 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T02:31:35.426Z",
+  "m3_called": true,
+  "model_used": "MiniMax-M3",
+  "results": [
+    {
+      "venue_name": "Verne Club",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPwagnPYs7LPJiNsA7CiF0rSHMTv8oE71ht0vP5iCmMmIHEsDMUVcoFAwfjCLP_rff8BIsQ30FGdrOUWiLx6or3xEmOrNybR1dU9u11XzJc4I9Mbfxeym5KwvLPG9u268sQ3o2WrXVu3nY7q1w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Top-down close-up of a plate of skewered meat with sauce, peanuts, herbs, and garnish, alongside a glass of beer on a marbled surface. Only food and tabletop are visible, no venue interior or people."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Verne Club",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMQEudv9eNBve5tEoajeWF6qFs0IGnOWVB5319D6wCOmIj9uCRJJDFIfE9zllxwKy7Ghq1QN7gKcF6rH7t7eAZVVpeJcK9P39aAB3dEIzVDFgr513LU1WGqx47BrF-C1ti9VKISeg2HyalawvKVfY3Pjg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Two wine glasses with red wine dominate the foreground on a red table; background shows a dimly lit interior with red curtains and leather seating, but the framing centers on the drinks."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Verne Club",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMFK5yfjAQ2ikqECi7qWmxN6p6Tqyb5INe5o-Y77Y9pYGVz3XeA5QepwMl1C2wZ4Az-1aXNhjG062SHMIi-5gRGhgOL5-qnX72QSvRp9qDKdizlbJppiRXXmWBhYl9lZgI4ErWI8dgqB_6VDBnoc3_bdQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of an Aperol Spritz cocktail in a wine glass with orange slice, placed on a branded coaster with a water glass and bottles in the background. The focus is entirely on the drink product, with the bar environment blurred and only partially visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Verne Club",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNYqSn3_6fMEmwhmTC5kNJo-iKvcEggBqszFuRH797mnh5GFUYVKXEW7_qSI5KjaaoUJOCmalUMVc4061C_TXHa6Yc7YRhCjaH-2RQmJ4orNdyEyDgppIhuQwXmwyr3Z1hqS3hGg-cybAhmgb0KSsFGeA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1495,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of cocktails and a sesame-coated dish on a red table with a metallic lamp; the focus is on food and drinks rather than the venue's space, with a person partially visible but not identifiable. Warm, dim lighting suggests an intimate atmosphere but the framing makes it unsuitable as a hero interior shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 721,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior view of a restaurant/wine bar with well-lit dining tables, wine shelves, pendant lights, and an open kitchen; person is a minor element, not dominating."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN1jLC7rHuBW4HixbWCpXGvpqHYkoNxzP7fwu5BOVAb90JGTBl32C2m6b1IpocL0Wbpm_jmvfy1xEc-7OA4y-QtdVk-H3SMQASM84-f4_2kVK76v_kgGIfFVUhCKPdnx7LIxY_VEHkfAZXp=s4800-w1600-h1365",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1066,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Overhead shot of a plated steak, mashed potatoes, side dishes, wine glasses, and cutlery on a marble surface. No venue space, people, or architectural elements are visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMdBUpi0kV_Q5OSkwha8IsV3rSKzqHTMdLf120Rc8fNoGPVAFEfwwmo3m5ux2uHgwhBEEJslZJvbU11jv0BEKCuRQ6AhP4ZWO5Fz0VNMi5B1i-L8f7OO4akwgn109_LGFl3KMQ__awW5f1R=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 739,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Nighttime exterior shot of a corner building with white tiled facade, illuminated signage reading 'EL MERCADO' on rooftop terrace, lit windows revealing restaurant interior, and ground-floor signs for VINOS, RESTAURANT, CAFETERÍA, ROTISERÍA."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPEbZ1JQCcPuzRnuOuZmxjNYpEGqnwOe08B7wwLn8H5R3WHDszG6M0ISIraFJ_hVR52zpiAacA93qx7Q83Nk4wCRI_7K0XtB0yDaJPHi1jlbIwQYh4T0I_1K7J6miiCcz1BT0NByWeLv1UHJaYdm6IyA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1544,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated dish with salmon, green puree, and dark compote on a white plate; no spatial or venue context visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP92B4dwW_dTl-94QhzY4efXcE6OgUUPochXmTg2gRmK4neIkuQTzK3kM1TmuE2ZLL31uzw14gpDQoK-G7mVLP7CjcPhJBrVJFi1YzR6VhArfesimM0hxPIbZ5K5E2i89sjIlMa6lakeWdKW5W7iehbxA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1205,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear daytime exterior shot of a corner restaurant building with white-tiled facade, awnings labeled 'Restaurant' and 'Rotiseria', rooftop signage, and a scooter parked on the sidewalk."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTaxCaDLhGi2861ohGcTKxops3ggvNN3-wKuwkm1oGki42N5WpSBCAzWc7oAZKG_w2omSBcuBK8v5vsRO9v_gelP5muKUiglr-jSFN8AgzqsOc6OYHY6PjlZQO4gkn6MeRC8wECZez8aryg3E=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated dessert (chocolate mousse with cream and biscuit) on a white plate; the venue space is not shown, and only hands at the edge are visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMYbxL180E2aLZwPDFNoz2vE5t0cW5Gpp9mmcgVBj7f2gVYJ2K68QNGYmE35GnhFwktPlvwGhvFSDlUR2GDKz4Cc2dApG0YP9CdQf9HoAGxL_3SDIGFRuRC9Ejs9BqgjOhgNGT7FYZkDBMLa20=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 739,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Nighttime exterior facade of a tiled restaurant with illuminated windows revealing the interior, signage reading 'CAFETERÍA' and 'ROTISERÍA', and rooftop greenery."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqM1S2Dwa6pRqIr0uKIgOfri4Erj3dIh6YMXVOQHJTz3xumSxG-2MFCKd3E738_cF-1_MaM1bsrX8OD6oufZViKVgNQXRxcCbl8b8spty9o_R7uz6sghmhcNyMt0VKw_69PnklASRi5tRN4PEqf4NAGA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit bar interior with visible booths, bar, chalkboard menus, candles, and patrons; faces are present in the foreground and midground, and the composition is angled and low-quality, making it better as atmosphere than a hero shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPXfskM1rUJHpJK4ixK5p8fjxZ6jv5FkNLo34cxNnxcq_Ofujj0LZlSk66OlqBO_jcGPKvj0JGgrCWpxygGl4mlCsuScfi8vz8ESk21TUj9pUsFUyr-Mu6Yeuptm-GxSFxSLMOhguocW2uQnd93KTpd=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of a single cocktail in a coupe glass with a large ice cube and garnish dominates the frame; the bar background is heavily blurred and out of focus, with the cocktail resting on a branded napkin."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNKtBfMYRcygYWrBCXO5x0Jy3HJGaiporKfILpRH_c57-aVa7KvbGMPTJEq0e0XmgQ4JBvgbkU74OLCUdvcwjD9ID9WQ3xq1dAx-sGgeCUymjEB8awUF_89v42zPtecF1HFgcOrBF8UHLxZp_c=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Long bar with row of stools, backlit liquor bottles, chalkboard menu, dim warm lighting with dark ceiling, wooden floor — clear venue interior."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Wide view of a bar interior with extensive floor-to-ceiling wine racks, wine glassware, bar counter with place settings, and warm low-key lighting creating a dark, intimate atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPFER7niImhVqB6DLr9SUx5OLinzkKvxOMZGOQM4_CjyHLiDMo5Ul-c5kP_VNsas9HX-mfG7Hk87NY3D6evOKQtIgG5vyMnQWm_r1gMZca41QMUDUnWt3lzpgyfDmVFvkj-WSM6VjOH-b1kaSNBgdk6=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of a wine glass on a wooden table with a branded card; the background window view is heavily out of focus and the subject is a single drink, not the venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Biela",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOoj-ZUY-p6ZfvyNU3tojw9Zfk-zI6iwi-88yr207vuF3uwMKiURL1LEaUMqhow4ihR_8AMtdWGgfGfQdZ7wghgUJjqo-PrqBvJffPerCOyZQ_Yil-rZJ_Tyi4vqiJ4CTN55ylcvllAu2mcZao=s4800-w1600-h1529",
+      "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Top-down close-up of a meringue dessert and a cup of coffee on a dark granite surface with branded plateware; no venue space is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Biela",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear exterior shot of 'La Biela' cafe facade with green awning, ornate green architecture, statues of tango figures by a red 'Correo Argentino' mailbox, and outdoor seating visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "La Biela",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM2-w8b0-x0UQYFWvvPc3obXAxq372YGZqs_d_VEZ0WBbuS5MIspwBzpvT4R7hxifwA81zp7SYkHOFh4MlBngegImzLgnw76GFFAcjZQgKwWiapvKnwMrD7YLHUQcYHw7UXIk8Ftrz4AlWhw0zcQPU4MQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Exterior facade of 'La Biela' cafe with two statues of men flanking a red 'Correo Argentino' mailbox on a tiled sidewalk; warm interior lighting visible through windows."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Biela",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNlQkaeMv5BDHsQUZhk4Ns_1_LRfLBwAfRkLwBPEmAvMeI6lLszxeHiu7hpfKsRGcOBdJwqm1oE1WaXBIMqpcNWGbEFbQGJIBr6WWlfEdUC-PQcx4L6-tByxNHnlRB5e598FYx083DQ1_TX5WosOfnE2Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a cappuccino with cocoa powder in a branded cup ('Salón de Té La Biela') on a saucer. The drink dominates the frame; the table and background are cropped and out of focus, with no broader venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Biela",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPsSSk55rJTGWQbm_vnFVoHuY_OJlPrf5ZC-D6_3nlLOFV9_8HRjDLpF3Po1mWle-cHPPefB9qPXEX__XiAzLkQj_UmnIlQLoqGAs3jByJ0DWf0UMWgOGWatVNmnDokWlr12PFGyPSL-KwKkKxROmKu-Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Outdoor patio seating area with green plastic chairs, white tables, dark umbrellas (one labeled 'Imperial'), ornate lampposts, and red British phone booths in the background; partially obstructed view with strong sun and shadows."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Biela",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPf54qIxYsgMIYZRh18M_2bgWE9sMQWISCsT-5hSGqitnsCg6eG12WbCbaITR3yOBHCGds3AsVg-3_UsqLb0CK4STZtl3OWmyu67-KUiF-ewj0gAtORtfWL__R1ReCXdD4ovFH9PMKm_LwxtEfNVJujA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1310,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of coffee cups, croissants, sugar packets, and a branded menu on a marble table; food and drink dominate the frame with minimal background context."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNbKoSIQ1k8KeoTEmlkrQTI9eYa55quLo2oWmTE9Ymf3CEcHOORieyMp5BWDVJ6AkiBzYzn9o_8W9PBj4No_y7Jx4OXSFrI1_Tu2JffsC7ogGj1DX039TEIwOgG2hygYae6pLd5kZIJKMXctA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Interior of a wine shop with extensive floor-to-ceiling wooden wine shelves on the left, wide-plank wood flooring, and abundant colorful fresh flower arrangements displayed on wooden tables and crates in the foreground and along a dark back wall with hand-painted signage. Warm pendant lighting creates a cozy, lush atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNwqJ8CB1xcDK1eZt-920BM_g2Bp9IuZkFYlQl5sW4cnRaPLtIMdyy2ZHx9uSRark54autzv5UnfGxN2cu6OLfVdxXhzSDaZ21NaDJvHAfL_pUT0GEfo339HJaExN46UADz0Wo3KCfFOyU_UZgSpk4vOg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Wine shop interior with floor-to-ceiling wooden shelves stocked with bottles, a red rolling ladder, a chalkboard wall with hand-lettered gin branding, and warm pendant lighting creating a cozy retail atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPf9fnvOtRDS9LmwIctEaeqaG2Diz9BXSRWzCTDjLKrfiLnAsNaW8FUM0AoWkPicLQluYL8y-VaR0Xb5UqjlyhIVBzQu-Zdk884xSxtx-MS4kOJYIR-EtEQ7U0beqXUQBlrz2qnvDUJMhSMtpqoWkQ_Ig=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Interior bar view with dim, moody lighting, exposed ceiling beams, liquor shelves, and a chalkboard menu; composition is partially blocked by a person in the foreground, making it unsuitable as a hero shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Well-lit bar interior with extensive liquor shelves, wine fridge, glassware, and potted plants on a wooden counter, conveying a warm, intimate speakeasy atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6PPaAlL1_-66XYpu9M_lwtRneYMvw4T8Ee0DbYt-7Vbel7MqIQ4JRmQZlMHf4mxznbqTgnPcwFW5fm3YJDcfM2ITbG46jLALgQmxHCgIvzZiTUhym_dAFfxxnZ2Awv_Oqu87Zd6CsVvxb1KKQq7J84g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Interior of a shop featuring tall wooden shelves densely stocked with wine bottles, a red ladder, floral arrangements in vases, a chalkboard-style wall with hand-lettered text, a wooden cabinet, and ornate ceiling molding. Cluttered composition with no clear focal point, dominated by bottles and flowers, making it unsuitable as a hero image but useful for atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPRGkMdow7BF9nTomp3PxVWaK-qm-pZzt5nc4ruqnHmvmiDUNifa3a6xQujE1xHg_EancLYxrUYCOB78xlOCLoBww_Hn5_xkyRoyhKQiuldtYap947UM_nbWqA9Of7ZsOHeXlc_BnclT2vcBMd-ru577Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear exterior facade at night showing signage 'PRINCIPE DE LOS APOSTOLES', marble columns, address 872, warmly lit entrance with floral decor and visible interior shelving."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN44SgSy1N3R7d1OPMXMt6BetWAHQ9SHautG1IuZoUNQthdEadAjWW7iapOIecqJBEbuSjnuY3TFHnftS_cC_Cm4ZEiau88iga8hh5XdrC-0ERF6lo_lz4METETn-Ya6-8oaV18xGhXWajfqg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "acceptable",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior view of a bar/restaurant with wine shelves, counter seating, and patrons dining; space is clearly shown but people dominate the foreground, making it better as atmosphere than a clean hero shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNph9fJ7i13R0JPQsWFiH8lQmOl60hwMJKVlYf4Nbn7wNroZRf-YUun2yk-JahT82lYsoZPJilApOjcpX1ytBNDK87fYV9l5zUQDOk1ZucmXy-TphOvO3H3Dlllnc1MTw-5qIr0fSU3d0irb6yE0TYK-A=s4800-w1125-h1404",
+      "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1125,
+      "height": 1404,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a sushi platter with chopsticks and soy sauce on a wooden surface; no venue space or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Verne Club",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPiXKF56xpxLzWmEn3YMpDUuwfZ6r9Ab_XJjSXiBi9ekTuFYDX5yKXiy0MeyT5zFdQBgetrheThp5-yEo0fKfpMg7kWgvxvX4p3-dU-UvLlsXr2JBgz8Fd9yP8bR-ay7CcFaLsPIVYKFYi5n_yDcsvFeA=s4800-w720-h833",
+      "source_url": "https://maps.google.com/?cid=8955743461096191207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 720,
+      "height": 833,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of a single cocktail in a coupe glass with mint and lemon garnish, set on a dark bar surface. No people, no spatial context of the venue is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "below_preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "resolved_image_url": "http://floreriaatlantico.com.ar/img/Criatura1.png",
+      "source_url": "http://floreriaatlantico.com.ar/",
+      "source_type": "official_website",
+      "width": 900,
+      "height": 451,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_decorative",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "decorative",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Pink line-art illustration of a dragon-like creature on a white background with coordinates; purely decorative graphic, no venue space shown."
+      },
+      "risk_flags": [
+        "below_preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    }
+  ],
+  "summary": {
+    "images_requested": 32,
+    "images_processed": 32,
+    "images_skipped": 0,
+    "m3_ok_count": 12,
+    "invalid_json_count": 0,
+    "scene_type_distribution": {
+      "product_food": 14,
+      "hero_interior": 4,
+      "hero_exterior": 6,
+      "gallery_atmosphere": 7,
+      "decorative": 1
+    },
+    "risk_flag_distribution": {
+      "rights_review_needed": 31,
+      "preferred_resolution": 30,
+      "below_preferred_resolution": 2
+    }
+  }
+}

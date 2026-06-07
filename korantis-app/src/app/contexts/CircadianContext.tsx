@@ -51,6 +51,7 @@ interface CircadianState {
   setSearchQuery: (q: string) => void;
   selectedPills: string[];
   togglePill: (pill: string) => void;
+  clearPills: () => void;
   activeIntentVector: number[] | null;
   rankedVenues: ScoredVenue[];
   savedVenueIds: string[];
@@ -107,19 +108,25 @@ const ATMOSPHERE_PEAKS: { [key: string]: number } = {
 
 const PILL_VECTORS: { [key: string]: number[] } = {
   'quiet':         [ 0.9, -0.2, -0.4,  0.4,  0.5, -0.2, -0.6, -0.3 ],
+  'calm':          [ 0.9, -0.2, -0.4,  0.4,  0.5, -0.2, -0.6, -0.3 ],
   'warm':          [ 0.1,  0.4,  0.8, -0.2, -0.4,  0.2,  0.4,  0.2 ],
+  'intimate':      [-0.8,  0.5,  0.9, -0.8, -0.5, -0.3,  0.3,  0.5 ],
   'natural light': [ 0.7, -0.3, -0.5,  0.9,  0.5,  0.2, -0.8, -0.4 ],
+  'hidden':        [-0.6,  0.2,  0.5, -0.5, -0.4,  0.3,  0.4,  0.5 ],
   'hidden gem':    [-0.6,  0.2,  0.5, -0.5, -0.4,  0.3,  0.4,  0.5 ],
   'creative':      [ 0.0,  0.5,  0.3,  0.1, -0.2,  0.4,  0.6,  0.7 ],
+  'work-friendly': [ 0.8, -0.2, -0.3,  0.5,  0.6, -0.1, -0.5, -0.3 ],
+  'social':        [ 0.8,  0.3,  0.4,  0.0, -0.6,  0.5,  0.5,  0.3 ],
+  'energetic':     [-0.7,  0.5,  0.8, -0.6, -0.8, -0.5,  0.6,  0.8 ],
   'slow mornings': [ 0.8, -0.4, -0.3,  0.8,  0.8,  0.1, -0.5, -0.4 ],
   'late night':    [-0.9,  0.5,  0.9, -0.9, -0.8, -0.6,  0.4,  0.7 ]
 };
 
 const KEYWORD_VECTORS = [
-  { keys: ['read', 'work', 'laptop', 'focus', 'study'], vector: [ 0.8, -0.2, -0.3,  0.5,  0.6, -0.1, -0.5, -0.3 ] },
+  { keys: ['read', 'work', 'laptop', 'focus', 'study', 'work-friendly'], vector: [ 0.8, -0.2, -0.3,  0.5,  0.6, -0.1, -0.5, -0.3 ] },
   { keys: ['date', 'intimate', 'candlelit', 'romantic', 'night out'], vector: [-0.8,  0.5,  0.9, -0.8, -0.5, -0.3,  0.3,  0.5 ] },
   { keys: ['coffee', 'cafe', 'espresso', 'morning'], vector: [ 0.7, -0.2, -0.4,  0.8,  0.7, -0.2, -0.6, -0.4 ] },
-  { keys: ['social', 'friends', 'meet', 'group', 'buzzing'], vector: [ 0.8,  0.3,  0.4,  0.0, -0.6,  0.5,  0.5,  0.3 ] }
+  { keys: ['social', 'friends', 'meet', 'group', 'buzzing', 'energetic'], vector: [ 0.8,  0.3,  0.4,  0.0, -0.6,  0.5,  0.5,  0.3 ] }
 ];
 
 const SCORING_WEIGHTS = {
@@ -201,6 +208,7 @@ const CircadianContext = createContext<CircadianState>({
   setSearchQuery: () => {},
   selectedPills: [],
   togglePill: () => {},
+  clearPills: () => {},
   activeIntentVector: null,
   rankedVenues: [],
   savedVenueIds: [],
@@ -635,6 +643,10 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     );
   };
 
+  const clearPills = useCallback(() => {
+    setSelectedPills([]);
+  }, []);
+
   // Unified Ranking & Score Calculator
   const rankedVenues = useMemo<ScoredVenue[]>(() => {
     const activeWeights = activeIntentVector ? SCORING_WEIGHTS.activeSearch : SCORING_WEIGHTS.passive;
@@ -750,6 +762,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
         setSearchQuery,
         selectedPills,
         togglePill,
+        clearPills,
         activeIntentVector,
         rankedVenues,
         savedVenueIds,

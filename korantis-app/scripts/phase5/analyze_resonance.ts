@@ -15,6 +15,30 @@ const client = new OpenAI({
   apiKey: OPENAI_API_KEY
 });
 
+type LayerComparison = {
+  editorialThemes: string[];
+  crowdThemes: string[];
+  overlapThemes: string[];
+  interpretationNotes: string;
+};
+
+type VenueEmbeddingRecord = {
+  venueName: string;
+  l2Vector: number[];
+  l3Vector: number[];
+  l2Text: string;
+  l3Text: string;
+};
+
+type ResonanceResult = VenueEmbeddingRecord & LayerComparison & {
+  venueId: string;
+  similarity: number;
+};
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
 function cosineSimilarity(A: number[], B: number[]): number {
   let dotProduct = 0;
   let normA = 0;
@@ -72,7 +96,7 @@ Extract the underlying atmospheric themes from both. Identify where they overlap
   const rawContent = response.choices[0].message.content;
   if (!rawContent) throw new Error('No content returned from OpenAI');
 
-  return JSON.parse(rawContent);
+  return JSON.parse(rawContent) as LayerComparison;
 }
 
 async function main() {
@@ -81,31 +105,30 @@ async function main() {
     process.exit(1);
   }
 
-  const embeddingsData = JSON.parse(fs.readFileSync(EMBEDDINGS_FILE, 'utf-8'));
-  const results = [];
+  const embeddingsData = JSON.parse(fs.readFileSync(EMBEDDINGS_FILE, 'utf-8')) as Record<string, VenueEmbeddingRecord>;
+  const results: ResonanceResult[] = [];
   
   // Load existing analysis cache to save API calls if re-running
-  let analysisCache: Record<string, any> = {};
+  let analysisCache: Record<string, LayerComparison> = {};
   if (fs.existsSync(ANALYSIS_FILE)) {
-    analysisCache = JSON.parse(fs.readFileSync(ANALYSIS_FILE, 'utf-8'));
+    analysisCache = JSON.parse(fs.readFileSync(ANALYSIS_FILE, 'utf-8')) as Record<string, LayerComparison>;
   }
 
   console.log("Starting Semantic Resonance Analysis...");
 
   for (const [venueId, data] of Object.entries(embeddingsData)) {
-    const venueData = data as any;
-    const similarity = cosineSimilarity(venueData.l2Vector, venueData.l3Vector);
+    const similarity = cosineSimilarity(data.l2Vector, data.l3Vector);
     
     let comparison = analysisCache[venueId];
     if (!comparison) {
-      console.log(`[ANALYZE] Generating qualitative comparison for ${venueData.venueName}...`);
+      console.log(`[ANALYZE] Generating qualitative comparison for ${data.venueName}...`);
       try {
-        comparison = await analyzeResonance(venueData.l2Text, venueData.l3Text, venueData.venueName);
+        comparison = await analyzeResonance(data.l2Text, data.l3Text, data.venueName);
         analysisCache[venueId] = comparison;
         // Save incrementally
         fs.writeFileSync(ANALYSIS_FILE, JSON.stringify(analysisCache, null, 2), 'utf-8');
-      } catch (e: any) {
-        console.error(`Error analyzing ${venueData.venueName}:`, e.message);
+      } catch (error: unknown) {
+        console.error(`Error analyzing ${data.venueName}:`, getErrorMessage(error));
         comparison = {
           editorialThemes: [], crowdThemes: [], overlapThemes: [], interpretationNotes: "Analysis failed."
         };
@@ -114,10 +137,12 @@ async function main() {
 
     results.push({
       venueId,
-      venueName: venueData.venueName,
+      venueName: data.venueName,
       similarity,
-      l2Text: venueData.l2Text,
-      l3Text: venueData.l3Text,
+      l2Text: data.l2Text,
+      l3Text: data.l3Text,
+      l2Vector: data.l2Vector,
+      l3Vector: data.l3Vector,
       ...comparison
     });
   }

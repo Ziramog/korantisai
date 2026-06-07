@@ -1,0 +1,1632 @@
+{
+  "generated_at": "2026-06-06T23:04:38.395Z",
+  "dry_run_only": true,
+  "writes_performed": false,
+  "supabase_called": false,
+  "total_venues": 25,
+  "coverage": {
+    "official_websites_found": 25,
+    "official_hubs_found": 0,
+    "reservation_links_found": 3,
+    "menu_links_found": 4,
+    "whatsapp_links_found": 3,
+    "phone_numbers_found": 5,
+    "price_hints_found": 1,
+    "factual_evidence_items_found": 25,
+    "raw_image_candidates_found": 176,
+    "resolved_fullres_candidates": 153,
+    "rejected_thumbnails": 0,
+    "rejected_duplicates": 23,
+    "rejected_missing": 0,
+    "rejected_low_value": 0,
+    "final_vision_queue_size": 75,
+    "venues_with_at_least_one_final_candidate": 19,
+    "venues_with_three_final_candidates": 18,
+    "venues_still_source_poor": [
+      "Don Julio Parrilla",
+      "Milion",
+      "Ninina",
+      "Anchoita",
+      "Uptown Bar",
+      "Vini Bar"
+    ],
+    "venues_requiring_manual_review": [
+      "Don Julio Parrilla",
+      "Milion",
+      "Ninina",
+      "Anchoita",
+      "Uptown Bar",
+      "Vini Bar"
+    ],
+    "fetch_failures": 1,
+    "browser_render_recommended": 0,
+    "residential_proxy_recommended": 0
+  },
+  "evidence_rows": [
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Don Julio Parrilla",
+      "official_website": {
+        "url": "https://www.parrilladonjulio.com/",
+        "source_url": "https://www.parrilladonjulio.com/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/donjulioparrilla/?hl=en",
+        "source_url": "https://www.instagram.com/donjulioparrilla/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {
+        "url": "https://wa.me/5491179671414",
+        "source_url": "https://www.parrilladonjulio.com/"
+      },
+      "phone": {
+        "value": "30 - 16",
+        "source_url": "https://www.parrilladonjulio.com/",
+        "evidence_text": "Don Julio · Abierto todos los días. 11:30 - 16:00 hs. | 19:00 - 1:00 hs. DIRECCIÓN. Guatemala 4699 (esquina ..."
+      },
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Don Julio · Abierto todos los días. 11:30 - 16:00 hs. | 19:00 - 1:00 hs. DIRECCIÓN. Guatemala 4699 (esquina ...",
+          "source_url": "https://www.parrilladonjulio.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "@michelinguide ⭐️ Reservas web: donjulio.meitre.com WhatsApp: +54 9 11 5311-5668. Abrimos todos los días de 11:30 a 16:00 y de 19:00 a 01:00 · Parrilla ...",
+          "source_url": "https://www.instagram.com/donjulioparrilla/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Don Julio es un reconocido restaurante argentino ubicado en el barrio de Palermo, Buenos Aires, emblema de la gastronomía argentina y famoso mundialmente ...",
+          "source_url": "https://es.wikipedia.org/wiki/Don_Julio_(restaurante)",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Tipos de cocina. Restaurante de carne, Latina, Barbacoa, Argentina, Sudamericana ; Tipos de comidas. Comidas, Cenas, Abierto hasta tarde ; Dietas especiales.",
+          "source_url": "https://www.tripadvisor.es/Restaurant_Review-g312741-d1066728-Reviews-Don_Julio-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.parrilladonjulio.com/",
+          "bytes": "5129",
+          "title": "Parrilla Don Julio",
+          "needs_browser": "False",
+          "bytes_final": "5129"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Milion",
+      "official_website": {
+        "url": "https://www.yelp.com/biz/milion-buenos-aires",
+        "source_url": "https://www.yelp.com/biz/milion-buenos-aires"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/milion_argentina/?hl=en",
+        "source_url": "https://www.instagram.com/milion_argentina/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Milion is a cute bar in the Recoleta section of Buenos Aires. It has both indoor and outdoor seating which makes it a perfect spot to enjoy a drink and ...",
+          "source_url": "https://www.yelp.com/biz/milion-buenos-aires",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "See 902 unbiased reviews of Milión, rated 3.6 of 5 on Tripadvisor and ranked #655. Buenos AiresBar, Argentinean • $$ - $$$. This place is ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d1100589-Reviews-Milion-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Milion is a mystical restaurant bar that combines the main ingredients that draw people to Buenos Aires: Tel: 4815-9925. Hours: Mon, Tues, Wed: Noon-2:00 a.m. ...",
+          "source_url": "https://wander-argentina.com/milion-recoletas-enchanting-mansion-bar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Milión Argentina Carta Cocktails argentina y tapas. Contactanos +54 9 11 3765-9616 info@milion.com.ar Paraná 1048 - Recoleta",
+          "source_url": "https://www.milion.com.ar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.yelp.com/biz/milion-buenos-aires",
+          "bytes": "0",
+          "title": "",
+          "needs_browser": "False",
+          "bytes_final": "0"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Mishiguene",
+      "official_website": {
+        "url": "https://mishiguenerestaurant.com/",
+        "source_url": "https://mishiguenerestaurant.com/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/mishigueneba/?hl=en",
+        "source_url": "https://www.instagram.com/mishigueneba/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {
+        "url": "https://wa.me/+5491150291979?text=Quiero%20Información",
+        "source_url": "https://mishiguenerestaurant.com/"
+      },
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "La cocina judía se reparte a lo largo de los continentes Europeo, Americano, Africano, Medio Oriente y Asia. Quisimos traer al presente, las recetas del pasado, ...",
+          "source_url": "https://mishiguenerestaurant.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Excellent experience in Mishiguene. The food was delicious, with special flavors and really original dishes. The atmosphere is warm, welcoming and very pleasant ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d7236811-Reviews-Mishiguene-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "A restaurant that is full every day and that everyone is talking about. In its busy dining room, with its classic English style and a bar counter for customers.",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/mishiguene",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Nicoletta elevates the diversity of Italian cuisine in a contemporary way, without losing the essence of its traditions and flavors.",
+          "source_url": "https://nicolettarestaurant.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://mishiguenerestaurant.com/",
+          "bytes": "120288",
+          "title": "Mishiguene Restaurate",
+          "needs_browser": "False",
+          "bytes_final": "120288"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Ninina",
+      "official_website": {
+        "url": "https://ninina.com/?srsltid=AfmBOooAsqVErYxzTY8Y00cMTRM_rIJIXD5fgU1MnWWCLlQCCg8OJOu_",
+        "source_url": "https://ninina.com/?srsltid=AfmBOooAsqVErYxzTY8Y00cMTRM_rIJIXD5fgU1MnWWCLlQCCg8OJOu_"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/ninina.arg/?hl=en",
+        "source_url": "https://www.instagram.com/ninina.arg/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {
+        "url": "https://ninina.com/products/menu-mediodia",
+        "source_url": "https://ninina.com/?srsltid=AfmBOooAsqVErYxzTY8Y00cMTRM_rIJIXD5fgU1MnWWCLlQCCg8OJOu_"
+      },
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "¡Bienvenidos a Ninina! Somos un restaurant, cafetería de especialidad y pastelería con tres locales en Buenos Aires. 8 a 21hs. Buenos Aires.",
+          "source_url": "https://ninina.com/?srsltid=AfmBOooAsqVErYxzTY8Y00cMTRM_rIJIXD5fgU1MnWWCLlQCCg8OJOu_",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "rated 3.9 of 5 on. Great place, lovely atmosphere and the food looked great... We sat at the bar and after 10 minutes we ordered 2 drinks. Pretty ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d5565890-Reviews-Ninina-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "NININA - Try Our New Menu - Gorriti 4738, 1414 Buenos Aires, Argentina, 455 Photos, +541148320070, Mon - 8:00 am - 11:00 pm, Tue - 8:00 am - 11:00 pm, ...",
+          "source_url": "https://www.yelp.com/biz/ninina-buenos-aires",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "A modern (by Buenos Aires standards) café and bakery serving up extravagant cakes in a minimalist setting, Tues: 10pm-1:30am Wed: 10pm-2am Thurs: 10pm-2:30am ...",
+          "source_url": "https://goop.com/place/argentina/palermo-soho/ninina?srsltid=AfmBOoq6joEj61ehYM99bmmekmvNz5yFtq46ka5yx9JDKkiNJ0L4bK_2",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://ninina.com/?srsltid=AfmBOooAsqVErYxzTY8Y00cMTRM_rIJIXD5fgU1MnWWCLlQCCg8OJOu_",
+          "bytes": "287815",
+          "title": "Ninina",
+          "needs_browser": "False",
+          "bytes_final": "287815"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Verne Club",
+      "official_website": {
+        "url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+        "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/verneclub/?hl=en",
+        "source_url": "https://www.instagram.com/verneclub/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "@50bestdiscovery Domingo a jueves de 19h a 2h Viernes y sábado de 19h a 3h Medrano 1475, Palermo Reservas & Info ⬇️ ... Seguimos buscando el mejor Dry ...",
+          "source_url": "https://www.instagram.com/verneclub/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Verne Cocktail Club is an Argentinian take on the classic speakeasy, with the added twist that it's themed around the writings of Jules Verne.",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Bar de coctelería de autor en Palermo desde 2013. Cena y cocktails todos los días desde las 19 h. Carta de temporada, eventos privados y clases de ...",
+          "source_url": "https://vernecocktailclub.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "This is the perfect spot to bring a date or someone you want to impress. The crowd is mostly locals, fashionably dressed and having a good time.",
+          "source_url": "https://www.cntraveler.com/bars/buenos-aires/verne-cocktail-club",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Verne-Club.html",
+          "bytes": "32266",
+          "title": "Verne Club - Buenos Aires -  Bar - 50Best Discovery",
+          "needs_browser": "False",
+          "bytes_final": "32266"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Gran Bar Danzon",
+      "official_website": {
+        "url": "https://granbardanzon.com.ar/",
+        "source_url": "https://granbardanzon.com.ar/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/granbardanzon/?hl=en",
+        "source_url": "https://www.instagram.com/granbardanzon/?hl=en"
+      },
+      "reservation_url": {
+        "url": "https://granbardanzon.com.ar/reservas/",
+        "source_url": "https://granbardanzon.com.ar/"
+      },
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "The food was high quality, very tasty and fresh. The service was also very good. We finished sharing two desserts very recommendable. Final price was $4,200 ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d952855-Reviews-Gran_Bar_Danzon-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Se destacan opciones de picoteo, ensaladas, pastas caseras, carnes a la parrilla, a la plancha, pescados y mariscos. DANZON combina excelente cocina, una de las ...",
+          "source_url": "https://granbardanzon.com.ar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Libertad 1161 Lunes a Viernes 19 hs Sábados, Domingos y feriados 20 hs 🗓️ Reservá en el link de abajo Viví la experiencia Danzón · Una noche para dos.",
+          "source_url": "https://www.instagram.com/granbardanzon/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Key Information · Average price per cocktail $7 · Mon – Sun · +54 11 4811 1108 · Visit Gran Bar Danzon's Website. Location. Libertad 1161, Recoleta, Buenos ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Gran-Bar-Danzon.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://granbardanzon.com.ar/",
+          "bytes": "51388",
+          "title": "GRANBARDANZON - Restaurant Bar &amp; Wine",
+          "needs_browser": "False",
+          "bytes_final": "51388"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Oporto Almacén",
+      "official_website": {
+        "url": "https://www.oportoalmacen.com.ar/",
+        "source_url": "https://www.oportoalmacen.com.ar/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/oportoalmacen/?hl=en",
+        "source_url": "https://www.instagram.com/oportoalmacen/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Oporto Almacen. Oporto; Carta; Calendario; Prensa; Gift Card · Reservar. Menu ... BUENOS AIRES. © 2026 / TODOS LOS DERECHOS RESERVADOS. SUSCRIBITE A NUESTRO ...",
+          "source_url": "https://www.oportoalmacen.com.ar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Restaurant porteño y almacén de vinos. Lunes a sábado 12:00-16:00 & 20:00-00:00. Domingo 12:00-16:00. RESERVAS ⬇️.",
+          "source_url": "https://www.instagram.com/oportoalmacen/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Oporto Almacen, Buenos Aires: See 378 unbiased reviews of Oporto Almacen, rated 4.0 of 5 on Tripadvisor and ranked #305 of 5228 restaurants in Buenos Aires.",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d7606979-Reviews-or60-Oporto_Almacen-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "OPORTO ALMACÉN - Try Our New Menu - 11 de Septiembre 4152, Buenos Aires, Argentina, 93 Photos, +541147035568, Mon - Closed, Tue - 10:00 am - 12:00 am, ...",
+          "source_url": "https://www.yelp.com/biz/oporto-almac%C3%A9n-buenos-aires-3",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.oportoalmacen.com.ar/",
+          "bytes": "37870",
+          "title": "Oporto Almacen",
+          "needs_browser": "False",
+          "bytes_final": "37870"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "La Biela",
+      "official_website": {
+        "url": "https://labiela.com/english",
+        "source_url": "https://labiela.com/english"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/labielacafe/",
+        "source_url": "https://www.instagram.com/labielacafe/"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "La Biela is celebrated by many travelers for its classic ambiance and prime location, making it a popular spot to unwind. The décor, filled with motorsport ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d946025-Reviews-La_Biela-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Café La Biela (in English: The Connecting-rod Café) is a traditional café in the Recoleta district of Buenos Aires, Argentina situated at 600 Quintana Avenue",
+          "source_url": "https://en.wikipedia.org/wiki/Caf%C3%A9_La_Biela",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Discover La Biela, a cultural gem café en Buenos Aires, offering a unique dining experience in Recoleta with a view of Plaza Francia.",
+          "source_url": "https://labiela.com/english",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "La Biela, in the heart of Recoleta, is considered to be the oldest cafe in the city. Dating back to before Recoleta existed as a neighbourhood.",
+          "source_url": "https://turismo.buenosaires.gob.ar/en/atractivo/la-biela",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://labiela.com/english",
+          "bytes": "147085",
+          "title": "Café en Buenos Aires - La Biela",
+          "needs_browser": "False",
+          "bytes_final": "147085"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Florería Atlántico",
+      "official_website": {
+        "url": "https://www.theworlds50best.com/bars/the-list/floreria-atlantico.html",
+        "source_url": "https://www.theworlds50best.com/bars/the-list/floreria-atlantico.html"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/floreriaatlanticodc/?hl=en",
+        "source_url": "https://www.instagram.com/floreriaatlanticodc/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "This iconic Buenos Aires basement bar has long told the stories of Old World migrants through Giovannoni's cocktails.",
+          "source_url": "https://www.theworlds50best.com/bars/the-list/floreria-atlantico.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Arroyo 872 •; Ciudad de Buenos Aires, Argentina •; +54 9 11 6488-2199 • 11 3984-7849 •; reservas@floreriaatlantico.com.ar • · floreriaatlantico.",
+          "source_url": "https://floreriaatlantico.com.ar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Open Daily Flower Shop - 10am Bar - 4pm ... Join us Thursday, June 4th as we host our friends @3monosbar from Buenos Aires, Argentina for their first ever guest ...",
+          "source_url": "https://www.instagram.com/floreriaatlanticodc/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "A fantastic speakeasy-style bar with a hidden entrance inside a flower shop. The atmosphere is great, the drinks are excellent, and the staff are very ...",
+          "source_url": "https://www.tripadvisor.com/Attraction_Review-g312741-d25376053-Reviews-Floreria_Atlantico-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.theworlds50best.com/bars/the-list/floreria-atlantico.html",
+          "bytes": "44549",
+          "title": "Florería Atlántico | The World's 50 Best Bars 2024 | Ranked No. 46",
+          "needs_browser": "False",
+          "bytes_final": "44549"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "El Preferido de Palermo",
+      "official_website": {
+        "url": "https://guide.michelin.com/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/el-preferido-de-palermo",
+        "source_url": "https://guide.michelin.com/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/el-preferido-de-palermo"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/elpreferidodepalermo/",
+        "source_url": "https://www.instagram.com/elpreferidodepalermo/"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "This busy eatery, occupying an iconic pink building dating back to 1885, is now run by the owner of the Don Julio parrilla, just one block away.",
+          "source_url": "https://guide.michelin.com/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/el-preferido-de-palermo",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "252K followers · 362 posts · @michelinguide Teléfono +54 9 11 2881-2969 Abierto todos los días de 11:30 hs a 16: 00 hs y de 19:00 hs a 01:00 hs.",
+          "source_url": "https://www.instagram.com/elpreferidodepalermo/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "El Preferido de Palermo has been a hit since it opened in the Argentine capital in 2019, and even made its own debut in the Latin America's 50 Best Restaurants ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/El-Preferido-de-Palermo.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "EL PREFERIDO DE PALERMO - Try Our New Menu - Jorge Luis Borges 2108, C1425 Buenos Aires, Argentina, 313 Photos, +541147746585, Mon - 12:00 pm - 12:00 am, ...",
+          "source_url": "https://www.yelp.com/biz/el-preferido-de-palermo-buenos-aires",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guide.michelin.com/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/el-preferido-de-palermo",
+          "bytes": "537673",
+          "title": "El Preferido de Palermo – Buenos Aires - a MICHELIN Guide Restaurant",
+          "needs_browser": "False",
+          "bytes_final": "537673"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Anchoita",
+      "official_website": {
+        "url": "https://anchoita.com.ar/",
+        "source_url": "https://anchoita.com.ar/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/anchoitabuenosaires/?hl=en",
+        "source_url": "https://www.instagram.com/anchoitabuenosaires/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {
+        "url": "https://anchoita.menufyy.com/",
+        "source_url": "https://anchoita.menufyy.com/"
+      },
+      "whatsapp": {},
+      "phone": {
+        "value": "4854-9334",
+        "source_url": "https://anchoita.com.ar/",
+        "evidence_text": "... 1 AM Juan Ramírez de Velasco 1520. Chacarita - Buenos Aires. 4854-9334 // 5 PM a 1 AM Solamente consultas. No se toman reservas telefónicas ni por mail."
+      },
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "... 1 AM Juan Ramírez de Velasco 1520. Chacarita - Buenos Aires. 4854-9334 // 5 PM a 1 AM Solamente consultas. No se toman reservas telefónicas ni por mail.",
+          "source_url": "https://anchoita.com.ar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Anchoíta – a restaurant in the 2025 MICHELIN Guide Argentina. The MICHELIN inspectors' point of view, information on prices, types of cuisine and opening ...",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/anchoita",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Anchoita - Buenos Aires, Buenos Aires: See 208 unbiased reviews of Anchoita - Buenos Aires, rated 4.5 of 5 on Tripadvisor and ranked #189 of 5246 ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d15560841-Reviews-Anchoita_Buenos_Aires-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Key Information · Tasting menu from $30 · Lunch and dinner: Sun – Mon · 54 11 4854 9334 · Visit Anchoita's Website. Location. Juan Ramírez de Velasco 1520, ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Anchoita.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://anchoita.com.ar/",
+          "bytes": "48167",
+          "title": "Anchoita",
+          "needs_browser": "False",
+          "bytes_final": "48167"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Apu Nena",
+      "official_website": {
+        "url": "https://www.apunena.com/",
+        "source_url": "https://www.apunena.com/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/apu_nena/?hl=en",
+        "source_url": "https://www.instagram.com/apu_nena/?hl=en"
+      },
+      "reservation_url": {
+        "url": "https://reservas.wokiapp.com/A2Pc",
+        "source_url": "https://www.apunena.com/"
+      },
+      "menu_url": {},
+      "whatsapp": {
+        "url": "https://wa.me/message/JJ3QFX5BD5UEG1",
+        "source_url": "https://www.apunena.com/"
+      },
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "The food is Asian fusion and stands out for amazing flavors. There are tapas and main dishes. All are very good quality, but also small potions (maybe too much)",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d19650495-Reviews-Apunena_Tapas_Asiaticas-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Apu significa abuela en el dialecto de la familia filipina de Christina Sunae, y Nena es su nombre y su abuela. Juntas con un equipo de jóvenes cocineros ...",
+          "source_url": "https://www.apunena.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Alma asiática, productos locales. Creadoras @christinasunae @flowravioli. Con y sin reserva 19hs-23.30hs todos los días, vier y sab hasta medianoche. Follow.",
+          "source_url": "https://www.instagram.com/apu_nena/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "There, it's filled with green papaya, mushrooms, and chorizo, but in Buenos Aires, they fill it with a red squid curry. However, they serve ...",
+          "source_url": "https://www.timeout.com/buenos-aires/apunena-asian-food-chacarita-buenos-aires",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.apunena.com/",
+          "bytes": "939639",
+          "title": "Cocina Asiatica En Buenos Aires | Apunena Tapas Asiáticas | Buenos Aires",
+          "needs_browser": "False",
+          "bytes_final": "939639"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Cabaña Las Lilas",
+      "official_website": {
+        "url": "https://restaurantlaslilas.com.ar/",
+        "source_url": "https://restaurantlaslilas.com.ar/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/cabanalaslilasrestaurante/?hl=en",
+        "source_url": "https://www.instagram.com/cabanalaslilasrestaurante/?hl=en"
+      },
+      "reservation_url": {
+        "url": "https://restaurantlaslilas.com.ar/reservas/",
+        "source_url": "https://restaurantlaslilas.com.ar/"
+      },
+      "menu_url": {
+        "url": "https://www.restaurantlaslilas.com.ar/carta.html",
+        "source_url": "https://restaurantlaslilas.com.ar/"
+      },
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Cabaña Las Lilas se ubica en la avenida Alicia Moreau de Justo 516, Puerto Madero, Ciudad Autónoma de Buenos Aires. República Argentina, uno de los puntos ...",
+          "source_url": "https://restaurantlaslilas.com.ar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "This large-scale restaurant in Puerto Madero, featuring lots of private spaces and an open-view grill, is always mentioned.",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/cabana-las-lilas",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Tres de nuestros principales favoritos que vas a poder disfrutar en nuestra propuesta de año nuevo. - Merluza negra de océano austral - Cochinillo confitado con ...",
+          "source_url": "https://www.instagram.com/cabanalaslilasrestaurante/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Excelente para comer parrillas, buena atención y ambiente. ... Excelente ubicación en puerto Madero. Los platos de carne a la parrilla en el punto de cocción ...",
+          "source_url": "https://www.tripadvisor.es/Restaurant_Review-g312741-d874900-Reviews-Cabana_Las_Lilas-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://restaurantlaslilas.com.ar/",
+          "bytes": "114087",
+          "title": "Cabaña Las Lilas Restaurant &#8211; La parrilla argentina en Puerto Madero",
+          "needs_browser": "False",
+          "bytes_final": "114087"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Corte Comedor",
+      "official_website": {
+        "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/corte-comedor",
+        "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/corte-comedor"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/cortecomedor/?hl=en",
+        "source_url": "https://www.instagram.com/cortecomedor/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Here, in the heart of the Belgrano district, everything revolves around a varied array of top-quality cuts of meat, traceability and the maturing process.",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/corte-comedor",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "L a V: 12 a 16hs. L a J: 19 a 23hs. V y S: 19 a 00hs. S y D 12 a 16hs. Dom: 19 a 23. Wsp +5491125541844 Reservas online . Follow. Message.",
+          "source_url": "https://www.instagram.com/cortecomedor/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Un restaurante básico pero con muy buena carne. No ofrecen nada como cortesía como si lo hacen en otros lugares donde la carne es excelente. El precio es ...",
+          "source_url": "https://www.tripadvisor.es/Restaurant_Review-g312741-d15272674-Reviews-Corte_Comedor-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Corte comedor es una de las mejores parrillas del mundo y por suerte la tenemos acá, en la ciudad de Buenos Aires, más precisamente en Núñez, ...",
+          "source_url": "https://www.instagram.com/cortecomedor/reels/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/corte-comedor",
+          "bytes": "523128",
+          "title": "Corte Comedor – Buenos Aires - a MICHELIN Guide Restaurant",
+          "needs_browser": "False",
+          "bytes_final": "523128"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Julia",
+      "official_website": {
+        "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/julia-1206804",
+        "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/julia-1206804"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/julia.restaurante/?hl=en",
+        "source_url": "https://www.instagram.com/julia.restaurante/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "This modern, bistro-style eatery run by Julio Martín Baez, a chef who hails from the town of Chacabuco on the outskirts of Buenos Aires.",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/julia-1206804",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "We are a small restaurant that was born independent and from that turning point endless questions began about who we are? What do we do? Where do we go?",
+          "source_url": "https://juliarestaurante.com.ar/?page_id=1519&lang=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "En julio de 2019, el chef Julio Báez abrió Julia, su primer restaurante. Lo que comenzó como un acto de amor se convirtió en un manifiesto de libertad ...",
+          "source_url": "https://www.instagram.com/julia.restaurante/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Very good cuisine Excellent attention Some amazing dish like melon curry Very delicious sourdough bread The steak eye is very well cooked The catch of the day ( ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d18341169-Reviews-Julia-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/julia-1206804",
+          "bytes": "544572",
+          "title": "Julia – Buenos Aires - a MICHELIN Guide Restaurant",
+          "needs_browser": "False",
+          "bytes_final": "544572"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Reliquia",
+      "official_website": {
+        "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/reliquia",
+        "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/reliquia"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/reliquia.restaurante/?hl=en",
+        "source_url": "https://www.instagram.com/reliquia.restaurante/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "There's a palpable sense of authenticity in this friendly restaurant, where the young owners have created a warm and welcoming ambience perfect for a romantic ...",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/reliquia",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "8:00 PM - 11:30 PM Contact Call Location Ángel Justiniano Carranza 1601, CABA Gorreti, Buenos Aires C1414 Argentina",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d25306755-Reviews-Reliquia_Restaurante-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Bib Gourmand Michelin 2025. Por @brankovaccaro y @julia.bottaro. Martes a sábados desde las 20hs. Carranza 1601, esquina Gorriti Menú y reservas ⬇️.",
+          "source_url": "https://www.instagram.com/reliquia.restaurante/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Abrimos de martes a sábados a partir de las 20hs - Con y sin reservas - · ✨ Reservas ✨ · Menú · Reliquia English Menu · Carta de vinos · Whatsapp.",
+          "source_url": "https://linktr.ee/reliquia.restaurante",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/reliquia",
+          "bytes": "559278",
+          "title": "Reliquia – Buenos Aires - a MICHELIN Guide Restaurant",
+          "needs_browser": "False",
+          "bytes_final": "559278"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Roux",
+      "official_website": {
+        "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/roux-532524",
+        "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/roux-532524"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/rouxresto/?hl=en",
+        "source_url": "https://www.instagram.com/rouxresto/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "This corner restaurant, complemented by small pavement terraces on each side for alfresco dining, boasts an intimate and attractively classical interior.",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/roux-532524",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Roux es un restaurante que ofrece cocina francesa y argentina en un ambiente elegante y acogedor. Conocé la historia de Martín Rebaudino, el chef que lleva ...",
+          "source_url": "https://rouxresto.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "The fish and pasta mains were superb. The wine list was thoughtfully curated and fairly priced. And the complimentary after-dinner treats were a lovely touch on ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d7075694-Reviews-Roux-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Led by acclaimed chef Martín Rebaudino, the cuisine is all about seafood with the provenance of their fish and shellfish taking prominence on the menu.",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Roux.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/roux-532524",
+          "bytes": "543226",
+          "title": "Roux – Buenos Aires - a MICHELIN Guide Restaurant",
+          "needs_browser": "False",
+          "bytes_final": "543226"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Uptown Bar",
+      "official_website": {
+        "url": "http://www.uptownba.com/",
+        "source_url": "http://www.uptownba.com/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/p/CjJqKPrOARy/",
+        "source_url": "https://www.instagram.com/p/CjJqKPrOARy/"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {
+        "value": "2030 -",
+        "source_url": "http://www.uptownba.com/",
+        "evidence_text": "Arévalo 2030 - CABA. Martes a Sábados de 20.30 al cierre. Hacé tu reserva para cenar."
+      },
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Arévalo 2030 - CABA. Martes a Sábados de 20.30 al cierre. Hacé tu reserva para cenar.",
+          "source_url": "http://www.uptownba.com/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Bar secreto estilo metrô de NY, simplesmente incrível #uptown #ba #argentina #buenosaires #bares #ny · View all 16 comments.",
+          "source_url": "https://www.instagram.com/p/CjJqKPrOARy/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "The bar is lively, beautiful, and has a very interesting concept. It feels like you're stepping into a subway station underground, which makes ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d12694781-Reviews-Uptown_The_Bronx-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Key Information · Average price per cocktail $9 · Evening: Tues – Sat · +54 11 2101 4897 · Visit Uptown's Website. Location. Arévalo 2030, Palermo Hollywood, ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Uptown.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "http://www.uptownba.com/",
+          "bytes": "3653",
+          "title": "UPTOWN",
+          "needs_browser": "False",
+          "bytes_final": "3653"
+        }
+      ],
+      "warnings": [
+        "CAUTION: may appear as Uptown / Uptown & The Bronx."
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Tres Monos",
+      "official_website": {
+        "url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Tres-Monos.html",
+        "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Tres-Monos.html"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/3monosbar/?hl=en",
+        "source_url": "https://www.instagram.com/3monosbar/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Tres Monos is the definition of a good-time bar, but the drinks are very special indeed. The name translates as Three Monkeys, and there's a real sense of ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Tres-Monos.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "BAR N°10 del @50bestbars 2025. Todos los días desde las 6pm. Cursos @3monosestudio. Reserva x Meitre o a tresmonosreservas@gmail.com. Follow. Message.",
+          "source_url": "https://www.instagram.com/3monosbar/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Tres Monos in Buenos Aires designed everything from the Latin-inspired drinks to the training program at Papa San in New York.",
+          "source_url": "https://punchdrink.com/articles/tres-monos-papa-san-cocktail-bar-collaboration/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "They don't sell beer, just drinks and nothing exceptional. Very limited meal menu, few options, and the sound of the environment very high.",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d19792675-Reviews-Tres_Monos-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Tres-Monos.html",
+          "bytes": "33964",
+          "title": "Tres Monos - Buenos Aires -  Bar - 50Best Discovery",
+          "needs_browser": "False",
+          "bytes_final": "33964"
+        }
+      ],
+      "warnings": [
+        "CAUTION: tresmonos.com.ar is a creative studio, NOT the bar."
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "878 Bar",
+      "official_website": {
+        "url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Bar-878.html",
+        "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Bar-878.html"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/878bar/",
+        "source_url": "https://www.instagram.com/878bar/"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {
+        "value": "+54 11 4773 1098",
+        "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Bar-878.html",
+        "evidence_text": "Key Information · Average price per cocktail $5 · Evening: Mon – Sun · +54 11 4773 1098 · Visit Bar 878's Website. Location. Thames 878, Villa Crespo, Buenos ..."
+      },
+      "price_hint": {
+        "value": "$5",
+        "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Bar-878.html",
+        "evidence_text": "Key Information · Average price per cocktail $5 · Evening: Mon – Sun · +54 11 4773 1098 · Visit Bar 878's Website. Location. Thames 878, Villa Crespo, Buenos ..."
+      },
+      "factual_description_evidence": [
+        {
+          "fact": "Key Information · Average price per cocktail $5 · Evening: Mon – Sun · +54 11 4773 1098 · Visit Bar 878's Website. Location. Thames 878, Villa Crespo, Buenos ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Bar-878.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Bar más premiado del país. Cócteles, cocina y camaradería. El clásico de la republica de Villa Crespo. Info y reservas.",
+          "source_url": "https://www.instagram.com/878bar/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "This drinking den, hidden behind a heavy wooden door with just a street number (ocho-siete-ocho) for a name, started out as a speakeasy in Villa Crespo.",
+          "source_url": "https://www.cntraveler.com/bars/buenos-aires/bar-878",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "A trendy, speakeasy place with no signs outside, it was recommended by a friend. Reservations highly recommended. The selection of drinks was great.",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d1089176-Reviews-878-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Bar-878.html",
+          "bytes": "31387",
+          "title": "Bar 878 - Buenos Aires -  Bar - 50Best Discovery",
+          "needs_browser": "False",
+          "bytes_final": "31387"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Vini Bar",
+      "official_website": {
+        "url": "https://starwinelist.com/wine-place/vini",
+        "source_url": "https://starwinelist.com/wine-place/vini"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/vini__bar/?hl=en",
+        "source_url": "https://www.instagram.com/vini__bar/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {
+        "value": "11 4809-8600 1",
+        "source_url": "https://starwinelist.com/wine-place/vini",
+        "evidence_text": "This wine bar is located in the heart of Palermo Botánico, low-intervention and easy-drinking wines, 11 4809-8600 11 4775-0625 Address: Phone: +54 11 4832-6058"
+      },
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Para hacer una reservar manda mensaje al 🖌️ 11 3159-0617. Horarios Lun a Vie de 17 a 00 hs. Vie y Sab: hasta 01 hs. Dom. cerrados · Especial fin de semana al ...",
+          "source_url": "https://www.instagram.com/vini__bar/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "This wine bar is located in the heart of Palermo Botánico, low-intervention and easy-drinking wines, 11 4809-8600 11 4775-0625 Address: Phone: +54 11 4832-6058",
+          "source_url": "https://starwinelist.com/wine-place/vini",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Vini Bar, located in Palermo Soho, Buenos Aires, is a wine bar specializing in natural and low-intervention wines. Co-founded by sommeliers Aldo Graziani ...",
+          "source_url": "https://mindtrip.ai/restaurant/buenos-aires-capital-federal-district/vini-bar/re-Y0DLESv4",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Vico Wine Bar is great for a fun date night, since it turns wine tasting into a choose-your-own-adventure type of experience.",
+          "source_url": "https://www.theinfatuation.com/buenos-aires/guides/best-wine-bars-buenos-aires",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://starwinelist.com/wine-place/vini",
+          "bytes": "5687",
+          "title": "Just a moment...",
+          "needs_browser": "False",
+          "bytes_final": "5687"
+        }
+      ],
+      "warnings": [
+        "CAUTION: sources may be blocked/limited."
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Lattente",
+      "official_website": {
+        "url": "https://www.lattentenyc.com/home?srsltid=AfmBOopjoXfw4y2D_q6pSrfwLW0s5K8tq6cXFTG4yN8etNpEoPfRYS54",
+        "source_url": "https://www.lattentenyc.com/home?srsltid=AfmBOopjoXfw4y2D_q6pSrfwLW0s5K8tq6cXFTG4yN8etNpEoPfRYS54"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/lattentecafe/?hl=en",
+        "source_url": "https://www.instagram.com/lattentecafe/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Excellent coffee, very tasty and you can experience different types of coffee. Besides, they serve the cafes as they really are (Espresso, ...",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d3249937-Reviews-Cafe_LATTEnTE-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "21K followers · 112 posts · Buenos Aires Thames 1891 Cerviño 3556 Azcuenaga 1284 Colonia @lattentecafe.uy Asunción @lattentecafe.py.",
+          "source_url": "https://www.instagram.com/lattentecafe/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Nibble on a medialuna and soak up the good vibes. Lattente was first launched with amor in Buenos Aires in 2011. YOUR GO-TO CAFÉ. Buenos Aires —> Brooklyn.",
+          "source_url": "https://www.lattentenyc.com/home?srsltid=AfmBOopjoXfw4y2D_q6pSrfwLW0s5K8tq6cXFTG4yN8etNpEoPfRYS54",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "tiene una terraza preciosa para tomar el aire, te llega el cafe calentito y rico! adoro este sitio. el mejor de Palermo, lo mejor de todo? que lo tengo a ...",
+          "source_url": "https://www.yelp.com/biz/lattente-buenos-aires",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.lattentenyc.com/home?srsltid=AfmBOopjoXfw4y2D_q6pSrfwLW0s5K8tq6cXFTG4yN8etNpEoPfRYS54",
+          "bytes": "889284",
+          "title": "Home &mdash; LATTENTE",
+          "needs_browser": "False",
+          "bytes_final": "889284"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Niño Gordo",
+      "official_website": {
+        "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/nino-gordo",
+        "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/nino-gordo"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/xniniogordox/?hl=en",
+        "source_url": "https://www.instagram.com/xniniogordox/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Parrilla asiática Nro. 21 @theworlds50best LATAM 2025. Recomendado x @michelinguide 2025. MIAMI @xniniogordomiax 1150486102. Reservas . Follow.",
+          "source_url": "https://www.instagram.com/xniniogordox/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Niño Gordo Thames 1810, Buenos Aires, C1414DDL, Argentina $$. Asian-style steakhouse, which was opened in 2017. It has the feel of traditional Japanese izakaya ...",
+          "source_url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/nino-gordo",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Niño Gordo exploded onto the Buenos Aires dining scene as a genre-defying Asian grill with Argentine soul—earning a spot at #21 on Latin America's 50 Best. 112 ...",
+          "source_url": "https://niniogordo.us/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Key Information · Average price per person $39 · Lunch: Sat – Sun, Dinner Mon – Sun · +54 9 11 6585-1988 · Visit Niño Gordo's Website. Location. Thames ...",
+          "source_url": "https://www.theworlds50best.com/discovery/Establishments/Argentina/Buenos-Aires/Ni%C3%B1o-Gordo.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guide.michelin.com/us/en/ciudad-autonoma-de-buenos-aires/buenos-aires_777009/restaurant/nino-gordo",
+          "bytes": "544840",
+          "title": "Niño Gordo – Buenos Aires - a MICHELIN Guide Restaurant",
+          "needs_browser": "False",
+          "bytes_final": "544840"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "El Cuartito",
+      "official_website": {
+        "url": "https://www.xtremefoodies.com/food-category/Historical/review/El-Cuartito/Fugazetta/968_950",
+        "source_url": "https://www.xtremefoodies.com/food-category/Historical/review/El-Cuartito/Fugazetta/968_950"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/cuartito_paginaoficial/?hl=en",
+        "source_url": "https://www.instagram.com/cuartito_paginaoficial/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {},
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Una pizzería tradicional con 90 años de historia ambientada a lo bodegón porteño. Solo trabajan pizza de molde, muy buena pero la sentí sumamente salada( ...",
+          "source_url": "https://www.tripadvisor.es/Restaurant_Review-g312741-d816335-Reviews-El_Cuartito-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "113K followers · 175 posts · Haciendo buena pizza desde 1934 ☎️ 0114816-4331/1758 ☎️ ❌LUNES CERRADOS.",
+          "source_url": "https://www.instagram.com/cuartito_paginaoficial/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "El Cuartito, founded in 1934 in the Buenos Aires barrio of Recoleta, is one of the oldest pizzerias in the city. Pizzas are cooked in a gas oven, in heavy cast- ...",
+          "source_url": "https://www.xtremefoodies.com/food-category/Historical/review/El-Cuartito/Fugazetta/968_950",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "El cuartito es una pizzería tradicional de Buenos Aires, fundada en 1934. Entre sus comensales se encuentran Anibal Troilo, Diego Maradona y Franco ...",
+          "source_url": "https://es.wikipedia.org/wiki/El_cuartito_(pizzer%C3%ADa)",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://www.xtremefoodies.com/food-category/Historical/review/El-Cuartito/Fugazetta/968_950",
+          "bytes": "55245",
+          "title": "El Cuartito : Buenos Aires | Xtreme Foodies - The world&#039;s Essential Eats curated by local food experts",
+          "needs_browser": "False",
+          "bytes_final": "55245"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    },
+    {
+      "dry_run_only": true,
+      "action": "would_stage_venue_evidence",
+      "run_id": "korantis_ba_batch_02_m27_source_fullres_queue_2026-06-06",
+      "batch_id": "ba_batch_02_m27_source_fullres_queue",
+      "model_used": "MiniMax-M2.7",
+      "venue_name": "Guerrin",
+      "official_website": {
+        "url": "https://guerrin.com.ar/en/home/",
+        "source_url": "https://guerrin.com.ar/en/home/"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/pizzeriaguerrin/?hl=en",
+        "source_url": "https://www.instagram.com/pizzeriaguerrin/?hl=en"
+      },
+      "reservation_url": {},
+      "menu_url": {
+        "url": "https://guerrin.com.ar/en/menu/",
+        "source_url": "https://guerrin.com.ar/en/menu/"
+      },
+      "whatsapp": {},
+      "phone": {},
+      "price_hint": {},
+      "factual_description_evidence": [
+        {
+          "fact": "Meal types. Lunch, Dinner, Late Night ; Special Diets. Vegetarian friendly ; FEATURES. Highchairs Available. Seating. Serves Alcohol. Table Service. Takeout.",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g312741-d790492-Reviews-Pizzeria_Guerrin-Buenos_Aires_Capital_Federal_District.html",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Our menu, a Buenos Aires classic ... Deep-dish pizzas, historic fugazzeta, empanadas, and desserts that have accompanied the experience for decades. Each recipe, ...",
+          "source_url": "https://guerrin.com.ar/en/home/",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Güerrín is a pizzeria in Buenos Aires, Argentina, where the speciality of the restaurant is the Argentine pizza. Guerrin was declared by the Buenos Aires ...",
+          "source_url": "https://en.wikipedia.org/wiki/G%C3%BCerr%C3%ADn",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        },
+        {
+          "fact": "Fuimos, somos y seremos el clásico de Avenida Corrientes. Fuego prendido desde 1932. ⭐ La pizzería más reseñada de Google. Sin reserva previa.",
+          "source_url": "https://www.instagram.com/pizzeriaguerrin/?hl=en",
+          "source_type": "search_snippet",
+          "source_quality": "medium_editorial"
+        }
+      ],
+      "fetch_diagnostics": [
+        {
+          "url": "https://guerrin.com.ar/en/home/",
+          "bytes": "130325",
+          "title": "Pizzería Güerrin",
+          "needs_browser": "False",
+          "bytes_final": "130325"
+        }
+      ],
+      "warnings": [],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "would_insert": false,
+      "would_update_public_venues": false
+    }
+  ]
+}

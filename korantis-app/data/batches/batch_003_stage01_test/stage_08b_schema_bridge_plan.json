@@ -1,0 +1,213 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "stage": "08B_schema_bridge_plan",
+  "mode": "plan_only",
+  "generated_at": "2026-06-07T15:25:00.000Z",
+  "source_evidence": {
+    "dry_run_file": "data/batches/batch_003_stage01_test/supabase_staging_dry_run.json",
+    "live_schema_probe": {
+      "attempted": true,
+      "succeeded": true,
+      "method": "read-only Supabase table/column probes from Stage 08 dry run"
+    },
+    "local_schema_review": [
+      "supabase/phase5_ingestion_schema.sql",
+      "supabase/04_admin_dashboard_schema.sql",
+      "supabase/06_venue_curation_reset_schema.sql",
+      "supabase/07_cloudinary_image_materialization.sql",
+      "supabase/quality_scores_update.sql"
+    ]
+  },
+  "current_live_schema_summary": {
+    "staging_venues": {
+      "found": true,
+      "columns_found": [
+        "id",
+        "name",
+        "city",
+        "category_seed",
+        "status",
+        "canonical_data",
+        "atmosphere_prose"
+      ],
+      "missing_for_stage_08_apply": [
+        "enrichment_data",
+        "pipeline_batch_id",
+        "pipeline_status",
+        "eligibility_score",
+        "primary_atmosphere",
+        "mood_tags"
+      ]
+    },
+    "venue_images": {
+      "found": true,
+      "columns_found": [
+        "id",
+        "venue_id",
+        "photo_reference",
+        "google_photo_reference",
+        "width",
+        "height",
+        "is_cover",
+        "status",
+        "url",
+        "role",
+        "source",
+        "quality_score",
+        "hero_suitability_score",
+        "sort_order"
+      ],
+      "missing_for_stage_08_apply": [
+        "selection_data",
+        "rights_status",
+        "is_selected_hero"
+      ]
+    },
+    "quality_scores": {
+      "found": true,
+      "columns_found": [
+        "venue_id",
+        "review_count",
+        "has_images",
+        "has_prose",
+        "has_embeddings",
+        "resonance_score",
+        "editorial_themes",
+        "interpretation_notes",
+        "atmosphere_word_count",
+        "last_processed_at"
+      ],
+      "missing_for_stage_08_apply": [
+        "pipeline_quality_data"
+      ]
+    },
+    "venue_atmosphere": {
+      "found": true,
+      "columns_found": [
+        "id",
+        "venue_id",
+        "prose",
+        "word_count",
+        "model"
+      ],
+      "staging_compatible": false,
+      "compatibility_reason": "Local schema defines venue_atmosphere.venue_id as REFERENCES public.venues(id). Do not write staging_venues.id values into it until a separate staging-specific atmosphere table or FK bridge is designed."
+    }
+  },
+  "proposed_additive_schema": {
+    "sql_file": "supabase/migrations/06_pipeline_staging_bridge.sql",
+    "columns": [
+      {
+        "table": "staging_venues",
+        "column": "enrichment_data",
+        "type": "jsonb",
+        "nullable": true,
+        "why_needed": "Stores Stage 01 raw facts, Stage 04 hero image metadata, Stage 05 editorial fields, Stage 06 quality gate details, warnings, and evidence without requiring many fragile typed columns.",
+        "stage_08_mapping": "canonical_data_payload_preview plus evidence, selected hero classification, warnings, and source provenance"
+      },
+      {
+        "table": "staging_venues",
+        "column": "pipeline_batch_id",
+        "type": "text",
+        "nullable": true,
+        "why_needed": "Allows dry-run/apply reconciliation and rollback by batch.",
+        "stage_08_mapping": "batch_id"
+      },
+      {
+        "table": "staging_venues",
+        "column": "pipeline_status",
+        "type": "text",
+        "nullable": true,
+        "why_needed": "Preserves Stage 06 status such as ready_for_db_staging separately from existing staging status.",
+        "stage_08_mapping": "candidate.status"
+      },
+      {
+        "table": "staging_venues",
+        "column": "eligibility_score",
+        "type": "numeric",
+        "nullable": true,
+        "why_needed": "Stores deterministic quality gate score for staging review.",
+        "stage_08_mapping": "candidate.staging_score"
+      },
+      {
+        "table": "staging_venues",
+        "column": "primary_atmosphere",
+        "type": "text",
+        "nullable": true,
+        "why_needed": "Stores selected image/editorial atmosphere signal for review and filtering.",
+        "stage_08_mapping": "venue.hero_image.classification.atmosphere_signal or primary_atmosphere"
+      },
+      {
+        "table": "staging_venues",
+        "column": "mood_tags",
+        "type": "text[]",
+        "nullable": true,
+        "why_needed": "Stores Stage 05 approved mood tags in a queryable form.",
+        "stage_08_mapping": "venue.editorial.mood_tags"
+      },
+      {
+        "table": "venue_images",
+        "column": "selection_data",
+        "type": "jsonb",
+        "nullable": true,
+        "why_needed": "Stores Stage 03/04/selection metadata including scene, quality, source URL, rights risk, and M3 model provenance without approving publication.",
+        "stage_08_mapping": "venue.hero_image classification, risk_flags, source_url, resolved_image_url, width, height, model_used"
+      },
+      {
+        "table": "venue_images",
+        "column": "rights_status",
+        "type": "text",
+        "nullable": true,
+        "why_needed": "Makes image rights state explicit for review; must remain not_approved_for_publication.",
+        "stage_08_mapping": "venue.hero_image.publication_status"
+      },
+      {
+        "table": "venue_images",
+        "column": "is_selected_hero",
+        "type": "boolean",
+        "nullable": true,
+        "why_needed": "Marks the selected staging hero reference without implying publication approval.",
+        "stage_08_mapping": "true for selected Stage 04 hero image only"
+      },
+      {
+        "table": "quality_scores",
+        "column": "pipeline_quality_data",
+        "type": "jsonb",
+        "nullable": true,
+        "why_needed": "Stores Stage 06 score breakdown, blockers, warnings, and gate status while preserving existing quality score fields.",
+        "stage_08_mapping": "candidate.score_breakdown, errors, warnings, review_reason, scored_at"
+      }
+    ]
+  },
+  "venue_atmosphere_decision": {
+    "use_in_stage_08_apply": false,
+    "reason": "Existing local schema references public.venues(id), not public.staging_venues(id). Stage 08 apply should write prose to staging_venues.atmosphere_prose and enrichment_data until a staging-specific atmosphere table is introduced."
+  },
+  "rollback_safety": {
+    "safe_to_apply_manually": true,
+    "why": "All changes are nullable additive columns and indexes; no existing columns are altered, dropped, renamed, or made stricter.",
+    "rollback_note": "If rollback is needed before any data is written, manually drop the added indexes and columns. If data has been written, export rows for the relevant pipeline_batch_id first."
+  },
+  "real_sync_readiness_after_migration": {
+    "stage_08_apply_should_wait": true,
+    "required_before_apply": [
+      "User manually applies supabase/migrations/06_pipeline_staging_bridge.sql",
+      "Re-run Stage 08 dry-run to verify new columns are detected",
+      "Update/confirm Stage 08 apply mapping writes enrichment_data, selection_data, rights_status, is_selected_hero, and pipeline_quality_data",
+      "Keep venue_atmosphere disabled for staging apply"
+    ]
+  },
+  "manual_apply_action": {
+    "do_not_run_from_codex": true,
+    "example_command": "supabase db push --include-all",
+    "alternative": "Open Supabase SQL editor and run supabase/migrations/06_pipeline_staging_bridge.sql manually"
+  },
+  "safety_confirmations": {
+    "no_migrations_applied": true,
+    "no_supabase_writes": true,
+    "no_public_venues_changes": true,
+    "no_cloudinary_uploads": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true
+  }
+}

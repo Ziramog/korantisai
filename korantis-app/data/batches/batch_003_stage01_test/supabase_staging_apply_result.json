@@ -1,0 +1,76 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T18:03:39.847Z",
+  "mode": "apply",
+  "approved_count": 4,
+  "blocked_count": 1,
+  "intended_write_count": 12,
+  "venue_images_conflict_key": "venue_id,photo_reference",
+  "required_unique_index_sql": "create unique index if not exists venue_images_venue_photo_reference_uidx\non venue_images (venue_id, photo_reference);",
+  "required_unique_index_verified": false,
+  "required_unique_index_assumed": true,
+  "partial_writes_detected": {
+    "checked": true,
+    "staging_venues_for_batch": 4,
+    "venue_images_for_approved_venues": 10,
+    "selected_hero_images_for_approved_venues": 0,
+    "quality_scores_for_approved_venues": 0,
+    "partial_writes_detected": true,
+    "notes": [
+      "4 staging_venues rows found for batch batch_003_stage01_test.",
+      "10 venue_images rows found for approved venue ids.",
+      "0 selected Stage 08 hero image rows found for approved venue ids.",
+      "0 quality_scores rows found for approved venue ids."
+    ]
+  },
+  "table_results": [
+    {
+      "table": "staging_venues",
+      "operation": "upsert",
+      "attempted_rows": 4,
+      "affected_rows": 4
+    },
+    {
+      "table": "venue_images",
+      "operation": "upsert",
+      "attempted_rows": 4,
+      "affected_rows": 4
+    },
+    {
+      "table": "quality_scores",
+      "operation": "upsert",
+      "attempted_rows": 4,
+      "affected_rows": 4
+    }
+  ],
+  "venue_ids_synced": [
+    "ChIJ9_Wpip-2vJURSyBdySgpgsM",
+    "ChIJh9Qpx7nKvJURLoDB8VNMen8",
+    "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+    "ChIJJY8xLrHKvJURGgoMqdg8pXE"
+  ],
+  "skipped_venues": [
+    {
+      "venue_name": "Verne Club",
+      "reasons": [
+        "no_hero_image"
+      ]
+    }
+  ],
+  "warnings": [
+    "staging_venues skipped unavailable optional columns: curation_status, eligibility, evidence, best_for, grounded_description, curation_notes",
+    "venue_images skipped unavailable optional columns: photo_scores",
+    "venue_images unique index was manually confirmed via --confirm-venue-images-index; metadata verification is not exposed through current Supabase read APIs.",
+    "venue_atmosphere skipped because it references public.venues, not staging_venues.",
+    "Images remain not_approved_for_publication; publication rights were not approved."
+  ],
+  "safety_checks": {
+    "no_public_venues_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_image_rights_approval": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "no_publication": true,
+    "venue_atmosphere_skipped": true
+  }
+}

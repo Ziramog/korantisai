@@ -1,0 +1,204 @@
+{
+  "batch_id": "batch_004_buenos_aires_50",
+  "generated_at": "2026-06-07T21:18:59.367Z",
+  "mode": "apply",
+  "approved_projected": 30,
+  "intended_write_count": 60,
+  "table_results": [
+    {
+      "table": "venues",
+      "operation": "upsert",
+      "attempted_rows": 30,
+      "affected_rows": 30
+    },
+    {
+      "table": "venue_images",
+      "operation": "upsert",
+      "attempted_rows": 30,
+      "affected_rows": 30
+    }
+  ],
+  "venue_ids_written": [
+    "korantis_buenos_aires_cobre_cafe_chijyxjkj6dl",
+    "korantis_buenos_aires_the_coffee_store_plaza_almagro_chijn6ff8pvl",
+    "korantis_buenos_aires_salvaje_bakery_chijg_ohkoy1",
+    "korantis_buenos_aires_barine_cafe_de_especialidad_chijw18b1mk1",
+    "korantis_buenos_aires_le_reve_bistro_chije58ebl_1",
+    "korantis_buenos_aires_las_pizarras_bistro_chijdx2nais1",
+    "korantis_buenos_aires_negresco_bistro_chijb3eaeoll",
+    "korantis_buenos_aires_piano_nobile_chijkws_lrvk",
+    "korantis_buenos_aires_l_antiquario_cafe_bistro_chijgcvjlxpl",
+    "korantis_buenos_aires_farmacia_lezama_bistrot_chijr80sszll",
+    "korantis_buenos_aires_a_donde_chijsahkhbk1",
+    "korantis_buenos_aires_contraluz_chijt8n4m7bk",
+    "korantis_buenos_aires_st_regis_restaurant_chijbr_vg7xk",
+    "korantis_buenos_aires_selva_mia_chijuu5f7ei1",
+    "korantis_buenos_aires_intervalo_bar_chijuu_xakhl",
+    "korantis_buenos_aires_bocanada_chij7xrdqnzl",
+    "korantis_buenos_aires_nido_de_tigre_chijey8siqq1",
+    "korantis_buenos_aires_social_paraiso_bistro_recoleta_chij8wamkrtl",
+    "korantis_buenos_aires_pipi_lounge_chijramkegc1",
+    "korantis_buenos_aires_le_club_bacan_chijou38bmtl",
+    "korantis_buenos_aires_osaka_concepcion_chijnb1li0a1",
+    "korantis_buenos_aires_tradition_and_rebellion_chijw9o5vqa1",
+    "korantis_buenos_aires_alvear_roof_bar_chijhy6qgqtk",
+    "korantis_buenos_aires_duhau_restaurante_and_vinoteca_chijv_h3h0jl",
+    "korantis_buenos_aires_verdot_wine_bar_chijotv74kjl",
+    "korantis_buenos_aires_los_jardines_de_las_barquin_chij5zgugcbl",
+    "korantis_buenos_aires_bautista_av_rivadavia_chijbwwt2m7l",
+    "korantis_buenos_aires_tostado_nunez_chije8jvhtu1",
+    "korantis_buenos_aires_la_giralda_chija8pen8bk",
+    "korantis_buenos_aires_petit_colon_chije02agsbk"
+  ],
+  "skipped_decisions": [
+    {
+      "venue_name": "Roster Cafe Recoleta",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Cafeto 2020",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Borja Specialty Coffee",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Cosecha Almagro",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Cuervo Café",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Café Registrado",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Tostado - Puerto Madero",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Bicho Café de Especialidad Recoleta",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Banu",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Cave Canem",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Lutero Bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "SOFÁ - un bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Bar PUNTO MONA",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Veredita",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Don Gato",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "GRAPIN",
+      "decision": "reject",
+      "reasons": [
+        "decision_reject"
+      ]
+    },
+    {
+      "venue_name": "La Carbonera",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Naranjo Bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Bruce Wine",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Anselmo Lounge & Wine Bar",
+      "decision": "reject",
+      "reasons": [
+        "decision_reject"
+      ]
+    }
+  ],
+  "blockers_before_apply": [],
+  "safety_checks": {
+    "no_public_activation": true,
+    "all_rows_inserted_pending_review": true,
+    "no_cloudinary_uploads_in_stage_11": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "no_deploy": true
+  }
+}

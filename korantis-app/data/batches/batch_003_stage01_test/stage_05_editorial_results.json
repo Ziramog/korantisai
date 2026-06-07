@@ -1,0 +1,257 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T15:03:17.707Z",
+  "minimax_called": true,
+  "model_used": "MiniMax-M2.7",
+  "venues_processed": 5,
+  "successful_generations": 5,
+  "failed_generations": 0,
+  "invalid_json_count": 0,
+  "mood_distribution": {
+    "refined": 4,
+    "intimate": 4,
+    "late_night": 4,
+    "date_night": 2,
+    "social": 2,
+    "warm": 4,
+    "romantic": 1,
+    "historic": 1,
+    "cinematic": 1,
+    "outdoor": 1,
+    "hidden_gem": 1
+  },
+  "evidence_confidence_distribution": {
+    "low": 0,
+    "medium": 0,
+    "high": 5
+  },
+  "status_counts_after_scoring": {
+    "input": 5,
+    "ready_for_db_staging": 0,
+    "auto_staged": 4,
+    "needs_review": 0,
+    "blocked": 1,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "remaining_blockers_by_venue": {
+    "Verne Club": [
+      "no_hero_image"
+    ],
+    "Oporto Almacén": [],
+    "Gran Bar Danzon": [],
+    "La Biela": [],
+    "Floreria Atlántico": []
+  },
+  "results": [
+    {
+      "venue_name": "Verne Club",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A refined Palermo retreat where cocktails become an art form",
+        "description_short": "Verne Club is a sophisticated cocktail bar tucked into the Palermo neighborhood, drawing a devoted following with its expertly crafted drinks and intimate evening ambiance. The venue operates nightly from 7 PM, making it a destination for those seeking a more deliberate night out.",
+        "mood_tags": [
+          "refined",
+          "intimate",
+          "late_night",
+          "date_night",
+          "social"
+        ],
+        "moments": [
+          "pre-dinner aperitivo",
+          "late-night cocktail focus",
+          "celebrating a special occasion",
+          "impressing a date",
+          "catching up with close friends"
+        ],
+        "best_for": [
+          "cocktail enthusiasts",
+          "couples seeking a refined evening",
+          "late-night conversations",
+          "quality over quantity drinking",
+          "exploring Argentine mixology"
+        ],
+        "not_for": [
+          "casual quick drinks",
+          "large groups looking to party",
+          "outdoor seating seekers"
+        ],
+        "primary_atmosphere": "Refined yet approachable cocktail culture with an intimate, evening-forward vibe",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.65,
+        "editorial_notes": "Grounded in operational hours (evening-only from 7 PM), high review count (3698) indicating established reputation, 4.5 rating, Palermo neighborhood context, and cocktail bar category. No image vision was available so mood confidence is reduced and visual atmosphere claims are avoided. The name 'Verne Club' and venue type support the refined and intimate tone.",
+        "grounded_description": "Verne Club anchors itself as a serious cocktail destination in Palermo, with 3698 reviews and a 4.5 rating reflecting consistent quality. Operating nightly from 7 PM through late hours, it cultivates an intimate setting where the focus stays squarely on meticulously crafted drinks and unhurried conversation."
+      }
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Wine bar warmth meets Portuguese cuisine in the heart of Palermo",
+        "description_short": "Warm wine bar atmosphere with an open kitchen and Portuguese-influenced menu in Palermo. Wooden wine shelves and pendant lights create an intimate setting for evening dining.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "late_night",
+          "refined"
+        ],
+        "moments": [
+          "Dinner for two",
+          "Wine tasting evening",
+          "Special occasion dinner",
+          "Date night",
+          "Friends gathering"
+        ],
+        "best_for": [
+          "Wine lovers",
+          "Romantic dinners",
+          "Date nights",
+          "Late evening dining",
+          "Quality cuisine seekers"
+        ],
+        "not_for": [
+          "Large groups",
+          "Quick lunch stops",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "Warm wine bar with open kitchen, pendant lighting, and intimate wooden interiors",
+        "evidence_confidence": 0.88,
+        "mood_confidence": 0.87,
+        "editorial_notes": "Grounded in image vision showing warm_cozy signal with visible wine shelves, pendant lights, well-lit tables, and open kitchen. Operational hours confirmed. 4.2 rating from 2937 reviews indicates consistent quality. Location in Palermo confirmed.",
+        "grounded_description": "Located in Palermo, this wine-focused restaurant features warm pendant lighting over wooden tables, with wine shelves lining the walls and an open kitchen visible from the dining area. The space combines cozy interiors with Portuguese-inspired cuisine for dinner service."
+      }
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Wine and warmth in the heart of Retiro",
+        "description_short": "An intimate wine bar in central Retiro with floor-to-ceiling wine racks and warm low-key lighting. Opens nightly for late evening drinking and conversation.",
+        "mood_tags": [
+          "intimate",
+          "refined",
+          "warm",
+          "late_night",
+          "date_night"
+        ],
+        "moments": [
+          "An evening wine tasting for two",
+          "Pre-dinner drinks before a nearby restaurant",
+          "Late-night drinks after a show",
+          "A refined escape from the city bustle",
+          "Celebrating a special occasion"
+        ],
+        "best_for": [
+          "Wine lovers",
+          "Couples",
+          "Late night gatherings",
+          "Intimate conversations",
+          "Buenos Aires evenings"
+        ],
+        "not_for": [
+          "Daytime visits",
+          "Large groups",
+          "Quick drinks"
+        ],
+        "primary_atmosphere": "A refined, intimate wine bar with warm low-key lighting and an extensive wine collection, open nightly until late.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in verified venue data: 4,427 reviews with 4.4 rating indicate established reputation; evening-only hours (7 PM onward) and late-night closings (1-3 AM) confirm nighttime focus; image vision confirms dark_intimate atmosphere with wine racks, wine glassware, bar counter, and warm lighting. The name references the danzón, adding subtle Argentine cultural flavor.",
+        "grounded_description": "Gran Bar Danzon occupies a refined corner of Retiro with an extensive wine program and intimate, low-lit interior. The space features floor-to-ceiling wine racks and carefully set bar counters, creating a sophisticated setting for evening wine-focused drinking."
+      }
+    },
+    {
+      "venue_name": "La Biela",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Historic Buenos Aires cafe with tango statues, green awning, and classic Recolet",
+        "description_short": "La Biela is a long-standing Recoleta cafe celebrated for its ornate green facade, iconic tango figure statues, and extended hours that invite lingering over coffee or an evening aperitivo.",
+        "mood_tags": [
+          "historic",
+          "warm",
+          "social",
+          "cinematic",
+          "outdoor"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Afternoon people-watching",
+          "Evening aperitivo",
+          "Late-night conversations"
+        ],
+        "best_for": [
+          "Classic Buenos Aires cafe culture",
+          "Photography",
+          "Social gatherings",
+          "Outdoor dining"
+        ],
+        "not_for": [
+          "Quiet work sessions",
+          "Fast-paced meals"
+        ],
+        "primary_atmosphere": "Traditional historic Buenos Aires cafe with warm, social ambiance",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "La Biela's 13,184 reviews reflect deep-rooted popularity in Recoleta. The image vision confirms a high-quality exterior scene: a green awning, ornate green architecture, tango statues, and outdoor seating contribute to a cinematic, warm atmosphere. Extended operating hours (8 AM to midnight or 1 AM) support varied occasions from morning rituals to late-night conversations. The venue suits social, historic, and outdoor moments but is less suited for focused work.",
+        "grounded_description": "Located on Av. Pres. Manuel Quintana in Recoleta, La Biela features an ornate green facade, tango figure statues, and a distinctive green awning over outdoor seating. With 13,184 reviews and a 4.2 rating, the cafe operates daily from 8 AM with late-night hours until midnight or 1 AM, making it a versatile destination for coffee, aperitivo, or casual social gatherings."
+      },
+      "retried_at": "2026-06-07T15:03:17.705Z"
+    },
+    {
+      "venue_name": "Floreria Atlántico",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Speakeasy soul in the heart of Retiro",
+        "description_short": "A refined speakeasy-style cocktail bar in Retiro with extensive liquor shelves and a warm, intimate atmosphere. Open late into the night, drawing locals and visitors seeking inventive drinks in a covert setting.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "late_night",
+          "hidden_gem",
+          "refined"
+        ],
+        "moments": [
+          "late-night cocktails",
+          "date night",
+          "after-dinner drinks",
+          "celebrating small wins",
+          "quiet conversation"
+        ],
+        "best_for": [
+          "cocktail enthusiasts",
+          "romantic evenings",
+          "late-night explorers",
+          "discovering hidden gems",
+          "intimate gatherings"
+        ],
+        "not_for": [
+          "quick stops",
+          "large groups",
+          "daytime visits"
+        ],
+        "primary_atmosphere": "Dark, intimate speakeasy with warm lighting, potted plants, and an extensive back bar lined with spirits and wine.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in verified venue data: operational hours extending to 1:30-2 AM, 4.2 rating from 7842 reviews, Arroyo address in Retiro, and selected image showing a well-lit bar interior with liquor shelves and plants creating a warm speakeasy vibe. No invented awards, pricing, or booking policies.",
+        "grounded_description": "Set behind an unassuming entrance in the Arroyo district of Retiro, this cocktail bar channels vintage speakeasy energy with floor-to-ceiling liquor shelves, wine storage, and greenery accenting the wooden counter. The intimate interior draws guests seeking a sophisticated nightcap or inventive concoctions well into the early morning."
+      }
+    }
+  ],
+  "retry_summary": {
+    "generated_at": "2026-06-07T15:03:17.707Z",
+    "retry_venues": [
+      "La Biela"
+    ],
+    "minimax_calls_made": 1,
+    "retry_successes": 1,
+    "retry_failures": 0
+  }
+}

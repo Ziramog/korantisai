@@ -3,6 +3,26 @@ import * as dotenv from 'dotenv';
 dotenv.config({ path: path.join(__dirname, '..', '..', '.env.local') });
 import { createClient } from '@supabase/supabase-js';
 
+type GoogleReview = {
+  authorAttribution?: {
+    displayName?: string;
+  };
+  rating?: number;
+  text?: {
+    text?: string;
+    languageCode?: string;
+  };
+  publishTime?: string;
+};
+
+type GooglePlaceReviewsResponse = {
+  reviews?: GoogleReview[];
+};
+
+function getErrorMessage(error: unknown): string {
+  return error instanceof Error ? error.message : String(error);
+}
+
 const GOOGLE_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -15,7 +35,7 @@ async function fetchPlaceReviews(placeId: string) {
     headers: { 'X-Goog-Api-Key': GOOGLE_API_KEY as string }
   });
   if (!response.ok) throw new Error(`API Error: ${response.statusText}`);
-  const data = await response.json();
+  const data = await response.json() as GooglePlaceReviewsResponse;
   return data.reviews || [];
 }
 
@@ -52,7 +72,8 @@ async function main() {
         });
       }
       console.log(`✅ Saved ${reviews.length} reviews.`);
-    } catch (e: any) {
+    } catch (error: unknown) {
+      const e = { message: getErrorMessage(error) };
       console.error(`❌ Error fetching reviews for ${venue.name}: ${e.message}`);
     }
   }

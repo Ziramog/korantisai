@@ -10,14 +10,29 @@ env.useBrowserCache = false;
 const PROSE_FILE = path.join(__dirname, '..', '..', 'data', 'l3_prose.json');
 const OUT_FILE = path.join(__dirname, '..', '..', 'data', 'embeddings.json');
 
+type L3ProseRecord = {
+  venueId: string;
+  venueName: string;
+  prose: string;
+};
+
+type EmbeddingRecord = {
+  venueId: string;
+  venueName: string;
+  l2Vector: number[];
+  l3Vector: number[];
+  l2Text: string;
+  l3Text: string;
+};
+
 async function main() {
   if (!fs.existsSync(PROSE_FILE)) {
     console.error(`L3 Prose file not found: ${PROSE_FILE}. Run extract_atmosphere.ts first.`);
     process.exit(1);
   }
 
-  const l3Prose = JSON.parse(fs.readFileSync(PROSE_FILE, 'utf-8'));
-  const embeddingsData: Record<string, any> = {};
+  const l3Prose = JSON.parse(fs.readFileSync(PROSE_FILE, 'utf-8')) as Record<string, L3ProseRecord>;
+  const embeddingsData: Record<string, EmbeddingRecord> = {};
 
   console.log('Loading embedding model (this may take a moment on first run)...');
   // Use a fast, small, capable embedding model

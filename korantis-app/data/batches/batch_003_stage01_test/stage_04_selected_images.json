@@ -1,0 +1,144 @@
+{
+  "batch_id": "batch_003_stage01_test",
+  "generated_at": "2026-06-07T02:31:35.426Z",
+  "validation_status": "imported_needs_validation",
+  "publication_status": "not_approved_for_publication",
+  "selected_images": [
+    {
+      "venue_name": "Floreria Atlántico",
+      "selected_image": {
+        "venue_name": "Floreria Atlántico",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6lrlD79XbHm_drZPNel-U_afqj9TDr9JvKGf__UD_HJajx0RwevxCnmLc0uEQli1-1SksLIkOQGGcreIDJj_gqDCpgh8Sj103e3gqqjQcqLIhXnfEKW55aY7r-FX5EZsTcA6ZcHo1QZQMsBlBnkMljg=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8189018398689856026&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Well-lit bar interior with extensive liquor shelves, wine fridge, glassware, and potted plants on a wooden counter, conveying a warm, intimate speakeasy atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Gran Bar Danzon",
+      "selected_image": {
+        "venue_name": "Gran Bar Danzon",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMe7ZK04hhcFZpmum5-VX-3D20w2pYdTYPS9wpx9l852OZR7fmd-v4DMBYFByyxUhC6TiwN4VJl-f-u6K1raP3oP8b38EyZ2nFyjzKL9dxSHKlIVYtLVLyW_2hXttif2hFu0dYiegejKB4KFW21cueoog=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=9185738313397534766&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Wide view of a bar interior with extensive floor-to-ceiling wine racks, wine glassware, bar counter with place settings, and warm low-key lighting creating a dark, intimate atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Biela",
+      "selected_image": {
+        "venue_name": "La Biela",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP3JAAzYrl7uxp-dt4TT1mFER_wen6NyADvRwyqZY-b0eR_ftb03KGAGiquII0Qfc53cGntZQo3JPmHxSEos_zzE_DJ4fO-Q3YI7qh-y_dX-TxvOen8nM8K9JOMBTDdLwnMeT5em9aJo50KtkdgsGL0Iw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_exterior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear exterior shot of 'La Biela' cafe facade with green awning, ornate green architecture, statues of tango figures by a red 'Correo Argentino' mailbox, and outdoor seating visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 108,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Oporto Almacén",
+      "selected_image": {
+        "venue_name": "Oporto Almacén",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgdv00ehatYmLrTbHtDjxh97vc2uJ1xct6xt6E8REZMPsyAbsOG0YBLsc3vaQZwvvz6Scj4yIgo7crjv7qkXZh2IqsIEHWY35gUhFBtqYAg_5SWrBqKHiKohHdI6rMsRhnkMRamnw4hQQA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=14087867839522086987&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 721,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear interior view of a restaurant/wine bar with well-lit dining tables, wine shelves, pendant lights, and an open kitchen; person is a minor element, not dominating."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication"
+      },
+      "selection_score": 148,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    }
+  ],
+  "venues_without_hero_candidate": [
+    "Verne Club"
+  ],
+  "ready_to_connect_hero_image": true
+}
