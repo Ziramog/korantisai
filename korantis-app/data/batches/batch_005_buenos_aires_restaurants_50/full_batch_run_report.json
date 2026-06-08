@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch_005_buenos_aires_restaurants_50",
+  "generated_at": "2026-06-08T01:25:49.822Z",
+  "input_venues": 50,
+  "mode": "run",
+  "safety": {
+    "supabase_apply": false,
+    "cloudinary_upload": false,
+    "public_publish": false,
+    "consumer_ui_changes": false
+  },
+  "stages": [
+    {
+      "stage": "01_extract_data",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_01_raw_venues.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T01:25:43.559Z",
+      "finished_at": "2026-06-08T01:25:43.561Z"
+    },
+    {
+      "stage": "02_discover_sources",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_02_source_discovery.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T01:25:43.562Z",
+      "finished_at": "2026-06-08T01:25:43.562Z"
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_03_final_vision_queue.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T01:25:43.564Z",
+      "finished_at": "2026-06-08T01:25:43.564Z"
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_04_selected_images.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T01:25:43.565Z",
+      "finished_at": "2026-06-08T01:25:43.565Z"
+    },
+    {
+      "stage": "connect_selected_images",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\batch_result_with_images.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T01:25:43.565Z",
+      "finished_at": "2026-06-08T01:25:43.565Z"
+    },
+    {
+      "stage": "05_generate_editorial",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\batch_result_with_editorial.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T01:25:43.565Z",
+      "finished_at": "2026-06-08T01:25:43.565Z"
+    },
+    {
+      "stage": "05_alias_enriched_result",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\batch_result_enriched.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:43.565Z",
+      "finished_at": "2026-06-08T01:25:43.568Z"
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\batch_result_quality_gated.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:43.568Z",
+      "finished_at": "2026-06-08T01:25:43.627Z"
+    },
+    {
+      "stage": "07_generate_approval_manifest",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\approval_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:43.627Z",
+      "finished_at": "2026-06-08T01:25:43.661Z"
+    },
+    {
+      "stage": "08_supabase_staging_dry_run",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\supabase_staging_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:43.661Z",
+      "finished_at": "2026-06-08T01:25:49.761Z"
+    },
+    {
+      "stage": "09_publication_review",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\publication_decision_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:49.761Z",
+      "finished_at": "2026-06-08T01:25:49.783Z"
+    },
+    {
+      "stage": "11_public_projection_dry_run_if_reviewed",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\public_projection_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:49.783Z",
+      "finished_at": "2026-06-08T01:25:49.784Z"
+    },
+    {
+      "stage": "13_control_panel",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\pipeline_control_panel.html",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T01:25:49.784Z",
+      "finished_at": "2026-06-08T01:25:49.822Z"
+    }
+  ],
+  "final_outputs": [
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_01_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_02_source_discovery_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_03_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_04_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\connect_selected_images_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_05_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\quality_gate_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\approval_manifest_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\supabase_staging_dry_run_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\publication_review_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\pipeline_control_panel.html"
+  ],
+  "next_action": "Open pipeline_control_panel.html, review publication_review_dashboard.html, export publication_decision_manifest.reviewed.json, then run Cloudinary/hidden public apply commands from the control panel."
+}

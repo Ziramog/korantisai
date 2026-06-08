@@ -1,13 +1,13 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
   "city": "Buenos Aires",
-  "generated_at": "2026-06-08T01:25:26.916Z",
+  "generated_at": "2026-06-08T01:25:43.587Z",
   "status": "completed",
   "summary": {
     "input": 50,
-    "ready_for_db_staging": 0,
-    "auto_staged": 23,
-    "needs_review": 13,
+    "ready_for_db_staging": 36,
+    "auto_staged": 0,
+    "needs_review": 0,
     "blocked": 14,
     "approved": 0,
     "rejected": 0,
@@ -64,6 +64,21 @@
       "stage": "06_score_and_stage",
       "status": "completed",
       "notes": "Re-scored after Stage 05B retry."
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "completed",
+      "notes": "Deterministic local gate for Supabase staging eligibility only. No sync or publication."
+    },
+    {
+      "stage": "07_stage_to_supabase",
+      "status": "skipped",
+      "notes": "Not run. No Supabase writes."
+    },
+    {
+      "stage": "08_promote_staged",
+      "status": "skipped",
+      "notes": "Not run. No publication."
     }
   ],
   "config": {
@@ -178,14 +193,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Mambo Restoran",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -695,14 +712,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Casa Parra",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -1150,7 +1169,7 @@
       "venue_name": "Bistro Tokio",
       "status": "blocked",
       "staging_score": 76,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -1514,13 +1533,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "La Justina Bistró",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -1999,7 +2020,7 @@
       "venue_name": "ALMA BUENOS AIRES",
       "status": "blocked",
       "staging_score": 75,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -2469,14 +2490,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Parrilla Sanabria Palermo",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -2962,14 +2985,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "La Caprichosa Parrilla",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -3443,13 +3468,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Parrilla \"La Coqueta\"",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -4004,7 +4031,7 @@
       "venue_name": "Parrilla Lo de Susy",
       "status": "blocked",
       "staging_score": 74,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -4435,13 +4462,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Tu Jardín Secreto - Restó Secreto",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -4966,14 +4995,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "La plazoleta parrilla",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -5521,7 +5552,7 @@
       "venue_name": "Casa Cuba Restaurant & Grill",
       "status": "blocked",
       "staging_score": 78,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -5992,14 +6023,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Parrilla Nuñez",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -6555,13 +6588,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "La Dorita del Mercado Belgrano",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -7038,14 +7073,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Tierno Parrilla",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -7521,7 +7558,7 @@
       "venue_name": "Nuestra Parrilla",
       "status": "blocked",
       "staging_score": 76,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -7941,13 +7978,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Parrilla La Banda",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -8426,13 +8465,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Atis Bar",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -8907,14 +8948,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "El Taller Arte & Café",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -9381,13 +9424,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Bar & Restaurant El Correo",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -9868,13 +9913,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "RUFINO",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -10355,13 +10402,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "L' Orangerie Alvear Palace Hotel",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -10842,13 +10891,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "El Chiri de Villa Kreplaj",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -11325,13 +11376,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "jakub",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -11797,7 +11850,7 @@
       "venue_name": "Restaurante Corte Comedor",
       "status": "blocked",
       "staging_score": 76,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -12264,13 +12317,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Lo Del Francés Café Bistrot",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -12737,13 +12792,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Dada Bistró",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -13199,14 +13256,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Jardín de Invierno",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -13679,9 +13738,9 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "El Estrebe",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 1 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "missing_instagram"
@@ -14159,7 +14218,7 @@
       "venue_name": "República del Fuego",
       "status": "blocked",
       "staging_score": 78,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -14538,14 +14597,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Maure Parrilla",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -15051,14 +15112,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Fraga Bodegón",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -15565,7 +15628,7 @@
       "venue_name": "Parrilla lo del Russo",
       "status": "blocked",
       "staging_score": 79,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -15967,7 +16030,7 @@
       "venue_name": "La Esquina Del Virrey",
       "status": "blocked",
       "staging_score": 77,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -16378,7 +16441,7 @@
       "venue_name": "Casa Cuba",
       "status": "blocked",
       "staging_score": 68,
-      "review_reason": "Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "review_reason": "Blocked: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
       "errors": [
         "missing_or_short_tagline",
         "missing_description",
@@ -16390,7 +16453,9 @@
         "low_mood_confidence",
         "low_evidence_confidence",
         "missing_instagram",
-        "missing_moments"
+        "missing_moments",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -16930,13 +16995,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "El Tordo",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -17411,13 +17478,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Hierro Parrilla San Telmo",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -17891,14 +17960,16 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Parrilla Lo De Mary - Restaurante",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, below_preferred_resolution, missing_instagram",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "below_preferred_resolution",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -18405,7 +18476,7 @@
       "venue_name": "El Patio de Mingo",
       "status": "blocked",
       "staging_score": 79,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -18839,13 +18910,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "El Mirasol De Boedo",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -19388,7 +19461,7 @@
       "venue_name": "La Parrillita del Pasaje",
       "status": "blocked",
       "staging_score": 80,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -19766,13 +19839,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Parrilla Cero5",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -20244,7 +20319,7 @@
       "venue_name": "Huacho",
       "status": "blocked",
       "staging_score": 76,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -20625,13 +20700,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "El Mirasol de La Recova",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -21109,7 +21186,7 @@
       "venue_name": "Anafe",
       "status": "blocked",
       "staging_score": 78,
-      "review_reason": "Blocked by hard errors: no_hero_image",
+      "review_reason": "Blocked: no_hero_image",
       "errors": [
         "no_hero_image"
       ],
@@ -21526,13 +21603,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "La Dorita",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -22011,13 +22090,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Pentos Colegiales",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -22501,9 +22582,9 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Bar Britanico",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 1 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "missing_instagram"
@@ -22982,15 +23063,17 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Ancora Buenos Aires",
-      "status": "needs_review",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_website, missing_instagram, missing_price_hint",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
         "missing_website",
         "missing_instagram",
-        "missing_price_hint"
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -23463,13 +23546,15 @@
     {
       "batch_id": "batch_005_buenos_aires_restaurants_50",
       "venue_name": "Croque Madame Puerto Madero",
-      "status": "auto_staged",
+      "status": "ready_for_db_staging",
       "staging_score": 100,
-      "review_reason": "Auto-staged with score 100 and 2 warning(s).",
+      "review_reason": "Ready for Supabase staging sync. Not approved for public publication.",
       "errors": [],
       "warnings": [
         "medium_rights_risk",
-        "missing_instagram"
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
       ],
       "venue": {
         "raw": {
@@ -23980,11 +24065,11 @@
   },
   "cost_placeholder": {
     "estimated_usd": null,
-    "notes": "Stage 05B called MiniMax text only for failed records. No M3, Supabase, Cloudinary, publication, or deploy calls."
+    "notes": "No MiniMax, OpenAI, external model, Supabase, Cloudinary, publication, or deploy calls were made by Stage 06."
   },
   "runtime_placeholder": {
-    "started_at": "2026-06-08T00:54:18.179Z",
-    "finished_at": "2026-06-08T01:25:26.916Z",
-    "duration_ms": 576841
+    "started_at": "2026-06-08T01:25:43.587Z",
+    "finished_at": "2026-06-08T01:25:43.587Z",
+    "duration_ms": 0
   }
 }

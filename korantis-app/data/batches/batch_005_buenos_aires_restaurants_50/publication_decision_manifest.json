@@ -1,0 +1,1666 @@
+{
+  "batch_id": "batch_005_buenos_aires_restaurants_50",
+  "generated_at": "2026-06-08T01:33:54.886Z",
+  "status": "review_pending",
+  "safety": {
+    "no_public_writes": true,
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_publication": true
+  },
+  "decisions": [
+    {
+      "venue_name": "Mambo Restoran",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMK0XiiHuoNH0jk4ThMrBcCSZun3OmBjmi43h9V6IGheApFJXILhqokprdow_Zun5ZXhD81YhE2ceyMMqKHLVazbHcFRLIVNaRUYiQATgdd1DCxGqKum-5FUcNkRn8gd2oJf6T_RCptFvPgO9R1WKEI=s4800-w1366-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=2788154486052846851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Industrial warmth in the heart of Villa Crespo",
+      "description": "Mambo Restoran occupies a spacious Villa Crespo venue with an open kitchen, exposed ductwork, and weathered industrial walls illuminated by warm lighting. Wooden tables set with care and an open kitchen layout create a refined yet approachable atmosphere perfect for evening dining.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "creative",
+        "intimate",
+        "date_night"
+      ],
+      "neighborhood": "Villa Crespo",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 254,
+      "google_maps_url": "https://maps.google.com/?cid=2788154486052846851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Casa Parra",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOO5ETb6NorIR9iU4ziZW0vP31XRwffIF62OC4a-F3X8NJRrSTJXxKX_nLras7kyRPve1xtNx5KYuvp94HFHV3OO_XLEbDDopI95y1FKOO7yeRPBVUSq8BkNG3aajHJzyBXhXoRxIWpHI923Q=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=2029346065401387499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate corner of warmth in Colegiales",
+      "description": "Casa Parra occupies a nighttime corner in Colegiales with an illuminated entrance revealing an interior of tables and a chandelier, creating a warm and intimate atmosphere for evening dining Tuesday through Saturday.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "romantic",
+        "date_night",
+        "refined"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 420,
+      "google_maps_url": "https://maps.google.com/?cid=2029346065401387499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Bistro Tokio",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 76,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Bistro Tokio – Belgrano",
+      "description": "Bistro Tokio operates as an evening-focused restaurant in the residential Belgrano neighborhood, drawing 646 reviews for a 4.6 rating and maintaining a dinner schedule that closes Mondays and Sundays.",
+      "mood_tags": [
+        "intimate",
+        "refined",
+        "quiet",
+        "date_night"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 646,
+      "google_maps_url": "https://maps.google.com/?cid=12518998527662364367&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Justina Bistró",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Traditional bistro with warm, timeless appeal.",
+      "description": "La Justina Bistró occupies a well-lit interior with classic European décor—warm wood paneling, leather banquettes, chandeliers, and framed art create an inviting traditional bistro setting in the heart of Almagro.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "intimate",
+        "work_friendly",
+        "quiet"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "restaurant",
+      "rating": 4,
+      "review_count": 953,
+      "google_maps_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "ALMA BUENOS AIRES",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 75,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Refined international dining in the heart of Retiro.",
+      "description": "ALMA BUENOS AIRES is an upscale restaurant within the Sofitel Buenos Aires hotel, situated on Posadas street in the prestigious Retiro neighborhood. The venue offers international fine dining for both lunch and dinner, serving guests seeking refined cuisine and polished service within a hotel setting.",
+      "mood_tags": [
+        "refined",
+        "quiet",
+        "date_night",
+        "romantic",
+        "work_friendly"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 532,
+      "google_maps_url": "https://maps.google.com/?cid=16220479981703404027&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla Sanabria Palermo",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Classic Argentine asado in a warm, candlelit Palermo setting",
+      "description": "The interior features well-lit dining with white tablecloths, brown chairs, and warm wall sconces casting a soft glow across textured ceilings. Large windows reveal the Palermo nighttime street, completing a warm and refined atmosphere suited for intimate evening gatherings.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "intimate",
+        "date_night",
+        "quiet"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "restaurant",
+      "rating": 4.9,
+      "review_count": 625,
+      "google_maps_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Caprichosa Parrilla",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Fuego, vino y ladrillo: la mejor parilla de Recoleta",
+      "description": "Parilla tradicional argentina en Recoleta con interiores de ladrillo visto y mesas de madera que irradian calidez de bodegón criollo. Servicio de mediodía a medianoche permite desde almuerzos pausados hasta cenas tardías. Especialización en cortes de res asados sobre fuego de quebracho.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "romantic",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 719,
+      "google_maps_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla \"La Coqueta\"",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrlrNtSu7s4AxgZUQyg0hwcr63b7WE5tKtiDJuUtpbNj_TY-u2Aj31o1xeHdbAO7kNwtR6UvMVBReh2FdS_VZyXbpfFmSSjmOcHSFQp9LN4-O2KJbzIJ13eHFQxj3KTh6i4shAwOrBhH1DKQ=s4800-w1080-h607",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=14980705997259226777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Where Recoleta meets wood-fired tradition",
+      "description": "La Coqueta presents classic Argentine grilling in a charming Recoleta setting, its pink facade and green shutters creating an inviting street presence. Outdoor seating under branded umbrellas offers a relaxed environment for savoring traditional asado in one of Buenos Aires' most distinguished neighborhoods.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "date_night",
+        "outdoor",
+        "hidden_gem"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4,
+      "review_count": 809,
+      "google_maps_url": "https://maps.google.com/?cid=14980705997259226777&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla Lo de Susy",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 74,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Fuego lento y tradición en Chacarita",
+      "description": "Parrilla Lo de Susy funciona en Bonpland 924, ofreciendo almuerzo y cena con horarios nocturnos que llegan hasta las 12:30 AM. Con 231 reseñas y calificación de 4.5, se posiciona como opción confiable en el barrio de Chacarita.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "late_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 231,
+      "google_maps_url": "https://maps.google.com/?cid=995512297982313954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Tu Jardín Secreto - Restó Secreto",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPgKvmxzMmfAc13hVIkHxVY_dOQpbhu88lC950ujxELFlL3Ex2Ea-jUZBGsxHa-D1g9kgSHQEbo03iagYh-g1Otvwt36__ctF2oqpNEkLLf__8PjOqEQf2nJdClL6qpF4F9hz_kx6lkHBQBjH9RLs7F=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=1838529992585761360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Your secret garden in the heart of Colegiales",
+      "description": "A secret garden-style restaurant in Colegiales featuring rustic exposed brick interiors and warm amber lighting, where creative Argentine dishes are served in a cozy, intimate atmosphere perfect for romantic dinners or discovering a neighborhood favorite.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "hidden_gem",
+        "creative",
+        "romantic"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 598,
+      "google_maps_url": "https://maps.google.com/?cid=1838529992585761360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La plazoleta parrilla",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMLHOopFJTKe_N7lfTIMlle24EIxiTMLZl5jEW8-DaA0HEuqzrTd5IgcqEf0TgLVPuhxvzt0WPTire9otFqX-JJ8cWrSSspU7dzT737NTTPDg8zpn55i0FS2NfG2IO2O1Cxt8p7a2rHTeSCgQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=1541907750532583619&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Traditional Argentine Parrilla in a charming Tudor setting",
+      "description": "La Plazoleta Parrilla occupies a distinctive Tudor-style building in Colegiales, serving traditional Argentine asado with charcoal-grilled cuts in a warm setting. With a solid 4.2 rating from over 400 reviews, the restaurant operates as a neighborhood fixture with lunch and dinner service six days a week.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "romantic",
+        "social",
+        "date_night"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "restaurant",
+      "rating": 4.2,
+      "review_count": 432,
+      "google_maps_url": "https://maps.google.com/?cid=1541907750532583619&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Casa Cuba Restaurant & Grill",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 78,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Cuban-inspired flavors in the heart of Belgrano",
+      "description": "Casa Cuba Restaurant & Grill serves Cuban-inspired cuisine in the Belgrano neighborhood, maintaining a 4.5 rating from 846 reviews. The restaurant operates daily for lunch and dinner with late-night service until midnight, providing an intimate setting for Cuban dining in Buenos Aires.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "late_night",
+        "social"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 846,
+      "google_maps_url": "https://maps.google.com/?cid=6187759634054591681&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla Nuñez",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOsGLcJY4ODpNNfWnu3oJIQLzCxicNlO12E1xlr4xLXXY13dSOUPFgdqyuSMKkCiOnfifm5Al1hZqDR-w_a0aTN6oa5dGhNLdbi4ie-jJxXuvW9hxp5jpLj-eeqf3-1P_casXoXDlCaD90ynmWTw2lbEQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=6300277619960955722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Classic Argentine grill with soul in Belgrano",
+      "description": "Located on Montañeses street in upscale Belgrano, Parrilla Nuñez delivers traditional Argentine grill fare in a warm interior with wood accents, wine displays, and pendant lighting. The intimate dining room with red napkins creates a cozy backdrop for experiencing authentic asado culture, with lunch and dinner service daily until midnight.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "historic",
+        "date_night"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 219,
+      "google_maps_url": "https://maps.google.com/?cid=6300277619960955722&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOUb7URcmwr5sYQ5NyHFHtZBDsfoKm4SZDl4yY_XkHrRVaHfoIhNeRcBNZ2M3t3qGDy4KO_QuQLetkFdp3S3dSTOpMrzz0awts2JgKALEm1sideVeau0LycuSo65iW9fbxUz240ABGzefl29BXmh5Z5lg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Sabores del mercado en un espacio industrial-rústico",
+      "description": "La Dorita del Mercado Belgrano ofrece un ambiente industrial-rústico con cocina abierta visible, mesas de madera y una distintiva lámpara de botellas verdes. El espacio combina elementos creativos con la calidez de un mercado, creando una atmósfera animada ideal para cenas nocturnas y encuentros sociales.",
+      "mood_tags": [
+        "lively",
+        "warm",
+        "creative",
+        "social",
+        "late_night"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 1196,
+      "google_maps_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Tierno Parrilla",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOMkN5ofUxvU2d7DR_j-ggisbm-L_eSKXvQWuJg1km2GtZCalEJIm7BCD28XMzirh5hfkcX3kXRQpFa15CXZeOk3CdLf2TAUVDHLcRNeeoeh8dKXhbv9hh6WVCGc-mMGzYfsavBQLjjBb9aQHitqMpd_Q=s4800-w900-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=291367556376746381&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Tender grilled meats in a warm Belgrano setting",
+      "description": "Tierno Parrilla occupies a glass-fronted corner space in Belgrano with warm lighting visible from the street at night. The venue features a tiled terrace area and interior seating visible through large windows, creating an open and inviting atmosphere typical of neighborhood Argentine grills.",
+      "mood_tags": [
+        "warm",
+        "social",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 608,
+      "google_maps_url": "https://maps.google.com/?cid=291367556376746381&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Nuestra Parrilla",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 76,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Authentic Argentine grill in San Telmo",
+      "description": "Located in San Telmo, one of Buenos Aires' most historic neighborhoods, this restaurant specializes in classic Argentine parrillada with a 4.7-star rating from 664 reviews. The establishment operates dinner service mid-week and weekend lunch-dinner combinations, fitting the pace of traditional Argentine dining.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "intimate",
+        "romantic",
+        "date_night"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 664,
+      "google_maps_url": "https://maps.google.com/?cid=5928050377667981137&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla La Banda",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPQddQ6pcmT0pzqoIa5X1fW0GQslamlCOTVWbucAyP0aOVY80eYNXBzLJJSpfI5XOLmwkssaBqTAahEHFPvlaijbl-sEqgjh1A6iQ4LT1jsZyOIxcQXVUsUGjghAr0Lva14W03cfLUnU2o=s4800-w1440-h1080",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=1861351223386167752&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Late-night Argentine parilla with classic Almagro soul",
+      "description": "Parrilla La Banda occupies a residential block in Almagro with exterior chalkboard menus and traditional signage. The late closing hours (2-3AM) position it as a practical option for post-midnight dining in a residential Buenos Aires neighborhood.",
+      "mood_tags": [
+        "late_night",
+        "warm",
+        "social",
+        "historic"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "restaurant",
+      "rating": 4.1,
+      "review_count": 719,
+      "google_maps_url": "https://maps.google.com/?cid=1861351223386167752&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Atis Bar",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Historic San Telmo terrace with twinkling lights and courtyard charm",
+      "description": "Perched overlooking a charming San Telmo courtyard with twinkling string lights, ornate ironwork balconies, and ivy-covered facades, this bar offers a warm, cinematic setting perfect for intimate gatherings and romantic evenings.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "historic",
+        "cinematic"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 3.6,
+      "review_count": 10341,
+      "google_maps_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Taller Arte & Café",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPf3PvuHIlZOVBaz2PjdvSjg8uhyS1b2scVo5pLFDRwam7vynU_49KZoa_bjgiSBytodumeg_yDCD_wLGB6zvOdSVliSy61hsMW_nNyt1LNVK9fHSK6YbhP0UB75O6K6hZFDupQ3-gR822dKA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=15311417950325530126&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Workshop vibes meets late-night art café in Palermo",
+      "description": "Located on Serrano street in Palermo, this venue occupies an industrial space with workshop aesthetics—exposed brick walls, concrete flooring, and industrial ceiling beams anchor the design. The name El Taller Arte & Café hints at its dual identity as both creative workspace and café, while hours extending to 3 AM most nights and 5 AM on weekends reveal its late-night personality.",
+      "mood_tags": [
+        "creative",
+        "late_night",
+        "social"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "restaurant",
+      "rating": 4.2,
+      "review_count": 2375,
+      "google_maps_url": "https://maps.google.com/?cid=15311417950325530126&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Bar & Restaurant El Correo",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWqlIvya6KlKJYa-7JEQbh04s-YgEmN_fwK_GlFFfpKANFDCeXEZirST5pEaXP_-Z73WXj4K-zHUdXYxHDs-UwZ9ignlBIt8-YBl66yktiiudD_8iL4N1v156wAAyVCKpEf1DU0YrzcCuqQz7EsLM_GA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=9747629351580661743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Historic Recoleta terrace blending classic Buenos Aires café culture with refine",
+      "description": "This historic Recoleta bar and restaurant features a bright outdoor terrace with tables set along a narrow cobblestone street. Under string lights with large potted plants, the space offers classic Buenos Aires café culture from early morning through late evening, backed by a solid 4.1 rating from over 2,700 reviews.",
+      "mood_tags": [
+        "historic",
+        "refined",
+        "outdoor",
+        "social",
+        "date_night"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "bar",
+      "rating": 4.1,
+      "review_count": 2713,
+      "google_maps_url": "https://maps.google.com/?cid=9747629351580661743&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "RUFINO",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZONZl6rtaOJKZy7s1dMq9WThnkD889BQDIb-1JVu97eKC5izGE5QSCvmoyy8qtR6gJVw3th0-7OAep35esTyawIaBIUVXfopBMjBQjKLASEO-Ca8B2KzoK_UwdU1wQlMulmT1E_EK9XPhwO_g=s4800-w819-h1024",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=18402291409690485825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate Recoleta sanctuary of Argentine elegance",
+      "description": "RUFINO presents an intimate Recoleta dining room defined by tufted leather banquettes, ornate gold-framed mirrors, and warm candlelight from geometric pendant lanterns. The space balances upscale sophistication with genuine warmth, making it well-suited for romantic evenings and special occasions in one of Buenos Aires' most prestigious neighborhoods.",
+      "mood_tags": [
+        "intimate",
+        "warm",
+        "romantic",
+        "refined",
+        "date_night"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 1500,
+      "google_maps_url": "https://maps.google.com/?cid=18402291409690485825&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "L' Orangerie Alvear Palace Hotel",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO_aHKDA3H0gcQsNBddVPWn4cjamhlPGhVUffXRaZOEkFJEBf_YqgbUd89GT7In2zewsyqyluQnKiVhRMCJctj1wR3S8twhuk6sMZJHf9eWvMvtwC1u1cIp8vIJ2cDnTqQYJ7OQUd4ONmHg1sWMoTC3=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Elegant bar inside a historic Recoleta palace hotel",
+      "description": "L'Orangerie occupies a refined corner of the Alvear Palace Hotel, a landmark property in Buenos Aires' Recoleta district. The bar presents an ornate setting with crystal chandeliers, arched windows, and heavy drapery, backed by a fully-stocked wooden bar where professional staff serve throughout the day.",
+      "mood_tags": [
+        "refined",
+        "historic",
+        "intimate",
+        "warm",
+        "romantic"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 1325,
+      "google_maps_url": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Chiri de Villa Kreplaj",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP_j5cZfm9c5W8nbbsP2f4ZVGOpR0vb_OW1MaoaZjeJ0EalT9LNR560nOcZPxvXKvX-U9s2twEaicnbhKxOkhiHzlZ1MKrdCh0YahEBuNJKSYZfsv2KqoEn4NIFo3PjMGnQbmJfv4rItdq8L8m9apuwBg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=17465319629426979479&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Corner café warmth in the heart of Villa Crespo",
+      "description": "The interior features orange and pink walls with neon signage, framed portraits, and pendant lights casting a warm glow over set tables with bench seating and wooden chairs. Decorative plants add a touch of green to this cozy café-restaurant setting that feels both artistic and welcoming.",
+      "mood_tags": [
+        "warm",
+        "social",
+        "intimate",
+        "creative",
+        "late_night"
+      ],
+      "neighborhood": "Villa Crespo",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 2211,
+      "google_maps_url": "https://maps.google.com/?cid=17465319629426979479&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "jakub",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A corner of warmth in Colegiales, morning to midnight",
+      "description": "Jakub occupies a warmly lit corner in Colegiales, where exposed brick and vintage ceiling details set a casual yet intimate tone. The space runs from a morning breakfast window through late-night service, making it a versatile neighborhood fixture.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "intimate",
+        "date_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 2547,
+      "google_maps_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Restaurante Corte Comedor",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 76,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Contemporary Argentine dining in the heart of Belgrano",
+      "description": "Restaurante Corte Comedor occupies a well-regarded position in Belgrano, with a rating of 4.3 supported by nearly 3,000 reviews, indicating consistent quality appreciated by its guest base. The restaurant operates continuous lunch and dinner services, with extended hours until midnight on Friday and Saturday evenings.",
+      "mood_tags": [
+        "refined",
+        "warm",
+        "intimate",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 2947,
+      "google_maps_url": "https://maps.google.com/?cid=2790271422869745219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Lo Del Francés Café Bistrot",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBlyVFrAvpaiEXLTlnoboYkGIBQz-QVVWFlGj8-0c9n3Q1hgijHXVCzY45eevKHSF8qijRBZNqESxEAwpylZuGKW0nZ0Wta5gEpC508KwsZkfm7Ao_4FrVxJece_zB_snjzEdJhLL6JLLvYA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=16887765956505426084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "European bistro charm in the heart of San Telmo",
+      "description": "A French-inspired café bistrot tucked into San Telmo's historic heart, drawing a loyal local crowd since opening. The warm, art-adorned interior features distinctive Mondrian-style wall panels and a staircase mural, creating an intimate setting for unhurried meals.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "historic",
+        "creative",
+        "intimate"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "restaurant",
+      "rating": 4.4,
+      "review_count": 2670,
+      "google_maps_url": "https://maps.google.com/?cid=16887765956505426084&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Dada Bistró",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMX9i01oRhEwW28mIndCODPlh4N_PFiCp9SstZqo1qm0eB345N_rSsIz1kgrFqYJaQBXmptDn9e2EsWC6mRxEJ7O96S3UxdHYXGQSGVNkurJs7z5h5gAueCbv-IEuoi8kAfcAT-Ggrg_F9lQDbXiVMX2g=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Industrial bistro bar with late-night soul in Retiro",
+      "description": "Dada Bistró occupies a space defined by exposed ceiling pipes, a wood-paneled bar, and a mirror ball casting light over checkered floors. The industrial-chic interior creates an intimate setting suited to late-night drinks and creative gatherings in Retiro.",
+      "mood_tags": [
+        "creative",
+        "late_night",
+        "intimate",
+        "social",
+        "cinematic"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 2269,
+      "google_maps_url": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Jardín de Invierno",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPRvSExjWMwztG9du3H3A2G4yjrjfoFCok-_03rVDck1Lx_7Vf8aPAYVAjvfI8jmiY-B21HQeE73OTnkHyuBD36cJTJS2ei0NhGKdPKOq57f2ZlAyLfds3Nb3F4oxw_8wftQ9PVU9IQ33CNRkDkuRjWg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=11547178309799939115&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Un refugio cálido en el corazón de Recoleta",
+      "description": "Jardín de Invierno despliega un interior tipo galería lounge con múltiples zonas de asiento — sofás, sillones y barra — bañado en luz cálida a través de ventanales de piso a techo. Ubicado en Recoleta, abre todos los días de 7 a 23:30, ofreciendo un espacio refinado y sereno que funciona tanto para pausas diurnas como para encuentros nocturnos.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "refined",
+        "social",
+        "date_night"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 1665,
+      "google_maps_url": "https://maps.google.com/?cid=11547178309799939115&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Estrebe",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "hero_image_url": "http://www.elestrebe.com.ar/imgs/slide05-salon-final.jpg",
+      "image_source_type": "official_website",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "http://www.elestrebe.com.ar/",
+      "tagline": "Classic Recoleta table with wine, white linens, and warm light.",
+      "description": "El Estrebe presents a classic Recoleta dining room with warm pendant lighting, neatly set tables in white linens, and an array of wine glasses that suggest a wine-forward hospitality. The space balances refinement with a cozy rusticity, making it suited for quiet, intentional meals.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "romantic",
+        "date_night",
+        "intimate"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 1724,
+      "google_maps_url": "https://maps.google.com/?cid=6009417565252126012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "República del Fuego",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 78,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "A Recoleta mainstay drawing locals for late-night dinners",
+      "description": "Located on Juncal in Recoleta, República del Fuego draws a consistent local crowd for evening and late-night dining. The 4.6-star average across nearly 1,700 reviews indicates reliable quality that keeps guests returning.",
+      "mood_tags": [
+        "late_night",
+        "intimate",
+        "quiet",
+        "romantic",
+        "refined"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 1667,
+      "google_maps_url": "https://maps.google.com/?cid=13336159731681800972&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Maure Parrilla",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP5Zb7k8YiVXiozAa_fD935DtEH8jpGtZl_leTtulxn5sRXkQyL_5_k_q3zD1wrp65PpY109CTIOJdFENI3y-wf_1-qi_HfvElh2fsZNiIFfTh_AodxhYZkAh10i7SK3AAg-xQTzg3BwgPZcUA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=4973621787526684783&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A warm corner grill in Chacarita for relaxed, memorable evenings.",
+      "description": "A corner parilla in Chacarita, Maure occupies a bright white building with large windows and sidewalk seating dressed in white tablecloths. With a 4.7 rating across nearly 2,800 reviews and evening-first hours, it is a neighborhood staple for relaxed, well-regarded dining.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "romantic",
+        "refined",
+        "quiet"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 2787,
+      "google_maps_url": "https://maps.google.com/?cid=4973621787526684783&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Fraga Bodegón",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO1QLcIFK_NlBKttvcE9emN4T-bDG0-5W_7pJMArk0dKdb-8DhqGTZl_8TZWFgUPSSxMQV_KMtQq8riBt_q1lNFvPQpxsd4yC572snEjmLvZtfxLCoe7BRYfuldLoAdL13pIBE-TX5AvgnidEpzFm7grw=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A Chacarita wine bar with neighborhood warmth",
+      "description": "The well-lit interior features dining tables with white tablecloths and black chairs beneath an exposed concrete ceiling, with white brick walls and a prominent wine rack display creating a refined yet approachable atmosphere.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "refined",
+        "date_night"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 1393,
+      "google_maps_url": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla lo del Russo",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 79,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Villa Crespo's neighborhood parilla with a devoted following",
+      "description": "Parrilla lo del Russo operates Tuesday through Sunday evenings from 8 PM in Villa Crespo, with weekend lunch service from noon. The venue's WhatsApp booking system and closed Monday schedule indicate a focused operation serving dinner-centric crowds seeking quality grilled meats in an unpretentious setting.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "refined",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "Villa Crespo",
+      "venue_type": "restaurant",
+      "rating": 4.2,
+      "review_count": 1829,
+      "google_maps_url": "https://maps.google.com/?cid=6588223718855166786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Esquina Del Virrey",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 77,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Argentine hospitality in the heart of Colegiales",
+      "description": "Located in the residential Colegiales neighborhood, La Esquina Del Virrey operates with split lunch and dinner services six days a week, closed Mondays. With a 4.1 rating across nearly 1,800 reviews, it presents itself as a stable, neighborhood-oriented dining option rather than a critically acclaimed destination.",
+      "mood_tags": [
+        "warm",
+        "social",
+        "date_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "restaurant",
+      "rating": 4.1,
+      "review_count": 1785,
+      "google_maps_url": "https://maps.google.com/?cid=15685839755387806398&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Casa Cuba",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum",
+      "reviewer_notes": "",
+      "staging_score": 68,
+      "blockers": [
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "missing_instagram",
+        "missing_moments",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNqIeEnBgeisVrN3Lpkr_Ftgys5Mzcs4ju4tVfsY3IHA0iCYmJPa5L4zvxUc39lp1uihpNkkYGrqeB7lI3PPkPAQ9VgSLFslgNhVlSPL9eLfZ3SRhLyjkok6BbHW0ycITNzYVieeIu6hpkKW3xzhsR8=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=1657236833786263983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "mood_tags": [],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.6,
+      "review_count": 1773,
+      "google_maps_url": "https://maps.google.com/?cid=1657236833786263983&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Tordo",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMh4uti5X4JSdVe7nY1EVA67w-SaJqE7jGaG2Dz2ccPf-kEsa_w1lLfY8SXcgySIZAzx9YeZfW-PVz1AVUAY-hVIvMCV7c_NgW7e_0fGV6M4r9hLNoGUz6aATEE_HK0cMUTfuoeGFlzSFR3=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=570379113140705284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Traditional Argentine grill in Belgrano with warm lantern-lit evenings",
+      "description": "The nighttime facade with its wooden sign, red awning, and warm lantern lighting creates an inviting first impression visible through large windows. Inside, the open kitchen and dining area suggest the bustling energy typical of a well-frequented neighborhood parrilla.",
+      "mood_tags": [
+        "warm",
+        "late_night",
+        "social",
+        "refined",
+        "hidden_gem"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "restaurant",
+      "rating": 4.1,
+      "review_count": 1878,
+      "google_maps_url": "https://maps.google.com/?cid=570379113140705284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Hierro Parrilla San Telmo",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPbc3uhf2XOUaD-X9BWhkYCInoW6dDISR_mw6Wd42KfFiuFdy1YJ_vl4QQkatTfGleqgYW0aevFpAoWpDIx4YJ6PDPW7LrzIdp2A6lGTNXGk0JGxrhS5v-BNbwQD3AJFWNwqAZBUsMew_ufFohWcoT06g=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=14479777540508762785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Asado artesanal en el corazón de San Telmo",
+      "description": "The interior showcases a wood-fired grill with glowing embers, brick walls, stacked firewood, and sticker-covered stainless steel, creating a rustic-industrial atmosphere that reflects San Telmo's historic character and traditional Argentine asado culture.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "intimate",
+        "date_night"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 1972,
+      "google_maps_url": "https://maps.google.com/?cid=14479777540508762785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla Lo De Mary - Restaurante",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "below_preferred_resolution",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNC4qZ493rKmFwdQhHb2RBbdSsuUIJkUVKexklT6Rz53Ay_ynhaKxz7JDvyvqd3qeTK9HuzKIzPrQY4pVESm405DLe9TMazJH5e0g2daV4AdlAmL0P2-4FzIVl8RBEWyF8lmTgcH0kD3dFk=s4800-w720-h720",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=10541711883442292042&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Classic Argentine grill with vintage soul in Almagro",
+      "description": "Parrilla Lo De Mary occupies a traditional Almagro space with warm wooden doors, vintage signage, and an extensive wine collection. The interior features framed photos and cozy table settings that create an intimate atmosphere for classic Argentine grilled cuisine.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "historic",
+        "date_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "restaurant",
+      "rating": 4.1,
+      "review_count": 1844,
+      "google_maps_url": "https://maps.google.com/?cid=10541711883442292042&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Patio de Mingo",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 79,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Tradición criolla en el corazón de Almagro",
+      "description": "El Patio de Mingo se ubica en el barrio de Almagro, ofreciendo un espacio de comedor en patio con cocina criolla argentina. Con servicio de almuerzo y cena y cierre los lunes, mantiene un calendario operativo tradicional. Su presencia en Instagram y calificación de 4.2 sobre 1.329 reseñas sugieren un local apreciado por la comunidad local más que por turismo gastronómico.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "outdoor",
+        "hidden_gem",
+        "date_night"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "restaurant",
+      "rating": 4.2,
+      "review_count": 1329,
+      "google_maps_url": "https://maps.google.com/?cid=17211396382340675155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Mirasol De Boedo",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNRxIT7eEfBOXaRkm2ntRMtagwysUsmsC45-VV7D18j08WiXpQuHkLdFYDc8nOK70x963CxJ7VfCatjnt76aTH6KG5XOMEDvNnLILtgSUoFAxxRK2MT7l9GIOAKsKJXY2DzD7DGiBacyA96LEa-bXHaOg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=17020025946926109799&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Historic Argentine grill in Almagro's traditional heart",
+      "description": "The venue occupies a distinctive historic building with an ornate facade featuring barred windows and traditional signage, projecting classic Argentine architectural character on Av. Boedo in Almagro.",
+      "mood_tags": [
+        "historic",
+        "warm",
+        "romantic",
+        "intimate",
+        "date_night"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "restaurant",
+      "rating": 4.2,
+      "review_count": 1570,
+      "google_maps_url": "https://maps.google.com/?cid=17020025946926109799&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Parrillita del Pasaje",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 80,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Traditional Argentine grill with neighborhood warmth",
+      "description": "A traditional Argentine grill restaurant located on Av. Medrano in Almagro, La Parrillita del Pasaje serves classic parrillada dishes in a casual neighborhood setting. With operating hours extending late into the night most days, the venue attracts locals seeking hearty grilled meats outside typical meal times.",
+      "mood_tags": [
+        "lively",
+        "warm",
+        "social",
+        "late_night",
+        "date_night"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "restaurant",
+      "rating": 3.8,
+      "review_count": 1691,
+      "google_maps_url": "https://maps.google.com/?cid=3964596073472907762&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Parrilla Cero5",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrYBZ02r6HGeSaRQo_JLZQoKoYKW3yJNK2caiBCIXfN4skNc5XpUetG5g10DLQXuT1Io8fxEiw_bv7MbxGnfycZ-NmC9NvIF8QSqJGflrePAIw131MaWrEJ_txk37v3USfwrUSTPrJcDsBFg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=5668178043582227606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Refined Argentine bar with classic wooden charm",
+      "description": "Located in Retiro, this Argentine bar features a warm, well-lit interior with a classic wooden bar, pendant lighting, and adjacent dining area. The space offers quality cocktails and Parrilla dining with a 4.6 rating from 3,125+ reviews.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "late_night",
+        "refined",
+        "social"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "bar",
+      "rating": 4.6,
+      "review_count": 3125,
+      "google_maps_url": "https://maps.google.com/?cid=5668178043582227606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Huacho",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 76,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Argentinian kitchen craft in the heart of Retiro",
+      "description": "Operating in the commercial heart of Retiro, Huacho draws regulars who appreciate dependable cooking and a setting that doesn't demand formality. The 12 PM to 11:30 PM service covers both lunch and dinner windows, and the Sunday closure hints at a schedule built around the neighborhood's working week.",
+      "mood_tags": [
+        "quiet",
+        "refined",
+        "work_friendly",
+        "date_night"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 1456,
+      "google_maps_url": "https://maps.google.com/?cid=10174197852591185783&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "El Mirasol de La Recova",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMA0ZXWZ7hSFkkfy3-Oh1p0FnA-re_2Av74ccTqUwwzFD6_GAS8mnw4Eq8Yk_in-Kur8TxnYS8DHXLZNE_Qqe7v-ZxLjLsXmDg6wWGOf8ApPiCUHWJInH0yDeJB1PDV9O6DlRavgWY6wDzqVY3xHhzYnA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Classic Argentine dining in a sunlit Retiro landmark",
+      "description": "Set on Posadas street in the upscale Retiro neighborhood, this longstanding restaurant occupies a bright, airy interior with large windows, natural hanging plants, and tables dressed in white and burgundy linens. A visible bar area with wine display reinforces its focus on wine and refined dining, while wooden chairs add warmth to the well-appointed space.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "date_night",
+        "late_night",
+        "social"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.4,
+      "review_count": 2112,
+      "google_maps_url": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Anafe",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 78,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Colegiales' hidden kitchen fires up nightly for intimate Argentine dinners",
+      "description": "Set on a quiet residential block in Colegiales, Anafe operates as a neighborhood staple where Buenos Aires locals come to eat well without fanfare. With 2,604 reviews averaging 4.2 stars, it has proven staying power in a city where restaurant loyalties shift quickly.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "intimate",
+        "hidden_gem",
+        "late_night"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "restaurant",
+      "rating": 4.2,
+      "review_count": 2604,
+      "google_maps_url": "https://maps.google.com/?cid=4836994187335323493&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Dorita",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Eclectic late-night dining in the heart of Palermo",
+      "description": "The warm, eclectic interior features distinctive wine-bottle chandeliers, colorful string lights, a wooden ceiling, and patterned tile floors, creating a well-lit and inviting dining room that balances coziness with creative flair.",
+      "mood_tags": [
+        "warm",
+        "creative",
+        "social",
+        "late_night",
+        "date_night"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 8838,
+      "google_maps_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Pentos Colegiales",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Craft beer and intimate vibes in Colegiales",
+      "description": "A cozy neighborhood bar featuring a neon 'BIRRA' sign, craft beer taps, and an extensive back-bar bottle collection under warm, dim lighting. The chalkboard menu suggests rotating selections, catering to beer enthusiasts seeking quality over speed.",
+      "mood_tags": [
+        "intimate",
+        "warm",
+        "late_night",
+        "hidden_gem",
+        "social"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 4806,
+      "google_maps_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Bar Britanico",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "hero_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
+      "image_source_type": "official_website",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/bar-brit%C3%A1nico",
+      "tagline": "Historic San Telmo bar with warm vintage charm",
+      "description": "The interior features a full bar with wooden shelving displaying bottles, hanging cured meats, and exposed brick walls with a chalkboard menu. Wooden tables and chairs sit on a checkered floor, creating a warm and inviting atmosphere that reflects the bar's historic San Telmo location.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "intimate",
+        "romantic",
+        "date_night"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.2,
+      "review_count": 4298,
+      "google_maps_url": "https://maps.google.com/?cid=9334666124529905863&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_website",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP4bfh5lwz8NWT9SAl30yp04azf1eLLzMrXiQ1L22PA13RerxmNwv5tCjnx40f_O-zlmAsxI7hhcMwYWb-2RgRR7JeUuX82O9ARj5mkmCsvDEJKdp36le54bc3h7aZ64zNU9wBz5Ai46sj3vz7hj7adwA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Refined dining in the heart of Retiro",
+      "description": "Located in the upscale Retiro neighborhood, Ancora Buenos Aires presents a wide interior featuring white-clothed tables and black chairs beneath a wood-slatted ceiling, crowned by a large oval light fixture that bathes the space in warm ambient light.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "intimate",
+        "quiet",
+        "romantic"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.8,
+      "review_count": 84,
+      "google_maps_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Croque Madame Puerto Madero",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "pause",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMuehinf__tbbSK4ZMfQKMyIee2bsZw-SdzpCz0lyu8HG1YVlVToIXYHC17d6i_P2XHpwNLGD0jEBBdN1b3Dpy3g58elwIEMsvtuIGvIUt4hbgp238ev8LfHOgU1bEEeMYdSC5_KV0cM2kzMQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Bright riverside dining with terrace views in Puerto Madero",
+      "description": "Located at Pierina Dealessi 140 within the Coleccion Fortabat complex, this restaurant features a modern interior with large windows flooding the space with natural light, sheer curtains, and modern seating. A visible outdoor terrace extends the dining area toward the Puerto Madero waterfront, offering an additional setting for meals.",
+      "mood_tags": [
+        "refined",
+        "warm",
+        "work_friendly",
+        "date_night",
+        "outdoor"
+      ],
+      "neighborhood": "Puerto Madero",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 3793,
+      "google_maps_url": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    }
+  ]
+}

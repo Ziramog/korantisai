@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { User, Sparkles } from 'lucide-react';
 import Image from 'next/image';
@@ -34,10 +34,55 @@ export default function Home() {
     setLanguage
   } = useCircadian();
 
-  const [activeTab, setActiveTab] = useState<'explore' | 'atlas' | 'guardados' | 'vos'>('explore');
-  const [selectedVenue, setSelectedVenue] = useState<ScoredVenue | null>(null);
+  const [activeTabState, setActiveTabState] = useState<'explore' | 'atlas' | 'guardados' | 'vos'>('explore');
+  const [selectedVenueId, setSelectedVenueId] = useState<string | null>(null);
   const [atlasPreSelectedVenueId, setAtlasPreSelectedVenueId] = useState<string | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const tab = params.get('tab');
+      if (['explore', 'atlas', 'guardados', 'vos'].includes(tab as any)) {
+        setActiveTabState(tab as any);
+      } else {
+        setActiveTabState('explore');
+      }
+
+      const venue = params.get('venue');
+      setSelectedVenueId(venue);
+    };
+
+    // Initial sync
+    handlePopState();
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const activeTab = activeTabState;
+
+  const setActiveTab = (tab: 'explore' | 'atlas' | 'guardados' | 'vos') => {
+    setActiveTabState(tab);
+    const url = new URL(window.location.href);
+    url.searchParams.set('tab', tab);
+    window.history.pushState({}, '', url.toString());
+  };
+
+  const selectedVenue = useMemo(() => {
+    return rankedVenues.find(v => v.id === selectedVenueId) || null;
+  }, [rankedVenues, selectedVenueId]);
+
+  const setSelectedVenue = (venue: ScoredVenue | null) => {
+    setSelectedVenueId(venue?.id || null);
+    const url = new URL(window.location.href);
+    if (venue) {
+      url.searchParams.set('venue', venue.id);
+    } else {
+      url.searchParams.delete('venue');
+    }
+    window.history.pushState({}, '', url.toString());
+  };
 
   const aloneVenues = useMemo(() => {
     return rankedVenues.filter(v => (v.tags || []).includes('QUIET') || (v.tags || []).includes('WORK_FRIENDLY')).slice(0, 5);
@@ -114,7 +159,7 @@ export default function Home() {
             className={`w-full pb-24 ${activeTab === 'atlas' ? '' : 'pt-24'}`}
           >
             {/* EXPLORE / SEARCH FEED TAB */}
-            {activeTab === 'explore' && (
+            <div className={activeTab === 'explore' ? 'block' : 'hidden'}>
               <div className="w-full flex flex-col items-center">
                 
                 <SearchBar onOpenSearch={() => setIsSearchOpen(true)} />
@@ -211,10 +256,11 @@ export default function Home() {
                   })}
                 </motion.div>
               </div>
-            )}
+            </div>
 
             {/* SAVED ATLAS COLLECTIONS TAB */}
-            {activeTab === 'atlas' && (
+            {/* Atlas remains mounted in background to avoid re-initializing mapbox (Anti-jank) */}
+            <div className={activeTab === 'atlas' ? 'block' : 'hidden opacity-0 pointer-events-none'}>
               <SpatialAtlas 
                 onVenueClick={handleVenueClick} 
                 onExploreClick={() => {
@@ -223,10 +269,10 @@ export default function Home() {
                 }} 
                 initialSelectedVenueId={atlasPreSelectedVenueId}
               />
-            )}
+            </div>
 
             {/* GUARDADOS TAB */}
-            {activeTab === 'guardados' && (
+            <div className={activeTab === 'guardados' ? 'block' : 'hidden'}>
               <GuardadosTab 
                 onVenueClick={handleVenueClick}
                 onExploreClick={() => {
@@ -234,12 +280,12 @@ export default function Home() {
                   setActiveTab('explore');
                 }}
               />
-            )}
+            </div>
 
             {/* VOS TAB */}
-            {activeTab === 'vos' && (
+            <div className={activeTab === 'vos' ? 'block' : 'hidden'}>
               <VosTab />
-            )}
+            </div>
 
           </motion.div>
         )}

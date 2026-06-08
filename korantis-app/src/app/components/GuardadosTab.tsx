@@ -1,7 +1,8 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Heart, FolderHeart, ArrowRight } from 'lucide-react';
+import { Heart, FolderHeart, ArrowRight, Info } from 'lucide-react';
 import { useCircadian, ScoredVenue } from '../contexts/CircadianContext';
 import CompactCard from './CompactCard';
 import EmptyState from './EmptyState';
@@ -13,6 +14,14 @@ interface GuardadosTabProps {
 
 export default function GuardadosTab({ onVenueClick, onExploreClick }: GuardadosTabProps) {
   const { savedVenueIds, rankedVenues } = useCircadian();
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (toastMessage) {
+      const timer = setTimeout(() => setToastMessage(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [toastMessage]);
 
   const savedVenues = rankedVenues.filter(v => savedVenueIds.includes(v.id));
 
@@ -44,7 +53,10 @@ export default function GuardadosTab({ onVenueClick, onExploreClick }: Guardados
                 </div>
               </button>
               
-              <button className="w-full flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 transition-all text-left opacity-50 cursor-not-allowed">
+              <button 
+                onClick={() => setToastMessage("Próximamente - En desarrollo")}
+                className="w-full flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-white/20 transition-all text-left opacity-50 cursor-pointer"
+              >
                 <div className="w-12 h-12 rounded-xl bg-black/50 flex items-center justify-center">
                   <FolderHeart size={20} className="text-[#8A7A5A]" />
                 </div>
@@ -54,6 +66,14 @@ export default function GuardadosTab({ onVenueClick, onExploreClick }: Guardados
                 </div>
               </button>
             </div>
+            
+            {/* Toast Notification */}
+            {toastMessage && (
+              <div className="fixed bottom-24 left-1/2 -translate-x-1/2 bg-black/90 border border-[#C9A96E]/30 text-white/90 px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 animate-fade-in z-50">
+                <Info size={16} className="text-[#C9A96E]" />
+                <span className="font-sans text-xs tracking-wide">{toastMessage}</span>
+              </div>
+            )}
           </section>
 
           <section>

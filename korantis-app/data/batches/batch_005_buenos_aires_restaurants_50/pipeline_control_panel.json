@@ -1,0 +1,121 @@
+{
+  "batch_id": "batch_005_buenos_aires_restaurants_50",
+  "generated_at": "2026-06-08T01:25:49.785Z",
+  "files": [
+    {
+      "label": "Venue seed",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\venue_seed_report.md",
+      "exists": true,
+      "size_bytes": 32895
+    },
+    {
+      "label": "Stage 01 raw venues",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_01_report.md",
+      "exists": true,
+      "size_bytes": 3970
+    },
+    {
+      "label": "Stage 02 sources",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_02_source_discovery_report.md",
+      "exists": true,
+      "size_bytes": 14979
+    },
+    {
+      "label": "Stage 03 images",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_03_report.md",
+      "exists": true,
+      "size_bytes": 2062
+    },
+    {
+      "label": "Stage 04 M3 vision",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_04_report.md",
+      "exists": true,
+      "size_bytes": 2997
+    },
+    {
+      "label": "Selected image connector",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\connect_selected_images_report.md",
+      "exists": true,
+      "size_bytes": 9091
+    },
+    {
+      "label": "Stage 05 editorial",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\stage_05_report.md",
+      "exists": true,
+      "size_bytes": 2727
+    },
+    {
+      "label": "Stage 06 quality gate",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\quality_gate_report.md",
+      "exists": true,
+      "size_bytes": 11927
+    },
+    {
+      "label": "Stage 07 approval manifest",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\approval_manifest_report.md",
+      "exists": true,
+      "size_bytes": 4115
+    },
+    {
+      "label": "Stage 08 staging dry-run",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\supabase_staging_dry_run_report.md",
+      "exists": true,
+      "size_bytes": 25551
+    },
+    {
+      "label": "Stage 09 publication review",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\publication_review_report.md",
+      "exists": true,
+      "size_bytes": 6738
+    },
+    {
+      "label": "Reviewed decision manifest",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\publication_decision_manifest.reviewed.json",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "label": "Stage 10 Cloudinary",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\cloudinary_materialization_report.md",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "label": "Stage 11 public projection",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\public_projection_report.md",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "label": "Stage 11 apply",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_005_buenos_aires_restaurants_50\\public_projection_apply_report.md",
+      "exists": false,
+      "size_bytes": 0
+    }
+  ],
+  "counts": {
+    "quality_gate": {
+      "input": 50,
+      "ready_for_db_staging": 36,
+      "auto_staged": 0,
+      "needs_review": 0,
+      "blocked": 14,
+      "approved": 0,
+      "rejected": 0,
+      "staged": 0,
+      "published": 0
+    },
+    "decision_manifest": null,
+    "cloudinary": null,
+    "public_projection": null
+  },
+  "commands": {
+    "full_batch_dry_run": "npx tsx pipeline/run_full_batch.ts batch_005_buenos_aires_restaurants_50 --max-images-per-venue 4",
+    "publication_review": "npx tsx pipeline/stages/09_generate_publication_review.ts batch_005_buenos_aires_restaurants_50",
+    "public_projection_dry_run": "npx tsx pipeline/stages/11_project_to_public.ts batch_005_buenos_aires_restaurants_50 --dry-run",
+    "cloudinary_dry_run": "npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_005_buenos_aires_restaurants_50 --dry-run",
+    "cloudinary_apply": "npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_005_buenos_aires_restaurants_50 --apply",
+    "public_projection_apply_hidden": "npx tsx pipeline/stages/11_project_to_public.ts batch_005_buenos_aires_restaurants_50 --apply",
+    "activation_future": "npx tsx pipeline/stages/12_activate_public_venues.ts batch_005_buenos_aires_restaurants_50 --apply"
+  }
+}

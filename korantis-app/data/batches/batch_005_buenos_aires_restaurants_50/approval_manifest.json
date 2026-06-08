@@ -1,0 +1,742 @@
+{
+  "batch_id": "batch_005_buenos_aires_restaurants_50",
+  "generated_at": "2026-06-08T01:25:43.657Z",
+  "approved_for_db_staging": [
+    {
+      "venue_name": "Mambo Restoran",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMK0XiiHuoNH0jk4ThMrBcCSZun3OmBjmi43h9V6IGheApFJXILhqokprdow_Zun5ZXhD81YhE2ceyMMqKHLVazbHcFRLIVNaRUYiQATgdd1DCxGqKum-5FUcNkRn8gd2oJf6T_RCptFvPgO9R1WKEI=s4800-w1366-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Casa Parra",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOO5ETb6NorIR9iU4ziZW0vP31XRwffIF62OC4a-F3X8NJRrSTJXxKX_nLras7kyRPve1xtNx5KYuvp94HFHV3OO_XLEbDDopI95y1FKOO7yeRPBVUSq8BkNG3aajHJzyBXhXoRxIWpHI923Q=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Justina Bistró",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla Sanabria Palermo",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Caprichosa Parrilla",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla \"La Coqueta\"",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrlrNtSu7s4AxgZUQyg0hwcr63b7WE5tKtiDJuUtpbNj_TY-u2Aj31o1xeHdbAO7kNwtR6UvMVBReh2FdS_VZyXbpfFmSSjmOcHSFQp9LN4-O2KJbzIJ13eHFQxj3KTh6i4shAwOrBhH1DKQ=s4800-w1080-h607",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Tu Jardín Secreto - Restó Secreto",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPgKvmxzMmfAc13hVIkHxVY_dOQpbhu88lC950ujxELFlL3Ex2Ea-jUZBGsxHa-D1g9kgSHQEbo03iagYh-g1Otvwt36__ctF2oqpNEkLLf__8PjOqEQf2nJdClL6qpF4F9hz_kx6lkHBQBjH9RLs7F=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La plazoleta parrilla",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMLHOopFJTKe_N7lfTIMlle24EIxiTMLZl5jEW8-DaA0HEuqzrTd5IgcqEf0TgLVPuhxvzt0WPTire9otFqX-JJ8cWrSSspU7dzT737NTTPDg8zpn55i0FS2NfG2IO2O1Cxt8p7a2rHTeSCgQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla Nuñez",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOsGLcJY4ODpNNfWnu3oJIQLzCxicNlO12E1xlr4xLXXY13dSOUPFgdqyuSMKkCiOnfifm5Al1hZqDR-w_a0aTN6oa5dGhNLdbi4ie-jJxXuvW9hxp5jpLj-eeqf3-1P_casXoXDlCaD90ynmWTw2lbEQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOUb7URcmwr5sYQ5NyHFHtZBDsfoKm4SZDl4yY_XkHrRVaHfoIhNeRcBNZ2M3t3qGDy4KO_QuQLetkFdp3S3dSTOpMrzz0awts2JgKALEm1sideVeau0LycuSo65iW9fbxUz240ABGzefl29BXmh5Z5lg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Tierno Parrilla",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOMkN5ofUxvU2d7DR_j-ggisbm-L_eSKXvQWuJg1km2GtZCalEJIm7BCD28XMzirh5hfkcX3kXRQpFa15CXZeOk3CdLf2TAUVDHLcRNeeoeh8dKXhbv9hh6WVCGc-mMGzYfsavBQLjjBb9aQHitqMpd_Q=s4800-w900-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla La Banda",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPQddQ6pcmT0pzqoIa5X1fW0GQslamlCOTVWbucAyP0aOVY80eYNXBzLJJSpfI5XOLmwkssaBqTAahEHFPvlaijbl-sEqgjh1A6iQ4LT1jsZyOIxcQXVUsUGjghAr0Lva14W03cfLUnU2o=s4800-w1440-h1080",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Atis Bar",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Taller Arte & Café",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPf3PvuHIlZOVBaz2PjdvSjg8uhyS1b2scVo5pLFDRwam7vynU_49KZoa_bjgiSBytodumeg_yDCD_wLGB6zvOdSVliSy61hsMW_nNyt1LNVK9fHSK6YbhP0UB75O6K6hZFDupQ3-gR822dKA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Bar & Restaurant El Correo",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWqlIvya6KlKJYa-7JEQbh04s-YgEmN_fwK_GlFFfpKANFDCeXEZirST5pEaXP_-Z73WXj4K-zHUdXYxHDs-UwZ9ignlBIt8-YBl66yktiiudD_8iL4N1v156wAAyVCKpEf1DU0YrzcCuqQz7EsLM_GA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "RUFINO",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZONZl6rtaOJKZy7s1dMq9WThnkD889BQDIb-1JVu97eKC5izGE5QSCvmoyy8qtR6gJVw3th0-7OAep35esTyawIaBIUVXfopBMjBQjKLASEO-Ca8B2KzoK_UwdU1wQlMulmT1E_EK9XPhwO_g=s4800-w819-h1024",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "L' Orangerie Alvear Palace Hotel",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO_aHKDA3H0gcQsNBddVPWn4cjamhlPGhVUffXRaZOEkFJEBf_YqgbUd89GT7In2zewsyqyluQnKiVhRMCJctj1wR3S8twhuk6sMZJHf9eWvMvtwC1u1cIp8vIJ2cDnTqQYJ7OQUd4ONmHg1sWMoTC3=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Chiri de Villa Kreplaj",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP_j5cZfm9c5W8nbbsP2f4ZVGOpR0vb_OW1MaoaZjeJ0EalT9LNR560nOcZPxvXKvX-U9s2twEaicnbhKxOkhiHzlZ1MKrdCh0YahEBuNJKSYZfsv2KqoEn4NIFo3PjMGnQbmJfv4rItdq8L8m9apuwBg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "jakub",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Lo Del Francés Café Bistrot",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBlyVFrAvpaiEXLTlnoboYkGIBQz-QVVWFlGj8-0c9n3Q1hgijHXVCzY45eevKHSF8qijRBZNqESxEAwpylZuGKW0nZ0Wta5gEpC508KwsZkfm7Ao_4FrVxJece_zB_snjzEdJhLL6JLLvYA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Dada Bistró",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMX9i01oRhEwW28mIndCODPlh4N_PFiCp9SstZqo1qm0eB345N_rSsIz1kgrFqYJaQBXmptDn9e2EsWC6mRxEJ7O96S3UxdHYXGQSGVNkurJs7z5h5gAueCbv-IEuoi8kAfcAT-Ggrg_F9lQDbXiVMX2g=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Jardín de Invierno",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPRvSExjWMwztG9du3H3A2G4yjrjfoFCok-_03rVDck1Lx_7Vf8aPAYVAjvfI8jmiY-B21HQeE73OTnkHyuBD36cJTJS2ei0NhGKdPKOq57f2ZlAyLfds3Nb3F4oxw_8wftQ9PVU9IQ33CNRkDkuRjWg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Estrebe",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "hero_image_url": "http://www.elestrebe.com.ar/imgs/slide05-salon-final.jpg",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Maure Parrilla",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP5Zb7k8YiVXiozAa_fD935DtEH8jpGtZl_leTtulxn5sRXkQyL_5_k_q3zD1wrp65PpY109CTIOJdFENI3y-wf_1-qi_HfvElh2fsZNiIFfTh_AodxhYZkAh10i7SK3AAg-xQTzg3BwgPZcUA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Fraga Bodegón",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO1QLcIFK_NlBKttvcE9emN4T-bDG0-5W_7pJMArk0dKdb-8DhqGTZl_8TZWFgUPSSxMQV_KMtQq8riBt_q1lNFvPQpxsd4yC572snEjmLvZtfxLCoe7BRYfuldLoAdL13pIBE-TX5AvgnidEpzFm7grw=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Tordo",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMh4uti5X4JSdVe7nY1EVA67w-SaJqE7jGaG2Dz2ccPf-kEsa_w1lLfY8SXcgySIZAzx9YeZfW-PVz1AVUAY-hVIvMCV7c_NgW7e_0fGV6M4r9hLNoGUz6aATEE_HK0cMUTfuoeGFlzSFR3=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Hierro Parrilla San Telmo",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPbc3uhf2XOUaD-X9BWhkYCInoW6dDISR_mw6Wd42KfFiuFdy1YJ_vl4QQkatTfGleqgYW0aevFpAoWpDIx4YJ6PDPW7LrzIdp2A6lGTNXGk0JGxrhS5v-BNbwQD3AJFWNwqAZBUsMew_ufFohWcoT06g=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla Lo De Mary - Restaurante",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "below_preferred_resolution",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNC4qZ493rKmFwdQhHb2RBbdSsuUIJkUVKexklT6Rz53Ay_ynhaKxz7JDvyvqd3qeTK9HuzKIzPrQY4pVESm405DLe9TMazJH5e0g2daV4AdlAmL0P2-4FzIVl8RBEWyF8lmTgcH0kD3dFk=s4800-w720-h720",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Mirasol De Boedo",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNRxIT7eEfBOXaRkm2ntRMtagwysUsmsC45-VV7D18j08WiXpQuHkLdFYDc8nOK70x963CxJ7VfCatjnt76aTH6KG5XOMEDvNnLILtgSUoFAxxRK2MT7l9GIOAKsKJXY2DzD7DGiBacyA96LEa-bXHaOg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla Cero5",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrYBZ02r6HGeSaRQo_JLZQoKoYKW3yJNK2caiBCIXfN4skNc5XpUetG5g10DLQXuT1Io8fxEiw_bv7MbxGnfycZ-NmC9NvIF8QSqJGflrePAIw131MaWrEJ_txk37v3USfwrUSTPrJcDsBFg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Mirasol de La Recova",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMA0ZXWZ7hSFkkfy3-Oh1p0FnA-re_2Av74ccTqUwwzFD6_GAS8mnw4Eq8Yk_in-Kur8TxnYS8DHXLZNE_Qqe7v-ZxLjLsXmDg6wWGOf8ApPiCUHWJInH0yDeJB1PDV9O6DlRavgWY6wDzqVY3xHhzYnA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Dorita",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Pentos Colegiales",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Bar Britanico",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "hero_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_website",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP4bfh5lwz8NWT9SAl30yp04azf1eLLzMrXiQ1L22PA13RerxmNwv5tCjnx40f_O-zlmAsxI7hhcMwYWb-2RgRR7JeUuX82O9ARj5mkmCsvDEJKdp36le54bc3h7aZ64zNU9wBz5Ai46sj3vz7hj7adwA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Croque Madame Puerto Madero",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMuehinf__tbbSK4ZMfQKMyIee2bsZw-SdzpCz0lyu8HG1YVlVToIXYHC17d6i_P2XHpwNLGD0jEBBdN1b3Dpy3g58elwIEMsvtuIGvIUt4hbgp238ev8LfHOgU1bEEeMYdSC5_KV0cM2kzMQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ],
+  "needs_review": [],
+  "blocked": [
+    {
+      "venue_name": "Bistro Tokio",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "ALMA BUENOS AIRES",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla Lo de Susy",
+      "status": "blocked",
+      "staging_score": 74,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Casa Cuba Restaurant & Grill",
+      "status": "blocked",
+      "staging_score": 78,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Nuestra Parrilla",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Restaurante Corte Comedor",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "República del Fuego",
+      "status": "blocked",
+      "staging_score": 78,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Parrilla lo del Russo",
+      "status": "blocked",
+      "staging_score": 79,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Esquina Del Virrey",
+      "status": "blocked",
+      "staging_score": 77,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Casa Cuba",
+      "status": "blocked",
+      "staging_score": 68,
+      "blocker_reasons": [
+        "missing_or_short_tagline",
+        "missing_description",
+        "fewer_than_two_mood_tags",
+        "evidence_confidence_below_minimum"
+      ],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "low_mood_confidence",
+        "low_evidence_confidence",
+        "missing_instagram",
+        "missing_moments",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNqIeEnBgeisVrN3Lpkr_Ftgys5Mzcs4ju4tVfsY3IHA0iCYmJPa5L4zvxUc39lp1uihpNkkYGrqeB7lI3PPkPAQ9VgSLFslgNhVlSPL9eLfZ3SRhLyjkok6BbHW0ycITNzYVieeIu6hpkKW3xzhsR8=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "El Patio de Mingo",
+      "status": "blocked",
+      "staging_score": 79,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Parrillita del Pasaje",
+      "status": "blocked",
+      "staging_score": 80,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Huacho",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Anafe",
+      "status": "blocked",
+      "staging_score": 78,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ]
+}

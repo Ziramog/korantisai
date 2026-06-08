@@ -1,40 +1,40 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
-  "generated_at": "2026-06-08T01:03:55.019Z",
+  "generated_at": "2026-06-08T01:25:26.916Z",
   "minimax_called": true,
   "model_used": "MiniMax-M2.7",
   "venues_processed": 50,
-  "successful_generations": 29,
-  "failed_generations": 21,
-  "invalid_json_count": 2,
+  "successful_generations": 49,
+  "failed_generations": 1,
+  "invalid_json_count": 1,
   "mood_distribution": {
-    "warm": 23,
-    "refined": 13,
-    "creative": 6,
-    "intimate": 20,
-    "date_night": 17,
-    "romantic": 14,
-    "quiet": 7,
-    "historic": 9,
-    "work_friendly": 2,
-    "late_night": 10,
-    "outdoor": 2,
-    "hidden_gem": 4,
-    "social": 9,
-    "lively": 1,
-    "cinematic": 1
+    "warm": 42,
+    "refined": 21,
+    "creative": 8,
+    "intimate": 32,
+    "date_night": 30,
+    "romantic": 19,
+    "quiet": 11,
+    "historic": 14,
+    "work_friendly": 4,
+    "late_night": 19,
+    "outdoor": 4,
+    "hidden_gem": 10,
+    "social": 17,
+    "lively": 2,
+    "cinematic": 2
   },
   "evidence_confidence_distribution": {
-    "low": 21,
+    "low": 1,
     "medium": 0,
-    "high": 29
+    "high": 49
   },
   "status_counts_after_scoring": {
     "input": 50,
     "ready_for_db_staging": 0,
-    "auto_staged": 12,
-    "needs_review": 10,
-    "blocked": 28,
+    "auto_staged": 23,
+    "needs_review": 13,
+    "blocked": 14,
     "approved": 0,
     "rejected": 0,
     "staged": 0,
@@ -68,22 +68,12 @@
       "no_hero_image"
     ],
     "Parrilla La Banda": [],
-    "Atis Bar": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "Atis Bar": [],
     "El Taller Arte & Café": [],
     "Bar & Restaurant El Correo": [],
     "RUFINO": [],
     "L' Orangerie Alvear Palace Hotel": [],
-    "El Chiri de Villa Kreplaj": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "El Chiri de Villa Kreplaj": [],
     "jakub": [],
     "Restaurante Corte Comedor": [
       "no_hero_image"
@@ -96,25 +86,12 @@
       "no_hero_image"
     ],
     "Maure Parrilla": [],
-    "Fraga Bodegón": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "Fraga Bodegón": [],
     "Parrilla lo del Russo": [
-      "no_hero_image",
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
+      "no_hero_image"
     ],
     "La Esquina Del Virrey": [
-      "no_hero_image",
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
+      "no_hero_image"
     ],
     "Casa Cuba": [
       "missing_or_short_tagline",
@@ -122,100 +99,29 @@
       "fewer_than_two_mood_tags",
       "evidence_confidence_below_minimum"
     ],
-    "El Tordo": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
-    "Hierro Parrilla San Telmo": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
-    "Parrilla Lo De Mary - Restaurante": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "El Tordo": [],
+    "Hierro Parrilla San Telmo": [],
+    "Parrilla Lo De Mary - Restaurante": [],
     "El Patio de Mingo": [
-      "no_hero_image",
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
+      "no_hero_image"
     ],
-    "El Mirasol De Boedo": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "El Mirasol De Boedo": [],
     "La Parrillita del Pasaje": [
-      "no_hero_image",
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
+      "no_hero_image"
     ],
-    "Parrilla Cero5": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "Parrilla Cero5": [],
     "Huacho": [
-      "no_hero_image",
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
+      "no_hero_image"
     ],
-    "El Mirasol de La Recova": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
+    "El Mirasol de La Recova": [],
     "Anafe": [
-      "no_hero_image",
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
+      "no_hero_image"
     ],
-    "La Dorita": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
-    "Pentos Colegiales": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
-    "Bar Britanico": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
-    "Ancora Buenos Aires": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ],
-    "Croque Madame Puerto Madero": [
-      "missing_or_short_tagline",
-      "missing_description",
-      "fewer_than_two_mood_tags",
-      "evidence_confidence_below_minimum"
-    ]
+    "La Dorita": [],
+    "Pentos Colegiales": [],
+    "Bar Britanico": [],
+    "Ancora Buenos Aires": [],
+    "Croque Madame Puerto Madero": []
   },
   "results": [
     {
@@ -875,9 +781,40 @@
     },
     {
       "venue_name": "Atis Bar",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "editorial_invalid_json"
+      "editorial": {
+        "tagline": "Historic San Telmo terrace with twinkling lights and courtyard charm",
+        "description_short": "A charming bar in the heart of San Telmo with a cozy balcony overlooking a picturesque courtyard adorned with string lights and ivy.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "historic",
+          "cinematic"
+        ],
+        "moments": [
+          "Romantic evening conversations over desserts and coffee",
+          "Late-night gatherings with close friends",
+          "Captivating courtyard evenings with historic ambiance"
+        ],
+        "best_for": [
+          "Date nights",
+          "Hidden gem seekers",
+          "Intimate gatherings",
+          "Scenic evening drinks"
+        ],
+        "not_for": [
+          "Large groups seeking high energy",
+          "Those wanting modern minimalism"
+        ],
+        "primary_atmosphere": "Warm historic courtyard charm with intimate balcony seating",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Atis Bar is a long-standing San Telmo establishment with over 10,000 reviews, known for its enchanting courtyard setting and balcony tables that create a cinematic atmosphere. The image vision captures the venue's signature warm and romantic ambience perfectly—string lights, ornate ironwork, and ivy-covered walls create an intimate escape in one of Buenos Aires' most historic neighborhoods. The bar operates daily with extended hours on weekends, catering to both early evening and late-night visitors.",
+        "grounded_description": "Perched overlooking a charming San Telmo courtyard with twinkling string lights, ornate ironwork balconies, and ivy-covered facades, this bar offers a warm, cinematic setting perfect for intimate gatherings and romantic evenings."
+      },
+      "retried_at": "2026-06-08T01:19:31.908Z"
     },
     {
       "venue_name": "El Taller Arte & Café",
@@ -1037,9 +974,43 @@
     },
     {
       "venue_name": "El Chiri de Villa Kreplaj",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "editorial_invalid_json"
+      "editorial": {
+        "tagline": "Corner café warmth in the heart of Villa Crespo",
+        "description_short": "El Chiri de Villa Kreplaj sits on Juan Ramírez de Velasco with an interior defined by warm orange and pink walls, neon signage, and framed portraits that give the space a lived-in, creative energy. The café-restaurant draws a steady local crowd throughout the day and into the late hours, offering a relaxed alternative to more polished dining options in the neighborhood.",
+        "mood_tags": [
+          "warm",
+          "social",
+          "intimate",
+          "creative",
+          "late_night"
+        ],
+        "moments": [
+          "Afternoon coffee and people-watching from the bench seating",
+          "Weekend brunch with friends in a cozy corner",
+          "Evening drinks under the pendant lights",
+          "Casual solo work sessions with good Wi-Fi and atmosphere",
+          "Late-night meals after 10 PM"
+        ],
+        "best_for": [
+          "Neighborhood regulars",
+          "Creative types and artists",
+          "Casual date nights",
+          "Late-night diners",
+          "Group catch-ups"
+        ],
+        "not_for": [
+          "Formal or business dining",
+          "Quick grab-and-go"
+        ],
+        "primary_atmosphere": "A warm, cozy corner café with an artistic edge—pink and orange walls, neon signage, and framed portraits create an intimate space that feels personal and unpretentious.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.8,
+        "editorial_notes": "This editorial is grounded in the high-quality interior image showing the warm_cozy atmosphere with orange/pink walls, neon signage, pendant lights, and bench seating. The rating of 4.3 across 2,211 reviews supports the 'warm' and 'social' mood tags. No awards, Michelin, or 50 Best mentions are made as none were supplied. The 'late_night' tag is supported by the extended hours until midnight on most nights and 11:30 PM on Sundays.",
+        "grounded_description": "The interior features orange and pink walls with neon signage, framed portraits, and pendant lights casting a warm glow over set tables with bench seating and wooden chairs. Decorative plants add a touch of green to this cozy café-restaurant setting that feels both artistic and welcoming."
+      },
+      "retried_at": "2026-06-08T01:20:07.387Z"
     },
     {
       "venue_name": "jakub",
@@ -1351,117 +1322,732 @@
     },
     {
       "venue_name": "Fraga Bodegón",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "A Chacarita wine bar with neighborhood warmth",
+        "description_short": "Fraga Bodegón is a wine-focused restaurant in Chacarita with a 4.7 rating from 1,393 reviews, offering evening service with weekend lunch options in a warm, intimate setting.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "refined",
+          "date_night"
+        ],
+        "moments": [
+          "Evening wine and dinner",
+          "Date night",
+          "Intimate gatherings",
+          "Weekend lunch"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Date nights",
+          "Romantic dinners",
+          "Intimate gatherings"
+        ],
+        "not_for": [
+          "Quick meals",
+          "Large groups"
+        ],
+        "primary_atmosphere": "Warm wine bar with intimate dining",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.9,
+        "editorial_notes": "The high-rated venue (4.7, 1,393 reviews) operates primarily as an evening destination with lunch on weekends. The hero interior image confirms the warm_cozy atmosphere with white tablecloths, exposed concrete and brick, and a prominent wine rack—visually grounding the refined, romantic mood. The Instagram presence suggests a modern neighborhood spot rather than a tourist destination.",
+        "grounded_description": "The well-lit interior features dining tables with white tablecloths and black chairs beneath an exposed concrete ceiling, with white brick walls and a prominent wine rack display creating a refined yet approachable atmosphere."
+      },
+      "retried_at": "2026-06-08T01:20:14.586Z"
     },
     {
       "venue_name": "Parrilla lo del Russo",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Villa Crespo's neighborhood parilla with a devoted following",
+        "description_short": "A low-key Argentine steakhouse in Villa Crespo drawing crowds for expertly grilled meats and an unpretentious neighborhood atmosphere.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "An evening dedicated to quality asado",
+          "A quiet dinner for two in the neighborhood",
+          "A late-night gathering after 10 PM",
+          "Discovering a local favorite off the beaten path"
+        ],
+        "best_for": [
+          "Traditional Argentine asado",
+          "Neighborhood dining",
+          "Late-night dinners",
+          "Meat lovers",
+          "Low-key date night"
+        ],
+        "not_for": [
+          "Quick weekday lunches",
+          "Vegetarian-focused dining",
+          "Large group celebrations"
+        ],
+        "primary_atmosphere": "Traditional Argentine steakhouse with intimate evening dining",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.75,
+        "editorial_notes": "The evening-focused hours and neighborhood location suggest a traditional parilla serving a local clientele. The 4.2 rating across 1829 reviews indicates consistent quality without fanfare. No awards or recognitions were indicated in the source data.",
+        "grounded_description": "Parrilla lo del Russo operates Tuesday through Sunday evenings from 8 PM in Villa Crespo, with weekend lunch service from noon. The venue's WhatsApp booking system and closed Monday schedule indicate a focused operation serving dinner-centric crowds seeking quality grilled meats in an unpretentious setting."
+      },
+      "retried_at": "2026-06-08T01:20:18.788Z"
     },
     {
       "venue_name": "La Esquina Del Virrey",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Argentine hospitality in the heart of Colegiales",
+        "description_short": "A neighborhood restaurant in Colegiales offering traditional Argentine cuisine with split lunch and dinner services, drawing a loyal local crowd for nearly two decades.",
+        "mood_tags": [
+          "warm",
+          "social",
+          "date_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Weekend lunch with extended family",
+          "Evening dinner date in a low-key setting",
+          "Casual gathering with friends",
+          "Solo dining at the bar during lunch service"
+        ],
+        "best_for": [
+          "Traditional Argentine cuisine",
+          "Relaxed neighborhood dining",
+          "Lunch or dinner occasions",
+          "Intimate conversations"
+        ],
+        "not_for": [
+          "Fast-paced dining expectations",
+          "Large group celebrations"
+        ],
+        "primary_atmosphere": "A warmly inviting neighborhood restaurant with an unpretentious Argentine character, where regulars and newcomers share tables in a setting that feels lived-in and genuine.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.7,
+        "editorial_notes": "The 4.1 rating from 1,785 reviews suggests consistent quality without exceptional distinction. No awards, Michelin stars, or 50 Best recognitions are indicated. The restaurant appears established and locally trusted rather than destination-famous. Colegiales is a residential neighborhood known for quieter, authentic Buenos Aires character.",
+        "grounded_description": "Located in the residential Colegiales neighborhood, La Esquina Del Virrey operates with split lunch and dinner services six days a week, closed Mondays. With a 4.1 rating across nearly 1,800 reviews, it presents itself as a stable, neighborhood-oriented dining option rather than a critically acclaimed destination."
+      },
+      "retried_at": "2026-06-08T01:20:25.741Z"
     },
     {
       "venue_name": "Casa Cuba",
       "success": false,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "error": "editorial_invalid_json",
+      "retried_at": "2026-06-08T01:20:32.413Z"
     },
     {
       "venue_name": "El Tordo",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Traditional Argentine grill in Belgrano with warm lantern-lit evenings",
+        "description_short": "A well-established Argentine grill in the Belgrano neighborhood, drawing crowds with its late-night hours and hearty parillas. The warm, lantern-lit exterior at night signals the cozy, neighborhood dining experience inside.",
+        "mood_tags": [
+          "warm",
+          "late_night",
+          "social",
+          "refined",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Late evening dinners after 10PM",
+          "Informal gatherings with friends",
+          "Neighborhood dining experiences"
+        ],
+        "best_for": [
+          "Casual Argentine dining",
+          "Late-night meals",
+          "Social gatherings",
+          "Local neighborhood experience"
+        ],
+        "not_for": [
+          "Formal celebrations",
+          "Quiet romantic dinners"
+        ],
+        "primary_atmosphere": "Warm and social neighborhood grill with inviting nighttime ambiance",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.8,
+        "editorial_notes": "El Tordo presents as a classic Buenos Aires neighborhood grill rather than a destination restaurant. The nighttime hero image with warm lantern lighting and visible interior creates an immediate sense of warmth and accessibility. With 1878 reviews and a 4.1 rating, it demonstrates consistent quality without exceptional acclaim. The 12AM closing time across all days positions it firmly in the late-night dining category, appealing to those seeking traditional parilla fare beyond typical dinner hours.",
+        "grounded_description": "The nighttime facade with its wooden sign, red awning, and warm lantern lighting creates an inviting first impression visible through large windows. Inside, the open kitchen and dining area suggest the bustling energy typical of a well-frequented neighborhood parrilla."
+      },
+      "retried_at": "2026-06-08T01:21:08.090Z"
     },
     {
       "venue_name": "Hierro Parrilla San Telmo",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Asado artesanal en el corazón de San Telmo",
+        "description_short": "Hierro Parrilla San Telmo delivers an authentic wood-fired asado experience in a rustic-industrial setting. The space features a glowing embers grill, brick walls, and stacked firewood that anchor it in traditional Argentine grilling culture.",
+        "mood_tags": [
+          "warm",
+          "historic",
+          "intimate",
+          "date_night"
+        ],
+        "moments": [
+          "A slow afternoon gathering over grilled meats",
+          "A romantic dinner in an industrial-chic setting",
+          "An intimate meal with friends in San Telmo",
+          "Experiencing traditional Argentine asado culture",
+          "A cozy weekday lunch escape"
+        ],
+        "best_for": [
+          "Traditional Argentine asado lovers",
+          "Intimate dining in historic San Telmo",
+          "A romantic evening with excellent grilled food",
+          "Atmospheric meals with strong visual character",
+          "Budget-friendly quality dining (lunch hours)"
+        ],
+        "not_for": [
+          "Late-night social drinking",
+          "Large group celebrations",
+          "Fast-casual dining expectations"
+        ],
+        "primary_atmosphere": "Rustic-industrial Argentine grill with wood-fired focus",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Editorial is grounded in the image vision's description of a wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick walls, and sticker-covered stainless steel hood. The atmosphere_signal of 'industrial' combined with the visual_reason establishes a strong rustic-industrial BBQ identity. The high rating (4.7) and substantial review count (1972) support confidence in the venue's appeal. Hours show lunch-focused operations (12-5PM weekdays, 12-7PM weekends), which informs the 'date_night' and 'intimate' mood tags as evening periods are limited.",
+        "grounded_description": "The interior showcases a wood-fired grill with glowing embers, brick walls, stacked firewood, and sticker-covered stainless steel, creating a rustic-industrial atmosphere that reflects San Telmo's historic character and traditional Argentine asado culture."
+      },
+      "retried_at": "2026-06-08T01:21:36.465Z"
     },
     {
       "venue_name": "Parrilla Lo De Mary - Restaurante",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Classic Argentine grill with vintage soul in Almagro",
+        "description_short": "A traditional Buenos Aires parilla with an intimate, wine-forward interior featuring vintage decor and cozy table settings.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "historic",
+          "date_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "An intimate dinner with friends in a cozy neighborhood setting",
+          "A relaxed evening exploring classic Argentine grilled dishes",
+          "A quiet date night with good wine and warm ambiance",
+          "Experiencing traditional Almagro dining culture"
+        ],
+        "best_for": [
+          "Traditional Argentine cuisine",
+          "Intimate dinners",
+          "Wine enthusiasts",
+          "Neighborhood dining"
+        ],
+        "not_for": [
+          "Large group celebrations",
+          "Fast casual dining",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "Warm, vintage Argentine parilla with intimate table settings and extensive wine shelving",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Based on 1844 reviews and high-quality interior imagery showing wine bottles, vintage signage, and framed photos. The venue operates Thursday through Sunday with split lunch/dinner service, suggesting a focused, curated dining approach rather than high-volume service. Rating of 4.1 indicates solid neighborhood reputation.",
+        "grounded_description": "Parrilla Lo De Mary occupies a traditional Almagro space with warm wooden doors, vintage signage, and an extensive wine collection. The interior features framed photos and cozy table settings that create an intimate atmosphere for classic Argentine grilled cuisine."
+      },
+      "retried_at": "2026-06-08T01:21:43.635Z"
     },
     {
       "venue_name": "El Patio de Mingo",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Tradición criolla en el corazón de Almagro",
+        "description_short": "Restaurante argentino con patio en Almagro que ofrece cocina criolla en un ambiente tranquilo y acogedor. Con más de 1.300 reseñas y calificación de 4.2, es un punto de referencia local para quienes buscan experiencia gastronómica tradicional.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "outdoor",
+          "hidden_gem",
+          "date_night"
+        ],
+        "moments": [
+          "Cenas románticas en el patio",
+          "Encuentros familiares",
+          "Comidas de celebración",
+          "Escape del ruido urbano"
+        ],
+        "best_for": [
+          "Comida criolla auténtica",
+          "Ambiente tranquilo",
+          "Parejas",
+          "Grupos reducidos"
+        ],
+        "not_for": [
+          "Ambiente animado",
+          "Comida tardía después de medianoche",
+          "Opciones veganas especializadas"
+        ],
+        "primary_atmosphere": "Patio acogedor con ambiente tranquilo y tradicional, ideal para dinners íntimos sin ruido ni pretensiones.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.75,
+        "editorial_notes": "La categoría de 'restaurant' y el nombre 'El Patio' sugieren espacio al aire libre. Almagro es un barrio residencial con identidad porteña, lo que favorece atmósfera local y cálida. Sin información de menú, precios o premios, las inferencias de atmósfera se limitan al nombre y vecindario. La calificación de 4.2 con 1.329 reseñas indica calidad consistente sin ser premium. El horarios de almuerzo y cena sin servicio continuo sugiere formato criollo tradicional.",
+        "grounded_description": "El Patio de Mingo se ubica en el barrio de Almagro, ofreciendo un espacio de comedor en patio con cocina criolla argentina. Con servicio de almuerzo y cena y cierre los lunes, mantiene un calendario operativo tradicional. Su presencia en Instagram y calificación de 4.2 sobre 1.329 reseñas sugieren un local apreciado por la comunidad local más que por turismo gastronómico."
+      },
+      "retried_at": "2026-06-08T01:22:16.684Z"
     },
     {
       "venue_name": "El Mirasol De Boedo",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Historic Argentine grill in Almagro's traditional heart",
+        "description_short": "El Mirasol De Boedo is a traditional Argentine parrilla occupying an ornate historic building on Av. Boedo, serving classic grilled meats in a classic neighborhood setting since 1964.",
+        "mood_tags": [
+          "historic",
+          "warm",
+          "romantic",
+          "intimate",
+          "date_night"
+        ],
+        "moments": [
+          "Sunday family lunch",
+          "Late-night asado gathering",
+          "Neighborhood anniversary dinner",
+          "Traditional Argentine date",
+          "Classic Almagro evening out"
+        ],
+        "best_for": [
+          "Traditional Argentine dining",
+          "Historic building appreciation",
+          "Late evening meals",
+          "Classic neighborhood atmosphere",
+          "Special occasion grills"
+        ],
+        "not_for": [
+          "Quick business lunch",
+          "Casual fast dining",
+          "Modern fusion seekers"
+        ],
+        "primary_atmosphere": "Classic Argentine grill in a storied historic building with ornate facade, traditional signage, and warm neighborhood hospitality",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.75,
+        "editorial_notes": "The ornate historic building facade with traditional 'PARRILLA EL MIRASOL' signage visible in the hero exterior image grounds the historic and refined atmosphere. High extraction confidence (0.9) supports venue details. The 4.2 rating from 1,570 reviews indicates consistent quality over time. Mood confidence is 0.75 due to the lack of interior imagery to fully confirm intimate dining atmosphere. Evening service until midnight supports late-night and date night tags.",
+        "grounded_description": "The venue occupies a distinctive historic building with an ornate facade featuring barred windows and traditional signage, projecting classic Argentine architectural character on Av. Boedo in Almagro."
+      },
+      "retried_at": "2026-06-08T01:22:21.712Z"
     },
     {
       "venue_name": "La Parrillita del Pasaje",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Traditional Argentine grill with neighborhood warmth",
+        "description_short": "La Parrillita del Pasaje is a longstanding parrillita in the Almagro neighborhood of Buenos Aires, known for classic grilled meats and extended hours that cater to late-night appetites. The venue draws a consistent local crowd seeking no-frills Argentine barbecue in a casual setting.",
+        "mood_tags": [
+          "lively",
+          "warm",
+          "social",
+          "late_night",
+          "date_night"
+        ],
+        "moments": [
+          "casual group dinners",
+          "late-night meals after 10 PM",
+          "traditional Argentine dining",
+          "weekend lunches"
+        ],
+        "best_for": [
+          "classic Argentine asado",
+          "late-night cravings",
+          "casual group gatherings",
+          "neighborhood dining"
+        ],
+        "not_for": [
+          "refined dining expectations",
+          "quiet intimate settings",
+          "formal occasions"
+        ],
+        "primary_atmosphere": "Traditional Argentine grill with neighborhood warmth and social energy",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "The venue's extended hours including 24-hour Tuesdays and late-night service until 1 AM on most days position it as a reliable option for late-night dining in Almagro. The 3.8 rating with 1691 reviews indicates decent but not exceptional quality, consistent with a traditional neighborhood parrillita rather than a destination restaurant.",
+        "grounded_description": "A traditional Argentine grill restaurant located on Av. Medrano in Almagro, La Parrillita del Pasaje serves classic parrillada dishes in a casual neighborhood setting. With operating hours extending late into the night most days, the venue attracts locals seeking hearty grilled meats outside typical meal times."
+      },
+      "retried_at": "2026-06-08T01:22:29.620Z"
     },
     {
       "venue_name": "Parrilla Cero5",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Refined Argentine bar with classic wooden charm",
+        "description_short": "Warm Argentine bar in Retiro featuring a classic wooden bar, quality cocktails, and Parrilla dining. Popular for evening gatherings with 3,125+ reviews and a 4.6 rating.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "late_night",
+          "refined",
+          "social"
+        ],
+        "moments": [
+          "After-work drinks",
+          "Casual dinner",
+          "Evening gathering",
+          "Late-night cocktails"
+        ],
+        "best_for": [
+          "Argentine grill experience",
+          "Quality cocktails",
+          "Evening social",
+          "Date nights"
+        ],
+        "not_for": [
+          "Quick lunches",
+          "Large groups"
+        ],
+        "primary_atmosphere": "Refined Argentine bar with warm, intimate interiors and classic wooden bar aesthetic",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.8,
+        "editorial_notes": "Parrilla Cero5 balances traditional Argentine grill dining with a sophisticated bar atmosphere. High review volume (3,125+) and 4.6 rating indicate consistent quality and popularity. Open Tue-Sun until midnight suits evening and late-night occasions. Image shows well-lit interior with pendant lights, wooden bar, hanging wine glasses, and adjacent dining area — classic, warm aesthetic that supports intimate and social moods.",
+        "grounded_description": "Located in Retiro, this Argentine bar features a warm, well-lit interior with a classic wooden bar, pendant lighting, and adjacent dining area. The space offers quality cocktails and Parrilla dining with a 4.6 rating from 3,125+ reviews."
+      },
+      "retried_at": "2026-06-08T01:22:51.593Z"
     },
     {
       "venue_name": "Huacho",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Argentinian kitchen craft in the heart of Retiro",
+        "description_short": "Huacho occupies a corner of Retiro's commercial district, drawing a steady crowd for midday and evening meals with the kind of consistency that 1,456 reviews at 4.7 stars suggests. The space operates like a neighborhood institution that has earned trust through reliable execution rather than novelty.",
+        "mood_tags": [
+          "quiet",
+          "refined",
+          "work_friendly",
+          "date_night"
+        ],
+        "moments": [
+          "Business lunch with colleagues",
+          "Focused solo dinner",
+          "Weekday date night",
+          "Casual anniversary dinner"
+        ],
+        "best_for": [
+          "Reliable quality dining",
+          "Professional surroundings",
+          "Consistent experience",
+          "Neighborhood feel"
+        ],
+        "not_for": [
+          "Sunday visits (closed)",
+          "Large group events"
+        ],
+        "primary_atmosphere": "A trusted neighborhood restaurant that strikes a balance between approachable and elevated, suited to the workday rhythm of Retiro.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.6,
+        "editorial_notes": "The 4.7 rating across 1,456 reviews provides strong evidence of consistent quality. Closure on Sundays, combined with the business-district location of Retiro, suggests a place built around weekday trade. Without cuisine type or price range confirmed, atmosphere inference is conservative and anchored to neighborhood context and operational pattern.",
+        "grounded_description": "Operating in the commercial heart of Retiro, Huacho draws regulars who appreciate dependable cooking and a setting that doesn't demand formality. The 12 PM to 11:30 PM service covers both lunch and dinner windows, and the Sunday closure hints at a schedule built around the neighborhood's working week."
+      },
+      "retried_at": "2026-06-08T01:23:11.670Z"
     },
     {
       "venue_name": "El Mirasol de La Recova",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Classic Argentine dining in a sunlit Retiro landmark",
+        "description_short": "El Mirasol de La Recova brings traditional Argentine cuisine to a bright, elegantly set dining room in the heart of Retiro, where large windows and hanging plants create a welcoming atmosphere for leisurely lunches and late-evening meals alike.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "date_night",
+          "late_night",
+          "social"
+        ],
+        "moments": [
+          "Long weekend lunches with wine",
+          "Late-evening dinners after gallery visits",
+          "Celebrating special occasions in the city",
+          "Pre-theatre meals near Teatro Colón"
+        ],
+        "best_for": [
+          "Traditional Argentine cuisine",
+          "Wine-focused evenings",
+          "Special occasion dinners",
+          "Retiro neighborhood dining"
+        ],
+        "not_for": [
+          "Quick grab-and-go meals"
+        ],
+        "primary_atmosphere": "bright_airy",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "The venue's hero interior image confirms a well-lit, elegant setting with burgundy and white linens, hanging plants, and a wine display—grounding the refined and warm atmosphere claims. The 4.4-star rating with over 2,100 reviews supports its established reputation in Retiro. Late hours until 2 AM support the late_night mood tag.",
+        "grounded_description": "Set on Posadas street in the upscale Retiro neighborhood, this longstanding restaurant occupies a bright, airy interior with large windows, natural hanging plants, and tables dressed in white and burgundy linens. A visible bar area with wine display reinforces its focus on wine and refined dining, while wooden chairs add warmth to the well-appointed space."
+      },
+      "retried_at": "2026-06-08T01:23:16.874Z"
     },
     {
       "venue_name": "Anafe",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Colegiales' hidden kitchen fires up nightly for intimate Argentine dinners",
+        "description_short": "A neighborhood restaurant in residential Colegiales that draws crowds with its evening-focused menu and warm, unhurried vibe. Open nightly until midnight, Anafe has earned steady loyalty from locals seeking a reliably good dinner out.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "intimate",
+          "hidden_gem",
+          "late_night"
+        ],
+        "moments": [
+          "A weekday dinner with friends away from the downtown rush",
+          "A relaxed date night with good food and good conversation",
+          "A late evening out in a low-key residential neighborhood"
+        ],
+        "best_for": [
+          "Neighborhood dining",
+          "Late-night dinners",
+          "Casual but quality Argentine cooking",
+          "Escaping tourist-heavy areas"
+        ],
+        "not_for": [
+          "Lunch on weekdays",
+          "Large groups seeking lively scenes"
+        ],
+        "primary_atmosphere": "A quiet, candlelit neighborhood restaurant where the kitchen runs late and conversation flows easily.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.8,
+        "editorial_notes": "Anafe's name references the traditional Argentine hearth, suggesting a focus on fire-kissed cooking. The 4.2 rating from 2,604 reviews points to consistent quality rather than flash-in-the-pan novelty. Its Colegiales location keeps it off the typical tourist circuit, reinforcing its hidden-gem character. Evening-only service Monday through Thursday makes it distinctly a dinner-and-late-night destination, while weekend lunch hours (Friday through Sunday, 12-4 PM) offer flexibility. The 8 PM-midnight window is when this place comes alive.",
+        "grounded_description": "Set on a quiet residential block in Colegiales, Anafe operates as a neighborhood staple where Buenos Aires locals come to eat well without fanfare. With 2,604 reviews averaging 4.2 stars, it has proven staying power in a city where restaurant loyalties shift quickly."
+      },
+      "retried_at": "2026-06-08T01:23:40.195Z"
     },
     {
       "venue_name": "La Dorita",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Eclectic late-night dining in the heart of Palermo",
+        "description_short": "La Dorita is a vibrant restaurant and bar in Palermo known for its warm, eclectic decor featuring wine-bottle chandeliers and colorful string lights, drawing crowds with its extended hours and creative atmosphere.",
+        "mood_tags": [
+          "warm",
+          "creative",
+          "social",
+          "late_night",
+          "date_night"
+        ],
+        "moments": [
+          "Late-night dinners and drinks",
+          "Casual gatherings with friends",
+          "Romantic dinners",
+          "Creative dining experiences",
+          "Eclectic evenings out"
+        ],
+        "best_for": [
+          "Social dining",
+          "Late-night outings",
+          "Date nights",
+          "Creative food lovers",
+          "Group celebrations"
+        ],
+        "not_for": [
+          "Quiet, formal dinners",
+          "Work meetings",
+          "Seeking a refined, minimalist space"
+        ],
+        "primary_atmosphere": "Warm, eclectic, and creative with a social late-night energy",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "La Dorita has earned its popularity through nearly 8,900 reviews and a 4.3 rating, establishing itself as a Palermo staple. The image vision provides strong visual evidence of the warm, eclectic atmosphere with distinctive wine-bottle chandeliers, colorful string lights, wooden ceiling, and patterned tile floor creating a well-lit, inviting interior. Extended hours until 12:30 AM (1:30 AM on weekends) support the late-night mood tags.",
+        "grounded_description": "The warm, eclectic interior features distinctive wine-bottle chandeliers, colorful string lights, a wooden ceiling, and patterned tile floors, creating a well-lit and inviting dining room that balances coziness with creative flair."
+      },
+      "retried_at": "2026-06-08T01:23:47.501Z"
     },
     {
       "venue_name": "Pentos Colegiales",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Craft beer and intimate vibes in Colegiales",
+        "description_short": "A neighborhood bar with an extensive beer selection and warm, dimly lit interior featuring a neon 'BIRRA' sign and well-stocked back bar. Opens late evening and stays open until the early morning hours.",
+        "mood_tags": [
+          "intimate",
+          "warm",
+          "late_night",
+          "hidden_gem",
+          "social"
+        ],
+        "moments": [
+          "Evening beer tasting",
+          "Casual late-night hangout",
+          "Relaxed conversation with friends",
+          "Discovering local craft options"
+        ],
+        "best_for": [
+          "Craft beer enthusiasts",
+          "Intimate gatherings",
+          "Late-night socializing",
+          "Neighborhood exploration"
+        ],
+        "not_for": [
+          "Large groups",
+          "Early evening outings"
+        ],
+        "primary_atmosphere": "Warm, dimly lit craft beer bar with intimate indoor seating",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.8,
+        "editorial_notes": "The image vision confirms the intimate, warm atmosphere with neon signage, chalkboard menu, beer taps, and extensive bottle display. The bar's late-night hours (until 1-3 AM depending on the day) support the late_night mood tag. With 4806 reviews and a 4.4 rating, this appears to be a well-established neighborhood fixture rather than a transient spot.",
+        "grounded_description": "A cozy neighborhood bar featuring a neon 'BIRRA' sign, craft beer taps, and an extensive back-bar bottle collection under warm, dim lighting. The chalkboard menu suggests rotating selections, catering to beer enthusiasts seeking quality over speed."
+      },
+      "retried_at": "2026-06-08T01:24:19.056Z"
     },
     {
       "venue_name": "Bar Britanico",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Historic San Telmo bar with warm vintage charm",
+        "description_short": "Bar Británico is a classic San Telmo institution with over a century of history, featuring a warm interior with wooden shelving, brick walls, and a traditional Argentine atmosphere that draws locals and visitors alike.",
+        "mood_tags": [
+          "warm",
+          "historic",
+          "intimate",
+          "romantic",
+          "date_night"
+        ],
+        "moments": [
+          "Late night drinks after exploring San Telmo",
+          "Romantic dinners with Argentine charm",
+          "Catching up with friends in a classic setting",
+          "Experiencing authentic San Telmo history"
+        ],
+        "best_for": [
+          "Date nights in historic San Telmo",
+          "Late night drinks until 3 AM",
+          "Romantic evenings with Argentine character",
+          "Immersive historic bar experience"
+        ],
+        "not_for": [
+          "Quick transactional drinks",
+          "Large groups seeking loud party atmosphere"
+        ],
+        "primary_atmosphere": "Warm vintage Argentine bar with exposed brick, wooden interiors, and classic San Telmo character",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Bar Británico has operated since the early 20th century in the heart of San Telmo, one of Buenos Aires' most storied neighborhoods. The high-quality interior image shows a well-lit space with wooden shelving, bottles, hanging cured meats, brick walls with chalkboard menu, wooden furniture, and checkered floors—all classic elements of traditional Argentine bars. The 4.2 rating from nearly 4,300 reviews indicates consistent quality and broad appeal.",
+        "grounded_description": "The interior features a full bar with wooden shelving displaying bottles, hanging cured meats, and exposed brick walls with a chalkboard menu. Wooden tables and chairs sit on a checkered floor, creating a warm and inviting atmosphere that reflects the bar's historic San Telmo location."
+      },
+      "retried_at": "2026-06-08T01:24:55.833Z"
     },
     {
       "venue_name": "Ancora Buenos Aires",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Refined dining in the heart of Retiro",
+        "description_short": "Ancora Buenos Aires offers an elegant fine-dining experience in a sophisticated interior with warm wood accents and soft lighting. The restaurant serves a curated menu in a serene setting, making it ideal for those seeking quality cuisine in a calm, refined atmosphere.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "intimate",
+          "quiet",
+          "romantic"
+        ],
+        "moments": [
+          "Business breakfast",
+          "Couples dinner",
+          "Special occasion dining",
+          "Late lunch meetings",
+          "Quiet evening meal"
+        ],
+        "best_for": [
+          "Refined gatherings",
+          "Professional meetings",
+          "Date night",
+          "Quality cuisine seekers"
+        ],
+        "not_for": [
+          "Casual group outings",
+          "Loud social gatherings"
+        ],
+        "primary_atmosphere": "A warm, elegant fine-dining sanctuary with wood-accented interiors and soft ambient lighting",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "With a strong 4.8 rating across 84 reviews and high extraction confidence, the venue data is reliable. The warm_cozy atmosphere signal from the hero interior shot aligns with the fine-dining context—the white tablecloths, wood-slatted ceiling, and soft lighting create an inviting yet elevated environment. The absence of people in focus suggests a serene, well-maintained space. No awards or rankings are present in the data, so none are claimed.",
+        "grounded_description": "Located in the upscale Retiro neighborhood, Ancora Buenos Aires presents a wide interior featuring white-clothed tables and black chairs beneath a wood-slatted ceiling, crowned by a large oval light fixture that bathes the space in warm ambient light."
+      },
+      "retried_at": "2026-06-08T01:25:21.230Z"
     },
     {
       "venue_name": "Croque Madame Puerto Madero",
-      "success": false,
+      "success": true,
       "model_used": "MiniMax-M2.7",
-      "error": "minimax_text_http_529: overloaded_error (529)"
+      "editorial": {
+        "tagline": "Bright riverside dining with terrace views in Puerto Madero",
+        "description_short": "Croque Madame Puerto Madero offers all-day dining at the Coleccion Fortabat waterfront, serving French-inspired cuisine in a bright, airy interior with large windows and an outdoor terrace overlooking the docks.",
+        "mood_tags": [
+          "refined",
+          "warm",
+          "work_friendly",
+          "date_night",
+          "outdoor"
+        ],
+        "moments": [
+          "Weekend brunch by the water",
+          "Business lunch with river views",
+          "Casual dinner on the terrace",
+          "Morning coffee in natural light"
+        ],
+        "best_for": [
+          "Waterfront dining",
+          "All-day dining",
+          "Group gatherings",
+          "Outdoor meals"
+        ],
+        "not_for": [
+          "Late-night intimate dinners",
+          "Budget-conscious diners"
+        ],
+        "primary_atmosphere": "bright_airy",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "The bright_airy atmosphere is directly supported by the image metadata showing a well-lit interior with natural light through large windows and sheer curtains. The 4.3 rating from 3,793 reviews indicates consistent quality. The outdoor terrace and waterfront location in Puerto Madero are factual strengths mentioned in the visual evidence. Extended hours support work-friendly and flexible dining occasions.",
+        "grounded_description": "Located at Pierina Dealessi 140 within the Coleccion Fortabat complex, this restaurant features a modern interior with large windows flooding the space with natural light, sheer curtains, and modern seating. A visible outdoor terrace extends the dining area toward the Puerto Madero waterfront, offering an additional setting for meals."
+      },
+      "retried_at": "2026-06-08T01:25:26.915Z"
     }
-  ]
+  ],
+  "retry_summary": {
+    "generated_at": "2026-06-08T01:25:26.916Z",
+    "retry_venues": [
+      "Atis Bar",
+      "El Chiri de Villa Kreplaj",
+      "Fraga Bodegón",
+      "Parrilla lo del Russo",
+      "La Esquina Del Virrey",
+      "Casa Cuba",
+      "El Tordo",
+      "Hierro Parrilla San Telmo",
+      "Parrilla Lo De Mary - Restaurante",
+      "El Patio de Mingo",
+      "El Mirasol De Boedo",
+      "La Parrillita del Pasaje",
+      "Parrilla Cero5",
+      "Huacho",
+      "El Mirasol de La Recova",
+      "Anafe",
+      "La Dorita",
+      "Pentos Colegiales",
+      "Bar Britanico",
+      "Ancora Buenos Aires",
+      "Croque Madame Puerto Madero"
+    ],
+    "minimax_calls_made": 21,
+    "retry_successes": 20,
+    "retry_failures": 1
+  }
 }

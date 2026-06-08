@@ -36,6 +36,14 @@ interface PublicationDecisionRecord {
   image_source_type?: string;
   image_publication_status: string;
   source_url?: string;
+  tagline?: string;
+  description?: string;
+  mood_tags: string[];
+  neighborhood?: string;
+  venue_type?: string;
+  rating?: number;
+  review_count?: number;
+  google_maps_url?: string;
 }
 
 interface PublicationDecisionManifest {
@@ -137,6 +145,14 @@ function buildDecision(candidate: ReviewQueueItem, approvalManifest: ApprovalMan
     image_source_type: hero?.source_type,
     image_publication_status: hero?.publication_status || 'not_approved_for_publication',
     source_url: hero?.source_url,
+    tagline: candidate.venue.editorial.tagline,
+    description: candidate.venue.editorial.description || candidate.venue.editorial.description_short,
+    mood_tags: candidate.venue.editorial.mood_tags,
+    neighborhood: candidate.venue.raw.neighborhood,
+    venue_type: candidate.venue.raw.type,
+    rating: candidate.venue.raw.rating,
+    review_count: candidate.venue.raw.user_ratings_total || candidate.venue.review_count,
+    google_maps_url: candidate.venue.raw.google_maps_url,
   };
 }
 
@@ -164,35 +180,45 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
     }
     * { box-sizing: border-box; }
     body { margin: 0; background: radial-gradient(circle at top left, #243022, var(--bg) 34rem); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    header, main { max-width: 1500px; margin: 0 auto; padding: 24px; }
-    header { position: sticky; top: 0; z-index: 5; background: rgba(15,17,16,.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    header, main { max-width: 1880px; margin: 0 auto; padding: 16px 20px; }
+    header { position: sticky; top: 0; z-index: 5; background: rgba(15,17,16,.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
     h1, h2, h3, p { margin: 0; }
-    h1 { font-size: 25px; }
+    h1 { font-size: 22px; }
     .muted { color: var(--muted); }
-    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 18px; }
+    .summary { display: grid; grid-template-columns: repeat(5, minmax(118px, 1fr)); gap: 8px; margin-top: 12px; }
     .stat, .card, .tools, textarea { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; }
-    .stat { padding: 14px; }
-    .stat strong { display: block; font-size: 24px; margin-top: 4px; }
-    .tools { padding: 14px; margin: 18px 0; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .stat { padding: 9px 12px; }
+    .stat strong { display: block; font-size: 21px; margin-top: 2px; }
+    .tools { padding: 10px; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
     button { border: 1px solid var(--line); background: var(--soft); color: var(--text); border-radius: 999px; padding: 8px 12px; cursor: pointer; }
     button:hover { border-color: var(--gold); }
     button.active.approve { background: rgba(122,196,143,.2); border-color: var(--green); color: var(--green); }
     button.active.reject { background: rgba(225,125,114,.2); border-color: var(--red); color: var(--red); }
     button.active.pause { background: rgba(216,183,111,.2); border-color: var(--gold); color: var(--gold); }
     button:disabled { opacity: .38; cursor: not-allowed; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
+    .filter.active { border-color: var(--blue); color: var(--blue); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 16px; align-items: start; }
     .card { overflow: hidden; }
-    .image { height: 190px; background: var(--soft); display: grid; place-items: center; color: var(--muted); }
+    .image { height: 280px; background: var(--soft); display: grid; place-items: center; color: var(--muted); }
     .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .body { padding: 14px; display: grid; gap: 10px; }
+    .body { padding: 16px; display: grid; gap: 11px; }
     .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
     .badge { border: 1px solid var(--line); border-radius: 999px; padding: 4px 8px; color: var(--muted); font-size: 12px; }
     .eligible { color: var(--green); border-color: rgba(122,196,143,.55); }
     .blocked { color: var(--red); border-color: rgba(225,125,114,.55); }
     .score { color: var(--blue); }
-    textarea { width: 100%; min-height: 70px; color: var(--text); padding: 10px; resize: vertical; }
+    textarea { width: 100%; min-height: 118px; color: var(--text); padding: 10px; resize: vertical; line-height: 1.45; }
+    .copy { border-left: 3px solid rgba(216,183,111,.55); padding: 8px 0 8px 10px; display: grid; gap: 6px; background: rgba(255,255,255,.02); border-radius: 8px; }
+    .meta { display: grid; gap: 5px; }
+    .hide { display: none; }
     .small { font-size: 12px; }
     a { color: var(--blue); }
+    @media (max-width: 900px) {
+      header, main { padding: 12px; }
+      .summary { grid-template-columns: repeat(2, minmax(110px, 1fr)); }
+      .grid { grid-template-columns: 1fr; }
+      .image { height: 230px; }
+    }
   </style>
 </head>
 <body>
@@ -210,6 +236,11 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
       <button onclick="downloadManifest()">Download decision JSON</button>
       <button onclick="approveAllEligible()">Approve all eligible</button>
       <button onclick="pauseAll()">Pause all</button>
+      <button class="filter active" data-filter="all" onclick="setFilter('all')">All</button>
+      <button class="filter" data-filter="eligible" onclick="setFilter('eligible')">Eligible only</button>
+      <button class="filter" data-filter="blocked" onclick="setFilter('blocked')">Blocked</button>
+      <button class="filter" data-filter="approved" onclick="setFilter('approved')">Approved</button>
+      <button class="filter" data-filter="paused" onclick="setFilter('paused')">Paused</button>
       <span class="muted small">No public write happens in this HTML. Export JSON, then a future publish command consumes it.</span>
     </div>
   </header>
@@ -219,6 +250,7 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
   <script>
     const manifest = ${data};
     const decisions = manifest.decisions;
+    let activeFilter = 'all';
 
     function render() {
       document.getElementById('total').textContent = decisions.length;
@@ -226,23 +258,36 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
       document.getElementById('approved').textContent = decisions.filter(d => d.publication_decision === 'approve').length;
       document.getElementById('rejected').textContent = decisions.filter(d => d.publication_decision === 'reject').length;
       document.getElementById('paused').textContent = decisions.filter(d => d.publication_decision === 'pause').length;
+      document.querySelectorAll('.filter').forEach(button => button.classList.toggle('active', button.dataset.filter === activeFilter));
       document.getElementById('grid').innerHTML = decisions.map((decision, index) => card(decision, index)).join('');
     }
 
     function card(decision, index) {
+      const hidden = matchesFilter(decision) ? '' : ' hide';
       const image = decision.hero_image_url ? '<img src="' + esc(decision.hero_image_url) + '" alt="">' : 'No hero image';
       const eligibleClass = decision.publish_eligible ? 'eligible' : 'blocked';
       const eligibleText = decision.publish_eligible ? 'publish review eligible' : 'blocked';
-      return '<article class="card">' +
+      return '<article class="card' + hidden + '">' +
         '<div class="image">' + image + '</div>' +
         '<div class="body">' +
         '<div class="row"><span class="badge ' + eligibleClass + '">' + eligibleText + '</span><span class="badge score">score ' + decision.staging_score + '</span><span class="badge">' + esc(decision.current_status) + '</span></div>' +
         '<h3>' + esc(decision.venue_name) + '</h3>' +
+        '<div class="copy">' +
+        '<p><strong>' + esc(decision.tagline || 'No tagline') + '</strong></p>' +
+        '<p class="muted">' + esc(decision.description || 'No description') + '</p>' +
+        '<p class="muted small">Mood: ' + esc((decision.mood_tags || []).join(', ') || 'none') + '</p>' +
+        '</div>' +
+        '<div class="meta">' +
         '<p class="muted small">' + esc(decision.default_reason) + '</p>' +
+        '<p class="muted small">Place: ' + esc(decision.neighborhood || 'unknown') + ' / ' + esc(decision.venue_type || 'unknown') + ' / rating ' + esc(decision.rating || 'n/a') + ' / reviews ' + esc(decision.review_count || 'n/a') + '</p>' +
         '<p class="muted small">Image: ' + esc(decision.image_source_type || 'unknown') + ' / ' + esc(decision.image_publication_status) + '</p>' +
         '<p class="muted small">Warnings: ' + esc((decision.warnings || []).join(', ') || 'none') + '</p>' +
         '<p class="muted small">Blockers: ' + esc((decision.blockers || []).join(', ') || 'none') + '</p>' +
-        (decision.source_url ? '<p class="small"><a href="' + esc(decision.source_url) + '" target="_blank" rel="noreferrer">source</a></p>' : '') +
+        '<p class="small">' +
+        (decision.source_url ? '<a href="' + esc(decision.source_url) + '" target="_blank" rel="noreferrer">image source</a> ' : '') +
+        (decision.google_maps_url ? '<a href="' + esc(decision.google_maps_url) + '" target="_blank" rel="noreferrer">google maps</a>' : '') +
+        '</p>' +
+        '</div>' +
         '<div class="row">' +
         '<button class="approve ' + active(decision, 'approve') + '" ' + (decision.publish_eligible ? '' : 'disabled') + ' onclick="setDecision(' + index + ', \\'approve\\')">Approve</button>' +
         '<button class="reject ' + active(decision, 'reject') + '" onclick="setDecision(' + index + ', \\'reject\\')">Reject</button>' +
@@ -255,6 +300,19 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
 
     function active(decision, value) {
       return decision.publication_decision === value ? 'active' : '';
+    }
+
+    function matchesFilter(decision) {
+      if (activeFilter === 'eligible') return decision.publish_eligible;
+      if (activeFilter === 'blocked') return !decision.publish_eligible;
+      if (activeFilter === 'approved') return decision.publication_decision === 'approve';
+      if (activeFilter === 'paused') return decision.publication_decision === 'pause';
+      return true;
+    }
+
+    function setFilter(value) {
+      activeFilter = value;
+      render();
     }
 
     function setDecision(index, value) {
