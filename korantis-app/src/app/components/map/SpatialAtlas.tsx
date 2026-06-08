@@ -41,7 +41,6 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
   });
 
   const mapRef = useRef<MapRef>(null);
-  const [bounds, setBounds] = useState<[number, number, number, number]>([-180, -85, 180, 85]);
 
   const points = useMemo(() => {
     return mapVenues.map(venue => ({
@@ -61,7 +60,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
 
   const { clusters, supercluster } = useSupercluster({
     points,
-    bounds,
+    bounds: [-180, -85, 180, 85], // Use global bounds to avoid markers disappearing on jump
     zoom: viewState.zoom,
     options: { radius: 60, maxZoom: 16 }
   });
@@ -84,6 +83,16 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
     };
   }, [mapVenues]);
 
+  // Auto-scroll to selected card
+  useEffect(() => {
+    if (selectedVenueId) {
+      const el = document.getElementById(`atlas-card-${selectedVenueId}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    }
+  }, [selectedVenueId]);
+
   return (
     <div className="w-full h-[calc(100vh-120px)] flex flex-col pt-4 animate-fade-in relative z-0">
       <main className="w-full flex-1 flex flex-col relative">
@@ -91,19 +100,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
               <Map
                 {...viewState}
                 ref={mapRef}
-                onMove={evt => {
-                  setViewState(evt.viewState);
-                  const b = mapRef.current?.getMap().getBounds();
-                  if (b) {
-                    setBounds([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()]);
-                  }
-                }}
-                onLoad={() => {
-                  const b = mapRef.current?.getMap().getBounds();
-                  if (b) {
-                    setBounds([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()]);
-                  }
-                }}
+                onMove={evt => setViewState(evt.viewState)}
                 mapStyle={MAPBOX_STYLE}
                 mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
                 attributionControl={false}
@@ -169,7 +166,7 @@ export default function SpatialAtlas({ onVenueClick, onExploreClick, initialSele
             <div className="flex gap-4 overflow-x-auto px-6 pb-4 scrollbar-hide snap-x">
               <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
               {mapVenues.map(venue => (
-                <div key={venue.id} className="w-[280px] shrink-0 snap-center cursor-pointer" onClick={() => {
+                <div id={`atlas-card-${venue.id}`} key={venue.id} className="w-[280px] shrink-0 snap-center cursor-pointer" onClick={() => {
                   if (selectedVenueId === venue.id) {
                     trackVenueEvent('atlas_card_opened', venue);
                     onVenueClick(venue);

@@ -330,6 +330,8 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
       planOnly: false,
       allowNon50: options.count !== 50,
       skipStage08: false,
+      skipPublicationReview: false,
+      maxImagesPerVenue: 4,
     });
   }
 
