@@ -44,52 +44,64 @@ export async function callMinimaxTextJson(params: {
   prompt: string;
   config: MinimaxTextConfig;
   maxTokens?: number;
+  maxRetries?: number;
 }): Promise<MinimaxTextJsonResult> {
   const apiKey = params.config.apiKey.trim();
   const model = params.config.model.trim();
   if (!apiKey) throw new Error('missing MINIMAX_API_KEY');
   if (!model) throw new Error('missing MINIMAX_TEXT_MODEL');
 
-  const response = await fetch(buildMessagesEndpoint(params.config.baseUrl), {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Api-Key': apiKey,
-      'anthropic-version': '2023-06-01',
-    },
-    body: JSON.stringify({
-      model,
-      max_tokens: params.maxTokens || 1200,
-      temperature: 0.2,
-      thinking: { type: 'disabled' },
-      system: params.system,
-      messages: [
-        {
-          role: 'user',
-          content: [
-            {
-              type: 'text',
-              text: params.prompt,
-            },
-          ],
-        },
-      ],
-    }),
-  });
+  const maxRetries = params.maxRetries ?? 5;
+  let lastError = '';
+  for (let attempt = 0; attempt <= maxRetries; attempt += 1) {
+    const response = await fetch(buildMessagesEndpoint(params.config.baseUrl), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Api-Key': apiKey,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model,
+        max_tokens: params.maxTokens || 1200,
+        temperature: 0.2,
+        thinking: { type: 'disabled' },
+        system: params.system,
+        messages: [
+          {
+            role: 'user',
+            content: [
+              {
+                type: 'text',
+                text: params.prompt,
+              },
+            ],
+          },
+        ],
+      }),
+    });
 
-  const rawResponse = await response.text();
-  const parsed = parseJsonObject<AnthropicMessagesResponse>(rawResponse);
-  if (!response.ok) {
-    const message = parsed?.error?.message || parsed?.base_resp?.status_msg || rawResponse.slice(0, 300);
-    throw new Error(`minimax_text_http_${response.status}: ${redactSecrets(message)}`);
+    const rawResponse = await response.text();
+    const parsed = parseJsonObject<AnthropicMessagesResponse>(rawResponse);
+    if (!response.ok) {
+      const message = parsed?.error?.message || parsed?.base_resp?.status_msg || rawResponse.slice(0, 300);
+      lastError = `minimax_text_http_${response.status}: ${redactSecrets(message)}`;
+      if (attempt < maxRetries && shouldRetryHttpStatus(response.status)) {
+        await sleep(backoffDelayMs(attempt));
+        continue;
+      }
+      throw new Error(lastError);
+    }
+
+    const text = extractResponseText(parsed);
+    return {
+      model_used: parsed?.model || model,
+      json: extractJsonObject(text),
+      raw_text: redactSecrets(text),
+    };
   }
 
-  const text = extractResponseText(parsed);
-  return {
-    model_used: parsed?.model || model,
-    json: extractJsonObject(text),
-    raw_text: redactSecrets(text),
-  };
+  throw new Error(lastError || 'minimax_text_unknown_retry_failure');
 }
 
 export function redactSecrets(value: string): string {
@@ -105,6 +117,21 @@ function buildMessagesEndpoint(baseUrl: string): string {
   if (trimmed.endsWith('/v1/messages')) return trimmed;
   if (trimmed.endsWith('/v1')) return `${trimmed}/messages`;
   return `${trimmed}/v1/messages`;
+}
+
+function shouldRetryHttpStatus(status: number): boolean {
+  return status === 408 || status === 409 || status === 425 || status === 429 || status === 529 || status >= 500;
+}
+
+function backoffDelayMs(attempt: number): number {
+  const base = Math.min(45000, 3000 * (2 ** attempt));
+  return base + Math.floor(Math.random() * 1000);
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
 }
 
 function extractResponseText(response: AnthropicMessagesResponse | null): string {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { Bookmark, Heart } from 'lucide-react';
 import Map, { Marker } from 'react-map-gl/mapbox';

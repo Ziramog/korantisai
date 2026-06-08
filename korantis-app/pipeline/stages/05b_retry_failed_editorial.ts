@@ -73,27 +73,27 @@ export async function retryFailedEditorial(batchName: string): Promise<Stage05Re
   for (const candidate of updatedCandidates) {
     if (!failedNames.has(normalizeVenueName(candidate.venue_name))) continue;
 
-    const response = await callMinimaxTextJson({
-      system: buildRetrySystemPrompt(),
-      prompt: buildVenuePrompt(candidate.venue, batchResult.config.allowedMoodTags),
-      config,
-      maxTokens: 1200,
-    });
-    minimaxCallsMade += 1;
-
     const resultIndex = updatedResults.findIndex((result) => normalizeVenueName(result.venue_name) === normalizeVenueName(candidate.venue_name));
-    if (!response.json) {
-      updatedResults[resultIndex] = {
-        venue_name: candidate.venue_name,
-        success: false,
-        model_used: response.model_used,
-        error: 'editorial_invalid_json',
-        retried_at: new Date().toISOString(),
-      };
-      continue;
-    }
-
     try {
+      const response = await callMinimaxTextJson({
+        system: buildRetrySystemPrompt(),
+        prompt: buildVenuePrompt(candidate.venue, batchResult.config.allowedMoodTags),
+        config,
+        maxTokens: 1200,
+      });
+      minimaxCallsMade += 1;
+
+      if (!response.json) {
+        updatedResults[resultIndex] = {
+          venue_name: candidate.venue_name,
+          success: false,
+          model_used: response.model_used,
+          error: 'editorial_invalid_json',
+          retried_at: new Date().toISOString(),
+        };
+        continue;
+      }
+
       const editorial = normalizeEditorialJson(response.json, batchResult.config.allowedMoodTags);
       applyEditorialToVenue(candidate.venue, editorial, response.model_used);
       updatedResults[resultIndex] = {
@@ -107,10 +107,11 @@ export async function retryFailedEditorial(batchName: string): Promise<Stage05Re
       updatedResults[resultIndex] = {
         venue_name: candidate.venue_name,
         success: false,
-        model_used: response.model_used,
+        model_used: config.model,
         error: redactSecrets(error instanceof Error ? error.message : String(error)),
         retried_at: new Date().toISOString(),
       };
+      continue;
     }
   }
 
