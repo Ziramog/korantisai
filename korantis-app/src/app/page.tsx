@@ -85,11 +85,17 @@ export default function Home() {
   };
 
   const aloneVenues = useMemo(() => {
-    return rankedVenues.filter(v => (v.tags || []).includes('QUIET') || (v.tags || []).includes('WORK_FRIENDLY')).slice(0, 5);
+    return rankedVenues.filter(v => {
+      const tags = (v.tags || []).map(t => t.toLowerCase());
+      return tags.some(t => ['quiet', 'work_friendly', 'focused', 'minimal', 'calm', 'slow'].includes(t));
+    }).slice(0, 5);
   }, [rankedVenues]);
 
   const dateVenues = useMemo(() => {
-    return rankedVenues.filter(v => (v.tags || []).includes('DATE_NIGHT') || (v.tags || []).includes('INTIMATE')).slice(0, 5);
+    return rankedVenues.filter(v => {
+      const tags = (v.tags || []).map(t => t.toLowerCase());
+      return tags.some(t => ['date_night', 'intimate', 'romantic', 'dim', 'cozy'].includes(t));
+    }).slice(0, 5);
   }, [rankedVenues]);
 
   // Re-link telemetry inside component event handler

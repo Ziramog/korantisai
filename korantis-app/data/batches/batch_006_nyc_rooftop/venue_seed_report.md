@@ -1,7 +1,7 @@
 # Stage 00 Venue Seed Selection Report
 
 - Batch: batch_006_nyc_rooftop
-- Generated: 2026-06-08T02:36:06.881Z
+- Generated: 2026-06-08T03:00:20.367Z
 - City: New York City
 - Configured neighborhoods: Williamsburg, DUMBO, Brooklyn Bridge Park, Lower East Side, Bowery, NoMad, Flatiron, Chelsea, Meatpacking District, SoHo, Tribeca, Financial District, Seaport, Midtown, Times Square
 - Existing known venues indexed: 583
@@ -59,7 +59,7 @@
 
 ## Deviations From Target Mix
 
-- plan only; requested 25 venues
+- plan only; requested 12 venues
 
 ## Warnings
 

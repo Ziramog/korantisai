@@ -1,6 +1,6 @@
 {
   "batch_id": "batch_006_nyc_rooftop",
-  "generated_at": "2026-06-08T02:36:06.881Z",
+  "generated_at": "2026-06-08T03:00:20.367Z",
   "city": "New York City",
   "discovery_mode": "semi_automated",
   "total_candidates_discovered": 0,
@@ -48,12 +48,12 @@
     "Times Square"
   ],
   "configured_type_mix": {
-    "rooftop": 50
+    "rooftop": 12
   },
   "type_counts": {},
   "neighborhood_counts": {},
   "deviations_from_target_mix": [
-    "plan only; requested 25 venues"
+    "plan only; requested 12 venues"
   ],
   "next_pipeline_command": "npx tsx pipeline/run_full_batch.ts batch_006_nyc_rooftop"
 }
