@@ -1,0 +1,412 @@
+/* ═══════════════════════════════════════════════════════════
+   KORANTIS — APPLICATION SHELL
+   Phase 2D · Complete Architecture
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Shell Architecture ─────────────────────── */
+
+html, body.k-app-shell {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Important: The shell does not scroll. Views scroll independently. */
+  background-color: var(--k-black);
+}
+
+/* ── View Container System ──────────────────── */
+
+.k-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  
+  /* Views are hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 10;
+  
+  /* Cinematic slow fade */
+  transition: opacity 1.2s var(--k-ease-cinematic), visibility 1.2s;
+  will-change: opacity;
+}
+
+.k-view--active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  z-index: 20;
+}
+
+/* ── Transition Choreography Layer ──────────── */
+
+.k-transition-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--k-black);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 800ms var(--k-ease-cinematic);
+}
+
+.k-transition-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto; /* Block interactions during transition */
+}
+
+/* ── FLIP Clone Layer ───────────────────────── */
+
+.k-flip-clone {
+  position: fixed;
+  z-index: 950;
+  object-fit: cover;
+  pointer-events: none;
+  transform-origin: top left;
+  /* Heavy cinematic easing for expansion */
+  transition: transform 1.2s cubic-bezier(0.22, 0.61, 0.36, 1),
+              border-radius 1.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+
+/* ══════════════════════════════════════════════
+   GLOBAL FLOATING NAVIGATION
+   Reject standard app tabs. Luxury vehicle HUD.
+   ══════════════════════════════════════════════ */
+
+.k-floating-nav {
+  position: fixed;
+  bottom: var(--k-space-2xl);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  
+  display: flex;
+  align-items: center;
+  gap: var(--k-space-xl);
+  padding: 12px 28px;
+  
+  background: rgba(15, 13, 11, 0.35);
+  backdrop-filter: blur(24px) saturate(1.2);
+  -webkit-backdrop-filter: blur(24px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: var(--k-radius-full);
+  
+  opacity: 1;
+  transition: opacity 600ms var(--k-ease-cinematic), transform 600ms var(--k-ease-cinematic);
+}
+
+/* Hide on fast scroll */
+.k-floating-nav.is-hidden {
+  opacity: 0;
+  transform: translate(-50%, 12px);
+  pointer-events: none;
+}
+
+.k-nav-item {
+  color: rgba(245, 240, 232, 0.3);
+  transition: color 400ms var(--k-ease-cinematic), transform 400ms var(--k-ease-cinematic);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.k-nav-item:hover {
+  color: rgba(201, 169, 110, 0.8);
+  transform: translateY(-2px);
+}
+
+.k-nav-item.is-active {
+  color: var(--k-gold);
+}
+
+.k-nav-item svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5;
+}
+
+/* Hide the old Map Toggle from search since we have global nav now,
+   or just make sure it plays nicely with the new shell.
+   We will hide it in the shell version for maximum restraint. */
+.k-app-shell .k-map-toggle {
+  display: none;
+}
+
+/* ══════════════════════════════════════════════
+   VIEW: SAVED COLLECTIONS
+   ══════════════════════════════════════════════ */
+.k-saved-header {
+  padding: var(--k-space-4xl) var(--k-space-xl) var(--k-space-xl);
+  text-align: center;
+}
+.k-saved-title {
+  font-family: var(--k-font-serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--k-white);
+  margin-bottom: var(--k-space-xs);
+}
+.k-saved-subtitle {
+  font-family: var(--k-font-sans);
+  color: var(--k-gray-400);
+  font-size: 0.95rem;
+}
+.k-saved-container {
+  padding: var(--k-space-xl) var(--k-space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--k-space-3xl);
+}
+.k-saved-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--k-space-md);
+}
+.k-saved-section__label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--k-gray-500);
+  padding-left: var(--k-space-xs);
+}
+.k-collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--k-space-md);
+}
+.k-collection-card {
+  position: relative;
+  border-radius: var(--k-radius-md);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+}
+.k-collection-card__image-wrap {
+  position: absolute;
+  inset: 0;
+}
+.k-collection-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.k-collection-card__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15,13,11,0.9) 0%, transparent 60%);
+}
+.k-collection-card__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--k-space-md);
+  z-index: 2;
+}
+.k-collection-card__name {
+  font-family: var(--k-font-serif);
+  font-size: 1.25rem;
+  color: var(--k-white);
+  margin-bottom: 2px;
+}
+.k-collection-card__count {
+  font-size: 0.75rem;
+  color: var(--k-gold);
+}
+
+.k-saved-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--k-space-md);
+}
+.k-saved-item {
+  display: flex;
+  align-items: center;
+  gap: var(--k-space-md);
+  padding: var(--k-space-sm);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--k-radius-sm);
+}
+.k-saved-item__image {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--k-radius-xs);
+  object-fit: cover;
+}
+.k-saved-item__info {
+  flex: 1;
+}
+.k-saved-item__name {
+  font-family: var(--k-font-serif);
+  font-size: 1.2rem;
+  color: var(--k-white);
+  margin-bottom: 2px;
+}
+.k-saved-item__location {
+  font-size: 0.8rem;
+  color: var(--k-gray-400);
+}
+.k-saved-item__note {
+  font-size: 0.75rem;
+  color: var(--k-gold);
+  padding-right: var(--k-space-sm);
+}
+
+/* ══════════════════════════════════════════════
+   VIEW: PROFILE & TASTE
+   ══════════════════════════════════════════════ */
+.k-profile-header {
+  padding: var(--k-space-4xl) var(--k-space-xl) var(--k-space-xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--k-space-sm);
+}
+.k-profile-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(201, 169, 110, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--k-gold);
+  margin-bottom: var(--k-space-sm);
+  border: 1px solid rgba(201, 169, 110, 0.3);
+}
+.k-profile-avatar svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+.k-profile-name {
+  font-family: var(--k-font-serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--k-white);
+}
+.k-profile-subtitle {
+  color: var(--k-gray-400);
+  font-size: 0.95rem;
+}
+.k-profile-container {
+  padding: var(--k-space-xl) var(--k-space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--k-space-3xl);
+}
+.k-profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--k-space-md);
+}
+.k-profile-section__label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--k-gray-500);
+  padding-left: var(--k-space-xs);
+}
+
+.k-taste-radar {
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.k-taste-radar canvas {
+  width: 100%;
+  height: 100%;
+}
+.k-taste-description {
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--k-gray-300);
+  padding: 0 var(--k-space-md);
+}
+.k-taste-description strong {
+  color: var(--k-gold);
+  font-weight: 400;
+}
+
+.k-archetype-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--k-space-md);
+}
+.k-archetype-card {
+  position: relative;
+  height: 100px;
+  border-radius: var(--k-radius-md);
+  overflow: hidden;
+}
+.k-archetype-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.k-archetype-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(15,13,11,0.9) 0%, rgba(15,13,11,0.4) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--k-space-lg);
+}
+.k-archetype-card__label {
+  font-family: var(--k-font-serif);
+  font-size: 1.3rem;
+  color: var(--k-white);
+}
+.k-archetype-card__match {
+  font-size: 0.8rem;
+  color: var(--k-gold);
+  margin-top: 4px;
+}
+
+.k-preferences-list {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--k-radius-md);
+  overflow: hidden;
+}
+.k-pref-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--k-space-md) var(--k-space-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.k-pref-item:last-child {
+  border-bottom: none;
+}
+.k-pref-item__label {
+  color: var(--k-gray-300);
+  font-size: 0.95rem;
+}
+.k-pref-item__value {
+  color: var(--k-gold);
+  font-size: 0.95rem;
+}
