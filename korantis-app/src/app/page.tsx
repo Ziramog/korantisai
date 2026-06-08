@@ -64,8 +64,10 @@ export default function Home() {
 
   const setActiveTab = (tab: 'explore' | 'atlas' | 'guardados' | 'vos') => {
     setActiveTabState(tab);
+    setSelectedVenueId(null);
     const url = new URL(window.location.href);
     url.searchParams.set('tab', tab);
+    url.searchParams.delete('venue');
     window.history.pushState({}, '', url.toString());
   };
 

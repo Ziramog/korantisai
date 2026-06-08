@@ -1,0 +1,515 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T03:04:49.252Z",
+  "updated_at": "2026-06-08T03:07:40.800Z",
+  "model_used": "MiniMax-M3",
+  "total_queue_size": 39,
+  "images_processed_or_skipped": 18,
+  "remaining": 21,
+  "results": [
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Charming, plant-filled French bistro interior with a blue-and-white striped awning, eclectic shelves of products, distressed white wooden chairs, and warm lighting creating a cozy, lush atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMTdFn7dXZg2QjrzbIvDCLSwE7G1Zto9aDoaASHtlGIu-sP-68mw_4inpcUq60Dsm5WeGPUfB5NhyGfewhBqqV5IV3xF2UxeAitbThLOXXcsFP0BASiWS7AwUZ7GV3ps-qEk7Pfc_NEDuEJbsx7HcgG1w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a cheeseburger with knife and chips dominates the frame; the interior background is heavily blurred and out of focus, making the food the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPAGA3p3RfHLtOBTs9xkfTVsm1LalvLAm-K2Rv990_8RD_PM6ZTfoGhZRlSrLNQ97ADpgosxmCH7hXJ_FadV65cwu70zOUxsvfBb75Zhm33h-nuGzYqNNjp8AgbhWPuFbYcvEQ1MFMy5cteSWyMneXDZQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of plated pasta dishes, a salad with smoked salmon and buckwheat galette, wine glasses, and tableware on a distressed white table. Food and drink items dominate the frame with only minimal table surface visible; no broader venue space is shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAUuPrhUDClhDwjjHmggVa7FcHt-PWHsXB1u1jAIQbtaaRiec3Y_cYcp-e4bDqOu6B7sb_cZT5J-mgoukbKdx1A-y1LBdM1kKjjSlKKCk9E9XZUFZ5Y9HPVU6k_bDftGqyoI1hHXnwbsshHekQ9o9BYQ=s4800-w1600-h1206",
+      "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a plated galette with buckwheat crepe, fried egg, ham, and cheese, served with a side salad on a floral-patterned plate. The frame is filled by the dish; the surrounding table surface, glassware, and colorful coaster are only marginally visible and provide no clear sense of the venue's interior space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "With Others",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior view of a bar/restaurant with a curved white bar counter, warm wall sconces, acoustic ceiling panels, ceiling fan, and ambient candles. Patrons are seated at the bar and booths, creating a cozy, lively atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "With Others",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgpsFQ8-9nvMMuTlYeQQZl1GWAhONo8D_BzEeJWmLzKSpm8hNzeiPOqc9QY0p3tFFAy3PJAh_EFANtr_vJmgKOB1FC4W7iRL-_V3FI3pokmXFV-kVT_Hni395GGwIwHLa9KU2EPo3bYGGdbMvqgWDT-w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_decorative",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "decorative",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a square wall-mounted lamp with a bird print on a plain wall; no venue space, seating, or activity visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "With Others",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPDBeIAvNkCidOmwXD1z_2fiZ_wzc63rHMHmVL8l4OAMBKpfUNzFM79eUGdkSwY0Nrfpiwk1mpyhMB8yZDTXvm5D0ZnxDZOIIh1eLYV0Gx7RhrhVHrHJsPi6yWE3Ds998vxmQOtLd3pbBNFNw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 901,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Top-down view of three plates of food (octopus/seafood with polenta, grilled greens, cured meat) and a menu card on a plain surface; no venue space, seating, or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "With Others",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMDKQL9ShKBElTg6BuOEF0sFb149g8N9W1vs442zoXfXPtrU4HIrVJiRUyxwPK0vv605aliuo_6BlUXjykR_FdC_Ma9ykfU56J5Vq8QxG-5ftFPJm5z6kh5eqiQ--TFgM87ztIypOVB0-KF=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 900,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a plated dish (scallops, vegetables) with a wine bottle and glass; no venue space, architecture, or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Olympia",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+      "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 982,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit bar interior with curved wooden bar, rows of yellow-cushioned stools, pendant lighting, candles, and a back bar of bottles. No people present; full guest seating area visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Olympia",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMwwFSfzWFl-YLPYn4Do_H1E0hjG59Ul2yZTEvlZ4s_ZFG1QIe0-F7OO5t5iWWLdp16p4GzO0ZY4SQ_Zv9PJTEtsk1uek_F1QNERmR-ZI6rXuuyTessr9AsrDqnw9_ax6mnSrP3CYghnzbnXg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of two martini glasses with olives and a charcuterie board on a marble counter; food and drinks dominate with no clear venue space shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Olympia",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZODZU1GGipVE8sGJ3b07BlRcTosbTVmUD_omIo1RE4VIfyLd-jy_5xsbErzzVjOuMz6GuHL-Ypjn7R4S8bJ1VLJv6sCgwEyigU3Cz43nym2SjY8QfukH0P_1LPnQyC5etdmE60UIm4HGjcL23o=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_menu",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "menu",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "low",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of a framed handwritten drinks menu (spritz and wine) on a dim wall; the menu is the only subject with no broader venue context visible, and lighting is uneven/dark."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Olympia",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPKGGd516XNLL3IZMSSJsJnT0QBhosLWdb8ai3LpzU1XJsQaqDYMY7t_p6mzfIOuONLMIBteIXY1ypCJaCTL9srCU4GphsT6hWr8-6O3EN2V3jZPhtv1tEvDbzvNb9krO-RZfAdmM3ZdeQ7I-4=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1205,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Street-level storefront facade of Olympia Wine Bar and Tavern with signage, entrance door, and large windows. While patrons are faintly visible inside, the dominant view is the building exterior, sidewalk planters, and street-facing storefront rather than an experiential guest space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Anaïs",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMluMfzr9Mu0ZVh1hUPA94xFuuSUbcLB-mJ9P-W8PULyV1xv4a7A3p7wUnOE2zYm8FLUHfWryMSkFJ8FOlXDBIgEsvBwf7jqSygeJoFyht37kN-Vk9x3mK_gwFWEb0dP6TB4og6N61K0MYSRJQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear storefront exterior showing black-framed windows, brick facade, red EXIT sign, and visible interior with wine shelves, pendant lighting, and patrons. Potted plants flank the entrance on the sidewalk."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Anaïs",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJ7sIkZ9FP8Jwv5Wc9syCsYWbaT9WbdAub-SaCxK_O_VXu3LkNgoSRYwCGAASaT5dP6uBV9-kOd804Z8YRSA-XJH20V_L81R8zjfIIbWltTZN-0GmF6CXNVnVPZp09Zv5B4NSAymj7cIlXNWQGjydojg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of bread, cheese, tinned fish, peppers, and two wine glasses on a marble counter; food and drink dominate the frame with no clear view of the seating or venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Anaïs",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior of a wine bar/cellar with tall shelving of wine bottles, warm pendant lighting, high-top tables with bentwood stools, candles, and large street-facing windows. Clear spatial layout suitable as a hero image, though several patrons are visible in the foreground and across the windows."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Anaïs",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAGexLvLlsvTzfxqzl4janQa3NQvrdgzPEMwGuAzRfOWiLoA8n7fb7RZ14ErfuK8n5RD8C8QxQOFaRJQMZMbgO1IpkbWwVzxtxgr9pfW55D6c28lPZGCIk9Vu4B3XpJIy3a5dbSkCc-FqH6us=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 900,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a plate with cheese wedges, soft cheese, and fig slices on a marble surface. Only food and a tabletop are visible; no venue space, people, or context."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Balvanera",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "industrial",
+        "visual_reason": "Outdoor sidewalk dining area with metal bistro chairs, wooden tables, exposed brick wall with large mural, string lighting, and planters showing guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Balvanera",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMTtu11tkyMjdzk1kaAerGoRZWTUCC4dKQ_0DB_j1IJ0pN1F55I0uBmW47IHT1nSWUvYfiJEgfeWrX2yEb5jFEZjwanmK3oBt7TtsvjqfWRKm96e0_w2UQsUnyRmypJ2SCO-_fBE2r1z9uSF145yH9T=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a breaded protein with green herb salad, cucumber, and sauce on a branded plate, with a cocktail glass partially visible; focus is entirely on the plated dish."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    }
+  ]
+}

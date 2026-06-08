@@ -1,0 +1,1121 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T03:02:45.258Z",
+  "venues_processed": 12,
+  "websites_attempted": 12,
+  "websites_fetched": 12,
+  "instagram_found": 11,
+  "menu_found": 5,
+  "reservation_found": 7,
+  "whatsapp_found": 0,
+  "editorial_mentions_found": 2,
+  "source_confidence_average": 0.8041666666666667,
+  "venues": [
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "place_id": "ChIJM83r0aZZwokRg1mla_ag7Rw",
+      "google_maps_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://maisonprovencebk.com/",
+        "source_url": "https://www.maisonprovencebk.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://instagram.com/maison_provencebk",
+        "label": "Follow on Instagram",
+        "source_url": "https://maisonprovencebk.com/",
+        "confidence": 0.85,
+        "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Follow on Instagram http://instagram.com/maison_provencebk"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://resy.com/cities/new-york-ny/venues/maison-provence",
+        "label": "Book your Maison Provence reservation on Resy",
+        "source_url": "https://maisonprovencebk.com/",
+        "confidence": 0.8,
+        "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Book your Maison Provence reservation on Resy https://resy.com/cities/new-york-ny/venues/maison-provence"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://maisonprovencebk.com/brunch-lunch-menu/",
+        "label": "Brunch/Lunch Menu",
+        "source_url": "https://maisonprovencebk.com/",
+        "confidence": 0.8,
+        "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Brunch/Lunch Menu https://maisonprovencebk.com/brunch-lunch-menu/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://maisonprovencebk.com/contact/",
+          "label": "Contact",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.7,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Contact https://maisonprovencebk.com/contact/"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://maisonprovencebk.com/press/",
+          "label": "Reviews",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.65,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Reviews https://maisonprovencebk.com/press/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://maisonprovencebk.com/",
+          "source_url": "https://www.maisonprovencebk.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://maisonprovencebk.com/brunch-lunch-menu/",
+          "label": "Brunch/Lunch Menu",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Brunch/Lunch Menu https://maisonprovencebk.com/brunch-lunch-menu/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://maisonprovencebk.com/press/",
+          "label": "Reviews",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.65,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Reviews https://maisonprovencebk.com/press/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://maisonprovencebk.com/contact/",
+          "label": "Contact",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.7,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Contact https://maisonprovencebk.com/contact/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.getsauce.com/order/maison-provence-restaurant/menu",
+          "label": "Order Online",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Order Online https://www.getsauce.com/order/maison-provence-restaurant/menu"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://resy.com/cities/new-york-ny/venues/maison-provence",
+          "label": "Book your Maison Provence reservation on Resy",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Book your Maison Provence reservation on Resy https://resy.com/cities/new-york-ny/venues/maison-provence"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://maisonprovencebk.com/contact/",
+          "label": "MAKE A RESERVATION",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY MAKE A RESERVATION https://maisonprovencebk.com/contact/"
+        },
+        {
+          "kind": "instagram",
+          "url": "http://instagram.com/maison_provencebk",
+          "label": "Follow on Instagram",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.85,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY Follow on Instagram http://instagram.com/maison_provencebk"
+        },
+        {
+          "kind": "menu",
+          "url": "https://getsauce.com/order/maison-provence-restaurant/menu",
+          "label": "",
+          "source_url": "https://maisonprovencebk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Maison Provence BK &#8211; The most adorable French Restaurant in Brooklyn, NY https://getsauce.com/order/maison-provence-restaurant/menu"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Woodhul Wine Bar",
+      "place_id": "ChIJoxtvLl5ZwokR5EBEMshvmOE",
+      "google_maps_url": "https://maps.google.com/?cid=16255865760621281508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "http://www.woodhulwinebar.com/",
+        "source_url": "http://www.woodhulwinebar.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://instagram.com/woodhulwinebar",
+        "label": "",
+        "source_url": "http://www.woodhulwinebar.com/",
+        "confidence": 0.85,
+        "evidence_text": "Woodhul Wine BarWoodhul Wine Bar Welcome to WoodhulWinebarWelcome to WoodhulwhiskeyWelcome to Woodhulwine barWelcome to WoodhulwilliamsbugWelcome to WoodhulbrooklynWelcome to WoodhulwineWelcome to WoodhulDriggs AveWelcome to WoodhulMetropolitan Ave http://instagram.com/woodhul..."
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/pages/Woodhul-Winebar/126479814062817",
+        "label": "",
+        "source_url": "http://www.woodhulwinebar.com/",
+        "confidence": 0.8,
+        "evidence_text": "Woodhul Wine BarWoodhul Wine Bar Welcome to WoodhulWinebarWelcome to WoodhulwhiskeyWelcome to Woodhulwine barWelcome to WoodhulwilliamsbugWelcome to WoodhulbrooklynWelcome to WoodhulwineWelcome to WoodhulDriggs AveWelcome to WoodhulMetropolitan Ave https://www.facebook.com/pag..."
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "http://www.woodhulwinebar.com/woodhul-contact",
+          "label": "Contact",
+          "source_url": "http://www.woodhulwinebar.com/",
+          "confidence": 0.7,
+          "evidence_text": "Woodhul Wine BarWoodhul Wine Bar Welcome to WoodhulWinebarWelcome to WoodhulwhiskeyWelcome to Woodhulwine barWelcome to WoodhulwilliamsbugWelcome to WoodhulbrooklynWelcome to WoodhulwineWelcome to WoodhulDriggs AveWelcome to WoodhulMetropolitan Ave Contact /woodhul-contact"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=16255865760621281508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=16255865760621281508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "http://www.woodhulwinebar.com/",
+          "source_url": "http://www.woodhulwinebar.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "http://www.woodhulwinebar.com/woodhul-contact",
+          "label": "Contact",
+          "source_url": "http://www.woodhulwinebar.com/",
+          "confidence": 0.7,
+          "evidence_text": "Woodhul Wine BarWoodhul Wine Bar Welcome to WoodhulWinebarWelcome to WoodhulwhiskeyWelcome to Woodhulwine barWelcome to WoodhulwilliamsbugWelcome to WoodhulbrooklynWelcome to WoodhulwineWelcome to WoodhulDriggs AveWelcome to WoodhulMetropolitan Ave Contact /woodhul-contact"
+        },
+        {
+          "kind": "instagram",
+          "url": "http://instagram.com/woodhulwinebar",
+          "label": "",
+          "source_url": "http://www.woodhulwinebar.com/",
+          "confidence": 0.85,
+          "evidence_text": "Woodhul Wine BarWoodhul Wine Bar Welcome to WoodhulWinebarWelcome to WoodhulwhiskeyWelcome to Woodhulwine barWelcome to WoodhulwilliamsbugWelcome to WoodhulbrooklynWelcome to WoodhulwineWelcome to WoodhulDriggs AveWelcome to WoodhulMetropolitan Ave http://instagram.com/woodhul..."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/pages/Woodhul-Winebar/126479814062817",
+          "label": "",
+          "source_url": "http://www.woodhulwinebar.com/",
+          "confidence": 0.8,
+          "evidence_text": "Woodhul Wine BarWoodhul Wine Bar Welcome to WoodhulWinebarWelcome to WoodhulwhiskeyWelcome to Woodhulwine barWelcome to WoodhulwilliamsbugWelcome to WoodhulbrooklynWelcome to WoodhulwineWelcome to WoodhulDriggs AveWelcome to WoodhulMetropolitan Ave https://www.facebook.com/pag..."
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Pinkerton Wine Bar",
+      "place_id": "ChIJESlLz15ZwokR4AeUXdaaWow",
+      "google_maps_url": "https://maps.google.com/?cid=10113566158697531360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.pinkertonwinebar.com/",
+        "source_url": "http://www.pinkertonwinebar.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://www.instagram.com/pinkertonbk",
+        "label": "Instagram",
+        "source_url": "https://www.pinkertonwinebar.com/",
+        "confidence": 0.85,
+        "evidence_text": "Pinkerton Wine Bar Instagram http://www.instagram.com/pinkertonbk"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/pinkertonwinebarbk",
+        "label": "Facebook",
+        "source_url": "https://www.pinkertonwinebar.com/",
+        "confidence": 0.8,
+        "evidence_text": "Pinkerton Wine Bar Facebook https://www.facebook.com/pinkertonwinebarbk"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.pinkertonwinebar.com/menus/",
+        "label": "Menus",
+        "source_url": "https://www.pinkertonwinebar.com/",
+        "confidence": 0.8,
+        "evidence_text": "Pinkerton Wine Bar Menus /menus/"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=10113566158697531360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=10113566158697531360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.pinkertonwinebar.com/",
+          "source_url": "http://www.pinkertonwinebar.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.pinkertonwinebar.com/menus/",
+          "label": "Menus",
+          "source_url": "https://www.pinkertonwinebar.com/",
+          "confidence": 0.8,
+          "evidence_text": "Pinkerton Wine Bar Menus /menus/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/pinkertonwinebarbk",
+          "label": "Facebook",
+          "source_url": "https://www.pinkertonwinebar.com/",
+          "confidence": 0.8,
+          "evidence_text": "Pinkerton Wine Bar Facebook https://www.facebook.com/pinkertonwinebarbk"
+        },
+        {
+          "kind": "instagram",
+          "url": "http://www.instagram.com/pinkertonbk",
+          "label": "Instagram",
+          "source_url": "https://www.pinkertonwinebar.com/",
+          "confidence": 0.85,
+          "evidence_text": "Pinkerton Wine Bar Instagram http://www.instagram.com/pinkertonbk"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "With Others",
+      "place_id": "ChIJPygkVEZZwokRKQzWA9zRYcA",
+      "google_maps_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.withothersbrooklyn.com/",
+        "source_url": "https://www.withothersbrooklyn.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.withothersbrooklyn.com/events",
+        "label": "BOOKINGS",
+        "source_url": "https://www.withothersbrooklyn.com/",
+        "confidence": 0.8,
+        "evidence_text": "with others brooklyn BOOKINGS /events"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.withothersbrooklyn.com/",
+          "source_url": "https://www.withothersbrooklyn.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.withothersbrooklyn.com/events",
+          "label": "BOOKINGS",
+          "source_url": "https://www.withothersbrooklyn.com/",
+          "confidence": 0.8,
+          "evidence_text": "with others brooklyn BOOKINGS /events"
+        }
+      ],
+      "source_confidence": 0.65,
+      "missing_fields": [
+        "instagram",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Olympia",
+      "place_id": "ChIJdxDMsTNawokR8-y6Eqqz4T8",
+      "google_maps_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.olympiawinebar.com/",
+        "source_url": "http://www.olympiawinebar.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/olympiabarbrooklyn/",
+        "label": "Instagram",
+        "source_url": "https://www.olympiawinebar.com/",
+        "confidence": 0.85,
+        "evidence_text": "Discover DUMBO’s Local Gem! | Cocktails, Wine & Small Plate | OLYMPIA Instagram https://www.instagram.com/olympiabarbrooklyn/"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.olympiawinebar.com/",
+          "source_url": "http://www.olympiawinebar.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/olympiabarbrooklyn/",
+          "label": "Instagram",
+          "source_url": "https://www.olympiawinebar.com/",
+          "confidence": 0.85,
+          "evidence_text": "Discover DUMBO’s Local Gem! | Cocktails, Wine & Small Plate | OLYMPIA Instagram https://www.instagram.com/olympiabarbrooklyn/"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Black Mountain Wine House",
+      "place_id": "ChIJRbPB4FZawokRXP763NbNRHU",
+      "google_maps_url": "https://maps.google.com/?cid=8450105123568025180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.blkmtnwinehouse.com/",
+        "source_url": "http://www.blkmtnwinehouse.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://instagram.com/blkmtnbk",
+        "label": "",
+        "source_url": "https://www.blkmtnwinehouse.com/",
+        "confidence": 0.85,
+        "evidence_text": "Black Mountain Wine House http://instagram.com/blkmtnbk"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=8450105123568025180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=8450105123568025180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.blkmtnwinehouse.com/",
+          "source_url": "http://www.blkmtnwinehouse.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "http://instagram.com/blkmtnbk",
+          "label": "",
+          "source_url": "https://www.blkmtnwinehouse.com/",
+          "confidence": 0.85,
+          "evidence_text": "Black Mountain Wine House http://instagram.com/blkmtnbk"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Anaïs",
+      "place_id": "ChIJR9uKg5tbwokR-45Jeyx40ms",
+      "google_maps_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.anaisbk.com/",
+        "source_url": "https://www.anaisbk.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/anaiswinebk",
+        "label": "Instagram",
+        "source_url": "https://www.anaisbk.com/",
+        "confidence": 0.85,
+        "evidence_text": "Anaïs Instagram https://www.instagram.com/anaiswinebk"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.anaisbk.com/menus",
+        "label": "menus",
+        "source_url": "https://www.anaisbk.com/",
+        "confidence": 0.8,
+        "evidence_text": "Anaïs menus /menus"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.anaisbk.com/",
+          "source_url": "https://www.anaisbk.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.anaisbk.com/menus",
+          "label": "menus",
+          "source_url": "https://www.anaisbk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Anaïs menus /menus"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/anaiswinebk",
+          "label": "Instagram",
+          "source_url": "https://www.anaisbk.com/",
+          "confidence": 0.85,
+          "evidence_text": "Anaïs Instagram https://www.instagram.com/anaiswinebk"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "reservation_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Balvanera",
+      "place_id": "ChIJvRNghoFZwokR8r6CDQqyalA",
+      "google_maps_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.balvanerarestaurants.com/",
+        "source_url": "http://www.balvanerarestaurants.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/balvanerarestaurants/",
+        "label": "Instagram",
+        "source_url": "https://www.balvanerarestaurants.com/",
+        "confidence": 0.85,
+        "evidence_text": "Balvanera | Argentinean Restaurant in New York, NY Instagram https://www.instagram.com/balvanerarestaurants/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.balvanerarestaurants.com/contact/",
+          "label": "Contact",
+          "source_url": "https://www.balvanerarestaurants.com/",
+          "confidence": 0.7,
+          "evidence_text": "Balvanera | Argentinean Restaurant in New York, NY Contact /contact/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.balvanerarestaurants.com/",
+          "source_url": "http://www.balvanerarestaurants.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.balvanerarestaurants.com/contact/",
+          "label": "Contact",
+          "source_url": "https://www.balvanerarestaurants.com/",
+          "confidence": 0.7,
+          "evidence_text": "Balvanera | Argentinean Restaurant in New York, NY Contact /contact/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/balvanerarestaurants/",
+          "label": "Instagram",
+          "source_url": "https://www.balvanerarestaurants.com/",
+          "confidence": 0.85,
+          "evidence_text": "Balvanera | Argentinean Restaurant in New York, NY Instagram https://www.instagram.com/balvanerarestaurants/"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Brick Wine Bar",
+      "place_id": "ChIJZ3m5L6xZwokRq3Gyu3EDuuE",
+      "google_maps_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.brickwinebar.com/",
+        "source_url": "https://www.brickwinebar.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/brick.winebar/?igshid=ZGUzMzM3NWJiOQ%3D%3D",
+        "label": "",
+        "source_url": "https://www.brickwinebar.com/",
+        "confidence": 0.85,
+        "evidence_text": ". https://www.instagram.com/brick.winebar/?igshid=ZGUzMzM3NWJiOQ%3D%3D"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.brickwinebar.com/",
+          "source_url": "https://www.brickwinebar.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/brick.winebar/?igshid=ZGUzMzM3NWJiOQ%3D%3D",
+          "label": "",
+          "source_url": "https://www.brickwinebar.com/",
+          "confidence": 0.85,
+          "evidence_text": ". https://www.instagram.com/brick.winebar/?igshid=ZGUzMzM3NWJiOQ%3D%3D"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Somm Time",
+      "place_id": "ChIJSeHeZ6ZZwokRMWhy805YXs8",
+      "google_maps_url": "https://maps.google.com/?cid=14942477709776939057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://sommtimenyc.com/",
+        "source_url": "https://sommtimenyc.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/sommtimewinebar",
+        "label": "Instagram page",
+        "source_url": "https://sommtimenyc.com/",
+        "confidence": 0.85,
+        "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Instagram page https://www.instagram.com/sommtimewinebar"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://tmt.spotapps.co/private-parties?spot_id=49276&source=pop_up&destination=private_parties&promotion=private_parties",
+        "label": "Book your party",
+        "source_url": "https://sommtimenyc.com/",
+        "confidence": 0.8,
+        "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Book your party https://tmt.spotapps.co/private-parties?spot_id=49276&source=pop_up&destination=private_parties&promotion=private_parties"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://sommtimenyc.com/food-menu",
+        "label": "Menu",
+        "source_url": "https://sommtimenyc.com/",
+        "confidence": 0.8,
+        "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Menu /food-menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.spothopperapp.com/contact-us?contact_reason=demo",
+          "label": "Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form https://www.spothopperapp.com/contact-us?contact_reason=demo"
+        },
+        {
+          "kind": "contact",
+          "url": "https://sommtimenyc.com/call-us/'+phone+'",
+          "label": "'+ match[1] + '-' + match[2] + '-' + match[3] +'",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant '+ match[1] + '-' + match[2] + '-' + match[3] +' /call-us/'+phone+'"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=14942477709776939057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=14942477709776939057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://sommtimenyc.com/",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://tmt.spotapps.co/private-parties?spot_id=49276&source=pop_up&destination=private_parties&promotion=private_parties",
+          "label": "Book your party",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Book your party https://tmt.spotapps.co/private-parties?spot_id=49276&source=pop_up&destination=private_parties&promotion=private_parties"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://tmt.spotapps.co/reservations?spot_id=49276&source=header&destination=reservations&promotion=reservations",
+          "label": "Book Table",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Book Table https://tmt.spotapps.co/reservations?spot_id=49276&source=header&destination=reservations&promotion=reservations"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/sommtimewinebar",
+          "label": "Instagram page",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.85,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Instagram page https://www.instagram.com/sommtimewinebar"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sommtimenyc.com/food-menu",
+          "label": "Menu",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Menu /food-menu"
+        },
+        {
+          "kind": "menu",
+          "url": "https://sommtimenyc.com/drink-menu",
+          "label": "Drinks",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Drinks /drink-menu"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://tmt.spotapps.co/reservations?spot_id=49276&callback_url=http://sommtimenyc.com/#",
+          "label": "Reserve",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Reserve https://tmt.spotapps.co/reservations?spot_id=49276&callback_url=http://sommtimenyc.com/#"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.spothopperapp.com/contact-us?contact_reason=demo",
+          "label": "Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form https://www.spothopperapp.com/contact-us?contact_reason=demo"
+        },
+        {
+          "kind": "contact",
+          "url": "https://sommtimenyc.com/call-us/'+phone+'",
+          "label": "'+ match[1] + '-' + match[2] + '-' + match[3] +'",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant '+ match[1] + '-' + match[2] + '-' + match[3] +' /call-us/'+phone+'"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tmt.spotapps.co/ordering-menu/?spot_id=%27+config.spot_id+%27&images=yes&accordion=true#",
+          "label": "commission free ordering platform!",
+          "source_url": "https://sommtimenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Somm Time - Lower East Side, NYC - Wine Bar & Restaurant commission free ordering platform! https://tmt.spotapps.co/ordering-menu/?spot_id='+config.spot_id+'&images=yes&accordion=true#"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Jadis",
+      "place_id": "ChIJTXEMkIZZwokRrCyMDjtZFSg",
+      "google_maps_url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "http://jadisnyc.com/",
+        "source_url": "http://www.jadisnyc.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/jadiswinebar/",
+        "label": "Instagram",
+        "source_url": "http://jadisnyc.com/",
+        "confidence": 0.85,
+        "evidence_text": "lower east side, les, nyc, restaurant, wine bar, winebar, happy hour, steak, creme brulee, cheese plate, charcutiere, cute, romantic, cozy, budget friendly, organic Instagram https://www.instagram.com/jadiswinebar/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "http://opentable.com/",
+        "label": "opentable.com",
+        "source_url": "http://jadisnyc.com/",
+        "confidence": 0.8,
+        "evidence_text": "lower east side, les, nyc, restaurant, wine bar, winebar, happy hour, steak, creme brulee, cheese plate, charcutiere, cute, romantic, cozy, budget friendly, organic opentable.com http://opentable.com"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "http://jadisnyc.com/",
+          "source_url": "http://www.jadisnyc.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "http://opentable.com/",
+          "label": "opentable.com",
+          "source_url": "http://jadisnyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "lower east side, les, nyc, restaurant, wine bar, winebar, happy hour, steak, creme brulee, cheese plate, charcutiere, cute, romantic, cozy, budget friendly, organic opentable.com http://opentable.com"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/jadiswinebr?ref=hl",
+          "label": "Jwb Jwb",
+          "source_url": "http://jadisnyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "lower east side, les, nyc, restaurant, wine bar, winebar, happy hour, steak, creme brulee, cheese plate, charcutiere, cute, romantic, cozy, budget friendly, organic Jwb Jwb https://www.facebook.com/jadiswinebr?ref=hl"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/jadiswinebar/",
+          "label": "Instagram",
+          "source_url": "http://jadisnyc.com/",
+          "confidence": 0.85,
+          "evidence_text": "lower east side, les, nyc, restaurant, wine bar, winebar, happy hour, steak, creme brulee, cheese plate, charcutiere, cute, romantic, cozy, budget friendly, organic Instagram https://www.instagram.com/jadiswinebar/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.opentable.com/r/jadis-new-york?corrid=ef0d782f-731a-4c1e-bb8a-40f6a2cd7a58&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjowLCJuIjowfQ&p=2&sd=2026-02-16T19%3A00%3A00",
+          "label": "URL",
+          "source_url": "http://jadisnyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "lower east side, les, nyc, restaurant, wine bar, winebar, happy hour, steak, creme brulee, cheese plate, charcutiere, cute, romantic, cozy, budget friendly, organic URL https://www.opentable.com/r/jadis-new-york?corrid=ef0d782f-731a-4c1e-bb8a-40f6a2cd7a58&avt=eyJ2IjoyLCJtIjowL..."
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Ainslie Bowery",
+      "place_id": "ChIJYX4u-qRZwokRzEn18urM0vM",
+      "google_maps_url": "https://maps.google.com/?cid=17569330405796301260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+        "source_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/ainslienyc/",
+        "label": "",
+        "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+        "confidence": 0.85,
+        "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden https://www.instagram.com/ainslienyc/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.opentable.com/restref/client/?restref=1211932&#038;corrid=0333fd9f-9d88-4244-b378-faa030f7d711",
+        "label": "",
+        "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+        "confidence": 0.8,
+        "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden https://www.opentable.com/restref/client/?restref=1211932&#038;corrid=0333fd9f-9d88-4244-b378-faa030f7d711"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://ainsliebowery.com/menus/",
+        "label": "Food+Drink Menus",
+        "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+        "confidence": 0.8,
+        "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Food+Drink Menus https://ainsliebowery.com/menus/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://ainsliebowery.com/contact/",
+          "label": "Press/General Inquiries",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.7,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Press/General Inquiries /contact/"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://ainsliebowery.com/press/",
+          "label": "Press",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.65,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Press https://ainsliebowery.com/press/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=17569330405796301260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=17569330405796301260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "source_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.opentable.com/restref/client/?restref=1211932&#038;corrid=0333fd9f-9d88-4244-b378-faa030f7d711",
+          "label": "",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden https://www.opentable.com/restref/client/?restref=1211932&#038;corrid=0333fd9f-9d88-4244-b378-faa030f7d711"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/menus/",
+          "label": "Food+Drink Menus",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Food+Drink Menus https://ainsliebowery.com/menus/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://ainsliebowery.com/press/",
+          "label": "Press",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.65,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Press https://ainsliebowery.com/press/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.opentable.com/booking/restref/availability?correlationId=58b188ff-c9a0-4f9b-9f6b-251d5c469cfc&restRef=1211932&dateTime=2026-06-05T19:00",
+          "label": "BOOK A TABLE →",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden BOOK A TABLE → https://www.opentable.com/booking/restref/availability?correlationId=58b188ff-c9a0-4f9b-9f6b-251d5c469cfc&restRef=1211932&dateTime=2026-06-05T19:00"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/menu/dinner/",
+          "label": "Dinner",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Dinner https://ainsliebowery.com/menu/dinner/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/menu/brunch/",
+          "label": "Brunch A La Carte",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Brunch A La Carte https://ainsliebowery.com/menu/brunch/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/prix-fixe-brunch-menu/",
+          "label": "Brunch Prix-Fixe",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Brunch Prix-Fixe https://ainsliebowery.com/prix-fixe-brunch-menu/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/family-style-dinner-menu/",
+          "label": "Family Style Dinner",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Family Style Dinner https://ainsliebowery.com/family-style-dinner-menu/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/family-style-brunch-menu/",
+          "label": "Family Style Brunch",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Family Style Brunch https://ainsliebowery.com/family-style-brunch-menu/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.opentable.com/restref/client/?restref=1211932&corrid=0333fd9f-9d88-4244-b378-faa030f7d711",
+          "label": "RESERVE A TABLE",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden RESERVE A TABLE https://www.opentable.com/restref/client/?restref=1211932&corrid=0333fd9f-9d88-4244-b378-faa030f7d711"
+        },
+        {
+          "kind": "menu",
+          "url": "https://ainsliebowery.com/menu/happy-hour-specials/",
+          "label": "View Happy Hour Menu",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.8,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden View Happy Hour Menu https://ainsliebowery.com/menu/happy-hour-specials/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://ainsliebowery.com/contact/",
+          "label": "Press/General Inquiries",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.7,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden Press/General Inquiries /contact/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/ainslienyc/",
+          "label": "",
+          "source_url": "https://ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "confidence": 0.85,
+          "evidence_text": "Ainslie Bowery Italian Wood-fired Pizza Beer Garden https://www.instagram.com/ainslienyc/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    }
+  ]
+}
