@@ -291,6 +291,7 @@ function artifactList(): Array<{ label: string; file: string; kind: 'html' | 'js
     { label: 'Control panel snapshot', file: 'pipeline_control_panel.html', kind: 'html' },
     { label: 'Publication review dashboard', file: 'publication_review_dashboard.html', kind: 'html' },
     { label: 'Venue seed report', file: 'venue_seed_report.md', kind: 'markdown' },
+    { label: 'Stage 00B editorial source report', file: 'stage_00b_editorial_source_enrichment_report.md', kind: 'markdown' },
     { label: 'Stage 03 image report', file: 'stage_03_report.md', kind: 'markdown' },
     { label: 'Stage 04 M3 report', file: 'stage_04_report.md', kind: 'markdown' },
     { label: 'Stage 05 editorial report', file: 'stage_05_report.md', kind: 'markdown' },

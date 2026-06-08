@@ -20,7 +20,7 @@ export default function Onboarding() {
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(0);
   const [selectedMoods, setSelectedMoods] = useState<string[]>([]);
-  const [selectedCity, setSelectedCity] = useState<'BUE' | 'NYC'>('BUE');
+  const [selectedCity, setSelectedCity] = useState<'BUE' | 'NYC' | 'DXB'>('BUE');
 
   useEffect(() => {
     const hasOnboarded = localStorage.getItem('korantis_onboarded');
@@ -101,6 +101,13 @@ export default function Onboarding() {
                 className={`p-6 rounded-2xl border text-left transition-all ${selectedCity === 'NYC' ? 'border-[#C9A96E] bg-[#C9A96E]/10' : 'border-white/10 bg-white/5 hover:border-white/30'}`}
               >
                 <div className="text-xl font-display mb-1 text-white">New York</div>
+                <div className="text-xs text-[#8A7A5A] uppercase tracking-wider">Beta</div>
+              </button>
+              <button 
+                onClick={() => setSelectedCity('DXB')}
+                className={`p-6 rounded-2xl border text-left transition-all ${selectedCity === 'DXB' ? 'border-[#C9A96E] bg-[#C9A96E]/10' : 'border-white/10 bg-white/5 hover:border-white/30'}`}
+              >
+                <div className="text-xl font-display mb-1 text-white">Dubai</div>
                 <div className="text-xs text-[#8A7A5A] uppercase tracking-wider">Beta</div>
               </button>
             </div>

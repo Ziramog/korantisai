@@ -117,6 +117,12 @@ export default function VosTab() {
                 >
                   NYC
                 </button>
+                <button 
+                  onClick={() => setCity('DXB')}
+                  className={`px-3 py-1 text-xs font-sans rounded-md transition-colors ${city === 'DXB' ? 'bg-[#C9A96E] text-black font-medium' : 'text-white/60 hover:text-white'}`}
+                >
+                  DXB
+                </button>
               </div>
             </div>
           </div>

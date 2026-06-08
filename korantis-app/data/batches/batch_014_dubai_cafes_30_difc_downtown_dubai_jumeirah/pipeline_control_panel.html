@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Pipeline Control - batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah</title>
+  <style>
+    :root { color-scheme: dark; --bg:#10100e; --panel:#1b1a16; --line:#3d382f; --text:#f7f0df; --muted:#b5aa96; --green:#74c98f; --gold:#d6b365; --red:#e07b72; --blue:#8ab7ef; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at 15% 0%, #2b2a1d, var(--bg) 34rem); color:var(--text); }
+    header, main { max-width: 1440px; margin:0 auto; padding:24px; }
+    header { position: sticky; top:0; z-index:10; background:rgba(16,16,14,.92); backdrop-filter: blur(12px); border-bottom:1px solid var(--line); }
+    h1, h2, h3, p { margin:0; }
+    h1 { font-size:26px; }
+    .muted { color:var(--muted); }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-top:18px; }
+    .card { border:1px solid var(--line); background:rgba(27,26,22,.9); border-radius:16px; padding:16px; }
+    .stat strong { display:block; font-size:28px; margin-top:6px; }
+    .ok { color:var(--green); }
+    .warn { color:var(--gold); }
+    .bad { color:var(--red); }
+    code, textarea { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .file { display:flex; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px solid rgba(255,255,255,.07); }
+    .file:last-child { border-bottom:0; }
+    .cmd { width:100%; min-height:44px; border:1px solid var(--line); border-radius:10px; background:#111; color:var(--text); padding:10px; resize:vertical; }
+    button { border:1px solid var(--line); background:#252219; color:var(--text); border-radius:999px; padding:7px 10px; cursor:pointer; }
+    button:hover { border-color:var(--blue); }
+    a { color:var(--blue); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="muted">Korantis pipeline control panel</p>
+    <h1>batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah</h1>
+    <p class="muted">Generated 2026-06-08T15:28:04.814Z. This panel does not write to Supabase, Cloudinary, or public activation.</p>
+  </header>
+  <main>
+    <section class="grid" id="stats"></section>
+    <section class="grid">
+      <article class="card">
+        <h2>Commands</h2>
+        <div id="commands"></div>
+      </article>
+      <article class="card">
+        <h2>Files</h2>
+        <div id="files"></div>
+      </article>
+    </section>
+  </main>
+  <script>
+    const data = {"batch_id":"batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah","generated_at":"2026-06-08T15:28:04.814Z","files":[{"label":"Venue seed","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\venue_seed_report.md","exists":true,"size_bytes":28724},{"label":"Stage 00B editorial source enrichment","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_00b_editorial_source_enrichment_report.md","exists":true,"size_bytes":8831},{"label":"Stage 01 raw venues","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_01_report.md","exists":true,"size_bytes":2829},{"label":"Stage 02 sources","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_02_source_discovery_report.md","exists":true,"size_bytes":9710},{"label":"Stage 03 images","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_03_report.md","exists":true,"size_bytes":1926},{"label":"Stage 04 M3 vision","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_04_report.md","exists":true,"size_bytes":3076},{"label":"Selected image connector","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\connect_selected_images_report.md","exists":true,"size_bytes":6172},{"label":"Stage 05 editorial","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_05_report.md","exists":true,"size_bytes":2287},{"label":"Stage 06 quality gate","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\quality_gate_report.md","exists":true,"size_bytes":7950},{"label":"Stage 07 approval manifest","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\approval_manifest_report.md","exists":true,"size_bytes":2998},{"label":"Stage 08 staging dry-run","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\supabase_staging_dry_run_report.md","exists":true,"size_bytes":18391},{"label":"Stage 09 publication review","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\publication_review_report.md","exists":true,"size_bytes":4845},{"label":"Reviewed decision manifest","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\publication_decision_manifest.reviewed.json","exists":false,"size_bytes":0},{"label":"Stage 10 Cloudinary","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\cloudinary_materialization_report.md","exists":false,"size_bytes":0},{"label":"Stage 11 public projection","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\public_projection_report.md","exists":false,"size_bytes":0},{"label":"Stage 11 apply","path":"F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\public_projection_apply_report.md","exists":false,"size_bytes":0}],"counts":{"quality_gate":{"input":30,"ready_for_db_staging":23,"auto_staged":0,"needs_review":0,"blocked":7,"approved":0,"rejected":0,"staged":0,"published":0},"decision_manifest":null,"cloudinary":null,"public_projection":null},"commands":{"full_batch_dry_run":"npx tsx pipeline/run_full_batch.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah --max-images-per-venue 4","publication_review":"npx tsx pipeline/stages/09_generate_publication_review.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah","public_projection_dry_run":"npx tsx pipeline/stages/11_project_to_public.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah --dry-run","cloudinary_dry_run":"npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah --dry-run","cloudinary_apply":"npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah --apply","public_projection_apply_hidden":"npx tsx pipeline/stages/11_project_to_public.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah --apply","activation_future":"npx tsx pipeline/stages/12_activate_public_venues.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah --apply"}};
+    const counts = data.counts || {};
+    const stats = [
+      ['Quality ready', counts.quality_gate?.ready_for_db_staging ?? 'n/a'],
+      ['Quality blocked', counts.quality_gate?.blocked ?? 'n/a'],
+      ['Approved', counts.decision_manifest?.approved ?? 'n/a'],
+      ['Cloudinary uploaded', counts.cloudinary?.uploaded ?? 'n/a'],
+      ['Public projected', counts.public_projection?.approved_projected ?? 'n/a'],
+    ];
+    document.getElementById('stats').innerHTML = stats.map(([label, value]) => '<article class="card stat"><span class="muted">' + label + '</span><strong>' + value + '</strong></article>').join('');
+    document.getElementById('commands').innerHTML = Object.entries(data.commands).map(([key, command]) => '<div class="card"><p class="muted">' + key + '</p><textarea class="cmd" readonly>' + command + '</textarea><button onclick="navigator.clipboard.writeText(' + JSON.stringify(command) + ')">Copy</button></div>').join('');
+    document.getElementById('files').innerHTML = data.files.map(file => '<div class="file"><span>' + file.label + '</span><span class="' + (file.exists ? 'ok' : 'bad') + '">' + (file.exists ? 'ready' : 'missing') + '</span></div>').join('');
+  </script>
+</body>
+</html>

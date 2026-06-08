@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T15:28:04.848Z",
+  "input_venues": 30,
+  "mode": "run",
+  "safety": {
+    "supabase_apply": false,
+    "cloudinary_upload": false,
+    "public_publish": false,
+    "consumer_ui_changes": false
+  },
+  "stages": [
+    {
+      "stage": "01_extract_data",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_01_raw_venues.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T14:45:17.229Z",
+      "finished_at": "2026-06-08T14:45:31.881Z"
+    },
+    {
+      "stage": "02_discover_sources",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_02_source_discovery.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T14:45:31.881Z",
+      "finished_at": "2026-06-08T14:46:28.518Z"
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_03_final_vision_queue.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T14:46:28.518Z",
+      "finished_at": "2026-06-08T14:56:27.324Z"
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_04_selected_images.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T14:56:27.324Z",
+      "finished_at": "2026-06-08T15:14:55.946Z"
+    },
+    {
+      "stage": "connect_selected_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\batch_result_with_images.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:14:55.946Z",
+      "finished_at": "2026-06-08T15:14:56.524Z"
+    },
+    {
+      "stage": "05_generate_editorial",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\batch_result_with_editorial.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:14:56.524Z",
+      "finished_at": "2026-06-08T15:27:57.926Z"
+    },
+    {
+      "stage": "05_alias_enriched_result",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\batch_result_enriched.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:27:57.926Z",
+      "finished_at": "2026-06-08T15:27:57.928Z"
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\batch_result_quality_gated.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:27:57.928Z",
+      "finished_at": "2026-06-08T15:27:57.969Z"
+    },
+    {
+      "stage": "07_generate_approval_manifest",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\approval_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:27:57.969Z",
+      "finished_at": "2026-06-08T15:27:57.997Z"
+    },
+    {
+      "stage": "08_supabase_staging_dry_run",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\supabase_staging_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:27:57.997Z",
+      "finished_at": "2026-06-08T15:28:04.800Z"
+    },
+    {
+      "stage": "09_publication_review",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\publication_decision_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:28:04.800Z",
+      "finished_at": "2026-06-08T15:28:04.813Z"
+    },
+    {
+      "stage": "11_public_projection_dry_run_if_reviewed",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\public_projection_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:28:04.813Z",
+      "finished_at": "2026-06-08T15:28:04.813Z"
+    },
+    {
+      "stage": "13_control_panel",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\pipeline_control_panel.html",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T15:28:04.813Z",
+      "finished_at": "2026-06-08T15:28:04.848Z"
+    }
+  ],
+  "final_outputs": [
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_01_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_02_source_discovery_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_03_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_04_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\connect_selected_images_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\stage_05_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\quality_gate_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\approval_manifest_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\supabase_staging_dry_run_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\publication_review_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah\\pipeline_control_panel.html"
+  ],
+  "next_action": "Open pipeline_control_panel.html, review publication_review_dashboard.html, export publication_decision_manifest.reviewed.json, then run Cloudinary/hidden public apply commands from the control panel."
+}

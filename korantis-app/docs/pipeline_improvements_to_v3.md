@@ -2,7 +2,7 @@
 
 Date: 2026-06-08
 
-Status update: Stage 13 post-activation audit and Stage 14 rollback have now been implemented and wired into the control center. The next priorities are city config, stronger quality gate, evidence scoring, and gallery support.
+Status update: Stage 13 post-activation audit, Stage 14 rollback, and Stage 15 gallery selection have now been implemented and wired into the control center. Stage 00 seed quality has also been tightened with stronger anti-chain filtering, local identity scoring, type-specific discovery queries, and Stage 00B source-weighted editorial candidate enrichment. The next priorities are URL-level source verification, stronger evidence scoring, city config, and better gallery depth.
 
 Source inputs:
 
@@ -20,6 +20,7 @@ My view is more specific:
 - The biggest immediate gap is not candidate discovery. It is post-publication safety: audit, rollback, read-back verification, and lifecycle controls.
 - The second biggest gap is evidence grounding. Stage 05 currently writes plausible atmospheric copy from Google Places + selected image metadata, but it does not have enough external evidence to justify richer editorial claims.
 - The third biggest gap is media depth. One hero image is enough to publish a card, but not enough for a mature Korantis venue detail experience.
+- The fourth gap is seed quality in new cities. Google Places alone can drift toward obvious or generic venues unless Stage 00 actively penalizes chains and rewards local/editorial discovery signals.
 - Some Claude findings are already partially solved: visual review exists, one-click reviewed publication exists, mood tags are constrained in code, and publication uses `pending_review -> active`.
 
 The v3 plan should be incremental. Do not rename or collapse all stages yet. First harden what already works.
@@ -68,6 +69,29 @@ Stage 05 uses:
 That is enough for basic copy, but not enough for strong editorial claims.
 
 We need evidence richness scoring and external source discovery before generating richer descriptions.
+
+### 3A. Seed Quality Needs Editorial Source Signals
+
+The current Stage 00 selector now rejects hard chains such as Starbucks and penalizes soft chain-like candidates, while boosting local identity and editorial-discovery search intent.
+
+Implemented now:
+
+- Hard franchise rejection for standardized chains.
+- Soft chain penalty for multi-location brands that may still be useful but should not win by review volume alone.
+- Expanded discovery queries for specialty coffee, independent cafes, roasters, design cafes, quiet cafes, cafe-bars, neighborhood bars, listening bars, natural wine, cocktail bars, and atmosphere-forward restaurants.
+- Lower weight for raw review volume and higher weight for atmosphere/local/editorial potential.
+
+Implemented now:
+
+- `pipeline/stages/00b_editorial_source_enrichment.ts`
+- Stage 00 consumes Stage 00B candidates automatically unless `--skip-editorial-sources` is passed.
+- Stage 00B writes `stage_00b_editorial_source_enrichment.json` and `stage_00b_editorial_source_enrichment_report.md`.
+
+Still missing:
+
+- URL-level read-only confirmation against Michelin, Eater, Infatuation, Time Out, local press, coffee publications, and city guides.
+- Source URL preservation in the seed report.
+- A source confidence score that can feed Stage 05 and quality gate.
 
 ### 4. Multi-Image Support Is Needed
 

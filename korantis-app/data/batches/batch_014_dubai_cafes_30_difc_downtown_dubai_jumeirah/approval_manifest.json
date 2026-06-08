@@ -1,0 +1,459 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T15:27:57.988Z",
+  "approved_for_db_staging": [
+    {
+      "venue_name": "Caju Coffee House",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOExB-EShY1nEHrQqadhJXAOxnuJLP5nP3_26VX9HJMj7hzKEpxJPj0M9HmyaoeGjLi5myk6xiFu4Og-m1v6ODdn-c-yydezZCl82_kAMT-zX_Zgxhrml96vSt9FaVEDVKNQDQ5eWy5M2Yvurpm9Cs0=s4800-w1600-h1365",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNSdKOyyB839cK9OLukxsYcx7HqNs9-_fRUoOcnm5b3uay2iuFOdwFKO2sSVJiJkOu1AhWZ9m-mhUun5fB15V6VDcH9k7nFZTHGv8pU2eAkMPUTVCSVlMCxX_gLj-XJJjIA1_HtkKbKaUeQpw=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMKQBM3P888DWwwLYRWf3wf-XFMYgPFUNfM-L0INiF8KG0ynzfTvsrhvIHb1SSBMYQLXi59z4fr5a-PsU0xFO3_vSV_rSVjZYDyi4Dh1NyQkCKtweaD_zSENGre9plNDMPTHFTKP-a93nlThnjDXkVM2w=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWFWNQCnKnlSOH6JNe1XRU3LUUbgqBT0bES8V92C8OUwtXsHCSeyf6a2g_SHp3U5fy0AsIOMMZ4DRHVztlNVyR4JnFrfJGJoLSSAAGPv92NKjeJ8H55upbi7rH_SUCEMg1O161BXl8wDfIGA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Orijins",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNtwE1IXbThv94HUuDfO2C-DTC5TMJdBL3RWUc8tMPkszwzzDgCy7L4aEp4aQ0zBsxIJ4NAT_ruSZEJFwjzv3thCptjzP8kf6RXpQ98npUyxAfp3q-WQeXXtKlGTVCJW7D3hBDL65vesGxXhA2URiBjjQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Have Coffee - DIFC",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "hero_image_url": "https://images.squarespace-cdn.com/content/v1/61a881e4f23025786b03b6c9/d0a569e0-d7dd-4c9f-b7ae-20b63fddcfc9/Interior.jpeg?format=2500w",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNvExlgOyhrRtrK52sBR3gsMfNX8D4s5Unf_iXeMhepYRSqIe3wjZmYHsIe4_6k5zDBcqhJQe99J2p3XInlNcBgI3soMqkgR-bTX9abAj0CPQ8QIFyuOYOjhfvftai5eeObvZUn7dizkhrMe4M=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO_D_Ns4o6Ed82NEbzrhgK5y2Aj7vfIWdhW_eRB97jQUSTuJheL4lWT66Bb16SI50ZmtkuLeToYnZOtsuuJUSMDm1BkWggC8mVMFR9hUzWr2B22C1bobr6R6f0W4gFFFui2ydYeb0Q9usZx54RUj6Mz=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Summer Soul Boutique - West Beach",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxdmBGd89HbLognZHzYHt6os80oVV2-S4ZRSBj8tDqnlE6viM2fiwdb0rQY5c8deIRLlIbt14kwuERfZPWAFYRuJmVsU8Xf_21oGVs-xfa7LILSLw4D2GAcq7iYXFDs7u85agYBHUPh7LimBo=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJ45ZGowY0xrdE4D1S6jE8J7oRJmewTmDTWf9a-qwyZ5Zmgz6EhsxceKfX28tTnmIygOPIp_LYs_HYQnZe078qmkzmfLBcPMXPeSXnIg_YWU_xZter909Uj6SqjcSC7vx_Xlx7-7XzvElgkQ=s4800-w1600-h1135",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPKL6Foo_hEvId405YUE-bSAy7CO6MXH2ztQ0yYyx7E6t6nulHWpcepjblV8oRsK0T5RmKR-p_ZTq-qut9Uqzc_mAFY0eeosw8SoYTb1D_Ktck0P-NFBR8J6nMrP94oDiZaXX0FYbUkMZWrbXcb6MTs1w=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "hero_image_url": "https://risendubai.com/wp-content/uploads/2022/08/gallery-locations-17.jpg",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNIpZB2oGKgm1sHGN1zhAMjDnfv0TW6CORit1-6PUOh6RvCmS8cMK93sNZ3rreEUf_1QuJNBQEWbiNC1BDA6JdCTImQ8zl9jdxbK8J2esFbueaXe9nMr_hpFrWiLps5h8p7ix3R60HwPYl2uSF3CDO0=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMiLHnBYceWikX58Tx4rNmKoFBRSkgoAhEt3_7kM4Be9LwacMWVfTv-g72FRhgg6dT5MLe8NE9_SZ_ogpU-quUtqV2kg69OI7pAnmU4cyTOJDb8r17_owQWPoMXWwc4SqOXtWbZhdcxQiTsK_w=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNwT5XfR7pJPtVgB7MR85YCLmRnvcDE_VAWGCISQKMve8cYLg2PlWYU8pIWwDpc88OBQFebBLSvot3b2U2wQyFuSQbqULH-dh1bHD3LRpmM03FanRGM6AetA6yVpbSV4jsIXHaFeT8tTyZQomNGig-A=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOf0e-4t-_X7QPUGv_lYZAR4GbZo0ZpUl4YCzMVV0ax_4JKUhNCVNYkZgrWmWK_zetoyw6g8oVxfteI1V5dCKNI-Q2RhpDaQUoPXKWOefWeJZuUNoLGAyWSfce1OUYuDPgU9sZl_XSD5ZJeyUzEIhzTuQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPPnhH-Tf8EIRuXuRU89SmZvns7M32GCYJ6x8w-LjW-EfH9MrdFZVMBXikVKmYjB-aM0a2-tY18rS0rfNiLj3CTv0nEWwHPvz0vTUSLFMlwK6wo7Yplig2ZYRdKdURDt-pEp55qwX8Cb-JsWHLrFqPynA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPr4VFfpWyCmX0UnhxefnsyCcycOoVn3gYwHOQw_EotZ6NRJO4YmDHCONURGdAPS5xv8gL61ZtRS9QXyXVdO1AnQFYswVEkGKuZX-RS4k2PEr9OuTO_sFmtBfgtV0PvIKvB0zDThzB-ppatclLFfO5C9g=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJucPuwFDifdVBH5eGxJ2znxtZeJ2t43Y7zD6jnZOCILWPU04enNXYlCr5WW1rdu1VukqA9nynhqlCtWbSLZFiAiAI0_ILzmG1fIHWBUDipcfrTuhed_xh3CUgj3JrYZ7dMMailMxT2iSIx9OZ4MrGzg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMMZFfhp4cadu-39Bs5PNS3llP5jJZLTCAma-JUjWhtfXcy68Gto_hOtTXUHWH7WGcHCr16tof9YztKOraIoDTFoOSE8Ocg_OsgflJMeDyJuozkKv-MtoVnzcXsod8YjqD2AKXMg9N-BmZD7EvdSaC=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPLMca-Te9neMzJmUCB1kI5N9MZljv5EcBvunwfLEEue0HBrEgTURLYVc1gm-El1AhkcD3j8VX_tJXc0MMo6H8WHGlwt6wQSbGFl4gRe4K017mrx4RLThBCiuy6GF2iGEN59B4eVMKKnAdZHI=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPiwhkV-DTBP6VrYojMn2UvYxB8O2v447s9mAKLbDsdGS0pW3lF3U8qkI38_dWMvx9GCVKdRiBFtb0eh7CI48ZrPiM6ZVRi-kYYTB3-o9aMsW6SO9kkQBuZ_2J26vZMhP0stA-GsxIZCPtljJSXaWuptw=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOexMzLV8n7mmcxSpCVpA3um8dbejvgq7esWjqBG17sdo8_7xPZ8ErbR1TdA_qP1HuusXVMOY7okpKFNXoj9LFNTYUrshY362yqMRh33LDQ7PtqQdBG69bNc4U_DGxGSwS3kZMOm_Uq-8PM17ludW3C=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ],
+  "needs_review": [],
+  "blocked": [
+    {
+      "venue_name": "Kulture House Dubai",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "status": "blocked",
+      "staging_score": 72,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "status": "blocked",
+      "staging_score": 74,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Drinkit",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "status": "blocked",
+      "staging_score": 72,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Sobha Hartland",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ]
+}

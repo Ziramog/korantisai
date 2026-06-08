@@ -1,0 +1,3115 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T14:46:28.515Z",
+  "venues_processed": 30,
+  "websites_attempted": 30,
+  "websites_fetched": 28,
+  "instagram_found": 22,
+  "menu_found": 16,
+  "reservation_found": 18,
+  "whatsapp_found": 7,
+  "editorial_mentions_found": 11,
+  "source_confidence_average": 0.7999999999999997,
+  "venues": [
+    {
+      "venue_name": "Caju Coffee House",
+      "place_id": "ChIJAd4hBttpXz4RgU0Osdvtd4Y",
+      "google_maps_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://caju.ae/",
+        "source_url": "https://caju.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://caju.ae/",
+          "source_url": "https://caju.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Kulture House Dubai",
+      "place_id": "ChIJe0BIiPpDXz4RMRwBkfQBJkU",
+      "google_maps_url": "https://maps.google.com/?cid=4982672187648449585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://kulturehousedubai.com/",
+        "source_url": "http://www.kulturehousedubai.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/kulturehousedubai/",
+        "label": "instagram",
+        "source_url": "https://kulturehousedubai.com/",
+        "confidence": 0.85,
+        "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition instagram https://www.instagram.com/kulturehousedubai/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://kulturehousedubai.com/products/prickly-pear-mosaic-a4-pu-notebook",
+        "label": "SHOP OUR FAVOURITES",
+        "source_url": "https://kulturehousedubai.com/",
+        "confidence": 0.8,
+        "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition SHOP OUR FAVOURITES /products/prickly-pear-mosaic-a4-pu-notebook"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://kulturehousedubai.com/pages/menu",
+        "label": "",
+        "source_url": "https://kulturehousedubai.com/",
+        "confidence": 0.8,
+        "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition /pages/menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://kulturehousedubai.com/pages/contact-us",
+          "label": "Contact Us",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.7,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition Contact Us /pages/contact-us"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://kulturehousedubai.com/products/engraved-nespresso-cups-6-colors",
+          "label": "The Artisanal Collection",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.65,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition The Artisanal Collection /products/engraved-nespresso-cups-6-colors"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=4982672187648449585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=4982672187648449585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://kulturehousedubai.com/",
+          "source_url": "http://www.kulturehousedubai.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://kulturehousedubai.com/pages/contact-us",
+          "label": "Contact Us",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.7,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition Contact Us /pages/contact-us"
+        },
+        {
+          "kind": "menu",
+          "url": "https://kulturehousedubai.com/pages/menu",
+          "label": "",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.8,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition /pages/menu"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://kulturehousedubai.com/products/prickly-pear-mosaic-a4-pu-notebook",
+          "label": "SHOP OUR FAVOURITES",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.8,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition SHOP OUR FAVOURITES /products/prickly-pear-mosaic-a4-pu-notebook"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://kulturehousedubai.com/products/engraved-nespresso-cups-6-colors",
+          "label": "The Artisanal Collection",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.65,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition The Artisanal Collection /products/engraved-nespresso-cups-6-colors"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/ShopKultureHouse",
+          "label": "facebook",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.8,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition facebook https://www.facebook.com/ShopKultureHouse"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/kulturehousedubai/",
+          "label": "instagram",
+          "source_url": "https://kulturehousedubai.com/",
+          "confidence": 0.85,
+          "evidence_text": "Kulture House Dubai | A Melting Pot Of Lifestyles, Cultures, Tradition instagram https://www.instagram.com/kulturehousedubai/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "place_id": "ChIJVcY8QrFrXz4RtmlY1RlFbNc",
+      "google_maps_url": "https://maps.google.com/?cid=15522857992895097270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://roasterscoffee.ae/",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/roasterscoffee_dxb/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.85,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://m.facebook.com/100083362985889/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://roasterscoffee.ae/#menu",
+        "label": "Menu",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://wa.me/971585114777",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=15522857992895097270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=15522857992895097270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://roasterscoffee.ae/",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/#menu",
+          "label": "Menu",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://wa.me/971585114777",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf",
+          "label": "Show Me",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Show Me https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/roasterscoffee_dxb/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/100083362985889/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/",
+          "label": "Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "place_id": "ChIJuwG5IGNrXz4RAucY1xKuvsk",
+      "google_maps_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.mokha1450.com/",
+        "source_url": "http://www.mokha1450.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/mokha1450/",
+        "label": "Instagram",
+        "source_url": "https://www.mokha1450.com/",
+        "confidence": 0.85,
+        "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Instagram https://www.instagram.com/mokha1450/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/mokha1450",
+        "label": "Facebook",
+        "source_url": "https://www.mokha1450.com/",
+        "confidence": 0.8,
+        "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Facebook https://www.facebook.com/mokha1450"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.mokha1450.com/#contact",
+          "label": "Contact",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.7,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Contact /#contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.mokha1450.com/blogs/press",
+          "label": "Press",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.65,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Press /blogs/press"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.mokha1450.com/",
+          "source_url": "http://www.mokha1450.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.mokha1450.com/blogs/press",
+          "label": "Press",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.65,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Press /blogs/press"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.mokha1450.com/#contact",
+          "label": "Contact",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.7,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Contact /#contact"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/mokha1450/",
+          "label": "Instagram",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.85,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Instagram https://www.instagram.com/mokha1450/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/mokha1450",
+          "label": "Facebook",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.8,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Facebook https://www.facebook.com/mokha1450"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.mokha1450.com/pages/contact-us",
+          "label": "Reservation",
+          "source_url": "https://www.mokha1450.com/",
+          "confidence": 0.8,
+          "evidence_text": "Mokha 1450 - Luxury Speciality coffee &ndash; mokha1450 Reservation /pages/contact-us"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "place_id": "ChIJ3UefQjBrXz4RMjKz9hsBiVE",
+      "google_maps_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://roasterscoffee.ae/",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/roasterscoffee_dxb/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.85,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://m.facebook.com/100083362985889/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://roasterscoffee.ae/#menu",
+        "label": "Menu",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://wa.me/971585114777",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://roasterscoffee.ae/",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/#menu",
+          "label": "Menu",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://wa.me/971585114777",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf",
+          "label": "Show Me",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Show Me https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/roasterscoffee_dxb/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/100083362985889/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/",
+          "label": "Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "place_id": "ChIJVdjGRhFDXz4RJsyA5G7IUxY",
+      "google_maps_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://cafewayfarer.com/newmain",
+        "source_url": "https://cafewayfarer.com/newmain",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/wayfarer_difc/",
+        "label": "Instagram",
+        "source_url": "https://cafewayfarer.com/newmain",
+        "confidence": 0.85,
+        "evidence_text": "New Main Instagram https://www.instagram.com/wayfarer_difc/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://w.app/tpambg",
+        "label": "BOOK A TABLE",
+        "source_url": "https://cafewayfarer.com/newmain",
+        "confidence": 0.8,
+        "evidence_text": "New Main BOOK A TABLE https://w.app/tpambg"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://cafewayfarer.com/newmain",
+          "source_url": "https://cafewayfarer.com/newmain",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://w.app/tpambg",
+          "label": "BOOK A TABLE",
+          "source_url": "https://cafewayfarer.com/newmain",
+          "confidence": 0.8,
+          "evidence_text": "New Main BOOK A TABLE https://w.app/tpambg"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/wayfarer_difc/",
+          "label": "Instagram",
+          "source_url": "https://cafewayfarer.com/newmain",
+          "confidence": 0.85,
+          "evidence_text": "New Main Instagram https://www.instagram.com/wayfarer_difc/"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Orijins",
+      "place_id": "ChIJddeXXQJDXz4RZ5arWL-5NbY",
+      "google_maps_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.instagram.com/orijins",
+        "source_url": "http://instagram.com/orijins",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.instagram.com/orijins",
+          "source_url": "http://instagram.com/orijins",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Have Coffee - DIFC",
+      "place_id": "ChIJsdzetbdDXz4RekMZD5STjGQ",
+      "google_maps_url": "https://maps.google.com/?cid=7245328164650042234&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.have-coffee.ae/",
+        "source_url": "https://www.have-coffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://instagram.com/have.ae",
+        "label": "Instagram",
+        "source_url": "https://www.have-coffee.ae/",
+        "confidence": 0.85,
+        "evidence_text": "HAVE Instagram http://instagram.com/have.ae"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.have-coffee.ae/menu-with-pic-1",
+        "label": "Pictures",
+        "source_url": "https://www.have-coffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "HAVE Pictures /menu-with-pic-1"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=7245328164650042234&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=7245328164650042234&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.have-coffee.ae/",
+          "source_url": "https://www.have-coffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.have-coffee.ae/menu-with-pic-1",
+          "label": "Pictures",
+          "source_url": "https://www.have-coffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "HAVE Pictures /menu-with-pic-1"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.have-coffee.ae/have-breakfast-3-1",
+          "label": "DIFC Menu",
+          "source_url": "https://www.have-coffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "HAVE DIFC Menu /have-breakfast-3-1"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.have-coffee.ae/have-breakfast",
+          "label": "NAKHEEL MALL Menu",
+          "source_url": "https://www.have-coffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "HAVE NAKHEEL MALL Menu /have-breakfast"
+        },
+        {
+          "kind": "instagram",
+          "url": "http://instagram.com/have.ae",
+          "label": "Instagram",
+          "source_url": "https://www.have-coffee.ae/",
+          "confidence": 0.85,
+          "evidence_text": "HAVE Instagram http://instagram.com/have.ae"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "reservation_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "place_id": "ChIJHzv3R0BpXz4RmNkldot8DjY",
+      "google_maps_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://coffeeplanetuae.com/",
+        "source_url": "https://www.coffeeplanetuae.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://coffeeplanetuae.com/",
+          "source_url": "https://www.coffeeplanetuae.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "place_id": "ChIJjbP3zj5pXz4RMN-Upw9VHHM",
+      "google_maps_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/collections/all",
+        "source_url": "https://thecoffeemerchant.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/thecoffeemerchant.ae/?hl=en",
+        "label": "instagram",
+        "source_url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/collections/all",
+        "confidence": 0.85,
+        "evidence_text": "Products &ndash; THE COFFEE MERCHANT ROASTERS AND CAFE instagram https://www.instagram.com/thecoffeemerchant.ae/?hl=en"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/pages/contact",
+          "label": "Contact",
+          "source_url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/collections/all",
+          "confidence": 0.7,
+          "evidence_text": "Products &ndash; THE COFFEE MERCHANT ROASTERS AND CAFE Contact /pages/contact"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/collections/all",
+          "source_url": "https://thecoffeemerchant.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/thecoffeemerchant.ae/?hl=en",
+          "label": "instagram",
+          "source_url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/collections/all",
+          "confidence": 0.85,
+          "evidence_text": "Products &ndash; THE COFFEE MERCHANT ROASTERS AND CAFE instagram https://www.instagram.com/thecoffeemerchant.ae/?hl=en"
+        },
+        {
+          "kind": "contact",
+          "url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/pages/contact",
+          "label": "Contact",
+          "source_url": "https://the-coffee-merchant-roasters-and-cafe.myshopify.com/collections/all",
+          "confidence": 0.7,
+          "evidence_text": "Products &ndash; THE COFFEE MERCHANT ROASTERS AND CAFE Contact /pages/contact"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "place_id": "ChIJ06amBbATXz4RGlZWIJ5XWNI",
+      "google_maps_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.roastdubai.com/",
+        "source_url": "http://www.roastdubai.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/roast_specialty_coffee/",
+        "label": "Instagram",
+        "source_url": "https://www.roastdubai.com/",
+        "confidence": 0.85,
+        "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Instagram https://www.instagram.com/roast_specialty_coffee/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/Roastarabia",
+        "label": "Facebook",
+        "source_url": "https://www.roastdubai.com/",
+        "confidence": 0.8,
+        "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Facebook https://www.facebook.com/Roastarabia"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.roastdubai.com/menu",
+        "label": "Menu",
+        "source_url": "https://www.roastdubai.com/",
+        "confidence": 0.8,
+        "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Menu https://www.roastdubai.com/menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.roastdubai.com/contact-1",
+          "label": "Contact Us",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.7,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Contact Us https://www.roastdubai.com/contact-1"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.roastdubai.com/blog-1",
+          "label": "Blog",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.65,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Blog https://www.roastdubai.com/blog-1"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.roastdubai.com/",
+          "source_url": "http://www.roastdubai.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.roastdubai.com/menu",
+          "label": "Menu",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.8,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Menu https://www.roastdubai.com/menu"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.roastdubai.com/contact-1",
+          "label": "Contact Us",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.7,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Contact Us https://www.roastdubai.com/contact-1"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.roastdubai.com/blog-1",
+          "label": "Blog",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.65,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Blog https://www.roastdubai.com/blog-1"
+        },
+        {
+          "kind": "menu",
+          "url": "https://deliveroo.ae/menu/Dubai/sheikh-zayed/roast-specialty-coffee-blue-tower?day=today&geohash=thrr3yxyke96&time=ASAP",
+          "label": "",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.8,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast https://deliveroo.ae/menu/Dubai/sheikh-zayed/roast-specialty-coffee-blue-tower?day=today&geohash=thrr3yxyke96&time=ASAP"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/Roastarabia",
+          "label": "Facebook",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.8,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Facebook https://www.facebook.com/Roastarabia"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/roast_specialty_coffee/",
+          "label": "Instagram",
+          "source_url": "https://www.roastdubai.com/",
+          "confidence": 0.85,
+          "evidence_text": "ROAST Speciality Coffee Dubai | Cafes & Breakfast Instagram https://www.instagram.com/roast_specialty_coffee/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Drinkit",
+      "place_id": "ChIJS7oLsHFrXz4RUBvkk043wCM",
+      "google_maps_url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://drinkit.io/",
+        "source_url": "https://drinkit.io/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/drinkitcoffee/?hl=en",
+        "label": "Instagram",
+        "source_url": "https://drinkit.io/",
+        "confidence": 0.85,
+        "evidence_text": "Main / About us Instagram https://www.instagram.com/drinkitcoffee/?hl=en"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://drive.google.com/file/d/1nxniE4k8J55uJo-1FxH6AbDeBHniMFpR/view",
+        "label": "check our menu →",
+        "source_url": "https://drinkit.io/",
+        "confidence": 0.8,
+        "evidence_text": "Main / About us check our menu → https://drive.google.com/file/d/1nxniE4k8J55uJo-1FxH6AbDeBHniMFpR/view"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://drinkit.io/",
+          "source_url": "https://drinkit.io/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/drinkitcoffee/?hl=en",
+          "label": "Instagram",
+          "source_url": "https://drinkit.io/",
+          "confidence": 0.85,
+          "evidence_text": "Main / About us Instagram https://www.instagram.com/drinkitcoffee/?hl=en"
+        },
+        {
+          "kind": "menu",
+          "url": "https://drive.google.com/file/d/1nxniE4k8J55uJo-1FxH6AbDeBHniMFpR/view",
+          "label": "check our menu →",
+          "source_url": "https://drinkit.io/",
+          "confidence": 0.8,
+          "evidence_text": "Main / About us check our menu → https://drive.google.com/file/d/1nxniE4k8J55uJo-1FxH6AbDeBHniMFpR/view"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DMz9zULI4Lk/?hl=en",
+          "label": "learn more → #rec1211024146 .t-btnflex.t-btnflex_type_button {color:#ffffff;background-color:#182da8;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}@media (hover:hover) {#rec1211024146 .t-btnflex.t-btnflex_type_button:not(.t-animate_no-hover):hover {background-color:#334cdb !important;}#rec1211024146 .t-btnflex.t-btnflex_type_button:not(.t-animate_no-hover):focus-visible {background-color:#334cdb !important;}}",
+          "source_url": "https://drinkit.io/",
+          "confidence": 0.85,
+          "evidence_text": "Main / About us learn more → #rec1211024146 .t-btnflex.t-btnflex_type_button {color:#ffffff;background-color:#182da8;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,colo..."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DKwWjcVIwHd/?hl=en",
+          "label": "learn more → #rec1211024146 .t-btnflex.t-btnflex_type_button {color:#ffffff;background-color:#182da8;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}@media (hover:hover) {#rec1211024146 .t-btnflex.t-btnflex_type_button:not(.t-animate_no-hover):hover {background-color:#334cdb !important;}#rec1211024146 .t-btnflex.t-btnflex_type_button:not(.t-animate_no-hover):focus-visible {background-color:#334cdb !important;}}",
+          "source_url": "https://drinkit.io/",
+          "confidence": 0.85,
+          "evidence_text": "Main / About us learn more → #rec1211024146 .t-btnflex.t-btnflex_type_button {color:#ffffff;background-color:#182da8;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,colo..."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DJ3v1c4ovV4/?hl=en",
+          "label": "learn more → #rec1211024146 .t-btnflex.t-btnflex_type_button {color:#ffffff;background-color:#182da8;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,color,border-color,box-shadow,opacity,transform,gap;transition-timing-function:ease-in-out;}@media (hover:hover) {#rec1211024146 .t-btnflex.t-btnflex_type_button:not(.t-animate_no-hover):hover {background-color:#334cdb !important;}#rec1211024146 .t-btnflex.t-btnflex_type_button:not(.t-animate_no-hover):focus-visible {background-color:#334cdb !important;}}",
+          "source_url": "https://drinkit.io/",
+          "confidence": 0.85,
+          "evidence_text": "Main / About us learn more → #rec1211024146 .t-btnflex.t-btnflex_type_button {color:#ffffff;background-color:#182da8;--border-width:0px;border-style:none !important;border-radius:30px;box-shadow:none !important;transition-duration:0.2s;transition-property:background-color,colo..."
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "reservation_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Summer Soul Boutique - West Beach",
+      "place_id": "ChIJNc3JynZDXz4RHokaKJMvs7I",
+      "google_maps_url": "https://maps.google.com/?cid=12876688068661905694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.instagram.com/summersoulcafe/",
+        "source_url": "https://www.instagram.com/summersoulcafe/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=12876688068661905694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=12876688068661905694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.instagram.com/summersoulcafe/",
+          "source_url": "https://www.instagram.com/summersoulcafe/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "place_id": "ChIJk1GdBdNpXz4RnZlaoZa6Bns",
+      "google_maps_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.instagram.com/brewsdxb",
+        "source_url": "http://www.instagram.com/brewsdxb",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.instagram.com/brewsdxb",
+          "source_url": "http://www.instagram.com/brewsdxb",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "place_id": "ChIJQboZtNhfXz4RFvKQyydmFDg",
+      "google_maps_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://roasterscoffee.ae/",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/roasterscoffee_dxb/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.85,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://m.facebook.com/100083362985889/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://roasterscoffee.ae/#menu",
+        "label": "Menu",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://wa.me/971585114777",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://roasterscoffee.ae/",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/#menu",
+          "label": "Menu",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://wa.me/971585114777",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf",
+          "label": "Show Me",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Show Me https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/roasterscoffee_dxb/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/100083362985889/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/",
+          "label": "Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "place_id": "ChIJhU5HmbdrXz4R3BN2VNh367A",
+      "google_maps_url": "https://maps.google.com/?cid=12748414941215986652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://instagram.com/risendubai/",
+        "label": "",
+        "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.85,
+        "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery https://instagram.com/risendubai/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/risendxb/",
+        "label": "",
+        "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.8,
+        "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery https://www.facebook.com/risendxb/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://risendubai.com/product-category/catering-menu/",
+        "label": "Catering",
+        "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.8,
+        "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery Catering https://risendubai.com/product-category/catering-menu/"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering.",
+        "label": "WhatsApp Chat Button",
+        "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.8,
+        "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery WhatsApp Chat Button https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=12748414941215986652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=12748414941215986652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://risendubai.com/product-category/catering-menu/",
+          "label": "Catering",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery Catering https://risendubai.com/product-category/catering-menu/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://risendubai.com/wp-content/uploads/2023/03/Risen_A-la-Carte_Menu_090426-1.pdf",
+          "label": "Food Menu",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery Food Menu https://risendubai.com/wp-content/uploads/2023/03/Risen_A-la-Carte_Menu_090426-1.pdf"
+        },
+        {
+          "kind": "menu",
+          "url": "https://risendubai.com/wp-content/uploads/2024/11/Risen_Beverages-Menu_141025.pdf",
+          "label": "Beverages Menu",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery Beverages Menu https://risendubai.com/wp-content/uploads/2024/11/Risen_Beverages-Menu_141025.pdf"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/risendxb/",
+          "label": "",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery https://www.facebook.com/risendxb/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://instagram.com/risendubai/",
+          "label": "",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.85,
+          "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery https://instagram.com/risendubai/"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering.",
+          "label": "WhatsApp Chat Button",
+          "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Palm Jumeirah, Dubai | Risen Café & Artisanal Bakery WhatsApp Chat Button https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering."
+        }
+      ],
+      "source_confidence": 0.95,
+      "missing_fields": [
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "place_id": "ChIJzyz4ZHhpXz4RG2CLve4U-rU",
+      "google_maps_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "source_url": "https://risendubai.com/location/business-bay?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://instagram.com/risendubai/",
+        "label": "",
+        "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.85,
+        "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery https://instagram.com/risendubai/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/risendxb/",
+        "label": "",
+        "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.8,
+        "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery https://www.facebook.com/risendxb/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://risendubai.com/product-category/catering-menu/",
+        "label": "Catering",
+        "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.8,
+        "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery Catering https://risendubai.com/product-category/catering-menu/"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering.",
+        "label": "WhatsApp Chat Button",
+        "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "confidence": 0.8,
+        "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery WhatsApp Chat Button https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "source_url": "https://risendubai.com/location/business-bay?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://risendubai.com/product-category/catering-menu/",
+          "label": "Catering",
+          "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery Catering https://risendubai.com/product-category/catering-menu/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://risendubai.com/wp-content/uploads/2024/11/Risen_Grab-Go_Sandwich_Menu_180925.pdf",
+          "label": "Grab & Go Menu",
+          "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery Grab & Go Menu https://risendubai.com/wp-content/uploads/2024/11/Risen_Grab-Go_Sandwich_Menu_180925.pdf"
+        },
+        {
+          "kind": "menu",
+          "url": "https://risendubai.com/wp-content/uploads/2024/11/Risen_Grab-Go_Beverages-Menu_201025.pdf",
+          "label": "Beverages Menu",
+          "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery Beverages Menu https://risendubai.com/wp-content/uploads/2024/11/Risen_Grab-Go_Beverages-Menu_201025.pdf"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/risendxb/",
+          "label": "",
+          "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery https://www.facebook.com/risendxb/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://instagram.com/risendubai/",
+          "label": "",
+          "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.85,
+          "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery https://instagram.com/risendubai/"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering.",
+          "label": "WhatsApp Chat Button",
+          "source_url": "https://risendubai.com/location/business-bay/?utm_source=listings&utm_medium=organic&utm_content=ws",
+          "confidence": 0.8,
+          "evidence_text": "Café in Business Bay, Dubai | Risen Café & Artisanal Bakery WhatsApp Chat Button https://api.whatsapp.com/send?phone=971521660792&text=Hi+Risen+Caf%C3%A9+%26+Artisanal+Bakery%2C+I+would+like+to+know+more+about+Risen+Catering."
+        }
+      ],
+      "source_confidence": 0.95,
+      "missing_fields": [
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "place_id": "ChIJfaoS6OlDXz4RnTwOXA60M6I",
+      "google_maps_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://arabica.ae/",
+        "source_url": "https://www.arabicacoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/p/DZNQ5MrDJwx/",
+        "label": "Looking for a quick lunch break? Whether you need",
+        "source_url": "https://arabica.ae/",
+        "confidence": 0.85,
+        "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Looking for a quick lunch break? Whether you need https://www.instagram.com/p/DZNQ5MrDJwx/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/Arabica.UAE/",
+        "label": "Facebook-f",
+        "source_url": "https://arabica.ae/",
+        "confidence": 0.8,
+        "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Facebook-f https://www.facebook.com/Arabica.UAE/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://arabica.ae/menu/",
+        "label": "Our Menu",
+        "source_url": "https://arabica.ae/",
+        "confidence": 0.8,
+        "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Our Menu https://arabica.ae/menu/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://arabica.ae/contact/",
+          "label": "Contact",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.7,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Contact https://arabica.ae/contact/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://arabica.ae/",
+          "source_url": "https://www.arabicacoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://arabica.ae/menu/",
+          "label": "Our Menu",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.8,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Our Menu https://arabica.ae/menu/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://arabica.ae/contact/",
+          "label": "Contact",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.7,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Contact https://arabica.ae/contact/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DZNQ5MrDJwx/",
+          "label": "Looking for a quick lunch break? Whether you need",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Looking for a quick lunch break? Whether you need https://www.instagram.com/p/DZNQ5MrDJwx/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DZH2wGhjDc6/",
+          "label": "Introducing Canelé, a French classic, crafted with",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Introducing Canelé, a French classic, crafted with https://www.instagram.com/p/DZH2wGhjDc6/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DZCaKjosfud/",
+          "label": "You walk in for a coffee, but stay for the moment.",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience You walk in for a coffee, but stay for the moment. https://www.instagram.com/reel/DZCaKjosfud/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DY1Mmfls7Jg/",
+          "label": "Eid Al Adha Mubarak from all of us at % Arabica. W",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Eid Al Adha Mubarak from all of us at % Arabica. W https://www.instagram.com/p/DY1Mmfls7Jg/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DYzaTS0DMvq/",
+          "label": "One box, four obsessions Hazelnut Chocolate, Salte",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience One box, four obsessions Hazelnut Chocolate, Salte https://www.instagram.com/p/DYzaTS0DMvq/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DYw5zoiDC6P/",
+          "label": "Because the best gifts come in chocolate. Thoughtf",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Because the best gifts come in chocolate. Thoughtf https://www.instagram.com/p/DYw5zoiDC6P/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DYmlWQhs9GA/",
+          "label": "Coffee worth savoring. Welcome to our new % Arabic",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Coffee worth savoring. Welcome to our new % Arabic https://www.instagram.com/reel/DYmlWQhs9GA/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DYgt9yjMkW0/",
+          "label": "White chocolate, espresso, milk. Made cold for the",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience White chocolate, espresso, milk. Made cold for the https://www.instagram.com/reel/DYgt9yjMkW0/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DYXBE3fjGgQ/",
+          "label": "The City Walk stroll calls for a pause, preferably",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience The City Walk stroll calls for a pause, preferably https://www.instagram.com/p/DYXBE3fjGgQ/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DYRzk_OMZKj/",
+          "label": "We know matcha for its benefits but that doesn’t m",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience We know matcha for its benefits but that doesn’t m https://www.instagram.com/reel/DYRzk_OMZKj/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DX6qCH4MPK_/",
+          "label": "Make your way to Hudayriyat and let % Arabica be p",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Make your way to Hudayriyat and let % Arabica be p https://www.instagram.com/reel/DX6qCH4MPK_/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DXt_U9aDN0r/",
+          "label": "We’ve officially entered the hottest season of the",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience We’ve officially entered the hottest season of the https://www.instagram.com/reel/DXt_U9aDN0r/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DXZMXqCDOMU/",
+          "label": "Every cup at % Arabica begins long before it reach",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Every cup at % Arabica begins long before it reach https://www.instagram.com/p/DXZMXqCDOMU/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DXWhGuBseVj/",
+          "label": "Made for every moment, every destination and every",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Made for every moment, every destination and every https://www.instagram.com/reel/DXWhGuBseVj/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/arabica.uae/",
+          "label": "arabica.uae",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience arabica.uae https://www.instagram.com/arabica.uae/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/Arabica.UAE/",
+          "label": "Facebook-f",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.8,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Facebook-f https://www.facebook.com/Arabica.UAE/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "place_id": "ChIJY4w1meRDXz4RGC3bxG2Lzfo",
+      "google_maps_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.booncoffee.com/",
+        "source_url": "https://www.booncoffee.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/booncoffee/",
+        "label": "Instagram",
+        "source_url": "https://www.booncoffee.com/",
+        "confidence": 0.85,
+        "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Instagram https://www.instagram.com/booncoffee/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/BoonCoffeeBeans",
+        "label": "Facebook",
+        "source_url": "https://www.booncoffee.com/",
+        "confidence": 0.8,
+        "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Facebook https://www.facebook.com/BoonCoffeeBeans"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.booncoffee.com/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.7,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Contact Us https://www.booncoffee.com/contact-us/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.booncoffee.com/",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/BoonCoffeeBeans",
+          "label": "Facebook",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.8,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Facebook https://www.facebook.com/BoonCoffeeBeans"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/booncoffee/",
+          "label": "Instagram",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.85,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Instagram https://www.instagram.com/booncoffee/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.booncoffee.com/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.7,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Contact Us https://www.booncoffee.com/contact-us/"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "place_id": "ChIJE4472mBDXz4RN-EvO5WYtsQ",
+      "google_maps_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.caffeineroaster.com/",
+        "source_url": "http://www.caffeineroaster.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/caffeinecoffeeroaster/",
+        "label": "caffeinecoffeeroaster",
+        "source_url": "https://www.caffeineroaster.com/",
+        "confidence": 0.85,
+        "evidence_text": "Caffeine Coffee Roaster | Kahve Çeşitlerimiz caffeinecoffeeroaster https://www.instagram.com/caffeinecoffeeroaster/"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.caffeineroaster.com/blog",
+          "label": "Blog",
+          "source_url": "https://www.caffeineroaster.com/",
+          "confidence": 0.65,
+          "evidence_text": "Caffeine Coffee Roaster | Kahve Çeşitlerimiz Blog https://www.caffeineroaster.com/blog"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.caffeineroaster.com/",
+          "source_url": "http://www.caffeineroaster.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/caffeinecoffeeroaster/",
+          "label": "caffeinecoffeeroaster",
+          "source_url": "https://www.caffeineroaster.com/",
+          "confidence": 0.85,
+          "evidence_text": "Caffeine Coffee Roaster | Kahve Çeşitlerimiz caffeinecoffeeroaster https://www.instagram.com/caffeinecoffeeroaster/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.caffeineroaster.com/blog",
+          "label": "Blog",
+          "source_url": "https://www.caffeineroaster.com/",
+          "confidence": 0.65,
+          "evidence_text": "Caffeine Coffee Roaster | Kahve Çeşitlerimiz Blog https://www.caffeineroaster.com/blog"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "place_id": "ChIJY1S67ZlrXz4RjgYIKAZP5n4",
+      "google_maps_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.instagram.com/moycafeuae?utm_medium=copy_link",
+        "source_url": "https://instagram.com/moycafeuae?utm_medium=copy_link",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.instagram.com/moycafeuae?utm_medium=copy_link",
+          "source_url": "https://instagram.com/moycafeuae?utm_medium=copy_link",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "place_id": "ChIJ30cOMQBpXz4RiIqnBGaUbFs",
+      "google_maps_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://roasterscoffee.ae/",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/roasterscoffee_dxb/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.85,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://m.facebook.com/100083362985889/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://roasterscoffee.ae/#menu",
+        "label": "Menu",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://wa.me/971585114777",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://roasterscoffee.ae/",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/#menu",
+          "label": "Menu",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://wa.me/971585114777",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf",
+          "label": "Show Me",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Show Me https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/roasterscoffee_dxb/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/100083362985889/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/",
+          "label": "Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "place_id": "ChIJvWbvU58TXz4Rs4-EIP7bOuw",
+      "google_maps_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.thelost.ae/",
+        "source_url": "https://www.thelost.ae/",
+        "confidence": 0.7,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.thelost.ae/",
+          "source_url": "https://www.thelost.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.4,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Manually verify official site or add seed URLs.",
+      "fetch_status": "fetch_failed",
+      "warnings": [
+        "website_fetch_failed: fetch failed"
+      ]
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "place_id": "ChIJp7mkXrlrXz4RaSpIAhwLo5I",
+      "google_maps_url": "https://maps.google.com/?cid=10566301365666589289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.fuzecafe.ae/",
+        "source_url": "http://www.fuzecafe.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/fuzecafedubai/",
+        "label": "",
+        "source_url": "https://www.fuzecafe.ae/",
+        "confidence": 0.85,
+        "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.instagram.com/fuzecafedubai/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/fuzecafedubai/",
+        "label": "",
+        "source_url": "https://www.fuzecafe.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.facebook.com/fuzecafedubai/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-AHC-MENU-A3-1.pdf",
+        "label": "Habtoor City",
+        "source_url": "https://www.fuzecafe.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City Habtoor City https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-AHC-MENU-A3-1.pdf"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.fuzecafe.ae/#tab-footer",
+          "label": "CONTACT US",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City CONTACT US https://www.fuzecafe.ae/#tab-footer"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-JUMEIRAH-169x235-1.pdf",
+          "label": "Jumeirah",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City Jumeirah https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-JUMEIRAH-169x235-1.pdf"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.fuzecafe.ae/blogs/",
+          "label": "BLOG",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City BLOG https://www.fuzecafe.ae/blogs/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=10566301365666589289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=10566301365666589289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.fuzecafe.ae/",
+          "source_url": "http://www.fuzecafe.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-AHC-MENU-A3-1.pdf",
+          "label": "Habtoor City",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City Habtoor City https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-AHC-MENU-A3-1.pdf"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.fuzecafe.ae/wp-content/uploads/2026/04/FUZE-MARINA-BOARD-MENU-4m-x-1.28m-2.pdf",
+          "label": "Dubai Marina",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City Dubai Marina https://www.fuzecafe.ae/wp-content/uploads/2026/04/FUZE-MARINA-BOARD-MENU-4m-x-1.28m-2.pdf"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-JUMEIRAH-169x235-1.pdf",
+          "label": "Jumeirah",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City Jumeirah https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_FUZE-JUMEIRAH-169x235-1.pdf"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_Fuze-Cafe-Polo-la-Carte-Menu.pdf",
+          "label": "Al Habtoor Polo Resort",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City Al Habtoor Polo Resort https://www.fuzecafe.ae/wp-content/uploads/2026/04/compressed_Fuze-Cafe-Polo-la-Carte-Menu.pdf"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.fuzecafe.ae/blogs/",
+          "label": "BLOG",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City BLOG https://www.fuzecafe.ae/blogs/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.fuzecafe.ae/#tab-footer",
+          "label": "CONTACT US",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City CONTACT US https://www.fuzecafe.ae/#tab-footer"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/fuzecafedubai/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.facebook.com/fuzecafedubai/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/fuzecafedubai/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.instagram.com/fuzecafedubai/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/fuzecafemarina",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.facebook.com/fuzecafemarina"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/fuzecafemarina/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.instagram.com/fuzecafemarina/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/fuzecafejumeirah/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.facebook.com/fuzecafejumeirah/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/fuzecafejumeirah/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.instagram.com/fuzecafejumeirah/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/people/Fuze-Cafe-Polo/61584883941616/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.facebook.com/people/Fuze-Cafe-Polo/61584883941616/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/fuzecafepolo/",
+          "label": "",
+          "source_url": "https://www.fuzecafe.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Best Cafe in Dubai | Fuze Cafe Al Habtoor City https://www.instagram.com/fuzecafepolo/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "place_id": "ChIJQ6zxD4xrXz4R7RHttLovnSQ",
+      "google_maps_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.booncoffee.com/",
+        "source_url": "http://www.booncoffee.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/booncoffee/",
+        "label": "Instagram",
+        "source_url": "https://www.booncoffee.com/",
+        "confidence": 0.85,
+        "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Instagram https://www.instagram.com/booncoffee/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/BoonCoffeeBeans",
+        "label": "Facebook",
+        "source_url": "https://www.booncoffee.com/",
+        "confidence": 0.8,
+        "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Facebook https://www.facebook.com/BoonCoffeeBeans"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.booncoffee.com/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.7,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Contact Us https://www.booncoffee.com/contact-us/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.booncoffee.com/",
+          "source_url": "http://www.booncoffee.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/BoonCoffeeBeans",
+          "label": "Facebook",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.8,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Facebook https://www.facebook.com/BoonCoffeeBeans"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/booncoffee/",
+          "label": "Instagram",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.85,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Instagram https://www.instagram.com/booncoffee/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.booncoffee.com/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://www.booncoffee.com/",
+          "confidence": 0.7,
+          "evidence_text": "Boon&#039;s &#8211; Speciality Coffee Roaster Contact Us https://www.booncoffee.com/contact-us/"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "place_id": "ChIJU_1y5pBrXz4R8Ukftad3mL8",
+      "google_maps_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://arabica.ae/",
+        "source_url": "https://www.arabicacoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/p/DZNQ5MrDJwx/",
+        "label": "Looking for a quick lunch break? Whether you need",
+        "source_url": "https://arabica.ae/",
+        "confidence": 0.85,
+        "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Looking for a quick lunch break? Whether you need https://www.instagram.com/p/DZNQ5MrDJwx/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/Arabica.UAE/",
+        "label": "Facebook-f",
+        "source_url": "https://arabica.ae/",
+        "confidence": 0.8,
+        "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Facebook-f https://www.facebook.com/Arabica.UAE/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://arabica.ae/menu/",
+        "label": "Our Menu",
+        "source_url": "https://arabica.ae/",
+        "confidence": 0.8,
+        "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Our Menu https://arabica.ae/menu/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://arabica.ae/contact/",
+          "label": "Contact",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.7,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Contact https://arabica.ae/contact/"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://arabica.ae/",
+          "source_url": "https://www.arabicacoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://arabica.ae/menu/",
+          "label": "Our Menu",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.8,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Our Menu https://arabica.ae/menu/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://arabica.ae/contact/",
+          "label": "Contact",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.7,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Contact https://arabica.ae/contact/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DZNQ5MrDJwx/",
+          "label": "Looking for a quick lunch break? Whether you need",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Looking for a quick lunch break? Whether you need https://www.instagram.com/p/DZNQ5MrDJwx/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DZH2wGhjDc6/",
+          "label": "Introducing Canelé, a French classic, crafted with",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Introducing Canelé, a French classic, crafted with https://www.instagram.com/p/DZH2wGhjDc6/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DZCaKjosfud/",
+          "label": "You walk in for a coffee, but stay for the moment.",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience You walk in for a coffee, but stay for the moment. https://www.instagram.com/reel/DZCaKjosfud/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DY1Mmfls7Jg/",
+          "label": "Eid Al Adha Mubarak from all of us at % Arabica. W",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Eid Al Adha Mubarak from all of us at % Arabica. W https://www.instagram.com/p/DY1Mmfls7Jg/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DYzaTS0DMvq/",
+          "label": "One box, four obsessions Hazelnut Chocolate, Salte",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience One box, four obsessions Hazelnut Chocolate, Salte https://www.instagram.com/p/DYzaTS0DMvq/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DYw5zoiDC6P/",
+          "label": "Because the best gifts come in chocolate. Thoughtf",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Because the best gifts come in chocolate. Thoughtf https://www.instagram.com/p/DYw5zoiDC6P/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DYmlWQhs9GA/",
+          "label": "Coffee worth savoring. Welcome to our new % Arabic",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Coffee worth savoring. Welcome to our new % Arabic https://www.instagram.com/reel/DYmlWQhs9GA/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DYgt9yjMkW0/",
+          "label": "White chocolate, espresso, milk. Made cold for the",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience White chocolate, espresso, milk. Made cold for the https://www.instagram.com/reel/DYgt9yjMkW0/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DYXBE3fjGgQ/",
+          "label": "The City Walk stroll calls for a pause, preferably",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience The City Walk stroll calls for a pause, preferably https://www.instagram.com/p/DYXBE3fjGgQ/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DYRzk_OMZKj/",
+          "label": "We know matcha for its benefits but that doesn’t m",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience We know matcha for its benefits but that doesn’t m https://www.instagram.com/reel/DYRzk_OMZKj/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DX6qCH4MPK_/",
+          "label": "Make your way to Hudayriyat and let % Arabica be p",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Make your way to Hudayriyat and let % Arabica be p https://www.instagram.com/reel/DX6qCH4MPK_/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DXt_U9aDN0r/",
+          "label": "We’ve officially entered the hottest season of the",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience We’ve officially entered the hottest season of the https://www.instagram.com/reel/DXt_U9aDN0r/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/p/DXZMXqCDOMU/",
+          "label": "Every cup at % Arabica begins long before it reach",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Every cup at % Arabica begins long before it reach https://www.instagram.com/p/DXZMXqCDOMU/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/reel/DXWhGuBseVj/",
+          "label": "Made for every moment, every destination and every",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Made for every moment, every destination and every https://www.instagram.com/reel/DXWhGuBseVj/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/arabica.uae/",
+          "label": "arabica.uae",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.85,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience arabica.uae https://www.instagram.com/arabica.uae/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/Arabica.UAE/",
+          "label": "Facebook-f",
+          "source_url": "https://arabica.ae/",
+          "confidence": 0.8,
+          "evidence_text": "% ARABICA UAE - Dubai’s Favorite Specialty Coffee Experience Facebook-f https://www.facebook.com/Arabica.UAE/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Sobha Hartland",
+      "place_id": "ChIJQ0kMtYtpXz4RxRv5SxYMMZw",
+      "google_maps_url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://roasterscoffee.ae/",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/roasterscoffee_dxb/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.85,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://m.facebook.com/100083362985889/",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://roasterscoffee.ae/#menu",
+        "label": "Menu",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+      },
+      "whatsapp_candidate": {
+        "kind": "whatsapp",
+        "url": "https://wa.me/971585114777",
+        "label": "",
+        "source_url": "https://roasterscoffee.ae/",
+        "confidence": 0.8,
+        "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://roasterscoffee.ae/",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://roasterscoffee.ae/#contact",
+          "label": "Contacts",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.7,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Contacts /#contact"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/#menu",
+          "label": "Menu",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Menu /#menu"
+        },
+        {
+          "kind": "whatsapp",
+          "url": "https://wa.me/971585114777",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://wa.me/971585114777"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf",
+          "label": "Show Me",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Show Me https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/Website-menu-new.pdf"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/roasterscoffee_dxb/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.85,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://www.instagram.com/roasterscoffee_dxb/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/100083362985889/",
+          "label": "",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai https://m.facebook.com/100083362985889/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/",
+          "label": "Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.8,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai Collagen Shots at Roasters: A New Wellness Ritual Roasters continues to expand its menu beyond coffee, introducing collagen... read more https://roasterscoffee.ae/2026/03/19/collagen-shots-at-roasters-a-new-wellness-ritual/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://roasterscoffee.ae/blog/",
+          "label": "View More",
+          "source_url": "https://roasterscoffee.ae/",
+          "confidence": 0.65,
+          "evidence_text": "Roasters Specialty Coffee House | Dubai View More https://roasterscoffee.ae/blog/"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "place_id": "ChIJh_3J4UNDXz4Rk_Q7lARKhYY",
+      "google_maps_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://orescafe.com/",
+        "source_url": "http://orescafe.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/ores.uae",
+        "label": "",
+        "source_url": "https://orescafe.com/",
+        "confidence": 0.85,
+        "evidence_text": "Home 05 - Ores Cafe https://www.instagram.com/ores.uae"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://orescafe.com/online-reservation/",
+        "label": "Online Reservation",
+        "source_url": "https://orescafe.com/",
+        "confidence": 0.8,
+        "evidence_text": "Home 05 - Ores Cafe Online Reservation https://orescafe.com/online-reservation/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://app.qlub.io/qr/ae/ores-cafe-al-wasl/Menu/Menu/_/ab249e09bb/qsr/EB3vq?lang=en&source=landingPage&qsr=dm",
+        "label": "Our Menu",
+        "source_url": "https://orescafe.com/",
+        "confidence": 0.8,
+        "evidence_text": "Home 05 - Ores Cafe Our Menu https://app.qlub.io/qr/ae/ores-cafe-al-wasl/Menu/Menu/_/ab249e09bb/qsr/EB3vq?lang=en&source=landingPage&qsr=dm"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://orescafe.com/",
+          "source_url": "http://orescafe.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://orescafe.com/online-reservation/",
+          "label": "Online Reservation",
+          "source_url": "https://orescafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Home 05 - Ores Cafe Online Reservation https://orescafe.com/online-reservation/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://app.qlub.io/qr/ae/ores-cafe-al-wasl/Menu/Menu/_/ab249e09bb/qsr/EB3vq?lang=en&source=landingPage&qsr=dm",
+          "label": "Our Menu",
+          "source_url": "https://orescafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Home 05 - Ores Cafe Our Menu https://app.qlub.io/qr/ae/ores-cafe-al-wasl/Menu/Menu/_/ab249e09bb/qsr/EB3vq?lang=en&source=landingPage&qsr=dm"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/ores.uae",
+          "label": "",
+          "source_url": "https://orescafe.com/",
+          "confidence": 0.85,
+          "evidence_text": "Home 05 - Ores Cafe https://www.instagram.com/ores.uae"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "place_id": "ChIJfc-CWUtpXz4R5NFEr1RVyJY",
+      "google_maps_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.kimicafe.com/",
+        "source_url": "https://www.kimicafe.com/",
+        "confidence": 0.7,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.kimicafe.com/",
+          "source_url": "https://www.kimicafe.com/",
+          "confidence": 0.7,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.4,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Manually verify official site or add seed URLs.",
+      "fetch_status": "fetch_failed",
+      "warnings": [
+        "website_fetch_failed: fetch failed"
+      ]
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "place_id": "ChIJqYALXjBoXz4R90--rnBoPBY",
+      "google_maps_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.circle-cafe.com/",
+        "source_url": "https://www.circle-cafe.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/circlecafe.ae/",
+        "label": "",
+        "source_url": "https://www.circle-cafe.com/",
+        "confidence": 0.85,
+        "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai https://www.instagram.com/circlecafe.ae/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/Circleuae",
+        "label": "",
+        "source_url": "https://www.circle-cafe.com/",
+        "confidence": 0.8,
+        "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai https://www.facebook.com/Circleuae"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://pay.kitopi.com/menu?outletId=d846085a-d7ef-44e9-9697-f3752f14c525&#038;brandId=242d0854-6203-4226-99cd-562c53240319&#038;origin=/",
+        "label": "Menu",
+        "source_url": "https://www.circle-cafe.com/",
+        "confidence": 0.8,
+        "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai Menu https://pay.kitopi.com/menu?outletId=d846085a-d7ef-44e9-9697-f3752f14c525&#038;brandId=242d0854-6203-4226-99cd-562c53240319&#038;origin=/"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.circle-cafe.com/",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://pay.kitopi.com/menu?outletId=d846085a-d7ef-44e9-9697-f3752f14c525&#038;brandId=242d0854-6203-4226-99cd-562c53240319&#038;origin=/",
+          "label": "Menu",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai Menu https://pay.kitopi.com/menu?outletId=d846085a-d7ef-44e9-9697-f3752f14c525&#038;brandId=242d0854-6203-4226-99cd-562c53240319&#038;origin=/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://cdn.kitopiconnect.com/menus/5dbf967f-b0a6-4d6b-a89a-5af0b9e1dad2.pdf",
+          "label": "AYCE Menu",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai AYCE Menu https://cdn.kitopiconnect.com/menus/5dbf967f-b0a6-4d6b-a89a-5af0b9e1dad2.pdf"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/Circleuae",
+          "label": "",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai https://www.facebook.com/Circleuae"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/circlecafe.ae/",
+          "label": "",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.85,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai https://www.instagram.com/circlecafe.ae/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.radyes.co/circle_cafe",
+          "label": "Order from Circle Menu",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai Order from Circle Menu https://order.radyes.co/circle_cafe"
+        },
+        {
+          "kind": "menu",
+          "url": "https://deliveroo.ae/menu/dubai/al-quoz-3/turkey-by-circle-cafe-marketplace?day=today&#038;geohash=thrr3squys8d&#038;time=ASAP",
+          "label": "Order from Supper Club Now",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai Order from Supper Club Now https://deliveroo.ae/menu/dubai/al-quoz-3/turkey-by-circle-cafe-marketplace?day=today&#038;geohash=thrr3squys8d&#038;time=ASAP"
+        },
+        {
+          "kind": "menu",
+          "url": "https://deliveroo.ae/menu/dubai/al-quoz-3/bakers-table-by-circle-cafe-aq-marketplace?day=today&#038;geohash=thrr3squys8d&#038;time=ASAP",
+          "label": "Order from Bakers Table Now",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai Order from Bakers Table Now https://deliveroo.ae/menu/dubai/al-quoz-3/bakers-table-by-circle-cafe-aq-marketplace?day=today&#038;geohash=thrr3squys8d&#038;time=ASAP"
+        },
+        {
+          "kind": "menu",
+          "url": "https://pay.kitopi.com/en/menu?outletId=d846085a-d7ef-44e9-9697-f3752f14c525&#038;brandId=242d0854-6203-4226-99cd-562c53240319&#038;origin=/",
+          "label": "View menu",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai View menu https://pay.kitopi.com/en/menu?outletId=d846085a-d7ef-44e9-9697-f3752f14c525&#038;brandId=242d0854-6203-4226-99cd-562c53240319&#038;origin=/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com//circlecafe.ae/",
+          "label": "",
+          "source_url": "https://www.circle-cafe.com/",
+          "confidence": 0.85,
+          "evidence_text": "Circle Café | Dine In & Order Online for Great Breakfast in Dubai https://www.instagram.com//circlecafe.ae/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    }
+  ]
+}

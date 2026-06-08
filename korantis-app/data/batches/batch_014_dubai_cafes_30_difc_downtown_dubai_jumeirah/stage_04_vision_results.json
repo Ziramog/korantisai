@@ -1,0 +1,3214 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T14:56:27.343Z",
+  "m3_called": true,
+  "model_used": "MiniMax-M3",
+  "results": [
+    {
+      "venue_name": "Have Coffee - DIFC",
+      "resolved_image_url": "https://images.squarespace-cdn.com/content/v1/61a881e4f23025786b03b6c9/d0a569e0-d7dd-4c9f-b7ae-20b63fddcfc9/Interior.jpeg?format=2500w",
+      "source_url": "https://www.have-coffee.ae/",
+      "source_type": "official_website",
+      "width": 2500,
+      "height": 3125,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Bright, spacious cafe interior with white couches, marble tables, wishbone chairs, stainless steel bar, large hanging 'HAVE' sign, and visible coffee equipment under exposed industrial ceiling."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "resolved_image_url": "https://risendubai.com/wp-content/uploads/2022/08/gallery-locations-17.jpg",
+      "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+      "source_type": "official_website",
+      "width": 1200,
+      "height": 611,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit bakery/café interior showing a full service counter with pastry display, espresso machine, decorative pendant lighting, arched windows with menu boards, and slatted wood facade under a coffered ceiling."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "resolved_image_url": "https://risendubai.com/wp-content/uploads/2022/08/gallery-locations-16.jpg",
+      "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+      "source_type": "official_website",
+      "width": 1200,
+      "height": 471,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "View from outside looking in through a large open storefront frame, showing wooden planters with branding, signage on planters, and a glimpse of interior seating. Dominant elements are the entrance facade and brand planters rather than the experiential space itself."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kulture House Dubai",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPiewuuDZxcUa9aquNN-NdSB_34v-Q07lvq2JwcxJThOmS0_3ClcxH4lrLLJxnvQS0KtL8NdrKKyVvRxJZSzZJ5V8s7g4H8OMXKu2ohlz4riJzygtMBtAqA9dSoZo_7dkjyETVjxx6C1gmnHlsesZ7oyA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4982672187648449585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "A blue ceramic coffee cup with latte art and saucer dominates the foreground on a wooden table. Background is heavily blurred showing an indoor venue with people and signage, but the cup is the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWFWNQCnKnlSOH6JNe1XRU3LUUbgqBT0bES8V92C8OUwtXsHCSeyf6a2g_SHp3U5fy0AsIOMMZ4DRHVztlNVyR4JnFrfJGJoLSSAAGPv92NKjeJ8H55upbi7rH_SUCEMg1O161BXl8wDfIGA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 901,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Well-lit cafe interior with visible seating, banquette, table, lush green plants, arched ceiling, and decorative fabric canopy; shows a clear guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMzALHsau6Lwun7TT71NbVP0sSv4EKRS4CSYE-u5i-_XMyouiboqI2EJ-4DgRv5A7ivg8uPT7RQ6bfavPgBUCDa7lCgLdOpMiVZhBIpaWpHnA21rLl9-3LXhyFFcA9f2x1uaJ609irpfU27R_bsEjog8Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Long interior corridor of a restaurant with abundant plants, bench seating, dining tables, exposed industrial ceiling, and warm ambient lighting."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPn8zQHM_dMYe3rEK520QOM8gpSTOwzw-xEhd3uTTf_EIckpw93lxlcx1pvJrX3xcDjGJ-JkFVC_ka1T_G643EdAOgOfnzu1FX4WgAaUEmMcmNdUF9bBgsHZeNSVdfMOwBk3yf0LWSsSsvKxi9AV5PRmA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Interior view dominated by a decorative olive tree with painted floor roots, flanked by fluted concrete columns and a small bar cart in the background; industrial exposed ceiling, atmospheric moody lighting, lacks a clear focal seating or dining area."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNpsnpwSnmNx22tAOa17B0Lgg4NBHSPTAGg7CXKPGQtqF9-YVZLfuAIPiSK6VDLXP4uxWLbt4qjgKWqQo1uCHmCV80nx5UUzGgZPQN8si7B39YCKHLEVKxakReKMJD_gbxvMTcKnc6cmxNSrE6moR_Xtg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1068,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "A single cocktail in a highball glass with a dried citrus wheel is the clear subject, placed on a wooden table edge with orange leather banquette seating softly blurred in the background. The drink dominates the frame, making this primarily a product/food shot rather than a space-defining hero."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Orijins",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMtBX4ncvzEKafz9VScPUtihd4HOe3U3JUPhyrJ70zqeiGdo6NaiXP2B3qzVh6Cl12UzsLOt61NPvOD8QquGXy0k_PC0ZpnHDpzsq182LgIoRZ7Wt73a0G0XlF96YCDBizJmss723fYOgnvhE4=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Storefront facade with 'ORIJINS' sign, glass double doors, and minimal exterior seating. Shows building entrance and exterior, not a guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Orijins",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP074hsE0PJIzdOO__zV0rR9GWF6DNKLD57UCG0awYhdd1MZsBpgGIfhkn_udeOnAIBIA8nCOjTICpu4qHNH1R2J1YazICn2w1dBVrm_O51aU7N7QyDAHPZ4adZRTRLxU9_1OUcvtpYTg8ecL0=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1143,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Close-up of a single brownie on a plate and a small cup of espresso on a marble surface; no venue space, seating, or atmosphere is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Orijins",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNtwE1IXbThv94HUuDfO2C-DTC5TMJdBL3RWUc8tMPkszwzzDgCy7L4aEp4aQ0zBsxIJ4NAT_ruSZEJFwjzv3thCptjzP8kf6RXpQ98npUyxAfp3q-WQeXXtKlGTVCJW7D3hBDL65vesGxXhA2URiBjjQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Minimalist café interior with vaulted white ceiling, concrete and marble pastry display tables with glass cloches, espresso bar in background, and illuminated menu board — clean, bright, and architecturally distinctive."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Orijins",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPNb-50bB-uJw7QessfQqK3iVzkYZDN64r954DvX7-ZFjOoYRB1o5ibugINRB0k71K0iWJJ1UJ0q9s1e8fikeCrsEK7yWu8BboEH650XZSwM_ySEcQUHnLr8Kccwo3P39EmN0QiRVreKj7gOUI=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up focus on pastries under glass cloches on a stone counter; the background interior is heavily blurred and out of focus, making this a product/dominant food shot rather than a clear venue hero image."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Summer Soul Boutique - West Beach",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxdmBGd89HbLognZHzYHt6os80oVV2-S4ZRSBj8tDqnlE6viM2fiwdb0rQY5c8deIRLlIbt14kwuERfZPWAFYRuJmVsU8Xf_21oGVs-xfa7LILSLw4D2GAcq7iYXFDs7u85agYBHUPh7LimBo=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12876688068661905694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 900,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Brightly lit bakery/cafe interior with herringbone tile wall, wooden shelves with ceramics, and a glass display case showcasing pastries, croissants, and cakes — clear spatial and atmospheric hero shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJ45ZGowY0xrdE4D1S6jE8J7oRJmewTmDTWf9a-qwyZ5Zmgz6EhsxceKfX28tTnmIygOPIp_LYs_HYQnZe078qmkzmfLBcPMXPeSXnIg_YWU_xZter909Uj6SqjcSC7vx_Xlx7-7XzvElgkQ=s4800-w1600-h1135",
+      "source_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 901,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Bright interior with white brick wall, large mural of a woman on a bicycle, tall potted ficus trees, communal wooden tables, pendant lighting, and seated patrons visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMljSw2p_tSM2qsx3vk7_aJMf5MLZuLOSYsTATneoEwb-fl0wMyETUJysYh_9d3IoSxnXGLY-jtdr9Ki1ttle7JrKvwWeFP219HIpgcMHhX2jmEgalDpNjRp0MEXfKFMJOuNTl0HRoWzv-Z9A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1524,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of an açaí bowl with granola, blueberries, strawberries, and banana slices on a tiled surface. No venue space, seating, or architectural features are visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN-zJ-kEcAQ6j2odx47-qK81tBMkIzKKOD_z2WNk7gDd56It1NQQPjNT8i-Gzuy848zN-zv0orLBu9ipXquopRCCXMQZzdV-qau9mLEd4qCvHOebNdNoX2fnHGKFiljnuErlIMSHbWlBgH2ew=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Top-down close-up of a plate with baked beans on toast, fried egg, and a small slaw/salad. Only a hand, plate edge, and blurred wooden table visible — food product shot, no venue space shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWMyrzXIiEdyVlgTwnLJB7GyzjPbW_C82JjhmmCmeLt9S5Lo4G08wPNBF_jVzD-hom23RlXvASpeMs3KV04m4qdhIh5lvY60HDgNIZLmGYvGAjDBf2QNKXeSMGsZf-TytxPyRn7o3O7tY8=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up top-down shot of a sandwich and fries on a wooden board, dominated entirely by food with no visible venue space or atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOQ-2TH49np4-jmYW-4fnzSRnThK6KFsPIDwG7ZmvxVEsdi4TeCnYVpFoqWZqALXUHJOQP4IfhUZDv9whfEiQMuu-EtuFRkfLEWl_x3_hMcK6lBX5ZIirHDYAW2jP5WBnUYDlzjXahy52KtGvr-WdV7tQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12748414941215986652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1250,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a latte with rosetta art in a white cup on a saucer with a spoon, on a wooden table. Only the drink and table surface are visible; no venue space or atmosphere is shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNE3B34TYJy-iD1ikgpYzONx1EFGsdS3kqsnf8AYsV_Kdb3QC4WOR_fyz6VFUn2z6JQTj0ngGKK22B-EFWwUoGT27PIU8z6qWFwJS9Px2DWrIo51CvH-1QFkGi6bXSfZkwIWQsLJRNW-nb-tEcNegup2w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12748414941215986652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a cream-filled pastry and iced drink on a terrazzo table; background interior with arched doorway and neon sign is heavily blurred, making the food/drink the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMTNkKjnm0MtYQHjzGTNgWLsuRPLI6WnaGLOXT-iNtF2pacBD91__uzq7UXQuCYagUzmnDkOochfMUAQ6cKaYvLdg-XCniYgl20nDv8g3Drre8NxpZ5wyVuH_3m9GNaxVuzP5yejEKDEbymyA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "A matcha latte with latte art dominates the frame in a close-up shot; while a wooden table and blurred chairs are visible in the background, the focus and composition are entirely on the drink product."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPTqz0F7rbrTp3vv1i6rLwIOTqWAgH8oKumiQFHarvrvwL4KXg-JN1kSH-0M_6PlEbG8FWVHGN76zq5CBc09OXGHpvk7CnjPEdZk_Qh-QsIpXlermc_9UwvtE6zccSYvsc8Mz-hTN2J7CgBZwZeyrD1A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a glass display case showcasing individually labeled cakes, tarts, and sandwiches; the food items dominate the frame with no clear view of the broader venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNIpZB2oGKgm1sHGN1zhAMjDnfv0TW6CORit1-6PUOh6RvCmS8cMK93sNZ3rreEUf_1QuJNBQEWbiNC1BDA6JdCTImQ8zl9jdxbK8J2esFbueaXe9nMr_hpFrWiLps5h8p7ix3R60HwPYl2uSF3CDO0=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Bright interior with white brick wall, floral wall art, hanging plants, booth seating, tables, and large windows showing tropical outdoor view, conveying a fresh, airy dining atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPdqtJnAWyYjDqf0jJ5-SQlheGpoTR0mvEhVU8cQqKLzhOY3OSXACDpfVZ834pA-f0q0rKB2-RzNRkR0bTfOXPWfk7x4yESg6GQckyYsG9lwzVhjWxldtVYCm4InIK3wlovMzgP5_gktLlJwg=s4800-w1600-h1279",
+      "source_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1249,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Top-down close-up of a blueberry tart and latte on a marble surface with a plant; no venue space or people shown, only food/drink items."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPFwpj10earD-ocA0CUb3zWAM_S4_1yvg5UYdr_RTpylv8tPgiC8uJjEOL-at4RC2f9_JKi71It6tocKU7lD_OPvUsetXkLXQm0uIVr3gziiy6oeJkZFGhUnXUeoc7Df5vNYLdDWJ_7QXtj276k5GLw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Image shows the building facade with polished granite cladding, large glass windows, signage reading '%ARABICA', and a small outdoor seating area with white planters and chairs. Dominated by the exterior storefront/entrance rather than a guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrYxG91KnMCPgD8ZmemvtVCfcHJi7HhMGJIaqeoUxurZdgiyTqq7aHDrN_vNxqTP9J1ALlbjGdgIb5B9xbSSrvGNLS_p-3s8KHFoQnsdS3ie3xncLc9vbuoZytpLW5iXnZTo_HyNOivGrJXjqfU8fJ0w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a branded paper cup with açaí/granola bowl and fresh fruit on a countertop; venue interior is heavily blurred background and not the subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMiLHnBYceWikX58Tx4rNmKoFBRSkgoAhEt3_7kM4Be9LwacMWVfTv-g72FRhgg6dT5MLe8NE9_SZ_ogpU-quUtqV2kg69OI7pAnmU4cyTOJDb8r17_owQWPoMXWwc4SqOXtWbZhdcxQiTsK_w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Bright, modern cafe interior with distinctive curved wood-and-white counter, espresso equipment, mirrored back wall, and minimalist bench seating."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNtHsEprHwhiD6IZRKptLk0eqbj7fmxrs-sG69IFoZE6M5wLQiNNq3SX0ZAr2xHQdtF5Jw7LEcx49fiGeeNnR3SywwS-TvGUXG-WXn33Pun9EckYx3fVLNpubF8rE2_qp-s8w6jDUIvzkh0yn-9FHQBHg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Image is dominated by a hand holding a branded coffee cup in the foreground; the storefront and interior are visible only as a blurred background, making the beverage the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMEC_5NUy-ccpyjVjGcWjX6h8R8sWXm5qwZ-QAaRVB4fAxKamBWYAndxluvkkvujxUpLeiGYHYi0bXpjwKpsARbBz7Lqz4hH8iyRPTZ6TOppbEXGglfzfAYC4GSlCun0M2fVMj8i8CxM7ct5WM1N-5U3w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of two coffee cups and a berry/granola cup on a small white table; the food and drink dominate the frame with only blurred background context."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMMZFfhp4cadu-39Bs5PNS3llP5jJZLTCAma-JUjWhtfXcy68Gto_hOtTXUHWH7WGcHCr16tof9YztKOraIoDTFoOSE8Ocg_OsgflJMeDyJuozkKv-MtoVnzcXsod8YjqD2AKXMg9N-BmZD7EvdSaC=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Spacious modern lounge interior with tiered curved sofas in patterned fabric, large potted plants (fiddle leaf fig, cactus), floor lamps, floor-to-ceiling windows showing daylight, polished floors, and small side tables. Bright, airy, minimalist white palette."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMUZwycN1lK7vpyRJ2DtFUpGTDRzcaR_mtm74zYvEWv7E_RoNp6SMOv-upFmKKs5j_E_1ieyUp3y3UXBPzz-IZgQgZBc3U83l3a5V2gzbdR8e5Ib_qLXPVfflvwBux991YZRmnq3ERL7Eu817QQCvOz=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Wide-angle interior view of a modern % Arabica cafe showing curved lounge seating, a terrazzo bar with espresso equipment, display cases, and retail merchandise in a bright white minimalist design."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMFvj4gPlpmrpaxPZQCz5SH0GTQ2UMgVoabojmkX8a5qtB2qVWprrXTSdKguF1x5gycPTx8dnrb6iWU90vjRxuw1XTEq_g21HLKw16qscc9BgDrJFasB9LUVOvww4jq91bTNHZ0pmIZ9uj17HmxlPU3=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of bakery display case showing breads, pastries, cookies, and brownies on wooden trays with price labels (AED); no space, seating, or venue interior visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPLMca-Te9neMzJmUCB1kI5N9MZljv5EcBvunwfLEEue0HBrEgTURLYVc1gm-El1AhkcD3j8VX_tJXc0MMo6H8WHGlwt6wQSbGFl4gRe4K017mrx4RLThBCiuy6GF2iGEN59B4eVMKKnAdZHI=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Indoor lounge seating area with cushioned armchairs, a round marble table, and large floor-to-ceiling windows opening to an outdoor terrace with wicker chairs, a parasol umbrella, and planters. Natural daylight floods the space, creating a bright, airy atmosphere suitable as a hero image."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSInbfb5Uxi9nq0T1BZxg4A45lk5gUjEwx9MpD0QUAeTTipnTJQar4_0pycAD0YN4orW2VivTaSCM0BpYF2AR7_37jJ6wLLQhZEd0mQ74EsHkPOmLVCZ1lp9ENbywUzaAZnR_buGDzap1AXur617ZD5g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1205,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated dessert with chocolate cake, ice cream, berries, and mint; no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOrOviikWcDmEu2bc5_w-yvjP9lmP2VZE49RPDiRHQ0MbAX0hKhuKhNRQUafXSB3MYRCYgndThGW0PQwQ-4rdPNyJLkXTvCJfiSvkDROwrjKiLGVCEUpUFfSYjBy3HP5l6ElSwXDF5XE-3msGvLvyP7=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Close-up of a small glass cup with latte art (rosetta/heart design) on a white saucer atop a taupe table surface; tight crop with shallow depth of field, no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNn4cevnCkoOCHq2c4cCFVQbZYftgraDBb8XDhGSOKCURFbErf5lJMFJwu-Bs6JgFdOu5ahpu6LN6Y3wFutnj9T2R6x1cE_SY_Se7flCH1ZZP49TVUacKLVfhTrL9J7My9pf2dtvR34foS9-BpmYaI0_A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Foreground dominated by a plated dessert, iced coffee, and matcha latte; the cafe interior with chairs and tables is visible but blurred in the background, making this primarily a food/beverage product shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOexMzLV8n7mmcxSpCVpA3um8dbejvgq7esWjqBG17sdo8_7xPZ8ErbR1TdA_qP1HuusXVMOY7okpKFNXoj9LFNTYUrshY362yqMRh33LDQ7PtqQdBG69bNc4U_DGxGSwS3kZMOm_Uq-8PM17ludW3C=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit cafe interior with clear view of seating arrangement, tables, chairs, rattan pendant lights, neon wall sign, gallery wall, and service counter area, conveying an airy and inviting atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMFcDRfwDMaSY_BzTMAn2cU06Od_upQ8HbmNrTDLGx_dUwNyXW0FPfv5zBtgxL6uVIpZbxeG7uh3FArY27G-EjL3OqKpEi224s7RKcIC2fRG1lEUKO6qyRaya_jg_Ar2z0DFY7vEyG9iGXDsQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear, well-lit restaurant interior showing multiple white marble tables, bentwood chairs, woven pendant lights, framed artwork, service counter, and a refrigerated display — a strong representative hero shot of the dining space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPB3dCFbg1gcDhK5V6UzqXKWIHO0iD48MmS6oWtrOrIESiXpcSkP9gUww0ZnRmbadpCZFor5qznSUFWndCFhgXW-qAjZfl_IojBjqKzWXxdaIGDADAwY9i8DrdytXcREvyRNqiWMz4v0UZBu_f9od3gug=s4800-w1080-h1080",
+      "source_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1080,
+      "height": 1080,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated food item (eggs Benedict-style dish with hollandaise, smoked salmon, avocado, and side salad) on a green plate atop a wooden table. No venue space, seating, or interior visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "resolved_image_url": "https://www.fuzecafe.ae/wp-content/uploads/2022/08/banner-07.jpg",
+      "source_url": "http://www.fuzecafe.ae/",
+      "source_type": "official_website",
+      "width": 1920,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a chia pudding parfait topped with berries held by hands, no venue space visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "resolved_image_url": "https://www.fuzecafe.ae/wp-content/uploads/2022/07/banner-02-3.png",
+      "source_url": "http://www.fuzecafe.ae/",
+      "source_type": "official_website",
+      "width": 1920,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a parfait glass with yogurt, granola, and fresh berries against a dark, blurred background. No venue space, seating, or architectural features visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "resolved_image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAMoAQAAAAAG2cD7AAAAAnRSTlMAAHaTzTgAAADUSURBVHja7cEBDQAAAMKg909tDjegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg3wD4xgAB3A3X5gAAAABJRU5ErkJggg==",
+      "source_url": "https://www.circle-cafe.com/",
+      "source_type": "official_website",
+      "width": 1920,
+      "height": 808,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_unusable",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "unusable",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "low",
+        "atmosphere_signal": "none",
+        "visual_reason": "Solid black image; no visible content, no spatial details, and no atmosphere to interpret."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "resolved_image_url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/hero-bg.png",
+      "source_url": "https://roasterscoffee.ae/",
+      "source_type": "official_website",
+      "width": 3840,
+      "height": 2160,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_logo",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "logo",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Repeating black-and-white graphic pattern of stylized letterforms/symbols, no spatial or photographic content."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "resolved_image_url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/about-parallax-bg.jpg",
+      "source_url": "https://roasterscoffee.ae/",
+      "source_type": "official_website",
+      "width": 4500,
+      "height": 3000,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Extreme close-up macro shot of roasted coffee beans filling the entire frame; no venue space, people, or architectural context visible."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "resolved_image_url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/mission-image.jpg",
+      "source_url": "https://roasterscoffee.ae/",
+      "source_type": "official_website",
+      "width": 3840,
+      "height": 2160,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "A hand holding a paper coffee cup branded 'ROASTERS' against a plain white background. No venue interior or exterior space is visible; only a product shot of a coffee cup."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "resolved_image_url": "https://roasterscoffee.ae/wp-content/themes/generatepress/assets/images/mission-bg.png",
+      "source_url": "https://roasterscoffee.ae/",
+      "source_type": "official_website",
+      "width": 3840,
+      "height": 2160,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_logo",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "logo",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Black-and-white repeating monogram logo pattern with overlapping S and K letters; no venue space, people, or product visible."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "resolved_image_url": "https://www.fuzecafe.ae/wp-content/uploads/2026/03/banner-06.jpg",
+      "source_url": "http://www.fuzecafe.ae/",
+      "source_type": "official_website",
+      "width": 1600,
+      "height": 750,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of liquid being poured into a faceted glass with coffee beans on a wooden surface; focus is entirely on the drink product, no venue space shown."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "resolved_image_url": "https://www.fuzecafe.ae/wp-content/uploads/2026/03/banner-07.jpg",
+      "source_url": "http://www.fuzecafe.ae/",
+      "source_type": "official_website",
+      "width": 1600,
+      "height": 750,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a girl and a Cavalier King Charles Spaniel with a whipped-cream-topped milkshake; product is prominent but faces dominate, no venue space shown."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Drinkit",
+      "resolved_image_url": "https://static.tildacdn.com/tild3963-6131-4266-a665-356237613666/Main.jpg",
+      "source_url": "https://drinkit.io/",
+      "source_type": "official_website",
+      "width": 1257,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Studio shot of a branded cup with beverage on a blue pedestal against a plain light blue background; no venue space visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kulture House Dubai",
+      "resolved_image_url": "https://cdn.shopify.com/s/files/1/0557/2329/4885/files/54730246_555786478250771_3910128115925385216_n_bfd34435-9a61-48f7-950f-05222d0a41e2.jpg?v=1629560450",
+      "source_url": "http://www.kulturehousedubai.com/",
+      "source_type": "official_website",
+      "width": 1182,
+      "height": 1183,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_logo",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "logo",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Black and white geometric mark resembling a stylized letter 'K' on a plain white background; no venue space depicted."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kulture House Dubai",
+      "resolved_image_url": "https://kulturehousedubai.com/cdn/shop/files/Banner-Cafe-Kulture_1500x1_839592ac-2ab2-421c-be60-3526014a1c58_1024x1024.jpg?v=1628681152",
+      "source_url": "http://www.kulturehousedubai.com/",
+      "source_type": "official_website",
+      "width": 1024,
+      "height": 360,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Flat-lay top-down composition showing only food items (acai bowl, fried dish, salad, bowl with beans/chickpeas) and bottled drinks arranged on a white background with the text 'CAFE'. No venue interior, exterior, seating, or architectural space is visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kulture House Dubai",
+      "resolved_image_url": "https://kulturehousedubai.com/cdn/shop/files/Banner-Shop-Kulture_1500x2_2b48e67f-f2ca-4a84-bf22-f3d6de04a674_1024x1024.jpg?v=1628681167",
+      "source_url": "http://www.kulturehousedubai.com/",
+      "source_type": "official_website",
+      "width": 1024,
+      "height": 360,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_decorative",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "decorative",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Collage of multiple product shots (bag, perfume, lamp, vase, jewelry, skincare, model in dress) with no unified venue interior or exterior space shown."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "resolved_image_url": "https://static.wixstatic.com/media/296099_6dfaaa3229ad4ae090417257ed5613fa%7Emv2.png/v1/fit/w_2500,h_1330,al_c/296099_6dfaaa3229ad4ae090417257ed5613fa%7Emv2.png",
+      "source_url": "http://www.caffeineroaster.com/",
+      "source_type": "official_website",
+      "width": 1330,
+      "height": 1330,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_logo",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "logo",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Circular graphic logo featuring a gold horseshoe, star, shamrock, and the text 'Caffeine Coffee Roaster 2015' on a green background. No physical venue or space depicted."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Caju Coffee House",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOExB-EShY1nEHrQqadhJXAOxnuJLP5nP3_26VX9HJMj7hzKEpxJPj0M9HmyaoeGjLi5myk6xiFu4Og-m1v6ODdn-c-yydezZCl82_kAMT-zX_Zgxhrml96vSt9FaVEDVKNQDQ5eWy5M2Yvurpm9Cs0=s4800-w1600-h1365",
+      "source_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1066,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior of a restaurant with banquette seating, wooden tables, rattan chairs, decorative pillows, tropical artwork, and woven pendant lighting creating a warm, inviting atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Caju Coffee House",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO3J1bBZNKv6hV4khtgG1BpTZx_ThgMzn0yrv5wrIW0QgNcf1nZtLJTA73asW7F1yS6NLCVFgE93etew1ONtaoQ3ot417OmY97ITEVVDDPlmf-lOL1uZkHlEYjPmAy8iY3ectzltvOK-92bP1zZ8ky_IQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a plated dish (poached eggs with hollandaise, arugula, and hash) in a ceramic bowl; background shows a blurred wooden chair but the focus is entirely on the food."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Caju Coffee House",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAw1TxyTclyj_2kwuq1zX1LYN5atjglA9XdXWreLC9USCPryelsurqq1CdpjGbNAunKfC3t517A8p0pY738rb0qDwDJ8UNhnaMI9fjxrSR968ks3GN7K4HlOPYtXvBi1nsZlwmQfKMaceiLaXDYxEogQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a wooden serving board with pancakes, waffles, bacon, sausages, French toast, fruit, and small bowls of syrups/sauces. No venue interior, exterior, or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Caju Coffee House",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOta3yKGCiWyHsm8_IpzEbimHqqqeRH9ZkbelcnD2UmmEhEOytHFdnAgKlRJmD0QnLyGfEcveXWhEbioR82cptIw1dxyqflJMXtNGGTT8fnZ3UC-9SSIxMncnqkz0SJXYezSLYoy78h9ysdfCZcRDk08g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a granola bowl with fruit, orange juice, and a beverage menu; dining table and partial seating visible in background but food dominates the frame."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP_ntQptodROwRUyliwyCMr6PHPq-hWWmikv8nRlrLVGa-S-0kiHBPY8iY5die0EI11XV1hLbDfvqwhGCSNg9qQaSQSSf6dSiBImZsqJBXB1q4LD0lix4YupXXNKMpUOj4-Y5UoYGImhSfG3fVq9S2GRQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1067,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior view of a stylish café/coffee bar (MOKHA 1450) featuring a marble counter with ornate arched wooden shelving, pendant lights, espresso machine, and bar taps, with two clearly visible posed subjects."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNSdKOyyB839cK9OLukxsYcx7HqNs9-_fRUoOcnm5b3uay2iuFOdwFKO2sSVJiJkOu1AhWZ9m-mhUun5fB15V6VDcH9k7nFZTHGv8pU2eAkMPUTVCSVlMCxX_gLj-XJJjIA1_HtkKbKaUeQpw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit interior showing a full bar counter with branded back wall (MOKHA 1450), espresso machine, pendant lights, arched shelving, seating, and decorative elements clearly visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPh_Xc75QFc6nWDNvs3os5nHj2WSPV0xiQDahukl5KAinNuknHgxbt4K0neMI5I80U7oGa5ezXAji-ChixrmHv1l885YyB880-KgASToGOV87cmJ0cWpbGQ7E60KwZ42zD9CJI0ZBRhoA08wHY42M9=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a wine glass with a large spherical ice cube and red wine, branded glass, with blurred people and table in background; the drink is the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOvZLydohdMDULv_OWz2ICno4sTy2kFKPfWXl76BkLeLtOkFIGtSnk3psOiTvtieGpK-FYh1j7Hx3SNdEm_-s7Ef3oOKEAOLjUAPf7xNuaBYAn5P0co91PJ9OiKW61-4KVO5xN-c9JiLiXexRXtU9Y-eQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up overhead view of a tray with two latte art coffees in red cups, a saucer, napkin holder, and pastries; interior lobby/café space visible but secondary to the food/drink subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMKQBM3P888DWwwLYRWf3wf-XFMYgPFUNfM-L0INiF8KG0ynzfTvsrhvIHb1SSBMYQLXi59z4fr5a-PsU0xFO3_vSV_rSVjZYDyi4Dh1NyQkCKtweaD_zSENGre9plNDMPTHFTKP-a93nlThnjDXkVM2w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1067,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Well-lit modern lounge/restaurant interior with marble tables, upholstered seating, large potted palms, herringbone wood floors, and vertical wood slat dividers; no people visible; sharp focus and good exposure."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPudoRJgzZlscf1ViRXs3K-K_a4XYU1N6YrkfeBEUTCVNMfn28RVSuwcaeSkfaN8voJ4Vny3rNRxpIPlTVFo0TEGpNOi6q6Lx104weTP6t7r72jl-QlYnVzP3UAFIKuQlV5TO_8gcbUNOXKOLQOaRQm=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior view of a restaurant/lounge with prominent 'ROASTERS' signage, stylish curved LED lighting, green velvet chairs, wooden tables, marble flooring, and decorative plants. Warm, inviting atmosphere with modern design elements."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOXbgQ6dn-LKjwLuwOZFRBtG6AqSKYfoLXoxDblh9lVsL4pwsLQPi-5SXv87Z9b1NsCvlZkYoWPui5577APrzCHQVbvkvScGDbSL3vofqD2v1TPxp3CbrxvWaHF0srMAaWc_UKTzO4REbFImQ1vAuFZeQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of an eggs benedict dish on a decorative white plate with blurred background showing another plate and a green drink; food dominates the frame with no clear venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPvOvF2idPhQT_8g4JDCU147cHtduqbxulVzS_56Wmj0w9p2_usftAZeaGS-n2nD5mlddVCBJwhq-wlc2f1Tv4P8GOIGsRXVsqogjuFrPbdfOfPxtiUDCUavs8OeJIyHwj5G-UwZbleXI3KXOxx0GVPKA=s4800-w1600-h1200",
+      "source_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of two latte cups with latte art on a marble table, with only a vase, plant leaves, and a watch edge visible. The frame is dominated by the drinks rather than the venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNvExlgOyhrRtrK52sBR3gsMfNX8D4s5Unf_iXeMhepYRSqIe3wjZmYHsIe4_6k5zDBcqhJQe99J2p3XInlNcBgI3soMqkgR-bTX9abAj0CPQ8QIFyuOYOjhfvftai5eeObvZUn7dizkhrMe4M=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "industrial",
+        "visual_reason": "Elevated view of a modern café interior showing the service counter, pastry display cases, bar equipment, seating with patrons, patterned tile flooring, and exposed industrial ceiling with ductwork and track lighting."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNi-OgtcpVGZxEFMg2T3VKRGO8SHCqWaIsJxAOjMkzuqItH146wv4uz13E2DQI7hsh2gIqLr-zVmdLWfhPM5N8wdMFX4uZ7wbIcXqTW0TxC9M9WndPXwpT-WdOXFAM8b4KcWWGOsY8qM9yhydRWGc7R=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear interior view of a coffee shop counter with illuminated COFFEE PLANET signage, menu boards, baristas in uniform, and a pastry display case. Bright, modern, well-lit space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO7BLKPf19dfpUh2-DwWVOTP-vFnyJN9QCA0Qi7wM45eUnmLLknAUJ2jK94PdHCD0ZRObZQulMcvPdL_B3WchQo9-0gt-lVD1ML-8LcNiY4sMKjCenpP9Pt9dMHwwypflZFlL3cjmMqbbCAFcUjp1Agkg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1190,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a Coffee Planet branded cappuccino cup and laptop on a wooden table; people in background are out of focus and not identifiable; the foreground product dominates the frame."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNzADEZVCZMMBF6YKwlvqbskl-OwGMwYRplWXsIBFwxNHEQhraVMnDtDg7T7WEyZQHUntjTLu_P3gynxHLdevrjK_NS-iG-OcbP_1zGYau9QYvFk0wWl7uoECFfhIP0zMPpT6PKjeM5UdERvci5gNNwqw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Image is dominated by a close-up of a black 'COFFEE PLANET' branded takeaway cup held in a hand. The background shows a blurred interior of a shopping mall, not a venue interior with clear seating or service space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ4yEZesJOiRCYq4UY_i4MyGjT2AK3padJVmI80F8PL2EiysG307ECnEyWEmuWr4qhehPpEK7hFLZKvygZb53gQvj7L6ahGuIPulgapmzDsqsFjheZyQFVibagbSKZy85cWhI3fgd1Za6F0FI=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1436,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a bagel sandwich with egg, cheese, and avocado on a plate with branded paper, alongside a coffee mug on a plain white surface. No venue space visible; food-focused composition."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO_D_Ns4o6Ed82NEbzrhgK5y2Aj7vfIWdhW_eRB97jQUSTuJheL4lWT66Bb16SI50ZmtkuLeToYnZOtsuuJUSMDm1BkWggC8mVMFR9hUzWr2B22C1bobr6R6f0W4gFFFui2ydYeb0Q9usZx54RUj6Mz=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Bright, airy cafe interior with visible seating (wooden chairs with cane, round tables), bar counter with stools, espresso equipment, digital menu kiosk, and large windows — clear spatial experience of the venue."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPvMQK0e13q7013mkkDrrGqmqjKUftxTYJ5ViQt_qnCSVFynRKMFN-aXvG5-kW_zHRi9-0kt_2fqQJ5j53gqOt_cbQyq21TufLFuzfhrst7N2l_p4lrbMPsDl9G_Ia2UC99gzYp_em9zZ1B=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1559,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Top-down close-up of a single latte in a ceramic cup on a plain white background, no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAlgcD7Q_wRqnLSTmR1Zg74F203VcQJiPc5oOaaA2Zzu1RtaXoYoKG57qmaZhrGTEsZ-t-cLdyE43b450Indrm3vDBsQhnZeKnqnKMu6XZBvAVripsiIMJLATPRg2OrUGi3xYWEn4lPZJyXH0=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit interior of a modern specialty coffee shop featuring a V60/Vespa collaboration, espresso machine, pour-over stations, menu boards, wooden ceiling beams, and bar seating — clear venue identity and full interior view."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP-VpT53Gjpqmt5kVRvMT5Wgue5bmFY1nxBihd1T8mOxUydz1y-5_UJTurG_ZT6kJGX_998VWNBuir6A3tozyBZ9ju63fqfCc2uv8fJOYN4t3abk__7FcrPeh5iojZT5VUtwzJYBaYCPa5puzf0HLmd6Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Close-up of two coffee cups (a latte and a matcha latte) with latte art on a dark countertop, no venue space or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMpJJ10wo1H4DER7maXblWFs67jifl2IiteU3i4w3RbKNC71Sl4QMjux6QUl-ezrQ6mNMCHCbKlXskAtpOm_77KErp0a2DA35CSz2VYPLsEgBpBYCXIAX7Ibxk4TRkPPzhIb6t0U8yZbYCyDDdHDF2S=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of an açaí bowl with strawberries, blueberries, banana, raspberries, granola, and coconut. No venue space, interior, or atmosphere is visible—only the food product in a black bowl."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM7M-nuVAu6AcVGNV2u1M7opcg1hsOh8oRYeozg51ShwASMdJm4wcrPxWFoM0q_F8p0vL5Lvu1bPJ9a_9B8os3piJ0_Idag4WWR6EOikqj1wTWoLofTdAgLspO8xYnH7M6rS7jGv1XqBY7_4_KV33u84g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1529,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up shot of a seeded sandwich with cheese, lettuce, and pomegranate on a dark plate, with blurred greenery in the background. No venue space or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNBGTU73KBo9yM0S3F0AMOnIKciFsVZ6yeaUQJoWJd8kVH2accluIsqZmG9DYCKpvwbHmMKfC_NZtQ9igS1P8g6cvXY8-QwiJuXv3nyOM8qMNALYTyLaclwevpibYoYhIvr70jsI8DVr5QNdfBVX0jtNg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a pistachio croissant on a plate with a cappuccino and water bottle; background cafe interior is heavily blurred and out of focus, making it a food-focused shot rather than a venue hero."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Drinkit",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMsih1mEF73UWtP7XD9dD57nN_FJgteq1vP62U1UqbA6pdAbl_RnGy9ruPplcNeOxMoMtTwCdnvIcSHpzn159CFf_ESwLtdOuUXNoKWG2bN2vQY-8dfd9G1yrOYBA0DBUy3ahQXB7nB4qTiiEc=s4800-w1600-h1407",
+      "source_url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Two side-by-side studio product shots of iced coffee/cream beverages on stone blocks with no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Drinkit",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOzTrNvhe-CYlcs3WR8NIDia86utBOWxtQxOKBf8rKUiH94Bo9-CleO4K-5rWbQSG5yqvF0swZwArQWaHGX9DY-U731PWikecJvV3jUzmy-LUVP-q4Qx7c1Rwc7ig2k379UcH5urOmGrPIPQ-0=s4800-w1320-h1600",
+      "source_url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Three iced drinks in tall glasses with whipped cream on a stone surface against a warm-toned backdrop with floral shadow. Product-only composition, no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Drinkit",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAXqtctrBECYHic8941X7q3YGUkA-r1UAVTV43zER9IpBNZWRPREQQ3JYeqov90p1U34uHgJSxPixFau9zMWEUTgqBFjMZwObFWDxJreqk_J5sswMLMZfD1VrVDu6KBFpa-vsc3f1oEmDWwVnDJ-7JFA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear storefront exterior showing the 'drinkit coffee' sign above open glass doors, with a small A-frame sign on a tiled sidewalk; interior and people are not the focus."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPvo6icKPOLPrxhnoSZg6BwIJ1TwKnSIPieVpyRNwhcParNUUpDTGLW3sn9hiVOo_ayOOI86sySN_gf98UK9t3cqN1s1e6ODj-1TEGDO9CdVDa0uOnEJ38vcMAEsXzm2og1dKKgNwcj2iEyh3PslgQTUA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear building facade with 'ROASTERS' sign above the entrance, large windows, and steps leading to a glass door. No interior or active guest experience space is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP2qlomnBt2HcDXm32PUD1KDURtflWGlT4feXT5xhnV_gFxMmp9wzfMiznVAAdpKK2ra4MZ9Rg-Q6erUiZm6n3Olfjv1les3XZNmmsAwQQcIqL9STKjW-nIi21o-xZ5iVWEo3B2XbT9iu0AeBBM2s5y_Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit interior of a cafe with visible counter, pastry display, barista, coffee equipment, decorative wave LED ceiling lights, and UAE flags — clear spatial venue shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPKL6Foo_hEvId405YUE-bSAy7CO6MXH2ztQ0yYyx7E6t6nulHWpcepjblV8oRsK0T5RmKR-p_ZTq-qut9Uqzc_mAFY0eeosw8SoYTb1D_Ktck0P-NFBR8J6nMrP94oDiZaXX0FYbUkMZWrbXcb6MTs1w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Outdoor terrace/rooftop seating area with cushioned chairs, terrazzo table, and glass railing overlooking a multi-lane road and Dubai skyline with skyscrapers. Clear guest experience space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9WJ3iWLO5EJEPM5ddtPBKfrBDMzsl5m95VU0LHK5TgJvgXqDp-bGAeZMuQF6x9GgiYVw4D7Hx93u1Fv7MxE3NPUf-bg6xlhFIqIMh2uToj7al8YJFjEQ0kmRWMBHv6M9-b5wYvz6A8KFup9fk4xZ_=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1233,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a latte with latte art in a white cup on a dark saucer atop a speckled countertop; no broader venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNwT5XfR7pJPtVgB7MR85YCLmRnvcDE_VAWGCISQKMve8cYLg2PlWYU8pIWwDpc88OBQFebBLSvot3b2U2wQyFuSQbqULH-dh1bHD3LRpmM03FanRGM6AetA6yVpbSV4jsIXHaFeT8tTyZQomNGig-A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1419,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit modern café interior with marble communal tables, grey velvet chairs, espresso bar, and distinctive decorative ceiling pendants. Wide, unobstructed view of seating layout and service counter."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM2V6WJLJXFsAFx88F6YQP1VVQm9GIIT6iSSdnZe3U8x2lSdnprlABaMPS_apXrPsWUoEMoyBn1EKbKw4LngxrNNhn-DgVatQD4ejyOUQi9nkRiJovpttWE6JZsxOG8tIDnbyy6p_EUMtqaTQcR9oIU5A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a food bowl with fish, slaw, and avocado on a table; the dish dominates the frame with only a blurred urban background visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN_sDJY9p3S60JaHwalMKfRxsYxextP_-MPjnXRNQtxT-1rNxbA58bB4ZcVXyqvvkr5hCOYPB6li2QlmLylCi4WDjQAVKTtaL8nQWFY68U1OZxn-MkkaT-FJqvlr0ZyOrt0717HEfaYlT3E-gLIyxaqTw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a food bowl (rice, salmon, avocado, slaw) dominates the frame. A table, drink, tissue holder, and QR code stand are visible but small, with blurred city skyline in the background. The image is product-focused, not a venue showcase."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPWKHot43XGijXKdkmAJgFEwPdiWVjurkeIaCmvpED8ySWR-1nA1Q7mhFR4TVK55XunvmksQGaq4MTAK17O99c7yvNin03N0hk6r7weqzCdrFiil_M-GBKoEJwwVWTIpkZIdqEulC9JBjIjXpWgVdlpnA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Shallow focus on branded coffee cup and napkin on marble table; background cafe interior with bar, stools, and pendant lights is heavily blurred, making it unsuitable as a hero interior but showing warm cozy ambience."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMEl81m7a-ItnfowGazUf8y7uXAvL88loUu_4b_XwUl50bk6bWAU0IMaX67hSemuKa99uWwxW0s_EAXVJeM76MUjMdxPDm7ADrYgfElkaBKTnZglM2dkXcDP6b7Ei4MZugxxb3W5GquXWQ9xA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a salad bowl and two iced coffee drinks dominates the frame, with blurred interior seating visible only in the background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOf0e-4t-_X7QPUGv_lYZAR4GbZo0ZpUl4YCzMVV0ax_4JKUhNCVNYkZgrWmWK_zetoyw6g8oVxfteI1V5dCKNI-Q2RhpDaQUoPXKWOefWeJZuUNoLGAyWSfce1OUYuDPgU9sZl_XSD5ZJeyUzEIhzTuQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit café interior with ornate white cabinetry, espresso machine, coffee bag displays, pendant lighting, and a central coffee-themed illustration, conveying a bright and elegant atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOIIyHPZL5WOtvwQu-ozzd2x_XjDCqxgjGjZR4OYsEhEeiY_vjZ9WnvV5mQ2kHAM2GgzYYZRFMjdpGq288zMaO8VaHYGSU_QWo6SfckpCJnQAki3egfMP58OBATCx2qzuNDyIsNuqif-2ywCPXbVDouVA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Elegant interior of a café/coffee shop with ornate patterned tile flooring, decorative black ceiling, rattan and wood chairs with marble tables, a service counter with espresso machine and coffee bags on display shelves, vintage coffee-themed mural, and warm pendant lighting. Clear, well-composed venue interior with people seated."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCclV42tBcvem5soMtDMo1FwoIp_X9DOl511DTTa12vgffcWccX9BOYW-aOcIp7j4VIpmZY1zvB3PuID9TKK9rafRRtfquLOIJdUwmos1F7SoiovIAvy0iNubqaGOg459C1FdjGP5B9rVzPWZvsxkaQA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Two branded coffee cups held in the foreground dominate the image; only a partial background of an outdoor patio with white chairs and a glass storefront is visible, making this primarily a product shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPPnhH-Tf8EIRuXuRU89SmZvns7M32GCYJ6x8w-LjW-EfH9MrdFZVMBXikVKmYjB-aM0a2-tY18rS0rfNiLj3CTv0nEWwHPvz0vTUSLFMlwK6wo7Yplig2ZYRdKdURDt-pEp55qwX8Cb-JsWHLrFqPynA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1205,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Clear view of a coffee shop interior featuring a large black-and-white mural of a hand pouring coffee, with a wooden table holding a coffee carafe, glass, and condiments in the foreground."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPRxaUaEYXP6Oc3B_GtXfkegwaW1Lrl8Ty8am56UXDH-ypI9ZblJueh7TAypxQxQjqW2lZHAyYl93-OmisvvcMeRtOTCY1auiBSjEzR8KowwE5lHh72jtajfnsJ2hjcMxVrvaUWRkbeMMxGmWI7a8grpg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Enclosed glass patio dining area with tables, chairs, condiment caddy, and a QR menu card, surrounded by large windows showing parked cars and a building outside. Tropical plants and a slatted roof provide shade, with natural daylight filling the space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNln_ytKoBtMT8hUvISLyM1_FFdDtRA7uF0R5w8ug1g7lx8pP07iQnEgOoyPrbGwXCaUgx-zpzNh9x8QPporY55cuDE_E3fZJ64zOa7v_bMBx1qcTB83hPUlqtBkb3HsrCl9Rs02rQs10qFFuUF03g-RA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated breakfast with coffee, juice, and flowers on a marble table; food and drink dominate the frame with no clear view of the broader venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPr4VFfpWyCmX0UnhxefnsyCcycOoVn3gYwHOQw_EotZ6NRJO4YmDHCONURGdAPS5xv8gL61ZtRS9QXyXVdO1AnQFYswVEkGKuZX-RS4k2PEr9OuTO_sFmtBfgtV0PvIKvB0zDThzB-ppatclLFfO5C9g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit interior of a coffee house featuring marble tables, wooden barrel-style chairs, leather banquette seating, table settings with cutlery, and a prominent 'Roasters Specialty Coffee House' branded sign on a dark geometric panel wall. Tropical plant and fresh flowers add warmth."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOVSblkXmIPGUTXK1Bo-81kXCsmyM4X166OIOyzWDSnPh3mRhw8vlJlIv0pck66I4D0WUZurr1MPJLpmLwLAsRWyjQhc26yKocmGz-8c2q6aI5oJenTxXTrAoGBsx2F19Jzz5kajeDxG1FciOm2kyhs1Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated dish (eggs royale with salmon) on a decorative white plate, with cutlery and a table edge visible but no broader venue space shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMVhlhzLtLyW7dzqXQBmMrmIrraVP56ww4eEfkAzIia6Obj9HcO22_lHtX-IrwhfZ0LHBU-IaaI5Pe6cASr-O1Tqa1KcxG2nLPL8bNp4Fz3pSck8km6tVVcU9jv7qw3ObbtrWUYU971Lk0RqAGka42y=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 900,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "industrial",
+        "visual_reason": "Spacious interior of a specialty coffee house with exposed concrete ceilings, ductwork, pendant lighting, patterned floor, and varied seating including armchairs and banquette booths. Several patrons are visible but the dominant subject is the venue's spatial design and atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNYZEepV73GIkV2RIOaNVU1Cs7-DGUukAwfrLk36umjHIitg4TABlPsPEXzXA_Wj0erggPVhNI6BSm8YUP1jxSOGWV3CBxBBrnEjJkCjb8mX0M6zjXKRtYP8iXKuDpmu7kEzag6Dmch2JI4djLL0mdrrg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a coffee cup on a saucer with a chocolate truffle on a wooden tray, with the marina and skyline blurred in the background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMLB-VLxsHTrtKF8G3BoxQ4w0e84W2C7H8r9nQnxa_hLTO7zZkAfozwJjpr_DYkrVKBljYUzd0CsMWm4Cjm3t6fZWDQPW_EdQ-a5pgvqODOo9FxxpITKtcV-i_2UaeusQnphjlh9igY56vzdBCwlaqG=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a layered coffee drink on a marble table, with blurred interior background; product-focused composition."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJucPuwFDifdVBH5eGxJ2znxtZeJ2t43Y7zD6jnZOCILWPU04enNXYlCr5WW1rdu1VukqA9nynhqlCtWbSLZFiAiAI0_ILzmG1fIHWBUDipcfrTuhed_xh3CUgj3JrYZ7dMMailMxT2iSIx9OZ4MrGzg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit coffee shop interior with visible seating, tables, shelving, terrazzo floor, and warm pendant lighting showing the full guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNOQBfwQm6YCjLiyqWok96ETKIv8-HTNi0hlPADzDr4yi13wy0JWbNtLBW0t1YlLgLsGDesS9kxaoUHk8ljQbZdV9y8hf2-TUaQLcX-EOGZv08-lcodalmTbJizVxECxqtwPcaeIj2R5DaE7cKLUyv9xg=s4800-w1290-h1600",
+      "source_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 900,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a cappuccino with latte art in a black branded cup on a dark table; the venue interior is not the focus."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPdDHI2B0AqfMjbW0wbYhmMg8Df0hpcWDZvrqKmTgzB24lC9PnDf1LaomsJS_JWoAjse3wTiy7JrrR1HnY2W_glBENRh0w2i1cCqvWt3R7ETIAnNgz0eVQUxUOEg67lVQJwlj-XzJyWVvP71g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of Boon Coffee Roasters coffee bags on a shelf, product-only shot with no clear venue interior or guest space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Sobha Hartland",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPnndQuqZeC8fp6_vwEdNmGL1uR6A28X22Of8EZ8SuG_8bJpGhPnIvJYvSLfsFB7q4P556XaT8c1MeFHh-FZOc4i6zlMUs-3yHNnko-8J9s3Or8P0kBlemfQ8GsMiOsHYLjzip_9fnzEIaavxA__w3VwA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1201,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Top-down close-up of three drinks (latte, cortado, juice) on coasters and a saucer against a marbled surface; no venue space, seating, or context visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Sobha Hartland",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN33EYfPmxaqWqxl5ukdyVHBN8bVIofe32CoTwah6iTa1u4FiVntFtLL9IKhAffX4wQn8cdVQMRR-d5wUX8_UuQtUZmn0YLNiDP5IHbwhub_z_iEWu2J6T9XvrDLJoPtUyamwF_s4FJNfJOogCm1Z2U=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Glass storefront with large 'ROASTERS Specialty Coffee House' signage above the entrance, double glass doors marked 'ENTRANCE', and a 'Kids Eat Free' promotional board. Shows the building facade and entrance rather than the guest experience interior."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Sobha Hartland",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMa3I342dlqulSMIrhmCY-ezOcFkM1tAhWAtPq_Z9sxCaC62dkcOib4-yZNVsTOuGL3PClM3ARBsTsdf5KaV1nuts4CwWagMcTaGKv8z_lyXaaU-kJLjl3f8sL2_DpXdpVrJv_GzJF3txOafA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of coffee bean jars with country/origin labels (Panama, Bolivia, Honduras, Costa Rica, Colombia, Ecuador) on a barista counter, no broader interior or space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNU4vR2c22BAyWNqL9sm0Md1NKSXRgIgP0bAf7a9lN-qNhzfLuYybuv4k9W0UozQePExUNVMioVFcwKvsHc1wh_Kyh6EQYXsgmFYRnIOq3P06TD-4m5Bc8gTXjmdV0S2cu58f99ao1MqicakQs6o0qGQQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Image shows a storefront facade with 'Kiiii' signage, glass entrance, and partial view of interior through windows. While some seating and people are visible, the dominant subject is the exterior facade and entrance, not an experiential space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPiwhkV-DTBP6VrYojMn2UvYxB8O2v447s9mAKLbDsdGS0pW3lF3U8qkI38_dWMvx9GCVKdRiBFtb0eh7CI48ZrPiM6ZVRi-kYYTB3-o9aMsW6SO9kkQBuZ_2J26vZMhP0stA-GsxIZCPtljJSXaWuptw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit interior with natural light from large windows, showing wood-beamed ceiling, woven pendant lights, marble tables, designer wooden chairs, terracotta banquette seating, and a large circular mirrored centerpiece — clearly a curated cafe/dining space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": true
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPBcOJoBRiRJLWrk9WrBXHXG2VmG95u0lt5uNrNUfiEg12NJ7-ev9KH6jjG3sE3anVwLgyoh1Qu5Q7md2o5T3MDDR-G8ti-C4Ia_LfQ5WO53mM2SXF75f5cdXCW49h1Yk1W5gBVnZ2PTk-tU42o7yKAPw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior view of a cafe/coffee bar with wooden counter, bar stools, pendant lighting, glossy dark blue tiled floor, and staff serving a customer."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOtEhNGFMUbg2Cmr_pkwWoxfCxJV2mEXSE_x2-mgSN8gr7PDQ9c26Q-LwQItMdIiMNFHH9WOtZGpIVlmbM_vx9s5JMNDs3pQG7zocoMjBKKeVqqhIPmexNa9AZz1adhk-DTRtm7fU4BvxjkP1WBQZbEog=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "A latte in a dark ceramic mug dominates the foreground, with an outdoor plaza, seating, and commercial buildings visible but out of focus in the background. The beverage is the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFGkzC5v8LEhjMeq933jLsGpDeA5M2IiiK-rAj31DIgeV8t5KOa7OAxpSlKt7BzuQaPAUxCKSla8nbgzyQFiM4SnTeUm21hPqIzrBa89-DI-B4mDzVhcJ71KUWHuZAUTDXMiBhpf9zX0WvPvHJHjMDZQ=s4800-w720-h720",
+      "source_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 720,
+      "height": 720,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of two avocado toasts with cucumber ribbons, feta, and pomegranate seeds on a white plate; no venue space is visible, only food styled on a wooden surface with a linen cloth."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "below_preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM5UtcuFUhE-jotLBvURmeZNwtWj1lC7HKXY0aT8oVyAePgCYNxnu6FnUJFaO2iPZneTT0qpvVguojTNBLyn8_TdwGC1pBVgzdhpMBX4oEO0fXPZSE1ZOL-l3p9tuOGksc798ADX8UtZ41ghbT-rGrB=s4800-w720-h720",
+      "source_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 720,
+      "height": 720,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a plated pancake dish with fruit, cream, and sauce on a white plate; no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "below_preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTF1YRhyvVCKIxuNVTiksgxkOsiwUJ8ck3Uo4nH1JQGxAL2KXEzSvDkxcz7DltylcG0Wjjy0OCYsqjRxMm2LDYxkHLyVDjD99_hap-2OkAuPao4e8fgvhz5c0_8VkorxZ9SyyKQIQpEm1SpxcAxWplEg=s4800-w720-h720",
+      "source_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 720,
+      "height": 720,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a burger with fries on a white plate; no venue space, seating, or environment visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "below_preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    }
+  ],
+  "summary": {
+    "images_requested": 112,
+    "images_processed": 112,
+    "images_skipped": 0,
+    "m3_ok_count": 35,
+    "invalid_json_count": 0,
+    "scene_type_distribution": {
+      "hero_interior": 35,
+      "hero_exterior": 7,
+      "product_food": 62,
+      "gallery_atmosphere": 2,
+      "unusable": 1,
+      "logo": 4,
+      "decorative": 1
+    },
+    "risk_flag_distribution": {
+      "preferred_resolution": 109,
+      "rights_review_needed": 95,
+      "product_only": 65,
+      "below_preferred_resolution": 3
+    }
+  }
+}

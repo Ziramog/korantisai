@@ -1,0 +1,1231 @@
+{
+  "batch_id": "batch_010_buenos_aires_cafes_25_recoleta",
+  "generated_at": "2026-06-08T14:39:36.273Z",
+  "city": "Buenos Aires",
+  "discovery_mode": "automated_google_places",
+  "total_candidates_discovered": 110,
+  "candidates_after_dedupe": 56,
+  "candidates_after_hard_filters": 41,
+  "rejected_count": 5,
+  "selected_count": 5,
+  "selected": [
+    {
+      "name": "El Porta Café de Especialidad",
+      "normalized_name": "el porta cafe de especialidad",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJW0XOIgDLvJUR1ngAeyH1xXc",
+      "address": "Riobamba 962, C1116 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5977568,
+        "lng": -58.3950566
+      },
+      "google_maps_url": "https://maps.google.com/?cid=8630573785071778006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 483,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/elporta_cafe?igsh=MWxibG1kZHJhaHFmag==",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "design cafes in Recoleta Buenos Aires",
+        "Time Out cafes coffee shops Recoleta Buenos Aires"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Inspire Café De Especialidad",
+      "normalized_name": "inspire cafe de especialidad",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJxaPkFvDLvJURffPFNvEnFEg",
+      "address": "Larrea 891, C1117 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.598073,
+        "lng": -58.402062
+      },
+      "google_maps_url": "https://maps.google.com/?cid=5193820187224568701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 390,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://instagram.com/inspirecafe?igshid=YmMyMTA2M2Y=",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:lanacion_gastronomia",
+        "editorial_kind:local_editorial",
+        "editorial_source_query",
+        "editorial_source:infobae_gastronomia"
+      ],
+      "search_queries": [
+        "cafes in Recoleta Buenos Aires",
+        "independent cafes in Recoleta Buenos Aires",
+        "design cafes in Recoleta Buenos Aires",
+        "La Nacion gastronomia cafes coffee shops Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Cat beans Coffee - Café de Especialidad",
+      "normalized_name": "cat beans coffee cafe de especialidad",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJeVu3YAvLvJURt717wZ7I8h8",
+      "address": "Ayacucho 1029, C1111 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5968394,
+        "lng": -58.396028199999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=2302122943716244919&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 107,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://instagram.com/catbeans.coffee?igshid=YTQwZjQ0NmI0OA==",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Capsulas Kapselmaker",
+      "normalized_name": "capsulas kapselmaker",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJa2SifUq1vJURIYzVa1luZdY",
+      "address": "Av. Sta. Fe 1653, C1060ABC Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5956835,
+        "lng": -58.3909294
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15448875427104656417&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 1374,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.kapselmaker.com/",
+      "google_place_types": [
+        "coffee_roastery",
+        "cafe",
+        "clothing_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 92.2,
+      "selection_reason": "score=92.2; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Sabores Puros",
+      "normalized_name": "sabores puros",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJhRpSqNjLvJURuhC5fNlk_vQ",
+      "address": "Azcuénaga 1968, C1128AAH Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.58699,
+        "lng": -58.394800399999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17653658474602107066&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 385,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://linktr.ee/SaboresPuros?utm_source=linktree_profile_share&ltsid=c895a841-7c5a-4ad2-ab95-d04dd0687168",
+      "google_place_types": [
+        "cafe",
+        "coffee_shop",
+        "health_food_store",
+        "health",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:infobae_gastronomia",
+        "editorial_kind:local_editorial",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Recoleta Buenos Aires",
+        "quiet cafes in Recoleta Buenos Aires",
+        "Infobae gastronomia cafes coffee shops Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.75,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 91.5,
+      "selection_reason": "score=91.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=0.75; editorial=0.75",
+      "rejection_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Tres Monos",
+      "normalized_name": "tres monos",
+      "neighborhood": "Palermo",
+      "type": "bar",
+      "place_id": "ChIJo7CuuHu1vJUR9DoRRpMQDNs",
+      "address": "Guatemala 4899, C1425 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5847666,
+        "lng": -58.426056499999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15784009018748517108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 3681,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://3monos.com.ar/",
+      "google_place_types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Tres Monos"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8,
+        "local_identity_score": 0.6,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 83.3,
+      "selection_reason": "score=83.3; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.60; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Los Galgos Bar",
+      "normalized_name": "los galgos bar",
+      "neighborhood": "Centro",
+      "type": "cocktail_bar",
+      "place_id": "ChIJZ4ZfrcHKvJUR0mMgHza_ess",
+      "address": "Av. Callao 501, C1022AAF Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.603025699999996,
+        "lng": -58.392256599999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14662241776029426642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.2,
+      "review_count": 9455,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://barlosgalgos.com.ar/",
+      "google_place_types": [
+        "restaurant",
+        "breakfast_restaurant",
+        "argentinian_restaurant",
+        "south_american_restaurant",
+        "cocktail_bar",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "curated:Los Galgos"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 1,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.44999999999999996,
+        "editorial_discovery_score": 0.9,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 90,
+      "selection_reason": "score=90; google=1.00; visual=1.00; category=1.00; atmosphere=0.95; local=0.45; editorial=0.90; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "La Fuerza",
+      "normalized_name": "la fuerza",
+      "neighborhood": "Chacarita",
+      "type": "bar",
+      "place_id": "ChIJK9_f9u21vJURCGQ9TsCjhyw",
+      "address": "Av. Dorrego 1409, C1414CKJ Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5856066,
+        "lng": -58.444941199999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3208713305866462216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 5301,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://lafuerza.com.ar/",
+      "google_place_types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:La Fuerza"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8,
+        "local_identity_score": 0.44999999999999996,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 81.8,
+      "selection_reason": "score=81.8; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.45; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Cochinchina",
+      "normalized_name": "cochinchina",
+      "neighborhood": "Palermo",
+      "type": "bar",
+      "place_id": "ChIJs2XPmoG1vJURwboMb5sigY0",
+      "address": "Armenia 1540, C1414 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.590345,
+        "lng": -58.429003599999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10196469082321894081&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 4720,
+      "business_status": "OPERATIONAL",
+      "google_place_types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Cochinchina"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.8999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6,
+        "local_identity_score": 0.4,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 76.3,
+      "selection_reason": "score=76.3; google=1.00; visual=0.90; category=0.90; atmosphere=0.80; local=0.40; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Sacro",
+      "normalized_name": "sacro",
+      "neighborhood": "Palermo",
+      "type": "restaurant",
+      "place_id": "ChIJAc0ax0O1vJURnQMh4Trolb8",
+      "address": "Costa Rica 6038, C1414 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5792717,
+        "lng": -58.439265799999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13805195572356907933&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 2752,
+      "business_status": "CLOSED_PERMANENTLY",
+      "website_url": "http://www.sacro.com.ar/",
+      "google_place_types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Sacro"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.65,
+        "source_diversity_score": 0.8,
+        "local_identity_score": 0.6,
+        "editorial_discovery_score": 0.04999999999999999,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 78.28,
+      "selection_reason": "score=78.28; google=1.00; visual=1.00; category=0.82; atmosphere=0.65; local=0.60; editorial=0.05; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood",
+        "not_operational"
+      ]
+    }
+  ],
+  "already_known_excluded": [
+    {
+      "name": "Roster Cafe Recoleta",
+      "normalized_name": "roster cafe recoleta",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJk6WY8AjLvJURBfDnSDcMHxs",
+      "address": "Peña 2302, C1128 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.590551999999995,
+        "lng": -58.3975915
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1954294194887979013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 176,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://rostercafe.com/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "cafes in Recoleta Buenos Aires",
+        "specialty coffee shops in Recoleta Buenos Aires",
+        "coffee roasters in Recoleta Buenos Aires",
+        "quiet cafes in Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.75,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 91.5,
+      "selection_reason": "score=91.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=0.75; editorial=0.75",
+      "rejection_reasons": [
+        "already_exists_place_id",
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Bicho Café de Especialidad Recoleta",
+      "normalized_name": "bicho cafe de especialidad recoleta",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJxYhmWSLLvJURS8gRFNBQtBM",
+      "address": "Agüero 2039, C1425 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.588395999999996,
+        "lng": -58.40262130000001
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1419848637148678219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 1171,
+      "business_status": "OPERATIONAL",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:lanacion_gastronomia",
+        "editorial_kind:local_editorial",
+        "editorial_source:infobae_gastronomia"
+      ],
+      "search_queries": [
+        "cafes in Recoleta Buenos Aires",
+        "specialty coffee shops in Recoleta Buenos Aires",
+        "independent cafes in Recoleta Buenos Aires",
+        "coffee roasters in Recoleta Buenos Aires",
+        "design cafes in Recoleta Buenos Aires",
+        "quiet cafes in Recoleta Buenos Aires",
+        "cafe bars in Recoleta Buenos Aires",
+        "bakery cafes in Recoleta Buenos Aires",
+        "Time Out Buenos Aires best cafes coffee shops in Recoleta"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.8999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.6499999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.7999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 87.8,
+      "selection_reason": "score=87.8; google=1.00; visual=0.90; category=0.90; atmosphere=0.65; local=0.80; editorial=0.75",
+      "rejection_reasons": [
+        "already_exists_place_id",
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "La Biela",
+      "normalized_name": "la biela",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJPXhNCKPKvJUREtJrc0ejdKs",
+      "address": "Av. Pres. Manuel Quintana 596, C1129 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.587884599999995,
+        "lng": -58.3908202
+      },
+      "google_maps_url": "https://maps.google.com/?cid=12354679205058564626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.2,
+      "review_count": 13189,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://la-biela.shop/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4253,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:lanacion_gastronomia",
+        "editorial_kind:local_editorial",
+        "editorial_source:infobae_gastronomia"
+      ],
+      "search_queries": [
+        "cafes in Recoleta Buenos Aires",
+        "independent cafes in Recoleta Buenos Aires",
+        "design cafes in Recoleta Buenos Aires",
+        "quiet cafes in Recoleta Buenos Aires",
+        "cafe bars in Recoleta Buenos Aires",
+        "Time Out Buenos Aires best cafes coffee shops in Recoleta"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.30000000000000004,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0.2
+      },
+      "candidate_score": 80.9,
+      "selection_reason": "score=80.9; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=0.30; editorial=0.75; generic_penalty=0.20",
+      "rejection_reasons": [
+        "already_exists_place_id",
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Tona Café",
+      "normalized_name": "tona cafe",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJRUJ72ffLvJURJBByWf574-U",
+      "address": "Laprida 1218, C1425 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5945913,
+        "lng": -58.407798299999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=16565220186751373348&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 610,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/tona.cafe/",
+      "google_place_types": [
+        "coffee_shop",
+        "tea_store",
+        "cafe",
+        "dog_cafe",
+        "sandwich_shop",
+        "tea_house",
+        "food_store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4080,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:lanacion_gastronomia",
+        "editorial_kind:local_editorial",
+        "editorial_source:infobae_gastronomia"
+      ],
+      "search_queries": [
+        "cafes in Recoleta Buenos Aires",
+        "specialty coffee shops in Recoleta Buenos Aires",
+        "independent cafes in Recoleta Buenos Aires",
+        "coffee roasters in Recoleta Buenos Aires",
+        "design cafes in Recoleta Buenos Aires",
+        "quiet cafes in Recoleta Buenos Aires",
+        "Time Out Buenos Aires best cafes coffee shops in Recoleta"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "TERRASOHO - Specialty Coffee",
+      "normalized_name": "terrasoho specialty coffee",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJz_CYqwXLvJURdYrjf58EhfI",
+      "address": "Gorriti 4563, C1414 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5923301,
+        "lng": -58.42644149999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17475379012173007477&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 566,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/terrasoho?igsh=MTV6aXl1cmFobXR1Ng==",
+      "google_place_types": [
+        "internet_cafe",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "service",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "BORJA SPECIALTY COFFEE",
+      "normalized_name": "borja specialty coffee",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJ-_CVjqHLvJURiUxT4-aAaPE",
+      "address": "Juncal 2303, C1125 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.591879399999996,
+        "lng": -58.400031
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17395295289863261321&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4,
+      "review_count": 664,
+      "business_status": "OPERATIONAL",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.8999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.6499999999999999,
+        "source_diversity_score": 0.8,
+        "local_identity_score": 0.7999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0.1
+      },
+      "candidate_score": 85.7,
+      "selection_reason": "score=85.7; google=1.00; visual=0.90; category=0.90; atmosphere=0.65; local=0.80; editorial=0.75; generic_penalty=0.10",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Jardín de Invierno",
+      "normalized_name": "jardin de invierno",
+      "neighborhood": "Recoleta",
+      "type": "restaurant",
+      "place_id": "ChIJo7BjwqLKvJURK4y4QX7RP6A",
+      "address": "Vicente López 1955, C1128 ACC, Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5894027,
+        "lng": -58.392441899999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=11547178309799939115&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 1665,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/jardindeinviernorestaurante/?hl=es",
+      "google_place_types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query"
+      ],
+      "search_queries": [
+        "design cafes in Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 91.08,
+      "selection_reason": "score=91.08; google=1.00; visual=1.00; category=0.82; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": [
+        "already_exists_place_id",
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "El Preferido de Palermo",
+      "normalized_name": "el preferido de palermo",
+      "neighborhood": "Palermo",
+      "type": "bistro",
+      "place_id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "address": "Jorge Luis Borges 2108, C1425FFD Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5854137,
+        "lng": -58.4253412
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9615951134450332531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 9514,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://elpreferido.meitre.com/",
+      "google_place_types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost",
+        "local_identity_signal"
+      ],
+      "search_queries": [
+        "curated:El Preferido de Palermo"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.8999999999999998,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 87.1,
+      "selection_reason": "score=87.1; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood",
+        "already_exists_place_id",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Rita Specialty Coffee Soler",
+      "normalized_name": "rita specialty coffee soler",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJlXfzUMu1vJURPR5ZJW1uCyo",
+      "address": "Soler 6093, C1425 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5767741,
+        "lng": -58.437552399999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3029636589393878589&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 10211,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/ritaspecialtycoffee?igsh=NzR1M3AzcG50ZGE2&utm_source=qr",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide",
+        "official_website_from_google",
+        "google_photo_signal",
+        "editorial_source_query",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide"
+      ],
+      "search_queries": [
+        "Time Out Buenos Aires best cafes coffee shops in Recoleta"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.7,
+        "editorial_discovery_score": 0.4,
+        "generic_chain_penalty": 0.2
+      },
+      "candidate_score": 84.5,
+      "selection_reason": "score=84.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.70; editorial=0.40; generic_penalty=0.20; curated_boost",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Toki Moment - Specialty Coffee",
+      "normalized_name": "toki moment specialty coffee",
+      "neighborhood": "Recoleta",
+      "type": "cafe",
+      "place_id": "ChIJi3BXstfLvJURdNbYxa0qaYs",
+      "address": "Marcelo Torcuato de Alvear 664, C1058 Cdad. Autónoma de Buenos Aires",
+      "coordinates": {
+        "lat": -34.5964186,
+        "lng": -58.376334899999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10045607369663633012&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 944,
+      "business_status": "OPERATIONAL",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide",
+        "google_photo_signal",
+        "editorial_source_query",
+        "editorial_source:timeout_ba",
+        "editorial_kind:city_guide"
+      ],
+      "search_queries": [
+        "Time Out cafes coffee shops Recoleta Buenos Aires"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.8999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.6499999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.6,
+        "editorial_discovery_score": 0.4,
+        "generic_chain_penalty": 0.1
+      },
+      "candidate_score": 81.7,
+      "selection_reason": "score=81.7; google=1.00; visual=0.90; category=0.90; atmosphere=0.65; local=0.60; editorial=0.40; generic_penalty=0.10",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    }
+  ],
+  "warnings": [
+    "selected_count_5_does_not_match_requested_25",
+    "target_mix_deviation:cafes: selected 5, target 25"
+  ],
+  "existing_sources_checked": [
+    "supabase:staging_venues",
+    "supabase:venues",
+    "local_batch:batch_003_stage01_test:stage_01",
+    "local_batch:batch_003_stage01_test:batch_result_with_editorial",
+    "local_batch:batch_003_stage01_test:batch_result_quality_gated",
+    "local_batch:batch_004_buenos_aires_50:venue_seed",
+    "local_batch:batch_004_buenos_aires_50:stage_01",
+    "local_batch:batch_004_buenos_aires_50:batch_result_with_editorial",
+    "local_batch:batch_004_buenos_aires_50:batch_result_quality_gated",
+    "local_batch:batch_005_buenos_aires_restaurants_50:venue_seed",
+    "local_batch:batch_005_buenos_aires_restaurants_50:stage_01",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_with_editorial",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_quality_gated",
+    "local_batch:batch_006_nyc_rooftop:venue_seed",
+    "local_batch:batch_006_nyc_rooftop:stage_01",
+    "local_batch:batch_006_nyc_rooftop:batch_result_with_editorial",
+    "local_batch:batch_006_nyc_rooftop:batch_result_quality_gated",
+    "local_batch:batch_008_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:stage_01",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:batch_result_with_editorial",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:batch_result_quality_gated"
+  ],
+  "existing_known_venues_count": 756,
+  "configured_neighborhoods": [
+    "Recoleta"
+  ],
+  "configured_type_mix": {
+    "cafes": 25
+  },
+  "type_counts": {
+    "cafe": 5
+  },
+  "neighborhood_counts": {
+    "Recoleta": 5
+  },
+  "deviations_from_target_mix": [
+    "cafes: selected 5, target 25"
+  ],
+  "next_pipeline_command": "npx tsx pipeline/run_full_batch.ts batch_010_buenos_aires_cafes_25_recoleta"
+}

@@ -1,0 +1,810 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T14:56:27.343Z",
+  "validation_status": "imported_needs_validation",
+  "publication_status": "not_approved_for_publication",
+  "selected_images": [
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "selected_image": {
+        "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMiLHnBYceWikX58Tx4rNmKoFBRSkgoAhEt3_7kM4Be9LwacMWVfTv-g72FRhgg6dT5MLe8NE9_SZ_ogpU-quUtqV2kg69OI7pAnmU4cyTOJDb8r17_owQWPoMXWwc4SqOXtWbZhdcxQiTsK_w=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "minimal",
+          "visual_reason": "Bright, modern cafe interior with distinctive curved wood-and-white counter, espresso equipment, mirrored back wall, and minimalist bench seating."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "selected_image": {
+        "venue_name": "% ARABICA DUBAI ROASTERY",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMMZFfhp4cadu-39Bs5PNS3llP5jJZLTCAma-JUjWhtfXcy68Gto_hOtTXUHWH7WGcHCr16tof9YztKOraIoDTFoOSE8Ocg_OsgflJMeDyJuozkKv-MtoVnzcXsod8YjqD2AKXMg9N-BmZD7EvdSaC=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Spacious modern lounge interior with tiered curved sofas in patterned fabric, large potted plants (fiddle leaf fig, cactus), floor lamps, floor-to-ceiling windows showing daylight, polished floors, and small side tables. Bright, airy, minimalist white palette."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "selected_image": {
+        "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJucPuwFDifdVBH5eGxJ2znxtZeJ2t43Y7zD6jnZOCILWPU04enNXYlCr5WW1rdu1VukqA9nynhqlCtWbSLZFiAiAI0_ILzmG1fIHWBUDipcfrTuhed_xh3CUgj3JrYZ7dMMailMxT2iSIx9OZ4MrGzg=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Well-lit coffee shop interior with visible seating, tables, shelving, terrazzo floor, and warm pendant lighting showing the full guest experience space."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "selected_image": {
+        "venue_name": "Boon Coffee Roasters Downtown",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNwT5XfR7pJPtVgB7MR85YCLmRnvcDE_VAWGCISQKMve8cYLg2PlWYU8pIWwDpc88OBQFebBLSvot3b2U2wQyFuSQbqULH-dh1bHD3LRpmM03FanRGM6AetA6yVpbSV4jsIXHaFeT8tTyZQomNGig-A=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1419,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit modern café interior with marble communal tables, grey velvet chairs, espresso bar, and distinctive decorative ceiling pendants. Wide, unobstructed view of seating layout and service counter."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "selected_image": {
+        "venue_name": "Brews Cafe",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJ45ZGowY0xrdE4D1S6jE8J7oRJmewTmDTWf9a-qwyZ5Zmgz6EhsxceKfX28tTnmIygOPIp_LYs_HYQnZe078qmkzmfLBcPMXPeSXnIg_YWU_xZter909Uj6SqjcSC7vx_Xlx7-7XzvElgkQ=s4800-w1600-h1135",
+        "source_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 901,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Bright interior with white brick wall, large mural of a woman on a bicycle, tall potted ficus trees, communal wooden tables, pendant lighting, and seated patrons visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 123,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "selected_image": {
+        "venue_name": "Cafe Wayfarer",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWFWNQCnKnlSOH6JNe1XRU3LUUbgqBT0bES8V92C8OUwtXsHCSeyf6a2g_SHp3U5fy0AsIOMMZ4DRHVztlNVyR4JnFrfJGJoLSSAAGPv92NKjeJ8H55upbi7rH_SUCEMg1O161BXl8wDfIGA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 901,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Well-lit cafe interior with visible seating, banquette, table, lush green plants, arched ceiling, and decorative fabric canopy; shows a clear guest experience space."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "selected_image": {
+        "venue_name": "Caffeine Coffee Roaster",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOf0e-4t-_X7QPUGv_lYZAR4GbZo0ZpUl4YCzMVV0ax_4JKUhNCVNYkZgrWmWK_zetoyw6g8oVxfteI1V5dCKNI-Q2RhpDaQUoPXKWOefWeJZuUNoLGAyWSfce1OUYuDPgU9sZl_XSD5ZJeyUzEIhzTuQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit café interior with ornate white cabinetry, espresso machine, coffee bag displays, pendant lighting, and a central coffee-themed illustration, conveying a bright and elegant atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Caju Coffee House",
+      "selected_image": {
+        "venue_name": "Caju Coffee House",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOExB-EShY1nEHrQqadhJXAOxnuJLP5nP3_26VX9HJMj7hzKEpxJPj0M9HmyaoeGjLi5myk6xiFu4Og-m1v6ODdn-c-yydezZCl82_kAMT-zX_Zgxhrml96vSt9FaVEDVKNQDQ5eWy5M2Yvurpm9Cs0=s4800-w1600-h1365",
+        "source_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1066,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear interior of a restaurant with banquette seating, wooden tables, rattan chairs, decorative pillows, tropical artwork, and woven pendant lighting creating a warm, inviting atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "selected_image": {
+        "venue_name": "Circle Cafe (Bay Square)",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOexMzLV8n7mmcxSpCVpA3um8dbejvgq7esWjqBG17sdo8_7xPZ8ErbR1TdA_qP1HuusXVMOY7okpKFNXoj9LFNTYUrshY362yqMRh33LDQ7PtqQdBG69bNc4U_DGxGSwS3kZMOm_Uq-8PM17ludW3C=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit cafe interior with clear view of seating arrangement, tables, chairs, rattan pendant lights, neon wall sign, gallery wall, and service counter area, conveying an airy and inviting atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "selected_image": {
+        "venue_name": "Coffee Planet - Foundry Downtown",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNvExlgOyhrRtrK52sBR3gsMfNX8D4s5Unf_iXeMhepYRSqIe3wjZmYHsIe4_6k5zDBcqhJQe99J2p3XInlNcBgI3soMqkgR-bTX9abAj0CPQ8QIFyuOYOjhfvftai5eeObvZUn7dizkhrMe4M=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1067,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Elevated view of a modern café interior showing the service counter, pastry display cases, bar equipment, seating with patrons, patterned tile flooring, and exposed industrial ceiling with ductwork and track lighting."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Have Coffee - DIFC",
+      "selected_image": {
+        "venue_name": "Have Coffee - DIFC",
+        "resolved_image_url": "https://images.squarespace-cdn.com/content/v1/61a881e4f23025786b03b6c9/d0a569e0-d7dd-4c9f-b7ae-20b63fddcfc9/Interior.jpeg?format=2500w",
+        "source_url": "https://www.have-coffee.ae/",
+        "source_type": "official_website",
+        "width": 2500,
+        "height": 3125,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Bright, spacious cafe interior with white couches, marble tables, wishbone chairs, stainless steel bar, large hanging 'HAVE' sign, and visible coffee equipment under exposed industrial ceiling."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 170,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "selected_image": {
+        "venue_name": "Kimi - Speciality Coffee and Food",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPiwhkV-DTBP6VrYojMn2UvYxB8O2v447s9mAKLbDsdGS0pW3lF3U8qkI38_dWMvx9GCVKdRiBFtb0eh7CI48ZrPiM6ZVRi-kYYTB3-o9aMsW6SO9kkQBuZ_2J26vZMhP0stA-GsxIZCPtljJSXaWuptw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit interior with natural light from large windows, showing wood-beamed ceiling, woven pendant lights, marble tables, designer wooden chairs, terracotta banquette seating, and a large circular mirrored centerpiece — clearly a curated cafe/dining space."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "selected_image": {
+        "venue_name": "Mokha 1450 Coffee Lounge",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNSdKOyyB839cK9OLukxsYcx7HqNs9-_fRUoOcnm5b3uay2iuFOdwFKO2sSVJiJkOu1AhWZ9m-mhUun5fB15V6VDcH9k7nFZTHGv8pU2eAkMPUTVCSVlMCxX_gLj-XJJjIA1_HtkKbKaUeQpw=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Well-lit interior showing a full bar counter with branded back wall (MOKHA 1450), espresso machine, pendant lights, arched shelving, seating, and decorative elements clearly visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "selected_image": {
+        "venue_name": "MOY SPECIALTY COFFEE",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPPnhH-Tf8EIRuXuRU89SmZvns7M32GCYJ6x8w-LjW-EfH9MrdFZVMBXikVKmYjB-aM0a2-tY18rS0rfNiLj3CTv0nEWwHPvz0vTUSLFMlwK6wo7Yplig2ZYRdKdURDt-pEp55qwX8Cb-JsWHLrFqPynA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1205,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "minimal",
+          "visual_reason": "Clear view of a coffee shop interior featuring a large black-and-white mural of a hand pouring coffee, with a wooden table holding a coffee carafe, glass, and condiments in the foreground."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "selected_image": {
+        "venue_name": "Ores Cafe",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPLMca-Te9neMzJmUCB1kI5N9MZljv5EcBvunwfLEEue0HBrEgTURLYVc1gm-El1AhkcD3j8VX_tJXc0MMo6H8WHGlwt6wQSbGFl4gRe4K017mrx4RLThBCiuy6GF2iGEN59B4eVMKKnAdZHI=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Indoor lounge seating area with cushioned armchairs, a round marble table, and large floor-to-ceiling windows opening to an outdoor terrace with wicker chairs, a parasol umbrella, and planters. Natural daylight floods the space, creating a bright, airy atmosphere suitable as a hero image."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Orijins",
+      "selected_image": {
+        "venue_name": "Orijins",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNtwE1IXbThv94HUuDfO2C-DTC5TMJdBL3RWUc8tMPkszwzzDgCy7L4aEp4aQ0zBsxIJ4NAT_ruSZEJFwjzv3thCptjzP8kf6RXpQ98npUyxAfp3q-WQeXXtKlGTVCJW7D3hBDL65vesGxXhA2URiBjjQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "minimal",
+          "visual_reason": "Minimalist café interior with vaulted white ceiling, concrete and marble pastry display tables with glass cloches, espresso bar in background, and illuminated menu board — clean, bright, and architecturally distinctive."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "selected_image": {
+        "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNIpZB2oGKgm1sHGN1zhAMjDnfv0TW6CORit1-6PUOh6RvCmS8cMK93sNZ3rreEUf_1QuJNBQEWbiNC1BDA6JdCTImQ8zl9jdxbK8J2esFbueaXe9nMr_hpFrWiLps5h8p7ix3R60HwPYl2uSF3CDO0=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Bright interior with white brick wall, floral wall art, hanging plants, booth seating, tables, and large windows showing tropical outdoor view, conveying a fresh, airy dining atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "selected_image": {
+        "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+        "resolved_image_url": "https://risendubai.com/wp-content/uploads/2022/08/gallery-locations-17.jpg",
+        "source_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+        "source_type": "official_website",
+        "width": 1200,
+        "height": 611,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit bakery/café interior showing a full service counter with pastry display, espresso machine, decorative pendant lighting, arched windows with menu boards, and slatted wood facade under a coffered ceiling."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 170,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "selected_image": {
+        "venue_name": "Roasters Specialty Coffee House Al Wasl",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPKL6Foo_hEvId405YUE-bSAy7CO6MXH2ztQ0yYyx7E6t6nulHWpcepjblV8oRsK0T5RmKR-p_ZTq-qut9Uqzc_mAFY0eeosw8SoYTb1D_Ktck0P-NFBR8J6nMrP94oDiZaXX0FYbUkMZWrbXcb6MTs1w=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Outdoor terrace/rooftop seating area with cushioned chairs, terrazzo table, and glass railing overlooking a multi-lane road and Dubai skyline with skyscrapers. Clear guest experience space visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "selected_image": {
+        "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPr4VFfpWyCmX0UnhxefnsyCcycOoVn3gYwHOQw_EotZ6NRJO4YmDHCONURGdAPS5xv8gL61ZtRS9QXyXVdO1AnQFYswVEkGKuZX-RS4k2PEr9OuTO_sFmtBfgtV0PvIKvB0zDThzB-ppatclLFfO5C9g=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Well-lit interior of a coffee house featuring marble tables, wooden barrel-style chairs, leather banquette seating, table settings with cutlery, and a prominent 'Roasters Specialty Coffee House' branded sign on a dark geometric panel wall. Tropical plant and fresh flowers add warmth."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "selected_image": {
+        "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMKQBM3P888DWwwLYRWf3wf-XFMYgPFUNfM-L0INiF8KG0ynzfTvsrhvIHb1SSBMYQLXi59z4fr5a-PsU0xFO3_vSV_rSVjZYDyi4Dh1NyQkCKtweaD_zSENGre9plNDMPTHFTKP-a93nlThnjDXkVM2w=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1067,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Well-lit modern lounge/restaurant interior with marble tables, upholstered seating, large potted palms, herringbone wood floors, and vertical wood slat dividers; no people visible; sharp focus and good exposure."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Summer Soul Boutique - West Beach",
+      "selected_image": {
+        "venue_name": "Summer Soul Boutique - West Beach",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxdmBGd89HbLognZHzYHt6os80oVV2-S4ZRSBj8tDqnlE6viM2fiwdb0rQY5c8deIRLlIbt14kwuERfZPWAFYRuJmVsU8Xf_21oGVs-xfa7LILSLw4D2GAcq7iYXFDs7u85agYBHUPh7LimBo=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=12876688068661905694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 900,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Brightly lit bakery/cafe interior with herringbone tile wall, wooden shelves with ceramics, and a glass display case showcasing pastries, croissants, and cakes — clear spatial and atmospheric hero shot."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "selected_image": {
+        "venue_name": "The Coffee Merchant",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO_D_Ns4o6Ed82NEbzrhgK5y2Aj7vfIWdhW_eRB97jQUSTuJheL4lWT66Bb16SI50ZmtkuLeToYnZOtsuuJUSMDm1BkWggC8mVMFR9hUzWr2B22C1bobr6R6f0W4gFFFui2ydYeb0Q9usZx54RUj6Mz=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "minimal",
+          "visual_reason": "Bright, airy cafe interior with visible seating (wooden chairs with cane, round tables), bar counter with stools, espresso equipment, digital menu kiosk, and large windows — clear spatial experience of the venue."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    }
+  ],
+  "venues_without_hero_candidate": [
+    "Kulture House Dubai",
+    "Fuze Cafe Marina | Specialty Coffee",
+    "Roasters Specialty Coffee House Emaar Beachfront",
+    "Drinkit",
+    "Roast Speciality Coffee, Marina",
+    "The lost Restaurant and Specialty coffee",
+    "Roasters Specialty Coffee House Sobha Hartland"
+  ],
+  "ready_to_connect_hero_image": true
+}

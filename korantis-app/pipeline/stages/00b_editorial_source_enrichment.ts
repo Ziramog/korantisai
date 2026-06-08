@@ -1,0 +1,514 @@
+import { mkdirSync, writeFileSync } from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { loadLocalEnv } from './01_extract_data';
+import { searchGooglePlacesText, type GooglePlacesTextCandidate } from '../utils/google_places';
+
+export type EditorialBatchType = 'cafes' | 'bars' | 'restaurants' | 'mixed';
+type EditorialSourceKind = 'prestige_guide' | 'local_editorial' | 'coffee_editorial' | 'bar_editorial' | 'city_guide';
+
+interface EditorialSourceTarget {
+  source_id: string;
+  source_name: string;
+  kind: EditorialSourceKind;
+  cities: string[];
+  batch_types: EditorialBatchType[];
+  source_url: string;
+  authority_weight: number;
+  query_templates: string[];
+}
+
+export interface EditorialSourceQuery {
+  source_id: string;
+  source_name: string;
+  source_kind: EditorialSourceKind;
+  source_url: string;
+  authority_weight: number;
+  city: string;
+  neighborhood: string;
+  batch_type: EditorialBatchType;
+  text_query: string;
+}
+
+export interface EditorialSourceCandidate {
+  venue_name: string;
+  normalized_name: string;
+  city: string;
+  neighborhood: string;
+  source_id: string;
+  source_name: string;
+  source_kind: EditorialSourceKind;
+  source_url: string;
+  text_query: string;
+  authority_weight: number;
+  source_confidence: number;
+  place: GooglePlacesTextCandidate;
+  signals: string[];
+  warnings: string[];
+}
+
+export interface EditorialSourceEnrichmentResult {
+  batch_id: string;
+  generated_at: string;
+  city: string;
+  neighborhoods: string[];
+  batch_type: EditorialBatchType;
+  mode: 'google_places_source_queries';
+  caveat: string;
+  queries_run: number;
+  candidates_found: number;
+  unique_candidates: number;
+  sources_used: Array<{
+    source_id: string;
+    source_name: string;
+    source_kind: EditorialSourceKind;
+    source_url: string;
+    authority_weight: number;
+  }>;
+  candidates: EditorialSourceCandidate[];
+  warnings: string[];
+  next_step: string;
+}
+
+interface EditorialSourceOptions {
+  city: string;
+  neighborhoods: string[];
+  batchType: EditorialBatchType;
+  maxSourceQueries?: number;
+}
+
+const SOURCE_QUERY_CAVEAT = 'Source-query discovery is a prestige-weighted candidate signal, not proof that the source published this exact venue. Confirmed editorial mentions require a future URL-level source verification pass.';
+
+const EDITORIAL_SOURCE_TARGETS: EditorialSourceTarget[] = [
+  {
+    source_id: 'michelin',
+    source_name: 'Michelin Guide',
+    kind: 'prestige_guide',
+    cities: ['buenos aires', 'new york city', 'new york', 'dubai'],
+    batch_types: ['restaurants', 'bars', 'mixed'],
+    source_url: 'https://guide.michelin.com/',
+    authority_weight: 1,
+    query_templates: [
+      'Michelin Guide {type_phrase} in {neighborhood} {city}',
+      'Michelin recommended {type_phrase} {neighborhood} {city}',
+    ],
+  },
+  {
+    source_id: 'fifty_best_discovery',
+    source_name: '50 Best Discovery',
+    kind: 'prestige_guide',
+    cities: ['buenos aires', 'new york city', 'new york', 'dubai'],
+    batch_types: ['restaurants', 'bars', 'mixed'],
+    source_url: 'https://www.theworlds50best.com/discovery/',
+    authority_weight: 0.95,
+    query_templates: [
+      '50 Best Discovery {type_phrase} in {neighborhood} {city}',
+      'Worlds 50 Best {type_phrase} {neighborhood} {city}',
+    ],
+  },
+  {
+    source_id: 'eater',
+    source_name: 'Eater',
+    kind: 'local_editorial',
+    cities: ['new york city', 'new york'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://ny.eater.com/',
+    authority_weight: 0.85,
+    query_templates: [
+      'Eater best {type_phrase} in {neighborhood} {city}',
+      'Eater essential {type_phrase} {neighborhood} {city}',
+    ],
+  },
+  {
+    source_id: 'infatuation',
+    source_name: 'The Infatuation',
+    kind: 'local_editorial',
+    cities: ['new york city', 'new york'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://www.theinfatuation.com/new-york',
+    authority_weight: 0.85,
+    query_templates: [
+      'The Infatuation best {type_phrase} in {neighborhood} {city}',
+      'Infatuation {type_phrase} {neighborhood} {city}',
+    ],
+  },
+  {
+    source_id: 'nymag_grubstreet',
+    source_name: 'NYMag / Grub Street',
+    kind: 'local_editorial',
+    cities: ['new york city', 'new york'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://www.grubstreet.com/',
+    authority_weight: 0.78,
+    query_templates: [
+      'Grub Street best {type_phrase} in {neighborhood} {city}',
+      'New York Magazine {type_phrase} {neighborhood} {city}',
+    ],
+  },
+  {
+    source_id: 'sprudge',
+    source_name: 'Sprudge',
+    kind: 'coffee_editorial',
+    cities: ['new york city', 'new york'],
+    batch_types: ['cafes', 'mixed'],
+    source_url: 'https://sprudge.com/',
+    authority_weight: 0.75,
+    query_templates: [
+      'Sprudge coffee {neighborhood} {city}',
+      'Sprudge best coffee shops {neighborhood} {city}',
+    ],
+  },
+  {
+    source_id: 'timeout_ba',
+    source_name: 'Time Out Buenos Aires',
+    kind: 'city_guide',
+    cities: ['buenos aires'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://www.timeout.com/buenos-aires',
+    authority_weight: 0.72,
+    query_templates: [
+      'Time Out Buenos Aires best {type_phrase} in {neighborhood}',
+      'Time Out {type_phrase} {neighborhood} Buenos Aires',
+    ],
+  },
+  {
+    source_id: 'lanacion_gastronomia',
+    source_name: 'La Nacion Gastronomia',
+    kind: 'local_editorial',
+    cities: ['buenos aires'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://www.lanacion.com.ar/',
+    authority_weight: 0.7,
+    query_templates: [
+      'La Nacion gastronomia {type_phrase} {neighborhood} Buenos Aires',
+      'La Nacion mejores {type_phrase} {neighborhood}',
+    ],
+  },
+  {
+    source_id: 'infobae_gastronomia',
+    source_name: 'Infobae Gastronomia',
+    kind: 'local_editorial',
+    cities: ['buenos aires'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://www.infobae.com/',
+    authority_weight: 0.68,
+    query_templates: [
+      'Infobae gastronomia {type_phrase} {neighborhood} Buenos Aires',
+      'Infobae mejores {type_phrase} Buenos Aires {neighborhood}',
+    ],
+  },
+  {
+    source_id: 'timeout_dubai',
+    source_name: 'Time Out Dubai',
+    kind: 'city_guide',
+    cities: ['dubai'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://www.timeoutdubai.com/',
+    authority_weight: 0.76,
+    query_templates: [
+      'Time Out Dubai best {type_phrase} in {neighborhood}',
+      'Time Out Dubai {type_phrase} {neighborhood}',
+    ],
+  },
+  {
+    source_id: 'whats_on_dubai',
+    source_name: "What's On Dubai",
+    kind: 'local_editorial',
+    cities: ['dubai'],
+    batch_types: ['restaurants', 'bars', 'cafes', 'mixed'],
+    source_url: 'https://whatson.ae/dubai/',
+    authority_weight: 0.72,
+    query_templates: [
+      "What's On Dubai best {type_phrase} in {neighborhood}",
+      "What's On Dubai {type_phrase} {neighborhood}",
+    ],
+  },
+  {
+    source_id: 'gault_millau_uae',
+    source_name: 'Gault&Millau UAE',
+    kind: 'prestige_guide',
+    cities: ['dubai'],
+    batch_types: ['restaurants', 'mixed'],
+    source_url: 'https://www.gaultmillauae.com/',
+    authority_weight: 0.86,
+    query_templates: [
+      'Gault Millau UAE {type_phrase} Dubai {neighborhood}',
+      'Gault&Millau Dubai {type_phrase} {neighborhood}',
+    ],
+  },
+];
+
+export async function runEditorialSourceEnrichment(batchId: string, options: EditorialSourceOptions): Promise<EditorialSourceEnrichmentResult> {
+  loadLocalEnv();
+  const outputDir = path.join(process.cwd(), 'data', 'batches', batchId);
+  mkdirSync(outputDir, { recursive: true });
+  const result = await discoverEditorialSourceCandidates(batchId, options);
+  writeFileSync(path.join(outputDir, 'stage_00b_editorial_source_enrichment.json'), `${JSON.stringify(result, null, 2)}\n`, 'utf8');
+  writeFileSync(path.join(outputDir, 'stage_00b_editorial_source_enrichment_report.md'), buildReport(result), 'utf8');
+  console.log(`Stage 00B editorial source enrichment JSON written to ${path.join(outputDir, 'stage_00b_editorial_source_enrichment.json')}`);
+  console.log(`Stage 00B editorial source enrichment report written to ${path.join(outputDir, 'stage_00b_editorial_source_enrichment_report.md')}`);
+  console.log(`Stage 00B summary: queries=${result.queries_run}, candidates=${result.candidates_found}, unique=${result.unique_candidates}`);
+  return result;
+}
+
+export async function discoverEditorialSourceCandidates(batchId: string, options: EditorialSourceOptions): Promise<EditorialSourceEnrichmentResult> {
+  loadLocalEnv();
+  const apiKey = process.env.GOOGLE_PLACES_API_KEY?.trim();
+  const queries = buildEditorialSourceQueries(options).slice(0, options.maxSourceQueries);
+  const warnings: string[] = [];
+  const candidates: EditorialSourceCandidate[] = [];
+
+  if (!apiKey) {
+    warnings.push('missing_google_places_api_key_editorial_source_queries_skipped');
+  } else {
+    for (const query of queries) {
+      const result = await searchGooglePlacesText(query.text_query, {
+        apiKey,
+        city: options.city,
+        languageCode: 'en',
+        regionCode: regionCodeForCity(options.city),
+        maxResultCount: 8,
+      });
+      if (result.error) {
+        warnings.push(`query_failed:${query.source_id}:${result.error}`);
+        continue;
+      }
+      for (const place of result.candidates) {
+        candidates.push({
+          venue_name: place.name,
+          normalized_name: normalizeName(place.name),
+          city: options.city,
+          neighborhood: query.neighborhood,
+          source_id: query.source_id,
+          source_name: query.source_name,
+          source_kind: query.source_kind,
+          source_url: query.source_url,
+          text_query: query.text_query,
+          authority_weight: query.authority_weight,
+          source_confidence: computeSourceConfidence(query, place),
+          place,
+          signals: buildSignals(query),
+          warnings: [SOURCE_QUERY_CAVEAT],
+        });
+      }
+    }
+  }
+
+  const uniqueCandidates = dedupeCandidates(candidates);
+  const sourcesUsed = dedupeSources(queries.map((query) => ({
+    source_id: query.source_id,
+    source_name: query.source_name,
+    source_kind: query.source_kind,
+    source_url: query.source_url,
+    authority_weight: query.authority_weight,
+  })));
+
+  return {
+    batch_id: batchId,
+    generated_at: new Date().toISOString(),
+    city: options.city,
+    neighborhoods: options.neighborhoods,
+    batch_type: options.batchType,
+    mode: 'google_places_source_queries',
+    caveat: SOURCE_QUERY_CAVEAT,
+    queries_run: apiKey ? queries.length : 0,
+    candidates_found: candidates.length,
+    unique_candidates: uniqueCandidates.length,
+    sources_used: sourcesUsed,
+    candidates: uniqueCandidates,
+    warnings,
+    next_step: `npx tsx pipeline/stages/00_build_venue_seed.ts ${batchId} --count <N> --city "${options.city}" --neighborhoods "${options.neighborhoods.join(',')}" --type-mix "<mix>" --continue`,
+  };
+}
+
+export function buildEditorialSourceQueries(options: EditorialSourceOptions): EditorialSourceQuery[] {
+  const cityKey = normalizeName(options.city);
+  const typePhrase = typePhraseForBatchType(options.batchType);
+  const targets = EDITORIAL_SOURCE_TARGETS.filter((target) =>
+    target.cities.some((city) => cityKey.includes(city) || normalizeName(city).includes(cityKey)) &&
+    target.batch_types.includes(options.batchType),
+  );
+
+  const queries: EditorialSourceQuery[] = [];
+  for (const neighborhood of options.neighborhoods) {
+    for (const target of targets) {
+      for (const template of target.query_templates) {
+        queries.push({
+          source_id: target.source_id,
+          source_name: target.source_name,
+          source_kind: target.kind,
+          source_url: target.source_url,
+          authority_weight: target.authority_weight,
+          city: options.city,
+          neighborhood,
+          batch_type: options.batchType,
+          text_query: template
+            .replace(/\{type_phrase\}/g, typePhrase)
+            .replace(/\{neighborhood\}/g, neighborhood)
+            .replace(/\{city\}/g, options.city),
+        });
+      }
+    }
+  }
+  return queries;
+}
+
+function dedupeCandidates(candidates: EditorialSourceCandidate[]): EditorialSourceCandidate[] {
+  const byKey = new Map<string, EditorialSourceCandidate>();
+  for (const candidate of candidates) {
+    const key = candidate.place.place_id || `${candidate.normalized_name}|${normalizeName(candidate.neighborhood)}|${normalizeName(candidate.city)}`;
+    const current = byKey.get(key);
+    if (!current || candidate.source_confidence > current.source_confidence) {
+      byKey.set(key, candidate);
+      continue;
+    }
+    current.signals = [...new Set([...current.signals, ...candidate.signals])];
+    current.warnings = [...new Set([...current.warnings, ...candidate.warnings])];
+  }
+  return [...byKey.values()].sort((a, b) => b.source_confidence - a.source_confidence);
+}
+
+function dedupeSources<T extends { source_id: string }>(sources: T[]): T[] {
+  const byId = new Map<string, T>();
+  for (const source of sources) byId.set(source.source_id, source);
+  return [...byId.values()];
+}
+
+function computeSourceConfidence(query: EditorialSourceQuery, place: GooglePlacesTextCandidate): number {
+  let score = query.authority_weight * 0.55;
+  if (place.rating && place.rating >= 4.3) score += 0.12;
+  if (place.user_ratings_total && place.user_ratings_total >= 80) score += 0.1;
+  if (place.photos.length > 0) score += 0.08;
+  if (place.website_url) score += 0.08;
+  if (query.source_kind === 'prestige_guide') score += 0.05;
+  return Number(Math.min(0.95, score).toFixed(2));
+}
+
+function buildSignals(query: EditorialSourceQuery): string[] {
+  return [
+    'editorial_source_query',
+    `editorial_source:${query.source_id}`,
+    `editorial_kind:${query.source_kind}`,
+    query.source_kind === 'prestige_guide' ? 'prestige_source_query' : '',
+  ].filter(Boolean);
+}
+
+function buildReport(result: EditorialSourceEnrichmentResult): string {
+  return [
+    '# Stage 00B Editorial Source Enrichment Report',
+    '',
+    `- Batch: ${result.batch_id}`,
+    `- Generated: ${result.generated_at}`,
+    `- City: ${result.city}`,
+    `- Batch type: ${result.batch_type}`,
+    `- Neighborhoods: ${result.neighborhoods.join(', ')}`,
+    `- Mode: ${result.mode}`,
+    `- Queries run: ${result.queries_run}`,
+    `- Candidates found: ${result.candidates_found}`,
+    `- Unique candidates: ${result.unique_candidates}`,
+    `- Caveat: ${result.caveat}`,
+    '',
+    '## Sources Used',
+    '',
+    ...result.sources_used.map((source) => `- ${source.source_name} (${source.source_kind}, weight ${source.authority_weight}): ${source.source_url}`),
+    '',
+    '## Top Candidates',
+    '',
+    '| Venue | Neighborhood | Source | Confidence | Query |',
+    '| --- | --- | --- | ---: | --- |',
+    ...result.candidates.slice(0, 120).map((candidate) =>
+      `| ${escapeTable(candidate.venue_name)} | ${escapeTable(candidate.neighborhood)} | ${escapeTable(candidate.source_name)} | ${candidate.source_confidence} | ${escapeTable(candidate.text_query)} |`,
+    ),
+    '',
+    '## Warnings',
+    '',
+    ...(result.warnings.length > 0 ? result.warnings.map((warning) => `- ${warning}`) : ['- none']),
+    '',
+    '## Next Step',
+    '',
+    'Run Stage 00. Stage 00 now consumes this file automatically when it exists for the same batch.',
+    '',
+    '```powershell',
+    result.next_step,
+    '```',
+  ].join('\n') + '\n';
+}
+
+function typePhraseForBatchType(type: EditorialBatchType): string {
+  if (type === 'cafes') return 'cafes coffee shops';
+  if (type === 'bars') return 'bars cocktail bars wine bars';
+  if (type === 'restaurants') return 'restaurants';
+  return 'restaurants bars cafes';
+}
+
+function normalizeName(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function regionCodeForCity(city: string): string {
+  const normalized = normalizeName(city);
+  if (normalized.includes('new york') || normalized.includes('nyc') || normalized.includes('united states')) return 'US';
+  if (normalized.includes('buenos aires') || normalized.includes('argentina')) return 'AR';
+  if (normalized.includes('dubai') || normalized.includes('united arab emirates') || normalized.includes('uae')) return 'AE';
+  return 'US';
+}
+
+function parseBatchType(value?: string): EditorialBatchType {
+  const normalized = normalizeName(value || '');
+  if (normalized.includes('cafe') || normalized.includes('coffee')) return 'cafes';
+  if (normalized.includes('bar') || normalized.includes('cocktail') || normalized.includes('wine')) return 'bars';
+  if (normalized.includes('restaurant')) return 'restaurants';
+  return 'mixed';
+}
+
+function parseList(value?: string): string[] {
+  return (value || '')
+    .split(',')
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function valueAfter(args: string[], flag: string): string | undefined {
+  const index = args.indexOf(flag);
+  return index >= 0 ? args[index + 1] : undefined;
+}
+
+function escapeTable(value: string): string {
+  return value.replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
+}
+
+const currentFile = path.resolve(fileURLToPath(import.meta.url));
+const invokedFile = process.argv[1] ? path.resolve(process.argv[1]) : '';
+
+if (currentFile === invokedFile) {
+  const batchId = process.argv[2];
+  if (!batchId) {
+    console.error('Usage: npx tsx pipeline/stages/00b_editorial_source_enrichment.ts <batch_id> --city "New York City" --neighborhoods "Williamsburg,DUMBO" --type cafes [--max-source-queries 40]');
+    process.exitCode = 1;
+  } else {
+    const args = process.argv.slice(3);
+    const city = valueAfter(args, '--city') || 'Buenos Aires';
+    const neighborhoods = parseList(valueAfter(args, '--neighborhoods'));
+    const batchType = parseBatchType(valueAfter(args, '--type') || valueAfter(args, '--batch-type'));
+    if (neighborhoods.length === 0) {
+      console.error('Stage 00B failed: --neighborhoods is required.');
+      process.exitCode = 1;
+    } else {
+      runEditorialSourceEnrichment(batchId, {
+        city,
+        neighborhoods,
+        batchType,
+        maxSourceQueries: valueAfter(args, '--max-source-queries') ? Number(valueAfter(args, '--max-source-queries')) : undefined,
+      }).catch((error: unknown) => {
+        const message = error instanceof Error ? error.message : String(error);
+        console.error(`Stage 00B editorial source enrichment failed: ${message}`);
+        process.exitCode = 1;
+      });
+    }
+  }
+}

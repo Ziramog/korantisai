@@ -1,0 +1,162 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T20:25:54.890Z",
+  "mode": "dry_run",
+  "requested": 18,
+  "ready_to_activate": 18,
+  "blocked": 0,
+  "activated": 0,
+  "checks": [
+    {
+      "venue_id": "korantis_dubai_caju_coffee_house_chijad4hbttp",
+      "name": "Caju Coffee House",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_mokha_1450_coffee_lounge_chijuwg5ignr",
+      "name": "Mokha 1450 Coffee Lounge",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_roasters_specialty_coffee_house_palm_jumeirah_mall_chij3uefqjbr",
+      "name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_cafe_wayfarer_chijvdjgrhfd",
+      "name": "Cafe Wayfarer",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_have_coffee_difc_chijsdzetbdd",
+      "name": "Have Coffee - DIFC",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_coffee_planet_foundry_downtown_chijhzv3r0bp",
+      "name": "Coffee Planet - Foundry Downtown",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_brews_cafe_chijk1gdbdnp",
+      "name": "Brews Cafe",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_risen_cafe_and_artisanal_bakery_palm_jumeirah_chijhu5hmbdr",
+      "name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_risen_cafe_and_artisanal_bakery_business_bay_chijzyz4zhhp",
+      "name": "Risen Café and Artisanal Bakery, Business Bay",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_arabica_difc_limestone_house_chijfaos6old",
+      "name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_boon_coffee_roasters_downtown_chijy4w1merd",
+      "name": "Boon Coffee Roasters Downtown",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_caffeine_coffee_roaster_chije4472mbd",
+      "name": "Caffeine Coffee Roaster",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_roasters_specialty_coffee_house_dubai_hills_chij30comqbp",
+      "name": "Roasters Specialty Coffee House Dubai Hills",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_boon_coffee_roasters_palm_jumeirah_mall_chijq6zxd4xr",
+      "name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_arabica_dubai_roastery_chiju_1y5pbr",
+      "name": "% ARABICA DUBAI ROASTERY",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_ores_cafe_chijh_3j4und",
+      "name": "Ores Cafe",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_kimi_speciality_coffee_and_food_chijfc_cwutp",
+      "name": "Kimi - Speciality Coffee and Food",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_dubai_circle_cafe_bay_square_chijqyalxjbo",
+      "name": "Circle Cafe (Bay Square)",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    }
+  ],
+  "safety_checks": {
+    "writes_only_venues_curation_status": true,
+    "no_cloudinary_uploads": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "requires_explicit_apply": true
+  }
+}

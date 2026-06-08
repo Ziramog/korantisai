@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Batch Review - batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0f10;
+      --panel: #171a1c;
+      --panel-soft: #202427;
+      --border: #343a3f;
+      --text: #f1eee7;
+      --muted: #a7a097;
+      --gold: #c8a96a;
+      --green: #74b892;
+      --red: #d97b73;
+      --blue: #7ba7d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header, main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--border); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 24px; font-weight: 650; }
+    h2 { margin: 36px 0 16px; font-size: 18px; }
+    h3 { font-size: 15px; }
+    .muted { color: var(--muted); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat, .card, .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat { padding: 16px; }
+    .stat strong { display: block; margin-top: 6px; font-size: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card { overflow: hidden; }
+    .image {
+      height: 150px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-body { padding: 14px; display: grid; gap: 8px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .badge.ready_for_db_staging { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.auto_staged { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.needs_review { color: var(--gold); border-color: rgba(200, 169, 106, .5); }
+    .badge.blocked { color: var(--red); border-color: rgba(217, 123, 115, .5); }
+    .score { color: var(--blue); font-variant-numeric: tabular-nums; }
+    .section-panel { padding: 14px; margin-bottom: 12px; }
+    .dist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .button-row { display: flex; gap: 8px; margin-top: 10px; }
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel-soft);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 8px 10px;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="muted">Korantis Defensive Staging Review</p>
+    <h1>batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah - Dubai</h1>
+    <div class="summary">
+      <div class="stat"><span class="muted">Input</span><strong>30</strong></div>
+      <div class="stat"><span class="muted">Ready for DB staging</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Auto staged</span><strong>6</strong></div>
+      <div class="stat"><span class="muted">Needs review</span><strong>17</strong></div>
+      <div class="stat"><span class="muted">Blocked</span><strong>7</strong></div>
+      <div class="stat"><span class="muted">Cost</span><strong>pending</strong></div>
+      <div class="stat"><span class="muted">Runtime</span><strong>760651 ms</strong></div>
+    </div>
+  </header>
+  <main>
+    <h2>Venue Preview</h2>
+    <section class="grid"><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOExB-EShY1nEHrQqadhJXAOxnuJLP5nP3_26VX9HJMj7hzKEpxJPj0M9HmyaoeGjLi5myk6xiFu4Og-m1v6ODdn-c-yydezZCl82_kAMT-zX_Zgxhrml96vSt9FaVEDVKNQDQ5eWy5M2Yvurpm9Cs0=s4800-w1600-h1365" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Caju Coffee House</h3>
+      <p class="muted">Downtown Dubai / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">intimate</span><span class="badge">creative</span><span class="badge">work_friendly</span><span class="badge">date_night</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 76</span></div>
+      <h3>Kulture House Dubai</h3>
+      <p class="muted">Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">creative</span><span class="badge">warm</span><span class="badge">quiet</span><span class="badge">work_friendly</span><span class="badge">hidden_gem</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>Roasters Specialty Coffee House Emaar Beachfront</h3>
+      <p class="muted">Dubai Marina / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">refined</span><span class="badge">late_night</span><span class="badge">date_night</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNSdKOyyB839cK9OLukxsYcx7HqNs9-_fRUoOcnm5b3uay2iuFOdwFKO2sSVJiJkOu1AhWZ9m-mhUun5fB15V6VDcH9k7nFZTHGv8pU2eAkMPUTVCSVlMCxX_gLj-XJJjIA1_HtkKbKaUeQpw=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Mokha 1450 Coffee Lounge</h3>
+      <p class="muted">Palm Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">refined</span><span class="badge">warm</span><span class="badge">quiet</span><span class="badge">late_night</span><span class="badge">date_night</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMKQBM3P888DWwwLYRWf3wf-XFMYgPFUNfM-L0INiF8KG0ynzfTvsrhvIHb1SSBMYQLXi59z4fr5a-PsU0xFO3_vSV_rSVjZYDyi4Dh1NyQkCKtweaD_zSENGre9plNDMPTHFTKP-a93nlThnjDXkVM2w=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Roasters Specialty Coffee House Palm Jumeirah Mall</h3>
+      <p class="muted">Palm Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">refined</span><span class="badge">quiet</span><span class="badge">work_friendly</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNWFWNQCnKnlSOH6JNe1XRU3LUUbgqBT0bES8V92C8OUwtXsHCSeyf6a2g_SHp3U5fy0AsIOMMZ4DRHVztlNVyR4JnFrfJGJoLSSAAGPv92NKjeJ8H55upbi7rH_SUCEMg1O161BXl8wDfIGA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Cafe Wayfarer</h3>
+      <p class="muted">DIFC / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">warm</span><span class="badge">refined</span><span class="badge">social</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNtwE1IXbThv94HUuDfO2C-DTC5TMJdBL3RWUc8tMPkszwzzDgCy7L4aEp4aQ0zBsxIJ4NAT_ruSZEJFwjzv3thCptjzP8kf6RXpQ98npUyxAfp3q-WQeXXtKlGTVCJW7D3hBDL65vesGxXhA2URiBjjQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Orijins</h3>
+      <p class="muted">DIFC / cafe</p>
+      <div class="meta"><span class="badge">quiet</span><span class="badge">refined</span><span class="badge">work_friendly</span><span class="badge">creative</span><span class="badge">cinematic</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://images.squarespace-cdn.com/content/v1/61a881e4f23025786b03b6c9/d0a569e0-d7dd-4c9f-b7ae-20b63fddcfc9/Interior.jpeg?format=2500w" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge auto_staged">auto_staged</span><span class="score">Score 100</span></div>
+      <h3>Have Coffee - DIFC</h3>
+      <p class="muted">DIFC / cafe</p>
+      <div class="meta"><span class="badge">refined</span><span class="badge">work_friendly</span><span class="badge">creative</span><span class="badge">quiet</span><span class="badge">cinematic</span></div>
+      <p class="muted">Auto-staged with score 100 and 2 warning(s).</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNvExlgOyhrRtrK52sBR3gsMfNX8D4s5Unf_iXeMhepYRSqIe3wjZmYHsIe4_6k5zDBcqhJQe99J2p3XInlNcBgI3soMqkgR-bTX9abAj0CPQ8QIFyuOYOjhfvftai5eeObvZUn7dizkhrMe4M=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Coffee Planet - Foundry Downtown</h3>
+      <p class="muted">Downtown Dubai / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">quiet</span><span class="badge">refined</span><span class="badge">warm</span><span class="badge">lively</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZO_D_Ns4o6Ed82NEbzrhgK5y2Aj7vfIWdhW_eRB97jQUSTuJheL4lWT66Bb16SI50ZmtkuLeToYnZOtsuuJUSMDm1BkWggC8mVMFR9hUzWr2B22C1bobr6R6f0W4gFFFui2ydYeb0Q9usZx54RUj6Mz=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>The Coffee Merchant</h3>
+      <p class="muted">Downtown Dubai / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">refined</span><span class="badge">quiet</span><span class="badge">warm</span><span class="badge">date_night</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 74</span></div>
+      <h3>Roast Speciality Coffee, Marina</h3>
+      <p class="muted">Dubai Marina / cafe</p>
+      <div class="meta"><span class="badge">lively</span><span class="badge">work_friendly</span><span class="badge">social</span><span class="badge">date_night</span><span class="badge">late_night</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 75</span></div>
+      <h3>Drinkit</h3>
+      <p class="muted">Dubai Marina / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">work_friendly</span><span class="badge">late_night</span><span class="badge">refined</span><span class="badge">quiet</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOxdmBGd89HbLognZHzYHt6os80oVV2-S4ZRSBj8tDqnlE6viM2fiwdb0rQY5c8deIRLlIbt14kwuERfZPWAFYRuJmVsU8Xf_21oGVs-xfa7LILSLw4D2GAcq7iYXFDs7u85agYBHUPh7LimBo=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Summer Soul Boutique - West Beach</h3>
+      <p class="muted">Palm Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">social</span><span class="badge">refined</span><span class="badge">work_friendly</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMJ45ZGowY0xrdE4D1S6jE8J7oRJmewTmDTWf9a-qwyZ5Zmgz6EhsxceKfX28tTnmIygOPIp_LYs_HYQnZe078qmkzmfLBcPMXPeSXnIg_YWU_xZter909Uj6SqjcSC7vx_Xlx7-7XzvElgkQ=s4800-w1600-h1135" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Brews Cafe</h3>
+      <p class="muted">Business Bay / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">creative</span><span class="badge">work_friendly</span><span class="badge">social</span><span class="badge">lively</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPKL6Foo_hEvId405YUE-bSAy7CO6MXH2ztQ0yYyx7E6t6nulHWpcepjblV8oRsK0T5RmKR-p_ZTq-qut9Uqzc_mAFY0eeosw8SoYTb1D_Ktck0P-NFBR8J6nMrP94oDiZaXX0FYbUkMZWrbXcb6MTs1w=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Roasters Specialty Coffee House Al Wasl</h3>
+      <p class="muted">DIFC / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">work_friendly</span><span class="badge">outdoor</span><span class="badge">refined</span><span class="badge">date_night</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://risendubai.com/wp-content/uploads/2022/08/gallery-locations-17.jpg" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge auto_staged">auto_staged</span><span class="score">Score 100</span></div>
+      <h3>Risen Café and Artisanal Bakery, Palm Jumeirah</h3>
+      <p class="muted">Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">quiet</span><span class="badge">refined</span><span class="badge">date_night</span><span class="badge">work_friendly</span></div>
+      <p class="muted">Auto-staged with score 100 and 2 warning(s).</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNIpZB2oGKgm1sHGN1zhAMjDnfv0TW6CORit1-6PUOh6RvCmS8cMK93sNZ3rreEUf_1QuJNBQEWbiNC1BDA6JdCTImQ8zl9jdxbK8J2esFbueaXe9nMr_hpFrWiLps5h8p7ix3R60HwPYl2uSF3CDO0=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Risen Café and Artisanal Bakery, Business Bay</h3>
+      <p class="muted">Business Bay / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">quiet</span><span class="badge">refined</span><span class="badge">creative</span><span class="badge">warm</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMiLHnBYceWikX58Tx4rNmKoFBRSkgoAhEt3_7kM4Be9LwacMWVfTv-g72FRhgg6dT5MLe8NE9_SZ_ogpU-quUtqV2kg69OI7pAnmU4cyTOJDb8r17_owQWPoMXWwc4SqOXtWbZhdcxQiTsK_w=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge auto_staged">auto_staged</span><span class="score">Score 100</span></div>
+      <h3>% ARABICA DIFC LIMESTONE HOUSE</h3>
+      <p class="muted">DIFC / cafe</p>
+      <div class="meta"><span class="badge">quiet</span><span class="badge">work_friendly</span><span class="badge">refined</span><span class="badge">creative</span></div>
+      <p class="muted">Auto-staged with score 100 and 2 warning(s).</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNwT5XfR7pJPtVgB7MR85YCLmRnvcDE_VAWGCISQKMve8cYLg2PlWYU8pIWwDpc88OBQFebBLSvot3b2U2wQyFuSQbqULH-dh1bHD3LRpmM03FanRGM6AetA6yVpbSV4jsIXHaFeT8tTyZQomNGig-A=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Boon Coffee Roasters Downtown</h3>
+      <p class="muted">Downtown Dubai / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">quiet</span><span class="badge">refined</span><span class="badge">social</span><span class="badge">warm</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOf0e-4t-_X7QPUGv_lYZAR4GbZo0ZpUl4YCzMVV0ax_4JKUhNCVNYkZgrWmWK_zetoyw6g8oVxfteI1V5dCKNI-Q2RhpDaQUoPXKWOefWeJZuUNoLGAyWSfce1OUYuDPgU9sZl_XSD5ZJeyUzEIhzTuQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Caffeine Coffee Roaster</h3>
+      <p class="muted">Downtown Dubai / cafe</p>
+      <div class="meta"><span class="badge">refined</span><span class="badge">work_friendly</span><span class="badge">creative</span><span class="badge">warm</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPPnhH-Tf8EIRuXuRU89SmZvns7M32GCYJ6x8w-LjW-EfH9MrdFZVMBXikVKmYjB-aM0a2-tY18rS0rfNiLj3CTv0nEWwHPvz0vTUSLFMlwK6wo7Yplig2ZYRdKdURDt-pEp55qwX8Cb-JsWHLrFqPynA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>MOY SPECIALTY COFFEE</h3>
+      <p class="muted">Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">quiet</span><span class="badge">warm</span><span class="badge">intimate</span><span class="badge">creative</span><span class="badge">work_friendly</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPr4VFfpWyCmX0UnhxefnsyCcycOoVn3gYwHOQw_EotZ6NRJO4YmDHCONURGdAPS5xv8gL61ZtRS9QXyXVdO1AnQFYswVEkGKuZX-RS4k2PEr9OuTO_sFmtBfgtV0PvIKvB0zDThzB-ppatclLFfO5C9g=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Roasters Specialty Coffee House Dubai Hills</h3>
+      <p class="muted">Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">work_friendly</span><span class="badge">late_night</span><span class="badge">refined</span><span class="badge">quiet</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 72</span></div>
+      <h3>The lost Restaurant and Specialty coffee</h3>
+      <p class="muted">Dubai Marina / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">work_friendly</span><span class="badge">date_night</span><span class="badge">late_night</span><span class="badge">hidden_gem</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 75</span></div>
+      <h3>Fuze Cafe Marina | Specialty Coffee</h3>
+      <p class="muted">Dubai Marina / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">refined</span><span class="badge">quiet</span><span class="badge">creative</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOJucPuwFDifdVBH5eGxJ2znxtZeJ2t43Y7zD6jnZOCILWPU04enNXYlCr5WW1rdu1VukqA9nynhqlCtWbSLZFiAiAI0_ILzmG1fIHWBUDipcfrTuhed_xh3CUgj3JrYZ7dMMailMxT2iSIx9OZ4MrGzg=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Boon Coffee Roasters - Palm Jumeirah Mall</h3>
+      <p class="muted">Palm Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">work_friendly</span><span class="badge">quiet</span><span class="badge">social</span><span class="badge">intimate</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPMMZFfhp4cadu-39Bs5PNS3llP5jJZLTCAma-JUjWhtfXcy68Gto_hOtTXUHWH7WGcHCr16tof9YztKOraIoDTFoOSE8Ocg_OsgflJMeDyJuozkKv-MtoVnzcXsod8YjqD2AKXMg9N-BmZD7EvdSaC=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge auto_staged">auto_staged</span><span class="score">Score 100</span></div>
+      <h3>% ARABICA DUBAI ROASTERY</h3>
+      <p class="muted">Palm Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">refined</span><span class="badge">quiet</span><span class="badge">late_night</span><span class="badge">intimate</span></div>
+      <p class="muted">Auto-staged with score 100 and 2 warning(s).</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 76</span></div>
+      <h3>Roasters Specialty Coffee House Sobha Hartland</h3>
+      <p class="muted">Business Bay / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">quiet</span><span class="badge">warm</span><span class="badge">late_night</span><span class="badge">refined</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOPLMca-Te9neMzJmUCB1kI5N9MZljv5EcBvunwfLEEue0HBrEgTURLYVc1gm-El1AhkcD3j8VX_tJXc0MMo6H8WHGlwt6wQSbGFl4gRe4K017mrx4RLThBCiuy6GF2iGEN59B4eVMKKnAdZHI=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge auto_staged">auto_staged</span><span class="score">Score 100</span></div>
+      <h3>Ores Cafe</h3>
+      <p class="muted">Jumeirah / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">outdoor</span><span class="badge">late_night</span><span class="badge">social</span><span class="badge">date_night</span></div>
+      <p class="muted">Auto-staged with score 100 and 2 warning(s).</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPiwhkV-DTBP6VrYojMn2UvYxB8O2v447s9mAKLbDsdGS0pW3lF3U8qkI38_dWMvx9GCVKdRiBFtb0eh7CI48ZrPiM6ZVRi-kYYTB3-o9aMsW6SO9kkQBuZ_2J26vZMhP0stA-GsxIZCPtljJSXaWuptw=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge needs_review">needs_review</span><span class="score">Score 100</span></div>
+      <h3>Kimi - Speciality Coffee and Food</h3>
+      <p class="muted">Business Bay / cafe</p>
+      <div class="meta"><span class="badge">work_friendly</span><span class="badge">refined</span><span class="badge">creative</span><span class="badge">warm</span></div>
+      <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOexMzLV8n7mmcxSpCVpA3um8dbejvgq7esWjqBG17sdo8_7xPZ8ErbR1TdA_qP1HuusXVMOY7okpKFNXoj9LFNTYUrshY362yqMRh33LDQ7PtqQdBG69bNc4U_DGxGSwS3kZMOm_Uq-8PM17ludW3C=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge auto_staged">auto_staged</span><span class="score">Score 100</span></div>
+      <h3>Circle Cafe (Bay Square)</h3>
+      <p class="muted">Business Bay / cafe</p>
+      <div class="meta"><span class="badge">warm</span><span class="badge">work_friendly</span><span class="badge">creative</span><span class="badge">social</span></div>
+      <p class="muted">Auto-staged with score 100 and 2 warning(s).</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article></section>
+    <h2>Ready For DB Staging</h2>
+    <section class="section-panel muted">No DB-staging-ready candidates.</section>
+    <h2>Needs Review</h2>
+    <section class="section-panel">
+    <h3>Caju Coffee House <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Mokha 1450 Coffee Lounge <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Roasters Specialty Coffee House Palm Jumeirah Mall <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Cafe Wayfarer <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Orijins <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Coffee Planet - Foundry Downtown <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>The Coffee Merchant <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Summer Soul Boutique - West Beach <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Brews Cafe <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Roasters Specialty Coffee House Al Wasl <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Risen Café and Artisanal Bakery, Business Bay <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Boon Coffee Roasters Downtown <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Caffeine Coffee Roaster <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>MOY SPECIALTY COFFEE <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Roasters Specialty Coffee House Dubai Hills <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Boon Coffee Roasters - Palm Jumeirah Mall <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Kimi - Speciality Coffee and Food <span class="score">100</span></h3>
+    <p class="muted">Needs review: too_many_warnings_for_auto_stage, medium_rights_risk, missing_instagram, missing_price_hint</p>
+    <p class="muted">Errors: none</p>
+    <p class="muted">Warnings: medium_rights_risk, missing_instagram, missing_price_hint</p>
+  </section>
+    <h2>Blocked</h2>
+    <section class="section-panel">
+    <h3>Kulture House Dubai <span class="score">76</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: missing_instagram</p>
+  </section><section class="section-panel">
+    <h3>Roasters Specialty Coffee House Emaar Beachfront <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: low_mood_confidence, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Roast Speciality Coffee, Marina <span class="score">74</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Drinkit <span class="score">75</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>The lost Restaurant and Specialty coffee <span class="score">72</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: low_mood_confidence, missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Fuze Cafe Marina | Specialty Coffee <span class="score">75</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: missing_instagram, missing_price_hint</p>
+  </section><section class="section-panel">
+    <h3>Roasters Specialty Coffee House Sobha Hartland <span class="score">76</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image</p>
+    <p class="muted">Errors: no_hero_image</p>
+    <p class="muted">Warnings: missing_instagram, missing_price_hint</p>
+  </section>
+    <h2>Distribution</h2>
+    <section class="dist">
+      <section class="section-panel"><h3>Mood distribution</h3><p>work_friendly <span class="score">28</span></p><p>warm <span class="score">23</span></p><p>refined <span class="score">21</span></p><p>quiet <span class="score">18</span></p><p>creative <span class="score">12</span></p><p>date_night <span class="score">9</span></p><p>late_night <span class="score">9</span></p><p>social <span class="score">8</span></p><p>intimate <span class="score">4</span></p><p>lively <span class="score">3</span></p><p>hidden_gem <span class="score">2</span></p><p>cinematic <span class="score">2</span></p><p>outdoor <span class="score">2</span></p></section>
+      <section class="section-panel"><h3>Neighborhood distribution</h3><p>Downtown Dubai <span class="score">5</span></p><p>Jumeirah <span class="score">5</span></p><p>Dubai Marina <span class="score">5</span></p><p>Palm Jumeirah <span class="score">5</span></p><p>DIFC <span class="score">5</span></p><p>Business Bay <span class="score">5</span></p></section>
+    </section>
+  </main>
+</body>
+</html>

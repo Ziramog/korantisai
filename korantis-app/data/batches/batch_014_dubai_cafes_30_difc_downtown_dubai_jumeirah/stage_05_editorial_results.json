@@ -1,0 +1,1253 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T15:27:57.916Z",
+  "minimax_called": true,
+  "model_used": "MiniMax-M2.7",
+  "venues_processed": 30,
+  "successful_generations": 30,
+  "failed_generations": 0,
+  "invalid_json_count": 0,
+  "mood_distribution": {
+    "warm": 23,
+    "intimate": 4,
+    "creative": 12,
+    "work_friendly": 28,
+    "date_night": 9,
+    "quiet": 18,
+    "hidden_gem": 2,
+    "refined": 21,
+    "late_night": 9,
+    "social": 8,
+    "cinematic": 2,
+    "lively": 3,
+    "outdoor": 2
+  },
+  "evidence_confidence_distribution": {
+    "low": 0,
+    "medium": 0,
+    "high": 30
+  },
+  "status_counts_after_scoring": {
+    "input": 30,
+    "ready_for_db_staging": 0,
+    "auto_staged": 6,
+    "needs_review": 17,
+    "blocked": 7,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "remaining_blockers_by_venue": {
+    "Caju Coffee House": [],
+    "Kulture House Dubai": [
+      "no_hero_image"
+    ],
+    "Roasters Specialty Coffee House Emaar Beachfront": [
+      "no_hero_image"
+    ],
+    "Mokha 1450 Coffee Lounge": [],
+    "Roasters Specialty Coffee House Palm Jumeirah Mall": [],
+    "Cafe Wayfarer": [],
+    "Orijins": [],
+    "Have Coffee - DIFC": [],
+    "Coffee Planet - Foundry Downtown": [],
+    "The Coffee Merchant": [],
+    "Roast Speciality Coffee, Marina": [
+      "no_hero_image"
+    ],
+    "Drinkit": [
+      "no_hero_image"
+    ],
+    "Summer Soul Boutique - West Beach": [],
+    "Brews Cafe": [],
+    "Roasters Specialty Coffee House Al Wasl": [],
+    "Risen Café and Artisanal Bakery, Palm Jumeirah": [],
+    "Risen Café and Artisanal Bakery, Business Bay": [],
+    "% ARABICA DIFC LIMESTONE HOUSE": [],
+    "Boon Coffee Roasters Downtown": [],
+    "Caffeine Coffee Roaster": [],
+    "MOY SPECIALTY COFFEE": [],
+    "Roasters Specialty Coffee House Dubai Hills": [],
+    "The lost Restaurant and Specialty coffee": [
+      "no_hero_image"
+    ],
+    "Fuze Cafe Marina | Specialty Coffee": [
+      "no_hero_image"
+    ],
+    "Boon Coffee Roasters - Palm Jumeirah Mall": [],
+    "% ARABICA DUBAI ROASTERY": [],
+    "Roasters Specialty Coffee House Sobha Hartland": [
+      "no_hero_image"
+    ],
+    "Ores Cafe": [],
+    "Kimi - Speciality Coffee and Food": [],
+    "Circle Cafe (Bay Square)": []
+  },
+  "results": [
+    {
+      "venue_name": "Caju Coffee House",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Tropical warmth meets downtown elegance",
+        "description_short": "A warmly designed cafe in Downtown Dubai featuring tropical decor, banquette seating, and rattan-accented interiors. Rated 4.9 stars by 421 reviewers, Caju Coffee House offers a welcoming space from morning through evening.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "creative",
+          "work_friendly",
+          "date_night"
+        ],
+        "moments": [
+          "Morning work sessions",
+          "Intimate conversations",
+          "Casual dates",
+          "Solo reflection time",
+          "Relaxed meetings"
+        ],
+        "best_for": [
+          "Solo focus time",
+          "Casual dates",
+          "Creative meetings",
+          "Relaxed socializing",
+          "Coffee rituals"
+        ],
+        "not_for": [
+          "Large groups",
+          "Loud nightlife",
+          "Quick grab-and-go"
+        ],
+        "primary_atmosphere": "Warm tropical café with downtown sophistication",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.92,
+        "editorial_notes": "Grounded in 4.9-star rating from 421 reviews. Image vision confirms warm_cozy atmosphere with tropical decor, banquette seating, rattan chairs, and woven pendant lighting. Downtown Dubai location near Burj Khalifa supports refined positioning. Hours 7 AM–10 PM daily support work_friendly and late_night tags.",
+        "grounded_description": "Caju Coffee House presents a thoughtfully designed space with tropical accents, woven lighting, and cozy banquette seating in Downtown Dubai's Al Manzil area. The venue maintains a 4.9-star average across 421 reviews, offering guests a warm, inviting setting from early morning through evening."
+      }
+    },
+    {
+      "venue_name": "Kulture House Dubai",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where culture meets coffee in Jumeirah.",
+        "description_short": "A creative cafe nestled in Jumeirah, offering a cozy setting for those seeking a cultural vibe with their caffeine fix. Popular among locals with a solid 4.5-star reputation.",
+        "mood_tags": [
+          "creative",
+          "warm",
+          "quiet",
+          "work_friendly",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Remote work sessions",
+          "Casual catch-ups",
+          "Solo reflection time",
+          "Creative brainstorming",
+          "Morning routines"
+        ],
+        "best_for": [
+          "Work-from-cafe days",
+          "Cultural inspiration",
+          "Low-key meetings",
+          "Relaxed solo time",
+          "Local discovery"
+        ],
+        "not_for": [
+          "Late-night sessions",
+          "Large group gatherings",
+          "Party scenes"
+        ],
+        "primary_atmosphere": "A neighborhood creative cafe with warm, cultured energy",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in venue name (Kulture House), category, location in residential Jumeirah, 4.5-star rating with 1069 reviews, and standard cafe hours. No image data to confirm visual atmosphere, so mood confidence reduced. No awards, cuisine details, or pricing available to include.",
+        "grounded_description": "Kulture House Dubai brings a creative, cultural atmosphere to residential Jumeirah, serving as a neighborhood hub for remote workers and casual gatherings with a respectable 4.5-star rating from over 1000 reviews."
+      }
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee with waterfront views at Emaar Beachfront",
+        "description_short": "A specialty coffee house at Emaar Beachfront in Dubai Marina, known for curated single-origin brews and a refined café atmosphere. The venue draws a dedicated following for its quality offerings and flexible hours spanning morning to midnight on weekends.",
+        "mood_tags": [
+          "work_friendly",
+          "refined",
+          "late_night",
+          "date_night"
+        ],
+        "moments": [
+          "Morning focus sessions",
+          "Evening coffee ritual",
+          "Late-night catch-ups",
+          "Post-beach relaxation"
+        ],
+        "best_for": [
+          "Coffee enthusiasts",
+          "Remote workers",
+          "Couple meetups",
+          "Early risers"
+        ],
+        "not_for": [
+          "Quick grab-and-go",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "Refined beachfront specialty coffee house",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.4,
+        "editorial_notes": "Grounded in venue name (specialty coffee), neighborhood (Emaar Beachfront waterfront), extended hours indicating late-night appeal, high rating (4.9) from 768 reviews, and operational status. No image vision data was provided, so mood confidence is reduced and atmospheric claims are restrained.",
+        "grounded_description": "A specialty coffee destination at Emaar Beachfront, drawing coffee enthusiasts with its curated selection and consistent 4.9 rating across 768 reviews. The venue balances daytime work-friendly hours with late-night availability on weekends."
+      }
+    },
+    {
+      "venue_name": "Mokha 1450 Coffee Lounge",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Yemeni coffee heritage meets Palm Jumeirah refinement",
+        "description_short": "A sophisticated coffee lounge on Golden Mile Galleria serving heritage Mokha beans in an elegantly warm interior. Well-lit arched shelving, pendant lights, and a dedicated espresso bar create an intimate setting for discerning coffee connoisseurs.",
+        "mood_tags": [
+          "refined",
+          "warm",
+          "quiet",
+          "late_night",
+          "date_night"
+        ],
+        "moments": [
+          "Morning ritual with single-origin espresso",
+          "Afternoon work session over pour-overs",
+          "Evening conversation over specialty drinks",
+          "Late-night unwind with dessert coffee",
+          "Intimate catch-up with a friend"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Peaceful work sessions",
+          "Romantic coffee dates",
+          "Morning routines",
+          "Evening relaxation"
+        ],
+        "not_for": [
+          "Large group gatherings",
+          "High-energy social scenes"
+        ],
+        "primary_atmosphere": "Refined and warm with a sophisticated coffee culture focus, evident in the branded back wall, curated espresso setup, and well-lit interior designed for intimate enjoyment",
+        "evidence_confidence": 0.95,
+        "mood_confidence": 0.92,
+        "editorial_notes": "Grounded in 4.8-star rating (243 reviews), visible warm_cozy atmosphere from high-quality interior image showing pendant lights, arched shelving, branded bar counter, and seating. The Mokha name references Yemeni coffee heritage. Extended hours until 10-11PM support late_night and date_night tags. Refined atmosphere supported by Golden Mile Galleria location on Palm Jumeirah.",
+        "grounded_description": "Mokha 1450 Coffee Lounge brings Yemeni coffee heritage to Palm Jumeirah's Golden Mile Galleria, operating from 7AM daily with late-night hours until 11PM on weekends. The well-lit interior features arched shelving, pendant lights, and a dedicated espresso bar that reflects a refined approach to specialty coffee service."
+      }
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Lush Palm Jumeirah cafe with marble tables and floor-to-ceiling palms",
+        "description_short": "Specialty coffee house in Nakheel Mall with a refined interior featuring marble tables, herringbone wood floors, and abundant greenery. Rated 4.9 stars by 191 reviewers.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "quiet",
+          "work_friendly"
+        ],
+        "moments": [
+          "Casual coffee catch-up",
+          "Work-from-cafe session",
+          "Relaxed afternoon break",
+          "Pre-shopping caffeine stop",
+          "Casual date coffee"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Remote workers",
+          "Casual meetups",
+          "Leisurely mornings"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Loud group events"
+        ],
+        "primary_atmosphere": "Lush specialty coffee lounge blending marble elegance with natural greenery",
+        "evidence_confidence": 0.92,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Grounded in 4.9 rating from 191 reviews (high confidence), visible interior description from selected image showing marble, potted palms, herringbone floors, upholstered seating, and vertical wood slat dividers. Extended 10AM-10PM hours support versatility claim. No awards, Michelin, or 50 Best mentions in inputs.",
+        "grounded_description": "This specialty coffee house inside Nakheel Mall features a lush, well-lit interior with marble tabletops, upholstered seating, and large potted palms. The herringbone wood floors and vertical wood slat dividers add refined texture to the space."
+      }
+    },
+    {
+      "venue_name": "Cafe Wayfarer",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where DIFC finds its daily retreat",
+        "description_short": "A lush, well-lit cafe nestled in Gate Avenue, offering banquette seating beneath arched ceilings draped in decorative fabric, surrounded by cascading green plants.",
+        "mood_tags": [
+          "work_friendly",
+          "warm",
+          "refined",
+          "social"
+        ],
+        "moments": [
+          "Morning focus sessions",
+          "Afternoon client catch-ups",
+          "Casual work breaks",
+          "Solo productivity",
+          "Casual meetups"
+        ],
+        "best_for": [
+          "Remote work",
+          "Casual meetings",
+          "Daily rituals",
+          "Urban escapes",
+          "Professional breaks"
+        ],
+        "not_for": [],
+        "primary_atmosphere": "Lush urban sanctuary with banquette seating beneath draped arched ceilings, grounding DIFC professionals in greenery and warmth",
+        "evidence_confidence": 1,
+        "mood_confidence": 0.92,
+        "editorial_notes": "Grounded in DIFC address (Gate Avenue), high 4.8 rating with 259 reviews, consistent 8AM-10PM hours, and image vision showing lush plants, banquette seating, arched ceiling with decorative fabric canopy. The 'lush' atmosphere signal directly informs mood tags and primary atmosphere. No awards, pricing, or menu claims invented.",
+        "grounded_description": "Cafe Wayfarer occupies the ground floor of Gate Avenue in DIFC, presenting an interior defined by lush greenery, banquette seating, and an arched ceiling adorned with decorative fabric. The space balances professional accessibility with natural warmth."
+      }
+    },
+    {
+      "venue_name": "Orijins",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Clean lines. Considered coffee.",
+        "description_short": "A minimalist DIFC café with vaulted white ceilings, marble and concrete finishes, and glasscloche pastry displays. Early opening hours and professional setting make it a refined work-day staple.",
+        "mood_tags": [
+          "quiet",
+          "refined",
+          "work_friendly",
+          "creative",
+          "cinematic"
+        ],
+        "moments": [
+          "Morning work sessions",
+          "Coffee breaks with purpose",
+          "Design appreciation",
+          "Quiet afternoon meetings",
+          "Weekend brunch"
+        ],
+        "best_for": [
+          "Morning routines",
+          "Work sessions",
+          "Design enthusiasts",
+          "Quiet conversations",
+          "Architectural appreciation"
+        ],
+        "not_for": [
+          "Loud social gatherings",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "Clean, architecturally distinctive minimalist space with vaulted white ceilings and refined material finishes",
+        "evidence_confidence": 0.95,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in confirmed image vision showing minimalist interior with vaulted ceiling, marble/concrete surfaces, and illuminated menu board. DIFC location and 1078 reviews with 4.3 rating provide behavioral context. Early 7 AM opening and professional setting support work-friendly classification. Visual atmosphere explicitly minimal with clean, bright aesthetic confirmed by image analysis.",
+        "grounded_description": "The interior features a vaulted white ceiling and polished concrete and marble surfaces beneath glasscloche pastry displays, with an espresso bar and illuminated menu board creating a clean, architecturally distinctive setting in the heart of DIFC."
+      }
+    },
+    {
+      "venue_name": "Have Coffee - DIFC",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where specialty coffee meets DIFC refinement",
+        "description_short": "A stylish specialty coffee destination in Dubai's financial district, featuring a bright and airy interior with white furniture, marble surfaces, and an exposed industrial ceiling. The cafe offers a refined atmosphere for daily caffeine needs from 8AM to 10PM.",
+        "mood_tags": [
+          "refined",
+          "work_friendly",
+          "creative",
+          "quiet",
+          "cinematic"
+        ],
+        "moments": [
+          "Morning focus sessions",
+          "Afternoon work breaks",
+          "Solo coffee rituals",
+          "Client catch-ups",
+          "Creative brainstorming"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Remote workers",
+          "Business professionals",
+          "Design-conscious visitors"
+        ],
+        "not_for": [
+          "Night owls seeking late-night venues",
+          "Those preferring loud social spaces",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "Refined yet creative, blending professional sophistication with stylish industrial-chic design",
+        "evidence_confidence": 0.95,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-confidence venue extraction (1.0) with strong visual evidence from selected hero interior showing bright, spacious cafe with white furniture, marble tables, stainless steel bar, and exposed industrial ceiling. DIFC location and consistent 8AM-10PM hours support work_friendly and refined mood tags. No awards, prices, or best/iconic claims made.",
+        "grounded_description": "Located in Dubai's DIFC financial district, Have Coffee presents a bright and airy interior designed with white couches, marble tables, wishbone chairs, and a stainless steel bar under an exposed industrial ceiling. The space balances refined aesthetics with creative industrial touches, offering specialty coffee in a sophisticated daily retreat."
+      }
+    },
+    {
+      "venue_name": "Coffee Planet - Foundry Downtown",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where Downtown's rhythm meets its finest brew",
+        "description_short": "Industrial-modern café in the Burj Khalifa district serving quality coffee and patisserie. Exposed ductwork and track lighting define a refined workspace aesthetic popular with remote professionals.",
+        "mood_tags": [
+          "work_friendly",
+          "quiet",
+          "refined",
+          "warm",
+          "lively"
+        ],
+        "moments": [
+          "Morning focus sessions",
+          "Afternoon coffee breaks",
+          "Casual catch-ups",
+          "Tourist coffee stops",
+          "Remote work days"
+        ],
+        "best_for": [
+          "Remote work",
+          "Casual meetings",
+          "Coffee enthusiasts",
+          "Downtown visitors",
+          "Solo focus time"
+        ],
+        "not_for": [
+          "Late-night socializing",
+          "Romantic dinners",
+          "Large groups"
+        ],
+        "primary_atmosphere": "Industrial-modern café with refined finishes, warm coffee shop energy, and a comfortable work-friendly environment in Downtown Dubai",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in confirmed industrial aesthetic visible in image (exposed ductwork, track lighting, patterned tiles), 4.5-star rating from 205 reviews, consistent 8AM-10PM operation, and Downtown Dubai location near Burj Khalifa. No invented awards, prices, or booking claims.",
+        "grounded_description": "This Downtown Dubai café impresses with exposed industrial ceilings and modern finishes creating a refined yet approachable atmosphere. A popular choice for remote workers and casual meet-ups in the Burj Khalifa district."
+      }
+    },
+    {
+      "venue_name": "The Coffee Merchant",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Premium single-origin coffee in the heart of Business Bay",
+        "description_short": "Specialty coffee house with a 4.9 rating serving Business Bay from early morning. Bright, airy interior with professional workspace seating and quality espresso drinks.",
+        "mood_tags": [
+          "work_friendly",
+          "refined",
+          "quiet",
+          "warm",
+          "date_night"
+        ],
+        "moments": [
+          "Morning productivity sessions",
+          "Business meetings over coffee",
+          "Weekend relaxation",
+          "Intimate conversations",
+          "Evening unwinding"
+        ],
+        "best_for": [
+          "Remote work and studying",
+          "Morning caffeine routines",
+          "Quality one-on-one time",
+          "Quick specialty coffee stops",
+          "Peaceful reading"
+        ],
+        "not_for": [
+          "Large group gatherings",
+          "Loud social events"
+        ],
+        "primary_atmosphere": "Refined work cafe with bright, airy interiors and professional seating",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.75,
+        "editorial_notes": "Grounded in 4.9 rating (376 reviews), Business Bay location in AG Tower, 7AM-10PM daily hours, and image vision showing bright cafe interior with wooden furniture, bar counter, espresso equipment, and large windows.",
+        "grounded_description": "A specialty coffee destination in Business Bay with an exceptional 4.9 rating from 376 reviews. The bright, airy interior features wooden furniture, a dedicated bar counter with professional espresso equipment, and large windows creating a refined yet welcoming workspace atmosphere."
+      }
+    },
+    {
+      "venue_name": "Roast Speciality Coffee, Marina",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee, Marina vibes",
+        "description_short": "Specialty coffee destination in Dubai Marina with extended hours and a loyal following. A go-to spot for quality brews in a lively waterfront setting.",
+        "mood_tags": [
+          "lively",
+          "work_friendly",
+          "social",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "Morning productivity sessions",
+          "Casual coffee catch-ups",
+          "Evening waterfront wind-down",
+          "Remote work afternoons",
+          "Late-night brew runs"
+        ],
+        "best_for": [
+          "Coffee enthusiasts",
+          "Remote workers",
+          "Casual meet-ups",
+          "Early risers",
+          "Late-night sessions"
+        ],
+        "not_for": [
+          "Fine dining seekers",
+          "Quiet library seekers",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "Lively waterfront coffee culture with a dedicated local following and extended hours",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in verified operational data: 4.6 rating from 618 reviews indicates strong local reputation. Extended 7AM-1AM hours support late_night and work_friendly tags. No image data available, so mood confidence reduced. Category as cafe constrains expectations appropriately. No invented awards, pricing, or visual claims.",
+        "grounded_description": "This specialty coffee venue in Dubai Marina draws consistent crowds with its quality-focused offering and convenient waterfront location. Operating from 7AM to 1AM daily, it accommodates everything from morning focus sessions to late-night caffeine runs, earning a solid 4.6 rating from over 600 reviewers."
+      }
+    },
+    {
+      "venue_name": "Drinkit",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Dubai Marina café with marathon hours and a 4.9-star following",
+        "description_short": "A dependable all-day café in Dubai Marina with extended hours from early morning through late evening. With a 4.9 rating across 305 reviews, it has built a loyal local following.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "late_night",
+          "refined",
+          "quiet"
+        ],
+        "moments": [
+          "Morning remote work sessions",
+          "Casual coffee catch-ups",
+          "Pre-dinner drinks by the marina",
+          "Late-evening wind-down"
+        ],
+        "best_for": [
+          "Remote workers",
+          "Social gatherings",
+          "Flexible schedules",
+          "Coffee enthusiasts"
+        ],
+        "not_for": [
+          "Fast-casual dining",
+          "Large group events",
+          "Sports watching"
+        ],
+        "primary_atmosphere": "Refined yet approachable café culture with reliable all-day appeal",
+        "evidence_confidence": 0.95,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in Dubai Marina location, 4.9-star rating with 305 reviews, and 7:30 AM–11:30 PM daily hours. No image vision data available, so atmospheric mood tags are inferred from category type and operational patterns rather than visual confirmation.",
+        "grounded_description": "Drinkit operates as a high-rated café destination in Dubai Marina's Gate Tower 1 complex, offering a consistent 16-hour daily service window that accommodates both early risers and late-evening visitors. The venue's 4.9-star standing across 305 reviews signals strong quality perception among its regulars."
+      }
+    },
+    {
+      "venue_name": "Summer Soul Boutique - West Beach",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Bright bites and good vibes on Palm Jumeirah's West Beach",
+        "description_short": "A sunlit cafe-bakery at West Beach with herringbone tile walls, curated ceramics, and an indulgent display of fresh pastries and croissants. Located within The Club on Palm Jumeirah, it's a refined yet approachable spot for quality coffee and sweet cravings.",
+        "mood_tags": [
+          "warm",
+          "social",
+          "refined",
+          "work_friendly"
+        ],
+        "moments": [
+          "Morning coffee rituals",
+          "Weekend brunch catch-ups",
+          "Afternoon pastry breaks",
+          "Casual beach-day hangs"
+        ],
+        "best_for": [
+          "Morning caffeine needs",
+          "Brunch dates",
+          "Sweet indulgences",
+          "Social gatherings"
+        ],
+        "not_for": [
+          "Late-night sessions",
+          "Secluded work focus"
+        ],
+        "primary_atmosphere": "Bright, warm bakery-cafe with artisanal charm and coastal ease",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality hero image showing bright interior, herringbone tiles, ceramic shelves, and pastry display. Venue data includes 4.8-star rating (157 reviews), daily hours (8AM-10PM), and Palm Jumeirah West Beach address. No awards, Michelin, or 50 Best mentions. Social cafe positioning supported by Instagram presence and casual cafe category.",
+        "grounded_description": "Summer Soul Boutique occupies a sunlit corner at West Beach's The Club on Palm Jumeirah, where a herringbone tile wall and wooden shelves lined with ceramics frame a glass display case stacked with croissants, pastries, and cakes. The bright, airy interior creates an inviting backdrop for morning coffee rituals and relaxed afternoon breaks by the beach."
+      }
+    },
+    {
+      "venue_name": "Brews Cafe",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Brews Cafe: Where art, greenery, and great coffee meet in Business Bay",
+        "description_short": "A vibrant cafe in Business Bay with a lush interior featuring a striking mural, greenery, and communal wooden tables perfect for work or casual gatherings.",
+        "mood_tags": [
+          "warm",
+          "creative",
+          "work_friendly",
+          "social",
+          "lively"
+        ],
+        "moments": [
+          "Morning coffee meetings",
+          "Afternoon work sessions",
+          "Casual catch-ups with friends",
+          "Solo productivity in good company"
+        ],
+        "best_for": [
+          "Remote work and laptop sessions",
+          "Creative inspiration",
+          "Casual social gatherings",
+          "Early morning caffeine fixes"
+        ],
+        "not_for": [
+          "Ultra-quiet focused work",
+          "Romantic dinners"
+        ],
+        "primary_atmosphere": "A lush, creative workspace with warm lighting and artistic touches that balances productivity with social energy",
+        "evidence_confidence": 0.95,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Brews Cafe leverages its high-quality hero interior image showing a bright space with artistic murals, tall ficus trees, and pendant lighting to establish a distinct creative atmosphere. The communal tables and natural light support work_friendly and social mood tags. Early 7 AM opening and evening hours across Business Bay make it accessible for various schedules.",
+        "grounded_description": "Brews Cafe in Business Bay features a bright, lush interior with a white brick wall backdrop, a notable mural of a woman on a bicycle, tall potted ficus trees, and pendant lighting over communal wooden tables. The space offers a warm, creative atmosphere suited for both work sessions and social gatherings."
+      },
+      "retried_at": "2026-06-08T15:27:57.915Z"
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Al Wasl",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee with Dubai skyline views",
+        "description_short": "Specialty coffee house in Jumeirah with an outdoor terrace overlooking the Dubai skyline. Roasters serves carefully sourced beans in a bright, airy setting popular with both residents and visitors.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "outdoor",
+          "refined",
+          "date_night"
+        ],
+        "moments": [
+          "Remote work sessions",
+          "Casual coffee dates",
+          "Visiting friends",
+          "Morning caffeine ritual",
+          "Evening skyline unwinds"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Remote workers",
+          "Casual meetups",
+          "Rooftop experiences",
+          "DIFCadjacent hangs"
+        ],
+        "not_for": [
+          "Noisy group gatherings",
+          "Very late nights",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "Bright rooftop terrace with city views and specialty coffee focus",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in rooftop terrace image showing outdoor seating with skyline views and 4.8 rating from 2999 reviews indicating strong guest satisfaction. High extraction confidence (0.9) from venue data supports accuracy of operational details.",
+        "grounded_description": "A specialty coffee house offering an outdoor terrace experience with panoramic Dubai skyline views. The bright, airy space features contemporary seating and serves carefully sourced single-origin coffees in a refined yet approachable setting."
+      }
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Artisanal bakery and café with morning light on the Palm",
+        "description_short": "Highly-rated craft bakery and café on Palm Jumeirah with an airy, light-filled interior. Serving freshly baked pastries and specialty coffee from early morning through the afternoon.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "refined",
+          "date_night",
+          "work_friendly"
+        ],
+        "moments": [
+          "Leisurely weekend brunch",
+          "Morning coffee catch-up",
+          "Solo work session",
+          "Post-beach refreshment",
+          "Creative planning meeting"
+        ],
+        "best_for": [
+          "Morning routines",
+          "Brunch culture",
+          "Remote work",
+          "Quiet conversations",
+          "Refined casual dining"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Large groups seeking loud atmosphere",
+          "Families with very young children"
+        ],
+        "primary_atmosphere": "Bright, refined café with warm wood accents and natural light through arched windows, creating an intimate yet airy space.",
+        "evidence_confidence": 0.93,
+        "mood_confidence": 0.91,
+        "editorial_notes": "Grounded in high rating (4.9/5) from 1084 reviews, confirmed café and artisanal bakery category, morning operating hours (7AM–4PM), Palm Jumeirah address, and image showing bright airy interior with pastry display, espresso machine, pendant lighting, and warm wood finishes.",
+        "grounded_description": "Risen Café and Artisanal Bakery sits on the ground floor of Palm Jumeirah with a strong 4.9 rating across over 1,000 reviews. The bright, airy interior features warm wood accents, decorative pendant lighting, and arched windows overlooking the Palm, with a full pastry display counter and espresso machine visible."
+      }
+    },
+    {
+      "venue_name": "Risen Café and Artisanal Bakery, Business Bay",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Rise bright: artisanal bakes, natural light",
+        "description_short": "A bright, plant-filled café tucked inside The First Collection in Business Bay. With a 4.9-star average from 468 reviews, it draws professionals seeking quality coffee and fresh bakes in an airy, sunlit setting.",
+        "mood_tags": [
+          "work_friendly",
+          "quiet",
+          "refined",
+          "creative",
+          "warm"
+        ],
+        "moments": [
+          "Morning work sessions",
+          "Brunch with colleagues",
+          "Solo focus time",
+          "Casual client catch-ups",
+          "Weekend bakery visits"
+        ],
+        "best_for": [
+          "Remote work and laptop sessions",
+          "Quality coffee and fresh pastries",
+          "Bright, productive mornings",
+          "Casual business meetings",
+          "Artisanal food lovers"
+        ],
+        "not_for": [
+          "Late evening hangs",
+          "Large group celebrations",
+          "Budget dining"
+        ],
+        "primary_atmosphere": "Bright, sunlit café interior with white brick walls, hanging plants, and large windows—refined yet approachable, designed for morning-to-early-afternoon productivity and connection.",
+        "evidence_confidence": 0.98,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in verified venue facts (4.9 rating, 468 reviews, Business Bay address, 7AM–5PM hours) and high-quality image vision showing bright interior with natural light, white brick, plants, and outdoor views. No invented awards, menus, or iconic claims. Work-friendly hours and Business Bay location support professional use case.",
+        "grounded_description": "Set inside The First Collection hotel in Business Bay, Risen Café and Artisanal Bakery offers a bright, plant-adorned interior with booth seating and large windows overlooking tropical greenery outside. Its strong 4.9 rating from nearly 500 reviews reflects consistent quality in both its artisanal baked goods and its fresh, inviting atmosphere."
+      }
+    },
+    {
+      "venue_name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Minimalist specialty coffee with an effortless DIFC edge.",
+        "description_short": "ARABICA brings its signature minimalist coffee culture to DIFC's limestone building. Bright, clean, and designed for focus—it's the kind of spot that makes morning meetings and solo work sessions feel intentional.",
+        "mood_tags": [
+          "quiet",
+          "work_friendly",
+          "refined",
+          "creative"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Solo work session",
+          "Quick professional catch-up",
+          "Weekend brunch stop"
+        ],
+        "best_for": [
+          "Specialty coffee lovers",
+          "Early risers",
+          "Solo workers",
+          "Business meetings"
+        ],
+        "not_for": [
+          "Late-night socializing",
+          "Loud group gatherings"
+        ],
+        "primary_atmosphere": "Clean-lined specialty coffee house with mirrored walls and bench seating in DIFC's limestone building.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in ARABICA's established minimalist brand identity, DIFC financial district context, verified operational hours (6:30 AM–10 PM), and visible interior features (curved wood-and-white counter, mirrored back wall, minimalist bench seating) from selected image.",
+        "grounded_description": "ARABICA brings its signature minimalist coffee culture to DIFC's limestone building. The space features a distinctive curved wood-and-white counter, mirrored back wall, and minimalist bench seating, creating an intentionally spare environment that supports both focused work and effortless coffee rituals."
+      }
+    },
+    {
+      "venue_name": "Boon Coffee Roasters Downtown",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Contemporary coffee culture in the heart of Downtown Dubai",
+        "description_short": "Boon Coffee Roasters Downtown serves specialty coffee in a bright, modern space with marble communal tables and an inviting espresso bar. Located near the Burj Khalifa, it offers extended hours from 6AM to 10PM daily.",
+        "mood_tags": [
+          "work_friendly",
+          "quiet",
+          "refined",
+          "social",
+          "warm"
+        ],
+        "moments": [
+          "Morning work sessions",
+          "Afternoon coffee breaks",
+          "Remote workdays",
+          "Casual meetups",
+          "Solo focus time"
+        ],
+        "best_for": [
+          "Specialty coffee lovers",
+          "Remote workers",
+          "Casual business meetings",
+          "Early risers",
+          "Social catchups"
+        ],
+        "not_for": [
+          "Noisy social scenes",
+          "Romantic date nights",
+          "Late-night revelry"
+        ],
+        "primary_atmosphere": "Bright, airy contemporary café with refined industrial touches and a welcoming professional ambiance",
+        "evidence_confidence": 0.98,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high venue rating (4.8), extended daily hours (6AM-10PM), and detailed image showing bright modern interior with marble communal tables, grey velvet chairs, espresso bar, and decorative pendants. High extraction confidence of 1 confirms reliable venue data.",
+        "grounded_description": "Boon Coffee Roasters Downtown occupies a well-lit modern space in Forte Tower on Sheikh Mohammed bin Rashid Boulevard. The café features marble communal tables, grey velvet seating, and a dedicated espresso bar, creating a refined yet approachable atmosphere for specialty coffee enthusiasts and remote workers alike."
+      }
+    },
+    {
+      "venue_name": "Caffeine Coffee Roaster",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Craft coffee in a bright Downtown Dubai café",
+        "description_short": "This Downtown Dubai café offers a well-lit, elegant setting with ornate white cabinetry and quality roasts. A refined choice for coffee lovers seeking a polished atmosphere in City Walk.",
+        "mood_tags": [
+          "refined",
+          "work_friendly",
+          "creative",
+          "warm"
+        ],
+        "moments": [
+          "Morning remote work sessions",
+          "Casual coffee dates",
+          "Afternoon respites",
+          "Solo focus time",
+          "Quick professional meetups"
+        ],
+        "best_for": [
+          "Remote workers",
+          "Coffee enthusiasts",
+          "Casual dates",
+          "Morning routines",
+          "Professional meetups"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Large group events"
+        ],
+        "primary_atmosphere": "Bright and elegant café interior with white cabinetry, pendant lighting, and curated coffee displays",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality image showing a bright, well-lit interior with elegant décor elements. Venue data includes solid 4.7 rating from 296 reviews, consistent daily hours, and Downtown Dubai City Walk location. No unsupported claims made about awards, certifications, or iconic status.",
+        "grounded_description": "Located in City Walk, this café features a bright, airy interior with ornate white cabinetry, an espresso machine, and coffee bag displays under pendant lighting. The elegant setting and quality-focused offering make it a refined choice for coffee in Downtown Dubai."
+      }
+    },
+    {
+      "venue_name": "MOY SPECIALTY COFFEE",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee, poured with purpose in Jumeirah",
+        "description_short": "A specialty coffee shop in Jumeirah featuring a striking black-and-white mural of hand-pour coffee, minimalist interiors with wooden accents, and a focused approach to quality brews. Opens early at 6:30 AM daily.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "intimate",
+          "creative",
+          "work_friendly"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Solo work sessions",
+          "Afternoon break",
+          "Quiet conversation",
+          "Weekend brew"
+        ],
+        "best_for": [
+          "Coffee enthusiasts",
+          "Early risers",
+          "Remote work",
+          "Quiet meetings",
+          "Specialty brew seekers"
+        ],
+        "not_for": [
+          "Large groups",
+          "Fast-paced service",
+          "Noisy social scenes"
+        ],
+        "primary_atmosphere": "Minimalist specialty coffee interior with artistic mural and warm wooden finishes",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality interior image showing mural and brewing setup, 4.8-star rating with 450 reviews, early morning opening hours indicating intentional morning ritual focus, and Jumeirah neighborhood positioning. Image shows minimal aesthetic with artistic element consistent with creative specialty coffee culture.",
+        "grounded_description": "Moy Specialty Coffee occupies a minimalist space in Umm Suqeim with a hand-pour coffee mural as its artistic centerpiece. The venue pairs high ratings with extended weekend hours, catering to both early risers and those seeking a quiet afternoon retreat."
+      }
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Dubai Hills",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Craft coffee in a warm, refined Dubai Hills setting",
+        "description_short": "A specialty coffee house in Dubai Hills Estate offering expertly brewed coffee in a thoughtfully designed interior with marble tables, leather banquette seating, and warm natural accents. Extended hours from 7 AM to midnight make it a versatile choice throughout the day.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "late_night",
+          "refined",
+          "quiet"
+        ],
+        "moments": [
+          "Morning focus sessions with specialty brews",
+          "Afternoon work meetings over pour-overs",
+          "Evening wind-down with artisan espresso",
+          "Weekend relaxed reading or journaling",
+          "Casual catch-ups in a refined setting"
+        ],
+        "best_for": [
+          "Specialty coffee enthusiasts",
+          "Remote workers seeking a comfortable laptop-friendly space",
+          "Early risers and late-night seekers",
+          "Premium casual dining",
+          "Quality-focused cafe explorers"
+        ],
+        "not_for": [
+          "Fast-casual quick stops",
+          "Large group gatherings",
+          "Budget-conscious visitors"
+        ],
+        "primary_atmosphere": "A warm, refined specialty coffee house with thoughtful interior design featuring marble surfaces, leather banquette seating, and natural botanical accents. The space balances professional work-friendly functionality with cozy, inviting warmth.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.95,
+        "editorial_notes": "Grounded in high-confidence venue data (4.8 rating, 713 reviews, 0.9 extraction confidence) and high-quality image vision showing specific interior elements including marble tables, leather banquette, wooden chairs, branded wall panel, tropical plants, and fresh flowers. Extended operating hours (7 AM–12 AM) confirmed for late_night tag. No invented claims—all attributes traceable to supplied fields.",
+        "grounded_description": "Roasters Specialty Coffee House Dubai Hills occupies a premium spot in Dubai Hills Estate, delivering specialty coffee in a warm, well-lit interior. The space features marble tables, leather banquette seating, and natural botanical accents, creating a refined yet approachable atmosphere that works equally well for focused work sessions and casual gatherings."
+      }
+    },
+    {
+      "venue_name": "The lost Restaurant and Specialty coffee",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where Dubai's shoreline meets specialty coffee",
+        "description_short": "A specialty coffee and restaurant destination along Dubai Marina's waterfront promenade. The venue blends a focused coffee program with a full dining menu across extended hours.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "date_night",
+          "late_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning remote work with specialty espresso",
+          "Evening waterfront dining with skyline views",
+          "Casual date over coffee and small plates",
+          "Late-night unwind before heading home",
+          "Brunch with friends by the marina"
+        ],
+        "best_for": [
+          "Specialty coffee enthusiasts",
+          "Remote workers seeking a full-day spot",
+          "Waterfront dining",
+          "Leisurely evening outings",
+          "Long late-night sessions"
+        ],
+        "not_for": [
+          "Quick grab-and-go stops",
+          "Those seeking a quiet library-like space",
+          "Budget-conscious diners"
+        ],
+        "primary_atmosphere": "A waterfront specialty coffee and dining venue with an extended daily schedule, attracting a mix of remote workers, marina strollers, and evening diners.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.4,
+        "editorial_notes": "Grounded in venue name (specialty coffee focus), location (Marina Promenade waterfront), operating hours (8:30 AM–11:30 PM daily), rating (4.5 from 241 reviews), and category type. No image vision data was available, so visual atmosphere claims were avoided and mood confidence reduced accordingly. No awards, pricing, or menu specifics were invented.",
+        "grounded_description": "The Lost Restaurant and Specialty Coffee occupies a prime spot along Dubai Marina's promenade, offering a dual identity as both a dedicated specialty coffee venue and a full restaurant. Its long daily hours and waterfront positioning make it versatile for everything from morning remote work to late-night wind-downs."
+      }
+    },
+    {
+      "venue_name": "Fuze Cafe Marina | Specialty Coffee",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee crafted for Dubai's waterfront",
+        "description_short": "Specialty coffee destination in Dubai Marina serving carefully sourced beans from early morning through late evening. A contemporary cafe providing a refined setting for work sessions and casual meet-ups.",
+        "mood_tags": [
+          "work_friendly",
+          "refined",
+          "quiet",
+          "creative"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Work sessions with good coffee",
+          "Casual catch-ups",
+          "Afternoon breaks",
+          "Solo time with a book"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Remote workers",
+          "Casual meet-ups",
+          "Early risers"
+        ],
+        "not_for": [
+          "Fine dining seekers",
+          "Nightlife seekers"
+        ],
+        "primary_atmosphere": "Modern specialty coffee house with Marina energy",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.65,
+        "editorial_notes": "Grounded in venue name indicating specialty focus, Dubai Marina location implying urban waterfront setting, consistent 6:30 AM to 11 PM hours supporting work-friendly positioning, and 4.5 rating with 105 reviews providing social proof. No image vision present so mood confidence reduced; atmosphere claims limited to text-inferred qualities.",
+        "grounded_description": "Fuze Cafe Marina is a specialty coffee destination in Dubai's waterfront district. The cafe opens early and closes late daily, making it a reliable spot for everything from morning rituals to evening catch-ups."
+      }
+    },
+    {
+      "venue_name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee in a warm Palm Jumeirah setting",
+        "description_short": "Specialty coffee in a warm Palm Jumeirah setting. A well-lit café featuring terrazzo floors and pendant lighting for a comfortable all-day experience.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "quiet",
+          "social",
+          "intimate"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Remote work session",
+          "Casual catch-up",
+          "Afternoon break",
+          "Evening unwind"
+        ],
+        "best_for": [
+          "Coffee enthusiasts",
+          "Remote workers",
+          "Casual meetings",
+          "Solo relaxation",
+          "Mall visitors"
+        ],
+        "not_for": [],
+        "primary_atmosphere": "Warm and contemporary café with pendant lighting and terrazzo flooring in Palm Jumeirah Mall",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in high-quality hero interior image showing warm pendant lighting, terrazzo floors, shelving and comfortable seating. Venue details from cafe category, Palm Jumeirah location, 4.3 rating with 126 reviews, and extended weekend hours (until midnight) support atmosphere classification. No unverified claims made.",
+        "grounded_description": "A specialty coffee café in Palm Jumeirah Mall with warm pendant lighting illuminating a well-designed interior featuring terrazzo floors, shelving and comfortable seating. Open daily from 8AM with extended weekend hours until midnight."
+      }
+    },
+    {
+      "venue_name": "% ARABICA DUBAI ROASTERY",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Palm Jumeirah roastery with floor-to-ceiling light and curated plants",
+        "description_short": "Arabica's Dubai roastery sits on Palm Jumeirah with floor-to-ceiling windows flooding a minimalist white interior. Extended hours until midnight make it workable for both early mornings and late-day pauses.",
+        "mood_tags": [
+          "work_friendly",
+          "refined",
+          "quiet",
+          "late_night",
+          "intimate"
+        ],
+        "moments": [
+          "Early morning focus sessions",
+          "Afternoon coffee breaks",
+          "Remote work from a bright, airy space",
+          "Post-beach wind-down on Palm Jumeirah",
+          "Quiet solo reading or journaling"
+        ],
+        "best_for": [
+          "Specialty coffee enthusiasts",
+          "Remote workers seeking light and quiet",
+          "Morning productivity sessions",
+          "Relaxed daytime breaks",
+          "Late-night caffeine runs"
+        ],
+        "not_for": [
+          "Large group gatherings",
+          "Budget-conscious visitors",
+          "Those seeking a lively bar atmosphere"
+        ],
+        "primary_atmosphere": "Bright, plant-filled roastery lounge with minimalist white interiors and extended operating hours",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.8,
+        "editorial_notes": "Grounded in the image showing a bright, airy modern lounge with plants and natural light, extended hours until midnight, and Palm Jumeirah location. No awards, prices, or menu specifics supplied so these are omitted.",
+        "grounded_description": "A specialty roastery on Palm Jumeirah featuring a bright, plant-filled interior with tiered seating and floor-to-ceiling windows. Open daily from 7:30 AM to midnight, suitable for extended work sessions or relaxed daytime breaks."
+      }
+    },
+    {
+      "venue_name": "Roasters Specialty Coffee House Sobha Hartland",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee, all day into the night in Dubai",
+        "description_short": "A specialty coffee house in Sobha Hartland with a 4.7-star rating from 564 reviews, serving quality brews from 7 AM to midnight daily.",
+        "mood_tags": [
+          "work_friendly",
+          "quiet",
+          "warm",
+          "late_night",
+          "refined"
+        ],
+        "moments": [
+          "Morning remote work sessions",
+          "Afternoon coffee breaks",
+          "Evening unwind sessions",
+          "Casual catch-ups"
+        ],
+        "best_for": [
+          "Coffee purists",
+          "Remote workers",
+          "Early risers",
+          "Late-night readers"
+        ],
+        "not_for": [
+          "Loud gatherings",
+          "Quick grab-and-go"
+        ],
+        "primary_atmosphere": "A refined, quiet specialty coffee house with extended hours suitable for work or relaxation throughout the day",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.7,
+        "editorial_notes": "Grounded in the venue's high rating (4.7 stars, 564 reviews), specialty coffee positioning, and consistent 7 AM–midnight hours. No image data available, so visual atmosphere claims are avoided. Mood tags reflect operational patterns and category indicators rather than confirmed ambiance.",
+        "grounded_description": "Located in Sobha Hartland's terrace residence, this specialty coffee house has earned a loyal following with a 4.7-star rating across 564 reviews, drawing both neighborhood regulars and coffee enthusiasts from across Dubai."
+      }
+    },
+    {
+      "venue_name": "Ores Cafe",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Bright cafe with terrace vibes in the heart of Jumeirah",
+        "description_short": "A welcoming Jumeirah cafe with floor-to-ceiling windows flooding the interior with natural light, opening to a sunlit terrace perfect for relaxed daytime hangs or late-evening sessions until 2AM.",
+        "mood_tags": [
+          "warm",
+          "outdoor",
+          "late_night",
+          "social",
+          "date_night"
+        ],
+        "moments": [
+          "Morning caffeine ritual",
+          "Sunlit afternoon work sessions",
+          "Evening terrace unwinding",
+          "Casual catch-ups with friends",
+          "Late-night conversations"
+        ],
+        "best_for": [
+          "Casual dining",
+          "Remote work",
+          "Terrace lovers",
+          "Early risers",
+          "Night owls"
+        ],
+        "not_for": [
+          "Work requiring total silence",
+          "Large group events"
+        ],
+        "primary_atmosphere": "Bright and airy with natural daylight, cushioned lounge seating, and a seamless indoor-outdoor flow to a planted terrace.",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in venue hours (until 2-3AM), 4.7 rating from 954 reviews, Jumeirah neighborhood context, and confirmed bright_airy atmosphere signal from selected hero image showing floor-to-ceiling windows, natural light, and terrace access. No awards, menu items, or pricing claims included as none were supplied.",
+        "grounded_description": "Ores Cafe occupies a bright corner in Jumeirah with floor-to-ceiling windows and cushioned lounge seating, extending to a planted terrace with wicker chairs and parasols. Open daily from 8AM until late night, the space balances natural light and relaxed comfort for a range of occasions."
+      }
+    },
+    {
+      "venue_name": "Kimi - Speciality Coffee and Food",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee in a sunlit, design-forward space",
+        "description_short": "A specialty coffee cafe in Business Bay with a curated interior featuring wood-beamed ceilings, marble tables, and terracotta banquette seating. The bright, airy space opens daily from morning through evening.",
+        "mood_tags": [
+          "work_friendly",
+          "refined",
+          "creative",
+          "warm"
+        ],
+        "moments": [
+          "Morning meetings over specialty brews",
+          "Solo work sessions in natural light",
+          "Creative discussions in a designed space",
+          "Weekday coffee breaks",
+          "Focused study or reading time"
+        ],
+        "best_for": [
+          "Specialty coffee enthusiasts",
+          "Remote workers seeking a bright space",
+          "Professional midday breaks",
+          "Design-conscious visitors",
+          "Casual catch-ups"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Romantic evening dinners",
+          "Large group events"
+        ],
+        "primary_atmosphere": "Bright, curated cafe with natural light and refined design details",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality image vision showing specific design elements (wood-beamed ceiling, marble tables, terracotta banquette, woven pendant lights, mirrored centerpiece) and venue operational data including 4.8 rating from 153 reviews. The bright_airy atmosphere signal is directly supported by visual evidence of large windows and well-lit interior. No claims made about awards, pricing, or menu specifics beyond what is present.",
+        "grounded_description": "Kimi occupies a thoughtfully designed interior in Business Bay, where natural light filters through large windows onto marble tables and designer wooden chairs beneath exposed wood beams. The space blends specialty coffee focus with curated design details like woven pendant lights and terracotta banquette seating."
+      }
+    },
+    {
+      "venue_name": "Circle Cafe (Bay Square)",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A bright escape in Business Bay",
+        "description_short": "A well-lit cafe in Business Bay with rattan pendant lights and gallery-wall charm. With a 4.7 rating across nearly 2,000 reviews, it offers a consistently airy setting for all-day dining and remote work.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "creative",
+          "social"
+        ],
+        "moments": [
+          "Morning coffee runs",
+          "Afternoon work sessions",
+          "Casual catch-ups",
+          "All-day casual dining"
+        ],
+        "best_for": [
+          "Remote work",
+          "Laptop-friendly mornings",
+          "Casual social meetups",
+          "Consistent all-day service"
+        ],
+        "not_for": [
+          "Late-night scenes",
+          "Romantic fine dining",
+          "Private business meetings"
+        ],
+        "primary_atmosphere": "Bright, airy cafe with warm natural textures, rattan lighting, and a creative gallery aesthetic",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-quality image showing well-lit interior with rattan pendant lights, gallery wall, and neon sign. Strong social proof from 4.7 rating and 1919 reviews. Consistent 8AM-10PM hours support all-day work-friendly claim. Business Bay location informs social and work context.",
+        "grounded_description": "The interior features rattan pendant lights, a gallery wall, and a neon sign against light tones, creating an airy and inviting atmosphere. Consistent opening hours and a strong local rating make it a reliable choice in Business Bay."
+      }
+    }
+  ],
+  "retry_summary": {
+    "generated_at": "2026-06-08T15:27:57.916Z",
+    "retry_venues": [
+      "Brews Cafe"
+    ],
+    "minimax_calls_made": 1,
+    "retry_successes": 1,
+    "retry_failures": 0
+  }
+}

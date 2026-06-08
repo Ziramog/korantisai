@@ -60,6 +60,7 @@ export function generateControlPanel(batchName: string): PanelSummary {
 function stageFiles(outputDir: string): StageFile[] {
   return [
     ['Venue seed', 'venue_seed_report.md', true],
+    ['Stage 00B editorial source enrichment', 'stage_00b_editorial_source_enrichment_report.md', false],
     ['Stage 01 raw venues', 'stage_01_report.md', true],
     ['Stage 02 sources', 'stage_02_source_discovery_report.md', true],
     ['Stage 03 images', 'stage_03_report.md', true],

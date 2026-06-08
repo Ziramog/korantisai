@@ -1,0 +1,56 @@
+{
+  "batch_id": "batch_012_buenos_aires_cafes_10_palermo_chacarita_recoleta",
+  "generated_at": "2026-06-08T14:43:53.813Z",
+  "city": "Buenos Aires",
+  "discovery_mode": "semi_automated",
+  "total_candidates_discovered": 0,
+  "candidates_after_dedupe": 0,
+  "candidates_after_hard_filters": 0,
+  "rejected_count": 0,
+  "selected_count": 0,
+  "selected": [],
+  "rejected": [],
+  "already_known_excluded": [],
+  "warnings": [
+    "plan_only_no_candidate_discovery_or_external_calls"
+  ],
+  "existing_sources_checked": [
+    "supabase:staging_venues",
+    "supabase:venues",
+    "local_batch:batch_003_stage01_test:stage_01",
+    "local_batch:batch_003_stage01_test:batch_result_with_editorial",
+    "local_batch:batch_003_stage01_test:batch_result_quality_gated",
+    "local_batch:batch_004_buenos_aires_50:venue_seed",
+    "local_batch:batch_004_buenos_aires_50:stage_01",
+    "local_batch:batch_004_buenos_aires_50:batch_result_with_editorial",
+    "local_batch:batch_004_buenos_aires_50:batch_result_quality_gated",
+    "local_batch:batch_005_buenos_aires_restaurants_50:venue_seed",
+    "local_batch:batch_005_buenos_aires_restaurants_50:stage_01",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_with_editorial",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_quality_gated",
+    "local_batch:batch_006_nyc_rooftop:venue_seed",
+    "local_batch:batch_006_nyc_rooftop:stage_01",
+    "local_batch:batch_006_nyc_rooftop:batch_result_with_editorial",
+    "local_batch:batch_006_nyc_rooftop:batch_result_quality_gated",
+    "local_batch:batch_008_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:stage_01",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:batch_result_with_editorial",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:batch_result_quality_gated"
+  ],
+  "existing_known_venues_count": 756,
+  "configured_neighborhoods": [
+    "Palermo",
+    "Chacarita",
+    "Recoleta"
+  ],
+  "configured_type_mix": {
+    "cafes": 10
+  },
+  "type_counts": {},
+  "neighborhood_counts": {},
+  "deviations_from_target_mix": [
+    "plan only; requested 10 venues"
+  ],
+  "next_pipeline_command": "npx tsx pipeline/run_full_batch.ts batch_012_buenos_aires_cafes_10_palermo_chacarita_recoleta"
+}

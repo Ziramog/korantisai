@@ -1,0 +1,2362 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T14:45:17.202Z",
+  "city": "Dubai",
+  "discovery_mode": "automated_google_places",
+  "total_candidates_discovered": 554,
+  "candidates_after_dedupe": 213,
+  "candidates_after_hard_filters": 204,
+  "rejected_count": 8,
+  "selected_count": 30,
+  "selected": [
+    {
+      "name": "Caju Coffee House",
+      "normalized_name": "caju coffee house",
+      "neighborhood": "Downtown Dubai",
+      "type": "cafe",
+      "place_id": "ChIJAd4hBttpXz4RgU0Osdvtd4Y",
+      "address": "Caju Cafe, Al Manzil - GF-801 - Burj Khalifa - Yansoon - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1912935,
+        "lng": 55.278330499999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9689474651135036801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 421,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://caju.ae/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in Downtown Dubai Dubai",
+        "specialty coffee shops in Downtown Dubai Dubai",
+        "independent cafes in Downtown Dubai Dubai",
+        "quiet cafes in Downtown Dubai Dubai",
+        "Time Out Dubai best cafes coffee shops in Downtown Dubai"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Kulture House Dubai",
+      "normalized_name": "kulture house dubai",
+      "neighborhood": "Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJe0BIiPpDXz4RMRwBkfQBJkU",
+      "address": "106 Jumeira St - Jumeirah - Jumeirah 1 - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.225616799999997,
+        "lng": 55.2582269
+      },
+      "google_maps_url": "https://maps.google.com/?cid=4982672187648449585&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 1069,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.kulturehousedubai.com/",
+      "google_place_types": [
+        "cafe",
+        "breakfast_restaurant",
+        "coffee_shop",
+        "art_gallery",
+        "coworking_space",
+        "gift_shop",
+        "food_store",
+        "event_venue",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "design cafes in Jumeirah Dubai",
+        "quiet cafes in Jumeirah Dubai",
+        "What's On Dubai cafes coffee shops Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Roasters Specialty Coffee House Emaar Beachfront",
+      "normalized_name": "roasters specialty coffee house emaar beachfront",
+      "neighborhood": "Dubai Marina",
+      "type": "cafe",
+      "place_id": "ChIJVcY8QrFrXz4RtmlY1RlFbNc",
+      "address": "House Retail Unit;SBE-GF-T1-R 02, Tariaq Bedon Esm - مرسى دبي - دبي - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.097585499999997,
+        "lng": 55.1409324
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15522857992895097270&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 768,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://roasterscoffee.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Dubai Marina Dubai",
+        "coffee roasters in Dubai Marina Dubai",
+        "specialty coffee shops in Palm Jumeirah Dubai",
+        "coffee roasters in Palm Jumeirah Dubai",
+        "Time Out Dubai best cafes coffee shops in Dubai Marina"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Mokha 1450 Coffee Lounge",
+      "normalized_name": "mokha 1450 coffee lounge",
+      "neighborhood": "Palm Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJuwG5IGNrXz4RAucY1xKuvsk",
+      "address": "Golden Mile Galleria 8 - Palm Jumeirah - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1109515,
+        "lng": 55.141654499999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14537248043139917570&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 243,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.mokha1450.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in Palm Jumeirah Dubai",
+        "specialty coffee shops in Palm Jumeirah Dubai",
+        "independent cafes in Palm Jumeirah Dubai",
+        "coffee roasters in Palm Jumeirah Dubai",
+        "design cafes in Palm Jumeirah Dubai",
+        "quiet cafes in Palm Jumeirah Dubai",
+        "Time Out Dubai best cafes coffee shops in Palm Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Roasters Specialty Coffee House Palm Jumeirah Mall",
+      "normalized_name": "roasters specialty coffee house palm jumeirah mall",
+      "neighborhood": "Palm Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJ3UefQjBrXz4RMjKz9hsBiVE",
+      "address": "Nakheel mall - Unit number E-069 - 2nd Floor - New Enchantment - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.114247799999998,
+        "lng": 55.138459999999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=5875228408496206386&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 191,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://roasterscoffee.ae/",
+      "google_place_types": [
+        "restaurant",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in Palm Jumeirah Dubai",
+        "specialty coffee shops in Palm Jumeirah Dubai",
+        "coffee roasters in Palm Jumeirah Dubai",
+        "quiet cafes in Palm Jumeirah Dubai",
+        "Time Out Dubai best cafes coffee shops in Palm Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 96.4,
+      "selection_reason": "score=96.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Cafe Wayfarer",
+      "normalized_name": "cafe wayfarer",
+      "neighborhood": "DIFC",
+      "type": "cafe",
+      "place_id": "ChIJVdjGRhFDXz4RJsyA5G7IUxY",
+      "address": "Ground Floor, Gate Avenue - Zaa'beel Second - DIFC - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.212581099999998,
+        "lng": 55.27867
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1608849870507002918&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 259,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://cafewayfarer.com/newmain",
+      "google_place_types": [
+        "cafe",
+        "dessert_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in DIFC Dubai",
+        "specialty coffee shops in DIFC Dubai",
+        "independent cafes in DIFC Dubai",
+        "quiet cafes in DIFC Dubai",
+        "Time Out Dubai best cafes coffee shops in DIFC"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Orijins",
+      "normalized_name": "orijins",
+      "neighborhood": "DIFC",
+      "type": "cafe",
+      "place_id": "ChIJddeXXQJDXz4RZ5arWL-5NbY",
+      "address": "Al Mustaqbal St - Zaa'beel Second - DIFC - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.213060799999997,
+        "lng": 55.2829434
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13129604520146081383&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 1078,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://instagram.com/orijins",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "cafes in DIFC Dubai",
+        "specialty coffee shops in DIFC Dubai",
+        "independent cafes in DIFC Dubai",
+        "design cafes in DIFC Dubai",
+        "quiet cafes in DIFC Dubai",
+        "What's On Dubai best cafes coffee shops in DIFC"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Have Coffee - DIFC",
+      "normalized_name": "have coffee difc",
+      "neighborhood": "DIFC",
+      "type": "cafe",
+      "place_id": "ChIJsdzetbdDXz4RekMZD5STjGQ",
+      "address": "675G+CXM - Zaa'beel Second - DIFC - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.2085844,
+        "lng": 55.2774149
+      },
+      "google_maps_url": "https://maps.google.com/?cid=7245328164650042234&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 122,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.have-coffee.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in DIFC Dubai",
+        "coffee roasters in DIFC Dubai",
+        "design cafes in DIFC Dubai",
+        "quiet cafes in DIFC Dubai",
+        "Time Out Dubai best cafes coffee shops in DIFC"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Coffee Planet - Foundry Downtown",
+      "normalized_name": "coffee planet foundry downtown",
+      "neighborhood": "Downtown Dubai",
+      "type": "cafe",
+      "place_id": "ChIJHzv3R0BpXz4RmNkldot8DjY",
+      "address": "Boulevard Crescent - Sheikh Mohammed bin Rashid Blvd - Burj Khalifa - Downtown Dubai - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.191933199999998,
+        "lng": 55.2709142
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3895187666146548120&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 205,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.coffeeplanetuae.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "cafes in Downtown Dubai Dubai",
+        "specialty coffee shops in Downtown Dubai Dubai",
+        "coffee roasters in Downtown Dubai Dubai",
+        "design cafes in Downtown Dubai Dubai",
+        "quiet cafes in Downtown Dubai Dubai",
+        "What's On Dubai cafes coffee shops Downtown Dubai"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "The Coffee Merchant",
+      "normalized_name": "the coffee merchant",
+      "neighborhood": "Downtown Dubai",
+      "type": "cafe",
+      "place_id": "ChIJjbP3zj5pXz4RMN-Upw9VHHM",
+      "address": "Ground Floor, AG Tower - Marasi Dr - Business Bay - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1796412,
+        "lng": 55.2690127
+      },
+      "google_maps_url": "https://maps.google.com/?cid=8294598139434032944&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 376,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://thecoffeemerchant.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Downtown Dubai Dubai",
+        "coffee roasters in Downtown Dubai Dubai",
+        "cafes in Business Bay Dubai",
+        "specialty coffee shops in Business Bay Dubai",
+        "independent cafes in Business Bay Dubai",
+        "coffee roasters in Business Bay Dubai",
+        "design cafes in Business Bay Dubai",
+        "quiet cafes in Business Bay Dubai",
+        "Time Out Dubai best cafes coffee shops in Business Bay"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Roast Speciality Coffee, Marina",
+      "normalized_name": "roast speciality coffee marina",
+      "neighborhood": "Dubai Marina",
+      "type": "cafe",
+      "place_id": "ChIJ06amBbATXz4RGlZWIJ5XWNI",
+      "address": "Roast Speciality Coffee - Marsa Dubai - Dubai Marina - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.0688793,
+        "lng": 55.1302337
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15156960882574382618&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 618,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.roastdubai.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "juice_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4160,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Dubai Marina Dubai",
+        "coffee roasters in Dubai Marina Dubai",
+        "What's On Dubai best cafes coffee shops in Dubai Marina"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Drinkit",
+      "normalized_name": "drinkit",
+      "neighborhood": "Dubai Marina",
+      "type": "cafe",
+      "place_id": "ChIJS7oLsHFrXz4RUBvkk043wCM",
+      "address": "Marina Gate - Gate Tower 1 Marina Promenade - Marsa Dubai - Dubai Marina - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.0864352,
+        "lng": 55.1474712
+      },
+      "google_maps_url": "https://maps.google.com/?cid=2576119797484100432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 305,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://drinkit.io/",
+      "google_place_types": [
+        "coffee_shop",
+        "coffee_stand",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Dubai Marina Dubai",
+        "independent cafes in Dubai Marina Dubai",
+        "coffee roasters in Dubai Marina Dubai",
+        "Time Out Dubai best cafes coffee shops in Dubai Marina"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Summer Soul Boutique - West Beach",
+      "normalized_name": "summer soul boutique west beach",
+      "neighborhood": "Palm Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJNc3JynZDXz4RHokaKJMvs7I",
+      "address": "West Beach, The Club - Palm Jumeirah - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1100365,
+        "lng": 55.1382586
+      },
+      "google_maps_url": "https://maps.google.com/?cid=12876688068661905694&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 157,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/summersoulcafe/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in Palm Jumeirah Dubai",
+        "specialty coffee shops in Palm Jumeirah Dubai",
+        "independent cafes in Palm Jumeirah Dubai",
+        "quiet cafes in Palm Jumeirah Dubai",
+        "Time Out Dubai best cafes coffee shops in Palm Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Brews Cafe",
+      "normalized_name": "brews cafe",
+      "neighborhood": "Business Bay",
+      "type": "cafe",
+      "place_id": "ChIJk1GdBdNpXz4RnZlaoZa6Bns",
+      "address": "Marasi Dr - Business Bay - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1874927,
+        "lng": 55.267719799999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=8864978072640330141&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 478,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.instagram.com/brewsdxb",
+      "google_place_types": [
+        "cafe",
+        "breakfast_restaurant",
+        "coffee_shop",
+        "ice_cream_shop",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in Business Bay Dubai",
+        "coffee roasters in Business Bay Dubai",
+        "design cafes in Business Bay Dubai",
+        "quiet cafes in Business Bay Dubai",
+        "Time Out Dubai best cafes coffee shops in Business Bay"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 95.4,
+      "selection_reason": "score=95.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Roasters Specialty Coffee House Al Wasl",
+      "normalized_name": "roasters specialty coffee house al wasl",
+      "neighborhood": "DIFC",
+      "type": "cafe",
+      "place_id": "ChIJQboZtNhfXz4RFvKQyydmFDg",
+      "address": "Villa 11 - 484a Al Wasl Rd - Jumeirah - Jumeira Second - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.196437,
+        "lng": 55.2460455
+      },
+      "google_maps_url": "https://maps.google.com/?cid=4040967086763209238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 2999,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://roasterscoffee.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "specialty coffee shops in DIFC Dubai",
+        "coffee roasters in DIFC Dubai",
+        "specialty coffee shops in Downtown Dubai Dubai",
+        "coffee roasters in Downtown Dubai Dubai",
+        "specialty coffee shops in Jumeirah Dubai",
+        "independent cafes in Jumeirah Dubai",
+        "coffee roasters in Jumeirah Dubai",
+        "design cafes in Jumeirah Dubai",
+        "quiet cafes in Jumeirah Dubai",
+        "coffee roasters in Dubai Marina Dubai",
+        "coffee roasters in Business Bay Dubai",
+        "Time Out Dubai best cafes coffee shops in Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 1,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94.6,
+      "selection_reason": "score=94.6; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=1.00; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Risen Café and Artisanal Bakery, Palm Jumeirah",
+      "normalized_name": "risen cafe and artisanal bakery palm jumeirah",
+      "neighborhood": "Jumeirah",
+      "type": "bakery_cafe",
+      "place_id": "ChIJhU5HmbdrXz4R3BN2VNh367A",
+      "address": "Ground floor - The Palm Jumeirah - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.119817899999997,
+        "lng": 55.1112998
+      },
+      "google_maps_url": "https://maps.google.com/?cid=12748414941215986652&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 1084,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://risendubai.com/location/palm-jumeirah/?utm_source=listings&utm_medium=organic&utm_content=ws",
+      "google_place_types": [
+        "cafe",
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "bakery cafes in Jumeirah Dubai",
+        "cafes in Palm Jumeirah Dubai",
+        "specialty coffee shops in Palm Jumeirah Dubai",
+        "independent cafes in Palm Jumeirah Dubai",
+        "design cafes in Palm Jumeirah Dubai",
+        "bakery cafes in Palm Jumeirah Dubai",
+        "Time Out Dubai best cafes coffee shops in Palm Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94.28,
+      "selection_reason": "score=94.28; google=1.00; visual=1.00; category=0.82; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Risen Café and Artisanal Bakery, Business Bay",
+      "normalized_name": "risen cafe and artisanal bakery business bay",
+      "neighborhood": "Business Bay",
+      "type": "bakery_cafe",
+      "place_id": "ChIJzyz4ZHhpXz4RG2CLve4U-rU",
+      "address": "The First Collection - Ground Floor - Business Bay - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1780707,
+        "lng": 55.267896099999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13112816280657420315&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 468,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://risendubai.com/location/business-bay?utm_source=listings&utm_medium=organic&utm_content=ws",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial"
+      ],
+      "search_queries": [
+        "cafes in Business Bay Dubai",
+        "specialty coffee shops in Business Bay Dubai",
+        "independent cafes in Business Bay Dubai",
+        "quiet cafes in Business Bay Dubai",
+        "bakery cafes in Business Bay Dubai",
+        "Time Out Dubai best cafes coffee shops in Business Bay"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94.28,
+      "selection_reason": "score=94.28; google=1.00; visual=1.00; category=0.82; atmosphere=0.95; local=0.90; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "% ARABICA DIFC LIMESTONE HOUSE",
+      "normalized_name": "arabica difc limestone house",
+      "neighborhood": "DIFC",
+      "type": "cafe",
+      "place_id": "ChIJfaoS6OlDXz4RnTwOXA60M6I",
+      "address": "Ground Floor - Zaa'beel Second - DIFC - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.2124526,
+        "lng": 55.278619199999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=11687883431723547805&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 133,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.arabicacoffee.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in DIFC Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Boon Coffee Roasters Downtown",
+      "normalized_name": "boon coffee roasters downtown",
+      "neighborhood": "Downtown Dubai",
+      "type": "cafe",
+      "place_id": "ChIJY4w1meRDXz4RGC3bxG2Lzfo",
+      "address": "Forte Tower - 1 Sheikh Mohammed bin Rashid Blvd - Burj Khalifa - Downtown Dubai - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1958296,
+        "lng": 55.2694645
+      },
+      "google_maps_url": "https://maps.google.com/?cid=18072254183278062872&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 121,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.booncoffee.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Downtown Dubai Dubai",
+        "independent cafes in Downtown Dubai Dubai",
+        "coffee roasters in Downtown Dubai Dubai",
+        "coffee roasters in Business Bay Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Caffeine Coffee Roaster",
+      "normalized_name": "caffeine coffee roaster",
+      "neighborhood": "Downtown Dubai",
+      "type": "cafe",
+      "place_id": "ChIJE4472mBDXz4RN-EvO5WYtsQ",
+      "address": "Start City Walk Boulevard - Happiness St - Al Wasl - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.2035172,
+        "lng": 55.2620807
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14174684643905757495&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 296,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.caffeineroaster.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Downtown Dubai Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "MOY SPECIALTY COFFEE",
+      "normalized_name": "moy specialty coffee",
+      "neighborhood": "Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJY1S67ZlrXz4RjgYIKAZP5n4",
+      "address": "3 31A St - Umm Suqeim Second - Umm Suqeim - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1531194,
+        "lng": 55.1998943
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9144082981282383502&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 450,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://instagram.com/moycafeuae?utm_medium=copy_link",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Jumeirah Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Roasters Specialty Coffee House Dubai Hills",
+      "normalized_name": "roasters specialty coffee house dubai hills",
+      "neighborhood": "Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJ30cOMQBpXz4RiIqnBGaUbFs",
+      "address": "Dubai Hills Estate - ground floor - 5 Park Lane - Hadaeq Sheikh Mohammed Bin Rashid - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1115769,
+        "lng": 55.250743199999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=6587803520821856904&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 713,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://roasterscoffee.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Jumeirah Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "The lost Restaurant and Specialty coffee",
+      "normalized_name": "the lost restaurant and specialty coffee",
+      "neighborhood": "Dubai Marina",
+      "type": "cafe",
+      "place_id": "ChIJvWbvU58TXz4Rs4-EIP7bOuw",
+      "address": "Marina Promenade - Marsa Dubai - Dubai Marina - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.073113499999998,
+        "lng": 55.133026799999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17022159626113945523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 241,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.thelost.ae/",
+      "google_place_types": [
+        "restaurant",
+        "coffee_roastery",
+        "brunch_restaurant",
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4064,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "cafes in Dubai Marina Dubai",
+        "specialty coffee shops in Dubai Marina Dubai",
+        "independent cafes in Dubai Marina Dubai",
+        "quiet cafes in Dubai Marina Dubai",
+        "cafe bars in Dubai Marina Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Fuze Cafe Marina | Specialty Coffee",
+      "normalized_name": "fuze cafe marina specialty coffee",
+      "neighborhood": "Dubai Marina",
+      "type": "cafe",
+      "place_id": "ChIJp7mkXrlrXz4RaSpIAhwLo5I",
+      "address": "Marsa Dubai - Dubai Marina - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.083537699999997,
+        "lng": 55.1474559
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10566301365666589289&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 105,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.fuzecafe.ae/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query",
+        "atmosphere_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Dubai Marina Dubai",
+        "coffee roasters in Dubai Marina Dubai",
+        "design cafes in Dubai Marina Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Boon Coffee Roasters - Palm Jumeirah Mall",
+      "normalized_name": "boon coffee roasters palm jumeirah mall",
+      "neighborhood": "Palm Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJQ6zxD4xrXz4R7RHttLovnSQ",
+      "address": "Nakeel Mall, Palm Jumeirah NKM-P-013-P05, Dipachika Hall - نخلة جميرا - دبي - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1144796,
+        "lng": 55.138757899999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=2638317435654836717&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 126,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.booncoffee.com/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Palm Jumeirah Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "% ARABICA DUBAI ROASTERY",
+      "normalized_name": "arabica dubai roastery",
+      "neighborhood": "Palm Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJU_1y5pBrXz4R8Ukftad3mL8",
+      "address": "Palm Jumeirah Rd - The Palm Jumeirah - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.114167499999997,
+        "lng": 55.1403451
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13805916219886225905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 177,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.arabicacoffee.ae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Palm Jumeirah Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Roasters Specialty Coffee House Sobha Hartland",
+      "normalized_name": "roasters specialty coffee house sobha hartland",
+      "neighborhood": "Business Bay",
+      "type": "cafe",
+      "place_id": "ChIJQ0kMtYtpXz4RxRv5SxYMMZw",
+      "address": "Sobha Hartland, The terrace residence - Shop no - 01 - Al Merkadh - Nad Al Sheba 1 - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1769271,
+        "lng": 55.3113452
+      },
+      "google_maps_url": "https://maps.google.com/?cid=11254790233679010757&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 564,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://roasterscoffee.ae/",
+      "google_place_types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in Business Bay Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.9999999999999999,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 94,
+      "selection_reason": "score=94; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=1.00; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Ores Cafe",
+      "normalized_name": "ores cafe",
+      "neighborhood": "Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJh_3J4UNDXz4Rk_Q7lARKhYY",
+      "address": "Street - 442 شارع الوصل - opposite Boxpark - جميرا - جميرا الثانية - دبي - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.2024328,
+        "lng": 55.250255599999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9693235156512142483&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 954,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://orescafe.com/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "editorial_discovery_query",
+        "atmosphere_query",
+        "editorial_source_query_candidate",
+        "editorial_source:timeout_dubai",
+        "editorial_kind:city_guide",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "cafes in Jumeirah Dubai",
+        "independent cafes in Jumeirah Dubai",
+        "design cafes in Jumeirah Dubai",
+        "Time Out Dubai best cafes coffee shops in Jumeirah"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.7,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 93.4,
+      "selection_reason": "score=93.4; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.70; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Kimi - Speciality Coffee and Food",
+      "normalized_name": "kimi speciality coffee and food",
+      "neighborhood": "Business Bay",
+      "type": "cafe",
+      "place_id": "ChIJfc-CWUtpXz4R5NFEr1RVyJY",
+      "address": "Shop No.6, Building No-09 - الخليج التجاري - Bay Square - دبي - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.185155599999998,
+        "lng": 55.2803829
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10865027923237458404&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 153,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.kimicafe.com/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "cafes in Business Bay Dubai",
+        "specialty coffee shops in Business Bay Dubai",
+        "independent cafes in Business Bay Dubai",
+        "coffee roasters in Business Bay Dubai",
+        "quiet cafes in Business Bay Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.75,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 91.5,
+      "selection_reason": "score=91.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=0.75; editorial=0.75",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Circle Cafe (Bay Square)",
+      "normalized_name": "circle cafe bay square",
+      "neighborhood": "Business Bay",
+      "type": "cafe",
+      "place_id": "ChIJqYALXjBoXz4R90--rnBoPBY",
+      "address": "Building 7 - الخليج التجاري - Bay Square - دبي - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1851439,
+        "lng": 55.279968
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1602270400614387703&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 1919,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.circle-cafe.com/",
+      "google_place_types": [
+        "restaurant",
+        "western_restaurant",
+        "family_restaurant",
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "editorial_discovery_query",
+        "editorial_source_query_candidate",
+        "editorial_source:whats_on_dubai",
+        "editorial_kind:local_editorial",
+        "editorial_source_query"
+      ],
+      "search_queries": [
+        "cafes in Business Bay Dubai",
+        "independent cafes in Business Bay Dubai",
+        "quiet cafes in Business Bay Dubai",
+        "What's On Dubai best cafes coffee shops in Business Bay"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.6,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 90.6,
+      "selection_reason": "score=90.6; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.60; editorial=0.75; curated_boost",
+      "rejection_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Kurasu DIFC",
+      "normalized_name": "kurasu difc",
+      "neighborhood": "DIFC",
+      "type": "cafe",
+      "place_id": "ChIJqTqyWIpDXz4RWE4bA2SvR-U",
+      "address": "Zone C, Gate Avenue - Shop 105 - Zaa'beel Second - DIFC - Dubai - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.209130299999998,
+        "lng": 55.2782188
+      },
+      "google_maps_url": "https://maps.google.com/?cid=16521366602115665496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 5,
+      "review_count": 16,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/kurasuae/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "specialty coffee shops in DIFC Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.65,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 81.5,
+      "selection_reason": "score=81.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=0.65; editorial=0.75",
+      "rejection_reasons": [
+        "low_evidence_quality"
+      ]
+    },
+    {
+      "name": "Baristas' Corner The Palm Jumeirah",
+      "normalized_name": "baristas corner the palm jumeirah",
+      "neighborhood": "Palm Jumeirah",
+      "type": "cafe",
+      "place_id": "ChIJM3EWClkRXz4RvjzpkfjSP68",
+      "address": "Royal Central Hotel - 45G3+992 Ground Floor - Palm Jumeirah - دبي - United Arab Emirates",
+      "coordinates": {
+        "lat": 25.1258949,
+        "lng": 55.153385199999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=12628043845211864254&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.1,
+      "review_count": 18,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.baristascorner.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "local_identity_signal",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "coffee roasters in Palm Jumeirah Dubai"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.65,
+        "editorial_discovery_score": 0.75,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 81.5,
+      "selection_reason": "score=81.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80; local=0.65; editorial=0.75",
+      "rejection_reasons": [
+        "low_evidence_quality"
+      ]
+    },
+    {
+      "name": "Presidente Bar",
+      "normalized_name": "presidente bar",
+      "neighborhood": "Recoleta",
+      "type": "cocktail_bar",
+      "place_id": "ChIJ6dyRD7vKvJURGPaSE7oTNuY",
+      "address": "Av. Pres. Manuel Quintana 188, C1129 Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5911523,
+        "lng": -58.386859599999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=16588467967379043864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 5197,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.presidentebar.com.ar/",
+      "google_place_types": [
+        "cocktail_bar",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "curated:Presidente Bar"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 1,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.44999999999999996,
+        "editorial_discovery_score": 0.9,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 90,
+      "selection_reason": "score=90; google=1.00; visual=1.00; category=1.00; atmosphere=0.95; local=0.45; editorial=0.90; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Tres Monos",
+      "normalized_name": "tres monos",
+      "neighborhood": "Palermo",
+      "type": "bar",
+      "place_id": "ChIJo7CuuHu1vJUR9DoRRpMQDNs",
+      "address": "Guatemala 4899, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5847666,
+        "lng": -58.426056499999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15784009018748517108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 3681,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://3monos.com.ar/",
+      "google_place_types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Tres Monos"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8,
+        "local_identity_score": 0.6,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 83.3,
+      "selection_reason": "score=83.3; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.60; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Los Galgos Bar",
+      "normalized_name": "los galgos bar",
+      "neighborhood": "Centro",
+      "type": "cocktail_bar",
+      "place_id": "ChIJZ4ZfrcHKvJUR0mMgHza_ess",
+      "address": "Av. Callao 501, C1022AAF Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.603025699999996,
+        "lng": -58.392256599999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14662241776029426642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.2,
+      "review_count": 9455,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://barlosgalgos.com.ar/",
+      "google_place_types": [
+        "restaurant",
+        "breakfast_restaurant",
+        "argentinian_restaurant",
+        "south_american_restaurant",
+        "cocktail_bar",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost",
+        "editorial_discovery_query"
+      ],
+      "search_queries": [
+        "curated:Los Galgos"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 1,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.44999999999999996,
+        "editorial_discovery_score": 0.9,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 90,
+      "selection_reason": "score=90; google=1.00; visual=1.00; category=1.00; atmosphere=0.95; local=0.45; editorial=0.90; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "La Fuerza",
+      "normalized_name": "la fuerza",
+      "neighborhood": "Chacarita",
+      "type": "bar",
+      "place_id": "ChIJK9_f9u21vJURCGQ9TsCjhyw",
+      "address": "Av. Dorrego 1409, C1414CKJ Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5856066,
+        "lng": -58.444941199999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3208713305866462216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 5301,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://lafuerza.com.ar/",
+      "google_place_types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:La Fuerza"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8,
+        "local_identity_score": 0.44999999999999996,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 81.8,
+      "selection_reason": "score=81.8; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.45; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Cochinchina",
+      "normalized_name": "cochinchina",
+      "neighborhood": "Palermo",
+      "type": "bar",
+      "place_id": "ChIJs2XPmoG1vJURwboMb5sigY0",
+      "address": "Armenia 1540, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.590345,
+        "lng": -58.429003599999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10196469082321894081&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 4720,
+      "business_status": "OPERATIONAL",
+      "google_place_types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Cochinchina"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.8999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6,
+        "local_identity_score": 0.4,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 76.3,
+      "selection_reason": "score=76.3; google=1.00; visual=0.90; category=0.90; atmosphere=0.80; local=0.40; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Sacro",
+      "normalized_name": "sacro",
+      "neighborhood": "Palermo",
+      "type": "restaurant",
+      "google_place_types": [],
+      "photo_count": 0,
+      "max_photo_dimension": 0,
+      "source_signals": [
+        "curated_allowlist",
+        "curated_allowlist_unresolved",
+        "visual interior signal"
+      ],
+      "search_queries": [],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 0,
+        "review_volume_score": 0,
+        "visual_strength_score": 0,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.5,
+        "source_diversity_score": 0.6,
+        "local_identity_score": 0.4,
+        "editorial_discovery_score": 0.04999999999999999,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 31.88,
+      "selection_reason": "score=31.88; google=0.00; visual=0.00; category=0.82; atmosphere=0.50; local=0.40; editorial=0.05; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood",
+        "missing_google_place_id",
+        "missing_coordinates",
+        "missing_rating",
+        "missing_review_count",
+        "no_photo_signal"
+      ]
+    }
+  ],
+  "already_known_excluded": [
+    {
+      "name": "El Preferido de Palermo",
+      "normalized_name": "el preferido de palermo",
+      "neighborhood": "Palermo",
+      "type": "bistro",
+      "place_id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "address": "Jorge Luis Borges 2108, C1425FFD Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5854137,
+        "lng": -58.4253412
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9615951134450332531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 9514,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://elpreferido.meitre.com/",
+      "google_place_types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost",
+        "local_identity_signal"
+      ],
+      "search_queries": [
+        "curated:El Preferido de Palermo"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 1,
+        "local_identity_score": 0.8999999999999998,
+        "editorial_discovery_score": 0.15,
+        "generic_chain_penalty": 0
+      },
+      "candidate_score": 87.1,
+      "selection_reason": "score=87.1; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; local=0.90; editorial=0.15; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood",
+        "already_exists_place_id"
+      ]
+    }
+  ],
+  "warnings": [],
+  "existing_sources_checked": [
+    "supabase:staging_venues",
+    "supabase:venues",
+    "local_batch:batch_003_stage01_test:stage_01",
+    "local_batch:batch_003_stage01_test:batch_result_with_editorial",
+    "local_batch:batch_003_stage01_test:batch_result_quality_gated",
+    "local_batch:batch_004_buenos_aires_50:venue_seed",
+    "local_batch:batch_004_buenos_aires_50:stage_01",
+    "local_batch:batch_004_buenos_aires_50:batch_result_with_editorial",
+    "local_batch:batch_004_buenos_aires_50:batch_result_quality_gated",
+    "local_batch:batch_005_buenos_aires_restaurants_50:venue_seed",
+    "local_batch:batch_005_buenos_aires_restaurants_50:stage_01",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_with_editorial",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_quality_gated",
+    "local_batch:batch_006_nyc_rooftop:venue_seed",
+    "local_batch:batch_006_nyc_rooftop:stage_01",
+    "local_batch:batch_006_nyc_rooftop:batch_result_with_editorial",
+    "local_batch:batch_006_nyc_rooftop:batch_result_quality_gated",
+    "local_batch:batch_008_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:stage_01",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:batch_result_with_editorial",
+    "local_batch:batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side:batch_result_quality_gated"
+  ],
+  "existing_known_venues_count": 756,
+  "configured_neighborhoods": [
+    "DIFC",
+    "Downtown Dubai",
+    "Jumeirah",
+    "Dubai Marina",
+    "Palm Jumeirah",
+    "Business Bay"
+  ],
+  "configured_type_mix": {
+    "cafes": 30
+  },
+  "type_counts": {
+    "cafe": 28,
+    "bakery_cafe": 2
+  },
+  "neighborhood_counts": {
+    "Downtown Dubai": 5,
+    "Jumeirah": 5,
+    "Dubai Marina": 5,
+    "Palm Jumeirah": 5,
+    "DIFC": 5,
+    "Business Bay": 5
+  },
+  "deviations_from_target_mix": [],
+  "next_pipeline_command": "npx tsx pipeline/run_full_batch.ts batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah"
+}

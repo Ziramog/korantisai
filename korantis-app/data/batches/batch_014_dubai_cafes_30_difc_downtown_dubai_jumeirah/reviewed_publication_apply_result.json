@@ -1,0 +1,94 @@
+{
+  "batch_id": "batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah",
+  "generated_at": "2026-06-08T20:25:56.420Z",
+  "mode": "apply",
+  "steps": [
+    {
+      "step": "11_public_projection_dry_run",
+      "status": "completed",
+      "started_at": "2026-06-08T20:24:54.549Z",
+      "finished_at": "2026-06-08T20:24:57.911Z",
+      "summary": {
+        "approved_projected": 18,
+        "skipped_count": 12,
+        "tolerated_pre_cloudinary_blockers": [
+          "Manual final approval is required before any public venues write.",
+          "Projected public venues must be inserted as curation_status pending_review; activation to active must be a separate later step.",
+          "Cloudinary materialization missing for 18 approved venue hero image(s)."
+        ]
+      }
+    },
+    {
+      "step": "10_cloudinary_apply",
+      "status": "completed",
+      "started_at": "2026-06-08T20:24:57.911Z",
+      "finished_at": "2026-06-08T20:25:43.086Z",
+      "summary": {
+        "uploaded": 18,
+        "skipped_existing": 0,
+        "errors": 0
+      }
+    },
+    {
+      "step": "11_public_projection_apply",
+      "status": "completed",
+      "started_at": "2026-06-08T20:25:43.086Z",
+      "finished_at": "2026-06-08T20:25:54.379Z",
+      "summary": {
+        "approved_projected": 18,
+        "intended_write_count": 36
+      }
+    },
+    {
+      "step": "12_activation_dry_run",
+      "status": "completed",
+      "started_at": "2026-06-08T20:25:54.379Z",
+      "finished_at": "2026-06-08T20:25:54.892Z",
+      "summary": {
+        "requested": 18,
+        "ready_to_activate": 18,
+        "blocked": 0
+      }
+    },
+    {
+      "step": "12_activation_apply",
+      "status": "completed",
+      "started_at": "2026-06-08T20:25:54.892Z",
+      "finished_at": "2026-06-08T20:25:55.696Z",
+      "summary": {
+        "requested": 18,
+        "activated": 18,
+        "blocked": 0
+      }
+    },
+    {
+      "step": "13_post_activation_audit",
+      "status": "completed",
+      "started_at": "2026-06-08T20:25:55.696Z",
+      "finished_at": "2026-06-08T20:25:56.419Z",
+      "summary": {
+        "requested": 18,
+        "passed": 18,
+        "failed": 0
+      }
+    }
+  ],
+  "approved_requested": 18,
+  "cloudinary_uploaded_or_existing": 18,
+  "public_projected": 18,
+  "activation_ready": 18,
+  "activated": 18,
+  "post_activation_audit_passed": 18,
+  "post_activation_audit_failed": 0,
+  "blocked": 0,
+  "safety_checks": {
+    "requires_reviewed_manifest": true,
+    "requires_explicit_run_confirmation_in_control_center": true,
+    "no_external_model_calls": true,
+    "cloudinary_uploads_only_approved_heroes": true,
+    "public_projection_writes_pending_review_before_activation": true,
+    "activation_requires_cloudinary_hero": true,
+    "post_activation_audit_required": true,
+    "no_consumer_ui_changes": true
+  }
+}

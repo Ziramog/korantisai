@@ -3,6 +3,12 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { loadLocalEnv } from './01_extract_data';
+import {
+  discoverEditorialSourceCandidates,
+  type EditorialBatchType,
+  type EditorialSourceCandidate,
+  type EditorialSourceEnrichmentResult,
+} from './00b_editorial_source_enrichment';
 import { searchGooglePlacesText, type GooglePlacesTextCandidate } from '../utils/google_places';
 import { runFullBatch } from '../run_full_batch';
 import type { BatchInput, VenueInput, VenueType } from '../types';
@@ -29,6 +35,8 @@ interface SelectorOptions {
   forcePipeline: boolean;
   allowTypeFallback: boolean;
   maxQueries?: number;
+  maxSourceQueries?: number;
+  skipEditorialSources: boolean;
   planOnly: boolean;
 }
 
@@ -85,6 +93,9 @@ interface CandidateScores {
   neighborhood_balance_score: number;
   atmosphere_potential_score: number;
   source_diversity_score: number;
+  local_identity_score: number;
+  editorial_discovery_score: number;
+  generic_chain_penalty: number;
 }
 
 interface SelectionResult {
@@ -148,12 +159,27 @@ const DEFAULT_TYPE_MIX = {
   wine: 5,
   hybrids: 5,
 };
-const FRANCHISE_TERMS = [
+const HARD_FRANCHISE_TERMS = [
   'starbucks',
+  'dunkin',
+  'dunkin donuts',
   'mcdonald',
+  'mcdonalds',
   'burger king',
   'kfc',
   'subway',
+  'pret a manger',
+  'joe & the juice',
+  'joe and the juice',
+  'costa coffee',
+  'tim hortons',
+  'krispy kreme',
+  'panera',
+  'chipotle',
+  'five guys',
+  'shake shack',
+  'sweetgreen',
+  'cava',
   'mostaza',
   'cafe martinez',
   'café martínez',
@@ -161,6 +187,20 @@ const FRANCHISE_TERMS = [
   'kentucky',
   'green eat',
   'tea connection',
+];
+const SOFT_CHAIN_TERMS = [
+  'blue bottle',
+  'blank street',
+  'gregorys coffee',
+  'gregory coffee',
+  'bluestone lane',
+  'le pain quotidien',
+  'paris baguette',
+  'maman',
+  'paul',
+  'laduree',
+  'tostado',
+  'bonafide',
 ];
 const ATMOSPHERE_TERMS = [
   'club',
@@ -188,15 +228,80 @@ const ATMOSPHERE_TERMS = [
   'almacén',
 ];
 
+const LOCAL_IDENTITY_TERMS = [
+  'roaster',
+  'roasters',
+  'tostador',
+  'tostadores',
+  'specialty',
+  'especialidad',
+  'atelier',
+  'studio',
+  'house',
+  'casa',
+  'club',
+  'hidden',
+  'speakeasy',
+  'natural wine',
+  'vino',
+  'vermut',
+  'vermouth',
+  'listening',
+  'books',
+  'bookstore',
+  'garden',
+  'jardin',
+  'patio',
+  'terrace',
+  'terraza',
+  'rooftop',
+  'lounge',
+  'bistro',
+  'almacen',
+  'cantina',
+];
+const EDITORIAL_DISCOVERY_TERMS = [
+  'specialty coffee',
+  'coffee roaster',
+  'independent',
+  'design',
+  'quiet',
+  'neighborhood',
+  'natural wine',
+  'cocktail',
+  'speakeasy',
+  'listening bar',
+  'rooftop',
+  'terrace',
+  'wine bar',
+  'cafe bar',
+  'atmosphere',
+  'romantic',
+  'date night',
+];
+
 const QUERY_TYPES: Array<{ label: string; queryType: string; typeHint: SeedType }> = [
   { label: 'cafes', queryType: 'cafes', typeHint: 'cafe' },
+  { label: 'specialty_coffee', queryType: 'specialty coffee shops', typeHint: 'cafe' },
+  { label: 'independent_cafes', queryType: 'independent cafes', typeHint: 'cafe' },
+  { label: 'coffee_roasters', queryType: 'coffee roasters', typeHint: 'cafe' },
+  { label: 'design_cafes', queryType: 'design cafes', typeHint: 'cafe' },
+  { label: 'quiet_cafes', queryType: 'quiet cafes', typeHint: 'cafe' },
+  { label: 'cafe_bars_for_cafes', queryType: 'cafe bars', typeHint: 'cafe' },
   { label: 'bakery_cafes', queryType: 'bakery cafes', typeHint: 'bakery_cafe' },
   { label: 'restaurants', queryType: 'restaurants', typeHint: 'restaurant' },
+  { label: 'atmosphere_restaurants', queryType: 'atmosphere restaurants', typeHint: 'restaurant' },
+  { label: 'design_restaurants', queryType: 'design restaurants', typeHint: 'restaurant' },
+  { label: 'romantic_restaurants', queryType: 'romantic restaurants', typeHint: 'restaurant' },
   { label: 'bistros', queryType: 'bistros', typeHint: 'bistro' },
   { label: 'parrillas', queryType: 'parrillas', typeHint: 'parrilla' },
   { label: 'bars', queryType: 'bars', typeHint: 'bar' },
+  { label: 'neighborhood_bars', queryType: 'neighborhood bars', typeHint: 'bar' },
+  { label: 'listening_bars', queryType: 'listening bars', typeHint: 'bar' },
   { label: 'cocktail_bars', queryType: 'cocktail bars', typeHint: 'cocktail_bar' },
+  { label: 'best_cocktail_bars', queryType: 'best cocktail bars', typeHint: 'cocktail_bar' },
   { label: 'wine_bars', queryType: 'wine bars', typeHint: 'wine_bar' },
+  { label: 'natural_wine_bars', queryType: 'natural wine bars', typeHint: 'wine_bar' },
   { label: 'rooftop_bars', queryType: 'rooftop bars', typeHint: 'rooftop_bar' },
   { label: 'rooftop_lounges', queryType: 'rooftop lounges', typeHint: 'rooftop_bar' },
   { label: 'terrace_bars', queryType: 'terrace bars', typeHint: 'rooftop_bar' },
@@ -258,7 +363,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
     return result;
   }
 
-  const candidates = await discoverCandidates(existing, options);
+  const candidates = await discoverCandidates(batchId, outputDir, existing, options);
   const deduped = dedupeCandidates(candidates);
   const scored = deduped.map((candidate) => scoreCandidate(candidate));
   const { accepted, rejected, alreadyKnown } = applyHardFilters(scored, existing, options);
@@ -350,7 +455,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
   return result;
 }
 
-async function discoverCandidates(existing: ExistingVenueIndex, options: SelectorOptions): Promise<Candidate[]> {
+async function discoverCandidates(batchId: string, outputDir: string, existing: ExistingVenueIndex, options: SelectorOptions): Promise<Candidate[]> {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   const candidates: Candidate[] = [];
   const queries = buildQueryMatrix(options.city, options.neighborhoods, options.typeMix).slice(0, options.maxQueries);
@@ -396,7 +501,114 @@ async function discoverCandidates(existing: ExistingVenueIndex, options: Selecto
       : curatedCandidate(curated, 'curated_allowlist_unresolved'));
   }
 
+  if (!options.skipEditorialSources) {
+    const editorial = await discoverEditorialSourceCandidates(batchId, {
+      city: options.city,
+      neighborhoods: options.neighborhoods,
+      batchType: editorialBatchTypeFromMix(options.typeMix),
+      maxSourceQueries: options.maxSourceQueries,
+    });
+    writeInlineEditorialSourceOutputs(outputDir, editorial);
+    for (const item of editorial.candidates) {
+      candidates.push(fromEditorialSourceCandidate(item));
+    }
+  }
+
   return candidates;
+}
+
+function fromEditorialSourceCandidate(item: EditorialSourceCandidate): Candidate {
+  const typeHint = typeHintFromEditorialBatchType(item);
+  const place = item.place;
+  const type = normalizeType(place.google_place_types, place.primary_type, typeHint, place.name);
+  const maxPhotoDimension = Math.max(0, ...place.photos.map((photo) => Math.max(photo.width || 0, photo.height || 0)));
+  return {
+    name: cleanVenueName(place.name),
+    normalized_name: normalizeName(place.name),
+    neighborhood: normalizeNeighborhood(item.neighborhood, DEFAULT_NEIGHBORHOODS),
+    type,
+    place_id: place.place_id,
+    address: place.address,
+    coordinates: place.coordinates,
+    google_maps_url: place.google_maps_url,
+    rating: place.rating,
+    review_count: place.user_ratings_total,
+    business_status: place.business_status,
+    website_url: place.website_url,
+    google_place_types: place.google_place_types,
+    photo_count: place.photos.length,
+    max_photo_dimension: maxPhotoDimension,
+    source_signals: [
+      'google_places',
+      'editorial_source_query_candidate',
+      `editorial_source:${item.source_id}`,
+      `editorial_kind:${item.source_kind}`,
+      item.source_kind === 'prestige_guide' ? 'prestige_source_query' : '',
+      item.place.website_url ? 'official_website_from_google' : '',
+      item.place.photos.length > 0 ? 'google_photo_signal' : '',
+      ...item.signals,
+    ].filter(Boolean),
+    search_queries: [item.text_query],
+    curated_boost: item.source_confidence >= 0.78,
+    scores: emptyScores(),
+    candidate_score: 0,
+    selection_reason: '',
+    rejection_reasons: [],
+  };
+}
+
+function writeInlineEditorialSourceOutputs(outputDir: string, result: EditorialSourceEnrichmentResult): void {
+  writeFileSync(path.join(outputDir, 'stage_00b_editorial_source_enrichment.json'), `${JSON.stringify(result, null, 2)}\n`, 'utf8');
+  writeFileSync(path.join(outputDir, 'stage_00b_editorial_source_enrichment_report.md'), buildInlineEditorialReport(result), 'utf8');
+}
+
+function buildInlineEditorialReport(result: EditorialSourceEnrichmentResult): string {
+  return [
+    '# Stage 00B Editorial Source Enrichment Report',
+    '',
+    `- Batch: ${result.batch_id}`,
+    `- Generated: ${result.generated_at}`,
+    `- City: ${result.city}`,
+    `- Batch type: ${result.batch_type}`,
+    `- Queries run: ${result.queries_run}`,
+    `- Candidates found: ${result.candidates_found}`,
+    `- Unique candidates: ${result.unique_candidates}`,
+    `- Caveat: ${result.caveat}`,
+    '',
+    '## Sources Used',
+    '',
+    ...result.sources_used.map((source) => `- ${source.source_name} (${source.source_kind}, weight ${source.authority_weight}): ${source.source_url}`),
+    '',
+    '## Top Source-Derived Candidates',
+    '',
+    '| Venue | Neighborhood | Source | Confidence | Query |',
+    '| --- | --- | --- | ---: | --- |',
+    ...result.candidates.slice(0, 120).map((candidate) =>
+      `| ${escapeTable(candidate.venue_name)} | ${escapeTable(candidate.neighborhood)} | ${escapeTable(candidate.source_name)} | ${candidate.source_confidence} | ${escapeTable(candidate.text_query)} |`,
+    ),
+    '',
+    '## Warnings',
+    '',
+    ...(result.warnings.length > 0 ? result.warnings.map((warning) => `- ${warning}`) : ['- none']),
+  ].join('\n') + '\n';
+}
+
+function editorialBatchTypeFromMix(typeMix: Record<string, number>): EditorialBatchType {
+  const sorted = Object.entries(typeMix).sort((a, b) => b[1] - a[1]);
+  const primary = sorted[0]?.[0] || 'mixed';
+  if (primary === 'cafes') return 'cafes';
+  if (primary === 'restaurants') return 'restaurants';
+  if (primary === 'bars' || primary === 'cocktails' || primary === 'wine' || primary === 'rooftops') return 'bars';
+  return 'mixed';
+}
+
+function typeHintFromEditorialBatchType(item: EditorialSourceCandidate): SeedType {
+  if (item.source_kind === 'coffee_editorial') return 'cafe';
+  if (item.text_query.includes('coffee') || item.text_query.includes('cafe')) return 'cafe';
+  if (item.text_query.includes('cocktail')) return 'cocktail_bar';
+  if (item.text_query.includes('wine')) return 'wine_bar';
+  if (item.text_query.includes('bar')) return 'bar';
+  return 'restaurant';
 }
 
 function buildQueryMatrix(city: string, neighborhoods: string[], typeMix: Record<string, number>): Array<{ text: string; neighborhood: string; typeHint: SeedType }> {
@@ -444,6 +656,7 @@ function fromGooglePlace(
       ...(place.website_url ? ['official_website_from_google'] : []),
       ...(place.photos.length > 0 ? ['google_photo_signal'] : []),
       ...(curatedBoost ? ['curated_allowlist_boost'] : []),
+      ...candidateQualitySignals(place.name, type, place.google_place_types, query),
     ],
     search_queries: [query],
     curated_boost: curatedBoost,
@@ -504,15 +717,22 @@ function scoreCandidate(candidate: Candidate): Candidate {
     neighborhood_balance_score: 0.7,
     atmosphere_potential_score: scoreAtmospherePotential(candidate),
     source_diversity_score: scoreSourceDiversity(candidate),
+    local_identity_score: scoreLocalIdentity(candidate),
+    editorial_discovery_score: scoreEditorialDiscovery(candidate),
+    generic_chain_penalty: scoreGenericChainPenalty(candidate),
   };
-  const candidateScore =
-    scores.google_presence_score * 0.2 +
-    scores.review_volume_score * 0.15 +
-    scores.visual_strength_score * 0.2 +
-    scores.category_fit_score * 0.15 +
-    scores.neighborhood_balance_score * 0.1 +
-    scores.atmosphere_potential_score * 0.15 +
-    scores.source_diversity_score * 0.05;
+  const rawCandidateScore =
+    scores.google_presence_score * 0.15 +
+    scores.review_volume_score * 0.1 +
+    scores.visual_strength_score * 0.18 +
+    scores.category_fit_score * 0.14 +
+    scores.neighborhood_balance_score * 0.08 +
+    scores.atmosphere_potential_score * 0.16 +
+    scores.source_diversity_score * 0.04 +
+    scores.local_identity_score * 0.1 +
+    scores.editorial_discovery_score * 0.08 -
+    scores.generic_chain_penalty * 0.13;
+  const candidateScore = Math.max(0, Math.min(1, rawCandidateScore));
   return {
     ...candidate,
     scores,
@@ -561,7 +781,7 @@ function hardFilterReasons(candidate: Candidate, existing: ExistingVenueIndex, o
   if (existing.aliases.has(nameCityKey(candidate.name, options.city)) || existing.aliases.has(existingKey(candidate.name, candidate.neighborhood))) {
     reasons.push('already_exists_alias');
   }
-  if (FRANCHISE_TERMS.some((term) => normalizeName(candidate.name).includes(normalizeName(term)))) reasons.push('chain_or_franchise');
+  if (matchesAnyTerm(candidate.name, HARD_FRANCHISE_TERMS)) reasons.push('chain_or_franchise');
   if (isIrrelevantCategory(candidate)) reasons.push('irrelevant_google_category');
   if (candidate.review_count && candidate.review_count < 20) reasons.push('low_evidence_quality');
   return reasons;
@@ -740,7 +960,7 @@ function buildReport(result: SelectionResult): string {
     '',
     '## Scoring Formula',
     '',
-    '`candidate_score = google_presence_score * 0.20 + review_volume_score * 0.15 + visual_strength_score * 0.20 + category_fit_score * 0.15 + neighborhood_balance_score * 0.10 + atmosphere_potential_score * 0.15 + source_diversity_score * 0.05`',
+    '`candidate_score = google_presence_score * 0.15 + review_volume_score * 0.10 + visual_strength_score * 0.18 + category_fit_score * 0.14 + neighborhood_balance_score * 0.08 + atmosphere_potential_score * 0.16 + source_diversity_score * 0.04 + local_identity_score * 0.10 + editorial_discovery_score * 0.08 - generic_chain_penalty * 0.13`',
     '',
     '## Counts By Type',
     '',
@@ -923,6 +1143,52 @@ function scoreSourceDiversity(candidate: Candidate): number {
   return Math.min(1, new Set(candidate.source_signals).size / 5);
 }
 
+function scoreLocalIdentity(candidate: Candidate): number {
+  const haystack = normalizeName(`${candidate.name} ${candidate.type} ${candidate.google_place_types.join(' ')} ${candidate.source_signals.join(' ')}`);
+  let score = 0.25;
+  if (candidate.website_url) score += 0.2;
+  if (LOCAL_IDENTITY_TERMS.some((term) => haystack.includes(normalizeName(term)))) score += 0.25;
+  if (candidate.source_signals.includes('local_identity_signal')) score += 0.2;
+  if (candidate.curated_boost) score += 0.15;
+  if (candidate.review_count && candidate.review_count >= 40 && candidate.review_count <= 1800) score += 0.1;
+  if (candidate.review_count && candidate.review_count > 5000) score -= 0.15;
+  return Math.max(0, Math.min(1, score));
+}
+
+function scoreEditorialDiscovery(candidate: Candidate): number {
+  const haystack = normalizeName(`${candidate.name} ${candidate.type} ${candidate.search_queries.join(' ')} ${candidate.source_signals.join(' ')}`);
+  let score = 0.15;
+  if (candidate.source_signals.includes('editorial_discovery_query')) score += 0.35;
+  if (EDITORIAL_DISCOVERY_TERMS.some((term) => haystack.includes(normalizeName(term)))) score += 0.25;
+  if (candidate.type === 'cocktail_bar' || candidate.type === 'speakeasy' || candidate.type === 'wine_bar' || candidate.type === 'cafe_bar') score += 0.15;
+  if (candidate.type === 'restaurant' && !candidate.source_signals.includes('atmosphere_query')) score -= 0.1;
+  return Math.max(0, Math.min(1, score));
+}
+
+function scoreGenericChainPenalty(candidate: Candidate): number {
+  let penalty = 0;
+  if (matchesAnyTerm(candidate.name, SOFT_CHAIN_TERMS)) penalty += 0.55;
+  if (candidate.source_signals.includes('soft_chain_review_required')) penalty += 0.25;
+  if (candidate.review_count && candidate.review_count > 7000 && (candidate.type === 'cafe' || candidate.type === 'bakery_cafe')) penalty += 0.2;
+  if (candidate.google_place_types.includes('store') && !candidate.website_url) penalty += 0.1;
+  return Math.min(1, penalty);
+}
+
+function candidateQualitySignals(name: string, type: SeedType, googleTypes: string[], query: string): string[] {
+  const haystack = normalizeName(`${name} ${type} ${googleTypes.join(' ')} ${query}`);
+  const signals: string[] = [];
+  if (LOCAL_IDENTITY_TERMS.some((term) => haystack.includes(normalizeName(term)))) signals.push('local_identity_signal');
+  if (EDITORIAL_DISCOVERY_TERMS.some((term) => haystack.includes(normalizeName(term)))) signals.push('editorial_discovery_query');
+  if (haystack.includes('atmosphere') || haystack.includes('design') || haystack.includes('romantic')) signals.push('atmosphere_query');
+  if (matchesAnyTerm(name, SOFT_CHAIN_TERMS)) signals.push('soft_chain_review_required');
+  return signals;
+}
+
+function matchesAnyTerm(value: string, terms: string[]): boolean {
+  const normalized = normalizeName(value);
+  return terms.some((term) => normalized.includes(normalizeName(term)));
+}
+
 function buildSelectionReason(candidate: Candidate, scores: CandidateScores, candidateScore: number): string {
   return [
     `score=${candidateScore}`,
@@ -930,6 +1196,9 @@ function buildSelectionReason(candidate: Candidate, scores: CandidateScores, can
     `visual=${scores.visual_strength_score.toFixed(2)}`,
     `category=${scores.category_fit_score.toFixed(2)}`,
     `atmosphere=${scores.atmosphere_potential_score.toFixed(2)}`,
+    `local=${scores.local_identity_score.toFixed(2)}`,
+    `editorial=${scores.editorial_discovery_score.toFixed(2)}`,
+    scores.generic_chain_penalty > 0 ? `generic_penalty=${scores.generic_chain_penalty.toFixed(2)}` : '',
     candidate.curated_boost ? 'curated_boost' : '',
   ].filter(Boolean).join('; ');
 }
@@ -978,6 +1247,9 @@ function emptyScores(): CandidateScores {
     neighborhood_balance_score: 0,
     atmosphere_potential_score: 0,
     source_diversity_score: 0,
+    local_identity_score: 0,
+    editorial_discovery_score: 0,
+    generic_chain_penalty: 0,
   };
 }
 
@@ -1047,6 +1319,8 @@ function parseOptions(args: string[]): SelectorOptions {
     forcePipeline: !args.includes('--resume-pipeline'),
     allowTypeFallback: args.includes('--allow-type-fallback'),
     maxQueries: valueAfter(args, '--max-queries') ? Number(valueAfter(args, '--max-queries')) : undefined,
+    maxSourceQueries: valueAfter(args, '--max-source-queries') ? Number(valueAfter(args, '--max-source-queries')) : undefined,
+    skipEditorialSources: args.includes('--skip-editorial-sources'),
     planOnly: args.includes('--plan'),
   };
 }
@@ -1106,7 +1380,7 @@ const invokedFile = process.argv[1] ? path.resolve(process.argv[1]) : '';
 if (currentFile === invokedFile) {
   const batchName = process.argv[2];
   if (!batchName) {
-    console.error('Usage: npx tsx pipeline/stages/00_build_venue_seed.ts <batch_id> [--count 50] [--city "Buenos Aires"] [--neighborhoods "Palermo,Recoleta"] [--type-mix "cafes=12,restaurants=10,bars=10,cocktails=8,wine=5,hybrids=5"] [--continue] [--plan] [--max-queries N] [--resume-pipeline] [--allow-type-fallback]');
+    console.error('Usage: npx tsx pipeline/stages/00_build_venue_seed.ts <batch_id> [--count 50] [--city "Buenos Aires"] [--neighborhoods "Palermo,Recoleta"] [--type-mix "cafes=12,restaurants=10,bars=10,cocktails=8,wine=5,hybrids=5"] [--continue] [--plan] [--max-queries N] [--max-source-queries N] [--skip-editorial-sources] [--resume-pipeline] [--allow-type-fallback]');
     process.exitCode = 1;
   } else {
     buildVenueSeed(batchName, parseOptions(process.argv.slice(3))).catch((error: unknown) => {

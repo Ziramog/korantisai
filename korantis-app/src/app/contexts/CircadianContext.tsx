@@ -62,8 +62,8 @@ interface CircadianState {
   dimensionLabels: { [key: number]: string };
   language: Locale;
   setLanguage: (lang: Locale) => void;
-  city: 'BUE' | 'NYC';
-  setCity: (city: 'BUE' | 'NYC') => void;
+  city: 'BUE' | 'NYC' | 'DXB';
+  setCity: (city: 'BUE' | 'NYC' | 'DXB') => void;
   setIsAuthenticated: (val: boolean) => void;
   setUserId: (id: string | null) => void;
 }
@@ -266,8 +266,8 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     });
     persistLocale(lang);
   }, []);
-  const [city, setCity] = useState<'BUE' | 'NYC'>('BUE');
-  const setTrackedCity = useCallback((nextCity: 'BUE' | 'NYC') => {
+  const [city, setCity] = useState<'BUE' | 'NYC' | 'DXB'>('BUE');
+  const setTrackedCity = useCallback((nextCity: 'BUE' | 'NYC' | 'DXB') => {
     setCity((previousCity) => {
       if (previousCity !== nextCity) {
         trackEvent('city_changed', {
@@ -655,7 +655,8 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
 
     const cityFilteredVenues = dbVenues.filter(v => {
       if (city === 'BUE' && v.lat >= 0) return false; // Southern hemisphere
-      if (city === 'NYC' && v.lat <= 0) return false; // Northern hemisphere
+      if (city === 'NYC' && (v.lat <= 0 || v.lng >= 0)) return false; // Northern hemisphere, West
+      if (city === 'DXB' && (v.lat <= 0 || v.lng <= 0)) return false; // Northern hemisphere, East
       
       const activeZones = selectedPills.filter(p => ['palermo', 'chacarita', 'villa crespo', 'recoleta', 'belgrano', 'microcentro'].includes(p));
       if (activeZones.length > 0) {

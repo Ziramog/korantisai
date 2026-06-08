@@ -1,0 +1,78 @@
+# Stage 05 Editorial + Mood Generation Report
+- Batch: batch_014_dubai_cafes_30_difc_downtown_dubai_jumeirah
+- Generated: 2026-06-08T15:27:57.916Z
+- Model: MiniMax-M2.7
+- MiniMax M2.7 called: yes
+- Venues processed: 30
+- Successful editorial generations: 30
+- Failed editorial generations: 0
+- Invalid JSON count: 0
+- Stage 05B retry calls made: 1
+## Mood Distribution
+- warm: 23
+- intimate: 4
+- creative: 12
+- work_friendly: 28
+- date_night: 9
+- quiet: 18
+- hidden_gem: 2
+- refined: 21
+- late_night: 9
+- social: 8
+- cinematic: 2
+- lively: 3
+- outdoor: 2
+## Evidence Confidence Distribution
+- low: 0
+- medium: 0
+- high: 30
+## Status Counts After Scoring
+- input: 30
+- ready_for_db_staging: 0
+- auto_staged: 6
+- needs_review: 17
+- blocked: 7
+- approved: 0
+- rejected: 0
+- staged: 0
+- published: 0
+## Remaining Blockers Per Venue
+- Caju Coffee House: none
+- Kulture House Dubai: no_hero_image
+- Roasters Specialty Coffee House Emaar Beachfront: no_hero_image
+- Mokha 1450 Coffee Lounge: none
+- Roasters Specialty Coffee House Palm Jumeirah Mall: none
+- Cafe Wayfarer: none
+- Orijins: none
+- Have Coffee - DIFC: none
+- Coffee Planet - Foundry Downtown: none
+- The Coffee Merchant: none
+- Roast Speciality Coffee, Marina: no_hero_image
+- Drinkit: no_hero_image
+- Summer Soul Boutique - West Beach: none
+- Brews Cafe: none
+- Roasters Specialty Coffee House Al Wasl: none
+- Risen Café and Artisanal Bakery, Palm Jumeirah: none
+- Risen Café and Artisanal Bakery, Business Bay: none
+- % ARABICA DIFC LIMESTONE HOUSE: none
+- Boon Coffee Roasters Downtown: none
+- Caffeine Coffee Roaster: none
+- MOY SPECIALTY COFFEE: none
+- Roasters Specialty Coffee House Dubai Hills: none
+- The lost Restaurant and Specialty coffee: no_hero_image
+- Fuze Cafe Marina | Specialty Coffee: no_hero_image
+- Boon Coffee Roasters - Palm Jumeirah Mall: none
+- % ARABICA DUBAI ROASTERY: none
+- Roasters Specialty Coffee House Sobha Hartland: no_hero_image
+- Ores Cafe: none
+- Kimi - Speciality Coffee and Food: none
+- Circle Cafe (Bay Square): none
+## Failures
+- none
+## Safety
+- No successful editorial records were rerun by Stage 05B.
+- No M3 calls were made.
+- No Supabase writes were made.
+- No Cloudinary uploads were made.
+- No publication or deploy path was run.
+- Protected consumer UI files were not touched.

@@ -39,11 +39,15 @@ export default function HeaderControls() {
       
       <div className="pointer-events-auto">
         <button
-          onClick={() => setCity(city === 'BUE' ? 'NYC' : 'BUE')}
+          onClick={() => {
+            if (city === 'BUE') setCity('NYC');
+            else if (city === 'NYC') setCity('DXB');
+            else setCity('BUE');
+          }}
           aria-label={t('switchCity', language)}
           className="text-[10px] font-sans font-light tracking-wider text-k-text-secondary hover:text-k-text transition-colors flex items-center gap-1.5 uppercase"
         >
-          {city === 'BUE' ? 'Buenos Aires' : 'New York'} <span className="text-[8px] opacity-60">▼</span>
+          {city === 'BUE' ? 'Buenos Aires' : city === 'NYC' ? 'New York' : 'Dubai'} <span className="text-[8px] opacity-60">▼</span>
         </button>
       </div>
     </motion.div>
