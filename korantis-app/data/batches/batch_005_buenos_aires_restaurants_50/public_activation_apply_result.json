@@ -1,0 +1,162 @@
+{
+  "batch_id": "batch_005_buenos_aires_restaurants_50",
+  "generated_at": "2026-06-08T02:21:36.048Z",
+  "mode": "apply",
+  "requested": 18,
+  "ready_to_activate": 18,
+  "blocked": 0,
+  "activated": 18,
+  "checks": [
+    {
+      "venue_id": "korantis_buenos_aires_mambo_restoran_chijbrmg2djl",
+      "name": "Mambo Restoran",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_tu_jardin_secreto_resto_secreto_chijbuxjqt21",
+      "name": "Tu Jardín Secreto - Restó Secreto",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_parrilla_nunez_chij03_aogc1",
+      "name": "Parrilla Nuñez",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_del_mercado_belgrano_chijl46_5cq1",
+      "name": "La Dorita del Mercado Belgrano",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_atis_bar_chijiqql59jl",
+      "name": "Atis Bar",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_rufino_chijw0yrh2hl",
+      "name": "RUFINO",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_l_orangerie_alvear_palace_hotel_chijnuuufkpk",
+      "name": "L' Orangerie Alvear Palace Hotel",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_jakub_chijlwjgkdq1",
+      "name": "jakub",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_lo_del_frances_cafe_bistrot_chijhzxv0czl",
+      "name": "Lo Del Francés Café Bistrot",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_dada_bistro_chijkasliatk",
+      "name": "Dada Bistró",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_maure_parrilla_chijc9pyatq1",
+      "name": "Maure Parrilla",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_fraga_bodegon_chijg2nmenm1",
+      "name": "Fraga Bodegón",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_parrilla_lo_de_mary_restaurante_chijv3shegpk",
+      "name": "Parrilla Lo De Mary - Restaurante",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_parrilla_cero5_chij95dweyfl",
+      "name": "Parrilla Cero5",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_el_mirasol_de_la_recova_chijsd_q9ldk",
+      "name": "El Mirasol de La Recova",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_chij4z0wdo61",
+      "name": "La Dorita",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_ancora_buenos_aires_chiju51wzpbl",
+      "name": "Ancora Buenos Aires",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_croque_madame_puerto_madero_chijjcwpbze1",
+      "name": "Croque Madame Puerto Madero",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    }
+  ],
+  "safety_checks": {
+    "writes_only_venues_curation_status": true,
+    "no_cloudinary_uploads": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "requires_explicit_apply": true
+  }
+}

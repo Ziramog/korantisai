@@ -56,6 +56,12 @@ const COMMANDS: Record<string, CommandDefinition> = {
     danger: 'publishes_public',
     buildArgs: (batchId) => ['tsx', 'pipeline/stages/12_activate_public_venues.ts', batchId, '--apply'],
   },
+  publish_reviewed_all: {
+    label: 'Publish reviewed approved venues',
+    description: 'Runs Cloudinary upload, hidden public projection, activation dry-run, and activation apply for reviewed approved venues.',
+    danger: 'publishes_public',
+    buildArgs: (batchId) => ['tsx', 'pipeline/stages/run_reviewed_publication_apply.ts', batchId],
+  },
   cloudinary_apply: {
     label: 'Upload approved heroes to Cloudinary',
     description: 'Uploads approved hero images to Cloudinary.',
@@ -260,6 +266,7 @@ function artifactList(): Array<{ label: string; file: string; kind: 'html' | 'js
     { label: 'Public projection report', file: 'public_projection_report.md', kind: 'markdown' },
     { label: 'Public apply report', file: 'public_projection_apply_report.md', kind: 'markdown' },
     { label: 'Public activation report', file: 'public_activation_apply_report.md', kind: 'markdown' },
+    { label: 'One-click publication report', file: 'reviewed_publication_apply_report.md', kind: 'markdown' },
     { label: 'Reviewed decision manifest', file: 'publication_decision_manifest.reviewed.json', kind: 'json' },
     { label: 'Activation dry-run JSON', file: 'public_activation_dry_run.json', kind: 'json' },
   ];
@@ -368,7 +375,7 @@ function renderApp(): string {
     button:hover { border-color: var(--blue); }
     button.danger { border-color: rgba(239,125,115,.55); color: #ffd1cc; }
     button.write { border-color: rgba(212,179,95,.55); color: #ffe1a0; }
-    .layout { display: grid; grid-template-columns: 280px minmax(420px, 1fr) 430px; min-height: calc(100vh - 72px); }
+    .layout { display: grid; grid-template-columns: 260px minmax(640px, 1fr) 380px; min-height: calc(100vh - 72px); }
     aside, .main, .right { border-right: 1px solid var(--line); padding: 16px; overflow: auto; }
     .right { border-right: 0; }
     .muted { color: var(--muted); }
@@ -380,7 +387,9 @@ function renderApp(): string {
     .warn { color: var(--gold); }
     .tabs { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
     .tabs button.active { background: var(--text); color: var(--ink); }
-    .artifact { width: 100%; min-height: 560px; border: 1px solid var(--line); background: #0b0c0b; color: #e8e4d7; border-radius: 8px; padding: 12px; overflow: auto; white-space: pre-wrap; }
+    .artifact-toolbar { display: none; gap: 8px; margin-bottom: 10px; }
+    .artifact-toolbar.visible { display: flex; }
+    .artifact { width: 100%; min-height: calc(100vh - 205px); border: 1px solid var(--line); background: #0b0c0b; color: #e8e4d7; border-radius: 8px; padding: 12px; overflow: auto; white-space: pre-wrap; }
     iframe.artifact { padding: 0; white-space: normal; }
     .command { display: grid; gap: 8px; border-bottom: 1px solid rgba(255,255,255,.07); padding: 10px 0; }
     .command:last-child { border-bottom: 0; }
@@ -421,6 +430,9 @@ function renderApp(): string {
       <div class="stats" id="stats"></div>
       <div class="panel">
         <div class="tabs" id="artifactTabs"></div>
+        <div class="artifact-toolbar" id="artifactToolbar">
+          <button onclick="openArtifactFullScreen()">Open review full screen</button>
+        </div>
         <div id="artifactHost" class="artifact">Select an artifact.</div>
       </div>
     </section>
@@ -453,6 +465,7 @@ function renderApp(): string {
     const boot = ${data};
     let status = null;
     let selectedArtifact = null;
+    let lastObservedFinish = '';
 
     async function init() {
       const batches = await (await fetch('/api/batches')).json();
@@ -472,7 +485,7 @@ function renderApp(): string {
         selectedArtifact = status.artifacts.find(a => a.exists)?.file;
       }
       render();
-      if (selectedArtifact) await openArtifact(selectedArtifact, false);
+      if (selectedArtifact) await openArtifact(selectedArtifact, false, true);
     }
 
     function render() {
@@ -498,21 +511,32 @@ function renderApp(): string {
       return '<div class="command"><h3>' + cmd.label + '</h3><p class="muted">' + cmd.description + '</p><button class="' + cls + '" onclick="runCommand(\\'' + key + '\\', \\'' + cmd.danger + '\\')">' + cmd.label + '</button></div>';
     }
 
-    async function openArtifact(file, rerender = true) {
+    async function openArtifact(file, rerender = true, preserveCurrent = false) {
       selectedArtifact = file;
       if (rerender) render();
       const batch = document.getElementById('batch').value;
       const artifact = status.artifacts.find(a => a.file === file);
       const url = '/api/artifact?batch=' + encodeURIComponent(batch) + '&file=' + encodeURIComponent(file);
       const host = document.getElementById('artifactHost');
+      const toolbar = document.getElementById('artifactToolbar');
+      toolbar.classList.toggle('visible', file === 'publication_review_dashboard.html');
       if (artifact?.kind === 'html') {
+        if (preserveCurrent && host.tagName.toLowerCase() === 'iframe' && host.getAttribute('src') === url) return;
         host.outerHTML = '<iframe id="artifactHost" class="artifact" src="' + url + '"></iframe>';
         return;
       }
+      toolbar.classList.remove('visible');
       const text = await (await fetch(url)).text();
       const current = document.getElementById('artifactHost');
       if (current.tagName.toLowerCase() === 'iframe') current.outerHTML = '<pre id="artifactHost" class="artifact"></pre>';
       document.getElementById('artifactHost').textContent = text;
+    }
+
+    function openArtifactFullScreen() {
+      if (!selectedArtifact) return;
+      const batch = document.getElementById('batch').value;
+      const url = '/api/artifact?batch=' + encodeURIComponent(batch) + '&file=' + encodeURIComponent(selectedArtifact);
+      window.open(url, '_blank');
     }
 
     async function runCommand(action, danger) {
@@ -564,7 +588,10 @@ function renderApp(): string {
       const consoleEl = document.getElementById('console');
       consoleEl.textContent = log || 'No command output yet.';
       consoleEl.scrollTop = consoleEl.scrollHeight;
-      if (!state.running && state.finished_at) refresh();
+      if (!state.running && state.finished_at && state.finished_at !== lastObservedFinish) {
+        lastObservedFinish = state.finished_at;
+        refresh();
+      }
     }
 
     init();

@@ -1,7 +1,7 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
-  "generated_at": "2026-06-08T00:31:02.447Z",
-  "updated_at": "2026-06-08T00:54:18.137Z",
+  "generated_at": "2026-06-08T01:51:45.251Z",
+  "updated_at": "2026-06-08T01:51:45.252Z",
   "model_used": "MiniMax-M3",
   "total_queue_size": 186,
   "images_processed_or_skipped": 186,

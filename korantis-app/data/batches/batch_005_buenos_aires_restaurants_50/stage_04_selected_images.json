@@ -1,6 +1,6 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
-  "generated_at": "2026-06-08T00:31:02.447Z",
+  "generated_at": "2026-06-08T01:51:45.251Z",
   "validation_status": "imported_needs_validation",
   "publication_status": "not_approved_for_publication",
   "selected_images": [
@@ -34,7 +34,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -42,23 +42,23 @@
       "venue_name": "Atis Bar",
       "selected_image": {
         "venue_name": "Atis Bar",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
         "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
-        "width": 1200,
-        "height": 1600,
+        "width": 1600,
+        "height": 1200,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
-          "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Balcony table with desserts and coffee overlooking a courtyard with string lights, ornate ironwork, and ivy-covered building, conveying a cozy, charming ambience."
+          "atmosphere_signal": "lush",
+          "visual_reason": "Ivy-covered building facade with arched windows, outdoor patio seating with tables, chairs, umbrellas, and potted plants under bright daylight."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -68,7 +68,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -102,7 +102,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -110,23 +110,23 @@
       "venue_name": "Bar Britanico",
       "selected_image": {
         "venue_name": "Bar Britanico",
-        "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
+        "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
         "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/bar-brit%C3%A1nico",
         "source_type": "official_website",
-        "width": 1500,
-        "height": 610,
+        "width": 1920,
+        "height": 600,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
-          "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Well-lit interior showing a full bar with wooden shelving, bottles, hanging cured meats, brick wall with chalkboard menu, wooden tables and chairs, and a checkered floor."
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Wide panoramic exterior view at twilight showing a modern cable-stayed bridge (Puente de la Mujer) illuminated in purple, with city skyline, lit buildings, a tall ship silhouette on the left, and water reflections under a gradient orange-to-purple sky."
         },
         "risk_flags": [
           "preferred_resolution"
@@ -135,7 +135,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 160,
+      "selection_score": 180,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -169,7 +169,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -203,7 +203,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 98,
+      "selection_score": 158,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -237,7 +237,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -271,7 +271,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -305,7 +305,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -338,7 +338,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 160,
+      "selection_score": 150,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -372,7 +372,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -406,7 +406,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -440,7 +440,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 113,
+      "selection_score": 103,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -474,7 +474,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -508,7 +508,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -542,7 +542,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -550,23 +550,23 @@
       "venue_name": "jakub",
       "selected_image": {
         "venue_name": "jakub",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
         "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
-        "width": 1200,
-        "height": 1600,
+        "width": 1600,
+        "height": 1205,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
           "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Clear view of a restaurant interior with exposed brick walls, vintage ceiling, string lights, wooden tables and chairs, warm ambient lighting, and a visible 'jakubo' sign. No people dominate the frame."
+          "visual_reason": "Clear daytime exterior of a cafe named 'jakub' with brick facade, large arched windows, outdoor seating with red Coca-Cola umbrellas, wooden tables, and visible patrons — a strong establishing facade shot."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -576,7 +576,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -610,7 +610,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 128,
+      "selection_score": 118,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -644,7 +644,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -652,23 +652,23 @@
       "venue_name": "La Caprichosa Parrilla",
       "selected_image": {
         "venue_name": "La Caprichosa Parrilla",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
         "source_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
-        "width": 1080,
-        "height": 1440,
+        "width": 960,
+        "height": 1280,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
           "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Clear interior of a restaurant with exposed brick walls, wooden tables, mismatched chairs, shelving with bottles, and warm low lighting creating an intimate atmosphere."
+          "visual_reason": "Clear exterior facade shot of 'La Caprichosa' restaurant showing the ornate signage, red double doors, brick wall, chalkboard sign, and partial interior view through the windows."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -678,7 +678,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -686,7 +686,7 @@
       "venue_name": "La Dorita",
       "selected_image": {
         "venue_name": "La Dorita",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
         "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
         "width": 1200,
@@ -695,14 +695,14 @@
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
           "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Clear view of a restaurant dining room with distinctive wine-bottle chandeliers, colorful string lights, wooden ceiling, patterned tile floor, set tables, and staff in the background. Warm, eclectic, and well-lit interior suitable as a hero shot."
+          "visual_reason": "Evening exterior shot of a restaurant facade with black-and-white striped awning, fairy lights, beaded curtains, and visible interior diners through large windows, conveying a warm, intimate street-side dining atmosphere."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -712,7 +712,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -746,7 +746,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -754,23 +754,23 @@
       "venue_name": "La Justina Bistró",
       "selected_image": {
         "venue_name": "La Justina Bistró",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
         "source_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
         "width": 1600,
-        "height": 720,
+        "height": 1558,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
           "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Well-lit, empty restaurant interior with classic European décor: wood paneling, red tables, leather banquettes, chandeliers, framed art, and warm wall tones creating a cozy, traditional bistro atmosphere."
+          "visual_reason": "Clear exterior facade of 'La Justina' with yellow walls, wrought-iron details, awning with Coca-Cola logo, chalkboard menus advertising 'LOCRO' and 'EMPANADAS', and a glass entrance showing a seated patron inside."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -780,7 +780,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -814,7 +814,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -848,7 +848,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -882,7 +882,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -916,7 +916,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -950,7 +950,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -984,7 +984,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1018,7 +1018,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 98,
+      "selection_score": 158,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1052,7 +1052,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 118,
+      "selection_score": 108,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1086,7 +1086,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 113,
+      "selection_score": 103,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1094,23 +1094,23 @@
       "venue_name": "Parrilla Sanabria Palermo",
       "selected_image": {
         "venue_name": "Parrilla Sanabria Palermo",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
         "source_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
         "width": 1600,
-        "height": 901,
+        "height": 1200,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
-          "atmosphere_signal": "warm_cozy",
-          "visual_reason": "Well-lit restaurant interior with white-clothed tables, brown chairs, textured ceiling, large windows revealing nighttime street view, and warm wall sconces."
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Clear exterior facade of 'Parrilla Sanabria' with dark painted wood paneling, exposed brick, large windows, wooden doors, and outdoor seating visible on sidewalk."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -1120,7 +1120,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1128,23 +1128,23 @@
       "venue_name": "Pentos Colegiales",
       "selected_image": {
         "venue_name": "Pentos Colegiales",
-        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
         "source_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
         "source_type": "google_places",
-        "width": 1600,
-        "height": 901,
+        "width": 1200,
+        "height": 1600,
         "ok_photo": true,
         "skip_reason": null,
         "model_used": "MiniMax-M3",
         "vision": {
-          "scene_type": "hero_interior",
+          "scene_type": "hero_exterior",
           "shows_space": true,
           "is_hero_usable": true,
           "is_product_only": false,
           "has_identifiable_faces": false,
           "quality": "high",
           "atmosphere_signal": "dark_intimate",
-          "visual_reason": "Clear view of a bar interior with neon 'BIRRA' sign, chalkboard menu, beer taps, and extensive back-bar bottle display; warm and dimly lit with no people visible."
+          "visual_reason": "Clear exterior facade shot of 'Pentios' venue with prominent illuminated signage, dark painted facade with green architectural details, large windows revealing interior lighting, and outdoor seating visible."
         },
         "risk_flags": [
           "rights_review_needed",
@@ -1154,7 +1154,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1188,7 +1188,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1222,7 +1222,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 108,
+      "selection_score": 168,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     },
@@ -1256,7 +1256,7 @@
         "publication_status": "not_approved_for_publication",
         "selected_for_hero": false
       },
-      "selection_score": 148,
+      "selection_score": 138,
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication"
     }

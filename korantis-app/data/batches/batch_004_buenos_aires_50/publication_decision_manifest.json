@@ -1,6 +1,6 @@
 {
   "batch_id": "batch_004_buenos_aires_50",
-  "generated_at": "2026-06-07T20:47:16.012Z",
+  "generated_at": "2026-06-08T02:02:42.441Z",
   "status": "review_pending",
   "safety": {
     "no_public_writes": true,
@@ -28,7 +28,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPmjdIyGxM4x9LgA21OEzeaGFCyBh8sb0VXDjPdEaiXiDCMZQbUtPQJNxEhQowqK0EReIzhRb6gpKNDc3CXsfPEfIEmln-RCjkFnoFvYHPD7Md5so8OiTm5PvS7jkEoJRQudsUpT-pPZ3U8mq0iBfqb=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=1954294194887979013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=1954294194887979013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Industrial warmth in Recoleta's heart",
+      "description": "The interior features exposed pipe pendant lighting illuminating a wooden counter and round tables, with yellow metal stools and a bench with coffee sack cushions adding to the industrial character softened by warm wood tones and dark teal walls.",
+      "mood_tags": [
+        "refined",
+        "work_friendly",
+        "creative",
+        "social",
+        "quiet"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "cafe",
+      "rating": 4.9,
+      "review_count": 176,
+      "google_maps_url": "https://maps.google.com/?cid=1954294194887979013&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Cafeto 2020",
@@ -46,7 +60,21 @@
         "missing_instagram",
         "missing_price_hint"
       ],
-      "image_publication_status": "not_approved_for_publication"
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Morning-to-midnight refuge in Chacarita's evolving neighborhood",
+      "description": "Cafeto 2020 operates as a dependable neighborhood fixture along Av. Corrientes in Chacarita, sustaining a loyal local following through consistent hours and reliable service across morning, afternoon, and evening.",
+      "mood_tags": [
+        "work_friendly",
+        "quiet",
+        "warm",
+        "late_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "cafe",
+      "rating": 4.4,
+      "review_count": 833,
+      "google_maps_url": "https://maps.google.com/?cid=216052578718129363&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Cobre Café",
@@ -67,7 +95,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgkD9LE1lpAGyygtfjUZIC3gx0LJs26F0ilDi4w3OdmjXQLmXesOd5XPE8vSt7H7-R6aLct5oCQ3M_3jpJV5egMvsdulWxIqnUBDoRRK2ot4LxYcPFWMR0RK1mPibuBsVebzopTUENmtbaPnA=s4800-w1600-h1573",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Industrial café warmth in Villa Crespo with quality coffee focus",
+      "description": "The hero interior reveals an industrial café space with exposed distressed concrete walls, professional espresso equipment, and a dedicated barista working behind the counter. Greenery and a pastry display add warmth to the industrial aesthetic, creating a refined yet approachable coffee environment.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "creative",
+        "refined",
+        "quiet"
+      ],
+      "neighborhood": "Villa Crespo",
+      "venue_type": "cafe",
+      "rating": 4.6,
+      "review_count": 767,
+      "google_maps_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Borja Specialty Coffee",
@@ -88,7 +130,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOdU-f8GCKBwvEy8dQYBlo2Z9Z2Rm9O5nGEor6QIvjzBzXGN03ukNUA2YsHvS1UxnGhK9DnZjOYavsA4pVDToT5XsvHMEeKJS5FEjkJGZdTE8nmO0knhyoq3I6kqWHUR2AaA_38dFeJ1gLT37OHHYkPEQ=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=15168335462933671006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=15168335462933671006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Specialty coffee that turns Belgrano evenings golden",
+      "description": "This specialty coffee shop on Av. Juramento draws Belgrano locals with its warm evening glow and carefully sourced beans. The intimate space, marked by a distinctive mural and professional espresso setup, offers a refined coffee experience without pretension.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "hidden_gem",
+        "creative",
+        "work_friendly"
+      ],
+      "neighborhood": "Belgrano",
+      "venue_type": "cafe",
+      "rating": 4.2,
+      "review_count": 1151,
+      "google_maps_url": "https://maps.google.com/?cid=15168335462933671006&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Cosecha Almagro",
@@ -108,7 +164,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOMlDriSkP5lKRVcenkyGPoeCk4r9KsBRuyJHw3NwPrfiErxN20oLouKM0NGD7FKpue-sMnCMboX8zwU4zeIJpTNl7v7dYTs-4bo059N0xM6hKSvt6hoghC19wDA3Nf1oO8NJeUS_4asXR2QM-WE3vz=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=12664176431195853697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=12664176431195853697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Café de barrio en Almagro, donde el café se encuentra con la calidez",
+      "description": "El interior de Cosecha Almagro presenta mesas de madera, sillas y una vitrina de vidrio que combina la oferta de café con elementos de retail. Un mural botánico en la pared y luminarias colgantes completan un espacio bien iluminado y acogedor, según la captura visual de alta calidad.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "work_friendly",
+        "hidden_gem"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "cafe",
+      "rating": 4.3,
+      "review_count": 837,
+      "google_maps_url": "https://maps.google.com/?cid=12664176431195853697&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Cuervo Café",
@@ -128,7 +197,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNHvociazTItNwQm6JUHuIawmsTWqG8eDka0L2t6oJO8IPIay7tVV1VYv3biAvy3-grKn4FcPYGeLdSI74-2H5WBp8MCF-uqwjc1g7Nk9qBZUgH7V7GSHXbmLk5MgWdYrAgcrp7_q9VUL-JIQ=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=15670044895945950604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=15670044895945950604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Palermo's neighborhood coffee ritual, served warm.",
+      "description": "A neighborhood coffee shop in Palermo, Buenos Aires with an artisanal focus. The warm, cozy interior features a wooden counter, espresso machine, and display case stocked with baked goods—inviting for casual stops or unhurried mornings.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "social",
+        "creative",
+        "quiet"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "cafe",
+      "rating": 4.6,
+      "review_count": 3680,
+      "google_maps_url": "https://maps.google.com/?cid=15670044895945950604&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Café Registrado",
@@ -148,7 +231,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxXoEcjDVqiKOZYtyMXKp8JbQAYeKXF5C4Y4yhUwp9PdvP6FRBvMgTWnznwGYf332TV7QdkYQpumJ3I64wM14ilZTRwEGIqfFCir3ieccjYc1_j2Yez4URuLLHAEFlSyhsr1LVnoFSMRANeno=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=17949790177853540600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=17949790177853540600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A Palermo industrial hideaway with copper lights and concrete charm",
+      "description": "Café Registrado anchors itself in Palermo's creative fabric with raw concrete walls and glowing copper pendant lights overhead. A neon sign adds urban edge while wooden tables and potted greenery soften the industrial space into a comfortable, work-friendly cafe.",
+      "mood_tags": [
+        "creative",
+        "work_friendly",
+        "social",
+        "intimate"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "cafe",
+      "rating": 4.2,
+      "review_count": 5888,
+      "google_maps_url": "https://maps.google.com/?cid=17949790177853540600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "The Coffee Store Plaza Almagro",
@@ -168,7 +264,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNQ59qW2cnC53X0J3DTSnaWSCpjFfpjj31Jik9RhHrOrH5UE4YwhWMeUxfjvqoDcrZAOEH2h6SqxU9_WlQ49FDwxwb0ae3iahVfFeOwu0ytl-lSiLBLfBppMqpiHLMAD-2NjOPQzIiwkl3H73U=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=1662111345895966467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=1662111345895966467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Bright coffee culture in Almagro",
+      "description": "The Coffee Store Plaza Almagro presents a bright, modern coffeehouse facade with generous glass windows and outdoor seating on black metal furniture. The visible 'WE ARE COFFEE BELIEVERS' signage and dark gray storefront with brick upper level communicate a refined, contemporary coffee culture identity that has earned strong ratings from over 2,100 reviewers.",
+      "mood_tags": [
+        "social",
+        "work_friendly",
+        "outdoor",
+        "refined"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 2161,
+      "google_maps_url": "https://maps.google.com/?cid=1662111345895966467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Tostado - Puerto Madero",
@@ -188,7 +297,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWjvw6mP1xTOexahuSM21MAl8csGQ2mjSJ_X-zhQDvsp06sogsfiCU52hp1BA3CWunh2D3p6YC1pN4Fq6dufJuCWOtKPl9a3O0jKjYCN0s8Yzcvrsv3rD2TMAvMotO1Sz3XNUl53spndSaCeFUYWVU=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=17145912401377605751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=17145912401377605751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Morning light on the waterfront, a quiet ritual in leather and espresso",
+      "description": "Tostado's Puerto Madero location occupies a bright, airy space with leather seating and large windows overlooking the waterfront. Its branded espresso service and consistent 4.6 rating from over 2,600 reviews make it a reliable daily destination for locals in one of Buenos Aires' most scenic neighborhoods.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "refined",
+        "work_friendly",
+        "date_night"
+      ],
+      "neighborhood": "Puerto Madero",
+      "venue_type": "cafe",
+      "rating": 4.6,
+      "review_count": 2619,
+      "google_maps_url": "https://maps.google.com/?cid=17145912401377605751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Salvaje Bakery",
@@ -208,7 +331,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNJcrcimI1Wdfzjpv686sKobGUQTefRQOGslsmiAbo_anWrzFDk8l4plY84mc4e4zlWJtLTDZRVzTxK95-xJqtMxfuiZ6uskP6DLYDgi9GdAmQvj09ZYKh5FZdwu30UTVwmzM2lK5D8TUwmFLdoV1Au3Q=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=6783284434165223701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=6783284434165223701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Art-covered walls, fresh pastries, Palermo's cozy corner",
+      "description": "Salvaje Bakery occupies a warmly lit interior on Avenida Dorrego in Palermo, its walls densely covered in framed art, posters, and vinyl records beneath pendant lighting. The counter displays fresh breads and pastries in baskets with chalkboard price signs, while the overall eclectic decor creates a lived-in, neighbourhood café atmosphere.",
+      "mood_tags": [
+        "warm",
+        "creative",
+        "intimate",
+        "quiet",
+        "hidden_gem"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "cafe",
+      "rating": 4.4,
+      "review_count": 3117,
+      "google_maps_url": "https://maps.google.com/?cid=6783284434165223701&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Barine - café de especialidad",
@@ -230,7 +367,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZORFLGoEIVayOiwRc7lCNryaA4ScGookzD97qwLo7RYGveCDXgu3yPlymIi3U_vJnlJZsumxg4mR9EHogVhegqjEzWJxZuHjwHdYQeoEO-qxDlpyAsJcXQN-dZV4YqNQLbT5Lgdk4ebI5EDU-3QKz6y=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Specialty coffee and pastries in a bright Palermo cafe",
+      "description": "Barine is a specialty coffee destination in Palermo's Soler street, where the bright, open interior with warm wood furnishings creates an inviting space for coffee-focused visits. The cafe operates daily except Tuesdays, serving specialty coffee alongside pastries from early morning through evening.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "quiet",
+        "creative"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "cafe",
+      "rating": 4.7,
+      "review_count": 231,
+      "google_maps_url": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Bicho Café de Especialidad Recoleta",
@@ -247,7 +397,21 @@
         "missing_website",
         "missing_instagram"
       ],
-      "image_publication_status": "not_approved_for_publication"
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Specialty coffee in Recoleta's cultural heart",
+      "description": "This specialty café in Recoleta holds a strong 4.5-star rating across nearly 1,200 reviews, with daily 8:30 AM–8:30 PM hours that support lingering morning coffees or relaxed afternoon work sessions.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "work_friendly",
+        "quiet",
+        "date_night"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 1169,
+      "google_maps_url": "https://maps.google.com/?cid=1419848637148678219&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Le Rêve Bistró",
@@ -268,7 +432,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPhojQn6LqAcHdxyuimiGq7W_aY-2xTqfQb8MuM0z-KA-fQKawXPVT_26SRXXkNUTTe-8_4TJXuRv-Ly8FCZjbI4D0_YrKU7OLDONOGmHis-XTPOkQZYllXkJHXop9uSm2ZfJ2A_JRPYvM7Qjuz1766kA=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate corner in Palermo's vibrant heart",
+      "description": "Located on Nicaragua Street in Palermo, this bistro features warm pendant and table lamp lighting, round wooden tables, green banquette seating, and subway tile accents that create a cozy, inviting dining room.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "date_night"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 586,
+      "google_maps_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Las Pizarras bistro",
@@ -288,7 +465,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOTFg--M_EDGy_Fq0Y1qIVNsJjXg-3BePR6LUVYybHpr4ofHg2T7aB_Pwobbaf4HJB31dTTRXqsCo5Eb46i-zKFs6zgaAaDtBau4-Nh9_RtynS6dlJmr6yNWgb8fcmJFqES7sR_2VmHg--Dtw=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Slate walls and candlelight in a Palermo evening bistro",
+      "description": "Las Pizarras Bistro is a dinner-focused restaurant in Palermo where chalkboard-covered walls define the aesthetic. The dark, intimate space features careful table settings and wine glasses, creating an atmospheric environment suited for refined evening dining.",
+      "mood_tags": [
+        "intimate",
+        "romantic",
+        "date_night",
+        "refined",
+        "quiet"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 1167,
+      "google_maps_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Negresco Bistró",
@@ -306,7 +497,21 @@
       "hero_image_url": "https://www.palladiohotelbuenosaires.com/wp-content/uploads/sites/7/2021/12/palladio_hotel_mgallery_restaurant_slide_01-2200x1200.jpg",
       "image_source_type": "official_website",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://www.palladiohotelbuenosaires.com/gastronomia/"
+      "source_url": "https://www.palladiohotelbuenosaires.com/gastronomia/",
+      "tagline": "Classic bistro elegance in the heart of Recoleta",
+      "description": "Part of Palladio Hotel in Recoleta, this bistro combines classic European elegance with warm contemporary comfort. Polished marble bar and mirrored shelving with potted plants set against white tablecloth dining create a sophisticated yet approachable atmosphere.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "intimate",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 899,
+      "google_maps_url": "https://maps.google.com/?cid=12594038147593846713&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Piano Nobile",
@@ -327,7 +532,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZON1543pHJwE6XGnG_fjiktSAPut0H3bSD0yVESZfMklPLkQQwYYw_NnxHK0qCormAOxNbTFPY0gMF6Gyr5R0wac96jngomJzA0iNrdObHPwBtC1SooiRyHEeWMzGP6B7zFrEsBCdr7htwazBfjKAUr=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=3901090374882591500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=3901090374882591500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Refined dining beneath crystal in a Recoleta palace",
+      "description": "Set within the historic Palacio Duhau, Piano Nobile presents an elegant interior where ornate crystal chandeliers illuminate classical wall paneling and parquet flooring. Round tables dressed in white linens create an intimate setting ideal for refined dining beneath soft natural light.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "refined",
+        "historic"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 727,
+      "google_maps_url": "https://maps.google.com/?cid=3901090374882591500&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "L'Antiquario Cafe Bistro",
@@ -348,7 +567,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOt3xHCzjg1bzHerevSq4Zk6fzRlPyVOpOnLq1I8g_AekGSjrFMgfKdEP7eqEz8bS0tKXBjM-4YPepVSJwvjVBtOzowgXsaRhC6OJIjEmjZzw_EkvMBWQoMEKF8a1uzQ6WFf0ybPxtNwQTc9aUGAKWrwQ=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Old-world charm meets San Telmo soul.",
+      "description": "Set in a terracotta-walled space lit by ornate chandeliers, L'Antiquario Cafe Bistro feels like stepping into a richly appointed antique salon. The wooden bar lined with bottles and candlelit tables create an intimate, unhurried atmosphere perfect for lingering into the night.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "romantic",
+        "intimate",
+        "late_night"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 115,
+      "google_maps_url": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Farmacia Lezama - Bistrot",
@@ -369,7 +602,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNS-YIfBPTzdLEKgG3DnDFBDPGuiDOC_ViSNFqBBgfxU4oTrQzSNU-h1oZwz24BX4XYbWwL7MKVyFj8RowLwWAXdx8PovP6hv4O-pmwmaEFBYzo9Q90HV-b6afClwwtP2GaxUaCXIbE4eUUJ16V-9Nd=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate evening escape in San Telmo's historic heart",
+      "description": "Red ambient lighting and a crystal chandelier set the tone in this converted San Telmo pharmacy, where white-clothed tables are lit by candlelight and wood cabinets display rows of bottles behind the bar.",
+      "mood_tags": [
+        "intimate",
+        "warm",
+        "romantic",
+        "late_night",
+        "historic"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 99,
+      "google_maps_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "A DONDE",
@@ -390,7 +637,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN2QfBqxFldk7gcLfRiXLOdZ7_Rxt65Bduz2ej8MCPsy9VGPTeH_bTU8c2VHK0ADA_OJcSq6XlA769W3IQepfiDyiGaYDI07k154uaBX6O2Y4NbSLG1ix2LleaHzk0wnUxZv08k0JhYyL4EdbqYRfId=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate evening of Argentine flavors in Villa Crespo",
+      "description": "A DONDE is a refined restaurant in Villa Crespo where Argentine flavors unfold in a dark, intimate setting of warm wood, green tile accents, and dramatic pendant lighting. Evening service starting at 7:30 PM and a 4.9 rating point to a destination for meaningful dinners.",
+      "mood_tags": [
+        "intimate",
+        "romantic",
+        "refined",
+        "date_night",
+        "warm"
+      ],
+      "neighborhood": "Villa Crespo",
+      "venue_type": "restaurant",
+      "rating": 4.9,
+      "review_count": 238,
+      "google_maps_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Contraluz",
@@ -411,7 +672,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOMyna2PuRSxT3sXC_kw4GF6woEoYSJXaTnskh_ucviN2Ex-REIvqHD7xGEq-g3bZc-Ioy650VANNxDxsoglNIw6GSifhJmiX4rIjg7Z4PHBvvHp1BorARGihKMFN8aVLWjRaX6_2gzdUmgqw=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An atrium of light in Buenos Aires' Retiro",
+      "description": "Located in the Alvear Art Hotel, Contraluz features a spacious interior beneath a striking glass atrium ceiling, with warm lamp lighting and polished marble creating an upscale yet welcoming atmosphere for all-day dining.",
+      "mood_tags": [
+        "refined",
+        "warm",
+        "romantic",
+        "intimate",
+        "date_night"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.7,
+      "review_count": 208,
+      "google_maps_url": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "St. Regis Restaurant",
@@ -431,7 +706,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN0tO3aKHNlvFta1kUwv7zmrWLDaz_lmAW07UGQOvAW9yAbntfu5iP5d-Fe-JqIxicSVTL-LcrlKtC25fly13ipyUjUBLB5C6qTS_2X6Ny79eTwBFEaIMI5BNNOIajJWNyJ-loZ5VqfJXdqN6c=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=978498321131030548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=978498321131030548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Elegant grand dining in the heart of Retiro",
+      "description": "Located at Av. Leandro N. Alem 1193 in Retiro, this restaurant features a grand interior with crystal chandeliers, polished marble floors, and gold-toned walls as shown in its hero image. Operating Monday through Friday for lunch service with a 4.5-star rating from 739 reviews.",
+      "mood_tags": [
+        "refined",
+        "romantic",
+        "cinematic",
+        "historic",
+        "intimate"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 739,
+      "google_maps_url": "https://maps.google.com/?cid=978498321131030548&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Banu",
@@ -452,7 +741,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNqbdnX-BuAgbQdOsB27uFOpIOfT9w9P_F_DrF6rYZWLtXjXW7zyB7KWK56MKGRjwI6ENGqkYrlpTmLoxYy7CskdNiv67-3Nj6A7_J5HBUeOhnBdqmGgauV_GG6lJeEI01i3xc4imuxYa7czMLPd4d0LA=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=7161783056104383474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=7161783056104383474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Contemporary bistro in Centro with intimate, moody interiors",
+      "description": "A 4.5-star spot in Centro with hours running late into the night, Banu features a dimly lit interior with wooden tables, glassware, and pendant lights that create a moody, intimate atmosphere suited for refined dining.",
+      "mood_tags": [
+        "intimate",
+        "romantic",
+        "date_night",
+        "late_night",
+        "refined"
+      ],
+      "neighborhood": "Centro",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 650,
+      "google_maps_url": "https://maps.google.com/?cid=7161783056104383474&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Selva Mía",
@@ -473,7 +776,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMqxTH89230i-akCLmCYyXjUIAz1gwVR_hHiK-XsA6YiFP1dfPvau12wgUWMrid83PnFvyZlWixESSZ4vScIUP4mXQ0SUD9pVxCeWFezhz4CI3dtZhFrkokow-hEAdhCucXRA3Et-t5bY4-=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=6696505739768196920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=6696505739768196920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A jungle oasis in the heart of Palermo",
+      "description": "A tranquil outdoor bar surrounded by trees and softened by string lights, Selva Mía offers a jungle-like escape in Palermo with blue and purple-lit water features creating a romantic nighttime atmosphere.",
+      "mood_tags": [
+        "intimate",
+        "romantic",
+        "outdoor",
+        "late_night",
+        "creative"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 476,
+      "google_maps_url": "https://maps.google.com/?cid=6696505739768196920&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Intervalo Bar",
@@ -494,7 +811,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNrEZoXM5jGAKoEeeDXne5NUEvV1VbphZpT2Q2NrxPnQ7aysjYi2qiT11IEH4oe0PBQ6xdkdH3iMw8h1Zu3NAZpjfCbaPtaL_v148rJTNhoxfC2mJyexxOOx_CCoMdeS7Qtc0YS8bA5vWfLugfHwDEnuQ=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Warm lighting, curated drinks, Recoleta evenings.",
+      "description": "A refined bar in Recoleta featuring warm backlit shelving and a curated liquor selection. The intimate setting opens at 7PM and stays lively until the early morning hours, perfect for unhurried evenings.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "late_night",
+        "date_night",
+        "intimate"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "bar",
+      "rating": 5,
+      "review_count": 181,
+      "google_maps_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "BOCANADA",
@@ -515,7 +846,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN93dyc2SaKz9IyUTMgw5XRr6UzmURZT8TKRu4vDpNS8gRRVq-Zob_lZXL44arFX9Hzea_7CWA-DaMN0lsQIGaebrFRI010wUe_0JAsNt6xtwQAv2pCxFEyT9XOmAYNpK3W0Aqb0mPua__aIkX-5_Qm1w=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Historic San Telmo bar with bright turquoise facade and lively outdoor terrace",
+      "description": "Occupying a distinctive turquoise historic building on Bolívar near the border of San Telmo's oldest quarter, BOCANADA offers a bright, airy atmosphere with outdoor terrace seating beneath detailed facade architecture. The bar draws a social crowd late into the night, with extended hours until 3 AM on Thursday through Saturday.",
+      "mood_tags": [
+        "historic",
+        "social",
+        "late_night",
+        "outdoor",
+        "warm"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 417,
+      "google_maps_url": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Cave Canem",
@@ -535,7 +880,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPr7Xbu6zTDfEPfoxwPd_COHNqqArd1JoslgWcsq2jw7zqDuxa6YqOI6M21cOiC-egL5iwX17vp6xASI6rkPYMcgFQ2gvo3atKa1jcV-wtbB8WEZkofKa5aFT1LAIAXSlfxVM_hRj12xHMpSEJQFE7-Ag=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=8081873414369609183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=8081873414369609183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A cozy San Telmo hideout for pizza, beer, and late-night warmth.",
+      "description": "Tucked on Chile Street in San Telmo, Cave Canem delivers a warm, cozy pub atmosphere where wood counters, soft lighting, and a selection of beer pair naturally with pizza. The bar opens at 7pm and stays lively into the early morning hours, making it a go-to spot for locals looking to unwind in an intimate setting.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "late_night",
+        "hidden_gem",
+        "social"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 288,
+      "google_maps_url": "https://maps.google.com/?cid=8081873414369609183&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Lutero Bar",
@@ -555,7 +914,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNtYAAt_p52l-3eE-aSUwRBSSgobLmHI5F6cJROf1rhVo93qvNSF2kQzuZ5Nd-S15HBpCQ8iv1lIa2nZw3z9vcEov68316_ox02blwfU92KHBTW_NuFJBjUJinOnkuNk0G2jJpHAre0tBhJalE=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=815401023010461123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=815401023010461123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A warm corner refuge in Chacarita for late-night gatherings",
+      "description": "The nighttime exterior reveals a corner establishment bathed in warm red-orange light, with visible outdoor seating where patrons gather. The illuminated facade creates an inviting presence on the street, and the combination of indoor glow and exterior tables suggests a space designed for relaxed, social evenings.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "late_night",
+        "outdoor",
+        "social"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 1051,
+      "google_maps_url": "https://maps.google.com/?cid=815401023010461123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Nido de Tigre",
@@ -576,7 +949,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP0nGLrI3PTxeNohvKUmMN3mtI6wSijY2PuvFMoGt-gMJ7wSCXywMohjNaJSqnoG1c9Epq0RBgb35Xew1o-HNCvx6-GVfB1LGSQD5tQh69r9rKJPkhV9P7oTz_gFuHcG3bhJEIjROl5XKos5qqK_mu87g=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=16636718572862495582&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=16636718572862495582&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Candlelit lounge in Chacarita with vintage charm",
+      "description": "Tucked on Avenida Jorge Newbery in Chacarita, this intimate lounge glows with candlelight and globe sconces, its red sofas and wrought iron details creating a warm, secluded atmosphere for late-night gatherings.",
+      "mood_tags": [
+        "intimate",
+        "warm",
+        "romantic",
+        "date_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 5,
+      "review_count": 102,
+      "google_maps_url": "https://maps.google.com/?cid=16636718572862495582&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "SOFÁ - un bar",
@@ -597,7 +984,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPY8AZ5ufwCCAegJ5-1wfoj99_F9igJvmMrEGZcKMlMKU93URPHVn22_GZd54X826qLsJ4dIorhBCqfxPR8A7aPAIMGYdwyjxDUy8Lq0YbnfxTur4ipnIzAXymouJXFDUmAxgUObhutnMZe=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=2632505094587415938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=2632505094587415938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Donde la noche cobra vida en Chacarita",
+      "description": "SOFÁ es un bar nocturno en Chacarita con ambiente íntimo y refinado, donde una barra de mármol y estantes backlit de licores crean un espacio bajo luz tenue ideal para cócteles artesanales y conversaciones nocturnas.",
+      "mood_tags": [
+        "intimate",
+        "refined",
+        "late_night",
+        "date_night",
+        "warm"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 799,
+      "google_maps_url": "https://maps.google.com/?cid=2632505094587415938&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Bar PUNTO MONA",
@@ -614,7 +1015,21 @@
         "missing_instagram",
         "missing_price_hint"
       ],
-      "image_publication_status": "not_approved_for_publication"
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Creative nightspot in Chacarita for artful evenings",
+      "description": "PUNTO MONA operates only Thursday through Saturday evenings, closing late at 2-3AM, making it a destination for night owls in Chacarita. With a 4.5-star rating across 684 reviews, the bar has established a solid local following and reputation for quality.",
+      "mood_tags": [
+        "creative",
+        "late_night",
+        "hidden_gem",
+        "intimate",
+        "social"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 4.5,
+      "review_count": 684,
+      "google_maps_url": "https://maps.google.com/?cid=14524644487147989228&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Veredita",
@@ -631,7 +1046,21 @@
         "missing_instagram",
         "missing_price_hint"
       ],
-      "image_publication_status": "not_approved_for_publication"
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "An intimate wine bar in Chacarita's quiet evening scene",
+      "description": "Veredita operates as a wine-focused bar in Chacarita, drawing a loyal local following with its consistently high rating. The evening-only schedule and late weekend hours create a natural rhythm for intimate gatherings and unhurried wine experiences.",
+      "mood_tags": [
+        "intimate",
+        "refined",
+        "romantic",
+        "quiet",
+        "date_night"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 4.8,
+      "review_count": 315,
+      "google_maps_url": "https://maps.google.com/?cid=3248832769215194017&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Don Gato",
@@ -649,7 +1078,21 @@
         "missing_instagram",
         "missing_price_hint"
       ],
-      "image_publication_status": "not_approved_for_publication"
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Late-night cocktails in Chacarita",
+      "description": "Don Gato operates as a late-night neighborhood bar in Chacarita, opening at 8PM Wednesday through Saturday with service until 3AM. With a 4.7 rating from 93 reviews, it attracts locals seeking a quieter alternative to busier nightlife spots.",
+      "mood_tags": [
+        "late_night",
+        "intimate",
+        "hidden_gem",
+        "warm",
+        "quiet"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 93,
+      "google_maps_url": "https://maps.google.com/?cid=7464616276743186118&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Social Paraíso Bistró | Recoleta",
@@ -667,7 +1110,21 @@
       "hero_image_url": "https://static.wixstatic.com/media/0bc1c7_9cac9f047b7b44f2b379ef3e3bfb5786~mv2.jpg",
       "image_source_type": "official_website",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "http://www.social-paraiso.com/"
+      "source_url": "http://www.social-paraiso.com/",
+      "tagline": "Ornate Recoleta cocktails in a restored historic building",
+      "description": "Social Paraíso Bistró occupies a restored historic building in Recoleta's elegant cultural corridor, distinguished by its ornate facade with detailed floral relief carvings and arched entryways. The venue offers a refined cocktail experience in an intimate evening setting, supported by a strong 4.8 rating from over 1000 reviews.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "historic",
+        "intimate",
+        "romantic"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "cocktail_bar",
+      "rating": 4.8,
+      "review_count": 1070,
+      "google_maps_url": "https://maps.google.com/?cid=15607211616355763784&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "GRAPIN",
@@ -684,7 +1141,21 @@
         "missing_instagram",
         "missing_price_hint"
       ],
-      "image_publication_status": "not_approved_for_publication"
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Cocteles artesanales en el corazón bohemio de San Telmo",
+      "description": "GRAPIN ocupa un local en Bolívar 938 dentro del barrio de San Telmo, ofreciendo cócteles artesanales en un espacio que respeta la atmósfera histórica del edificio.",
+      "mood_tags": [
+        "intimate",
+        "historic",
+        "creative",
+        "warm",
+        "quiet"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "cocktail_bar",
+      "rating": 4.7,
+      "review_count": 500,
+      "google_maps_url": "https://maps.google.com/?cid=11589429424974438000&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Pipi Lounge",
@@ -705,7 +1176,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNp4UgTw5G0oAL0vpV2nqX5pvPkBoOuVUtntN8wXd_1RySjIZA1pCzd1ecge2ZUy13zCe4EQw3eJnOEL6XQ5ncYfH5BOAnOGpMZNRtmNKgy9d2VBs6nTxMD4PsPBsoAA63PGA_RqKU4NitFgtNthy7G=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=6815438955757224198&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=6815438955757224198&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Cozy corner for crafted cocktails in Villa Crespo",
+      "description": "A Villa Crespo cocktail bar with warm pendant lighting, hanging greenery, and a tiled bar front. Open late into the night with crafted drinks in a cozy, plant-filled interior.",
+      "mood_tags": [
+        "warm",
+        "late_night",
+        "intimate",
+        "creative",
+        "hidden_gem"
+      ],
+      "neighborhood": "Villa Crespo",
+      "venue_type": "cocktail_bar",
+      "rating": 4.3,
+      "review_count": 118,
+      "google_maps_url": "https://maps.google.com/?cid=6815438955757224198&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "LE CLUB BACAN",
@@ -726,7 +1211,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOFD-M5m1Mt_RDBDNe3Ufs06MRMsWyM9aM0ofkxKFjHzyLnOjt2dWdmHt_ETKTBdgsAQqWctgOKaFg_V_S7mce-gQzl671VscQqkPzEzo_Yj8GdTxT0SpkaN7TfrCZrqitMNu4VUbzU7PCEWg=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate retreat in the heart of Retiro",
+      "description": "LE CLUB BACAN occupies an intimate space in the Retiro neighborhood, distinguished by its dark wood-paneled lounge furnished with tufted leather sofas and velvet chairs illuminated by warm table lamps. The refined cocktail bar attracts those seeking an upscale evening setting, with operating hours extending until 1 AM on weekends.",
+      "mood_tags": [
+        "intimate",
+        "refined",
+        "warm",
+        "romantic",
+        "late_night"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "cocktail_bar",
+      "rating": 4.9,
+      "review_count": 273,
+      "google_maps_url": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Osaka Concepción",
@@ -746,7 +1245,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWAW6HA2BDEd6LGyIp_C7OWBZXSQWdtEtqSsp9KPQhlT9LVNCqbCpKRn6SvPR_rtbYt0efji67lOQk3Pr8R79Iz13Xap6c2Fa4ocs2rsYRbwTMnlfKTyPvEcGrBOkRtsyP1uDTkXp6XhVojEU3ORy-QA=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=8315020386853656953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=8315020386853656953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Nikkei flavors in a candlelit Colegiales corner",
+      "description": "Osaka Concepción brings Japanese-Peruvian Nikkei cuisine to a warmly lit Colegiales interior with wooden tables and an open kitchen. The 4.7-rated venue operates lunch and dinner service until midnight, pairing creative fusion plates with a dedicated cocktail program.",
+      "mood_tags": [
+        "intimate",
+        "creative",
+        "date_night",
+        "romantic",
+        "refined"
+      ],
+      "neighborhood": "Colegiales",
+      "venue_type": "cocktail_bar",
+      "rating": 4.7,
+      "review_count": 1169,
+      "google_maps_url": "https://maps.google.com/?cid=8315020386853656953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Tradition & Rebellion",
@@ -767,7 +1280,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPFFpDGDVeNSHO2espoaMqKb2cFycuZ0tMzdIPeTyNz41mA20KqwDN4B_sQ9Brb-_9BGTwJcIpMqmud3Fi_ztaJs_G9Y-KNwu35RdlaO69klQoxHhKCE6er5BrgNprDpzSZwNhp2lC-2q_qgQ7o6ZE1Nw=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=14681956760748201560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=14681956760748201560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Where the waterfront skyline meets midnight cocktails",
+      "description": "Located on the fourth floor of Olga Cossettini 731 in Puerto Madero, this cocktail bar overlooks the waterfront with views of the river and illuminated city skyline. The image vision confirms a floating riverside venue with string lights and crowds visible below, suggesting a scenic elevated position above the dock area.",
+      "mood_tags": [
+        "romantic",
+        "late_night",
+        "refined",
+        "cinematic"
+      ],
+      "neighborhood": "Puerto Madero",
+      "venue_type": "cocktail_bar",
+      "rating": 4.8,
+      "review_count": 627,
+      "google_maps_url": "https://maps.google.com/?cid=14681956760748201560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Alvear Roof Bar",
@@ -787,7 +1313,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNCdS2yW8e_ufzpQCXx-uiCdwAek38UFylnza1nGwC0j5rePkESVlzBkugGfIlVW7rN1RlSe5Y32deLKdqBYUy1z8kPVmzI4KEQKU41USXKL_z9vTc2TBsyp5xSJAUiJXyr5U4JS_lyQL_yKOV_ggKU=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Rooftop escape in Palermo with pink neon glow and intimate warmth",
+      "description": "Located on the 11th floor of Av. Alvear in Palermo, this rooftop bar features pink neon signage against a dark facade, with open arched doorways revealing a warmly lit interior. The space offers bar seating and stools, creating an intimate setting for evening cocktails Wednesday through Sunday.",
+      "mood_tags": [
+        "intimate",
+        "warm",
+        "romantic",
+        "late_night",
+        "cinematic"
+      ],
+      "neighborhood": "Palermo",
+      "venue_type": "bar",
+      "rating": 4.5,
+      "review_count": 1074,
+      "google_maps_url": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "La Carbonera",
@@ -805,7 +1345,21 @@
       "hero_image_url": "https://lacarbonerasantelmo.com/wp-content/uploads/2025/11/La-Carbonera-Terraza-scaled.jpg",
       "image_source_type": "official_website",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://lacarbonerasantelmo.com/"
+      "source_url": "https://lacarbonerasantelmo.com/",
+      "tagline": "San Telmo's bright rooftop escape with historic soul",
+      "description": "Located at Carlos Calvo 299 in historic San Telmo, La Carbonera is a rooftop bar that transforms throughout the day under its retractable glass ceiling. With a 4.6 rating from 342 reviews and operating Wed-Sun with late-night hours on weekends, it offers a bright, social space with wooden tables and pink chairs beneath a well-lit bar area.",
+      "mood_tags": [
+        "historic",
+        "lively",
+        "outdoor",
+        "social",
+        "late_night"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.6,
+      "review_count": 342,
+      "google_maps_url": "https://maps.google.com/?cid=851581372140321905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Naranjo Bar",
@@ -826,7 +1380,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPybc2xo_DL_iwg-F4dl9sst-809a4fZms7P4nLbQi_t7HJoaXfwqOPCculzNQ992Ezx9Lu-4lUxoO8g7Yb1YRdDGrs-TKJbtbbsm3OAvMaDQouYA7RLd5XITdwp-u8lTMUMp6xr8orNxt3kyY=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=318109230481729741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=318109230481729741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Esencia de Chacarita en cada copa",
+      "description": "The facade shows wooden-framed windows and an open door revealing bottle shelves inside, with tree reflections on glass in bright daylight. Inside, warm tones and natural light create an intimate setting typical of Chacarita's local bar culture.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "quiet",
+        "date_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Chacarita",
+      "venue_type": "bar",
+      "rating": 4.1,
+      "review_count": 1189,
+      "google_maps_url": "https://maps.google.com/?cid=318109230481729741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Duhau Restaurante & Vinoteca",
@@ -846,7 +1414,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNOZ2xkIbn8Vcf3llCLI3XyD8iZtCVWymoMsArPnO1mMNAZkAjdw8ZHV7NcPLHYrhYS_WyzA9EMRRfCtus-TYONTUEWmeq7cjpXJp1CecBQDUjqOmizNC86RAYW6bU_BjcT0gwR2ufjwad7aJbUd2tRSA=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A garden of quiet elegance in Recoleta",
+      "description": "Set within the historic Palacio Duhau Park Hyatt, Duhau Restaurante & Vinoteca features a lush courtyard garden with reflecting pools and outdoor seating beneath red awnings, surrounded by ivy-covered Beaux-Arts architecture.",
+      "mood_tags": [
+        "refined",
+        "romantic",
+        "historic",
+        "quiet",
+        "outdoor"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "restaurant",
+      "rating": 4.5,
+      "review_count": 468,
+      "google_maps_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Verdot Wine Bar",
@@ -864,7 +1446,21 @@
       "hero_image_url": "https://verdotwinebar.com/hero.webp",
       "image_source_type": "official_website",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "http://www.verdotwinebar.com/"
+      "source_url": "http://www.verdotwinebar.com/",
+      "tagline": "A refined wine sanctuary in Recoleta's evening glow",
+      "description": "Set along Avenida Quintana in Recoleta, Verdot offers an intimate wine experience with cellar walls and low lighting creating an upscale bar atmosphere. The space features pendant lights, reflective surfaces, and well-set tables with glassware, appealing to those seeking a refined evening.",
+      "mood_tags": [
+        "romantic",
+        "intimate",
+        "quiet",
+        "refined",
+        "warm"
+      ],
+      "neighborhood": "Recoleta",
+      "venue_type": "bar",
+      "rating": 4.6,
+      "review_count": 343,
+      "google_maps_url": "https://maps.google.com/?cid=8194925039896212290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Bruce Wine",
@@ -885,7 +1481,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNGufJvysetVOR-O7At3gjdtA-lAGuV0o8z0FzI50GBD-PzYmu4l-vQ0E7N55sujMHgECfb9MFrQjN4X-eGMl9VnM2x8Gc2ufq8v5LG505yb44V8Dw9MflcyF7mDA3eD99KOuzA_hhnWJQnbFp_SKTU=s4800-w1200-h676",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=4325757478306474729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=4325757478306474729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Industrial romance in the heart of San Telmo",
+      "description": "Set in the historic San Telmo neighborhood, Bruce Wine presents a styled interior of exposed brick, ornate mirrors, and pendant lighting. The bar features curated wine selections against industrial details, creating a refined yet approachable atmosphere.",
+      "mood_tags": [
+        "romantic",
+        "intimate",
+        "refined",
+        "late_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 125,
+      "google_maps_url": "https://maps.google.com/?cid=4325757478306474729&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Anselmo Lounge & Wine Bar",
@@ -903,7 +1513,21 @@
       "hero_image_url": "https://lirp.cdn-website.com/72ef65f2/dms3rep/multi/opt/standard01-a10076c3-1920w.jpg",
       "image_source_type": "official_website",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://www.anselmohotel.com/"
+      "source_url": "https://www.anselmohotel.com/",
+      "tagline": "Hotel wine bar in historic San Telmo, open all hours",
+      "description": "Anselmo Lounge & Wine Bar occupies a hotel property in the heart of San Telmo, offering guests and locals a refined space characterized by natural light, neutral tones, and carefully chosen artwork. The 24-hour operation makes it a reliable option for quiet moments at any hour in Buenos Aires' oldest neighborhood.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "refined",
+        "work_friendly",
+        "date_night"
+      ],
+      "neighborhood": "San Telmo",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 178,
+      "google_maps_url": "https://maps.google.com/?cid=13576969352155300662&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Los Jardines De Las Barquin",
@@ -924,7 +1548,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZFVyypCf8r5hwAYSa6WskuXkjm60CAnGP9Hf5L4_8e0b9OSAxMdHfzhryLMtj-E-MWC4kbCciO1mHuL9iw6SgkPbLr1-5q-iCyxTlXvJ7RUGoG2M2uSctf0KR1DjkdaFzhYO5c7Dtb8uBhg=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=12080270847006215866&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=12080270847006215866&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A lush garden terrace in the heart of Retiro",
+      "description": "Set within a verdant outdoor space framed by tropical hedges and plants, this restaurant offers patio dining on warm wooden decking under awnings. The setting combines proper table service with natural greenery for a daytime garden experience in Retiro.",
+      "mood_tags": [
+        "romantic",
+        "intimate",
+        "warm",
+        "hidden_gem"
+      ],
+      "neighborhood": "Retiro",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 618,
+      "google_maps_url": "https://maps.google.com/?cid=12080270847006215866&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "BAUTISTA Av. Rivadavia",
@@ -944,7 +1581,20 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNuBgjn-jW2MU3K2jaxuLUy2RwN7WA-XIDKS3sJQ-dVYw7AkA-K1rKyu77TsNO9EVeXIsOYs9drwqvzC3qVV_WafN0BEawPvofLXymDL3h0VZYjtjYgTqxvaPDYwWBAKR5BZ0E4KC3AWkVROA=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A bright corner café-bar on Rivadavia with a blue awning and steady neighborhood",
+      "description": "BAUTISTA BAR & CAFE is a corner café-bar on busy Avenida Rivadavia in Almagro, identifiable by its blue awning and glass storefront. With a 4.4 rating across nearly 1,000 reviews and operating from 7AM to 9PM daily, it serves as a dependable neighborhood spot for morning coffee, afternoon work sessions, and early-evening socializing.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "social",
+        "hidden_gem"
+      ],
+      "neighborhood": "Almagro",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 947,
+      "google_maps_url": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Tostado - Nuñez",
@@ -964,7 +1614,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMjbqClFXIE_5J9kP7SUFunVaAW0PxztyXMcw99SG0U1W2BX23HfYJ-NNIZlfSwzI17dod1Gzt3j9DBZOQWdj1Gmo0dNDDt-7snd4NFljgyz9vWuxjkmXpngA3L7HBm7vuFNNh32pGwISvmLgyGSm3IAA=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=3077934836415495499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=3077934836415495499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Industrial cafe meets refined comfort in Nuñez",
+      "description": "Tostado - Nuñez presents an industrial cafe aesthetic with exposed concrete beams, rows of caged pendant lights, and tiled flooring, creating a refined yet approachable dining environment in the Nuñez neighborhood of Buenos Aires.",
+      "mood_tags": [
+        "creative",
+        "work_friendly",
+        "social",
+        "warm",
+        "refined"
+      ],
+      "neighborhood": "Nuñez",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 2426,
+      "google_maps_url": "https://maps.google.com/?cid=3077934836415495499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "La Giralda",
@@ -984,7 +1648,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMvT-WVovhFV5YcHXBhdLQjPpdqArV1x8yTw6OVienMSyWAJgIWuk9Ko1xo8YYI3ejriIWFdUe9ALuN-cih7FmumSrL--XX7y-5qVlrecvNxvtTwFmaVglPA_tg-b_1u3hjcAN5P4Suq_OjWw=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Historic corner café on Avenida Corrientes since 1934",
+      "description": "La Giralda occupies a prominent corner on Avenida Corrientes in Buenos Aires' Centro neighborhood, offering outdoor seating beneath its prominent signage. The venue's extended hours—particularly the 24-hour service on Friday and Saturday—along with its early 7 AM opening make it a versatile option for different occasions.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "outdoor",
+        "social",
+        "late_night"
+      ],
+      "neighborhood": "Centro",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 5923,
+      "google_maps_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     },
     {
       "venue_name": "Petit Colón",
@@ -1004,7 +1682,21 @@
       "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN5Ew1B0Mn1DguUlLBlA82t-RUkIZ6x-se0C4cQgkOsz6IneE6Ss6MCHrqZsNPd6s5-xLcb00zOMQcM0q4vpovDvBT3zCJtB5jv3Ohmfo3FSfWvXd-ielw08S-cLVtl_OhoHaF4JNTx03ezVlxoud50oQ=s4800-w1600-h1600",
       "image_source_type": "google_places",
       "image_publication_status": "not_approved_for_publication",
-      "source_url": "https://maps.google.com/?cid=15709916980555088992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      "source_url": "https://maps.google.com/?cid=15709916980555088992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Historic Buenos Aires cafe-bar with warm, ornate interiors",
+      "description": "Petit Colón occupies a richly detailed space in Centro with dark wood paneling, brass accents, marble floors, and chandeliers that cast warm light across the room. The venue's long operating window—6 AM to midnight—makes it a versatile option throughout the day, while the ornate decor and ambient lighting create a refined, welcoming mood.",
+      "mood_tags": [
+        "warm",
+        "historic",
+        "refined",
+        "late_night",
+        "work_friendly"
+      ],
+      "neighborhood": "Centro",
+      "venue_type": "restaurant",
+      "rating": 4.3,
+      "review_count": 7907,
+      "google_maps_url": "https://maps.google.com/?cid=15709916980555088992&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
     }
   ]
 }

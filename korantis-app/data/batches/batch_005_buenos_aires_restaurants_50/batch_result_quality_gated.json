@@ -1,7 +1,7 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
   "city": "Buenos Aires",
-  "generated_at": "2026-06-08T01:25:43.587Z",
+  "generated_at": "2026-06-08T01:52:11.911Z",
   "status": "completed",
   "summary": {
     "input": 50,
@@ -64,6 +64,11 @@
       "stage": "06_score_and_stage",
       "status": "completed",
       "notes": "Re-scored after Stage 05B retry."
+    },
+    {
+      "stage": "apply_reselected_heroes_to_editorial",
+      "status": "completed",
+      "notes": "Applied Stage 04 exterior-first hero reselection to editorial batch result. No M3/MiniMax/Supabase/Cloudinary calls."
     },
     {
       "stage": "06_quality_gate",
@@ -597,7 +602,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Overhead view of a spacious restaurant interior with open kitchen, exposed ductwork, weathered walls, wooden tables with place settings, and warm lighting, conveying an industrial-chic atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Overhead view of a spacious restaurant interior with open kitchen, exposed ductwork, weathered walls, wooden tables with place settings, and warm lighting, conveying an industrial-chic atmosphere.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -629,7 +634,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Overhead view of a spacious restaurant interior with open kitchen, exposed ductwork, weathered walls, wooden tables with place settings, and warm lighting, conveying an industrial-chic atmosphere.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Overhead view of a spacious restaurant interior with open kitchen, exposed ductwork, weathered walls, wooden tables with place settings, and warm lighting, conveying an industrial-chic atmosphere.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -646,7 +651,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -669,7 +675,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Overhead view of a spacious restaurant interior with open kitchen, exposed ductwork, weathered walls, wooden tables with place settings, and warm lighting, conveying an industrial-chic atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Overhead view of a spacious restaurant interior with open kitchen, exposed ductwork, weathered walls, wooden tables with place settings, and warm lighting, conveying an industrial-chic atmosphere.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -705,7 +711,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -1052,7 +1059,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=acceptable; visual_reason=Nighttime exterior facade of a restaurant with illuminated entrance, visible interior through windows showing tables, chairs, and a chandelier, but a person is partially visible inside the doorway.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=acceptable; visual_reason=Nighttime exterior facade of a restaurant with illuminated entrance, visible interior through windows showing tables, chairs, and a chandelier, but a person is partially visible inside the doorway.; selection_score=158",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -1084,7 +1091,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=acceptable; visual_reason=Nighttime exterior facade of a restaurant with illuminated entrance, visible interior through windows showing tables, chairs, and a chandelier, but a person is partially visible inside the doorway.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=acceptable; visual_reason=Nighttime exterior facade of a restaurant with illuminated entrance, visible interior through windows showing tables, chairs, and a chandelier, but a person is partially visible inside the doorway.; selection_score=158",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -1124,7 +1131,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=acceptable; visual_reason=Nighttime exterior facade of a restaurant with illuminated entrance, visible interior through windows showing tables, chairs, and a chandelier, but a person is partially visible inside the doorway.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=acceptable; visual_reason=Nighttime exterior facade of a restaurant with illuminated entrance, visible interior through windows showing tables, chairs, and a chandelier, but a person is partially visible inside the doorway.; selection_score=158",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -1160,7 +1167,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -1886,13 +1894,13 @@
           "hero": {
             "venue_name": "La Justina Bistró",
             "source_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
             "width": 1600,
-            "height": 720,
+            "height": 1558,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -1903,11 +1911,11 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit, empty restaurant interior with classic European décor: wood paneling, red tables, leather banquettes, chandeliers, framed art, and warm wall tones creating a cozy, traditional bistro atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of 'La Justina' with yellow walls, wrought-iron details, awning with Coca-Cola logo, chalkboard menus advertising 'LOCRO' and 'EMPANADAS', and a glass entrance showing a seated patron inside.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
+              "scene": "hero_exterior",
               "atmosphere_signal": "warm_cozy",
               "quality": "high",
               "model_used": "MiniMax-M3",
@@ -1915,6 +1923,37 @@
             }
           },
           "candidates": [
+            {
+              "venue_name": "La Justina Bistró",
+              "source_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 1558,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of 'La Justina' with yellow walls, wrought-iron details, awning with Coca-Cola logo, chalkboard menus advertising 'LOCRO' and 'EMPANADAS', and a glass entrance showing a seated patron inside.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "La Justina Bistró",
               "source_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -1958,13 +1997,13 @@
         "hero_image": {
           "venue_name": "La Justina Bistró",
           "source_url": "https://maps.google.com/?cid=14736770655873222781&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPcxUGGsrzY5OMK2WLVH6yol7pQABjoOUNgeu564BJq5NCiLvGDNYrEyRcE0t63f2_Yorjg-u58oRnMtHy1mEzCPcZNYHzobYuWaODSZlIDcicHXqKTz94ggpvTIeSXYrBZlot_RTFieQTyVQ=s4800-w1600-h1600",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO45x6f_zBuzLZDz3H2C3a_oyGLOa1HCyxu4OummVRwc-NuAEM3WPCnxT9DWdq25nMrDI0ZlNHIfdeZX_alNL29uxWbrSAgr6wKTGRu6BU3eRA4pPqHJV8Lc5D7rlsncXWxlgk9BswYi7hpag=s4800-w1600-h1600",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
           "width": 1600,
-          "height": 720,
+          "height": 1558,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -1975,11 +2014,11 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit, empty restaurant interior with classic European décor: wood paneling, red tables, leather banquettes, chandeliers, framed art, and warm wall tones creating a cozy, traditional bistro atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of 'La Justina' with yellow walls, wrought-iron details, awning with Coca-Cola logo, chalkboard menus advertising 'LOCRO' and 'EMPANADAS', and a glass entrance showing a seated patron inside.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
+            "scene": "hero_exterior",
             "atmosphere_signal": "warm_cozy",
             "quality": "high",
             "model_used": "MiniMax-M3",
@@ -2011,7 +2050,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -2853,13 +2893,13 @@
           "hero": {
             "venue_name": "Parrilla Sanabria Palermo",
             "source_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
             "width": 1600,
-            "height": 901,
+            "height": 1200,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -2870,18 +2910,49 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior with white-clothed tables, brown chairs, textured ceiling, large windows revealing nighttime street view, and warm wall sconces.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=industrial; quality=high; visual_reason=Clear exterior facade of 'Parrilla Sanabria' with dark painted wood paneling, exposed brick, large windows, wooden doors, and outdoor seating visible on sidewalk.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
-              "atmosphere_signal": "warm_cozy",
+              "scene": "hero_exterior",
+              "atmosphere_signal": "industrial",
               "quality": "high",
               "model_used": "MiniMax-M3",
               "has_identifiable_faces": false
             }
           },
           "candidates": [
+            {
+              "venue_name": "Parrilla Sanabria Palermo",
+              "source_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 1200,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=industrial; quality=high; visual_reason=Clear exterior facade of 'Parrilla Sanabria' with dark painted wood paneling, exposed brick, large windows, wooden doors, and outdoor seating visible on sidewalk.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "industrial",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "Parrilla Sanabria Palermo",
               "source_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -2925,13 +2996,13 @@
         "hero_image": {
           "venue_name": "Parrilla Sanabria Palermo",
           "source_url": "https://maps.google.com/?cid=4277560896493871206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJCofjrpEti_QGGTr1NDwDTBmrNxje5m9KsLCmMnsYYmYnTryKlO5kWH1u-W92d4J9dRnN8TuLaskGsKnIjSWhKWAzcAdsr3pF3jng7nkl4mmEwsY1mgcOtPa6xMLRNtisZ-WwWN6YCntUIu4QZqupbg=s4800-w1600-h1600",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg4mtlsEQzG7Z30dP9xBv78eRGWYvLb3-lk6WtiHleyMq5nW1TE7WR3a9MPXJ5KOgqmqJ-9CN1RVfhAMbg5r9uiRcgc5ssoeLU9_x48ecwWVeA_kcg6z2aGyWh68O-8xswj_kDVofTWLGnhIgG0ZEjmg=s4800-w1600-h1600",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
           "width": 1600,
-          "height": 901,
+          "height": 1200,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -2942,12 +3013,12 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior with white-clothed tables, brown chairs, textured ceiling, large windows revealing nighttime street view, and warm wall sconces.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=industrial; quality=high; visual_reason=Clear exterior facade of 'Parrilla Sanabria' with dark painted wood paneling, exposed brick, large windows, wooden doors, and outdoor seating visible on sidewalk.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
-            "atmosphere_signal": "warm_cozy",
+            "scene": "hero_exterior",
+            "atmosphere_signal": "industrial",
             "quality": "high",
             "model_used": "MiniMax-M3",
             "has_identifiable_faces": false
@@ -2978,7 +3049,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -3336,13 +3408,13 @@
           "hero": {
             "venue_name": "La Caprichosa Parrilla",
             "source_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
-            "width": 1080,
-            "height": 1440,
+            "width": 960,
+            "height": 1280,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -3353,11 +3425,11 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a restaurant with exposed brick walls, wooden tables, mismatched chairs, shelving with bottles, and warm low lighting creating an intimate atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade shot of 'La Caprichosa' restaurant showing the ornate signage, red double doors, brick wall, chalkboard sign, and partial interior view through the windows.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
+              "scene": "hero_exterior",
               "atmosphere_signal": "warm_cozy",
               "quality": "high",
               "model_used": "MiniMax-M3",
@@ -3365,6 +3437,37 @@
             }
           },
           "candidates": [
+            {
+              "venue_name": "La Caprichosa Parrilla",
+              "source_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 960,
+              "height": 1280,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade shot of 'La Caprichosa' restaurant showing the ornate signage, red double doors, brick wall, chalkboard sign, and partial interior view through the windows.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "La Caprichosa Parrilla",
               "source_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -3408,13 +3511,13 @@
         "hero_image": {
           "venue_name": "La Caprichosa Parrilla",
           "source_url": "https://maps.google.com/?cid=14069534674604083041&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNh004_WBNTVtny0G6-_vtKJs86E0VHJCEsFvZlVWqoA-4cUJqsjyWZuveHr5gbEr8wO5XKIF-Ii3Wdg67T11GX4dSMLp0brcDGnWyw5Y2h2q3TiCcIVxUQgNavzy1T9FtbN8kUInbUfDPZK-YV1JPIhw=s4800-w1080-h1440",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2Dh1zOQzpgUl0dbE59gQGXZSuQtDTT8ro_Xzubz6LL6I-jEsKC-5-4rZcqGXEfS-cDzUttkQeAvHCSvsa--fSZzemMWFRj5Kms4unKu6ivpyy2awAej21_VmCuYXBit4lXpy0Y-m3kBjx86AGJMlEIg=s4800-w960-h1280",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
-          "width": 1080,
-          "height": 1440,
+          "width": 960,
+          "height": 1280,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -3425,11 +3528,11 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a restaurant with exposed brick walls, wooden tables, mismatched chairs, shelving with bottles, and warm low lighting creating an intimate atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade shot of 'La Caprichosa' restaurant showing the ornate signage, red double doors, brick wall, chalkboard sign, and partial interior view through the windows.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
+            "scene": "hero_exterior",
             "atmosphere_signal": "warm_cozy",
             "quality": "high",
             "model_used": "MiniMax-M3",
@@ -3461,7 +3564,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -3914,7 +4018,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a pink facade restaurant 'La Coquela' with visible signage, green shutters, and outdoor seating with branded umbrellas.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a pink facade restaurant 'La Coquela' with visible signage, green shutters, and outdoor seating with branded umbrellas.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -3946,7 +4050,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a pink facade restaurant 'La Coquela' with visible signage, green shutters, and outdoor seating with branded umbrellas.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a pink facade restaurant 'La Coquela' with visible signage, green shutters, and outdoor seating with branded umbrellas.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -3986,7 +4090,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a pink facade restaurant 'La Coquela' with visible signage, green shutters, and outdoor seating with branded umbrellas.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a pink facade restaurant 'La Coquela' with visible signage, green shutters, and outdoor seating with branded umbrellas.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -4022,7 +4126,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -4880,7 +4985,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Rustic dining interior with exposed brick walls, warm amber lighting, decorative bottles on a high shelf, hanging dried fish, and tables with red patterned runners, creating a cozy, well-composed atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Rustic dining interior with exposed brick walls, warm amber lighting, decorative bottles on a high shelf, hanging dried fish, and tables with red patterned runners, creating a cozy, well-composed atmosphere.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -4912,7 +5017,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Rustic dining interior with exposed brick walls, warm amber lighting, decorative bottles on a high shelf, hanging dried fish, and tables with red patterned runners, creating a cozy, well-composed atmosphere.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Rustic dining interior with exposed brick walls, warm amber lighting, decorative bottles on a high shelf, hanging dried fish, and tables with red patterned runners, creating a cozy, well-composed atmosphere.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -4929,7 +5034,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -4952,7 +5058,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Rustic dining interior with exposed brick walls, warm amber lighting, decorative bottles on a high shelf, hanging dried fish, and tables with red patterned runners, creating a cozy, well-composed atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Rustic dining interior with exposed brick walls, warm amber lighting, decorative bottles on a high shelf, hanging dried fish, and tables with red patterned runners, creating a cozy, well-composed atmosphere.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -4988,7 +5094,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -5435,7 +5542,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of a Tudor-style building housing 'La Plazoleta Parrilla' restaurant, with visible signage, menu boards, and Argentine flag, shot in bright daylight.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of a Tudor-style building housing 'La Plazoleta Parrilla' restaurant, with visible signage, menu boards, and Argentine flag, shot in bright daylight.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -5467,7 +5574,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of a Tudor-style building housing 'La Plazoleta Parrilla' restaurant, with visible signage, menu boards, and Argentine flag, shot in bright daylight.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of a Tudor-style building housing 'La Plazoleta Parrilla' restaurant, with visible signage, menu boards, and Argentine flag, shot in bright daylight.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -5507,7 +5614,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of a Tudor-style building housing 'La Plazoleta Parrilla' restaurant, with visible signage, menu boards, and Argentine flag, shot in bright daylight.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear exterior facade of a Tudor-style building housing 'La Plazoleta Parrilla' restaurant, with visible signage, menu boards, and Argentine flag, shot in bright daylight.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -5543,7 +5650,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -6475,7 +6583,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a grill restaurant showing bar area, wine bottle display, decorative wall plaques, pendant lights, and a set dining table with red napkins, conveying a warm and cozy atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a grill restaurant showing bar area, wine bottle display, decorative wall plaques, pendant lights, and a set dining table with red napkins, conveying a warm and cozy atmosphere.; selection_score=103",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -6507,7 +6615,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a grill restaurant showing bar area, wine bottle display, decorative wall plaques, pendant lights, and a set dining table with red napkins, conveying a warm and cozy atmosphere.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a grill restaurant showing bar area, wine bottle display, decorative wall plaques, pendant lights, and a set dining table with red napkins, conveying a warm and cozy atmosphere.; selection_score=103",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -6524,7 +6632,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -6547,7 +6656,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a grill restaurant showing bar area, wine bottle display, decorative wall plaques, pendant lights, and a set dining table with red napkins, conveying a warm and cozy atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior view of a grill restaurant showing bar area, wine bottle display, decorative wall plaques, pendant lights, and a set dining table with red napkins, conveying a warm and cozy atmosphere.; selection_score=103",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -6581,7 +6690,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -6958,7 +7068,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant showing wooden tables, chairs, an open kitchen with a chef, a bar with staff and customers, distinctive green bottle chandelier, tiled floor, and wall-mounted TV. Industrial-rustic decor with warm lighting.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant showing wooden tables, chairs, an open kitchen with a chef, a bar with staff and customers, distinctive green bottle chandelier, tiled floor, and wall-mounted TV. Industrial-rustic decor with warm lighting.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -6990,7 +7100,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant showing wooden tables, chairs, an open kitchen with a chef, a bar with staff and customers, distinctive green bottle chandelier, tiled floor, and wall-mounted TV. Industrial-rustic decor with warm lighting.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant showing wooden tables, chairs, an open kitchen with a chef, a bar with staff and customers, distinctive green bottle chandelier, tiled floor, and wall-mounted TV. Industrial-rustic decor with warm lighting.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -7007,7 +7117,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -7030,7 +7141,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant showing wooden tables, chairs, an open kitchen with a chef, a bar with staff and customers, distinctive green bottle chandelier, tiled floor, and wall-mounted TV. Industrial-rustic decor with warm lighting.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant showing wooden tables, chairs, an open kitchen with a chef, a bar with staff and customers, distinctive green bottle chandelier, tiled floor, and wall-mounted TV. Industrial-rustic decor with warm lighting.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -7066,7 +7177,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -7443,7 +7555,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Night exterior shot of a glass-fronted venue with warm interior lighting, tiled patio, and stacked chairs visible through windows, framed against a city high-rise.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Night exterior shot of a glass-fronted venue with warm interior lighting, tiled patio, and stacked chairs visible through windows, framed against a city high-rise.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -7475,7 +7587,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Night exterior shot of a glass-fronted venue with warm interior lighting, tiled patio, and stacked chairs visible through windows, framed against a city high-rise.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Night exterior shot of a glass-fronted venue with warm interior lighting, tiled patio, and stacked chairs visible through windows, framed against a city high-rise.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -7515,7 +7627,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Night exterior shot of a glass-fronted venue with warm interior lighting, tiled patio, and stacked chairs visible through windows, framed against a city high-rise.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Night exterior shot of a glass-fronted venue with warm interior lighting, tiled patio, and stacked chairs visible through windows, framed against a city high-rise.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -7549,7 +7661,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -8352,7 +8465,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=acceptable; visual_reason=Exterior facade of 'La Banda' restaurant with signage, chalkboard menus, and entrance; shows venue exterior clearly with good lighting, no prominent people or food focus.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=acceptable; visual_reason=Exterior facade of 'La Banda' restaurant with signage, chalkboard menus, and entrance; shows venue exterior clearly with good lighting, no prominent people or food focus.; selection_score=158",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -8384,7 +8497,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=acceptable; visual_reason=Exterior facade of 'La Banda' restaurant with signage, chalkboard menus, and entrance; shows venue exterior clearly with good lighting, no prominent people or food focus.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=acceptable; visual_reason=Exterior facade of 'La Banda' restaurant with signage, chalkboard menus, and entrance; shows venue exterior clearly with good lighting, no prominent people or food focus.; selection_score=158",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -8424,7 +8537,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=acceptable; visual_reason=Exterior facade of 'La Banda' restaurant with signage, chalkboard menus, and entrance; shows venue exterior clearly with good lighting, no prominent people or food focus.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=acceptable; visual_reason=Exterior facade of 'La Banda' restaurant with signage, chalkboard menus, and entrance; shows venue exterior clearly with good lighting, no prominent people or food focus.; selection_score=158",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -8458,7 +8571,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -8818,13 +8932,13 @@
           "hero": {
             "venue_name": "Atis Bar",
             "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
-            "width": 1200,
-            "height": 1600,
+            "width": 1600,
+            "height": 1200,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -8835,18 +8949,49 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Balcony table with desserts and coffee overlooking a courtyard with string lights, ornate ironwork, and ivy-covered building, conveying a cozy, charming ambience.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=lush; quality=high; visual_reason=Ivy-covered building facade with arched windows, outdoor patio seating with tables, chairs, umbrellas, and potted plants under bright daylight.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
-              "atmosphere_signal": "warm_cozy",
+              "scene": "hero_exterior",
+              "atmosphere_signal": "lush",
               "quality": "high",
               "model_used": "MiniMax-M3",
               "has_identifiable_faces": false
             }
           },
           "candidates": [
+            {
+              "venue_name": "Atis Bar",
+              "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 1200,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=lush; quality=high; visual_reason=Ivy-covered building facade with arched windows, outdoor patio seating with tables, chairs, umbrellas, and potted plants under bright daylight.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "lush",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "Atis Bar",
               "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -8890,13 +9035,13 @@
         "hero_image": {
           "venue_name": "Atis Bar",
           "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOSYRLR9h2MyKrZlMhKNsQfQ0q7lXzbYhYIf5k9sben0l_ACVVEP5hLNtspAJoS4sKl-ZwbNKi0p7jmOmV5HrJkXy9eA5EGc355X3mtXL7Tz1jhvnwM_TOg-Oo8fur4Jor_0Asi-Oi8O2N7Ra5s6_Q0=s4800-w1600-h1600",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPZ8XBQcNGcyI56NHoDI4TRYnuXp7FbxHcskPq8yTDyGRmYBjr3KCsYvjyx7q-vD-2Z-m1kF9WAA1L1TQHAAuhTI4PlOBSB5kWmGQek-6U-6g6I4MZ2Vd025coiAER3Do6597TwtSShbtITrQ=s4800-w1600-h1600",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
-          "width": 1200,
-          "height": 1600,
+          "width": 1600,
+          "height": 1200,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -8907,12 +9052,12 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Balcony table with desserts and coffee overlooking a courtyard with string lights, ornate ironwork, and ivy-covered building, conveying a cozy, charming ambience.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=lush; quality=high; visual_reason=Ivy-covered building facade with arched windows, outdoor patio seating with tables, chairs, umbrellas, and potted plants under bright daylight.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
-            "atmosphere_signal": "warm_cozy",
+            "scene": "hero_exterior",
+            "atmosphere_signal": "lush",
             "quality": "high",
             "model_used": "MiniMax-M3",
             "has_identifiable_faces": false
@@ -8941,7 +9086,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -9312,7 +9458,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant with exposed brick walls, industrial ceiling beams, concrete floor, wooden tables and chairs, industrial pendant lights, and visible patrons seated at tables.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant with exposed brick walls, industrial ceiling beams, concrete floor, wooden tables and chairs, industrial pendant lights, and visible patrons seated at tables.; selection_score=103",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -9344,7 +9490,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant with exposed brick walls, industrial ceiling beams, concrete floor, wooden tables and chairs, industrial pendant lights, and visible patrons seated at tables.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant with exposed brick walls, industrial ceiling beams, concrete floor, wooden tables and chairs, industrial pendant lights, and visible patrons seated at tables.; selection_score=103",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -9361,7 +9507,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -9384,7 +9531,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant with exposed brick walls, industrial ceiling beams, concrete floor, wooden tables and chairs, industrial pendant lights, and visible patrons seated at tables.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Clear interior view of a restaurant with exposed brick walls, industrial ceiling beams, concrete floor, wooden tables and chairs, industrial pendant lights, and visible patrons seated at tables.; selection_score=103",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -9417,7 +9564,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -9798,7 +9946,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Narrow cobblestone street lined with outdoor café tables, black chairs, and large potted plants under string lights, showing the venue's exterior terrace in daylight.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Narrow cobblestone street lined with outdoor café tables, black chairs, and large potted plants under string lights, showing the venue's exterior terrace in daylight.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -9830,7 +9978,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Narrow cobblestone street lined with outdoor café tables, black chairs, and large potted plants under string lights, showing the venue's exterior terrace in daylight.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Narrow cobblestone street lined with outdoor café tables, black chairs, and large potted plants under string lights, showing the venue's exterior terrace in daylight.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -9870,7 +10018,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Narrow cobblestone street lined with outdoor café tables, black chairs, and large potted plants under string lights, showing the venue's exterior terrace in daylight.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Narrow cobblestone street lined with outdoor café tables, black chairs, and large potted plants under string lights, showing the venue's exterior terrace in daylight.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -9906,7 +10054,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -10287,7 +10436,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Dimly lit upscale restaurant interior with tufted leather banquettes, sheepskin throws, set tables, ornate gold-framed mirrors, and geometric pendant lanterns casting warm candlelight.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Dimly lit upscale restaurant interior with tufted leather banquettes, sheepskin throws, set tables, ornate gold-framed mirrors, and geometric pendant lanterns casting warm candlelight.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -10319,7 +10468,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Dimly lit upscale restaurant interior with tufted leather banquettes, sheepskin throws, set tables, ornate gold-framed mirrors, and geometric pendant lanterns casting warm candlelight.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Dimly lit upscale restaurant interior with tufted leather banquettes, sheepskin throws, set tables, ornate gold-framed mirrors, and geometric pendant lanterns casting warm candlelight.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -10336,7 +10485,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -10359,7 +10509,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Dimly lit upscale restaurant interior with tufted leather banquettes, sheepskin throws, set tables, ornate gold-framed mirrors, and geometric pendant lanterns casting warm candlelight.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Dimly lit upscale restaurant interior with tufted leather banquettes, sheepskin throws, set tables, ornate gold-framed mirrors, and geometric pendant lanterns casting warm candlelight.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -10395,7 +10545,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -10776,7 +10927,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Ornate interior with crystal chandeliers, tall arched windows with heavy drapery, and a fully-stocked wooden bar with bartenders and patrons, showcasing the venue's classic luxurious ambiance.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Ornate interior with crystal chandeliers, tall arched windows with heavy drapery, and a fully-stocked wooden bar with bartenders and patrons, showcasing the venue's classic luxurious ambiance.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -10808,7 +10959,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Ornate interior with crystal chandeliers, tall arched windows with heavy drapery, and a fully-stocked wooden bar with bartenders and patrons, showcasing the venue's classic luxurious ambiance.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Ornate interior with crystal chandeliers, tall arched windows with heavy drapery, and a fully-stocked wooden bar with bartenders and patrons, showcasing the venue's classic luxurious ambiance.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -10825,7 +10976,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -10848,7 +11000,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Ornate interior with crystal chandeliers, tall arched windows with heavy drapery, and a fully-stocked wooden bar with bartenders and patrons, showcasing the venue's classic luxurious ambiance.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Ornate interior with crystal chandeliers, tall arched windows with heavy drapery, and a fully-stocked wooden bar with bartenders and patrons, showcasing the venue's classic luxurious ambiance.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -10884,7 +11036,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -11261,7 +11414,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a cafe/restaurant with orange and pink walls, neon signage, framed portraits, pendant lights, set tables with bench seating and wooden chairs, and decorative plants—cozy and inviting atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a cafe/restaurant with orange and pink walls, neon signage, framed portraits, pendant lights, set tables with bench seating and wooden chairs, and decorative plants—cozy and inviting atmosphere.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -11293,7 +11446,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a cafe/restaurant with orange and pink walls, neon signage, framed portraits, pendant lights, set tables with bench seating and wooden chairs, and decorative plants—cozy and inviting atmosphere.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a cafe/restaurant with orange and pink walls, neon signage, framed portraits, pendant lights, set tables with bench seating and wooden chairs, and decorative plants—cozy and inviting atmosphere.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -11310,7 +11463,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -11333,7 +11487,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a cafe/restaurant with orange and pink walls, neon signage, framed portraits, pendant lights, set tables with bench seating and wooden chairs, and decorative plants—cozy and inviting atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear interior of a cafe/restaurant with orange and pink walls, neon signage, framed portraits, pendant lights, set tables with bench seating and wooden chairs, and decorative plants—cozy and inviting atmosphere.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -11369,7 +11523,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -11717,13 +11872,13 @@
           "hero": {
             "venue_name": "jakub",
             "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
-            "width": 1200,
-            "height": 1600,
+            "width": 1600,
+            "height": 1205,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -11734,11 +11889,11 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear view of a restaurant interior with exposed brick walls, vintage ceiling, string lights, wooden tables and chairs, warm ambient lighting, and a visible 'jakubo' sign. No people dominate the frame.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a cafe named 'jakub' with brick facade, large arched windows, outdoor seating with red Coca-Cola umbrellas, wooden tables, and visible patrons — a strong establishing facade shot.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
+              "scene": "hero_exterior",
               "atmosphere_signal": "warm_cozy",
               "quality": "high",
               "model_used": "MiniMax-M3",
@@ -11746,6 +11901,37 @@
             }
           },
           "candidates": [
+            {
+              "venue_name": "jakub",
+              "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1600,
+              "height": 1205,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a cafe named 'jakub' with brick facade, large arched windows, outdoor seating with red Coca-Cola umbrellas, wooden tables, and visible patrons — a strong establishing facade shot.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "jakub",
               "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -11789,13 +11975,13 @@
         "hero_image": {
           "venue_name": "jakub",
           "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCcbRvrLBYX2aw3095v5uDjMa9hyB2CdyHZjo8qOidMUd3ZUAR1swF6B17Pzr42KQWUbxbMN4FgvoKYu9_-PsXMtre_WYwpne0yGSFH20uac0sp0ga8uN9YU5zStxrDq22gdbZMPpQxSPsI4rc9aWAFQ=s4800-w1600-h1600",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9ScduTGILYKwl_mPkxbfjiXQTx3OefDuXY0Xc5cXXPGvidORynMZQvPcib6F_h9sNd_46pY4px8dnKV9gUp1I2TAGnFdb64Fbe6PtKGrhAvRAHGQBtLSbSn3RQCV-NtJdhaWjb1MBTcApN2xAFoUN=s4800-w1600-h1600",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
-          "width": 1200,
-          "height": 1600,
+          "width": 1600,
+          "height": 1205,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -11806,11 +11992,11 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear view of a restaurant interior with exposed brick walls, vintage ceiling, string lights, wooden tables and chairs, warm ambient lighting, and a visible 'jakubo' sign. No people dominate the frame.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear daytime exterior of a cafe named 'jakub' with brick facade, large arched windows, outdoor seating with red Coca-Cola umbrellas, wooden tables, and visible patrons — a strong establishing facade shot.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
+            "scene": "hero_exterior",
             "atmosphere_signal": "warm_cozy",
             "quality": "high",
             "model_used": "MiniMax-M3",
@@ -11841,7 +12027,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -12677,7 +12864,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a bistro featuring colorful Mondrian-style wall panels, wooden staircase with mural, and neatly set tables with chairs in red, white, and blue.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a bistro featuring colorful Mondrian-style wall panels, wooden staircase with mural, and neatly set tables with chairs in red, white, and blue.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -12709,7 +12896,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a bistro featuring colorful Mondrian-style wall panels, wooden staircase with mural, and neatly set tables with chairs in red, white, and blue.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a bistro featuring colorful Mondrian-style wall panels, wooden staircase with mural, and neatly set tables with chairs in red, white, and blue.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -12726,7 +12913,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -12749,7 +12937,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a bistro featuring colorful Mondrian-style wall panels, wooden staircase with mural, and neatly set tables with chairs in red, white, and blue.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a bistro featuring colorful Mondrian-style wall panels, wooden staircase with mural, and neatly set tables with chairs in red, white, and blue.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -12785,7 +12973,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -13142,7 +13331,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Interior of a bar with checkered floor, wood-paneled bar, exposed ceiling pipes, mirror ball, hanging wine glasses, and wine bottles; clear view of the full space and seating layout.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Interior of a bar with checkered floor, wood-paneled bar, exposed ceiling pipes, mirror ball, hanging wine glasses, and wine bottles; clear view of the full space and seating layout.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -13174,7 +13363,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Interior of a bar with checkered floor, wood-paneled bar, exposed ceiling pipes, mirror ball, hanging wine glasses, and wine bottles; clear view of the full space and seating layout.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Interior of a bar with checkered floor, wood-paneled bar, exposed ceiling pipes, mirror ball, hanging wine glasses, and wine bottles; clear view of the full space and seating layout.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -13191,7 +13380,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -13214,7 +13404,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Interior of a bar with checkered floor, wood-paneled bar, exposed ceiling pipes, mirror ball, hanging wine glasses, and wine bottles; clear view of the full space and seating layout.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Interior of a bar with checkered floor, wood-paneled bar, exposed ceiling pipes, mirror ball, hanging wine glasses, and wine bottles; clear view of the full space and seating layout.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -13249,7 +13439,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -13624,7 +13815,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=gallery_atmosphere; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior lounge with bar counter, multiple seating arrangements, sofas, armchairs, lamps, and floor-to-ceiling windows; wide perspective showing full spatial layout.",
+            "notes": "model_used=MiniMax-M3; scene=gallery_atmosphere; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior lounge with bar counter, multiple seating arrangements, sofas, armchairs, lamps, and floor-to-ceiling windows; wide perspective showing full spatial layout.; selection_score=118",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -13656,7 +13847,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=gallery_atmosphere; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior lounge with bar counter, multiple seating arrangements, sofas, armchairs, lamps, and floor-to-ceiling windows; wide perspective showing full spatial layout.",
+              "notes": "model_used=MiniMax-M3; scene=gallery_atmosphere; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior lounge with bar counter, multiple seating arrangements, sofas, armchairs, lamps, and floor-to-ceiling windows; wide perspective showing full spatial layout.; selection_score=118",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -13696,7 +13887,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=gallery_atmosphere; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior lounge with bar counter, multiple seating arrangements, sofas, armchairs, lamps, and floor-to-ceiling windows; wide perspective showing full spatial layout.",
+          "notes": "model_used=MiniMax-M3; scene=gallery_atmosphere; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior lounge with bar counter, multiple seating arrangements, sofas, armchairs, lamps, and floor-to-ceiling windows; wide perspective showing full spatial layout.; selection_score=118",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -13731,7 +13922,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -14106,7 +14298,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Panoramic view of a restaurant interior with neatly set tables, white tablecloths, wine glasses, bottles, warm pendant lighting, and decorative antlers, conveying a cozy rustic ambiance.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Panoramic view of a restaurant interior with neatly set tables, white tablecloths, wine glasses, bottles, warm pendant lighting, and decorative antlers, conveying a cozy rustic ambiance.; selection_score=150",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -14137,7 +14329,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Panoramic view of a restaurant interior with neatly set tables, white tablecloths, wine glasses, bottles, warm pendant lighting, and decorative antlers, conveying a cozy rustic ambiance.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Panoramic view of a restaurant interior with neatly set tables, white tablecloths, wine glasses, bottles, warm pendant lighting, and decorative antlers, conveying a cozy rustic ambiance.; selection_score=150",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -14152,7 +14344,9 @@
           "has_hero_image": true,
           "spatial_candidate_count": 1,
           "product_candidate_count": 0,
-          "warnings": []
+          "warnings": [
+            "hero_is_interior_no_stronger_exterior_selected"
+          ]
         },
         "hero_image": {
           "venue_name": "El Estrebe",
@@ -14173,7 +14367,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Panoramic view of a restaurant interior with neatly set tables, white tablecloths, wine glasses, bottles, warm pendant lighting, and decorative antlers, conveying a cozy rustic ambiance.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Panoramic view of a restaurant interior with neatly set tables, white tablecloths, wine glasses, bottles, warm pendant lighting, and decorative antlers, conveying a cozy rustic ambiance.; selection_score=150",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -14209,7 +14403,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -14997,7 +15192,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Clear exterior facade of a white corner building with 'MAURE' signage, large windows, and outdoor tables with white tablecloths on the sidewalk under bright daylight.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Clear exterior facade of a white corner building with 'MAURE' signage, large windows, and outdoor tables with white tablecloths on the sidewalk under bright daylight.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -15029,7 +15224,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Clear exterior facade of a white corner building with 'MAURE' signage, large windows, and outdoor tables with white tablecloths on the sidewalk under bright daylight.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Clear exterior facade of a white corner building with 'MAURE' signage, large windows, and outdoor tables with white tablecloths on the sidewalk under bright daylight.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -15069,7 +15264,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Clear exterior facade of a white corner building with 'MAURE' signage, large windows, and outdoor tables with white tablecloths on the sidewalk under bright daylight.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=bright_airy; quality=high; visual_reason=Clear exterior facade of a white corner building with 'MAURE' signage, large windows, and outdoor tables with white tablecloths on the sidewalk under bright daylight.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -15105,7 +15300,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7."
+          "Stage 05 MiniMax text editorial generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -15512,7 +15708,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior showing dining tables with white tablecloths, black chairs, exposed concrete ceiling, white brick walls, and a prominent wine rack display with bottles and hanging plants.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior showing dining tables with white tablecloths, black chairs, exposed concrete ceiling, white brick walls, and a prominent wine rack display with bottles and hanging plants.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -15544,7 +15740,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior showing dining tables with white tablecloths, black chairs, exposed concrete ceiling, white brick walls, and a prominent wine rack display with bottles and hanging plants.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior showing dining tables with white tablecloths, black chairs, exposed concrete ceiling, white brick walls, and a prominent wine rack display with bottles and hanging plants.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -15561,7 +15757,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -15584,7 +15781,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior showing dining tables with white tablecloths, black chairs, exposed concrete ceiling, white brick walls, and a prominent wine rack display with bottles and hanging plants.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit restaurant interior showing dining tables with white tablecloths, black chairs, exposed concrete ceiling, white brick walls, and a prominent wine rack display with bottles and hanging plants.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -15619,7 +15816,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -16895,7 +17093,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a dining room with set tables, white tablecloths, rattan chairs, decorative floral murals, and ambient wall sconces conveying a warm, intimate atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a dining room with set tables, white tablecloths, rattan chairs, decorative floral murals, and ambient wall sconces conveying a warm, intimate atmosphere.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -16927,7 +17125,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a dining room with set tables, white tablecloths, rattan chairs, decorative floral murals, and ambient wall sconces conveying a warm, intimate atmosphere.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a dining room with set tables, white tablecloths, rattan chairs, decorative floral murals, and ambient wall sconces conveying a warm, intimate atmosphere.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -16944,7 +17142,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -16967,7 +17166,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a dining room with set tables, white tablecloths, rattan chairs, decorative floral murals, and ambient wall sconces conveying a warm, intimate atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior of a dining room with set tables, white tablecloths, rattan chairs, decorative floral murals, and ambient wall sconces conveying a warm, intimate atmosphere.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -16988,7 +17187,8 @@
         "review_count": 1773,
         "review_count_processed": 0,
         "pipeline_notes": [
-          "Stage 04 selected image connected. Publication remains not approved."
+          "Stage 04 selected image connected. Publication remains not approved.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -17365,7 +17565,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Nighttime exterior shot of a restaurant facade with a prominent wooden 'EL TORDO' sign, red awning, and warm lantern lighting; interior kitchen and dining area visible through large windows.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Nighttime exterior shot of a restaurant facade with a prominent wooden 'EL TORDO' sign, red awning, and warm lantern lighting; interior kitchen and dining area visible through large windows.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -17397,7 +17597,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Nighttime exterior shot of a restaurant facade with a prominent wooden 'EL TORDO' sign, red awning, and warm lantern lighting; interior kitchen and dining area visible through large windows.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Nighttime exterior shot of a restaurant facade with a prominent wooden 'EL TORDO' sign, red awning, and warm lantern lighting; interior kitchen and dining area visible through large windows.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -17437,7 +17637,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Nighttime exterior shot of a restaurant facade with a prominent wooden 'EL TORDO' sign, red awning, and warm lantern lighting; interior kitchen and dining area visible through large windows.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Nighttime exterior shot of a restaurant facade with a prominent wooden 'EL TORDO' sign, red awning, and warm lantern lighting; interior kitchen and dining area visible through large windows.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -17471,7 +17671,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -17846,7 +18047,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick wall, and sticker-covered stainless steel hood convey a strong rustic-industrial BBQ interior atmosphere.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick wall, and sticker-covered stainless steel hood convey a strong rustic-industrial BBQ interior atmosphere.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -17878,7 +18079,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick wall, and sticker-covered stainless steel hood convey a strong rustic-industrial BBQ interior atmosphere.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick wall, and sticker-covered stainless steel hood convey a strong rustic-industrial BBQ interior atmosphere.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -17895,7 +18096,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -17918,7 +18120,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick wall, and sticker-covered stainless steel hood convey a strong rustic-industrial BBQ interior atmosphere.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=industrial; quality=high; visual_reason=Wood-fired grill with glowing embers, hanging sausages, stacked firewood, brick wall, and sticker-covered stainless steel hood convey a strong rustic-industrial BBQ interior atmosphere.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -17953,7 +18155,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -18359,7 +18562,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Interior of a bar/restaurant with extensive shelving of wine bottles, vintage signage, framed photos, wooden doors, and small dining tables with place settings visible in the foreground.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Interior of a bar/restaurant with extensive shelving of wine bottles, vintage signage, framed photos, wooden doors, and small dining tables with place settings visible in the foreground.; selection_score=108",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -18391,7 +18594,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Interior of a bar/restaurant with extensive shelving of wine bottles, vintage signage, framed photos, wooden doors, and small dining tables with place settings visible in the foreground.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Interior of a bar/restaurant with extensive shelving of wine bottles, vintage signage, framed photos, wooden doors, and small dining tables with place settings visible in the foreground.; selection_score=108",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -18409,7 +18612,8 @@
           "warnings": [
             "medium_rights_risk",
             "rights_review_needed",
-            "below_preferred_resolution"
+            "below_preferred_resolution",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -18432,7 +18636,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Interior of a bar/restaurant with extensive shelving of wine bottles, vintage signage, framed photos, wooden doors, and small dining tables with place settings visible in the foreground.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Interior of a bar/restaurant with extensive shelving of wine bottles, vintage signage, framed photos, wooden doors, and small dining tables with place settings visible in the foreground.; selection_score=108",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -18467,7 +18671,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -19344,7 +19549,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=high; visual_reason=Clear street-level view of an ornate historic building facade with a vertical 'PARRILLA EL MIRASOL' sign, large barred windows, and adjacent storefront, shot in daylight.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=high; visual_reason=Clear street-level view of an ornate historic building facade with a vertical 'PARRILLA EL MIRASOL' sign, large barred windows, and adjacent storefront, shot in daylight.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -19376,7 +19581,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=high; visual_reason=Clear street-level view of an ornate historic building facade with a vertical 'PARRILLA EL MIRASOL' sign, large barred windows, and adjacent storefront, shot in daylight.",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=high; visual_reason=Clear street-level view of an ornate historic building facade with a vertical 'PARRILLA EL MIRASOL' sign, large barred windows, and adjacent storefront, shot in daylight.; selection_score=168",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -19416,7 +19621,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=high; visual_reason=Clear street-level view of an ornate historic building facade with a vertical 'PARRILLA EL MIRASOL' sign, large barred windows, and adjacent storefront, shot in daylight.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=none; quality=high; visual_reason=Clear street-level view of an ornate historic building facade with a vertical 'PARRILLA EL MIRASOL' sign, large barred windows, and adjacent storefront, shot in daylight.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -19452,7 +19657,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -20203,7 +20409,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a long wooden bar with hanging wine glasses, liquor shelves, pendant lights, and adjacent dining area — classic bar/restaurant hero shot.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a long wooden bar with hanging wine glasses, liquor shelves, pendant lights, and adjacent dining area — classic bar/restaurant hero shot.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -20235,7 +20441,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a long wooden bar with hanging wine glasses, liquor shelves, pendant lights, and adjacent dining area — classic bar/restaurant hero shot.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a long wooden bar with hanging wine glasses, liquor shelves, pendant lights, and adjacent dining area — classic bar/restaurant hero shot.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -20252,7 +20458,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -20275,7 +20482,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a long wooden bar with hanging wine glasses, liquor shelves, pendant lights, and adjacent dining area — classic bar/restaurant hero shot.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a long wooden bar with hanging wine glasses, liquor shelves, pendant lights, and adjacent dining area — classic bar/restaurant hero shot.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -20310,7 +20517,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -21070,7 +21278,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit restaurant interior with large windows, hanging plants, multiple set tables with white and burgundy linens, wooden chairs, and a visible bar area with wine display.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit restaurant interior with large windows, hanging plants, multiple set tables with white and burgundy linens, wooden chairs, and a visible bar area with wine display.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -21102,7 +21310,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit restaurant interior with large windows, hanging plants, multiple set tables with white and burgundy linens, wooden chairs, and a visible bar area with wine display.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit restaurant interior with large windows, hanging plants, multiple set tables with white and burgundy linens, wooden chairs, and a visible bar area with wine display.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -21119,7 +21327,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -21142,7 +21351,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit restaurant interior with large windows, hanging plants, multiple set tables with white and burgundy linens, wooden chairs, and a visible bar area with wine display.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit restaurant interior with large windows, hanging plants, multiple set tables with white and burgundy linens, wooden chairs, and a visible bar area with wine display.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -21177,7 +21386,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -21958,8 +22168,8 @@
           "hero": {
             "venue_name": "La Dorita",
             "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
@@ -21975,11 +22185,11 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear view of a restaurant dining room with distinctive wine-bottle chandeliers, colorful string lights, wooden ceiling, patterned tile floor, set tables, and staff in the background. Warm, eclectic, and well-lit interior suitable as a hero shot.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Evening exterior shot of a restaurant facade with black-and-white striped awning, fairy lights, beaded curtains, and visible interior diners through large windows, conveying a warm, intimate street-side dining atmosphere.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
+              "scene": "hero_exterior",
               "atmosphere_signal": "warm_cozy",
               "quality": "high",
               "model_used": "MiniMax-M3",
@@ -21987,6 +22197,37 @@
             }
           },
           "candidates": [
+            {
+              "venue_name": "La Dorita",
+              "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1200,
+              "height": 1600,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Evening exterior shot of a restaurant facade with black-and-white striped awning, fairy lights, beaded curtains, and visible interior diners through large windows, conveying a warm, intimate street-side dining atmosphere.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "La Dorita",
               "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -22030,8 +22271,8 @@
         "hero_image": {
           "venue_name": "La Dorita",
           "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMIaeebCg3Es-BErzWuMufg4j5ICkM-tVJaSkFepaim1JctyD98zwyPwx9NMv86kL7gSm6bElwkZnk8cD4XIxTfV9vEb45LZb6UxLDY86muWTvMA4yMlIKNSBaisUHGnaUHNzo15EPqDmD9U5OLtD82=s4800-w1600-h1600",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOD45o79ZQ25uMAOGtYdnx5i_pIwSyjVJDfZDW2yLfytXmu6TRpjdWeFnZgGW3IBwc2YT6sVoO9su5OZKleHNM15TZNzHuc8rWwKB3CT8hiFDflOnZlUIr1u1oszvah_Ta15htakNOOzhjOMl_90Gb5-g=s4800-w1600-h1600",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
@@ -22047,11 +22288,11 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Clear view of a restaurant dining room with distinctive wine-bottle chandeliers, colorful string lights, wooden ceiling, patterned tile floor, set tables, and staff in the background. Warm, eclectic, and well-lit interior suitable as a hero shot.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Evening exterior shot of a restaurant facade with black-and-white striped awning, fairy lights, beaded curtains, and visible interior diners through large windows, conveying a warm, intimate street-side dining atmosphere.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
+            "scene": "hero_exterior",
             "atmosphere_signal": "warm_cozy",
             "quality": "high",
             "model_used": "MiniMax-M3",
@@ -22083,7 +22324,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -22451,13 +22693,13 @@
           "hero": {
             "venue_name": "Pentos Colegiales",
             "source_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
-            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
+            "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
+            "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
             "source_type": "google_places",
             "rights_hint": "google_places_photo_attribution_required",
             "rights_risk": "medium",
-            "width": 1600,
-            "height": 901,
+            "width": 1200,
+            "height": 1600,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -22468,11 +22710,11 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Clear view of a bar interior with neon 'BIRRA' sign, chalkboard menu, beer taps, and extensive back-bar bottle display; warm and dimly lit with no people visible.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Clear exterior facade shot of 'Pentios' venue with prominent illuminated signage, dark painted facade with green architectural details, large windows revealing interior lighting, and outdoor seating visible.; selection_score=168",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
+              "scene": "hero_exterior",
               "atmosphere_signal": "dark_intimate",
               "quality": "high",
               "model_used": "MiniMax-M3",
@@ -22480,6 +22722,37 @@
             }
           },
           "candidates": [
+            {
+              "venue_name": "Pentos Colegiales",
+              "source_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
+              "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
+              "source_type": "google_places",
+              "rights_hint": "google_places_photo_attribution_required",
+              "rights_risk": "medium",
+              "width": 1200,
+              "height": 1600,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Clear exterior facade shot of 'Pentios' venue with prominent illuminated signage, dark painted facade with green architectural details, large windows revealing interior lighting, and outdoor seating visible.; selection_score=168",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "dark_intimate",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "Pentos Colegiales",
               "source_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -22523,13 +22796,13 @@
         "hero_image": {
           "venue_name": "Pentos Colegiales",
           "source_url": "https://maps.google.com/?cid=18163308644169586496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
-          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM30qt4-78IF18TGqQGWhPc19bBZmoNPQ4TQEOo3i6yRKbtJ2tUNfCWSq3dqaxCaxf9ijDVpU737Bwo2qD0vfyxAa6Dk9BA5pIB5L9VnnXE_17DIdGqBSG1wfakjRa0LhS4zCq6ONYpQGvU8C3s3fzt=s4800-w1600-h1600",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
+          "original_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNV-WtswX0ZOKGIwhNTElJo13-o7fjQYisVV3vGEfBhLC8ceZV26sE235LdYgAv3xyrs-i510QBAXA497YsSc-i1l-84-tjnVoTmzvYJywTyhDO2g4LROeURn8_eAP5rX86qksq9SneA2yCZA=s4800-w1200-h1600",
           "source_type": "google_places",
           "rights_hint": "google_places_photo_attribution_required",
           "rights_risk": "medium",
-          "width": 1600,
-          "height": 901,
+          "width": 1200,
+          "height": 1600,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -22540,11 +22813,11 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Clear view of a bar interior with neon 'BIRRA' sign, chalkboard menu, beer taps, and extensive back-bar bottle display; warm and dimly lit with no people visible.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Clear exterior facade shot of 'Pentios' venue with prominent illuminated signage, dark painted facade with green architectural details, large windows revealing interior lighting, and outdoor seating visible.; selection_score=168",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
+            "scene": "hero_exterior",
             "atmosphere_signal": "dark_intimate",
             "quality": "high",
             "model_used": "MiniMax-M3",
@@ -22575,7 +22848,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -22938,13 +23212,13 @@
           "hero": {
             "venue_name": "Bar Britanico",
             "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/bar-brit%C3%A1nico",
-            "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
-            "original_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
+            "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
+            "original_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
             "source_type": "official_website",
             "rights_hint": "venue_controlled_or_source_review_required",
             "rights_risk": "low",
-            "width": 1500,
-            "height": 610,
+            "width": 1920,
+            "height": 600,
             "content_length": 0,
             "shows_space": true,
             "usable": true,
@@ -22954,18 +23228,48 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a full bar with wooden shelving, bottles, hanging cured meats, brick wall with chalkboard menu, wooden tables and chairs, and a checkered floor.",
+            "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Wide panoramic exterior view at twilight showing a modern cable-stayed bridge (Puente de la Mujer) illuminated in purple, with city skyline, lit buildings, a tall ship silhouette on the left, and water reflections under a gradient orange-to-purple sky.; selection_score=180",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
-              "scene": "hero_interior",
-              "atmosphere_signal": "warm_cozy",
+              "scene": "hero_exterior",
+              "atmosphere_signal": "dark_intimate",
               "quality": "high",
               "model_used": "MiniMax-M3",
               "has_identifiable_faces": false
             }
           },
           "candidates": [
+            {
+              "venue_name": "Bar Britanico",
+              "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/bar-brit%C3%A1nico",
+              "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
+              "original_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
+              "source_type": "official_website",
+              "rights_hint": "venue_controlled_or_source_review_required",
+              "rights_risk": "low",
+              "width": 1920,
+              "height": 600,
+              "content_length": 0,
+              "shows_space": true,
+              "usable": true,
+              "role": "hero",
+              "risk_flags": [
+                "preferred_resolution"
+              ],
+              "validation_status": "imported_needs_validation",
+              "publication_status": "not_approved_for_publication",
+              "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Wide panoramic exterior view at twilight showing a modern cable-stayed bridge (Puente de la Mujer) illuminated in purple, with city skyline, lit buildings, a tall ship silhouette on the left, and water reflections under a gradient orange-to-purple sky.; selection_score=180",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_exterior",
+                "atmosphere_signal": "dark_intimate",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              }
+            },
             {
               "venue_name": "Bar Britanico",
               "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/bar-brit%C3%A1nico",
@@ -23005,13 +23309,13 @@
         "hero_image": {
           "venue_name": "Bar Britanico",
           "source_url": "https://turismo.buenosaires.gob.ar/es/gastronomico/bar-brit%C3%A1nico",
-          "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
-          "original_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/bar-britanico-1500x610_0.jpg",
+          "resolved_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
+          "original_image_url": "https://turismo.buenosaires.gob.ar/sites/turismo/files/okpuentemujer1920x600.jpg",
           "source_type": "official_website",
           "rights_hint": "venue_controlled_or_source_review_required",
           "rights_risk": "low",
-          "width": 1500,
-          "height": 610,
+          "width": 1920,
+          "height": 600,
           "content_length": 0,
           "shows_space": true,
           "usable": true,
@@ -23021,12 +23325,12 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Well-lit interior showing a full bar with wooden shelving, bottles, hanging cured meats, brick wall with chalkboard menu, wooden tables and chairs, and a checkered floor.",
+          "notes": "model_used=MiniMax-M3; scene=hero_exterior; atmosphere_signal=dark_intimate; quality=high; visual_reason=Wide panoramic exterior view at twilight showing a modern cable-stayed bridge (Puente de la Mujer) illuminated in purple, with city skyline, lit buildings, a tall ship silhouette on the left, and water reflections under a gradient orange-to-purple sky.; selection_score=180",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
-            "scene": "hero_interior",
-            "atmosphere_signal": "warm_cozy",
+            "scene": "hero_exterior",
+            "atmosphere_signal": "dark_intimate",
             "quality": "high",
             "model_used": "MiniMax-M3",
             "has_identifiable_faces": false
@@ -23056,7 +23360,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -23431,7 +23736,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Wide interior shot of a fine-dining room with white-clothed tables, black chairs, a wood-slatted ceiling, and a large oval light fixture; no people in focus, well-exposed.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Wide interior shot of a fine-dining room with white-clothed tables, black chairs, a wood-slatted ceiling, and a large oval light fixture; no people in focus, well-exposed.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -23463,7 +23768,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Wide interior shot of a fine-dining room with white-clothed tables, black chairs, a wood-slatted ceiling, and a large oval light fixture; no people in focus, well-exposed.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Wide interior shot of a fine-dining room with white-clothed tables, black chairs, a wood-slatted ceiling, and a large oval light fixture; no people in focus, well-exposed.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -23480,7 +23785,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -23503,7 +23809,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Wide interior shot of a fine-dining room with white-clothed tables, black chairs, a wood-slatted ceiling, and a large oval light fixture; no people in focus, well-exposed.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=warm_cozy; quality=high; visual_reason=Wide interior shot of a fine-dining room with white-clothed tables, black chairs, a wood-slatted ceiling, and a large oval light fixture; no people in focus, well-exposed.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -23539,7 +23845,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     },
@@ -23922,7 +24229,7 @@
             ],
             "validation_status": "imported_needs_validation",
             "publication_status": "not_approved_for_publication",
-            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit dining interior with natural light through large windows, sheer curtains, set table with plates and glasses, modern chairs, and visible outdoor terrace.",
+            "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit dining interior with natural light through large windows, sheer curtains, set table with plates and glasses, modern chairs, and visible outdoor terrace.; selection_score=138",
             "classification": {
               "shows_space": true,
               "is_hero_usable": true,
@@ -23954,7 +24261,7 @@
               ],
               "validation_status": "imported_needs_validation",
               "publication_status": "not_approved_for_publication",
-              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit dining interior with natural light through large windows, sheer curtains, set table with plates and glasses, modern chairs, and visible outdoor terrace.",
+              "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit dining interior with natural light through large windows, sheer curtains, set table with plates and glasses, modern chairs, and visible outdoor terrace.; selection_score=138",
               "classification": {
                 "shows_space": true,
                 "is_hero_usable": true,
@@ -23971,7 +24278,8 @@
           "product_candidate_count": 0,
           "warnings": [
             "medium_rights_risk",
-            "rights_review_needed"
+            "rights_review_needed",
+            "hero_is_interior_no_stronger_exterior_selected"
           ]
         },
         "hero_image": {
@@ -23994,7 +24302,7 @@
           ],
           "validation_status": "imported_needs_validation",
           "publication_status": "not_approved_for_publication",
-          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit dining interior with natural light through large windows, sheer curtains, set table with plates and glasses, modern chairs, and visible outdoor terrace.",
+          "notes": "model_used=MiniMax-M3; scene=hero_interior; atmosphere_signal=bright_airy; quality=high; visual_reason=Well-lit dining interior with natural light through large windows, sheer curtains, set table with plates and glasses, modern chairs, and visible outdoor terrace.; selection_score=138",
           "classification": {
             "shows_space": true,
             "is_hero_usable": true,
@@ -24029,7 +24337,8 @@
         "review_count_processed": 0,
         "pipeline_notes": [
           "Stage 04 selected image connected. Publication remains not approved.",
-          "Stage 05B MiniMax text retry generated with MiniMax-M2.7."
+          "Stage 05B MiniMax text retry generated with MiniMax-M2.7.",
+          "Reselected hero applied after exterior-first Stage 04 selection policy. Editorial text preserved."
         ]
       }
     }
@@ -24068,8 +24377,8 @@
     "notes": "No MiniMax, OpenAI, external model, Supabase, Cloudinary, publication, or deploy calls were made by Stage 06."
   },
   "runtime_placeholder": {
-    "started_at": "2026-06-08T01:25:43.587Z",
-    "finished_at": "2026-06-08T01:25:43.587Z",
+    "started_at": "2026-06-08T01:52:11.911Z",
+    "finished_at": "2026-06-08T01:52:11.911Z",
     "duration_ms": 0
   }
 }

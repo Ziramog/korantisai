@@ -1,6 +1,6 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
-  "generated_at": "2026-06-08T00:31:02.447Z",
+  "generated_at": "2026-06-08T01:51:45.251Z",
   "m3_called": true,
   "model_used": "MiniMax-M3",
   "results": [
@@ -393,7 +393,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "La Justina Bistró",
@@ -449,7 +449,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "La Justina Bistró",
@@ -617,7 +617,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Parrilla Sanabria Palermo",
@@ -673,7 +673,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "Parrilla Sanabria Palermo",
@@ -1597,7 +1597,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Atis Bar",
@@ -1681,7 +1681,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "El Taller Arte & Café",
@@ -2213,7 +2213,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "jakub",
@@ -2297,7 +2297,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Restaurante Corte Comedor",
@@ -4480,7 +4480,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "La Dorita",
@@ -4564,7 +4564,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "Pentos Colegiales",
@@ -4592,7 +4592,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "Pentos Colegiales",
@@ -4676,7 +4676,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Bar Britanico",
@@ -4956,7 +4956,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "Parrilla La Banda",
@@ -5012,7 +5012,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Parrilla \"La Coqueta\"",
@@ -5123,7 +5123,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Bar Britanico",
@@ -5150,7 +5150,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": true
+      "selected_for_hero": false
     },
     {
       "venue_name": "Parrilla Lo De Mary - Restaurante",

@@ -1,0 +1,276 @@
+{
+  "batch_id": "batch_005_buenos_aires_restaurants_50",
+  "generated_at": "2026-06-08T02:21:34.761Z",
+  "mode": "apply",
+  "approved_projected": 18,
+  "intended_write_count": 36,
+  "table_results": [
+    {
+      "table": "venues",
+      "operation": "upsert",
+      "attempted_rows": 18,
+      "affected_rows": 18
+    },
+    {
+      "table": "venue_images",
+      "operation": "upsert",
+      "attempted_rows": 18,
+      "affected_rows": 18
+    }
+  ],
+  "venue_ids_written": [
+    "korantis_buenos_aires_mambo_restoran_chijbrmg2djl",
+    "korantis_buenos_aires_tu_jardin_secreto_resto_secreto_chijbuxjqt21",
+    "korantis_buenos_aires_parrilla_nunez_chij03_aogc1",
+    "korantis_buenos_aires_la_dorita_del_mercado_belgrano_chijl46_5cq1",
+    "korantis_buenos_aires_atis_bar_chijiqql59jl",
+    "korantis_buenos_aires_rufino_chijw0yrh2hl",
+    "korantis_buenos_aires_l_orangerie_alvear_palace_hotel_chijnuuufkpk",
+    "korantis_buenos_aires_jakub_chijlwjgkdq1",
+    "korantis_buenos_aires_lo_del_frances_cafe_bistrot_chijhzxv0czl",
+    "korantis_buenos_aires_dada_bistro_chijkasliatk",
+    "korantis_buenos_aires_maure_parrilla_chijc9pyatq1",
+    "korantis_buenos_aires_fraga_bodegon_chijg2nmenm1",
+    "korantis_buenos_aires_parrilla_lo_de_mary_restaurante_chijv3shegpk",
+    "korantis_buenos_aires_parrilla_cero5_chij95dweyfl",
+    "korantis_buenos_aires_el_mirasol_de_la_recova_chijsd_q9ldk",
+    "korantis_buenos_aires_la_dorita_chij4z0wdo61",
+    "korantis_buenos_aires_ancora_buenos_aires_chiju51wzpbl",
+    "korantis_buenos_aires_croque_madame_puerto_madero_chijjcwpbze1"
+  ],
+  "skipped_decisions": [
+    {
+      "venue_name": "Casa Parra",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Bistro Tokio",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "La Justina Bistró",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "ALMA BUENOS AIRES",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Parrilla Sanabria Palermo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "La Caprichosa Parrilla",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Parrilla \"La Coqueta\"",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Parrilla Lo de Susy",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "La plazoleta parrilla",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Casa Cuba Restaurant & Grill",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Tierno Parrilla",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Nuestra Parrilla",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Parrilla La Banda",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "El Taller Arte & Café",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Bar & Restaurant El Correo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "El Chiri de Villa Kreplaj",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Restaurante Corte Comedor",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Jardín de Invierno",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "El Estrebe",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "República del Fuego",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Parrilla lo del Russo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "La Esquina Del Virrey",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Casa Cuba",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "El Tordo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Hierro Parrilla San Telmo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "El Patio de Mingo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "El Mirasol De Boedo",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "La Parrillita del Pasaje",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Huacho",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Anafe",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Pentos Colegiales",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Bar Britanico",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    }
+  ],
+  "blockers_before_apply": [],
+  "safety_checks": {
+    "no_public_activation": true,
+    "all_rows_inserted_pending_review": true,
+    "no_cloudinary_uploads_in_stage_11": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "no_deploy": true
+  }
+}

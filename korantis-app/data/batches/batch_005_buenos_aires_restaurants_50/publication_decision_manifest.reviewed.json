@@ -1,6 +1,6 @@
 {
   "batch_id": "batch_005_buenos_aires_restaurants_50",
-  "generated_at": "2026-06-08T02:02:44.077Z",
+  "generated_at": "2026-06-08T02:14:18.052Z",
   "status": "review_pending",
   "safety": {
     "no_public_writes": true,
@@ -12,7 +12,7 @@
     {
       "venue_name": "Mambo Restoran",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -313,7 +313,7 @@
     {
       "venue_name": "Tu Jardín Secreto - Restó Secreto",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -412,7 +412,7 @@
     {
       "venue_name": "Parrilla Nuñez",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -446,7 +446,7 @@
     {
       "venue_name": "La Dorita del Mercado Belgrano",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -578,7 +578,7 @@
     {
       "venue_name": "Atis Bar",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -679,7 +679,7 @@
     {
       "venue_name": "RUFINO",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -713,7 +713,7 @@
     {
       "venue_name": "L' Orangerie Alvear Palace Hotel",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -781,7 +781,7 @@
     {
       "venue_name": "jakub",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -846,7 +846,7 @@
     {
       "venue_name": "Lo Del Francés Café Bistrot",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -880,7 +880,7 @@
     {
       "venue_name": "Dada Bistró",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1010,7 +1010,7 @@
     {
       "venue_name": "Maure Parrilla",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1045,7 +1045,7 @@
     {
       "venue_name": "Fraga Bodegón",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1240,7 +1240,7 @@
     {
       "venue_name": "Parrilla Lo De Mary - Restaurante",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1369,7 +1369,7 @@
     {
       "venue_name": "Parrilla Cero5",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1432,7 +1432,7 @@
     {
       "venue_name": "El Mirasol de La Recova",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1496,7 +1496,7 @@
     {
       "venue_name": "La Dorita",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1595,7 +1595,7 @@
     {
       "venue_name": "Ancora Buenos Aires",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",
@@ -1631,7 +1631,7 @@
     {
       "venue_name": "Croque Madame Puerto Madero",
       "current_status": "ready_for_db_staging",
-      "publication_decision": "pause",
+      "publication_decision": "approve",
       "publish_eligible": true,
       "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
       "reviewer_notes": "",

@@ -305,9 +305,9 @@ function isHeroEligible(result: Stage04ImageRecord): boolean {
 
 function selectionScore(result: Stage04ImageRecord): number {
   const sceneScores: Record<SceneType, number> = {
-    hero_interior: 100,
-    gallery_atmosphere: 80,
-    hero_exterior: 60,
+    hero_interior: 110,
+    gallery_atmosphere: 92,
+    hero_exterior: 62,
     product_food: -100,
     logo: -100,
     menu: -100,
@@ -384,6 +384,14 @@ function buildStage04Report(result: Stage04Result): string {
           `- ${item.venue_name}: ${item.selected_image.vision.scene_type}, ${item.selected_image.vision.quality}, score ${item.selection_score}`,
         )
       : ['- none']),
+    '',
+    '## Hero Selection Policy',
+    '',
+    '- Primary hero preference: clear experiential venue interior or outdoor space where guests actually sit/drink/eat.',
+    '- Secondary: spatial atmosphere/gallery image that communicates the venue mood.',
+    '- Tertiary: exterior/facade/local identity only when no strong experiential image exists or the facade itself is the concept.',
+    '- Rooftops, patios, gardens, terraces, and outdoor dining areas should behave like hero_interior when they are the customer experience.',
+    '- Food-only, menus, logos, decorative images, and crowd-only images are rejected as hero.',
     '',
     '## Venues Without Hero Candidate',
     '',

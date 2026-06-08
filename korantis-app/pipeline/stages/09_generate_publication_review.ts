@@ -180,26 +180,28 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
     }
     * { box-sizing: border-box; }
     body { margin: 0; background: radial-gradient(circle at top left, #243022, var(--bg) 34rem); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    header, main { max-width: 1880px; margin: 0 auto; padding: 16px 20px; }
-    header { position: sticky; top: 0; z-index: 5; background: rgba(15,17,16,.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    header, main { max-width: none; margin: 0 auto; padding: 10px 14px; }
+    header { position: sticky; top: 0; z-index: 9; background: rgba(15,17,16,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
     h1, h2, h3, p { margin: 0; }
-    h1 { font-size: 22px; }
+    h1 { font-size: 15px; max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .muted { color: var(--muted); }
-    .summary { display: grid; grid-template-columns: repeat(5, minmax(118px, 1fr)); gap: 8px; margin-top: 12px; }
+    .topbar { display: grid; grid-template-columns: minmax(260px, 1fr) auto; gap: 14px; align-items: center; }
+    .summary { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0; justify-content: flex-end; }
     .stat, .card, .tools, textarea { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; }
-    .stat { padding: 9px 12px; }
-    .stat strong { display: block; font-size: 21px; margin-top: 2px; }
-    .tools { padding: 10px; margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    button { border: 1px solid var(--line); background: var(--soft); color: var(--text); border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+    .stat { padding: 6px 9px; min-width: 82px; }
+    .stat span { font-size: 11px; }
+    .stat strong { display: inline; font-size: 15px; margin-left: 5px; }
+    .tools { padding: 7px 8px; margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    button { border: 1px solid var(--line); background: var(--soft); color: var(--text); border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 12px; }
     button:hover { border-color: var(--gold); }
     button.active.approve { background: rgba(122,196,143,.2); border-color: var(--green); color: var(--green); }
     button.active.reject { background: rgba(225,125,114,.2); border-color: var(--red); color: var(--red); }
     button.active.pause { background: rgba(216,183,111,.2); border-color: var(--gold); color: var(--gold); }
     button:disabled { opacity: .38; cursor: not-allowed; }
     .filter.active { border-color: var(--blue); color: var(--blue); }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 16px; align-items: start; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 18px; align-items: start; }
     .card { overflow: hidden; }
-    .image { height: 280px; background: var(--soft); display: grid; place-items: center; color: var(--muted); }
+    .image { height: 300px; background: var(--soft); display: grid; place-items: center; color: var(--muted); }
     .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .body { padding: 16px; display: grid; gap: 11px; }
     .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -211,11 +213,14 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
     .copy { border-left: 3px solid rgba(216,183,111,.55); padding: 8px 0 8px 10px; display: grid; gap: 6px; background: rgba(255,255,255,.02); border-radius: 8px; }
     .meta { display: grid; gap: 5px; }
     .hide { display: none; }
+    .live-counter { position: fixed; right: 18px; bottom: 18px; z-index: 10; display: flex; gap: 8px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 999px; background: rgba(15,17,16,.94); box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+    .live-counter strong { color: var(--green); }
     .small { font-size: 12px; }
     a { color: var(--blue); }
     @media (max-width: 900px) {
       header, main { padding: 12px; }
-      .summary { grid-template-columns: repeat(2, minmax(110px, 1fr)); }
+      .topbar { grid-template-columns: 1fr; }
+      .summary { justify-content: flex-start; }
       .grid { grid-template-columns: 1fr; }
       .image { height: 230px; }
     }
@@ -223,14 +228,18 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
 </head>
 <body>
   <header>
-    <p class="muted">Korantis Stage 09 - Manual Publication Review</p>
-    <h1>${escapeHtml(batchResult.batch_id)}</h1>
-    <div class="summary">
-      <div class="stat"><span class="muted">Total</span><strong id="total">0</strong></div>
-      <div class="stat"><span class="muted">Eligible</span><strong id="eligible">0</strong></div>
-      <div class="stat"><span class="muted">Approved</span><strong id="approved">0</strong></div>
-      <div class="stat"><span class="muted">Rejected</span><strong id="rejected">0</strong></div>
-      <div class="stat"><span class="muted">Paused</span><strong id="paused">0</strong></div>
+    <div class="topbar">
+      <div>
+        <p class="muted small">Stage 09 review</p>
+        <h1>${escapeHtml(batchResult.batch_id)}</h1>
+      </div>
+      <div class="summary">
+        <div class="stat"><span class="muted">Total</span><strong id="total">0</strong></div>
+        <div class="stat"><span class="muted">Eligible</span><strong id="eligible">0</strong></div>
+        <div class="stat"><span class="muted">Approved</span><strong id="approved">0</strong></div>
+        <div class="stat"><span class="muted">Rejected</span><strong id="rejected">0</strong></div>
+        <div class="stat"><span class="muted">Paused</span><strong id="paused">0</strong></div>
+      </div>
     </div>
     <div class="tools">
       <button onclick="downloadManifest()">Download decision JSON</button>
@@ -241,25 +250,40 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
       <button class="filter" data-filter="blocked" onclick="setFilter('blocked')">Blocked</button>
       <button class="filter" data-filter="approved" onclick="setFilter('approved')">Approved</button>
       <button class="filter" data-filter="paused" onclick="setFilter('paused')">Paused</button>
-      <span class="muted small">No public write happens in this HTML. Export JSON, then a future publish command consumes it.</span>
     </div>
   </header>
   <main>
     <section class="grid" id="grid"></section>
   </main>
+  <div class="live-counter">
+    <span class="muted small">Live decisions</span>
+    <span class="small">Approved <strong id="liveApproved">0</strong></span>
+    <span class="small">Rejected <strong id="liveRejected">0</strong></span>
+    <span class="small">Paused <strong id="livePaused">0</strong></span>
+  </div>
   <script>
     const manifest = ${data};
     const decisions = manifest.decisions;
     let activeFilter = 'all';
 
     function render() {
-      document.getElementById('total').textContent = decisions.length;
-      document.getElementById('eligible').textContent = decisions.filter(d => d.publish_eligible).length;
-      document.getElementById('approved').textContent = decisions.filter(d => d.publication_decision === 'approve').length;
-      document.getElementById('rejected').textContent = decisions.filter(d => d.publication_decision === 'reject').length;
-      document.getElementById('paused').textContent = decisions.filter(d => d.publication_decision === 'pause').length;
+      renderCounts();
       document.querySelectorAll('.filter').forEach(button => button.classList.toggle('active', button.dataset.filter === activeFilter));
       document.getElementById('grid').innerHTML = decisions.map((decision, index) => card(decision, index)).join('');
+    }
+
+    function renderCounts() {
+      const approved = decisions.filter(d => d.publication_decision === 'approve').length;
+      const rejected = decisions.filter(d => d.publication_decision === 'reject').length;
+      const paused = decisions.filter(d => d.publication_decision === 'pause').length;
+      document.getElementById('total').textContent = decisions.length;
+      document.getElementById('eligible').textContent = decisions.filter(d => d.publish_eligible).length;
+      document.getElementById('approved').textContent = approved;
+      document.getElementById('rejected').textContent = rejected;
+      document.getElementById('paused').textContent = paused;
+      document.getElementById('liveApproved').textContent = approved;
+      document.getElementById('liveRejected').textContent = rejected;
+      document.getElementById('livePaused').textContent = paused;
     }
 
     function card(decision, index) {
@@ -267,7 +291,7 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
       const image = decision.hero_image_url ? '<img src="' + esc(decision.hero_image_url) + '" alt="">' : 'No hero image';
       const eligibleClass = decision.publish_eligible ? 'eligible' : 'blocked';
       const eligibleText = decision.publish_eligible ? 'publish review eligible' : 'blocked';
-      return '<article class="card' + hidden + '">' +
+      return '<article class="card' + hidden + '" data-index="' + index + '">' +
         '<div class="image">' + image + '</div>' +
         '<div class="body">' +
         '<div class="row"><span class="badge ' + eligibleClass + '">' + eligibleText + '</span><span class="badge score">score ' + decision.staging_score + '</span><span class="badge">' + esc(decision.current_status) + '</span></div>' +
@@ -317,7 +341,8 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
 
     function setDecision(index, value) {
       decisions[index].publication_decision = value;
-      render();
+      updateCard(index);
+      renderCounts();
     }
 
     function setNotes(index, value) {
@@ -334,6 +359,17 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
     function pauseAll() {
       decisions.forEach(decision => decision.publication_decision = 'pause');
       render();
+    }
+
+    function updateCard(index) {
+      const current = document.querySelector('[data-index="' + index + '"]');
+      if (!current) {
+        render();
+        return;
+      }
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = card(decisions[index], index);
+      current.replaceWith(wrapper.firstElementChild);
     }
 
     function downloadManifest() {

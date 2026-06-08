@@ -1,7 +1,7 @@
 # Approval Manifest
 
 - Batch: batch_005_buenos_aires_restaurants_50
-- Generated: 2026-06-08T01:25:43.657Z
+- Generated: 2026-06-08T01:52:13.683Z
 
 ## Approved For DB Staging
 
