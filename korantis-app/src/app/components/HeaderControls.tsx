@@ -30,8 +30,8 @@ export default function HeaderControls() {
         <Image 
           src="/korantislogo.jpeg" 
           alt="Korantis" 
-          width={22} 
-          height={22} 
+          width={44} 
+          height={44} 
           className="rounded-[4px] object-cover mix-blend-screen opacity-90"
         />
         <h1 className="font-display text-xl tracking-[0.2em] text-k-text uppercase mt-[2px]">Korantis</h1>

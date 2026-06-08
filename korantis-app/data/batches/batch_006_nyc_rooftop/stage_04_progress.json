@@ -1,11 +1,11 @@
 {
   "batch_id": "batch_006_nyc_rooftop",
   "generated_at": "2026-06-08T03:04:49.252Z",
-  "updated_at": "2026-06-08T03:07:40.800Z",
+  "updated_at": "2026-06-08T03:08:53.005Z",
   "model_used": "MiniMax-M3",
   "total_queue_size": 39,
-  "images_processed_or_skipped": 18,
-  "remaining": 21,
+  "images_processed_or_skipped": 25,
+  "remaining": 14,
   "results": [
     {
       "venue_name": "Maison Provence Restaurant",
@@ -502,6 +502,202 @@
         "quality": "high",
         "atmosphere_signal": "none",
         "visual_reason": "Close-up overhead shot of a breaded protein with green herb salad, cucumber, and sauce on a branded plate, with a cocktail glass partially visible; focus is entirely on the plated dish."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Balvanera",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPb_a-9IFO2QFbC1Fl7dxjd4QF8Ohf5T5Bj8PtokvSKoY2JR_VkjGH8JHJ_CkdkqPfvS7YUgI8DZ0KfW3t2kLViCr27gpr_1CNQLvehVMVZClLUSPkYAoLvolizSaoMUGgTSwV_5wDVCdW6KLi7BlY0zw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Top-down close-up of a grilled meat platter, fries, a side dish, sauces, and glassware on a wooden table. No spatial context or venue features are visible; the image focuses entirely on the food and tabletop items."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Balvanera",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP-TQsv2tcxjqIXZtMZzJI_0z1dlThPTw3PWn3jtgT2CxkjETtnrOWLVPZOZ44M3ql7hHemtIzgyYbNPpuGpkuaRRRbgfUG2zJDIkX0akiVd-1pAEYmOGFiOaTIZonvOdAdtOzjyY72ZGwVvnXhYqPj=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated octopus dish on a white plate dominates the frame; background table and candle are out of focus and not the subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Somm Time",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNy4shZ5zvYgLK1ls-kkMHIKUYRyQ_RkVysYDPXFNLc4cPd3ggLMQCHSu5N5U9M1UZEacMnbDq8PMKNw6dh6lCBDka_ykvl7nG_WcpxsyP99idYHPq3Uea4Wb37wE0NNE4zI5m-27tqpGvG3Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14942477709776939057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a wine glass with amber liquid and a water glass on a wooden bar top; a bottle and small candle are in the foreground, with wine bottles, glasses, and a no-smoking sign visible in the background. The focus is on the drink and barware rather than the broader venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Somm Time",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOaTidD7V71SkL9vmcbZU4Q4O2sPbsHC-X2gut4VOw2t_m2RofdjRmuzCAGeE8tm0AwosVbw74AXtanqanTmIfYQeFurNlb1qkHyWJpKt9yIMtJir390rVXm7PKzvsbhJoaqZY29mBh1vMk0A=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=14942477709776939057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated dish with squid ink pasta, peas, seafood, and grated cheese; no venue space or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Jadis",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqPN8XaBPzZRJBw8dKp3Im2WJnq8M2h3oaexWXAr9KM53xy32cwGjXmaoNRKYDMXw4E56NiUatFZYaHM7bnEde_9InKQvpaoaav2UcfGXglPPZnICEp0Xj5ZvWuJP1xqO1lvCO6zcnHNoFlA=s4800-w1080-h1600",
+      "source_url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 900,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "low",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of two bookshelf levels with vintage books and pinecones against exposed brick. Image is dim, soft-focused, and cropped too tight to convey the full venue space, making it an atmospheric detail rather than a hero interior shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Jadis",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNRkF1gusZp-KaxhWWJI5m0XOfZKq7uwmNOTN-0s48mrJkRYI7IdOkPnaKNMzYnah9wXB9GA-5W_DaAbnajZlyuAJuqiEV236AhvTbLMtYRjMkxbzcWD7cuJ5QbCBazbpYupLUbgURDSIWucA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a charcuterie board with meats, cheeses, bread, and wine; the wooden table and pavement are barely visible, making this a food-focused image rather than a venue hero shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Jadis",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNCWpacJLLhhJE8-cVvm-eD3nt0mYQtosA4FLs4kW4jLrsy5-0ffsTWrT3mv01naavI2U7KdNKTOGr71Hh5v84sQKOPxWa_nnl645BS7XiYoLLfv-CJYy8Udt5bXE0TI1FyiUmGNC40XA6uYXxeDRhI_g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 901,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Two plated dishes of meat with vegetables and beans on white plates atop a dark wooden table; no venue space, architecture, or seating visible — food-only overhead shot."
       },
       "risk_flags": [
         "rights_review_needed",
