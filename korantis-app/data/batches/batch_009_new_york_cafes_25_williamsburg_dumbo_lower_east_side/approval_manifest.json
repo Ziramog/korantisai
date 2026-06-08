@@ -1,0 +1,369 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:49:22.768Z",
+  "approved_for_db_staging": [
+    {
+      "venue_name": "Café Colmado",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNMTWttVtUwsjGK9rY8biSEKqzfBMS3z4__83SqutvApyrkj4oKvfeM8o0DUOGUdauD2ByQxbbWcJySJDm2BJoiLiuwjoW_p-A4jEje7qtN8ofzhgOgjYr-2NYlhPXLYE2rjlgys4EY_RejIw9cnyIy-w=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqWJ1f9Vr77lhu8ZSHg9MaaVYE0P9HspEHNLa4bQHinDoSrQGuQyrJ8jIJFLm-u4KbaM73IeJ9vcfQTCKmdNr4z60TAmigx_GMvP5rVXK5cjUoMH9B-_PmjH3Wrim1HBkLUnKSbnQxuf3kupU7zfRXGQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMztCXgHyqc7TrZT6cZlOhqyLtolZCstGnU8CK5H1QByzS8iVmOKIFk8b9sFCI55ubcCfAJqOwOJJfMwXN7H08jRB1KdrZ46rZDv_-gDAko70oeHO67tYIyt-cYuoyWNYGt2XXTmpsVtRZGy_0diHSl=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Bakeri",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAnMjxA8OJSKJueLDAas0q6LSzdF0glLyQG3zN6eI4l-yx_g-xklOOVoPp_qMxLqs5hBDmJK2bJLiZ47RKo7M7KTp-2L5ha0hPAvGCPovKnuxW2H2duv1Fdc4e2lr0A94hyK-mZNwGFnvX_d0=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "A&C Super",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM1Wl6tk5H2RSW57rNvbwGv1hTvK7AS-hDTQyFYWAHclm4GkFBQ_12Y1O1g7xXlZ3ZNtmB8fUwijZrAHdLcKhJ41-iNJhQOKR6pfSM0pUcHzec5CQU7pEa4ZZyZCbRMj4H-oudkghZhtus3-q-BwHrk=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBnyUY5ja3s8EDycgm4P_h3N-s2xBRXh6t_t7bMJCv7m-kk2_XSkcfkVz0yjMdhmgarWYnKJ9XMyfKoCd6IBEgB6miG3de5llMovoMFT7sRaoes1G6XZLt_lLYlusPKCb0_ILUyPK_aIbz3ZvQPRtbSA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN15fLjG4T0QjOIZ0NU9V2D7fy7658O1oKkmZE7M3KIDnw82ODwynkIoRQt5Q-5Na3A78h_qtXwWFc18Xv7BX8r6JkvC3IC6wf2hfcB89eczKrKWVa3ztD1PTOF_RgZ8xnuutDfOIGovTEpNE3YVqLoUA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFRmudyf8HJViCW1Jo61gxVrV_AtDXc80lue7He7OpR23M1Xft3aDfzSmYGMIFaf6xuDs_wzXpdrvxeiz36LK6BRlMCW2_fLUJ-Y3n2BuYwqOEGXoG2JJNXz6kstKd9_gnuC2ucuKq3-Fq6ylscJLR=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "maman",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOczeaeVq7Kcq5rSsXuW6T3jLwn9PVtFGqfYPEi4e85245ID9MPnV15gAela7UBx8qtdF8f9hMI13q79_BTnofbbMXH5tiyWz6sAxo-oo6vTcCmP2yI74i2FNrpcM2iPC-9wGc2odZJ6R9DapKPxFU7dA=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "maman",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2jGTXIAcBj-MCXXVg-b9Pk5VctyBDwkflDkUlAq84Ffg1X1-6qYcBpg5YyjTDYNxPd6VTcJy6YI123nh7yaZXdAytItF5A_aljKPOHoZJ1WIT7WBfIhCigbtcXxpEdm-ymrdNQz3G4UqqM-qYYsb0=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMbshrwHUkT4qSxb-vZHGsF_nI_FYp57RvfbHT6CxIdxOPsEJLsOFLZsPRpuyXTAgVGcI_1TzmdIgWFadXkKwWkJ4mHsQtw2zUNU5AWVS_clwa_zl7VUMKIijAKjKuOD9D5_uiwu2sJw01NFyqpaAr1jg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCIXepgRVD66zR6gZvxbs91tXk0f_oF4qoxqhEg7Rjjt1zlsjcy9agMC8pkc-isAtcryikJgwyi080TUMG3DjcII15Yq2QDg7iAUmpzVN6x0k6MdQcOjxhKugV3KPKecBqJFIAQIU9LvkomDlDNAby=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ],
+  "needs_review": [],
+  "blocked": [
+    {
+      "venue_name": "Paper Sons Cafe",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "status": "blocked",
+      "staging_score": 73,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Sip Coffee & Matcha",
+      "status": "blocked",
+      "staging_score": 73,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "status": "blocked",
+      "staging_score": 74,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Burrow",
+      "status": "blocked",
+      "staging_score": 74,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Rex",
+      "status": "blocked",
+      "staging_score": 73,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "status": "blocked",
+      "staging_score": 76,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "status": "blocked",
+      "staging_score": 71,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ]
+}

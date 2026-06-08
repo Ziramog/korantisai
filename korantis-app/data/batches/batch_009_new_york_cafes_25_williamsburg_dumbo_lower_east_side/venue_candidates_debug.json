@@ -1,0 +1,3062 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:10:28.487Z",
+  "city": "New York City",
+  "discovery_mode": "automated_google_places",
+  "total_candidates_discovered": 127,
+  "candidates_after_dedupe": 113,
+  "candidates_after_hard_filters": 81,
+  "rejected_count": 7,
+  "selected_count": 25,
+  "selected": [
+    {
+      "name": "Paper Sons Cafe",
+      "normalized_name": "paper sons cafe",
+      "neighborhood": "Lower East Side",
+      "type": "cafe",
+      "place_id": "ChIJeezZS4tbwokRjLkpQk2sLyA",
+      "address": "10 Mott St, New York, NY 10013",
+      "coordinates": {
+        "lat": 40.7140524,
+        "lng": -73.9985851
+      },
+      "google_maps_url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 231,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://papersonscafe.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "coffee_stand",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Café Colmado",
+      "normalized_name": "cafe colmado",
+      "neighborhood": "Lower East Side",
+      "type": "cafe",
+      "place_id": "ChIJxes_BwBZwokRMzXp44W-WiQ",
+      "address": "286 Broome St, New York, NY 10002",
+      "coordinates": {
+        "lat": 40.7185748,
+        "lng": -73.9914749
+      },
+      "google_maps_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 291,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/colmadocoffee/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Yanni's Coffee",
+      "normalized_name": "yanni s coffee",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJA70uZt9ZwokRIYEM7_-s7bU",
+      "address": "96 7th Ave, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.739821,
+        "lng": -73.9989877
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 445,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://m.facebook.com/yanniscoffee/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Sip Coffee & Matcha",
+      "normalized_name": "sip coffee matcha",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJH_igKQRZwokRoXxhqKmgTwA",
+      "address": "242 W 27th St, New York, NY 10001",
+      "coordinates": {
+        "lat": 40.7473825,
+        "lng": -73.9958787
+      },
+      "google_maps_url": "https://maps.google.com/?cid=22413173695020193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 377,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.isipcoffee.com/",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "normalized_name": "intelligentsia coffee high line hotel coffeebar",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJy6rdX7hZwokRYmiVJWN3XmQ",
+      "address": "High Line Hotel 180 10th Ave at, W 20th St, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.745866199999995,
+        "lng": -74.0051138
+      },
+      "google_maps_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 646,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+      "google_place_types": [
+        "coffee_shop",
+        "tea_house",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "RHYTHM ZERO | WEST VILLAGE",
+      "normalized_name": "rhythm zero west village",
+      "neighborhood": "West Village",
+      "type": "cafe",
+      "place_id": "ChIJHZO-cABZwokRP3Gty-exVkU",
+      "address": "328 Bleecker St, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.733264999999996,
+        "lng": -74.00428579999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 222,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.rhythmzeronyc.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Bakeri",
+      "normalized_name": "bakeri",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJYRmchGdZwokRSTHrwrsym5M",
+      "address": "150 Wythe Ave, Brooklyn, NY 11211",
+      "coordinates": {
+        "lat": 40.7200227,
+        "lng": -73.9601227
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 676,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://bakeribrooklyn.com/",
+      "google_place_types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "A&C Super",
+      "normalized_name": "a c super",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJd4UuECFZwokRnGsyMaQn42Y",
+      "address": "292 Leonard St, Brooklyn, NY 11211",
+      "coordinates": {
+        "lat": 40.7141048,
+        "lng": -73.9475085
+      },
+      "google_maps_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 201,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.aandcsuper.com/",
+      "google_place_types": [
+        "bakery",
+        "coffee_shop",
+        "sandwich_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Paris Baguette",
+      "normalized_name": "paris baguette",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJ7bjlk1VZwokRBK24C19g_0c",
+      "address": "185 Bedford Ave, Brooklyn, NY 11211",
+      "coordinates": {
+        "lat": 40.7176773,
+        "lng": -73.9577093
+      },
+      "google_maps_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 190,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+      "google_place_types": [
+        "bakery",
+        "cake_shop",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "wholesaler",
+        "manufacturer",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Black Star Bakery & Cafe",
+      "normalized_name": "black star bakery cafe",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJZ7q2fa5ZwokR9axzUl0yJEg",
+      "address": "548 Driggs Ave, Brooklyn, NY 11211",
+      "coordinates": {
+        "lat": 40.7173156,
+        "lng": -73.9565392
+      },
+      "google_maps_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 225,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.blackstarbakery.com/",
+      "google_place_types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Dawn’s Til Dusk",
+      "normalized_name": "dawn s til dusk",
+      "neighborhood": "DUMBO",
+      "type": "bakery_cafe",
+      "place_id": "ChIJFTVDEzFawokRp53c_hL03Bg",
+      "address": "33 Main St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.703350799999996,
+        "lng": -73.99045269999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 1018,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://dawnstildusk.com/",
+      "google_place_types": [
+        "cafe",
+        "bakery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in DUMBO New York City",
+        "bakery cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Tous Les Jours",
+      "normalized_name": "tous les jours",
+      "neighborhood": "DUMBO",
+      "type": "bakery_cafe",
+      "place_id": "ChIJO4zvSTBbwokRvqVPMzWwjIY",
+      "address": "107 York St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.7016436,
+        "lng": -73.9863518
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 112,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://tljus.com/",
+      "google_place_types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Almondine Bakery",
+      "normalized_name": "almondine bakery",
+      "neighborhood": "DUMBO",
+      "type": "bakery_cafe",
+      "place_id": "ChIJQ-HOGTFawokRZzcxdno0R-E",
+      "address": "85 Water St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.7033694,
+        "lng": -73.9911861
+      },
+      "google_maps_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 657,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.almondinebakery.com/",
+      "google_place_types": [
+        "pastry_shop",
+        "dessert_shop",
+        "confectionery",
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Burrow",
+      "normalized_name": "burrow",
+      "neighborhood": "DUMBO",
+      "type": "bakery_cafe",
+      "place_id": "ChIJ2zVavDNawokR_XDClc_vb4M",
+      "address": "68 Jay St #119, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.7027655,
+        "lng": -73.9868068
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 203,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://burrow.nyc/",
+      "google_place_types": [
+        "bakery",
+        "pastry_shop",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Rex",
+      "normalized_name": "rex",
+      "neighborhood": "Lower East Side",
+      "type": "bakery_cafe",
+      "place_id": "ChIJ3bHceclZwokR0bc2uIf4TYg",
+      "address": "126 Rivington St, New York, NY 10002",
+      "coordinates": {
+        "lat": 40.7198202,
+        "lng": -73.9870133
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9821779624159786961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 111,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://rex-nyc.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "sandwich_shop",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Kaida Coffee and Bakery",
+      "normalized_name": "kaida coffee and bakery",
+      "neighborhood": "Lower East Side",
+      "type": "bakery_cafe",
+      "place_id": "ChIJkzkqDABZwokRl-Jxqks-gq4",
+      "address": "122 Ludlow St, New York, NY 10002",
+      "coordinates": {
+        "lat": 40.7196328,
+        "lng": -73.9883579
+      },
+      "google_maps_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 151,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Bourke Street Bakery",
+      "normalized_name": "bourke street bakery",
+      "neighborhood": "NoMad",
+      "type": "bakery_cafe",
+      "place_id": "ChIJiXYeT8FZwokR0i8FJw7l16s",
+      "address": "15 E 28th St, New York, NY 10016",
+      "coordinates": {
+        "lat": 40.7443567,
+        "lng": -73.9860983
+      },
+      "google_maps_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 520,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.bourkestreetbakery.com/",
+      "google_place_types": [
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "La Bergamote (Chelsea)",
+      "normalized_name": "la bergamote chelsea",
+      "neighborhood": "Chelsea",
+      "type": "bakery_cafe",
+      "place_id": "ChIJydHFGblZwokRd39Hs0utAAk",
+      "address": "177 9th Ave, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.7448924,
+        "lng": -74.0028086
+      },
+      "google_maps_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 968,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://labergamotenyc.com/",
+      "google_place_types": [
+        "pastry_shop",
+        "dessert_shop",
+        "confectionery",
+        "bakery",
+        "food_store",
+        "store",
+        "french_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Claude Bakery West Village",
+      "normalized_name": "claude bakery west village",
+      "neighborhood": "West Village",
+      "type": "bakery_cafe",
+      "place_id": "ChIJ39G685NZwokR3VomrYwr_io",
+      "address": "187 W 4th St, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.7326464,
+        "lng": -74.00182579999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 469,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.claudesnyc.com/",
+      "google_place_types": [
+        "bakery",
+        "cake_shop",
+        "pastry_shop",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "wholesaler",
+        "manufacturer",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "maman",
+      "normalized_name": "maman",
+      "neighborhood": "West Village",
+      "type": "bakery_cafe",
+      "place_id": "ChIJBTRVgQNZwokRCZlgLnLCbvg",
+      "address": "800 Washington St, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.7389377,
+        "lng": -74.0082583
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 393,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://mamannyc.com/locations/meatpacking",
+      "google_place_types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "dessert_shop",
+        "family_restaurant",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "european_restaurant",
+        "store",
+        "french_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Aux Merveilleux de Fred",
+      "normalized_name": "aux merveilleux de fred",
+      "neighborhood": "West Village",
+      "type": "bakery_cafe",
+      "place_id": "ChIJzQKlfZVZwokRlYqgTIq1Pu0",
+      "address": "37 8th Ave, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.738354199999996,
+        "lng": -74.00412539999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 781,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://marvelous-by-fred.square.site/",
+      "google_place_types": [
+        "bakery",
+        "pastry_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "maman",
+      "normalized_name": "maman",
+      "neighborhood": "NoMad",
+      "type": "cafe",
+      "place_id": "ChIJPR-8N6RZwokROvrr-k3dqcw",
+      "address": "22 W 25th St, New York, NY 10010",
+      "coordinates": {
+        "lat": 40.7432672,
+        "lng": -73.99013380000001
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14747561781793389114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 1307,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://mamannyc.com/locations/nomad",
+      "google_place_types": [
+        "coffee_shop",
+        "family_restaurant",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "european_restaurant",
+        "french_restaurant",
+        "cafe",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "restaurant",
+        "food",
+        "service",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in NoMad New York City",
+        "bakery cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 87.8,
+      "selection_reason": "score=87.8; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Stumptown Coffee Roasters",
+      "normalized_name": "stumptown coffee roasters",
+      "neighborhood": "NoMad",
+      "type": "cafe",
+      "place_id": "ChIJT2h1HKZZwokR0kgzEtsa03k",
+      "address": "18 W 29th St, New York, NY 10001",
+      "coordinates": {
+        "lat": 40.7457399,
+        "lng": -73.9882272
+      },
+      "google_maps_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 1702,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+      "google_place_types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "tea_store",
+        "cafe",
+        "food_store",
+        "market",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 87.8,
+      "selection_reason": "score=87.8; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Pura Vida - NoMad",
+      "normalized_name": "pura vida nomad",
+      "neighborhood": "NoMad",
+      "type": "cafe",
+      "place_id": "ChIJK-CuuZVZwokRBPbPoomm2Ig",
+      "address": "1151 Broadway, New York, NY 10001",
+      "coordinates": {
+        "lat": 40.74431,
+        "lng": -73.989201
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 1713,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.puravidamiami.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "juice_shop",
+        "brunch_restaurant",
+        "sandwich_shop",
+        "breakfast_restaurant",
+        "catering_service",
+        "salad_shop",
+        "food_delivery",
+        "cafe",
+        "food_store",
+        "restaurant",
+        "food",
+        "service",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 87.8,
+      "selection_reason": "score=87.8; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": []
+    },
+    {
+      "name": "Nick + Sons Bakery",
+      "normalized_name": "nick sons bakery",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJnZ5rvZRZwokRKXfBDWnfSW0",
+      "address": "892 Lorimer St, Brooklyn, NY 11222",
+      "coordinates": {
+        "lat": 40.7232364,
+        "lng": -73.9512464
+      },
+      "google_maps_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 616,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.nickandsonsbakery.com/",
+      "google_place_types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": []
+    }
+  ],
+  "rejected": [
+    {
+      "name": "Hole In The Wall Cafe - Lower East Side",
+      "normalized_name": "hole in the wall cafe lower east side",
+      "neighborhood": "Lower East Side",
+      "type": "cafe",
+      "place_id": "ChIJRczdcD9ZwokRcKMnxyCaPzs",
+      "address": "139 Orchard St, New York, NY 10002",
+      "coordinates": {
+        "lat": 40.720017000000006,
+        "lng": -73.98951799999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=4269300437341414256&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 5,
+      "review_count": 1,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://holeinthewallnyc.com/les",
+      "google_place_types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "australian_restaurant",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 77,
+      "selection_reason": "score=77; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "low_evidence_quality"
+      ]
+    },
+    {
+      "name": "Presidente Bar",
+      "normalized_name": "presidente bar",
+      "neighborhood": "Recoleta",
+      "type": "cocktail_bar",
+      "place_id": "ChIJ6dyRD7vKvJURGPaSE7oTNuY",
+      "address": "Av. Pres. Manuel Quintana 188, C1129 Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5911523,
+        "lng": -58.386859599999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=16588467967379043864&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 5197,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.presidentebar.com.ar/",
+      "google_place_types": [
+        "cocktail_bar",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Presidente Bar"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 1,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8
+      },
+      "candidate_score": 90,
+      "selection_reason": "score=90; google=1.00; visual=1.00; category=1.00; atmosphere=0.95; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Tres Monos",
+      "normalized_name": "tres monos",
+      "neighborhood": "Palermo",
+      "type": "bar",
+      "place_id": "ChIJo7CuuHu1vJUR9DoRRpMQDNs",
+      "address": "Guatemala 4899, C1425 Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5847666,
+        "lng": -58.426056499999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15784009018748517108&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 3681,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://3monos.com.ar/",
+      "google_place_types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Tres Monos"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8
+      },
+      "candidate_score": 88.5,
+      "selection_reason": "score=88.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Los Galgos Bar",
+      "normalized_name": "los galgos bar",
+      "neighborhood": "Centro",
+      "type": "cocktail_bar",
+      "place_id": "ChIJZ4ZfrcHKvJUR0mMgHza_ess",
+      "address": "Av. Callao 501, C1022AAF Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.603025699999996,
+        "lng": -58.392256599999996
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14662241776029426642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.2,
+      "review_count": 9455,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://barlosgalgos.com.ar/",
+      "google_place_types": [
+        "restaurant",
+        "argentinian_restaurant",
+        "cocktail_bar",
+        "breakfast_restaurant",
+        "south_american_restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Los Galgos"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 1,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8
+      },
+      "candidate_score": 90,
+      "selection_reason": "score=90; google=1.00; visual=1.00; category=1.00; atmosphere=0.95; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "La Fuerza",
+      "normalized_name": "la fuerza",
+      "neighborhood": "Chacarita",
+      "type": "bar",
+      "place_id": "ChIJK9_f9u21vJURCGQ9TsCjhyw",
+      "address": "Av. Dorrego 1409, C1414CKJ Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5856066,
+        "lng": -58.444941199999995
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3208713305866462216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 5302,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://lafuerza.com.ar/",
+      "google_place_types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:La Fuerza"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8
+      },
+      "candidate_score": 88.5,
+      "selection_reason": "score=88.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Cochinchina",
+      "normalized_name": "cochinchina",
+      "neighborhood": "Palermo",
+      "type": "bar",
+      "place_id": "ChIJs2XPmoG1vJURwboMb5sigY0",
+      "address": "Armenia 1540, C1414 Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.590345,
+        "lng": -58.429003599999994
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10196469082321894081&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 4720,
+      "business_status": "OPERATIONAL",
+      "google_place_types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Cochinchina"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.8999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 83.25,
+      "selection_reason": "score=83.25; google=1.00; visual=0.90; category=0.90; atmosphere=0.80; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    },
+    {
+      "name": "Caffé Palermo",
+      "normalized_name": "caffe palermo",
+      "neighborhood": "Palermo",
+      "type": "bakery_cafe",
+      "place_id": "ChIJu6AxSohZwokR-C-gCJcQewI",
+      "address": "148 Mulberry St, New York, NY 10013",
+      "coordinates": {
+        "lat": 40.719003,
+        "lng": -73.99729599999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=178754851082088440&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.1,
+      "review_count": 1781,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.caffepalermo.com/",
+      "google_place_types": [
+        "cafe",
+        "coffee_shop",
+        "bakery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:Sacro"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8
+      },
+      "candidate_score": 89.85,
+      "selection_reason": "score=89.85; google=1.00; visual=1.00; category=0.82; atmosphere=0.95; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood"
+      ]
+    }
+  ],
+  "already_known_excluded": [
+    {
+      "name": "Blue Brown Cafe",
+      "normalized_name": "blue brown cafe",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJKzSxhq9ZwokRORBmuUsFrlY",
+      "address": "45 Havemeyer St, Brooklyn, NY 11211",
+      "coordinates": {
+        "lat": 40.715253600000004,
+        "lng": -73.95384899999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=6245935556000616505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 305,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.bluebrowncafe.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Williamsburg New York City",
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "11:11 Cafe",
+      "normalized_name": "11 11 cafe",
+      "neighborhood": "Williamsburg",
+      "type": "cafe",
+      "place_id": "ChIJ6fn3j1xZwokRV7Y2zn-iVfY",
+      "address": "65 Richardson St, Brooklyn, NY 11211",
+      "coordinates": {
+        "lat": 40.718551399999996,
+        "lng": -73.9494155
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17750272176154916439&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.9,
+      "review_count": 302,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://drive.google.com/file/d/1_ARHaVra8DH2JDSjx_q7GccY3vEWE8OD/view?usp=drivesdk",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Devoción",
+      "normalized_name": "devocion",
+      "neighborhood": "Williamsburg",
+      "type": "cafe",
+      "place_id": "ChIJi7flemFZwokRDpIJuxfOGek",
+      "address": "148 Grand St, Brooklyn, NY 11249",
+      "coordinates": {
+        "lat": 40.714774,
+        "lng": -73.9622189
+      },
+      "google_maps_url": "https://maps.google.com/?cid=16796682886572511758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 2730,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://devocion.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Williamsburg New York City",
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.82,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 87.8,
+      "selection_reason": "score=87.8; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Copper Mug Coffee",
+      "normalized_name": "copper mug coffee",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJ-W5FnD1ZwokRX_Bk36vG_dg",
+      "address": "131 N 4th St, Brooklyn, NY 11249",
+      "coordinates": {
+        "lat": 40.7165423,
+        "lng": -73.9597969
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15635871922789871711&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 1199,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.coppermugcoffee.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "pastry_shop",
+        "dessert_shop",
+        "confectionery",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Caffè Valencia",
+      "normalized_name": "caffe valencia",
+      "neighborhood": "Williamsburg",
+      "type": "cafe",
+      "place_id": "ChIJfQHQBeBZwokRGx-70M50HBA",
+      "address": "255 Berry St, Brooklyn, NY 11249",
+      "coordinates": {
+        "lat": 40.7148907,
+        "lng": -73.9628109
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1160931235568754459&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 397,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.caffevalenciabrooklyn.com/",
+      "google_place_types": [
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "coffee_shop",
+        "cafe",
+        "wholesaler",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Butler",
+      "normalized_name": "butler",
+      "neighborhood": "Williamsburg",
+      "type": "bakery_cafe",
+      "place_id": "ChIJvWPoR99bwokRPTA_GHO52Wk",
+      "address": "95 S 5th St, Brooklyn, NY 11249",
+      "coordinates": {
+        "lat": 40.7118004,
+        "lng": -73.96465460000002
+      },
+      "google_maps_url": "https://maps.google.com/?cid=7627331347907817533&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 805,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.butler-nyc.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in Williamsburg New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Butler",
+      "normalized_name": "butler",
+      "neighborhood": "DUMBO",
+      "type": "bakery_cafe",
+      "place_id": "ChIJcXxb3jBawokRRoZlK8RyrfU",
+      "address": "40 Water St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.703281499999996,
+        "lng": -73.9923292
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17702931897130518086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 1101,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.butler-nyc.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in DUMBO New York City",
+        "bakery cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Devoción",
+      "normalized_name": "devocion",
+      "neighborhood": "DUMBO",
+      "type": "cafe",
+      "place_id": "ChIJEaoGvEpbwokRyZVWO1xVrx0",
+      "address": "105 York St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.7016804,
+        "lng": -73.986543
+      },
+      "google_maps_url": "https://maps.google.com/?cid=2139022202645157321&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 562,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.devocion.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in DUMBO New York City",
+        "bakery cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Pura Vida - Dumbo",
+      "normalized_name": "pura vida dumbo",
+      "neighborhood": "DUMBO",
+      "type": "cafe",
+      "place_id": "ChIJS9aR3YtbwokR6PhGJrxC3Dc",
+      "address": "79 Front St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.7026538,
+        "lng": -73.9898832
+      },
+      "google_maps_url": "https://maps.google.com/?cid=4025165542825851112&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.7,
+      "review_count": 108,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.puravidamiami.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "juice_shop",
+        "salad_shop",
+        "brunch_restaurant",
+        "catering_service",
+        "sandwich_shop",
+        "food_delivery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Red Coffee Stand",
+      "normalized_name": "red coffee stand",
+      "neighborhood": "DUMBO",
+      "type": "cafe",
+      "place_id": "ChIJyyI0QwBbwokRvRgvBajyr7w",
+      "address": "147 Front St, Brooklyn, NY 11201",
+      "coordinates": {
+        "lat": 40.7025449,
+        "lng": -73.9870828
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13596352603510216893&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 246,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/redcoffeestand?igsh=cjV4eW5xNzR0amtq",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in DUMBO New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Black Cat LES",
+      "normalized_name": "black cat les",
+      "neighborhood": "Lower East Side",
+      "type": "cafe",
+      "place_id": "ChIJjW5AuIFZwokRdNPH7jFGigM",
+      "address": "172 Rivington St, New York, NY 10002",
+      "coordinates": {
+        "lat": 40.7190149,
+        "lng": -73.9845769
+      },
+      "google_maps_url": "https://maps.google.com/?cid=255093509173269364&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.2,
+      "review_count": 584,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://blackcatles.com/",
+      "google_place_types": [
+        "cafe",
+        "vegan_restaurant",
+        "vegetarian_restaurant",
+        "coffee_shop",
+        "bar",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "A’more Caffe & Matcha - East Village",
+      "normalized_name": "a more caffe matcha east village",
+      "neighborhood": "Lower East Side",
+      "type": "cafe",
+      "place_id": "ChIJ7-J7MhFZwokRO_K247x79Y8",
+      "address": "150 E 2nd St, New York, NY 10009",
+      "coordinates": {
+        "lat": 40.7229873,
+        "lng": -73.98551929999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=10373333367922291259&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 151,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://amorecaffenyc.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "tea_house",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Café Grumpy - Lower East Side",
+      "normalized_name": "cafe grumpy lower east side",
+      "neighborhood": "Lower East Side",
+      "type": "cafe",
+      "place_id": "ChIJka6YlSlawokRMhN3aYCZWG0",
+      "address": "13 Essex St, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.715148,
+        "lng": -73.9902556
+      },
+      "google_maps_url": "https://maps.google.com/?cid=7879216324888957746&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.3,
+      "review_count": 236,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://cafegrumpy.com/locations/lower-east-side/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Lower East Side New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Copper Mug Coffee",
+      "normalized_name": "copper mug coffee",
+      "neighborhood": "NoMad",
+      "type": "cafe",
+      "place_id": "ChIJR-faCfhZwokRr2eLEWntd8w",
+      "address": "38 W 30th St, New York, NY 10001",
+      "coordinates": {
+        "lat": 40.7465799,
+        "lng": -73.98822419999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=14733505741487564719&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 895,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.coppermugcoffee.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Angelina Bakery Nomad",
+      "normalized_name": "angelina bakery nomad",
+      "neighborhood": "NoMad",
+      "type": "bakery_cafe",
+      "place_id": "ChIJZ4m18qdZwokRVNjfHKJdHC8",
+      "address": "42 W 28th St Ground Floor, New York, NY 10001",
+      "coordinates": {
+        "lat": 40.7455089,
+        "lng": -73.9898209
+      },
+      "google_maps_url": "https://maps.google.com/?cid=3394691169981028436&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 174,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://angelinabakery.com/#/",
+      "google_place_types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "NY Bakery and Desserts NoMad",
+      "normalized_name": "ny bakery and desserts nomad",
+      "neighborhood": "NoMad",
+      "type": "bakery_cafe",
+      "place_id": "ChIJUUmZv0NZwokR0Ugc9AncjYQ",
+      "address": "1204 Broadway, New York, NY 10001",
+      "coordinates": {
+        "lat": 40.7463197,
+        "lng": -73.98828689999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9551532320031000785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 640,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://nybakeryanddesserts.com/",
+      "google_place_types": [
+        "dessert_shop",
+        "cake_shop",
+        "pastry_shop",
+        "chocolate_shop",
+        "candy_store",
+        "ice_cream_shop",
+        "confectionery",
+        "bakery",
+        "wholesaler",
+        "manufacturer",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Dominique Ansel Workshop",
+      "normalized_name": "dominique ansel workshop",
+      "neighborhood": "NoMad",
+      "type": "bakery_cafe",
+      "place_id": "ChIJo7FBbQdZwokR923ixkRp0xQ",
+      "address": "17 E 27th St, New York, NY 10016",
+      "coordinates": {
+        "lat": 40.743733399999996,
+        "lng": -73.98664409999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1500658844959927799&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 504,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://dominiqueanselworkshop.com/",
+      "google_place_types": [
+        "bakery",
+        "breakfast_restaurant",
+        "pastry_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "bakery cafes in NoMad New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Urbana Cafe and Gallery",
+      "normalized_name": "urbana cafe and gallery",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJ63ly5nlZwokR9tEeeucKRnA",
+      "address": "144 10th Ave, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.7450198,
+        "lng": -74.0058523
+      },
+      "google_maps_url": "https://maps.google.com/?cid=8090165769920238070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 432,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.urbanacoffee.com/s/order",
+      "google_place_types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Bluestone Lane Chelsea Piers Café",
+      "normalized_name": "bluestone lane chelsea piers cafe",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJDTUgz1dZwokRtsQ97Tbf0cA",
+      "address": "62 Chelsea Piers Pier 62, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.7485378,
+        "lng": -74.0087457
+      },
+      "google_maps_url": "https://maps.google.com/?cid=13894131752416167094&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 699,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://bluestonelane.com/?y_source=1_MjMwNjk1NDAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Café-Flor / Bar 21",
+      "normalized_name": "cafe flor bar 21",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJ_abIqHtZwokRLWbw0G-lzu8",
+      "address": "218 8th Ave, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.744051899999995,
+        "lng": -73.99898089999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17279930719932540461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.2,
+      "review_count": 506,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.instagram.com/cafeflornyc?igsh=MWE0OXI4Y2x3dW9zcQ%3D%3D&utm_source=qr",
+      "google_place_types": [
+        "coffee_shop",
+        "bar",
+        "cafe",
+        "food_store",
+        "florist",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Fellini Coffee Chelsea",
+      "normalized_name": "fellini coffee chelsea",
+      "neighborhood": "Chelsea",
+      "type": "cafe",
+      "place_id": "ChIJ3bA3T-lZwokR2roK8nLThdQ",
+      "address": "231 8th Ave, New York, NY 10011",
+      "coordinates": {
+        "lat": 40.744568799999996,
+        "lng": -73.99925329999999
+      },
+      "google_maps_url": "https://maps.google.com/?cid=15313878598583761626&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.6,
+      "review_count": 513,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://fellinicoffee.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4080,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in Chelsea New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Cafe Luna",
+      "normalized_name": "cafe luna",
+      "neighborhood": "West Village",
+      "type": "bakery_cafe",
+      "place_id": "ChIJkc_fzm9ZwokR3vtKGxZSCQ8",
+      "address": "628 Hudson St, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.7383306,
+        "lng": -74.0053786
+      },
+      "google_maps_url": "https://maps.google.com/?cid=1083487440259972062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 812,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://www.cafelunanewyork.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "pastry_shop",
+        "juice_shop",
+        "brunch_restaurant",
+        "dessert_shop",
+        "bagel_shop",
+        "sandwich_shop",
+        "confectionery",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in West Village New York City",
+        "bakery cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "Hungry Llama",
+      "normalized_name": "hungry llama",
+      "neighborhood": "West Village",
+      "type": "cafe",
+      "place_id": "ChIJFXK3-LdZwokR41IAIP81AvM",
+      "address": "679 Washington St, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.7339489,
+        "lng": -74.0082978
+      },
+      "google_maps_url": "https://maps.google.com/?cid=17510617671039734499&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.8,
+      "review_count": 354,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.hungryllamacafe.com/",
+      "google_place_types": [
+        "cafe",
+        "coworking_space",
+        "event_venue",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4032,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 90.5,
+      "selection_reason": "score=90.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "11th Street Cafe",
+      "normalized_name": "11th street cafe",
+      "neighborhood": "West Village",
+      "type": "bakery_cafe",
+      "place_id": "ChIJU3IVO-tZwokRx6iWrhKQTng",
+      "address": "327 W 11th St, New York, NY 10014",
+      "coordinates": {
+        "lat": 40.7357544,
+        "lng": -74.0075135
+      },
+      "google_maps_url": "https://maps.google.com/?cid=8669024742647703751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.5,
+      "review_count": 379,
+      "business_status": "OPERATIONAL",
+      "website_url": "https://www.11thstcafe.com/",
+      "google_place_types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "juice_shop",
+        "brunch_restaurant",
+        "bagel_shop",
+        "sandwich_shop",
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal"
+      ],
+      "search_queries": [
+        "cafes in West Village New York City"
+      ],
+      "curated_boost": false,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 1,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.82,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.7999999999999999,
+        "source_diversity_score": 0.6
+      },
+      "candidate_score": 89.3,
+      "selection_reason": "score=89.3; google=1.00; visual=1.00; category=0.82; atmosphere=0.80",
+      "rejection_reasons": [
+        "already_exists_name_neighborhood",
+        "already_exists_name_city"
+      ]
+    },
+    {
+      "name": "El Preferido de Palermo",
+      "normalized_name": "el preferido de palermo",
+      "neighborhood": "Palermo",
+      "type": "bistro",
+      "place_id": "ChIJRazshIa1vJURczNt-pu4coU",
+      "address": "Jorge Luis Borges 2108, C1425FFD Cdad. Autónoma de Buenos Aires, Argentina",
+      "coordinates": {
+        "lat": -34.5854137,
+        "lng": -58.4253412
+      },
+      "google_maps_url": "https://maps.google.com/?cid=9615951134450332531&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "rating": 4.4,
+      "review_count": 9516,
+      "business_status": "OPERATIONAL",
+      "website_url": "http://elpreferido.meitre.com/",
+      "google_place_types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "photo_count": 10,
+      "max_photo_dimension": 4800,
+      "source_signals": [
+        "google_places",
+        "official_website_from_google",
+        "google_photo_signal",
+        "curated_allowlist_boost"
+      ],
+      "search_queries": [
+        "curated:El Preferido de Palermo"
+      ],
+      "curated_boost": true,
+      "scores": {
+        "google_presence_score": 1,
+        "review_volume_score": 0.65,
+        "visual_strength_score": 0.9999999999999999,
+        "category_fit_score": 0.9,
+        "neighborhood_balance_score": 0.7,
+        "atmosphere_potential_score": 0.95,
+        "source_diversity_score": 0.8
+      },
+      "candidate_score": 88.5,
+      "selection_reason": "score=88.5; google=1.00; visual=1.00; category=0.90; atmosphere=0.95; curated_boost",
+      "rejection_reasons": [
+        "missing_or_unsupported_neighborhood",
+        "already_exists_place_id"
+      ]
+    }
+  ],
+  "warnings": [],
+  "existing_sources_checked": [
+    "supabase:staging_venues",
+    "supabase:venues",
+    "local_batch:batch_003_stage01_test:stage_01",
+    "local_batch:batch_003_stage01_test:batch_result_with_editorial",
+    "local_batch:batch_003_stage01_test:batch_result_quality_gated",
+    "local_batch:batch_004_buenos_aires_50:venue_seed",
+    "local_batch:batch_004_buenos_aires_50:stage_01",
+    "local_batch:batch_004_buenos_aires_50:batch_result_with_editorial",
+    "local_batch:batch_004_buenos_aires_50:batch_result_quality_gated",
+    "local_batch:batch_005_buenos_aires_restaurants_50:venue_seed",
+    "local_batch:batch_005_buenos_aires_restaurants_50:stage_01",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_with_editorial",
+    "local_batch:batch_005_buenos_aires_restaurants_50:batch_result_quality_gated",
+    "local_batch:batch_006_nyc_rooftop:venue_seed",
+    "local_batch:batch_006_nyc_rooftop:stage_01",
+    "local_batch:batch_006_nyc_rooftop:batch_result_with_editorial",
+    "local_batch:batch_006_nyc_rooftop:batch_result_quality_gated",
+    "local_batch:batch_008_new_york_cafes_25_williamsburg_dumbo_lower_east_side:venue_seed"
+  ],
+  "existing_known_venues_count": 656,
+  "configured_neighborhoods": [
+    "Williamsburg",
+    "DUMBO",
+    "Lower East Side",
+    "NoMad",
+    "Chelsea",
+    "West Village"
+  ],
+  "configured_type_mix": {
+    "cafes": 25
+  },
+  "type_counts": {
+    "cafe": 9,
+    "bakery_cafe": 16
+  },
+  "neighborhood_counts": {
+    "Lower East Side": 4,
+    "Chelsea": 4,
+    "West Village": 4,
+    "Williamsburg": 5,
+    "DUMBO": 4,
+    "NoMad": 4
+  },
+  "deviations_from_target_mix": [],
+  "next_pipeline_command": "npx tsx pipeline/run_full_batch.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side"
+}

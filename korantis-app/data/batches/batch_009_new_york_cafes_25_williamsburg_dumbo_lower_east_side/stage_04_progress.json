@@ -1,0 +1,2498 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:34:42.250Z",
+  "updated_at": "2026-06-08T13:40:33.513Z",
+  "model_used": "MiniMax-M3",
+  "total_queue_size": 89,
+  "images_processed_or_skipped": 89,
+  "remaining": 0,
+  "results": [
+    {
+      "venue_name": "Rex",
+      "resolved_image_url": "https://rex-nyc.com/wp-content/uploads/2025/08/APC_1525-hdr-Photoroom.webp",
+      "source_url": "https://rex-nyc.com/",
+      "source_type": "official_website",
+      "width": 1512,
+      "height": 1512,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated meal (omelet, seeded toast, mixed greens) on a white plate against a black background; no venue or spatial context visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Rex",
+      "resolved_image_url": "https://rex-nyc.com/wp-content/uploads/2025/08/APC_0948-hdr-Photoroom.webp",
+      "source_url": "https://rex-nyc.com/",
+      "source_type": "official_website",
+      "width": 1512,
+      "height": 1512,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Top-down close-up of a plated toast with cream, honey, and sliced almonds on a beige-rimmed plate against a black background; no venue space visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Rex",
+      "resolved_image_url": "https://rex-nyc.com/wp-content/uploads/2025/08/APC_0888-hdr-Photoroom.webp",
+      "source_url": "https://rex-nyc.com/",
+      "source_type": "official_website",
+      "width": 1512,
+      "height": 1512,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Isolated image of avocado toast with tomatoes and cheese on a white plate against a black background; no venue space visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Rex",
+      "resolved_image_url": "https://rex-nyc.com/wp-content/uploads/2025/08/TunaSaladSandwich-Photoroom.webp",
+      "source_url": "https://rex-nyc.com/",
+      "source_type": "official_website",
+      "width": 1512,
+      "height": 1512,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Isolated close-up of a stuffed sandwich cut in half on a white plate against a plain background; no venue space, people, or environment visible."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Paper Sons Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNlajXeuJygWdQDZm_XS_3GPZWBn2g2TmkLaJYQfIJHS2bn-389j_reF475SndhthRX6so7HtPLZJRUmXZLkCBUR63dHnQQ94ooAhK7c5663sjyfoR0a9d8blopPJVuMRdFG9-lZg3AZ-RKlA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Street-level storefront exterior showing facade, sign reading 'PAPER SONS CAFE', red lanterns, fire escape, and entrance steps. No visible guest seating, dining, or experiential space shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Paper Sons Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMM14pIX2tXt_QZR04-I7aZrexRUdKjmgKGzK2fyZg96zOBHla_sdGTPMT5a3lLnGwypwshwVOe56AnKb_1qmngmIGkNEVT12Y53MLdseQjgBrmyr1TootcTFHEiDQPHZf1dW2-gDPz8CNE5htMTChsEw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Street-level storefront facade showing the 'Paper Sons Cafe' sign above the entrance, a metal fire escape above, and adjacent businesses including 'Chinatown Video Games'. The image emphasizes the building exterior and signage rather than an interior or active guest dining space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Café Colmado",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMVTP-O1XEdrdUk15IW078H60W3pkc-XIdLqqFO2XYul_cFAK8cfPeGYO1xf9T5jibtrDy2DxBXNPWF-ni-Z2H7Dw2Sbbtf04PUAfv0kzW7Zzl-WpUhV-bcAkjngVu3XYXx3ByC3ecDBqEFl8g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1328,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "energetic",
+        "visual_reason": "Image is a graphic poster/illustration featuring a red coffee cup and text on a split orange/pink background; no physical venue space shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Café Colmado",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNMTWttVtUwsjGK9rY8biSEKqzfBMS3z4__83SqutvApyrkj4oKvfeM8o0DUOGUdauD2ByQxbbWcJySJDm2BJoiLiuwjoW_p-A4jEje7qtN8ofzhgOgjYr-2NYlhPXLYE2rjlgys4EY_RejIw9cnyIy-w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1205,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior café/casino space with a prominent 'CAFÉ COLMADO' neon sign, counter service, coffee equipment, decorative framed photos, and warm industrial lighting under a metal ceiling."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Café Colmado",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAVAyYyRq40Hxt6xGVYNCJz9ACS-7oVzTY15nQ9cK-cuk7R8VpqzsN6BsdXWUaQE2Ejinxx-Id7YRIOu7JU9wDmk5dWEse5eJ8zEy9S8A76VkQtdOe0qUSORgJU-8ThOuG2efJe41y1YpfBp7-d0aNFA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Two iced coffee drinks in branded plastic cups on a wooden table dominate the foreground; the interior background is out of focus and not the subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Café Colmado",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN2GW73e3-AlJEbPOdBp_VMRKdA5TDfwC0cE10qOFpJcMSzEwfmSlNZ2SexDIKoIcYvk9hV2iYAH0haAS_oxPefCADikE_tKDzN6gezY2ziiEhc-BC0VU-fstjaL2TQQspO9HcDHHFnWVNmOtBrWY3KOQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Hand holding an orange branded coffee cup dominates the foreground; the background shows a blurred bar counter with colorful crates and a person, but the subject is clearly a product shot of the cup."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNpOGZWyrUFyzAQo0VUugjmZi7eFbaaStjHvmYjsR1BtrhHTreIsZgfq0gufXjqI0PNfqCvAXu3U79GbiJ2FPbyDDLPJteB2ju8R5I9Y4vcq9IQTapVlJIK_wMIRnA-kTnqXvnBblVxbLgEYE4s2IEMsQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of two iced drinks (a layered green/red beverage and an iced coffee) with paper straws on a wooden table; no venue space, people, or identifiable environment visible beyond a gray wall."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPhmyAKnBybc4vC8R_WBZtzOjAgS7bTBU2MZry3iQUvzsWilW0V-O5A-2H7w0ch6DCvl2XxUHuDh25kmKHEriGxWSRH7uQinacNYlSNzIfFwi27RjMvjB4AoMUX7lyzrN-dMYThB0qCtdneHSpdPA4a=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a layered matcha/strawberry drink in a plastic cup branded 'RHYTHM ZERO' on a dark stone surface; no venue space, people, or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMztCXgHyqc7TrZT6cZlOhqyLtolZCstGnU8CK5H1QByzS8iVmOKIFk8b9sFCI55ubcCfAJqOwOJJfMwXN7H08jRB1KdrZ46rZDv_-gDAko70oeHO67tYIyt-cYuoyWNYGt2XXTmpsVtRZGy_0diHSl=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Clear interior view of a minimalist cafe/bar setup with a dark wood high table, two black chairs, a tall cactus, a paper floor lamp, and a framed artwork on a wood-paneled wall, showing the guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMVn80AA1zsuYg9HRBqEUnhI0ZSgYKvD7wV6pet7agWUcMj_xdt2j7NyGdskJ7HtD_KEWUed24rF5g9TbHuUXCJVuUXrhlHH2K60KtCrRw1-VVKyP1OEI_01In_Qe-kqvr2tt-3pCPlS7T0bF4=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior view of a coffee bar counter with a large floral arrangement, stacked paper cups, an espresso machine, and wood paneling creating a warm, sophisticated café atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bakeri",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOmG_lzMsvPUUsuOvztNu71OBNWH4K3OtKO6qhs736OQj0AoVS5YYK51Ed1I1h-sfQfTAQAViNLfkOEckXof6GfVN-lVm5bS4-_XZ6oCiD_rPvuqY-ThGOSKD5_KGv8JCR9avJDHI6mh--uNA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "low",
+        "atmosphere_signal": "none",
+        "visual_reason": "Image is taken from inside looking out through a window, dominated by street, parked cars, and a 'We're Back Saturday 8!' paddle sign in the foreground. Foreground objects (globe, ceramic pot, pitcher) clutter the view; no venue interior, seating, or guest experience is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bakeri",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOaKfvwBF-jst0x3a_RZTiwJQtiLUIerf8gEBFGr2hQWg1cNoe_M2wa78F9n9UXf5TckCXlnCwZva5H6TmpnuxzhYfSukdZIXsdrBDAVDEUAIKVIruSU1DMFCP-bSOweDL2g68b6089jXy49I2v1zJdYA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of bread, tomato, onion, cheese, salt/pepper shakers, and coffee on parchment paper; the setting is a tabletop product shot rather than a venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bakeri",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPCaC47uyUPy3GD_ybXtiEqBxHlhn9SHvY6l6bPCKCEeJLG1Pe42ufFgRT6jzTv6_Z9kIMSFqob-PdcZscnYimd87gLmTZw0uqzzxcvF8WEqmCBxR0bApgISyE79v8VNIjbHwkB7gS3oD76RK-eegcKEg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior of a bakery/cafe with a pressed tin ceiling, pendant lighting, vintage distressed cabinetry, a pastry display case, and a smiling employee behind the counter, conveying a warm and cozy atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bakeri",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAnMjxA8OJSKJueLDAas0q6LSzdF0glLyQG3zN6eI4l-yx_g-xklOOVoPp_qMxLqs5hBDmJK2bJLiZ47RKo7M7KTp-2L5ha0hPAvGCPovKnuxW2H2duv1Fdc4e2lr0A94hyK-mZNwGFnvX_d0=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior of a bakery/cafe with wood-paneled counter, pendant lights, chalkboard specials, and checkered tile floor conveying a warm, cozy atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A&C Super",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAzZGenNb0Ta14GZA1FrPXJP_-4Lr8MH_147flOCnGJDRFtfDLgwGg2oQh34K7fi73T2wqb2Ekrh2NBOaIkPvKpltqxcLfG9VJIPU0O_YypVa393MYUECZxoakKhSJX-iadffg0up2zkEv=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead shot of a chocolate croissant, blueberry muffin, and two iced coffee drinks on a black mesh outdoor table; no venue space or context is visible beyond the table surface."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A&C Super",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM1Wl6tk5H2RSW57rNvbwGv1hTvK7AS-hDTQyFYWAHclm4GkFBQ_12Y1O1g7xXlZ3ZNtmB8fUwijZrAHdLcKhJ41-iNJhQOKR6pfSM0pUcHzec5CQU7pEa4ZZyZCbRMj4H-oudkghZhtus3-q-BwHrk=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear interior view of a small coffee shop counter with espresso machine, menu boards, point-of-sale, and large window showing daylight and parked cars outside, conveying a bright, functional cafe space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A&C Super",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNRezXtHEixqbK6gK4S8WXTL_gTtRzNI5jbEt8_Pam4i_s5iMTaVGZw3lzQtkrJpfDCZ1x9TGIPWGRx0xJ19gOP11tPAYGwRj6Igev7kpdspyyL6cDYu0sU3xmvGpI5l4ZZTxpuSNbqH7lxKA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Two latte cups with latte art held up in the foreground; background is heavily blurred and out of focus, showing only indistinct architectural lines and a person partially visible at the bottom."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A&C Super",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOYFdTdpU2mMiaYsC-GdRAOqioXYlymYQ6xsATAW1udqoXG4OMb7bsSfV1ezewsA_KS6RG3A9D9075_3YgrYA77iax0EMGzewl86IeR2eNr9G7950eUWFezVI3wt5CoYCu4F6cwGki_wwnJ1g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a single seeded bread loaf on white parchment paper, no venue or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMF2h8JxAAfB8BY1JQXRS99zkaIjlUyVK9c6xqILzHy4XGuHUtG8b8XqyB7UH0JlwMrCcqT_odFC2XGUwpB9hs2-CfrRtPxXoMOdQ_g7WHnIcUs_2DJsJFoiz4M4Lk89sX-IcFpQhzx8p0b4w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Image is dominated by a refrigerated glass display case filled with multiple labeled whole cakes on three shelves. Background shows partial counter/coffee equipment, but the frame is filled with product. No spatial seating, dining area, or guest experience is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBnyUY5ja3s8EDycgm4P_h3N-s2xBRXh6t_t7bMJCv7m-kk2_XSkcfkVz0yjMdhmgarWYnKJ9XMyfKoCd6IBEgB6miG3de5llMovoMFT7sRaoes1G6XZLt_lLYlusPKCb0_ILUyPK_aIbz3ZvQPRtbSA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Well-lit bakery interior with a clear glass display case full of pastries, marble counter, mosaic tile floor, ceiling spotlights, and branded signage visible in the background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPBZQVmQHkECwAu8XHf_iHuGfHYbyyPI0h0ekmaDKpIqYqAF7w01rBEo9Cu3gRwtuZHSwnHS8p4JlBuLhyNk3hF0YQhirjs_5U7teVSEoLO6dtEKPeEZobZNGBmqbi2Z_XKlQwGtYSZ7ElFAlH6P6ZRgQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a single iced green drink in a branded Paris Baguette/Lavazza cup resting in a cardboard carrier; no venue space, seating, or atmosphere is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOOxDGK-kXFLNNMMxtxkfy21Z-GKR64rac5RgysLL_4lxXrFj_0o4Jpv-vx33swXnWE4Dgc_J_LwAUhZIuJbd-kkrAX-0CK6xZ5fl7uNXj3cWEN2mjNiSZkCkEExPuzLN8N36TKs1IIXH7dJnXYKlSK=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of donuts and pastries on wooden trays in a display case; food items dominate the frame with no broader venue space or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPSMqOlp_ER-eb1QIXXhRN0LzjwBxEwNV93th7N0QQlxavh8u_tNNGMQzWqTs48y7iVmd-ZWcFkl1CKQOq0ubuQBN5lFFVZWLTDkEMJq0cY_DdVp4izy99SFoVBsyKg2R4xXMr3dNKqjaSJdg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "View from inside looking out through a window at a street scene with a parked car, residential building, and a pedestrian. The bar counter and chairs in the foreground are secondary to the exterior street view, and no actual guest experience space of the venue is shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNwUZdSEkk7A7LwjqxCgzfwwMHrl_NYv0YQY0ow17ZY1oFWZgBM4niTGr2pUbpZ-AdDb1vCsz3bUcOGKs8JS8kYcRzrPq2qmipJxCeJVocJ3y5xuBnNyRARKKNe2VxFbjLa6WhhWcuKc6aek4TmpS_OlQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "m3_invalid_json",
+      "model_used": "MiniMax-M3",
+      "vision": null,
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ]
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMdphVgUVgE-tXi8ANMIn8tyoB0rmXxmuJxyewFytyBlZlT9gLAVsiivWJL8DYUXLWDgjwsVzyfhPJfRn7mkAjKkvOL4b8C6eI-6-zMoYuMpbVuSE0DwaQPEl7THkYz6h2-tBKDntiDvIP1XZo=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1316,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Close-up of a paper cup of frothy coffee on a white tiled surface; no venue space, people, or architectural context visible. Just a product shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO-5Q7Xv337ydBc-1x2vhGQusAyRnF3ZFqdU1d19KfvkfUY0O9AruU6jqJoBu6Z0KRt7r_wV0asH7sATrx_T4QFN-9bFexpL_irN-OW2CIEfdiSMu6MAkGsKmSAhdcvVPcAo1EHa8ny8TZNj96iYDHqgw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Street-level storefront exterior of Black Star Bakery & Café showing facade, signage, and small sidewalk seating with bistro tables, but the guest seating is limited to a few sidewalk chairs and the focus is on the building exterior."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPPwSN503LhPDiEZFnTrN7kLkQslEifQSRgB_k90RrPzejHmc-_B4AVK8emCUReTlrLUOkYEqSvv8CWUHrwsSJncAEP7ImHRfVVmfLdFKbtdwKuJYImaXuMCy4GIU1DH1RKVuBpOBe-BBZS=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1067,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of two frosted cupcakes with sprinkles on a plate, no venue space or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN15fLjG4T0QjOIZ0NU9V2D7fy7658O1oKkmZE7M3KIDnw82ODwynkIoRQt5Q-5Na3A78h_qtXwWFc18Xv7BX8r6JkvC3IC6wf2hfcB89eczKrKWVa3ztD1PTOF_RgZ8xnuutDfOIGovTEpNE3YVqLoUA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "industrial",
+        "visual_reason": "Interior shot of a restaurant/bar featuring exposed concrete walls, high ceilings, a marble bar with stools, wine bottle displays, marble tables with black chairs, and a small floral arrangement, conveying a modern industrial aesthetic."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPVJf1bTAVaoxL__LP6iOQH3NYm3s9X1kbHIKpcaT15Xmpt2IKFPfpGF4VoVT2oPrTWYn5oE6sFrCqy6Fpd4daRyObU90qtKTndhM7dgKN7hG4xmk_3cTmPOBwmxTdcCAjjSKhqco_YsP17qky1iw4k=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Outdoor sidewalk cafe table with latte and iced drink in foreground, sunlit urban sidewalk with pedestrians, trees, and storefronts visible beyond."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN4tvFCBFu1OvSQ5UJg3EhlANTFclyJ8Im2XUDmAYmTsNF0AUlO3hE60SwcQNa2aTYLPzvS-C_WutTmo2a07H9f66UpOYvC6-ZYInW13OdCt4Mw3fnfGlCXVFSpLwvptJgRbjnjptlVPgdDrguwB1jt7Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Close-up of two beverages (a latte with rosetta art and a matcha drink) on a marble table with a dried flower arrangement; focus is on the drinks, not the surrounding venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO0ig64L9X4p3BylSsYQZoHiCEmnAtAZTPL5RqIzCfxul6qImea3UVZo9yt_Ku9zIiGJu1hpFLALmPku2RBij00ZujcNyB-1_N6Lr2qV8z5V8MhE5tOIQA9eTjZGfRejuW6xmYWGh7s4DDvI5enqisJhw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of pastries (pretzels, croissants, almond croissants) in a bakery display case with ingredient labels; no venue space, seating, or people are visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNhwccU15ie7KcXyV4SvhAlNZBGTP3q7JJPJct_ld5Y2qjTKAMdbcGC6sWbPfgczJrv9hY4XZJBI3Eq-pCDSVtIu4otPNAkSOoGa1Gwmo8-UQkCWUXRh6_5R0Q_OyRdi1ofeGVgzYPj_5GWBVkdWZcQkg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a refrigerated display case filled with macarons, cake slices, and desserts with price labels. No people, no spatial context of the venue, focus is entirely on food products."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMcA5R_c5O8bzE6B1VccpTS6_9esILSBJoI0OtDiUHrdha7yavPCHylAc_zxmbk5Dcwk7td--5NHjrWaCLGMVcxAwQ2CiRCM5mgyM8yC1w7FMiO23qVu-jeLOTqAUZVlsz8l-PzyXSIUKz-lJc=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a slice of layered cake with caramel glaze on a gold tray, held by a hand; venue space is out of focus in the background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPu7lsM3vZw6lN3a19kVIx8ymREZERxdtNf_o-0OF5nl5Te32Dq9KlJ_HAEIm7IpOZY8iD2cPwk21mr_CgOQUlAKX-XA5dP3KuYFb3aUqZb9t1ehLsbInXPv8DsI6ZBgnjbuionPrq0EYJE=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Image focuses entirely on a display shelf of packaged baked goods (breads, pastries, waffles) with price tags and a Tous les Jours branded header, with no visible seating, counter service, or guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNXYhM5Jmtl56mu_JmLvHuwKOZ49JRRIS59AcHBz1BSIT8Kvg1zEQtx9aNNgkl9dB4QJyDW58374v6Z2XxRrGF6ScQfAgGSpiPOc60aGpLiSO79kpcf5rQsM3_lvV6UM6Df1I5mxABVea17jq4YPb7Sow=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Image shows the exterior storefront of Almondine Bakery with signage, dark double doors, brick facade, and a small stoop with railings. No interior or outdoor dining/seating is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPPBS6XEkaSW-1YJVKFBeCq3ThxBeqjIqEj3GCxLlHLHc0l34M_wJOhuaTynjp1PJiEdQd9JVWVnuB0dXg2ht8TpqOAQlvbBiboO-kyrd0OsB60NTWiV0KjdkEpkhKaRbr4ELL9ICv14M78_nw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up overhead view of food and beverages (salad in paper container, tart with raspberries, open-faced sandwich, orange juice, black coffee) on a marble tabletop. No spatial view of the venue interior is shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN61kxSOtZFsugNLywTVGgnpVWSpQINwFp1FV-c3xT8NbvW0iTQM0IO4raReKPZ6hfX7Vgn-KiCqLlipihwlJqMAZuiZYvf5a__ZUUmqpReOLitipjLsomOj2Cjs5DxB8fn2xDwqiaooNzXK9kq6FoQDg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of three pastries on plates dominates the frame; the cafe interior is only visible as a blurred background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNB87gk_n-aC2p2579AZQkqvM2LDGGbFxLMypGx8A4TLLX4vJgILTyVsoWC2yVaJ4yBDvuYdDEprM7HoDWxtElaMbOvHaIS5P9uyWERmTLFXZmdtQoLBk0-ZhDYPKJSbStw58oNCzwJ51Ujfxv5vMnLUw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a cheesecake slice with berries, whipped cream, coffee cup, and cutlery on a plate; no venue space or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Burrow",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZME2HOcaxerjzgehucsli_Yw5sFPbegaS1Vv7SiHWXQSa5V_dUv8oO2Du_KUpHS-ZFg0C-iD4YyZNZsfyNXo0vqLIx5kXrhhTh3A09vvGbYAAb3EdaFNb8hoh92l3byFASdnZMlUoO5iCkPrA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a piped cream and sponge cake on a floral plate; no venue space, people, or architectural context is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Burrow",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPzsGoYx0fKEbXhhoLut8GK4Il6SDhft2LPWn77VF14s2aJWTG66Rm6hE6F45OyEgmlPtr2mFQarOpjYA1COTpN5x73o-ccUwBRrIxsBTxduuPHL8kiLkG6eJ0HZq_7TYbbC9njSvUVKUemDvo=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of bakery counter displaying cookies, quiche, scones, and muffins with handwritten blue price tags. No venue space or atmosphere visible, only food products on marble surface."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Burrow",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMho71liYWXP_Xcq-jxByCwh8TgjNosKwyYKjWeIXNR4gc3z_raCBNj-5odApZ5ztH0SR2c_-zClJYqEYZNSHAeLq5PCCp_kysky17oFV0rz_tazvYC2jdjlcWQojwvlkVJFjJ_2Yd0xNVJcN6mqNGQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a glass display case showing cakes, coffee roll, yogurt, granola bags, and bottled drinks with handwritten price tags; product-focused, not a spatial interior view."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Burrow",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPSvxXRqY_rv6zXbsVeI3CytMheHpzcrAugv6CfUXrtha8kujHm_iR_BahGksP9wLkWNhsN5MYgD96c1YuGFE-1_s-ZUEkpB08nGo5Ulwk-6Mw_J25zpGIFAqHA6UUc2MDsl8sAJ2Ss00PR=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of wooden shelves displaying labeled baked goods (croissants, carrot cake, scones, quiche, muffins). Food products dominate the frame; only a partial view of a person in a red top is visible in the background, with no clear depiction of the venue's spatial interior."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPN3cwAjI-CD4hq5RmwScUwCwPmq5jQdRMHS2ZUAYku36Ctwng7aaZqHPcdPo7J9wiYP6dFRK2ThmaV_RvjXnnDfAW-7bsqSBPT1xToPRzAL7OZLjZFnunqc5W5J_eJsKEgJrM7rDbaXse0lnM=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of multiple trays of pastries (croissants, pain au chocolat, etc.) on a metal baking rack; no seating, no people, no room ambience visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPC510N8SYFvU176mws7jIZRyY2XsMfHBicoOJ0r2t6xynp7nvuk1nvyIm2lRbOHqswRoFro8gJylt1pY_QyBnTRIBPAboeG04r5a2nUez1DocEvFM2r-c8Lqt1nLuU8vZ-XEWp8U-acOsCOw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1131,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a single round loaf of artisan bread on a cloth; no venue interior, exterior, seating, or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP__djRlqEodVU9UQ2dgUsENdiWBco2JGk-qLi0nEpQN0F-5N4NhJpfL55TFZ1RPP5Z1hWssCANLaf3uJA9eN-ER4-bQyHUtclBRlexvsWWUFBg5zjSo8KrEfYEo4m67POye_GmSLdun2-F=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1326,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Storefront facade with gold-framed window, 'bourke street bakery' signage on glass, sidewalk view. No clear interior or guest seating space is visible; dominated by exterior architecture and reflections."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPy2vQ0ReVe3FIX46Rq7iD5qaZt5wA9kI26CFwBjwRdNZSC0WtYKP3uNI9Pryw33SILd9KlRZac7U43p_55whYjlXexrWTrgLa1u_Jky5wlCK98X4hTzjPYR0qBGKwmWcewNuIc28qe_cVtlg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a breakfast plate with eggs, bacon, salad, fruit, and bread on a wooden table; no venue space or atmosphere is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOYhhJGWth7f2SX2LKwwmCi-yWRLar4lcXJHwS0GKWdHivSVCFIX7daAG-ARysqh2z2vBuZHgnjCuK-VNNY9AWlRepxENUmozYisf_AMusSgFdueI10SLqLzMgezHqYvoEh9KjYFaX9RaDQFWU=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a pancake stack topped with berries and syrup on a white plate; the food dominates the frame with a blurred café table and coffee cup in the background, making this a product/food shot rather than a space shot."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOJPxLS6eQJV9ybRTm7dLpBCr7P5MctHOmDXY1TX9yEEPZFckGJmMCExc9NXTd9SZ7TtAAsu43yHPZRs2d8BPMWRmKKHEETz5Pa8A44TPlwCArfd3ArV1p4e0wY0ttKVtIVlPEOe82jCI4ZJg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1205,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a layered pastry slice with white icing and chocolate drizzle on a white plate, with a fork and napkin. Food-only composition with no visible venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPPha_TIyiBQKS0qcgyrmARwtR3lUblCgvJaax-4hqGdVXBXqdi9KWs72ujog14FNhpMWgbOZm6GSRorZM4ityZuhYZlqmmnuiqsviR7xjVHXktNA7Pjlhq1wE1XrZf99vrM1oQh8d2QVbqfmI=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a plated dish (croque madame with fried egg and side salad) on a ceramic plate; only partial tableware and a blurred marble surface are visible, no venue space shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOUp307smD8fIK0Aflg3We7gmOmFK2dq39vql4EA2JB2gtL_BsnMn281p3E62XTXfl5YhpYYUYNQs4eartqtUNTpOjFlVoYwvJ-oLvhQO5LkuQZWbmEv0f2alzyRQWKITMOzDJmgAReaCO6Uwc7A1Pg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_crowd",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "crowd",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "acceptable",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior café/workshop setting with multiple identifiable people (children and adults) gathered around tables doing an activity, dominating the frame. Warm lighting, decorative florals, and small lamps visible, but people fill most of the scene."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNdcwTz1H9w8axyHRygEkafFX-89WwVn2smCoOVaNZVTp3Mysd4gIStdekRRLEoqXEj_Qgk-IP2yICmn27KJGUbnixhyQjlkMfKSCUyy7SeI7yNDUJtFi7wJSC33lxfWp_YPFUkt8eFM8LyE19509eEWA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a slice of chocolate cake with white frosting, cherries, and chocolate sprinkles on a white paper plate; no venue space or context visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPwO2WvIHmgqXMIOfz5V_Uo_EMkN46BhkNIAJgRK2xdyOq6fI6Etwwobi08emz7XxGw3Dn33yO6j9nNfitW6W3SeDW9IGJLWa6-EiIaLQUhZotLsXnTzU_dVkQ-hV6jfFVaQklrdup3ilkL_BQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a lemon blueberry cake under a glass dome on a marble counter with a price/information card; focus is entirely on the product, not the venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBwrYtfUoh9bGKk05t2Agq65G0ubwObxrmcywaE31HS7YRCkxzpfmjSIY4auCcrfyIgLdSXTPhg1rGb2co3cp1oEyr4aA03Fz9XQ9msxiM4DbP0ID-1n0GYjIqeluDTpFi8K7vHSn293paFcE6eqBgCg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a glass display case filled with pastries (croissants, quiches, danishes) with small price labels; product-focused with some background kitchen context but no clear view of the seating or guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "maman",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1347,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Interior cafe space with a prominent beverage refrigerator, abundant greenery and white roses overhead, bistro seating, and decorative rose wall mural."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "maman",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgJ5uV511RCWXikf2zjre-_OXkrc7l6s924sdWOYouLXoijff5GIGRLioa8KkiQep7g1xwQ98DRCtMSsYCP7ViSPsr34uNmsxzkC8RyhFaZjcon3lbkmD1Q3x34xKyi6NzV0waR1Cheiq7TSHfoSXdew=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Bright, airy interior of a café with abundant hanging greenery, white floral garlands, rustic wooden tables, a service counter, menu boards, and tiled flooring, conveying a lush garden-inspired atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "maman",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOXU2-xgAGCz92_xu0aGS6vjoOss7y15oMnXTdMFRLUjzQj72HZ71UlR9wONAVpHjzgQebtEegohhzLZy8IQ0hTbs1E6bwVkOrSKLkGUwf9TD86i1tiLm5c0DNNnbaXPRFIUTdJkCZh9Jigc6Bky-T0kg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of cinnamon rolls and cappuccinos on a white table; food and tableware dominate the frame with no spatial context of the venue."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "maman",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMZW5lY8V4RDhTcPIrBBf7bFaaS9i7yb5j2-uPVmquedj_WDXrWHzDUPx72uJO0mxcj8tLCmFhCVPbvJpTLonMJdpznMm4oLYC2Iv4mO7GsZvtt9AHC74T8knX7ji0wojrYlcZV93RBDnJV=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Interior view of a bar/coffee shop featuring a stocked glass-door refrigerator with bottled drinks, abundant greenery and white roses cascading from above, a branded tote bag, and warm wooden accents creating an inviting, lush atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPWbBZgny1Tc4COCBxj7PtxayDLqDVaglWMVZ2Eq6QmZSUW819aJW8bYgKQBTJz5oX-UsLnkWKGB-DWToG9o13968eGDBx2dIZoCUCMZdj_QOPr8jbpyvUdMD8tZSXvJimZJ1wR_BG7A3iD=s4800-w1600-h1363",
+      "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1065,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of assorted coated/confectionery balls in boxes, no venue space or people visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOczeaeVq7Kcq5rSsXuW6T3jLwn9PVtFGqfYPEi4e85245ID9MPnV15gAela7UBx8qtdF8f9hMI13q79_BTnofbbMXH5tiyWz6sAxo-oo6vTcCmP2yI74i2FNrpcM2iPC-9wGc2odZJ6R9DapKPxFU7dA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Bright bakery/cafe interior with display counter of pastries and waffles, large street-facing window, marble counter, and glimpse of staff — clear venue atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPQQUUS2zKGrBv8KS4dL2xf3Lv2Bksg_uWVitqnzNyEy7oZPTTKcczxvfAqT3YrLGqyPmRqgfT-6ohPpvrfAaWVvE_O7qIqH7q2dFRHXu_ej7txdmp9wsDHDUC1Sla0A4pIbiIRRzdlnwXrsQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of dessert displays (Incroyable and Indispensable pastries) on a marble counter with price labels; no seating, no spatial atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfSiLq4DziJKOX-c6L_MLPf_GTIFXMVwLgZ4JaiFuLXEJFAnW5K51LVWLCP10F7mg52KGytx3XWXtutmQP3WPS-j5UDENuEVNHxU5CjknLwiBpqVUtyWHyqLiO1KtWbj1MyB7_CrKVPWlDh4QPhUkFyw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of a wooden board with smoked salmon toast, a fruit/raisin cake slice, and a chocolate croissant dominates the foreground. Background shows a blurred interior with chandelier and staircase, but the focus is on the food items."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOnHlyW4fOfb_qSkOEiWLh7sTPmBCg7ZgOa3QpOKuPs35vyUeZLGbgQTYLZB8Go3TDt72KBkrSxEIegv6lNYnND4tScpVdYN-4D4K4QWOvvMk03gUzT_qvUUQNancHONxT4Sf3EnAsbBuuA_ja6cq7ZoQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Storefront exterior with 'Pura Vida Miami' signage, glass entrance, sidewalk, stanchions with rope, A-frame sandwich board, and potted plants. No interior seating or guest experience space is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPVHsNG4g9zjd3gf2VWnT9ZtwZCX3Lgc-LrelwDPMuIY6Oe4lDFsNq7g7Yp1DJkZlTQlnsROyaA6LIc3Hl0JL5yFYv-PRXHu-fNwyjv6N6Ab7hFkihVQ-Rz7VuY_kVC8MGJVaZQJVyOeFIaj8ePwkoSNg=s4800-w1600-h1125",
+      "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 900,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Image is a tightly framed overhead shot of plated food and drinks on a wooden table; no venue interior, seating area, or architectural space is visible beyond the table surface and blurred chair backs."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMbshrwHUkT4qSxb-vZHGsF_nI_FYp57RvfbHT6CxIdxOPsEJLsOFLZsPRpuyXTAgVGcI_1TzmdIgWFadXkKwWkJ4mHsQtw2zUNU5AWVS_clwa_zl7VUMKIijAKjKuOD9D5_uiwu2sJw01NFyqpaAr1jg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Wide interior shot of a bright café with white-painted brick, exposed beams, woven pendant lights, lush hanging greenery, bistro seating with diners, and a glass pastry display case in the foreground."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMrZpepiXjz-sfGHRXHlD3_bs1CVxoUU1HdWUAxDOMza4AH-lpbzZvTVIKzNfmrpZI6bIbJpcF7Sz1F5BN0zDqOtJgIfO5GaxNspNp1NY4Q9g2zTCZjL9JkGERS2DAVpZHXrTDx0Z3Cm80v9FPcVFKyEw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Close-up of an everything bagel sandwich with egg, tomato, avocado, and arugula on a plate with mustard and a branded cup; no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPN0rvMbAgCs_iR1xbTGB1YVNTypAmmjdiwx2gXgWVtSKN-q6pah3_D9wCX23hFtzEs6gMeU8TFnAuiHhX1czs24d84_2g34KMW8nykRBTt5YkU0HEQufk8e4XAndalzTGzJ19oPSCTratDgtkuAFw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a swirled, golden-brown pastry on white parchment paper atop a wooden surface; no venue interior, people, or spatial context is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOOTwXW4VmaehcYtOtb6Riwd1X-Ef7REA46EKl14V52trUgrCLZt8EPbhYkQuXGcqHWtb0XDvSgqg_5exzzU8snMxxaEMJvGmOEkYwEGVLcxCPOF2mxt0UOoB56wdOSVhTqHuHj0kFvAjgOZA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1317,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Exterior street-level view of a storefront with a person standing in the doorway; no visible guest seating, dining, or bar experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN8AJJHq6OGf13Yy2NRMFA9zdaVd3xyIy9HRXyt_O91vFXt6MlrXPyWDRE9DkQFzs26ZFhABU8UTpq3MA0vM5rMVwMTpl-0bzBtHSH1nJKEQhYSDI12pLOnLqhveddgH4q-p7iZ_-t84q_RLxuY63cMWg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a hand holding a laminated pastry with raisins against a plain white brick wall; no venue space, seating, or interior details visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCIXepgRVD66zR6gZvxbs91tXk0f_oF4qoxqhEg7Rjjt1zlsjcy9agMC8pkc-isAtcryikJgwyi080TUMG3DjcII15Yq2QDg7iAUmpzVN6x0k6MdQcOjxhKugV3KPKecBqJFIAQIU9LvkomDlDNAby=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "industrial",
+        "visual_reason": "Clear interior showing brick service counter, wooden table, espresso equipment, bread shelves, and tin ceiling with exposed conduit lighting."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "resolved_image_url": "https://images.squarespace-cdn.com/content/v1/5a7b32ea64b05f5b71fb566d/1538154772067-7UR1SAZUTGZ5VG52YQ8N/Sausage-Roll.jpg",
+      "source_url": "http://www.bourkestreetbakery.com/",
+      "source_type": "official_website",
+      "width": 2500,
+      "height": 1462,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Overhead shot of multiple golden-brown poppy seed pastry rolls arranged in rows on a parchment-lined baking sheet. No venue space, people, or atmosphere is visible; this is a food/product-only image."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM7MwObrLW0I6mPr98bAJKE5BgP9MB-Bu62UapSyF-e_11AzC2JorLmO8zWoNaq6zCrxvrq70FzUbgojrkwS6C4UguY4rK8l8p7gPrknqfW9eL0JVuVKgHFMrKYo5ywlqjNSjZZ56ALQ6LMnmM9Xnhx3w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Clear storefront exterior with prominent 'YANNI'S COFFEE' signage, large display windows, and entrance door. Interior is visible through the glass but the primary subject is the building facade, not a guest experience space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNvljz9rYDo_9wXzftnFqpaqc_gqpEWm_fk1HXGiuwJA9PrLTbAI_TV0N79mXmFPTniJh5hpiI76zBwzdEJATpK-caS0NHgYd4gkq_eABbbUQWEbyvE88krCL97OpbuxqW35B_5zPEzmpIlB5LC2aKaug=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a branded 'YANNIS COFFEE' cup on a wooden surface; venue interior/exterior context is out of focus in the background and not the subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM3atPo3EGYH20vSkoctO69YdaAJXeHDB2ghskl8JCw3WbTcDVl-OUSNm-DlwZjJ605l4WCsIcFaVo2x5E7v6X17uULPPURkkF-s55OnjNGYILDM3WbzXpjPNXyk8A6dzhlMbwpivJerL9ATVcsT7qjrw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Two Yanni's Coffee cups and two cookies on a window ledge; food and drink products dominate the frame with the street visible only as a blurred background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6hwdpMeeDmjufljROsWa_VK08h_8uuIjxiFol9l6YYBsaaldNAwINMz16h5RN0cX5JWRub3Ym5AbEOlnXk6_xU9QVzj8OV7ctli_Ls3urT_Tsx27Z6Eyof_wiInuvRjQFFapiu25HcpGvHQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_decorative",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "decorative",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Close-up of a decorative rill water feature lined with pumpkins, gourds, topiary boxwoods, and mulch, with no seating or guest experience visible in focus."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqWJ1f9Vr77lhu8ZSHg9MaaVYE0P9HspEHNLa4bQHinDoSrQGuQyrJ8jIJFLm-u4KbaM73IeJ9vcfQTCKmdNr4z60TAmigx_GMvP5rVXK5cjUoMH9B-_PmjH3Wrim1HBkLUnKSbnQxuf3kupU7zfRXGQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Outdoor courtyard/sidewalk dining area with bistro tables, chairs, large umbrellas, string lights, greenery, and a vintage red double-decker bus against a brick building facade."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPOqDe5mdwiNLx2JvfUk_QFRWlVZyFOL3M-T4xp1eopI_ruNedd6HuZcwnj17n6v_35zKtZD2BMThvntrHC12utStEmj-DlSK6bUDfwXR2xKlR1P_mH0JdjI8EMv99toLExLJw2J8zoidN335--jbdw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Red double-decker bus branded 'THE HIGH LINE HOTEL' and 'Intelligentsia' serves as a clear exterior landmark/facade feature, with outdoor tables and chairs in front but the dominant subject is the branded bus exterior rather than a seating experience."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPoxOFTAitcfHvvzjQS1oYrSel4hCEF9vvRVBrOTj4MWa8r5u8h2xQDC_SRbVuTpGEF35KO0HowbKb9oB-Lpsoupg_3vvWj3ggR0QflAA6zgoGIpVfX4WxzV3NHExXgLAUlO8TTaigz2gOIQt0XMxBl=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear view of a warm, cozy cafe interior featuring a decorative tiled bar with espresso equipment, exposed brick walls, mounted taxidermy, framed artwork, and leather seating stools."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNLXzUSkO3IlP9LScEj5R1DDwVQjzjRCMmsedbI2Xz7cpIOjkMCvlI9OJVpCG20pRJoUWsBSKSfifHBW0WDiRgdQAFmVj2jsOi9lneG95VlXKGh9EjEfGNwYPGvVmeRckuRup1XcodJj2dZsJg5TIbU=s4800-w1536-h1600",
+      "source_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a branded hot beverage in a paper cup with a gingerbread cookie garnish, sitting on a wooden surface. No venue space, seating, or interior context is visible; only the product and a blurred window background."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZObDD_nMIp16sY_p23H9P1hGALtCpKBC_OhnZw2UQL2GUYxyTOIbTJ9Seyzd38haRETq4bgMtiJYXO0o5pjl-fHhw13iouEGBO6wqPiGCHg44nDVRFv8_HHJ3TckSYDCXGVh-GswIIxDZBmtDPdDAquKA=s4800-w1536-h1600",
+      "source_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a layered green matcha/strawberry drink in a branded cup on a wooden surface against a brick wall; no space or seating visible, only the product."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFRmudyf8HJViCW1Jo61gxVrV_AtDXc80lue7He7OpR23M1Xft3aDfzSmYGMIFaf6xuDs_wzXpdrvxeiz36LK6BRlMCW2_fLUJ-Y3n2BuYwqOEGXoG2JJNXz6kstKd9_gnuC2ucuKq3-Fq6ylscJLR=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Interior of a small coffee shop with white-painted brick walls, wooden counter, bar stools, red pendant lights, menu boards, and wood flooring creating a warm, cozy atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2jGTXIAcBj-MCXXVg-b9Pk5VctyBDwkflDkUlAq84Ffg1X1-6qYcBpg5YyjTDYNxPd6VTcJy6YI123nh7yaZXdAytItF5A_aljKPOHoZJ1WIT7WBfIhCigbtcXxpEdm-ymrdNQz3G4UqqM-qYYsb0=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Clear interior of a coffee shop showing wooden bar, espresso machine, globe pendant lights, shelved retail goods, and a seated customer, conveying a warm, inviting café atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP6HJ6dV65fTtswD2EIRTd9VTh9wKQdtKo5UUh7w6KvnazIBfjOYNdithq7Yjk2gApWreG7b3vWrUO6MjG9pIDq3XPNRXoM8mI6mo2pNgPdEZHLyaRu5aNAaxxejB6tH2TeSSwDMOEf21yIzoG8yYCV=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit interior showing a wooden coffee bar counter with espresso machine, menu board, display case with pastries, plants, and decorative shelving. Person behind counter is partially visible but not the focus. Warm wood tones and natural light create a cozy cafe atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "resolved_image_url": "https://cdn.builder.io/api/v1/image/assets%2F9b6836fa3ba643fe8fff0164397e2c60%2Fe269757470c24fdc90ec313f3d244249?width=1985",
+      "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+      "source_type": "official_website",
+      "width": 1985,
+      "height": 1172,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Street-level view of a storefront facade with large windows, an entrance vestibule, parked bicycles, and a car. The interior seating and counter are visible only through reflections and partially obscured glass; no clear guest experience space is shown."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "resolved_image_url": "https://lh3.googleusercontent.com/sitesv/AA5AbUDQmHOvBxTg3cJZA5toH5ePNokITBjyssiGa9F-ESklS6Zve6eGTarSsfa2cVdFzumzoGzQviG9DSiaiLPj4UPUTI3UmH1Eus7L7gwC_G9ahUtyjI0pwX5Cg2ZX3tzP13YumI9aDtixaiJwcQTSwgS0RRg3dmbVcGwHflUKA-c_PdE3r50nPnCHSNe2qaM=w1280",
+      "source_url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+      "source_type": "official_website",
+      "width": 1280,
+      "height": 1920,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_menu",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "menu",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Image is a text-based drinks menu with prices and add-ons on a plain light background; no venue space, people, or environment depicted."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "resolved_image_url": "https://cdn.builder.io/api/v1/image/assets%2F9b6836fa3ba643fe8fff0164397e2c60%2F1a302308481d49a784cf1f509df832ba?width=623",
+      "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+      "source_type": "official_website",
+      "width": 623,
+      "height": 1246,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_hero_exterior",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_exterior",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Street-level exterior view of a storefront with large windows, bicycles parked on the sidewalk, and a bicycle lane. The interior is visible but partially obscured by reflections of parked cars and pedestrians, making the exterior facade the dominant subject rather than a clear interior or experiential outdoor dining space."
+      },
+      "risk_flags": [
+        "preferred_resolution",
+        "product_only"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    }
+  ]
+}

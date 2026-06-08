@@ -1,0 +1,540 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T03:16:44.461Z",
+  "minimax_called": true,
+  "model_used": "MiniMax-M2.7",
+  "venues_processed": 12,
+  "successful_generations": 12,
+  "failed_generations": 0,
+  "invalid_json_count": 0,
+  "mood_distribution": {
+    "warm": 9,
+    "romantic": 4,
+    "intimate": 10,
+    "hidden_gem": 3,
+    "refined": 6,
+    "quiet": 3,
+    "date_night": 8,
+    "late_night": 7,
+    "social": 4,
+    "outdoor": 1,
+    "cinematic": 1,
+    "creative": 1
+  },
+  "evidence_confidence_distribution": {
+    "low": 0,
+    "medium": 0,
+    "high": 12
+  },
+  "status_counts_after_scoring": {
+    "input": 12,
+    "ready_for_db_staging": 0,
+    "auto_staged": 3,
+    "needs_review": 4,
+    "blocked": 5,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "remaining_blockers_by_venue": {
+    "Maison Provence Restaurant": [],
+    "Woodhul Wine Bar": [
+      "no_hero_image"
+    ],
+    "Pinkerton Wine Bar": [
+      "no_hero_image"
+    ],
+    "With Others": [],
+    "Olympia": [],
+    "Black Mountain Wine House": [
+      "no_hero_image"
+    ],
+    "Anaïs": [],
+    "Balvanera": [],
+    "Brick Wine Bar": [],
+    "Somm Time": [
+      "no_hero_image"
+    ],
+    "Jadis": [
+      "no_hero_image"
+    ],
+    "Ainslie Bowery": []
+  },
+  "results": [
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A cozy French bistro with a lush, plant-filled interior in the heart of Williams",
+        "description_short": "Maison Provence offers a charming Provençal-inspired bar experience in Williamsburg, featuring a lush, plant-filled interior with warm lighting and eclectic decor. The venue holds a perfect 5-star rating across 755 reviews, serving as a cozy daytime and evening retreat.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "hidden_gem",
+          "refined"
+        ],
+        "moments": [
+          "Romantic date nights with French-inspired small plates",
+          "Weekend brunches in a lush, cozy setting",
+          "Evening cocktails in an intimate bistro atmosphere",
+          "Quiet conversations over curated drinks",
+          "Discovering a charming neighborhood gem"
+        ],
+        "best_for": [
+          "Romantic evenings",
+          "Cozy gatherings",
+          "Weekend brunch",
+          "Neighborhood discovery",
+          "Intimate dates"
+        ],
+        "not_for": [
+          "Large group events",
+          "Loud social gatherings",
+          "Work meetings"
+        ],
+        "primary_atmosphere": "A charming, plant-filled French bistro with warm lighting, creating a cozy and intimate retreat.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in venue's perfect 5-star rating with 755 reviews, the name's Provençal reference, and high-quality image showing a lush, warm interior with blue-and-white awning, eclectic shelves, and distressed white chairs. Hours confirm afternoon/evening availability consistent with intimate bar atmosphere.",
+        "grounded_description": "Maison Provence presents a charming French bistro aesthetic with its plant-filled interior, blue-and-white striped awning, and warm lighting. The eclectic shelves and cozy distressed wooden chairs create an intimate, refined atmosphere in the heart of Williamsburg."
+      }
+    },
+    {
+      "venue_name": "Woodhul Wine Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Evening wine and low lights on Driggs Ave",
+        "description_short": "Woodhul Wine Bar is a neighborhood wine spot in Williamsburg with a 4.5-star rating from 232 reviews. The evening-focused bar draws locals for quiet pours and late-night conversations.",
+        "mood_tags": [
+          "intimate",
+          "quiet",
+          "romantic",
+          "warm",
+          "date_night"
+        ],
+        "moments": [
+          "weeknight wine wind-down",
+          "quiet date night",
+          "catching up with a friend",
+          "solo evening with a glass",
+          "pre-dinner drink"
+        ],
+        "best_for": [
+          "wine lovers",
+          "quiet conversations",
+          "neighborhood feel",
+          "late evening drinks"
+        ],
+        "not_for": [
+          "large groups",
+          "lively nightlife seekers"
+        ],
+        "primary_atmosphere": "An intimate, low-key wine bar with a neighborhood feel—dimly lit evenings and a focus on relaxed pours rather than spectacle.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.7,
+        "editorial_notes": "Metadata is grounded in operational venue data: 4.5 rating with 232 reviews, evening-only hours, and wine bar category. No image vision was provided, so visual atmosphere claims are avoided and mood confidence is reduced accordingly.",
+        "grounded_description": "Woodhul Wine Bar draws Williamsburg locals to Driggs Ave for evening wine in a low-key setting. With a 4.5 rating from 232 reviews and late-night hours, it functions as a reliable neighborhood spot for relaxed nights out."
+      }
+    },
+    {
+      "venue_name": "Pinkerton Wine Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A quiet corner for wine in Williamsburg",
+        "description_short": "Pinkerton Wine Bar offers an intimate evening venue in the heart of Williamsburg, drawing wine lovers with its focused selection and subdued, welcoming atmosphere. The bar's evening-forward hours and weekend late-night schedule make it a go-to for relaxed conversations over carefully curated wines.",
+        "mood_tags": [
+          "intimate",
+          "quiet",
+          "date_night",
+          "late_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "After-work wine wind-down",
+          "Casual date night",
+          "Intimate conversation with friends",
+          "Weekend evening out",
+          "Low-key gatherings"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Quiet conversations",
+          "Date nights",
+          "Relaxed evenings",
+          "Hidden gem seekers"
+        ],
+        "not_for": [
+          "Large groups",
+          "High-energy nightlife",
+          "Sports viewing"
+        ],
+        "primary_atmosphere": "Intimate wine-focused bar with a subdued, welcoming vibe rooted in evening hours and Williamsburg's creative neighborhood energy.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.65,
+        "editorial_notes": "Grounded in 308 reviews with a 4.5 rating, wine bar category, and evening/late-night hours. No image vision data available, so visual atmosphere claims are avoided. No awards, pricing, or menu specifics provided—claims about wine selection depth are limited to category inference. Weekend late-night hours (Fri/Sat until 1am) and evening-focused schedule (4pm start Mon-Thu) support intimate and late-night mood tags.",
+        "grounded_description": "Pinkerton Wine Bar occupies a quiet corner of Williamsburg with a 4.5-star reputation built over 308 reviews. The bar opens in the evening and runs late on weekends, creating space for unhurried wine-focused conversations rather than high-energy nightlife."
+      }
+    },
+    {
+      "venue_name": "With Others",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A warm corner bar in Williamsburg for lingering over drinks",
+        "description_short": "With Others is a cozy bar in the heart of Williamsburg where the curved white bar counter and warm wall sconces set a welcoming tone. The space balances intimate seating with a social atmosphere, drawing locals for evening drinks and conversation.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "social",
+          "late_night"
+        ],
+        "moments": [
+          "Evening drinks with friends",
+          "A relaxed date night",
+          "Unwinding after work",
+          "Casual weekend hangs"
+        ],
+        "best_for": [
+          "Social drinking",
+          "Date nights",
+          "Late-night conversations",
+          "Cozy gatherings"
+        ],
+        "not_for": [
+          "Large noisy groups",
+          "Daytime daytime dining"
+        ],
+        "primary_atmosphere": "A warm, intimate bar with a curved white bar counter, soft lighting from wall sconces, and ambient candlelight that creates a cozy, welcoming space for evening socializing.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.9,
+        "editorial_notes": "4.7-star rating from 187 reviews supports strong venue reputation. Evening-focused hours align well with the intimate, late-night mood. The curated image confirms the warm, cozy aesthetic with clear visual evidence of the bar counter, lighting, and overall atmosphere.",
+        "grounded_description": "The interior features a curved white bar counter as the focal point, flanked by warm wall sconces and ambient candles that create soft lighting throughout. Acoustic ceiling panels and a ceiling fan add to the comfortable, lived-in feel, while patrons seated at the bar and in booths suggest a lively but not overwhelming social energy."
+      },
+      "retried_at": "2026-06-08T03:16:44.460Z"
+    },
+    {
+      "venue_name": "Olympia",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "An intimate wine bar in DUMBO with warm candlelit ambiance",
+        "description_short": "Olympia is a cozy wine bar tucked into DUMBO's waterfront area, offering an intimate setting with a warm curved wooden bar, candlelight, and curated wine selections in a relaxed evening atmosphere.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "date_night"
+        ],
+        "moments": [
+          "Late afternoon wine unwind",
+          "Evening date night",
+          "Intimate catch-up with a friend",
+          "Casual celebration",
+          "Quiet solo evening"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Couples seeking romance",
+          "Quiet conversation",
+          "After-work drinks",
+          "Intimate gatherings"
+        ],
+        "not_for": [
+          "Large groups",
+          "Late-night party scenes",
+          "Budget-conscious drinkers"
+        ],
+        "primary_atmosphere": "Warm, intimate wine bar with candlelit ambiance and curved wooden bar",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Metadata grounded in venue's wine bar category, DUMBO location, operational hours (4:30-11 PM), and visual atmosphere from selected image showing warm cozy interior with candles, wooden bar, and cushioned seating. No invented awards, prices, or booking claims.",
+        "grounded_description": "Olympia occupies a warm, inviting space in DUMBO with a curved wooden bar, pendant lighting, and candlelight casting a soft glow across yellow-cushioned stools and a back bar lined with bottles."
+      }
+    },
+    {
+      "venue_name": "Black Mountain Wine House",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "DUMBO's low-key wine refuge for relaxed evenings",
+        "description_short": "A neighborhood wine bar on Union Street drawing DUMBO locals with a solid 4.7-star rating. Opens mid-afternoon through late evening, catering to relaxed wine-focused gatherings.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "After-work decompression",
+          "Weekend wine wind-down",
+          "Casual date night",
+          "Small group catch-up",
+          "Pre-dinner aperitivo"
+        ],
+        "best_for": [
+          "Wine curious",
+          "Neighborhood regulars",
+          "Low-key dates",
+          "Small gatherings",
+          "Evening unwinding"
+        ],
+        "not_for": [
+          "Early daytime visits",
+          "Large groups",
+          "Working remotely"
+        ],
+        "primary_atmosphere": "A neighborhood wine bar with warm, intimate vibes in the creative DUMBO enclave. Evening-focused hours create a natural decompression rhythm for locals.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.45,
+        "editorial_notes": "Grounded in venue name indicating wine focus, 4.7-star rating with 521 reviews confirming quality, evening-only hours (3pm+) shaping late-night atmosphere, and DUMBO neighborhood context providing creative/intimate cultural association. No image data available, so mood confidence intentionally lowered and visual claims avoided.",
+        "grounded_description": "Wine-focused bar located on Union Street in DUMBO with consistently high ratings. Opens from mid-afternoon on weekdays and 1pm on weekends, serving the neighborhood through late evening with a focused wine program."
+      }
+    },
+    {
+      "venue_name": "Anaïs",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A neighborhood wine bar with warm light and curated bottles",
+        "description_short": "Anaïs is a neighborhood wine bar in Brooklyn with a warm interior featuring tall wine shelving, candlelit high-top tables, and large street-facing windows. Open daily from morning to late night, it offers a curated wine selection in an intimate setting.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "date_night",
+          "refined",
+          "quiet"
+        ],
+        "moments": [
+          "Weekday evening unwind",
+          "Casual date night",
+          "Wine tasting with friends",
+          "Solo afternoon with a book and glass",
+          "Pre-dinner drinks"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Casual dates",
+          "Neighborhood locals",
+          "Weekday evenings",
+          "Low-key gatherings"
+        ],
+        "not_for": [
+          "Large groups",
+          "High-energy nightlife",
+          "Budget-conscious"
+        ],
+        "primary_atmosphere": "Warm, intimate wine bar with candlelit tables and curated wine selection",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in wine bar interior with warm pendant lighting, candlelit tables, and tall wine shelving visible in hero image. Neighborhood setting in Brooklyn confirmed by address. Hours and operational status from venue data.",
+        "grounded_description": "Anaïs is a neighborhood wine bar in Brooklyn with a warm interior featuring tall wine shelving, candlelit high-top tables, and large street-facing windows. Open daily from morning to late night, it offers a curated wine selection in an intimate setting."
+      }
+    },
+    {
+      "venue_name": "Balvanera",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A Lower East Side patio with exposed brick, murals, and string lights",
+        "description_short": "Balvanera is a Lower East Side bar with an outdoor sidewalk patio, industrial atmosphere, and creative mural-adorned walls. The space offers metal bistro chairs and wooden tables under string lighting for relaxed evening gatherings.",
+        "mood_tags": [
+          "outdoor",
+          "cinematic",
+          "social",
+          "late_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Weekend brunch on the patio",
+          "Evening cocktails under the mural",
+          "Casual meetups with friends",
+          "Late-week unwinding",
+          "Pre-dinner drinks in the open air"
+        ],
+        "best_for": [
+          "Outdoor dining",
+          "Casual socializing",
+          "Creative atmosphere",
+          "Relaxed evenings",
+          "Weekend hangs"
+        ],
+        "not_for": [
+          "Remote work",
+          "Business meetings",
+          "Quiet focus time"
+        ],
+        "primary_atmosphere": "Industrial-meets-warm outdoor patio with exposed brick, large mural, string lighting, and metal bistro chairs set among planters in the Lower East Side.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in high-confidence venue data (4.7 rating, 809 reviews) and image vision showing outdoor patio with industrial atmosphere. Hours confirm evening and late-night operation. No invented claims—patio, mural, string lighting, and exposed brick all visible in selected image. Lower East Side location adds cultural context.",
+        "grounded_description": "Balvanera anchors the Lower East Side with a sidewalk patio framed by exposed brick, a bold mural, and soft string lighting overhead. Metal bistro chairs and wooden tables create an unpretentious yet atmospheric setting for evening drinks and weekend brunches."
+      }
+    },
+    {
+      "venue_name": "Brick Wine Bar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A perfectly-rated wine bar in the Lower East Side with warm, candlelit evenings.",
+        "description_short": "A cozy wine bar on Clinton Street with shelves of bottles and an intimate, candlelit interior. Opens at 5pm for evening-focused gatherings.",
+        "mood_tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "date_night",
+          "romantic"
+        ],
+        "moments": [
+          "After-work wine unwind",
+          "Date night out",
+          "Catching up with close friends",
+          "Special evening occasions",
+          "Late-night wine on weekends"
+        ],
+        "best_for": [
+          "Wine lovers",
+          "Intimate conversations",
+          "Romantic evenings",
+          "Small gatherings",
+          "Evening ambiance seekers"
+        ],
+        "not_for": [
+          "Daytime hangs",
+          "Large groups",
+          "Budget-conscious outings"
+        ],
+        "primary_atmosphere": "Warm, candlelit wine bar with refined character and intimate seating vibes",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in image vision showing warm-cozy interior with wine bottles, hanging glassware, and candles. Perfect 5-star rating from 122 reviews supports refined quality. Evening-only hours (5pm onwards) confirm nighttime-focused positioning. No awards or 50 Best claims present.",
+        "grounded_description": "Brick Wine Bar occupies a candlelit space on Clinton Street in the Lower East Side, featuring wine bottles lining the shelves and an intimate bar setup. The cozy interior, highlighted by hanging glassware and warm lighting, creates a refined setting for evening wine experiences."
+      }
+    },
+    {
+      "venue_name": "Somm Time",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Intimate wine bar in the Lower East Side for discerning palates",
+        "description_short": "Somm Time brings wine-focused sophistication to the Lower East Side, offering a refined evening experience with extended hours on weekends. A 4.9-star rated spot attracting those seeking quality over quantity.",
+        "mood_tags": [
+          "intimate",
+          "refined",
+          "romantic",
+          "date_night",
+          "late_night"
+        ],
+        "moments": [
+          "After-work wind-down",
+          "Low-key date night",
+          "Wine exploration with friends",
+          "Late-night conversation",
+          "Celebrating special occasions"
+        ],
+        "best_for": [
+          "Wine enthusiasts",
+          "Couples seeking quiet ambiance",
+          "Lower East Side exploration",
+          "Late-night watering hole",
+          "Discerning sipper"
+        ],
+        "not_for": [
+          "Large groups",
+          "Daytime visits",
+          "Budget-conscious"
+        ],
+        "primary_atmosphere": "A cozy, wine-forward bar that transforms the LES energy into something more hushed and sophisticated—perfect for savoring rather than rushing.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in venue category (wine bar/somm suggests wine expertise), 4.9 rating with 123 reviews indicates quality perception, evening-only hours and 2AM weekend closing align with late-night and date-night tags. No image vision data available, so mood confidence lowered and visual claims avoided. No invented details about wine selection, staff credentials, or awards.",
+        "grounded_description": "This Lower East Side wine bar operates evening hours starting at 4PM, drawing a crowd seeking a more considered drinking experience. The consistently high rating suggests attentive service and a curated approach, with extended weekend hours until 2AM accommodating those who linger."
+      }
+    },
+    {
+      "venue_name": "Jadis",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "An evening retreat on the Lower East Side",
+        "description_short": "Jadis is a neighborhood bar on Rivington Street drawing locals with evening hours and a solid 4.6-star reputation. The space caters to those seeking a relaxed night out in the heart of the Lower East Side.",
+        "mood_tags": [
+          "intimate",
+          "warm",
+          "late_night",
+          "date_night",
+          "social"
+        ],
+        "moments": [
+          "Post-work wind-down",
+          "Casual date night",
+          "Low-key drinks with friends",
+          "Solo evening out"
+        ],
+        "best_for": [
+          "Evening cocktails",
+          "Unhurried conversation",
+          "Local nightlife",
+          "Relaxed socializing"
+        ],
+        "not_for": [],
+        "primary_atmosphere": "A neighborhood bar with evening hours in the Lower East Side",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in available operational data: location, hours, rating, and review count. No image vision data was present, so visual atmosphere claims were avoided and mood confidence is reduced accordingly. No menu, pricing, or interior description data was available, so no specific atmosphere claims were invented.",
+        "grounded_description": "Operating since at least 2008 in the Lower East Side, Jadis attracts locals with its evening hours running from 5pm through late night on weekends. The bar's 4.6 rating from 405 reviews suggests a reliable neighborhood staple for casual evenings."
+      }
+    },
+    {
+      "venue_name": "Ainslie Bowery",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A lush Bowery bar with communal tables, brick arches, and hanging greenery",
+        "description_short": "A welcoming bar on Bowery featuring long communal wooden tables beneath exposed brick arches, framed by hanging greenery and stylized artwork. Natural light filters through side windows while string lights add warmth after dark.",
+        "mood_tags": [
+          "warm",
+          "social",
+          "late_night",
+          "creative"
+        ],
+        "moments": [
+          "after-work drinks",
+          "weekend gatherings",
+          "late-night outings with friends",
+          "casual group hangouts"
+        ],
+        "best_for": [
+          "group hangs",
+          "late-night drinking",
+          "socializing",
+          "weekend vibes"
+        ],
+        "not_for": [
+          "quiet solo work",
+          "intimate dates",
+          "early morning visits"
+        ],
+        "primary_atmosphere": "Lush and social with warm brick-and-wood interiors",
+        "evidence_confidence": 0.9,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing communal wooden tables, brick arches, hanging greenery, string lights, stylized artwork, and bar with bottle display. Venue hours confirm late-night operation Fri-Sat. Bowery location and 4.4 rating from 508 reviews provide contextual support.",
+        "grounded_description": "A welcoming bar on Bowery featuring long communal wooden tables beneath exposed brick arches, framed by hanging greenery and stylized artwork. Natural light filters through side windows while string lights add warmth after dark."
+      }
+    }
+  ],
+  "retry_summary": {
+    "generated_at": "2026-06-08T03:16:44.461Z",
+    "retry_venues": [
+      "With Others"
+    ],
+    "minimax_calls_made": 1,
+    "retry_successes": 1,
+    "retry_failures": 0
+  }
+}

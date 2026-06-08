@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Batch Review - batch_006_nyc_rooftop</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0f10;
+      --panel: #171a1c;
+      --panel-soft: #202427;
+      --border: #343a3f;
+      --text: #f1eee7;
+      --muted: #a7a097;
+      --gold: #c8a96a;
+      --green: #74b892;
+      --red: #d97b73;
+      --blue: #7ba7d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header, main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--border); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 24px; font-weight: 650; }
+    h2 { margin: 36px 0 16px; font-size: 18px; }
+    h3 { font-size: 15px; }
+    .muted { color: var(--muted); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat, .card, .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat { padding: 16px; }
+    .stat strong { display: block; margin-top: 6px; font-size: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card { overflow: hidden; }
+    .image {
+      height: 150px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-body { padding: 14px; display: grid; gap: 8px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .badge.ready_for_db_staging { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.auto_staged { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.needs_review { color: var(--gold); border-color: rgba(200, 169, 106, .5); }
+    .badge.blocked { color: var(--red); border-color: rgba(217, 123, 115, .5); }
+    .score { color: var(--blue); font-variant-numeric: tabular-nums; }
+    .section-panel { padding: 14px; margin-bottom: 12px; }
+    .dist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .button-row { display: flex; gap: 8px; margin-top: 10px; }
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel-soft);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 8px 10px;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="muted">Korantis Defensive Staging Review</p>
+    <h1>batch_006_nyc_rooftop - New York City</h1>
+    <div class="summary">
+      <div class="stat"><span class="muted">Input</span><strong>12</strong></div>
+      <div class="stat"><span class="muted">Ready for DB staging</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Auto staged</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Needs review</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Blocked</span><strong>12</strong></div>
+      <div class="stat"><span class="muted">Cost</span><strong>pending</strong></div>
+      <div class="stat"><span class="muted">Runtime</span><strong>0 ms</strong></div>
+    </div>
+  </header>
+  <main>
+    <h2>Venue Preview</h2>
+    <section class="grid"><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Maison Provence Restaurant</h3>
+      <p class="muted">Williamsburg / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Woodhul Wine Bar</h3>
+      <p class="muted">Williamsburg / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Pinkerton Wine Bar</h3>
+      <p class="muted">Williamsburg / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>With Others</h3>
+      <p class="muted">Williamsburg / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Olympia</h3>
+      <p class="muted">DUMBO / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Black Mountain Wine House</h3>
+      <p class="muted">DUMBO / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Anaïs</h3>
+      <p class="muted">Brooklyn Bridge Park / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Balvanera</h3>
+      <p class="muted">Lower East Side / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Brick Wine Bar</h3>
+      <p class="muted">Lower East Side / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Somm Time</h3>
+      <p class="muted">Lower East Side / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Jadis</h3>
+      <p class="muted">Lower East Side / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 74</span></div>
+      <h3>Ainslie Bowery</h3>
+      <p class="muted">Bowery / bar</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article></section>
+    <h2>Ready For DB Staging</h2>
+    <section class="section-panel muted">No DB-staging-ready candidates.</section>
+    <h2>Needs Review</h2>
+    <section class="section-panel muted">No needs-review candidates.</section>
+    <h2>Blocked</h2>
+    <section class="section-panel">
+    <h3>Maison Provence Restaurant <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Woodhul Wine Bar <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Pinkerton Wine Bar <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>With Others <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Olympia <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Black Mountain Wine House <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Anaïs <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Balvanera <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Brick Wine Bar <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Somm Time <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Jadis <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Ainslie Bowery <span class="score">74</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section>
+    <h2>Distribution</h2>
+    <section class="dist">
+      <section class="section-panel"><h3>Mood distribution</h3><p class="muted">none</p></section>
+      <section class="section-panel"><h3>Neighborhood distribution</h3><p>Williamsburg <span class="score">4</span></p><p>Lower East Side <span class="score">4</span></p><p>DUMBO <span class="score">2</span></p><p>Brooklyn Bridge Park <span class="score">1</span></p><p>Bowery <span class="score">1</span></p></section>
+    </section>
+  </main>
+</body>
+</html>

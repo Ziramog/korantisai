@@ -27,6 +27,7 @@ interface SelectorOptions {
   typeMix: Record<string, number>;
   continuePipeline: boolean;
   forcePipeline: boolean;
+  allowTypeFallback: boolean;
   maxQueries?: number;
   planOnly: boolean;
 }
@@ -197,6 +198,10 @@ const QUERY_TYPES: Array<{ label: string; queryType: string; typeHint: SeedType 
   { label: 'cocktail_bars', queryType: 'cocktail bars', typeHint: 'cocktail_bar' },
   { label: 'wine_bars', queryType: 'wine bars', typeHint: 'wine_bar' },
   { label: 'rooftop_bars', queryType: 'rooftop bars', typeHint: 'rooftop_bar' },
+  { label: 'rooftop_lounges', queryType: 'rooftop lounges', typeHint: 'rooftop_bar' },
+  { label: 'terrace_bars', queryType: 'terrace bars', typeHint: 'rooftop_bar' },
+  { label: 'skyline_bars', queryType: 'skyline bars', typeHint: 'rooftop_bar' },
+  { label: 'hotel_rooftop_bars', queryType: 'hotel rooftop bars', typeHint: 'rooftop_bar' },
   { label: 'speakeasies', queryType: 'speakeasy bars', typeHint: 'speakeasy' },
   { label: 'cafe_bars', queryType: 'cafe bars', typeHint: 'cafe_bar' },
 ];
@@ -257,13 +262,17 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
   const deduped = dedupeCandidates(candidates);
   const scored = deduped.map((candidate) => scoreCandidate(candidate));
   const { accepted, rejected, alreadyKnown } = applyHardFilters(scored, existing, options);
-  const selected = selectBalancedCandidates(accepted, options.count, options.typeMix);
+  const selected = selectBalancedCandidates(accepted, options.count, options.typeMix, options.allowTypeFallback);
+  const mixDeviations = buildMixDeviations(selected, options.count, options.typeMix);
   const warnings = [
     ...existing.warnings,
     ...(selected.length !== options.count ? [`selected_count_${selected.length}_does_not_match_requested_${options.count}`] : []),
+    ...(mixDeviations.length > 0 ? mixDeviations.map((deviation) => `target_mix_deviation:${deviation}`) : []),
+    ...(options.allowTypeFallback ? ['type_fallback_enabled'] : []),
   ];
+  const hasBlockingMixDeviation = mixDeviations.length > 0 && !options.allowTypeFallback;
 
-  if (selected.length !== options.count) {
+  if (selected.length !== options.count || hasBlockingMixDeviation) {
     writeDebugOutputs(batchId, outputDir, {
       batch_id: batchId,
       generated_at: new Date().toISOString(),
@@ -284,10 +293,13 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
       configured_type_mix: options.typeMix,
       type_counts: countBy(selected, (candidate) => candidate.type),
       neighborhood_counts: countBy(selected, (candidate) => candidate.neighborhood),
-      deviations_from_target_mix: buildMixDeviations(selected, options.count, options.typeMix),
+      deviations_from_target_mix: mixDeviations,
       next_pipeline_command: `npx tsx pipeline/run_full_batch.ts ${batchId}`,
     });
-    throw new Error(`Stage 00 selected ${selected.length} venues, expected ${options.count}. Review venue_candidates_debug.json.`);
+    const reason = selected.length !== options.count
+      ? `selected ${selected.length} venues, expected ${options.count}`
+      : `could not satisfy target mix: ${mixDeviations.join('; ')}`;
+    throw new Error(`Stage 00 ${reason}. Review venue_seed_report.md and venue_candidates_debug.json.`);
   }
 
   const result: SelectionResult = {
@@ -310,7 +322,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
     configured_type_mix: options.typeMix,
     type_counts: countBy(selected, (candidate) => candidate.type),
     neighborhood_counts: countBy(selected, (candidate) => candidate.neighborhood),
-    deviations_from_target_mix: buildMixDeviations(selected, options.count, options.typeMix),
+    deviations_from_target_mix: mixDeviations,
     next_pipeline_command: `npx tsx pipeline/run_full_batch.ts ${batchId}`,
   };
 
@@ -341,7 +353,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
 async function discoverCandidates(existing: ExistingVenueIndex, options: SelectorOptions): Promise<Candidate[]> {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   const candidates: Candidate[] = [];
-  const queries = buildQueryMatrix(options.city, options.neighborhoods).slice(0, options.maxQueries);
+  const queries = buildQueryMatrix(options.city, options.neighborhoods, options.typeMix).slice(0, options.maxQueries);
 
   if (!apiKey) {
     return CURATED_ALLOWLIST.map((item) => curatedCandidate(item, 'missing_google_api_semi_automated_pool'));
@@ -352,7 +364,7 @@ async function discoverCandidates(existing: ExistingVenueIndex, options: Selecto
       apiKey,
       city: options.city,
       languageCode: 'en',
-      regionCode: 'AR',
+      regionCode: regionCodeForCity(options.city),
       maxResultCount: 10,
     });
     if (result.error) {
@@ -375,7 +387,7 @@ async function discoverCandidates(existing: ExistingVenueIndex, options: Selecto
       apiKey,
       city: options.city,
       languageCode: 'en',
-      regionCode: 'AR',
+      regionCode: regionCodeForCity(options.city),
       maxResultCount: 3,
     });
     const place = result.candidates[0];
@@ -387,10 +399,11 @@ async function discoverCandidates(existing: ExistingVenueIndex, options: Selecto
   return candidates;
 }
 
-function buildQueryMatrix(city: string, neighborhoods: string[]): Array<{ text: string; neighborhood: string; typeHint: SeedType }> {
+function buildQueryMatrix(city: string, neighborhoods: string[], typeMix: Record<string, number>): Array<{ text: string; neighborhood: string; typeHint: SeedType }> {
   const queries: Array<{ text: string; neighborhood: string; typeHint: SeedType }> = [];
+  const requestedGroups = new Set(Object.keys(typeMix));
   for (const neighborhood of neighborhoods) {
-    for (const queryType of QUERY_TYPES) {
+    for (const queryType of QUERY_TYPES.filter((item) => requestedGroups.has(typeGroup(item.typeHint)))) {
       queries.push({
         text: `${queryType.queryType} in ${neighborhood} ${city}`,
         neighborhood,
@@ -549,16 +562,17 @@ function hardFilterReasons(candidate: Candidate, existing: ExistingVenueIndex, o
     reasons.push('already_exists_alias');
   }
   if (FRANCHISE_TERMS.some((term) => normalizeName(candidate.name).includes(normalizeName(term)))) reasons.push('chain_or_franchise');
-  if (isIrrelevantCategory(candidate.google_place_types)) reasons.push('irrelevant_google_category');
+  if (isIrrelevantCategory(candidate)) reasons.push('irrelevant_google_category');
   if (candidate.review_count && candidate.review_count < 20) reasons.push('low_evidence_quality');
   return reasons;
 }
 
-function selectBalancedCandidates(candidates: Candidate[], targetCount: number, typeMix: Record<string, number>): Candidate[] {
+function selectBalancedCandidates(candidates: Candidate[], targetCount: number, typeMix: Record<string, number>, allowTypeFallback: boolean): Candidate[] {
   const selected: Candidate[] = [];
   const selectedKeys = new Set<string>();
   const neighborhoodCounts: Record<string, number> = {};
   const groupTargets = scaleGroupTargets(targetCount, typeMix);
+  const requestedGroups = new Set(Object.keys(groupTargets));
   const maxPerNeighborhood = Math.max(3, Math.ceil(targetCount / 7));
   const sorted = [...candidates].sort((a, b) => b.candidate_score - a.candidate_score);
 
@@ -572,6 +586,7 @@ function selectBalancedCandidates(candidates: Candidate[], targetCount: number, 
 
   for (const candidate of sorted) {
     if (selected.length >= targetCount) break;
+    if (!allowTypeFallback && !requestedGroups.has(typeGroup(candidate.type))) continue;
     if (!canSelect(candidate, selectedKeys, neighborhoodCounts, maxPerNeighborhood + 1)) continue;
     addSelected(candidate, selected, selectedKeys, neighborhoodCounts);
   }
@@ -834,7 +849,8 @@ function typeGroup(type: SeedType): string {
   if (type === 'cafe' || type === 'bakery_cafe') return 'cafes';
   if (type === 'restaurant' || type === 'bistro' || type === 'parrilla') return 'restaurants';
   if (type === 'bar') return 'bars';
-  if (type === 'cocktail_bar' || type === 'speakeasy' || type === 'rooftop_bar') return 'cocktails';
+  if (type === 'cocktail_bar' || type === 'speakeasy') return 'cocktails';
+  if (type === 'rooftop_bar') return 'rooftops';
   if (type === 'wine_bar') return 'wine';
   return 'hybrids';
 }
@@ -888,7 +904,7 @@ function scoreVisualStrength(candidate: Candidate): number {
 
 function scoreCategoryFit(candidate: Candidate): number {
   if (!ALLOWED_TYPES.includes(candidate.type)) return 0;
-  if (candidate.type === 'cocktail_bar' || candidate.type === 'wine_bar' || candidate.type === 'cafe_bar') return 1;
+  if (candidate.type === 'cocktail_bar' || candidate.type === 'wine_bar' || candidate.type === 'cafe_bar' || candidate.type === 'rooftop_bar') return 1;
   if (candidate.type === 'cafe' || candidate.type === 'bar' || candidate.type === 'bistro') return 0.9;
   return 0.82;
 }
@@ -918,8 +934,24 @@ function buildSelectionReason(candidate: Candidate, scores: CandidateScores, can
   ].filter(Boolean).join('; ');
 }
 
-function isIrrelevantCategory(types: string[]): boolean {
-  const irrelevant = ['lodging', 'hotel', 'meal_delivery', 'meal_takeaway', 'fast_food_restaurant', 'store', 'supermarket'];
+function isIrrelevantCategory(candidate: Candidate): boolean {
+  const types = candidate.google_place_types;
+  const hasVenueSignal = types.some((type) => [
+    'bar',
+    'cocktail_bar',
+    'lounge_bar',
+    'night_club',
+    'restaurant',
+    'cafe',
+    'coffee_shop',
+    'bakery',
+    'brunch_restaurant',
+    'breakfast_restaurant',
+    'wine_bar',
+    'food',
+  ].includes(type));
+  if (hasVenueSignal && ALLOWED_TYPES.includes(candidate.type)) return false;
+  const irrelevant = ['lodging', 'hotel', 'meal_delivery', 'meal_takeaway', 'fast_food_restaurant', 'supermarket'];
   return types.some((type) => irrelevant.includes(type));
 }
 
@@ -1013,6 +1045,7 @@ function parseOptions(args: string[]): SelectorOptions {
     typeMix,
     continuePipeline: args.includes('--continue'),
     forcePipeline: !args.includes('--resume-pipeline'),
+    allowTypeFallback: args.includes('--allow-type-fallback'),
     maxQueries: valueAfter(args, '--max-queries') ? Number(valueAfter(args, '--max-queries')) : undefined,
     planOnly: args.includes('--plan'),
   };
@@ -1032,9 +1065,30 @@ function parseTypeMix(value: string | undefined): Record<string, number> | undef
     const [key, rawValue] = entry.split('=').map((item) => item.trim());
     const parsed = Number(rawValue);
     if (!key || !Number.isFinite(parsed) || parsed < 0) return undefined;
-    mix[key] = parsed;
+    const normalizedKey = normalizeTypeMixGroup(key);
+    if (!normalizedKey) return undefined;
+    mix[normalizedKey] = (mix[normalizedKey] || 0) + parsed;
   }
   return Object.keys(mix).length > 0 ? mix : undefined;
+}
+
+function normalizeTypeMixGroup(value: string): string | undefined {
+  const key = normalizeName(value);
+  if (['cafe', 'cafes', 'bakery_cafe', 'bakery_cafes'].includes(key)) return 'cafes';
+  if (['restaurant', 'restaurants', 'bistro', 'bistros', 'parrilla', 'parrillas'].includes(key)) return 'restaurants';
+  if (['bar', 'bars'].includes(key)) return 'bars';
+  if (['cocktail', 'cocktails', 'cocktail_bar', 'cocktail_bars', 'speakeasy', 'speakeasies'].includes(key)) return 'cocktails';
+  if (['wine', 'wine_bar', 'wine_bars'].includes(key)) return 'wine';
+  if (['hybrid', 'hybrids', 'cafe_bar', 'cafe_bars'].includes(key)) return 'hybrids';
+  if (['rooftop', 'rooftops', 'rooftop_bar', 'rooftop_bars', 'terrace', 'terraces', 'skyline', 'skyline_bars'].includes(key)) return 'rooftops';
+  return undefined;
+}
+
+function regionCodeForCity(city: string): string {
+  const normalized = normalizeName(city);
+  if (normalized.includes('new york') || normalized.includes('nyc') || normalized.includes('united states')) return 'US';
+  if (normalized.includes('buenos aires') || normalized.includes('argentina')) return 'AR';
+  return 'US';
 }
 
 function valueAfter(args: string[], flag: string): string | undefined {
@@ -1052,7 +1106,7 @@ const invokedFile = process.argv[1] ? path.resolve(process.argv[1]) : '';
 if (currentFile === invokedFile) {
   const batchName = process.argv[2];
   if (!batchName) {
-    console.error('Usage: npx tsx pipeline/stages/00_build_venue_seed.ts <batch_id> [--count 50] [--city "Buenos Aires"] [--neighborhoods "Palermo,Recoleta"] [--type-mix "cafes=12,restaurants=10,bars=10,cocktails=8,wine=5,hybrids=5"] [--continue] [--plan] [--max-queries N] [--resume-pipeline]');
+    console.error('Usage: npx tsx pipeline/stages/00_build_venue_seed.ts <batch_id> [--count 50] [--city "Buenos Aires"] [--neighborhoods "Palermo,Recoleta"] [--type-mix "cafes=12,restaurants=10,bars=10,cocktails=8,wine=5,hybrids=5"] [--continue] [--plan] [--max-queries N] [--resume-pipeline] [--allow-type-fallback]');
     process.exitCode = 1;
   } else {
     buildVenueSeed(batchName, parseOptions(process.argv.slice(3))).catch((error: unknown) => {

@@ -2,6 +2,8 @@
 
 Date: 2026-06-08
 
+Status update: Stage 13 post-activation audit and Stage 14 rollback have now been implemented and wired into the control center. The next priorities are city config, stronger quality gate, evidence scoring, and gallery support.
+
 Source inputs:
 
 - `docs/korantis_pipeline_arch_v1.md`
@@ -40,7 +42,7 @@ Current flow can activate venues, but after activation we do not automatically r
 - tags are valid
 - public API can actually return the venue
 
-This should be implemented before publishing many more batches.
+Implemented as `pipeline/stages/13_post_activation_audit.ts`.
 
 ### 2. Rollback Is Missing
 
@@ -53,7 +55,7 @@ npx tsx pipeline/stages/14_rollback_public_batch.ts <batch_id> --dry-run
 npx tsx pipeline/stages/14_rollback_public_batch.ts <batch_id> --apply
 ```
 
-The apply mode should flip venues from `active` back to `pending_review`, not delete rows.
+Implemented as `pipeline/stages/14_rollback_public_batch.ts`. The apply mode flips venues from `active` back to `pending_review`, not delete rows.
 
 ### 3. Evidence Grounding Is Still Too Weak
 
@@ -155,9 +157,9 @@ Renumbering today would create churn without improving data quality.
 
 ## Immediate v3 Priorities
 
-### Priority 1: Stage 13 Post-Activation Audit
+### Priority 1: Stage 13 Post-Activation Audit - Implemented
 
-Create:
+Created:
 
 ```text
 pipeline/stages/13_post_activation_audit.ts
@@ -200,13 +202,16 @@ Behavior:
 - report pass/fail
 - control center should surface audit status
 
-Why first:
+Current status:
 
-This catches bad production rows after activation and gives us confidence that the public app has valid data.
+- Implemented read-only audit.
+- Wired into one-click reviewed publication apply after Stage 12 activation.
+- Added control center audit command and audit failure stat.
+- Validated on `batch_004_buenos_aires_50`: 30 requested, 30 passed, 0 failed.
 
-### Priority 2: Stage 14 Rollback Public Batch
+### Priority 2: Stage 14 Rollback Public Batch - Implemented
 
-Create:
+Created:
 
 ```text
 pipeline/stages/14_rollback_public_batch.ts
@@ -239,9 +244,13 @@ Apply behavior:
 - requires explicit `--apply`
 - command center requires `RUN`
 
-Why second:
+Current status:
 
-If audit finds a production problem, we need fast recovery.
+- Implemented dry-run/apply rollback.
+- Apply flips eligible batch venues from `active` to `pending_review`.
+- Does not delete venues, images, or Cloudinary assets.
+- Added control center rollback dry-run/apply commands.
+- Validated dry-run on `batch_004_buenos_aires_50`: 30 requested, 30 eligible, 0 blocked, 0 rolled back.
 
 ### Priority 3: City Config System
 
@@ -706,15 +715,15 @@ Change:
 
 ## Recommended Implementation Order
 
-### Sprint 1: Production Safety
+### Sprint 1: Production Safety - Complete
 
-1. Implement `13_post_activation_audit.ts`.
-2. Add audit button to control center.
-3. Implement `14_rollback_public_batch.ts`.
-4. Add rollback dry-run/apply buttons to control center.
-5. Add audit result to one-click publication report.
+1. Implemented `13_post_activation_audit.ts`.
+2. Added audit button to control center.
+3. Implemented `14_rollback_public_batch.ts`.
+4. Added rollback dry-run/apply buttons to control center.
+5. Added audit result to one-click publication report.
 
-This should happen before the next large activation.
+This is now complete. Use audit after every activation and rollback only when needed.
 
 ### Sprint 2: Quality Gate And City Config
 

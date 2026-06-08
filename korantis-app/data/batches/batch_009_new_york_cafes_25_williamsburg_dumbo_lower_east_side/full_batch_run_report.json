@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:49:28.687Z",
+  "input_venues": 25,
+  "mode": "run",
+  "safety": {
+    "supabase_apply": false,
+    "cloudinary_upload": false,
+    "public_publish": false,
+    "consumer_ui_changes": false
+  },
+  "stages": [
+    {
+      "stage": "01_extract_data",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_01_raw_venues.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T13:34:42.243Z",
+      "finished_at": "2026-06-08T13:34:42.243Z"
+    },
+    {
+      "stage": "02_discover_sources",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_02_source_discovery.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T13:34:42.244Z",
+      "finished_at": "2026-06-08T13:34:42.244Z"
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "skipped_existing",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_03_final_vision_queue.json",
+      "notes": "Skipped because output already exists. Pass --force to rerun.",
+      "started_at": "2026-06-08T13:34:42.244Z",
+      "finished_at": "2026-06-08T13:34:42.244Z"
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_04_selected_images.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:34:42.244Z",
+      "finished_at": "2026-06-08T13:40:33.539Z"
+    },
+    {
+      "stage": "connect_selected_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\batch_result_with_images.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:40:33.539Z",
+      "finished_at": "2026-06-08T13:40:33.605Z"
+    },
+    {
+      "stage": "05_generate_editorial",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\batch_result_with_editorial.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:40:33.605Z",
+      "finished_at": "2026-06-08T13:49:22.710Z"
+    },
+    {
+      "stage": "05_alias_enriched_result",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\batch_result_enriched.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:22.710Z",
+      "finished_at": "2026-06-08T13:49:22.712Z"
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\batch_result_quality_gated.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:22.712Z",
+      "finished_at": "2026-06-08T13:49:22.745Z"
+    },
+    {
+      "stage": "07_generate_approval_manifest",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\approval_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:22.745Z",
+      "finished_at": "2026-06-08T13:49:22.771Z"
+    },
+    {
+      "stage": "08_supabase_staging_dry_run",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\supabase_staging_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:22.771Z",
+      "finished_at": "2026-06-08T13:49:28.646Z"
+    },
+    {
+      "stage": "09_publication_review",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\publication_decision_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:28.646Z",
+      "finished_at": "2026-06-08T13:49:28.658Z"
+    },
+    {
+      "stage": "11_public_projection_dry_run_if_reviewed",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\public_projection_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:28.658Z",
+      "finished_at": "2026-06-08T13:49:28.658Z"
+    },
+    {
+      "stage": "13_control_panel",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\pipeline_control_panel.html",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T13:49:28.658Z",
+      "finished_at": "2026-06-08T13:49:28.687Z"
+    }
+  ],
+  "final_outputs": [
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_01_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_02_source_discovery_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_03_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_04_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\connect_selected_images_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_05_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\quality_gate_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\approval_manifest_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\supabase_staging_dry_run_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\publication_review_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\pipeline_control_panel.html"
+  ],
+  "next_action": "Open pipeline_control_panel.html, review publication_review_dashboard.html, export publication_decision_manifest.reviewed.json, then run Cloudinary/hidden public apply commands from the control panel."
+}

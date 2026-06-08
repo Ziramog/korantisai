@@ -1,11 +1,8 @@
 {
   "batch_id": "batch_006_nyc_rooftop",
   "generated_at": "2026-06-08T03:04:49.252Z",
-  "updated_at": "2026-06-08T03:11:11.712Z",
+  "m3_called": true,
   "model_used": "MiniMax-M3",
-  "total_queue_size": 39,
-  "images_processed_or_skipped": 39,
-  "remaining": 0,
   "results": [
     {
       "venue_name": "Maison Provence Restaurant",
@@ -33,7 +30,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Maison Provence Restaurant",
@@ -145,7 +142,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "With Others",
@@ -257,7 +254,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Olympia",
@@ -425,7 +422,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Anaïs",
@@ -481,7 +478,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Balvanera",
@@ -1020,7 +1017,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Brick Wine Bar",
@@ -1077,7 +1074,7 @@
       ],
       "validation_status": "imported_needs_validation",
       "publication_status": "not_approved_for_publication",
-      "selected_for_hero": false
+      "selected_for_hero": true
     },
     {
       "venue_name": "Ainslie Bowery",
@@ -1107,5 +1104,26 @@
       "publication_status": "not_approved_for_publication",
       "selected_for_hero": false
     }
-  ]
+  ],
+  "summary": {
+    "images_requested": 39,
+    "images_processed": 39,
+    "images_skipped": 0,
+    "m3_ok_count": 9,
+    "invalid_json_count": 0,
+    "scene_type_distribution": {
+      "hero_interior": 8,
+      "product_food": 22,
+      "decorative": 2,
+      "menu": 1,
+      "hero_exterior": 5,
+      "gallery_atmosphere": 1
+    },
+    "risk_flag_distribution": {
+      "rights_review_needed": 35,
+      "preferred_resolution": 38,
+      "product_only": 12,
+      "below_preferred_resolution": 1
+    }
+  }
 }

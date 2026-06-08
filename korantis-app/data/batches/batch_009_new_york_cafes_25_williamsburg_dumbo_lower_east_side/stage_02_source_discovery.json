@@ -1,0 +1,2385 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:11:09.037Z",
+  "venues_processed": 25,
+  "websites_attempted": 25,
+  "websites_fetched": 24,
+  "instagram_found": 17,
+  "menu_found": 9,
+  "reservation_found": 12,
+  "whatsapp_found": 0,
+  "editorial_mentions_found": 19,
+  "source_confidence_average": 0.778,
+  "venues": [
+    {
+      "venue_name": "Paper Sons Cafe",
+      "place_id": "ChIJeezZS4tbwokRjLkpQk2sLyA",
+      "google_maps_url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://papersonscafe.com/",
+        "source_url": "http://papersonscafe.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/papersonscafe",
+        "label": "Instagram page",
+        "source_url": "https://papersonscafe.com/",
+        "confidence": 0.85,
+        "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Instagram page https://www.instagram.com/papersonscafe"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://papersonscafe.com/party?source=pop_up&spot_id=528373&destination=private_parties&promotion=private_parties",
+        "label": "Book your party",
+        "source_url": "https://papersonscafe.com/",
+        "confidence": 0.8,
+        "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Book your party https://papersonscafe.com/party?source=pop_up&spot_id=528373&destination=private_parties&promotion=private_parties"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://papersonscafe.com/food-menu",
+        "label": "Menu",
+        "source_url": "https://papersonscafe.com/",
+        "confidence": 0.8,
+        "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Menu /food-menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.spothopperapp.com/contact-us?contact_reason=demo",
+          "label": "Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.7,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form https://www.spothopperapp.com/contact-us?contact_reason=demo"
+        },
+        {
+          "kind": "contact",
+          "url": "https://papersonscafe.com/call-us/'+phone+'",
+          "label": "'+ match[1] + '-' + match[2] + '-' + match[3] +'",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.7,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe '+ match[1] + '-' + match[2] + '-' + match[3] +' /call-us/'+phone+'"
+        }
+      ],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://papersonscafe.com/",
+          "source_url": "http://papersonscafe.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://papersonscafe.com/party?source=pop_up&spot_id=528373&destination=private_parties&promotion=private_parties",
+          "label": "Book your party",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Book your party https://papersonscafe.com/party?source=pop_up&spot_id=528373&destination=private_parties&promotion=private_parties"
+        },
+        {
+          "kind": "menu",
+          "url": "https://papersonscafe.com/food-menu",
+          "label": "Menu",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Menu /food-menu"
+        },
+        {
+          "kind": "menu",
+          "url": "https://papersonscafe.com/drink-menu",
+          "label": "Drinks",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Drinks /drink-menu"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/452323204623715",
+          "label": "Facebook page",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Facebook page https://www.facebook.com/452323204623715"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/papersonscafe",
+          "label": "Instagram page",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.85,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Instagram page https://www.instagram.com/papersonscafe"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://papersonscafe.com/party",
+          "label": "book a party",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe book a party /party"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.spothopperapp.com/contact-us?contact_reason=demo",
+          "label": "Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.7,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe Website design, Social Media marketing, and Email marketing provided by SpotHopper. Contact Us form https://www.spothopperapp.com/contact-us?contact_reason=demo"
+        },
+        {
+          "kind": "contact",
+          "url": "https://papersonscafe.com/call-us/'+phone+'",
+          "label": "'+ match[1] + '-' + match[2] + '-' + match[3] +'",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.7,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe '+ match[1] + '-' + match[2] + '-' + match[3] +' /call-us/'+phone+'"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tmt.spotapps.co/ordering-menu/?spot_id=%27+config.spot_id+%27&images=yes&accordion=true#",
+          "label": "commission free ordering platform!",
+          "source_url": "https://papersonscafe.com/",
+          "confidence": 0.8,
+          "evidence_text": "Must-Try Coffee Shop in New York, NY | Paper Sons Cafe commission free ordering platform! https://tmt.spotapps.co/ordering-menu/?spot_id='+config.spot_id+'&images=yes&accordion=true#"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Café Colmado",
+      "place_id": "ChIJxes_BwBZwokRMzXp44W-WiQ",
+      "google_maps_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.instagram.com/colmadocoffee/",
+        "source_url": "https://www.instagram.com/colmadocoffee/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.instagram.com/colmadocoffee/",
+          "source_url": "https://www.instagram.com/colmadocoffee/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "place_id": "ChIJA70uZt9ZwokRIYEM7_-s7bU",
+      "google_maps_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fyanniscoffee%2F&refsrc=deprecated&_rdr",
+        "source_url": "https://m.facebook.com/yanniscoffee/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://m.facebook.com/",
+        "label": "",
+        "source_url": "https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fyanniscoffee%2F&refsrc=deprecated&_rdr",
+        "confidence": 0.8,
+        "evidence_text": "Error /"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fyanniscoffee%2F&refsrc=deprecated&_rdr",
+          "source_url": "https://m.facebook.com/yanniscoffee/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/",
+          "label": "",
+          "source_url": "https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fyanniscoffee%2F&refsrc=deprecated&_rdr",
+          "confidence": 0.8,
+          "evidence_text": "Error /"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/help/1570260493519783/?ref=learn_more",
+          "label": "Más información",
+          "source_url": "https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fyanniscoffee%2F&refsrc=deprecated&_rdr",
+          "confidence": 0.8,
+          "evidence_text": "Error Más información /help/1570260493519783/?ref=learn_more"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://m.facebook.com/language/?next_uri=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fnext%3Dhttps%253A%252F%252Fm.facebook.com%252Fyanniscoffee%252F%26refsrc%3Ddeprecated&ref_component=mbasic_footer&ref_page=XLoginController",
+          "label": "+",
+          "source_url": "https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fyanniscoffee%2F&refsrc=deprecated&_rdr",
+          "confidence": 0.8,
+          "evidence_text": "Error + /language/?next_uri=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fnext%3Dhttps%253A%252F%252Fm.facebook.com%252Fyanniscoffee%252F%26refsrc%3Ddeprecated&ref_component=mbasic_footer&ref_page=XLoginController"
+        }
+      ],
+      "source_confidence": 0.65,
+      "missing_fields": [
+        "instagram",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Sip Coffee & Matcha",
+      "place_id": "ChIJH_igKQRZwokRoXxhqKmgTwA",
+      "google_maps_url": "https://maps.google.com/?cid=22413173695020193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.isipcoffee.com/",
+        "source_url": "https://www.isipcoffee.com/",
+        "confidence": 0.7,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=22413173695020193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=22413173695020193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.isipcoffee.com/",
+          "source_url": "https://www.isipcoffee.com/",
+          "confidence": 0.7,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.4,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Manually verify official site or add seed URLs.",
+      "fetch_status": "fetch_failed",
+      "warnings": [
+        "website_http_403"
+      ]
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "place_id": "ChIJy6rdX7hZwokRYmiVJWN3XmQ",
+      "google_maps_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+        "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/intelligentsiacoffee/",
+        "label": "Instagram",
+        "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+        "confidence": 0.85,
+        "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Instagram https://www.instagram.com/intelligentsiacoffee/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/IntelligentsiaCoffee/",
+        "label": "Facebook",
+        "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+        "confidence": 0.8,
+        "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Facebook https://www.facebook.com/IntelligentsiaCoffee/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.intelligentsia.com/pages/contact-us",
+          "label": "Contact Us",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.7,
+          "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Contact Us /pages/contact-us"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.intelligentsia.com/pages/stories",
+          "label": "Blog",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.65,
+          "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Blog /pages/stories"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.intelligentsia.com/pages/stories",
+          "label": "Blog",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.65,
+          "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Blog /pages/stories"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.intelligentsia.com/pages/contact-us",
+          "label": "Contact Us",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.7,
+          "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Contact Us /pages/contact-us"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/intelligentsiacoffee/",
+          "label": "Instagram",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.85,
+          "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Instagram https://www.instagram.com/intelligentsiacoffee/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/IntelligentsiaCoffee/",
+          "label": "Facebook",
+          "source_url": "https://www.intelligentsia.com/pages/high-line-hotel-coffeebar",
+          "confidence": 0.8,
+          "evidence_text": "High Line Coffeebar | New York Locations | Intelligentsia Coffee Facebook https://www.facebook.com/IntelligentsiaCoffee/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "place_id": "ChIJHZO-cABZwokRP3Gty-exVkU",
+      "google_maps_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.rhythmzeronyc.com/",
+        "source_url": "https://www.rhythmzeronyc.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/rhythmzeronyc/",
+        "label": "Instagram",
+        "source_url": "https://www.rhythmzeronyc.com/",
+        "confidence": 0.85,
+        "evidence_text": "Rhythm Zero Instagram https://www.instagram.com/rhythmzeronyc/"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.rhythmzeronyc.com/",
+          "source_url": "https://www.rhythmzeronyc.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/rhythmzeronyc/",
+          "label": "Instagram",
+          "source_url": "https://www.rhythmzeronyc.com/",
+          "confidence": 0.85,
+          "evidence_text": "Rhythm Zero Instagram https://www.instagram.com/rhythmzeronyc/"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Bakeri",
+      "place_id": "ChIJYRmchGdZwokRSTHrwrsym5M",
+      "google_maps_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.bakeribrooklyn.com/",
+        "source_url": "http://bakeribrooklyn.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://instagram.com/bakeribrooklyn",
+        "label": "",
+        "source_url": "https://www.bakeribrooklyn.com/",
+        "confidence": 0.85,
+        "evidence_text": "Bakeri http://instagram.com/bakeribrooklyn"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.bakeribrooklyn.com/",
+          "source_url": "http://bakeribrooklyn.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "http://instagram.com/bakeribrooklyn",
+          "label": "",
+          "source_url": "https://www.bakeribrooklyn.com/",
+          "confidence": 0.85,
+          "evidence_text": "Bakeri http://instagram.com/bakeribrooklyn"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/bakeriqueens",
+          "label": "",
+          "source_url": "https://www.bakeribrooklyn.com/",
+          "confidence": 0.85,
+          "evidence_text": "Bakeri https://www.instagram.com/bakeriqueens"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "A&C Super",
+      "place_id": "ChIJd4UuECFZwokRnGsyMaQn42Y",
+      "google_maps_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.aandcsuper.com/",
+        "source_url": "https://www.aandcsuper.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "http://instagram.com/aandcsuper",
+        "label": "Instagram",
+        "source_url": "https://www.aandcsuper.com/",
+        "confidence": 0.85,
+        "evidence_text": "A&C SUPER Instagram http://instagram.com/aandcsuper"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.aandcsuper.com/contact",
+          "label": "Contact",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.7,
+          "evidence_text": "A&C SUPER Contact /contact"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.aandcsuper.com/new-contact",
+          "label": "Fill out request form",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.7,
+          "evidence_text": "A&C SUPER Fill out request form https://www.aandcsuper.com/new-contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.aandcsuper.com/for-parties/p/golden-mist-cup-weny8-h4b4a-nkfgk-zethz",
+          "label": "A&C Crew Neck Sweater",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.65,
+          "evidence_text": "A&C SUPER A&C Crew Neck Sweater https://www.aandcsuper.com/for-parties/p/golden-mist-cup-weny8-h4b4a-nkfgk-zethz"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.aandcsuper.com/",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "http://instagram.com/aandcsuper",
+          "label": "Instagram",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.85,
+          "evidence_text": "A&C SUPER Instagram http://instagram.com/aandcsuper"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.aandcsuper.com/contact",
+          "label": "Contact",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.7,
+          "evidence_text": "A&C SUPER Contact /contact"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.aandcsuper.com/new-contact",
+          "label": "Fill out request form",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.7,
+          "evidence_text": "A&C SUPER Fill out request form https://www.aandcsuper.com/new-contact"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.aandcsuper.com/for-parties/p/golden-mist-cup-weny8-h4b4a-nkfgk-zethz",
+          "label": "A&C Crew Neck Sweater",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.65,
+          "evidence_text": "A&C SUPER A&C Crew Neck Sweater https://www.aandcsuper.com/for-parties/p/golden-mist-cup-weny8-h4b4a-nkfgk-zethz"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/aandcsuper/",
+          "label": "View our profile",
+          "source_url": "https://www.aandcsuper.com/",
+          "confidence": 0.85,
+          "evidence_text": "A&C SUPER View our profile https://www.instagram.com/aandcsuper/"
+        }
+      ],
+      "source_confidence": 0.8,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "place_id": "ChIJ7bjlk1VZwokRBK24C19g_0c",
+      "google_maps_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+        "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/parisbaguette_usa/?hl=en",
+        "label": "",
+        "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+        "confidence": 0.85,
+        "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries https://www.instagram.com/parisbaguette_usa/?hl=en"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/parisbaguetteus/",
+        "label": "",
+        "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+        "confidence": 0.8,
+        "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries https://www.facebook.com/parisbaguetteus/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://parisbaguette.com/menu/",
+        "label": "Menu Locations Rewards Catering Order Now",
+        "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+        "confidence": 0.8,
+        "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Menu Locations Rewards Catering Order Now https://parisbaguette.com/menu/"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://parisbaguette.com/menu/",
+          "label": "Menu Locations Rewards Catering Order Now",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.8,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Menu Locations Rewards Catering Order Now https://parisbaguette.com/menu/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.parisbaguette.com/",
+          "label": "Order Now Menu Locations Rewards Catering Store Locator",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.8,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Order Now Menu Locations Rewards Catering Store Locator https://order.parisbaguette.com/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://order.parisbaguette.com/menu/paris-baguette-185-bedford-ave",
+          "label": "Order Online",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.8,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Order Online https://order.parisbaguette.com/menu/paris-baguette-185-bedford-ave"
+        },
+        {
+          "kind": "menu",
+          "url": "https://catering.parisbaguette.com/menu/paris-baguette-185-bedford-ave",
+          "label": "Order Catering",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.8,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Order Catering https://catering.parisbaguette.com/menu/paris-baguette-185-bedford-ave"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/parisbaguetteus/",
+          "label": "",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.8,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries https://www.facebook.com/parisbaguetteus/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/parisbaguette_usa/?hl=en",
+          "label": "",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.85,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries https://www.instagram.com/parisbaguette_usa/?hl=en"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://parisbaguette.com/locations/",
+          "label": "Order Online Menu Locations About Rewards Catering Careers Own A Café Gift Cards Contact Paris Baguette Canada Connect With Us Facebook",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.8,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Order Online Menu Locations About Rewards Catering Careers Own A Café Gift Cards Contact Paris Baguette Canada Connect With Us Facebook https://parisbaguette.com/locations/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/parisbaguette_usa/",
+          "label": "Instagram",
+          "source_url": "https://parisbaguette.com/locations/ny/brooklyn/185-bedford-ave",
+          "confidence": 0.85,
+          "evidence_text": "Paris Baguette at 185 Bedford Ave, Brooklyn, NY | Cakes, Coffee, Pastries Instagram https://www.instagram.com/parisbaguette_usa/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "place_id": "ChIJZ7q2fa5ZwokR9axzUl0yJEg",
+      "google_maps_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://blackstarbakery.com/",
+        "source_url": "https://www.blackstarbakery.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/blackstarbakery",
+        "label": "@BlackStarBakery",
+        "source_url": "https://blackstarbakery.com/",
+        "confidence": 0.85,
+        "evidence_text": "blackstarbakery.com @BlackStarBakery https://www.instagram.com/blackstarbakery"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://blackstarbakery.com/",
+          "source_url": "https://www.blackstarbakery.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/blackstarbakery",
+          "label": "@BlackStarBakery",
+          "source_url": "https://blackstarbakery.com/",
+          "confidence": 0.85,
+          "evidence_text": "blackstarbakery.com @BlackStarBakery https://www.instagram.com/blackstarbakery"
+        }
+      ],
+      "source_confidence": 0.7,
+      "missing_fields": [
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "place_id": "ChIJFTVDEzFawokRp53c_hL03Bg",
+      "google_maps_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://dawnstildusk.com/",
+        "source_url": "https://dawnstildusk.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/dawnstildusk/",
+        "label": "Instagram",
+        "source_url": "https://dawnstildusk.com/",
+        "confidence": 0.85,
+        "evidence_text": "Dawn&#039;s &#039;Til Dusk Instagram https://www.instagram.com/dawnstildusk/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://dawnstildusk.com/wp-content/uploads/2026/04/DTD_Spring26_Menu-for-printing.pdf",
+        "label": "Our Menu",
+        "source_url": "https://dawnstildusk.com/",
+        "confidence": 0.8,
+        "evidence_text": "Dawn&#039;s &#039;Til Dusk Our Menu https://dawnstildusk.com/wp-content/uploads/2026/04/DTD_Spring26_Menu-for-printing.pdf"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://dawnstildusk.com/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.7,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk Contact Us https://dawnstildusk.com/contact-us/"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-brooklyn-ny.webp",
+          "label": "",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.65,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-brooklyn-ny.webp"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-tonic-brooklyn-ny.webp",
+          "label": "",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.65,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-tonic-brooklyn-ny.webp"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://dawnstildusk.com/",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://dawnstildusk.com/wp-content/uploads/2026/04/DTD_Spring26_Menu-for-printing.pdf",
+          "label": "Our Menu",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk Our Menu https://dawnstildusk.com/wp-content/uploads/2026/04/DTD_Spring26_Menu-for-printing.pdf"
+        },
+        {
+          "kind": "contact",
+          "url": "https://dawnstildusk.com/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.7,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk Contact Us https://dawnstildusk.com/contact-us/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/dawnstildusk/",
+          "label": "Instagram",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.85,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk Instagram https://www.instagram.com/dawnstildusk/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-brooklyn-ny.webp",
+          "label": "",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.65,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-brooklyn-ny.webp"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-tonic-brooklyn-ny.webp",
+          "label": "",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.65,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk https://dawnstildusk.com/wp-content/uploads/2026/05/espresso-tonic-brooklyn-ny.webp"
+        },
+        {
+          "kind": "menu",
+          "url": "https://dawnstildusk.com/wp-content/uploads/2025/07/DTD_Summer25_Menu-printable.pdf",
+          "label": "Our menu",
+          "source_url": "https://dawnstildusk.com/",
+          "confidence": 0.8,
+          "evidence_text": "Dawn&#039;s &#039;Til Dusk Our menu https://dawnstildusk.com/wp-content/uploads/2025/07/DTD_Summer25_Menu-printable.pdf"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "reservation_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "place_id": "ChIJO4zvSTBbwokRvqVPMzWwjIY",
+      "google_maps_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://tljus.com/",
+        "source_url": "http://tljus.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/touslesjoursusa/",
+        "label": "",
+        "source_url": "https://tljus.com/",
+        "confidence": 0.85,
+        "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday https://www.instagram.com/touslesjoursusa/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/TousLesJoursUSA/",
+        "label": "",
+        "source_url": "https://tljus.com/",
+        "confidence": 0.8,
+        "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday https://www.facebook.com/TousLesJoursUSA/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://tljus.com/menus/bread",
+        "label": "BREAD",
+        "source_url": "https://tljus.com/",
+        "confidence": 0.8,
+        "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday BREAD /menus/bread"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://tljus.com/contact",
+          "label": "Contact Us",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.7,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday Contact Us /contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://tljus.com/press",
+          "label": "press",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.65,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday press /press"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://tljus.com/",
+          "source_url": "http://tljus.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/bread",
+          "label": "BREAD",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday BREAD /menus/bread"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/cakes",
+          "label": "CAKES",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday CAKES /menus/cakes"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/sandwiches",
+          "label": "sandwiches",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday sandwiches /menus/sandwiches"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/pastryandpie",
+          "label": "PASTRY & PIE",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday PASTRY & PIE /menus/pastryandpie"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/coffee-espresso",
+          "label": "Coffee & Espresso",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday Coffee & Espresso /menus/coffee-espresso"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/teas-specialties",
+          "label": "Teas & Signatures",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday Teas & Signatures /menus/teas-specialties"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/blended-drinks",
+          "label": "Blended Drinks",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday Blended Drinks /menus/blended-drinks"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://tljus.com/press",
+          "label": "press",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.65,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday press /press"
+        },
+        {
+          "kind": "menu",
+          "url": "https://tljus.com/menus/all",
+          "label": "MENU",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday MENU /menus/all"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/TousLesJoursUSA/",
+          "label": "",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.8,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday https://www.facebook.com/TousLesJoursUSA/"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/touslesjoursusa/",
+          "label": "",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.85,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday https://www.instagram.com/touslesjoursusa/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://tljus.com/contact",
+          "label": "Contact Us",
+          "source_url": "https://tljus.com/",
+          "confidence": 0.7,
+          "evidence_text": "TOUS les JOURS: French Asian Bakery - Freshly Baked Everyday Contact Us /contact"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "place_id": "ChIJQ-HOGTFawokRZzcxdno0R-E",
+      "google_maps_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.almondinebakery.com/",
+        "source_url": "http://www.almondinebakery.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.almondinebakery.com/",
+          "source_url": "http://www.almondinebakery.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Burrow",
+      "place_id": "ChIJ2zVavDNawokR_XDClc_vb4M",
+      "google_maps_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.burrow.nyc/",
+        "source_url": "http://burrow.nyc/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.burrow.nyc/",
+        "label": "website accessibility \"}],\"customFonts\":[],\"featuresets\":[\"retail\",\"giftCards\"],\"contentAreas\":{\"cart\":{\"id\":\"c96462e0-574a-11ea-bbb7-55ea33cd7dcb\",\"hidden\":false,\"content\":{\"id\":\"c9646470-574a-11ea-a6ec-f344453cee69\",\"type\":\"block\",\"layout\":\"cart-1\",\"purpose\":\"cart@^1.1.0\",\"elements\":[{\"id\":\"c9646720-574a-11ea-8871-6f69a08375c7\",\"purpose\":\"title\",\"properties\":{}},{\"id\":\"c96468d0-574a-11ea-b985-3d2dd113306a\",\"purpose\":\"button\",\"properties\":{}},{\"id\":\"c9646a60-574a-11ea-951b-e73db68a505c\",\"purpose\":\"text\",\"properties\":{}},{\"id\":\"c9646be0-574a-11ea-8865-e7dcb3fd51c5\",\"purpose\":\"image\",\"properties\":{}},{\"id\":\"c9646d60-574a-11ea-a614-2f0eb13cc1e7\",\"purpose\":\"close\",\"properties\":{}}],\"properties\":{\"shortID\":\"uZmnJi\"}}},\"footer\":{\"id\":\"c9643e00-574a-11ea-b204-c7fa8ce78ea6\",\"hidden\":false,\"content\":{\"id\":\"c96440b0-574a-11ea-82a4-f334fbf7e65f\",\"type\":\"block\",\"layout\":\"footer-6\",\"purpose\":\"footer@^1.1.0\",\"elements\":[{\"id\":\"c9644440-574a-11ea-bc4d-3b8fcbae32a6\",\"purpose\":\"logo\",\"properties\":{\"hidden\":true,\"logoDimensions\":{\"width\":2272,\"height\":1253}}},{\"id\":\"c9644600-574a-11ea-8110-13711ea796cc\",\"purpose\":\"text\",\"properties\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"kuroiwa company inc. all rights reserved\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\"}},{\"id\":\"c96447a0-574a-11ea-820d-3dc988cbbb31\",\"purpose\":\"social\",\"properties\":{\"presetColor\":\"--dark-text-color\"}},{\"id\":\"c9644940-574a-11ea-a6c4-7f9b409aa58c\",\"purpose\":\"newsletter\",\"properties\":{\"type\":\"subscription\",\"fields\":[{\"id\":\"2e7be720-b647-11ef-b60e-5f3320f2ddc1\",\"type\":\"action-input\",\"label\":\"\",\"required\":true,\"properties\":{},\"instructions\":\"\"}],\"schema\":{\"id\":\"2e7c0e30-b647-11ef-b60e-5f3320f2ddc1\",\"hash\":\"890bc25dbe06072f626d643ab03a8c35\"}}}],\"properties\":{\"shortID\":\"bSIwXv\",\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--color-white\",\"isDark\":false}},\"navigation\":{\"hidden\":false,\"SITE_NAV\":[{\"link\":{\"page\":{\"pageID\":\"c4674980-d0f3-11ef-81eb-d5b3db24901e\"}},\"type\":\"page\",\"title\":\"FAQ\",\"children\":[]},{\"link\":{\"page\":{\"pageID\":\"c467a360-d0f3-11ef-b914-b74be5e312a6\"}},\"type\":\"page\",\"children\":[]}],\"shouldCopyHeader\":false}}},\"properties\":{\"styles\":{\"minHeight\":\"100px\"}}},\"header\":{\"id\":\"c9644ce0-574a-11ea-abed-83b74c2e0f9f\",\"hidden\":false,\"content\":{\"id\":\"c9644e90-574a-11ea-98c4-bf06c0fe35ff\",\"type\":\"block\",\"layout\":\"header-6\",\"purpose\":\"header@^1.1.0\",\"elements\":[{\"id\":\"ca0da630-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"logo\",\"properties\":{\"name\":\"newlogo-4.jpg\",\"scale\":100,\"fontSize\":\"small\",\"original\":\"\\/uploads\\/b\\/8a6a20ff3917b7e0dae510c589e26a2c393cbc533d703f67d2dd4b89be89855d\\/newlogo-4_1605374747.jpg\",\"titleColor\":\"--dark-text-color\",\"cropOptions\":null,\"logoDimensions\":{\"width\":1185,\"height\":405}}},{\"id\":\"ca0da631-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"social\",\"properties\":{}},{\"id\":\"ca0da632-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"navigation\",\"properties\":{\"hidden\":false,\"uppercase\":true}},{\"id\":\"ca0da633-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"hamburger\",\"properties\":{}},{\"id\":\"ca0da634-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"cart\",\"properties\":{}}],\"properties\":{\"shortID\":\"OUVBFE\",\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--light-text-color\",\"isDark\":false},\"transparentOverBanner\":true},\"actionButton\":{\"link\":{\"tab\":true,\"link\":{\"shopAll\":true,\"category\":\"\",\"orderOnline\":true},\"type\":\"category\"},\"label\":\"Order now\",\"hidden\":false,\"presetColor\":\"--primary-bright-dark\",\"presetStyle\":\"secondary\"},\"headerScroll\":\"none\",\"disableSearch\":false}},\"properties\":{\"styles\":{\"minHeight\":\"80px\"}}},\"navMobile\":{\"id\":\"c96459c0-574a-11ea-a18e-a5806adea6e5\",\"hidden\":false,\"content\":{\"id\":\"c9645b50-574a-11ea-abdc-e35828f15faf\",\"type\":\"block\",\"layout\":\"navigation-mobile\",\"purpose\":\"nav-mobile@^1.1.0\",\"elements\":[{\"id\":\"c9645e20-574a-11ea-b290-cb4a7abdb6fc\",\"purpose\":\"navigation\",\"properties\":{}},{\"id\":\"c9645fa0-574a-11ea-8bb8-af27201dcb27\",\"purpose\":\"close\",\"properties\":{}},{\"id\":\"c9646150-574a-11ea-852f-a776cd1ef2bf\",\"purpose\":\"social\",\"properties\":{}}],\"properties\":{\"shortID\":\"OJHMEN\"}}},\"freeFooter\":{\"id\":\"c9646f00-574a-11ea-8c30-e1926c1c259a\",\"hidden\":false,\"content\":{\"id\":\"c9647080-574a-11ea-96e2-e3f7e0e4c354\",\"type\":\"block\",\"layout\":\"free-footer-1\",\"purpose\":\"free-footer@^1.0.0\",\"elements\":[],\"properties\":{\"bgColor\":\"light\",\"shortID\":\"WHIOFC\",\"background\":{}}}}},\"homePageType\":\"page\",\"pageOverrides\":{\"product\":{},\"shopAll\":{},\"category\":{},\"leaveReview\":{},\"orderOnline\":{},\"instagramFeed\":{},\"searchResults\":{}},\"pageTemplates\":{\"product\":\"c468e340-d0f3-11ef-9e7c-cb9383a6ed3b\",\"shopAll\":\"c46939c0-d0f3-11ef-9d4c-c1d64fd601a0\",\"category\":\"c46939c0-d0f3-11ef-9d4c-c1d64fd601a0\",\"giftCards\":\"c468bd00-d0f3-11ef-af88-cdf506bb68b0\",\"leaveReview\":\"c46910a0-d0f3-11ef-afff-0ffeb0a50b2d\",\"orderOnline\":\"c46965d0-d0f3-11ef-b7e6-af672df42664\",\"instagramFeed\":\"c4699380-d0f3-11ef-8462-5f78f86250d5\",\"searchResults\":\"c46939c0-d0f3-11ef-9d4c-c1d64fd601a0\"}},\"version\":8},\"user\":{\"id\":130978925,\"properties\":{\"isSquareSyncUser\":true,\"country\":\"US\"}},\"billingFeatures\":{\"billingFeatures\":{\"embed_restricted_widgets\":true,\"com_gifting\":true,\"com_authorizenet_payment\":false,\"com_digital_products\":true,\"com_coupons\":true,\"com_product_reviews\":true,\"com_product_limit\":-1,\"popup_announcement\":true,\"popup_coupons\":true,\"popup_lead_capture\":true,\"community_support\":true,\"free_ssl_security\":true,\"custom_domain_connection\":true,\"advanced_site_stats\":true,\"password_protection\":true,\"video_backgrounds\":true,\"hd_video_and_audio\":true,\"membership_registration\":true,\"membership_settings\":true,\"online_store\":true,\"accept_paypal_payments\":true,\"product_badges\":true,\"product_modifiers\":true,\"in_store_pickup\":true,\"shipping_calculator\":true,\"chat_and_email_support\":true,\"phone_support\":true,\"priority_support\":true,\"advanced_ecommerce_stats\":true,\"seo\":true,\"unlimited_storage\":true,\"members\":-1,\"abandoned_cart_emails\":true,\"integrated_shipping_labels\":true,\"tax_calculator\":true,\"no_weebly_ads\":true,\"site_search\":true,\"product_search\":true,\"square_gift_cards\":true,\"inventory_management\":true,\"integrated_facebook_ads\":true,\"real_time_shipping_calculator\":false,\"age_confirmation\":true,\"square_processing_rate_id\":\"ECOM_SOS_PERFORMANCE\",\"square_processing_rate_display\":{\"USD\":[{\"percent\":\"3.3\",\"flat\":30,\"type\":\"all\"}],\"AUD\":[{\"percent\":\"2.2\",\"flat\":0,\"type\":\"all\"}],\"CAD\":[{\"percent\":\"2.8\",\"flat\":30,\"type\":\"all\"}],\"EUR\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.9\",\"flat\":25,\"type\":\"non-eu\"}],\"GBP\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.5\",\"flat\":25,\"type\":\"non-eu\"}],\"JPY\":[{\"percent\":\"3.6\",\"flat\":0,\"type\":\"non-jcb\"},{\"percent\":\"3.6\",\"flat\":0,\"type\":\"jcb\"}]},\"favicon_customization\":true,\"site_code_customization\":true,\"instagram_feed_tagging\":true,\"quick_shop\":true,\"scheduleEnabled\":false,\"smartGroupsEnabled\":false,\"socialAdsEnabled\":true,\"lifetimeEmails\":2,\"emailsPerMonth\":2,\"recipientsPerEmail\":500,\"recipientsPerMonth\":1000,\"automations\":0,\"automatedRecipientsPerMonth\":0,\"enabledLeadFormTypes\":[\"popup\"],\"allowsPurchasingCredits\":false,\"insights_overview\":true,\"insights_sales\":true,\"insights_products\":true,\"custom_fonts\":true,\"com_shipping_settings\":true,\"com_manage_gift_cards\":true,\"com_create_shipping_label_discount\":true,\"customer_accounts\":true,\"com_stripe_payment\":false,\"com_product_sync\":true,\"com_product_variant_limit\":-1,\"com_shipping_labels_tier\":\"weebly_cpp_tier\",\"com_transaction_fee\":\"0.00\",\"form_file_upload\":true,\"product_scheduled_actions\":true,\"custom_site_icon\":true,\"video_uploading\":10485760,\"buyer_customer_accounts\":true,\"personalized_order_screen\":true,\"personalized_recommendations\":true,\"easy_reordering\":true,\"self_serve_ordering\":true,\"ecom_preorders\":true,\"order_text_alerts\":true,\"time_based_categories\":true,\"advanced_order_limits\":true,\"modifier_images\":true,\"free_fulfillment_meter\":true,\"spd_fees_amount\":0,\"twenty_four_seven_support\":false,\"advanced_design_controls\":true,\"order_item_quantity_limit\":true,\"stock_media\":true,\"so_buyer_subscriptions\":true,\"item_badge_customization\":true,\"shop_all_item_layouts\":true,\"icon_sets\":true,\"banner_slides\":true,\"priority_phone_support\":false,\"pdp_layouts\":true,\"full_height_banners\":true,\"scrolling_text\":true,\"featured_item_layouts\":true,\"mega_menu\":true,\"appts_customization\":true,\"premium_text_image_layout\":true,\"featured_category_layouts\":true,\"ai_generated_content\":true,\"image_shapes\":true,\"group_ordering\":true,\"inventory_bundles\":true,\"com_square_transaction_best_discount\":true},\"isTrial\":false},\"siteFeatures\":{\"embed_restricted_widgets\":true,\"com_gifting\":true,\"com_authorizenet_payment\":false,\"com_digital_products\":true,\"com_coupons\":true,\"com_product_reviews\":true,\"com_product_limit\":-1,\"popup_announcement\":true,\"popup_coupons\":true,\"popup_lead_capture\":true,\"community_support\":true,\"free_ssl_security\":true,\"custom_domain_connection\":true,\"advanced_site_stats\":true,\"password_protection\":true,\"video_backgrounds\":true,\"hd_video_and_audio\":true,\"membership_registration\":true,\"membership_settings\":true,\"online_store\":true,\"accept_paypal_payments\":true,\"product_badges\":true,\"product_modifiers\":true,\"in_store_pickup\":true,\"shipping_calculator\":true,\"chat_and_email_support\":true,\"phone_support\":true,\"priority_support\":true,\"advanced_ecommerce_stats\":true,\"seo\":true,\"unlimited_storage\":true,\"members\":-1,\"abandoned_cart_emails\":true,\"integrated_shipping_labels\":true,\"tax_calculator\":true,\"no_weebly_ads\":true,\"site_search\":true,\"product_search\":true,\"square_gift_cards\":true,\"inventory_management\":true,\"integrated_facebook_ads\":true,\"real_time_shipping_calculator\":false,\"age_confirmation\":true,\"square_processing_rate_id\":\"ECOM_SOS_PERFORMANCE\",\"square_processing_rate_display\":{\"USD\":[{\"percent\":\"3.3\",\"flat\":30,\"type\":\"all\"}],\"AUD\":[{\"percent\":\"2.2\",\"flat\":0,\"type\":\"all\"}],\"CAD\":[{\"percent\":\"2.8\",\"flat\":30,\"type\":\"all\"}],\"EUR\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.9\",\"flat\":25,\"type\":\"non-eu\"}],\"GBP\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.5\",\"flat\":25,\"type\":\"non-eu\"}],\"JPY\":[{\"percent\":\"3.6\",\"flat\":0,\"type\":\"non-jcb\"},{\"percent\":\"3.6\",\"flat\":0,\"type\":\"jcb\"}]},\"favicon_customization\":true,\"site_code_customization\":true,\"instagram_feed_tagging\":true,\"quick_shop\":true,\"scheduleEnabled\":false,\"smartGroupsEnabled\":false,\"socialAdsEnabled\":true,\"lifetimeEmails\":2,\"emailsPerMonth\":2,\"recipientsPerEmail\":500,\"recipientsPerMonth\":1000,\"automations\":0,\"automatedRecipientsPerMonth\":0,\"enabledLeadFormTypes\":[\"popup\"],\"allowsPurchasingCredits\":false,\"insights_overview\":true,\"insights_sales\":true,\"insights_products\":true,\"custom_fonts\":true,\"com_shipping_settings\":true,\"com_manage_gift_cards\":true,\"com_create_shipping_label_discount\":true,\"customer_accounts\":true,\"com_stripe_payment\":false,\"com_product_sync\":true,\"com_product_variant_limit\":-1,\"com_shipping_labels_tier\":\"weebly_cpp_tier\",\"com_transaction_fee\":\"0.00\",\"form_file_upload\":true,\"product_scheduled_actions\":true,\"custom_site_icon\":true,\"video_uploading\":10485760,\"buyer_customer_accounts\":true,\"personalized_order_screen\":true,\"personalized_recommendations\":true,\"easy_reordering\":true,\"self_serve_ordering\":true,\"ecom_preorders\":true,\"order_text_alerts\":true,\"time_based_categories\":true,\"advanced_order_limits\":true,\"modifier_images\":true,\"free_fulfillment_meter\":true,\"spd_fees_amount\":0,\"twenty_four_seven_support\":false,\"advanced_design_controls\":true,\"order_item_quantity_limit\":true,\"stock_media\":true,\"so_buyer_subscriptions\":true,\"item_badge_customization\":true,\"shop_all_item_layouts\":true,\"icon_sets\":true,\"banner_slides\":true,\"priority_phone_support\":false,\"pdp_layouts\":true,\"full_height_banners\":true,\"scrolling_text\":true,\"featured_item_layouts\":true,\"mega_menu\":true,\"appts_customization\":true,\"premium_text_image_layout\":true,\"featured_category_layouts\":true,\"ai_generated_content\":true,\"image_shapes\":true,\"group_ordering\":true,\"inventory_bundles\":true,\"com_square_transaction_best_discount\":true},\"featureset\":{\"pages\":[\"category\",\"shopAll\",\"giftCards\"],\"quickShop\":true,\"search\":true,\"blocks\":[\"featured-products\"]},\"page\":{\"id\":\"c4681ed0-d0f3-11ef-aeca-8bf90ea74d5e\",\"site_snapshot_id\":\"c46678f0-d0f3-11ef-9007-f5c7373036cc\",\"properties\":{\"name\":\"Home\",\"route\":\"home\",\"title\":\"Home\",\"description\":\"\",\"attributions\":{\"unsplash\":{}},\"contentAreas\":{\"banner\":{\"id\":\"c95f2220-574a-11ea-be7b-ffbd761dd6b0\",\"hidden\":true,\"content\":{\"id\":\"c95f2960-574a-11ea-a101-bd80bc5da7d9\",\"type\":\"block\",\"layout\":\"banner-3\",\"purpose\":\"banner@^1.2.2\",\"elements\":[{\"id\":\"ca0da635-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"title-1\",\"properties\":{\"title\":{\"quill\":{\"ops\":[{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\"}},{\"id\":\"ca0da636-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"image-1\",\"properties\":{\"image\":{\"source\":\"\"}}},{\"id\":\"ca0da637-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"button-1\",\"properties\":{\"link\":{\"tab\":false,\"link\":{\"orderOnline\":\"\"},\"type\":\"orderOnline\"},\"label\":\"ORDER\\n\",\"hidden\":true,\"presetColor\":\"--background-color\",\"presetStyle\":\"primary\"}}],\"properties\":{\"height\":\"small\",\"shortID\":\"yimxTQ\",\"background\":{\"type\":\"image\",\"image\":null},\"verticalsHidden\":true}}},\"userContent\":{\"id\":\"c95f1720-574a-11ea-b2a5-53823f02e79f\",\"hidden\":false,\"content\":{\"id\":\"c95f1d50-574a-11ea-a03c-f5a5830d7fba\",\"type\":\"container\",\"cells\":[{\"id\":\"8045a800-8c37-11ea-8964-235c1686586c\",\"type\":\"cell\",\"content\":{\"id\":\"8045cf10-8c37-11ea-8964-235c1686586c\",\"type\":\"block\",\"layout\":\"basic-text\",\"purpose\":\"text@^1.0.0\",\"properties\":{\"shortID\":\"vQnZWH\",\"settings\":{\"links\":{\"hidden\":true},\"texts\":{\"color\":\"var(--primary-color)\",\"hidden\":false,\"allCaps\":true,\"fontSize\":\"step-0\",\"textStyle\":\"body\"},\"titles\":{\"hidden\":true}},\"repeatables\":[{\"id\":1,\"link\":{\"label\":\"Learn more\"},\"text\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"Welcome back to Burrow! We are grateful for your continued support. Our regular hours have resumed starting on 1\\/2\\/2025 - open Tuesday to Friday from 10 am to 3 pm.\\n\"}]}}},\"title\":{\"title\":{\"quill\":{\"ops\":[{\"insert\":\"Distinctive and Bold\"}]}}}}],\"sectionTitle\":{\"hidden\":true}}}},{\"id\":\"cbb8e530-574a-11ea-b6ec-01978c26be8d\",\"type\":\"cell\",\"content\":{\"id\":\"cbb8e531-574a-11ea-b6ec-01978c26be8d\",\"type\":\"block\",\"layout\":\"location-hours-side-by-side\",\"purpose\":\"location-hours@^1.0.0\",\"properties\":{\"shortID\":\"hVmjNt\",\"mapConfig\":{\"scale\":77,\"theme\":\"standard\",\"location\":{\"lat\":\"40.70276\",\"lng\":\"-73.98683\",\"city\":\"Brooklyn\",\"long\":\"-73.98683\",\"street\":\"68 Jay Street\",\"latitude\":\"40.70276\",\"longitude\":\"-73.98683\",\"postal_code\":\"11201\",\"region_code\":\"NY\",\"country_code\":\"US\",\"formatted_address\":\"68 Jay Street, Brooklyn, 11201, US\"}},\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--light-text-color\",\"isDark\":false}},\"hoursConfig\":{\"hidden\":false,\"content\":{\"quill\":{\"ops\":[{\"insert\":\"\\nMon Closed\\nTue 10:00 - 3:00ish\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Wed 10:00 - 3:00ish\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Thur 10:00 - 3:00ish\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Fri 10:00 - 3:00ish\\nSat Closed\\nSun Closed\\n\"}]}},\"fontSize\":\"small\"},\"titleConfig\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"LOCATION & HOURS\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\"},\"detailsConfig\":{\"hidden\":false,\"content\":{\"quill\":{\"ops\":[{\"insert\":\"Burrow\\n68 Jay street \"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"(back of the lobby at suite119) \"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Brooklyn NY 11201\\n\\ncontact@burrow.nyc\\n\\n\\n\"}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\",\"displayEmail\":true,\"displayPhone\":true},\"syncedLocation\":{\"lat\":\"37.77532\",\"lng\":\"-122.41744\",\"city\":\"SAN FRANCISCO\",\"email\":null,\"hours\":[{\"day\":\"Monday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Tuesday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Wednesday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Thursday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Friday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Saturday\",\"time\":\"Closed\"},{\"day\":\"Sunday\",\"time\":\"Closed\"}],\"phone\":null,\"region\":\"CA\",\"street\":\"1455 MARKET ST STE 600\",\"street2\":\"\",\"locationId\":\"\",\"postal_code\":\"94103\",\"country_code\":\"US\",\"business_name\":\"Nosh to go\",\"formatted_address\":\"1455 MARKET ST STE 600 SAN FRANCISCO, CA 94103, US\"},\"actionButtonConfig\":{\"hidden\":true,\"presetSize\":\"large\"}}}},{\"id\":\"ec25c540-4037-11ec-a40f-2f73c2bf6c07\",\"type\":\"cell\",\"content\":{\"id\":\"ec25c541-4037-11ec-a40f-2f73c2bf6c07\",\"type\":\"block\",\"layout\":\"text-and-image-2-column\",\"purpose\":\"text-and-image@^1.0.0\",\"properties\":{\"shortID\":\"MiYvIt\",\"settings\":{\"texts\":{\"hidden\":true,\"fontSize\":\"medium\"},\"images\":{\"size\":\"large\",\"shape\":null,\"hidden\":false,\"aspectRatio\":\"4_3\"},\"titles\":{\"bold\":false,\"hidden\":true,\"italic\":false,\"fontSize\":\"medium\",\"fontFamily\":\"--secondary-font\"}},\"textAlign\":\"\",\"repeatables\":[{\"id\":5,\"text\":{\"content\":\"One of our most popular items. Perfect for everyday use. Exceptional quality and choice.\"},\"image\":{\"figure\":{\"name\":\"Untitled drawing-3.jpg\",\"width\":798,\"height\":625,\"source\":\"\",\"original\":\"\\/uploads\\/b\\/8a6a20ff3917b7e0dae510c589e26a2c393cbc533d703f67d2dd4b89be89855d\\/Untitled drawing-3_1654453341.jpg\",\"sourceSet\":{},\"attribution\":{},\"cropOptions\":null}},\"title\":{\"content\":\"Distinctive and Bold\"},\"button\":{\"label\":\"View products\"},\"callout\":{\"content\":\"Quality Craftsmanship\"},\"secondaryButton\":{\"label\":\"Learn more\"}}],\"verticalsHidden\":true}}},{\"id\":\"d8e76060-574a-11ea-b6ec-01978c26be8d\",\"type\":\"cell\",\"content\":{\"id\":\"d8e76061-574a-11ea-b6ec-01978c26be8d\",\"type\":\"block\",\"layout\":\"contact-us-1\",\"purpose\":\"contact-us@^1.0.0\",\"elements\":[{\"id\":\"d8ef76b0-574a-11ea-ba04-197debb491bb\",\"purpose\":\"title\",\"properties\":{\"title\":{\"quill\":{\"ops\":[{\"insert\":\"CONTACT\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"medium\",\"fontFamily\":\"--secondary-font\"}},{\"id\":\"d8ef76b1-574a-11ea-ba04-197debb491bb\",\"purpose\":\"text\",\"properties\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"\\u270d\",\"attributes\":{\"color\":\"#85735b\"}},{\"insert\":\"\\n\"}]}},\"fontSize\":\"medium\"}},{\"id\":\"d8ef76b2-574a-11ea-ba04-197debb491bb\",\"purpose\":\"contact-form\",\"properties\":{\"type\":\"contact-form\",\"button\":{\"label\":\"submit\",\"presetColor\":\"--background-color\",\"presetStyle\":\"secondary\"},\"fields\":[{\"id\":\"d8ef76b4-574a-11ea-ba04-197debb491bb\",\"type\":\"input\",\"label\":\"Email\",\"altLabel\":\"Email\",\"required\":true,\"properties\":{\"type\":\"email\",\"field\":\"email\"},\"placeholder\":\"Email\"},{\"id\":\"d8ef76b3-574a-11ea-ba04-197debb491bb\",\"type\":\"input\",\"label\":\"Full name\",\"altLabel\":\"Full Name\",\"properties\":{\"type\":\"name\",\"field\":\"full-name\"},\"placeholder\":\"Full name\"},{\"id\":\"d8ef76b5-574a-11ea-ba04-197debb491bb\",\"type\":\"textarea\",\"label\":\"Leave us a message. \\ud83d\\udcceNot accepting custom order at this time. \",\"altLabel\":\"Message\",\"required\":true,\"properties\":{\"field\":\"message\"},\"isMandatory\":true,\"placeholder\":\"Leave us a message. \\ud83d\\udcceNot accepting custom order at this time. \"}],\"schema\":{\"id\":\"7d7df450-a4d4-11ea-b706-6336b9254dfd\",\"hash\":\"3e105217b21a40d70287e8f4422a465b\"},\"notificationEmail\":\"\"}}],\"properties\":{\"shortID\":\"XkfajF\",\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--light-text-color\",\"isDark\":false}}}}}]}}}}}},\"storeInfo\":{\"merchant_id\":\"E28T9K465CQX1\",\"buyer_customer_accounts_enabled\":true,\"currency\":\"USD\",\"locale\":\"en_US\",\"language\":\"en\",\"syncing_disabled\":true,\"return_policy\":\" We do not accept returns, offer exchanges, and\\/or grant refunds on any goods sold unless the issue for return, exchange, and\\/or refund is the result of an error in our manufacturing, packaging, or handling of the goods. \",\"shipping_policy\":\" Carrier : We ship our product via UPS nationwide through our online store. Tracking number : You can expect your shipping confirmation email to arrive between 6pm-9pm.\\u00a0 Cancellation : Please contact us at contact&#64;burrow.nyc to request a cancellation. Unfortunately we cannot cancel your order once it&#039;s shipped. \",\"max_donation_amount\":5000,\"store_mode\":\"cart\",\"payment_method_support\":{\"visa\":true,\"mastercard\":true,\"amex\":true,\"discover\":true,\"jcb\":true,\"interac\":false,\"paypal\":false,\"apple_pay\":true,\"google_pay\":true,\"cash_app\":true,\"square_pay\":true},\"show_pdp_buy_now_button\":true,\"allowed_to_sell\":true,\"accepting_orders\":true,\"has_payment_processor\":true,\"is_group_ordering_enabled\":false,\"product_reviews_enabled\":false,\"show_on_sale_section\":true,\"show_low_stock_section\":false,\"show_out_of_stock_section\":true,\"shipping_location_ids\":[\"99S21NTS3HC1X\"],\"fulfillment_support\":{\"delivery\":false,\"pickup\":true,\"shipping\":true,\"dine_in\":false,\"manual\":false,\"digital\":false},\"seller_preferred_fulfillment\":\"pickup\",\"locations_counts\":{\"pickup\":1,\"delivery\":0,\"dine_in\":0,\"pickup_or_delivery\":1,\"brick_and_mortar_fulfillment\":1,\"shipping\":1,\"total\":1},\"has_subscribable_items\":false,\"has_shippable_product\":true,\"has_time_based_categories\":false,\"product_setting_low_stock_threshold\":5,\"category_hierarchy_root_ids\":{\"site_category_id\":null,\"id\":null}},\"commerceLinks\":{\"products\":{},\"categories\":{\"11\":{\"site_category_id\":\"11\",\"name\":\"Pastry +a\",\"updated_date\":\"2025-08-07T18:38:07+00:00\",\"permalink\":\"\",\"site_link\":\"\\/shop\\/pastry-a\\/11\"}},\"meta\":{\"pagination\":{\"products\":[],\"categories\":{\"per_page\":2500,\"current_page\":1,\"total_pages\":1}}}},\"autoNavLinks\":[{\"link\":{\"page\":{\"pageID\":\"c4681ed0-d0f3-11ef-aeca-8bf90ea74d5e\"}},\"type\":\"page\",\"title\":\"HOME\",\"children\":[]},{\"link\":{\"category\":11},\"type\":\"category\",\"title\":\"SHOP\",\"children\":[]},{\"link\":{\"category\":10},\"type\":\"category\",\"title\":\"DRINK\",\"children\":[]},{\"link\":{\"giftCards\":true},\"type\":\"giftCards\",\"title\":\"Gift cards\",\"children\":[]},{\"link\":{\"page\":{\"pageID\":\"c4674980-d0f3-11ef-81eb-d5b3db24901e\"}},\"type\":\"page\",\"children\":[]},{\"link\":{\"page\":{\"pageID\":\"c467a360-d0f3-11ef-b914-b74be5e312a6\"}},\"type\":\"page\",\"children\":[]}],\"blogPostLinks\":{},\"featureFlags\":{\"ecom.website.deprecated-layouts\":false,\"marketing-enable-drive-repeat-purchase-campaign\":true,\"ecom.website.facebook-food\":true,\"ecom.website.theme-export\":false,\"ecom.website.chamber-via-fastly\":true,\"ecom.square-online-published-catalog-cache-version\":\"2026-03-25\",\"ecom.checkout.open_tabs\":true,\"ecom.website.photo-reviews\":true,\"ecom.checkout.cmi-sentry-integration\":true,\"ecom.checkout.cmi.bootstrap-tracking-snowplow\":true,\"ecom.checkout.cmi.bootstrap-tracking-ga\":true,\"ecom.website.order-confirmation-page.website-redirect\":true,\"ecom.checkout.cmi.locale-view-splitting\":true,\"ecom.checkout.open_tabs_gc_coupon\":true,\"ecom.cmi-cart\":true,\"ecom.checkout.cmi.theme-fonts\":false,\"ecom-fulfillment-api-v-2\":false,\"ecom.omnichannel-discounts-frontend\":true,\"ecom.omnichannel-discounts-category-api\":false,\"ecom-improved-tipping-experience\":true,\"ecom.splash.loyalty\":true,\"ecom.website.published-site.datadog-rum\":true,\"ecom.website.editor.datadog-rum\":true,\"ecom-website-published-site-datadog-rum-bot-filter\":true,\"ecom-use-tracking-inventory\":false,\"ecom.image-controls.width-fix\":true,\"ecom.gradient-backgrounds\":true,\"ecom.website.form-fraud-blocking\":true,\"ecom.website.form-fraud-auto-ban\":true,\"ecom.website.code-editor\":false,\"ecom.shopping.pdp-layouts-m1\":true,\"ecom.chamber.subscriptions\":true,\"ecom.tuba.subscriptions-paid-shipping-rates\":true,\"ecom-cko-enhanced-logging\":true,\"ecom-cko-unified-logging\":true,\"ecom.shopping.so-coupons-sunset-integrations\":true,\"ecom.order-online-text-layouts\":true,\"ecom.appointment-improvements\":true,\"ecom.appointment-improvements-m2\":true,\"ecom.tuba.committed-inventory-m1\":true,\"ecom.splash-improvements\":true,\"ecom-themes-onboarding\":true,\"ecom.shopping.featured-categories-paid-layouts\":true,\"ecom.website.ai-text.short-form\":true,\"ecom.website.ai-text.long-form\":true,\"ecom.website.metered-request.override\":false,\"ecom.website.async-create-theme\":false,\"ecom.can_use_cart_sharing\":true,\"ecom.website.ai.editor-prototype\":false,\"ecom.website.ai.page-seo\":false,\"ecom.appointment-direct-booking\":true,\"ecom-service-cutover-fe-request-augmentations\":true,\"ecom.catalog.so-item-library-deprecation-3\":true,\"ecom.kiosk-photo-card\":true,\"ecom.website.system-page.cart\":false,\"ecom-enable-kiosk-large-catalog-layout\":false,\"ecom-hide-instagram\":true,\"ecom-hide-instagram-on-published-sites\":false,\"ecom-enable-kiosk-item-preloading\":true,\"ecom-brand-api-sync\":true,\"ecom.service-cutover.enable-tuba-traffic\":true,\"ecom-show-order-online\":true,\"websdk-use-new-afterpay-buttons\":true,\"ecom-checkout-should-check-is-decouple-checkout\":true,\"ecom-prime-use-store-info-v29\":true,\"ecom-checkout-force-pci-compliance\":false,\"ecom-website-hide-food-beverage-themes\":false,\"ecom-website-fix-dine-in-location-selection\":true,\"ecom-combo-slot-include-hidden-items\":false},\"lightning\":{},\"datadog\":{\"publishedSite\":{\"service\":\"spi-ecom-square-online-buyer-journey\",\"applicationId\":\"0a9b10e6-9671-4e1d-bd0b-2f283f0d29ee\",\"clientToken\":\"pubc6e7a7143c494f34f1366112ef7c1e2c\",\"env\":\"production\",\"rum\":{\"sampleRate\":50,\"sessionReplaySampleRate\":20,\"traceSampleRate\":10}}}}; window.stopSiteLoadingAnimation = () => { const loadingElement = document.querySelector('.loading-view'); loadingElement?.remove(); }; /** * PCI Compliance Flag * * This flag indicates if scripts have been filtered for PCI compliance (OpenTabs SSO Checkout route). * This value is set only for buyer dashboard/site view to prevent infinite loading loops. * * Do NOT include this file in editor-frame.blade.php as it affects seller dashboard. */ window.IS_PCI_SCRIPTS_FILTERED = false; // used for editor-frame and pub site bootstrap window.APP_ENV = 'production'; window.APP_ORIGIN = 'https://square.online'; window.APP_URL = 'https://www.weebly.com'; window.ASSET_BASE = '/app/website'; window.ASSETS_PUBLIC_PATH = 'https://cdn3.editmysite.com/app/website/'; window.CMS_API_PATH ='/app/website/cms'; window.DEPRECATED_IMAGE_HOST = 'https://images.editor.website'; window.FRAME_ORIGIN = 'https://sandbox.square.online'; window.GENERATE_GOOGLE_MAP_BASE = 'https://www.editmysite.com'; window.IMAGE_HOST = 'https://8a6a20ff3917b7e0dae5.cdn6.editmysite.com'; window.IS_DRAFT = false; window.IS_MAGIC_MIRROR = false; window.IS_THEME_PREVIEW = false; window.IS_ENHANCED_PREVIEW = false; window.DRAFT_ORIGIN = 'https://drafts.editmysite.com'; window.PUBLISHED_CMS_API_PREFIX = '/app/cms'; window.SENTRY_DSN = 'https://13e49d785d8d4f828038b6136f3b48ba@sentry.io/1263158'; window.RELEASE = 'prime-3488887'; window.URL_BASE = ''; window.XSRF_COOKIE_NAME = 'publishedsite-xsrf'; window.FASTLY_URL_BASE = 'https://cdn5.editmysite.com'; window.SQUARE_WEB_PAYMENTS_SDK = 'https://web.squarecdn.com/v1/square.js' window.PUBLIC_SQUARE_URL_BASE = 'squareup.com'; window.PUBLIC_SQUARE_APPTS_URL_BASE = 'app.squareup.com'; window.ENABLE_FRONTEND_LOCAL_DEV_CACHE = ''; window.GOOGLE_TAG_DEVELOPER_ID = 'developer_id.dOTM2Yj'; window.IS_SQUARE_GO = false; window.IS_PUBLISHED_MAGIC_MIRROR = false; // state window.SUBDOMAIN_BASE = 'square.site'; (function (p, l, o, w, i, n, g) { var id = i + '-script'; if (!l.getElementById(i)) { n = l.createElement(o); g = l.getElementsByTagName(o)[0]; n.id = id; n.async = 1; n.src = w; g.parentNode.insertBefore(n, g); } })(window, document, \"script\", \"https://cdn3.editmysite.com/app/website/static/js/wsnbn/snowday262.js\", \"snowday\"); (function (p, l, o, w, i, n, g) { if (!p[i]) { p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || []; p.GlobalSnowplowNamespace.push(i); p[i] = function () { (p[i].q = p[i].q || []).push(arguments); }; p[i].q = p[i].q || []; } })(window, document, '', '', \"snowday\"); var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109]; var snPlObR = function(arr) { var s = ''; for (var i = 0 ; i (function(d){var s = d.createElement(\"script\");s.setAttribute(\"data-account\", \"WdbgV04Arh\");s.setAttribute(\"src\", \"https://cdn.userway.org/widget.js\");(d.body || d.head).appendChild(s);})(document) Please ensure Javascript is enabled for purposes of website accessibility",
+        "source_url": "https://www.burrow.nyc/",
+        "confidence": 0.8,
+        "evidence_text": "Burrow website accessibility \"}],\"customFonts\":[],\"featuresets\":[\"retail\",\"giftCards\"],\"contentAreas\":{\"cart\":{\"id\":\"c96462e0-574a-11ea-bbb7-55ea33cd7dcb\",\"hidden\":false,\"content\":{\"id\":\"c9646470-574a-11ea-a6ec-f344453cee69\",\"type\":\"block\",\"layout\":\"cart-1\",\"purpose\":\"cart@^1...."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.burrow.nyc/",
+          "source_url": "http://burrow.nyc/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.burrow.nyc/",
+          "label": "website accessibility \"}],\"customFonts\":[],\"featuresets\":[\"retail\",\"giftCards\"],\"contentAreas\":{\"cart\":{\"id\":\"c96462e0-574a-11ea-bbb7-55ea33cd7dcb\",\"hidden\":false,\"content\":{\"id\":\"c9646470-574a-11ea-a6ec-f344453cee69\",\"type\":\"block\",\"layout\":\"cart-1\",\"purpose\":\"cart@^1.1.0\",\"elements\":[{\"id\":\"c9646720-574a-11ea-8871-6f69a08375c7\",\"purpose\":\"title\",\"properties\":{}},{\"id\":\"c96468d0-574a-11ea-b985-3d2dd113306a\",\"purpose\":\"button\",\"properties\":{}},{\"id\":\"c9646a60-574a-11ea-951b-e73db68a505c\",\"purpose\":\"text\",\"properties\":{}},{\"id\":\"c9646be0-574a-11ea-8865-e7dcb3fd51c5\",\"purpose\":\"image\",\"properties\":{}},{\"id\":\"c9646d60-574a-11ea-a614-2f0eb13cc1e7\",\"purpose\":\"close\",\"properties\":{}}],\"properties\":{\"shortID\":\"uZmnJi\"}}},\"footer\":{\"id\":\"c9643e00-574a-11ea-b204-c7fa8ce78ea6\",\"hidden\":false,\"content\":{\"id\":\"c96440b0-574a-11ea-82a4-f334fbf7e65f\",\"type\":\"block\",\"layout\":\"footer-6\",\"purpose\":\"footer@^1.1.0\",\"elements\":[{\"id\":\"c9644440-574a-11ea-bc4d-3b8fcbae32a6\",\"purpose\":\"logo\",\"properties\":{\"hidden\":true,\"logoDimensions\":{\"width\":2272,\"height\":1253}}},{\"id\":\"c9644600-574a-11ea-8110-13711ea796cc\",\"purpose\":\"text\",\"properties\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"kuroiwa company inc. all rights reserved\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\"}},{\"id\":\"c96447a0-574a-11ea-820d-3dc988cbbb31\",\"purpose\":\"social\",\"properties\":{\"presetColor\":\"--dark-text-color\"}},{\"id\":\"c9644940-574a-11ea-a6c4-7f9b409aa58c\",\"purpose\":\"newsletter\",\"properties\":{\"type\":\"subscription\",\"fields\":[{\"id\":\"2e7be720-b647-11ef-b60e-5f3320f2ddc1\",\"type\":\"action-input\",\"label\":\"\",\"required\":true,\"properties\":{},\"instructions\":\"\"}],\"schema\":{\"id\":\"2e7c0e30-b647-11ef-b60e-5f3320f2ddc1\",\"hash\":\"890bc25dbe06072f626d643ab03a8c35\"}}}],\"properties\":{\"shortID\":\"bSIwXv\",\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--color-white\",\"isDark\":false}},\"navigation\":{\"hidden\":false,\"SITE_NAV\":[{\"link\":{\"page\":{\"pageID\":\"c4674980-d0f3-11ef-81eb-d5b3db24901e\"}},\"type\":\"page\",\"title\":\"FAQ\",\"children\":[]},{\"link\":{\"page\":{\"pageID\":\"c467a360-d0f3-11ef-b914-b74be5e312a6\"}},\"type\":\"page\",\"children\":[]}],\"shouldCopyHeader\":false}}},\"properties\":{\"styles\":{\"minHeight\":\"100px\"}}},\"header\":{\"id\":\"c9644ce0-574a-11ea-abed-83b74c2e0f9f\",\"hidden\":false,\"content\":{\"id\":\"c9644e90-574a-11ea-98c4-bf06c0fe35ff\",\"type\":\"block\",\"layout\":\"header-6\",\"purpose\":\"header@^1.1.0\",\"elements\":[{\"id\":\"ca0da630-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"logo\",\"properties\":{\"name\":\"newlogo-4.jpg\",\"scale\":100,\"fontSize\":\"small\",\"original\":\"\\/uploads\\/b\\/8a6a20ff3917b7e0dae510c589e26a2c393cbc533d703f67d2dd4b89be89855d\\/newlogo-4_1605374747.jpg\",\"titleColor\":\"--dark-text-color\",\"cropOptions\":null,\"logoDimensions\":{\"width\":1185,\"height\":405}}},{\"id\":\"ca0da631-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"social\",\"properties\":{}},{\"id\":\"ca0da632-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"navigation\",\"properties\":{\"hidden\":false,\"uppercase\":true}},{\"id\":\"ca0da633-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"hamburger\",\"properties\":{}},{\"id\":\"ca0da634-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"cart\",\"properties\":{}}],\"properties\":{\"shortID\":\"OUVBFE\",\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--light-text-color\",\"isDark\":false},\"transparentOverBanner\":true},\"actionButton\":{\"link\":{\"tab\":true,\"link\":{\"shopAll\":true,\"category\":\"\",\"orderOnline\":true},\"type\":\"category\"},\"label\":\"Order now\",\"hidden\":false,\"presetColor\":\"--primary-bright-dark\",\"presetStyle\":\"secondary\"},\"headerScroll\":\"none\",\"disableSearch\":false}},\"properties\":{\"styles\":{\"minHeight\":\"80px\"}}},\"navMobile\":{\"id\":\"c96459c0-574a-11ea-a18e-a5806adea6e5\",\"hidden\":false,\"content\":{\"id\":\"c9645b50-574a-11ea-abdc-e35828f15faf\",\"type\":\"block\",\"layout\":\"navigation-mobile\",\"purpose\":\"nav-mobile@^1.1.0\",\"elements\":[{\"id\":\"c9645e20-574a-11ea-b290-cb4a7abdb6fc\",\"purpose\":\"navigation\",\"properties\":{}},{\"id\":\"c9645fa0-574a-11ea-8bb8-af27201dcb27\",\"purpose\":\"close\",\"properties\":{}},{\"id\":\"c9646150-574a-11ea-852f-a776cd1ef2bf\",\"purpose\":\"social\",\"properties\":{}}],\"properties\":{\"shortID\":\"OJHMEN\"}}},\"freeFooter\":{\"id\":\"c9646f00-574a-11ea-8c30-e1926c1c259a\",\"hidden\":false,\"content\":{\"id\":\"c9647080-574a-11ea-96e2-e3f7e0e4c354\",\"type\":\"block\",\"layout\":\"free-footer-1\",\"purpose\":\"free-footer@^1.0.0\",\"elements\":[],\"properties\":{\"bgColor\":\"light\",\"shortID\":\"WHIOFC\",\"background\":{}}}}},\"homePageType\":\"page\",\"pageOverrides\":{\"product\":{},\"shopAll\":{},\"category\":{},\"leaveReview\":{},\"orderOnline\":{},\"instagramFeed\":{},\"searchResults\":{}},\"pageTemplates\":{\"product\":\"c468e340-d0f3-11ef-9e7c-cb9383a6ed3b\",\"shopAll\":\"c46939c0-d0f3-11ef-9d4c-c1d64fd601a0\",\"category\":\"c46939c0-d0f3-11ef-9d4c-c1d64fd601a0\",\"giftCards\":\"c468bd00-d0f3-11ef-af88-cdf506bb68b0\",\"leaveReview\":\"c46910a0-d0f3-11ef-afff-0ffeb0a50b2d\",\"orderOnline\":\"c46965d0-d0f3-11ef-b7e6-af672df42664\",\"instagramFeed\":\"c4699380-d0f3-11ef-8462-5f78f86250d5\",\"searchResults\":\"c46939c0-d0f3-11ef-9d4c-c1d64fd601a0\"}},\"version\":8},\"user\":{\"id\":130978925,\"properties\":{\"isSquareSyncUser\":true,\"country\":\"US\"}},\"billingFeatures\":{\"billingFeatures\":{\"embed_restricted_widgets\":true,\"com_gifting\":true,\"com_authorizenet_payment\":false,\"com_digital_products\":true,\"com_coupons\":true,\"com_product_reviews\":true,\"com_product_limit\":-1,\"popup_announcement\":true,\"popup_coupons\":true,\"popup_lead_capture\":true,\"community_support\":true,\"free_ssl_security\":true,\"custom_domain_connection\":true,\"advanced_site_stats\":true,\"password_protection\":true,\"video_backgrounds\":true,\"hd_video_and_audio\":true,\"membership_registration\":true,\"membership_settings\":true,\"online_store\":true,\"accept_paypal_payments\":true,\"product_badges\":true,\"product_modifiers\":true,\"in_store_pickup\":true,\"shipping_calculator\":true,\"chat_and_email_support\":true,\"phone_support\":true,\"priority_support\":true,\"advanced_ecommerce_stats\":true,\"seo\":true,\"unlimited_storage\":true,\"members\":-1,\"abandoned_cart_emails\":true,\"integrated_shipping_labels\":true,\"tax_calculator\":true,\"no_weebly_ads\":true,\"site_search\":true,\"product_search\":true,\"square_gift_cards\":true,\"inventory_management\":true,\"integrated_facebook_ads\":true,\"real_time_shipping_calculator\":false,\"age_confirmation\":true,\"square_processing_rate_id\":\"ECOM_SOS_PERFORMANCE\",\"square_processing_rate_display\":{\"USD\":[{\"percent\":\"3.3\",\"flat\":30,\"type\":\"all\"}],\"AUD\":[{\"percent\":\"2.2\",\"flat\":0,\"type\":\"all\"}],\"CAD\":[{\"percent\":\"2.8\",\"flat\":30,\"type\":\"all\"}],\"EUR\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.9\",\"flat\":25,\"type\":\"non-eu\"}],\"GBP\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.5\",\"flat\":25,\"type\":\"non-eu\"}],\"JPY\":[{\"percent\":\"3.6\",\"flat\":0,\"type\":\"non-jcb\"},{\"percent\":\"3.6\",\"flat\":0,\"type\":\"jcb\"}]},\"favicon_customization\":true,\"site_code_customization\":true,\"instagram_feed_tagging\":true,\"quick_shop\":true,\"scheduleEnabled\":false,\"smartGroupsEnabled\":false,\"socialAdsEnabled\":true,\"lifetimeEmails\":2,\"emailsPerMonth\":2,\"recipientsPerEmail\":500,\"recipientsPerMonth\":1000,\"automations\":0,\"automatedRecipientsPerMonth\":0,\"enabledLeadFormTypes\":[\"popup\"],\"allowsPurchasingCredits\":false,\"insights_overview\":true,\"insights_sales\":true,\"insights_products\":true,\"custom_fonts\":true,\"com_shipping_settings\":true,\"com_manage_gift_cards\":true,\"com_create_shipping_label_discount\":true,\"customer_accounts\":true,\"com_stripe_payment\":false,\"com_product_sync\":true,\"com_product_variant_limit\":-1,\"com_shipping_labels_tier\":\"weebly_cpp_tier\",\"com_transaction_fee\":\"0.00\",\"form_file_upload\":true,\"product_scheduled_actions\":true,\"custom_site_icon\":true,\"video_uploading\":10485760,\"buyer_customer_accounts\":true,\"personalized_order_screen\":true,\"personalized_recommendations\":true,\"easy_reordering\":true,\"self_serve_ordering\":true,\"ecom_preorders\":true,\"order_text_alerts\":true,\"time_based_categories\":true,\"advanced_order_limits\":true,\"modifier_images\":true,\"free_fulfillment_meter\":true,\"spd_fees_amount\":0,\"twenty_four_seven_support\":false,\"advanced_design_controls\":true,\"order_item_quantity_limit\":true,\"stock_media\":true,\"so_buyer_subscriptions\":true,\"item_badge_customization\":true,\"shop_all_item_layouts\":true,\"icon_sets\":true,\"banner_slides\":true,\"priority_phone_support\":false,\"pdp_layouts\":true,\"full_height_banners\":true,\"scrolling_text\":true,\"featured_item_layouts\":true,\"mega_menu\":true,\"appts_customization\":true,\"premium_text_image_layout\":true,\"featured_category_layouts\":true,\"ai_generated_content\":true,\"image_shapes\":true,\"group_ordering\":true,\"inventory_bundles\":true,\"com_square_transaction_best_discount\":true},\"isTrial\":false},\"siteFeatures\":{\"embed_restricted_widgets\":true,\"com_gifting\":true,\"com_authorizenet_payment\":false,\"com_digital_products\":true,\"com_coupons\":true,\"com_product_reviews\":true,\"com_product_limit\":-1,\"popup_announcement\":true,\"popup_coupons\":true,\"popup_lead_capture\":true,\"community_support\":true,\"free_ssl_security\":true,\"custom_domain_connection\":true,\"advanced_site_stats\":true,\"password_protection\":true,\"video_backgrounds\":true,\"hd_video_and_audio\":true,\"membership_registration\":true,\"membership_settings\":true,\"online_store\":true,\"accept_paypal_payments\":true,\"product_badges\":true,\"product_modifiers\":true,\"in_store_pickup\":true,\"shipping_calculator\":true,\"chat_and_email_support\":true,\"phone_support\":true,\"priority_support\":true,\"advanced_ecommerce_stats\":true,\"seo\":true,\"unlimited_storage\":true,\"members\":-1,\"abandoned_cart_emails\":true,\"integrated_shipping_labels\":true,\"tax_calculator\":true,\"no_weebly_ads\":true,\"site_search\":true,\"product_search\":true,\"square_gift_cards\":true,\"inventory_management\":true,\"integrated_facebook_ads\":true,\"real_time_shipping_calculator\":false,\"age_confirmation\":true,\"square_processing_rate_id\":\"ECOM_SOS_PERFORMANCE\",\"square_processing_rate_display\":{\"USD\":[{\"percent\":\"3.3\",\"flat\":30,\"type\":\"all\"}],\"AUD\":[{\"percent\":\"2.2\",\"flat\":0,\"type\":\"all\"}],\"CAD\":[{\"percent\":\"2.8\",\"flat\":30,\"type\":\"all\"}],\"EUR\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.9\",\"flat\":25,\"type\":\"non-eu\"}],\"GBP\":[{\"percent\":\"1.4\",\"flat\":25,\"type\":\"intra-eu\"},{\"percent\":\"2.5\",\"flat\":25,\"type\":\"non-eu\"}],\"JPY\":[{\"percent\":\"3.6\",\"flat\":0,\"type\":\"non-jcb\"},{\"percent\":\"3.6\",\"flat\":0,\"type\":\"jcb\"}]},\"favicon_customization\":true,\"site_code_customization\":true,\"instagram_feed_tagging\":true,\"quick_shop\":true,\"scheduleEnabled\":false,\"smartGroupsEnabled\":false,\"socialAdsEnabled\":true,\"lifetimeEmails\":2,\"emailsPerMonth\":2,\"recipientsPerEmail\":500,\"recipientsPerMonth\":1000,\"automations\":0,\"automatedRecipientsPerMonth\":0,\"enabledLeadFormTypes\":[\"popup\"],\"allowsPurchasingCredits\":false,\"insights_overview\":true,\"insights_sales\":true,\"insights_products\":true,\"custom_fonts\":true,\"com_shipping_settings\":true,\"com_manage_gift_cards\":true,\"com_create_shipping_label_discount\":true,\"customer_accounts\":true,\"com_stripe_payment\":false,\"com_product_sync\":true,\"com_product_variant_limit\":-1,\"com_shipping_labels_tier\":\"weebly_cpp_tier\",\"com_transaction_fee\":\"0.00\",\"form_file_upload\":true,\"product_scheduled_actions\":true,\"custom_site_icon\":true,\"video_uploading\":10485760,\"buyer_customer_accounts\":true,\"personalized_order_screen\":true,\"personalized_recommendations\":true,\"easy_reordering\":true,\"self_serve_ordering\":true,\"ecom_preorders\":true,\"order_text_alerts\":true,\"time_based_categories\":true,\"advanced_order_limits\":true,\"modifier_images\":true,\"free_fulfillment_meter\":true,\"spd_fees_amount\":0,\"twenty_four_seven_support\":false,\"advanced_design_controls\":true,\"order_item_quantity_limit\":true,\"stock_media\":true,\"so_buyer_subscriptions\":true,\"item_badge_customization\":true,\"shop_all_item_layouts\":true,\"icon_sets\":true,\"banner_slides\":true,\"priority_phone_support\":false,\"pdp_layouts\":true,\"full_height_banners\":true,\"scrolling_text\":true,\"featured_item_layouts\":true,\"mega_menu\":true,\"appts_customization\":true,\"premium_text_image_layout\":true,\"featured_category_layouts\":true,\"ai_generated_content\":true,\"image_shapes\":true,\"group_ordering\":true,\"inventory_bundles\":true,\"com_square_transaction_best_discount\":true},\"featureset\":{\"pages\":[\"category\",\"shopAll\",\"giftCards\"],\"quickShop\":true,\"search\":true,\"blocks\":[\"featured-products\"]},\"page\":{\"id\":\"c4681ed0-d0f3-11ef-aeca-8bf90ea74d5e\",\"site_snapshot_id\":\"c46678f0-d0f3-11ef-9007-f5c7373036cc\",\"properties\":{\"name\":\"Home\",\"route\":\"home\",\"title\":\"Home\",\"description\":\"\",\"attributions\":{\"unsplash\":{}},\"contentAreas\":{\"banner\":{\"id\":\"c95f2220-574a-11ea-be7b-ffbd761dd6b0\",\"hidden\":true,\"content\":{\"id\":\"c95f2960-574a-11ea-a101-bd80bc5da7d9\",\"type\":\"block\",\"layout\":\"banner-3\",\"purpose\":\"banner@^1.2.2\",\"elements\":[{\"id\":\"ca0da635-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"title-1\",\"properties\":{\"title\":{\"quill\":{\"ops\":[{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\"}},{\"id\":\"ca0da636-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"image-1\",\"properties\":{\"image\":{\"source\":\"\"}}},{\"id\":\"ca0da637-574a-11ea-b6ec-01978c26be8d\",\"purpose\":\"button-1\",\"properties\":{\"link\":{\"tab\":false,\"link\":{\"orderOnline\":\"\"},\"type\":\"orderOnline\"},\"label\":\"ORDER\\n\",\"hidden\":true,\"presetColor\":\"--background-color\",\"presetStyle\":\"primary\"}}],\"properties\":{\"height\":\"small\",\"shortID\":\"yimxTQ\",\"background\":{\"type\":\"image\",\"image\":null},\"verticalsHidden\":true}}},\"userContent\":{\"id\":\"c95f1720-574a-11ea-b2a5-53823f02e79f\",\"hidden\":false,\"content\":{\"id\":\"c95f1d50-574a-11ea-a03c-f5a5830d7fba\",\"type\":\"container\",\"cells\":[{\"id\":\"8045a800-8c37-11ea-8964-235c1686586c\",\"type\":\"cell\",\"content\":{\"id\":\"8045cf10-8c37-11ea-8964-235c1686586c\",\"type\":\"block\",\"layout\":\"basic-text\",\"purpose\":\"text@^1.0.0\",\"properties\":{\"shortID\":\"vQnZWH\",\"settings\":{\"links\":{\"hidden\":true},\"texts\":{\"color\":\"var(--primary-color)\",\"hidden\":false,\"allCaps\":true,\"fontSize\":\"step-0\",\"textStyle\":\"body\"},\"titles\":{\"hidden\":true}},\"repeatables\":[{\"id\":1,\"link\":{\"label\":\"Learn more\"},\"text\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"Welcome back to Burrow! We are grateful for your continued support. Our regular hours have resumed starting on 1\\/2\\/2025 - open Tuesday to Friday from 10 am to 3 pm.\\n\"}]}}},\"title\":{\"title\":{\"quill\":{\"ops\":[{\"insert\":\"Distinctive and Bold\"}]}}}}],\"sectionTitle\":{\"hidden\":true}}}},{\"id\":\"cbb8e530-574a-11ea-b6ec-01978c26be8d\",\"type\":\"cell\",\"content\":{\"id\":\"cbb8e531-574a-11ea-b6ec-01978c26be8d\",\"type\":\"block\",\"layout\":\"location-hours-side-by-side\",\"purpose\":\"location-hours@^1.0.0\",\"properties\":{\"shortID\":\"hVmjNt\",\"mapConfig\":{\"scale\":77,\"theme\":\"standard\",\"location\":{\"lat\":\"40.70276\",\"lng\":\"-73.98683\",\"city\":\"Brooklyn\",\"long\":\"-73.98683\",\"street\":\"68 Jay Street\",\"latitude\":\"40.70276\",\"longitude\":\"-73.98683\",\"postal_code\":\"11201\",\"region_code\":\"NY\",\"country_code\":\"US\",\"formatted_address\":\"68 Jay Street, Brooklyn, 11201, US\"}},\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--light-text-color\",\"isDark\":false}},\"hoursConfig\":{\"hidden\":false,\"content\":{\"quill\":{\"ops\":[{\"insert\":\"\\nMon Closed\\nTue 10:00 - 3:00ish\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Wed 10:00 - 3:00ish\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Thur 10:00 - 3:00ish\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Fri 10:00 - 3:00ish\\nSat Closed\\nSun Closed\\n\"}]}},\"fontSize\":\"small\"},\"titleConfig\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"LOCATION & HOURS\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\"},\"detailsConfig\":{\"hidden\":false,\"content\":{\"quill\":{\"ops\":[{\"insert\":\"Burrow\\n68 Jay street \"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"(back of the lobby at suite119) \"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}},{\"insert\":\"Brooklyn NY 11201\\n\\ncontact@burrow.nyc\\n\\n\\n\"}]}},\"fontSize\":\"small\",\"fontFamily\":\"--secondary-font\",\"displayEmail\":true,\"displayPhone\":true},\"syncedLocation\":{\"lat\":\"37.77532\",\"lng\":\"-122.41744\",\"city\":\"SAN FRANCISCO\",\"email\":null,\"hours\":[{\"day\":\"Monday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Tuesday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Wednesday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Thursday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Friday\",\"time\":\" 9:00am - 5:00pm\"},{\"day\":\"Saturday\",\"time\":\"Closed\"},{\"day\":\"Sunday\",\"time\":\"Closed\"}],\"phone\":null,\"region\":\"CA\",\"street\":\"1455 MARKET ST STE 600\",\"street2\":\"\",\"locationId\":\"\",\"postal_code\":\"94103\",\"country_code\":\"US\",\"business_name\":\"Nosh to go\",\"formatted_address\":\"1455 MARKET ST STE 600 SAN FRANCISCO, CA 94103, US\"},\"actionButtonConfig\":{\"hidden\":true,\"presetSize\":\"large\"}}}},{\"id\":\"ec25c540-4037-11ec-a40f-2f73c2bf6c07\",\"type\":\"cell\",\"content\":{\"id\":\"ec25c541-4037-11ec-a40f-2f73c2bf6c07\",\"type\":\"block\",\"layout\":\"text-and-image-2-column\",\"purpose\":\"text-and-image@^1.0.0\",\"properties\":{\"shortID\":\"MiYvIt\",\"settings\":{\"texts\":{\"hidden\":true,\"fontSize\":\"medium\"},\"images\":{\"size\":\"large\",\"shape\":null,\"hidden\":false,\"aspectRatio\":\"4_3\"},\"titles\":{\"bold\":false,\"hidden\":true,\"italic\":false,\"fontSize\":\"medium\",\"fontFamily\":\"--secondary-font\"}},\"textAlign\":\"\",\"repeatables\":[{\"id\":5,\"text\":{\"content\":\"One of our most popular items. Perfect for everyday use. Exceptional quality and choice.\"},\"image\":{\"figure\":{\"name\":\"Untitled drawing-3.jpg\",\"width\":798,\"height\":625,\"source\":\"\",\"original\":\"\\/uploads\\/b\\/8a6a20ff3917b7e0dae510c589e26a2c393cbc533d703f67d2dd4b89be89855d\\/Untitled drawing-3_1654453341.jpg\",\"sourceSet\":{},\"attribution\":{},\"cropOptions\":null}},\"title\":{\"content\":\"Distinctive and Bold\"},\"button\":{\"label\":\"View products\"},\"callout\":{\"content\":\"Quality Craftsmanship\"},\"secondaryButton\":{\"label\":\"Learn more\"}}],\"verticalsHidden\":true}}},{\"id\":\"d8e76060-574a-11ea-b6ec-01978c26be8d\",\"type\":\"cell\",\"content\":{\"id\":\"d8e76061-574a-11ea-b6ec-01978c26be8d\",\"type\":\"block\",\"layout\":\"contact-us-1\",\"purpose\":\"contact-us@^1.0.0\",\"elements\":[{\"id\":\"d8ef76b0-574a-11ea-ba04-197debb491bb\",\"purpose\":\"title\",\"properties\":{\"title\":{\"quill\":{\"ops\":[{\"insert\":\"CONTACT\"},{\"insert\":\"\\n\",\"attributes\":{\"block\":true}}]}},\"fontSize\":\"medium\",\"fontFamily\":\"--secondary-font\"}},{\"id\":\"d8ef76b1-574a-11ea-ba04-197debb491bb\",\"purpose\":\"text\",\"properties\":{\"content\":{\"quill\":{\"ops\":[{\"insert\":\"\\u270d\",\"attributes\":{\"color\":\"#85735b\"}},{\"insert\":\"\\n\"}]}},\"fontSize\":\"medium\"}},{\"id\":\"d8ef76b2-574a-11ea-ba04-197debb491bb\",\"purpose\":\"contact-form\",\"properties\":{\"type\":\"contact-form\",\"button\":{\"label\":\"submit\",\"presetColor\":\"--background-color\",\"presetStyle\":\"secondary\"},\"fields\":[{\"id\":\"d8ef76b4-574a-11ea-ba04-197debb491bb\",\"type\":\"input\",\"label\":\"Email\",\"altLabel\":\"Email\",\"required\":true,\"properties\":{\"type\":\"email\",\"field\":\"email\"},\"placeholder\":\"Email\"},{\"id\":\"d8ef76b3-574a-11ea-ba04-197debb491bb\",\"type\":\"input\",\"label\":\"Full name\",\"altLabel\":\"Full Name\",\"properties\":{\"type\":\"name\",\"field\":\"full-name\"},\"placeholder\":\"Full name\"},{\"id\":\"d8ef76b5-574a-11ea-ba04-197debb491bb\",\"type\":\"textarea\",\"label\":\"Leave us a message. \\ud83d\\udcceNot accepting custom order at this time. \",\"altLabel\":\"Message\",\"required\":true,\"properties\":{\"field\":\"message\"},\"isMandatory\":true,\"placeholder\":\"Leave us a message. \\ud83d\\udcceNot accepting custom order at this time. \"}],\"schema\":{\"id\":\"7d7df450-a4d4-11ea-b706-6336b9254dfd\",\"hash\":\"3e105217b21a40d70287e8f4422a465b\"},\"notificationEmail\":\"\"}}],\"properties\":{\"shortID\":\"XkfajF\",\"background\":{\"type\":\"color\",\"color\":{\"value\":\"--light-text-color\",\"isDark\":false}}}}}]}}}}}},\"storeInfo\":{\"merchant_id\":\"E28T9K465CQX1\",\"buyer_customer_accounts_enabled\":true,\"currency\":\"USD\",\"locale\":\"en_US\",\"language\":\"en\",\"syncing_disabled\":true,\"return_policy\":\" We do not accept returns, offer exchanges, and\\/or grant refunds on any goods sold unless the issue for return, exchange, and\\/or refund is the result of an error in our manufacturing, packaging, or handling of the goods. \",\"shipping_policy\":\" Carrier : We ship our product via UPS nationwide through our online store. Tracking number : You can expect your shipping confirmation email to arrive between 6pm-9pm.\\u00a0 Cancellation : Please contact us at contact&#64;burrow.nyc to request a cancellation. Unfortunately we cannot cancel your order once it&#039;s shipped. \",\"max_donation_amount\":5000,\"store_mode\":\"cart\",\"payment_method_support\":{\"visa\":true,\"mastercard\":true,\"amex\":true,\"discover\":true,\"jcb\":true,\"interac\":false,\"paypal\":false,\"apple_pay\":true,\"google_pay\":true,\"cash_app\":true,\"square_pay\":true},\"show_pdp_buy_now_button\":true,\"allowed_to_sell\":true,\"accepting_orders\":true,\"has_payment_processor\":true,\"is_group_ordering_enabled\":false,\"product_reviews_enabled\":false,\"show_on_sale_section\":true,\"show_low_stock_section\":false,\"show_out_of_stock_section\":true,\"shipping_location_ids\":[\"99S21NTS3HC1X\"],\"fulfillment_support\":{\"delivery\":false,\"pickup\":true,\"shipping\":true,\"dine_in\":false,\"manual\":false,\"digital\":false},\"seller_preferred_fulfillment\":\"pickup\",\"locations_counts\":{\"pickup\":1,\"delivery\":0,\"dine_in\":0,\"pickup_or_delivery\":1,\"brick_and_mortar_fulfillment\":1,\"shipping\":1,\"total\":1},\"has_subscribable_items\":false,\"has_shippable_product\":true,\"has_time_based_categories\":false,\"product_setting_low_stock_threshold\":5,\"category_hierarchy_root_ids\":{\"site_category_id\":null,\"id\":null}},\"commerceLinks\":{\"products\":{},\"categories\":{\"11\":{\"site_category_id\":\"11\",\"name\":\"Pastry +a\",\"updated_date\":\"2025-08-07T18:38:07+00:00\",\"permalink\":\"\",\"site_link\":\"\\/shop\\/pastry-a\\/11\"}},\"meta\":{\"pagination\":{\"products\":[],\"categories\":{\"per_page\":2500,\"current_page\":1,\"total_pages\":1}}}},\"autoNavLinks\":[{\"link\":{\"page\":{\"pageID\":\"c4681ed0-d0f3-11ef-aeca-8bf90ea74d5e\"}},\"type\":\"page\",\"title\":\"HOME\",\"children\":[]},{\"link\":{\"category\":11},\"type\":\"category\",\"title\":\"SHOP\",\"children\":[]},{\"link\":{\"category\":10},\"type\":\"category\",\"title\":\"DRINK\",\"children\":[]},{\"link\":{\"giftCards\":true},\"type\":\"giftCards\",\"title\":\"Gift cards\",\"children\":[]},{\"link\":{\"page\":{\"pageID\":\"c4674980-d0f3-11ef-81eb-d5b3db24901e\"}},\"type\":\"page\",\"children\":[]},{\"link\":{\"page\":{\"pageID\":\"c467a360-d0f3-11ef-b914-b74be5e312a6\"}},\"type\":\"page\",\"children\":[]}],\"blogPostLinks\":{},\"featureFlags\":{\"ecom.website.deprecated-layouts\":false,\"marketing-enable-drive-repeat-purchase-campaign\":true,\"ecom.website.facebook-food\":true,\"ecom.website.theme-export\":false,\"ecom.website.chamber-via-fastly\":true,\"ecom.square-online-published-catalog-cache-version\":\"2026-03-25\",\"ecom.checkout.open_tabs\":true,\"ecom.website.photo-reviews\":true,\"ecom.checkout.cmi-sentry-integration\":true,\"ecom.checkout.cmi.bootstrap-tracking-snowplow\":true,\"ecom.checkout.cmi.bootstrap-tracking-ga\":true,\"ecom.website.order-confirmation-page.website-redirect\":true,\"ecom.checkout.cmi.locale-view-splitting\":true,\"ecom.checkout.open_tabs_gc_coupon\":true,\"ecom.cmi-cart\":true,\"ecom.checkout.cmi.theme-fonts\":false,\"ecom-fulfillment-api-v-2\":false,\"ecom.omnichannel-discounts-frontend\":true,\"ecom.omnichannel-discounts-category-api\":false,\"ecom-improved-tipping-experience\":true,\"ecom.splash.loyalty\":true,\"ecom.website.published-site.datadog-rum\":true,\"ecom.website.editor.datadog-rum\":true,\"ecom-website-published-site-datadog-rum-bot-filter\":true,\"ecom-use-tracking-inventory\":false,\"ecom.image-controls.width-fix\":true,\"ecom.gradient-backgrounds\":true,\"ecom.website.form-fraud-blocking\":true,\"ecom.website.form-fraud-auto-ban\":true,\"ecom.website.code-editor\":false,\"ecom.shopping.pdp-layouts-m1\":true,\"ecom.chamber.subscriptions\":true,\"ecom.tuba.subscriptions-paid-shipping-rates\":true,\"ecom-cko-enhanced-logging\":true,\"ecom-cko-unified-logging\":true,\"ecom.shopping.so-coupons-sunset-integrations\":true,\"ecom.order-online-text-layouts\":true,\"ecom.appointment-improvements\":true,\"ecom.appointment-improvements-m2\":true,\"ecom.tuba.committed-inventory-m1\":true,\"ecom.splash-improvements\":true,\"ecom-themes-onboarding\":true,\"ecom.shopping.featured-categories-paid-layouts\":true,\"ecom.website.ai-text.short-form\":true,\"ecom.website.ai-text.long-form\":true,\"ecom.website.metered-request.override\":false,\"ecom.website.async-create-theme\":false,\"ecom.can_use_cart_sharing\":true,\"ecom.website.ai.editor-prototype\":false,\"ecom.website.ai.page-seo\":false,\"ecom.appointment-direct-booking\":true,\"ecom-service-cutover-fe-request-augmentations\":true,\"ecom.catalog.so-item-library-deprecation-3\":true,\"ecom.kiosk-photo-card\":true,\"ecom.website.system-page.cart\":false,\"ecom-enable-kiosk-large-catalog-layout\":false,\"ecom-hide-instagram\":true,\"ecom-hide-instagram-on-published-sites\":false,\"ecom-enable-kiosk-item-preloading\":true,\"ecom-brand-api-sync\":true,\"ecom.service-cutover.enable-tuba-traffic\":true,\"ecom-show-order-online\":true,\"websdk-use-new-afterpay-buttons\":true,\"ecom-checkout-should-check-is-decouple-checkout\":true,\"ecom-prime-use-store-info-v29\":true,\"ecom-checkout-force-pci-compliance\":false,\"ecom-website-hide-food-beverage-themes\":false,\"ecom-website-fix-dine-in-location-selection\":true,\"ecom-combo-slot-include-hidden-items\":false},\"lightning\":{},\"datadog\":{\"publishedSite\":{\"service\":\"spi-ecom-square-online-buyer-journey\",\"applicationId\":\"0a9b10e6-9671-4e1d-bd0b-2f283f0d29ee\",\"clientToken\":\"pubc6e7a7143c494f34f1366112ef7c1e2c\",\"env\":\"production\",\"rum\":{\"sampleRate\":50,\"sessionReplaySampleRate\":20,\"traceSampleRate\":10}}}}; window.stopSiteLoadingAnimation = () => { const loadingElement = document.querySelector('.loading-view'); loadingElement?.remove(); }; /** * PCI Compliance Flag * * This flag indicates if scripts have been filtered for PCI compliance (OpenTabs SSO Checkout route). * This value is set only for buyer dashboard/site view to prevent infinite loading loops. * * Do NOT include this file in editor-frame.blade.php as it affects seller dashboard. */ window.IS_PCI_SCRIPTS_FILTERED = false; // used for editor-frame and pub site bootstrap window.APP_ENV = 'production'; window.APP_ORIGIN = 'https://square.online'; window.APP_URL = 'https://www.weebly.com'; window.ASSET_BASE = '/app/website'; window.ASSETS_PUBLIC_PATH = 'https://cdn3.editmysite.com/app/website/'; window.CMS_API_PATH ='/app/website/cms'; window.DEPRECATED_IMAGE_HOST = 'https://images.editor.website'; window.FRAME_ORIGIN = 'https://sandbox.square.online'; window.GENERATE_GOOGLE_MAP_BASE = 'https://www.editmysite.com'; window.IMAGE_HOST = 'https://8a6a20ff3917b7e0dae5.cdn6.editmysite.com'; window.IS_DRAFT = false; window.IS_MAGIC_MIRROR = false; window.IS_THEME_PREVIEW = false; window.IS_ENHANCED_PREVIEW = false; window.DRAFT_ORIGIN = 'https://drafts.editmysite.com'; window.PUBLISHED_CMS_API_PREFIX = '/app/cms'; window.SENTRY_DSN = 'https://13e49d785d8d4f828038b6136f3b48ba@sentry.io/1263158'; window.RELEASE = 'prime-3488887'; window.URL_BASE = ''; window.XSRF_COOKIE_NAME = 'publishedsite-xsrf'; window.FASTLY_URL_BASE = 'https://cdn5.editmysite.com'; window.SQUARE_WEB_PAYMENTS_SDK = 'https://web.squarecdn.com/v1/square.js' window.PUBLIC_SQUARE_URL_BASE = 'squareup.com'; window.PUBLIC_SQUARE_APPTS_URL_BASE = 'app.squareup.com'; window.ENABLE_FRONTEND_LOCAL_DEV_CACHE = ''; window.GOOGLE_TAG_DEVELOPER_ID = 'developer_id.dOTM2Yj'; window.IS_SQUARE_GO = false; window.IS_PUBLISHED_MAGIC_MIRROR = false; // state window.SUBDOMAIN_BASE = 'square.site'; (function (p, l, o, w, i, n, g) { var id = i + '-script'; if (!l.getElementById(i)) { n = l.createElement(o); g = l.getElementsByTagName(o)[0]; n.id = id; n.async = 1; n.src = w; g.parentNode.insertBefore(n, g); } })(window, document, \"script\", \"https://cdn3.editmysite.com/app/website/static/js/wsnbn/snowday262.js\", \"snowday\"); (function (p, l, o, w, i, n, g) { if (!p[i]) { p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || []; p.GlobalSnowplowNamespace.push(i); p[i] = function () { (p[i].q = p[i].q || []).push(arguments); }; p[i].q = p[i].q || []; } })(window, document, '', '', \"snowday\"); var r = [99, 104, 101, 99, 107, 111, 117, 116, 46, 40, 119, 101, 101, 98, 108, 121, 124, 101, 100, 105, 116, 109, 121, 115, 105, 116, 101, 41, 46, 99, 111, 109]; var snPlObR = function(arr) { var s = ''; for (var i = 0 ; i (function(d){var s = d.createElement(\"script\");s.setAttribute(\"data-account\", \"WdbgV04Arh\");s.setAttribute(\"src\", \"https://cdn.userway.org/widget.js\");(d.body || d.head).appendChild(s);})(document) Please ensure Javascript is enabled for purposes of website accessibility",
+          "source_url": "https://www.burrow.nyc/",
+          "confidence": 0.8,
+          "evidence_text": "Burrow website accessibility \"}],\"customFonts\":[],\"featuresets\":[\"retail\",\"giftCards\"],\"contentAreas\":{\"cart\":{\"id\":\"c96462e0-574a-11ea-bbb7-55ea33cd7dcb\",\"hidden\":false,\"content\":{\"id\":\"c9646470-574a-11ea-a6ec-f344453cee69\",\"type\":\"block\",\"layout\":\"cart-1\",\"purpose\":\"cart@^1...."
+        }
+      ],
+      "source_confidence": 0.65,
+      "missing_fields": [
+        "instagram",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Rex",
+      "place_id": "ChIJ3bHceclZwokR0bc2uIf4TYg",
+      "google_maps_url": "https://maps.google.com/?cid=9821779624159786961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://rex-nyc.com/",
+        "source_url": "https://rex-nyc.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/rexcoffeenyc/?utm_source=ig_embed&utm_campaign=loading",
+        "label": "View this profile on Instagram",
+        "source_url": "https://rex-nyc.com/",
+        "confidence": 0.85,
+        "evidence_text": "Shop Home - REX View this profile on Instagram https://www.instagram.com/rexcoffeenyc/?utm_source=ig_embed&utm_campaign=loading"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://rex-nyc.com/index.php/rex-hells-kitchen/",
+        "label": "REX Hell’s Kitchen Menu",
+        "source_url": "https://rex-nyc.com/",
+        "confidence": 0.8,
+        "evidence_text": "Shop Home - REX REX Hell’s Kitchen Menu https://rex-nyc.com/index.php/rex-hells-kitchen/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://rex-nyc.com/index.php/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "Shop Home - REX Contact Us https://rex-nyc.com/index.php/contact-us/"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://rex-nyc.com/index.php/blog-masonry-grid/",
+          "label": "News / Events",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "Shop Home - REX News / Events https://rex-nyc.com/index.php/blog-masonry-grid/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://rex-nyc.com/wp-content/uploads/2025/07/Latte-removebg-preview.png",
+          "label": "",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "Shop Home - REX https://rex-nyc.com/wp-content/uploads/2025/07/Latte-removebg-preview.png"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://admin.trustindex.io/api/googleWriteReview?place-id=ChIJ3bHceclZwokR0bc2uIf4TYg",
+          "label": "Write a review to Google",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "Shop Home - REX Write a review to Google https://admin.trustindex.io/api/googleWriteReview?place-id=ChIJ3bHceclZwokR0bc2uIf4TYg"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9821779624159786961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9821779624159786961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://rex-nyc.com/",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://rex-nyc.com/index.php/rex-hells-kitchen/",
+          "label": "REX Hell’s Kitchen Menu",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Shop Home - REX REX Hell’s Kitchen Menu https://rex-nyc.com/index.php/rex-hells-kitchen/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.ezcater.com/catering/rex-3",
+          "label": "Catering Menu",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Shop Home - REX Catering Menu https://www.ezcater.com/catering/rex-3"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://rex-nyc.com/index.php/blog-masonry-grid/",
+          "label": "News / Events",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "Shop Home - REX News / Events https://rex-nyc.com/index.php/blog-masonry-grid/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://rex-nyc.com/index.php/contact-us/",
+          "label": "Contact Us",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "Shop Home - REX Contact Us https://rex-nyc.com/index.php/contact-us/"
+        },
+        {
+          "kind": "menu",
+          "url": "https://rex-nyc.com/index.php/rex-lower-eas-side/",
+          "label": "View Full Menu for REX Lower East Side",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "Shop Home - REX View Full Menu for REX Lower East Side https://rex-nyc.com/index.php/rex-lower-eas-side/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://rex-nyc.com/wp-content/uploads/2025/07/Latte-removebg-preview.png",
+          "label": "",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "Shop Home - REX https://rex-nyc.com/wp-content/uploads/2025/07/Latte-removebg-preview.png"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://admin.trustindex.io/api/googleWriteReview?place-id=ChIJ3bHceclZwokR0bc2uIf4TYg",
+          "label": "Write a review to Google",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "Shop Home - REX Write a review to Google https://admin.trustindex.io/api/googleWriteReview?place-id=ChIJ3bHceclZwokR0bc2uIf4TYg"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/rexcoffeenyc/?utm_source=ig_embed&utm_campaign=loading",
+          "label": "View this profile on Instagram",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.85,
+          "evidence_text": "Shop Home - REX View this profile on Instagram https://www.instagram.com/rexcoffeenyc/?utm_source=ig_embed&utm_campaign=loading"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/rexcoffeenyc/",
+          "label": "",
+          "source_url": "https://rex-nyc.com/",
+          "confidence": 0.85,
+          "evidence_text": "Shop Home - REX https://www.instagram.com/rexcoffeenyc/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "reservation_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "place_id": "ChIJkzkqDABZwokRl-Jxqks-gq4",
+      "google_maps_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+        "source_url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "http://www.google.com/url?q=http%3A%2F%2Fmenus.fyi%2F8418872&sa=D&sntz=1&usg=AOvVaw1okNEvY3W_8vPx_0Pb8vGF",
+        "label": "ORDER HERE",
+        "source_url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+        "confidence": 0.8,
+        "evidence_text": "KAIDA COFFEE & BAKERY ORDER HERE http://www.google.com/url?q=http%3A%2F%2Fmenus.fyi%2F8418872&sa=D&sntz=1&usg=AOvVaw1okNEvY3W_8vPx_0Pb8vGF"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+          "source_url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "http://www.google.com/url?q=http%3A%2F%2Fmenus.fyi%2F8418872&sa=D&sntz=1&usg=AOvVaw1okNEvY3W_8vPx_0Pb8vGF",
+          "label": "ORDER HERE",
+          "source_url": "https://sites.google.com/kaida.one/kaidacoffee/home",
+          "confidence": 0.8,
+          "evidence_text": "KAIDA COFFEE & BAKERY ORDER HERE http://www.google.com/url?q=http%3A%2F%2Fmenus.fyi%2F8418872&sa=D&sntz=1&usg=AOvVaw1okNEvY3W_8vPx_0Pb8vGF"
+        }
+      ],
+      "source_confidence": 0.65,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "place_id": "ChIJiXYeT8FZwokR0i8FJw7l16s",
+      "google_maps_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.bourkestreetbakery.com/",
+        "source_url": "http://www.bourkestreetbakery.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/bourkestreetbakerynyc/",
+        "label": "Instagram",
+        "source_url": "https://www.bourkestreetbakery.com/",
+        "confidence": 0.85,
+        "evidence_text": "Bourke Street Bakery NYC Instagram https://www.instagram.com/bourkestreetbakerynyc/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.bourkestreetbakery.com/cookbooks",
+        "label": "Cookbooks",
+        "source_url": "https://www.bourkestreetbakery.com/",
+        "confidence": 0.8,
+        "evidence_text": "Bourke Street Bakery NYC Cookbooks /cookbooks"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.bourkestreetbakery.com/contact",
+          "label": "Contact",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.7,
+          "evidence_text": "Bourke Street Bakery NYC Contact /contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.bourkestreetbakery.com/pressnyc",
+          "label": "Press",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.65,
+          "evidence_text": "Bourke Street Bakery NYC Press /pressnyc"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.bourkestreetbakery.com/",
+          "source_url": "http://www.bourkestreetbakery.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.bourkestreetbakery.com/pressnyc",
+          "label": "Press",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.65,
+          "evidence_text": "Bourke Street Bakery NYC Press /pressnyc"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.bourkestreetbakery.com/cookbooks",
+          "label": "Cookbooks",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.8,
+          "evidence_text": "Bourke Street Bakery NYC Cookbooks /cookbooks"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.bourkestreetbakery.com/contact",
+          "label": "Contact",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.7,
+          "evidence_text": "Bourke Street Bakery NYC Contact /contact"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/bourkestreetbakerynyc/",
+          "label": "Instagram",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.85,
+          "evidence_text": "Bourke Street Bakery NYC Instagram https://www.instagram.com/bourkestreetbakerynyc/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/bourkestreetbakeryny/",
+          "label": "Facebook",
+          "source_url": "https://www.bourkestreetbakery.com/",
+          "confidence": 0.8,
+          "evidence_text": "Bourke Street Bakery NYC Facebook https://www.facebook.com/bourkestreetbakeryny/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "place_id": "ChIJydHFGblZwokRd39Hs0utAAk",
+      "google_maps_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.labergamotenyc.com/",
+        "source_url": "http://labergamotenyc.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/LaBergamotenyc/",
+        "label": "Instagram",
+        "source_url": "https://www.labergamotenyc.com/",
+        "confidence": 0.85,
+        "evidence_text": "La Bergamote Instagram https://www.instagram.com/LaBergamotenyc/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.labergamotenyc.com/reservations",
+        "label": "Reservations",
+        "source_url": "https://www.labergamotenyc.com/",
+        "confidence": 0.8,
+        "evidence_text": "La Bergamote Reservations /reservations"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.labergamotenyc.com/chelsea-menu-2-1-1-1-1",
+        "label": "Menu",
+        "source_url": "https://www.labergamotenyc.com/",
+        "confidence": 0.8,
+        "evidence_text": "La Bergamote Menu /chelsea-menu-2-1-1-1-1"
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.labergamotenyc.com/",
+          "source_url": "http://labergamotenyc.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.labergamotenyc.com/chelsea-menu-2-1-1-1-1",
+          "label": "Menu",
+          "source_url": "https://www.labergamotenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "La Bergamote Menu /chelsea-menu-2-1-1-1-1"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.labergamotenyc.com/reservations",
+          "label": "Reservations",
+          "source_url": "https://www.labergamotenyc.com/",
+          "confidence": 0.8,
+          "evidence_text": "La Bergamote Reservations /reservations"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/LaBergamotenyc/",
+          "label": "Instagram",
+          "source_url": "https://www.labergamotenyc.com/",
+          "confidence": 0.85,
+          "evidence_text": "La Bergamote Instagram https://www.instagram.com/LaBergamotenyc/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "place_id": "ChIJ39G685NZwokR3VomrYwr_io",
+      "google_maps_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://claudesnyc.com/",
+        "source_url": "http://www.claudesnyc.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://claudesnyc.com/policies/contact-information",
+          "label": "Contact information",
+          "source_url": "https://claudesnyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "CLAUDE BAKERY &ndash; Claude Bakery West Village Contact information /policies/contact-information"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://claudesnyc.com/blogs/news/about-us",
+          "label": "About us",
+          "source_url": "https://claudesnyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "CLAUDE BAKERY &ndash; Claude Bakery West Village About us /blogs/news/about-us"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://claudesnyc.com/products/espresso-cheesecake-6",
+          "label": "Espresso Cheesecake 6\"",
+          "source_url": "https://claudesnyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "CLAUDE BAKERY &ndash; Claude Bakery West Village Espresso Cheesecake 6\" /products/espresso-cheesecake-6"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://claudesnyc.com/",
+          "source_url": "http://www.claudesnyc.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://claudesnyc.com/blogs/news/about-us",
+          "label": "About us",
+          "source_url": "https://claudesnyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "CLAUDE BAKERY &ndash; Claude Bakery West Village About us /blogs/news/about-us"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://claudesnyc.com/products/espresso-cheesecake-6",
+          "label": "Espresso Cheesecake 6\"",
+          "source_url": "https://claudesnyc.com/",
+          "confidence": 0.65,
+          "evidence_text": "CLAUDE BAKERY &ndash; Claude Bakery West Village Espresso Cheesecake 6\" /products/espresso-cheesecake-6"
+        },
+        {
+          "kind": "contact",
+          "url": "https://claudesnyc.com/policies/contact-information",
+          "label": "Contact information",
+          "source_url": "https://claudesnyc.com/",
+          "confidence": 0.7,
+          "evidence_text": "CLAUDE BAKERY &ndash; Claude Bakery West Village Contact information /policies/contact-information"
+        }
+      ],
+      "source_confidence": 0.65,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "maman",
+      "place_id": "ChIJBTRVgQNZwokRCZlgLnLCbvg",
+      "google_maps_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://mamannyc.com/locations/meatpacking",
+        "source_url": "https://mamannyc.com/locations/meatpacking",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/_mamannyc_/",
+        "label": "",
+        "source_url": "https://mamannyc.com/locations/meatpacking",
+        "confidence": 0.85,
+        "evidence_text": "Maman - Maman https://www.instagram.com/_mamannyc_/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://shop.mamannyc.com/products/maman-cookbook",
+        "label": "Cookbook",
+        "source_url": "https://mamannyc.com/locations/meatpacking",
+        "confidence": 0.8,
+        "evidence_text": "Maman - Maman Cookbook https://shop.mamannyc.com/products/maman-cookbook"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://mamannyc.com/info/contact",
+          "label": "Contact",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.7,
+          "evidence_text": "Maman - Maman Contact /info/contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/press",
+          "label": "Press",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Press /press"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/google-review-locations",
+          "label": "Leave us a review on google",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Leave us a review on google /google-review-locations"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://mamannyc.com/locations/meatpacking",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://shop.mamannyc.com/products/maman-cookbook",
+          "label": "Cookbook",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.8,
+          "evidence_text": "Maman - Maman Cookbook https://shop.mamannyc.com/products/maman-cookbook"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/press",
+          "label": "Press",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Press /press"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/_mamannyc_/",
+          "label": "",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.85,
+          "evidence_text": "Maman - Maman https://www.instagram.com/_mamannyc_/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://mamannyc.com/info/contact",
+          "label": "Contact",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.7,
+          "evidence_text": "Maman - Maman Contact /info/contact"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/google-review-locations",
+          "label": "Leave us a review on google",
+          "source_url": "https://mamannyc.com/locations/meatpacking",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Leave us a review on google /google-review-locations"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "place_id": "ChIJzQKlfZVZwokRlYqgTIq1Pu0",
+      "google_maps_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://marvelous-by-fred.square.site/",
+        "source_url": "https://marvelous-by-fred.square.site/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "contact_candidates": [],
+      "editorial_press_mentions": [],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://marvelous-by-fred.square.site/",
+          "source_url": "https://marvelous-by-fred.square.site/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        }
+      ],
+      "source_confidence": 0.55,
+      "missing_fields": [
+        "instagram",
+        "reservation_url",
+        "menu_url",
+        "whatsapp",
+        "editorial_press_mentions"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "maman",
+      "place_id": "ChIJPR-8N6RZwokROvrr-k3dqcw",
+      "google_maps_url": "https://maps.google.com/?cid=14747561781793389114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://mamannyc.com/locations/nomad",
+        "source_url": "https://mamannyc.com/locations/nomad",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/_mamannyc_/",
+        "label": "",
+        "source_url": "https://mamannyc.com/locations/nomad",
+        "confidence": 0.85,
+        "evidence_text": "Maman - Maman https://www.instagram.com/_mamannyc_/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://shop.mamannyc.com/products/maman-cookbook",
+        "label": "Cookbook",
+        "source_url": "https://mamannyc.com/locations/nomad",
+        "confidence": 0.8,
+        "evidence_text": "Maman - Maman Cookbook https://shop.mamannyc.com/products/maman-cookbook"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://mamannyc.com/info/contact",
+          "label": "Contact",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.7,
+          "evidence_text": "Maman - Maman Contact /info/contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/press",
+          "label": "Press",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Press /press"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/google-review-locations",
+          "label": "Leave us a review on google",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Leave us a review on google /google-review-locations"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=14747561781793389114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=14747561781793389114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://mamannyc.com/locations/nomad",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "reservation",
+          "url": "https://shop.mamannyc.com/products/maman-cookbook",
+          "label": "Cookbook",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.8,
+          "evidence_text": "Maman - Maman Cookbook https://shop.mamannyc.com/products/maman-cookbook"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/press",
+          "label": "Press",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Press /press"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/_mamannyc_/",
+          "label": "",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.85,
+          "evidence_text": "Maman - Maman https://www.instagram.com/_mamannyc_/"
+        },
+        {
+          "kind": "contact",
+          "url": "https://mamannyc.com/info/contact",
+          "label": "Contact",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.7,
+          "evidence_text": "Maman - Maman Contact /info/contact"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://mamannyc.com/google-review-locations",
+          "label": "Leave us a review on google",
+          "source_url": "https://mamannyc.com/locations/nomad",
+          "confidence": 0.65,
+          "evidence_text": "Maman - Maman Leave us a review on google /google-review-locations"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "place_id": "ChIJT2h1HKZZwokR0kgzEtsa03k",
+      "google_maps_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+        "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/stumptowncoffee/?hl=en",
+        "label": "",
+        "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+        "confidence": 0.85,
+        "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters https://www.instagram.com/stumptowncoffee/?hl=en"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/stumptowncoffee/",
+        "label": "",
+        "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+        "confidence": 0.8,
+        "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters https://www.facebook.com/stumptowncoffee/"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.stumptowncoffee.com/pages/accessibility-statement",
+          "label": "Click to view our Accessibility Statement or contact us with accessibility-related questions.",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.7,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Click to view our Accessibility Statement or contact us with accessibility-related questions. /pages/accessibility-statement"
+        },
+        {
+          "kind": "contact",
+          "url": "https://support.stumptowncoffee.com/hc/en-us/articles/17928599681933-Stumptown-Customer-Support?_gl=1*uvvmfd*_gcl_au*MTA3MzYwNjY4MS4xNzU1MjY2MDU5",
+          "label": "Contact Us",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.7,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Contact Us https://support.stumptowncoffee.com/hc/en-us/articles/17928599681933-Stumptown-Customer-Support?_gl=1*uvvmfd*_gcl_au*MTA3MzYwNjY4MS4xNzU1MjY2MDU5"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.stumptowncoffee.com/blogs/news",
+          "label": "Blog",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.65,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Blog https://www.stumptowncoffee.com/blogs/news"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://support.stumptowncoffee.com/hc/en-us/articles/5546480321165-Return-Policies",
+          "label": "Return Policy",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.65,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Return Policy https://support.stumptowncoffee.com/hc/en-us/articles/5546480321165-Return-Policies"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.stumptowncoffee.com/pages/accessibility-statement",
+          "label": "Click to view our Accessibility Statement or contact us with accessibility-related questions.",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.7,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Click to view our Accessibility Statement or contact us with accessibility-related questions. /pages/accessibility-statement"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.stumptowncoffee.com/blogs/news",
+          "label": "Blog",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.65,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Blog https://www.stumptowncoffee.com/blogs/news"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://support.stumptowncoffee.com/hc/en-us/articles/5546480321165-Return-Policies",
+          "label": "Return Policy",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.65,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Return Policy https://support.stumptowncoffee.com/hc/en-us/articles/5546480321165-Return-Policies"
+        },
+        {
+          "kind": "contact",
+          "url": "https://support.stumptowncoffee.com/hc/en-us/articles/17928599681933-Stumptown-Customer-Support?_gl=1*uvvmfd*_gcl_au*MTA3MzYwNjY4MS4xNzU1MjY2MDU5",
+          "label": "Contact Us",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.7,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters Contact Us https://support.stumptowncoffee.com/hc/en-us/articles/17928599681933-Stumptown-Customer-Support?_gl=1*uvvmfd*_gcl_au*MTA3MzYwNjY4MS4xNzU1MjY2MDU5"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/stumptowncoffee/?hl=en",
+          "label": "",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.85,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters https://www.instagram.com/stumptowncoffee/?hl=en"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/stumptowncoffee/",
+          "label": "",
+          "source_url": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+          "confidence": 0.8,
+          "evidence_text": "New York Ace Hotel Cafe | Stumptown Coffee Roasters https://www.facebook.com/stumptowncoffee/"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "menu_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "place_id": "ChIJK-CuuZVZwokRBPbPoomm2Ig",
+      "google_maps_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.puravidamiami.com/",
+        "source_url": "https://www.puravidamiami.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://www.instagram.com/puravidamiami/",
+        "label": "instagram-unauth",
+        "source_url": "https://www.puravidamiami.com/",
+        "confidence": 0.85,
+        "evidence_text": "PURA VIDA MIAMI instagram-unauth https://www.instagram.com/puravidamiami/"
+      },
+      "reservation_url_candidate": {
+        "kind": "reservation",
+        "url": "https://www.facebook.com/PuraVidaMiami/",
+        "label": "Facebook",
+        "source_url": "https://www.puravidamiami.com/",
+        "confidence": 0.8,
+        "evidence_text": "PURA VIDA MIAMI Facebook https://www.facebook.com/PuraVidaMiami/"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.puravidamiami.com/our-menu",
+        "label": "MENUS",
+        "source_url": "https://www.puravidamiami.com/",
+        "confidence": 0.8,
+        "evidence_text": "PURA VIDA MIAMI MENUS /our-menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.puravidamiami.com/contact-us",
+          "label": "Contact",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.7,
+          "evidence_text": "PURA VIDA MIAMI Contact /contact-us"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.puravidamiami.com/press-media",
+          "label": "PRESS",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.65,
+          "evidence_text": "PURA VIDA MIAMI PRESS /press-media"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.puravidamiami.com/",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.puravidamiami.com/our-menu",
+          "label": "MENUS",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.8,
+          "evidence_text": "PURA VIDA MIAMI MENUS /our-menu"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://www.instagram.com/puravidamiami/",
+          "label": "instagram-unauth",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.85,
+          "evidence_text": "PURA VIDA MIAMI instagram-unauth https://www.instagram.com/puravidamiami/"
+        },
+        {
+          "kind": "reservation",
+          "url": "https://www.facebook.com/PuraVidaMiami/",
+          "label": "Facebook",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.8,
+          "evidence_text": "PURA VIDA MIAMI Facebook https://www.facebook.com/PuraVidaMiami/"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.puravidamiami.com/press-media",
+          "label": "PRESS",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.65,
+          "evidence_text": "PURA VIDA MIAMI PRESS /press-media"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.puravidamiami.com/contact-us",
+          "label": "Contact",
+          "source_url": "https://www.puravidamiami.com/",
+          "confidence": 0.7,
+          "evidence_text": "PURA VIDA MIAMI Contact /contact-us"
+        }
+      ],
+      "source_confidence": 1,
+      "missing_fields": [
+        "whatsapp"
+      ],
+      "next_action": "Ready for evidence extraction.",
+      "fetch_status": "fetched",
+      "warnings": []
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "place_id": "ChIJnZ5rvZRZwokRKXfBDWnfSW0",
+      "google_maps_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "official_website_candidate": {
+        "kind": "official_website",
+        "url": "https://www.nickandsonsbakery.com/",
+        "source_url": "http://www.nickandsonsbakery.com/",
+        "confidence": 0.9,
+        "evidence_text": "Official website URL from Google Places seed."
+      },
+      "instagram_candidate": {
+        "kind": "instagram",
+        "url": "https://instagram.com/nickandsonsbakery",
+        "label": "Instagram",
+        "source_url": "https://www.nickandsonsbakery.com/",
+        "confidence": 0.85,
+        "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Instagram https://instagram.com/nickandsonsbakery"
+      },
+      "menu_url_candidate": {
+        "kind": "menu",
+        "url": "https://www.nickandsonsbakery.com/menu",
+        "label": "Menu MENU",
+        "source_url": "https://www.nickandsonsbakery.com/",
+        "confidence": 0.8,
+        "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Menu MENU /menu"
+      },
+      "contact_candidates": [
+        {
+          "kind": "contact",
+          "url": "https://www.nickandsonsbakery.com/contact",
+          "label": "Contact us Contact Us",
+          "source_url": "https://www.nickandsonsbakery.com/",
+          "confidence": 0.7,
+          "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Contact us Contact Us /contact"
+        }
+      ],
+      "editorial_press_mentions": [
+        {
+          "kind": "editorial_press",
+          "url": "https://www.nickandsonsbakery.com/press",
+          "label": "Press Press",
+          "source_url": "https://www.nickandsonsbakery.com/",
+          "confidence": 0.65,
+          "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Press Press /press"
+        }
+      ],
+      "discovered_sources": [
+        {
+          "kind": "google_maps",
+          "url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "confidence": 0.95,
+          "evidence_text": "Google Maps seed URL from Stage 01."
+        },
+        {
+          "kind": "official_website",
+          "url": "https://www.nickandsonsbakery.com/",
+          "source_url": "http://www.nickandsonsbakery.com/",
+          "confidence": 0.9,
+          "evidence_text": "Official website URL from Google Places seed."
+        },
+        {
+          "kind": "menu",
+          "url": "https://www.nickandsonsbakery.com/menu",
+          "label": "Menu MENU",
+          "source_url": "https://www.nickandsonsbakery.com/",
+          "confidence": 0.8,
+          "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Menu MENU /menu"
+        },
+        {
+          "kind": "editorial_press",
+          "url": "https://www.nickandsonsbakery.com/press",
+          "label": "Press Press",
+          "source_url": "https://www.nickandsonsbakery.com/",
+          "confidence": 0.65,
+          "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Press Press /press"
+        },
+        {
+          "kind": "contact",
+          "url": "https://www.nickandsonsbakery.com/contact",
+          "label": "Contact us Contact Us",
+          "source_url": "https://www.nickandsonsbakery.com/",
+          "confidence": 0.7,
+          "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Contact us Contact Us /contact"
+        },
+        {
+          "kind": "instagram",
+          "url": "https://instagram.com/nickandsonsbakery",
+          "label": "Instagram",
+          "source_url": "https://www.nickandsonsbakery.com/",
+          "confidence": 0.85,
+          "evidence_text": "Nick + Son&#x27;s Bakery | Brooklyn, New York & Spring Lake, New Jersey Instagram https://instagram.com/nickandsonsbakery"
+        }
+      ],
+      "source_confidence": 0.9,
+      "missing_fields": [
+        "reservation_url",
+        "whatsapp"
+      ],
+      "next_action": "Review website manually or add targeted source discovery for missing official links.",
+      "fetch_status": "fetched",
+      "warnings": []
+    }
+  ]
+}

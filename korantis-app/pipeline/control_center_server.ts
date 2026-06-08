@@ -56,6 +56,30 @@ const COMMANDS: Record<string, CommandDefinition> = {
     danger: 'publishes_public',
     buildArgs: (batchId) => ['tsx', 'pipeline/stages/12_activate_public_venues.ts', batchId, '--apply'],
   },
+  post_activation_audit: {
+    label: 'Run post-activation audit',
+    description: 'Read-only audit of active public venues, Cloudinary heroes, coordinates, and batch metadata.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/stages/13_post_activation_audit.ts', batchId],
+  },
+  rollback_public_dry_run: {
+    label: 'Rollback batch dry-run',
+    description: 'Checks which active venues from this batch can be moved back to pending_review.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/stages/14_rollback_public_batch.ts', batchId, '--dry-run'],
+  },
+  rollback_public_apply: {
+    label: 'Rollback batch apply',
+    description: 'Moves eligible active venues from this batch back to pending_review. Does not delete venues/images.',
+    danger: 'publishes_public',
+    buildArgs: (batchId) => ['tsx', 'pipeline/stages/14_rollback_public_batch.ts', batchId, '--apply'],
+  },
+  build_gallery_selection: {
+    label: 'Build gallery selection',
+    description: 'Selects secondary gallery images from existing Stage 04 M3 results. No uploads or writes.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/stages/15_build_gallery_selection.ts', batchId],
+  },
   publish_reviewed_all: {
     label: 'Publish reviewed approved venues',
     description: 'Runs Cloudinary upload, hidden public projection, activation dry-run, and activation apply for reviewed approved venues.',
@@ -235,6 +259,16 @@ function readBatchStatus(batchId: string): Record<string, unknown> {
         activated: data.activated,
         blocked: data.blocked,
       })),
+      post_activation_audit: readJsonSummary(path.join(outputDir, 'post_activation_audit.json'), (data) => ({
+        requested: data.requested,
+        passed: data.passed,
+        failed: data.failed,
+      })),
+      rollback: readJsonSummary(path.join(outputDir, 'public_rollback_dry_run.json'), (data) => ({
+        requested: data.requested,
+        eligible: data.eligible,
+        blocked: data.blocked,
+      })),
       activation_dry_run: readJsonSummary(path.join(outputDir, 'public_activation_dry_run.json'), (data) => ({
         requested: data.requested,
         ready: data.ready_to_activate,
@@ -266,6 +300,11 @@ function artifactList(): Array<{ label: string; file: string; kind: 'html' | 'js
     { label: 'Public projection report', file: 'public_projection_report.md', kind: 'markdown' },
     { label: 'Public apply report', file: 'public_projection_apply_report.md', kind: 'markdown' },
     { label: 'Public activation report', file: 'public_activation_apply_report.md', kind: 'markdown' },
+    { label: 'Post-activation audit report', file: 'post_activation_audit_report.md', kind: 'markdown' },
+    { label: 'Rollback dry-run report', file: 'public_rollback_dry_run_report.md', kind: 'markdown' },
+    { label: 'Rollback apply report', file: 'public_rollback_apply_report.md', kind: 'markdown' },
+    { label: 'Stage 15 gallery report', file: 'stage_15_gallery_selection_report.md', kind: 'markdown' },
+    { label: 'Stage 15 gallery JSON', file: 'stage_15_gallery_selection.json', kind: 'json' },
     { label: 'One-click publication report', file: 'reviewed_publication_apply_report.md', kind: 'markdown' },
     { label: 'Reviewed decision manifest', file: 'publication_decision_manifest.reviewed.json', kind: 'json' },
     { label: 'Activation dry-run JSON', file: 'public_activation_dry_run.json', kind: 'json' },
@@ -276,8 +315,9 @@ function buildConfiguredBatchArgs(body: Record<string, unknown>, planOnly: boole
   const batchId = cleanBatchId(stringField(body, 'new_batch_id') || 'batch_new_buenos_aires_50');
   const city = stringField(body, 'city') || 'Buenos Aires';
   const count = stringField(body, 'count') || '50';
-  const neighborhoods = stringField(body, 'neighborhoods');
-  const typeMix = stringField(body, 'type_mix') || 'restaurants=50';
+  const neighborhoods = stringField(body, 'neighborhoods') || defaultNeighborhoodsForCity(city).join(',');
+  const batchType = normalizeBatchType(stringField(body, 'batch_type'));
+  const typeMix = typeMixForBatchType(batchType, count);
   const args = [
     'tsx',
     'pipeline/stages/00_build_venue_seed.ts',
@@ -292,6 +332,26 @@ function buildConfiguredBatchArgs(body: Record<string, unknown>, planOnly: boole
   if (neighborhoods) args.push('--neighborhoods', neighborhoods);
   args.push(planOnly ? '--plan' : '--continue');
   return args;
+}
+
+function normalizeBatchType(value: string): 'bars' | 'cafes' | 'restaurants' {
+  if (value === 'bars') return 'bars';
+  if (value === 'cafes') return 'cafes';
+  return 'restaurants';
+}
+
+function typeMixForBatchType(batchType: 'bars' | 'cafes' | 'restaurants', count: string): string {
+  const safeCount = Number.isFinite(Number(count)) && Number(count) > 0 ? String(Math.floor(Number(count))) : '50';
+  if (batchType === 'cafes') return `cafes=${safeCount}`;
+  if (batchType === 'bars') return 'cocktails=20,wine=12,bars=12,rooftops=6';
+  return `restaurants=${safeCount}`;
+}
+
+function defaultNeighborhoodsForCity(city: string): string[] {
+  const normalized = city.toLowerCase();
+  if (normalized.includes('new york')) return ['Williamsburg', 'DUMBO', 'Lower East Side', 'NoMad', 'Chelsea', 'West Village'];
+  if (normalized.includes('dubai')) return ['DIFC', 'Downtown Dubai', 'Jumeirah', 'Dubai Marina', 'Palm Jumeirah', 'Business Bay'];
+  return ['Palermo', 'Chacarita', 'Villa Crespo', 'Colegiales', 'Recoleta', 'San Telmo'];
 }
 
 function listBatches(): BatchListItem[] {
@@ -367,6 +427,7 @@ function renderApp(): string {
     * { box-sizing: border-box; }
     body { margin: 0; background: linear-gradient(135deg, #0d0f0d 0%, #121611 48%, #0b0b0a 100%); color: var(--text); font-family: "Aptos", "Segoe UI", sans-serif; }
     header { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 18px; border-bottom: 1px solid var(--line); background: rgba(13,15,13,.94); position: sticky; top: 0; z-index: 4; }
+    .header-actions { display: flex; align-items: end; gap: 6px; min-width: 0; }
     h1, h2, h3, p { margin: 0; }
     h1 { font-size: 19px; letter-spacing: .01em; }
     select, button, input { font: inherit; }
@@ -396,10 +457,16 @@ function renderApp(): string {
     .batch-form { display: grid; gap: 9px; }
     .batch-form label { display: grid; gap: 4px; color: var(--muted); font-size: 12px; }
     .batch-form input { width: 100%; }
+    .check-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+    .check-grid label { display: flex; align-items: center; gap: 6px; min-height: 30px; padding: 6px 8px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); border-radius: 6px; color: var(--text); font-size: 12px; }
+    .check-grid input { width: auto; accent-color: var(--gold); }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .console { height: 360px; overflow: auto; background: #050605; border: 1px solid var(--line); border-radius: 8px; padding: 12px; font: 12px/1.45 Consolas, monospace; white-space: pre-wrap; color: #d7f5d7; }
     .file-row { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
     .file-row button { padding: 4px 7px; }
+    .batch-picker { display: grid; gap: 3px; width: min(520px, 42vw); min-width: 280px; }
+    .batch-picker span { font-size: 11px; color: var(--muted); }
+    .batch-picker select { width: 100%; min-width: 0; }
     @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } aside, .main, .right { border-right: 0; border-bottom: 1px solid var(--line); } .stats { grid-template-columns: repeat(2, 1fr); } }
   </style>
 </head>
@@ -409,8 +476,8 @@ function renderApp(): string {
       <p class="muted">Korantis</p>
       <h1>Pipeline Command Center</h1>
     </div>
-    <div>
-      <select id="batch"></select>
+    <div class="header-actions">
+      <label class="batch-picker"><span>Viewing batch</span><select id="batch"></select></label>
       <button onclick="refresh()">Refresh</button>
       <button onclick="openManual()">Manual</button>
     </div>
@@ -440,11 +507,21 @@ function renderApp(): string {
       <div class="panel">
         <h2>New Batch</h2>
         <div class="batch-form">
-          <label>Batch id<input id="newBatchId" value="batch_005_buenos_aires_restaurants_50"></label>
-          <label>City<input id="newCity" value="Buenos Aires"></label>
-          <label>Count<input id="newCount" value="50"></label>
-          <label>Neighborhoods<input id="newNeighborhoods" placeholder="Palermo,Recoleta,San Telmo"></label>
-          <label>Type mix<input id="newTypeMix" value="restaurants=50"></label>
+          <label>Batch id<input id="newBatchId" value="batch_005_buenos_aires_restaurants_50" oninput="this.dataset.touched=this.value.trim() ? 'true' : ''"></label>
+          <label>City<select id="newCity" onchange="syncCityDefaults()">
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="New York City">New York</option>
+            <option value="Dubai">Dubai</option>
+          </select></label>
+          <label>Count<input id="newCount" value="50" oninput="syncBatchTypeDefaults()"></label>
+          <label>Batch type<select id="newBatchType" onchange="syncBatchTypeDefaults()">
+            <option value="bars">Bars</option>
+            <option value="cafes">Cafes</option>
+            <option value="restaurants">Restaurants</option>
+          </select></label>
+          <p class="muted" id="batchTypeHelp">Bars includes cocktail, speakeasy, wine, neighborhood bars, and a small rooftop/terrace slice.</p>
+          <label>Neighborhoods</label>
+          <div class="check-grid" id="newNeighborhoods"></div>
           <div class="form-row">
             <button onclick="runConfiguredBatch('custom_batch_plan')">Plan</button>
             <button onclick="runConfiguredBatch('custom_batch_run')">Run</button>
@@ -463,19 +540,43 @@ function renderApp(): string {
   </div>
   <script>
     const boot = ${data};
+    const cityConfigs = {
+      'Buenos Aires': {
+        slug: 'buenos_aires',
+        neighborhoods: ['Palermo', 'Chacarita', 'Villa Crespo', 'Colegiales', 'Recoleta', 'San Telmo'],
+      },
+      'New York City': {
+        slug: 'new_york',
+        neighborhoods: ['Williamsburg', 'DUMBO', 'Lower East Side', 'NoMad', 'Chelsea', 'West Village'],
+      },
+      Dubai: {
+        slug: 'dubai',
+        neighborhoods: ['DIFC', 'Downtown Dubai', 'Jumeirah', 'Dubai Marina', 'Palm Jumeirah', 'Business Bay'],
+      },
+    };
     let status = null;
     let selectedArtifact = null;
     let lastObservedFinish = '';
+    let batchItems = [];
+    let pendingBatchSelection = '';
 
     async function init() {
-      const batches = await (await fetch('/api/batches')).json();
-      const select = document.getElementById('batch');
-      const items = batches.batch_items || batches.batches.map(b => ({ id: b, label: b }));
-      select.innerHTML = items.map(b => '<option value="' + b.id + '">' + b.label + '</option>').join('');
-      select.value = batches.batches.includes(boot.defaultBatch) ? boot.defaultBatch : batches.batches[0];
-      select.onchange = () => { selectedArtifact = null; refresh(); };
+      await loadBatchList(boot.defaultBatch);
       await refresh();
+      renderNeighborhoodChecks();
+      syncBatchTypeDefaults();
       setInterval(pollRunState, 1500);
+    }
+
+    async function loadBatchList(preferredBatch) {
+      const batches = await (await fetch('/api/batches')).json();
+      batchItems = batches.batch_items || batches.batches.map(b => ({ id: b, label: b }));
+      const select = document.getElementById('batch');
+      const ids = batchItems.map(b => b.id);
+      const current = preferredBatch || select.value || boot.defaultBatch;
+      select.innerHTML = batchItems.map(b => '<option value="' + b.id + '">' + b.label + '</option>').join('');
+      select.value = ids.includes(current) ? current : (ids.includes(boot.defaultBatch) ? boot.defaultBatch : ids[0]);
+      select.onchange = () => { selectedArtifact = null; refresh(); };
     }
 
     async function refresh() {
@@ -499,6 +600,8 @@ function renderApp(): string {
         ['Activated', counts.activation?.activated ?? 0, counts.activation?.activated ? 'ok' : 'warn'],
         ['Activation ready', counts.activation_dry_run?.ready ?? 'n/a', 'ok'],
         ['Image errors', counts.cloudinary?.errors ?? 'n/a', counts.cloudinary?.errors ? 'bad' : 'ok'],
+        ['Audit failed', counts.post_activation_audit?.failed ?? 'n/a', counts.post_activation_audit?.failed ? 'bad' : 'ok'],
+        ['Rollback eligible', counts.rollback?.eligible ?? 'n/a', counts.rollback?.eligible ? 'warn' : 'ok'],
       ];
       document.getElementById('stats').innerHTML = stats.map(([label, value, cls]) => '<div class="panel stat"><span class="muted">' + label + '</span><strong class="' + cls + '">' + value + '</strong></div>').join('');
       document.getElementById('files').innerHTML = status.artifacts.map(a => '<div class="file-row"><span>' + a.label + '</span><button ' + (a.exists ? '' : 'disabled') + ' onclick="openArtifact(\\'' + a.file + '\\')">' + (a.exists ? 'open' : 'missing') + '</button></div>').join('');
@@ -553,14 +656,19 @@ function renderApp(): string {
     }
 
     async function runConfiguredBatch(action) {
+      const neighborhoods = selectedNeighborhoods();
+      if (neighborhoods.length === 0) {
+        alert('Select at least one neighborhood.');
+        return;
+      }
       const payload = {
         batch_id: document.getElementById('batch').value,
         action,
         new_batch_id: document.getElementById('newBatchId').value,
         city: document.getElementById('newCity').value,
         count: document.getElementById('newCount').value,
-        neighborhoods: document.getElementById('newNeighborhoods').value,
-        type_mix: document.getElementById('newTypeMix').value,
+        neighborhoods: neighborhoods.join(','),
+        batch_type: document.getElementById('newBatchType').value,
       };
       const response = await fetch('/api/run', {
         method: 'POST',
@@ -569,7 +677,53 @@ function renderApp(): string {
       });
       const result = await response.json();
       if (!response.ok) alert(result.error || 'command failed to start');
+      if (response.ok) pendingBatchSelection = payload.new_batch_id;
       await pollRunState();
+    }
+
+    function syncCityDefaults() {
+      renderNeighborhoodChecks();
+      syncBatchTypeDefaults();
+    }
+
+    function renderNeighborhoodChecks() {
+      const city = document.getElementById('newCity').value || 'Buenos Aires';
+      const config = cityConfigs[city] || cityConfigs['Buenos Aires'];
+      document.getElementById('newNeighborhoods').innerHTML = config.neighborhoods.map((neighborhood) =>
+        '<label><input type="checkbox" value="' + neighborhood.replace(/"/g, '&quot;') + '" checked onchange="syncBatchTypeDefaults()"> ' + neighborhood + '</label>'
+      ).join('');
+    }
+
+    function selectedNeighborhoods() {
+      return Array.from(document.querySelectorAll('#newNeighborhoods input:checked')).map(input => input.value);
+    }
+
+    function syncBatchTypeDefaults() {
+      const type = document.getElementById('newBatchType').value;
+      const batchId = document.getElementById('newBatchId');
+      const city = document.getElementById('newCity').value || 'Buenos Aires';
+      const count = document.getElementById('newCount').value || '50';
+      const slugCity = (cityConfigs[city] && cityConfigs[city].slug) || city.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || 'city';
+      const slugAreas = selectedNeighborhoods().map(slugPart).slice(0, 3).join('_') || 'all';
+      const help = {
+        bars: 'Bars includes cocktail, speakeasy, wine, neighborhood bars, and a small rooftop/terrace slice.',
+        cafes: 'Uses Stage 00 type mix: cafes=count.',
+        restaurants: 'Restaurants are atmosphere-forward only; not food-guide coverage.',
+      };
+      document.getElementById('batchTypeHelp').textContent = help[type] || help.bars;
+      if (!batchId.dataset.touched) batchId.value = 'batch_' + nextBatchNumberHint() + '_' + slugCity + '_' + type + '_' + count + '_' + slugAreas;
+    }
+
+    function nextBatchNumberHint() {
+      const maxNumber = batchItems.reduce((max, item) => {
+        const match = String(item.id || '').match(/batch_(\\d+)/);
+        return match ? Math.max(max, Number(match[1])) : max;
+      }, 0);
+      return String(maxNumber + 1).padStart(3, '0');
+    }
+
+    function slugPart(value) {
+      return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 18) || 'area';
     }
 
     async function openManual() {
@@ -590,6 +744,9 @@ function renderApp(): string {
       consoleEl.scrollTop = consoleEl.scrollHeight;
       if (!state.running && state.finished_at && state.finished_at !== lastObservedFinish) {
         lastObservedFinish = state.finished_at;
+        const targetBatch = pendingBatchSelection;
+        pendingBatchSelection = '';
+        await loadBatchList(targetBatch);
         refresh();
       }
     }

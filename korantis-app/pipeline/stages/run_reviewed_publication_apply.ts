@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { materializeCloudinary } from './10_materialize_cloudinary';
 import { projectToPublicDryRun } from './11_project_to_public';
 import { activatePublicVenues } from './12_activate_public_venues';
+import { runPostActivationAudit } from './13_post_activation_audit';
 
 interface StepResult {
   step: string;
@@ -24,6 +25,8 @@ interface ReviewedPublicationApplyResult {
   public_projected: number;
   activation_ready: number;
   activated: number;
+  post_activation_audit_passed: number;
+  post_activation_audit_failed: number;
   blocked: number;
   safety_checks: Record<string, boolean>;
 }
@@ -56,6 +59,8 @@ export async function runReviewedPublicationApply(batchName: string): Promise<Re
   let publicProjected = 0;
   let activationReady = 0;
   let activated = 0;
+  let postActivationAuditPassed = 0;
+  let postActivationAuditFailed = 0;
   let blocked = 0;
 
   try {
@@ -132,17 +137,29 @@ export async function runReviewedPublicationApply(batchName: string): Promise<Re
         blocked: activation.blocked,
       };
     });
+
+    await runStep(steps, '13_post_activation_audit', async () => {
+      const audit = await runPostActivationAudit(batchName);
+      postActivationAuditPassed = audit.passed;
+      postActivationAuditFailed = audit.failed;
+      if (audit.failed > 0) throw new Error(`Post-activation audit failed for ${audit.failed}/${audit.requested} venues.`);
+      return {
+        requested: audit.requested,
+        passed: audit.passed,
+        failed: audit.failed,
+      };
+    });
   } catch (error) {
-    const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, publicProjected, activationReady, activated, blocked);
+    const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, publicProjected, activationReady, activated, postActivationAuditPassed, postActivationAuditFailed, blocked);
     writeOutputs(outputDir, result);
     throw error;
   }
 
-  const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, publicProjected, activationReady, activated, blocked);
+  const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, publicProjected, activationReady, activated, postActivationAuditPassed, postActivationAuditFailed, blocked);
   writeOutputs(outputDir, result);
   console.log(`Reviewed publication apply result written to ${path.join(outputDir, 'reviewed_publication_apply_result.json')}`);
   console.log(`Reviewed publication apply report written to ${path.join(outputDir, 'reviewed_publication_apply_report.md')}`);
-  console.log(`Reviewed publication apply summary: approved=${approvedRequested}, cloudinary=${cloudinaryUploadedOrExisting}, projected=${publicProjected}, activated=${activated}`);
+  console.log(`Reviewed publication apply summary: approved=${approvedRequested}, cloudinary=${cloudinaryUploadedOrExisting}, projected=${publicProjected}, activated=${activated}, audit_failed=${postActivationAuditFailed}`);
   return result;
 }
 
@@ -188,6 +205,8 @@ function buildResult(
   publicProjected: number,
   activationReady: number,
   activated: number,
+  postActivationAuditPassed: number,
+  postActivationAuditFailed: number,
   blocked: number,
 ): ReviewedPublicationApplyResult {
   return {
@@ -200,6 +219,8 @@ function buildResult(
     public_projected: publicProjected,
     activation_ready: activationReady,
     activated,
+    post_activation_audit_passed: postActivationAuditPassed,
+    post_activation_audit_failed: postActivationAuditFailed,
     blocked,
     safety_checks: {
       requires_reviewed_manifest: true,
@@ -208,6 +229,7 @@ function buildResult(
       cloudinary_uploads_only_approved_heroes: true,
       public_projection_writes_pending_review_before_activation: true,
       activation_requires_cloudinary_hero: true,
+      post_activation_audit_required: true,
       no_consumer_ui_changes: true,
     },
   };
@@ -229,6 +251,8 @@ function buildReport(result: ReviewedPublicationApplyResult): string {
     `- Public projected: ${result.public_projected}`,
     `- Activation ready: ${result.activation_ready}`,
     `- Activated: ${result.activated}`,
+    `- Post-activation audit passed: ${result.post_activation_audit_passed}`,
+    `- Post-activation audit failed: ${result.post_activation_audit_failed}`,
     `- Blocked: ${result.blocked}`,
     '',
     '## Steps',

@@ -1,0 +1,1068 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:49:22.700Z",
+  "minimax_called": true,
+  "model_used": "MiniMax-M2.7",
+  "venues_processed": 25,
+  "successful_generations": 25,
+  "failed_generations": 0,
+  "invalid_json_count": 0,
+  "mood_distribution": {
+    "warm": 23,
+    "work_friendly": 22,
+    "historic": 2,
+    "hidden_gem": 12,
+    "quiet": 21,
+    "intimate": 7,
+    "social": 8,
+    "refined": 8,
+    "creative": 7,
+    "outdoor": 1,
+    "date_night": 2,
+    "romantic": 2,
+    "lively": 1
+  },
+  "evidence_confidence_distribution": {
+    "low": 0,
+    "medium": 2,
+    "high": 23
+  },
+  "status_counts_after_scoring": {
+    "input": 25,
+    "ready_for_db_staging": 0,
+    "auto_staged": 10,
+    "needs_review": 4,
+    "blocked": 11,
+    "approved": 0,
+    "rejected": 0,
+    "staged": 0,
+    "published": 0
+  },
+  "remaining_blockers_by_venue": {
+    "Paper Sons Cafe": [
+      "no_hero_image"
+    ],
+    "Café Colmado": [],
+    "Yanni's Coffee": [
+      "no_hero_image"
+    ],
+    "Sip Coffee & Matcha": [
+      "no_hero_image"
+    ],
+    "Intelligentsia Coffee High Line Hotel Coffeebar": [],
+    "RHYTHM ZERO | WEST VILLAGE": [],
+    "Bakeri": [],
+    "A&C Super": [],
+    "Paris Baguette": [],
+    "Black Star Bakery & Cafe": [
+      "no_hero_image"
+    ],
+    "Dawn’s Til Dusk": [],
+    "Tous Les Jours": [
+      "no_hero_image"
+    ],
+    "Almondine Bakery": [
+      "no_hero_image"
+    ],
+    "Burrow": [
+      "no_hero_image"
+    ],
+    "Rex": [
+      "no_hero_image"
+    ],
+    "Kaida Coffee and Bakery": [],
+    "Bourke Street Bakery": [
+      "no_hero_image"
+    ],
+    "La Bergamote (Chelsea)": [
+      "no_hero_image"
+    ],
+    "Claude Bakery West Village": [
+      "no_hero_image"
+    ],
+    "maman": [],
+    "Aux Merveilleux de Fred": [],
+    "Stumptown Coffee Roasters": [],
+    "Pura Vida - NoMad": [],
+    "Nick + Sons Bakery": []
+  },
+  "results": [
+    {
+      "venue_name": "Paper Sons Cafe",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Thoughtful coffee in historic Chinatown",
+        "description_short": "Paper Sons Cafe brings specialty coffee to the heart of Chinatown. A solid 4.7 stars makes this a reliable neighborhood stop.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "historic",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Afternoon work session",
+          "Weekend neighborhood walk",
+          "Casual catch-up"
+        ],
+        "best_for": [
+          "Solo focus time",
+          "Casual coffee dates",
+          "Morning routine",
+          "Exploring Chinatown"
+        ],
+        "not_for": [
+          "Late-night hangs",
+          "Romantic dinner"
+        ],
+        "primary_atmosphere": "Specialty coffee shop with neighborhood charm in historic Chinatown",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.65,
+        "editorial_notes": "Grounded in verified venue facts: name, Chinatown location at 10 Mott St, 4.7 rating from 231 reviews, daily hours starting 8AM weekdays. No image vision present, so visual atmosphere claims avoided and mood confidence lowered accordingly.",
+        "grounded_description": "Located on Mott Street in historic Chinatown, Paper Sons Cafe is a neighborhood coffee shop with a strong 4.7-star rating. Open daily with weekday mornings starting at 8AM, it's a go-to spot for locals and visitors exploring the area."
+      }
+    },
+    {
+      "venue_name": "Café Colmado",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A warm corner café in the heart of the Lower East Side",
+        "description_short": "A neighborhood café with warm industrial lighting and a cozy counter-service setup. The space features decorative framed photos and a prominent neon sign, creating an intimate daytime spot for coffee and casual breaks.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "intimate",
+          "work_friendly",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning coffee routine",
+          "Casual afternoon break",
+          "Remote work session",
+          "Neighborhood exploration",
+          "Solo reading or writing"
+        ],
+        "best_for": [
+          "Daytime visits",
+          "Focused work",
+          "Low-key meetups",
+          "Coffee lovers",
+          "Local discovery"
+        ],
+        "not_for": [
+          "Late-night hangs",
+          "Large groups",
+          "Lively nightlife"
+        ],
+        "primary_atmosphere": "Warm, cozy daytime café with industrial accents and intimate counter service",
+        "evidence_confidence": 0.6,
+        "mood_confidence": 0.75,
+        "editorial_notes": "Grounded in limited venue data and strong image vision showing warm industrial lighting, framed photos, and cozy counter service setup. Rating and review count support neighborhood spot status. Early closing hours (5PM weekdays) inform quiet daytime mood. No explicit claims made about food quality, prices, awards, or iconic status.",
+        "grounded_description": "A cozy Lower East Side café featuring warm industrial lighting, decorative framed photos, and a welcoming counter-service layout. The space presents an intimate daytime environment suited for coffee breaks and quiet work sessions, reflecting its well-regarded neighborhood status with a 4.6 rating across 291 reviews."
+      }
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Chelsea's local coffee house since morning light",
+        "description_short": "A neighborhood cafe on 7th Avenue with a steady 4.6 rating from 445 reviews. Yanni's serves weekday coffee rituals starting at 7AM.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "work_friendly",
+          "hidden_gem",
+          "social"
+        ],
+        "moments": [
+          "morning coffee routine",
+          "afternoon work session",
+          "neighborhood break",
+          "casual catch-up"
+        ],
+        "best_for": [
+          "morning fuel",
+          "remote work",
+          "quiet reading",
+          "local connections"
+        ],
+        "not_for": [
+          "late night gatherings",
+          "large groups"
+        ],
+        "primary_atmosphere": "Daytime neighborhood cafe with a personal, reliable character in residential Chelsea",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in operational hours (daytime only), 4.6 rating from 445 reviews, Chelsea location, and standard cafe category. No image vision data present, so visual atmosphere claims are avoided and mood confidence is reduced accordingly.",
+        "grounded_description": "Yanni's Coffee operates as a daytime-focused cafe in Chelsea, opening early on weekdays to serve the neighborhood's morning routines. The consistent 4.6 rating across 445 reviews suggests a reliable, well-liked local spot rather than a destination venue."
+      }
+    },
+    {
+      "venue_name": "Sip Coffee & Matcha",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee and matcha crafted for quiet mornings in Chelsea",
+        "description_short": "Sip Coffee & Matcha anchors Chelsea's daytime scene with a 4.8-star reputation, drawing locals into a focused, unhurried cafe ritual. The menu centers on thoughtfully prepared matcha and espresso drinks, served in a setting built for morning momentum rather than late-night lingering.",
+        "mood_tags": [
+          "quiet",
+          "work_friendly",
+          "refined",
+          "warm",
+          "creative"
+        ],
+        "moments": [
+          "Morning remote work sessions",
+          "Weekend brunch stops",
+          "Afternoon matcha breaks",
+          "Focused solo reading or study",
+          "Casual coffee catch-ups"
+        ],
+        "best_for": [
+          "Specialty coffee and matcha lovers",
+          "Daytime productivity",
+          "Chelsea locals seeking a quiet spot",
+          "Morning routines",
+          "Unhurried solo time"
+        ],
+        "not_for": [
+          "Evening social gatherings",
+          "Late-night sessions",
+          "Large group bookings"
+        ],
+        "primary_atmosphere": "A refined, daytime-focused cafe where specialty drinks meet quiet productivity, anchored in Chelsea's arts-adjacent neighborhood.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in venue name, category, Chelsea location, 4.8 rating, review count, and weekday-only hours. No image vision data present, so mood confidence is lowered. Avoided any claims about interior design, awards, or specific drink offerings not confirmed in inputs.",
+        "grounded_description": "Sip Coffee & Matcha operates Monday through Friday from 7AM to 5PM, with shorter weekend windows, positioning itself as a morning-to-early-afternoon destination. Its 4.8 rating across 377 reviews reflects consistent quality in a neighborhood where daytime cafe culture thrives."
+      }
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Specialty coffee in a lush Chelsea courtyard setting",
+        "description_short": "Intelligentsia Coffee operates this coffeebar within the High Line Hotel, offering specialty roasts in a distinctive outdoor courtyard adorned with string lights and greenery.",
+        "mood_tags": [
+          "warm",
+          "refined",
+          "outdoor",
+          "quiet",
+          "work_friendly"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Working remotely with good brew",
+          "Pre-gallery stroll along the High Line",
+          "Peaceful solo pause"
+        ],
+        "best_for": [
+          "Specialty coffee seekers",
+          "Morning productivity",
+          "Chelsea exploration base",
+          "Al fresco coffee breaks"
+        ],
+        "not_for": [
+          "Late-night sessions",
+          "Large group gatherings"
+        ],
+        "primary_atmosphere": "Refined and warm courtyard cafe within a historic Chelsea hotel, offering specialty coffee in a lush outdoor setting",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in supplied venue facts (4.5 rating, 646 reviews, High Line Hotel location) and image vision showing a lush outdoor courtyard with string lights, bistro seating, and greenery. Scene type indicated as interior but visual description describes outdoor space; atmospheric assessment based on the visual evidence provided. No invented awards, pricing, or booking claims.",
+        "grounded_description": "This Intelligentsia Coffee location sits within the High Line Hotel at 180 10th Avenue, featuring a courtyard space with bistro seating, string lights, and greenery beneath the shadow of a vintage red double-decker bus backdrop."
+      }
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Minimalist cafe sanctuary in the heart of the Village",
+        "description_short": "A clean-lined West Village cafe with warm wood panels, curated artwork, and a singular cactus adding life to the minimalist space. Two-chair high tables create an intimate setting for slow mornings or quiet afternoon work.",
+        "mood_tags": [
+          "quiet",
+          "intimate",
+          "creative",
+          "refined",
+          "work_friendly"
+        ],
+        "moments": [
+          "Solo morning coffee ritual",
+          "Quiet afternoon work session",
+          "Intimate catch-up with a friend",
+          "Getting lost in the Village",
+          "Slow weekend brunch"
+        ],
+        "best_for": [
+          "Focused work sessions",
+          "Peaceful solo time",
+          "Creative inspiration",
+          "Cozy conversations"
+        ],
+        "not_for": [
+          "Late night gatherings",
+          "Large group meetups",
+          "Loud social scenes"
+        ],
+        "primary_atmosphere": "Minimalist and refined, with warm wood textures and curated natural elements creating a calm, gallery-like setting",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.82,
+        "editorial_notes": "Grounded in the selected hero image showing the dark wood high table, black chairs, paper floor lamp, tall cactus, and wood-paneled wall with framed artwork. West Village location and cafe category with 4.5 rating across 222 reviews support refined, quiet atmosphere. Daytime hours (8AM-5PM) confirm work-friendly but not late-night positioning.",
+        "grounded_description": "Rhythm Zero occupies a West Village storefront with floor-to-ceiling wood paneling, paper lanterns, and a sculptural cactus anchoring the minimalist interior. High tables with two chairs each create intimate pockets for conversation or solitary focus, while framed artwork on the walls adds quiet creative energy. The space opens at 8AM daily, catering to Village locals seeking a calm respite."
+      }
+    },
+    {
+      "venue_name": "Bakeri",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Williamsburg's neighborhood bakery with heart and soul",
+        "description_short": "A warmly lit bakery-cafe on Wythe Avenue serving artisanal baked goods in a cozy, wood-paneled setting. With 4.5 stars from nearly 700 reviews, it's a beloved local spot for morning pastries and afternoon coffee.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "work_friendly",
+          "hidden_gem",
+          "intimate"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Casual afternoon meetup",
+          "Solo work session",
+          "Weekend pastry run",
+          "Quiet conversation"
+        ],
+        "best_for": [
+          "Solo reflection",
+          "Casual dates",
+          "Remote work",
+          "Neighborhood hangout",
+          "Morning routine"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Large groups",
+          "Outdoor dining"
+        ],
+        "primary_atmosphere": "Warm, artisanal Brooklyn bakery with intimate neighborhood character",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in venue facts including location, rating, review count, and operational hours. Image vision confirms warm_cozy atmosphere through specific visual elements: wood-paneled counter, pendant lights, chalkboard specials, and checkered tile floor. The 7AM-6PM daily schedule informs daytime-only usage patterns.",
+        "grounded_description": "Bakeri occupies a warm corner of Wythe Avenue in Williamsburg, where wood-paneled interiors and pendant lighting create an inviting backdrop for house-baked goods. The chalkboard specials and checkered tile floor evoke a classic neighborhood bakery, while nearly 700 reviews at 4.5 stars speak to its consistent quality and local devotion."
+      }
+    },
+    {
+      "venue_name": "A&C Super",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Bright Williamsburg mornings, the local way",
+        "description_short": "A neighborhood cafe in the heart of Williamsburg with a 4.8-star reputation. This morning-to-afternoon spot serves the community with espresso drinks and a bright, airy counter setup that draws in daylight and regulars alike.",
+        "mood_tags": [
+          "work_friendly",
+          "quiet",
+          "warm",
+          "creative",
+          "social"
+        ],
+        "moments": [
+          "Morning coffee runs",
+          "Remote work sessions",
+          "Casual catch-ups",
+          "Solo reading time",
+          "Weekend brunch stops"
+        ],
+        "best_for": [
+          "Daytime productivity",
+          "Neighborhood regulars",
+          "Morning routines",
+          "Casual meetings",
+          "Solo relaxation"
+        ],
+        "not_for": [
+          "Late-night hangs",
+          "Evening outings",
+          "Large groups"
+        ],
+        "primary_atmosphere": "Bright and functional neighborhood cafe with generous natural light",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in verified venue facts: 4.8 rating from 201 reviews indicates consistent community approval, Williamsburg location aligns with creative neighborhood context, and image vision confirms bright interior with large windows and espresso setup. Morning-only hours (8AM-4PM) exclude evening and late-night claims. No awards, rankings, or superlatives attributed in source data.",
+        "grounded_description": "A&C Super anchors itself in Williamsburg as a reliable daytime cafe, open daily from 8AM to 4PM with a straightforward menu built around quality espresso and neighborhood hospitality. The bright, window-forward interior creates a functional yet welcoming space that keeps regulars coming back."
+      }
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where Brooklyn starts its morning",
+        "description_short": "Bright, airy French-Asian bakery in the heart of Williamsburg with marble counters and a glowing pastry case. Perfect for morning coffee and freshly baked goods on the go.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "social",
+          "quiet"
+        ],
+        "moments": [
+          "Morning coffee run",
+          "Casual meetup",
+          "Solo work session",
+          "Quick breakfast",
+          "Post-walk treat"
+        ],
+        "best_for": [
+          "Quick breakfast",
+          "Work-friendly mornings",
+          "Casual meetups",
+          "Solo focus time",
+          "Brooklyn bakery fans"
+        ],
+        "not_for": [
+          "Late night bites",
+          "Romantic dinners",
+          "Intimate gatherings"
+        ],
+        "primary_atmosphere": "Bright, modern bakery with clean lines, marble surfaces, and a welcoming morning energy typical of a well-run neighborhood café.",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.88,
+        "editorial_notes": "Grounded in Paris Baguette's consistent chain branding, bright airy image signal, 4.6 rating with 190 reviews, and standard bakery-café operating hours. No invented awards or claims. The visual description of the well-lit interior with glass pastry display case directly informs the bright and warm mood tags.",
+        "grounded_description": "Paris Baguette's Williamsburg location features a well-lit interior with mosaic tile floors, marble counters, and a full glass display case stocked with pastries and baked goods. The space maintains the chain's signature clean, bright aesthetic while fitting naturally into the Brooklyn neighborhood context."
+      }
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Where Williamsburg finds its daily ritual",
+        "description_short": "A neighborhood bakery crafting artisan breads, pastries, and seasonal café fare in the heart of Williamsburg. The kind of spot that rewards an early arrival.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "work_friendly",
+          "creative",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning ritual",
+          "Casual brunch",
+          "Quiet work session",
+          "Solo reading time"
+        ],
+        "best_for": [
+          "Fresh pastries",
+          "Morning coffee",
+          "Casual catch-ups",
+          "Light lunch"
+        ],
+        "not_for": [
+          "Late night dining",
+          "Large group gatherings"
+        ],
+        "primary_atmosphere": "A relaxed neighborhood bakery with a welcoming, unhurried energy—built around the rhythm of morning coffee and fresh-baked goods.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in bakery category, Williamsburg neighborhood context, operational hours (early morning opening, closes 4PM weekdays), and 225 reviews supporting a 4.3 rating. No visual evidence available, so atmosphere is inferred from category and hours rather than confirmed.",
+        "grounded_description": "Black Star Bakery & Cafe anchors the Williamsburg neighborhood with morning-focused hours and artisan café fare. Early birds and locals keep the rhythm steady from 8AM onward."
+      }
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A DUMBO cafe where industrial design meets morning-to-evening ease",
+        "description_short": "An industrial-inspired cafe in DUMBO with exposed concrete walls and marble surfaces, open from 7:30 AM to 8 PM daily. The space features a marble bar, curated wine displays, and high ceilings.",
+        "mood_tags": [
+          "work_friendly",
+          "refined",
+          "quiet",
+          "creative",
+          "date_night"
+        ],
+        "moments": [
+          "Morning remote work sessions",
+          "Afternoon coffee breaks",
+          "Evening wine by the glass",
+          "Casual meetings",
+          "Low-key dates"
+        ],
+        "best_for": [
+          "Remote work",
+          "Coffee dates",
+          "Wine tasting",
+          "Casual gatherings",
+          "Creative professionals"
+        ],
+        "not_for": [
+          "Late night socializing",
+          "Large group events"
+        ],
+        "primary_atmosphere": "Industrial modern",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.75,
+        "editorial_notes": "The venue's name 'Dawn's Til Dusk' references its extended daily hours, from early morning to evening. The industrial aesthetic with marble accents creates a refined yet approachable environment that transitions well between work and leisure uses. The 4.4 rating from over 1,000 reviews suggests consistent quality and visitor satisfaction.",
+        "grounded_description": "This DUMBO cafe occupies an industrial-style space with exposed concrete walls, high ceilings, and a marble bar. The interior features wine bottle displays, marble-topped tables, and black chairs with small floral arrangements, creating a refined atmosphere suited for daytime work sessions and early evening wine-drinking."
+      },
+      "retried_at": "2026-06-08T13:49:09.968Z"
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Fresh-baked warmth in the heart of DUMBO",
+        "description_short": "Tous Les Jours is a neighborhood bakery-café in DUMBO offering fresh-baked goods and coffee. Opens early daily, making it a convenient stop for mornings in the area.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "work_friendly",
+          "social"
+        ],
+        "moments": [
+          "Morning coffee runs",
+          "Casual meetups",
+          "Picking up fresh pastries",
+          "Remote work sessions",
+          "Quick breakfast stops"
+        ],
+        "best_for": [
+          "Early risers",
+          "Casual catch-ups",
+          "Remote work",
+          "Sweet cravings"
+        ],
+        "not_for": [
+          "Romantic dinners",
+          "Late-night gatherings"
+        ],
+        "primary_atmosphere": "Neighborhood bakery-café with a welcoming, low-key vibe",
+        "evidence_confidence": 0.75,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in venue category (bakery-café), DUMBO neighborhood location, 7AM opening hours, and 4.3-star rating. No image data available, so visual atmosphere claims avoided.",
+        "grounded_description": "A dependable neighborhood bakery-café in DUMBO with early morning hours and a 4.3-star rating from 112 reviews. The space offers a comfortable setting for coffee and fresh-baked goods in a residential corner of Brooklyn."
+      }
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "DUMBO waterfront bakery serving quality pastries since morning light",
+        "description_short": "A neighborhood bakery cafe in DUMBO with a 4.5-star rating and 657 reviews. Open Wednesday through Sunday from 8AM to 6PM, offering a quiet daytime retreat in Brooklyn's scenic waterfront neighborhood.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "romantic",
+          "date_night",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning coffee and pastry stop",
+          "Weekend DUMBO exploration",
+          "Casual Brooklyn outing",
+          "Afternoon break with waterfront views",
+          "Quiet solo retreat"
+        ],
+        "best_for": [
+          "Morning routines",
+          "Weekend exploring DUMBO",
+          "Quality baked goods",
+          "Brooklyn neighborhood experience",
+          "Quiet daytime breaks"
+        ],
+        "not_for": [
+          "Late night outings",
+          "Large groups seeking lively venues",
+          "Those wanting nightlife"
+        ],
+        "primary_atmosphere": "Warm neighborhood bakery with quiet daytime charm in scenic DUMBO waterfront location",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.55,
+        "editorial_notes": "Grounded in venue category (bakery_cafe), DUMBO neighborhood context, 4.5 rating with 657 reviews, and Wednesday-Sunday daytime hours. No image vision data available, so visual and atmospheric details are inferred from venue type and location rather than direct observation. Avoided claims about specific menu items, prices, interior design, or staff qualities as none were provided.",
+        "grounded_description": "A well-reviewed bakery cafe in DUMBO offering a daytime schedule Wednesday through Sunday. The 4.5-star rating across 657 reviews indicates consistent quality that attracts locals and visitors to the Water Street location."
+      }
+    },
+    {
+      "venue_name": "Burrow",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A quiet daytime bakery in DUMBO for slow mornings and unhurried afternoons.",
+        "description_short": "A daytime bakery and cafe tucked into DUMBO's industrial corridors. Open Tuesday through Friday mornings only, it draws locals seeking quality pastries and a calm setting away from the neighborhood's busier thoroughfares.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "hidden_gem",
+          "work_friendly",
+          "intimate"
+        ],
+        "moments": [
+          "Morning pastry run",
+          "Solo work sessions",
+          "Casual coffee meetups",
+          "Midday reset",
+          "Low-key afternoon breaks"
+        ],
+        "best_for": [
+          "Focused work",
+          "Quiet conversations",
+          "Quality over crowds",
+          "Regular local routine",
+          "DUMBO residents"
+        ],
+        "not_for": [
+          "Weekend visits",
+          "Late evening plans",
+          "Large gatherings"
+        ],
+        "primary_atmosphere": "A low-key, daytime-only neighborhood bakery with a warm, unhurried energy that rewards those seeking quality away from DUMBO's tourist flow.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.55,
+        "editorial_notes": "Grounded in operational hours (Tue-Fri, 10AM-3PM), 4.5-star rating with 203 reviews, and bakery/cafe category. No image data present so visual atmosphere claims are avoided and mood confidence is reduced accordingly. No menu specifics, awards, or distinctive features were extracted, keeping all claims conservative and category-typical.",
+        "grounded_description": "Burrow occupies a modest corner of DUMBO's industrial Jay Street, operating on a deliberately limited Tuesday-through-Friday schedule. The 4.5-star rating and consistent local review count suggest reliable quality that keeps regulars returning, though the early closing time and closed weekends make it a strictly daytime proposition."
+      }
+    },
+    {
+      "venue_name": "Rex",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A neighborhood staple in the heart of the Lower East Side",
+        "description_short": "A well-loved neighborhood cafe on Rivington Street with a strong local following. Operates daily with morning-to-afternoon hours, drawing residents and visitors seeking a genuine LES experience.",
+        "mood_tags": [
+          "quiet",
+          "warm",
+          "hidden_gem",
+          "work_friendly",
+          "social"
+        ],
+        "moments": [
+          "Morning coffee before exploring the neighborhood",
+          "Remote work sessions away from distractions",
+          "Casual catch-ups with friends",
+          "Quiet afternoon reading or reflection",
+          "Pre-evening plans with a caffeine stop"
+        ],
+        "best_for": [
+          "Morning routines",
+          "Casual socializing",
+          "Solo work sessions",
+          "Neighborhood exploration",
+          "Low-key gatherings"
+        ],
+        "not_for": [
+          "Late-night outings",
+          "Large group events",
+          "Formal business meetings"
+        ],
+        "primary_atmosphere": "A grounded neighborhood cafe with a relaxed, unpretentious energy typical of the Lower East Side",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.5,
+        "editorial_notes": "Grounded in operational hours (morning-to-afternoon, no evening service), 4.8-star rating with 111 reviews indicating local quality perception, and Lower East Side neighborhood context. No image data available, so mood confidence reduced. Avoided inventing any menu details, interior claims, or visual descriptions not supported by supplied data.",
+        "grounded_description": "Rex occupies a steady presence on Rivington Street, where its consistent morning-to-afternoon schedule accommodates the rhythms of LES locals. The 4.8-star rating across 111 reviews reflects meaningful community endorsement without grandstanding."
+      }
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A warm corner for morning coffee and fresh-baked goods on Ludlow Street",
+        "description_short": "A neighborhood cafe in the Lower East Side with high ratings, serving coffee and baked goods in a cozy interior setting. The space features white brick walls, wooden counters, and warm pendant lighting.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "work_friendly",
+          "intimate",
+          "hidden_gem"
+        ],
+        "moments": [
+          "morning coffee ritual",
+          "casual work sessions",
+          "afternoon bakery visits",
+          "solo reflection time",
+          "casual catch-ups"
+        ],
+        "best_for": [
+          "coffee enthusiasts",
+          "remote work",
+          "quiet conversations",
+          "bakery lovers",
+          "neighborhood regulars"
+        ],
+        "not_for": [
+          "late-night gatherings",
+          "large groups",
+          "loud social events"
+        ],
+        "primary_atmosphere": "Warm neighborhood cafe with artisanal character",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.9,
+        "editorial_notes": "Grounded in venue rating (4.8, 151 reviews), daytime hours (7AM-5PM), and image vision showing warm_cozy interior with brick walls, wood counter, and pendant lights. No late-night, outdoor, or lively indicators present. Category and neighborhood confirm Lower East Side cafe positioning.",
+        "grounded_description": "A highly-rated neighborhood cafe at 122 Ludlow Street featuring an intimate interior with white-painted brick, wood surfaces, and warm pendant lighting. Open daily with morning hours suited for coffee routines and daytime work sessions."
+      }
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Artisan cafe in NoMad serving morning favorites",
+        "description_short": "Bourke Street Bakery is a neighborhood cafe in NoMad with solid 4.3-star ratings. Open early mornings through late afternoon, it draws locals seeking quality baked goods and coffee.",
+        "mood_tags": [
+          "work_friendly",
+          "quiet",
+          "warm",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Solo work sessions",
+          "Casual catch-ups",
+          "Weekend brunch"
+        ],
+        "best_for": [
+          "Morning fuel",
+          "Remote work",
+          "Quiet getaways",
+          "Solo time"
+        ],
+        "not_for": [
+          "Late night hangs",
+          "Large groups"
+        ],
+        "primary_atmosphere": "Work-friendly daytime cafe with a warm neighborhood feel",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.6,
+        "editorial_notes": "Grounded in operational data including hours, location, rating, and review count. No image vision data present, so visual atmosphere claims are avoided. Mood tags reflect typical cafe attributes rather than confirmed visual cues.",
+        "grounded_description": "A reliable neighborhood cafe in NoMad drawing locals with consistent quality across 520 reviews. Early weekday openings suit morning routines, while weekend hours accommodate slower starts."
+      }
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A Chelsea staple with a Parisian soul",
+        "description_short": "A Chelsea neighborhood favorite with a distinctly French sensibility, drawing locals for morning espresso and leisurely weekend brunches. The warm, welcoming space makes it a reliable go-to for catching up over coffee or a relaxed meal.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "social",
+          "refined"
+        ],
+        "moments": [
+          "Weekend brunch with friends",
+          "Morning coffee catch-up",
+          "Casual date morning",
+          "Remote work session",
+          "Pre-gallery walk fuel-up"
+        ],
+        "best_for": [
+          "Morning routines",
+          "Casual brunch",
+          "Remote work",
+          "French café cravings",
+          "Neighborhood socializing"
+        ],
+        "not_for": [
+          "Late-night dining",
+          "Quick grab-and-go",
+          "Large group celebrations"
+        ],
+        "primary_atmosphere": "A neighborhood French café with morning rituals and steady Chelsea appeal",
+        "evidence_confidence": 0.6,
+        "mood_confidence": 0.4,
+        "editorial_notes": "Grounded in venue name (French), operating hours (7AM opening suggests café culture), neighborhood (Chelsea), rating and review volume (4.4, 968 reviews indicating established popularity). No cuisine type, price range, or visual data available, so confidence is reduced. French affiliation is suggested by name only.",
+        "grounded_description": "La Bergamote brings a French café sensibility to Chelsea's 9th Avenue, where early risers have made it a morning ritual for years. With a loyal local following evident in nearly 1,000 reviews, it strikes the balance between neighborhood comfort and Gallic charm."
+      }
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Artisanal pastries in a charming West Village corner bakery.",
+        "description_short": "A neighborhood bakery café on a quiet West Village street, drawing locals with French-influenced pastries and fresh-brewed coffee. The unpretentious charm and consistently good reviews make it a reliable stop in one of Manhattan's most storied neighborhoods.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "historic",
+          "work_friendly",
+          "hidden_gem"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Solo work sessions",
+          "Casual catch-ups",
+          "Weekend pastry runs",
+          "Afternoon breaks"
+        ],
+        "best_for": [
+          "Pastry enthusiasts",
+          "West Village locals",
+          "Remote workers",
+          "Quiet mornings",
+          "Neighborhood charm seekers"
+        ],
+        "not_for": [
+          "Late-night visits",
+          "Large gatherings",
+          "After-dark outings"
+        ],
+        "primary_atmosphere": "A welcoming neighborhood bakery with a low-key, lived-in charm typical of classic West Village storefronts, offering quality pastries without pretense.",
+        "evidence_confidence": 0.75,
+        "mood_confidence": 0.55,
+        "editorial_notes": "Grounded in venue category (bakery café), West Village neighborhood character, 4.5-star rating from 469 reviews, and operational hours. No image vision data present, so mood confidence lowered. Avoided any awards, pricing, or visual atmosphere claims not supported by supplied data.",
+        "grounded_description": "Claude Bakery occupies a modest corner location in the West Village, serving the kind of reliable, unpretentious pastries that keep locals coming back. With a 4.5-star average across nearly 500 reviews, it has earned its place as a neighborhood staple for morning coffee runs and quiet afternoon breaks."
+      }
+    },
+    {
+      "venue_name": "maman",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A lush West Village café with roses overhead and Parisian soul",
+        "description_short": "A charming daytime café in the West Village near Meatpacking, known for its abundant greenery, white rose accents, and French-inspired bistro seating. Opens early and closes by 6 PM daily.",
+        "mood_tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "refined"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Leisurely weekend brunch",
+          "Peaceful afternoon reading",
+          "First date coffee",
+          "Quiet solo work session"
+        ],
+        "best_for": [
+          "Early risers",
+          "Couples seeking intimacy",
+          "Aesthetic-conscious visitors",
+          "Soft conversations",
+          "Instagram-worthy interiors"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Large group meetups",
+          "Quick grab-and-go"
+        ],
+        "primary_atmosphere": "Lush and romantic with French bistro sensibility—white roses, greenery, and refined details create an intimate daytime retreat.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in verified venue facts (West Village address, hours, 4.3 rating) and high-quality image vision showing lush interior with roses, greenery, and bistro seating. Tagline and atmosphere claims directly reflect visual evidence. No awards, menu prices, or booking policies invented.",
+        "grounded_description": "Maman occupies a refined corner of the West Village near Meatpacking, its interior defined by abundant greenery, white roses suspended overhead, and decorative rose wall murals that create a lush, romantic atmosphere. Bistro seating and a prominent beverage refrigerator complete the café's intimate, French-inspired aesthetic, open daily from early morning through 6 PM."
+      }
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "French pastry perfection in the West Village",
+        "description_short": "A charming French bakery and cafe in the West Village, Aux Merveilleux de Fred serves delicate French pastries, waffles, and coffee in a bright, marble-countered space with large street-facing windows.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "refined",
+          "intimate"
+        ],
+        "moments": [
+          "Morning coffee with fresh pastries",
+          "Relaxed afternoon break",
+          "Solo work sessions",
+          "Casual catch-ups"
+        ],
+        "best_for": [
+          "Pastry lovers",
+          "Quiet work sessions",
+          "Morning routines",
+          "French bakery experience"
+        ],
+        "not_for": [
+          "Large group gatherings",
+          "Loud social scenes"
+        ],
+        "primary_atmosphere": "Bright, airy French bakery with marble counters, warm lighting, and a refined European sensibility",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.75,
+        "editorial_notes": "Derived from venue's bright_airy hero interior image showing pastry display, marble counter, and large windows. The 4.7-star rating from 781 reviews supports the refined, quality-focused positioning. Daily 7 AM opening supports morning routine and work-friendly moments.",
+        "grounded_description": "The bright interior with its marble counter and large windows creates an intimate yet airy space for enjoying French pastries and coffee. The street-facing windows flood the venue with natural light, making it an inviting spot for a morning ritual or quiet afternoon break."
+      },
+      "retried_at": "2026-06-08T13:49:22.699Z"
+    },
+    {
+      "venue_name": "maman",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "A lush NoMad sanctuary for coffee, greenery, and calm.",
+        "description_short": "An inviting NoMad cafe where abundant greenery and white roses create a tranquil daytime retreat. Bistro seating and a curated beverage selection make it a popular spot for work, casual meetups, or simply unwinding.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "work_friendly",
+          "social",
+          "creative"
+        ],
+        "moments": [
+          "Morning focus sessions",
+          "Afternoon coffee breaks",
+          "Casual catch-ups",
+          "Remote work afternoons",
+          "Solo reading time"
+        ],
+        "best_for": [
+          "Remote work",
+          "Casual social meets",
+          "Coffee enthusiasts",
+          "Morning productivity",
+          "Relaxed afternoons"
+        ],
+        "not_for": [
+          "Late night gatherings",
+          "Large groups seeking privacy",
+          "High-energy nightlife"
+        ],
+        "primary_atmosphere": "Lush, greenery-filled daytime cafe with warm bistro ambiance in NoMad",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in provided cafe category, NoMad location, daytime operating hours (7:30AM-6PM), 4.3 rating from 1307 reviews, and image vision showing lush greenery, roses, bistro seating in interior space. No invented claims about awards, pricing, or menus.",
+        "grounded_description": "This NoMad cafe presents a lush, plant-filled interior with white roses overhead and bistro-style seating, offering a warm and inviting daytime setting for coffee and casual work."
+      }
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Portland roots, NYC craft—coffee as it should be.",
+        "description_short": "Specialty coffee roaster with roots in Portland, now settled in NoMad's Ace Hotel building. Espresso-focused menu meets a well-designed interior built for lingering.",
+        "mood_tags": [
+          "warm",
+          "work_friendly",
+          "quiet",
+          "creative"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Solo work sessions",
+          "Casual afternoon meetings",
+          "Coffee-focused catch-ups"
+        ],
+        "best_for": [
+          "Specialty coffee enthusiasts",
+          "Remote workers",
+          "Early risers",
+          "Design-conscious visitors"
+        ],
+        "not_for": [
+          "Late-night hangs",
+          "Large group gatherings"
+        ],
+        "primary_atmosphere": "Warm, work-friendly specialty café with exposed wood and considered lighting",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in 4.5-star rating, 1702 reviews, and high-quality interior image showing warm_cozy atmosphere with wooden bar, globe pendant lights, and espresso machine. Hours indicate daytime-only operation. Stumptown's reputation as a specialty roaster supports creative/quality positioning.",
+        "grounded_description": "Stumptown occupies a well-designed interior within the Ace Hotel building on 29th Street, featuring exposed wood, a prominent espresso setup, and globe pendant lighting that creates a warm, inviting space suited for both focused work and casual hangs."
+      }
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Bright all-day café in NoMad",
+        "description_short": "A bright bistro café in NoMad with white-painted brick, hanging greenery, and woven pendant lights. Consistent 4.7-star ratings across 1,700+ reviews.",
+        "mood_tags": [
+          "lively",
+          "warm",
+          "work_friendly",
+          "social"
+        ],
+        "moments": [
+          "Morning productivity sessions",
+          "Casual work meetups",
+          "Relaxed social gatherings",
+          "All-day grazing",
+          "Quick café breaks"
+        ],
+        "best_for": [
+          "Morning routines",
+          "Remote work days",
+          "Casual catch-ups",
+          "Solo breaks",
+          "Light bites"
+        ],
+        "not_for": [
+          "Private conversations",
+          "Romantic dinners"
+        ],
+        "primary_atmosphere": "Bright, airy bistro café with natural light, hanging greenery, and lively dining energy",
+        "evidence_confidence": 0.85,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing bright white brick interior, hanging greenery, woven pendant lights, and bistro seating with diners. Venue data confirms strong 4.7-star rating with 1,713 reviews and consistent 7AM-10PM hours across all days.",
+        "grounded_description": "Wide interior shot reveals a bright café with white-painted brick, exposed beams, woven pendant lights, and lush hanging greenery framing bistro seating with active diners. A glass pastry display case anchors the space, consistent with the café's all-day food and beverage positioning."
+      }
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "success": true,
+      "model_used": "MiniMax-M2.7",
+      "editorial": {
+        "tagline": "Artisan loaves and espresso in a Brooklyn bakery",
+        "description_short": "A Williamsburg bakery with an industrial interior featuring brick, tin ceilings, and exposed conduit lighting. Open mornings only, serving fresh bread and espresso to a dedicated local following.",
+        "mood_tags": [
+          "warm",
+          "quiet",
+          "hidden_gem",
+          "refined",
+          "work_friendly"
+        ],
+        "moments": [
+          "Morning coffee ritual",
+          "Weekend breakfast outing",
+          "Casual coffee break",
+          "Neighborhood bakery exploration",
+          "Solo work session"
+        ],
+        "best_for": [
+          "Fresh bread and pastries",
+          "Quality espresso",
+          "Morning routine",
+          "Neighborhood character",
+          "Relaxed dining"
+        ],
+        "not_for": [
+          "Late-night gatherings",
+          "Evening dining",
+          "Large group events"
+        ],
+        "primary_atmosphere": "Industrial Brooklyn bakery with warm, neighborhood character—brick counters, tin ceilings, and exposed conduit lighting anchor the space.",
+        "evidence_confidence": 0.8,
+        "mood_confidence": 0.85,
+        "editorial_notes": "Grounded in image vision showing industrial interior elements (brick counter, tin ceiling, exposed conduit lighting, wooden tables, bread shelves, espresso equipment). Hours (7:30 AM–2:00 PM) and high rating (4.7, 616 reviews) provide additional context. No invented claims—only what is visible or stated.",
+        "grounded_description": "The interior reveals Brooklyn industrial character: a brick service counter, tin ceiling with exposed conduit lighting, wooden tables, and bread shelves stocked with fresh baked goods alongside espresso equipment. Morning-only hours (7:30 AM–2:00 PM) reinforce its identity as a neighborhood breakfast and coffee spot."
+      }
+    }
+  ],
+  "retry_summary": {
+    "generated_at": "2026-06-08T13:49:22.700Z",
+    "retry_venues": [
+      "Dawn’s Til Dusk",
+      "Aux Merveilleux de Fred"
+    ],
+    "minimax_calls_made": 2,
+    "retry_successes": 2,
+    "retry_failures": 0
+  }
+}

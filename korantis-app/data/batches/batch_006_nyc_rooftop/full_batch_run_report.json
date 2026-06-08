@@ -1,0 +1,132 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T03:16:50.476Z",
+  "input_venues": 12,
+  "mode": "run",
+  "safety": {
+    "supabase_apply": false,
+    "cloudinary_upload": false,
+    "public_publish": false,
+    "consumer_ui_changes": false
+  },
+  "stages": [
+    {
+      "stage": "01_extract_data",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_01_raw_venues.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:02:22.924Z",
+      "finished_at": "2026-06-08T03:02:28.341Z"
+    },
+    {
+      "stage": "02_discover_sources",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_02_source_discovery.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:02:28.341Z",
+      "finished_at": "2026-06-08T03:02:45.266Z"
+    },
+    {
+      "stage": "03_discover_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_03_final_vision_queue.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:02:45.266Z",
+      "finished_at": "2026-06-08T03:04:49.232Z"
+    },
+    {
+      "stage": "04_classify_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_04_selected_images.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:04:49.232Z",
+      "finished_at": "2026-06-08T03:11:11.729Z"
+    },
+    {
+      "stage": "connect_selected_images",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\batch_result_with_images.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:11:11.729Z",
+      "finished_at": "2026-06-08T03:11:11.777Z"
+    },
+    {
+      "stage": "05_generate_editorial",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\batch_result_with_editorial.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:11:11.777Z",
+      "finished_at": "2026-06-08T03:16:44.466Z"
+    },
+    {
+      "stage": "05_alias_enriched_result",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\batch_result_enriched.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:44.466Z",
+      "finished_at": "2026-06-08T03:16:44.469Z"
+    },
+    {
+      "stage": "06_quality_gate",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\batch_result_quality_gated.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:44.469Z",
+      "finished_at": "2026-06-08T03:16:44.488Z"
+    },
+    {
+      "stage": "07_generate_approval_manifest",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\approval_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:44.488Z",
+      "finished_at": "2026-06-08T03:16:44.507Z"
+    },
+    {
+      "stage": "08_supabase_staging_dry_run",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\supabase_staging_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:44.507Z",
+      "finished_at": "2026-06-08T03:16:50.450Z"
+    },
+    {
+      "stage": "09_publication_review",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\publication_decision_manifest.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:50.450Z",
+      "finished_at": "2026-06-08T03:16:50.456Z"
+    },
+    {
+      "stage": "11_public_projection_dry_run_if_reviewed",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\public_projection_dry_run.json",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:50.456Z",
+      "finished_at": "2026-06-08T03:16:50.457Z"
+    },
+    {
+      "stage": "13_control_panel",
+      "status": "completed",
+      "output": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\pipeline_control_panel.html",
+      "notes": "Completed.",
+      "started_at": "2026-06-08T03:16:50.457Z",
+      "finished_at": "2026-06-08T03:16:50.476Z"
+    }
+  ],
+  "final_outputs": [
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_01_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_02_source_discovery_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_03_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_04_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\connect_selected_images_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\stage_05_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\quality_gate_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\approval_manifest_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\supabase_staging_dry_run_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\publication_review_report.md",
+    "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\pipeline_control_panel.html"
+  ],
+  "next_action": "Open pipeline_control_panel.html, review publication_review_dashboard.html, export publication_decision_manifest.reviewed.json, then run Cloudinary/hidden public apply commands from the control panel."
+}

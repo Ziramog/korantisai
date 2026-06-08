@@ -1,0 +1,121 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:50:03.410Z",
+  "files": [
+    {
+      "label": "Venue seed",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\venue_seed_report.md",
+      "exists": true,
+      "size_bytes": 15940
+    },
+    {
+      "label": "Stage 01 raw venues",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_01_report.md",
+      "exists": true,
+      "size_bytes": 2151
+    },
+    {
+      "label": "Stage 02 sources",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_02_source_discovery_report.md",
+      "exists": true,
+      "size_bytes": 7963
+    },
+    {
+      "label": "Stage 03 images",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_03_report.md",
+      "exists": true,
+      "size_bytes": 1454
+    },
+    {
+      "label": "Stage 04 M3 vision",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_04_report.md",
+      "exists": true,
+      "size_bytes": 2229
+    },
+    {
+      "label": "Selected image connector",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\connect_selected_images_report.md",
+      "exists": true,
+      "size_bytes": 5043
+    },
+    {
+      "label": "Stage 05 editorial",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\stage_05_report.md",
+      "exists": true,
+      "size_bytes": 1840
+    },
+    {
+      "label": "Stage 06 quality gate",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\quality_gate_report.md",
+      "exists": true,
+      "size_bytes": 5695
+    },
+    {
+      "label": "Stage 07 approval manifest",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\approval_manifest_report.md",
+      "exists": true,
+      "size_bytes": 2056
+    },
+    {
+      "label": "Stage 08 staging dry-run",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\supabase_staging_dry_run_report.md",
+      "exists": true,
+      "size_bytes": 13331
+    },
+    {
+      "label": "Stage 09 publication review",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\publication_review_report.md",
+      "exists": true,
+      "size_bytes": 3182
+    },
+    {
+      "label": "Reviewed decision manifest",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\publication_decision_manifest.reviewed.json",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "label": "Stage 10 Cloudinary",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\cloudinary_materialization_report.md",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "label": "Stage 11 public projection",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\public_projection_report.md",
+      "exists": false,
+      "size_bytes": 0
+    },
+    {
+      "label": "Stage 11 apply",
+      "path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side\\public_projection_apply_report.md",
+      "exists": false,
+      "size_bytes": 0
+    }
+  ],
+  "counts": {
+    "quality_gate": {
+      "input": 25,
+      "ready_for_db_staging": 14,
+      "auto_staged": 0,
+      "needs_review": 0,
+      "blocked": 11,
+      "approved": 0,
+      "rejected": 0,
+      "staged": 0,
+      "published": 0
+    },
+    "decision_manifest": null,
+    "cloudinary": null,
+    "public_projection": null
+  },
+  "commands": {
+    "full_batch_dry_run": "npx tsx pipeline/run_full_batch.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side --max-images-per-venue 4",
+    "publication_review": "npx tsx pipeline/stages/09_generate_publication_review.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+    "public_projection_dry_run": "npx tsx pipeline/stages/11_project_to_public.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side --dry-run",
+    "cloudinary_dry_run": "npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side --dry-run",
+    "cloudinary_apply": "npx tsx pipeline/stages/10_materialize_cloudinary.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side --apply",
+    "public_projection_apply_hidden": "npx tsx pipeline/stages/11_project_to_public.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side --apply",
+    "activation_future": "npx tsx pipeline/stages/12_activate_public_venues.ts batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side --apply"
+  }
+}

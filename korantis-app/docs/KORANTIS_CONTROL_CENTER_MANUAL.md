@@ -42,6 +42,8 @@ Main counters:
 - `Activated`: venues made public with `curation_status = active`.
 - `Activation ready`: projected venues ready to activate.
 - `Image errors`: Cloudinary upload errors.
+- `Audit failed`: active venues from the batch that failed post-activation checks.
+- `Rollback eligible`: active venues from the batch that can be moved back to `pending_review`.
 
 ## Normal Operating Flow
 
@@ -55,8 +57,9 @@ Use this sequence for a new batch:
 6. Apply hidden public projection.
 7. Run activation dry-run.
 8. Activate public venues.
+9. Run post-activation audit.
 
-Activation is the final live step.
+Activation is the live step. Post-activation audit is the safety verification step after live activation.
 
 ## Create A New Batch
 
@@ -65,24 +68,28 @@ Use the `New Batch` panel in the control center.
 Fields:
 
 - `Batch id`: unique id, for example `batch_005_buenos_aires_restaurants_50`.
-- `City`: initially `Buenos Aires`.
+- `City`: choose `Buenos Aires`, `New York`, or `Dubai`.
 - `Count`: number of venues to select.
-- `Neighborhoods`: comma-separated list. Leave blank to use defaults.
-- `Type mix`: comma-separated weights.
+- `Neighborhoods`: six curated areas appear as checkboxes for the selected city. Leave all checked for the default city pass, or uncheck areas for a tighter run.
+- `Batch type`: choose one of the supported Korantis operating types.
 
-Type mix examples:
+Supported batch types:
 
-```text
-restaurants=50
-```
+- `Bars`: maps to a Korantis bar mix: cocktail bars, speakeasies, wine bars, neighborhood bars, and a small rooftop/terrace slice.
+- `Cafes`: maps to Stage 00 type mix `cafes=<count>`.
+- `Restaurants`: maps to Stage 00 type mix `restaurants=<count>`.
 
-```text
-cafes=15,restaurants=15,bars=10,cocktails=5,wine=5
-```
+Do not use mixed free-form type mixes for normal operation yet. The current production machine is intentionally constrained to these three operating types so selection stays predictable and auditable.
 
-```text
-restaurants=20,parrilla=10,bistro=10,wine=5,cocktails=5
-```
+Rooftop is not a primary Korantis venue type. It is treated as a spatial attribute inside bars or restaurants. A rooftop-only batch can still be run from the CLI for experiments, but it is not part of the normal dashboard workflow.
+
+Restaurants should be atmosphere-forward only. Korantis is not a food guide; restaurants with strong food but weak room/mood signal should be rejected or paused during review.
+
+Default city neighborhoods:
+
+- `Buenos Aires`: Palermo, Chacarita, Villa Crespo, Colegiales, Recoleta, San Telmo.
+- `New York`: Williamsburg, DUMBO, Lower East Side, NoMad, Chelsea, West Village.
+- `Dubai`: DIFC, Downtown Dubai, Jumeirah, Dubai Marina, Palm Jumeirah, Business Bay.
 
 The batch runner will avoid venues already known locally or in Supabase when read access is available.
 
@@ -131,6 +138,20 @@ Expected good result:
 - `uploaded` equals approved count.
 - `errors` equals 0.
 
+## Gallery Selection
+
+Run `Build gallery selection` after Stage 04 exists if you want secondary images for venue detail review.
+
+This stage is local and deterministic. It:
+
+- reads existing MiniMax-M3 Stage 04 image results
+- selects up to three secondary gallery images per venue
+- excludes the selected hero, product-only images, logos, menus, crowds, and face-heavy photos
+- prefers atmosphere/interior/exterior context images
+- writes only local `stage_15_gallery_selection.json` and report files
+
+It does not upload Cloudinary, write Supabase, publish, or call M3 again.
+
 ## Hidden Public Projection
 
 Run `Apply hidden public projection`.
@@ -164,6 +185,55 @@ pending_review -> active
 
 That is the step that makes venues visible on the site.
 
+## Post-Activation Audit
+
+Run `Run post-activation audit` after activation.
+
+This is read-only. It checks:
+
+- public venue row exists
+- `curation_status = active`
+- coordinates are valid and inside configured city bounds
+- tagline, narrative, and tags exist
+- Cloudinary hero image exists
+- Cloudinary image URL resolves
+- `publication_metadata.batch_id` matches the selected batch
+
+Expected:
+
+```text
+failed = 0
+```
+
+If audit fails, do not consider the batch finished. Review `Post-activation audit report`.
+
+## Rollback
+
+Run `Rollback batch dry-run` before any rollback apply.
+
+Expected dry-run for an active batch:
+
+```text
+eligible = activated count
+blocked = 0
+```
+
+Run `Rollback batch apply` only if you need to hide a published batch again.
+
+Rollback does:
+
+```text
+active -> pending_review
+```
+
+Rollback does not:
+
+- delete venues
+- delete images
+- touch Cloudinary
+- touch consumer UI
+- remove local artifacts
+
 ## Current Production Batch
 
 For `batch_004_buenos_aires_50`:
@@ -174,6 +244,7 @@ For `batch_004_buenos_aires_50`:
 - `30` Cloudinary hero images uploaded.
 - `30` public rows projected.
 - `30` activated.
+- `30` passed post-activation audit.
 
 ## Recovery
 

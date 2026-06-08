@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Batch Review - batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0f10;
+      --panel: #171a1c;
+      --panel-soft: #202427;
+      --border: #343a3f;
+      --text: #f1eee7;
+      --muted: #a7a097;
+      --gold: #c8a96a;
+      --green: #74b892;
+      --red: #d97b73;
+      --blue: #7ba7d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    header, main { max-width: 1440px; margin: 0 auto; padding: 24px; }
+    header { border-bottom: 1px solid var(--border); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 24px; font-weight: 650; }
+    h2 { margin: 36px 0 16px; font-size: 18px; }
+    h3 { font-size: 15px; }
+    .muted { color: var(--muted); }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat, .card, .section-panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .stat { padding: 16px; }
+    .stat strong { display: block; margin-top: 6px; font-size: 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+    .card { overflow: hidden; }
+    .image {
+      height: 150px;
+      background: var(--panel-soft);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .card-body { padding: 14px; display: grid; gap: 8px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .badge.ready_for_db_staging { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.auto_staged { color: var(--green); border-color: rgba(116, 184, 146, .5); }
+    .badge.needs_review { color: var(--gold); border-color: rgba(200, 169, 106, .5); }
+    .badge.blocked { color: var(--red); border-color: rgba(217, 123, 115, .5); }
+    .score { color: var(--blue); font-variant-numeric: tabular-nums; }
+    .section-panel { padding: 14px; margin-bottom: 12px; }
+    .dist {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .button-row { display: flex; gap: 8px; margin-top: 10px; }
+    button {
+      border: 1px solid var(--border);
+      background: var(--panel-soft);
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 8px 10px;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="muted">Korantis Defensive Staging Review</p>
+    <h1>batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side - New York City</h1>
+    <div class="summary">
+      <div class="stat"><span class="muted">Input</span><strong>25</strong></div>
+      <div class="stat"><span class="muted">Ready for DB staging</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Auto staged</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Needs review</span><strong>0</strong></div>
+      <div class="stat"><span class="muted">Blocked</span><strong>25</strong></div>
+      <div class="stat"><span class="muted">Cost</span><strong>pending</strong></div>
+      <div class="stat"><span class="muted">Runtime</span><strong>0 ms</strong></div>
+    </div>
+  </header>
+  <main>
+    <h2>Venue Preview</h2>
+    <section class="grid"><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Paper Sons Cafe</h3>
+      <p class="muted">Lower East Side / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNMTWttVtUwsjGK9rY8biSEKqzfBMS3z4__83SqutvApyrkj4oKvfeM8o0DUOGUdauD2ByQxbbWcJySJDm2BJoiLiuwjoW_p-A4jEje7qtN8ofzhgOgjYr-2NYlhPXLYE2rjlgys4EY_RejIw9cnyIy-w=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Café Colmado</h3>
+      <p class="muted">Lower East Side / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Yanni&#039;s Coffee</h3>
+      <p class="muted">Chelsea / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Sip Coffee &amp; Matcha</h3>
+      <p class="muted">Chelsea / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOqWJ1f9Vr77lhu8ZSHg9MaaVYE0P9HspEHNLa4bQHinDoSrQGuQyrJ8jIJFLm-u4KbaM73IeJ9vcfQTCKmdNr4z60TAmigx_GMvP5rVXK5cjUoMH9B-_PmjH3Wrim1HBkLUnKSbnQxuf3kupU7zfRXGQ=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Intelligentsia Coffee High Line Hotel Coffeebar</h3>
+      <p class="muted">Chelsea / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMztCXgHyqc7TrZT6cZlOhqyLtolZCstGnU8CK5H1QByzS8iVmOKIFk8b9sFCI55ubcCfAJqOwOJJfMwXN7H08jRB1KdrZ46rZDv_-gDAko70oeHO67tYIyt-cYuoyWNYGt2XXTmpsVtRZGy_0diHSl=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>RHYTHM ZERO | WEST VILLAGE</h3>
+      <p class="muted">West Village / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNAnMjxA8OJSKJueLDAas0q6LSzdF0glLyQG3zN6eI4l-yx_g-xklOOVoPp_qMxLqs5hBDmJK2bJLiZ47RKo7M7KTp-2L5ha0hPAvGCPovKnuxW2H2duv1Fdc4e2lr0A94hyK-mZNwGFnvX_d0=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Bakeri</h3>
+      <p class="muted">Williamsburg / bakery_cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZM1Wl6tk5H2RSW57rNvbwGv1hTvK7AS-hDTQyFYWAHclm4GkFBQ_12Y1O1g7xXlZ3ZNtmB8fUwijZrAHdLcKhJ41-iNJhQOKR6pfSM0pUcHzec5CQU7pEa4ZZyZCbRMj4H-oudkghZhtus3-q-BwHrk=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>A&amp;C Super</h3>
+      <p class="muted">Williamsburg / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMBnyUY5ja3s8EDycgm4P_h3N-s2xBRXh6t_t7bMJCv7m-kk2_XSkcfkVz0yjMdhmgarWYnKJ9XMyfKoCd6IBEgB6miG3de5llMovoMFT7sRaoes1G6XZLt_lLYlusPKCb0_ILUyPK_aIbz3ZvQPRtbSA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Paris Baguette</h3>
+      <p class="muted">Williamsburg / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Black Star Bakery &amp; Cafe</h3>
+      <p class="muted">Williamsburg / bakery_cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZN15fLjG4T0QjOIZ0NU9V2D7fy7658O1oKkmZE7M3KIDnw82ODwynkIoRQt5Q-5Na3A78h_qtXwWFc18Xv7BX8r6JkvC3IC6wf2hfcB89eczKrKWVa3ztD1PTOF_RgZ8xnuutDfOIGovTEpNE3YVqLoUA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Dawn’s Til Dusk</h3>
+      <p class="muted">DUMBO / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Tous Les Jours</h3>
+      <p class="muted">DUMBO / bakery_cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Almondine Bakery</h3>
+      <p class="muted">DUMBO / bakery_cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Burrow</h3>
+      <p class="muted">DUMBO / bakery_cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 30</span></div>
+      <h3>Rex</h3>
+      <p class="muted">Lower East Side / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNFRmudyf8HJViCW1Jo61gxVrV_AtDXc80lue7He7OpR23M1Xft3aDfzSmYGMIFaf6xuDs_wzXpdrvxeiz36LK6BRlMCW2_fLUJ-Y3n2BuYwqOEGXoG2JJNXz6kstKd9_gnuC2ucuKq3-Fq6ylscJLR=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Kaida Coffee and Bakery</h3>
+      <p class="muted">Lower East Side / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Bourke Street Bakery</h3>
+      <p class="muted">NoMad / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>La Bergamote (Chelsea)</h3>
+      <p class="muted">Chelsea / restaurant</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image">No hero image</div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 32</span></div>
+      <h3>Claude Bakery West Village</h3>
+      <p class="muted">West Village / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>maman</h3>
+      <p class="muted">West Village / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOczeaeVq7Kcq5rSsXuW6T3jLwn9PVtFGqfYPEi4e85245ID9MPnV15gAela7UBx8qtdF8f9hMI13q79_BTnofbbMXH5tiyWz6sAxo-oo6vTcCmP2yI74i2FNrpcM2iPC-9wGc2odZJ6R9DapKPxFU7dA=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Aux Merveilleux de Fred</h3>
+      <p class="muted">West Village / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>maman</h3>
+      <p class="muted">NoMad / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZO2jGTXIAcBj-MCXXVg-b9Pk5VctyBDwkflDkUlAq84Ffg1X1-6qYcBpg5YyjTDYNxPd6VTcJy6YI123nh7yaZXdAytItF5A_aljKPOHoZJ1WIT7WBfIhCigbtcXxpEdm-ymrdNQz3G4UqqM-qYYsb0=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Stumptown Coffee Roasters</h3>
+      <p class="muted">NoMad / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMbshrwHUkT4qSxb-vZHGsF_nI_FYp57RvfbHT6CxIdxOPsEJLsOFLZsPRpuyXTAgVGcI_1TzmdIgWFadXkKwWkJ4mHsQtw2zUNU5AWVS_clwa_zl7VUMKIijAKjKuOD9D5_uiwu2sJw01NFyqpaAr1jg=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 68</span></div>
+      <h3>Pura Vida - NoMad</h3>
+      <p class="muted">NoMad / cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article><article class="card">
+    <div class="image"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMCIXepgRVD66zR6gZvxbs91tXk0f_oF4qoxqhEg7Rjjt1zlsjcy9agMC8pkc-isAtcryikJgwyi080TUMG3DjcII15Yq2QDg7iAUmpzVN6x0k6MdQcOjxhKugV3KPKecBqJFIAQIU9LvkomDlDNAby=s4800-w1600-h1600" alt=""></div>
+    <div class="card-body">
+      <div class="meta"><span class="badge blocked">blocked</span><span class="score">Score 66</span></div>
+      <h3>Nick + Sons Bakery</h3>
+      <p class="muted">Williamsburg / bakery_cafe</p>
+      <div class="meta"><span class="badge">no moods</span></div>
+      <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+      <div class="button-row"><button disabled>Approve</button><button disabled>Reject</button><button disabled>Open Detail</button></div>
+    </div>
+  </article></section>
+    <h2>Ready For DB Staging</h2>
+    <section class="section-panel muted">No DB-staging-ready candidates.</section>
+    <h2>Needs Review</h2>
+    <section class="section-panel muted">No needs-review candidates.</section>
+    <h2>Blocked</h2>
+    <section class="section-panel">
+    <h3>Paper Sons Cafe <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Café Colmado <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Yanni&#039;s Coffee <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Sip Coffee &amp; Matcha <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Intelligentsia Coffee High Line Hotel Coffeebar <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>RHYTHM ZERO | WEST VILLAGE <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Bakeri <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>A&amp;C Super <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Paris Baguette <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Black Star Bakery &amp; Cafe <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Dawn’s Til Dusk <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Tous Les Jours <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Almondine Bakery <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Burrow <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Rex <span class="score">30</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Kaida Coffee and Bakery <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Bourke Street Bakery <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>La Bergamote (Chelsea) <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Claude Bakery West Village <span class="score">32</span></h3>
+    <p class="muted">Blocked by hard errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: no_hero_image, missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>maman <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Aux Merveilleux de Fred <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>maman <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Stumptown Coffee Roasters <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Pura Vida - NoMad <span class="score">68</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_moments</p>
+  </section><section class="section-panel">
+    <h3>Nick + Sons Bakery <span class="score">66</span></h3>
+    <p class="muted">Blocked by hard errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Errors: missing_or_short_tagline, missing_description, fewer_than_two_mood_tags, evidence_confidence_below_minimum</p>
+    <p class="muted">Warnings: medium_rights_risk, low_mood_confidence, low_evidence_confidence, missing_instagram, missing_price_hint, missing_moments</p>
+  </section>
+    <h2>Distribution</h2>
+    <section class="dist">
+      <section class="section-panel"><h3>Mood distribution</h3><p class="muted">none</p></section>
+      <section class="section-panel"><h3>Neighborhood distribution</h3><p>Williamsburg <span class="score">5</span></p><p>Lower East Side <span class="score">4</span></p><p>Chelsea <span class="score">4</span></p><p>West Village <span class="score">4</span></p><p>DUMBO <span class="score">4</span></p><p>NoMad <span class="score">4</span></p></section>
+    </section>
+  </main>
+</body>
+</html>

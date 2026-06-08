@@ -1,0 +1,178 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T03:16:44.504Z",
+  "approved_for_db_staging": [
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "With Others",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Olympia",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Anaïs",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Balvanera",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Brick Wine Bar",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Ainslie Bowery",
+      "status": "ready_for_db_staging",
+      "staging_score": 100,
+      "approval_reason": "Quality gate passed; eligible for Supabase staging sync only.",
+      "blocker_reasons": [],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "hero_image_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ],
+  "needs_review": [],
+  "blocked": [
+    {
+      "venue_name": "Woodhul Wine Bar",
+      "status": "blocked",
+      "staging_score": 77,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Pinkerton Wine Bar",
+      "status": "blocked",
+      "staging_score": 77,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Black Mountain Wine House",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Somm Time",
+      "status": "blocked",
+      "staging_score": 74,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Jadis",
+      "status": "blocked",
+      "staging_score": 75,
+      "blocker_reasons": [
+        "no_hero_image"
+      ],
+      "warning_reasons": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication"
+    }
+  ]
+}

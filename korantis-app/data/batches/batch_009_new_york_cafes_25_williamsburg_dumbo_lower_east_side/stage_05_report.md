@@ -1,0 +1,72 @@
+# Stage 05 Editorial + Mood Generation Report
+- Batch: batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side
+- Generated: 2026-06-08T13:49:22.700Z
+- Model: MiniMax-M2.7
+- MiniMax M2.7 called: yes
+- Venues processed: 25
+- Successful editorial generations: 25
+- Failed editorial generations: 0
+- Invalid JSON count: 0
+- Stage 05B retry calls made: 2
+## Mood Distribution
+- warm: 23
+- work_friendly: 22
+- historic: 2
+- hidden_gem: 12
+- quiet: 21
+- intimate: 7
+- social: 8
+- refined: 8
+- creative: 7
+- outdoor: 1
+- date_night: 2
+- romantic: 2
+- lively: 1
+## Evidence Confidence Distribution
+- low: 0
+- medium: 2
+- high: 23
+## Status Counts After Scoring
+- input: 25
+- ready_for_db_staging: 0
+- auto_staged: 10
+- needs_review: 4
+- blocked: 11
+- approved: 0
+- rejected: 0
+- staged: 0
+- published: 0
+## Remaining Blockers Per Venue
+- Paper Sons Cafe: no_hero_image
+- Café Colmado: none
+- Yanni's Coffee: no_hero_image
+- Sip Coffee & Matcha: no_hero_image
+- Intelligentsia Coffee High Line Hotel Coffeebar: none
+- RHYTHM ZERO | WEST VILLAGE: none
+- Bakeri: none
+- A&C Super: none
+- Paris Baguette: none
+- Black Star Bakery & Cafe: no_hero_image
+- Dawn’s Til Dusk: none
+- Tous Les Jours: no_hero_image
+- Almondine Bakery: no_hero_image
+- Burrow: no_hero_image
+- Rex: no_hero_image
+- Kaida Coffee and Bakery: none
+- Bourke Street Bakery: no_hero_image
+- La Bergamote (Chelsea): no_hero_image
+- Claude Bakery West Village: no_hero_image
+- maman: none
+- Aux Merveilleux de Fred: none
+- Stumptown Coffee Roasters: none
+- Pura Vida - NoMad: none
+- Nick + Sons Bakery: none
+## Failures
+- none
+## Safety
+- No successful editorial records were rerun by Stage 05B.
+- No M3 calls were made.
+- No Supabase writes were made.
+- No Cloudinary uploads were made.
+- No publication or deploy path was run.
+- Protected consumer UI files were not touched.

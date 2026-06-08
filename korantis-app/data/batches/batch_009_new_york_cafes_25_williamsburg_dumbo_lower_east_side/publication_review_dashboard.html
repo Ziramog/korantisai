@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Korantis Publication Review - batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1110;
+      --panel: #191b18;
+      --soft: #242720;
+      --line: #3a3f34;
+      --text: #f5f0e8;
+      --muted: #aaa397;
+      --green: #7ac48f;
+      --red: #e17d72;
+      --gold: #d8b76f;
+      --blue: #83aee6;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(circle at top left, #243022, var(--bg) 34rem); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header, main { max-width: none; margin: 0 auto; padding: 10px 14px; }
+    header { position: sticky; top: 0; z-index: 9; background: rgba(15,17,16,.96); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 15px; max-width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .muted { color: var(--muted); }
+    .topbar { display: grid; grid-template-columns: minmax(260px, 1fr) auto; gap: 14px; align-items: center; }
+    .summary { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0; justify-content: flex-end; }
+    .stat, .card, .tools, textarea { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; }
+    .stat { padding: 6px 9px; min-width: 82px; }
+    .stat span { font-size: 11px; }
+    .stat strong { display: inline; font-size: 15px; margin-left: 5px; }
+    .tools { padding: 7px 8px; margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    button { border: 1px solid var(--line); background: var(--soft); color: var(--text); border-radius: 999px; padding: 6px 10px; cursor: pointer; font-size: 12px; }
+    button:hover { border-color: var(--gold); }
+    button.active.approve { background: rgba(122,196,143,.2); border-color: var(--green); color: var(--green); }
+    button.active.reject { background: rgba(225,125,114,.2); border-color: var(--red); color: var(--red); }
+    button.active.pause { background: rgba(216,183,111,.2); border-color: var(--gold); color: var(--gold); }
+    button:disabled { opacity: .38; cursor: not-allowed; }
+    .filter.active { border-color: var(--blue); color: var(--blue); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); gap: 18px; align-items: start; }
+    .card { overflow: hidden; }
+    .image { height: 300px; background: var(--soft); display: grid; place-items: center; color: var(--muted); }
+    .image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .body { padding: 16px; display: grid; gap: 11px; }
+    .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .badge { border: 1px solid var(--line); border-radius: 999px; padding: 4px 8px; color: var(--muted); font-size: 12px; }
+    .eligible { color: var(--green); border-color: rgba(122,196,143,.55); }
+    .blocked { color: var(--red); border-color: rgba(225,125,114,.55); }
+    .score { color: var(--blue); }
+    textarea { width: 100%; min-height: 118px; color: var(--text); padding: 10px; resize: vertical; line-height: 1.45; }
+    .copy { border-left: 3px solid rgba(216,183,111,.55); padding: 8px 0 8px 10px; display: grid; gap: 6px; background: rgba(255,255,255,.02); border-radius: 8px; }
+    .meta { display: grid; gap: 5px; }
+    .hide { display: none; }
+    .live-counter { position: fixed; right: 18px; bottom: 18px; z-index: 10; display: flex; gap: 8px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 999px; background: rgba(15,17,16,.94); box-shadow: 0 12px 40px rgba(0,0,0,.35); }
+    .live-counter strong { color: var(--green); }
+    .small { font-size: 12px; }
+    a { color: var(--blue); }
+    @media (max-width: 900px) {
+      header, main { padding: 12px; }
+      .topbar { grid-template-columns: 1fr; }
+      .summary { justify-content: flex-start; }
+      .grid { grid-template-columns: 1fr; }
+      .image { height: 230px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div>
+        <p class="muted small">Stage 09 review</p>
+        <h1>batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side</h1>
+      </div>
+      <div class="summary">
+        <div class="stat"><span class="muted">Total</span><strong id="total">0</strong></div>
+        <div class="stat"><span class="muted">Eligible</span><strong id="eligible">0</strong></div>
+        <div class="stat"><span class="muted">Approved</span><strong id="approved">0</strong></div>
+        <div class="stat"><span class="muted">Rejected</span><strong id="rejected">0</strong></div>
+        <div class="stat"><span class="muted">Paused</span><strong id="paused">0</strong></div>
+      </div>
+    </div>
+    <div class="tools">
+      <button onclick="downloadManifest()">Download decision JSON</button>
+      <button onclick="approveAllEligible()">Approve all eligible</button>
+      <button onclick="pauseAll()">Pause all</button>
+      <button class="filter active" data-filter="all" onclick="setFilter('all')">All</button>
+      <button class="filter" data-filter="eligible" onclick="setFilter('eligible')">Eligible only</button>
+      <button class="filter" data-filter="blocked" onclick="setFilter('blocked')">Blocked</button>
+      <button class="filter" data-filter="approved" onclick="setFilter('approved')">Approved</button>
+      <button class="filter" data-filter="paused" onclick="setFilter('paused')">Paused</button>
+    </div>
+  </header>
+  <main>
+    <section class="grid" id="grid"></section>
+  </main>
+  <div class="live-counter">
+    <span class="muted small">Live decisions</span>
+    <span class="small">Approved <strong id="liveApproved">0</strong></span>
+    <span class="small">Rejected <strong id="liveRejected">0</strong></span>
+    <span class="small">Paused <strong id="livePaused">0</strong></span>
+  </div>
+  <script>
+    const manifest = {"batch_id":"batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side","generated_at":"2026-06-08T13:49:28.653Z","status":"review_pending","safety":{"no_public_writes":true,"no_supabase_writes":true,"no_cloudinary_uploads":true,"no_publication":true},"decisions":[{"venue_name":"Paper Sons Cafe","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":75,"blockers":["no_hero_image"],"warnings":["missing_instagram","missing_price_hint"],"image_publication_status":"not_approved_for_publication","tagline":"Thoughtful coffee in historic Chinatown","description":"Located on Mott Street in historic Chinatown, Paper Sons Cafe is a neighborhood coffee shop with a strong 4.7-star rating. Open daily with weekday mornings starting at 8AM, it's a go-to spot for locals and visitors exploring the area.","mood_tags":["warm","work_friendly","historic","hidden_gem"],"neighborhood":"Lower East Side","venue_type":"cafe","rating":4.7,"review_count":231,"google_maps_url":"https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Café Colmado","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","missing_price_hint","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZNMTWttVtUwsjGK9rY8biSEKqzfBMS3z4__83SqutvApyrkj4oKvfeM8o0DUOGUdauD2ByQxbbWcJySJDm2BJoiLiuwjoW_p-A4jEje7qtN8ofzhgOgjYr-2NYlhPXLYE2rjlgys4EY_RejIw9cnyIy-w=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"A warm corner café in the heart of the Lower East Side","description":"A cozy Lower East Side café featuring warm industrial lighting, decorative framed photos, and a welcoming counter-service layout. The space presents an intimate daytime environment suited for coffee breaks and quiet work sessions, reflecting its well-regarded neighborhood status with a 4.6 rating across 291 reviews.","mood_tags":["warm","quiet","intimate","work_friendly","hidden_gem"],"neighborhood":"Lower East Side","venue_type":"cafe","rating":4.6,"review_count":291,"google_maps_url":"https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Yanni's Coffee","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":73,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram","missing_price_hint"],"image_publication_status":"not_approved_for_publication","tagline":"Chelsea's local coffee house since morning light","description":"Yanni's Coffee operates as a daytime-focused cafe in Chelsea, opening early on weekdays to serve the neighborhood's morning routines. The consistent 4.6 rating across 445 reviews suggests a reliable, well-liked local spot rather than a destination venue.","mood_tags":["quiet","warm","work_friendly","hidden_gem","social"],"neighborhood":"Chelsea","venue_type":"cafe","rating":4.6,"review_count":445,"google_maps_url":"https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Sip Coffee & Matcha","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":73,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram","missing_price_hint"],"image_publication_status":"not_approved_for_publication","tagline":"Specialty coffee and matcha crafted for quiet mornings in Chelsea","description":"Sip Coffee & Matcha operates Monday through Friday from 7AM to 5PM, with shorter weekend windows, positioning itself as a morning-to-early-afternoon destination. Its 4.8 rating across 377 reviews reflects consistent quality in a neighborhood where daytime cafe culture thrives.","mood_tags":["quiet","work_friendly","refined","warm","creative"],"neighborhood":"Chelsea","venue_type":"cafe","rating":4.8,"review_count":377,"google_maps_url":"https://maps.google.com/?cid=22413173695020193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Intelligentsia Coffee High Line Hotel Coffeebar","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZOqWJ1f9Vr77lhu8ZSHg9MaaVYE0P9HspEHNLa4bQHinDoSrQGuQyrJ8jIJFLm-u4KbaM73IeJ9vcfQTCKmdNr4z60TAmigx_GMvP5rVXK5cjUoMH9B-_PmjH3Wrim1HBkLUnKSbnQxuf3kupU7zfRXGQ=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Specialty coffee in a lush Chelsea courtyard setting","description":"This Intelligentsia Coffee location sits within the High Line Hotel at 180 10th Avenue, featuring a courtyard space with bistro seating, string lights, and greenery beneath the shadow of a vintage red double-decker bus backdrop.","mood_tags":["warm","refined","outdoor","quiet","work_friendly"],"neighborhood":"Chelsea","venue_type":"cafe","rating":4.5,"review_count":646,"google_maps_url":"https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"RHYTHM ZERO | WEST VILLAGE","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","missing_price_hint","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZMztCXgHyqc7TrZT6cZlOhqyLtolZCstGnU8CK5H1QByzS8iVmOKIFk8b9sFCI55ubcCfAJqOwOJJfMwXN7H08jRB1KdrZ46rZDv_-gDAko70oeHO67tYIyt-cYuoyWNYGt2XXTmpsVtRZGy_0diHSl=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Minimalist cafe sanctuary in the heart of the Village","description":"Rhythm Zero occupies a West Village storefront with floor-to-ceiling wood paneling, paper lanterns, and a sculptural cactus anchoring the minimalist interior. High tables with two chairs each create intimate pockets for conversation or solitary focus, while framed artwork on the walls adds quiet creative energy. The space opens at 8AM daily, catering to Village locals seeking a calm respite.","mood_tags":["quiet","intimate","creative","refined","work_friendly"],"neighborhood":"West Village","venue_type":"cafe","rating":4.5,"review_count":222,"google_maps_url":"https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Bakeri","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZNAnMjxA8OJSKJueLDAas0q6LSzdF0glLyQG3zN6eI4l-yx_g-xklOOVoPp_qMxLqs5hBDmJK2bJLiZ47RKo7M7KTp-2L5ha0hPAvGCPovKnuxW2H2duv1Fdc4e2lr0A94hyK-mZNwGFnvX_d0=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Williamsburg's neighborhood bakery with heart and soul","description":"Bakeri occupies a warm corner of Wythe Avenue in Williamsburg, where wood-paneled interiors and pendant lighting create an inviting backdrop for house-baked goods. The chalkboard specials and checkered tile floor evoke a classic neighborhood bakery, while nearly 700 reviews at 4.5 stars speak to its consistent quality and local devotion.","mood_tags":["warm","quiet","work_friendly","hidden_gem","intimate"],"neighborhood":"Williamsburg","venue_type":"bakery_cafe","rating":4.5,"review_count":676,"google_maps_url":"https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"A&C Super","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZM1Wl6tk5H2RSW57rNvbwGv1hTvK7AS-hDTQyFYWAHclm4GkFBQ_12Y1O1g7xXlZ3ZNtmB8fUwijZrAHdLcKhJ41-iNJhQOKR6pfSM0pUcHzec5CQU7pEa4ZZyZCbRMj4H-oudkghZhtus3-q-BwHrk=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Bright Williamsburg mornings, the local way","description":"A&C Super anchors itself in Williamsburg as a reliable daytime cafe, open daily from 8AM to 4PM with a straightforward menu built around quality espresso and neighborhood hospitality. The bright, window-forward interior creates a functional yet welcoming space that keeps regulars coming back.","mood_tags":["work_friendly","quiet","warm","creative","social"],"neighborhood":"Williamsburg","venue_type":"cafe","rating":4.8,"review_count":201,"google_maps_url":"https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Paris Baguette","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","missing_price_hint","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZMBnyUY5ja3s8EDycgm4P_h3N-s2xBRXh6t_t7bMJCv7m-kk2_XSkcfkVz0yjMdhmgarWYnKJ9XMyfKoCd6IBEgB6miG3de5llMovoMFT7sRaoes1G6XZLt_lLYlusPKCb0_ILUyPK_aIbz3ZvQPRtbSA=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Where Brooklyn starts its morning","description":"Paris Baguette's Williamsburg location features a well-lit interior with mosaic tile floors, marble counters, and a full glass display case stocked with pastries and baked goods. The space maintains the chain's signature clean, bright aesthetic while fitting naturally into the Brooklyn neighborhood context.","mood_tags":["warm","work_friendly","social","quiet"],"neighborhood":"Williamsburg","venue_type":"cafe","rating":4.6,"review_count":190,"google_maps_url":"https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Black Star Bakery & Cafe","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":75,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram"],"image_publication_status":"not_approved_for_publication","tagline":"Where Williamsburg finds its daily ritual","description":"Black Star Bakery & Cafe anchors the Williamsburg neighborhood with morning-focused hours and artisan café fare. Early birds and locals keep the rhythm steady from 8AM onward.","mood_tags":["warm","quiet","work_friendly","creative","hidden_gem"],"neighborhood":"Williamsburg","venue_type":"bakery_cafe","rating":4.3,"review_count":225,"google_maps_url":"https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Dawn’s Til Dusk","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZN15fLjG4T0QjOIZ0NU9V2D7fy7658O1oKkmZE7M3KIDnw82ODwynkIoRQt5Q-5Na3A78h_qtXwWFc18Xv7BX8r6JkvC3IC6wf2hfcB89eczKrKWVa3ztD1PTOF_RgZ8xnuutDfOIGovTEpNE3YVqLoUA=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"A DUMBO cafe where industrial design meets morning-to-evening ease","description":"This DUMBO cafe occupies an industrial-style space with exposed concrete walls, high ceilings, and a marble bar. The interior features wine bottle displays, marble-topped tables, and black chairs with small floral arrangements, creating a refined atmosphere suited for daytime work sessions and early evening wine-drinking.","mood_tags":["work_friendly","refined","quiet","creative","date_night"],"neighborhood":"DUMBO","venue_type":"cafe","rating":4.4,"review_count":1018,"google_maps_url":"https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Tous Les Jours","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":74,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram"],"image_publication_status":"not_approved_for_publication","tagline":"Fresh-baked warmth in the heart of DUMBO","description":"A dependable neighborhood bakery-café in DUMBO with early morning hours and a 4.3-star rating from 112 reviews. The space offers a comfortable setting for coffee and fresh-baked goods in a residential corner of Brooklyn.","mood_tags":["quiet","warm","work_friendly","social"],"neighborhood":"DUMBO","venue_type":"bakery_cafe","rating":4.3,"review_count":112,"google_maps_url":"https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Almondine Bakery","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":76,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram"],"image_publication_status":"not_approved_for_publication","tagline":"DUMBO waterfront bakery serving quality pastries since morning light","description":"A well-reviewed bakery cafe in DUMBO offering a daytime schedule Wednesday through Sunday. The 4.5-star rating across 657 reviews indicates consistent quality that attracts locals and visitors to the Water Street location.","mood_tags":["quiet","warm","romantic","date_night","hidden_gem"],"neighborhood":"DUMBO","venue_type":"bakery_cafe","rating":4.5,"review_count":657,"google_maps_url":"https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Burrow","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":74,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram","missing_price_hint"],"image_publication_status":"not_approved_for_publication","tagline":"A quiet daytime bakery in DUMBO for slow mornings and unhurried afternoons.","description":"Burrow occupies a modest corner of DUMBO's industrial Jay Street, operating on a deliberately limited Tuesday-through-Friday schedule. The 4.5-star rating and consistent local review count suggest reliable quality that keeps regulars returning, though the early closing time and closed weekends make it a strictly daytime proposition.","mood_tags":["quiet","warm","hidden_gem","work_friendly","intimate"],"neighborhood":"DUMBO","venue_type":"bakery_cafe","rating":4.5,"review_count":203,"google_maps_url":"https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Rex","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":73,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram","missing_price_hint"],"image_publication_status":"not_approved_for_publication","tagline":"A neighborhood staple in the heart of the Lower East Side","description":"Rex occupies a steady presence on Rivington Street, where its consistent morning-to-afternoon schedule accommodates the rhythms of LES locals. The 4.8-star rating across 111 reviews reflects meaningful community endorsement without grandstanding.","mood_tags":["quiet","warm","hidden_gem","work_friendly","social"],"neighborhood":"Lower East Side","venue_type":"cafe","rating":4.8,"review_count":111,"google_maps_url":"https://maps.google.com/?cid=9821779624159786961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Kaida Coffee and Bakery","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZNFRmudyf8HJViCW1Jo61gxVrV_AtDXc80lue7He7OpR23M1Xft3aDfzSmYGMIFaf6xuDs_wzXpdrvxeiz36LK6BRlMCW2_fLUJ-Y3n2BuYwqOEGXoG2JJNXz6kstKd9_gnuC2ucuKq3-Fq6ylscJLR=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"A warm corner for morning coffee and fresh-baked goods on Ludlow Street","description":"A highly-rated neighborhood cafe at 122 Ludlow Street featuring an intimate interior with white-painted brick, wood surfaces, and warm pendant lighting. Open daily with morning hours suited for coffee routines and daytime work sessions.","mood_tags":["warm","quiet","work_friendly","intimate","hidden_gem"],"neighborhood":"Lower East Side","venue_type":"cafe","rating":4.8,"review_count":151,"google_maps_url":"https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Bourke Street Bakery","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":76,"blockers":["no_hero_image"],"warnings":["missing_instagram"],"image_publication_status":"not_approved_for_publication","tagline":"Artisan cafe in NoMad serving morning favorites","description":"A reliable neighborhood cafe in NoMad drawing locals with consistent quality across 520 reviews. Early weekday openings suit morning routines, while weekend hours accommodate slower starts.","mood_tags":["work_friendly","quiet","warm","hidden_gem"],"neighborhood":"NoMad","venue_type":"cafe","rating":4.3,"review_count":520,"google_maps_url":"https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"La Bergamote (Chelsea)","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":71,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram"],"image_publication_status":"not_approved_for_publication","tagline":"A Chelsea staple with a Parisian soul","description":"La Bergamote brings a French café sensibility to Chelsea's 9th Avenue, where early risers have made it a morning ritual for years. With a loyal local following evident in nearly 1,000 reviews, it strikes the balance between neighborhood comfort and Gallic charm.","mood_tags":["warm","work_friendly","social","refined"],"neighborhood":"Chelsea","venue_type":"restaurant","rating":4.4,"review_count":968,"google_maps_url":"https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Claude Bakery West Village","current_status":"blocked","publication_decision":"pause","publish_eligible":false,"default_reason":"Not eligible for publication review: no_hero_image","reviewer_notes":"","staging_score":75,"blockers":["no_hero_image"],"warnings":["low_mood_confidence","missing_instagram"],"image_publication_status":"not_approved_for_publication","tagline":"Artisanal pastries in a charming West Village corner bakery.","description":"Claude Bakery occupies a modest corner location in the West Village, serving the kind of reliable, unpretentious pastries that keep locals coming back. With a 4.5-star average across nearly 500 reviews, it has earned its place as a neighborhood staple for morning coffee runs and quiet afternoon breaks.","mood_tags":["warm","quiet","historic","work_friendly","hidden_gem"],"neighborhood":"West Village","venue_type":"cafe","rating":4.5,"review_count":469,"google_maps_url":"https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"maman","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"A lush West Village café with roses overhead and Parisian soul","description":"Maman occupies a refined corner of the West Village near Meatpacking, its interior defined by abundant greenery, white roses suspended overhead, and decorative rose wall murals that create a lush, romantic atmosphere. Bistro seating and a prominent beverage refrigerator complete the café's intimate, French-inspired aesthetic, open daily from early morning through 6 PM.","mood_tags":["warm","romantic","intimate","refined"],"neighborhood":"West Village","venue_type":"cafe","rating":4.3,"review_count":393,"google_maps_url":"https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Aux Merveilleux de Fred","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZOczeaeVq7Kcq5rSsXuW6T3jLwn9PVtFGqfYPEi4e85245ID9MPnV15gAela7UBx8qtdF8f9hMI13q79_BTnofbbMXH5tiyWz6sAxo-oo6vTcCmP2yI74i2FNrpcM2iPC-9wGc2odZJ6R9DapKPxFU7dA=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"French pastry perfection in the West Village","description":"The bright interior with its marble counter and large windows creates an intimate yet airy space for enjoying French pastries and coffee. The street-facing windows flood the venue with natural light, making it an inviting spot for a morning ritual or quiet afternoon break.","mood_tags":["warm","quiet","refined","intimate"],"neighborhood":"West Village","venue_type":"cafe","rating":4.7,"review_count":781,"google_maps_url":"https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"maman","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"A lush NoMad sanctuary for coffee, greenery, and calm.","description":"This NoMad cafe presents a lush, plant-filled interior with white roses overhead and bistro-style seating, offering a warm and inviting daytime setting for coffee and casual work.","mood_tags":["warm","quiet","work_friendly","social","creative"],"neighborhood":"NoMad","venue_type":"cafe","rating":4.3,"review_count":1307,"google_maps_url":"https://maps.google.com/?cid=14747561781793389114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Stumptown Coffee Roasters","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZO2jGTXIAcBj-MCXXVg-b9Pk5VctyBDwkflDkUlAq84Ffg1X1-6qYcBpg5YyjTDYNxPd6VTcJy6YI123nh7yaZXdAytItF5A_aljKPOHoZJ1WIT7WBfIhCigbtcXxpEdm-ymrdNQz3G4UqqM-qYYsb0=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Portland roots, NYC craft—coffee as it should be.","description":"Stumptown occupies a well-designed interior within the Ace Hotel building on 29th Street, featuring exposed wood, a prominent espresso setup, and globe pendant lighting that creates a warm, inviting space suited for both focused work and casual hangs.","mood_tags":["warm","work_friendly","quiet","creative"],"neighborhood":"NoMad","venue_type":"cafe","rating":4.5,"review_count":1702,"google_maps_url":"https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Pura Vida - NoMad","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZMbshrwHUkT4qSxb-vZHGsF_nI_FYp57RvfbHT6CxIdxOPsEJLsOFLZsPRpuyXTAgVGcI_1TzmdIgWFadXkKwWkJ4mHsQtw2zUNU5AWVS_clwa_zl7VUMKIijAKjKuOD9D5_uiwu2sJw01NFyqpaAr1jg=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Bright all-day café in NoMad","description":"Wide interior shot reveals a bright café with white-painted brick, exposed beams, woven pendant lights, and lush hanging greenery framing bistro seating with active diners. A glass pastry display case anchors the space, consistent with the café's all-day food and beverage positioning.","mood_tags":["lively","warm","work_friendly","social"],"neighborhood":"NoMad","venue_type":"cafe","rating":4.7,"review_count":1713,"google_maps_url":"https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"},{"venue_name":"Nick + Sons Bakery","current_status":"ready_for_db_staging","publication_decision":"pause","publish_eligible":true,"default_reason":"Eligible for manual publication review. Default is pause until a reviewer approves.","reviewer_notes":"","staging_score":100,"blockers":[],"warnings":["medium_rights_risk","missing_instagram","missing_price_hint","image_rights_review_required_before_publication","rights_review_needed"],"hero_image_url":"https://lh3.googleusercontent.com/place-photos/AJRVUZMCIXepgRVD66zR6gZvxbs91tXk0f_oF4qoxqhEg7Rjjt1zlsjcy9agMC8pkc-isAtcryikJgwyi080TUMG3DjcII15Yq2QDg7iAUmpzVN6x0k6MdQcOjxhKugV3KPKecBqJFIAQIU9LvkomDlDNAby=s4800-w1600-h1600","image_source_type":"google_places","image_publication_status":"not_approved_for_publication","source_url":"https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA","tagline":"Artisan loaves and espresso in a Brooklyn bakery","description":"The interior reveals Brooklyn industrial character: a brick service counter, tin ceiling with exposed conduit lighting, wooden tables, and bread shelves stocked with fresh baked goods alongside espresso equipment. Morning-only hours (7:30 AM–2:00 PM) reinforce its identity as a neighborhood breakfast and coffee spot.","mood_tags":["warm","quiet","hidden_gem","refined","work_friendly"],"neighborhood":"Williamsburg","venue_type":"bakery_cafe","rating":4.7,"review_count":616,"google_maps_url":"https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"}]};
+    const decisions = manifest.decisions;
+    let activeFilter = 'all';
+
+    function render() {
+      renderCounts();
+      document.querySelectorAll('.filter').forEach(button => button.classList.toggle('active', button.dataset.filter === activeFilter));
+      document.getElementById('grid').innerHTML = decisions.map((decision, index) => card(decision, index)).join('');
+    }
+
+    function renderCounts() {
+      const approved = decisions.filter(d => d.publication_decision === 'approve').length;
+      const rejected = decisions.filter(d => d.publication_decision === 'reject').length;
+      const paused = decisions.filter(d => d.publication_decision === 'pause').length;
+      document.getElementById('total').textContent = decisions.length;
+      document.getElementById('eligible').textContent = decisions.filter(d => d.publish_eligible).length;
+      document.getElementById('approved').textContent = approved;
+      document.getElementById('rejected').textContent = rejected;
+      document.getElementById('paused').textContent = paused;
+      document.getElementById('liveApproved').textContent = approved;
+      document.getElementById('liveRejected').textContent = rejected;
+      document.getElementById('livePaused').textContent = paused;
+    }
+
+    function card(decision, index) {
+      const hidden = matchesFilter(decision) ? '' : ' hide';
+      const image = decision.hero_image_url ? '<img src="' + esc(decision.hero_image_url) + '" alt="">' : 'No hero image';
+      const eligibleClass = decision.publish_eligible ? 'eligible' : 'blocked';
+      const eligibleText = decision.publish_eligible ? 'publish review eligible' : 'blocked';
+      return '<article class="card' + hidden + '" data-index="' + index + '">' +
+        '<div class="image">' + image + '</div>' +
+        '<div class="body">' +
+        '<div class="row"><span class="badge ' + eligibleClass + '">' + eligibleText + '</span><span class="badge score">score ' + decision.staging_score + '</span><span class="badge">' + esc(decision.current_status) + '</span></div>' +
+        '<h3>' + esc(decision.venue_name) + '</h3>' +
+        '<div class="copy">' +
+        '<p><strong>' + esc(decision.tagline || 'No tagline') + '</strong></p>' +
+        '<p class="muted">' + esc(decision.description || 'No description') + '</p>' +
+        '<p class="muted small">Mood: ' + esc((decision.mood_tags || []).join(', ') || 'none') + '</p>' +
+        '</div>' +
+        '<div class="meta">' +
+        '<p class="muted small">' + esc(decision.default_reason) + '</p>' +
+        '<p class="muted small">Place: ' + esc(decision.neighborhood || 'unknown') + ' / ' + esc(decision.venue_type || 'unknown') + ' / rating ' + esc(decision.rating || 'n/a') + ' / reviews ' + esc(decision.review_count || 'n/a') + '</p>' +
+        '<p class="muted small">Image: ' + esc(decision.image_source_type || 'unknown') + ' / ' + esc(decision.image_publication_status) + '</p>' +
+        '<p class="muted small">Warnings: ' + esc((decision.warnings || []).join(', ') || 'none') + '</p>' +
+        '<p class="muted small">Blockers: ' + esc((decision.blockers || []).join(', ') || 'none') + '</p>' +
+        '<p class="small">' +
+        (decision.source_url ? '<a href="' + esc(decision.source_url) + '" target="_blank" rel="noreferrer">image source</a> ' : '') +
+        (decision.google_maps_url ? '<a href="' + esc(decision.google_maps_url) + '" target="_blank" rel="noreferrer">google maps</a>' : '') +
+        '</p>' +
+        '</div>' +
+        '<div class="row">' +
+        '<button class="approve ' + active(decision, 'approve') + '" ' + (decision.publish_eligible ? '' : 'disabled') + ' onclick="setDecision(' + index + ', \'approve\')">Approve</button>' +
+        '<button class="reject ' + active(decision, 'reject') + '" onclick="setDecision(' + index + ', \'reject\')">Reject</button>' +
+        '<button class="pause ' + active(decision, 'pause') + '" onclick="setDecision(' + index + ', \'pause\')">Pause</button>' +
+        '</div>' +
+        '<textarea placeholder="Reviewer notes" oninput="setNotes(' + index + ', this.value)">' + esc(decision.reviewer_notes || '') + '</textarea>' +
+        '</div>' +
+      '</article>';
+    }
+
+    function active(decision, value) {
+      return decision.publication_decision === value ? 'active' : '';
+    }
+
+    function matchesFilter(decision) {
+      if (activeFilter === 'eligible') return decision.publish_eligible;
+      if (activeFilter === 'blocked') return !decision.publish_eligible;
+      if (activeFilter === 'approved') return decision.publication_decision === 'approve';
+      if (activeFilter === 'paused') return decision.publication_decision === 'pause';
+      return true;
+    }
+
+    function setFilter(value) {
+      activeFilter = value;
+      render();
+    }
+
+    function setDecision(index, value) {
+      decisions[index].publication_decision = value;
+      updateCard(index);
+      renderCounts();
+    }
+
+    function setNotes(index, value) {
+      decisions[index].reviewer_notes = value;
+    }
+
+    function approveAllEligible() {
+      decisions.forEach(decision => {
+        if (decision.publish_eligible) decision.publication_decision = 'approve';
+      });
+      render();
+    }
+
+    function pauseAll() {
+      decisions.forEach(decision => decision.publication_decision = 'pause');
+      render();
+    }
+
+    function updateCard(index) {
+      const current = document.querySelector('[data-index="' + index + '"]');
+      if (!current) {
+        render();
+        return;
+      }
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = card(decisions[index], index);
+      current.replaceWith(wrapper.firstElementChild);
+    }
+
+    function downloadManifest() {
+      manifest.generated_at = new Date().toISOString();
+      const blob = new Blob([JSON.stringify(manifest, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'publication_decision_manifest.reviewed.json';
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function esc(value) {
+      return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[char]));
+    }
+
+    render();
+  </script>
+</body>
+</html>

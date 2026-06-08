@@ -1,0 +1,466 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:34:42.250Z",
+  "validation_status": "imported_needs_validation",
+  "publication_status": "not_approved_for_publication",
+  "selected_images": [
+    {
+      "venue_name": "A&C Super",
+      "selected_image": {
+        "venue_name": "A&C Super",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM1Wl6tk5H2RSW57rNvbwGv1hTvK7AS-hDTQyFYWAHclm4GkFBQ_12Y1O1g7xXlZ3ZNtmB8fUwijZrAHdLcKhJ41-iNJhQOKR6pfSM0pUcHzec5CQU7pEa4ZZyZCbRMj4H-oudkghZhtus3-q-BwHrk=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Clear interior view of a small coffee shop counter with espresso machine, menu boards, point-of-sale, and large window showing daylight and parked cars outside, conveying a bright, functional cafe space."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "selected_image": {
+        "venue_name": "Aux Merveilleux de Fred",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOczeaeVq7Kcq5rSsXuW6T3jLwn9PVtFGqfYPEi4e85245ID9MPnV15gAela7UBx8qtdF8f9hMI13q79_BTnofbbMXH5tiyWz6sAxo-oo6vTcCmP2yI74i2FNrpcM2iPC-9wGc2odZJ6R9DapKPxFU7dA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Bright bakery/cafe interior with display counter of pastries and waffles, large street-facing window, marble counter, and glimpse of staff — clear venue atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Bakeri",
+      "selected_image": {
+        "venue_name": "Bakeri",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAnMjxA8OJSKJueLDAas0q6LSzdF0glLyQG3zN6eI4l-yx_g-xklOOVoPp_qMxLqs5hBDmJK2bJLiZ47RKo7M7KTp-2L5ha0hPAvGCPovKnuxW2H2duv1Fdc4e2lr0A94hyK-mZNwGFnvX_d0=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Interior of a bakery/cafe with wood-paneled counter, pendant lights, chalkboard specials, and checkered tile floor conveying a warm, cozy atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Café Colmado",
+      "selected_image": {
+        "venue_name": "Café Colmado",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNMTWttVtUwsjGK9rY8biSEKqzfBMS3z4__83SqutvApyrkj4oKvfeM8o0DUOGUdauD2ByQxbbWcJySJDm2BJoiLiuwjoW_p-A4jEje7qtN8ofzhgOgjYr-2NYlhPXLYE2rjlgys4EY_RejIw9cnyIy-w=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1205,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Interior café/casino space with a prominent 'CAFÉ COLMADO' neon sign, counter service, coffee equipment, decorative framed photos, and warm industrial lighting under a metal ceiling."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 123,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "selected_image": {
+        "venue_name": "Dawn’s Til Dusk",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN15fLjG4T0QjOIZ0NU9V2D7fy7658O1oKkmZE7M3KIDnw82ODwynkIoRQt5Q-5Na3A78h_qtXwWFc18Xv7BX8r6JkvC3IC6wf2hfcB89eczKrKWVa3ztD1PTOF_RgZ8xnuutDfOIGovTEpNE3YVqLoUA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Interior shot of a restaurant/bar featuring exposed concrete walls, high ceilings, a marble bar with stools, wine bottle displays, marble tables with black chairs, and a small floral arrangement, conveying a modern industrial aesthetic."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "selected_image": {
+        "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqWJ1f9Vr77lhu8ZSHg9MaaVYE0P9HspEHNLa4bQHinDoSrQGuQyrJ8jIJFLm-u4KbaM73IeJ9vcfQTCKmdNr4z60TAmigx_GMvP5rVXK5cjUoMH9B-_PmjH3Wrim1HBkLUnKSbnQxuf3kupU7zfRXGQ=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Outdoor courtyard/sidewalk dining area with bistro tables, chairs, large umbrellas, string lights, greenery, and a vintage red double-decker bus against a brick building facade."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "selected_image": {
+        "venue_name": "Kaida Coffee and Bakery",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFRmudyf8HJViCW1Jo61gxVrV_AtDXc80lue7He7OpR23M1Xft3aDfzSmYGMIFaf6xuDs_wzXpdrvxeiz36LK6BRlMCW2_fLUJ-Y3n2BuYwqOEGXoG2JJNXz6kstKd9_gnuC2ucuKq3-Fq6ylscJLR=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Interior of a small coffee shop with white-painted brick walls, wooden counter, bar stools, red pendant lights, menu boards, and wood flooring creating a warm, cozy atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "maman",
+      "selected_image": {
+        "venue_name": "maman",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1347,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Interior cafe space with a prominent beverage refrigerator, abundant greenery and white roses overhead, bistro seating, and decorative rose wall mural."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "selected_image": {
+        "venue_name": "Nick + Sons Bakery",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCIXepgRVD66zR6gZvxbs91tXk0f_oF4qoxqhEg7Rjjt1zlsjcy9agMC8pkc-isAtcryikJgwyi080TUMG3DjcII15Yq2QDg7iAUmpzVN6x0k6MdQcOjxhKugV3KPKecBqJFIAQIU9LvkomDlDNAby=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Clear interior showing brick service counter, wooden table, espresso equipment, bread shelves, and tin ceiling with exposed conduit lighting."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "selected_image": {
+        "venue_name": "Paris Baguette",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBnyUY5ja3s8EDycgm4P_h3N-s2xBRXh6t_t7bMJCv7m-kk2_XSkcfkVz0yjMdhmgarWYnKJ9XMyfKoCd6IBEgB6miG3de5llMovoMFT7sRaoes1G6XZLt_lLYlusPKCb0_ILUyPK_aIbz3ZvQPRtbSA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1200,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Well-lit bakery interior with a clear glass display case full of pastries, marble counter, mosaic tile floor, ceiling spotlights, and branded signage visible in the background."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 123,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "selected_image": {
+        "venue_name": "Pura Vida - NoMad",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMbshrwHUkT4qSxb-vZHGsF_nI_FYp57RvfbHT6CxIdxOPsEJLsOFLZsPRpuyXTAgVGcI_1TzmdIgWFadXkKwWkJ4mHsQtw2zUNU5AWVS_clwa_zl7VUMKIijAKjKuOD9D5_uiwu2sJw01NFyqpaAr1jg=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "bright_airy",
+          "visual_reason": "Wide interior shot of a bright café with white-painted brick, exposed beams, woven pendant lights, lush hanging greenery, bistro seating with diners, and a glass pastry display case in the foreground."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 123,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "selected_image": {
+        "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMztCXgHyqc7TrZT6cZlOhqyLtolZCstGnU8CK5H1QByzS8iVmOKIFk8b9sFCI55ubcCfAJqOwOJJfMwXN7H08jRB1KdrZ46rZDv_-gDAko70oeHO67tYIyt-cYuoyWNYGt2XXTmpsVtRZGy_0diHSl=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "minimal",
+          "visual_reason": "Clear interior view of a minimalist cafe/bar setup with a dark wood high table, two black chairs, a tall cactus, a paper floor lamp, and a framed artwork on a wood-paneled wall, showing the guest experience space."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "selected_image": {
+        "venue_name": "Stumptown Coffee Roasters",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2jGTXIAcBj-MCXXVg-b9Pk5VctyBDwkflDkUlAq84Ffg1X1-6qYcBpg5YyjTDYNxPd6VTcJy6YI123nh7yaZXdAytItF5A_aljKPOHoZJ1WIT7WBfIhCigbtcXxpEdm-ymrdNQz3G4UqqM-qYYsb0=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 1200,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Clear interior of a coffee shop showing wooden bar, espresso machine, globe pendant lights, shelved retail goods, and a seated customer, conveying a warm, inviting café atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution",
+          "product_only"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    }
+  ],
+  "venues_without_hero_candidate": [
+    "Rex",
+    "Paper Sons Cafe",
+    "Black Star Bakery & Cafe",
+    "Tous Les Jours",
+    "Almondine Bakery",
+    "Burrow",
+    "Bourke Street Bakery",
+    "La Bergamote (Chelsea)",
+    "Claude Bakery West Village",
+    "Yanni's Coffee"
+  ],
+  "ready_to_connect_hero_image": true
+}
