@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import type { BatchResult, ReviewQueueItem } from '../types';
@@ -44,6 +44,16 @@ interface PublicationDecisionRecord {
   rating?: number;
   review_count?: number;
   google_maps_url?: string;
+  confirmed_editorial_mentions: ConfirmedEditorialMention[];
+}
+
+interface ConfirmedEditorialMention {
+  source_name: string;
+  source_kind: string;
+  source_url: string;
+  matched_text_snippet: string;
+  match_confidence: number;
+  source_authority: number;
 }
 
 interface PublicationDecisionManifest {
@@ -75,8 +85,11 @@ export function generatePublicationReview(batchName: string): Stage09Result {
   const outputDir = path.join(process.cwd(), 'data', 'batches', batchName);
   const batchResult = readJson<BatchResult>(path.join(outputDir, 'batch_result_quality_gated.json'));
   const approvalManifest = readJson<ApprovalManifest>(path.join(outputDir, 'approval_manifest.json'));
+  const confirmedEditorialMentions = readConfirmedEditorialMentions(outputDir);
   const generatedAt = new Date().toISOString();
-  const decisions = batchResult.candidates.map((candidate) => buildDecision(candidate, approvalManifest));
+  const decisions = batchResult.candidates.map((candidate) =>
+    buildDecision(candidate, approvalManifest, confirmedEditorialMentions.get(normalizeName(candidate.venue_name)) || []),
+  );
   const manifest: PublicationDecisionManifest = {
     batch_id: batchResult.batch_id,
     generated_at: generatedAt,
@@ -120,7 +133,11 @@ export function generatePublicationReview(batchName: string): Stage09Result {
   return result;
 }
 
-function buildDecision(candidate: ReviewQueueItem, approvalManifest: ApprovalManifest): PublicationDecisionRecord {
+function buildDecision(
+  candidate: ReviewQueueItem,
+  approvalManifest: ApprovalManifest,
+  confirmedEditorialMentions: ConfirmedEditorialMention[],
+): PublicationDecisionRecord {
   const hero = candidate.venue.hero_image || candidate.venue.images.hero;
   const inApprovedManifest = approvalManifest.approved_for_db_staging.some((venue) => normalizeName(venue.venue_name) === normalizeName(candidate.venue_name));
   const publishEligible =
@@ -153,6 +170,7 @@ function buildDecision(candidate: ReviewQueueItem, approvalManifest: ApprovalMan
     rating: candidate.venue.raw.rating,
     review_count: candidate.venue.raw.user_ratings_total || candidate.venue.review_count,
     google_maps_url: candidate.venue.raw.google_maps_url,
+    confirmed_editorial_mentions: confirmedEditorialMentions,
   };
 }
 
@@ -305,6 +323,7 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
         '<p class="muted small">' + esc(decision.default_reason) + '</p>' +
         '<p class="muted small">Place: ' + esc(decision.neighborhood || 'unknown') + ' / ' + esc(decision.venue_type || 'unknown') + ' / rating ' + esc(decision.rating || 'n/a') + ' / reviews ' + esc(decision.review_count || 'n/a') + '</p>' +
         '<p class="muted small">Image: ' + esc(decision.image_source_type || 'unknown') + ' / ' + esc(decision.image_publication_status) + '</p>' +
+        '<p class="muted small">Editorial sources: ' + editorialSources(decision) + '</p>' +
         '<p class="muted small">Warnings: ' + esc((decision.warnings || []).join(', ') || 'none') + '</p>' +
         '<p class="muted small">Blockers: ' + esc((decision.blockers || []).join(', ') || 'none') + '</p>' +
         '<p class="small">' +
@@ -324,6 +343,15 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
 
     function active(decision, value) {
       return decision.publication_decision === value ? 'active' : '';
+    }
+
+    function editorialSources(decision) {
+      const mentions = decision.confirmed_editorial_mentions || [];
+      if (!mentions.length) return 'none confirmed';
+      return mentions.slice(0, 3).map(mention =>
+        '<a href="' + esc(mention.source_url) + '" target="_blank" rel="noreferrer">' + esc(mention.source_name) + '</a>' +
+        ' <span title="' + esc(mention.matched_text_snippet || '') + '">confirmed</span>'
+      ).join(', ');
     }
 
     function matchesFilter(decision) {
@@ -396,6 +424,7 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
 function buildReport(batchResult: BatchResult, manifest: PublicationDecisionManifest): string {
   const eligible = manifest.decisions.filter((decision) => decision.publish_eligible);
   const blocked = manifest.decisions.filter((decision) => !decision.publish_eligible);
+  const confirmedEditorialMentions = manifest.decisions.reduce((sum, decision) => sum + decision.confirmed_editorial_mentions.length, 0);
   return [
     '# Stage 09 Publication Review Report',
     '',
@@ -404,6 +433,7 @@ function buildReport(batchResult: BatchResult, manifest: PublicationDecisionMani
     `- Total venues: ${manifest.decisions.length}`,
     `- Publish-review eligible: ${eligible.length}`,
     `- Blocked from publication review: ${blocked.length}`,
+    `- Confirmed editorial mentions shown: ${confirmedEditorialMentions}`,
     `- Default decision: pause`,
     '',
     '## Safety',
@@ -416,7 +446,10 @@ function buildReport(batchResult: BatchResult, manifest: PublicationDecisionMani
     '',
     '## Eligible Venues',
     '',
-    ...eligible.map((decision) => `- ${decision.venue_name}: score ${decision.staging_score}; warnings ${decision.warnings.join(', ') || 'none'}`),
+    ...eligible.map(
+      (decision) =>
+        `- ${decision.venue_name}: score ${decision.staging_score}; editorial sources ${decision.confirmed_editorial_mentions.map((mention) => mention.source_name).join(', ') || 'none'}; warnings ${decision.warnings.join(', ') || 'none'}`,
+    ),
     '',
     '## Blocked Venues',
     '',
@@ -432,6 +465,50 @@ function buildReport(batchResult: BatchResult, manifest: PublicationDecisionMani
 
 function readJson<T>(filePath: string): T {
   return JSON.parse(readFileSync(filePath, 'utf8')) as T;
+}
+
+function readConfirmedEditorialMentions(outputDir: string): Map<string, ConfirmedEditorialMention[]> {
+  const filePath = path.join(outputDir, 'stage_00b_editorial_source_enrichment.json');
+  const mentions = new Map<string, ConfirmedEditorialMention[]>();
+  if (!existsSync(filePath)) return mentions;
+
+  const data = readJson<unknown>(filePath);
+  if (!isRecord(data) || !Array.isArray(data.candidates)) return mentions;
+
+  for (const candidate of data.candidates) {
+    if (!isRecord(candidate) || candidate.verification_status !== 'confirmed') continue;
+    const venueName = typeof candidate.venue_name === 'string' ? candidate.venue_name : '';
+    if (!venueName || !Array.isArray(candidate.confirmed_editorial_mentions)) continue;
+
+    for (const rawMention of candidate.confirmed_editorial_mentions) {
+      if (!isRecord(rawMention)) continue;
+      const mention: ConfirmedEditorialMention = {
+        source_name: stringValue(rawMention.source_name),
+        source_kind: stringValue(rawMention.source_kind),
+        source_url: stringValue(rawMention.source_url),
+        matched_text_snippet: stringValue(rawMention.matched_text_snippet).slice(0, 240),
+        match_confidence: numberValue(rawMention.match_confidence),
+        source_authority: numberValue(rawMention.source_authority),
+      };
+      if (!mention.source_url || !mention.matched_text_snippet) continue;
+      const key = normalizeName(venueName);
+      mentions.set(key, [...(mentions.get(key) || []), mention]);
+    }
+  }
+
+  return mentions;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+}
+
+function stringValue(value: unknown): string {
+  return typeof value === 'string' ? value : '';
+}
+
+function numberValue(value: unknown): number {
+  return typeof value === 'number' && Number.isFinite(value) ? value : 0;
 }
 
 function normalizeName(value: string): string {

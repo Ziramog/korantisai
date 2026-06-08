@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { mergePipelineConfig } from '../config';
@@ -46,6 +46,14 @@ interface Stage05Result {
   results: EditorialResultRecord[];
 }
 
+interface ConfirmedEditorialMention {
+  source_name: string;
+  source_kind: string;
+  source_url: string;
+  matched_text_snippet: string;
+  match_confidence: number;
+}
+
 export async function runStage05EditorialGeneration(batchName: string): Promise<Stage05Result> {
   loadLocalEnv();
 
@@ -55,6 +63,7 @@ export async function runStage05EditorialGeneration(batchName: string): Promise<
 
   const outputDir = path.join(process.cwd(), 'data', 'batches', batchName);
   const input = readJson<BatchResult>(path.join(outputDir, 'batch_result_with_images.json'));
+  const confirmedEditorialMentions = readConfirmedEditorialMentions(outputDir);
   const pipelineConfig = mergePipelineConfig(input.config);
   const editorialResults: EditorialResultRecord[] = [];
   let minimaxCalled = false;
@@ -66,7 +75,7 @@ export async function runStage05EditorialGeneration(batchName: string): Promise<
     try {
       const response = await callMinimaxTextJson({
         system: buildSystemPrompt(),
-        prompt: buildVenuePrompt(venue, pipelineConfig.allowedMoodTags),
+        prompt: buildVenuePrompt(venue, pipelineConfig.allowedMoodTags, confirmedEditorialMentions.get(normalizeName(venue.raw.name)) || []),
         config,
         maxTokens: 1300,
       });
@@ -185,7 +194,7 @@ function buildSystemPrompt(): string {
   ].join(' ');
 }
 
-function buildVenuePrompt(venue: VenueComplete, allowedTags: readonly MoodTag[]): string {
+function buildVenuePrompt(venue: VenueComplete, allowedTags: readonly MoodTag[], confirmedEditorialMentions: ConfirmedEditorialMention[]): string {
   const hero = venue.hero_image || venue.images.hero;
   const payload = {
     required_schema: {
@@ -223,10 +232,18 @@ function buildVenuePrompt(venue: VenueComplete, allowedTags: readonly MoodTag[])
       quality: hero.classification.quality,
       model_used: hero.classification.model_used,
     } : null,
+    confirmed_editorial_mentions: confirmedEditorialMentions.map((mention) => ({
+      source_name: mention.source_name,
+      source_kind: mention.source_kind,
+      source_url: mention.source_url,
+      evidence_snippet: mention.matched_text_snippet,
+      match_confidence: mention.match_confidence,
+    })),
     constraints: [
       'Tagline must be <= 80 characters.',
       'Mood tags must come only from allowed tags.',
       'If no selected image vision is present, avoid visual atmosphere claims and lower mood confidence.',
+      'Only mention guide/editorial recognition when confirmed_editorial_mentions contains a matching source URL and snippet.',
       'Evidence confidence should reflect only supplied fields.',
     ],
   };
@@ -332,6 +349,36 @@ function buildStage05Report(result: Stage05Result): string {
   return `${redactSecrets(lines.join('\n'))}\n`;
 }
 
+function readConfirmedEditorialMentions(outputDir: string): Map<string, ConfirmedEditorialMention[]> {
+  const filePath = path.join(outputDir, 'stage_00b_editorial_source_enrichment.json');
+  const mentions = new Map<string, ConfirmedEditorialMention[]>();
+  if (!existsSync(filePath)) return mentions;
+  try {
+    const data = readJson<{ candidates?: Array<Record<string, unknown>> }>(filePath);
+    for (const candidate of data.candidates || []) {
+      if (candidate.verification_status !== 'confirmed') continue;
+      const venueName = stringValue(candidate.venue_name);
+      const confirmed = Array.isArray(candidate.confirmed_editorial_mentions) ? candidate.confirmed_editorial_mentions : [];
+      for (const item of confirmed) {
+        if (!isRecord(item)) continue;
+        const mention: ConfirmedEditorialMention = {
+          source_name: stringValue(item.source_name),
+          source_kind: stringValue(item.source_kind),
+          source_url: stringValue(item.source_url),
+          matched_text_snippet: stringValue(item.matched_text_snippet),
+          match_confidence: clampNumber(item.match_confidence, 0, 1),
+        };
+        if (!mention.source_url || !mention.matched_text_snippet) continue;
+        const key = normalizeName(venueName);
+        mentions.set(key, [...(mentions.get(key) || []), mention]);
+      }
+    }
+  } catch {
+    return mentions;
+  }
+  return mentions;
+}
+
 function buildSummary(items: ReviewQueueItem[]): BatchResult['summary'] {
   return {
     input: items.length,
@@ -389,6 +436,19 @@ function extractVisualReason(notes: string): string {
 
 function stringValue(value: unknown): string {
   return typeof value === 'string' ? value.trim() : '';
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function normalizeName(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
 }
 
 function stringArray(value: unknown): string[] {

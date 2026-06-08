@@ -544,12 +544,14 @@ function fromEditorialSourceCandidate(item: EditorialSourceCandidate): Candidate
       `editorial_source:${item.source_id}`,
       `editorial_kind:${item.source_kind}`,
       item.source_kind === 'prestige_guide' ? 'prestige_source_query' : '',
+      item.verification_status === 'confirmed' ? `editorial_confirmed:${item.source_id}` : '',
+      item.verification_status === 'confirmed' ? 'editorial_mention_confirmed' : '',
       item.place.website_url ? 'official_website_from_google' : '',
       item.place.photos.length > 0 ? 'google_photo_signal' : '',
       ...item.signals,
     ].filter(Boolean),
     search_queries: [item.text_query],
-    curated_boost: item.source_confidence >= 0.78,
+    curated_boost: item.verification_status === 'confirmed' || item.source_confidence >= 0.9,
     scores: emptyScores(),
     candidate_score: 0,
     selection_reason: '',
@@ -573,18 +575,33 @@ function buildInlineEditorialReport(result: EditorialSourceEnrichmentResult): st
     `- Queries run: ${result.queries_run}`,
     `- Candidates found: ${result.candidates_found}`,
     `- Unique candidates: ${result.unique_candidates}`,
+    `- Confirmed editorial mentions: ${result.confirmed_editorial_mentions}`,
+    `- Source-query candidates: ${result.source_query_candidates}`,
+    `- Verification failed/unavailable: ${result.verification_failed}`,
     `- Caveat: ${result.caveat}`,
     '',
     '## Sources Used',
     '',
     ...result.sources_used.map((source) => `- ${source.source_name} (${source.source_kind}, weight ${source.authority_weight}): ${source.source_url}`),
     '',
+    '## Confirmed Mentions',
+    '',
+    '| Venue | Neighborhood | Source | Match | URL | Evidence |',
+    '| --- | --- | --- | ---: | --- | --- |',
+    ...result.candidates
+      .filter((candidate) => candidate.verification_status === 'confirmed')
+      .slice(0, 120)
+      .map((candidate) =>
+        `| ${escapeTable(candidate.venue_name)} | ${escapeTable(candidate.neighborhood)} | ${escapeTable(candidate.source_name)} | ${candidate.match_confidence.toFixed(2)} | ${escapeTable(candidate.verified_source_url || candidate.source_url)} | ${escapeTable(candidate.matched_text_snippet || '')} |`,
+      ),
+    ...(result.candidates.some((candidate) => candidate.verification_status === 'confirmed') ? [] : ['| none |  |  |  |  |  |']),
+    '',
     '## Top Source-Derived Candidates',
     '',
-    '| Venue | Neighborhood | Source | Confidence | Query |',
-    '| --- | --- | --- | ---: | --- |',
+    '| Venue | Neighborhood | Source | Status | Confidence | Query |',
+    '| --- | --- | --- | --- | ---: | --- |',
     ...result.candidates.slice(0, 120).map((candidate) =>
-      `| ${escapeTable(candidate.venue_name)} | ${escapeTable(candidate.neighborhood)} | ${escapeTable(candidate.source_name)} | ${candidate.source_confidence} | ${escapeTable(candidate.text_query)} |`,
+      `| ${escapeTable(candidate.venue_name)} | ${escapeTable(candidate.neighborhood)} | ${escapeTable(candidate.source_name)} | ${candidate.verification_status} | ${candidate.source_confidence} | ${escapeTable(candidate.text_query)} |`,
     ),
     '',
     '## Warnings',
@@ -1158,6 +1175,8 @@ function scoreLocalIdentity(candidate: Candidate): number {
 function scoreEditorialDiscovery(candidate: Candidate): number {
   const haystack = normalizeName(`${candidate.name} ${candidate.type} ${candidate.search_queries.join(' ')} ${candidate.source_signals.join(' ')}`);
   let score = 0.15;
+  if (candidate.source_signals.includes('editorial_mention_confirmed')) score += 0.28;
+  if (candidate.source_signals.some((signal) => signal.startsWith('editorial_confirmed:'))) score += 0.12;
   if (candidate.source_signals.includes('editorial_discovery_query')) score += 0.35;
   if (EDITORIAL_DISCOVERY_TERMS.some((term) => haystack.includes(normalizeName(term)))) score += 0.25;
   if (candidate.type === 'cocktail_bar' || candidate.type === 'speakeasy' || candidate.type === 'wine_bar' || candidate.type === 'cafe_bar') score += 0.15;

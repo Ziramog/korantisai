@@ -73,6 +73,14 @@ const tagTranslations: Record<string, string> = {
   visual: 'visual',
   raw: 'crudo',
   authentic: 'auténtico',
+  'date night': 'ideal para citas',
+  'work friendly': 'para trabajar',
+  'hidden gem': 'joya oculta',
+  refined: 'refinado',
+  cinematic: 'cinematográfico',
+  restaurant: 'restaurante',
+  bar: 'bar',
+  'cocktail bar': 'bar de coctelería',
 };
 
 const categoryTranslations: Record<string, string> = {
@@ -87,6 +95,7 @@ const categoryTranslations: Record<string, string> = {
   'roastery & cafe': 'Tostaduría y café',
   'roastery & café': 'Tostaduría y café',
   restaurant: 'Restaurante',
+  bar: 'Bar',
   'classic parrilla': 'Parrilla clásica',
   'jewish cuisine': 'Cocina judía',
   'asian fusion': 'Fusión asiática',
@@ -180,8 +189,11 @@ function applyCapitalization(source: string, translated: string) {
 }
 
 function translateFromMap(value: string, locale: Locale, map: Record<string, string>) {
-  if (locale === 'en') return value;
-  const normalized = value.trim().toLowerCase();
+  if (locale === 'en') {
+    const englishVal = value.replaceAll('_', ' ');
+    return applyCapitalization(value.trim(), englishVal);
+  }
+  const normalized = value.trim().toLowerCase().replaceAll('_', ' ');
   const translated = map[normalized];
   return translated ? applyCapitalization(value.trim(), translated) : value;
 }

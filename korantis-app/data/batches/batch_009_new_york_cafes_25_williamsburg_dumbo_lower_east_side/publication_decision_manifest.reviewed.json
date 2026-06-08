@@ -1,0 +1,828 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T13:49:28.653Z",
+  "status": "review_pending",
+  "safety": {
+    "no_public_writes": true,
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_publication": true
+  },
+  "decisions": [
+    {
+      "venue_name": "Paper Sons Cafe",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 75,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Thoughtful coffee in historic Chinatown",
+      "description": "Located on Mott Street in historic Chinatown, Paper Sons Cafe is a neighborhood coffee shop with a strong 4.7-star rating. Open daily with weekday mornings starting at 8AM, it's a go-to spot for locals and visitors exploring the area.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "historic",
+        "hidden_gem"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "cafe",
+      "rating": 4.7,
+      "review_count": 231,
+      "google_maps_url": "https://maps.google.com/?cid=2319261780941584780&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Café Colmado",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNMTWttVtUwsjGK9rY8biSEKqzfBMS3z4__83SqutvApyrkj4oKvfeM8o0DUOGUdauD2ByQxbbWcJySJDm2BJoiLiuwjoW_p-A4jEje7qtN8ofzhgOgjYr-2NYlhPXLYE2rjlgys4EY_RejIw9cnyIy-w=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A warm corner café in the heart of the Lower East Side",
+      "description": "A cozy Lower East Side café featuring warm industrial lighting, decorative framed photos, and a welcoming counter-service layout. The space presents an intimate daytime environment suited for coffee breaks and quiet work sessions, reflecting its well-regarded neighborhood status with a 4.6 rating across 291 reviews.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "intimate",
+        "work_friendly",
+        "hidden_gem"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "cafe",
+      "rating": 4.6,
+      "review_count": 291,
+      "google_maps_url": "https://maps.google.com/?cid=2619615615533004083&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Yanni's Coffee",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 73,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Chelsea's local coffee house since morning light",
+      "description": "Yanni's Coffee operates as a daytime-focused cafe in Chelsea, opening early on weekdays to serve the neighborhood's morning routines. The consistent 4.6 rating across 445 reviews suggests a reliable, well-liked local spot rather than a destination venue.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "work_friendly",
+        "hidden_gem",
+        "social"
+      ],
+      "neighborhood": "Chelsea",
+      "venue_type": "cafe",
+      "rating": 4.6,
+      "review_count": 445,
+      "google_maps_url": "https://maps.google.com/?cid=13109324305572593953&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Sip Coffee & Matcha",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 73,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Specialty coffee and matcha crafted for quiet mornings in Chelsea",
+      "description": "Sip Coffee & Matcha operates Monday through Friday from 7AM to 5PM, with shorter weekend windows, positioning itself as a morning-to-early-afternoon destination. Its 4.8 rating across 377 reviews reflects consistent quality in a neighborhood where daytime cafe culture thrives.",
+      "mood_tags": [
+        "quiet",
+        "work_friendly",
+        "refined",
+        "warm",
+        "creative"
+      ],
+      "neighborhood": "Chelsea",
+      "venue_type": "cafe",
+      "rating": 4.8,
+      "review_count": 377,
+      "google_maps_url": "https://maps.google.com/?cid=22413173695020193&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Intelligentsia Coffee High Line Hotel Coffeebar",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOqWJ1f9Vr77lhu8ZSHg9MaaVYE0P9HspEHNLa4bQHinDoSrQGuQyrJ8jIJFLm-u4KbaM73IeJ9vcfQTCKmdNr4z60TAmigx_GMvP5rVXK5cjUoMH9B-_PmjH3Wrim1HBkLUnKSbnQxuf3kupU7zfRXGQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Specialty coffee in a lush Chelsea courtyard setting",
+      "description": "This Intelligentsia Coffee location sits within the High Line Hotel at 180 10th Avenue, featuring a courtyard space with bistro seating, string lights, and greenery beneath the shadow of a vintage red double-decker bus backdrop.",
+      "mood_tags": [
+        "warm",
+        "refined",
+        "outdoor",
+        "quiet",
+        "work_friendly"
+      ],
+      "neighborhood": "Chelsea",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 646,
+      "google_maps_url": "https://maps.google.com/?cid=7232349319319611490&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "RHYTHM ZERO | WEST VILLAGE",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMztCXgHyqc7TrZT6cZlOhqyLtolZCstGnU8CK5H1QByzS8iVmOKIFk8b9sFCI55ubcCfAJqOwOJJfMwXN7H08jRB1KdrZ46rZDv_-gDAko70oeHO67tYIyt-cYuoyWNYGt2XXTmpsVtRZGy_0diHSl=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Minimalist cafe sanctuary in the heart of the Village",
+      "description": "Rhythm Zero occupies a West Village storefront with floor-to-ceiling wood paneling, paper lanterns, and a sculptural cactus anchoring the minimalist interior. High tables with two chairs each create intimate pockets for conversation or solitary focus, while framed artwork on the walls adds quiet creative energy. The space opens at 8AM daily, catering to Village locals seeking a calm respite.",
+      "mood_tags": [
+        "quiet",
+        "intimate",
+        "creative",
+        "refined",
+        "work_friendly"
+      ],
+      "neighborhood": "West Village",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 222,
+      "google_maps_url": "https://maps.google.com/?cid=4996376445726847295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Bakeri",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAnMjxA8OJSKJueLDAas0q6LSzdF0glLyQG3zN6eI4l-yx_g-xklOOVoPp_qMxLqs5hBDmJK2bJLiZ47RKo7M7KTp-2L5ha0hPAvGCPovKnuxW2H2duv1Fdc4e2lr0A94hyK-mZNwGFnvX_d0=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Williamsburg's neighborhood bakery with heart and soul",
+      "description": "Bakeri occupies a warm corner of Wythe Avenue in Williamsburg, where wood-paneled interiors and pendant lighting create an inviting backdrop for house-baked goods. The chalkboard specials and checkered tile floor evoke a classic neighborhood bakery, while nearly 700 reviews at 4.5 stars speak to its consistent quality and local devotion.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "work_friendly",
+        "hidden_gem",
+        "intimate"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bakery_cafe",
+      "rating": 4.5,
+      "review_count": 676,
+      "google_maps_url": "https://maps.google.com/?cid=10636150726976024905&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "A&C Super",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM1Wl6tk5H2RSW57rNvbwGv1hTvK7AS-hDTQyFYWAHclm4GkFBQ_12Y1O1g7xXlZ3ZNtmB8fUwijZrAHdLcKhJ41-iNJhQOKR6pfSM0pUcHzec5CQU7pEa4ZZyZCbRMj4H-oudkghZhtus3-q-BwHrk=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Bright Williamsburg mornings, the local way",
+      "description": "A&C Super anchors itself in Williamsburg as a reliable daytime cafe, open daily from 8AM to 4PM with a straightforward menu built around quality espresso and neighborhood hospitality. The bright, window-forward interior creates a functional yet welcoming space that keeps regulars coming back.",
+      "mood_tags": [
+        "work_friendly",
+        "quiet",
+        "warm",
+        "creative",
+        "social"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "cafe",
+      "rating": 4.8,
+      "review_count": 201,
+      "google_maps_url": "https://maps.google.com/?cid=7413812997735476124&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Paris Baguette",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBnyUY5ja3s8EDycgm4P_h3N-s2xBRXh6t_t7bMJCv7m-kk2_XSkcfkVz0yjMdhmgarWYnKJ9XMyfKoCd6IBEgB6miG3de5llMovoMFT7sRaoes1G6XZLt_lLYlusPKCb0_ILUyPK_aIbz3ZvQPRtbSA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Where Brooklyn starts its morning",
+      "description": "Paris Baguette's Williamsburg location features a well-lit interior with mosaic tile floors, marble counters, and a full glass display case stocked with pastries and baked goods. The space maintains the chain's signature clean, bright aesthetic while fitting naturally into the Brooklyn neighborhood context.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "social",
+        "quiet"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "cafe",
+      "rating": 4.6,
+      "review_count": 190,
+      "google_maps_url": "https://maps.google.com/?cid=5187971257088912644&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Black Star Bakery & Cafe",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 75,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Where Williamsburg finds its daily ritual",
+      "description": "Black Star Bakery & Cafe anchors the Williamsburg neighborhood with morning-focused hours and artisan café fare. Early birds and locals keep the rhythm steady from 8AM onward.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "work_friendly",
+        "creative",
+        "hidden_gem"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bakery_cafe",
+      "rating": 4.3,
+      "review_count": 225,
+      "google_maps_url": "https://maps.google.com/?cid=5198335246289054965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Dawn’s Til Dusk",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZN15fLjG4T0QjOIZ0NU9V2D7fy7658O1oKkmZE7M3KIDnw82ODwynkIoRQt5Q-5Na3A78h_qtXwWFc18Xv7BX8r6JkvC3IC6wf2hfcB89eczKrKWVa3ztD1PTOF_RgZ8xnuutDfOIGovTEpNE3YVqLoUA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A DUMBO cafe where industrial design meets morning-to-evening ease",
+      "description": "This DUMBO cafe occupies an industrial-style space with exposed concrete walls, high ceilings, and a marble bar. The interior features wine bottle displays, marble-topped tables, and black chairs with small floral arrangements, creating a refined atmosphere suited for daytime work sessions and early evening wine-drinking.",
+      "mood_tags": [
+        "work_friendly",
+        "refined",
+        "quiet",
+        "creative",
+        "date_night"
+      ],
+      "neighborhood": "DUMBO",
+      "venue_type": "cafe",
+      "rating": 4.4,
+      "review_count": 1018,
+      "google_maps_url": "https://maps.google.com/?cid=1791575114209074599&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Tous Les Jours",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 74,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Fresh-baked warmth in the heart of DUMBO",
+      "description": "A dependable neighborhood bakery-café in DUMBO with early morning hours and a 4.3-star rating from 112 reviews. The space offers a comfortable setting for coffee and fresh-baked goods in a residential corner of Brooklyn.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "work_friendly",
+        "social"
+      ],
+      "neighborhood": "DUMBO",
+      "venue_type": "bakery_cafe",
+      "rating": 4.3,
+      "review_count": 112,
+      "google_maps_url": "https://maps.google.com/?cid=9695317840362448318&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Almondine Bakery",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 76,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "DUMBO waterfront bakery serving quality pastries since morning light",
+      "description": "A well-reviewed bakery cafe in DUMBO offering a daytime schedule Wednesday through Sunday. The 4.5-star rating across 657 reviews indicates consistent quality that attracts locals and visitors to the Water Street location.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "romantic",
+        "date_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "DUMBO",
+      "venue_type": "bakery_cafe",
+      "rating": 4.5,
+      "review_count": 657,
+      "google_maps_url": "https://maps.google.com/?cid=16233001082453833575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Burrow",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 74,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "A quiet daytime bakery in DUMBO for slow mornings and unhurried afternoons.",
+      "description": "Burrow occupies a modest corner of DUMBO's industrial Jay Street, operating on a deliberately limited Tuesday-through-Friday schedule. The 4.5-star rating and consistent local review count suggest reliable quality that keeps regulars returning, though the early closing time and closed weekends make it a strictly daytime proposition.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "hidden_gem",
+        "work_friendly",
+        "intimate"
+      ],
+      "neighborhood": "DUMBO",
+      "venue_type": "bakery_cafe",
+      "rating": 4.5,
+      "review_count": 203,
+      "google_maps_url": "https://maps.google.com/?cid=9471052216233259261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Rex",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 73,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "A neighborhood staple in the heart of the Lower East Side",
+      "description": "Rex occupies a steady presence on Rivington Street, where its consistent morning-to-afternoon schedule accommodates the rhythms of LES locals. The 4.8-star rating across 111 reviews reflects meaningful community endorsement without grandstanding.",
+      "mood_tags": [
+        "quiet",
+        "warm",
+        "hidden_gem",
+        "work_friendly",
+        "social"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "cafe",
+      "rating": 4.8,
+      "review_count": 111,
+      "google_maps_url": "https://maps.google.com/?cid=9821779624159786961&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Kaida Coffee and Bakery",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFRmudyf8HJViCW1Jo61gxVrV_AtDXc80lue7He7OpR23M1Xft3aDfzSmYGMIFaf6xuDs_wzXpdrvxeiz36LK6BRlMCW2_fLUJ-Y3n2BuYwqOEGXoG2JJNXz6kstKd9_gnuC2ucuKq3-Fq6ylscJLR=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A warm corner for morning coffee and fresh-baked goods on Ludlow Street",
+      "description": "A highly-rated neighborhood cafe at 122 Ludlow Street featuring an intimate interior with white-painted brick, wood surfaces, and warm pendant lighting. Open daily with morning hours suited for coffee routines and daytime work sessions.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "work_friendly",
+        "intimate",
+        "hidden_gem"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "cafe",
+      "rating": 4.8,
+      "review_count": 151,
+      "google_maps_url": "https://maps.google.com/?cid=12574681604274905751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Bourke Street Bakery",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 76,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Artisan cafe in NoMad serving morning favorites",
+      "description": "A reliable neighborhood cafe in NoMad drawing locals with consistent quality across 520 reviews. Early weekday openings suit morning routines, while weekend hours accommodate slower starts.",
+      "mood_tags": [
+        "work_friendly",
+        "quiet",
+        "warm",
+        "hidden_gem"
+      ],
+      "neighborhood": "NoMad",
+      "venue_type": "cafe",
+      "rating": 4.3,
+      "review_count": 520,
+      "google_maps_url": "https://maps.google.com/?cid=12382617549425422290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "La Bergamote (Chelsea)",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 71,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "A Chelsea staple with a Parisian soul",
+      "description": "La Bergamote brings a French café sensibility to Chelsea's 9th Avenue, where early risers have made it a morning ritual for years. With a loyal local following evident in nearly 1,000 reviews, it strikes the balance between neighborhood comfort and Gallic charm.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "social",
+        "refined"
+      ],
+      "neighborhood": "Chelsea",
+      "venue_type": "restaurant",
+      "rating": 4.4,
+      "review_count": 968,
+      "google_maps_url": "https://maps.google.com/?cid=648708886983311223&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Claude Bakery West Village",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 75,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Artisanal pastries in a charming West Village corner bakery.",
+      "description": "Claude Bakery occupies a modest corner location in the West Village, serving the kind of reliable, unpretentious pastries that keep locals coming back. With a 4.5-star average across nearly 500 reviews, it has earned its place as a neighborhood staple for morning coffee runs and quiet afternoon breaks.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "historic",
+        "work_friendly",
+        "hidden_gem"
+      ],
+      "neighborhood": "West Village",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 469,
+      "google_maps_url": "https://maps.google.com/?cid=3097961476877867741&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "maman",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A lush West Village café with roses overhead and Parisian soul",
+      "description": "Maman occupies a refined corner of the West Village near Meatpacking, its interior defined by abundant greenery, white roses suspended overhead, and decorative rose wall murals that create a lush, romantic atmosphere. Bistro seating and a prominent beverage refrigerator complete the café's intimate, French-inspired aesthetic, open daily from early morning through 6 PM.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "refined"
+      ],
+      "neighborhood": "West Village",
+      "venue_type": "cafe",
+      "rating": 4.3,
+      "review_count": 393,
+      "google_maps_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Aux Merveilleux de Fred",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOczeaeVq7Kcq5rSsXuW6T3jLwn9PVtFGqfYPEi4e85245ID9MPnV15gAela7UBx8qtdF8f9hMI13q79_BTnofbbMXH5tiyWz6sAxo-oo6vTcCmP2yI74i2FNrpcM2iPC-9wGc2odZJ6R9DapKPxFU7dA=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "French pastry perfection in the West Village",
+      "description": "The bright interior with its marble counter and large windows creates an intimate yet airy space for enjoying French pastries and coffee. The street-facing windows flood the venue with natural light, making it an inviting spot for a morning ritual or quiet afternoon break.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "refined",
+        "intimate"
+      ],
+      "neighborhood": "West Village",
+      "venue_type": "cafe",
+      "rating": 4.7,
+      "review_count": 781,
+      "google_maps_url": "https://maps.google.com/?cid=17095300841140685461&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "maman",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNTvNUdQGX1wnQQ-WAl0KBfFHoks8Z3k43azgdwe8gwCRDAtK2NQQkuXt4bRMsrY6RqimKQHGmrl7CMv7ku5qwVQivwXPo_D2Gx75HsRtecQJQa78-vIO_UfQ_PE4Rzt4QGPMKqLmr3Zm_D=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=17901459364504443145&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A lush NoMad sanctuary for coffee, greenery, and calm.",
+      "description": "This NoMad cafe presents a lush, plant-filled interior with white roses overhead and bistro-style seating, offering a warm and inviting daytime setting for coffee and casual work.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "work_friendly",
+        "social",
+        "creative"
+      ],
+      "neighborhood": "NoMad",
+      "venue_type": "cafe",
+      "rating": 4.3,
+      "review_count": 1307,
+      "google_maps_url": "https://maps.google.com/?cid=14747561781793389114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Stumptown Coffee Roasters",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO2jGTXIAcBj-MCXXVg-b9Pk5VctyBDwkflDkUlAq84Ffg1X1-6qYcBpg5YyjTDYNxPd6VTcJy6YI123nh7yaZXdAytItF5A_aljKPOHoZJ1WIT7WBfIhCigbtcXxpEdm-ymrdNQz3G4UqqM-qYYsb0=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Portland roots, NYC craft—coffee as it should be.",
+      "description": "Stumptown occupies a well-designed interior within the Ace Hotel building on 29th Street, featuring exposed wood, a prominent espresso setup, and globe pendant lighting that creates a warm, inviting space suited for both focused work and casual hangs.",
+      "mood_tags": [
+        "warm",
+        "work_friendly",
+        "quiet",
+        "creative"
+      ],
+      "neighborhood": "NoMad",
+      "venue_type": "cafe",
+      "rating": 4.5,
+      "review_count": 1702,
+      "google_maps_url": "https://maps.google.com/?cid=8778389626880739538&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Pura Vida - NoMad",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMbshrwHUkT4qSxb-vZHGsF_nI_FYp57RvfbHT6CxIdxOPsEJLsOFLZsPRpuyXTAgVGcI_1TzmdIgWFadXkKwWkJ4mHsQtw2zUNU5AWVS_clwa_zl7VUMKIijAKjKuOD9D5_uiwu2sJw01NFyqpaAr1jg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Bright all-day café in NoMad",
+      "description": "Wide interior shot reveals a bright café with white-painted brick, exposed beams, woven pendant lights, and lush hanging greenery framing bistro seating with active diners. A glass pastry display case anchors the space, consistent with the café's all-day food and beverage positioning.",
+      "mood_tags": [
+        "lively",
+        "warm",
+        "work_friendly",
+        "social"
+      ],
+      "neighborhood": "NoMad",
+      "venue_type": "cafe",
+      "rating": 4.7,
+      "review_count": 1713,
+      "google_maps_url": "https://maps.google.com/?cid=9860814494199969284&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Nick + Sons Bakery",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCIXepgRVD66zR6gZvxbs91tXk0f_oF4qoxqhEg7Rjjt1zlsjcy9agMC8pkc-isAtcryikJgwyi080TUMG3DjcII15Yq2QDg7iAUmpzVN6x0k6MdQcOjxhKugV3KPKecBqJFIAQIU9LvkomDlDNAby=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "Artisan loaves and espresso in a Brooklyn bakery",
+      "description": "The interior reveals Brooklyn industrial character: a brick service counter, tin ceiling with exposed conduit lighting, wooden tables, and bread shelves stocked with fresh baked goods alongside espresso equipment. Morning-only hours (7:30 AM–2:00 PM) reinforce its identity as a neighborhood breakfast and coffee spot.",
+      "mood_tags": [
+        "warm",
+        "quiet",
+        "hidden_gem",
+        "refined",
+        "work_friendly"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bakery_cafe",
+      "rating": 4.7,
+      "review_count": 616,
+      "google_maps_url": "https://maps.google.com/?cid=7875071065729365801&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    }
+  ]
+}

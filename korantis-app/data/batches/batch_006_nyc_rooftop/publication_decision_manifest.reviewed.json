@@ -1,0 +1,402 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T03:16:50.453Z",
+  "status": "review_pending",
+  "safety": {
+    "no_public_writes": true,
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_publication": true
+  },
+  "decisions": [
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A cozy French bistro with a lush, plant-filled interior in the heart of Williams",
+      "description": "Maison Provence presents a charming French bistro aesthetic with its plant-filled interior, blue-and-white striped awning, and warm lighting. The eclectic shelves and cozy distressed wooden chairs create an intimate, refined atmosphere in the heart of Williamsburg.",
+      "mood_tags": [
+        "warm",
+        "romantic",
+        "intimate",
+        "hidden_gem",
+        "refined"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bar",
+      "rating": 5,
+      "review_count": 755,
+      "google_maps_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Woodhul Wine Bar",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 77,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Evening wine and low lights on Driggs Ave",
+      "description": "Woodhul Wine Bar draws Williamsburg locals to Driggs Ave for evening wine in a low-key setting. With a 4.5 rating from 232 reviews and late-night hours, it functions as a reliable neighborhood spot for relaxed nights out.",
+      "mood_tags": [
+        "intimate",
+        "quiet",
+        "romantic",
+        "warm",
+        "date_night"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bar",
+      "rating": 4.5,
+      "review_count": 232,
+      "google_maps_url": "https://maps.google.com/?cid=16255865760621281508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Pinkerton Wine Bar",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 77,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "A quiet corner for wine in Williamsburg",
+      "description": "Pinkerton Wine Bar occupies a quiet corner of Williamsburg with a 4.5-star reputation built over 308 reviews. The bar opens in the evening and runs late on weekends, creating space for unhurried wine-focused conversations rather than high-energy nightlife.",
+      "mood_tags": [
+        "intimate",
+        "quiet",
+        "date_night",
+        "late_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bar",
+      "rating": 4.5,
+      "review_count": 308,
+      "google_maps_url": "https://maps.google.com/?cid=10113566158697531360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "With Others",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A warm corner bar in Williamsburg for lingering over drinks",
+      "description": "The interior features a curved white bar counter as the focal point, flanked by warm wall sconces and ambient candles that create soft lighting throughout. Acoustic ceiling panels and a ceiling fan add to the comfortable, lived-in feel, while patrons seated at the bar and in booths suggest a lively but not overwhelming social energy.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "social",
+        "late_night"
+      ],
+      "neighborhood": "Williamsburg",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 187,
+      "google_maps_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Olympia",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "An intimate wine bar in DUMBO with warm candlelit ambiance",
+      "description": "Olympia occupies a warm, inviting space in DUMBO with a curved wooden bar, pendant lighting, and candlelight casting a soft glow across yellow-cushioned stools and a back bar lined with bottles.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "refined",
+        "date_night"
+      ],
+      "neighborhood": "DUMBO",
+      "venue_type": "bar",
+      "rating": 4.3,
+      "review_count": 101,
+      "google_maps_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Black Mountain Wine House",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 75,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "DUMBO's low-key wine refuge for relaxed evenings",
+      "description": "Wine-focused bar located on Union Street in DUMBO with consistently high ratings. Opens from mid-afternoon on weekdays and 1pm on weekends, serving the neighborhood through late evening with a focused wine program.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "refined",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "DUMBO",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 521,
+      "google_maps_url": "https://maps.google.com/?cid=8450105123568025180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Anaïs",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A neighborhood wine bar with warm light and curated bottles",
+      "description": "Anaïs is a neighborhood wine bar in Brooklyn with a warm interior featuring tall wine shelving, candlelit high-top tables, and large street-facing windows. Open daily from morning to late night, it offers a curated wine selection in an intimate setting.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "date_night",
+        "refined",
+        "quiet"
+      ],
+      "neighborhood": "Brooklyn Bridge Park",
+      "venue_type": "bar",
+      "rating": 4.5,
+      "review_count": 152,
+      "google_maps_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Balvanera",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A Lower East Side patio with exposed brick, murals, and string lights",
+      "description": "Balvanera anchors the Lower East Side with a sidewalk patio framed by exposed brick, a bold mural, and soft string lighting overhead. Metal bistro chairs and wooden tables create an unpretentious yet atmospheric setting for evening drinks and weekend brunches.",
+      "mood_tags": [
+        "outdoor",
+        "cinematic",
+        "social",
+        "late_night",
+        "hidden_gem"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "bar",
+      "rating": 4.7,
+      "review_count": 809,
+      "google_maps_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Brick Wine Bar",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed"
+      ],
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+      "image_source_type": "google_places",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "tagline": "A perfectly-rated wine bar in the Lower East Side with warm, candlelit evenings.",
+      "description": "Brick Wine Bar occupies a candlelit space on Clinton Street in the Lower East Side, featuring wine bottles lining the shelves and an intimate bar setup. The cozy interior, highlighted by hanging glassware and warm lighting, creates a refined setting for evening wine experiences.",
+      "mood_tags": [
+        "warm",
+        "intimate",
+        "refined",
+        "date_night",
+        "romantic"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "bar",
+      "rating": 5,
+      "review_count": 122,
+      "google_maps_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Somm Time",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 74,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "missing_instagram",
+        "missing_price_hint"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "Intimate wine bar in the Lower East Side for discerning palates",
+      "description": "This Lower East Side wine bar operates evening hours starting at 4PM, drawing a crowd seeking a more considered drinking experience. The consistently high rating suggests attentive service and a curated approach, with extended weekend hours until 2AM accommodating those who linger.",
+      "mood_tags": [
+        "intimate",
+        "refined",
+        "romantic",
+        "date_night",
+        "late_night"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "bar",
+      "rating": 4.9,
+      "review_count": 123,
+      "google_maps_url": "https://maps.google.com/?cid=14942477709776939057&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Jadis",
+      "current_status": "blocked",
+      "publication_decision": "pause",
+      "publish_eligible": false,
+      "default_reason": "Not eligible for publication review: no_hero_image",
+      "reviewer_notes": "",
+      "staging_score": 75,
+      "blockers": [
+        "no_hero_image"
+      ],
+      "warnings": [
+        "low_mood_confidence",
+        "missing_instagram"
+      ],
+      "image_publication_status": "not_approved_for_publication",
+      "tagline": "An evening retreat on the Lower East Side",
+      "description": "Operating since at least 2008 in the Lower East Side, Jadis attracts locals with its evening hours running from 5pm through late night on weekends. The bar's 4.6 rating from 405 reviews suggests a reliable neighborhood staple for casual evenings.",
+      "mood_tags": [
+        "intimate",
+        "warm",
+        "late_night",
+        "date_night",
+        "social"
+      ],
+      "neighborhood": "Lower East Side",
+      "venue_type": "bar",
+      "rating": 4.6,
+      "review_count": 405,
+      "google_maps_url": "https://maps.google.com/?cid=2888312846210051244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    },
+    {
+      "venue_name": "Ainslie Bowery",
+      "current_status": "ready_for_db_staging",
+      "publication_decision": "approve",
+      "publish_eligible": true,
+      "default_reason": "Eligible for manual publication review. Default is pause until a reviewer approves.",
+      "reviewer_notes": "",
+      "staging_score": 100,
+      "blockers": [],
+      "warnings": [
+        "missing_instagram"
+      ],
+      "hero_image_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+      "image_source_type": "official_website",
+      "image_publication_status": "not_approved_for_publication",
+      "source_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+      "tagline": "A lush Bowery bar with communal tables, brick arches, and hanging greenery",
+      "description": "A welcoming bar on Bowery featuring long communal wooden tables beneath exposed brick arches, framed by hanging greenery and stylized artwork. Natural light filters through side windows while string lights add warmth after dark.",
+      "mood_tags": [
+        "warm",
+        "social",
+        "late_night",
+        "creative"
+      ],
+      "neighborhood": "Bowery",
+      "venue_type": "bar",
+      "rating": 4.4,
+      "review_count": 508,
+      "google_maps_url": "https://maps.google.com/?cid=17569330405796301260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+    }
+  ]
+}

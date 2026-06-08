@@ -1,0 +1,2010 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T20:57:29.544Z",
+  "mode": "dry_run",
+  "stage_10_decision_validation": {
+    "reviewed_manifest_path": "F:\\KORANTIS\\korantis-app\\data\\batches\\batch_006_nyc_rooftop\\publication_decision_manifest.reviewed.json",
+    "total_decisions": 12,
+    "approved_decisions": 7,
+    "paused_decisions": 5,
+    "rejected_decisions": 0,
+    "invalid_approved_decisions": 0
+  },
+  "stage_11_public_projection": {
+    "intended_public_venue_writes": 7,
+    "intended_venue_image_writes": 7,
+    "approved_projected": 7,
+    "skipped_count": 5
+  },
+  "schema_compatibility": {
+    "read_only_live_probe_attempted": true,
+    "read_only_live_probe_succeeded": true,
+    "tables": [
+      {
+        "table": "venues",
+        "found": true,
+        "columns_found": [
+          "id",
+          "name",
+          "city",
+          "category",
+          "location",
+          "coordinates",
+          "card_size",
+          "spacing",
+          "hero_image",
+          "atmosphere",
+          "quality",
+          "tagline",
+          "narrative",
+          "tags",
+          "curation_status",
+          "taste_vector",
+          "publication_metadata"
+        ],
+        "missing_columns": [],
+        "checked_columns": [
+          {
+            "column": "id",
+            "found": true
+          },
+          {
+            "column": "name",
+            "found": true
+          },
+          {
+            "column": "city",
+            "found": true
+          },
+          {
+            "column": "category",
+            "found": true
+          },
+          {
+            "column": "location",
+            "found": true
+          },
+          {
+            "column": "coordinates",
+            "found": true
+          },
+          {
+            "column": "card_size",
+            "found": true
+          },
+          {
+            "column": "spacing",
+            "found": true
+          },
+          {
+            "column": "hero_image",
+            "found": true
+          },
+          {
+            "column": "atmosphere",
+            "found": true
+          },
+          {
+            "column": "quality",
+            "found": true
+          },
+          {
+            "column": "tagline",
+            "found": true
+          },
+          {
+            "column": "narrative",
+            "found": true
+          },
+          {
+            "column": "tags",
+            "found": true
+          },
+          {
+            "column": "curation_status",
+            "found": true
+          },
+          {
+            "column": "taste_vector",
+            "found": true
+          },
+          {
+            "column": "publication_metadata",
+            "found": true
+          }
+        ],
+        "fallback_decision": "All expected public projection columns found."
+      },
+      {
+        "table": "venue_images",
+        "found": true,
+        "columns_found": [
+          "id",
+          "venue_id",
+          "photo_reference",
+          "google_photo_reference",
+          "width",
+          "height",
+          "is_cover",
+          "role",
+          "sort_order",
+          "url",
+          "secure_url",
+          "public_id",
+          "source",
+          "status",
+          "rights_status",
+          "is_selected_hero",
+          "selection_data"
+        ],
+        "missing_columns": [],
+        "checked_columns": [
+          {
+            "column": "id",
+            "found": true
+          },
+          {
+            "column": "venue_id",
+            "found": true
+          },
+          {
+            "column": "photo_reference",
+            "found": true
+          },
+          {
+            "column": "google_photo_reference",
+            "found": true
+          },
+          {
+            "column": "width",
+            "found": true
+          },
+          {
+            "column": "height",
+            "found": true
+          },
+          {
+            "column": "is_cover",
+            "found": true
+          },
+          {
+            "column": "role",
+            "found": true
+          },
+          {
+            "column": "sort_order",
+            "found": true
+          },
+          {
+            "column": "url",
+            "found": true
+          },
+          {
+            "column": "secure_url",
+            "found": true
+          },
+          {
+            "column": "public_id",
+            "found": true
+          },
+          {
+            "column": "source",
+            "found": true
+          },
+          {
+            "column": "status",
+            "found": true
+          },
+          {
+            "column": "rights_status",
+            "found": true
+          },
+          {
+            "column": "is_selected_hero",
+            "found": true
+          },
+          {
+            "column": "selection_data",
+            "found": true
+          }
+        ],
+        "fallback_decision": "All expected public projection columns found."
+      }
+    ]
+  },
+  "approved_venue_mappings": [
+    {
+      "venue_name": "Maison Provence Restaurant",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+      "hero_image_rights_status": "google_places_sourced_attribution_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+        "name": "Maison Provence Restaurant",
+        "city": "New York City",
+        "category": "bar",
+        "location": "Williamsburg, New York City",
+        "coordinates": {
+          "lat": 40.7148797,
+          "lng": -73.95469469999999
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+        "atmosphere": "night",
+        "quality": 1,
+        "tagline": "A cozy French bistro with a lush, plant-filled interior in the heart of Williams",
+        "narrative": "Maison Provence presents a charming French bistro aesthetic with its plant-filled interior, blue-and-white striped awning, and warm lighting. The eclectic shelves and cozy distressed wooden chairs create an intimate, refined atmosphere in the heart of Williamsburg.",
+        "tags": [
+          "warm",
+          "romantic",
+          "intimate",
+          "hidden_gem",
+          "refined",
+          "bar",
+          "Williamsburg"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJM83r0aZZwokRg1mla_ag7Rw",
+          "source_google_maps_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "https://www.maisonprovencebk.com/",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+          "projected_at": "2026-06-08T20:57:29.542Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz_hero",
+        "venue_id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+        "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+        "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+        "width": 1600,
+        "height": 1200,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+        "secure_url": null,
+        "public_id": null,
+        "source": "google_places",
+        "status": "mvp_public_reference",
+        "rights_status": "google_places_sourced_attribution_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_risk": "medium",
+          "rights_hint": "google_places_photo_attribution_required",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "lush",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": true
+          },
+          "attribution_required": true,
+          "attribution_label": "Google Places",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+            "name": "Maison Provence Restaurant",
+            "city": "New York City",
+            "category": "bar",
+            "location": "Williamsburg, New York City",
+            "coordinates": {
+              "lat": 40.7148797,
+              "lng": -73.95469469999999
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+            "atmosphere": "night",
+            "quality": 1,
+            "tagline": "A cozy French bistro with a lush, plant-filled interior in the heart of Williams",
+            "narrative": "Maison Provence presents a charming French bistro aesthetic with its plant-filled interior, blue-and-white striped awning, and warm lighting. The eclectic shelves and cozy distressed wooden chairs create an intimate, refined atmosphere in the heart of Williamsburg.",
+            "tags": [
+              "warm",
+              "romantic",
+              "intimate",
+              "hidden_gem",
+              "refined",
+              "bar",
+              "Williamsburg"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJM83r0aZZwokRg1mla_ag7Rw",
+              "source_google_maps_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "https://www.maisonprovencebk.com/",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+              "projected_at": "2026-06-08T20:57:29.542Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz_hero",
+            "venue_id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 1200,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+            "secure_url": null,
+            "public_id": null,
+            "source": "google_places",
+            "status": "mvp_public_reference",
+            "rights_status": "google_places_sourced_attribution_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "https://maps.google.com/?cid=2084499182770805123&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_risk": "medium",
+              "rights_hint": "google_places_photo_attribution_required",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "lush",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": true
+              },
+              "attribution_required": true,
+              "attribution_label": "Google Places",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPfI9V_PCeuMtUOwz6JnX8gyrhUxaDTE6vSmkM3DTezRf-cR_81aRxoWP14APq98xkkdZD_spMehwt56Q856CCh4BgYiGGsB-b3HBbOP8csQH4H5s6OFbepIxUp2wEW4mg0getS9XtfGwgahTymi4y4Sg=s4800-w1600-h1600",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    },
+    {
+      "venue_name": "With Others",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_with_others_chijpygkvezz",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+      "hero_image_rights_status": "google_places_sourced_attribution_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_with_others_chijpygkvezz",
+        "name": "With Others",
+        "city": "New York City",
+        "category": "bar",
+        "location": "Williamsburg, New York City",
+        "coordinates": {
+          "lat": 40.7128364,
+          "lng": -73.9626285
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+        "atmosphere": "golden-hour",
+        "quality": 1,
+        "tagline": "A warm corner bar in Williamsburg for lingering over drinks",
+        "narrative": "The interior features a curved white bar counter as the focal point, flanked by warm wall sconces and ambient candles that create soft lighting throughout. Acoustic ceiling panels and a ceiling fan add to the comfortable, lived-in feel, while patrons seated at the bar and in booths suggest a lively but not overwhelming social energy.",
+        "tags": [
+          "warm",
+          "intimate",
+          "social",
+          "late_night",
+          "bar",
+          "Williamsburg"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJPygkVEZZwokRKQzWA9zRYcA",
+          "source_google_maps_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "https://www.withothersbrooklyn.com/",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+          "projected_at": "2026-06-08T20:57:29.542Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_with_others_chijpygkvezz_hero",
+        "venue_id": "korantis_new_york_city_with_others_chijpygkvezz",
+        "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+        "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+        "width": 1200,
+        "height": 1600,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+        "secure_url": null,
+        "public_id": null,
+        "source": "google_places",
+        "status": "mvp_public_reference",
+        "rights_status": "google_places_sourced_attribution_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_risk": "medium",
+          "rights_hint": "google_places_photo_attribution_required",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": true
+          },
+          "attribution_required": true,
+          "attribution_label": "Google Places",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_with_others_chijpygkvezz",
+            "name": "With Others",
+            "city": "New York City",
+            "category": "bar",
+            "location": "Williamsburg, New York City",
+            "coordinates": {
+              "lat": 40.7128364,
+              "lng": -73.9626285
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+            "atmosphere": "golden-hour",
+            "quality": 1,
+            "tagline": "A warm corner bar in Williamsburg for lingering over drinks",
+            "narrative": "The interior features a curved white bar counter as the focal point, flanked by warm wall sconces and ambient candles that create soft lighting throughout. Acoustic ceiling panels and a ceiling fan add to the comfortable, lived-in feel, while patrons seated at the bar and in booths suggest a lively but not overwhelming social energy.",
+            "tags": [
+              "warm",
+              "intimate",
+              "social",
+              "late_night",
+              "bar",
+              "Williamsburg"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJPygkVEZZwokRKQzWA9zRYcA",
+              "source_google_maps_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "https://www.withothersbrooklyn.com/",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+              "projected_at": "2026-06-08T20:57:29.542Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_with_others_chijpygkvezz_hero",
+            "venue_id": "korantis_new_york_city_with_others_chijpygkvezz",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+            "width": 1200,
+            "height": 1600,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+            "secure_url": null,
+            "public_id": null,
+            "source": "google_places",
+            "status": "mvp_public_reference",
+            "rights_status": "google_places_sourced_attribution_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "https://maps.google.com/?cid=13862591870910467113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_risk": "medium",
+              "rights_hint": "google_places_photo_attribution_required",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": true
+              },
+              "attribution_required": true,
+              "attribution_label": "Google Places",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNo3ty_waF-w-jxuThgYx_zhVQnQ_UmlwG8gf1ifjFKUgj9zhWiLZNrh8qurwwX626r9CgPAHRz9_DpXoocN-Auysgje5Lznr2F2qk5ws5Ov5aut82u_QUYRzESAzIIlwTeTvQ2L7nsnk7ceCpPHz2P6A=s4800-w1600-h1600",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    },
+    {
+      "venue_name": "Olympia",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_olympia_chijdxdmstna",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+      "hero_image_rights_status": "google_places_sourced_attribution_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_olympia_chijdxdmstna",
+        "name": "Olympia",
+        "city": "New York City",
+        "category": "bar",
+        "location": "DUMBO, New York City",
+        "coordinates": {
+          "lat": 40.703278,
+          "lng": -73.986879
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+        "atmosphere": "golden-hour",
+        "quality": 1,
+        "tagline": "An intimate wine bar in DUMBO with warm candlelit ambiance",
+        "narrative": "Olympia occupies a warm, inviting space in DUMBO with a curved wooden bar, pendant lighting, and candlelight casting a soft glow across yellow-cushioned stools and a back bar lined with bottles.",
+        "tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "date_night",
+          "bar",
+          "DUMBO"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJdxDMsTNawokR8-y6Eqqz4T8",
+          "source_google_maps_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "http://www.olympiawinebar.com/",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+          "projected_at": "2026-06-08T20:57:29.543Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_olympia_chijdxdmstna_hero",
+        "venue_id": "korantis_new_york_city_olympia_chijdxdmstna",
+        "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+        "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+        "width": 1600,
+        "height": 982,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+        "secure_url": null,
+        "public_id": null,
+        "source": "google_places",
+        "status": "mvp_public_reference",
+        "rights_status": "google_places_sourced_attribution_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+          "source_type": "google_places",
+          "rights_risk": "medium",
+          "rights_hint": "google_places_photo_attribution_required",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          },
+          "attribution_required": true,
+          "attribution_label": "Google Places",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_olympia_chijdxdmstna",
+            "name": "Olympia",
+            "city": "New York City",
+            "category": "bar",
+            "location": "DUMBO, New York City",
+            "coordinates": {
+              "lat": 40.703278,
+              "lng": -73.986879
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+            "atmosphere": "golden-hour",
+            "quality": 1,
+            "tagline": "An intimate wine bar in DUMBO with warm candlelit ambiance",
+            "narrative": "Olympia occupies a warm, inviting space in DUMBO with a curved wooden bar, pendant lighting, and candlelight casting a soft glow across yellow-cushioned stools and a back bar lined with bottles.",
+            "tags": [
+              "warm",
+              "intimate",
+              "refined",
+              "date_night",
+              "bar",
+              "DUMBO"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJdxDMsTNawokR8-y6Eqqz4T8",
+              "source_google_maps_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "http://www.olympiawinebar.com/",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+              "projected_at": "2026-06-08T20:57:29.543Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_olympia_chijdxdmstna_hero",
+            "venue_id": "korantis_new_york_city_olympia_chijdxdmstna",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+            "width": 1600,
+            "height": 982,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+            "secure_url": null,
+            "public_id": null,
+            "source": "google_places",
+            "status": "mvp_public_reference",
+            "rights_status": "google_places_sourced_attribution_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "https://maps.google.com/?cid=4603157837189410035&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+              "source_type": "google_places",
+              "rights_risk": "medium",
+              "rights_hint": "google_places_photo_attribution_required",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "attribution_required": true,
+              "attribution_label": "Google Places",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeuFRwJrV7Sp55oBMBq-bxOFPKwYsxpVjItsVAvR3xFxV5aHxUbrVgLYNmGvitSm8LoiUHIwZvuBwiM5MXN659kOg2-PGjFJIdtDemAejQnWbe0S_ViUtO3CsfsOocIKRS7LS9UC7ROU4N1Mc=s4800-w1600-h1535",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    },
+    {
+      "venue_name": "Anaïs",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_anais_chijr9ukg5tb",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+      "hero_image_rights_status": "google_places_sourced_attribution_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_anais_chijr9ukg5tb",
+        "name": "Anaïs",
+        "city": "New York City",
+        "category": "bar",
+        "location": "Brooklyn Bridge Park, New York City",
+        "coordinates": {
+          "lat": 40.6848548,
+          "lng": -73.9861081
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+        "atmosphere": "golden-hour",
+        "quality": 1,
+        "tagline": "A neighborhood wine bar with warm light and curated bottles",
+        "narrative": "Anaïs is a neighborhood wine bar in Brooklyn with a warm interior featuring tall wine shelving, candlelit high-top tables, and large street-facing windows. Open daily from morning to late night, it offers a curated wine selection in an intimate setting.",
+        "tags": [
+          "warm",
+          "intimate",
+          "date_night",
+          "refined",
+          "quiet",
+          "bar",
+          "Brooklyn Bridge Park"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJR9uKg5tbwokR-45Jeyx40ms",
+          "source_google_maps_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "https://www.anaisbk.com/",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+          "projected_at": "2026-06-08T20:57:29.543Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_anais_chijr9ukg5tb_hero",
+        "venue_id": "korantis_new_york_city_anais_chijr9ukg5tb",
+        "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+        "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+        "width": 1600,
+        "height": 1200,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+        "secure_url": null,
+        "public_id": null,
+        "source": "google_places",
+        "status": "mvp_public_reference",
+        "rights_status": "google_places_sourced_attribution_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_risk": "medium",
+          "rights_hint": "google_places_photo_attribution_required",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": true
+          },
+          "attribution_required": true,
+          "attribution_label": "Google Places",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_anais_chijr9ukg5tb",
+            "name": "Anaïs",
+            "city": "New York City",
+            "category": "bar",
+            "location": "Brooklyn Bridge Park, New York City",
+            "coordinates": {
+              "lat": 40.6848548,
+              "lng": -73.9861081
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+            "atmosphere": "golden-hour",
+            "quality": 1,
+            "tagline": "A neighborhood wine bar with warm light and curated bottles",
+            "narrative": "Anaïs is a neighborhood wine bar in Brooklyn with a warm interior featuring tall wine shelving, candlelit high-top tables, and large street-facing windows. Open daily from morning to late night, it offers a curated wine selection in an intimate setting.",
+            "tags": [
+              "warm",
+              "intimate",
+              "date_night",
+              "refined",
+              "quiet",
+              "bar",
+              "Brooklyn Bridge Park"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJR9uKg5tbwokR-45Jeyx40ms",
+              "source_google_maps_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "https://www.anaisbk.com/",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+              "projected_at": "2026-06-08T20:57:29.543Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_anais_chijr9ukg5tb_hero",
+            "venue_id": "korantis_new_york_city_anais_chijr9ukg5tb",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 1200,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+            "secure_url": null,
+            "public_id": null,
+            "source": "google_places",
+            "status": "mvp_public_reference",
+            "rights_status": "google_places_sourced_attribution_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "https://maps.google.com/?cid=7769404439609839355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_risk": "medium",
+              "rights_hint": "google_places_photo_attribution_required",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": true
+              },
+              "attribution_required": true,
+              "attribution_label": "Google Places",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPTYFzbfRNRnbxzxfMYLtwZLTNxRruEQsdfNW4Gj8GeXEXJk6gCw3IC2e-5QvxvvH09X1VObkHFkGpbdInG-xb2B2mU_WkVqdRthwF-FVuL64G9WFToWjLBv4o7RVOG23qOIstI3P9y92wRAMoKdK2fCQ=s4800-w1600-h1600",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    },
+    {
+      "venue_name": "Balvanera",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_balvanera_chijvrnghofz",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+      "hero_image_rights_status": "google_places_sourced_attribution_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_balvanera_chijvrnghofz",
+        "name": "Balvanera",
+        "city": "New York City",
+        "category": "bar",
+        "location": "Lower East Side, New York City",
+        "coordinates": {
+          "lat": 40.7206354,
+          "lng": -73.9853782
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+        "atmosphere": "night",
+        "quality": 1,
+        "tagline": "A Lower East Side patio with exposed brick, murals, and string lights",
+        "narrative": "Balvanera anchors the Lower East Side with a sidewalk patio framed by exposed brick, a bold mural, and soft string lighting overhead. Metal bistro chairs and wooden tables create an unpretentious yet atmospheric setting for evening drinks and weekend brunches.",
+        "tags": [
+          "outdoor",
+          "cinematic",
+          "social",
+          "late_night",
+          "hidden_gem",
+          "bar",
+          "Lower East Side"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJvRNghoFZwokR8r6CDQqyalA",
+          "source_google_maps_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "http://www.balvanerarestaurants.com/",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+          "projected_at": "2026-06-08T20:57:29.543Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_balvanera_chijvrnghofz_hero",
+        "venue_id": "korantis_new_york_city_balvanera_chijvrnghofz",
+        "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+        "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+        "width": 1600,
+        "height": 1200,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+        "secure_url": null,
+        "public_id": null,
+        "source": "google_places",
+        "status": "mvp_public_reference",
+        "rights_status": "google_places_sourced_attribution_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_risk": "medium",
+          "rights_hint": "google_places_photo_attribution_required",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "industrial",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          },
+          "attribution_required": true,
+          "attribution_label": "Google Places",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_balvanera_chijvrnghofz",
+            "name": "Balvanera",
+            "city": "New York City",
+            "category": "bar",
+            "location": "Lower East Side, New York City",
+            "coordinates": {
+              "lat": 40.7206354,
+              "lng": -73.9853782
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+            "atmosphere": "night",
+            "quality": 1,
+            "tagline": "A Lower East Side patio with exposed brick, murals, and string lights",
+            "narrative": "Balvanera anchors the Lower East Side with a sidewalk patio framed by exposed brick, a bold mural, and soft string lighting overhead. Metal bistro chairs and wooden tables create an unpretentious yet atmospheric setting for evening drinks and weekend brunches.",
+            "tags": [
+              "outdoor",
+              "cinematic",
+              "social",
+              "late_night",
+              "hidden_gem",
+              "bar",
+              "Lower East Side"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJvRNghoFZwokR8r6CDQqyalA",
+              "source_google_maps_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "http://www.balvanerarestaurants.com/",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+              "projected_at": "2026-06-08T20:57:29.543Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_balvanera_chijvrnghofz_hero",
+            "venue_id": "korantis_new_york_city_balvanera_chijvrnghofz",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 1200,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+            "secure_url": null,
+            "public_id": null,
+            "source": "google_places",
+            "status": "mvp_public_reference",
+            "rights_status": "google_places_sourced_attribution_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "https://maps.google.com/?cid=5794639626811653874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_risk": "medium",
+              "rights_hint": "google_places_photo_attribution_required",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "industrial",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "attribution_required": true,
+              "attribution_label": "Google Places",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNPv2xcrNsXn9ADUBBaKdw2pnrOgVJk8rXoM2qx4q5N3aw-J6le7ld_SjSOqzec3BFSqifRXgUdHs_BvKIljDmnD5X16GDIqgF8AVUzdM_sqsTMeoEg9tCKKVpCfDff0czvbHGTYFZ2SOAwxBg=s4800-w1600-h1600",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "medium_rights_risk",
+        "missing_instagram",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    },
+    {
+      "venue_name": "Brick Wine Bar",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+      "hero_image_rights_status": "google_places_sourced_attribution_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+        "name": "Brick Wine Bar",
+        "city": "New York City",
+        "category": "bar",
+        "location": "Lower East Side, New York City",
+        "coordinates": {
+          "lat": 40.7206541,
+          "lng": -73.98450179999999
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+        "atmosphere": "golden-hour",
+        "quality": 1,
+        "tagline": "A perfectly-rated wine bar in the Lower East Side with warm, candlelit evenings.",
+        "narrative": "Brick Wine Bar occupies a candlelit space on Clinton Street in the Lower East Side, featuring wine bottles lining the shelves and an intimate bar setup. The cozy interior, highlighted by hanging glassware and warm lighting, creates a refined setting for evening wine experiences.",
+        "tags": [
+          "warm",
+          "intimate",
+          "refined",
+          "date_night",
+          "romantic",
+          "bar",
+          "Lower East Side"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJZ3m5L6xZwokRq3Gyu3EDuuE",
+          "source_google_maps_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "https://www.brickwinebar.com/",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+          "projected_at": "2026-06-08T20:57:29.543Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz_hero",
+        "venue_id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+        "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+        "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+        "width": 1600,
+        "height": 748,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+        "secure_url": null,
+        "public_id": null,
+        "source": "google_places",
+        "status": "mvp_public_reference",
+        "rights_status": "google_places_sourced_attribution_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+          "source_type": "google_places",
+          "rights_risk": "medium",
+          "rights_hint": "google_places_photo_attribution_required",
+          "risk_flags": [
+            "rights_review_needed",
+            "preferred_resolution",
+            "product_only"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "warm_cozy",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          },
+          "attribution_required": true,
+          "attribution_label": "Google Places",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+            "name": "Brick Wine Bar",
+            "city": "New York City",
+            "category": "bar",
+            "location": "Lower East Side, New York City",
+            "coordinates": {
+              "lat": 40.7206541,
+              "lng": -73.98450179999999
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+            "atmosphere": "golden-hour",
+            "quality": 1,
+            "tagline": "A perfectly-rated wine bar in the Lower East Side with warm, candlelit evenings.",
+            "narrative": "Brick Wine Bar occupies a candlelit space on Clinton Street in the Lower East Side, featuring wine bottles lining the shelves and an intimate bar setup. The cozy interior, highlighted by hanging glassware and warm lighting, creates a refined setting for evening wine experiences.",
+            "tags": [
+              "warm",
+              "intimate",
+              "refined",
+              "date_night",
+              "romantic",
+              "bar",
+              "Lower East Side"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJZ3m5L6xZwokRq3Gyu3EDuuE",
+              "source_google_maps_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "https://www.brickwinebar.com/",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+              "projected_at": "2026-06-08T20:57:29.543Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz_hero",
+            "venue_id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+            "photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+            "google_photo_reference": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+            "width": 1600,
+            "height": 748,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+            "secure_url": null,
+            "public_id": null,
+            "source": "google_places",
+            "status": "mvp_public_reference",
+            "rights_status": "google_places_sourced_attribution_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "https://maps.google.com/?cid=16265316791217189291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+              "source_type": "google_places",
+              "rights_risk": "medium",
+              "rights_hint": "google_places_photo_attribution_required",
+              "risk_flags": [
+                "rights_review_needed",
+                "preferred_resolution",
+                "product_only"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "warm_cozy",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "attribution_required": true,
+              "attribution_label": "Google Places",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyz1BEmjI1rx1MSAO-JjpUrnla7ECO-bDdvOkRFBKknd9DH22CmvYmImcBJuxH3WoQBzfe6ND8WqyI5h1utKSWEbVXAYlOjRjbDQSl073d1aH7q7NhhGG8vSAHZk-DxFvcIeS3IPJZGle1b9U=s4800-w1600-h1600",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "medium_rights_risk",
+        "missing_instagram",
+        "missing_price_hint",
+        "image_rights_review_required_before_publication",
+        "rights_review_needed",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    },
+    {
+      "venue_name": "Ainslie Bowery",
+      "decision": "approve",
+      "reviewer_notes": "",
+      "target_public_venue_id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz",
+      "source_staging_status": "ready_for_db_staging",
+      "source_staging_score": 100,
+      "hero_image_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+      "hero_image_rights_status": "venue_controlled_source_review_required",
+      "public_payload_preview": {
+        "id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz",
+        "name": "Ainslie Bowery",
+        "city": "New York City",
+        "category": "bar",
+        "location": "Bowery, New York City",
+        "coordinates": {
+          "lat": 40.7209818,
+          "lng": -73.9931495
+        },
+        "card_size": "immersive",
+        "spacing": "breathe",
+        "hero_image": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+        "atmosphere": "night",
+        "quality": 1,
+        "tagline": "A lush Bowery bar with communal tables, brick arches, and hanging greenery",
+        "narrative": "A welcoming bar on Bowery featuring long communal wooden tables beneath exposed brick arches, framed by hanging greenery and stylized artwork. Natural light filters through side windows while string lights add warmth after dark.",
+        "tags": [
+          "warm",
+          "social",
+          "late_night",
+          "creative",
+          "bar",
+          "Bowery"
+        ],
+        "curation_status": "pending_review",
+        "taste_vector": null,
+        "publication_metadata": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_place_id": "ChIJYX4u-qRZwokRzEn18urM0vM",
+          "source_google_maps_url": "https://maps.google.com/?cid=17569330405796301260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_website_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "reviewer_decision": "approve",
+          "reviewer_notes": "",
+          "cloudinary_public_id": null,
+          "image_source_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+          "projected_at": "2026-06-08T20:57:29.543Z",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "image_payload_preview": {
+        "id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz_hero",
+        "venue_id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz",
+        "photo_reference": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+        "google_photo_reference": null,
+        "width": 1200,
+        "height": 669,
+        "is_cover": true,
+        "role": "hero",
+        "sort_order": 0,
+        "url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+        "secure_url": null,
+        "public_id": null,
+        "source": "official_website",
+        "status": "mvp_public_reference",
+        "rights_status": "venue_controlled_source_review_required",
+        "is_selected_hero": true,
+        "selection_data": {
+          "batch_id": "batch_006_nyc_rooftop",
+          "source_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+          "resolved_image_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+          "source_type": "official_website",
+          "rights_risk": "low",
+          "rights_hint": "venue_controlled_or_source_review_required",
+          "risk_flags": [
+            "preferred_resolution",
+            "product_only"
+          ],
+          "publication_status_from_pipeline": "not_approved_for_publication",
+          "classification": {
+            "shows_space": true,
+            "is_hero_usable": true,
+            "scene": "hero_interior",
+            "atmosphere_signal": "lush",
+            "quality": "high",
+            "model_used": "MiniMax-M3",
+            "has_identifiable_faces": false
+          },
+          "attribution_required": false,
+          "attribution_label": "official_website",
+          "cloudinary_materialized": false,
+          "original_source_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+          "projection_status": "pending_review_not_public"
+        }
+      },
+      "intended_writes": [
+        {
+          "table": "venues",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz",
+            "name": "Ainslie Bowery",
+            "city": "New York City",
+            "category": "bar",
+            "location": "Bowery, New York City",
+            "coordinates": {
+              "lat": 40.7209818,
+              "lng": -73.9931495
+            },
+            "card_size": "immersive",
+            "spacing": "breathe",
+            "hero_image": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+            "atmosphere": "night",
+            "quality": 1,
+            "tagline": "A lush Bowery bar with communal tables, brick arches, and hanging greenery",
+            "narrative": "A welcoming bar on Bowery featuring long communal wooden tables beneath exposed brick arches, framed by hanging greenery and stylized artwork. Natural light filters through side windows while string lights add warmth after dark.",
+            "tags": [
+              "warm",
+              "social",
+              "late_night",
+              "creative",
+              "bar",
+              "Bowery"
+            ],
+            "curation_status": "pending_review",
+            "taste_vector": null,
+            "publication_metadata": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_place_id": "ChIJYX4u-qRZwokRzEn18urM0vM",
+              "source_google_maps_url": "https://maps.google.com/?cid=17569330405796301260&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_website_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+              "reviewer_decision": "approve",
+              "reviewer_notes": "",
+              "cloudinary_public_id": null,
+              "image_source_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+              "projected_at": "2026-06-08T20:57:29.543Z",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic city/name/place_id slug",
+            "name": "VenueComplete.raw.name",
+            "city": "VenueComplete.raw.city",
+            "category": "VenueComplete.raw.type",
+            "location": "VenueComplete.raw.neighborhood + city",
+            "coordinates": "VenueComplete.raw.coordinates",
+            "hero_image": "VenueComplete.hero_image.resolved_image_url",
+            "atmosphere": "VenueComplete.hero_image.classification.atmosphere_signal mapped to public atmosphere",
+            "quality": "quality_gate.staging_score / 100",
+            "tagline": "VenueComplete.editorial.tagline",
+            "narrative": "VenueComplete.editorial.description",
+            "tags": "VenueComplete.editorial.mood_tags",
+            "curation_status": "reviewed publication_decision approve -> pending_review public gate"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        },
+        {
+          "table": "venue_images",
+          "operation": "upsert",
+          "unique_key": "id",
+          "fields_to_write": {
+            "id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz_hero",
+            "venue_id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz",
+            "photo_reference": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+            "google_photo_reference": null,
+            "width": 1200,
+            "height": 669,
+            "is_cover": true,
+            "role": "hero",
+            "sort_order": 0,
+            "url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+            "secure_url": null,
+            "public_id": null,
+            "source": "official_website",
+            "status": "mvp_public_reference",
+            "rights_status": "venue_controlled_source_review_required",
+            "is_selected_hero": true,
+            "selection_data": {
+              "batch_id": "batch_006_nyc_rooftop",
+              "source_url": "http://www.ainsliebowery.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp-ainsliebowery",
+              "resolved_image_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+              "source_type": "official_website",
+              "rights_risk": "low",
+              "rights_hint": "venue_controlled_or_source_review_required",
+              "risk_flags": [
+                "preferred_resolution",
+                "product_only"
+              ],
+              "publication_status_from_pipeline": "not_approved_for_publication",
+              "classification": {
+                "shows_space": true,
+                "is_hero_usable": true,
+                "scene": "hero_interior",
+                "atmosphere_signal": "lush",
+                "quality": "high",
+                "model_used": "MiniMax-M3",
+                "has_identifiable_faces": false
+              },
+              "attribution_required": false,
+              "attribution_label": "official_website",
+              "cloudinary_materialized": false,
+              "original_source_url": "https://ainsliebowery.com/wp-content/uploads/2026/05/hpSlide-BeerGarden.jpg",
+              "projection_status": "pending_review_not_public"
+            }
+          },
+          "source_fields": {
+            "id": "deterministic public venue hero image id",
+            "venue_id": "projected public venue id",
+            "url": "VenueComplete.hero_image.resolved_image_url",
+            "width": "VenueComplete.hero_image.width",
+            "height": "VenueComplete.hero_image.height",
+            "source": "VenueComplete.hero_image.source_type",
+            "rights_status": "derived public traceability status, not owned/approved rights",
+            "selection_data": "Stage 04 vision/selection metadata and Stage 09 reviewer decision"
+          },
+          "transformation_logic": [
+            "No write performed; payload is a deterministic public projection dry-run.",
+            "Only publication_decision_manifest.reviewed.json approve decisions are projected.",
+            "Paused, rejected, blocked, and ineligible decisions are skipped.",
+            "Image rights are preserved as traceability status and are not marked approved_for_publication."
+          ],
+          "fields_skipped": []
+        }
+      ],
+      "warnings": [
+        "missing_instagram",
+        "missing_instagram",
+        "Dry-run only: curation_status pending_review keeps projected public rows hidden until a later activation step.",
+        "Image rights are traceable/source-attributed, not owned or auto-approved."
+      ],
+      "apply_blockers": [
+        "manual_confirmation_required_before_public_venues_write",
+        "cloudinary_materialization_missing_for_approved_hero"
+      ]
+    }
+  ],
+  "skipped_decisions": [
+    {
+      "venue_name": "Woodhul Wine Bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Pinkerton Wine Bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Black Mountain Wine House",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Somm Time",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Jadis",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    }
+  ],
+  "blockers_before_apply": [
+    "Manual final approval is required before any public venues write.",
+    "Projected public venues must be inserted as curation_status pending_review; activation to active must be a separate later step.",
+    "Cloudinary materialization missing for 7 approved venue hero image(s)."
+  ],
+  "safety_checks": {
+    "no_supabase_writes": true,
+    "no_public_venues_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_image_rights_approval": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "no_deploy": true,
+    "apply_disabled": true
+  }
+}

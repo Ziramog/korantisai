@@ -1,0 +1,59 @@
+{
+  "batch_id": "batch_009_new_york_cafes_25_williamsburg_dumbo_lower_east_side",
+  "generated_at": "2026-06-08T20:58:34.783Z",
+  "mode": "apply",
+  "steps": [
+    {
+      "step": "11_public_projection_dry_run",
+      "status": "completed",
+      "started_at": "2026-06-08T20:57:56.299Z",
+      "finished_at": "2026-06-08T20:57:57.827Z",
+      "summary": {
+        "approved_projected": 14,
+        "skipped_count": 11,
+        "tolerated_pre_cloudinary_blockers": [
+          "Manual final approval is required before any public venues write.",
+          "Projected public venues must be inserted as curation_status pending_review; activation to active must be a separate later step.",
+          "Cloudinary materialization missing for 14 approved venue hero image(s)."
+        ]
+      }
+    },
+    {
+      "step": "10_cloudinary_apply",
+      "status": "completed",
+      "started_at": "2026-06-08T20:57:57.827Z",
+      "finished_at": "2026-06-08T20:58:32.901Z",
+      "summary": {
+        "uploaded": 13,
+        "skipped_existing": 1,
+        "errors": 0
+      }
+    },
+    {
+      "step": "11_public_projection_apply",
+      "status": "failed",
+      "started_at": "2026-06-08T20:58:32.902Z",
+      "finished_at": "2026-06-08T20:58:34.783Z",
+      "summary": {},
+      "error": "Stage 11 venues upsert failed: ON CONFLICT DO UPDATE command cannot affect row a second time"
+    }
+  ],
+  "approved_requested": 14,
+  "cloudinary_uploaded_or_existing": 14,
+  "public_projected": 0,
+  "activation_ready": 0,
+  "activated": 0,
+  "post_activation_audit_passed": 0,
+  "post_activation_audit_failed": 0,
+  "blocked": 0,
+  "safety_checks": {
+    "requires_reviewed_manifest": true,
+    "requires_explicit_run_confirmation_in_control_center": true,
+    "no_external_model_calls": true,
+    "cloudinary_uploads_only_approved_heroes": true,
+    "public_projection_writes_pending_review_before_activation": true,
+    "activation_requires_cloudinary_hero": true,
+    "post_activation_audit_required": true,
+    "no_consumer_ui_changes": true
+  }
+}

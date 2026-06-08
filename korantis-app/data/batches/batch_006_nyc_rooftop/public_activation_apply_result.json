@@ -1,0 +1,74 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T20:57:53.737Z",
+  "mode": "apply",
+  "requested": 7,
+  "ready_to_activate": 7,
+  "blocked": 0,
+  "activated": 7,
+  "checks": [
+    {
+      "venue_id": "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+      "name": "Maison Provence Restaurant",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_new_york_city_with_others_chijpygkvezz",
+      "name": "With Others",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_new_york_city_olympia_chijdxdmstna",
+      "name": "Olympia",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_new_york_city_anais_chijr9ukg5tb",
+      "name": "Anaïs",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_new_york_city_balvanera_chijvrnghofz",
+      "name": "Balvanera",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+      "name": "Brick Wine Bar",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    },
+    {
+      "venue_id": "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz",
+      "name": "Ainslie Bowery",
+      "current_status": "pending_review",
+      "has_cloudinary_hero": true,
+      "ready_to_activate": true,
+      "blockers": []
+    }
+  ],
+  "safety_checks": {
+    "writes_only_venues_curation_status": true,
+    "no_cloudinary_uploads": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "requires_explicit_apply": true
+  }
+}

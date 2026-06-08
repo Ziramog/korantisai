@@ -1,0 +1,76 @@
+{
+  "batch_id": "batch_006_nyc_rooftop",
+  "generated_at": "2026-06-08T20:57:52.464Z",
+  "mode": "apply",
+  "approved_projected": 7,
+  "intended_write_count": 14,
+  "table_results": [
+    {
+      "table": "venues",
+      "operation": "upsert",
+      "attempted_rows": 7,
+      "affected_rows": 7
+    },
+    {
+      "table": "venue_images",
+      "operation": "upsert",
+      "attempted_rows": 7,
+      "affected_rows": 7
+    }
+  ],
+  "venue_ids_written": [
+    "korantis_new_york_city_maison_provence_restaurant_chijm83r0azz",
+    "korantis_new_york_city_with_others_chijpygkvezz",
+    "korantis_new_york_city_olympia_chijdxdmstna",
+    "korantis_new_york_city_anais_chijr9ukg5tb",
+    "korantis_new_york_city_balvanera_chijvrnghofz",
+    "korantis_new_york_city_brick_wine_bar_chijz3m5l6xz",
+    "korantis_new_york_city_ainslie_bowery_chijyx4u_qrz"
+  ],
+  "skipped_decisions": [
+    {
+      "venue_name": "Woodhul Wine Bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Pinkerton Wine Bar",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Black Mountain Wine House",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Somm Time",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    },
+    {
+      "venue_name": "Jadis",
+      "decision": "pause",
+      "reasons": [
+        "decision_pause"
+      ]
+    }
+  ],
+  "blockers_before_apply": [],
+  "safety_checks": {
+    "no_public_activation": true,
+    "all_rows_inserted_pending_review": true,
+    "no_cloudinary_uploads_in_stage_11": true,
+    "no_external_model_calls": true,
+    "no_consumer_ui_changes": true,
+    "no_deploy": true
+  }
+}

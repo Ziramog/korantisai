@@ -241,6 +241,12 @@ function readBatchStatus(batchId: string): Record<string, unknown> {
     exists: existsSync(outputDir),
     counts: {
       quality_gate: readJsonSummary(path.join(outputDir, 'batch_result_quality_gated.json'), (data) => data.summary),
+      editorial_sources: readJsonSummary(path.join(outputDir, 'stage_00b_editorial_source_enrichment.json'), (data) => ({
+        confirmed_editorial_mentions: data.confirmed_editorial_mentions,
+        source_query_candidates: data.source_query_candidates,
+        verification_failed: data.verification_failed,
+        mode: data.mode,
+      })),
       decisions: readJsonSummary(path.join(outputDir, 'publication_decision_manifest.reviewed.json'), summarizeDecisions),
       cloudinary: readJsonSummary(path.join(outputDir, 'cloudinary_materialization_result.json'), (data) => ({
         mode: data.mode,
@@ -601,6 +607,8 @@ function renderApp(): string {
         ['Activated', counts.activation?.activated ?? 0, counts.activation?.activated ? 'ok' : 'warn'],
         ['Activation ready', counts.activation_dry_run?.ready ?? 'n/a', 'ok'],
         ['Image errors', counts.cloudinary?.errors ?? 'n/a', counts.cloudinary?.errors ? 'bad' : 'ok'],
+        ['Editorial confirmed', counts.editorial_sources?.confirmed_editorial_mentions ?? 'n/a', 'ok'],
+        ['Editorial verify failed', counts.editorial_sources?.verification_failed ?? 'n/a', counts.editorial_sources?.verification_failed ? 'warn' : 'ok'],
         ['Audit failed', counts.post_activation_audit?.failed ?? 'n/a', counts.post_activation_audit?.failed ? 'bad' : 'ok'],
         ['Rollback eligible', counts.rollback?.eligible ?? 'n/a', counts.rollback?.eligible ? 'warn' : 'ok'],
       ];
