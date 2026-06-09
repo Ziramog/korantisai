@@ -1,0 +1,208 @@
+{
+  "run_id": "enrich_2026_06_08_2105",
+  "generated_at": "2026-06-09T02:39:00.109Z",
+  "expansion_batch_id": "enrich_2026_06_08_2105_gallery_expansion",
+  "mode": "read_only_gallery_expansion_queue",
+  "source_batches_used": [
+    "batch_004_buenos_aires_50",
+    "batch_005_buenos_aires_restaurants_50"
+  ],
+  "venues_targeted": 17,
+  "queue_size": 0,
+  "per_venue": [
+    {
+      "venue_id": "korantis_buenos_aires_ancora_buenos_aires_chiju51wzpbl",
+      "venue_name": "Ancora Buenos Aires",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 0,
+      "queued_count": 0,
+      "skipped_known_or_classified": 9,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_bautista_av_rivadavia_chijbwwt2m7l",
+      "venue_name": "BAUTISTA Av. Rivadavia",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 3,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_bocanada_chij7xrdqnzl",
+      "venue_name": "BOCANADA",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 0,
+      "queued_count": 0,
+      "skipped_known_or_classified": 4,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_cobre_cafe_chijyxjkj6dl",
+      "venue_name": "Cobre Café",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 0,
+      "queued_count": 0,
+      "skipped_known_or_classified": 7,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_croque_madame_puerto_madero_chijjcwpbze1",
+      "venue_name": "Croque Madame Puerto Madero",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 2,
+      "queued_count": 0,
+      "skipped_known_or_classified": 3,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_dada_bistro_chijkasliatk",
+      "venue_name": "Dada Bistró",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 0,
+      "queued_count": 0,
+      "skipped_known_or_classified": 3,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_el_mirasol_de_la_recova_chijsd_q9ldk",
+      "venue_name": "El Mirasol de La Recova",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 6,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_farmacia_lezama_bistrot_chijr80sszll",
+      "venue_name": "Farmacia Lezama - Bistrot",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 0,
+      "queued_count": 0,
+      "skipped_known_or_classified": 6,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_fraga_bodegon_chijg2nmenm1",
+      "venue_name": "Fraga Bodegón",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 0,
+      "queued_count": 0,
+      "skipped_known_or_classified": 6,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_intervalo_bar_chijuu_xakhl",
+      "venue_name": "Intervalo Bar",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 9,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_jakub_chijlwjgkdq1",
+      "venue_name": "jakub",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 6,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_l_antiquario_cafe_bistro_chijgcvjlxpl",
+      "venue_name": "L'Antiquario Cafe Bistro",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 4,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_del_mercado_belgrano_chijl46_5cq1",
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 8,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_giralda_chija8pen8bk",
+      "venue_name": "La Giralda",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 5,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_las_pizarras_bistro_chijdx2nais1",
+      "venue_name": "Las Pizarras bistro",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 6,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_le_club_bacan_chijou38bmtl",
+      "venue_name": "LE CLUB BACAN",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 3,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_le_reve_bistro_chije58ebl_1",
+      "venue_name": "Le Rêve Bistró",
+      "status": "needs_more_spatial_images",
+      "current_spatial_count": 1,
+      "queued_count": 0,
+      "skipped_known_or_classified": 5,
+      "warnings": [
+        "no_unclassified_prefiltered_images_available"
+      ]
+    }
+  ],
+  "queue": [],
+  "safety": {
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_publication_changes": true,
+    "no_m3_calls": true
+  }
+}

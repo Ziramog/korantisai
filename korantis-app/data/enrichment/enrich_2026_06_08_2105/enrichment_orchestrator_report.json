@@ -1,0 +1,57 @@
+{
+  "run_id": "enrich_2026_06_08_2105",
+  "generated_at": "2026-06-09T01:44:58.411Z",
+  "mode": "enrichment_orchestrator",
+  "status": "completed_with_warnings",
+  "allow_m3": false,
+  "steps": [
+    {
+      "name": "E00 target selection",
+      "status": "skipped",
+      "detail": "resume_existing_targets"
+    },
+    {
+      "name": "E01 evidence collection",
+      "status": "skipped",
+      "detail": "resume_existing_evidence"
+    },
+    {
+      "name": "E02 gallery discovery",
+      "status": "completed",
+      "detail": "selected=51; venues=25/25"
+    },
+    {
+      "name": "E03 gallery review",
+      "status": "completed",
+      "detail": "ready=8; needs_more_spatial=17"
+    },
+    {
+      "name": "E02B gallery expansion queue",
+      "status": "completed",
+      "detail": "queue=0; batch=enrich_2026_06_08_2105_gallery_expansion"
+    }
+  ],
+  "summary": {
+    "targets": 25,
+    "gallery_ready": 8,
+    "needs_more_spatial": 17,
+    "blocked_gallery_quality": 0,
+    "gallery_images": 51,
+    "expansion_queue_size": 0,
+    "expansion_batch_id": "enrich_2026_06_08_2105_gallery_expansion"
+  },
+  "output_files": [
+    "F:\\KORANTIS\\korantis-app\\data\\enrichment\\enrich_2026_06_08_2105\\enrichment_targets.json",
+    "F:\\KORANTIS\\korantis-app\\data\\enrichment\\enrich_2026_06_08_2105\\evidence_collected.json",
+    "F:\\KORANTIS\\korantis-app\\data\\enrichment\\enrich_2026_06_08_2105\\gallery_selection.json",
+    "F:\\KORANTIS\\korantis-app\\data\\enrichment\\enrich_2026_06_08_2105\\gallery_review_manifest.json",
+    "F:\\KORANTIS\\korantis-app\\data\\enrichment\\enrich_2026_06_08_2105\\gallery_review_dashboard.html",
+    "F:\\KORANTIS\\korantis-app\\data\\enrichment\\enrich_2026_06_08_2105\\enrichment_orchestrator_report.md"
+  ],
+  "safety": {
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_publication_changes": true,
+    "m3_only_when_allow_m3": true
+  }
+}

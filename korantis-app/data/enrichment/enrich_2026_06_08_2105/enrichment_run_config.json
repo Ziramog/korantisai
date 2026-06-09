@@ -1,0 +1,34 @@
+{
+  "run_id": "enrich_2026_06_08_2105",
+  "generated_at": "2026-06-09T00:07:40.656Z",
+  "args": {
+    "activeOnly": true,
+    "pendingReview": false,
+    "venueIds": [],
+    "missingGallery": true,
+    "missingEditorial": false,
+    "missingFacts": false,
+    "maxTargets": 25,
+    "force": false,
+    "city": "Buenos Aires",
+    "runId": "enrich_2026_06_08_2105"
+  },
+  "filters": {
+    "active_only": true,
+    "pending_review": false,
+    "city": "Buenos Aires",
+    "venue_ids": [],
+    "missing_gallery": true,
+    "missing_editorial": false,
+    "missing_facts": false,
+    "max_targets": 25,
+    "force": false
+  },
+  "safety": {
+    "read_only_supabase": true,
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_external_model_calls": true,
+    "no_publication_changes": true
+  }
+}

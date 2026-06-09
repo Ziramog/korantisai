@@ -1,0 +1,2871 @@
+{
+  "run_id": "enrich_2026_06_08_2105",
+  "generated_at": "2026-06-09T00:09:18.675Z",
+  "mode": "read_only_evidence_collection",
+  "target_count": 25,
+  "venues_processed": 25,
+  "sources_attempted": 48,
+  "sources_successful": 45,
+  "average_evidence_coverage": 0.94,
+  "venue_evidence": [
+    {
+      "venue_id": "korantis_buenos_aires_ancora_buenos_aires_chiju51wzpbl",
+      "venue_name": "Ancora Buenos Aires",
+      "city": "Buenos Aires",
+      "sources_attempted": 1,
+      "sources_successful": 1,
+      "evidence_coverage_score": 1,
+      "highest_authority": 3,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJu51WzPbLvJURrmObcSy9XLA",
+          "display_value": "ChIJu51WzPbLvJURrmObcSy9XLA",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:06.447Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJu51WzPbLvJURrmObcSy9XLA",
+              "display_value": "ChIJu51WzPbLvJURrmObcSy9XLA",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Ancora Buenos Aires: google_maps_url, place_id",
+          "warnings": []
+        }
+      ],
+      "warnings": [
+        "target_marked_facts_missing"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_barine_cafe_de_especialidad_chijw18b1mk1",
+      "venue_name": "Barine - café de especialidad",
+      "city": "Buenos Aires",
+      "sources_attempted": 1,
+      "sources_successful": 1,
+      "evidence_coverage_score": 1,
+      "highest_authority": 3,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJw18B1MK1vJURyF8zUKtXHz4",
+          "display_value": "ChIJw18B1MK1vJURyF8zUKtXHz4",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:06.449Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=4476392947926130632&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJw18B1MK1vJURyF8zUKtXHz4",
+              "display_value": "ChIJw18B1MK1vJURyF8zUKtXHz4",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Barine - café de especialidad: google_maps_url, place_id",
+          "warnings": []
+        }
+      ],
+      "warnings": [
+        "target_marked_facts_missing"
+      ]
+    },
+    {
+      "venue_id": "korantis_buenos_aires_a_donde_chijsahkhbk1",
+      "venue_name": "A DONDE",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJsaHkHBK1vJURYKzlteVTEXo",
+          "display_value": "ChIJsaHkHBK1vJURYKzlteVTEXo",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://a-donde.com/",
+          "display_value": "http://a-donde.com/",
+          "source_id": "official_website",
+          "source_url": "http://a-donde.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:06.449Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJsaHkHBK1vJURYKzlteVTEXo",
+              "display_value": "ChIJsaHkHBK1vJURYKzlteVTEXo",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "A DONDE: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://a-donde.com/",
+          "fetched_at": "2026-06-09T00:09:06.654Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://a-donde.com/",
+              "display_value": "http://a-donde.com/",
+              "source_id": "official_website",
+              "source_url": "http://a-donde.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "A DONDE: http://a-donde.com/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_alvear_roof_bar_chijhy6qgqtk",
+      "venue_name": "Alvear Roof Bar",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJHY6qgqTKvJURqNM0efgLPFk",
+          "display_value": "ChIJHY6qgqTKvJURqNM0efgLPFk",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://alvear-roof-bar.mesa.express/",
+          "display_value": "http://alvear-roof-bar.mesa.express/",
+          "source_id": "official_website",
+          "source_url": "http://alvear-roof-bar.mesa.express/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:06.654Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=6430027529791525800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJHY6qgqTKvJURqNM0efgLPFk",
+              "display_value": "ChIJHY6qgqTKvJURqNM0efgLPFk",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Alvear Roof Bar: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://alvear-roof-bar.mesa.express/",
+          "fetched_at": "2026-06-09T00:09:07.016Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://alvear-roof-bar.mesa.express/",
+              "display_value": "http://alvear-roof-bar.mesa.express/",
+              "source_id": "official_website",
+              "source_url": "http://alvear-roof-bar.mesa.express/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Alvear Roof Bar: http://alvear-roof-bar.mesa.express/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_atis_bar_chijiqql59jl",
+      "venue_name": "Atis Bar",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJiQqL59jLvJURql6ZgKZ32AY",
+          "display_value": "ChIJiQqL59jLvJURql6ZgKZ32AY",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/atis.bar/?hl=es",
+          "display_value": "https://www.instagram.com/atis.bar/?hl=es",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/atis.bar/?hl=es",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:07.016Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=493275716202880682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJiQqL59jLvJURql6ZgKZ32AY",
+              "display_value": "ChIJiQqL59jLvJURql6ZgKZ32AY",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Atis Bar: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/atis.bar/?hl=es",
+          "fetched_at": "2026-06-09T00:09:07.368Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/atis.bar/?hl=es",
+              "display_value": "https://www.instagram.com/atis.bar/?hl=es",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/atis.bar/?hl=es",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Atis Bar: https://www.instagram.com/atis.bar/?hl=es",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_bautista_av_rivadavia_chijbwwt2m7l",
+      "venue_name": "BAUTISTA Av. Rivadavia",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJbwWT2M7LvJUR42eZ_sPI6b0",
+          "display_value": "ChIJbwWT2M7LvJUR42eZ_sPI6b0",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/bautista_cafe/",
+          "display_value": "https://www.instagram.com/bautista_cafe/",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/bautista_cafe/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:07.368Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=13684689686857607139&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJbwWT2M7LvJUR42eZ_sPI6b0",
+              "display_value": "ChIJbwWT2M7LvJUR42eZ_sPI6b0",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "BAUTISTA Av. Rivadavia: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/bautista_cafe/",
+          "fetched_at": "2026-06-09T00:09:07.748Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/bautista_cafe/",
+              "display_value": "https://www.instagram.com/bautista_cafe/",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/bautista_cafe/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "BAUTISTA Av. Rivadavia: https://www.instagram.com/bautista_cafe/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_bocanada_chij7xrdqnzl",
+      "venue_name": "BOCANADA",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJ7xrDQNzLvJURLweyf-tsT20",
+          "display_value": "ChIJ7xrDQNzLvJURLweyf-tsT20",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "display_value": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:07.748Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=7876634032009774895&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJ7xrDQNzLvJURLweyf-tsT20",
+              "display_value": "ChIJ7xrDQNzLvJURLweyf-tsT20",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "BOCANADA: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "fetched_at": "2026-06-09T00:09:08.086Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+              "display_value": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "BOCANADA: https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_cobre_cafe_chijyxjkj6dl",
+      "venue_name": "Cobre Café",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJYXJkJ6DLvJUR-aTBW9ihoQs",
+          "display_value": "ChIJYXJkJ6DLvJUR-aTBW9ihoQs",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://www.cobrecafe.com/",
+          "display_value": "http://www.cobrecafe.com/",
+          "source_id": "official_website",
+          "source_url": "http://www.cobrecafe.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:08.086Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJYXJkJ6DLvJUR-aTBW9ihoQs",
+              "display_value": "ChIJYXJkJ6DLvJUR-aTBW9ihoQs",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Cobre Café: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://www.cobrecafe.com/",
+          "fetched_at": "2026-06-09T00:09:11.383Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://www.cobrecafe.com/",
+              "display_value": "http://www.cobrecafe.com/",
+              "source_id": "official_website",
+              "source_url": "http://www.cobrecafe.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Cobre Café: http://www.cobrecafe.com/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_contraluz_chijt8n4m7bk",
+      "venue_name": "Contraluz",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJt8n4M7bKvJURXqEoC83MiVQ",
+          "display_value": "ChIJt8n4M7bKvJURXqEoC83MiVQ",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://www.alvearart.com/",
+          "display_value": "http://www.alvearart.com/",
+          "source_id": "official_website",
+          "source_url": "http://www.alvearart.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:11.383Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=6091625152022880606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJt8n4M7bKvJURXqEoC83MiVQ",
+              "display_value": "ChIJt8n4M7bKvJURXqEoC83MiVQ",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Contraluz: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://www.alvearart.com/",
+          "fetched_at": "2026-06-09T00:09:11.913Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://www.alvearart.com/",
+              "display_value": "http://www.alvearart.com/",
+              "source_id": "official_website",
+              "source_url": "http://www.alvearart.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Contraluz: http://www.alvearart.com/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_croque_madame_puerto_madero_chijjcwpbze1",
+      "venue_name": "Croque Madame Puerto Madero",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJJcWpbzE1o5UR9pPaamH_--c",
+          "display_value": "ChIJJcWpbzE1o5UR9pPaamH_--c",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/croquemadamepuertomadero",
+          "display_value": "https://www.instagram.com/croquemadamepuertomadero",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/croquemadamepuertomadero",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:11.913Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=16716235235785348086&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJJcWpbzE1o5UR9pPaamH_--c",
+              "display_value": "ChIJJcWpbzE1o5UR9pPaamH_--c",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Croque Madame Puerto Madero: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/croquemadamepuertomadero",
+          "fetched_at": "2026-06-09T00:09:12.253Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/croquemadamepuertomadero",
+              "display_value": "https://www.instagram.com/croquemadamepuertomadero",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/croquemadamepuertomadero",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Croque Madame Puerto Madero: https://www.instagram.com/croquemadamepuertomadero",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_dada_bistro_chijkasliatk",
+      "venue_name": "Dada Bistró",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 1,
+      "evidence_coverage_score": 0.5,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJKaSlIATKvJURnhxTrnzX2HE",
+          "display_value": "ChIJKaSlIATKvJURnhxTrnzX2HE",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://dadabistrobar.com/",
+          "display_value": "http://dadabistrobar.com/",
+          "source_id": "official_website",
+          "source_url": "http://dadabistrobar.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:12.253Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=8203543651755957406&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJKaSlIATKvJURnhxTrnzX2HE",
+              "display_value": "ChIJKaSlIATKvJURnhxTrnzX2HE",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Dada Bistró: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://dadabistrobar.com/",
+          "fetched_at": "2026-06-09T00:09:13.372Z",
+          "fetch_status": "failed",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://dadabistrobar.com/",
+              "display_value": "http://dadabistrobar.com/",
+              "source_id": "official_website",
+              "source_url": "http://dadabistrobar.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Dada Bistró: http://dadabistrobar.com/",
+          "warnings": [
+            "fetch_failed"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_duhau_restaurante_and_vinoteca_chijv_h3h0jl",
+      "venue_name": "Duhau Restaurante & Vinoteca",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 1,
+      "evidence_coverage_score": 0.5,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJV_h3h0jLvJURmEmHT6kUGI8",
+          "display_value": "ChIJV_h3h0jLvJURmEmHT6kUGI8",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+          "display_value": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+          "source_id": "official_website",
+          "source_url": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:13.372Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJV_h3h0jLvJURmEmHT6kUGI8",
+              "display_value": "ChIJV_h3h0jLvJURmEmHT6kUGI8",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Duhau Restaurante & Vinoteca: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+          "fetched_at": "2026-06-09T00:09:13.777Z",
+          "fetch_status": "failed",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+              "display_value": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+              "source_id": "official_website",
+              "source_url": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Duhau Restaurante & Vinoteca: https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+          "warnings": [
+            "fetch_failed"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_el_mirasol_de_la_recova_chijsd_q9ldk",
+      "venue_name": "El Mirasol de La Recova",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJsd-Q9LDKvJURX4NWWE7wUr4",
+          "display_value": "ChIJsd-Q9LDKvJURX4NWWE7wUr4",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://elmirasol.com.ar/",
+          "display_value": "http://elmirasol.com.ar/",
+          "source_id": "official_website",
+          "source_url": "http://elmirasol.com.ar/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:13.777Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJsd-Q9LDKvJURX4NWWE7wUr4",
+              "display_value": "ChIJsd-Q9LDKvJURX4NWWE7wUr4",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "El Mirasol de La Recova: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://elmirasol.com.ar/",
+          "fetched_at": "2026-06-09T00:09:14.582Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://elmirasol.com.ar/",
+              "display_value": "http://elmirasol.com.ar/",
+              "source_id": "official_website",
+              "source_url": "http://elmirasol.com.ar/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "El Mirasol de La Recova: http://elmirasol.com.ar/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_farmacia_lezama_bistrot_chijr80sszll",
+      "venue_name": "Farmacia Lezama - Bistrot",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJr80SszLLvJUROLOjL9k4U-s",
+          "display_value": "ChIJr80SszLLvJUROLOjL9k4U-s",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/farmacialezama/",
+          "display_value": "https://www.instagram.com/farmacialezama/",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/farmacialezama/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:14.582Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJr80SszLLvJUROLOjL9k4U-s",
+              "display_value": "ChIJr80SszLLvJUROLOjL9k4U-s",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Farmacia Lezama - Bistrot: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/farmacialezama/",
+          "fetched_at": "2026-06-09T00:09:14.917Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/farmacialezama/",
+              "display_value": "https://www.instagram.com/farmacialezama/",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/farmacialezama/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Farmacia Lezama - Bistrot: https://www.instagram.com/farmacialezama/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_fraga_bodegon_chijg2nmenm1",
+      "venue_name": "Fraga Bodegón",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJG2nMEnm1vJURwHxozPMx9uY",
+          "display_value": "ChIJG2nMEnm1vJURwHxozPMx9uY",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+          "display_value": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:14.917Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJG2nMEnm1vJURwHxozPMx9uY",
+              "display_value": "ChIJG2nMEnm1vJURwHxozPMx9uY",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Fraga Bodegón: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+          "fetched_at": "2026-06-09T00:09:15.243Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+              "display_value": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Fraga Bodegón: https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_intervalo_bar_chijuu_xakhl",
+      "venue_name": "Intervalo Bar",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJuU-XaKHLvJURJFtK3DApB3g",
+          "display_value": "ChIJuU-XaKHLvJURJFtK3DApB3g",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://linktr.ee/Intervalo.Recoleta",
+          "display_value": "https://linktr.ee/Intervalo.Recoleta",
+          "source_id": "official_website",
+          "source_url": "https://linktr.ee/Intervalo.Recoleta",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:15.243Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJuU-XaKHLvJURJFtK3DApB3g",
+              "display_value": "ChIJuU-XaKHLvJURJFtK3DApB3g",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Intervalo Bar: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://linktr.ee/Intervalo.Recoleta",
+          "fetched_at": "2026-06-09T00:09:15.408Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://linktr.ee/Intervalo.Recoleta",
+              "display_value": "https://linktr.ee/Intervalo.Recoleta",
+              "source_id": "official_website",
+              "source_url": "https://linktr.ee/Intervalo.Recoleta",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Intervalo Bar: https://linktr.ee/Intervalo.Recoleta",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_jakub_chijlwjgkdq1",
+      "venue_name": "jakub",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJLWjgKdq1vJURIwCG26u3Zi0",
+          "display_value": "ChIJLWjgKdq1vJURIwCG26u3Zi0",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+          "display_value": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:15.408Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJLWjgKdq1vJURIwCG26u3Zi0",
+              "display_value": "ChIJLWjgKdq1vJURIwCG26u3Zi0",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "jakub: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+          "fetched_at": "2026-06-09T00:09:15.748Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+              "display_value": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "jakub: https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_l_orangerie_alvear_palace_hotel_chijnuuufkpk",
+      "venue_name": "L' Orangerie Alvear Palace Hotel",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJNUuUfKPKvJURwBFcWiDsv40",
+          "display_value": "ChIJNUuUfKPKvJURwBFcWiDsv40",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+          "display_value": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+          "source_id": "official_website",
+          "source_url": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:15.748Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=10214142103598666176&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJNUuUfKPKvJURwBFcWiDsv40",
+              "display_value": "ChIJNUuUfKPKvJURwBFcWiDsv40",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "L' Orangerie Alvear Palace Hotel: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+          "fetched_at": "2026-06-09T00:09:16.307Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+              "display_value": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+              "source_id": "official_website",
+              "source_url": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "L' Orangerie Alvear Palace Hotel: http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_l_antiquario_cafe_bistro_chijgcvjlxpl",
+      "venue_name": "L'Antiquario Cafe Bistro",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJGcvjLXPLvJURQW2vbUk3gdU",
+          "display_value": "ChIJGcvjLXPLvJURQW2vbUk3gdU",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+          "display_value": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+          "source_id": "official_website",
+          "source_url": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:16.307Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=15384638590586678593&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJGcvjLXPLvJURQW2vbUk3gdU",
+              "display_value": "ChIJGcvjLXPLvJURQW2vbUk3gdU",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "L'Antiquario Cafe Bistro: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+          "fetched_at": "2026-06-09T00:09:16.665Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+              "display_value": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+              "source_id": "official_website",
+              "source_url": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "L'Antiquario Cafe Bistro: https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_chij4z0wdo61",
+      "venue_name": "La Dorita",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJ4Z0WDo61vJURDjA6d6vKufA",
+          "display_value": "ChIJ4Z0WDo61vJURDjA6d6vKufA",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://www.facebook.com/LaDoritaOnline/",
+          "display_value": "https://www.facebook.com/LaDoritaOnline/",
+          "source_id": "official_website",
+          "source_url": "https://www.facebook.com/LaDoritaOnline/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:16.665Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=17346118277582696462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJ4Z0WDo61vJURDjA6d6vKufA",
+              "display_value": "ChIJ4Z0WDo61vJURDjA6d6vKufA",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "La Dorita: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://www.facebook.com/LaDoritaOnline/",
+          "fetched_at": "2026-06-09T00:09:16.982Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://www.facebook.com/LaDoritaOnline/",
+              "display_value": "https://www.facebook.com/LaDoritaOnline/",
+              "source_id": "official_website",
+              "source_url": "https://www.facebook.com/LaDoritaOnline/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "La Dorita: https://www.facebook.com/LaDoritaOnline/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_del_mercado_belgrano_chijl46_5cq1",
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJL46_5cq1vJURmC-GnOCvoHY",
+          "display_value": "ChIJL46_5cq1vJURmC-GnOCvoHY",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://linktr.ee/ladoritadelmercado",
+          "display_value": "https://linktr.ee/ladoritadelmercado",
+          "source_id": "official_website",
+          "source_url": "https://linktr.ee/ladoritadelmercado",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:16.982Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJL46_5cq1vJURmC-GnOCvoHY",
+              "display_value": "ChIJL46_5cq1vJURmC-GnOCvoHY",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "La Dorita del Mercado Belgrano: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://linktr.ee/ladoritadelmercado",
+          "fetched_at": "2026-06-09T00:09:17.135Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://linktr.ee/ladoritadelmercado",
+              "display_value": "https://linktr.ee/ladoritadelmercado",
+              "source_id": "official_website",
+              "source_url": "https://linktr.ee/ladoritadelmercado",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "La Dorita del Mercado Belgrano: https://linktr.ee/ladoritadelmercado",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_giralda_chija8pen8bk",
+      "venue_name": "La Giralda",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJa8PEn8bKvJUR5DSMvJQGc2I",
+          "display_value": "ChIJa8PEn8bKvJUR5DSMvJQGc2I",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://lagiralda.com.ar/",
+          "display_value": "https://lagiralda.com.ar/",
+          "source_id": "official_website",
+          "source_url": "https://lagiralda.com.ar/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:17.135Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJa8PEn8bKvJUR5DSMvJQGc2I",
+              "display_value": "ChIJa8PEn8bKvJUR5DSMvJQGc2I",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "La Giralda: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://lagiralda.com.ar/",
+          "fetched_at": "2026-06-09T00:09:17.970Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://lagiralda.com.ar/",
+              "display_value": "https://lagiralda.com.ar/",
+              "source_id": "official_website",
+              "source_url": "https://lagiralda.com.ar/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "La Giralda: https://lagiralda.com.ar/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_las_pizarras_bistro_chijdx2nais1",
+      "venue_name": "Las Pizarras bistro",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 1,
+      "evidence_coverage_score": 0.5,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJdX2NaIS1vJURhzjb3PlEhjA",
+          "display_value": "ChIJdX2NaIS1vJURhzjb3PlEhjA",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "http://www.laspizarrasbistro.com/",
+          "display_value": "http://www.laspizarrasbistro.com/",
+          "source_id": "official_website",
+          "source_url": "http://www.laspizarrasbistro.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:17.970Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJdX2NaIS1vJURhzjb3PlEhjA",
+              "display_value": "ChIJdX2NaIS1vJURhzjb3PlEhjA",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Las Pizarras bistro: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "http://www.laspizarrasbistro.com/",
+          "fetched_at": "2026-06-09T00:09:17.978Z",
+          "fetch_status": "failed",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "http://www.laspizarrasbistro.com/",
+              "display_value": "http://www.laspizarrasbistro.com/",
+              "source_id": "official_website",
+              "source_url": "http://www.laspizarrasbistro.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Las Pizarras bistro: http://www.laspizarrasbistro.com/",
+          "warnings": [
+            "fetch_failed"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_le_club_bacan_chijou38bmtl",
+      "venue_name": "LE CLUB BACAN",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJoU38bMTLvJURWzkCCbMzoek",
+          "display_value": "ChIJoU38bMTLvJURWzkCCbMzoek",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://hotelcasalucia.meitre.com/",
+          "display_value": "https://hotelcasalucia.meitre.com/",
+          "source_id": "official_website",
+          "source_url": "https://hotelcasalucia.meitre.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:17.978Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=16834793726130927963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJoU38bMTLvJURWzkCCbMzoek",
+              "display_value": "ChIJoU38bMTLvJURWzkCCbMzoek",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "LE CLUB BACAN: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://hotelcasalucia.meitre.com/",
+          "fetched_at": "2026-06-09T00:09:18.533Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://hotelcasalucia.meitre.com/",
+              "display_value": "https://hotelcasalucia.meitre.com/",
+              "source_id": "official_website",
+              "source_url": "https://hotelcasalucia.meitre.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "LE CLUB BACAN: https://hotelcasalucia.meitre.com/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "venue_id": "korantis_buenos_aires_le_reve_bistro_chije58ebl_1",
+      "venue_name": "Le Rêve Bistró",
+      "city": "Buenos Aires",
+      "sources_attempted": 2,
+      "sources_successful": 2,
+      "evidence_coverage_score": 1,
+      "highest_authority": 5,
+      "facts": [
+        {
+          "field": "google_maps_url",
+          "value": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "display_value": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_id": "google_places",
+          "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "place_id",
+          "value": "ChIJE58EBl-1vJURHtsTcL9whmQ",
+          "display_value": "ChIJE58EBl-1vJURHtsTcL9whmQ",
+          "source_id": "google_places",
+          "source_authority": 3,
+          "extraction_method": "stored",
+          "confidence": 0.6,
+          "status": "likely",
+          "show_to_user": true
+        },
+        {
+          "field": "website",
+          "value": "https://le-reve-bistro.meitre.com/",
+          "display_value": "https://le-reve-bistro.meitre.com/",
+          "source_id": "official_website",
+          "source_url": "https://le-reve-bistro.meitre.com/",
+          "source_authority": 5,
+          "extraction_method": "deterministic",
+          "confidence": 1,
+          "status": "confirmed",
+          "show_to_user": true
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "google_places",
+          "source_name": "Google Places stored data",
+          "source_type": "maps_places",
+          "authority_level": 3,
+          "fetched_at": "2026-06-09T00:09:18.533Z",
+          "fetch_status": "stored",
+          "freshness_status": "unknown",
+          "extracted_facts": [
+            {
+              "field": "google_maps_url",
+              "value": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "display_value": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_id": "google_places",
+              "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            },
+            {
+              "field": "place_id",
+              "value": "ChIJE58EBl-1vJURHtsTcL9whmQ",
+              "display_value": "ChIJE58EBl-1vJURHtsTcL9whmQ",
+              "source_id": "google_places",
+              "source_authority": 3,
+              "extraction_method": "stored",
+              "confidence": 0.6,
+              "status": "likely",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Le Rêve Bistró: google_maps_url, place_id",
+          "warnings": []
+        },
+        {
+          "source_id": "official_website",
+          "source_name": "Official website",
+          "source_type": "official",
+          "authority_level": 5,
+          "source_url": "https://le-reve-bistro.meitre.com/",
+          "fetched_at": "2026-06-09T00:09:18.675Z",
+          "fetch_status": "success",
+          "freshness_status": "fresh",
+          "extracted_facts": [
+            {
+              "field": "website",
+              "value": "https://le-reve-bistro.meitre.com/",
+              "display_value": "https://le-reve-bistro.meitre.com/",
+              "source_id": "official_website",
+              "source_url": "https://le-reve-bistro.meitre.com/",
+              "source_authority": 5,
+              "extraction_method": "deterministic",
+              "confidence": 1,
+              "status": "confirmed",
+              "show_to_user": true
+            }
+          ],
+          "raw_snippet": "Le Rêve Bistró: https://le-reve-bistro.meitre.com/",
+          "warnings": []
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "fetch_log": [
+    {
+      "venue_id": "korantis_buenos_aires_a_donde_chijsahkhbk1",
+      "source_id": "official_website",
+      "source_url": "http://a-donde.com/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_alvear_roof_bar_chijhy6qgqtk",
+      "source_id": "official_website",
+      "source_url": "http://alvear-roof-bar.mesa.express/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_atis_bar_chijiqql59jl",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/atis.bar/?hl=es",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_bautista_av_rivadavia_chijbwwt2m7l",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/bautista_cafe/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_bocanada_chij7xrdqnzl",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/bocanada.st?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_cobre_cafe_chijyxjkj6dl",
+      "source_id": "official_website",
+      "source_url": "http://www.cobrecafe.com/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_contraluz_chijt8n4m7bk",
+      "source_id": "official_website",
+      "source_url": "http://www.alvearart.com/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_croque_madame_puerto_madero_chijjcwpbze1",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/croquemadamepuertomadero",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_dada_bistro_chijkasliatk",
+      "source_id": "official_website",
+      "source_url": "http://dadabistrobar.com/",
+      "fetch_status": "failed",
+      "warning": "HEAD check failed"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_duhau_restaurante_and_vinoteca_chijv_h3h0jl",
+      "source_id": "official_website",
+      "source_url": "https://www.hyatt.com/en-US/hotel/argentina/palacio-duhau-park-hyatt-buenos-aires/bueph/dining",
+      "fetch_status": "failed",
+      "warning": "HEAD check failed"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_el_mirasol_de_la_recova_chijsd_q9ldk",
+      "source_id": "official_website",
+      "source_url": "http://elmirasol.com.ar/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_farmacia_lezama_bistrot_chijr80sszll",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/farmacialezama/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_fraga_bodegon_chijg2nmenm1",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/fragabodegon/profilecard/?igsh=MW84ejd2aHpyc3Bmcw==",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_intervalo_bar_chijuu_xakhl",
+      "source_id": "official_website",
+      "source_url": "https://linktr.ee/Intervalo.Recoleta",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_jakub_chijlwjgkdq1",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/jakub.restaurant?igsh=MWlwNG9iaHh5MmEwaQ==",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_l_orangerie_alvear_palace_hotel_chijnuuufkpk",
+      "source_id": "official_website",
+      "source_url": "http://alvearpalace.com/restaurantes-bares/restaurant-lorangerie/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_l_antiquario_cafe_bistro_chijgcvjlxpl",
+      "source_id": "official_website",
+      "source_url": "https://www.instagram.com/lantiquario.bistro?igsh=cHI0aHZucTVtb3ky&utm_source=qr",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_chij4z0wdo61",
+      "source_id": "official_website",
+      "source_url": "https://www.facebook.com/LaDoritaOnline/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_dorita_del_mercado_belgrano_chijl46_5cq1",
+      "source_id": "official_website",
+      "source_url": "https://linktr.ee/ladoritadelmercado",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_la_giralda_chija8pen8bk",
+      "source_id": "official_website",
+      "source_url": "https://lagiralda.com.ar/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_las_pizarras_bistro_chijdx2nais1",
+      "source_id": "official_website",
+      "source_url": "http://www.laspizarrasbistro.com/",
+      "fetch_status": "failed",
+      "warning": "HEAD check failed"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_le_club_bacan_chijou38bmtl",
+      "source_id": "official_website",
+      "source_url": "https://hotelcasalucia.meitre.com/",
+      "fetch_status": "success"
+    },
+    {
+      "venue_id": "korantis_buenos_aires_le_reve_bistro_chije58ebl_1",
+      "source_id": "official_website",
+      "source_url": "https://le-reve-bistro.meitre.com/",
+      "fetch_status": "success"
+    }
+  ],
+  "safety": {
+    "read_only_supabase": true,
+    "no_supabase_writes": true,
+    "no_cloudinary_uploads": true,
+    "no_external_model_calls": true,
+    "no_publication_changes": true
+  }
+}

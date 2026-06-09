@@ -1,0 +1,254 @@
+{
+  "batch_id": "enrich_2026_06_08_2105_gallery_expansion",
+  "generated_at": "2026-06-09T01:03:46.083Z",
+  "validation_status": "imported_needs_validation",
+  "publication_status": "not_approved_for_publication",
+  "selected_images": [
+    {
+      "venue_name": "A DONDE",
+      "selected_image": {
+        "venue_name": "A DONDE",
+        "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/DSC00283-scaled.jpg",
+        "source_url": "http://a-donde.com/",
+        "source_type": "official_website",
+        "width": 1710,
+        "height": 2560,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Dimly lit restaurant interior featuring green-tiled tables set with wine glasses, tumblers, cutlery, and a small table lamp providing warm focal lighting; leather chairs and additional set tables visible in the background near large windows."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 170,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "selected_image": {
+        "venue_name": "Ancora Buenos Aires",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMs5X5TTNOB8Df6TUX6isfRUhsj0LjJWRqKb__TVk3b0Li26ad6aN8zjhqVdL0iyRHKJ2KPh0K6D-gupIbuu-cZnZVVNh_OAybevw1CNrdqBWCUllGl-375fXJVx89IeByJ6kzgs0EshOT-PpucpR9KOA=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 901,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "minimal",
+          "visual_reason": "Modern hotel room with exposed concrete ceiling, large floor-to-ceiling windows showing city skyline, unmade bed, wall mural of 'Puente de la Mujer' bridge, and balcony seating area visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Cobre Café",
+      "selected_image": {
+        "venue_name": "Cobre Café",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOINdpsH1rnVFP1wAWVFSFf2w3JZwjW2ouJc-qYGLZta43ExiHqoOD8Seu2ntJlknxOOzfXLyJGOqNTbGcMCcjxNF7QCm0qtT5UK-ZnQvAtgPy8kecO2gljAekIQG2ItxFeu7_n8sCm86BuUhmPyBGcOg=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1600,
+        "height": 902,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": true,
+          "quality": "high",
+          "atmosphere_signal": "industrial",
+          "visual_reason": "Clear interior view of a cafe with exposed concrete walls, glass block window, terracotta-colored counter, espresso machine, and visible seating with patrons. Industrial-rustic aesthetic with warm lighting and decorative wall art."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 123,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Contraluz",
+      "selected_image": {
+        "venue_name": "Contraluz",
+        "resolved_image_url": "https://www.alvearart.com/resources/img/rooms-home.jpg",
+        "source_url": "http://www.alvearart.com/",
+        "source_type": "official_website",
+        "width": 1096,
+        "height": 499,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "warm_cozy",
+          "visual_reason": "Well-lit hotel room interior showing bed, seating area, desk, TV, and window with curtains, conveying a warm, upscale atmosphere."
+        },
+        "risk_flags": [
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 170,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Duhau Restaurante & Vinoteca",
+      "selected_image": {
+        "venue_name": "Duhau Restaurante & Vinoteca",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOCpwjN3zRe5rRwtJ32uI7Mb4aIrYa2A_1Eg7jxXWzEV6kS9TLENB1dG6HNUSTxXFYbGZ0ot2KnF6qNf6nzj1TPn2cSzK12S_jBDaShqZnS5ugB-Vmt6PJiRdG_QQShpqwezs-M81M_tomN=s4800-w1440-h810",
+        "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1440,
+        "height": 810,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "lush",
+          "visual_reason": "Outdoor patio/courtyard dining area with multiple set tables, white linens, red-cushioned chairs, topiary dividers, patio heaters, and a manicured lawn garden. Clear guest seating and experience space visible."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "selected_image": {
+        "venue_name": "Intervalo Bar",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNUUcldiIvhVTLb-uAlJOoKjiARsPcwl0D7iTg7Wdairip6IFsxlZmfot59VNha7kgLXs25y57uiJCO9EkLYyrdfi5L8B_8TGEdV3ia8RHsRiYC6-JCClXzYP-nPCcImncBvXsi11pUQ74vBMa-ehxP6Q=s4800-w1600-h1600",
+        "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 739,
+        "height": 1600,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Close-up of a dark, intimate lounge/bar setting with a glowing mushroom-style table lamp, two cocktails on a glossy black table, red leather banquette, and a lattice/trellis partition, all under low warm lighting."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    },
+    {
+      "venue_name": "Le Rêve Bistró",
+      "selected_image": {
+        "venue_name": "Le Rêve Bistró",
+        "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP-TrwwMf0Yv7aTqPc4n1QY1_xThDp1Qwr118m5s_wmNd_Rt0BRmzgypNYWlEWwtgIGxF_0i_X2o3M9pZSZgGieZRQbIKoa7JT3fJM4G5hAHnbueUQqttlBLhrxX2M7lH1A7kAhxC3tvGwrNFBE66PM=s4800-w1086-h724",
+        "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "source_type": "google_places",
+        "width": 1086,
+        "height": 724,
+        "ok_photo": true,
+        "skip_reason": null,
+        "model_used": "MiniMax-M3",
+        "vision": {
+          "scene_type": "hero_interior",
+          "shows_space": true,
+          "is_hero_usable": true,
+          "is_product_only": false,
+          "has_identifiable_faces": false,
+          "quality": "high",
+          "atmosphere_signal": "dark_intimate",
+          "visual_reason": "Dimly lit restaurant interior with leather banquette seating, bistro tables, table lamps, framed art, and draped curtains, conveying a moody, intimate dining atmosphere."
+        },
+        "risk_flags": [
+          "rights_review_needed",
+          "preferred_resolution"
+        ],
+        "validation_status": "imported_needs_validation",
+        "publication_status": "not_approved_for_publication",
+        "selected_for_hero": false
+      },
+      "selection_score": 158,
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication"
+    }
+  ],
+  "venues_without_hero_candidate": [
+    "El Mirasol de La Recova",
+    "Farmacia Lezama - Bistrot",
+    "Fraga Bodegón",
+    "jakub",
+    "La Dorita del Mercado Belgrano",
+    "La Giralda",
+    "Las Pizarras bistro"
+  ],
+  "ready_to_connect_hero_image": true
+}

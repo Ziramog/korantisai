@@ -1,0 +1,1258 @@
+{
+  "batch_id": "enrich_2026_06_08_2105_gallery_expansion",
+  "generated_at": "2026-06-09T01:03:46.083Z",
+  "updated_at": "2026-06-09T01:10:35.257Z",
+  "model_used": "MiniMax-M3",
+  "total_queue_size": 45,
+  "images_processed_or_skipped": 45,
+  "remaining": 0,
+  "results": [
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMs5X5TTNOB8Df6TUX6isfRUhsj0LjJWRqKb__TVk3b0Li26ad6aN8zjhqVdL0iyRHKJ2KPh0K6D-gupIbuu-cZnZVVNh_OAybevw1CNrdqBWCUllGl-375fXJVx89IeByJ6kzgs0EshOT-PpucpR9KOA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 901,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "minimal",
+        "visual_reason": "Modern hotel room with exposed concrete ceiling, large floor-to-ceiling windows showing city skyline, unmade bed, wall mural of 'Puente de la Mujer' bridge, and balcony seating area visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPYBLBjGGMg7--stQkkevrr-iCMgcbfgTZ03B9yiaoy9rlIG1MVxQ5R16AScwst-K1aKDG-wrZlxSRGLH6bCZ7a4qxJWxighoU_aifwQl_LfTy9pg6nCDCA3LjbxmNGvCi0SlcXrLTWXBlsoAv6EouRqQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of multiple plated dishes (salad, pie, pasta, sides) on a wooden table dominates the frame; no clear view of the venue space or interior atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPVOm70fpMtj9GeiPf1xyoRUdVboRNT-uT0DGwNWMnWvuRgpP9lfzOtNPk-478TIBcMfFmCrSo-ucP_P76ljH6COdj_lBM1cP3lanuP1ZMKjBE801afYDRmChVmXYYBeBHT0XNfYilscIaksA8DKkXt=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 900,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of two plates of food (pappardelle pasta and a salad with fries) on a wooden table; a person's torso/arm is visible but no identifiable face; the image focuses on the dishes rather than the venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMTFi4K_3bRf_cWRW7wio6OJ6zARHRqFC4KX1Fj09lHc7gOrBhX8-JMcW9_yeka8ShXIIFFwUyLgdWZVvuWxb6JmGmEtF6m5E_cEBmuNroE83cXfMMDO6J-tWHW75mhenGu7g6-Z2O-wudD59c89e2esQ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 901,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Interior space with large floor-to-ceiling windows and balcony doors, sheer curtains, a small bistro table and chairs, bed corner visible, and an open city/trees view providing strong natural light."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Ancora Buenos Aires",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPSQzJPfYW4zqWkHdXWXPMkFSdo2cvas7zDeakMPeFqzvfk9ZS8XZpARUF2E82rdfsz1G4hShNphR1HZ-EmlqSrN-ZBj9Hz8eSMiJh6FvGFWYU3wMNGcf8qDa40MpMwWrviGxlZvLSrQDeY1Y0xG1PP=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=12708240247114916782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1201,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated meal with steak, broccoli, carrots, and cauliflower on a white plate, with a beverage can and glass partially visible; the food product dominates the frame with no meaningful depiction of the venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/DSC00293-1-scaled.jpg",
+      "source_url": "http://a-donde.com/",
+      "source_type": "official_website",
+      "width": 1710,
+      "height": 2560,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of two hands holding Aperol Spritz-style cocktails on a wooden bar/counter with a heavily blurred dark background; drinks and hands dominate the frame with no clear view of the venue space."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/DSC00283-scaled.jpg",
+      "source_url": "http://a-donde.com/",
+      "source_type": "official_website",
+      "width": 1710,
+      "height": 2560,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit restaurant interior featuring green-tiled tables set with wine glasses, tumblers, cutlery, and a small table lamp providing warm focal lighting; leather chairs and additional set tables visible in the background near large windows."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/DSC00304-scaled.jpg",
+      "source_url": "http://a-donde.com/",
+      "source_type": "official_website",
+      "width": 1710,
+      "height": 2560,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit interior of a wine bar with tables, chairs, glassware, pendant lights, and a large wine bottle display shelf, creating a dark, intimate atmosphere."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/DSC00316-scaled.jpg",
+      "source_url": "http://a-donde.com/",
+      "source_type": "official_website",
+      "width": 1710,
+      "height": 2560,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_logo",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "logo",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of a glass surface with a stylized 'ADONDE' logo and decorative emblem etched/frosted on it; the background shows a blurred, dark interior with warm bokeh from bottles on shelves, but the logo dominates the frame and the space is not clearly shown."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/DSC00355-scaled.jpg",
+      "source_url": "http://a-donde.com/",
+      "source_type": "official_website",
+      "width": 1710,
+      "height": 2560,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit bar interior with focus on green velvet bar stools, red tile bar front, and a blurred bartender in background. The shallow depth of field and out-of-focus background make it more of an atmospheric detail shot than a clear hero image of the space."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://a-donde.com/wp-content/uploads/2026/01/Gemini_Generated_Image_xsyprvxsyprvxsyp.png",
+      "source_url": "http://a-donde.com/",
+      "source_type": "official_website",
+      "width": 832,
+      "height": 1096,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_gallery_atmosphere",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "gallery_atmosphere",
+        "shows_space": true,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "low",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit image of wooden shelves stocked with various liquor and wine bottles, too dark and product-focused to serve as a hero interior, though it conveys a warm, intimate bar atmosphere."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "A DONDE",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNiBxxBc2M9WniCVjgvj_f2BmIe7xWn_vdOJgUQiGKVs3ZjJXo91z8sP4ym_QjFX1Z45yz02o6qoz8otTLSdGLCtSgLi25mI27pA_tyiQj_A16Lh7MdfrwHIp51ojhgZOrzKRBfXsNCXCCQG2ahOBv0=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8795903793295633504&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1069,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit restaurant interior with dark green wood paneling, leather banquettes, wood table set with wine glasses and plated food, and floral arrangements visible in a framed mirror—conveying a moody, intimate dining atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Cobre Café",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFFiIh47642Q_kAflinnAsUo7P565VyOTy2ls0cs-fhvntF6lFB-4s1MfgCpTdzKdd0cu8TN6WKO9wilzuAhVsITuqkiNihZOt01upQsh9-iFQtRIs3fdKN9UipR30s7Nq9y_Pen6tAfSt_qS0LKLC=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up overhead view of a latte with art, a plate of scrambled eggs, avocado, tomatoes, and bread on a wooden table. No spatial or architectural venue context visible; focus is entirely on food and drink."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Cobre Café",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOINdpsH1rnVFP1wAWVFSFf2w3JZwjW2ouJc-qYGLZta43ExiHqoOD8Seu2ntJlknxOOzfXLyJGOqNTbGcMCcjxNF7QCm0qtT5UK-ZnQvAtgPy8kecO2gljAekIQG2ItxFeu7_n8sCm86BuUhmPyBGcOg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 902,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": true,
+        "quality": "high",
+        "atmosphere_signal": "industrial",
+        "visual_reason": "Clear interior view of a cafe with exposed concrete walls, glass block window, terracotta-colored counter, espresso machine, and visible seating with patrons. Industrial-rustic aesthetic with warm lighting and decorative wall art."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Cobre Café",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOlV6HQTgieILsEQiWm94uFQJH2Tihg5j9z78VXjKRKD8JqJuWgkQq4MwqXYDkvPH6paxv6iK1tAHrp-WeWSuWSERtCIl1Dtt31HJa3EqSFX2LBCf7P_eEInBRBtjqpsZRdD4c2Y6-9JMfRT7AwWcFCLw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=838128956292048121&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up top-down view of a grain/nut bowl with arranged strawberries, bananas, kiwi, and peanut butter on a wooden table. No spatial or venue context visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/rooms-home.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 1096,
+      "height": 499,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit hotel room interior showing bed, seating area, desk, TV, and window with curtains, conveying a warm, upscale atmosphere."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/roofbar-home.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 1450,
+      "height": 526,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Spacious multi-level hotel lobby with polished marble floors, patterned sofas, leather armchairs, glass coffee tables, sculptural centerpieces, warm ambient lighting, and a visible bar/lounge area in the background. No people present, sharp focus, rich textures."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/hero1.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 1469,
+      "height": 978,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "bright_airy",
+        "visual_reason": "Indoor pool with glass ceiling, floor-to-ceiling windows showing city view, modern wall art, lounge chairs, and abundant natural light creating a bright, airy atmosphere."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/slide1.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 1469,
+      "height": 978,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Luxurious hotel lobby with polished marble floors, tufted sofas, modern seating, classical paintings, and a concierge desk with two staff members."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/slide2.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 1469,
+      "height": 978,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Well-lit hotel bedroom with upholstered bed, nightstands, desk, framed art, and accent wallpaper; clear interior composition."
+      },
+      "risk_flags": [
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/resto-home.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 535,
+      "height": 261,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Elegant private dining room with a long table set for a meal, flanked by upholstered chairs, warm wood paneling, two table lamps, and a still-life painting, conveying a refined and intimate atmosphere."
+      },
+      "risk_flags": [
+        "below_preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Contraluz",
+      "resolved_image_url": "https://www.alvearart.com/resources/img/eventos-home.jpg",
+      "source_url": "http://www.alvearart.com/",
+      "source_type": "official_website",
+      "width": 535,
+      "height": 264,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Symmetrical conference/ballroom interior with rows of chairs, projection screen, ornate crystal chandeliers, warm lighting, and patterned carpet."
+      },
+      "risk_flags": [
+        "below_preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Duhau Restaurante & Vinoteca",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOCpwjN3zRe5rRwtJ32uI7Mb4aIrYa2A_1Eg7jxXWzEV6kS9TLENB1dG6HNUSTxXFYbGZ0ot2KnF6qNf6nzj1TPn2cSzK12S_jBDaShqZnS5ugB-Vmt6PJiRdG_QQShpqwezs-M81M_tomN=s4800-w1440-h810",
+      "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1440,
+      "height": 810,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "lush",
+        "visual_reason": "Outdoor patio/courtyard dining area with multiple set tables, white linens, red-cushioned chairs, topiary dividers, patio heaters, and a manicured lawn garden. Clear guest seating and experience space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Duhau Restaurante & Vinoteca",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNQbQL5UIiujI9TI6ROCZ8huIhQYUBcVUGgQJunwML_In_Bgr3PGYrw7r6hqWZZZFDGxK9mmdtd98YhvyoNjbmYdodtyHQKw-tVBSHz8LfFWBTp0URbJrqhiG47gRcHgvj-3lw-tHjVplDM2w=s4800-w1104-h737",
+      "source_url": "https://maps.google.com/?cid=10311014064281045400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1104,
+      "height": 737,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dark wood-paneled dining room with a dramatic chandelier, wine cabinets, and a stone table styled with bread, wine, and flowers, conveying an upscale intimate atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "El Mirasol de La Recova",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOVj6LGLsXQcBDPZxKBLgigq5AUQw5qUv3SMmj11sKEEglWzariE1eBlA2HjMsfakFYgmtrmYGQBaWQFadLwyMxLHOiINK8-Gmu6Brh9Jxna3Qxe6he7-pNtD_iCLS1EQPB8LhRg7Bv0pMx4AHZR24b=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of plated steak, salad, fries, and wine glasses on a white tablecloth; food and drink dominate the frame with no broader venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "El Mirasol de La Recova",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM_gglC5_6lfMbPrCH0HGhosqx7_UFAx6ueF4xMpQjo-8_POWAik-0QMgk9fstzJ3n6FE5NAFmWgwao7uXPNNT5QgeGOWgklY5NmRgnuAL0pyypJG2-yTKU-4At_72vd5yh0a28JQeNFWkWTk6KzQdZ=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=13714288034576761695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Image is dominated by a wine glass, wine bottle, water bottle, and cork in the foreground. Background showing tables and chairs is heavily blurred and out of focus, making the product the clear subject."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Farmacia Lezama - Bistrot",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNBYTJROXrGT9Wh2CznfKUraHJWpqd1NKQB-CvdCdEebmkn3PgPv8F_bBWfuN_cdpSTBtc34wShxzyoLPwNkxM-ft6Dy3vUzN7JqdH3XOwACW9NFjhkHH-hrf2GWiK3BbRjvYbyUMBn8lB8q1Defg34Ow=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of two crepes/galletes on white plates with wine glasses, candle, and hands at the top edge; food dominates the frame with minimal venue context."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Farmacia Lezama - Bistrot",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPArfd067MlhKrxylanitzYZxIV4U6NJfW3KYgw3pBLiwTecy28XJsBAb8ng4OwbEZ5KLZF7U0MJpSoUXUrKiAC-zg9qO3XZRlItna_oMx-C_kRQ_VvkHpodfipSeovfa-dkU-PGktGsdrRTg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16956959527438365496&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a powdered crepe on a black plate, with partial wine glasses and papers visible; food product dominates the frame, venue space not shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Fraga Bodegón",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMPpY3jgqfV30Bsh-aAZuBeC9u0HsnXIiQ8mb7CBT4d0927EddRqYOHfSL-bq0--8afHBoGcH-lCQjiu1MyDN_MK10IGELXXRlXjFXU3o3MTLAmR_Ygbroi1yyQzAh43R4zOnj6UIa2K8mo6fmGktFj6Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of fried food patties with lemon wedges, bread basket, and fried items in sauce on plates; no venue space or atmosphere visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Fraga Bodegón",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPpDZ1jmjKOv_k3xV-iZYtZBaMTzyO5SDOP4rlz7eAOBifPlUB8eY5mgG4BJxvUePmzPLqjev7JZc5pGc2gE85uqImnqx6A0VqpCPaU9RuRmem7JHj4GPqeLAwq33MeodoAlSC1bXbaAih0Xvhyqk_L=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=16642544396170460352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of two crepes dusted with powdered sugar on a white plate, with a small dessert plate visible in the background. No venue interior or space is visible; only plated food items."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNUUcldiIvhVTLb-uAlJOoKjiARsPcwl0D7iTg7Wdairip6IFsxlZmfot59VNha7kgLXs25y57uiJCO9EkLYyrdfi5L8B_8TGEdV3ia8RHsRiYC6-JCClXzYP-nPCcImncBvXsi11pUQ74vBMa-ehxP6Q=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 739,
+      "height": 1600,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of a dark, intimate lounge/bar setting with a glowing mushroom-style table lamp, two cocktails on a glossy black table, red leather banquette, and a lattice/trellis partition, all under low warm lighting."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOmodDUtI0sbDyq8YE6GF3unQwjwqwhCC8xkg5cA1Az5Td9n48WXYvMZY7MY20hp2imx4_6KF_JfiKx1CNKH7lyTDoNuy5oGvrTNLSkrFn8KYcRSYH7BtwUZkSHtdy25gFsbSJBSeMrjKqWrx4aGTcm_w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 746,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up of two skewered food items on a fish-shaped plate with sauce, Tabasco bottle and glassware in background; food dominates the frame with only a sliver of dark wooden table visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMjXubghxiMDH8j2umtzDstsuRUXGEQQoDIWMqJ3A2j2rgTnop1dJsshzofBQFE-R8oDKC0vnZWszO79Ap3kkZyitj3I60KA9Tny3ldUzAuoHDFkagq-26q1JjZJmzxjrIDn8h3u9XWuZJAwVO0SGD3=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Top-down view of a table filled with food (breaded cutlets, pasta, a dish in sauce), cocktails, and water glasses, with only hands and partial arms visible; food and drink dominate the frame with no clear view of the venue's space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNfHXX41-bM7gw3TjmT0sGxgwsQsKFze2nvlMrhNjW0-adjurT_9ycOJ-nylcNQqq4Jp1hKJ3ji2R5hXfIIgYm5iRdWqpChdbydImyVDOJ7ImahjcK5VrwlHvohsofN7QhiypHaAx_-alHH3fBGo56F6w=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 746,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of bacon-wrapped cheese skewers with red sauce and chives on a speckled plate, with a small bowl in the background. Food dominates the frame; no venue space is visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Intervalo Bar",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMEO30pEIyq81KKLoyrTONi0kjrevL6uww8RbgeCnYvIKsOeZ3U8wdUdQSR1_Lkj3Vx0LYeSpds7ev-1a9j8UKkeqtn8yjF-ed9yM6ZsdflrWVUbAkizQoi4kilfgByFEwwrwdsu_G-yyHgmUXDkuJT=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8648926899219356452&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 739,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of fried food, plantain chips, and dipping sauces with drinks; tabletop-only composition with no visible space or atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "jakub",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMNINQtHY7jVyzvYdSj1WjXk-Lba503XBE115XmH3hwTrfavPWphVeHuQvapgBU_MPdHAqJdCnDySM0POXlGBJrsfng6H1Y_rQkzd4nNPrTtVeU7yv14QW0YZHSVcfcyNp9Bq0bz-FZJ5s3H0ryH8bmhA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated dish with carrots, white fish/cheese, onions, and edible flowers on a decorative plate. Only food and plate edge visible, no venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "jakub",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPKettf5Wd4rc13nYchUNFUy7ySsAN6zNVWIGH2jwlXyzuu1rSXtldcapKBVZXK2JjDmdv2ey_KguWsUhTbM8G5pUCA7ilRvnuSpIITeSuUOpDQSWJW5u5vjxfb4fUMjzlQ2doKkQstpIXKqa3VJ8xYsw=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3271504128081526819&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of coffee, dessert slices, and meringue on plates dominating the frame, with only a partial torso and dark table surface visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZO0UFZlmQg-0eofViU2m7DnOJGyAEqtRbaZhDQsIJEpyHyImPQx3-7CXier2GXHq91dIHBK94jPhCyG19tuPj-tjEE9_DQiXIR_u_1FONIYNXzBnLZNgcZy4Cq58Ro80HuB-AXF_WmPVBdEG9E=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a large platter of grilled meat (steaks and ribs) on a metal tray atop a wooden surface, with a blurred person in a chef's coat in the background. Focus is entirely on the food product rather than the venue space."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZMbJlo4jBvBmEYfptoBUlOE6kJUDKN2iSNS-oZK_NOZnJz_ClGI2_kFpxymro9m6EkTCZ9X2rvj4FHo9zVqxWE1znC6_xCLsU1H27D7GNQtWg-DIP19e5oxv-Ka5aExSd8Z1e8VW5eo9BSktfo=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of grilled meat, sausages, and lemon wedges on a metal platter with a plaid tablecloth visible at the edge; no venue interior or exterior space is shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZOekNPJb-xSd3sXvzkO74_UuKf7M5hsVhK9VhDsiZ094hQTczlVrcHc2T12Y8GPkjpeTv6okaZpyvIEBmzOR4OqHXV2sowpOvYbUACghZHylyKZuOdhfoBN4lY6_7r3hoBRKr-3QdAaQeeWTg=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1067,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Close-up product shot of a single Trumpeter Malbec wine bottle on a wooden surface with a dark, blurred, smoky background. No venue space, people, or architectural features are visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Dorita del Mercado Belgrano",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPSe6tWWynQCxJuL3h9wzGtrB0D-0NT_kw5fi_NCEs5GkkuGk3KJQVXi_fS8QjEheFBW0ilIptGi3I6p4G6XhyMQmG_9bQKHXY4EibeYMuGyb6IoA2k7tw4aTxd2UiSV3MsQwtr5mJ24gjo5g=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=8548025471982776216&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a fried egg with double yolk atop a pile of french fries on a metal tray; food product shot with no venue space visible."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "La Giralda",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZNkTSKyeANrUqOIbA2MMcGWOx21ckB2DCXc6CarD0TDcXzxL2O9eNk8KO_0u7Jxj26zoZwHqYP3Qg8vmwn4zfl009w0yhDGsRKs6nMBmXi7w2V2rJ0JoITfKHoIss5izSDD0LDZ7SjP-mmC6J4hMRLuSA=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=7094021073926894820&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_decorative",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "decorative",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Stained glass window depicting a tower with 'LA GIRALDA' and '1930' text, mounted on a plain wall. Decorative detail, not a spatial view."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Las Pizarras bistro",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZPXLVGAfxTQn9LOz5wKVDzzMQsQ1L0iO4y0I6BRqbAbj1undAbroSHmhmkE8oEKx1jQk09zClS2gBp4VIIEEZGfwmM-YXXlqyalxryMpTtbcxzz6K_BAWbCW2ezSaRheY3S5TclXDg--0im6w=s4800-w1536-h1600",
+      "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1200,
+      "height": 1600,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "acceptable",
+        "atmosphere_signal": "warm_cozy",
+        "visual_reason": "Close-up of a speckled ceramic bowl containing pasta (appears to be gnocchetti or similar) topped with grated cheese, on a wooden table with water glasses and a plate of bread visible at the edges. Food and tableware dominate; no broader venue space is shown."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Las Pizarras bistro",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZM_cQ1MQkPxLsZUD5nRfF59rYuER0hDDW9vHWZxNcLFM5AjYvvtjMPjgehAnSwR-9IhQAn9qNHhOUIGImhBVtl93nwsfXKUkTbSguBTnhqiqIGBV2JDu4YSdJhI8Y20i7y08AzhaMiUDfTuzd8=s4800-w1600-h1600",
+      "source_url": "https://maps.google.com/?cid=3496558000642668679&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1600,
+      "height": 1200,
+      "ok_photo": false,
+      "skip_reason": "not_hero_usable_product_food",
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "product_food",
+        "shows_space": false,
+        "is_hero_usable": false,
+        "is_product_only": true,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "none",
+        "visual_reason": "Close-up of a plated risotto dish with shrimp on a white plate; food and plate fill the frame, with no visible dining space, seating, or room atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    },
+    {
+      "venue_name": "Le Rêve Bistró",
+      "resolved_image_url": "https://lh3.googleusercontent.com/place-photos/AJRVUZP-TrwwMf0Yv7aTqPc4n1QY1_xThDp1Qwr118m5s_wmNd_Rt0BRmzgypNYWlEWwtgIGxF_0i_X2o3M9pZSZgGieZRQbIKoa7JT3fJM4G5hAHnbueUQqttlBLhrxX2M7lH1A7kAhxC3tvGwrNFBE66PM=s4800-w1086-h724",
+      "source_url": "https://maps.google.com/?cid=7243601018193435422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "source_type": "google_places",
+      "width": 1086,
+      "height": 724,
+      "ok_photo": true,
+      "skip_reason": null,
+      "model_used": "MiniMax-M3",
+      "vision": {
+        "scene_type": "hero_interior",
+        "shows_space": true,
+        "is_hero_usable": true,
+        "is_product_only": false,
+        "has_identifiable_faces": false,
+        "quality": "high",
+        "atmosphere_signal": "dark_intimate",
+        "visual_reason": "Dimly lit restaurant interior with leather banquette seating, bistro tables, table lamps, framed art, and draped curtains, conveying a moody, intimate dining atmosphere."
+      },
+      "risk_flags": [
+        "rights_review_needed",
+        "preferred_resolution"
+      ],
+      "validation_status": "imported_needs_validation",
+      "publication_status": "not_approved_for_publication",
+      "selected_for_hero": false
+    }
+  ]
+}

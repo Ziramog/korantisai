@@ -1,0 +1,17 @@
+{
+  "batch_id": "enrich_2026_06_08_2105_gallery_expansion",
+  "generated_at": "2026-06-09T01:44:05.683Z",
+  "ready_for_stage_04_m3": false,
+  "queue": [],
+  "summary": {
+    "source": "enrichment_gallery_expansion",
+    "parent_run_id": "enrich_2026_06_08_2105",
+    "source_batches_used": [
+      "batch_004_buenos_aires_50",
+      "batch_005_buenos_aires_restaurants_50",
+      "enrich_2026_06_08_2105_gallery_expansion"
+    ],
+    "venues_targeted": 17,
+    "final_queue_size": 0
+  }
+}
