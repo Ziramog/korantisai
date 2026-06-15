@@ -170,7 +170,18 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
         {/* Gallery Carousel */}
         <div className="w-full h-full flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-          <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
+          <style>{`
+            .scrollbar-hide::-webkit-scrollbar { display: none; }
+            @keyframes korantis-gallery-scan {
+              0% { transform: translateX(-55%); opacity: .18; }
+              32% { opacity: .9; }
+              68% { opacity: .9; }
+              100% { transform: translateX(155%); opacity: .18; }
+            }
+            .gallery-scroll-cue::after {
+              animation: korantis-gallery-scan 2.8s cubic-bezier(.22, 1, .36, 1) infinite;
+            }
+          `}</style>
           {viewerImages.map((img, i) => (
             <div key={i} className="w-full h-full flex-shrink-0 snap-start relative cursor-zoom-in" onClick={() => setSelectedImageIndex(i)}>
               <Image src={img.src || ''} alt={`${venue.name} - ${i}`} fill className="object-cover" />
@@ -178,6 +189,15 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
             </div>
           ))}
         </div>
+
+        {viewerImages.length > 1 && (
+          <div className="pointer-events-none absolute bottom-9 left-1/2 z-20 w-28 -translate-x-1/2 md:bottom-12">
+            <div className="gallery-scroll-cue relative h-px overflow-hidden rounded-full bg-white/20 shadow-[0_0_20px_rgba(201,169,110,0.2)] after:absolute after:inset-y-0 after:left-0 after:w-14 after:rounded-full after:bg-gradient-to-r after:from-transparent after:via-[#F5F0E8] after:to-transparent" />
+            <p className="mt-3 text-center font-sans text-[9px] uppercase tracking-[0.28em] text-white/55">
+              {language === 'es' ? 'deslizá' : 'swipe'}
+            </p>
+          </div>
+        )}
       </header>
 
       {/* 2. Title, Barrio, Tags */}
