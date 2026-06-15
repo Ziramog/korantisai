@@ -114,9 +114,16 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   const displayVenue = localizeVenueForDisplay(venue, language);
   const description = localizeVenueDescriptionForDisplay(venue, language);
   const hasEditorialCopy = (venue as Record<string, unknown>).hasEditorialCopy === true;
+  const seenImageSources = new Set([venue.heroImage]);
   const galleryImages = (venue.galleryImages || [])
-    .filter((image) => image.src && !image.src.includes('/venue_invernadero.png'))
+    .filter((image) => {
+      const src = image.src?.trim();
+      if (!src || src.includes('/venue_invernadero.png') || seenImageSources.has(src)) return false;
+      seenImageSources.add(src);
+      return true;
+    })
     .slice(0, 6);
+  const hasGalleryCarousel = galleryImages.length > 0;
   const viewerImages = [
     { src: venue.heroImage, role: 'hero' },
     ...galleryImages,
@@ -179,7 +186,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
           ))}
         </div>
 
-        {viewerImages.length > 1 && (
+        {hasGalleryCarousel && (
           <>
             <div className="pointer-events-none absolute left-4 top-1/2 z-20 -translate-y-1/2 text-white/70 drop-shadow-[0_2px_14px_rgba(0,0,0,0.65)] backdrop-blur-[1px] md:left-6">
               <span className="text-5xl font-light leading-none">‹</span>

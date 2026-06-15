@@ -167,10 +167,7 @@ export async function GET() {
           || venueImages[0];
         const cardImageRow = venueImages.find((image) => image.role === 'card' && hasDirectImageUrl(image))
           || heroImageRow;
-        const gallerySourceRows = venueImages.filter((image) => image.role === 'gallery' && hasDirectImageUrl(image));
-        const galleryRows = gallerySourceRows.length > 0
-          ? gallerySourceRows
-          : venueImages.filter((image) => image !== undefined);
+        const galleryRows = venueImages.filter((image) => image.role === 'gallery' && hasDirectImageUrl(image));
         const galleryImages = galleryRows.map(toRuntimeImage);
         const canonicalHeroImage = heroImageRow ? resolveImageSrc(heroImageRow) : null;
         const canonicalCardImage = cardImageRow ? resolveImageSrc(cardImageRow) : canonicalHeroImage;
