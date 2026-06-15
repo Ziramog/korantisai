@@ -180,20 +180,14 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         </div>
 
         {viewerImages.length > 1 && (
-          <div className="pointer-events-none absolute bottom-7 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/10 bg-black/35 px-3 py-2 backdrop-blur-md md:bottom-10">
-            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/70">
-              1/{viewerImages.length}
-            </span>
-            <span className="h-3 w-px bg-white/20" />
-            <span className="flex items-center gap-1.5">
-              {viewerImages.slice(0, 6).map((_, index) => (
-                <span
-                  key={index}
-                  className={`h-1.5 rounded-full ${index === 0 ? 'w-4 bg-[#F5F0E8]' : 'w-1.5 bg-white/35'}`}
-                />
-              ))}
-            </span>
-          </div>
+          <>
+            <div className="pointer-events-none absolute left-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white/70 shadow-lg backdrop-blur-md md:left-6">
+              <span className="text-2xl leading-none">‹</span>
+            </div>
+            <div className="pointer-events-none absolute right-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white/70 shadow-lg backdrop-blur-md md:right-6">
+              <span className="text-2xl leading-none">›</span>
+            </div>
+          </>
         )}
       </header>
 
