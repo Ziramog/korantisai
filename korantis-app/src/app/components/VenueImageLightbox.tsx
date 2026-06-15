@@ -124,17 +124,17 @@ export default function VenueImageLightbox({
                 type="button"
                 onClick={() => onChange((index - 1 + images.length) % images.length)}
                 aria-label={language === 'es' ? 'Imagen anterior' : 'Previous image'}
-                className="absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-k-gold/10 bg-[#0F0D0B]/20 text-k-text-secondary/45 backdrop-blur-md transition hover:border-k-gold/25 hover:text-k-text md:left-6"
+                className="absolute left-4 top-1/2 z-10 -translate-y-1/2 text-white/70 drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)] backdrop-blur-[1px] transition hover:text-white md:left-8"
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft size={52} strokeWidth={1.25} />
               </button>
               <button
                 type="button"
                 onClick={() => onChange((index + 1) % images.length)}
                 aria-label={language === 'es' ? 'Imagen siguiente' : 'Next image'}
-                className="absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-k-gold/10 bg-[#0F0D0B]/20 text-k-text-secondary/45 backdrop-blur-md transition hover:border-k-gold/25 hover:text-k-text md:right-6"
+                className="absolute right-4 top-1/2 z-10 -translate-y-1/2 text-white/70 drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)] backdrop-blur-[1px] transition hover:text-white md:right-8"
               >
-                <ChevronRight size={18} />
+                <ChevronRight size={52} strokeWidth={1.25} />
               </button>
             </>
           )}
