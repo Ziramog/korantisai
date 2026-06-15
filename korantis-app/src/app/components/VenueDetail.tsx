@@ -181,11 +181,11 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
         {viewerImages.length > 1 && (
           <>
-            <div className="pointer-events-none absolute left-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white/70 shadow-lg backdrop-blur-md md:left-6">
-              <span className="text-2xl leading-none">‹</span>
+            <div className="pointer-events-none absolute left-4 top-1/2 z-20 -translate-y-1/2 text-white/70 drop-shadow-[0_2px_14px_rgba(0,0,0,0.65)] backdrop-blur-[1px] md:left-6">
+              <span className="text-5xl font-light leading-none">‹</span>
             </div>
-            <div className="pointer-events-none absolute right-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white/70 shadow-lg backdrop-blur-md md:right-6">
-              <span className="text-2xl leading-none">›</span>
+            <div className="pointer-events-none absolute right-4 top-1/2 z-20 -translate-y-1/2 text-white/70 drop-shadow-[0_2px_14px_rgba(0,0,0,0.65)] backdrop-blur-[1px] md:right-6">
+              <span className="text-5xl font-light leading-none">›</span>
             </div>
           </>
         )}
