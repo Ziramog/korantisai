@@ -170,18 +170,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
 
         {/* Gallery Carousel */}
         <div className="w-full h-full flex overflow-x-auto snap-x snap-mandatory scrollbar-hide">
-          <style>{`
-            .scrollbar-hide::-webkit-scrollbar { display: none; }
-            @keyframes korantis-gallery-scan {
-              0% { transform: translateX(-55%); opacity: .18; }
-              32% { opacity: .9; }
-              68% { opacity: .9; }
-              100% { transform: translateX(155%); opacity: .18; }
-            }
-            .gallery-scroll-cue::after {
-              animation: korantis-gallery-scan 2.8s cubic-bezier(.22, 1, .36, 1) infinite;
-            }
-          `}</style>
+          <style>{`.scrollbar-hide::-webkit-scrollbar { display: none; }`}</style>
           {viewerImages.map((img, i) => (
             <div key={i} className="w-full h-full flex-shrink-0 snap-start relative cursor-zoom-in" onClick={() => setSelectedImageIndex(i)}>
               <Image src={img.src || ''} alt={`${venue.name} - ${i}`} fill className="object-cover" />
@@ -191,11 +180,19 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
         </div>
 
         {viewerImages.length > 1 && (
-          <div className="pointer-events-none absolute bottom-9 left-1/2 z-20 w-28 -translate-x-1/2 md:bottom-12">
-            <div className="gallery-scroll-cue relative h-px overflow-hidden rounded-full bg-white/20 shadow-[0_0_20px_rgba(201,169,110,0.2)] after:absolute after:inset-y-0 after:left-0 after:w-14 after:rounded-full after:bg-gradient-to-r after:from-transparent after:via-[#F5F0E8] after:to-transparent" />
-            <p className="mt-3 text-center font-sans text-[9px] uppercase tracking-[0.28em] text-white/55">
-              {language === 'es' ? 'deslizá' : 'swipe'}
-            </p>
+          <div className="pointer-events-none absolute bottom-7 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2 rounded-full border border-white/10 bg-black/35 px-3 py-2 backdrop-blur-md md:bottom-10">
+            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-white/70">
+              1/{viewerImages.length}
+            </span>
+            <span className="h-3 w-px bg-white/20" />
+            <span className="flex items-center gap-1.5">
+              {viewerImages.slice(0, 6).map((_, index) => (
+                <span
+                  key={index}
+                  className={`h-1.5 rounded-full ${index === 0 ? 'w-4 bg-[#F5F0E8]' : 'w-1.5 bg-white/35'}`}
+                />
+              ))}
+            </span>
           </div>
         )}
       </header>
