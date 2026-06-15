@@ -15,6 +15,11 @@ import {
   type CircadianRankingDebug,
 } from '@/lib/ranking/circadianRanking';
 import { getLaunchFreshnessBias } from '@/lib/ranking/freshnessRanking';
+import {
+  filterVenuesBySearchAndMood,
+  normalizeSearchText,
+  scoreVenueSearchMatch,
+} from '@/lib/search/venueSearch';
 
 // Types
 export type TimePhase = 'morning' | 'afternoon' | 'golden-hour' | 'night' | 'late-night' | 'dawn';
@@ -123,10 +128,10 @@ const PILL_VECTORS: { [key: string]: number[] } = {
 };
 
 const KEYWORD_VECTORS = [
-  { keys: ['read', 'work', 'laptop', 'focus', 'study', 'work-friendly'], vector: [ 0.8, -0.2, -0.3,  0.5,  0.6, -0.1, -0.5, -0.3 ] },
-  { keys: ['date', 'intimate', 'candlelit', 'romantic', 'night out'], vector: [-0.8,  0.5,  0.9, -0.8, -0.5, -0.3,  0.3,  0.5 ] },
-  { keys: ['coffee', 'cafe', 'espresso', 'morning'], vector: [ 0.7, -0.2, -0.4,  0.8,  0.7, -0.2, -0.6, -0.4 ] },
-  { keys: ['social', 'friends', 'meet', 'group', 'buzzing', 'energetic'], vector: [ 0.8,  0.3,  0.4,  0.0, -0.6,  0.5,  0.5,  0.3 ] }
+  { keys: ['read', 'leer', 'lectura', 'work', 'trabajo', 'trabajar', 'laptop', 'focus', 'foco', 'study', 'estudiar', 'work-friendly'], vector: [ 0.8, -0.2, -0.3,  0.5,  0.6, -0.1, -0.5, -0.3 ] },
+  { keys: ['date', 'cita', 'intimate', 'intimo', 'candlelit', 'romantic', 'romantico', 'night out', 'salida'], vector: [-0.8,  0.5,  0.9, -0.8, -0.5, -0.3,  0.3,  0.5 ] },
+  { keys: ['coffee', 'cafe', 'cafeteria', 'espresso', 'morning', 'manana'], vector: [ 0.7, -0.2, -0.4,  0.8,  0.7, -0.2, -0.6, -0.4 ] },
+  { keys: ['social', 'friends', 'amigos', 'meet', 'encuentro', 'group', 'grupo', 'buzzing', 'energetic', 'energia'], vector: [ 0.8,  0.3,  0.4,  0.0, -0.6,  0.5,  0.5,  0.3 ] }
 ];
 
 const SCORING_WEIGHTS = {
@@ -592,13 +597,13 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
   // Search Intent query & pills synthesis
   const activeIntentVector = useMemo<number[] | null>(() => {
     let queryVector: number[] | null = null;
-    const cleaned = searchQuery.toLowerCase().trim();
+    const cleaned = normalizeSearchText(searchQuery);
 
     if (cleaned.length >= 3) {
       const foundVector = [0, 0, 0, 0, 0, 0, 0, 0];
       let matches = 0;
       KEYWORD_VECTORS.forEach(kv => {
-        const isMatch = kv.keys.some(key => cleaned.includes(key));
+        const isMatch = kv.keys.some(key => cleaned.includes(normalizeSearchText(key)));
         if (isMatch) {
           for (let i = 0; i < 8; i++) {
             foundVector[i] += kv.vector[i];
@@ -615,7 +620,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
 
     const pillVectors: number[][] = [];
     selectedPills.forEach(pill => {
-      const text = pill.toLowerCase();
+      const text = normalizeSearchText(pill);
       if (PILL_VECTORS[text]) {
         pillVectors.push(PILL_VECTORS[text]);
       }
@@ -652,6 +657,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     const activeWeights = activeIntentVector ? SCORING_WEIGHTS.activeSearch : SCORING_WEIGHTS.passive;
     const daypart = getCircadianDaypart(currentHour);
     const explicitCategoryIntent = hasExplicitCategoryIntent(searchQuery, selectedPills);
+    const hasSearchIntent = normalizeSearchText(searchQuery).length > 0 || selectedPills.length > 0;
 
     const cityFilteredVenues = dbVenues.filter(v => {
       if (city === 'BUE' && v.lat >= 0) return false; // Southern hemisphere
@@ -665,7 +671,12 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
       return true;
     });
 
-    const scored = cityFilteredVenues.map((venue, originalIndex) => {
+    const intentFilteredVenues = filterVenuesBySearchAndMood(cityFilteredVenues, {
+      query: searchQuery,
+      selectedPills,
+    });
+
+    const scored = intentFilteredVenues.map((venue, originalIndex) => {
       const peakHour = ATMOSPHERE_PEAKS[venue.atmosphere];
       const dist = peakHour !== undefined ? circularTimeDistance(currentHour, peakHour) : 6.0;
       const cScore = 1.0 - (dist / 12.0);
@@ -704,7 +715,9 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
       );
       const circadianBias = explicitCategoryIntent ? 0 : getCircadianCategoryBias(daypart, venue);
       const launchFreshnessBias = explicitCategoryIntent ? 0 : getLaunchFreshnessBias(venue);
-      const finalDisplayScore = Math.max(0, Math.min(1.2, baseScore + circadianBias + launchFreshnessBias));
+      const searchMatchScore = scoreVenueSearchMatch(venue, searchQuery, selectedPills);
+      const intentMatchBoost = searchMatchScore / 1000;
+      const finalDisplayScore = Math.max(0, Math.min(1.2, baseScore + circadianBias + launchFreshnessBias + intentMatchBoost));
 
       return {
         ...venue,
@@ -725,12 +738,16 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
             categoryKind: getVenueCategoryKind(venue),
           }
           : undefined,
-        originalIndex
+        originalIndex,
+        searchMatchScore
       };
     });
 
     const ranked = scored
       .sort((a, b) => {
+        if (hasSearchIntent && Math.abs(b.searchMatchScore - a.searchMatchScore) >= 1) {
+          return b.searchMatchScore - a.searchMatchScore;
+        }
         const scoreA = parseFloat(a.scoreFinal);
         const scoreB = parseFloat(b.scoreFinal);
         if (Math.abs(scoreA - scoreB) < 0.0001) {
@@ -741,8 +758,9 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     const guarded = applyCircadianMixGuardrail(ranked, daypart, explicitCategoryIntent);
 
     return guarded
-      .map(({ originalIndex: _originalIndex, ...rest }) => {
+      .map(({ originalIndex: _originalIndex, searchMatchScore: _searchMatchScore, ...rest }) => {
         void _originalIndex;
+        void _searchMatchScore;
         return rest as ScoredVenue;
       });
   }, [currentHour, currentDrift, activeIntentVector, dbVenues, savedVenueIds, identityCentroid, city, searchQuery, selectedPills]);

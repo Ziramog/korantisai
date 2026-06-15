@@ -5,22 +5,21 @@ import { useCircadian } from '../contexts/CircadianContext';
 import { trackEvent } from '@/lib/analytics';
 
 const MOODS = [
-  { value: 'calm', label: 'Calmo' },
-  { value: 'intimate', label: 'Íntimo' },
-  { value: 'social', label: 'Social' },
-  { value: 'energetic', label: 'Energético' },
-  { value: 'hidden', label: 'Refugio' },
-  { value: 'work-friendly', label: 'Productivo' },
+  { value: 'calm', label: { es: 'Calmo', en: 'Calm' } },
+  { value: 'intimate', label: { es: 'Íntimo', en: 'Intimate' } },
+  { value: 'social', label: { es: 'Social', en: 'Social' } },
+  { value: 'energetic', label: { es: 'Energético', en: 'Energetic' } },
+  { value: 'hidden', label: { es: 'Refugio', en: 'Hidden' } },
+  { value: 'work-friendly', label: { es: 'Productivo', en: 'Productive' } },
 ];
 
 function MoodPills() {
-  // In Sprint 2, we will connect this to actual filtering state.
-  // For now we just render the UI.
-  const { selectedPills = [], togglePill, clearPills } = useCircadian();
+  const { selectedPills = [], togglePill, clearPills, language } = useCircadian();
+  const locale = language === 'es' ? 'es' : 'en';
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 mb-6">
-      <div className="flex items-center gap-3 overflow-x-auto pb-4 scrollbar-hide">
+    <div className="mx-auto mb-6 w-full max-w-4xl px-4">
+      <div className="scrollbar-hide flex items-center gap-3 overflow-x-auto pb-4">
         <style>{`
           .scrollbar-hide::-webkit-scrollbar { display: none; }
           .k-mood-pill {
@@ -50,9 +49,9 @@ function MoodPills() {
                 togglePill(mood.value);
                 trackEvent('mood_pill_toggled', { mood: mood.value });
               }}
-              className={`shrink-0 px-5 py-2.5 rounded-full font-sans text-xs font-medium tracking-wide transition-all ${isActive ? 'is-active' : 'k-mood-pill'}`}
+              className={`shrink-0 rounded-full px-5 py-2.5 font-sans text-xs font-medium tracking-wide transition-all ${isActive ? 'is-active' : 'k-mood-pill'}`}
             >
-              {mood.label}
+              {mood.label[locale]}
             </button>
           );
         })}
@@ -63,9 +62,9 @@ function MoodPills() {
               clearPills();
               trackEvent('mood_pills_cleared');
             }}
-            className="shrink-0 px-5 py-2.5 rounded-full font-sans text-xs font-medium tracking-wide transition-all k-mood-pill ml-2"
+            className="k-mood-pill ml-2 shrink-0 rounded-full px-5 py-2.5 font-sans text-xs font-medium tracking-wide transition-all"
           >
-            Todos
+            {language === 'es' ? 'Todos' : 'All'}
           </button>
         )}
       </div>

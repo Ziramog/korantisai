@@ -2,8 +2,6 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Sparkles } from 'lucide-react';
-import Image from 'next/image';
 
 import { ScoredVenue, useCircadian } from './contexts/CircadianContext';
 import SearchBar from './components/SearchBar';
@@ -11,7 +9,6 @@ import VenueCard from './components/VenueCard';
 import GlobalNav from './components/GlobalNav';
 import VenueDetail from './components/VenueDetail';
 import AtmosphereDebug from './components/AtmosphereDebug';
-import AuthPanel from './components/AuthPanel';
 import HeaderControls from './components/HeaderControls';
 import SpatialAtlas from './components/map/SpatialAtlas';
 import MoodPills from './components/MoodPills';
@@ -21,20 +18,23 @@ import ThematicCarousel from './components/ThematicCarousel';
 import SearchModal from './components/SearchModal';
 import GuardadosTab from './components/GuardadosTab';
 import VosTab from './components/VosTab';
-import { t } from './utils/i18n';
 import { trackEvent, trackVenueEvent } from '@/lib/analytics';
+
+type ActiveTab = 'explore' | 'atlas' | 'guardados' | 'vos';
+const ACTIVE_TABS: ActiveTab[] = ['explore', 'atlas', 'guardados', 'vos'];
 
 export default function Home() {
   const { 
-    isAuthenticated,
     rankedVenues, 
     savedVenueIds, 
-    currentPhase,
     language,
-    setLanguage
+    searchQuery,
+    setSearchQuery,
+    selectedPills,
+    clearPills
   } = useCircadian();
 
-  const [activeTabState, setActiveTabState] = useState<'explore' | 'atlas' | 'guardados' | 'vos'>('explore');
+  const [activeTabState, setActiveTabState] = useState<ActiveTab>('explore');
   const [selectedVenueId, setSelectedVenueId] = useState<string | null>(null);
   const [atlasPreSelectedVenueId, setAtlasPreSelectedVenueId] = useState<string | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -43,8 +43,8 @@ export default function Home() {
     const handlePopState = () => {
       const params = new URLSearchParams(window.location.search);
       const tab = params.get('tab');
-      if (['explore', 'atlas', 'guardados', 'vos'].includes(tab as any)) {
-        setActiveTabState(tab as any);
+      if (tab && ACTIVE_TABS.includes(tab as ActiveTab)) {
+        setActiveTabState(tab as ActiveTab);
       } else {
         setActiveTabState('explore');
       }
@@ -62,7 +62,7 @@ export default function Home() {
 
   const activeTab = activeTabState;
 
-  const setActiveTab = (tab: 'explore' | 'atlas' | 'guardados' | 'vos') => {
+  const setActiveTab = (tab: ActiveTab) => {
     setActiveTabState(tab);
     setSelectedVenueId(null);
     const url = new URL(window.location.href);
@@ -113,6 +113,14 @@ export default function Home() {
     recordClick(venue.atmosphere);
     setSelectedVenue(venue);
   };
+
+  const hasActiveFilters = searchQuery.trim().length > 0 || selectedPills.length > 0;
+  const resultLabel = language === 'es'
+    ? `${rankedVenues.length} ${rankedVenues.length === 1 ? 'lugar' : 'lugares'}`
+    : `${rankedVenues.length} ${rankedVenues.length === 1 ? 'place' : 'places'}`;
+  const sectionTitle = hasActiveFilters
+    ? (language === 'es' ? 'Resultados' : 'Results')
+    : (language === 'es' ? 'Lo nuevo' : 'New now');
 
   return (
     <div className="w-full min-h-screen text-k-text overflow-x-clip scroll-smooth relative">
@@ -172,11 +180,32 @@ export default function Home() {
                 
                 <SearchBar onOpenSearch={() => setIsSearchOpen(true)} />
                 <MoodPills />
+                {hasActiveFilters && (
+                  <div className="mx-auto -mt-3 mb-4 flex w-full max-w-4xl items-center justify-between px-6 font-sans text-xs text-[#8A7A5A]">
+                    <span>
+                      {language === 'es' ? 'Mostrando' : 'Showing'} {resultLabel}
+                      {searchQuery.trim() && (
+                        <> · &quot;{searchQuery.trim()}&quot;</>
+                      )}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSearchQuery('');
+                        clearPills();
+                        trackEvent('feed_filters_cleared');
+                      }}
+                      className="text-[#C9A96E] transition hover:text-white"
+                    >
+                      {language === 'es' ? 'Limpiar' : 'Clear'}
+                    </button>
+                  </div>
+                )}
                 <ContextualSection onSelectVenue={handleVenueClick} />
 
                 <div className="w-full max-w-4xl mx-auto px-6 mb-4 mt-6">
                   <h2 className="font-display text-xl text-[#C9A96E]/90 tracking-wide italic">
-                    Lo nuevo
+                    {sectionTitle}
                   </h2>
                 </div>
 
