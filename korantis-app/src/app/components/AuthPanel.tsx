@@ -16,11 +16,36 @@ export default function AuthPanel() {
 
   const [mode, setMode] = useState<'magic' | 'password'>('magic');
   const [password, setPassword] = useState('');
+  const [loadingProvider, setLoadingProvider] = useState<'google' | 'email' | null>(null);
+
+  const handleGoogleAuth = async () => {
+    setStatus('loading');
+    setLoadingProvider('google');
+    setErrorMessage('');
+    trackEvent('auth_google_oauth_requested');
+
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
+
+    if (error) {
+      trackEvent('auth_google_oauth_failed', {
+        error_status: error.status || 'unknown',
+      });
+      setStatus('error');
+      setLoadingProvider(null);
+      setErrorMessage(error.message);
+    }
+  };
 
   const handleAuth = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     setStatus('loading');
+    setLoadingProvider('email');
     setErrorMessage('');
 
     if (mode === 'magic') {
@@ -35,10 +60,12 @@ export default function AuthPanel() {
           error_status: error.status || 'unknown',
         });
         setStatus('error');
+        setLoadingProvider(null);
         setErrorMessage(error.status === 429 ? t('magicLinkError', language) : error.message);
       } else {
         trackEvent('auth_magic_link_sent');
         setStatus('success');
+        setLoadingProvider(null);
       }
     } else {
       trackEvent('auth_password_submitted');
@@ -58,20 +85,24 @@ export default function AuthPanel() {
           if (signUpError) {
             trackEvent('auth_signup_failed');
             setStatus('error');
+            setLoadingProvider(null);
             setErrorMessage(signUpError.message);
           } else {
             trackEvent('auth_signup_created');
             // Auto login after sign up if email confirmation is disabled, otherwise wait
             setStatus('success');
+            setLoadingProvider(null);
           }
         } else {
           trackEvent('auth_password_failed');
           setStatus('error');
+          setLoadingProvider(null);
           setErrorMessage(error.message);
         }
       } else {
         trackEvent('auth_password_login_succeeded');
         setStatus('idle');
+        setLoadingProvider(null);
         // Will trigger onAuthStateChange
       }
     }
@@ -109,6 +140,30 @@ export default function AuthPanel() {
         </div>
       ) : (
         <form onSubmit={handleAuth} className="flex flex-col gap-4 relative z-10">
+          <button
+            type="button"
+            onClick={handleGoogleAuth}
+            disabled={status === 'loading'}
+            className="w-full bg-white text-black font-sans text-xs uppercase tracking-widest py-4 rounded-xl hover:bg-[#F5F0E8] transition-colors flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+          >
+            {status === 'loading' && loadingProvider === 'google' ? (
+              <Loader2 size={16} className="animate-spin" />
+            ) : (
+              <span className="flex h-5 w-5 items-center justify-center rounded-full border border-black/10 font-sans text-sm font-semibold normal-case tracking-normal">
+                G
+              </span>
+            )}
+            {t('continueWithGoogle', language)}
+          </button>
+
+          <div className="flex items-center gap-3 py-1">
+            <div className="h-px flex-1 bg-k-border/50" />
+            <span className="font-sans text-[9px] uppercase tracking-widest text-k-text-tertiary">
+              {t('orContinueWithEmail', language)}
+            </span>
+            <div className="h-px flex-1 bg-k-border/50" />
+          </div>
+
           <div className="relative">
             <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-k-text-tertiary">
               <Mail size={16} />
@@ -146,7 +201,7 @@ export default function AuthPanel() {
             className="w-full bg-k-gold text-k-black font-sans text-xs uppercase tracking-widest py-4 rounded-xl hover:bg-k-gold-light transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed font-medium mt-2"
           >
             {status === 'loading' ? (
-              <Loader2 size={16} className="animate-spin" />
+              loadingProvider === 'email' ? <Loader2 size={16} className="animate-spin" /> : t('continue', language)
             ) : (
               t('continue', language)
             )}
@@ -169,17 +224,19 @@ export default function AuthPanel() {
               {mode === 'magic' ? t('usePasswordInstead', language) : t('useMagicLinkInstead', language)}
             </button>
             
-            <button
-              type="button"
-              onClick={() => {
-                trackEvent('auth_bypassed');
-                setUserId('dev-mock-user-123');
-                setIsAuthenticated(true);
-              }}
-              className="text-[10px] text-red-400/50 hover:text-red-400 font-sans uppercase tracking-widest transition-colors mt-2 border border-red-400/20 py-2 rounded-lg"
-            >
-              {t('bypassAuth', language)}
-            </button>
+            {process.env.NODE_ENV === 'development' && (
+              <button
+                type="button"
+                onClick={() => {
+                  trackEvent('auth_bypassed');
+                  setUserId('dev-mock-user-123');
+                  setIsAuthenticated(true);
+                }}
+                className="text-[10px] text-red-400/50 hover:text-red-400 font-sans uppercase tracking-widest transition-colors mt-2 border border-red-400/20 py-2 rounded-lg"
+              >
+                {t('bypassAuth', language)}
+              </button>
+            )}
           </div>
         </form>
       )}
