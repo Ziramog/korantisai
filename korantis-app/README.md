@@ -51,6 +51,47 @@ supabase/migrations/08_auth_rls_hardening.sql
 
 The migration keeps public reads limited to active venues and their images, while `profiles` and `venue_interactions` are restricted to the authenticated owner.
 
+### Production Domain / OAuth Checklist
+
+Canonical production domain:
+
+```text
+https://www.korantis.com
+```
+
+The apex domain redirects to the canonical host:
+
+```text
+https://korantis.com -> https://www.korantis.com
+```
+
+Supabase Auth should allow these redirect URLs:
+
+```text
+https://www.korantis.com/auth/callback
+https://korantis.com/auth/callback
+https://korantisai-4qzs.vercel.app/auth/callback
+https://korantisai-4qzs-git-main-korantis-projects.vercel.app/auth/callback
+http://localhost:3000/auth/callback
+```
+
+Google OAuth should use the Supabase callback URL as the authorized redirect URI:
+
+```text
+https://xdinpaabgsuqcnweabxi.supabase.co/auth/v1/callback
+```
+
+Authorized JavaScript origins should include:
+
+```text
+https://www.korantis.com
+https://korantis.com
+https://korantisai-4qzs.vercel.app
+http://localhost:3000
+```
+
+The app sends auth callbacks to `window.location.origin + "/auth/callback"`, so local dev, Vercel previews, and the production domain work without code changes as long as Supabase and Google contain the matching allowed URLs.
+
 ## Publication Gate
 
 Stage 12 is the final activation gate for public venues. A venue cannot be activated unless it has:
