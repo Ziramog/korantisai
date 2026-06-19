@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Korantis Auth / Admin Safety
+
+Admin API routes are closed by default. Set this server-only env var in Vercel for allowed admin accounts:
+
+```bash
+KORANTIS_ADMIN_EMAILS=founder@example.com,ops@example.com
+```
+
+After enabling user authentication, apply the RLS hardening migration manually in Supabase SQL editor:
+
+```text
+supabase/migrations/08_auth_rls_hardening.sql
+```
+
+The migration keeps public reads limited to active venues and their images, while `profiles` and `venue_interactions` are restricted to the authenticated owner.

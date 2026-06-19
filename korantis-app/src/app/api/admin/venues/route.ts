@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
+import { requireAdminUser } from '@/lib/adminAuth';
 
 export type VenueRow = {
   id: string;
@@ -40,7 +41,12 @@ type RawVenueRow = {
 };
 
 export async function GET() {
-  const cookieStore = cookies();
+  const admin = await requireAdminUser();
+  if (!admin.ok) {
+    return NextResponse.json({ error: admin.message, venues: [] }, { status: admin.status });
+  }
+
+  const cookieStore = await cookies();
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!,

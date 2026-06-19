@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
+import { requireAdminUser } from '@/lib/adminAuth';
 
 export type VenueDetail = {
   venue: {
@@ -58,9 +59,14 @@ function getErrorMessage(error: unknown): string {
 }
 
 export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const admin = await requireAdminUser();
+  if (!admin.ok) {
+    return NextResponse.json({ error: admin.message }, { status: admin.status });
+  }
+
   const { id } = await params;
   
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!,
