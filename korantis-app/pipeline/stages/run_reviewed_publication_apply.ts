@@ -229,6 +229,7 @@ function buildResult(
       cloudinary_uploads_only_approved_heroes: true,
       public_projection_writes_pending_review_before_activation: true,
       activation_requires_cloudinary_hero: true,
+      activation_requires_minimum_gallery: true,
       post_activation_audit_required: true,
       no_consumer_ui_changes: true,
     },

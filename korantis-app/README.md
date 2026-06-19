@@ -50,3 +50,12 @@ supabase/migrations/08_auth_rls_hardening.sql
 ```
 
 The migration keeps public reads limited to active venues and their images, while `profiles` and `venue_interactions` are restricted to the authenticated owner.
+
+## Publication Gate
+
+Stage 12 is the final activation gate for public venues. A venue cannot be activated unless it has:
+
+- a Cloudinary-backed hero image
+- at least 2 `venue_images` rows with `role = 'gallery'` and a usable `url` or `secure_url`
+
+This prevents newly published venues from appearing with a swipe/gallery affordance but no real gallery depth.

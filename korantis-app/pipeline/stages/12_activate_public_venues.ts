@@ -14,6 +14,8 @@ interface ActivationCheck {
   name?: string;
   current_status?: string;
   has_cloudinary_hero: boolean;
+  gallery_image_count: number;
+  has_minimum_gallery: boolean;
   ready_to_activate: boolean;
   blockers: string[];
 }
@@ -43,6 +45,8 @@ interface ImageRow {
   role?: string | null;
   is_cover?: boolean | null;
 }
+
+const MIN_GALLERY_IMAGES_FOR_PUBLICATION = 2;
 
 export async function activatePublicVenues(batchName: string, args: string[]): Promise<ActivationResult> {
   if (args.includes('--apply') && args.includes('--dry-run')) {
@@ -91,6 +95,9 @@ export async function activatePublicVenues(batchName: string, args: string[]): P
       no_external_model_calls: true,
       no_consumer_ui_changes: true,
       requires_explicit_apply: true,
+      requires_cloudinary_hero: true,
+      requires_minimum_gallery_images: true,
+      minimum_gallery_images_is_two_or_more: MIN_GALLERY_IMAGES_FOR_PUBLICATION >= 2,
     },
   };
 
@@ -117,7 +124,8 @@ async function buildActivationChecks(supabase: SupabaseClient, venueIds: string[
     .in('venue_id', venueIds);
   if (images.error) throw new Error(`Stage 12 venue_images check failed: ${images.error.message}`);
 
-  const venueById = new Map((venues.data || [] as VenueRow[]).map((venue) => [venue.id, venue as VenueRow]));
+  const venueRows = (venues.data || []) as VenueRow[];
+  const venueById = new Map<string, VenueRow>(venueRows.map((venue) => [venue.id, venue]));
   const imagesByVenue = new Map<string, ImageRow[]>();
   for (const image of (images.data || []) as ImageRow[]) {
     const list = imagesByVenue.get(image.venue_id) || [];
@@ -129,15 +137,23 @@ async function buildActivationChecks(supabase: SupabaseClient, venueIds: string[
     const venue = venueById.get(venueId);
     const heroImages = (imagesByVenue.get(venueId) || []).filter((image) => image.role === 'hero' || image.is_cover);
     const hasCloudinaryHero = heroImages.some((image) => String(image.secure_url || image.url || '').startsWith('https://res.cloudinary.com/'));
+    const galleryImageCount = (imagesByVenue.get(venueId) || []).filter((image) =>
+      image.role === 'gallery' &&
+      Boolean(image.secure_url || image.url),
+    ).length;
+    const hasMinimumGallery = galleryImageCount >= MIN_GALLERY_IMAGES_FOR_PUBLICATION;
     const blockers: string[] = [];
     if (!venue) blockers.push('venue_row_missing');
     if (venue?.curation_status !== 'pending_review') blockers.push(`status_not_pending_review:${venue?.curation_status || 'missing'}`);
     if (!hasCloudinaryHero) blockers.push('missing_cloudinary_hero');
+    if (!hasMinimumGallery) blockers.push(`minimum_gallery_not_met:${galleryImageCount}/${MIN_GALLERY_IMAGES_FOR_PUBLICATION}`);
     return {
       venue_id: venueId,
       name: venue?.name,
       current_status: venue?.curation_status || undefined,
       has_cloudinary_hero: hasCloudinaryHero,
+      gallery_image_count: galleryImageCount,
+      has_minimum_gallery: hasMinimumGallery,
       ready_to_activate: blockers.length === 0,
       blockers,
     };
@@ -168,9 +184,11 @@ function buildReport(result: ActivationResult): string {
     '',
     '## Venue Checks',
     '',
-    '| Venue | Status | Cloudinary hero | Ready | Blockers |',
-    '| --- | --- | --- | --- | --- |',
-    ...result.checks.map((check) => `| ${escapeMd(check.name || check.venue_id)} | ${escapeMd(check.current_status || '')} | ${check.has_cloudinary_hero ? 'yes' : 'no'} | ${check.ready_to_activate ? 'yes' : 'no'} | ${escapeMd(check.blockers.join(', ') || 'none')} |`),
+    `- Minimum gallery images required: ${MIN_GALLERY_IMAGES_FOR_PUBLICATION}`,
+    '',
+    '| Venue | Status | Cloudinary hero | Gallery images | Ready | Blockers |',
+    '| --- | --- | --- | --- | --- | --- |',
+    ...result.checks.map((check) => `| ${escapeMd(check.name || check.venue_id)} | ${escapeMd(check.current_status || '')} | ${check.has_cloudinary_hero ? 'yes' : 'no'} | ${check.gallery_image_count} | ${check.ready_to_activate ? 'yes' : 'no'} | ${escapeMd(check.blockers.join(', ') || 'none')} |`),
     '',
     '## Safety',
     '',
