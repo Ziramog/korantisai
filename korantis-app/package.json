@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test:visual": "playwright test tests/visual",
-    "test:visual:update": "playwright test tests/visual --update-snapshots"
+    "test:visual:update": "playwright test tests/visual --update-snapshots",
+    "control-center": "tsx pipeline/control_center_server.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

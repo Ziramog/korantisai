@@ -1,6 +1,6 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'http';
 import { spawn, type ChildProcessWithoutNullStreams } from 'child_process';
-import { existsSync, readdirSync, readFileSync, statSync } from 'fs';
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync, mkdirSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -37,7 +37,49 @@ const runState: RunState = {
 };
 let activeProcess: ChildProcessWithoutNullStreams | null = null;
 
+const REGISTRY_FILE = path.join(ROOT, 'data', 'control_center', 'workflows.json');
+
+function readRegistry(): Record<string, unknown> {
+  if (!existsSync(REGISTRY_FILE)) return { current_workflow_status: 'idle' };
+  try {
+    return JSON.parse(readFileSync(REGISTRY_FILE, 'utf8'));
+  } catch {
+    return { current_workflow_status: 'idle' };
+  }
+}
+
+function writeRegistry(data: Record<string, unknown>): void {
+  const dir = path.dirname(REGISTRY_FILE);
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  const current = readRegistry();
+  writeFileSync(REGISTRY_FILE, JSON.stringify({ ...current, ...data }, null, 2));
+}
+
 const COMMANDS: Record<string, CommandDefinition> = {
+  operator_status: {
+    label: 'Refresh operator dashboard',
+    description: 'Regenerates the simplified two-lane operator dashboard. No external models or writes.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/run_operator.ts', batchId, '--mode', 'status'],
+  },
+  operator_venues: {
+    label: 'Check venue acquisition',
+    description: 'Refreshes the operator dashboard and prints venue acquisition readiness.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/run_operator.ts', batchId, '--mode', 'venues'],
+  },
+  operator_galleries: {
+    label: 'Check gallery enrichment',
+    description: 'Refreshes the operator dashboard and prints gallery enrichment status.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/run_operator.ts', batchId, '--mode', 'galleries'],
+  },
+  operator_staging_dry_run: {
+    label: 'Run staging dry-run',
+    description: 'Runs Stage 08 dry-run and refreshes the operator dashboard. Never applies writes.',
+    danger: 'safe',
+    buildArgs: (batchId) => ['tsx', 'pipeline/run_operator.ts', batchId, '--mode', 'staging'],
+  },
   refresh_panel: {
     label: 'Refresh control panel artifacts',
     description: 'Regenerates the static control panel for the selected batch.',
@@ -144,6 +186,30 @@ const COMMANDS: Record<string, CommandDefinition> = {
     danger: 'safe',
     buildArgs: (_batchId, body) => buildConfiguredBatchArgs(body, false),
   },
+  enrichment_resume: {
+    label: 'Run/resume enrichment',
+    description: 'Runs enrichment through gallery review. Stops before M3 unless no vision queue is needed.',
+    danger: 'safe',
+    buildArgs: (_batchId, body) => buildEnrichmentArgs(body, false),
+  },
+  enrichment_resume_m3: {
+    label: 'Run enrichment with M3',
+    description: 'Runs enrichment and allows M3 classification for gallery image queues. No Supabase or Cloudinary writes.',
+    danger: 'safe',
+    buildArgs: (_batchId, body) => buildEnrichmentArgs(body, true),
+  },
+  enrichment_gallery_apply_dry_run: {
+    label: 'Gallery apply dry-run',
+    description: 'Maps reviewed gallery approvals to Cloudinary/venue_images writes without applying.',
+    danger: 'safe',
+    buildArgs: (_batchId, body) => ['tsx', 'pipeline/enrichment/04_apply_gallery.ts', '--run-id', cleanRunId(stringField(body, 'enrichment_run_id') || 'enrich_current'), '--dry-run'],
+  },
+  enrichment_gallery_apply: {
+    label: 'Apply reviewed gallery',
+    description: 'Uploads approved gallery images to Cloudinary and writes venue_images role=gallery. Does not change heroes.',
+    danger: 'writes_hidden_public',
+    buildArgs: (_batchId, body) => ['tsx', 'pipeline/enrichment/04_apply_gallery.ts', '--run-id', cleanRunId(stringField(body, 'enrichment_run_id') || 'enrich_current'), '--apply'],
+  },
 };
 
 export function startControlCenterServer(port = PORT): void {
@@ -169,21 +235,45 @@ async function route(request: IncomingMessage, response: ServerResponse): Promis
   if (request.method === 'GET' && url.pathname === '/api/status') return writeJson(response, 200, readBatchStatus(requiredParam(url, 'batch')));
   if (request.method === 'GET' && url.pathname === '/api/run-state') return writeJson(response, 200, runState);
   if (request.method === 'GET' && url.pathname === '/api/artifact') return writeArtifact(response, requiredParam(url, 'batch'), requiredParam(url, 'file'));
-  if (request.method === 'POST' && url.pathname === '/api/run') return runAction(request, response);
+  if (request.method === 'GET' && url.pathname === '/api/enrichment-artifact') return writeEnrichmentArtifact(response, requiredParam(url, 'run'), requiredParam(url, 'file'));
+  if (request.method === 'GET' && url.pathname === '/api/enrichment-review/manifest') return writeGalleryReviewManifest(response, requiredParam(url, 'run'));
+  if (request.method === 'GET' && url.pathname === '/api/enrichment-review/status') return writeJson(response, 200, readGalleryReviewStatus(requiredParam(url, 'run')));
+  if (request.method === 'GET' && url.pathname === '/api/workflows') return writeJson(response, 200, readRegistry());
+  if (request.method === 'POST' && url.pathname === '/api/enrichment-review/save') return handleGalleryReviewSave(request, response);
+  
+  // Legacy fallback
+  if (request.method === 'POST' && url.pathname === '/api/run') return handleApiAction(request, response, null);
+
+  // New REST API
+  if (request.method === 'POST' && url.pathname === '/api/venue-batches/plan') return handleApiAction(request, response, 'custom_batch_plan');
+  if (request.method === 'POST' && url.pathname === '/api/venue-batches/run-to-review') return handleApiAction(request, response, 'custom_batch_run');
+  if (request.method === 'POST' && url.pathname === '/api/enrichment/start') return handleApiAction(request, response, 'enrichment_resume');
+  if (request.method === 'POST' && url.pathname === '/api/enrichment/continue') return handleApiAction(request, response, 'enrichment_resume');
+  if (request.method === 'POST' && url.pathname === '/api/enrichment/run-image-classification') return handleApiAction(request, response, 'enrichment_resume_m3');
+  if (request.method === 'POST' && url.pathname === '/api/enrichment/gallery-dry-run') return handleApiAction(request, response, 'enrichment_gallery_apply_dry_run');
+  if (request.method === 'POST' && url.pathname === '/api/enrichment/apply-gallery') return handleApiAction(request, response, 'enrichment_gallery_apply');
+  if (request.method === 'POST' && url.pathname === '/api/publication/apply-projection') return handleApiAction(request, response, 'public_projection_apply');
+  if (request.method === 'POST' && url.pathname === '/api/publication/activate') return handleApiAction(request, response, 'activate_public');
+  if (request.method === 'POST' && url.pathname === '/api/audit/public-catalog') return handleApiAction(request, response, 'post_activation_audit');
+  
   writeJson(response, 404, { error: 'not_found' });
 }
 
-async function runAction(request: IncomingMessage, response: ServerResponse): Promise<void> {
+async function handleApiAction(request: IncomingMessage, response: ServerResponse, explicitAction: string | null): Promise<void> {
   const body = await readRequestJson(request);
-  const batchId = stringField(body, 'batch_id');
-  const action = stringField(body, 'action');
+  const action = explicitAction || stringField(body, 'action');
+  const batchId = stringField(body, 'batch_id') || stringField(body, 'new_batch_id') || 'default_batch';
   const confirm = stringField(body, 'confirm');
   const command = COMMANDS[action];
   if (!command) return writeJson(response, 400, { error: `Unknown action: ${action}` });
   if (runState.running) return writeJson(response, 409, { error: 'A command is already running.' });
-  if ((command.danger === 'writes_cloudinary' || command.danger === 'writes_hidden_public' || command.danger === 'publishes_public') && confirm !== 'RUN') {
-    return writeJson(response, 400, { error: 'Confirmation RUN is required for this action.' });
+  if ((command.danger === 'writes_cloudinary' || command.danger === 'writes_hidden_public' || command.danger === 'publishes_public') && confirm !== 'RUN' && confirm !== 'APPLY GALLERY') {
+    return writeJson(response, 400, { error: 'Confirmation is required for this action.' });
   }
+
+  // Update registry
+  if (action.includes('enrichment')) writeRegistry({ latest_enrichment_run_id: stringField(body, 'enrichment_run_id') || 'enrich_current', current_workflow_status: 'running' });
+  else writeRegistry({ latest_batch_id: batchId, current_workflow_status: 'running' });
 
   const args = command.buildArgs(batchId, isRecord(body) ? body : {});
   runState.running = true;
@@ -203,6 +293,7 @@ async function runAction(request: IncomingMessage, response: ServerResponse): Pr
     runState.running = false;
     runState.finished_at = new Date().toISOString();
     runState.exit_code = -1;
+    writeRegistry({ current_workflow_status: 'error' });
     activeProcess = null;
   });
   activeProcess.on('close', (code) => {
@@ -210,10 +301,23 @@ async function runAction(request: IncomingMessage, response: ServerResponse): Pr
     runState.running = false;
     runState.finished_at = new Date().toISOString();
     runState.exit_code = code;
+    writeRegistry({ current_workflow_status: 'idle' });
     activeProcess = null;
   });
 
   writeJson(response, 202, { started: true, action, batch_id: batchId });
+}
+
+async function handleGalleryReviewSave(request: IncomingMessage, response: ServerResponse): Promise<void> {
+  const body = await readRequestJson(request);
+  const runId = cleanRunId(stringField(body, 'run_id'));
+  const action = stringField(body, 'review_action') || 'approve_ready';
+  if (!runId) return writeJson(response, 400, { error: 'Missing run_id.' });
+  if (!['custom', 'approve_ready', 'pause_all', 'reject_all'].includes(action)) return writeJson(response, 400, { error: `Unknown review_action: ${action}` });
+
+  const decisions = isRecord(body) && isRecord(body.decisions) ? body.decisions : undefined;
+  const result = saveReviewedGalleryManifest(runId, action as 'custom' | 'approve_ready' | 'pause_all' | 'reject_all', decisions);
+  return writeJson(response, 200, result);
 }
 
 function spawnPipelineCommand(args: string[]): ChildProcessWithoutNullStreams {
@@ -292,8 +396,122 @@ function readBatchStatus(batchId: string): Record<string, unknown> {
   };
 }
 
+function readGalleryReviewStatus(runId: string): Record<string, unknown> {
+  const safeRunId = cleanRunId(runId);
+  const outputDir = path.join(ROOT, 'data', 'enrichment', safeRunId);
+  const manifestPath = path.join(outputDir, 'gallery_review_manifest.json');
+  const reviewedPath = path.join(outputDir, 'gallery_review_manifest.reviewed.json');
+  if (!existsSync(manifestPath)) {
+    return { run_id: safeRunId, exists: false, reviewed_exists: existsSync(reviewedPath), error: 'gallery_review_manifest_missing' };
+  }
+
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
+  const entries = Array.isArray(manifest.entries) ? manifest.entries as Array<Record<string, unknown>> : [];
+  const reviewed = existsSync(reviewedPath) ? JSON.parse(readFileSync(reviewedPath, 'utf8')) as Record<string, unknown> : null;
+  const reviewedEntries = reviewed && Array.isArray(reviewed.entries) ? reviewed.entries as Array<Record<string, unknown>> : [];
+  return {
+    run_id: safeRunId,
+    exists: true,
+    reviewed_exists: existsSync(reviewedPath),
+    reviewed_file: reviewedPath,
+    total_venues: entries.length,
+    ready_for_gallery_review: entries.filter((entry) => entry.status === 'ready_for_gallery_review').length,
+    needs_more_spatial_images: entries.filter((entry) => entry.status === 'needs_more_spatial_images').length,
+    blocked_gallery_quality: entries.filter((entry) => entry.status === 'blocked_gallery_quality').length,
+    approved_venues: reviewedEntries.filter((entry) => entry.reviewer_decision === 'approve_gallery').length,
+    approved_images: reviewedEntries
+      .filter((entry) => entry.reviewer_decision === 'approve_gallery')
+      .reduce((sum, entry) => sum + (Array.isArray(entry.images) ? entry.images.length : 0), 0),
+  };
+}
+
+function writeGalleryReviewManifest(response: ServerResponse, runId: string): void {
+  const safeRunId = cleanRunId(runId);
+  const manifestPath = path.join(ROOT, 'data', 'enrichment', safeRunId, 'gallery_review_manifest.json');
+  if (!existsSync(manifestPath)) return writeJson(response, 404, { error: 'gallery_review_manifest_missing' });
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
+  writeJson(response, 200, {
+    ...manifest,
+    reviewed_status: readGalleryReviewStatus(safeRunId),
+  });
+}
+
+function saveReviewedGalleryManifest(
+  runId: string,
+  action: 'custom' | 'approve_ready' | 'pause_all' | 'reject_all',
+  decisions?: Record<string, unknown>,
+): Record<string, unknown> {
+  const outputDir = path.join(ROOT, 'data', 'enrichment', runId);
+  const manifestPath = path.join(outputDir, 'gallery_review_manifest.json');
+  if (!existsSync(manifestPath)) throw new Error(`Missing gallery review manifest: ${manifestPath}`);
+
+  const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as Record<string, unknown>;
+  const entries = Array.isArray(manifest.entries) ? manifest.entries as Array<Record<string, unknown>> : [];
+  const reviewedEntries = entries.map((entry) => {
+    const explicit = decisionForVenue(decisions, typeof entry.venue_id === 'string' ? entry.venue_id : '');
+    const fallbackAction = action === 'custom' ? 'pause_all' : action;
+    const decision = explicit?.decision || galleryDecisionForAction(entry, fallbackAction);
+    return {
+      ...entry,
+      reviewer_decision: decision,
+      reviewer_notes: explicit?.reviewer_notes || galleryReviewerNote(entry, decision, action),
+    };
+  });
+  const reviewed = {
+    ...manifest,
+    reviewed_at: new Date().toISOString(),
+    review_action: action,
+    entries: reviewedEntries,
+  };
+  const reviewedPath = path.join(outputDir, 'gallery_review_manifest.reviewed.json');
+  writeFileSync(reviewedPath, `${JSON.stringify(reviewed, null, 2)}\n`, 'utf8');
+
+  const approvedEntries = reviewedEntries.filter((entry) => entry.reviewer_decision === 'approve_gallery');
+  const rejectedEntries = reviewedEntries.filter((entry) => entry.reviewer_decision === 'reject_gallery');
+  const pausedEntries = reviewedEntries.filter((entry) => entry.reviewer_decision === 'pause');
+  return {
+    run_id: runId,
+    reviewed_file: reviewedPath,
+    action,
+    total_venues: reviewedEntries.length,
+    approved_venues: approvedEntries.length,
+    approved_images: approvedEntries.reduce((sum, entry) => {
+      const images = (entry as Record<string, unknown>).images;
+      return sum + (Array.isArray(images) ? images.length : 0);
+    }, 0),
+    paused_venues: pausedEntries.length,
+    rejected_venues: rejectedEntries.length,
+  };
+}
+
+function decisionForVenue(decisions: Record<string, unknown> | undefined, venueId: string): { decision: 'approve_gallery' | 'pause' | 'reject_gallery'; reviewer_notes?: string } | null {
+  if (!decisions || !venueId) return null;
+  const value = decisions[venueId];
+  if (!isRecord(value)) return null;
+  const decision = value.decision;
+  if (decision !== 'approve_gallery' && decision !== 'pause' && decision !== 'reject_gallery') return null;
+  return {
+    decision,
+    reviewer_notes: typeof value.reviewer_notes === 'string' ? value.reviewer_notes : '',
+  };
+}
+
+function galleryDecisionForAction(entry: Record<string, unknown>, action: 'approve_ready' | 'pause_all' | 'reject_all'): 'approve_gallery' | 'pause' | 'reject_gallery' {
+  if (action === 'pause_all') return 'pause';
+  if (action === 'reject_all') return 'reject_gallery';
+  return entry.status === 'ready_for_gallery_review' ? 'approve_gallery' : 'pause';
+}
+
+function galleryReviewerNote(entry: Record<string, unknown>, decision: string, action: string): string {
+  if (action === 'approve_ready' && decision === 'approve_gallery') return 'Auto-approved by operator flow: venue was ready_for_gallery_review.';
+  if (action === 'approve_ready') return `Auto-paused by operator flow: status=${String(entry.status || 'unknown')}.`;
+  return `Set by operator flow: ${action}.`;
+}
+
 function artifactList(): Array<{ label: string; file: string; kind: 'html' | 'json' | 'markdown' }> {
   return [
+    { label: 'Operator dashboard', file: 'operator_dashboard.html', kind: 'html' },
+    { label: 'Operator summary JSON', file: 'batch_status_summary.json', kind: 'json' },
     { label: 'Control panel snapshot', file: 'pipeline_control_panel.html', kind: 'html' },
     { label: 'Publication review dashboard', file: 'publication_review_dashboard.html', kind: 'html' },
     { label: 'Venue seed report', file: 'venue_seed_report.md', kind: 'markdown' },
@@ -338,6 +556,18 @@ function buildConfiguredBatchArgs(body: Record<string, unknown>, planOnly: boole
   ];
   if (neighborhoods) args.push('--neighborhoods', neighborhoods);
   args.push(planOnly ? '--plan' : '--continue');
+  return args;
+}
+
+function buildEnrichmentArgs(body: Record<string, unknown>, allowM3: boolean): string[] {
+  const runId = cleanRunId(stringField(body, 'enrichment_run_id'));
+  const city = stringField(body, 'enrichment_city') || 'Buenos Aires';
+  const maxTargets = stringField(body, 'enrichment_max_targets') || '50';
+  const args = ['tsx', 'pipeline/enrichment/run_enrichment.ts'];
+  if (runId) args.push('--run-id', runId, '--resume');
+  else args.push('--city', city, '--active-only', '--missing-gallery', '--max-targets', maxTargets);
+  args.push('--max-gallery-images', '4', '--max-expansion-images-per-venue', '8', '--max-deep-candidates-per-venue', '12');
+  if (allowM3) args.push('--allow-m3');
   return args;
 }
 
@@ -407,6 +637,30 @@ function writeArtifact(response: ServerResponse, batchId: string, file: string):
   response.end(content);
 }
 
+function writeEnrichmentArtifact(response: ServerResponse, runId: string, file: string): void {
+  const allowed = new Set([
+    'gallery_review_dashboard.html',
+    'gallery_review_manifest.json',
+    'gallery_review_report.md',
+    'gallery_apply_report.md',
+    'gallery_apply_result.json',
+    'enrichment_orchestrator_report.md',
+    'enrichment_orchestrator_report.json',
+  ]);
+  if (!allowed.has(file)) return writeJson(response, 403, { error: 'artifact_not_allowed' });
+  const safeRunId = cleanRunId(runId);
+  const filePath = path.join(ROOT, 'data', 'enrichment', safeRunId, file);
+  if (!existsSync(filePath)) return writeJson(response, 404, { error: 'artifact_missing' });
+  const content = readFileSync(filePath, 'utf8');
+  if (file.endsWith('.html')) {
+    response.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    response.end(content);
+    return;
+  }
+  response.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+  response.end(content);
+}
+
 function renderApp(): string {
   const batches = listBatches();
   const data = JSON.stringify({ defaultBatch: batches[0]?.id || 'batch_004_buenos_aires_50' }).replace(/</g, '\\u003c');
@@ -415,7 +669,7 @@ function renderApp(): string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Korantis Command Center</title>
+  <title>Korantis Operations Console</title>
   <style>
     :root {
       color-scheme: dark;
@@ -430,337 +684,841 @@ function renderApp(): string {
       --gold: #d4b35f;
       --blue: #7fb3e8;
       --ink: #070807;
+      --radius: 8px;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; background: linear-gradient(135deg, #0d0f0d 0%, #121611 48%, #0b0b0a 100%); color: var(--text); font-family: "Aptos", "Segoe UI", sans-serif; }
-    header { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 18px; border-bottom: 1px solid var(--line); background: rgba(13,15,13,.94); position: sticky; top: 0; z-index: 4; }
-    .header-actions { display: flex; align-items: end; gap: 6px; min-width: 0; }
-    h1, h2, h3, p { margin: 0; }
-    h1 { font-size: 19px; letter-spacing: .01em; }
-    select, button, input { font: inherit; }
-    select, input { background: var(--ink); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
-    button { background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; cursor: pointer; }
-    button:hover { border-color: var(--blue); }
-    button.danger { border-color: rgba(239,125,115,.55); color: #ffd1cc; }
-    button.write { border-color: rgba(212,179,95,.55); color: #ffe1a0; }
-    .layout { display: grid; grid-template-columns: 260px minmax(640px, 1fr) 380px; min-height: calc(100vh - 72px); }
-    aside, .main, .right { border-right: 1px solid var(--line); padding: 16px; overflow: auto; }
-    .right { border-right: 0; }
-    .muted { color: var(--muted); }
-    .panel { background: rgba(23,25,21,.86); border: 1px solid var(--line); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
-    .stats { display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 10px; }
-    .stat strong { display: block; font-size: 27px; margin-top: 5px; }
-    .ok { color: var(--green); }
-    .bad { color: var(--red); }
-    .warn { color: var(--gold); }
-    .tabs { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
-    .tabs button.active { background: var(--text); color: var(--ink); }
-    .artifact-toolbar { display: none; gap: 8px; margin-bottom: 10px; }
-    .artifact-toolbar.visible { display: flex; }
-    .artifact { width: 100%; min-height: calc(100vh - 205px); border: 1px solid var(--line); background: #0b0c0b; color: #e8e4d7; border-radius: 8px; padding: 12px; overflow: auto; white-space: pre-wrap; }
-    iframe.artifact { padding: 0; white-space: normal; }
-    .command { display: grid; gap: 8px; border-bottom: 1px solid rgba(255,255,255,.07); padding: 10px 0; }
-    .command:last-child { border-bottom: 0; }
-    .batch-form { display: grid; gap: 9px; }
-    .batch-form label { display: grid; gap: 4px; color: var(--muted); font-size: 12px; }
-    .batch-form input { width: 100%; }
-    .check-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
-    .check-grid label { display: flex; align-items: center; gap: 6px; min-height: 30px; padding: 6px 8px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08); border-radius: 6px; color: var(--text); font-size: 12px; }
-    .check-grid input { width: auto; accent-color: var(--gold); }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .console { height: 360px; overflow: auto; background: #050605; border: 1px solid var(--line); border-radius: 8px; padding: 12px; font: 12px/1.45 Consolas, monospace; white-space: pre-wrap; color: #d7f5d7; }
-    .file-row { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
-    .file-row button { padding: 4px 7px; }
-    .batch-picker { display: grid; gap: 3px; width: min(520px, 42vw); min-width: 280px; }
-    .batch-picker span { font-size: 11px; color: var(--muted); }
-    .batch-picker select { width: 100%; min-width: 0; }
-    @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } aside, .main, .right { border-right: 0; border-bottom: 1px solid var(--line); } .stats { grid-template-columns: repeat(2, 1fr); } }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: "Inter", "Segoe UI", sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+    header { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; border-bottom: 1px solid var(--line); background: var(--panel); }
+    h1 { font-size: 18px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+    .status-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 500; background: var(--panel-2); border: 1px solid var(--line); }
+    .status-badge.running { color: var(--blue); border-color: rgba(127, 179, 232, 0.4); }
+    .status-badge.idle { color: var(--muted); }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+    .status-badge.running .status-dot { animation: pulse 1.5s infinite; }
+    @keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
+    
+    .layout { display: flex; flex: 1; overflow: hidden; }
+    .sidebar { width: 240px; border-right: 1px solid var(--line); background: var(--panel); display: flex; flex-direction: column; }
+    .nav-item { padding: 12px 24px; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; cursor: pointer; border-left: 3px solid transparent; transition: all 0.2s; }
+    .nav-item:hover { color: var(--text); background: rgba(255,255,255,0.02); }
+    .nav-item.active { color: var(--text); border-left-color: var(--blue); background: rgba(127,179,232,0.05); }
+    
+    .main { flex: 1; display: flex; flex-direction: column; overflow-y: auto; padding: 32px 48px; }
+    .tab-content { display: none; max-width: 800px; }
+    .tab-content.active { display: block; animation: fadeIn 0.3s; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 20px; font-weight: 600; margin: 0 0 16px 0; }
+    .card p { color: var(--muted); font-size: 14px; margin: 0 0 20px 0; line-height: 1.5; }
+    
+    .form-group { margin-bottom: 20px; }
+    label { display: block; font-size: 13px; font-weight: 500; color: var(--muted); margin-bottom: 8px; }
+    select, input[type="text"], input[type="number"] { width: 100%; background: var(--ink); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; font-size: 14px; font-family: inherit; transition: border-color 0.2s; }
+    select:focus, input:focus { outline: none; border-color: var(--blue); }
+    
+    .btn-row { display: flex; gap: 12px; margin-top: 24px; }
+    button { display: inline-flex; align-items: center; justify-content: center; background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 10px 16px; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+    button:hover:not(:disabled) { background: rgba(255,255,255,0.05); border-color: var(--muted); }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    button.primary { background: var(--text); color: var(--ink); border-color: transparent; }
+    button.primary:hover:not(:disabled) { background: #fff; }
+    button.danger { background: rgba(239, 125, 115, 0.1); color: var(--red); border-color: rgba(239, 125, 115, 0.3); }
+    button.danger:hover:not(:disabled) { background: rgba(239, 125, 115, 0.15); border-color: var(--red); }
+    button.warning { background: rgba(212, 179, 95, 0.1); color: var(--gold); border-color: rgba(212, 179, 95, 0.3); }
+    button.warning:hover:not(:disabled) { background: rgba(212, 179, 95, 0.15); border-color: var(--gold); }
+    
+    .checkbox-wrap { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+    .checkbox-wrap input { margin: 0; width: 16px; height: 16px; accent-color: var(--blue); }
+    .checkbox-wrap span { font-size: 14px; }
+    
+    .right-panel { width: 380px; border-left: 1px solid var(--line); background: var(--bg); display: flex; flex-direction: column; }
+    .console-header { padding: 16px 20px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; background: var(--panel); }
+    .console-header h3 { margin: 0; font-size: 14px; font-weight: 600; }
+    .console { flex: 1; overflow: auto; padding: 16px; font: 12px/1.5 Consolas, "Courier New", monospace; color: #a5d6a7; white-space: pre-wrap; background: #050605; }
+    
+    .advanced-drawer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    details > summary { font-size: 14px; font-weight: 500; color: var(--muted); cursor: pointer; user-select: none; display: inline-flex; align-items: center; gap: 6px; }
+    details > summary:hover { color: var(--text); }
+    .file-list { margin-top: 16px; display: grid; gap: 8px; }
+    .file-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; font-size: 13px; }
+    .file-item button { padding: 4px 8px; font-size: 12px; }
+    
+    .alert { padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; font-size: 13px; display: flex; align-items: flex-start; gap: 10px; }
+    .alert-warning { background: rgba(212, 179, 95, 0.1); border: 1px solid rgba(212, 179, 95, 0.3); color: #f2e2b6; }
+    .alert-success { background: rgba(111, 207, 143, 0.1); border: 1px solid rgba(111, 207, 143, 0.35); color: #cff2d9; }
+    
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 13px; }
+    th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-weight: 500; }
+    
+    #artifactHost { width: 100%; min-height: 400px; border: 1px solid var(--line); border-radius: 6px; background: #fff; display: none; }
+    #artifactHost.visible { display: block; }
+    #artifactText { width: 100%; min-height: 400px; border: 1px solid var(--line); border-radius: 6px; background: var(--ink); color: var(--text); padding: 16px; overflow: auto; white-space: pre-wrap; font-family: monospace; font-size: 12px; display: none; }
+    #artifactText.visible { display: block; }
+    .artifact-controls { display: flex; gap: 8px; margin-bottom: 12px; display: none; }
+    .artifact-controls.visible { display: flex; }
+    .operator-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .operator-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+    .operator-card h3 { margin: 0 0 8px 0; font-size: 16px; }
+    .operator-card p { margin-bottom: 16px; min-height: 42px; }
+    .operator-dashboard-frame { width: 100%; min-height: 720px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+    .flow-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+    .flow-step { border: 1px solid var(--line); background: var(--panel-2); border-radius: 10px; padding: 12px; }
+    .flow-step b { display: block; font-size: 13px; margin-bottom: 4px; }
+    .flow-step span { color: var(--muted); font-size: 12px; line-height: 1.35; }
+    .summary-pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 18px; }
+    .pill { border: 1px solid var(--line); background: #080a08; border-radius: 999px; padding: 7px 10px; font-size: 12px; color: var(--muted); }
+    .pill strong { color: var(--text); }
+    .review-toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+    .review-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 14px; }
+    .review-card { border: 1px solid var(--line); background: #10130f; border-radius: 14px; overflow: hidden; }
+    .review-card[data-decision="approve_gallery"] { border-color: rgba(111, 207, 143, .7); }
+    .review-card[data-decision="reject_gallery"] { border-color: rgba(239, 125, 115, .75); }
+    .review-card-head { padding: 14px; border-bottom: 1px solid var(--line); }
+    .review-card-head h3 { margin: 0 0 6px; font-size: 15px; }
+    .review-card-head p { margin: 0; font-size: 12px; }
+    .review-images { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 10px; }
+    .review-image { min-width: 0; }
+    .review-image img { display: block; width: 100%; height: 116px; object-fit: cover; border-radius: 9px; background: #050605; }
+    .review-image span { display: block; color: var(--muted); font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 4px; }
+    .decision-buttons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0 10px 10px; }
+    .decision-buttons button { padding: 8px; font-size: 12px; }
+    .review-notes { padding: 0 10px 12px; }
+    .review-notes textarea { min-height: 46px; font-size: 12px; }
+    .preview-report { display: none; margin-top: 16px; border: 1px solid var(--line); border-radius: 10px; background: #050605; color: #cfe7c6; padding: 14px; white-space: pre-wrap; font: 12px/1.45 Consolas, "Courier New", monospace; max-height: 420px; overflow: auto; }
+    .preview-report.visible { display: block; }
+    
   </style>
 </head>
 <body>
   <header>
-    <div>
-      <p class="muted">Korantis</p>
-      <h1>Pipeline Command Center</h1>
-    </div>
-    <div class="header-actions">
-      <label class="batch-picker"><span>Viewing batch</span><select id="batch"></select></label>
-      <button onclick="refresh()">Refresh</button>
-      <button onclick="openManual()">Manual</button>
+    <h1>Korantis Operations</h1>
+    <div class="status-badge" id="workflowStatusBadge">
+      <div class="status-dot"></div>
+      <span id="workflowStatusText">Idle</span>
     </div>
   </header>
+  
   <div class="layout">
-    <aside>
-      <div class="panel">
-        <h2>Run State</h2>
-        <p id="runState" class="muted">idle</p>
-      </div>
-      <div class="panel">
-        <h2>Files</h2>
-        <div id="files"></div>
-      </div>
-    </aside>
-    <section class="main">
-      <div class="stats" id="stats"></div>
-      <div class="panel">
-        <div class="tabs" id="artifactTabs"></div>
-        <div class="artifact-toolbar" id="artifactToolbar">
-          <button onclick="openArtifactFullScreen()">Open review full screen</button>
+    <div class="sidebar">
+      <div class="nav-item active" data-tab="tab-operator" onclick="switchTab('tab-operator')">Operator Dashboard</div>
+      <div class="nav-item" data-tab="tab-create" onclick="switchTab('tab-create')">Create Venues</div>
+      <div class="nav-item" data-tab="tab-improve" onclick="switchTab('tab-improve')">Improve Existing Venues</div>
+      <div class="nav-item" data-tab="tab-review" onclick="switchTab('tab-review')">Review &amp; Publish</div>
+      <div class="nav-item" data-tab="tab-audit" onclick="switchTab('tab-audit')">Audit</div>
+    </div>
+    
+    <div class="main">
+      <!-- Operator Dashboard Tab -->
+      <div id="tab-operator" class="tab-content active">
+        <div class="card">
+          <h2>Simple Operator Dashboard</h2>
+          <p>One screen for the two current goals: get venues ready, then enrich gallery/hero images. Safe actions only.</p>
+
+          <div class="form-group">
+            <label>Batch</label>
+            <select id="operatorBatchSelector" onchange="syncBatchFromOperator()"></select>
+          </div>
+
+          <div class="operator-grid">
+            <div class="operator-card">
+              <h3>1. Venue acquisition</h3>
+              <p>Check how many venues are found, ready, blocked, or missing required fields.</p>
+              <div class="btn-row">
+                <button class="primary" onclick="runOperatorAction('operator_venues')">Check venues</button>
+              </div>
+            </div>
+            <div class="operator-card">
+              <h3>2. Gallery enrichment</h3>
+              <p>Check image candidates, selected heroes, and venues still missing hero images.</p>
+              <div class="btn-row">
+                <button class="primary" onclick="runOperatorAction('operator_galleries')">Check galleries</button>
+              </div>
+            </div>
+            <div class="operator-card">
+              <h3>Refresh dashboard</h3>
+              <p>Regenerate the local operator dashboard from existing artifacts.</p>
+              <div class="btn-row">
+                <button onclick="runOperatorAction('operator_status')">Refresh status</button>
+                <button onclick="loadOperatorDashboard()">Open below</button>
+              </div>
+            </div>
+            <div class="operator-card">
+              <h3>Staging preview</h3>
+              <p>Run Supabase staging compatibility preview only. No writes, no publish.</p>
+              <div class="btn-row">
+                <button class="warning" onclick="runOperatorAction('operator_staging_dry_run')">Dry-run staging</button>
+              </div>
+            </div>
+          </div>
+
+          <iframe id="operatorDashboardFrame" class="operator-dashboard-frame"></iframe>
         </div>
-        <div id="artifactHost" class="artifact">Select an artifact.</div>
       </div>
-    </section>
-    <section class="right">
-      <div class="panel">
-        <h2>New Batch</h2>
-        <div class="batch-form">
-          <label>Batch id<input id="newBatchId" value="batch_005_buenos_aires_restaurants_50" oninput="this.dataset.touched=this.value.trim() ? 'true' : ''"></label>
-          <label>City<select id="newCity" onchange="syncCityDefaults()">
-            <option value="Buenos Aires">Buenos Aires</option>
-            <option value="New York City">New York</option>
-            <option value="Dubai">Dubai</option>
-          </select></label>
-          <label>Count<input id="newCount" value="50" oninput="syncBatchTypeDefaults()"></label>
-          <label>Batch type<select id="newBatchType" onchange="syncBatchTypeDefaults()">
-            <option value="bars">Bars</option>
-            <option value="cafes">Cafes</option>
-            <option value="restaurants">Restaurants</option>
-          </select></label>
-          <p class="muted" id="batchTypeHelp">Bars includes cocktail, speakeasy, wine, neighborhood bars, and a small rooftop/terrace slice.</p>
-          <label>Neighborhoods</label>
-          <div class="check-grid" id="newNeighborhoods"></div>
-          <div class="form-row">
-            <button onclick="runConfiguredBatch('custom_batch_plan')">Plan</button>
-            <button onclick="runConfiguredBatch('custom_batch_run')">Run</button>
+
+      <!-- Create Venues Tab -->
+      <div id="tab-create" class="tab-content">
+        <div class="card">
+          <h2>Create New Venue Batch</h2>
+          <p>Create a new batch of venues from seed discovery through publication review.</p>
+          
+          <div class="form-group">
+            <label>City</label>
+            <select id="createCity">
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="New York City">New York City</option>
+              <option value="Dubai">Dubai</option>
+            </select>
+          </div>
+          
+          <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div>
+              <label>Type</label>
+              <select id="createType">
+                <option value="bars">Bars</option>
+                <option value="cafes">Cafes</option>
+                <option value="restaurants">Restaurants</option>
+              </select>
+            </div>
+            <div>
+              <label>Count</label>
+              <input type="number" id="createCount" value="50" min="1" max="200">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Neighborhoods</label>
+            <input type="text" id="createNeighborhoods" value="Palermo, Chacarita, Villa Crespo, Colegiales, Recoleta, San Telmo">
+            <p style="font-size: 12px; margin-top: 6px;">Comma-separated list of neighborhoods.</p>
+          </div>
+          
+          <div class="btn-row">
+            <button onclick="runBatchPlan()">Plan batch</button>
+            <button class="primary" onclick="runBatchToReview()">Run batch to review</button>
           </div>
         </div>
       </div>
-      <div class="panel">
-        <h2>Actions</h2>
-        <div id="commands"></div>
+      
+      <!-- Improve Existing Venues Tab -->
+      <div id="tab-improve" class="tab-content">
+        <div class="card" id="galleryReviewCard">
+          <h2>Gallery Enrichment Flow</h2>
+          <p>Work here only. No downloads, no file moving, no hidden full-screen workflow. Review images, save decisions, preview the exact changes, then apply only after the preview is clean.</p>
+          <div class="form-group">
+            <label>Active Enrichment Run ID</label>
+            <input type="text" id="visibleEnrichmentId" value="enrich_current" oninput="syncVisibleEnrichmentId()">
+          </div>
+
+          <div class="flow-strip">
+            <div class="flow-step"><b>1. Load</b><span>Show selected images below.</span></div>
+            <div class="flow-step"><b>2. Decide</b><span>Approve, pause, or reject per venue.</span></div>
+            <div class="flow-step"><b>3. Preview</b><span>Dry-run only. No uploads or DB writes.</span></div>
+            <div class="flow-step"><b>4. Apply</b><span>Manual confirmation after preview.</span></div>
+          </div>
+
+          <div id="galleryFlowStatus" class="alert alert-warning">Load the current gallery run to begin.</div>
+          <div id="gallerySummary" class="summary-pills"></div>
+          <div class="review-toolbar">
+            <button class="primary" onclick="loadGalleryReviewDashboard()">1. Load review</button>
+            <button onclick="approveReadyInReview()">Approve ready venues</button>
+            <button onclick="pauseAllInReview()">Pause all</button>
+            <button onclick="saveGalleryReview('custom')">2. Save decisions</button>
+            <button class="warning" onclick="runGalleryDryRun()">3. Preview changes</button>
+            <button class="danger" onclick="runGalleryApply()">4. Apply approved photos</button>
+          </div>
+          <div id="galleryReviewList" class="review-grid"></div>
+          <pre id="galleryPreviewReport" class="preview-report"></pre>
+        </div>
+
+        <div class="card">
+          <details>
+            <summary>Start or continue a gallery discovery run</summary>
+            <div style="padding-top: 18px;">
+              <div class="form-group">
+                <label>City</label>
+                <select id="improveCity">
+                  <option value="Buenos Aires">Buenos Aires</option>
+                  <option value="New York City">New York City</option>
+                  <option value="Dubai">Dubai</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Target</label>
+                <select id="improveTarget">
+                  <option value="missing-gallery">Venues missing gallery photos</option>
+                  <option value="all">All eligible venues</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Count (Max Targets)</label>
+                <input type="number" id="improveCount" value="50" min="1" max="500">
+              </div>
+              <div class="form-group">
+                <label class="checkbox-wrap">
+                  <input type="checkbox" id="improveUseM3">
+                  <span>Allow M3 image classification</span>
+                </label>
+                <p style="font-size: 12px; margin-top: 6px; margin-left: 24px;">Uses paid vision calls. Leave off unless you are intentionally continuing discovery.</p>
+              </div>
+              <div class="btn-row">
+                <button class="primary" onclick="runFindImprovements()">Find improvements</button>
+                <button onclick="runContinueImprovements()">Continue improvement run</button>
+              </div>
+            </div>
+          </details>
+        </div>
       </div>
-      <div class="panel">
-        <h2>Console</h2>
-        <div id="console" class="console"></div>
+      
+      <!-- Review & Publish Tab -->
+      <div id="tab-review" class="tab-content">
+        <div class="card">
+          <h2>A. New Venue Publication</h2>
+          <p>Human decision layer before anything visible changes.</p>
+          
+          <div class="alert alert-warning">
+            <strong>Hidden public projection</strong> means rows are inserted as <code>pending_review</code>. <strong>Activate</strong> makes them visible in the product.
+          </div>
+          
+          <div class="btn-row">
+            <button onclick="loadReviewDashboard()">Open publication review</button>
+            <button class="warning" onclick="runProjectionApply()">Apply hidden public projection</button>
+            <button class="danger" onclick="runActivationApply()">Activate reviewed venues</button>
+          </div>
+        </div>
+        
+        <div class="card">
+          <h2>B. Gallery Improvements</h2>
+          
+          <div class="alert alert-warning" style="flex-direction: column;">
+            <p style="margin: 0 0 8px 0; color: inherit;">Gallery apply uploads approved images to Cloudinary and writes venue_images with role=gallery.</p>
+            <ul style="margin: 0; padding-left: 20px; color: inherit;">
+              <li>It does not change hero images.</li>
+              <li>It does not publish new venues.</li>
+              <li>It does not activate hidden venues.</li>
+            </ul>
+          </div>
+          
+          <div class="btn-row">
+            <button class="warning" onclick="runGalleryDryRun()">Preview gallery changes</button>
+            <button class="danger" onclick="runGalleryApply()">Apply approved gallery photos</button>
+          </div>
+        </div>
+        
+        <div id="reviewArtifactContainer" style="margin-top: 24px;"></div>
       </div>
-    </section>
+      
+      <!-- Audit Tab -->
+      <div id="tab-audit" class="tab-content">
+        <div class="card">
+          <h2>Catalog Health Audit</h2>
+          <p>Understand current catalog health and readiness.</p>
+          
+          <div class="btn-row" style="margin-bottom: 24px;">
+            <button class="primary" onclick="runCatalogAudit()">Run public catalog audit</button>
+            <button onclick="runPostActivationAudit()">Run post-activation audit</button>
+          </div>
+          
+          <div id="auditStatsContainer"></div>
+        </div>
+      </div>
+      
+      <!-- Advanced Drawer -->
+      <div class="advanced-drawer">
+        <details>
+          <summary>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            Advanced &amp; Legacy Controls
+          </summary>
+          <div style="padding-top: 16px;">
+            <div class="form-group" style="max-width: 300px;">
+              <label>Active Batch ID</label>
+              <select id="batchSelector" onchange="refreshArtifacts()"></select>
+            </div>
+            
+            <div class="form-group" style="max-width: 300px;">
+              <label>Active Enrichment Run ID</label>
+              <input type="text" id="legacyEnrichmentId" value="enrich_current">
+            </div>
+            
+            <h3>Artifact Files</h3>
+            <div class="file-list" id="legacyFiles"></div>
+          </div>
+        </details>
+      </div>
+    </div>
+    
+    <div class="right-panel">
+      <div class="console-header">
+        <h3>Action Log</h3>
+        <button style="padding: 4px 8px; font-size: 11px;" onclick="document.getElementById('console').innerHTML=''">Clear</button>
+      </div>
+      <div class="console" id="console">System ready.</div>
+    </div>
   </div>
+
   <script>
-    const boot = ${data};
-    const cityConfigs = {
-      'Buenos Aires': {
-        slug: 'buenos_aires',
-        neighborhoods: ['Palermo', 'Chacarita', 'Villa Crespo', 'Colegiales', 'Recoleta', 'San Telmo'],
-      },
-      'New York City': {
-        slug: 'new_york',
-        neighborhoods: ['Williamsburg', 'DUMBO', 'Lower East Side', 'NoMad', 'Chelsea', 'West Village'],
-      },
-      Dubai: {
-        slug: 'dubai',
-        neighborhoods: ['DIFC', 'Downtown Dubai', 'Jumeirah', 'Dubai Marina', 'Palm Jumeirah', 'Business Bay'],
-      },
-    };
-    let status = null;
-    let selectedArtifact = null;
-    let lastObservedFinish = '';
-    let batchItems = [];
-    let pendingBatchSelection = '';
-
-    async function init() {
-      await loadBatchList(boot.defaultBatch);
-      await refresh();
-      renderNeighborhoodChecks();
-      syncBatchTypeDefaults();
-      setInterval(pollRunState, 1500);
+    const bootData = ${data};
+    let currentWorkflow = { status: 'idle', batch_id: bootData.defaultBatch, enrichment_id: '' };
+    let wasRunning = false;
+    let galleryManifest = null;
+    let galleryDecisions = new Map();
+    
+    function switchTab(tabId) {
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      
+      document.querySelector('[data-tab="' + tabId + '"]').classList.add('active');
+      document.getElementById(tabId).classList.add('active');
     }
-
-    async function loadBatchList(preferredBatch) {
-      const batches = await (await fetch('/api/batches')).json();
-      batchItems = batches.batch_items || batches.batches.map(b => ({ id: b, label: b }));
-      const select = document.getElementById('batch');
-      const ids = batchItems.map(b => b.id);
-      const current = preferredBatch || select.value || boot.defaultBatch;
-      select.innerHTML = batchItems.map(b => '<option value="' + b.id + '">' + b.label + '</option>').join('');
-      select.value = ids.includes(current) ? current : (ids.includes(boot.defaultBatch) ? boot.defaultBatch : ids[0]);
-      select.onchange = () => { selectedArtifact = null; refresh(); };
+    
+    function appendLog(msg) {
+      const cons = document.getElementById('console');
+      cons.textContent += msg + '\\n';
+      cons.scrollTop = cons.scrollHeight;
     }
-
-    async function refresh() {
-      const batch = document.getElementById('batch').value;
-      status = await (await fetch('/api/status?batch=' + encodeURIComponent(batch))).json();
-      if (!selectedArtifact || !status.artifacts.some(a => a.file === selectedArtifact && a.exists)) {
-        selectedArtifact = status.artifacts.find(a => a.exists)?.file;
+    
+    async function apiCall(endpoint, payload) {
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          alert('Error: ' + (data.error || 'Unknown error'));
+          return false;
+        }
+        return true;
+      } catch (err) {
+        alert('Network error: ' + err.message);
+        return false;
       }
-      render();
-      if (selectedArtifact) await openArtifact(selectedArtifact, false, true);
     }
 
-    function render() {
-      const counts = status.counts || {};
-      const stats = [
-        ['Ready', counts.quality_gate?.ready_for_db_staging ?? 'n/a', 'ok'],
-        ['Blocked', counts.quality_gate?.blocked ?? 'n/a', 'bad'],
-        ['Approved', counts.decisions?.approved ?? 'n/a', 'ok'],
-        ['Cloudinary', counts.cloudinary?.uploaded ?? 'n/a', 'ok'],
-        ['Projected', counts.projection_apply?.approved_projected ?? 'n/a', 'ok'],
-        ['Activated', counts.activation?.activated ?? 0, counts.activation?.activated ? 'ok' : 'warn'],
-        ['Activation ready', counts.activation_dry_run?.ready ?? 'n/a', 'ok'],
-        ['Image errors', counts.cloudinary?.errors ?? 'n/a', counts.cloudinary?.errors ? 'bad' : 'ok'],
-        ['Editorial confirmed', counts.editorial_sources?.confirmed_editorial_mentions ?? 'n/a', 'ok'],
-        ['Editorial verify failed', counts.editorial_sources?.verification_failed ?? 'n/a', counts.editorial_sources?.verification_failed ? 'warn' : 'ok'],
-        ['Audit failed', counts.post_activation_audit?.failed ?? 'n/a', counts.post_activation_audit?.failed ? 'bad' : 'ok'],
-        ['Rollback eligible', counts.rollback?.eligible ?? 'n/a', counts.rollback?.eligible ? 'warn' : 'ok'],
-      ];
-      document.getElementById('stats').innerHTML = stats.map(([label, value, cls]) => '<div class="panel stat"><span class="muted">' + label + '</span><strong class="' + cls + '">' + value + '</strong></div>').join('');
-      document.getElementById('files').innerHTML = status.artifacts.map(a => '<div class="file-row"><span>' + a.label + '</span><button ' + (a.exists ? '' : 'disabled') + ' onclick="openArtifact(\\'' + a.file + '\\')">' + (a.exists ? 'open' : 'missing') + '</button></div>').join('');
-      document.getElementById('artifactTabs').innerHTML = status.artifacts.filter(a => a.exists).map(a => '<button class="' + (a.file === selectedArtifact ? 'active' : '') + '" onclick="openArtifact(\\'' + a.file + '\\')">' + a.label + '</button>').join('');
-      document.getElementById('commands').innerHTML = Object.entries(status.commands).map(([key, cmd]) => renderCommand(key, cmd)).join('');
+    function selectedOperatorBatch() {
+      return document.getElementById('operatorBatchSelector').value || currentWorkflow.batch_id || bootData.defaultBatch;
     }
 
-    function renderCommand(key, cmd) {
-      const cls = cmd.danger === 'publishes_public' ? 'danger' : (cmd.danger === 'safe' ? '' : 'write');
-      return '<div class="command"><h3>' + cmd.label + '</h3><p class="muted">' + cmd.description + '</p><button class="' + cls + '" onclick="runCommand(\\'' + key + '\\', \\'' + cmd.danger + '\\')">' + cmd.label + '</button></div>';
+    function syncBatchFromOperator() {
+      const batch = selectedOperatorBatch();
+      currentWorkflow.batch_id = batch;
+      const legacySelector = document.getElementById('batchSelector');
+      if (legacySelector) legacySelector.value = batch;
+      loadOperatorDashboard();
+      refreshArtifacts();
     }
 
-    async function openArtifact(file, rerender = true, preserveCurrent = false) {
-      selectedArtifact = file;
-      if (rerender) render();
-      const batch = document.getElementById('batch').value;
-      const artifact = status.artifacts.find(a => a.file === file);
-      const url = '/api/artifact?batch=' + encodeURIComponent(batch) + '&file=' + encodeURIComponent(file);
-      const host = document.getElementById('artifactHost');
-      const toolbar = document.getElementById('artifactToolbar');
-      toolbar.classList.toggle('visible', file === 'publication_review_dashboard.html');
-      if (artifact?.kind === 'html') {
-        if (preserveCurrent && host.tagName.toLowerCase() === 'iframe' && host.getAttribute('src') === url) return;
-        host.outerHTML = '<iframe id="artifactHost" class="artifact" src="' + url + '"></iframe>';
+    async function runOperatorAction(action) {
+      const batchId = selectedOperatorBatch();
+      currentWorkflow.batch_id = batchId;
+      const ok = await apiCall('/api/run', { batch_id: batchId, action });
+      if (ok) {
+        appendLog('Started ' + action + ' for ' + batchId);
+        setTimeout(loadOperatorDashboard, 1200);
+      }
+    }
+
+    function loadOperatorDashboard() {
+      const batch = selectedOperatorBatch();
+      const frame = document.getElementById('operatorDashboardFrame');
+      frame.src = '/api/artifact?batch=' + encodeURIComponent(batch) + '&file=operator_dashboard.html&ts=' + Date.now();
+    }
+
+    function currentEnrichmentRunId() {
+      return document.getElementById('visibleEnrichmentId').value || document.getElementById('legacyEnrichmentId').value || currentWorkflow.enrichment_id || 'enrich_current';
+    }
+
+    function syncVisibleEnrichmentId() {
+      const runId = document.getElementById('visibleEnrichmentId').value;
+      document.getElementById('legacyEnrichmentId').value = runId;
+      currentWorkflow.enrichment_id = runId;
+    }
+
+    function setGalleryFlowStatus(message, kind) {
+      const status = document.getElementById('galleryFlowStatus');
+      status.textContent = message;
+      status.className = 'alert ' + (kind === 'ok' ? 'alert-success' : 'alert-warning');
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+    }
+
+    function statusLabel(status) {
+      if (status === 'ready_for_gallery_review') return 'Ready';
+      if (status === 'needs_more_spatial_images') return 'Needs more spatial images';
+      if (status === 'blocked_gallery_quality') return 'Blocked by quality';
+      return status || 'Unknown';
+    }
+
+    function decisionPayload() {
+      return Object.fromEntries([...galleryDecisions.entries()].map(([venueId, value]) => [venueId, value]));
+    }
+
+    function setGalleryDecision(venueId, decision) {
+      const current = galleryDecisions.get(venueId) || { reviewer_notes: '' };
+      galleryDecisions.set(venueId, { ...current, decision });
+      const card = document.querySelector('[data-gallery-venue="' + CSS.escape(venueId) + '"]');
+      if (card) card.dataset.decision = decision;
+      renderGalleryCounts();
+    }
+
+    function setGalleryNote(venueId, notes) {
+      const current = galleryDecisions.get(venueId) || { decision: 'pause' };
+      galleryDecisions.set(venueId, { ...current, reviewer_notes: notes });
+    }
+
+    function approveReadyInReview() {
+      if (!galleryManifest) return loadGalleryReviewDashboard().then(approveReadyInReview);
+      galleryManifest.entries.forEach(entry => setGalleryDecision(entry.venue_id, entry.status === 'ready_for_gallery_review' ? 'approve_gallery' : 'pause'));
+      setGalleryFlowStatus('Ready venues approved locally. Click "2. Save decisions", or preview to save and dry-run automatically.', 'ok');
+    }
+
+    function pauseAllInReview() {
+      if (!galleryManifest) return;
+      galleryManifest.entries.forEach(entry => setGalleryDecision(entry.venue_id, 'pause'));
+      setGalleryFlowStatus('All venues paused locally. Click "2. Save decisions" to persist.', 'ok');
+    }
+
+    function renderGalleryCounts() {
+      if (!galleryManifest) return;
+      const values = [...galleryDecisions.values()];
+      const approved = values.filter(item => item.decision === 'approve_gallery').length;
+      const paused = values.filter(item => item.decision === 'pause').length;
+      const rejected = values.filter(item => item.decision === 'reject_gallery').length;
+      const approvedImages = galleryManifest.entries
+        .filter(entry => galleryDecisions.get(entry.venue_id)?.decision === 'approve_gallery')
+        .reduce((sum, entry) => sum + (Array.isArray(entry.images) ? entry.images.length : 0), 0);
+      const summary = document.getElementById('gallerySummary');
+      summary.innerHTML = [
+        '<span class="pill"><strong>' + galleryManifest.entries.length + '</strong> venues</span>',
+        '<span class="pill"><strong>' + galleryManifest.ready_for_gallery_review + '</strong> ready</span>',
+        '<span class="pill"><strong>' + galleryManifest.needs_more_spatial_images + '</strong> need more</span>',
+        '<span class="pill"><strong>' + galleryManifest.blocked_gallery_quality + '</strong> blocked</span>',
+        '<span class="pill"><strong>' + approved + '</strong> approved</span>',
+        '<span class="pill"><strong>' + approvedImages + '</strong> approved images</span>',
+        '<span class="pill"><strong>' + paused + '</strong> paused</span>',
+        '<span class="pill"><strong>' + rejected + '</strong> rejected</span>',
+      ].join('');
+    }
+
+    function renderGalleryReview() {
+      const list = document.getElementById('galleryReviewList');
+      if (!galleryManifest) {
+        list.innerHTML = '';
         return;
       }
-      toolbar.classList.remove('visible');
-      const text = await (await fetch(url)).text();
-      const current = document.getElementById('artifactHost');
-      if (current.tagName.toLowerCase() === 'iframe') current.outerHTML = '<pre id="artifactHost" class="artifact"></pre>';
-      document.getElementById('artifactHost').textContent = text;
+      renderGalleryCounts();
+      list.innerHTML = galleryManifest.entries.map(entry => {
+        const decision = galleryDecisions.get(entry.venue_id)?.decision || 'pause';
+        const images = (entry.images || []).slice(0, 3).map(image =>
+          '<div class="review-image"><img src="' + escapeHtml(image.resolved_image_url) + '" loading="lazy"><span>' +
+          escapeHtml(image.role || image.source_type || 'image') + ' | ' + escapeHtml(image.rights_status || '') + '</span></div>'
+        ).join('') || '<div class="review-image"><span>No selected images</span></div>';
+        return '<section class="review-card" data-gallery-venue="' + escapeHtml(entry.venue_id) + '" data-decision="' + escapeHtml(decision) + '">' +
+          '<div class="review-card-head"><h3>' + escapeHtml(entry.venue_name) + '</h3>' +
+          '<p>' + escapeHtml(statusLabel(entry.status)) + ' | ' + escapeHtml(entry.selected_count || 0) + ' images | ' + escapeHtml(entry.spatial_count || 0) + ' spatial</p></div>' +
+          '<div class="review-images">' + images + '</div>' +
+          '<div class="decision-buttons">' +
+          '<button onclick="setGalleryDecision(\\'' + escapeHtml(entry.venue_id) + '\\', \\'approve_gallery\\')">Approve</button>' +
+          '<button onclick="setGalleryDecision(\\'' + escapeHtml(entry.venue_id) + '\\', \\'pause\\')">Pause</button>' +
+          '<button onclick="setGalleryDecision(\\'' + escapeHtml(entry.venue_id) + '\\', \\'reject_gallery\\')">Reject</button>' +
+          '</div>' +
+          '<div class="review-notes"><textarea placeholder="Notes" oninput="setGalleryNote(\\'' + escapeHtml(entry.venue_id) + '\\', this.value)">' +
+          escapeHtml(galleryDecisions.get(entry.venue_id)?.reviewer_notes || '') + '</textarea></div>' +
+          '</section>';
+      }).join('');
     }
 
-    function openArtifactFullScreen() {
-      if (!selectedArtifact) return;
-      const batch = document.getElementById('batch').value;
-      const url = '/api/artifact?batch=' + encodeURIComponent(batch) + '&file=' + encodeURIComponent(selectedArtifact);
-      window.open(url, '_blank');
-    }
-
-    async function runCommand(action, danger) {
-      const batch = document.getElementById('batch').value;
-      let confirm = '';
-      if (danger !== 'safe') {
-        confirm = prompt('Type RUN to execute this action');
-        if (confirm !== 'RUN') return;
+    async function loadGalleryReviewDashboard() {
+      const runId = currentEnrichmentRunId();
+      try {
+        const res = await fetch('/api/enrichment-review/manifest?run=' + encodeURIComponent(runId));
+        const data = await res.json();
+        if (!res.ok) {
+          setGalleryFlowStatus('Could not load gallery review: ' + (data.error || 'unknown error'), 'warn');
+          return;
+        }
+        galleryManifest = data;
+        galleryDecisions = new Map((data.entries || []).map(entry => [entry.venue_id, { decision: 'pause', reviewer_notes: '' }]));
+        renderGalleryReview();
+        setGalleryFlowStatus('Loaded ' + data.entries.length + ' venues. Approve ready venues or adjust decisions below.', 'ok');
+      } catch (err) {
+        setGalleryFlowStatus('Could not load gallery review: ' + err.message, 'warn');
       }
-      const response = await fetch('/api/run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ batch_id: batch, action, confirm }) });
-      const payload = await response.json();
-      if (!response.ok) alert(payload.error || 'command failed to start');
-      await pollRunState();
     }
 
-    async function runConfiguredBatch(action) {
-      const neighborhoods = selectedNeighborhoods();
-      if (neighborhoods.length === 0) {
-        alert('Select at least one neighborhood.');
-        return;
+    async function loadGalleryPreviewReport() {
+      const runId = currentEnrichmentRunId();
+      const target = document.getElementById('galleryPreviewReport');
+      if (!target) return;
+      const res = await fetch('/api/enrichment-artifact?run=' + encodeURIComponent(runId) + '&file=gallery_apply_report.md&ts=' + Date.now());
+      if (!res.ok) return;
+      target.textContent = await res.text();
+      target.classList.add('visible');
+    }
+
+    async function saveGalleryReview(reviewAction) {
+      const runId = currentEnrichmentRunId();
+      if (!galleryManifest && reviewAction === 'custom') await loadGalleryReviewDashboard();
+      try {
+        const res = await fetch('/api/enrichment-review/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            run_id: runId,
+            review_action: reviewAction,
+            decisions: reviewAction === 'custom' ? decisionPayload() : undefined
+          })
+        });
+        const data = await res.json();
+        if (!res.ok) {
+          setGalleryFlowStatus('Could not save review manifest: ' + (data.error || 'unknown error'), 'warn');
+          appendLog('Gallery review save failed: ' + (data.error || 'unknown error'));
+          return false;
+        }
+        const message = 'Saved reviewed manifest: ' + data.approved_venues + ' venues approved, ' + data.approved_images + ' images, ' + data.paused_venues + ' paused.';
+        setGalleryFlowStatus(message, 'ok');
+        appendLog(message + ' File: ' + data.reviewed_file);
+        return true;
+      } catch (err) {
+        setGalleryFlowStatus('Could not save review manifest: ' + err.message, 'warn');
+        appendLog('Gallery review save failed: ' + err.message);
+        return false;
       }
-      const payload = {
-        batch_id: document.getElementById('batch').value,
-        action,
-        new_batch_id: document.getElementById('newBatchId').value,
-        city: document.getElementById('newCity').value,
-        count: document.getElementById('newCount').value,
-        neighborhoods: neighborhoods.join(','),
-        batch_type: document.getElementById('newBatchType').value,
-      };
-      const response = await fetch('/api/run', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+    }
+    
+    // Create Flow
+    async function runBatchPlan() {
+      const city = document.getElementById('createCity').value;
+      const count = document.getElementById('createCount').value;
+      const type = document.getElementById('createType').value;
+      const neighborhoods = document.getElementById('createNeighborhoods').value;
+      
+      const batchId = 'batch_new_' + city.toLowerCase().replace(/[^a-z0-9]/g, '_') + '_' + type + '_' + count;
+      currentWorkflow.batch_id = batchId;
+      
+      await apiCall('/api/venue-batches/plan', {
+        new_batch_id: batchId,
+        city, count, batch_type: type, neighborhoods
       });
-      const result = await response.json();
-      if (!response.ok) alert(result.error || 'command failed to start');
-      if (response.ok) pendingBatchSelection = payload.new_batch_id;
-      await pollRunState();
+    }
+    
+    async function runBatchToReview() {
+      const city = document.getElementById('createCity').value;
+      const count = document.getElementById('createCount').value;
+      const type = document.getElementById('createType').value;
+      const neighborhoods = document.getElementById('createNeighborhoods').value;
+      
+      const batchId = 'batch_new_' + city.toLowerCase().replace(/[^a-z0-9]/g, '_') + '_' + type + '_' + count;
+      currentWorkflow.batch_id = batchId;
+      
+      await apiCall('/api/venue-batches/run-to-review', {
+        new_batch_id: batchId,
+        city, count, batch_type: type, neighborhoods
+      });
+    }
+    
+    // Improve Flow
+    function getEnrichmentId() {
+      const city = document.getElementById('improveCity').value.toLowerCase().replace(/[^a-z0-9]/g, '_');
+      const target = document.getElementById('improveTarget').value;
+      const date = new Date().toISOString().slice(0,10).replace(/-/g, '_');
+      return 'enrich_' + date + '_' + city + '_' + target;
+    }
+    
+    async function runFindImprovements() {
+      const useM3 = document.getElementById('improveUseM3').checked;
+      const endpoint = useM3 ? '/api/enrichment/run-image-classification' : '/api/enrichment/start';
+      const runId = getEnrichmentId();
+      document.getElementById('legacyEnrichmentId').value = runId;
+      document.getElementById('visibleEnrichmentId').value = runId;
+      currentWorkflow.enrichment_id = runId;
+      
+      await apiCall(endpoint, {
+        enrichment_run_id: runId,
+        enrichment_city: document.getElementById('improveCity').value,
+        enrichment_max_targets: document.getElementById('improveCount').value
+      });
+    }
+    
+    async function runContinueImprovements() {
+      const runId = currentEnrichmentRunId() || getEnrichmentId();
+      await apiCall('/api/enrichment/continue', { enrichment_run_id: runId });
+    }
+    
+    async function runGalleryDryRun() {
+      const runId = currentEnrichmentRunId();
+      const saved = await saveGalleryReview('custom');
+      if (!saved) return;
+      const ok = await apiCall('/api/enrichment/gallery-dry-run', { enrichment_run_id: runId });
+      if (ok) {
+        setGalleryFlowStatus('Preview started. The report will appear below when the command finishes.', 'ok');
+        setTimeout(loadGalleryPreviewReport, 2500);
+        setTimeout(loadGalleryPreviewReport, 5000);
+      }
+    }
+    
+    async function runGalleryApply() {
+      const runId = currentEnrichmentRunId();
+      const conf = prompt('Type APPLY GALLERY to confirm applying photos to Cloudinary and DB:');
+      if (conf !== 'APPLY GALLERY') return;
+      await apiCall('/api/enrichment/apply-gallery', { enrichment_run_id: runId, confirm: 'APPLY GALLERY' });
+    }
+    
+    // Review Flow
+    async function runProjectionApply() {
+      const batchId = currentWorkflow.batch_id || bootData.defaultBatch;
+      const conf = prompt('Type RUN to apply hidden public projection:');
+      if (conf !== 'RUN') return;
+      await apiCall('/api/publication/apply-projection', { batch_id: batchId, confirm: 'RUN' });
+    }
+    
+    async function runActivationApply() {
+      const batchId = currentWorkflow.batch_id || bootData.defaultBatch;
+      const conf = prompt('Type RUN to activate reviewed venues:');
+      if (conf !== 'RUN') return;
+      await apiCall('/api/publication/activate', { batch_id: batchId, confirm: 'RUN' });
+    }
+    
+    // Audit Flow
+    async function runCatalogAudit() {
+      await apiCall('/api/audit/public-catalog', {});
+    }
+    
+    async function runPostActivationAudit() {
+      const batchId = currentWorkflow.batch_id || bootData.defaultBatch;
+      await apiCall('/api/audit/public-catalog', { batch_id: batchId, action: 'post_activation_audit' });
+    }
+    
+    // Artifact loading
+    async function loadReviewDashboard() {
+      const batch = currentWorkflow.batch_id || bootData.defaultBatch;
+      const url = '/api/artifact?batch=' + encodeURIComponent(batch) + '&file=publication_review_dashboard.html';
+      const container = document.getElementById('reviewArtifactContainer');
+      const host = document.createElement('iframe');
+      host.className = 'operator-dashboard-frame';
+      host.src = url;
+      container.innerHTML = '';
+      container.appendChild(host);
+    }
+    
+    function openExternalArtifact(file) {
+      const batch = currentWorkflow.batch_id || bootData.defaultBatch;
+      window.open('/api/artifact?batch=' + encodeURIComponent(batch) + '&file=' + encodeURIComponent(file), '_blank');
     }
 
-    function syncCityDefaults() {
-      renderNeighborhoodChecks();
-      syncBatchTypeDefaults();
+    function openExternalEnrichmentArtifact(file) {
+      const runId = currentEnrichmentRunId();
+      window.open('/api/enrichment-artifact?run=' + encodeURIComponent(runId) + '&file=' + encodeURIComponent(file), '_blank');
     }
 
-    function renderNeighborhoodChecks() {
-      const city = document.getElementById('newCity').value || 'Buenos Aires';
-      const config = cityConfigs[city] || cityConfigs['Buenos Aires'];
-      document.getElementById('newNeighborhoods').innerHTML = config.neighborhoods.map((neighborhood) =>
-        '<label><input type="checkbox" value="' + neighborhood.replace(/"/g, '&quot;') + '" checked onchange="syncBatchTypeDefaults()"> ' + neighborhood + '</label>'
+    async function loadRawArtifact(file) {
+      const batch = document.getElementById('batchSelector').value || currentWorkflow.batch_id;
+      const res = await fetch('/api/artifact?batch=' + encodeURIComponent(batch) + '&file=' + encodeURIComponent(file));
+      if (!res.ok) return alert('Artifact not found');
+      
+      if (file.endsWith('.html')) {
+        openExternalArtifact(file);
+      } else {
+        const data = await res.text();
+        let text = document.getElementById('artifactText');
+        if (!text) {
+          text = document.createElement('pre');
+          text.id = 'artifactText';
+          text.className = 'artifact visible';
+          document.getElementById('reviewArtifactContainer').appendChild(text);
+        }
+        text.textContent = data;
+      }
+    }
+    
+    // Polling & Status
+    async function pollState() {
+      try {
+        const [workflowsRes, runStateRes] = await Promise.all([
+          fetch('/api/workflows'),
+          fetch('/api/run-state')
+        ]);
+        
+        const wf = await workflowsRes.json();
+        const rs = await runStateRes.json();
+        if (wf.latest_enrichment_run_id && wf.latest_enrichment_run_id !== currentWorkflow.enrichment_id) {
+          currentWorkflow.enrichment_id = wf.latest_enrichment_run_id;
+          document.getElementById('legacyEnrichmentId').value = wf.latest_enrichment_run_id;
+          document.getElementById('visibleEnrichmentId').value = wf.latest_enrichment_run_id;
+        }
+        
+        const badge = document.getElementById('workflowStatusBadge');
+        const badgeText = document.getElementById('workflowStatusText');
+        
+        if (rs.running) {
+          badge.className = 'status-badge running';
+          badgeText.textContent = 'Running: ' + rs.action;
+          wasRunning = true;
+          
+          const consoleEl = document.getElementById('console');
+          if (rs.log && rs.log.length > 0) {
+            consoleEl.textContent = rs.log.join('');
+            consoleEl.scrollTop = consoleEl.scrollHeight;
+          }
+        } else {
+          badge.className = 'status-badge idle';
+          badgeText.textContent = 'Idle';
+          if (wasRunning) {
+            wasRunning = false;
+            loadOperatorDashboard();
+            loadGalleryReviewDashboard();
+            loadGalleryPreviewReport();
+            refreshArtifacts();
+          }
+        }
+        
+      } catch (e) {
+        // ignore network errors on poll
+      }
+    }
+    
+    async function loadBatches() {
+      const res = await fetch('/api/batches');
+      const data = await res.json();
+      const sel = document.getElementById('batchSelector');
+      const operatorSel = document.getElementById('operatorBatchSelector');
+      sel.innerHTML = data.batch_items.map(b => '<option value="' + b.id + '">' + b.label + '</option>').join('');
+      operatorSel.innerHTML = data.batch_items.map(b => '<option value="' + b.id + '">' + b.label + '</option>').join('');
+      sel.value = bootData.defaultBatch;
+      operatorSel.value = bootData.defaultBatch;
+      refreshArtifacts();
+      loadOperatorDashboard();
+      const workflowsRes = await fetch('/api/workflows');
+      const workflows = await workflowsRes.json();
+      if (workflows.latest_enrichment_run_id) {
+        currentWorkflow.enrichment_id = workflows.latest_enrichment_run_id;
+        document.getElementById('legacyEnrichmentId').value = workflows.latest_enrichment_run_id;
+        document.getElementById('visibleEnrichmentId').value = workflows.latest_enrichment_run_id;
+        loadGalleryReviewDashboard();
+      }
+    }
+    
+    async function refreshArtifacts() {
+      const batch = document.getElementById('batchSelector').value;
+      currentWorkflow.batch_id = batch;
+      const res = await fetch('/api/status?batch=' + encodeURIComponent(batch));
+      const data = await res.json();
+      
+      const list = document.getElementById('legacyFiles');
+      list.innerHTML = data.artifacts.map(a => 
+        '<div class="file-item"><span>' + a.label + '</span>' + 
+        '<button ' + (a.exists ? '' : 'disabled') + ' onclick="loadRawArtifact(\\'' + a.file + '\\')">' + 
+        (a.exists ? 'Open' : 'Missing') + '</button></div>'
       ).join('');
     }
-
-    function selectedNeighborhoods() {
-      return Array.from(document.querySelectorAll('#newNeighborhoods input:checked')).map(input => input.value);
-    }
-
-    function syncBatchTypeDefaults() {
-      const type = document.getElementById('newBatchType').value;
-      const batchId = document.getElementById('newBatchId');
-      const city = document.getElementById('newCity').value || 'Buenos Aires';
-      const count = document.getElementById('newCount').value || '50';
-      const slugCity = (cityConfigs[city] && cityConfigs[city].slug) || city.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || 'city';
-      const slugAreas = selectedNeighborhoods().map(slugPart).slice(0, 3).join('_') || 'all';
-      const help = {
-        bars: 'Bars includes cocktail, speakeasy, wine, neighborhood bars, and a small rooftop/terrace slice.',
-        cafes: 'Uses Stage 00 type mix: cafes=count.',
-        restaurants: 'Restaurants are atmosphere-forward only; not food-guide coverage.',
-      };
-      document.getElementById('batchTypeHelp').textContent = help[type] || help.bars;
-      if (!batchId.dataset.touched) batchId.value = 'batch_' + nextBatchNumberHint() + '_' + slugCity + '_' + type + '_' + count + '_' + slugAreas;
-    }
-
-    function nextBatchNumberHint() {
-      const maxNumber = batchItems.reduce((max, item) => {
-        const match = String(item.id || '').match(/batch_(\\d+)/);
-        return match ? Math.max(max, Number(match[1])) : max;
-      }, 0);
-      return String(maxNumber + 1).padStart(3, '0');
-    }
-
-    function slugPart(value) {
-      return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 18) || 'area';
-    }
-
-    async function openManual() {
-      selectedArtifact = null;
-      const text = await (await fetch('/api/manual')).text();
-      const current = document.getElementById('artifactHost');
-      if (current.tagName.toLowerCase() === 'iframe') current.outerHTML = '<pre id="artifactHost" class="artifact"></pre>';
-      document.getElementById('artifactHost').textContent = text;
-      document.getElementById('artifactTabs').querySelectorAll('button').forEach(button => button.classList.remove('active'));
-    }
-
-    async function pollRunState() {
-      const state = await (await fetch('/api/run-state')).json();
-      document.getElementById('runState').textContent = state.running ? 'running ' + state.action : 'idle';
-      const log = (state.log || []).join('');
-      const consoleEl = document.getElementById('console');
-      consoleEl.textContent = log || 'No command output yet.';
-      consoleEl.scrollTop = consoleEl.scrollHeight;
-      if (!state.running && state.finished_at && state.finished_at !== lastObservedFinish) {
-        lastObservedFinish = state.finished_at;
-        const targetBatch = pendingBatchSelection;
-        pendingBatchSelection = '';
-        await loadBatchList(targetBatch);
-        refresh();
-      }
-    }
-
-    init();
+    
+    // Init
+    loadBatches();
+    setInterval(pollState, 1500);
   </script>
 </body>
 </html>`;
@@ -817,6 +1575,10 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 function cleanBatchId(value: string): string {
   return value.replace(/[^a-zA-Z0-9_.-]/g, '_').replace(/_+/g, '_').replace(/^_+|_+$/g, '') || 'batch_new';
+}
+
+function cleanRunId(value: string): string {
+  return value.replace(/[^a-zA-Z0-9_.-]/g, '_').replace(/_+/g, '_').replace(/^_+|_+$/g, '');
 }
 
 function writeManual(response: ServerResponse): void {

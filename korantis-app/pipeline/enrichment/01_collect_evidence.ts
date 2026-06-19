@@ -125,7 +125,7 @@ async function collectVenueEvidence(
   if (menuUrl) sources.push(await buildHttpEvidence(target, 'menu_url', menuUrl, venue, fetchLog));
 
   const reservationUrl = getUrl(venue.reservation_url, nested(venue.canonical_data, 'reservation_url'), nested(venue.enrichment_data, 'facts.reservation_url.value'));
-  if (reservationUrl) sources.push(await buildHttpEvidence(target, 'reservation_url', reservationUrl, venue, fetchLog));
+  if (reservationUrl) sources.push(await buildHttpEvidence(target, reservationSourceId(reservationUrl), reservationUrl, venue, fetchLog));
 
   const facts = sources.flatMap((source) => source.extracted_facts);
   const sourcesAttempted = sources.length;
@@ -194,7 +194,10 @@ async function buildHttpEvidence(
   const facts: EvidenceFact[] = [];
   if (sourceId === 'official_website') facts.push(buildFact('website', sourceUrl, sourceId, authority, sourceUrl, 'deterministic'));
   if (sourceId === 'menu_url') facts.push(buildFact('menu_url', sourceUrl, sourceId, authority, sourceUrl, 'deterministic'));
-  if (sourceId === 'reservation_url') facts.push(buildFact('reservation_url', sourceUrl, sourceId, authority, sourceUrl, 'deterministic'));
+  if (sourceId === 'reservation_url' || sourceId === 'opentable' || sourceId === 'tock') {
+    facts.push(buildFact('reservation_url', sourceUrl, sourceId, authority, sourceUrl, 'deterministic'));
+    if (sourceId !== 'reservation_url') facts.push(buildFact('reservation_platform', sourceId, sourceId, authority, sourceUrl, 'deterministic'));
+  }
 
   fetchLog.push({
     venue_id: target.venue_id,
@@ -235,6 +238,13 @@ function buildStoredLinkEvidence(target: EnrichmentTarget, sourceId: string, sou
     raw_snippet: `${target.venue_name}: stored social profile link`,
     warnings: [],
   };
+}
+
+function reservationSourceId(url: string): 'reservation_url' | 'opentable' | 'tock' {
+  const normalized = url.toLowerCase();
+  if (normalized.includes('opentable.com')) return 'opentable';
+  if (normalized.includes('exploretock.com')) return 'tock';
+  return 'reservation_url';
 }
 
 function buildMissingVenueEvidence(target: EnrichmentTarget): VenueEvidence {

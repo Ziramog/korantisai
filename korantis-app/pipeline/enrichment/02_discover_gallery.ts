@@ -182,10 +182,9 @@ export async function discoverGallery(options: Options): Promise<GalleryDiscover
     }
   }
 
-  const expansionBatchId = readExpansionBatchId(outputDir);
-  if (expansionBatchId) {
-    const stage04 = readStage04Results(expansionBatchId);
-    if (stage04.length > 0) sourceBatches.add(expansionBatchId);
+  for (const enrichmentBatchId of readEnrichmentVisionBatchIds(outputDir)) {
+    const stage04 = readStage04Results(enrichmentBatchId);
+    if (stage04.length > 0) sourceBatches.add(enrichmentBatchId);
     for (const target of targetsResult.targets) {
       const venue = venuesById.get(target.venue_id);
       if (!venue) continue;
@@ -193,7 +192,7 @@ export async function discoverGallery(options: Options): Promise<GalleryDiscover
       const imageSourceUrl = safeString(nested(venue.publication_metadata, 'image_source_url'));
       const targetKey = normalizeText(target.venue_name);
       for (const record of stage04.filter((item) => normalizeText(item.venue_name) === targetKey)) {
-        candidates.push(fromStage04Record(target, record, expansionBatchId, currentHero, imageSourceUrl));
+        candidates.push(fromStage04Record(target, record, enrichmentBatchId, currentHero, imageSourceUrl));
       }
     }
   }
@@ -503,15 +502,22 @@ function readStage04Results(batchId: string): Stage04VisionRecord[] {
   return parsed.results || parsed.vision_results || [];
 }
 
-function readExpansionBatchId(outputDir: string): string {
-  const filePath = path.join(outputDir, 'gallery_expansion_queue.json');
-  if (!existsSync(filePath)) return '';
-  try {
-    const parsed = JSON.parse(readFileSync(filePath, 'utf8')) as { expansion_batch_id?: unknown };
-    return safeString(parsed.expansion_batch_id);
-  } catch {
-    return '';
-  }
+function readEnrichmentVisionBatchIds(outputDir: string): string[] {
+  const specs = [
+    { file: 'gallery_expansion_queue.json', key: 'expansion_batch_id' },
+    { file: 'deep_image_queue.json', key: 'deep_discovery_batch_id' },
+  ];
+  const batchIds = specs.map((spec) => {
+    const filePath = path.join(outputDir, spec.file);
+    if (!existsSync(filePath)) return '';
+    try {
+      const parsed = JSON.parse(readFileSync(filePath, 'utf8')) as Record<string, unknown>;
+      return safeString(parsed[spec.key]);
+    } catch {
+      return '';
+    }
+  }).filter(Boolean);
+  return [...new Set(batchIds)];
 }
 
 async function readTable<T>(supabase: SupabaseClient, table: string): Promise<TableRead<T>> {

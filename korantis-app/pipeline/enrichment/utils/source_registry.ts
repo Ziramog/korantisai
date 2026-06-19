@@ -57,6 +57,24 @@ export const SOURCE_REGISTRY: SourceDefinition[] = [
     max_age_days: 60,
   },
   {
+    source_id: 'opentable',
+    source_name: 'OpenTable',
+    source_type: 'booking_menu',
+    authority_level: 3,
+    cities: ['*'],
+    fetch_method: 'http_head',
+    max_age_days: 60,
+  },
+  {
+    source_id: 'tock',
+    source_name: 'Tock',
+    source_type: 'booking_menu',
+    authority_level: 3,
+    cities: ['*'],
+    fetch_method: 'http_head',
+    max_age_days: 60,
+  },
+  {
     source_id: 'michelin',
     source_name: 'Michelin Guide',
     source_type: 'editorial_trusted',
@@ -106,4 +124,3 @@ export const SOURCE_REGISTRY: SourceDefinition[] = [
 export function sourceAppliesToCity(source: SourceDefinition, city: string): boolean {
   return source.cities.includes('*') || source.cities.some((item) => item.toLowerCase() === city.toLowerCase());
 }
-
