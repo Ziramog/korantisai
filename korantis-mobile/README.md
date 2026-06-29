@@ -1,6 +1,6 @@
 # Korantis Mobile
 
-Native Android/iOS client for Korantis, built with Expo SDK 56, React Native and Expo Router.
+Native Android/iOS client for Korantis, built with Expo SDK 56, React Native and Expo Router. The current mobile build is Expo Go compatible.
 
 ## Run locally
 
@@ -12,20 +12,36 @@ npm start
 
 `npm start` also launches a loopback-only API proxy on `127.0.0.1:8787`. Expo Web uses it to avoid browser CORS restrictions; Android and iOS continue calling `EXPO_PUBLIC_API_BASE_URL` directly. If Metro was already running when the proxy was added, stop it with `Ctrl+C` and restart `npm start`.
 
-For the Android development build (required once Mapbox/native auth are added):
+For a local Android development build:
 
 ```bash
 npm run android
 ```
 
-This command requires a local Android SDK (`ANDROID_HOME` or `android/local.properties`). This workstation currently has Java 21 but no Android SDK. The alternative is to link the app to an Expo account and run:
+This command requires `JAVA_HOME` plus a local Android SDK (`ANDROID_HOME` or `android/local.properties`). Expo Go remains the fastest local path when local Android tooling is not installed.
+
+## Installable builds
+
+The project already has `eas.json` profiles for installable Android builds:
+
+- `development`: internal development APK with Expo Dev Client.
+- `preview`: internal APK for installing on a device without the Play Store.
+- `production`: store-oriented production build.
+
+Log in with the product Expo account, then run:
 
 ```bash
-npx eas-cli@latest init
-npx eas-cli@latest build --platform android --profile preview
+npx eas-cli@latest login
+npm run build:android:preview
 ```
 
-`eas init` creates/links an external Expo project and therefore is intentionally left for the product owner account.
+For a production Android build:
+
+```bash
+npm run build:android:production
+```
+
+This repository is already linked to an EAS project in `app.config.ts`. If building from a fresh checkout, confirm `eas whoami` returns the expected Expo account before uploading credentials or generating release builds.
 
 ## Quality gates
 
@@ -40,13 +56,15 @@ The app reads the production-compatible `/api/venues` endpoint, validates the pa
 
 ## Atlas and bottom navigation
 
-Explore, Atlas, Guardados and Vos are real Expo Router routes. Guardados share one persisted provider across every screen. Atlas uses `@rnmapbox/maps` with clustering on Android/iOS and requires:
+Explore, Atlas, Guardados and Vos are real Expo Router routes. Guardados share one persisted provider across every screen. In Expo Go, Atlas uses a lightweight native preview that keeps venue selection and saved-state context without requiring a custom native client.
+
+Web uses Mapbox GL and requires:
 
 ```text
 EXPO_PUBLIC_MAPBOX_ACCESS_TOKEN=pk...
 ```
 
-Because Mapbox is a native module, an older development client cannot load Atlas. Rebuild it after installing the dependency:
+If native Mapbox is reintroduced later, rebuild a development client after adding the native dependency:
 
 ```bash
 # With a local Android SDK
@@ -56,7 +74,7 @@ npm run android
 npx eas-cli@latest build --platform android --profile development
 ```
 
-Web uses Mapbox GL and Android/iOS use the native Mapbox renderer. Atlas includes clusters, a synchronized venue carousel, current-location centering and animated selected markers. Location permission is requested only when the user taps the locate control.
+Location permission is requested only when the user taps the locate control.
 
 ## Google authentication and cloud sync
 

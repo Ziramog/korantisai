@@ -50,7 +50,6 @@ const config: ExpoConfig = {
         locationWhenInUsePermission: 'Korantis usa tu ubicación para mostrarte atmósferas cercanas en el Atlas.',
       },
     ],
-    '@rnmapbox/maps',
     [
       'expo-splash-screen',
       {

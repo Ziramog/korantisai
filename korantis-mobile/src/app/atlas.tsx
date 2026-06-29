@@ -3,7 +3,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { Image } from 'expo-image';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AtlasMap } from '@/features/atlas/atlas-map';
@@ -173,12 +173,12 @@ const styles = StyleSheet.create({
   cityName: { color: colors.textSecondary, fontFamily: fonts.bodyMedium, fontSize: 8, letterSpacing: 0.8 },
   cityChevron: { color: colors.textTertiary, fontSize: 7 },
   loader: { position: 'absolute', left: 0, right: 0, top: '48%' },
-  locationButton: { position: 'absolute', right: 14, top: 96, width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(15,13,11,0.88)', borderWidth: 1, borderColor: 'rgba(201,169,110,0.38)', shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.4, shadowRadius: 10, elevation: 6 },
+  locationButton: { position: 'absolute', right: 14, top: 96, width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(15,13,11,0.88)', borderWidth: 1, borderColor: 'rgba(201,169,110,0.38)', ...Platform.select({ web: { boxShadow: '0 4px 10px rgba(0,0,0,0.40)' }, default: { elevation: 6 } }) },
   locationButtonBusy: { opacity: 0.65 },
   locationError: { position: 'absolute', left: 18, right: 70, top: 100, minHeight: 36, justifyContent: 'center', borderRadius: 18, backgroundColor: 'rgba(15,13,11,0.92)', paddingHorizontal: 14, borderWidth: StyleSheet.hairlineWidth, borderColor: 'rgba(216,135,115,0.35)' },
   locationErrorText: { color: colors.error, fontFamily: fonts.body, fontSize: 9, lineHeight: 13 },
   carouselWrap: { position: 'absolute', left: 0, right: 0, bottom: 66 },
-  venueCard: { height: 180, overflow: 'hidden', borderRadius: 15, backgroundColor: colors.blackWarm, borderWidth: 1, borderColor: 'rgba(255,255,255,0.12)', shadowColor: '#000', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.42, shadowRadius: 18, elevation: 8 },
+  venueCard: { height: 180, overflow: 'hidden', borderRadius: 15, backgroundColor: colors.blackWarm, borderWidth: 1, borderColor: 'rgba(255,255,255,0.12)', ...Platform.select({ web: { boxShadow: '0 8px 18px rgba(0,0,0,0.42)' }, default: { elevation: 8 } }) },
   venueCardSelected: { borderColor: 'rgba(201,169,110,0.72)' },
   cardImageFrame: { height: 124, backgroundColor: colors.surface, overflow: 'hidden' },
   cardImage: { width: '100%', height: '100%', backgroundColor: colors.surface },
