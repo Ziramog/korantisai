@@ -43,6 +43,17 @@ npm run build:android:production
 
 This repository is already linked to an EAS project in `app.config.ts`. If building from a fresh checkout, confirm `eas whoami` returns the expected Expo account before uploading credentials or generating release builds.
 
+## Over-the-air updates
+
+Installable builds include EAS Update support. Use OTA only for JavaScript, styling, copy, assets and API behavior that does not change the native runtime:
+
+```bash
+npm run update:preview -- --message "Fix mobile UI"
+npm run update:production -- --message "Release mobile UI fix"
+```
+
+Any native dependency, permission, Expo SDK, icon/splash or `app.config.ts` runtime change requires a new build instead of OTA.
+
 ## Quality gates
 
 ```bash
@@ -56,15 +67,15 @@ The app reads the production-compatible `/api/venues` endpoint, validates the pa
 
 ## Atlas and bottom navigation
 
-Explore, Atlas, Guardados and Vos are real Expo Router routes. Guardados share one persisted provider across every screen. In Expo Go, Atlas uses a lightweight native preview that keeps venue selection and saved-state context without requiring a custom native client.
+Explore, Atlas, Guardados and Vos are real Expo Router routes. Guardados share one persisted provider across every screen. Android/iOS installable builds use `@rnmapbox/maps` for the native Atlas map with clustering, venue selection, current-location centering and animated selected markers.
 
-Web uses Mapbox GL and requires:
+Web uses Mapbox GL. Native and web maps require:
 
 ```text
 EXPO_PUBLIC_MAPBOX_ACCESS_TOKEN=pk...
 ```
 
-If native Mapbox is reintroduced later, rebuild a development client after adding the native dependency:
+Because Mapbox is a native module, changes to the native map dependency require a new build:
 
 ```bash
 # With a local Android SDK

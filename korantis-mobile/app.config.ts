@@ -3,11 +3,17 @@ import type { ExpoConfig } from 'expo/config';
 const config: ExpoConfig = {
   name: 'Korantis',
   slug: 'korantis-mobile',
-  version: '0.1.0',
+  version: '0.2.0',
   orientation: 'portrait',
   icon: './assets/images/korantis-logo.jpeg',
   scheme: 'korantis',
   userInterfaceStyle: 'dark',
+  runtimeVersion: {
+    policy: 'appVersion',
+  },
+  updates: {
+    url: 'https://u.expo.dev/b91200f1-a21a-4279-a548-16428e629d58',
+  },
   ios: {
     icon: './assets/images/korantis-logo.jpeg',
     bundleIdentifier: 'com.korantis.app',
@@ -16,7 +22,6 @@ const config: ExpoConfig = {
   },
   android: {
     package: 'com.korantis.app',
-    versionCode: 1,
     predictiveBackGestureEnabled: true,
     adaptiveIcon: {
       backgroundColor: '#0A0A0A',
@@ -50,6 +55,7 @@ const config: ExpoConfig = {
         locationWhenInUsePermission: 'Korantis usa tu ubicación para mostrarte atmósferas cercanas en el Atlas.',
       },
     ],
+    '@rnmapbox/maps',
     [
       'expo-splash-screen',
       {
