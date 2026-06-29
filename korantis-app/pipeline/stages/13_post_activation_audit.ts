@@ -76,6 +76,8 @@ interface PostActivationAuditResult {
 
 const CITY_BOUNDS: Record<string, CityBounds> = {
   'buenos aires': { min_lat: -34.8, max_lat: -34.4, min_lng: -58.65, max_lng: -58.2 },
+  'cordoba': { min_lat: -31.55, max_lat: -31.25, min_lng: -64.35, max_lng: -64.05 },
+  'cordoba argentina': { min_lat: -31.55, max_lat: -31.25, min_lng: -64.35, max_lng: -64.05 },
   'new york city': { min_lat: 40.45, max_lat: 40.95, min_lng: -74.3, max_lng: -73.65 },
   'new york': { min_lat: 40.45, max_lat: 40.95, min_lng: -74.3, max_lng: -73.65 },
   dubai: { min_lat: 24.75, max_lat: 25.45, min_lng: 54.85, max_lng: 55.65 },

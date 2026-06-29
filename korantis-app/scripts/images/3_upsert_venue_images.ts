@@ -224,7 +224,7 @@ async function main() {
     if (write) {
       const { data, error } = await supabase.from('venue_images').insert(cloudinaryFields).select('id').single();
       if (error) throw new Error(`Unable to insert ${image.venue_name} ${image.role}: ${error.message}`);
-      existing.push({ id: String(data.id), venue_id: image.venue_id, ...cloudinaryFields });
+      existing.push({ id: String(data.id), ...cloudinaryFields });
       existingByVenue.set(image.venue_id, existing);
     }
 

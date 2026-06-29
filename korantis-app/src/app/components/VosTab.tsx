@@ -6,6 +6,7 @@ import { useCircadian } from '../contexts/CircadianContext';
 import AuthPanel from './AuthPanel';
 import { t } from '../utils/i18n';
 import { trackEvent } from '@/lib/analytics';
+import { CITY_CODES } from '@/lib/cities';
 import { createClient } from '@/utils/supabase/client';
 
 const COPY = {
@@ -200,7 +201,7 @@ export default function VosTab() {
                 <span className="font-sans text-sm">{copy.city}</span>
               </div>
               <div className="flex rounded-lg bg-white/5 p-1">
-                {(['BUE', 'NYC', 'DXB'] as const).map((nextCity) => (
+                {CITY_CODES.map((nextCity) => (
                   <button
                     key={nextCity}
                     type="button"

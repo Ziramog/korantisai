@@ -124,6 +124,8 @@ const DEFAULT_OUTPUT_DIR = path.join(process.cwd(), 'data', 'audits');
 const PAGE_SIZE = 1000;
 const CITY_BOUNDS: Record<string, { minLat: number; maxLat: number; minLng: number; maxLng: number }> = {
   'buenos aires': { minLat: -34.8, maxLat: -34.4, minLng: -58.65, maxLng: -58.2 },
+  'cordoba': { minLat: -31.55, maxLat: -31.25, minLng: -64.35, maxLng: -64.05 },
+  'cordoba argentina': { minLat: -31.55, maxLat: -31.25, minLng: -64.35, maxLng: -64.05 },
   'new york': { minLat: 40.45, maxLat: 40.95, minLng: -74.3, maxLng: -73.65 },
   'new york city': { minLat: 40.45, maxLat: 40.95, minLng: -74.3, maxLng: -73.65 },
   dubai: { minLat: 24.75, maxLat: 25.45, minLng: 54.85, maxLng: 55.65 },

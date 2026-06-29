@@ -74,8 +74,9 @@ interface Stage04ProgressFile {
   results: Array<Stage04ImageRecord | Stage04SkippedRecord>;
 }
 
-interface Stage04Options {
+export interface Stage04Options {
   maxImagesPerVenue?: number;
+  onlyVenueNames?: string[];
 }
 
 export async function runStage04VisionClassification(batchName: string, options: Stage04Options = {}): Promise<Stage04Result> {
@@ -84,10 +85,19 @@ export async function runStage04VisionClassification(batchName: string, options:
   const config = m3ConfigFromEnv();
   const outputDir = path.join(process.cwd(), 'data', 'batches', batchName);
   const queuePath = path.join(outputDir, 'stage_03_final_vision_queue.json');
-  const queue = limitQueueByVenue(readStage03Queue(queuePath), options.maxImagesPerVenue);
+  const requestedVenueNames = new Set((options.onlyVenueNames || []).map(normalizeVenueName));
+  const discoveredQueue = readStage03Queue(queuePath);
+  const targetedQueue = requestedVenueNames.size > 0
+    ? discoveredQueue.filter((candidate) => requestedVenueNames.has(normalizeVenueName(candidate.venue_name)))
+    : discoveredQueue;
+  const queue = limitQueueByVenue(targetedQueue, options.maxImagesPerVenue);
   const progressPath = path.join(outputDir, 'stage_04_progress.json');
   const progress = readStage04Progress(progressPath);
   const processedUrls = new Set((progress?.results || []).map((item) => item.resolved_image_url));
+  const totalWorkSize = new Set([
+    ...queue.map((item) => item.resolved_image_url),
+    ...(progress?.results || []).map((item) => item.resolved_image_url),
+  ]).size;
   const generatedAt = new Date().toISOString();
 
   if (!config.apiKey) {
@@ -100,7 +110,7 @@ export async function runStage04VisionClassification(batchName: string, options:
   let m3Called = results.some((item) => item.vision !== null);
   let invalidJsonCount = results.filter((item) => item.skip_reason?.includes('m3_invalid_json')).length;
 
-  writeStage04Progress(progressPath, batchName, generatedAt, config.model, queue.length, results);
+  writeStage04Progress(progressPath, batchName, generatedAt, config.model, totalWorkSize, results);
 
   for (const [index, candidate] of queue.entries()) {
     if (processedUrls.has(candidate.resolved_image_url)) {
@@ -123,8 +133,8 @@ export async function runStage04VisionClassification(batchName: string, options:
       results.push(buildSkippedRecord(candidate, config.model, reason));
     }
     processedUrls.add(candidate.resolved_image_url);
-    writeStage04Progress(progressPath, batchName, generatedAt, config.model, queue.length, results);
-    console.log(`Stage 04 progress: ${results.length}/${queue.length} processed_or_skipped (${index + 1}/${queue.length} scanned)`);
+    writeStage04Progress(progressPath, batchName, generatedAt, config.model, totalWorkSize, results);
+    console.log(`Stage 04 progress: ${results.length}/${totalWorkSize} processed_or_skipped (${index + 1}/${queue.length} recovery_candidates_scanned)`);
   }
 
   const selectedImages = selectBestImagesByVenue(results);
@@ -143,7 +153,7 @@ export async function runStage04VisionClassification(batchName: string, options:
     generated_at: generatedAt,
     m3_called: m3Called,
     model_used: config.model,
-    images_requested: queue.length,
+    images_requested: totalWorkSize,
     images_processed: markedResults.filter((item) => item.vision !== null).length,
     images_skipped: markedResults.filter((item) => item.vision === null).length,
     m3_ok_count: markedResults.filter((item) => item.vision !== null && item.ok_photo).length,
@@ -190,6 +200,14 @@ function limitQueueByVenue(queue: ImageCandidate[], maxImagesPerVenue: number | 
   });
 }
 
+function normalizeVenueName(value: string): string {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
 function readStage04Progress(filePath: string): Stage04ProgressFile | null {
   try {
     const parsed = JSON.parse(readFileSync(filePath, 'utf8')) as Stage04ProgressFile;

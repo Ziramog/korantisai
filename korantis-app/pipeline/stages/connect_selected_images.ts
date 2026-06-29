@@ -73,6 +73,7 @@ export async function connectSelectedImages(batchName: string): Promise<BatchRes
   const rawVenues = readJson<VenueRaw[]>(path.join(outputDir, 'stage_01_raw_venues.json'));
   const selectedImagesFile = readJson<Stage04SelectedImagesFile>(path.join(outputDir, 'stage_04_selected_images.json'));
   const priorResult = readOptionalJson<BatchResult>(path.join(outputDir, 'batch_result.json'));
+  const priorEditorialResult = readOptionalJson<BatchResult>(path.join(outputDir, 'batch_result_with_editorial.json'));
   const config = mergePipelineConfig(undefined);
   const selectedByVenue = new Map(selectedImagesFile.selected_images.map((image) => [normalizeVenueName(image.venue_name), image]));
   const mappingIssues: MappingIssue[] = [];
@@ -81,8 +82,14 @@ export async function connectSelectedImages(batchName: string): Promise<BatchRes
   const venues = rawVenues.map((raw) => {
     const selected = selectedByVenue.get(normalizeVenueName(raw.name));
     const venue = createVenueComplete(raw, selected, mappingIssues);
+    const priorEditorial = priorEditorialResult?.candidates.find(
+      (candidate) => normalizeVenueName(candidate.venue_name) === normalizeVenueName(raw.name),
+    );
+    if (priorEditorial) preserveExistingEditorial(venue, priorEditorial.venue);
     const staging = scoreAndStage(venue, config);
-    const prior = priorResult?.candidates.find((candidate) => normalizeVenueName(candidate.venue_name) === normalizeVenueName(raw.name));
+    const prior = priorEditorial || priorResult?.candidates.find(
+      (candidate) => normalizeVenueName(candidate.venue_name) === normalizeVenueName(raw.name),
+    );
 
     summaries.push({
       venue_name: raw.name,
@@ -143,6 +150,11 @@ export async function connectSelectedImages(batchName: string): Promise<BatchRes
 
   writeFileSync(path.join(outputDir, 'batch_result_with_images.json'), `${JSON.stringify(batchResult, null, 2)}\n`, 'utf8');
   generateDashboardWithName(batchResult, outputDir, 'dashboard_with_images.html');
+  if (priorEditorialResult) {
+    writeFileSync(path.join(outputDir, 'batch_result_with_editorial.json'), `${JSON.stringify(batchResult, null, 2)}\n`, 'utf8');
+    writeFileSync(path.join(outputDir, 'batch_result_enriched.json'), `${JSON.stringify(batchResult, null, 2)}\n`, 'utf8');
+    generateDashboardWithName(batchResult, outputDir, 'dashboard_with_editorial.html');
+  }
   writeFileSync(
     path.join(outputDir, 'connect_selected_images_report.md'),
     buildReport(batchName, summaries, mappingIssues, selectedImagesFile.venues_without_hero_candidate || []),
@@ -157,6 +169,17 @@ export async function connectSelectedImages(batchName: string): Promise<BatchRes
   );
 
   return batchResult;
+}
+
+function preserveExistingEditorial(target: VenueComplete, source: VenueComplete): void {
+  target.editorial = structuredClone(source.editorial);
+  target.evidence = structuredClone(source.evidence);
+  target.review_count_processed = source.review_count_processed;
+  target.pipeline_notes = [
+    ...(target.pipeline_notes || []),
+    ...(source.pipeline_notes || []).filter((note) => !note.startsWith('Stage 04 selected image connected')),
+    'Existing editorial and evidence preserved during image recovery.',
+  ];
 }
 
 function createVenueComplete(

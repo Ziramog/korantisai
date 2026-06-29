@@ -117,8 +117,8 @@ async function downloadGooglePhoto(photoReference: string, apiKey: string) {
   return Buffer.from(arrayBuffer);
 }
 
-async function materializeVenuePhoto(venue: InputVenue, photo: SelectedPhoto, index: number, write: boolean) {
-  const base: MaterializedImage = {
+async function materializeVenuePhoto(venue: InputVenue, photo: SelectedPhoto, index: number, write: boolean): Promise<MaterializedImage> {
+  const base: Omit<MaterializedImage, 'status'> = {
     venue_id: venue.venue_id,
     venue_name: venue.venue_name,
     city: venue.city,
@@ -128,7 +128,7 @@ async function materializeVenuePhoto(venue: InputVenue, photo: SelectedPhoto, in
     google_photo_reference: photo.google_photo_reference,
     quality_score: photo.quality_score,
     hero_suitability_score: photo.hero_suitability_score,
-  } as MaterializedImage;
+  };
 
   if (!write) {
     return {
@@ -198,7 +198,7 @@ async function main() {
             google_photo_reference: photo.google_photo_reference,
             quality_score: photo.quality_score,
             hero_suitability_score: photo.hero_suitability_score,
-            status: 'error',
+            status: 'error' as const,
             error: error instanceof Error ? error.message : String(error),
           });
         }

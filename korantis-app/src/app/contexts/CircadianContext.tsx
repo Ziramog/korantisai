@@ -6,6 +6,7 @@ import type { Venue } from '../data/venues';
 import { createClient } from '@/utils/supabase/client';
 import { getLocale, setLocale as persistLocale, subscribeLocale, type Locale } from '@/lib/i18n';
 import { trackEvent } from '@/lib/analytics';
+import { venueMatchesCity, type CityCode } from '@/lib/cities';
 import {
   applyCircadianMixGuardrail,
   getCircadianCategoryBias,
@@ -67,8 +68,8 @@ interface CircadianState {
   dimensionLabels: { [key: number]: string };
   language: Locale;
   setLanguage: (lang: Locale) => void;
-  city: 'BUE' | 'NYC' | 'DXB';
-  setCity: (city: 'BUE' | 'NYC' | 'DXB') => void;
+  city: CityCode;
+  setCity: (city: CityCode) => void;
   setIsAuthenticated: (val: boolean) => void;
   setUserId: (id: string | null) => void;
 }
@@ -271,8 +272,8 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     });
     persistLocale(lang);
   }, []);
-  const [city, setCity] = useState<'BUE' | 'NYC' | 'DXB'>('BUE');
-  const setTrackedCity = useCallback((nextCity: 'BUE' | 'NYC' | 'DXB') => {
+  const [city, setCity] = useState<CityCode>('BUE');
+  const setTrackedCity = useCallback((nextCity: CityCode) => {
     setCity((previousCity) => {
       if (previousCity !== nextCity) {
         trackEvent('city_changed', {
@@ -660,9 +661,7 @@ export function CircadianProvider({ children }: { children: React.ReactNode }) {
     const hasSearchIntent = normalizeSearchText(searchQuery).length > 0 || selectedPills.length > 0;
 
     const cityFilteredVenues = dbVenues.filter(v => {
-      if (city === 'BUE' && v.lat >= 0) return false; // Southern hemisphere
-      if (city === 'NYC' && (v.lat <= 0 || v.lng >= 0)) return false; // Northern hemisphere, West
-      if (city === 'DXB' && (v.lat <= 0 || v.lng <= 0)) return false; // Northern hemisphere, East
+      if (!venueMatchesCity(v, city)) return false;
       
       const activeZones = selectedPills.filter(p => ['palermo', 'chacarita', 'villa crespo', 'recoleta', 'belgrano', 'microcentro'].includes(p));
       if (activeZones.length > 0) {

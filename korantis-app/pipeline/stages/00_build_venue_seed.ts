@@ -11,6 +11,7 @@ import {
 } from './00b_editorial_source_enrichment';
 import { searchGooglePlacesText, type GooglePlacesTextCandidate } from '../utils/google_places';
 import { runFullBatch } from '../run_full_batch';
+import { promoteVisualPreselectionProgress, runVisualVenuePreselection, type VisualPreselectionResult } from './00c_visual_preselection';
 import type { BatchInput, VenueInput, VenueType } from '../types';
 
 type SeedType =
@@ -38,6 +39,7 @@ interface SelectorOptions {
   maxSourceQueries?: number;
   skipEditorialSources: boolean;
   planOnly: boolean;
+  skipVisualPreselection: boolean;
 }
 
 interface ExistingVenueIndex {
@@ -78,6 +80,11 @@ interface Candidate {
   max_photo_dimension: number;
   source_signals: string[];
   search_queries: string[];
+  discovery_lanes: string[];
+  best_query_rank?: number;
+  raw_google_place?: Record<string, unknown>;
+  visual_selection_score?: number;
+  visual_scene_type?: string;
   curated_boost: boolean;
   scores: CandidateScores;
   candidate_score: number;
@@ -87,6 +94,7 @@ interface Candidate {
 
 interface CandidateScores {
   google_presence_score: number;
+  rating_quality_score: number;
   review_volume_score: number;
   visual_strength_score: number;
   category_fit_score: number;
@@ -109,6 +117,7 @@ interface SelectionResult {
   rejected_count: number;
   selected_count: number;
   selected: Candidate[];
+  eligible_not_selected: Candidate[];
   rejected: Candidate[];
   already_known_excluded: Candidate[];
   warnings: string[];
@@ -311,6 +320,13 @@ const QUERY_TYPES: Array<{ label: string; queryType: string; typeHint: SeedType 
   { label: 'cafe_bars', queryType: 'cafe bars', typeHint: 'cafe_bar' },
 ];
 
+interface DiscoveryQuery {
+  text: string;
+  neighborhood: string;
+  typeHint: SeedType;
+  lane: 'top_rated' | 'citywide' | 'neighborhood';
+}
+
 const CURATED_ALLOWLIST: Array<{ name: string; neighborhood: string; type: SeedType; reason: string }> = [
   { name: 'Presidente Bar', neighborhood: 'Recoleta', type: 'cocktail_bar', reason: 'strong cocktail identity' },
   { name: 'Tres Monos', neighborhood: 'Palermo', type: 'cocktail_bar', reason: 'high atmosphere signal' },
@@ -346,6 +362,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
       rejected_count: 0,
       selected_count: 0,
       selected: [],
+      eligible_not_selected: [],
       rejected: [],
       already_known_excluded: [],
       warnings: ['plan_only_no_candidate_discovery_or_external_calls'],
@@ -367,7 +384,16 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
   const deduped = dedupeCandidates(candidates);
   const scored = deduped.map((candidate) => scoreCandidate(candidate));
   const { accepted, rejected, alreadyKnown } = applyHardFilters(scored, existing, options);
-  const selected = selectBalancedCandidates(accepted, options.count, options.typeMix, options.allowTypeFallback);
+  let visualPreselection: VisualPreselectionResult | null = null;
+  let selectionCandidates = accepted;
+  if (!options.skipVisualPreselection) {
+    const preflightPool = buildVisualPreselectionPool(accepted, options.count, options.typeMix, options.allowTypeFallback);
+    visualPreselection = await runVisualVenuePreselection(batchId, options.city, preflightPool, options.count);
+    selectionCandidates = applyVisualPreselection(accepted, visualPreselection);
+  }
+  const selected = selectBalancedCandidates(selectionCandidates, options.count, options.typeMix, options.allowTypeFallback);
+  const selectedKeys = new Set(selected.map(candidateIdentity));
+  const eligibleNotSelected = accepted.filter((candidate) => !selectedKeys.has(candidateIdentity(candidate)));
   const mixDeviations = buildMixDeviations(selected, options.count, options.typeMix);
   const warnings = [
     ...existing.warnings,
@@ -375,9 +401,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
     ...(mixDeviations.length > 0 ? mixDeviations.map((deviation) => `target_mix_deviation:${deviation}`) : []),
     ...(options.allowTypeFallback ? ['type_fallback_enabled'] : []),
   ];
-  const hasBlockingMixDeviation = mixDeviations.length > 0 && !options.allowTypeFallback;
-
-  if (selected.length !== options.count || hasBlockingMixDeviation) {
+  if (selected.length !== options.count) {
     writeDebugOutputs(batchId, outputDir, {
       batch_id: batchId,
       generated_at: new Date().toISOString(),
@@ -389,6 +413,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
       rejected_count: rejected.length,
       selected_count: selected.length,
       selected,
+      eligible_not_selected: eligibleNotSelected,
       rejected,
       already_known_excluded: alreadyKnown,
       warnings,
@@ -418,6 +443,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
     rejected_count: rejected.length,
     selected_count: selected.length,
     selected,
+    eligible_not_selected: eligibleNotSelected,
     rejected,
     already_known_excluded: alreadyKnown,
     warnings,
@@ -433,6 +459,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
 
   writeDebugOutputs(batchId, outputDir, result);
   writeSeedFiles(batchId, outputDir, result);
+  if (visualPreselection) promoteVisualPreselectionProgress(batchId, selected.map((candidate) => candidate.name));
 
   console.log(`Venue seed written to ${path.join(outputDir, 'venue_seed.json')}`);
   console.log(`Pipeline input written to ${path.join(process.cwd(), 'pipeline', 'input', `${batchId}.json`)}`);
@@ -448,7 +475,7 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
       allowNon50: options.count !== 50,
       skipStage08: false,
       skipPublicationReview: false,
-      maxImagesPerVenue: 4,
+      maxImagesPerVenue: visualPreselection ? 2 : 4,
     });
   }
 
@@ -458,7 +485,8 @@ export async function buildVenueSeed(batchName: string, options: SelectorOptions
 async function discoverCandidates(batchId: string, outputDir: string, existing: ExistingVenueIndex, options: SelectorOptions): Promise<Candidate[]> {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   const candidates: Candidate[] = [];
-  const queries = buildQueryMatrix(options.city, options.neighborhoods, options.typeMix).slice(0, options.maxQueries);
+  const queryMatrix = buildQueryMatrix(options.city, options.neighborhoods, options.typeMix);
+  const queries = typeof options.maxQueries === 'number' ? queryMatrix.slice(0, options.maxQueries) : queryMatrix;
 
   if (!apiKey) {
     return CURATED_ALLOWLIST.map((item) => curatedCandidate(item, 'missing_google_api_semi_automated_pool'));
@@ -470,7 +498,7 @@ async function discoverCandidates(batchId: string, outputDir: string, existing: 
       city: options.city,
       languageCode: 'en',
       regionCode: regionCodeForCity(options.city),
-      maxResultCount: 10,
+      maxResultCount: 20,
     });
     if (result.error) {
       candidates.push(curatedCandidate({
@@ -481,12 +509,13 @@ async function discoverCandidates(batchId: string, outputDir: string, existing: 
       }, 'google_query_error'));
       continue;
     }
-    for (const place of result.candidates) {
-      candidates.push(fromGooglePlace(place, query.neighborhood, query.typeHint, query.text, false));
+    for (const [queryRank, place] of result.candidates.entries()) {
+      candidates.push(fromGooglePlace(place, query.neighborhood, query.typeHint, query.text, false, query.lane, queryRank + 1));
     }
   }
 
-  for (const curated of CURATED_ALLOWLIST) {
+  const curatedAllowlist = normalizeName(options.city).includes('buenos aires') ? CURATED_ALLOWLIST : [];
+  for (const curated of curatedAllowlist) {
     if (existing.names.has(existingKey(curated.name, curated.neighborhood))) continue;
     const result = await searchGooglePlacesText(`${curated.name} ${curated.neighborhood} ${options.city}`, {
       apiKey,
@@ -551,6 +580,8 @@ function fromEditorialSourceCandidate(item: EditorialSourceCandidate): Candidate
       ...item.signals,
     ].filter(Boolean),
     search_queries: [item.text_query],
+    discovery_lanes: ['editorial'],
+    raw_google_place: place.raw_google_place,
     curated_boost: item.verification_status === 'confirmed' || item.source_confidence >= 0.9,
     scores: emptyScores(),
     candidate_score: 0,
@@ -628,27 +659,51 @@ function typeHintFromEditorialBatchType(item: EditorialSourceCandidate): SeedTyp
   return 'restaurant';
 }
 
-function buildQueryMatrix(city: string, neighborhoods: string[], typeMix: Record<string, number>): Array<{ text: string; neighborhood: string; typeHint: SeedType }> {
-  const queries: Array<{ text: string; neighborhood: string; typeHint: SeedType }> = [];
+function buildQueryMatrix(city: string, neighborhoods: string[], typeMix: Record<string, number>): DiscoveryQuery[] {
+  const queries: DiscoveryQuery[] = [];
   const requestedGroups = new Set(Object.keys(typeMix));
+  const queryTypes = QUERY_TYPES.filter((item) => requestedGroups.has(typeGroup(item.typeHint)));
+  const compactTypes = [...new Map(queryTypes.map((item) => [item.label, item])).values()]
+    .filter((item, index, all) => {
+      const group = typeGroup(item.typeHint);
+      return all.filter((candidate) => typeGroup(candidate.typeHint) === group).indexOf(item) < 2;
+    });
+
+  for (const queryType of compactTypes) {
+    queries.push({
+      text: 'top rated ' + queryType.queryType + ' in ' + city,
+      neighborhood: 'citywide',
+      typeHint: queryType.typeHint,
+      lane: 'top_rated',
+    });
+    queries.push({
+      text: queryType.queryType + ' in ' + city,
+      neighborhood: 'citywide',
+      typeHint: queryType.typeHint,
+      lane: 'citywide',
+    });
+  }
+
   for (const neighborhood of neighborhoods) {
-    for (const queryType of QUERY_TYPES.filter((item) => requestedGroups.has(typeGroup(item.typeHint)))) {
+    for (const queryType of compactTypes) {
       queries.push({
-        text: `${queryType.queryType} in ${neighborhood} ${city}`,
+        text: queryType.queryType + ' in ' + neighborhood + ' ' + city,
         neighborhood,
         typeHint: queryType.typeHint,
+        lane: 'neighborhood',
       });
     }
   }
   return queries;
 }
-
 function fromGooglePlace(
   place: GooglePlacesTextCandidate,
   neighborhood: string,
   typeHint: SeedType,
   query: string,
   curatedBoost: boolean,
+  lane: DiscoveryQuery['lane'] = 'citywide',
+  queryRank = 1,
 ): Candidate {
   const type = normalizeType(place.google_place_types, place.primary_type, typeHint, place.name);
   const maxPhotoDimension = Math.max(0, ...place.photos.map((photo) => Math.max(photo.width || 0, photo.height || 0)));
@@ -673,9 +728,13 @@ function fromGooglePlace(
       ...(place.website_url ? ['official_website_from_google'] : []),
       ...(place.photos.length > 0 ? ['google_photo_signal'] : []),
       ...(curatedBoost ? ['curated_allowlist_boost'] : []),
+      'query_lane:' + lane,
       ...candidateQualitySignals(place.name, type, place.google_place_types, query),
     ],
     search_queries: [query],
+    discovery_lanes: [lane],
+    best_query_rank: queryRank,
+    raw_google_place: place.raw_google_place,
     curated_boost: curatedBoost,
     scores: emptyScores(),
     candidate_score: 0,
@@ -698,6 +757,7 @@ function curatedCandidate(
     max_photo_dimension: 0,
     source_signals: ['curated_allowlist', signal, item.reason],
     search_queries: [],
+    discovery_lanes: ['curated'],
     curated_boost: true,
     scores: emptyScores(),
     candidate_score: 0,
@@ -717,10 +777,15 @@ function dedupeCandidates(candidates: Candidate[]): Candidate[] {
     }
     current.source_signals = [...new Set([...current.source_signals, ...candidate.source_signals])];
     current.search_queries = [...new Set([...current.search_queries, ...candidate.search_queries])];
+    current.discovery_lanes = [...new Set([...current.discovery_lanes, ...candidate.discovery_lanes])];
+    const knownRanks = [current.best_query_rank, candidate.best_query_rank].filter((rank): rank is number => typeof rank === 'number');
+    current.best_query_rank = knownRanks.length > 0 ? Math.min(...knownRanks) : undefined;
+    if (current.neighborhood === 'citywide' && candidate.neighborhood !== 'citywide') current.neighborhood = candidate.neighborhood;
     current.curated_boost = current.curated_boost || candidate.curated_boost;
     current.photo_count = Math.max(current.photo_count, candidate.photo_count);
     current.max_photo_dimension = Math.max(current.max_photo_dimension, candidate.max_photo_dimension);
     if (!current.website_url && candidate.website_url) current.website_url = candidate.website_url;
+    if (!current.raw_google_place && candidate.raw_google_place) current.raw_google_place = candidate.raw_google_place;
   }
   return [...byKey.values()];
 }
@@ -728,6 +793,7 @@ function dedupeCandidates(candidates: Candidate[]): Candidate[] {
 function scoreCandidate(candidate: Candidate): Candidate {
   const scores: CandidateScores = {
     google_presence_score: scoreGooglePresence(candidate),
+    rating_quality_score: scoreRatingQuality(candidate.rating, candidate.review_count),
     review_volume_score: scoreReviewVolume(candidate.review_count),
     visual_strength_score: scoreVisualStrength(candidate),
     category_fit_score: scoreCategoryFit(candidate),
@@ -738,17 +804,20 @@ function scoreCandidate(candidate: Candidate): Candidate {
     editorial_discovery_score: scoreEditorialDiscovery(candidate),
     generic_chain_penalty: scoreGenericChainPenalty(candidate),
   };
+  const topRatedBoost = candidate.discovery_lanes.includes('top_rated') && (candidate.best_query_rank || 99) <= 10 ? 0.06 : 0;
   const rawCandidateScore =
-    scores.google_presence_score * 0.15 +
-    scores.review_volume_score * 0.1 +
-    scores.visual_strength_score * 0.18 +
+    scores.google_presence_score * 0.08 +
+    scores.rating_quality_score * 0.28 +
+    scores.review_volume_score * 0.22 +
+    scores.visual_strength_score * 0.08 +
     scores.category_fit_score * 0.14 +
-    scores.neighborhood_balance_score * 0.08 +
-    scores.atmosphere_potential_score * 0.16 +
-    scores.source_diversity_score * 0.04 +
-    scores.local_identity_score * 0.1 +
-    scores.editorial_discovery_score * 0.08 -
-    scores.generic_chain_penalty * 0.13;
+    scores.neighborhood_balance_score * 0.03 +
+    scores.atmosphere_potential_score * 0.06 +
+    scores.source_diversity_score * 0.03 +
+    scores.local_identity_score * 0.04 +
+    scores.editorial_discovery_score * 0.04 +
+    topRatedBoost -
+    scores.generic_chain_penalty * 0.12;
   const candidateScore = Math.max(0, Math.min(1, rawCandidateScore));
   return {
     ...candidate,
@@ -757,7 +826,6 @@ function scoreCandidate(candidate: Candidate): Candidate {
     selection_reason: buildSelectionReason(candidate, scores, Number((candidateScore * 100).toFixed(2))),
   };
 }
-
 function applyHardFilters(
   candidates: Candidate[],
   existing: ExistingVenueIndex,
@@ -782,7 +850,7 @@ function applyHardFilters(
 function hardFilterReasons(candidate: Candidate, existing: ExistingVenueIndex, options: SelectorOptions): string[] {
   const reasons: string[] = [];
   if (!candidate.name) reasons.push('missing_name');
-  if (!candidate.neighborhood || !options.neighborhoods.some((neighborhood) => normalizeName(neighborhood) === normalizeName(candidate.neighborhood))) {
+  if (!candidate.neighborhood || (candidate.neighborhood !== 'citywide' && !options.neighborhoods.some((neighborhood) => normalizeName(neighborhood) === normalizeName(candidate.neighborhood)))) {
     reasons.push('missing_or_unsupported_neighborhood');
   }
   if (!ALLOWED_TYPES.includes(candidate.type)) reasons.push('missing_or_invalid_type');
@@ -804,33 +872,77 @@ function hardFilterReasons(candidate: Candidate, existing: ExistingVenueIndex, o
   return reasons;
 }
 
+function buildVisualPreselectionPool(
+  candidates: Candidate[],
+  targetCount: number,
+  typeMix: Record<string, number>,
+  allowTypeFallback: boolean,
+): Candidate[] {
+  const requestedGroups = new Set(Object.keys(scaleGroupTargets(targetCount, typeMix)));
+  const poolSize = Math.min(candidates.length, Math.max(targetCount + 20, Math.ceil(targetCount * 1.5)));
+  return [...candidates]
+    .filter((candidate) => allowTypeFallback || requestedGroups.has(typeGroup(candidate.type)))
+    .sort((a, b) => candidatePriority(b) - candidatePriority(a))
+    .slice(0, poolSize);
+}
+
+function applyVisualPreselection(candidates: Candidate[], result: VisualPreselectionResult): Candidate[] {
+  const heroes = new Map(result.selected_heroes.map((item) => [normalizeName(item.venue_name), item]));
+  return candidates.flatMap((candidate) => {
+    const hero = heroes.get(normalizeName(candidate.name));
+    if (!hero) return [];
+    const visualScore = Math.max(0, Math.min(100, (hero.selection_score / 160) * 100));
+    const combinedScore = Number((candidate.candidate_score * 0.65 + visualScore * 0.35).toFixed(2));
+    return [{
+      ...candidate,
+      candidate_score: combinedScore,
+      visual_selection_score: visualScore,
+      visual_scene_type: hero.selected_image.vision.scene_type,
+      selection_reason: candidate.selection_reason + '; m3_visual=' + visualScore.toFixed(2) + '; scene=' + hero.selected_image.vision.scene_type,
+    }];
+  });
+}
 function selectBalancedCandidates(candidates: Candidate[], targetCount: number, typeMix: Record<string, number>, allowTypeFallback: boolean): Candidate[] {
   const selected: Candidate[] = [];
   const selectedKeys = new Set<string>();
   const neighborhoodCounts: Record<string, number> = {};
+  const groupCounts: Record<string, number> = {};
   const groupTargets = scaleGroupTargets(targetCount, typeMix);
   const requestedGroups = new Set(Object.keys(groupTargets));
-  const maxPerNeighborhood = Math.max(3, Math.ceil(targetCount / 7));
-  const sorted = [...candidates].sort((a, b) => b.candidate_score - a.candidate_score);
+  const maxPerNeighborhood = Math.max(5, Math.ceil(targetCount * 0.4));
+  const groupSoftCaps = Object.fromEntries(Object.entries(groupTargets).map(([group, target]) => [group, target + Math.max(2, Math.ceil(target * 0.25))]));
+  const sorted = [...candidates]
+    .filter((candidate) => allowTypeFallback || requestedGroups.has(typeGroup(candidate.type)))
+    .sort((a, b) => candidatePriority(b) - candidatePriority(a));
 
-  for (const [group, target] of Object.entries(groupTargets)) {
-    for (const candidate of sorted.filter((item) => typeGroup(item.type) === group)) {
-      if (selected.filter((item) => typeGroup(item.type) === group).length >= target) break;
-      if (!canSelect(candidate, selectedKeys, neighborhoodCounts, maxPerNeighborhood)) continue;
-      addSelected(candidate, selected, selectedKeys, neighborhoodCounts);
-    }
-  }
-
-  for (const candidate of sorted) {
-    if (selected.length >= targetCount) break;
-    if (!allowTypeFallback && !requestedGroups.has(typeGroup(candidate.type))) continue;
-    if (!canSelect(candidate, selectedKeys, neighborhoodCounts, maxPerNeighborhood + 1)) continue;
+  const addIfEligible = (candidate: Candidate, enforceSoftCaps: boolean): void => {
+    if (selected.length >= targetCount) return;
+    const group = typeGroup(candidate.type);
+    if (selectedKeys.has(candidateIdentity(candidate))) return;
+    if ((neighborhoodCounts[candidate.neighborhood] || 0) >= maxPerNeighborhood) return;
+    if (enforceSoftCaps && groupSoftCaps[group] !== undefined && (groupCounts[group] || 0) >= groupSoftCaps[group]) return;
     addSelected(candidate, selected, selectedKeys, neighborhoodCounts);
+    groupCounts[group] = (groupCounts[group] || 0) + 1;
+  };
+
+  for (const candidate of sorted.filter((item) => item.discovery_lanes.includes('top_rated') && (item.best_query_rank || 99) <= 10)) {
+    addIfEligible(candidate, true);
   }
+  for (const candidate of sorted) addIfEligible(candidate, true);
+  for (const candidate of sorted) addIfEligible(candidate, false);
 
   return selected.slice(0, targetCount);
 }
 
+function candidatePriority(candidate: Candidate): number {
+  const rank = candidate.best_query_rank || 99;
+  const topRatedPriority = candidate.discovery_lanes.includes('top_rated') && rank <= 10 ? Math.max(0, 8 - rank * 0.35) : 0;
+  return candidate.candidate_score + topRatedPriority;
+}
+
+function candidateIdentity(candidate: Candidate): string {
+  return candidate.place_id || existingKey(candidate.name, candidate.neighborhood);
+}
 async function buildExistingVenueIndex(city: string): Promise<ExistingVenueIndex> {
   const index: ExistingVenueIndex = {
     names: new Set(),
@@ -972,12 +1084,13 @@ function buildReport(result: SelectionResult): string {
     `- Candidates after hard filters: ${result.candidates_after_hard_filters}`,
     `- Final selected count: ${result.selected_count}`,
     `- Rejected count: ${result.rejected_count}`,
+    '- Eligible but not selected: ' + result.eligible_not_selected.length,
     `- Already-known excluded count: ${result.already_known_excluded.length}`,
     `- Existing sources checked: ${result.existing_sources_checked.join(', ') || 'none'}`,
     '',
     '## Scoring Formula',
     '',
-    '`candidate_score = google_presence_score * 0.15 + review_volume_score * 0.10 + visual_strength_score * 0.18 + category_fit_score * 0.14 + neighborhood_balance_score * 0.08 + atmosphere_potential_score * 0.16 + source_diversity_score * 0.04 + local_identity_score * 0.10 + editorial_discovery_score * 0.08 - generic_chain_penalty * 0.13`',
+    '`candidate_score = google_presence_score * 0.08 + rating_quality_score * 0.28 + review_volume_score * 0.22 + visual_strength_proxy * 0.08 + category_fit_score * 0.14 + neighborhood_balance_score * 0.03 + atmosphere_potential_score * 0.06 + source_diversity_score * 0.03 + local_identity_score * 0.04 + editorial_discovery_score * 0.04 + top_rated_boost - generic_chain_penalty * 0.12`',
     '',
     '## Counts By Type',
     '',
@@ -999,6 +1112,12 @@ function buildReport(result: SelectionResult): string {
     '',
     ...result.selected.map((candidate) =>
       `- ${candidate.name}: ${candidate.type} in ${candidate.neighborhood}; ${candidate.selection_reason}; signals ${candidate.source_signals.join(', ')}`,
+    ),
+    '',
+    '## Eligible Candidates Not Selected',
+    '',
+    ...result.eligible_not_selected.slice(0, 200).map((candidate) =>
+      '- ' + (candidate.name || 'unknown') + ' (' + (candidate.neighborhood || 'unknown') + '): score ' + candidate.candidate_score + '; lanes ' + (candidate.discovery_lanes.join(', ') || 'unknown') + '; best query rank ' + (candidate.best_query_rank || 'unknown'),
     ),
     '',
     '## Rejected Candidates Summary',
@@ -1043,16 +1162,9 @@ function buildReport(result: SelectionResult): string {
   return `${lines.join('\n')}\n`;
 }
 
-function canSelect(candidate: Candidate, selectedKeys: Set<string>, neighborhoodCounts: Record<string, number>, maxPerNeighborhood: number): boolean {
-  const key = existingKey(candidate.name, candidate.neighborhood);
-  if (selectedKeys.has(key)) return false;
-  if ((neighborhoodCounts[candidate.neighborhood] || 0) >= maxPerNeighborhood) return false;
-  return true;
-}
-
 function addSelected(candidate: Candidate, selected: Candidate[], selectedKeys: Set<string>, neighborhoodCounts: Record<string, number>): void {
   selected.push(candidate);
-  selectedKeys.add(existingKey(candidate.name, candidate.neighborhood));
+  selectedKeys.add(candidateIdentity(candidate));
   neighborhoodCounts[candidate.neighborhood] = (neighborhoodCounts[candidate.neighborhood] || 0) + 1;
 }
 
@@ -1094,21 +1206,21 @@ function typeGroup(type: SeedType): string {
 
 function normalizeType(types: string[], primaryType: string | undefined, typeHint: SeedType, name: string): SeedType {
   const all = new Set([primaryType, ...types].filter(Boolean));
-  const text = normalizeName(`${name} ${[...all].join(' ')} ${typeHint}`);
+  const text = normalizeName(name + ' ' + [...all].join(' '));
+  if (all.has('cocktail_bar')) return 'cocktail_bar';
+  if (all.has('wine_bar')) return 'wine_bar';
+  if (all.has('cafe') || all.has('coffee_shop')) return 'cafe';
+  if (text.includes('bakery') || text.includes('pasteleria') || text.includes('panaderia')) return 'bakery_cafe';
   if (text.includes('rooftop')) return 'rooftop_bar';
   if (text.includes('speakeasy')) return 'speakeasy';
-  if (all.has('cocktail_bar')) return 'cocktail_bar';
   if (text.includes('wine') || text.includes('vino')) return 'wine_bar';
-  if (text.includes('bakery') || text.includes('pasteleria') || text.includes('panaderia')) return 'bakery_cafe';
-  if (text.includes('cafe bar') || typeHint === 'cafe_bar') return 'cafe_bar';
-  if (all.has('cafe') || all.has('coffee_shop')) return 'cafe';
+  if (text.includes('cafe bar')) return 'cafe_bar';
   if (text.includes('parrilla')) return 'parrilla';
   if (text.includes('bistro')) return 'bistro';
   if (all.has('bar')) return 'bar';
   if (all.has('restaurant')) return 'restaurant';
   return typeHint;
 }
-
 function scoreGooglePresence(candidate: Candidate): number {
   const checks = [
     candidate.place_id,
@@ -1121,15 +1233,19 @@ function scoreGooglePresence(candidate: Candidate): number {
   return checks.filter(Boolean).length / checks.length;
 }
 
-function scoreReviewVolume(reviewCount?: number): number {
-  if (!reviewCount) return 0;
-  if (reviewCount < 20) return 0.1;
-  if (reviewCount < 80) return 0.55;
-  if (reviewCount < 1200) return 1;
-  if (reviewCount < 3500) return 0.82;
-  return 0.65;
+function scoreRatingQuality(rating?: number, reviewCount?: number): number {
+  if (!rating) return 0;
+  const votes = Math.max(0, reviewCount || 0);
+  const priorRating = 4.2;
+  const priorWeight = 250;
+  const bayesianRating = (votes / (votes + priorWeight)) * rating + (priorWeight / (votes + priorWeight)) * priorRating;
+  return Math.max(0, Math.min(1, (bayesianRating - 3.8) / 1.0));
 }
 
+function scoreReviewVolume(reviewCount?: number): number {
+  if (!reviewCount) return 0;
+  return Math.max(0, Math.min(1, Math.log10(reviewCount + 1) / 4));
+}
 function scoreVisualStrength(candidate: Candidate): number {
   if (candidate.photo_count === 0) return 0;
   let score = 0.45;
@@ -1210,18 +1326,21 @@ function matchesAnyTerm(value: string, terms: string[]): boolean {
 
 function buildSelectionReason(candidate: Candidate, scores: CandidateScores, candidateScore: number): string {
   return [
-    `score=${candidateScore}`,
-    `google=${scores.google_presence_score.toFixed(2)}`,
-    `visual=${scores.visual_strength_score.toFixed(2)}`,
-    `category=${scores.category_fit_score.toFixed(2)}`,
-    `atmosphere=${scores.atmosphere_potential_score.toFixed(2)}`,
-    `local=${scores.local_identity_score.toFixed(2)}`,
-    `editorial=${scores.editorial_discovery_score.toFixed(2)}`,
-    scores.generic_chain_penalty > 0 ? `generic_penalty=${scores.generic_chain_penalty.toFixed(2)}` : '',
+    'score=' + candidateScore,
+    'google=' + scores.google_presence_score.toFixed(2),
+    'rating=' + scores.rating_quality_score.toFixed(2),
+    'reviews=' + scores.review_volume_score.toFixed(2),
+    candidate.best_query_rank ? 'query_rank=' + candidate.best_query_rank : '',
+    candidate.discovery_lanes.length > 0 ? 'lanes=' + candidate.discovery_lanes.join(',') : '',
+    'visual_proxy=' + scores.visual_strength_score.toFixed(2),
+    'category=' + scores.category_fit_score.toFixed(2),
+    'atmosphere=' + scores.atmosphere_potential_score.toFixed(2),
+    'local=' + scores.local_identity_score.toFixed(2),
+    'editorial=' + scores.editorial_discovery_score.toFixed(2),
+    scores.generic_chain_penalty > 0 ? 'generic_penalty=' + scores.generic_chain_penalty.toFixed(2) : '',
     candidate.curated_boost ? 'curated_boost' : '',
   ].filter(Boolean).join('; ');
 }
-
 function isIrrelevantCategory(candidate: Candidate): boolean {
   const types = candidate.google_place_types;
   const hasVenueSignal = types.some((type) => [
@@ -1260,6 +1379,7 @@ function entriesOrNone(values: Record<string, number>): string[] {
 function emptyScores(): CandidateScores {
   return {
     google_presence_score: 0,
+    rating_quality_score: 0,
     review_volume_score: 0,
     visual_strength_score: 0,
     category_fit_score: 0,
@@ -1341,6 +1461,7 @@ function parseOptions(args: string[]): SelectorOptions {
     maxSourceQueries: valueAfter(args, '--max-source-queries') ? Number(valueAfter(args, '--max-source-queries')) : undefined,
     skipEditorialSources: args.includes('--skip-editorial-sources'),
     planOnly: args.includes('--plan'),
+    skipVisualPreselection: args.includes('--skip-visual-preselection'),
   };
 }
 
@@ -1380,7 +1501,8 @@ function normalizeTypeMixGroup(value: string): string | undefined {
 function regionCodeForCity(city: string): string {
   const normalized = normalizeName(city);
   if (normalized.includes('new york') || normalized.includes('nyc') || normalized.includes('united states')) return 'US';
-  if (normalized.includes('buenos aires') || normalized.includes('argentina')) return 'AR';
+  if (normalized.includes('dubai') || normalized.includes('united arab emirates')) return 'AE';
+  if (normalized.includes('buenos aires') || normalized.includes('cordoba') || normalized.includes('argentina')) return 'AR';
   return 'US';
 }
 

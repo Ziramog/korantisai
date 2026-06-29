@@ -260,9 +260,10 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
       </div>
     </div>
     <div class="tools">
-      <button onclick="downloadManifest()">Download decision JSON</button>
-      <button onclick="approveAllEligible()">Approve all eligible</button>
-      <button onclick="pauseAll()">Pause all</button>
+      <button onclick="saveManifest()">Guardar decisiones</button>
+      <button onclick="approveAllEligible()">Aprobar todos los elegibles</button>
+      <button onclick="pauseAll()">Pausar todos</button>
+      <span class="small muted" id="saveStatus">Sin guardar</span>
       <button class="filter active" data-filter="all" onclick="setFilter('all')">All</button>
       <button class="filter" data-filter="eligible" onclick="setFilter('eligible')">Eligible only</button>
       <button class="filter" data-filter="blocked" onclick="setFilter('blocked')">Blocked</button>
@@ -400,15 +401,31 @@ function renderDashboard(batchResult: BatchResult, manifest: PublicationDecision
       current.replaceWith(wrapper.firstElementChild);
     }
 
-    function downloadManifest() {
-      manifest.generated_at = new Date().toISOString();
-      const blob = new Blob([JSON.stringify(manifest, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'publication_decision_manifest.reviewed.json';
-      link.click();
-      URL.revokeObjectURL(url);
+    async function saveManifest() {
+      const status = document.getElementById('saveStatus');
+      status.textContent = 'Guardando...';
+      try {
+        const response = await fetch('/api/publication-review/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            batch_id: manifest.batch_id,
+            decisions: decisions.map(decision => ({
+              venue_name: decision.venue_name,
+              publication_decision: decision.publication_decision,
+              reviewer_notes: decision.reviewer_notes || '',
+            })),
+          }),
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'No se pudo guardar');
+        status.textContent = 'Guardado: ' + result.approved + ' aprobados / ' + result.paused + ' pausados';
+        if (window.parent !== window) {
+          window.parent.postMessage({ type: 'publication-review-saved', batch_id: manifest.batch_id, result }, window.location.origin);
+        }
+      } catch (error) {
+        status.textContent = 'Error: ' + error.message;
+      }
     }
 
     function esc(value) {
@@ -459,7 +476,7 @@ function buildReport(batchResult: BatchResult, manifest: PublicationDecisionMani
     '',
     '## Next Step',
     '',
-    'Open `publication_review_dashboard.html`, choose approve/reject/pause, and download `publication_decision_manifest.reviewed.json`.',
+    'Open the publication review in the control center, choose approve/reject/pause, and save decisions directly.',
   ].join('\n') + '\n';
 }
 

@@ -704,8 +704,26 @@ function candidateText(candidate: ImageCandidate): string {
 }
 
 function containsAny(text: string, terms: string[]): { matched: boolean; terms: string[] } {
-  const matchedTerms = terms.filter((term) => text.includes(term.toLowerCase()));
+  const matchedTerms = terms.filter((term) => matchesSearchTerm(text, term));
   return { matched: matchedTerms.length > 0, terms: matchedTerms };
+}
+
+function matchesSearchTerm(text: string, term: string): boolean {
+  const normalizedText = text.toLowerCase();
+  const normalizedTerm = term.toLowerCase();
+  if (!/^[\p{L}\p{N}]+(?:[ _-][\p{L}\p{N}]+)*$/u.test(normalizedTerm)) {
+    return normalizedText.includes(normalizedTerm);
+  }
+
+  const pattern = normalizedTerm
+    .split(/[ _-]+/u)
+    .map(escapeRegExp)
+    .join('[\\s_-]+');
+  return new RegExp(`(?:^|[^\\p{L}\\p{N}])${pattern}(?=$|[^\\p{L}\\p{N}])`, 'u').test(normalizedText);
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function normalizeUrl(url: string): string {

@@ -189,9 +189,10 @@ function recomputeIntents(output: VenueIntelligence, evidence: VenueExperienceSi
 
   for (const [key, candidate] of Object.entries(candidates) as Array<[keyof IntentScores, NonNullable<typeof candidates[keyof IntentScores]>]>) {
     if (!hasSupport(signals, candidate.support)) continue;
-    const next = improveOnly(before[key], candidate.score, constraints, key, category);
+    const beforeScore = before[key] ?? 0;
+    const next = improveOnly(beforeScore, candidate.score, constraints, key, category);
     after[key] = next;
-    if (next > before[key]) reasons.push(`${key} improved by ${next - before[key]} from ${candidate.reason}`);
+    if (next > beforeScore) reasons.push(`${key} improved by ${next - beforeScore} from ${candidate.reason}`);
   }
 
   if (constraints.includes('crowded') || constraints.includes('loud')) {
@@ -206,7 +207,7 @@ function recomputeIntents(output: VenueIntelligence, evidence: VenueExperienceSi
 function deltas(before: IntentScores, after: IntentScores): IntentScores {
   return Object.keys(before).reduce((result, key) => {
     const typedKey = key as keyof IntentScores;
-    result[typedKey] = after[typedKey] - before[typedKey];
+    result[typedKey] = (after[typedKey] ?? 0) - (before[typedKey] ?? 0);
     return result;
   }, {} as IntentScores);
 }

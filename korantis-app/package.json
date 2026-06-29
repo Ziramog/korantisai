@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:contract": "tsx tests/contract/public-venues.test.ts",
     "test:visual": "playwright test tests/visual",
     "test:visual:update": "playwright test tests/visual --update-snapshots",
     "control-center": "tsx pipeline/control_center_server.ts"

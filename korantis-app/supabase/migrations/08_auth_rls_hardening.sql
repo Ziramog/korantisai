@@ -89,7 +89,7 @@ begin
       on public.venues
       for select
       to anon, authenticated
-      using (coalesce(curation_status, 'active') = 'active');
+      using (curation_status = 'active');
   end if;
 end $$;
 
@@ -110,7 +110,7 @@ begin
           select 1
           from public.venues
           where public.venues.id = public.venue_images.venue_id
-            and coalesce(public.venues.curation_status, 'active') = 'active'
+            and public.venues.curation_status = 'active'
         )
       );
   end if;

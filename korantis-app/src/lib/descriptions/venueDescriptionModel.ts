@@ -388,7 +388,15 @@ export function localizeVenueDescriptionForDisplay(
   locale: Locale,
 ): VenueDescriptionDisplay {
   const text = textFor(venue);
-  const kind = getVenueCategoryKind(venue);
+  const kind = getVenueCategoryKind({
+    name: venue.name,
+    category: venue.category,
+    atmosphere: venue.atmosphere ?? undefined,
+    quality: venue.quality ?? undefined,
+    tags: venue.tags ?? undefined,
+    tagline: venue.tagline ?? undefined,
+    narrative: venue.narrative ?? undefined,
+  });
   const category = categoryLabel(venue, locale);
   const district = districtLabel(venue);
   const energyLabel = getEnergy(text, kind, venue.atmosphere, locale);

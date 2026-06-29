@@ -54,6 +54,7 @@ export type ExperienceSignals = {
   conversation_signal: number;
   long_stay_signal: number;
   quick_stop_signal: number;
+  dinner_signal: number;
   morning_signal: number;
   afternoon_signal: number;
   golden_hour_signal: number;

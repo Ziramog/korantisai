@@ -6,6 +6,7 @@ export interface Venue {
   publishedAt?: string | null;
   curationStatus?: string | null;
   category: string;
+  city?: string | null;
   location: string;
   cardSize: 'immersive' | 'cinematic' | 'layered' | 'compact';
   spacing: 'tight' | 'breathe' | 'isolated';

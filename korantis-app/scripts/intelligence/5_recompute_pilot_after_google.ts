@@ -134,6 +134,7 @@ function experienceFor(candidate: ScoredCandidateVenue, signals: VenueSignals): 
     conversation_signal: clampScore(wine || restaurant ? 76 : cocktail ? 64 : 58),
     long_stay_signal: clampScore(cafe ? 68 : wine ? 54 : restaurant ? 42 : 32),
     quick_stop_signal: clampScore(cafe ? 46 : 18),
+    dinner_signal: clampScore(restaurant ? 82 : wine ? 55 : cocktail ? 42 : 18),
     morning_signal: clampScore(cafe ? 84 : 12),
     afternoon_signal: clampScore(cafe || wine ? 68 : 35),
     golden_hour_signal: clampScore(wine ? 70 : signals.design_signal > 65 ? 58 : 30),

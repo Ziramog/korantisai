@@ -116,7 +116,7 @@ async function main() {
   }
 
   for (const image of materialized) {
-    if (image.selected_role !== 'gallery' || image.role === 'hero' || image.role === 'card') {
+    if (image.selected_role !== 'gallery') {
       blockers.push(`${image.venue_name}: materialization includes non-gallery role`);
     }
   }
@@ -170,4 +170,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-

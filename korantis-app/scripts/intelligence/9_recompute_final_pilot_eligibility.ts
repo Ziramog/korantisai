@@ -159,9 +159,9 @@ function eligibilityScore(scores: IntelligenceScores, output: VenueIntelligence)
 function topBy(outputs: Array<VenueIntelligence & { venue_name: string }>, key: keyof VenueIntelligence['intent_scores'], filter?: (output: VenueIntelligence & { venue_name: string }) => boolean) {
   return outputs
     .filter(filter || (() => true))
-    .sort((a, b) => b.intent_scores[key] - a.intent_scores[key])
+    .sort((a, b) => (b.intent_scores[key] ?? 0) - (a.intent_scores[key] ?? 0))
     .slice(0, 5)
-    .map((output) => `- ${output.venue_name}: ${output.intent_scores[key]} (${output.eligibility.status})`);
+    .map((output) => `- ${output.venue_name}: ${output.intent_scores[key] ?? 0} (${output.eligibility.status})`);
 }
 
 function main() {

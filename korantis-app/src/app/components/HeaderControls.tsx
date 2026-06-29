@@ -5,6 +5,7 @@ import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import Image from 'next/image';
 import { useCircadian } from '../contexts/CircadianContext';
 import { t } from '../utils/i18n';
+import { cityDisplayName, nextCityCode } from '@/lib/cities';
 
 export default function HeaderControls() {
   const { city, setCity, language } = useCircadian();
@@ -39,15 +40,11 @@ export default function HeaderControls() {
       
       <div className="pointer-events-auto">
         <button
-          onClick={() => {
-            if (city === 'BUE') setCity('NYC');
-            else if (city === 'NYC') setCity('DXB');
-            else setCity('BUE');
-          }}
+          onClick={() => setCity(nextCityCode(city))}
           aria-label={t('switchCity', language)}
           className="text-[10px] font-sans font-light tracking-wider text-k-text-secondary hover:text-k-text transition-colors flex items-center gap-1.5 uppercase"
         >
-          {city === 'BUE' ? 'Buenos Aires' : city === 'NYC' ? 'New York' : 'Dubai'} <span className="text-[8px] opacity-60">▼</span>
+          {cityDisplayName(city)} <span className="text-[8px] opacity-60">⌄</span>
         </button>
       </div>
     </motion.div>

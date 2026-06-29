@@ -54,7 +54,7 @@ async function main() {
       aliases,
       category: chooseCategory(mentions),
       merged_sources: mentions,
-      status: 'discovered',
+      status: 'discovered' as const,
     };
   }).sort((a, b) => b.merged_sources.length - a.merged_sources.length || a.venue_name.localeCompare(b.venue_name));
 

@@ -75,7 +75,6 @@ const tagTranslations: Record<string, string> = {
   authentic: 'auténtico',
   'date night': 'ideal para citas',
   'work friendly': 'para trabajar',
-  'hidden gem': 'joya oculta',
   refined: 'refinado',
   cinematic: 'cinematográfico',
   restaurant: 'restaurante',

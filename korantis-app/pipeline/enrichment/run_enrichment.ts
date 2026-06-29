@@ -181,8 +181,8 @@ export async function runEnrichment(options: Options): Promise<OrchestratorResul
       blocked_gallery_quality: 0,
       total_images: 0,
     };
-    const fallbackExpansion = readJsonIfExists<GalleryExpansionQueue>(path.join(outputDir, 'gallery_expansion_queue.json'));
-    const fallbackDeep = readJsonIfExists<DeepImageQueue>(path.join(outputDir, 'deep_image_queue.json'));
+    const fallbackExpansion = readJsonIfExists<GalleryExpansionQueue>(path.join(outputDir, 'gallery_expansion_queue.json')) || undefined;
+    const fallbackDeep = readJsonIfExists<DeepImageQueue>(path.join(outputDir, 'deep_image_queue.json')) || undefined;
     const result = buildResult(runId, options, steps, fallbackReview, fallbackExpansion, fallbackDeep, 'completed_with_warnings');
     writeOutputs(outputDir, result);
     throw error;

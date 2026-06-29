@@ -140,6 +140,7 @@ function experienceFor(candidate: ScoredCandidateVenue, signals: VenueSignals): 
     conversation_signal: clampScore(wine || restaurant ? 76 : cocktail ? 64 : 58),
     long_stay_signal: clampScore(cafe ? 68 : wine ? 54 : restaurant ? 42 : 32),
     quick_stop_signal: clampScore(cafe ? 46 : 18),
+    dinner_signal: clampScore(restaurant ? 82 : wine ? 55 : cocktail ? 42 : 18),
     morning_signal: clampScore(cafe ? 84 : 12),
     afternoon_signal: clampScore(cafe || wine ? 68 : 35),
     golden_hour_signal: clampScore(wine ? 70 : signals.design_signal > 65 ? 58 : 30),
@@ -217,9 +218,9 @@ function deriveArchetypes(signals: VenueSignals, scores: IntelligenceScores) {
 
 function topBy(outputs: Array<VenueIntelligence & { venue_name: string }>, key: keyof VenueIntelligence['intent_scores']) {
   return [...outputs]
-    .sort((a, b) => b.intent_scores[key] - a.intent_scores[key])
+    .sort((a, b) => (b.intent_scores[key] ?? 0) - (a.intent_scores[key] ?? 0))
     .slice(0, 5)
-    .map((output) => `- ${output.venue_name}: ${output.intent_scores[key]} (${output.eligibility.status})`);
+    .map((output) => `- ${output.venue_name}: ${output.intent_scores[key] ?? 0} (${output.eligibility.status})`);
 }
 
 function main() {

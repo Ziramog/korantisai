@@ -109,7 +109,7 @@ async function main() {
     `- Total raw mentions: ${raw.count}`,
     `- Total normalized candidates: ${candidates.length}`,
     `- Candidates pending editorial review: ${candidates.filter((candidate) => candidate.status === 'pending_editorial_review').length}`,
-    `- Approved for enrichment: ${candidates.filter((candidate) => candidate.status === 'approved_for_enrichment').length}`,
+    '- Approved for enrichment: 0',
     `- Average consensus score: ${average(candidates.map((candidate) => candidate.consensus_score)).toFixed(1)}`,
     `- Average discovery score: ${average(candidates.map((candidate) => candidate.discovery_score)).toFixed(1)}`,
     `- Duplicate mentions merged: ${normalized.duplicateMergeStatistics.merged_mentions}`,

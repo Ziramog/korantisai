@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCircadian } from '../contexts/CircadianContext';
 import { trackEvent } from '@/lib/analytics';
+import { CITY_OPTIONS, type CityCode } from '@/lib/cities';
 import Image from 'next/image';
 
 const MOODS = [
@@ -20,13 +21,13 @@ export default function Onboarding() {
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(0);
   const [selectedMoods, setSelectedMoods] = useState<string[]>([]);
-  const [selectedCity, setSelectedCity] = useState<'BUE' | 'NYC' | 'DXB'>('BUE');
+  const [selectedCity, setSelectedCity] = useState<CityCode>('BUE');
 
   useEffect(() => {
-    const hasOnboarded = localStorage.getItem('korantis_onboarded');
-    if (!hasOnboarded) {
-      setIsOpen(true);
-    }
+    const timeoutId = window.setTimeout(() => {
+      setIsOpen(!localStorage.getItem('korantis_onboarded'));
+    }, 0);
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   if (!isOpen) return null;
@@ -89,27 +90,16 @@ export default function Onboarding() {
             <p className="text-[#B0A898] text-center mb-10 text-sm">Elige tu ciudad base.</p>
             
             <div className="flex flex-col gap-4 mb-12">
-              <button 
-                onClick={() => setSelectedCity('BUE')}
-                className={`p-6 rounded-2xl border text-left transition-all ${selectedCity === 'BUE' ? 'border-[#C9A96E] bg-[#C9A96E]/10' : 'border-white/10 bg-white/5 hover:border-white/30'}`}
-              >
-                <div className="text-xl font-display mb-1 text-white">Buenos Aires</div>
-                <div className="text-xs text-[#8A7A5A] uppercase tracking-wider">Activo</div>
-              </button>
-              <button 
-                onClick={() => setSelectedCity('NYC')}
-                className={`p-6 rounded-2xl border text-left transition-all ${selectedCity === 'NYC' ? 'border-[#C9A96E] bg-[#C9A96E]/10' : 'border-white/10 bg-white/5 hover:border-white/30'}`}
-              >
-                <div className="text-xl font-display mb-1 text-white">New York</div>
-                <div className="text-xs text-[#8A7A5A] uppercase tracking-wider">Beta</div>
-              </button>
-              <button 
-                onClick={() => setSelectedCity('DXB')}
-                className={`p-6 rounded-2xl border text-left transition-all ${selectedCity === 'DXB' ? 'border-[#C9A96E] bg-[#C9A96E]/10' : 'border-white/10 bg-white/5 hover:border-white/30'}`}
-              >
-                <div className="text-xl font-display mb-1 text-white">Dubai</div>
-                <div className="text-xs text-[#8A7A5A] uppercase tracking-wider">Beta</div>
-              </button>
+              {CITY_OPTIONS.map((cityOption) => (
+                <button
+                  key={cityOption.code}
+                  onClick={() => setSelectedCity(cityOption.code)}
+                  className={`p-6 rounded-2xl border text-left transition-all ${selectedCity === cityOption.code ? 'border-[#C9A96E] bg-[#C9A96E]/10' : 'border-white/10 bg-white/5 hover:border-white/30'}`}
+                >
+                  <div className="text-xl font-display mb-1 text-white">{cityOption.name}</div>
+                  <div className="text-xs text-[#8A7A5A] uppercase tracking-wider">{cityOption.code === 'BUE' ? 'Activo' : 'Beta'}</div>
+                </button>
+              ))}
             </div>
             
             <button 

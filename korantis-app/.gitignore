@@ -15,6 +15,11 @@
 /playwright-report
 /test-results
 
+# local control center runtime output
+/.control-center-build
+/data/control_center/
+/data/control_center*.log
+
 # next.js
 /.next/
 /out/

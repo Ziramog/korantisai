@@ -83,6 +83,7 @@ export interface GooglePlacesLookupOptions {
   city: string;
   languageCode?: string;
   regionCode?: string;
+  timeoutMs?: number;
 }
 
 export interface GooglePlacesLookupResult {
@@ -140,6 +141,7 @@ export async function findBestGooglePlace(
   try {
     response = await fetch(GOOGLE_PLACES_TEXT_SEARCH_URL, {
       method: 'POST',
+      signal: AbortSignal.timeout(options.timeoutMs || 15_000),
       headers: {
         'Content-Type': 'application/json',
         'X-Goog-Api-Key': apiKey,
@@ -198,6 +200,7 @@ export async function searchGooglePlacesText(
   try {
     response = await fetch(GOOGLE_PLACES_TEXT_SEARCH_URL, {
       method: 'POST',
+      signal: AbortSignal.timeout(options.timeoutMs || 15_000),
       headers: {
         'Content-Type': 'application/json',
         'X-Goog-Api-Key': apiKey,

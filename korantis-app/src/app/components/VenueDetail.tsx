@@ -113,7 +113,7 @@ export default function VenueDetail({ venue, onBack, onOpenInAtlas }: VenueDetai
   const isSaved = savedVenueIds.includes(venue.id);
   const displayVenue = localizeVenueForDisplay(venue, language);
   const description = localizeVenueDescriptionForDisplay(venue, language);
-  const hasEditorialCopy = (venue as Record<string, unknown>).hasEditorialCopy === true;
+  const hasEditorialCopy = (venue as unknown as Record<string, unknown>).hasEditorialCopy === true;
   const seenImageSources = new Set([venue.heroImage]);
   const galleryImages = (venue.galleryImages || [])
     .filter((image) => {

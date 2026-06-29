@@ -26,7 +26,11 @@ interface Stage03Result {
   report_markdown: string;
 }
 
-export async function runStage03ImageDiscovery(batchName: string): Promise<Stage03Result> {
+export interface Stage03Options {
+  maxCandidatesPerVenue?: number;
+}
+
+export async function runStage03ImageDiscovery(batchName: string, options: Stage03Options = {}): Promise<Stage03Result> {
   loadLocalEnv();
 
   const outputDir = path.join(process.cwd(), 'data', 'batches', batchName);
@@ -41,7 +45,8 @@ export async function runStage03ImageDiscovery(batchName: string): Promise<Stage
       ...(await discoverOfficialWebsiteImages(venue)),
     ];
 
-    const limited = prioritizeDiscoveredCandidates(discovered).slice(0, 28);
+    const maxCandidates = Math.max(1, options.maxCandidatesPerVenue || 28);
+    const limited = prioritizeDiscoveredCandidates(discovered).slice(0, maxCandidates);
     for (const candidate of limited) {
       const probed = await probeImageCandidate(candidate, { googlePlacesApiKey });
       imageCandidates.push(probed.candidate);
@@ -188,7 +193,21 @@ function countRejectionReasons(rejected: RejectedImageCandidate[]): Record<strin
 }
 
 function containsAny(text: string, terms: string[]): boolean {
-  return terms.some((term) => text.includes(term));
+  return terms.some((term) => matchesSearchTerm(text, term));
+}
+
+function matchesSearchTerm(text: string, term: string): boolean {
+  const normalizedText = text.toLowerCase();
+  const normalizedTerm = term.toLowerCase();
+  if (!/^[\p{L}\p{N}]+(?:[ _-][\p{L}\p{N}]+)*$/u.test(normalizedTerm)) {
+    return normalizedText.includes(normalizedTerm);
+  }
+
+  const pattern = normalizedTerm
+    .split(/[ _-]+/u)
+    .map((part) => part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('[\\s_-]+');
+  return new RegExp(`(?:^|[^\\p{L}\\p{N}])${pattern}(?=$|[^\\p{L}\\p{N}])`, 'u').test(normalizedText);
 }
 
 const currentFile = path.resolve(fileURLToPath(import.meta.url));
