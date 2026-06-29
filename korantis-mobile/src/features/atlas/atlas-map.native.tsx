@@ -23,14 +23,13 @@ export function AtlasMap({ venues, center, selectedId, savedIds, focusCoordinate
   const cameraRef = useRef<Camera>(null);
   const sourceRef = useRef<ShapeSource>(null);
   const selectedVenue = venues.find((venue) => venue.id === selectedId);
-  const [pulseCycle, setPulseCycle] = useState(0);
   const [primaryExpanded, setPrimaryExpanded] = useState(false);
   const [secondaryExpanded, setSecondaryExpanded] = useState(false);
 
   useEffect(() => {
     cameraRef.current?.setCamera({
       centerCoordinate: selectedVenue ? [selectedVenue.lng, selectedVenue.lat] : focusCoordinate ?? center,
-      zoomLevel: selectedVenue ? 15.5 : focusCoordinate ? 14.5 : 11.2,
+      zoomLevel: selectedVenue ? 16.8 : focusCoordinate ? 14.5 : 11.2,
       pitch: 45,
       animationDuration: 650,
     });
@@ -38,30 +37,56 @@ export function AtlasMap({ venues, center, selectedId, savedIds, focusCoordinate
 
   useEffect(() => {
     if (!selectedId) return;
-    const reset = setTimeout(() => {
+
+    let primaryStart: ReturnType<typeof setTimeout> | undefined;
+    let secondaryStart: ReturnType<typeof setTimeout> | undefined;
+    let secondaryInterval: ReturnType<typeof setInterval> | undefined;
+
+    const runPrimary = () => {
       setPrimaryExpanded(false);
+      primaryStart = setTimeout(() => setPrimaryExpanded(true), 35);
+    };
+
+    const runSecondary = () => {
       setSecondaryExpanded(false);
-    }, 0);
-    const primaryStart = setTimeout(() => setPrimaryExpanded(true), 50);
-    const secondaryStart = setTimeout(() => setSecondaryExpanded(true), 620);
-    const restart = setTimeout(() => setPulseCycle((cycle) => cycle + 1), 2200);
+      secondaryStart = setTimeout(() => setSecondaryExpanded(true), 35);
+    };
+
+    const primaryKickoff = setTimeout(runPrimary, 0);
+    const primaryInterval = setInterval(runPrimary, 2000);
+    const secondaryDelay = setTimeout(() => {
+      runSecondary();
+      secondaryInterval = setInterval(runSecondary, 2000);
+    }, 600);
+
     return () => {
-      clearTimeout(reset);
       clearTimeout(primaryStart);
       clearTimeout(secondaryStart);
-      clearTimeout(restart);
+      clearTimeout(primaryKickoff);
+      clearTimeout(secondaryDelay);
+      clearInterval(primaryInterval);
+      clearInterval(secondaryInterval);
     };
-  }, [pulseCycle, selectedId]);
+  }, [selectedId]);
 
   const shape = useMemo<FeatureCollection<Point, { venueId: string; isSaved: boolean }>>(() => ({
     type: 'FeatureCollection',
-    features: venues.map((venue) => ({
+    features: venues.filter((venue) => venue.id !== selectedId).map((venue) => ({
       type: 'Feature',
       id: venue.id,
       properties: { venueId: venue.id, isSaved: savedIds.includes(venue.id) },
       geometry: { type: 'Point', coordinates: [venue.lng, venue.lat] },
     })),
-  }), [savedIds, venues]);
+  }), [savedIds, selectedId, venues]);
+  const selectedShape = useMemo<FeatureCollection<Point, { venueId: string }>>(() => ({
+    type: 'FeatureCollection',
+    features: selectedVenue ? [{
+      type: 'Feature',
+      id: selectedVenue.id,
+      properties: { venueId: selectedVenue.id },
+      geometry: { type: 'Point', coordinates: [selectedVenue.lng, selectedVenue.lat] },
+    }] : [],
+  }), [selectedVenue]);
   const userShape = useMemo<FeatureCollection<Point>>(() => ({
     type: 'FeatureCollection',
     features: userCoordinate ? [{ type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: userCoordinate } }] : [],
@@ -147,15 +172,32 @@ export function AtlasMap({ venues, center, selectedId, savedIds, focusCoordinate
           style={{ textField: ['get', 'point_count_abbreviated'], textColor: colors.text, textSize: 11 }}
         />
         <Mapbox.CircleLayer
-          id="venue-selected-wave-secondary"
-          filter={['==', ['get', 'venueId'], selectedId ?? '__none__']}
+          id="venue-points"
+          filter={['!', ['has', 'point_count']]}
           style={{
-            circleColor: 'transparent',
-            circleRadius: secondaryExpanded ? 52 : 12,
-            circleRadiusTransition: { duration: secondaryExpanded ? 1580 : 0, delay: 0 },
+            circleColor: ['case', ['==', ['get', 'isSaved'], true], colors.blackWarm, colors.gold],
+            circleRadius: ['case', ['==', ['get', 'isSaved'], true], 8, 7],
+            circleStrokeColor: ['case', ['==', ['get', 'isSaved'], true], colors.gold, colors.black],
+            circleStrokeWidth: 2,
+          }}
+        />
+      </Mapbox.ShapeSource>
+      <Mapbox.ShapeSource
+        id="korantis-selected-venue"
+        shape={selectedShape}
+        hitbox={{ width: 64, height: 64 }}
+        onPress={() => {
+          if (selectedId) onSelect(selectedId);
+        }}>
+        <Mapbox.CircleLayer
+          id="venue-selected-wave-secondary"
+          style={{
+            circleColor: 'rgba(201,169,110,0.02)',
+            circleRadius: secondaryExpanded ? 58 : 14,
+            circleRadiusTransition: { duration: secondaryExpanded ? 2000 : 0, delay: 0 },
             circleStrokeColor: colors.gold,
-            circleStrokeOpacity: secondaryExpanded ? 0 : 0.42,
-            circleStrokeOpacityTransition: { duration: secondaryExpanded ? 1580 : 0, delay: 0 },
+            circleStrokeOpacity: secondaryExpanded ? 0 : 0.5,
+            circleStrokeOpacityTransition: { duration: secondaryExpanded ? 2000 : 0, delay: 0 },
             circleStrokeWidth: 1,
             circlePitchAlignment: 'map',
             circlePitchScale: 'map',
@@ -163,38 +205,36 @@ export function AtlasMap({ venues, center, selectedId, savedIds, focusCoordinate
         />
         <Mapbox.CircleLayer
           id="venue-selected-wave-primary"
-          filter={['==', ['get', 'venueId'], selectedId ?? '__none__']}
           style={{
-            circleColor: 'transparent',
-            circleRadius: primaryExpanded ? 35 : 12,
-            circleRadiusTransition: { duration: primaryExpanded ? 1750 : 0, delay: 0 },
+            circleColor: 'rgba(201,169,110,0.03)',
+            circleRadius: primaryExpanded ? 44 : 14,
+            circleRadiusTransition: { duration: primaryExpanded ? 2000 : 0, delay: 0 },
             circleStrokeColor: colors.gold,
-            circleStrokeOpacity: primaryExpanded ? 0 : 0.82,
-            circleStrokeOpacityTransition: { duration: primaryExpanded ? 1750 : 0, delay: 0 },
-            circleStrokeWidth: 2,
+            circleStrokeOpacity: primaryExpanded ? 0 : 0.8,
+            circleStrokeOpacityTransition: { duration: primaryExpanded ? 2000 : 0, delay: 0 },
+            circleStrokeWidth: 1.5,
             circlePitchAlignment: 'map',
             circlePitchScale: 'map',
           }}
         />
         <Mapbox.CircleLayer
-          id="venue-selected-glow"
-          filter={['==', ['get', 'venueId'], selectedId ?? '__none__']}
+          id="venue-selected-halo"
           style={{
-            circleColor: 'rgba(201,169,110,0.12)',
-            circleRadius: 17,
-            circleStrokeColor: 'rgba(201,169,110,0.48)',
-            circleStrokeWidth: 1,
-            circleBlur: 0.16,
+            circleColor: 'rgba(201,169,110,0.08)',
+            circleRadius: 22,
+            circleStrokeColor: colors.gold,
+            circleStrokeOpacity: 0.65,
+            circleStrokeWidth: 1.5,
+            circleBlur: 0.15,
           }}
         />
         <Mapbox.CircleLayer
-          id="venue-points"
-          filter={['!', ['has', 'point_count']]}
+          id="venue-selected-point"
           style={{
-            circleColor: ['case', ['==', ['get', 'venueId'], selectedId ?? ''], colors.black, ['==', ['get', 'isSaved'], true], colors.blackWarm, colors.gold],
-            circleRadius: ['case', ['==', ['get', 'venueId'], selectedId ?? ''], 9, ['==', ['get', 'isSaved'], true], 7, 6],
-            circleStrokeColor: ['case', ['==', ['get', 'venueId'], selectedId ?? ''], colors.gold, ['==', ['get', 'isSaved'], true], colors.gold, colors.black],
-            circleStrokeWidth: ['case', ['==', ['get', 'venueId'], selectedId ?? ''], 2.5, 2],
+            circleColor: colors.text,
+            circleRadius: 10,
+            circleStrokeColor: colors.gold,
+            circleStrokeWidth: 2,
           }}
         />
       </Mapbox.ShapeSource>
