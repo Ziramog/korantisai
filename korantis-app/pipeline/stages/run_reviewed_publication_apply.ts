@@ -5,6 +5,7 @@ import { materializeCloudinary } from './10_materialize_cloudinary';
 import { projectToPublicDryRun } from './11_project_to_public';
 import { activatePublicVenues } from './12_activate_public_venues';
 import { runPostActivationAudit } from './13_post_activation_audit';
+import { applyBatchGalleryImages } from './18_apply_batch_gallery';
 
 interface StepResult {
   step: string;
@@ -22,6 +23,7 @@ interface ReviewedPublicationApplyResult {
   steps: StepResult[];
   approved_requested: number;
   cloudinary_uploaded_or_existing: number;
+  gallery_images_written: number;
   public_projected: number;
   activation_ready: number;
   activated: number;
@@ -56,6 +58,7 @@ export async function runReviewedPublicationApply(batchName: string): Promise<Re
 
   const steps: StepResult[] = [];
   let cloudinaryUploadedOrExisting = 0;
+  let galleryImagesWritten = 0;
   let publicProjected = 0;
   let activationReady = 0;
   let activated = 0;
@@ -110,6 +113,19 @@ export async function runReviewedPublicationApply(batchName: string): Promise<Re
       };
     });
 
+    await runStep(steps, '18_auto_gallery_apply', async () => {
+      const gallery = await applyBatchGalleryImages(batchName, ['--apply']);
+      galleryImagesWritten = gallery.approved_images;
+      if (gallery.blockers.length > 0) throw new Error(`Auto gallery blockers: ${gallery.blockers.join(', ')}`);
+      if (gallery.approved_venues_with_gallery !== approvedRequested) {
+        throw new Error(`Gallery prepared ${gallery.approved_venues_with_gallery}/${approvedRequested} approved venues.`);
+      }
+      return {
+        approved_venues_with_gallery: gallery.approved_venues_with_gallery,
+        approved_images: gallery.approved_images,
+      };
+    });
+
     await runStep(steps, '12_activation_dry_run', async () => {
       const activation = await activatePublicVenues(batchName, ['--dry-run']);
       activationReady = activation.ready_to_activate;
@@ -150,16 +166,16 @@ export async function runReviewedPublicationApply(batchName: string): Promise<Re
       };
     });
   } catch (error) {
-    const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, publicProjected, activationReady, activated, postActivationAuditPassed, postActivationAuditFailed, blocked);
+    const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, galleryImagesWritten, publicProjected, activationReady, activated, postActivationAuditPassed, postActivationAuditFailed, blocked);
     writeOutputs(outputDir, result);
     throw error;
   }
 
-  const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, publicProjected, activationReady, activated, postActivationAuditPassed, postActivationAuditFailed, blocked);
+  const result = buildResult(batchName, steps, approvedRequested, cloudinaryUploadedOrExisting, galleryImagesWritten, publicProjected, activationReady, activated, postActivationAuditPassed, postActivationAuditFailed, blocked);
   writeOutputs(outputDir, result);
   console.log(`Reviewed publication apply result written to ${path.join(outputDir, 'reviewed_publication_apply_result.json')}`);
   console.log(`Reviewed publication apply report written to ${path.join(outputDir, 'reviewed_publication_apply_report.md')}`);
-  console.log(`Reviewed publication apply summary: approved=${approvedRequested}, cloudinary=${cloudinaryUploadedOrExisting}, projected=${publicProjected}, activated=${activated}, audit_failed=${postActivationAuditFailed}`);
+  console.log(`Reviewed publication apply summary: approved=${approvedRequested}, cloudinary=${cloudinaryUploadedOrExisting}, gallery=${galleryImagesWritten}, projected=${publicProjected}, activated=${activated}, audit_failed=${postActivationAuditFailed}`);
   return result;
 }
 
@@ -202,6 +218,7 @@ function buildResult(
   steps: StepResult[],
   approvedRequested: number,
   cloudinaryUploadedOrExisting: number,
+  galleryImagesWritten: number,
   publicProjected: number,
   activationReady: number,
   activated: number,
@@ -216,6 +233,7 @@ function buildResult(
     steps,
     approved_requested: approvedRequested,
     cloudinary_uploaded_or_existing: cloudinaryUploadedOrExisting,
+    gallery_images_written: galleryImagesWritten,
     public_projected: publicProjected,
     activation_ready: activationReady,
     activated,
@@ -230,6 +248,7 @@ function buildResult(
       public_projection_writes_pending_review_before_activation: true,
       activation_requires_cloudinary_hero: true,
       activation_requires_minimum_gallery: true,
+      auto_gallery_apply_before_activation: true,
       post_activation_audit_required: true,
       no_consumer_ui_changes: true,
     },
@@ -249,6 +268,7 @@ function buildReport(result: ReviewedPublicationApplyResult): string {
     `- Generated: ${result.generated_at}`,
     `- Approved requested: ${result.approved_requested}`,
     `- Cloudinary uploaded/existing: ${result.cloudinary_uploaded_or_existing}`,
+    `- Gallery images written: ${result.gallery_images_written}`,
     `- Public projected: ${result.public_projected}`,
     `- Activation ready: ${result.activation_ready}`,
     `- Activated: ${result.activated}`,
