@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+import { CITY_CODES, venueMatchesCity, type CityCode } from '@/lib/cities';
 import { mapPublicVenues, normalizePublicVenueLimit, type PublicVenueRow, type VenueImageRow } from '@/lib/publicVenues';
 import { createClient } from '@/utils/supabase/server';
 
@@ -35,10 +36,6 @@ export async function GET(request: Request) {
       .order('quality', { ascending: false })
       .limit(limit);
 
-    if (city) {
-      venueQuery = venueQuery.eq('city', city);
-    }
-
     const { data, error } = await venueQuery;
 
     if (error) {
@@ -68,10 +65,31 @@ export async function GET(request: Request) {
     }
 
     const venues = mapPublicVenues(data as PublicVenueRow[], (legacyImages.data || []) as VenueImageRow[]);
+    const cityCode = normalizeCityParam(city);
+    const filteredVenues = cityCode
+      ? venues.filter((venue) => venueMatchesCity(venue, cityCode))
+      : venues;
 
-    return NextResponse.json({ venues });
+    return NextResponse.json({ venues: filteredVenues });
   } catch (error) {
     console.error('Server error:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
+}
+
+function normalizeCityParam(value: string | null): CityCode | null {
+  if (!value) return null;
+  const normalized = value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+  const upper = value.toUpperCase();
+  if ((CITY_CODES as readonly string[]).includes(upper)) return upper as CityCode;
+  if (normalized.includes('cordoba')) return 'COR';
+  if (normalized.includes('buenos') || normalized === 'caba') return 'BUE';
+  if (normalized.includes('new york') || normalized === 'nyc') return 'NYC';
+  if (normalized.includes('dubai')) return 'DXB';
+  return null;
 }

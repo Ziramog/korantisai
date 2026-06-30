@@ -1,3 +1,5 @@
+import { cityDisplayName, inferCityCodeFromVenue } from './cities';
+
 export type PublicVenueRow = {
   id: string;
   name: string;
@@ -124,6 +126,15 @@ export function mapPublicVenues(rows: PublicVenueRow[], imageRows: VenueImageRow
         return null;
       }
 
+      const inferredCityCode = inferCityCodeFromVenue({
+        city: venue.city,
+        location: venue.location,
+        id: venue.id,
+        lat: coordinates.lat,
+        lng: coordinates.lng,
+      });
+      const cityName = venue.city || (inferredCityCode ? cityDisplayName(inferredCityCode) : null);
+
       const venueImages = (imagesByVenue.get(venue.id) || [])
         .sort((a, b) => imageRank(a) - imageRank(b) || (a.sort_order || 0) - (b.sort_order || 0));
       const heroImageRow = venueImages.find((image) => image.role === 'hero' && hasDirectImageUrl(image))
@@ -145,7 +156,7 @@ export function mapPublicVenues(rows: PublicVenueRow[], imageRows: VenueImageRow
         createdAt: venue.created_at || null,
         updatedAt: venue.updated_at || null,
         category: venue.category || '',
-        city: venue.city || null,
+        city: cityName,
         location: venue.location || '',
         cardSize: venue.card_size || 'layered',
         spacing: venue.spacing || 'breathe',
