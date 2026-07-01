@@ -91,5 +91,6 @@ function normalizeCityParam(value: string | null): CityCode | null {
   if (normalized.includes('buenos') || normalized === 'caba') return 'BUE';
   if (normalized.includes('new york') || normalized === 'nyc') return 'NYC';
   if (normalized.includes('dubai')) return 'DXB';
+  if (normalized.includes('catamarca')) return 'CAT';
   return null;
 }

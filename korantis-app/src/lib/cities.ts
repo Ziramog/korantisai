@@ -1,4 +1,4 @@
-export type CityCode = 'BUE' | 'COR' | 'NYC' | 'DXB';
+export type CityCode = 'BUE' | 'COR' | 'NYC' | 'DXB' | 'CAT';
 
 type CityBounds = {
   minLat: number;
@@ -38,6 +38,12 @@ export const CITY_OPTIONS: readonly CityOption[] = [
     name: 'Dubai',
     aliases: ['Dubai'],
     bounds: { minLat: 24.75, maxLat: 25.45, minLng: 54.85, maxLng: 55.65 },
+  },
+  {
+    code: 'CAT',
+    name: 'Catamarca',
+    aliases: ['Catamarca', 'Catamarca Argentina', 'San Fernando del Valle de Catamarca', 'catamarca_argentina'],
+    bounds: { minLat: -28.65, maxLat: -28.25, minLng: -66.05, maxLng: -65.55 },
   },
 ] as const;
 
